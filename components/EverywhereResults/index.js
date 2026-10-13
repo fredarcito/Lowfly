@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import BestPrice from "@/components/BestPrice";
-import ResultRow, { ResultList } from "@/components/ResultRow";
+import ResultRow, { AltRow, ResultList } from "@/components/ResultRow";
 import FailedNote from "@/components/FailedNote";
 import Section from "@/components/Section";
 import NoResults from "@/components/NoResults";
@@ -61,18 +61,29 @@ export default function EverywhereResults({ data }) {
         {shown.length ? (
           <ResultList>
             {shown.map((f) => (
-              <ResultRow
-                key={f.code}
-                rank={results.indexOf(f) + 1}
-                href={fmt.fareLinks(f, origin)[0].href}
-                title={`${f.city}, ${f.country}`}
-                meta={weekend ? fmt.weekendDates(f) : `${fmt.fareDates(f)} · ${f.code}`}
-                tag={weekend && noTimeOff(f) && { label: t.results.noTimeOff, hint: t.results.noTimeOffHint }}
-                airlines={airlinesOf(f)}
-                priceNote={priceNote}
-                price={f.price}
-                cur={f.cur}
-              />
+              <div key={f.code}>
+                <ResultRow
+                  rank={results.indexOf(f) + 1}
+                  href={fmt.fareLinks(f, origin)[0].href}
+                  title={`${f.city}, ${f.country}`}
+                  meta={weekend ? fmt.weekendDates(f) : `${fmt.fareDates(f)} · ${f.code}`}
+                  tag={weekend && noTimeOff(f) && { label: t.results.noTimeOff, hint: t.results.noTimeOffHint }}
+                  airlines={airlinesOf(f)}
+                  priceNote={priceNote}
+                  price={f.price}
+                  cur={f.cur}
+                />
+                {f.noTimeOffAlt && (
+                  <AltRow
+                    href={fmt.fareLinks(f.noTimeOffAlt, origin)[0].href}
+                    tag={{ label: t.results.noTimeOff, hint: t.results.noTimeOffHint }}
+                    meta={fmt.weekendDates(f.noTimeOffAlt)}
+                    airlines={airlinesOf(f.noTimeOffAlt)}
+                    price={f.noTimeOffAlt.price}
+                    cur={f.noTimeOffAlt.cur}
+                  />
+                )}
+              </div>
             ))}
           </ResultList>
         ) : (

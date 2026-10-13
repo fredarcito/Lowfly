@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Luggage } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import ResultRow, { ResultList } from "@/components/ResultRow";
+import ResultRow, { AltRow, ResultList } from "@/components/ResultRow";
 import { useI18n } from "@/components/I18nProvider";
 import { airlinesOf } from "@/lib/format";
 import { nextWeekends, noTimeOff } from "@/lib/weekend";
@@ -85,17 +85,28 @@ export default function WeekendDeals({ origin, originName, onSeeAll, fallback })
         <>
           <ResultList>
             {results.slice(0, SHOWN).map((fare) => (
-              <ResultRow
-                key={fare.code}
-                href={f.fareLinks(fare, origin)[0].href}
-                title={`${fare.city}, ${fare.country}`}
-                meta={f.weekendDates(fare)}
-                tag={noTimeOff(fare) && { label: t.results.noTimeOff, hint: t.results.noTimeOffHint }}
-                airlines={airlinesOf(fare)}
-                priceNote={t.results.roundTrip}
-                price={fare.price}
-                cur={fare.cur}
-              />
+              <div key={fare.code}>
+                <ResultRow
+                  href={f.fareLinks(fare, origin)[0].href}
+                  title={`${fare.city}, ${fare.country}`}
+                  meta={f.weekendDates(fare)}
+                  tag={noTimeOff(fare) && { label: t.results.noTimeOff, hint: t.results.noTimeOffHint }}
+                  airlines={airlinesOf(fare)}
+                  priceNote={t.results.roundTrip}
+                  price={fare.price}
+                  cur={fare.cur}
+                />
+                {fare.noTimeOffAlt && (
+                  <AltRow
+                    href={f.fareLinks(fare.noTimeOffAlt, origin)[0].href}
+                    tag={{ label: t.results.noTimeOff, hint: t.results.noTimeOffHint }}
+                    meta={f.weekendDates(fare.noTimeOffAlt)}
+                    airlines={airlinesOf(fare.noTimeOffAlt)}
+                    price={fare.noTimeOffAlt.price}
+                    cur={fare.noTimeOffAlt.cur}
+                  />
+                )}
+              </div>
             ))}
           </ResultList>
           {results.length > SHOWN && (

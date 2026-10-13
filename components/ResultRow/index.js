@@ -4,7 +4,8 @@ import { useI18n } from "@/components/I18nProvider";
 
 // A clickable row inside a <ResultList>. Opens the booking on the airline website.
 // `airlines` is the list of airlines (two if outbound and return are with different airlines)
-export default function ResultRow({ href, title, meta, price, cur, airlines = [], priceNote, rank }) {
+// `tag` is an optional highlight next to the airlines ({ label, hint })
+export default function ResultRow({ href, title, meta, price, cur, airlines = [], priceNote, rank, tag }) {
   const { f } = useI18n();
   return (
     <a
@@ -20,6 +21,11 @@ export default function ResultRow({ href, title, meta, price, cur, airlines = []
           {airlines.map((a) => (
             <AirlineBadge key={a} airline={a} />
           ))}
+          {tag && (
+            <span title={tag.hint} className="rounded-full bg-save/15 px-2 py-0.5 text-xs font-medium text-save">
+              {tag.label}
+            </span>
+          )}
           {meta}
         </span>
       </span>

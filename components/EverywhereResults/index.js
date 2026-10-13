@@ -10,10 +10,11 @@ import Section from "@/components/Section";
 import NoResults from "@/components/NoResults";
 import { useI18n } from "@/components/I18nProvider";
 import { airlinesOf, normalize } from "@/lib/format";
+import { noTimeOff } from "@/lib/weekend";
 
 export default function EverywhereResults({ data }) {
   const { t, f: fmt } = useI18n();
-  const { origin, roundTrip, results, failed } = data;
+  const { origin, roundTrip, weekend, results, failed } = data;
   const priceNote = roundTrip ? t.results.roundTrip : undefined;
   const [query, setQuery] = useState("");
 
@@ -33,7 +34,7 @@ export default function EverywhereResults({ data }) {
         price={best.price}
         cur={best.cur}
         title={`${best.city}, ${best.country}`}
-        detail={t.results.airportAdult(best.code)}
+        detail={weekend ? fmt.weekendDates(best) : t.results.airportAdult(best.code)}
         links={fmt.fareLinks(best, origin)}
         fare={best}
         origin={origin}
@@ -65,7 +66,8 @@ export default function EverywhereResults({ data }) {
                 rank={results.indexOf(f) + 1}
                 href={fmt.fareLinks(f, origin)[0].href}
                 title={`${f.city}, ${f.country}`}
-                meta={`${fmt.fareDates(f)} · ${f.code}`}
+                meta={weekend ? fmt.weekendDates(f) : `${fmt.fareDates(f)} · ${f.code}`}
+                tag={weekend && noTimeOff(f) && { label: t.results.noTimeOff, hint: t.results.noTimeOffHint }}
                 airlines={airlinesOf(f)}
                 priceNote={priceNote}
                 price={f.price}

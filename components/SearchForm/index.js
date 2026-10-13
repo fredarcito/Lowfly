@@ -1,10 +1,11 @@
 "use client";
 
-import { ArrowLeftRight, ArrowRight, Loader2, Search } from "lucide-react";
+import { ArrowLeftRight, ArrowRight, Loader2, Luggage, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Toggle } from "@/components/ui/toggle";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import AirportField from "@/components/AirportField";
 import DateRangeField from "@/components/DateRangeField";
@@ -24,10 +25,12 @@ function Field({ id, label, hint, className = "", children }) {
   );
 }
 
-// One way / return, and how many nights you want to stay
-function TripType({ form, onField }) {
+// One way / return, and how many nights you want to stay (or, anywhere, only weekends away: lib/weekend)
+function TripType({ mode, form, onField }) {
   const { t } = useI18n();
   const roundTrip = form.trip === "return";
+  const weekendOption = roundTrip && mode === "everywhere";
+  const weekend = weekendOption && form.weekend;
   const nights = (name, label) => (
     <Input
       type="number"
@@ -58,7 +61,19 @@ function TripType({ form, onField }) {
           <ArrowLeftRight /> {t.form.roundTrip}
         </ToggleGroupItem>
       </ToggleGroup>
-      {roundTrip && (
+      {weekendOption && (
+        <Toggle
+          variant="outline"
+          size="lg"
+          pressed={form.weekend}
+          onPressedChange={(v) => onField("weekend", v)}
+          className="h-9 px-3"
+        >
+          <Luggage /> {t.form.weekendOnly}
+        </Toggle>
+      )}
+      {weekend && <p className="text-sm text-muted-foreground">{t.form.weekendHint}</p>}
+      {roundTrip && !weekend && (
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           {t.form.stayBefore} {nights("minN", t.form.minNights)} {t.form.stayBetween} {nights("maxN", t.form.maxNights)}{" "}
           {t.form.stayAfter}
@@ -76,7 +91,7 @@ export default function SearchForm({ mode, form, airports, countries, busy, onFi
 
   return (
     <form onSubmit={onSubmit} className="grid gap-5">
-      {show("everywhere", "country") && <TripType form={form} onField={onField} />}
+      {show("everywhere", "country") && <TripType mode={mode} form={form} onField={onField} />}
       <div className="grid gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-12">
         <Field id="origin" label={t.form.origin} hint={t.form.originHint} className="lg:col-span-3">
           <AirportField id="origin" value={form.origin} airports={airports} onChange={(code) => onField("origin", code)} />

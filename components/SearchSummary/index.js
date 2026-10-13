@@ -9,14 +9,16 @@ export default function SearchSummary({ query, onEdit }) {
   const { t, f } = useI18n();
   if (!query) return null;
 
-  const { mode, origin, originName, country, from, to, ida, vuelta, flex, max, trip, minN, maxN } = query;
+  const { mode, origin, originName, country, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend } = query;
   const ModeIcon = MODES.find((m) => m.id === mode).icon;
   const parts =
     mode === "trip"
       ? [`${f.fmtDay(ida)} → ${f.fmtDay(vuelta)}`, t.form.flexOption(Number(flex))]
       : [
           `${f.fmtDay(from)} → ${f.fmtDay(to)}`,
-          trip === "return" ? `${t.form.roundTrip}, ${t.summary.stay(Number(minN), Number(maxN))}` : t.form.oneway,
+          trip !== "return"
+            ? t.form.oneway
+            : `${t.form.roundTrip}, ${weekend ? t.summary.weekends : t.summary.stay(Number(minN), Number(maxN))}`,
           max && t.summary.max(f.money(Number(max))),
         ];
 

@@ -13,6 +13,7 @@ import EverywhereResults from "@/components/EverywhereResults";
 import CountryResults from "@/components/CountryResults";
 import FlexibleResults from "@/components/FlexibleResults";
 import LanguageSwitch from "@/components/LanguageSwitch";
+import WeekendDeals from "@/components/WeekendDeals";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useI18n } from "@/components/I18nProvider";
 import { APP_NAME, errorMessage } from "@/lib/i18n";
@@ -47,7 +48,7 @@ const DEFAULT_ORIGIN = "MLA";
 export default function FlightSearch() {
   const { lang, t } = useI18n();
   const [mode, setMode] = useState("everywhere");
-  const [form, setForm] = useState({ origin: DEFAULT_ORIGIN, country: "", from: "", to: "", ida: "", vuelta: "", flex: "2", max: "", trip: "oneway", minN: "2", maxN: "7" });
+  const [form, setForm] = useState({ origin: DEFAULT_ORIGIN, country: "", from: "", to: "", ida: "", vuelta: "", flex: "2", max: "", trip: "oneway", minN: "2", maxN: "7", weekend: false });
   const [airports, setAirports] = useState({ status: "loading", list: [] });
   const [countries, setCountries] = useState({ status: "loading", list: [] });
   const [result, setResult] = useState({ status: "idle" });
@@ -123,9 +124,21 @@ export default function FlightSearch() {
     requestAnimationFrame(() => document.getElementById("origin")?.focus({ preventScroll: true }));
   };
 
-  async function onSubmit(e) {
+  function onSubmit(e) {
     e.preventDefault();
-    const { origin, country, from, to, ida, vuelta, flex, max, trip, minN, maxN } = form;
+    search(form, mode);
+  }
+
+  // "See every destination" from the weekend deals: the anywhere search for that weekend
+  function searchWeekend({ from, to }) {
+    const next = { ...form, from, to, trip: "return", weekend: true };
+    setForm(next);
+    setMode("everywhere");
+    search(next, "everywhere");
+  }
+
+  async function search(form, mode) {
+    const { origin, country, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend } = form;
 
     if (!/^[A-Z]{3}$/.test(origin)) return fail("badOrigin");
 
@@ -136,7 +149,9 @@ export default function FlightSearch() {
     } else {
       if (!from || !to || from > to) return fail("rangeOrder");
       params = { origin, from, to, ...(max && { max }), ...(mode === "country" && { country }) };
-      if (trip === "return") {
+      if (trip === "return" && weekend && mode === "everywhere") {
+        Object.assign(params, { trip, weekend: 1 });
+      } else if (trip === "return") {
         const [a, b] = [Number(minN), Number(maxN)];
         if (!(a >= 1 && b >= a && b <= 30)) return fail("stayInvalid");
         Object.assign(params, { trip, minN: a, maxN: b });
@@ -145,7 +160,7 @@ export default function FlightSearch() {
     if (mode !== "everywhere" && !country) return fail("missingCountry");
 
     setResult({ status: "loading", mode });
-    setQuery({ mode, ...form, originName: airports.list.find((a) => a.code === origin)?.city });
+    setQuery({ mode, ...form, weekend: weekend && trip === "return" && mode === "everywhere", originName: airports.list.find((a) => a.code === origin)?.city });
     setCollapsed(true);
     window.scrollTo({ top: 0, behavior: reducedMotion() ? "auto" : "smooth" });
     try {
@@ -221,7 +236,9 @@ export default function FlightSearch() {
         aria-live="polite"
         aria-busy={result.status === "loading"}
       >
-        {result.status === "idle" && <EmptyState mode={mode} />}
+        {result.status === "idle" && (
+          <EmptyState mode={mode} origin={form.origin} airports={airports} onSeeAll={searchWeekend} />
+        )}
         {result.status === "loading" && <LoadingState text={t.loading[result.mode]} />}
         {result.status === "error" && (
           <Alert variant="destructive">
@@ -259,8 +276,19 @@ function LoadingState({ text }) {
   );
 }
 
-// Before searching: explains what each mode does and highlights the selected one
-function EmptyState({ mode }) {
+// Before searching: this weekend's cheapest trips; without them, what each mode does (the selected one highlighted)
+function EmptyState({ mode, origin, airports, onSeeAll }) {
+  const { t } = useI18n();
+  const originName = airports.list.find((a) => a.code === origin)?.city;
+  return (
+    <>
+      <WeekendDeals origin={origin} originName={originName} onSeeAll={onSeeAll} fallback={<SearchModes mode={mode} />} />
+      <p className="-mt-4 text-xs text-muted-foreground">{t.empty.disclaimer}</p>
+    </>
+  );
+}
+
+function SearchModes({ mode }) {
   const { t } = useI18n();
   return (
     <section className="grid gap-4">
@@ -280,7 +308,6 @@ function EmptyState({ mode }) {
           </div>
         ))}
       </div>
-      <p className="text-xs text-muted-foreground">{t.empty.disclaimer}</p>
     </section>
   );
 }

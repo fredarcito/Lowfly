@@ -2,6 +2,12 @@ import { notFound } from "next/navigation";
 import { Atkinson_Hyperlegible, Bricolage_Grotesque } from "next/font/google";
 import { APP_NAME, LOCALES, getDictionary, hasLocale } from "@/lib/i18n";
 import { DEFAULT_THEME, themeScript } from "@/lib/theme";
+
+// Travelpayouts Drive: required by Travelpayouts to verify the site (for its flight data API).
+// Only loaded with TRAVELPAYOUTS_DRIVE=on (Vercel environment variable, read at build time).
+// Its features (link conversion, recommendation blocks) are switched off in the Travelpayouts dashboard.
+const travelpayoutsDrive = process.env.TRAVELPAYOUTS_DRIVE === "on";
+const driveScript = `(function(){var s=document.createElement("script");s.async=1;s.setAttribute("data-cmp-ab","2");s.src="https://emrld.ltd/NTg1MjE4.js?t=585218";document.head.appendChild(s)})()`;
 import "../globals.css";
 
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
@@ -36,6 +42,7 @@ export default async function RootLayout({ children, params }) {
     <html lang={lang} data-theme={DEFAULT_THEME} suppressHydrationWarning className={`${display.variable} ${body.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        {travelpayoutsDrive && <script data-cmp-ab="2" dangerouslySetInnerHTML={{ __html: driveScript }} />}
       </head>
       <body>{children}</body>
     </html>

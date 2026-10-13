@@ -20,7 +20,7 @@ export default function ModeTabs({ mode, onChange }) {
           <TabsTrigger
             key={id}
             value={id}
-            className="h-auto min-h-10 min-w-0 flex-col gap-1 px-1 py-1.5 text-xs leading-tight whitespace-normal data-active:bg-foreground! data-active:text-background! sm:flex-row sm:gap-2 sm:px-4 sm:text-sm sm:whitespace-nowrap"
+            className="h-auto min-h-10 min-w-0 flex-col gap-1 px-1 py-1.5 text-xs leading-tight whitespace-normal data-active:bg-selected! data-active:[-webkit-text-stroke:0.4px_currentColor] data-active:text-foreground! data-active:[&_svg]:text-primary sm:flex-row sm:gap-2 sm:px-4 sm:text-sm sm:whitespace-nowrap"
           >
             <Icon />
             <span className="text-center sm:hidden">{t.modes[id].short}</span>

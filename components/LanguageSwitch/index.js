@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 export default function LanguageSwitch() {
   const { lang, t } = useI18n();
   return (
-    <nav aria-label={t.header.language} className="flex shrink-0 items-center gap-1 rounded-full bg-white/10 p-1 text-xs font-semibold">
-      <Languages className="mx-1 size-3.5 text-white/60" aria-hidden />
+    <nav aria-label={t.header.language} className="flex shrink-0 items-center gap-1 rounded-full bg-hero-chip p-1 text-xs font-semibold">
+      <Languages className="mx-1 size-3.5 text-hero-muted" aria-hidden />
       {LOCALES.map((l) => (
         <a
           key={l}
@@ -20,7 +20,7 @@ export default function LanguageSwitch() {
           aria-current={l === lang ? "page" : undefined}
           className={cn(
             "rounded-full px-2.5 py-1 uppercase transition-colors",
-            l === lang ? "bg-white text-[#10202e]" : "text-white/70 hover:text-white"
+            l === lang ? "bg-hero-chip-active text-hero-chip-active-foreground shadow-sm" : "text-hero-muted hover:text-hero-foreground"
           )}
         >
           {l}

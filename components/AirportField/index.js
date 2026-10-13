@@ -125,7 +125,7 @@ function AirportPicker({ airports, value, onPick }) {
           />
         </div>
         {grouped && (
-          <Button variant="ghost" size="sm" className="justify-start text-primary" onClick={nearMe} disabled={locate === "busy"}>
+          <Button variant="ghost" size="sm" className="justify-start text-primary-ink" onClick={nearMe} disabled={locate === "busy"}>
             {locate === "busy" ? <Loader2 className="animate-spin" /> : <LocateFixed />}
             {locate === "busy" ? t.airport.locating : t.airport.nearMe}
           </Button>
@@ -159,7 +159,7 @@ function AirportPicker({ airports, value, onPick }) {
                 className={cn(
                   "my-0.5 flex cursor-pointer items-center gap-3 rounded-md px-2.5 py-2",
                   i === active && "bg-accent",
-                  a.code === value && "text-primary"
+                  a.code === value && "text-primary-ink"
                 )}
               >
                 <span className="grid min-w-0 flex-1">

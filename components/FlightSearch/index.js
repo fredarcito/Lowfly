@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { CircleAlert, Loader2, Plane } from "lucide-react";
+import { CircleAlert, Copyright, Loader2, Plane } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -178,7 +178,8 @@ export default function FlightSearch() {
 
   return (
     <>
-      <header className="bg-(image:--hero) px-4 pt-[calc(2.5rem+env(safe-area-inset-top,0px))] pb-24 text-white sm:px-6">
+      <header className="relative isolate overflow-hidden bg-(image:--hero) px-4 pt-[calc(2.5rem+env(safe-area-inset-top,0px))] pb-24 text-hero-foreground sm:px-6">
+        <HeroPhoto />
         <div className="mx-auto grid max-w-5xl gap-3">
           <div className="mb-4 flex items-center justify-between gap-4 sm:mb-6">
             <a href={`/${lang}`} className="flex items-center gap-2 font-heading text-xl font-extrabold tracking-tight">
@@ -194,17 +195,17 @@ export default function FlightSearch() {
           </div>
           <Collapse open={!collapsed}>
             <div className="grid gap-3 pb-4">
-              <p className="text-xs font-semibold tracking-wide text-white/70 uppercase sm:text-sm">{t.header.kicker}</p>
-              <h1 className="font-heading text-[2.5rem] leading-[0.95] font-extrabold tracking-tight text-balance sm:text-6xl">
+              <p className="text-xs font-semibold tracking-wide text-hero-muted uppercase sm:text-sm">{t.header.kicker}</p>
+              <h1 className="font-heading text-[2.5rem] leading-[0.95] font-extrabold tracking-tight whitespace-pre-line drop-shadow-sm sm:text-6xl">
                 {t.header.title}
               </h1>
-              <p className="max-w-[56ch] text-base text-white/75 sm:text-lg">{t.header.intro}</p>
+              <p className="max-w-[56ch] text-base text-hero-muted sm:text-lg">{t.header.intro}</p>
             </div>
           </Collapse>
         </div>
       </header>
 
-      <div className="-mt-20 px-4 sm:px-6">
+      <div className="relative z-10 -mt-20 px-4 sm:px-6">
         <Card
           className={cn(
             "mx-auto max-w-5xl gap-0 px-4 shadow-xl transition-[padding] duration-300 motion-reduce:transition-none sm:px-6",
@@ -232,7 +233,7 @@ export default function FlightSearch() {
       </div>
 
       <main
-        className="mx-auto grid max-w-[calc(64rem+3rem)] gap-8 px-4 pt-8 pb-[calc(3rem+env(safe-area-inset-bottom,0px))] sm:px-6"
+        className="mx-auto grid max-w-[calc(64rem+3rem)] gap-8 px-4 pt-8 pb-10 sm:px-6"
         aria-live="polite"
         aria-busy={result.status === "loading"}
       >
@@ -273,6 +274,41 @@ function LoadingState({ text }) {
         ))}
       </div>
     </div>
+  );
+}
+
+// Positano (by day in the light theme, at dusk in the dark one; see .hero-photo in globals.css), blended into
+// the header colour: on the right on desktop, dimmed behind the text on mobile.
+// The © above the search card credits it (both licences require it).
+function HeroPhoto() {
+  const { t } = useI18n();
+  const credit = (href, text, className) => (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={text}
+      aria-label={text}
+      className={cn(
+        "absolute right-4 bottom-[6.25rem] z-10 size-6 place-items-center rounded-full bg-black/30 text-white/80 backdrop-blur-sm hover:bg-black/50 hover:text-white sm:right-6",
+        className
+      )}
+    >
+      <Copyright className="size-3.5" />
+    </a>
+  );
+  return (
+    <>
+      {/* Two nested masks (fade to the bottom, then to the left) instead of one with two layers */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 opacity-35 mask-[linear-gradient(to_bottom,black_40%,transparent)] md:left-auto md:w-[72%] md:opacity-95 md:mask-[linear-gradient(to_bottom,black_55%,transparent)]"
+      >
+        <div className="hero-photo size-full md:mask-[linear-gradient(to_right,transparent,rgb(0_0_0/0.04)_15%,rgb(0_0_0/0.18)_30%,rgb(0_0_0/0.5)_45%,rgb(0_0_0/0.85)_58%,black_68%)]" />
+      </div>
+      {credit("https://commons.wikimedia.org/wiki/File:Positano_panorama.jpg", t.header.photoCreditDay, "grid dark:hidden")}
+      {credit("https://commons.wikimedia.org/wiki/File:Positano_Sunset.JPG", t.header.photoCreditNight, "hidden dark:grid")}
+    </>
   );
 }
 

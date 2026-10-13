@@ -13,6 +13,7 @@ import EverywhereResults from "@/components/EverywhereResults";
 import CountryResults from "@/components/CountryResults";
 import FlexibleResults from "@/components/FlexibleResults";
 import LanguageSwitch from "@/components/LanguageSwitch";
+import ThemeToggle from "@/components/ThemeToggle";
 import { useI18n } from "@/components/I18nProvider";
 import { APP_NAME, errorMessage } from "@/lib/i18n";
 import { nextFriday, shift, tomorrow } from "@/lib/dates";
@@ -171,7 +172,10 @@ export default function FlightSearch() {
               </span>
               {APP_NAME}
             </a>
-            <LanguageSwitch />
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <LanguageSwitch />
+            </div>
           </div>
           <Collapse open={!collapsed}>
             <div className="grid gap-3 pb-4">

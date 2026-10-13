@@ -1,9 +1,9 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useI18n } from "@/components/I18nProvider";
-import { DEFAULT_THEME, THEME_KEY } from "@/lib/theme";
+import { DEFAULT_THEME, THEME_COLORS, THEME_KEY } from "@/lib/theme";
 
 // The theme lives in <html data-theme>, set before paint by the script in the layout
 const subscribe = (cb) => {
@@ -17,6 +17,11 @@ export default function ThemeToggle() {
   const { t } = useI18n();
   const theme = useSyncExternalStore(subscribe, getTheme, () => DEFAULT_THEME);
   const next = theme === "dark" ? "light" : "dark";
+
+  // Browser / system bar in the colour of the header
+  useEffect(() => {
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", THEME_COLORS[theme]);
+  }, [theme]);
 
   function toggle() {
     document.documentElement.dataset.theme = next;

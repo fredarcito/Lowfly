@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { Atkinson_Hyperlegible, Bricolage_Grotesque } from "next/font/google";
 import { APP_NAME, LOCALES, getDictionary, hasLocale } from "@/lib/i18n";
-import { DEFAULT_THEME, themeScript } from "@/lib/theme";
+import { DEFAULT_THEME, THEME_COLORS, themeScript } from "@/lib/theme";
 import "../globals.css";
 
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
@@ -18,6 +18,9 @@ export async function generateMetadata({ params }) {
     title: meta.title,
     description: meta.description,
     applicationName: APP_NAME,
+    // Installed on an iPhone home screen: full screen, the header runs under the status bar (it already
+    // leaves room for it with env(safe-area-inset-top))
+    appleWebApp: { capable: true, title: APP_NAME, statusBarStyle: "black-translucent" },
     openGraph: { siteName: APP_NAME, title: meta.title, description: meta.description, locale: lang },
     alternates: {
       canonical: `/${lang}`,
@@ -26,7 +29,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export const viewport = { width: "device-width", initialScale: 1, viewportFit: "cover" };
+// themeColor: the dark default; ThemeToggle updates it when the theme changes
+export const viewport = { width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: THEME_COLORS[DEFAULT_THEME] };
 
 export default async function RootLayout({ children, params }) {
   const { lang } = await params;

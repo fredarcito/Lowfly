@@ -18,6 +18,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import { useI18n } from "@/components/I18nProvider";
 import { APP_NAME, errorMessage } from "@/lib/i18n";
 import { nextFriday, shift, tomorrow } from "@/lib/dates";
+import { searchFromParams, searchToParams } from "@/lib/share";
 import { cn } from "@/lib/utils";
 
 const RESULTS = { everywhere: EverywhereResults, country: CountryResults, trip: FlexibleResults };
@@ -60,7 +61,18 @@ export default function FlightSearch() {
   useEffect(() => {
     const t = tomorrow();
     const fri = nextFriday();
-    setForm((f) => ({ ...f, origin: savedOrigin(), from: t, to: shift(t, 60), ida: fri, vuelta: shift(fri, 3) }));
+    const defaults = { ...form, origin: savedOrigin(), from: t, to: shift(t, 60), ida: fri, vuelta: shift(fri, 3) };
+
+    // A shared link (?m=…&o=…): its search, run straight away unless its dates have passed
+    const shared = searchFromParams(new URLSearchParams(window.location.search));
+    if (shared) {
+      const next = { ...defaults, ...shared.fields };
+      setForm(next);
+      setMode(shared.mode);
+      if (!shared.stale) search(next, shared.mode);
+      return;
+    }
+    setForm(defaults);
 
     // First visit: the main airport of the visitor's country, or Malta
     if (savedOrigin()) return;
@@ -168,7 +180,9 @@ export default function FlightSearch() {
     if (mode !== "everywhere" && !country) return fail("missingCountry");
 
     setResult({ status: "loading", mode });
-    setQuery({ mode, ...form, weekend: weekend && trip === "return" && mode === "everywhere", originName: airports.list.find((a) => a.code === origin)?.city });
+    setQuery({ mode, ...form, weekend: weekend && trip === "return" && mode === "everywhere" });
+    // The search goes in the URL, so the link can be shared (lib/share)
+    window.history.replaceState(null, "", `?${searchToParams(form, mode)}`);
     setCollapsed(true);
     window.scrollTo({ top: 0, behavior: reducedMotion() ? "auto" : "smooth" });
     try {
@@ -221,7 +235,11 @@ export default function FlightSearch() {
           )}
         >
           <Collapse open={collapsed}>
-            <SearchSummary query={query} onEdit={expand} />
+            <SearchSummary
+              query={query}
+              originName={airports.list.find((a) => a.code === query?.origin)?.city}
+              onEdit={expand}
+            />
           </Collapse>
           <Collapse open={!collapsed}>
             <div className="grid gap-5">

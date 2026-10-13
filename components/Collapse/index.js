@@ -23,7 +23,7 @@ export default function Collapse({ open, className, children }) {
         className
       )}
     >
-      <div className={cn("min-h-0", !(open && settled) && "overflow-hidden")}>{children}</div>
+      <div className={cn("min-h-0 min-w-0", !(open && settled) && "overflow-hidden")}>{children}</div>
     </div>
   );
 }

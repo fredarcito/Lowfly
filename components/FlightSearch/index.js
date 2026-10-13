@@ -42,13 +42,13 @@ const saveOrigin = (code) => {
   } catch {}
 };
 
-// Departure airport on a first visit
+// Departure airport on a first visit, if the visitor's country cannot be worked out (see /api/origin)
 const DEFAULT_ORIGIN = "MLA";
 
 export default function FlightSearch() {
   const { lang, t } = useI18n();
   const [mode, setMode] = useState("everywhere");
-  const [form, setForm] = useState({ origin: DEFAULT_ORIGIN, country: "", from: "", to: "", ida: "", vuelta: "", flex: "2", max: "", trip: "oneway", minN: "2", maxN: "7", weekend: false });
+  const [form, setForm] = useState({ origin: "", country: "", from: "", to: "", ida: "", vuelta: "", flex: "2", max: "", trip: "oneway", minN: "2", maxN: "7", weekend: false });
   const [airports, setAirports] = useState({ status: "loading", list: [] });
   const [countries, setCountries] = useState({ status: "loading", list: [] });
   const [result, setResult] = useState({ status: "idle" });
@@ -60,7 +60,15 @@ export default function FlightSearch() {
   useEffect(() => {
     const t = tomorrow();
     const fri = nextFriday();
-    setForm((f) => ({ ...f, origin: savedOrigin() || DEFAULT_ORIGIN, from: t, to: shift(t, 60), ida: fri, vuelta: shift(fri, 3) }));
+    setForm((f) => ({ ...f, origin: savedOrigin(), from: t, to: shift(t, 60), ida: fri, vuelta: shift(fri, 3) }));
+
+    // First visit: the main airport of the visitor's country, or Malta
+    if (savedOrigin()) return;
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    fetch(`/api/origin?tz=${encodeURIComponent(tz)}`)
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then(({ origin }) => origin, () => DEFAULT_ORIGIN)
+      .then((origin) => setForm((f) => (f.origin ? f : { ...f, origin })));
   }, []);
 
   // Every departure airport, with names in the page language

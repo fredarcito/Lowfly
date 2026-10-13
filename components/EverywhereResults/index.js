@@ -9,9 +9,7 @@ import FailedNote from "@/components/FailedNote";
 import Section from "@/components/Section";
 import NoResults from "@/components/NoResults";
 import { useI18n } from "@/components/I18nProvider";
-import { airlinesOf } from "@/lib/format";
-
-const normalize = (s) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+import { airlinesOf, normalize } from "@/lib/format";
 
 export default function EverywhereResults({ data }) {
   const { t, f: fmt } = useI18n();

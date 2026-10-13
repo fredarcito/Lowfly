@@ -25,10 +25,29 @@ const EMPTY = { everywhere: (d) => !d.results.length, country: (d) => !d.best, t
 
 const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+// The last departure airport is remembered on this device
+const ORIGIN_KEY = "lowfly.origin";
+const savedOrigin = () => {
+  try {
+    return localStorage.getItem(ORIGIN_KEY) || "";
+  } catch {
+    return "";
+  }
+};
+const saveOrigin = (code) => {
+  try {
+    localStorage.setItem(ORIGIN_KEY, code);
+  } catch {}
+};
+
+// Departure airport on a first visit
+const DEFAULT_ORIGIN = "MLA";
+
 export default function FlightSearch() {
   const { lang, t } = useI18n();
   const [mode, setMode] = useState("everywhere");
-  const [form, setForm] = useState({ origin: "MLA", country: "", from: "", to: "", ida: "", vuelta: "", flex: "2", max: "", trip: "oneway", minN: "2", maxN: "7" });
+  const [form, setForm] = useState({ origin: DEFAULT_ORIGIN, country: "", from: "", to: "", ida: "", vuelta: "", flex: "2", max: "", trip: "oneway", minN: "2", maxN: "7" });
+  const [airports, setAirports] = useState({ status: "loading", list: [] });
   const [countries, setCountries] = useState({ status: "loading", list: [] });
   const [result, setResult] = useState({ status: "idle" });
   // While searching and with results, the form folds into a one-line summary of `query`
@@ -39,8 +58,23 @@ export default function FlightSearch() {
   useEffect(() => {
     const t = tomorrow();
     const fri = nextFriday();
-    setForm((f) => ({ ...f, from: t, to: shift(t, 60), ida: fri, vuelta: shift(fri, 3) }));
+    setForm((f) => ({ ...f, origin: savedOrigin() || DEFAULT_ORIGIN, from: t, to: shift(t, 60), ida: fri, vuelta: shift(fri, 3) }));
   }, []);
+
+  // Every departure airport, with names in the page language
+  useEffect(() => {
+    let cancelled = false;
+    fetch(`/api/airports?lang=${lang}`)
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then(({ airports: list }) => {
+        if (cancelled) return;
+        setAirports({ status: "ok", list });
+      })
+      .catch(() => !cancelled && setAirports({ status: "error", list: [] }));
+    return () => {
+      cancelled = true;
+    };
+  }, [lang]);
 
   // Country list, refreshed whenever the departure airport changes
   useEffect(() => {
@@ -67,8 +101,10 @@ export default function FlightSearch() {
     };
   }, [form.origin, lang]);
 
-  const onField = (name, value) =>
-    setForm((f) => ({ ...f, [name]: name === "origin" ? value.trim().toUpperCase() : value }));
+  const onField = (name, value) => {
+    if (name === "origin") saveOrigin(value);
+    setForm((f) => ({ ...f, [name]: value }));
+  };
 
   const changeMode = (m) => {
     setMode(m);
@@ -90,6 +126,8 @@ export default function FlightSearch() {
     e.preventDefault();
     const { origin, country, from, to, ida, vuelta, flex, max, trip, minN, maxN } = form;
 
+    if (!/^[A-Z]{3}$/.test(origin)) return fail("badOrigin");
+
     let params;
     if (mode === "trip") {
       if (!ida || !vuelta || vuelta <= ida) return fail("returnBeforeOut");
@@ -106,7 +144,7 @@ export default function FlightSearch() {
     if (mode !== "everywhere" && !country) return fail("missingCountry");
 
     setResult({ status: "loading", mode });
-    setQuery({ mode, ...form });
+    setQuery({ mode, ...form, originName: airports.list.find((a) => a.code === origin)?.city });
     setCollapsed(true);
     window.scrollTo({ top: 0, behavior: reducedMotion() ? "auto" : "smooth" });
     try {
@@ -163,6 +201,7 @@ export default function FlightSearch() {
               <SearchForm
                 mode={mode}
                 form={form}
+                airports={airports}
                 countries={countries}
                 busy={result.status === "loading"}
                 onField={onField}

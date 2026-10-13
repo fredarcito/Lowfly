@@ -9,7 +9,7 @@ export default function SearchSummary({ query, onEdit }) {
   const { t, f } = useI18n();
   if (!query) return null;
 
-  const { mode, origin, country, from, to, ida, vuelta, flex, max, trip, minN, maxN } = query;
+  const { mode, origin, originName, country, from, to, ida, vuelta, flex, max, trip, minN, maxN } = query;
   const ModeIcon = MODES.find((m) => m.id === mode).icon;
   const parts =
     mode === "trip"
@@ -32,7 +32,7 @@ export default function SearchSummary({ query, onEdit }) {
       <span className="grid min-w-0 flex-1 gap-0.5">
         <span className="flex items-center gap-1.5 font-heading text-base font-semibold">
           <PlaneTakeoff className="size-4 text-muted-foreground" />
-          <span className="tracking-widest">{origin}</span>
+          <span className="truncate">{originName ?? origin}</span>
           <ArrowRight className="size-4 text-muted-foreground" />
           <span className="truncate">{mode === "everywhere" ? t.summary.anywhere : country}</span>
         </span>

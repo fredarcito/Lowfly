@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useSyncExternalStore } from "react";
+import { useState } from "react";
 import { enGB, es } from "react-day-picker/locale";
 import { CalendarDays, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,17 +9,8 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { iso, nightsBetween, parseDay } from "@/lib/dates";
 import { useI18n } from "@/components/I18nProvider";
+import { useDesktop } from "@/lib/media";
 import { cn } from "@/lib/utils";
-
-// Two months side by side only fit from md up; below that the picker is a bottom sheet with one month
-const DESKTOP = "(min-width: 768px)";
-const subscribe = (cb) => {
-  const mq = window.matchMedia(DESKTOP);
-  mq.addEventListener("change", cb);
-  return () => mq.removeEventListener("change", cb);
-};
-const useDesktop = () =>
-  useSyncExternalStore(subscribe, () => window.matchMedia(DESKTOP).matches, () => true);
 
 // A single picker for a date range ("YYYY-MM-DD"). Closes itself once the second day is picked.
 // `unit` decides how the length is counted: "days" for a search range, "nights" for a trip.

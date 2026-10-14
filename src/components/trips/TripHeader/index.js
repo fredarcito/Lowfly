@@ -25,20 +25,23 @@ export default function TripHeader({ trip, onDeleted }) {
           {dates}
           {fare.ret && ` · ${t.units.nights(fare.nights)}`}
         </p>
-        <div className="flex flex-wrap items-center gap-1.5 max-sm:hidden">
+        {/* On phones only the itinerary label shows: the rest is in the trip list */}
+        <div className="flex flex-wrap items-center gap-1.5">
           {trip.booked ? (
-            <TripChip icon={Ticket} className="bg-save/15 text-save">
+            <TripChip icon={Ticket} className="bg-save/15 text-save max-sm:hidden">
               {t.trips.booked}
             </TripChip>
           ) : (
-            <TripChip icon={Bookmark}>{t.trips.saved}</TripChip>
+            <TripChip icon={Bookmark} className="max-sm:hidden">
+              {t.trips.saved}
+            </TripChip>
           )}
-          <TripChip icon={Clock}>
+          <TripChip icon={Clock} className="max-sm:hidden">
             <span className="first-letter:uppercase">{when}</span>
           </TripChip>
           {itinerary && (
             <TripChip icon={Sparkles} className="bg-selected text-primary-ink">
-              {itinerary.source === "ai" ? t.trips.aiBadge : t.trips.sampleBadge}
+              {itinerary.source === "ai" ? t.trips.aiBadge : itinerary.source === "sample-other-city" ? t.trips.sampleOtherBadge : t.trips.sampleBadge}
             </TripChip>
           )}
         </div>

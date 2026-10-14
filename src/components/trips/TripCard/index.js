@@ -10,6 +10,7 @@ import TripPhoto from "@/components/trips/TripPhoto";
 import TripRoute from "@/components/trips/TripRoute";
 import TripStats from "@/components/trips/TripStats";
 import { useI18n } from "@/context/i18n";
+import { useLocalizedTrip } from "@/hooks/useLocalizedTrip";
 import { useTripWhen } from "@/hooks/useTripWhen";
 import { airlinesOf } from "@/utils/format";
 import { ROUTES } from "@/constants/routes";
@@ -40,8 +41,9 @@ function TripBadges({ trip }) {
 // A saved trip in the list. Phone: photo on top, then the trip, its figures and the actions.
 // Tablet and up: photo on the left; trip and actions on top, figures below.
 // The whole card opens the trip; the button and the ⋯ menu sit above that link.
-export default function TripCard({ trip }) {
+export default function TripCard({ trip: savedTrip }) {
   const { lang, t } = useI18n();
+  const trip = useLocalizedTrip(savedTrip);
   const { fare, origin } = trip;
   const href = ROUTES.trip(lang, trip.id);
 

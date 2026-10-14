@@ -3,11 +3,15 @@
 import { useI18n } from "@/context/i18n";
 import { cn } from "@/utils/cn";
 
-// "Day 1 · Mon 19 Oct" tabs; they scroll sideways when they do not fit
+// "Day 1 · Mon 19 Oct" tabs; they scroll sideways when they do not fit, and stay at the top while the day scrolls
 export default function ItineraryDayTabs({ days, picked, onPick }) {
   const { t, f } = useI18n();
   return (
-    <div role="tablist" aria-label={t.trips.itinerary} className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 scrollbar-none sm:mx-0 sm:px-0">
+    <div
+      role="tablist"
+      aria-label={t.trips.itinerary}
+      className="sticky top-0 z-20 -mx-4 flex gap-2 overflow-x-auto bg-background/90 px-4 py-1.5 backdrop-blur-md sm:py-2 scrollbar-none sm:-mx-6 sm:px-6"
+    >
       {days.map((day, index) => (
         <button
           key={day.date}
@@ -16,7 +20,8 @@ export default function ItineraryDayTabs({ days, picked, onPick }) {
           aria-selected={index === picked}
           onClick={() => onPick(index)}
           className={cn(
-            "grid min-w-26 flex-1 shrink-0 justify-items-center rounded-xl border px-4 py-2 transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
+            // Phone: one compact line ("Day 1 · Fri 16"); tablet and up: two lines
+            "flex shrink-0 items-baseline justify-center gap-1.5 rounded-lg border px-3 py-1.5 whitespace-nowrap transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none sm:grid sm:min-w-26 sm:flex-1 sm:justify-items-center sm:gap-0 sm:rounded-xl sm:px-4 sm:py-2",
             index === picked ? "border-primary bg-primary text-primary-foreground shadow-sm" : "bg-card hover:bg-muted"
           )}
         >

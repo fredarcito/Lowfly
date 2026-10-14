@@ -271,6 +271,7 @@ const es = {
       checked: (kg) => `Facturada ${kg} kg`,
     },
     bagsFinalPrice: (airlines) => `Precio final y condiciones en ${airlines}`,
+    bagsFinalPriceShort: (airlines) => `Precio final en ${airlines}.`,
     bagsHint: "Estimado, desde. El precio solo incluye un bolso pequeño bajo el asiento: las maletas se pagan aparte y su precio cambia según la ruta y la fecha.",
     noTimeOff: "Sin faltar al trabajo",
     noTimeOffHint: "Sales el viernes desde las 17:00 o el sábado y vuelves el domingo",

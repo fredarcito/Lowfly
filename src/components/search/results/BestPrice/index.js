@@ -60,7 +60,7 @@ const BestPrice = ({ price, cur, title, detail, links = [], priceNote, fare, ori
             <p className="text-muted-foreground first-letter:uppercase">
               {priceNote ?? t.form.oneway} · {t.results.oneAdult}
             </p>
-            <BagEstimate fare={fare} />
+            <BagEstimate fare={fare} large className="mt-4" />
           </div>
         )}
         {links.length > 0 && (

@@ -10,7 +10,8 @@ import { cn } from "@/utils/cn";
 // What a bag adds to a fare, so its real cost is no surprise when booking (the fares only include a small
 // bag under the seat): "Estimated extra baggage · Cabin 10 kg +€12 · Checked 20 kg +€21", for both flights
 // on a return trip, and where the final price is. The hint says they are estimates.
-const BagEstimate = ({ fare, className }) => {
+// `large`: for the highlighted card (bigger text, prices to the edge, a line above the note).
+const BagEstimate = ({ fare, large = false, className }) => {
   const { t, f } = useI18n();
   const extras = Object.keys(BAGS)
     .map((kind) => ({ kind, extra: bagExtra(fare, kind) }))
@@ -19,12 +20,15 @@ const BagEstimate = ({ fare, className }) => {
   const wholeEuros = (amount) => f.money(Math.round(amount), fare.cur, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
 
   return (
-    <div className={cn("grid content-start gap-1 text-sm text-muted-foreground", className)} title={t.results.bagsHint}>
-      <p className="flex items-center gap-1.5 text-foreground">
-        <Luggage className="size-4 shrink-0 text-muted-foreground" />
+    <div
+      className={cn("grid content-start text-muted-foreground", large ? "gap-2.5" : "gap-1 text-sm", className)}
+      title={t.results.bagsHint}
+    >
+      <p className={cn("flex items-center text-foreground", large ? "gap-2.5" : "gap-1.5")}>
+        <Luggage className={cn("shrink-0 text-muted-foreground", large ? "size-5" : "size-4")} />
         {t.results.bagsTitle}
       </p>
-      <dl className="grid max-w-72 grid-cols-[1fr_auto] gap-x-6 gap-y-0.5 pl-5.5">
+      <dl className={cn("grid grid-cols-[1fr_auto] gap-x-6", large ? "gap-y-1.5 pl-7.5" : "max-w-72 gap-y-0.5 pl-5.5")}>
         {extras.map(({ kind, extra }) => (
           <div key={kind} className="contents">
             <dt className="whitespace-nowrap">{t.results.bag[kind](BAGS[kind].kg)}</dt>
@@ -32,9 +36,9 @@ const BagEstimate = ({ fare, className }) => {
           </div>
         ))}
       </dl>
-      <p className="pl-5.5 text-xs">
+      <p className={cn("text-xs", large ? "ml-7.5 border-t pt-2.5" : "pl-5.5")}>
         {fare.ret && `${t.results.bagsBothFlights} `}
-        {t.results.bagsFinalPrice(airlineNames(fare))}
+        {large ? t.results.bagsFinalPriceShort(airlineNames(fare)) : t.results.bagsFinalPrice(airlineNames(fare))}
       </p>
       <span className="sr-only">{t.results.bagsHint}</span>
     </div>

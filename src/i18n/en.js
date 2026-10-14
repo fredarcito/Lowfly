@@ -271,6 +271,7 @@ const en = {
       checked: (kg) => `Checked ${kg} kg`,
     },
     bagsFinalPrice: (airlines) => `Final price and conditions at ${airlines}`,
+    bagsFinalPriceShort: (airlines) => `Final price at ${airlines}.`,
     bagsHint: "An estimate, from. The fare only includes a small bag under the seat: bags cost extra and their price changes with the route and the date.",
     noTimeOff: "No time off needed",
     noTimeOffHint: "Leave Friday from 17:00 or Saturday, back on Sunday",

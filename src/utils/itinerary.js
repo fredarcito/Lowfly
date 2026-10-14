@@ -15,7 +15,7 @@ const STREET_FACTOR = 1.3;
 const WALKING_KMH = 4.8;
 
 // Distance in km between two places (haversine)
-function km(from, to) {
+export function km(from, to) {
   const radians = Math.PI / 180;
   const haversine =
     Math.sin(((to.lat - from.lat) * radians) / 2) ** 2 +

@@ -1,21 +1,24 @@
 "use client";
 
-import { Gauge, Sparkles, TrainFront, Utensils } from "lucide-react";
+import { CircleAlert, Gauge, Loader2, Sparkles, TrainFront, Utensils } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PreferencePicker from "@/components/trips/itinerary/PreferencePicker";
 import { useI18n } from "@/context/i18n";
+import { errorMessage } from "@/i18n";
 import { useItineraryPreferences } from "@/hooks/useItineraryPreferences";
 import { INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
 
 // No itinerary yet: what the AI makes, the visitor's preferences and the button to create it.
 // Same layout as the search form: labelled fields in equal columns, then a note and the button.
-export default function CreateItinerary({ trip, onCreate }) {
+// `creation`: { status: "idle" | "creating" | "error", error } while the AI works on it
+export default function CreateItinerary({ trip, onCreate, creation }) {
   const { t } = useI18n();
   const { preferences, setPace, setTransport, toggleInterest } = useItineraryPreferences(trip);
   const { fare } = trip;
   const nights = fare.ret ? fare.nights : 0;
   const labels = t.trips.preferences;
   const optionsOf = (ids, names) => ids.map((id) => ({ id, label: names[id] }));
+  const creating = creation.status === "creating";
 
   return (
     <section className="grid gap-5 rounded-xl bg-card p-4 ring-1 ring-foreground/10 sm:p-6">
@@ -27,7 +30,7 @@ export default function CreateItinerary({ trip, onCreate }) {
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-3">
+      <fieldset disabled={creating} className="grid gap-4 disabled:opacity-60 sm:grid-cols-3">
         <PreferencePicker
           id="pace"
           icon={Gauge}
@@ -52,12 +55,25 @@ export default function CreateItinerary({ trip, onCreate }) {
           value={preferences.transport}
           onChange={setTransport}
         />
-      </div>
+      </fieldset>
+
+      {creation.status === "error" && (
+        <p role="alert" className="flex gap-2 rounded-lg bg-destructive/10 px-3 py-2.5 text-sm text-destructive">
+          <CircleAlert className="mt-0.5 size-4 shrink-0" />
+          <span>
+            {errorMessage(t, creation.error.code, creation.error.params)}
+            {creation.error.retry && ` ${t.errors.retry}`}
+          </span>
+        </p>
+      )}
 
       <div className="flex flex-col gap-3 border-t pt-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm text-muted-foreground">{t.trips.aiSampleForNow}</p>
-        <Button size="lg" className="h-11 shrink-0 px-6 text-base font-bold" onClick={() => onCreate(preferences)}>
-          <Sparkles /> {t.trips.aiGenerate}
+        <p className="text-sm text-muted-foreground" aria-live="polite">
+          {creating ? t.trips.aiCreating : t.trips.aiNote}
+        </p>
+        <Button size="lg" disabled={creating} className="h-11 shrink-0 px-6 text-base font-bold" onClick={() => onCreate(preferences)}>
+          {creating ? <Loader2 className="animate-spin" /> : <Sparkles />}
+          {creating ? t.trips.aiGenerating : t.trips.aiGenerate}
         </Button>
       </div>
     </section>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Ellipsis, ExternalLink, Ticket, Trash2 } from "lucide-react";
+import { Ellipsis, ExternalLink, RefreshCw, Ticket, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -9,16 +9,22 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import ConfirmDialog from "@/components/shared/ConfirmDialog";
 import DeleteTripDialog from "@/components/trips/DeleteTripDialog";
 import { useI18n } from "@/context/i18n";
 import { useDisclosure } from "@/hooks/useDisclosure";
 import { useTripActions } from "@/hooks/useTripActions";
+import { updateTrip } from "@/store/trips";
 
-// ⋯ quick actions on a trip: mark as booked, book with the airline, delete (asks first; then `onDeleted`)
+// ⋯ quick actions on a trip: mark as booked, book with the airline, redo the itinerary and delete
+// (both ask first; after deleting, `onDeleted`)
 export default function TripMenu({ trip, onDeleted }) {
   const { t } = useI18n();
   const { toggleBooked, bookingLinks } = useTripActions(trip);
   const deleteDialog = useDisclosure();
+  const redoDialog = useDisclosure();
+  // Back to the "create" card, keeping the preferences
+  const redoItinerary = () => updateTrip(trip.id, { itinerary: null, visited: [] });
   return (
     <>
       <DropdownMenu>
@@ -38,12 +44,26 @@ export default function TripMenu({ trip, onDeleted }) {
               </a>
             </DropdownMenuItem>
           ))}
+          {trip.itinerary && (
+            <DropdownMenuItem onSelect={redoDialog.show}>
+              <RefreshCw /> {t.trips.redoItinerary}
+            </DropdownMenuItem>
+          )}
           <DropdownMenuSeparator />
           <DropdownMenuItem variant="destructive" onSelect={deleteDialog.show}>
             <Trash2 /> {t.trips.remove}
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
+      <ConfirmDialog
+        open={redoDialog.open}
+        onOpenChange={redoDialog.setOpen}
+        icon={RefreshCw}
+        title={t.trips.redoTitle}
+        description={t.trips.redoText}
+        confirmLabel={t.trips.redoConfirm}
+        onConfirm={redoItinerary}
+      />
       <DeleteTripDialog trip={trip} open={deleteDialog.open} onOpenChange={deleteDialog.setOpen} onDeleted={onDeleted} />
     </>
   );

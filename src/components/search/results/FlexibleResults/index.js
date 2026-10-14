@@ -10,11 +10,11 @@ import { useI18n } from "@/context/i18n";
 export default function FlexibleResults({ data }) {
   const { t, f } = useI18n();
   const r = t.results;
-  const { origin, country, ida, vuelta, outDays, retDays, combos, base, top, alternatives, alternativesKind, min, max, failed } = data;
+  const { origin, country, city, ida, vuelta, outDays, retDays, combos, base, top, alternatives, alternativesKind, min, max, failed } = data;
 
   if (!top) {
     return (
-      <NoResults failed={failed}>{r.noFlightsTrip(country)}</NoResults>
+      <NoResults failed={failed}>{r.noFlightsTrip(city ?? country)}</NoResults>
     );
   }
 

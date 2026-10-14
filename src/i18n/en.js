@@ -4,13 +4,13 @@ const en = {
   meta: {
     title: "Lowfly · Cheap flights across Europe",
     description:
-      "Compare Ryanair and Wizz Air fares from your airport: the cheapest destinations in Europe, the best day to fly to a country and flexible dates.",
+      "Compare Ryanair and Wizz Air fares from your airport: the cheapest destinations in Europe, the best day to fly to a country or city and flexible dates.",
   },
   header: {
     kicker: "Ryanair + Wizz Air · live prices",
     // Two lines: the title is shown with white-space: pre-line
     title: "Don't pick a destination.\nPick the best price.",
-    intro: "Find cheap flights within the dates you can travel: anywhere, to a country, or shifting your trip a few days.",
+    intro: "Find cheap flights within the dates you can travel: anywhere, to a country or city, or shifting your trip a few days.",
     photoCreditDay: "Photo: Positano by day, by Nicola Cerroni (CC BY-SA 4.0), via Wikimedia Commons",
     photoCreditNight: "Photo: Positano at dusk, by JeCCo (CC BY 4.0), via Wikimedia Commons",
     nav: "Main navigation",
@@ -27,8 +27,8 @@ const en = {
       hint: "Every destination sorted by price. Ideal when all that matters is flying cheap.",
     },
     country: {
-      label: "To a country",
-      short: "Country",
+      label: "To a destination",
+      short: "Destination",
       hint: "You know where: we show you the cheapest day and a price calendar.",
     },
     trip: {
@@ -59,11 +59,11 @@ const en = {
     maxNights: "Maximum nights",
     origin: "From",
     originHint: "City, airport or code",
-    country: "Destination country",
+    country: "Destination",
     countryHint: (origin) => `With direct flights from ${origin}`,
-    countryLoading: "Loading countries…",
+    countryLoading: "Loading destinations…",
     countryError: "Couldn't load destinations",
-    countryChoose: "Choose a country",
+    countryChoose: "Choose a country or city",
     airports: (n) => plural(n, "airport", "airports"),
     datesOneway: "When can you leave?",
     datesReturn: "Between which dates are you travelling?",
@@ -222,6 +222,12 @@ const en = {
     error: "Could not load the airports. Try again in a few minutes.",
     none: (q) => `No airport matches “${q}”.`,
   },
+  destination: {
+    title: "Where are you going?",
+    search: "Search country, city or airport",
+    wholeCountry: "The whole country",
+    none: (q) => `No destination matches “${q}”.`,
+  },
   picker: {
     choose: "Choose dates",
     firstDay: "Choose the first day",
@@ -273,8 +279,8 @@ const en = {
     dayReturn: (date) => `back on ${date}`,
     otherDates: "Other cheap dates",
     byAirport: "By airport",
-    byAirportNoteOneway: "The cheapest day for each airport in the country.",
-    byAirportNoteReturn: "The cheapest return trip to each airport in the country.",
+    byAirportNoteOneway: "The cheapest day for each airport at your destination.",
+    byAirportNoteReturn: "The cheapest return trip to each airport at your destination.",
     bestDayMeta: (d) => `Best day: ${d}`,
     incomplete: "Incomplete results",
     failed: (names, many) =>
@@ -322,7 +328,7 @@ const en = {
     retry: "Please try again in a few minutes.",
     badOrigin: "Choose the departure airport.",
     missingDate: "A date is missing.",
-    missingCountry: "Choose a country from the list.",
+    missingCountry: "Choose a destination from the list.",
     rangeOrder: "The end date must be the same as or after the start date.",
     rangeTooLong: ({ max }) => `Choose a range of ${max} days at most.`,
     stayInvalid: "The stay must be 1 to 30 nights, with the minimum no greater than the maximum.",
@@ -330,7 +336,7 @@ const en = {
     returnBeforeOut: "The return must be after the outbound flight.",
     noAirlines: "The airlines didn't respond.",
     noRoutes: ({ origin, country }) => `There are no flights from ${origin} to ${country}.`,
-    noPrices: "The airlines returned no prices for that country.",
+    noPrices: "The airlines returned no prices for that destination.",
     outPast: "The outbound date has already passed.",
     aiUnavailable: "We couldn't create the itinerary.",
     aiBusy: "The AI is overloaded right now.",

@@ -31,12 +31,30 @@ const RESULTS = { everywhere: EverywhereResults, country: CountryResults, trip: 
 // No results: the form opens again so the search can be changed
 const EMPTY = { everywhere: (d) => !d.results.length, country: (d) => !d.best, trip: (d) => !d.top };
 
+// Destinations grouped by country, then by city (every airport of a city together), sorted by name:
+// [{ name, countryCode, codes, cities: [{ name, codes }] }]
+function countriesOf(destinations, lang) {
+  const byCountry = new Map();
+  for (const destination of destinations) {
+    if (!byCountry.has(destination.country))
+      byCountry.set(destination.country, { name: destination.country, countryCode: destination.countryCode, codes: [], cities: new Map() });
+    const country = byCountry.get(destination.country);
+    country.codes.push(destination.code);
+    if (!country.cities.has(destination.city)) country.cities.set(destination.city, { name: destination.city, codes: [] });
+    country.cities.get(destination.city).codes.push(destination.code);
+  }
+  const byName = (first, second) => first.name.localeCompare(second.name, lang);
+  return [...byCountry.values()]
+    .map((country) => ({ ...country, cities: [...country.cities.values()].sort(byName) }))
+    .sort(byName);
+}
+
 const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 export default function FlightSearch() {
   const { lang, t } = useI18n();
   const [mode, setMode] = useState("everywhere");
-  const [form, setForm] = useState({ origin: "", country: "", from: "", to: "", ida: "", vuelta: "", flex: "2", max: "", trip: "oneway", minN: "2", maxN: "7", weekend: false });
+  const [form, setForm] = useState({ origin: "", country: "", city: "", from: "", to: "", ida: "", vuelta: "", flex: "2", max: "", trip: "oneway", minN: "2", maxN: "4", weekend: false });
   const [countries, setCountries] = useState({ status: "loading", list: [] });
   const [result, setResult] = useState({ status: "idle" });
   // While searching and with results, the form folds into a one-line summary of `query`
@@ -70,7 +88,7 @@ export default function FlightSearch() {
   // Every departure airport, with names in the page language (shared with the result cards)
   const airports = useAirports(lang);
 
-  // Country list, refreshed whenever the departure airport changes
+  // Destinations (countries and their cities), refreshed whenever the departure airport changes
   useEffect(() => {
     if (!/^[A-Z]{3}$/.test(form.origin)) return;
     const request = new AbortController();
@@ -78,17 +96,14 @@ export default function FlightSearch() {
 
     getDestinations(form.origin, lang, { signal: request.signal })
       .then((destinations) => {
-        const airportsPerCountry = {};
-        for (const destination of destinations)
-          airportsPerCountry[destination.country] = (airportsPerCountry[destination.country] || 0) + 1;
-        const list = Object.keys(airportsPerCountry)
-          .sort((first, second) => first.localeCompare(second, lang))
-          .map((name) => ({ name, count: airportsPerCountry[name] }));
+        const list = countriesOf(destinations, lang);
         setCountries({ status: list.length ? "ok" : "error", list });
-        setForm((current) => ({
-          ...current,
-          country: list.some((country) => country.name === current.country) ? current.country : list[0]?.name || "",
-        }));
+        // Keeps the destination if this airport also flies there (the city too, or else the whole country)
+        setForm((current) => {
+          const country = list.find((candidate) => candidate.name === current.country);
+          if (!country) return { ...current, country: list[0]?.name || "", city: "" };
+          return { ...current, city: country.cities.some((city) => city.name === current.city) ? current.city : "" };
+        });
       })
       .catch((error) => !isCancelled(error) && setCountries({ status: "error", list: [] }));
 
@@ -130,17 +145,17 @@ export default function FlightSearch() {
   }
 
   async function search(form, mode) {
-    const { origin, country, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend } = form;
+    const { origin, country, city, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend } = form;
 
     if (!/^[A-Z]{3}$/.test(origin)) return fail("badOrigin");
 
     let params;
     if (mode === "trip") {
       if (!ida || !vuelta || vuelta <= ida) return fail("returnBeforeOut");
-      params = { origin, country, ida, vuelta, flex };
+      params = { origin, country, ...(city && { city }), ida, vuelta, flex };
     } else {
       if (!from || !to || from > to) return fail("rangeOrder");
-      params = { origin, from, to, ...(max && { max }), ...(mode === "country" && { country }) };
+      params = { origin, from, to, ...(max && { max }), ...(mode === "country" && { country, ...(city && { city }) }) };
       if (trip === "return" && weekend && mode === "everywhere") {
         Object.assign(params, { trip, weekend: 1 });
       } else if (trip === "return") {

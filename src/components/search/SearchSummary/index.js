@@ -13,9 +13,10 @@ export default function SearchSummary({ query, originName, onEdit }) {
   const [copied, setCopied] = useState(false);
   if (!query) return null;
 
-  const { mode, origin, country, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend } = query;
+  const { mode, origin, country, city, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend } = query;
   const ModeIcon = MODES.find((m) => m.id === mode).icon;
-  const route = `${originName ?? origin} → ${mode === "everywhere" ? t.summary.anywhere : country}`;
+  const destination = mode === "everywhere" ? t.summary.anywhere : city || country;
+  const route = `${originName ?? origin} → ${destination}`;
   const parts =
     mode === "trip"
       ? [`${f.fmtDay(ida)} → ${f.fmtDay(vuelta)}`, t.form.flexOption(Number(flex))]
@@ -59,7 +60,7 @@ export default function SearchSummary({ query, originName, onEdit }) {
             <PlaneTakeoff className="size-4 shrink-0 text-muted-foreground" />
             <span className="truncate">{originName ?? origin}</span>
             <ArrowRight className="size-4 shrink-0 text-muted-foreground" />
-            <span className="truncate">{mode === "everywhere" ? t.summary.anywhere : country}</span>
+            <span className="truncate">{destination}</span>
           </span>
           <span className="truncate text-sm text-muted-foreground">{detail}</span>
         </span>

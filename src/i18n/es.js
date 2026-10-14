@@ -4,13 +4,13 @@ const es = {
   meta: {
     title: "Lowfly · Vuelos baratos por Europa",
     description:
-      "Compara precios de Ryanair y Wizz Air desde tu aeropuerto: los destinos más baratos de Europa, el mejor día para ir a un país y fechas flexibles.",
+      "Compara precios de Ryanair y Wizz Air desde tu aeropuerto: los destinos más baratos de Europa, el mejor día para ir a un país o ciudad y fechas flexibles.",
   },
   header: {
     kicker: "Ryanair + Wizz Air · precios en tiempo real",
     // Two lines: the title is shown with white-space: pre-line
     title: "No elijas destino.\nElige el mejor precio.",
-    intro: "Busca vuelos baratos dentro de las fechas en las que puedes viajar: a cualquier sitio, a un país o moviendo tu escapada unos días.",
+    intro: "Busca vuelos baratos dentro de las fechas en las que puedes viajar: a cualquier sitio, a un país o ciudad, o moviendo tu escapada unos días.",
     photoCreditDay: "Foto: Positano de día, de Nicola Cerroni (CC BY-SA 4.0), vía Wikimedia Commons",
     photoCreditNight: "Foto: Positano al anochecer, de JeCCo (CC BY 4.0), vía Wikimedia Commons",
     nav: "Navegación principal",
@@ -27,8 +27,8 @@ const es = {
       hint: "Todos los destinos ordenados por precio. Ideal si lo que importa es irte barato.",
     },
     country: {
-      label: "A un país",
-      short: "Un país",
+      label: "A un destino",
+      short: "Destino",
       hint: "Ya sabes adónde: te enseñamos el día más barato y un calendario de precios.",
     },
     trip: {
@@ -59,11 +59,11 @@ const es = {
     maxNights: "Máximo de noches",
     origin: "Desde",
     originHint: "Ciudad, aeropuerto o código",
-    country: "País de destino",
+    country: "Destino",
     countryHint: (origin) => `Con vuelo directo desde ${origin}`,
-    countryLoading: "Cargando países…",
+    countryLoading: "Cargando destinos…",
     countryError: "No se pudieron cargar los destinos",
-    countryChoose: "Elige un país",
+    countryChoose: "Elige país o ciudad",
     airports: (n) => plural(n, "aeropuerto", "aeropuertos"),
     datesOneway: "¿Cuándo puedes salir?",
     datesReturn: "¿Entre qué fechas viajas?",
@@ -222,6 +222,12 @@ const es = {
     error: "No se pudieron cargar los aeropuertos. Vuelve a intentarlo en unos minutos.",
     none: (q) => `Ningún aeropuerto coincide con «${q}».`,
   },
+  destination: {
+    title: "¿Adónde vas?",
+    search: "Busca país, ciudad o aeropuerto",
+    wholeCountry: "Todo el país",
+    none: (q) => `Ningún destino coincide con «${q}».`,
+  },
   picker: {
     choose: "Elige fechas",
     firstDay: "Elige el primer día",
@@ -274,8 +280,8 @@ const es = {
     dayReturn: (date) => `vuelta el ${date}`,
     otherDates: "Otras fechas baratas",
     byAirport: "Por aeropuerto",
-    byAirportNoteOneway: "El día más barato para cada aeropuerto del país.",
-    byAirportNoteReturn: "La ida y vuelta más barata a cada aeropuerto del país.",
+    byAirportNoteOneway: "El día más barato para cada aeropuerto del destino.",
+    byAirportNoteReturn: "La ida y vuelta más barata a cada aeropuerto del destino.",
     bestDayMeta: (d) => `Mejor día: ${d}`,
     incomplete: "Resultados incompletos",
     failed: (names, many) =>
@@ -324,7 +330,7 @@ const es = {
     retry: "Vuelve a intentarlo en unos minutos.",
     badOrigin: "Elige el aeropuerto de salida.",
     missingDate: "Falta alguna fecha.",
-    missingCountry: "Elige un país de la lista.",
+    missingCountry: "Elige un destino de la lista.",
     rangeOrder: "La fecha final tiene que ser igual o posterior a la inicial.",
     rangeTooLong: ({ max }) => `Elige un rango de ${max} días como máximo.`,
     stayInvalid: "La estancia tiene que ser de 1 a 30 noches, con el mínimo menor o igual que el máximo.",
@@ -332,7 +338,7 @@ const es = {
     returnBeforeOut: "La vuelta tiene que ser posterior a la ida.",
     noAirlines: "Las aerolíneas no respondieron.",
     noRoutes: ({ origin, country }) => `No hay vuelos desde ${origin} a ${country}.`,
-    noPrices: "Las aerolíneas no devolvieron precios para ese país.",
+    noPrices: "Las aerolíneas no devolvieron precios para ese destino.",
     outPast: "La fecha de ida ya ha pasado.",
     aiUnavailable: "No pudimos crear el itinerario.",
     aiBusy: "La IA está saturada ahora mismo.",

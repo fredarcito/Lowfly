@@ -10,11 +10,13 @@ import { airlinesOf } from "@/utils/format";
 
 export default function CountryResults({ data }) {
   const { t, f: fmt } = useI18n();
-  const { origin, roundTrip, country, from, to, months, byDay, best, others, airports, min, max, failed } = data;
+  const { origin, roundTrip, country, city, from, to, months, byDay, best, others, airports, min, max, failed } = data;
   const priceNote = roundTrip ? t.results.roundTrip : undefined;
+  // A city search (Roma) or the whole country (Italia)
+  const place = city ?? country;
   if (!best) {
     return (
-      <NoResults failed={failed}>{t.results.noFlightsCountry(country)}</NoResults>
+      <NoResults failed={failed}>{t.results.noFlightsCountry(place)}</NoResults>
     );
   }
 
@@ -35,7 +37,7 @@ export default function CountryResults({ data }) {
 
       <Section
         title={t.results.calendar}
-        note={roundTrip ? t.results.calendarNoteReturn(country) : t.results.calendarNoteOneway(country)}
+        note={roundTrip ? t.results.calendarNoteReturn(place) : t.results.calendarNoteOneway(place)}
         action={
           <HeatLegend
             min={min}

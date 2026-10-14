@@ -4,10 +4,10 @@ import { ArrowLeftRight, ArrowRight, Loader2, Luggage, Search } from "lucide-rea
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Toggle } from "@/components/ui/toggle";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import AirportField from "@/components/search/AirportField";
+import DestinationField from "@/components/search/DestinationField";
 import DateRangeField from "@/components/search/DateRangeField";
 import { useI18n } from "@/context/i18n";
 
@@ -87,7 +87,6 @@ export default function SearchForm({ mode, form, airports, countries, busy, onFi
   const { t } = useI18n();
   const show = (...modes) => modes.includes(mode);
   const roundTrip = form.trip === "return";
-  const countryPlaceholder = { loading: t.form.countryLoading, error: t.form.countryError }[countries.status] || t.form.countryChoose;
 
   return (
     <form onSubmit={onSubmit} className="grid gap-5">
@@ -103,23 +102,15 @@ export default function SearchForm({ mode, form, airports, countries, busy, onFi
             label={t.form.country}
             hint={t.form.countryHint(airports.list.find((a) => a.code === form.origin)?.name ?? form.origin)}
             className="lg:col-span-3">
-            <Select
-              value={form.country || undefined}
-              onValueChange={(v) => onField("country", v)}
-              disabled={countries.status !== "ok"}
-            >
-              <SelectTrigger id="country" className="h-11! w-full min-w-0 text-base md:text-sm">
-                <SelectValue placeholder={countryPlaceholder}>{form.country}</SelectValue>
-              </SelectTrigger>
-              <SelectContent position="popper" className="max-h-80">
-                {countries.list.map((c) => (
-                  <SelectItem key={c.name} value={c.name}>
-                    {c.name}
-                    <span className="text-muted-foreground">· {t.form.airports(c.count)}</span>
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <DestinationField
+              id="country"
+              value={{ country: form.country, city: form.city }}
+              countries={countries}
+              onChange={({ country, city }) => {
+                onField("country", country);
+                onField("city", city);
+              }}
+            />
           </Field>
         )}
 

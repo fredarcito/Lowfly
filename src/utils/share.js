@@ -1,4 +1,5 @@
 // A search in the URL, so it can be shared: /es?m=everywhere&o=MLA&from=2026-11-01&to=2026-11-30&trip=return&wk=1
+// (to a country: c=Italia, and to one of its cities as well: ci=Roma)
 import { isDay, tomorrow } from "@/utils/dates";
 
 const MODES = ["everywhere", "country", "trip"];
@@ -6,6 +7,7 @@ const MODES = ["everywhere", "country", "trip"];
 export function searchToParams(form, mode) {
   const params = new URLSearchParams({ m: mode, o: form.origin });
   if (mode !== "everywhere" && form.country) params.set("c", form.country);
+  if (mode !== "everywhere" && form.country && form.city) params.set("ci", form.city);
   if (mode === "trip") {
     params.set("ida", form.ida);
     params.set("vuelta", form.vuelta);
@@ -36,7 +38,10 @@ export function searchFromParams(params) {
 
   const first = tomorrow();
   const fields = { origin };
-  if (mode !== "everywhere" && params.get("c")) fields.country = params.get("c");
+  if (mode !== "everywhere" && params.get("c")) {
+    fields.country = params.get("c");
+    fields.city = params.get("ci") || "";
+  }
 
   if (mode === "trip") {
     const [ida, vuelta] = [params.get("ida"), params.get("vuelta")];

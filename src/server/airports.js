@@ -13,7 +13,27 @@ export async function getAirports(lang = "es") {
     else byCode.set(a.code, { ...a, airlines: [airline] });
   }
   if (!byCode.size) throw new Error("No airline returned its airports");
-  return { airports: [...byCode.values()] };
+  return { airports: withCities([...byCode.values()]) };
+}
+
+// Wizz names its cities after the airport ("Roma Fiumicino", "Londres Gatwick", "París-Orly", "Salerno (Nápoles)"),
+// Ryanair after the city ("Roma"). A name that starts with another city of the same country becomes that city,
+// so every airport of a city can be searched together.
+function withCities(airports) {
+  const citiesByCountry = new Map();
+  for (const airport of airports) {
+    airport.city = airport.city.replace(/\s*\(.*\)$/, "").trim();
+    if (!citiesByCountry.has(airport.countryCode)) citiesByCountry.set(airport.countryCode, new Set());
+    citiesByCountry.get(airport.countryCode).add(airport.city);
+  }
+  for (const airport of airports) {
+    const cities = [...citiesByCountry.get(airport.countryCode)];
+    const city = cities
+      .filter((other) => airport.city.startsWith(other) && /[\s-]/.test(airport.city.charAt(other.length)))
+      .sort((first, second) => first.length - second.length)[0];
+    if (city) airport.city = city;
+  }
+  return airports;
 }
 
 // Departure airport for a first visit: the main airport of the visitor's country if we fly from it,

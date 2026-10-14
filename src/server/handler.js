@@ -21,6 +21,9 @@ export function country(v) {
   return v;
 }
 
+// Optional city inside the country (?city=Roma); null searches the whole country
+export const city = (v) => v?.trim().slice(0, 80) || null;
+
 export function range(from, to, maxDays) {
   if (to < from) throw badRequest("rangeOrder");
   if (nightsBetween(from, to) > maxDays) throw badRequest("rangeTooLong", { max: maxDays });
@@ -31,7 +34,7 @@ export const maxPrice = (v) => Number(v) || Infinity;
 // Language for country and city names (?lang=en)
 export const lang = (p) => (hasLocale(p.get("lang")) ? p.get("lang") : DEFAULT_LOCALE);
 
-// Stay for a return trip (trip=return&minN=2&maxN=7). Returns null for one way.
+// Stay for a return trip (trip=return&minN=2&maxN=4). Returns null for one way.
 // With weekend=1, the stay is a weekend away (lib/weekend) instead of minN to maxN nights.
 export function stay(p, from, to) {
   if (p.get("trip") !== "return") return null;

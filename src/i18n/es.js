@@ -183,7 +183,7 @@ const es = {
       "Contando cuántas fotos caben en tu móvil…",
     ],
     aiNote: "Lo crea la IA con tus preferencias. Comprueba horarios y precios antes de ir.",
-    aiCreating: "Creando tu itinerario… puede tardar hasta un minuto.",
+    aiCreating: "Creando tu itinerario… puede tardar un par de minutos.",
     aiGenerating: "Creando…",
     preferences: {
       pace: "Ritmo",

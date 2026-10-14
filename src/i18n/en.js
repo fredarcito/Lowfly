@@ -183,7 +183,7 @@ const en = {
       "Counting how many photos fit on your phone…",
     ],
     aiNote: "Made by AI with your preferences. Check opening hours and prices before you go.",
-    aiCreating: "Creating your itinerary… it can take up to a minute.",
+    aiCreating: "Creating your itinerary… it can take a couple of minutes.",
     aiGenerating: "Creating…",
     preferences: {
       pace: "Pace",

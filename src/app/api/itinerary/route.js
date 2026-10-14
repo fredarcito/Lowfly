@@ -6,8 +6,8 @@ import { isDay } from "@/utils/dates";
 import { hasLocale } from "@/i18n/config";
 import { CHECK_IN_TIMES, DEFAULT_PREFERENCES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
 
-// A long itinerary can take the model a while
-export const maxDuration = 120;
+// A long itinerary can take a few minutes: the model (Claude when Gemini is busy) and checking every place
+export const maxDuration = 300;
 
 // Each visitor may create a few itineraries an hour (the AI costs money per call)
 const PER_HOUR = 5;

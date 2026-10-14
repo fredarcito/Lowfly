@@ -30,7 +30,8 @@ const WIZARD = {
 function Wizard() {
   const c = WIZARD;
   return (
-    <svg viewBox="0 0 160 180" className="loader-bob h-40 w-36" aria-hidden>
+    // overflow-visible: at the top of its wave the wand's star leaves the 160-wide viewBox
+    <svg viewBox="0 0 160 180" className="loader-bob h-40 w-36 overflow-visible" aria-hidden>
       <defs>
         <linearGradient id="wizard-robe" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stopColor={c.robe} />

@@ -3,16 +3,41 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { ArrowLeft, ChevronDown, ExternalLink, Plane, Search, Sparkles, Ticket, TicketsPlane, Trash2 } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowLeftRight,
+  ArrowRight,
+  Bookmark,
+  ChevronDown,
+  Clock,
+  Ellipsis,
+  ExternalLink,
+  Luggage,
+  Moon,
+  Plane,
+  PlaneTakeoff,
+  Plus,
+  Ticket,
+  Trash2,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import AirlineBadge from "@/components/AirlineBadge";
 import FareLegs from "@/components/FareLegs";
+import DeleteTripDialog from "@/components/DeleteTripDialog";
 import Itinerary from "@/components/Itinerary";
 import TopBar from "@/components/TopBar";
 import { useI18n } from "@/context/i18n";
 import { airlinesOf } from "@/utils/format";
+import { findAirport, useAirports } from "@/hooks/useAirports";
 import { usePhoto } from "@/hooks/usePhoto";
-import { daysUntil, isUpcoming, removeTrip, updateTrip } from "@/store/trips";
+import { daysUntil, isUpcoming, updateTrip } from "@/store/trips";
 import { useTrips } from "@/hooks/useTrips";
 import { ROUTES } from "@/constants/routes";
 import { cn } from "@/utils/cn";
@@ -48,32 +73,30 @@ function TripList({ trips }) {
     <>
       <div className="grid gap-1">
         <h1 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">{t.trips.title}</h1>
-        <p className="text-muted-foreground">{t.trips.subtitle}</p>
+        <p className="text-muted-foreground sm:text-lg">{t.trips.subtitle}</p>
       </div>
 
-      {upcoming.length === 0 && (
-        <div className="grid justify-items-center gap-3 rounded-xl border border-dashed px-6 py-12 text-center">
-          <TicketsPlane className="size-8 text-muted-foreground" />
-          <p className="font-heading text-lg font-semibold">{t.trips.empty}</p>
-          <p className="max-w-[48ch] text-sm text-muted-foreground">{t.trips.emptyHint}</p>
-          <Button asChild className="mt-2">
-            <Link href={ROUTES.home(lang)}>
-              <Search /> {t.trips.findFlights}
-            </Link>
-          </Button>
-        </div>
-      )}
-
-      {upcoming.length > 0 && (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {upcoming.length === 0 ? (
+        <EmptyTrips />
+      ) : (
+        <div className="grid gap-3">
           {upcoming.map((trip) => (
             <TripCard key={trip.id} trip={trip} />
           ))}
+          <Link
+            href={ROUTES.home(lang)}
+            className="flex w-fit items-center gap-3 rounded-full py-1 pr-3 font-medium text-primary-ink hover:underline focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
+          >
+            <span className="grid size-9 place-items-center rounded-full ring-1 ring-primary-ink/60">
+              <Plus className="size-4" />
+            </span>
+            {t.trips.exploreMore}
+          </Link>
         </div>
       )}
 
       {past.length > 0 && (
-        <section className="grid gap-4">
+        <section className="grid gap-3 border-t pt-6">
           <button
             type="button"
             onClick={() => setShowPast((shown) => !shown)}
@@ -84,7 +107,7 @@ function TripList({ trips }) {
             <ChevronDown className={cn("size-4 transition-transform", showPast && "rotate-180")} />
           </button>
           {showPast && (
-            <div className="grid gap-4 opacity-80 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-3 opacity-80">
               {past.map((trip) => (
                 <TripCard key={trip.id} trip={trip} />
               ))}
@@ -93,6 +116,29 @@ function TripList({ trips }) {
         </section>
       )}
     </>
+  );
+}
+
+// No upcoming trips: a small illustration (suitcase and plane) and the way to find one
+function EmptyTrips() {
+  const { lang, t } = useI18n();
+  return (
+    <div className="grid items-center justify-items-center gap-6 rounded-xl bg-card px-6 py-10 text-center ring-1 ring-foreground/10 sm:grid-cols-[auto_auto] sm:justify-center sm:gap-10 sm:text-left">
+      <div aria-hidden className="relative px-6 pt-4">
+        <Luggage className="size-20 text-muted-foreground" strokeWidth={1.1} />
+        <Plane className="absolute top-0 -right-1 size-7 text-primary" />
+        <span className="absolute top-6 right-4 h-8 w-6 rounded-tr-full border-t-2 border-r-2 border-dashed border-muted-foreground/50" />
+      </div>
+      <div className="grid justify-items-center gap-2 sm:justify-items-start sm:border-l sm:pl-10">
+        <p className="font-heading text-xl font-bold">{t.trips.empty}</p>
+        <p className="max-w-[44ch] text-sm text-muted-foreground">{t.trips.emptyHint}</p>
+        <Button asChild variant="outline" className="mt-2 h-10 rounded-full px-5 font-semibold">
+          <Link href={ROUTES.home(lang)}>
+            <PlaneTakeoff /> {t.trips.exploreFlights}
+          </Link>
+        </Button>
+      </div>
+    </div>
   );
 }
 
@@ -106,7 +152,12 @@ function useWhen(trip) {
 function TripPhoto({ code, className, children }) {
   const photo = usePhoto(code);
   return (
-    <div className={cn("relative overflow-hidden bg-[linear-gradient(135deg,var(--sea),color-mix(in_oklab,var(--primary)_70%,var(--sea)))]", className)}>
+    <div
+      className={cn(
+        "relative overflow-hidden bg-[linear-gradient(135deg,var(--sea),color-mix(in_oklab,var(--primary)_70%,var(--sea)))]",
+        className,
+      )}
+    >
       {photo && <img src={photo.src} alt="" className="absolute inset-0 size-full object-cover" />}
       {photo === null && <Plane className="absolute inset-0 m-auto size-10 -rotate-45 text-white/30" />}
       {children}
@@ -114,47 +165,142 @@ function TripPhoto({ code, className, children }) {
   );
 }
 
+function Chip({ icon: Icon, className, children }) {
+  return (
+    <span className={cn("flex items-center gap-1.5 rounded-full bg-muted px-2.5 py-1 text-xs font-medium", className)}>
+      <Icon className="size-3.5" />
+      {children}
+    </span>
+  );
+}
+
+// One figure of the trip: label above, value below
+function Stat({ label, icon: Icon, strong, children }) {
+  return (
+    <div className="grid gap-0.5 md:px-4 md:first:pl-0 lg:px-5">
+      <dt className="text-xs whitespace-nowrap text-muted-foreground">{label}</dt>
+      <dd
+        className={cn(
+          "flex items-center gap-1.5 font-medium whitespace-nowrap first-letter:uppercase",
+          strong && "font-heading text-lg font-extrabold tabular-nums",
+        )}
+      >
+        {Icon && <Icon className="size-4 text-muted-foreground" />}
+        {children}
+      </dd>
+    </div>
+  );
+}
+
+// A saved trip. Phone: photo on top, then the trip, its figures and the actions.
+// Tablet and up: photo on the left; trip and actions on top, figures below.
+// The whole card opens the trip; the button and the ⋯ menu sit above that link.
 function TripCard({ trip }) {
   const { lang, t, f } = useI18n();
+  const airports = useAirports(lang);
   const when = useWhen(trip);
-  const { fare } = trip;
+  const { fare, origin } = trip;
+  const originCity = findAirport(airports, origin)?.city;
+  const RouteIcon = fare.ret ? ArrowLeftRight : ArrowRight;
+
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-xl bg-card ring-1 ring-foreground/10 transition-shadow hover:shadow-lg hover:ring-foreground/20">
-      <TripPhoto code={fare.code} className="aspect-16/9">
-        <span className="absolute top-2 left-2 rounded-full bg-black/55 px-2.5 py-0.5 text-xs font-semibold text-white backdrop-blur-sm">
-          {when}
-        </span>
-      </TripPhoto>
-      <div className="flex flex-1 flex-col gap-2 p-4">
-        <h2 className="font-heading text-lg leading-tight font-semibold">
+    <article className="group relative grid overflow-hidden rounded-xl bg-card ring-1 ring-foreground/10 transition-shadow [grid-template-areas:'photo''info''stats''actions'] hover:shadow-lg hover:ring-foreground/20 md:grid-cols-[11rem_minmax(0,1fr)_auto] lg:grid-cols-[13rem_minmax(0,1fr)_auto] md:[grid-template-areas:'photo_info_actions''photo_stats_stats']">
+      <TripPhoto code={fare.code} className="h-40 [grid-area:photo] md:m-3 md:mr-0 md:h-auto md:rounded-lg" />
+
+      <div className="grid content-start gap-2 px-4 pt-4 [grid-area:info] md:px-5">
+        <h2 className="font-heading text-xl leading-tight font-bold tracking-tight sm:text-2xl">
           <Link
             href={ROUTES.trip(lang, trip.id)}
             className="outline-none after:absolute after:inset-0 after:rounded-xl focus-visible:after:ring-3 focus-visible:after:ring-ring/50"
           >
-            {fare.city}, <span className="font-normal text-muted-foreground">{fare.country}</span>
+            {fare.city}, {fare.country}
           </Link>
         </h2>
-        <p className="text-sm text-muted-foreground first-letter:uppercase">
-          {fare.ret ? f.fmtRange(fare.day, fare.ret.day) : f.fmtDay(fare.day)} · {trip.origin} → {fare.code}
+        <p className="flex flex-wrap items-center gap-x-2 text-muted-foreground">
+          <span>{originCity ? `${originCity} (${origin})` : origin}</span>
+          <RouteIcon className="size-4 shrink-0" />
+          <span>
+            {fare.city} ({fare.code})
+          </span>
         </p>
-        <div className="mt-auto flex flex-wrap items-center gap-1.5 pt-1">
+        <div className="flex flex-wrap items-center gap-1.5 pt-1">
+          {trip.booked ? (
+            <Chip icon={Ticket} className="bg-save/15 text-save">
+              {t.trips.booked}
+            </Chip>
+          ) : (
+            <Chip icon={Bookmark}>{t.trips.saved}</Chip>
+          )}
+          <Chip icon={Clock} className="first-letter:uppercase">
+            <span className="first-letter:uppercase">{when}</span>
+          </Chip>
           {airlinesOf(fare).map((airline) => (
             <AirlineBadge key={airline} airline={airline} />
           ))}
-          {trip.itinerary && (
-            <span className="flex items-center gap-1 rounded-full bg-selected px-2 py-0.5 text-xs font-medium text-primary-ink">
-              <Sparkles className="size-3" /> {t.trips.itineraryReady}
-            </span>
-          )}
-          {trip.booked && (
-            <span className="flex items-center gap-1 rounded-full bg-save/15 px-2 py-0.5 text-xs font-medium text-save">
-              <Ticket className="size-3" /> {t.trips.booked}
-            </span>
-          )}
-          <span className="ml-auto font-heading text-lg font-extrabold tabular-nums">{f.money(fare.price, fare.cur)}</span>
         </div>
       </div>
+
+      <dl className="grid grid-cols-2 gap-x-4 gap-y-3 px-4 pt-4 [grid-area:stats] md:flex md:divide-x md:px-5 md:pb-4">
+        <Stat label={t.trips.departure}>{f.fmtDay(fare.day)}</Stat>
+        {fare.ret ? (
+          <>
+            <Stat label={t.trips.return}>{f.fmtDay(fare.ret.day)}</Stat>
+            <Stat label={t.trips.stay} icon={Moon}>
+              {t.units.nights(fare.nights)}
+            </Stat>
+          </>
+        ) : (
+          <Stat label={t.trips.departureTime}>{fare.time}</Stat>
+        )}
+        <Stat label={t.trips.savedPriceLabel} strong>
+          {f.money(fare.price, fare.cur)}
+        </Stat>
+      </dl>
+
+      <div className="relative z-10 flex items-start gap-2 p-4 [grid-area:actions] md:pl-0">
+        <Button asChild className="h-10 flex-1 font-bold md:flex-none">
+          <Link href={ROUTES.trip(lang, trip.id)}>
+            {trip.itinerary ? t.trips.viewItinerary : t.trips.createItinerary}
+            <ArrowRight />
+          </Link>
+        </Button>
+        <TripMenu trip={trip} />
+      </div>
     </article>
+  );
+}
+
+// ⋯ quick actions: mark as booked, book with the airline, delete
+function TripMenu({ trip }) {
+  const { t, f } = useI18n();
+  const [confirming, setConfirming] = useState(false);
+  return (
+    <>
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="outline" size="icon" className="size-10" aria-label={t.trips.more}>
+            <Ellipsis />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end" className="min-w-52">
+          <DropdownMenuItem onSelect={() => updateTrip(trip.id, { booked: !trip.booked })}>
+            <Ticket /> {trip.booked ? t.trips.unmarkBooked : t.trips.markBooked}
+          </DropdownMenuItem>
+          {f.fareLinks(trip.fare, trip.origin).map((link) => (
+            <DropdownMenuItem key={link.href} asChild>
+              <a href={link.href} target="_blank" rel="noopener noreferrer">
+                <ExternalLink /> {link.label}
+              </a>
+            </DropdownMenuItem>
+          ))}
+          <DropdownMenuSeparator />
+          <DropdownMenuItem variant="destructive" onSelect={() => setConfirming(true)}>
+            <Trash2 /> {t.trips.remove}
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+      <DeleteTripDialog trip={trip} open={confirming} onOpenChange={setConfirming} />
+    </>
   );
 }
 
@@ -163,15 +309,14 @@ function TripDetail({ trip }) {
   const router = useRouter();
   const when = useWhen(trip);
   const { fare, origin } = trip;
-  const remove = () => {
-    if (!window.confirm(t.trips.removeConfirm)) return;
-    router.replace(ROUTES.trips(lang));
-    removeTrip(trip.id);
-  };
+  const [confirming, setConfirming] = useState(false);
 
   return (
     <>
-      <Link href={ROUTES.trips(lang)} className="flex w-fit items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground">
+      <Link
+        href={ROUTES.trips(lang)}
+        className="flex w-fit items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground"
+      >
         <ArrowLeft className="size-4" /> {t.trips.back}
       </Link>
 
@@ -214,9 +359,14 @@ function TripDetail({ trip }) {
 
       <Itinerary trip={trip} />
 
-      <Button variant="ghost" onClick={remove} className="justify-self-start text-muted-foreground hover:text-destructive">
+      <Button
+        variant="ghost"
+        onClick={() => setConfirming(true)}
+        className="justify-self-start text-muted-foreground hover:text-destructive"
+      >
         <Trash2 /> {t.trips.remove}
       </Button>
+      <DeleteTripDialog trip={trip} open={confirming} onOpenChange={setConfirming} onDeleted={() => router.replace(ROUTES.trips(lang))} />
     </>
   );
 }

@@ -17,15 +17,16 @@ function Tags({ tags, className }) {
 }
 
 // Why a destination is worth a visit: a sentence and three highlights, with its source.
-// `tagsOnly` for small spaces (weekend cards). Shows nothing while loading or when there is no guide.
-export default function DestinationGuide({ code, tagsOnly = false, className }) {
+// `tagsOnly` for small spaces (weekend cards); `textClassName` restyles the sentence (a trip's photo header).
+// Shows nothing while loading or when there is no guide.
+export default function DestinationGuide({ code, tagsOnly = false, className, textClassName }) {
   const { t } = useI18n();
   const guide = useDestinationGuide(code);
   if (!guide) return null;
   if (tagsOnly) return <Tags tags={guide.tags} className={className} />;
   return (
     <div className={cn("grid gap-3 pb-3 duration-300 animate-in fade-in motion-reduce:animate-none", className)}>
-      <p className="text-[0.875rem] leading-relaxed sm:text-[0.875rem]">
+      <p className={cn("text-[0.875rem] leading-relaxed sm:text-[0.875rem]", textClassName)}>
         {guide.text}{" "}
         <a href={guide.source} target="_blank" rel="noopener noreferrer" className="text-xs whitespace-nowrap text-muted-foreground underline hover:text-foreground">
           {t.results.guideSource}

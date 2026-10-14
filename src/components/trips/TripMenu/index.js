@@ -15,10 +15,11 @@ import { useI18n } from "@/context/i18n";
 import { useDisclosure } from "@/hooks/useDisclosure";
 import { useTripActions } from "@/hooks/useTripActions";
 import { updateTrip } from "@/store/trips";
+import { cn } from "@/utils/cn";
 
 // ⋯ quick actions on a trip: mark as booked, book with the airline, redo the itinerary and delete
-// (both ask first; after deleting, `onDeleted`)
-export default function TripMenu({ trip, onDeleted }) {
+// (both ask first; after deleting, `onDeleted`). `variant` and `className` restyle the ⋯ button.
+export default function TripMenu({ trip, onDeleted, variant = "outline", className }) {
   const { t } = useI18n();
   const { toggleBooked, bookingLinks } = useTripActions(trip);
   const deleteDialog = useDisclosure();
@@ -29,7 +30,7 @@ export default function TripMenu({ trip, onDeleted }) {
     <>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="icon" className="size-10" aria-label={t.trips.more}>
+          <Button variant={variant} size="icon" className={cn("size-10", className)} aria-label={t.trips.more}>
             <Ellipsis />
           </Button>
         </DropdownMenuTrigger>

@@ -10,8 +10,9 @@ import { useTripActions } from "@/hooks/useTripActions";
 import { AIRLINES, airlinesOf } from "@/utils/format";
 import { cn } from "@/utils/cn";
 
-// The trip's flights as a bar: "MLA ⇆ BRI · Ryanair · €29.98".
-// Not booked yet: the booking buttons stay in sight. The chevron unfolds each leg and "Booked already?".
+// The trip's flights as a slim bar: "MLA ⇆ BRI · Ryanair · €29.98".
+// Not booked yet: the booking buttons stay in sight, outlined so they do not compete with the itinerary's
+// coral actions. The chevron unfolds each leg and "Booked already?".
 export default function TripFlights({ trip }) {
   const { t, f } = useI18n();
   const { setBooked, bookingLinks } = useTripActions(trip);
@@ -23,8 +24,8 @@ export default function TripFlights({ trip }) {
 
   return (
     <section className="rounded-xl bg-card ring-1 ring-foreground/10">
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-3 p-4 sm:px-5">
-        <Plane className="size-6 shrink-0 -rotate-45 text-muted-foreground" strokeWidth={1.75} />
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-3 px-4 py-3 sm:px-5">
+        <Plane className="size-5 shrink-0 -rotate-45 text-muted-foreground" strokeWidth={1.75} />
         <p className="min-w-0 flex-1">
           <span className="font-heading font-bold">{t.trips.flights}: </span>
           <span className="text-muted-foreground">
@@ -34,7 +35,7 @@ export default function TripFlights({ trip }) {
         {!trip.booked && (
           <div className="flex flex-wrap gap-2 max-sm:order-last max-sm:w-full">
             {bookingLinks.map((link) => (
-              <Button key={link.href} asChild className="h-10 font-bold max-sm:flex-1">
+              <Button key={link.href} asChild variant="outline" className="h-9 font-semibold max-sm:flex-1">
                 <a href={link.href} target="_blank" rel="noopener noreferrer">
                   {link.label} <ExternalLink />
                 </a>
@@ -48,7 +49,7 @@ export default function TripFlights({ trip }) {
           onClick={details.toggle}
           aria-expanded={details.open}
           aria-label={details.open ? t.trips.hideFlights : t.trips.showFlights}
-          className="size-10"
+          className="size-9"
         >
           <ChevronDown className={cn("transition-transform", details.open && "rotate-180")} />
         </Button>

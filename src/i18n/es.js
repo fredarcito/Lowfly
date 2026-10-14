@@ -179,6 +179,12 @@ const es = {
     roundTrip: "ida y vuelta",
     airportAdult: (code) => `Aeropuerto ${code} · precio para 1 adulto`,
     destinations: (n) => plural(n, "destino", "destinos"),
+    colDestination: "Destino",
+    colDates: "Fechas",
+    colStay: "Estancia",
+    colDeparture: "Horario",
+    colPriceReturn: "Precio ida y vuelta",
+    colPriceOneway: "Precio solo ida",
     destNoteOneway: "Del más barato al más caro. Cada fila muestra el vuelo de ida más barato a ese aeropuerto.",
     destNoteReturn:
       "Del más barato al más caro. Cada fila muestra la ida y vuelta más barata a ese aeropuerto dentro de tus fechas.",

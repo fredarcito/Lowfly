@@ -4,13 +4,12 @@ import { useState } from "react";
 import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import BestPrice from "@/components/BestPrice";
-import ResultRow, { AltRow, ResultList } from "@/components/ResultRow";
+import DestinationTable from "@/components/DestinationTable";
 import FailedNote from "@/components/FailedNote";
 import Section from "@/components/Section";
 import NoResults from "@/components/NoResults";
 import { useI18n } from "@/context/i18n";
-import { airlinesOf, normalize } from "@/utils/format";
-import { noTimeOff } from "@/utils/weekend";
+import { normalize } from "@/utils/format";
 
 export default function EverywhereResults({ data }) {
   const { t, f: fmt } = useI18n();
@@ -59,33 +58,7 @@ export default function EverywhereResults({ data }) {
         }
       >
         {shown.length ? (
-          <ResultList>
-            {shown.map((f) => (
-              <div key={f.code}>
-                <ResultRow
-                  rank={results.indexOf(f) + 1}
-                  href={fmt.fareLinks(f, origin)[0].href}
-                  title={`${f.city}, ${f.country}`}
-                  meta={weekend ? fmt.weekendDates(f) : `${fmt.fareDates(f)} · ${f.code}`}
-                  tag={weekend && noTimeOff(f) && { label: t.results.noTimeOff, hint: t.results.noTimeOffHint }}
-                  airlines={airlinesOf(f)}
-                  priceNote={priceNote}
-                  price={f.price}
-                  cur={f.cur}
-                />
-                {f.noTimeOffAlt && (
-                  <AltRow
-                    href={fmt.fareLinks(f.noTimeOffAlt, origin)[0].href}
-                    tag={{ label: t.results.noTimeOff, hint: t.results.noTimeOffHint }}
-                    meta={fmt.weekendDates(f.noTimeOffAlt)}
-                    airlines={airlinesOf(f.noTimeOffAlt)}
-                    price={f.noTimeOffAlt.price}
-                    cur={f.noTimeOffAlt.cur}
-                  />
-                )}
-              </div>
-            ))}
-          </ResultList>
+          <DestinationTable fares={shown} origin={origin} roundTrip={roundTrip} weekend={weekend} />
         ) : (
           <p className="rounded-xl border border-dashed p-6 text-center text-sm text-muted-foreground">
             {t.results.noMatch(query)}

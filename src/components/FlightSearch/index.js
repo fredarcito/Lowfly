@@ -14,6 +14,7 @@ import CountryResults from "@/components/CountryResults";
 import FlexibleResults from "@/components/FlexibleResults";
 import WeekendDeals from "@/components/WeekendDeals";
 import TopBar from "@/components/TopBar";
+import TripsPromo from "@/components/TripsPromo";
 import { useI18n } from "@/context/i18n";
 import { errorMessage } from "@/i18n";
 import { nextFriday, shift, tomorrow } from "@/utils/dates";
@@ -303,6 +304,7 @@ function EmptyState({ mode, origin, airports, onSeeAll }) {
   const originName = findAirport(airports, origin)?.city;
   return (
     <>
+      <TripsPromo />
       <WeekendDeals origin={origin} originName={originName} onSeeAll={onSeeAll} fallback={<SearchModes mode={mode} />} />
       <p className="-mt-4 text-xs text-muted-foreground">{t.empty.disclaimer}</p>
     </>

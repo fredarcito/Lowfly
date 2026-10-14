@@ -13,7 +13,7 @@ export default function LanguageSwitch() {
   const rest = usePathname().replace(/^\/[a-z]{2}(?=\/|$)/, "");
   return (
     <nav aria-label={t.header.language} className="flex shrink-0 items-center gap-1 rounded-full bg-hero-chip p-1 text-xs font-semibold">
-      <Languages className="mx-1 size-3.5 text-hero-muted" aria-hidden />
+      <Languages className="mx-1 size-3.5 text-hero-muted max-sm:hidden" aria-hidden />
       {LOCALES.map((l) => (
         <a
           key={l}

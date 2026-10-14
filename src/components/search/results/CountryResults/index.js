@@ -61,13 +61,12 @@ export default function CountryResults({ data }) {
             {others.map((f) => (
               <ResultRow
                 key={f.day}
-                href={fmt.fareLinks(f, origin)[0].href}
                 title={f.ret ? fmt.fareDates(f) : fmt.fmtDay(f.day)}
                 meta={f.ret ? `${f.city} (${f.code})` : `${f.city} (${f.code})${fmt.at(f.time)}`}
                 airlines={airlinesOf(f)}
                 priceNote={priceNote}
-                price={f.price}
-                cur={f.cur}
+                fare={{ ...f, country: f.country ?? country }}
+                origin={origin}
               />
             ))}
           </ResultList>
@@ -79,13 +78,12 @@ export default function CountryResults({ data }) {
           {airports.map((f) => (
             <ResultRow
               key={f.code}
-              href={fmt.fareLinks(f, origin)[0].href}
               title={`${f.city} (${f.code})`}
               meta={f.ret ? fmt.fareDates(f) : t.results.bestDayMeta(fmt.fmtDay(f.day))}
               airlines={airlinesOf(f)}
               priceNote={priceNote}
-              price={f.price}
-              cur={f.cur}
+              fare={{ ...f, country: f.country ?? country }}
+              origin={origin}
             />
           ))}
         </ResultList>

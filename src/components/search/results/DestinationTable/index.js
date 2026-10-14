@@ -1,7 +1,10 @@
 "use client";
 
-import { ChevronRight, CornerDownRight, Moon, PlaneTakeoff } from "lucide-react";
+import { useState } from "react";
+import { ChevronDown, CornerDownRight, Moon, PlaneTakeoff } from "lucide-react";
+import FareDetails from "@/components/search/results/FareDetails";
 import AirlineBadge from "@/components/shared/AirlineBadge";
+import Collapse from "@/components/shared/Collapse";
 import { useI18n } from "@/context/i18n";
 import { airlinesOf } from "@/utils/format";
 import { cn } from "@/utils/cn";
@@ -12,6 +15,10 @@ import { noTimeOff } from "@/utils/weekend";
 const ROW_GRID =
   "grid grid-cols-[minmax(0,1fr)_auto_1rem] items-center gap-x-4 gap-y-2 px-4 py-3 [grid-template-areas:'dest_price_go''when_when_when'] sm:px-5 " +
   "lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.3fr)_9rem_9.5rem_1rem] lg:[grid-template-areas:'dest_dates_stay_price_go']";
+
+// A row is a button that opens its details (flights, booking, save) below it
+const ROW_BUTTON =
+  "w-full text-left transition-colors hover:bg-muted/60 focus-visible:bg-muted/60 focus-visible:outline-none aria-expanded:bg-muted/40";
 
 function NoTimeOffTag() {
   const { t } = useI18n();
@@ -64,24 +71,17 @@ function TripCells({ fare, weekend }) {
   );
 }
 
-function Chevron() {
-  return (
-    <ChevronRight className="size-4 text-muted-foreground transition-transform [grid-area:go] group-hover:translate-x-0.5" />
-  );
+function Chevron({ open }) {
+  return <ChevronDown className={cn("size-4 text-muted-foreground transition-transform [grid-area:go]", open && "rotate-180")} />;
 }
 
-// One destination. The whole row opens the booking on the airline website.
-function DestinationRow({ fare, href, weekend }) {
+// One destination; pressing it opens the details
+function DestinationRow({ fare, weekend, open, onToggle }) {
   const { f } = useI18n();
   return (
-    <a
-      className={cn(ROW_GRID, "group transition-colors hover:bg-muted/60 focus-visible:bg-muted/60 focus-visible:outline-none")}
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <button type="button" onClick={onToggle} aria-expanded={open} className={cn(ROW_GRID, ROW_BUTTON, "group")}>
       <span className="grid min-w-0 gap-1 [grid-area:dest]">
-        <span className="truncate font-heading text-base font-semibold group-hover:underline">
+        <span className="truncate font-heading text-base font-semibold">
           {fare.city}, {fare.country}
         </span>
         <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
@@ -96,24 +96,16 @@ function DestinationRow({ fare, href, weekend }) {
       <span className="text-right font-heading text-xl font-extrabold tabular-nums [grid-area:price]">
         {f.money(fare.price, fare.cur)}
       </span>
-      <Chevron />
-    </a>
+      <Chevron open={open} />
+    </button>
   );
 }
 
 // A second option under a destination: the cheapest weekend there that needs no time off
-function AlternativeRow({ fare, href }) {
+function AlternativeRow({ fare, open, onToggle }) {
   const { f } = useI18n();
   return (
-    <a
-      className={cn(
-        ROW_GRID,
-        "group pt-0 text-muted-foreground transition-colors hover:bg-muted/60 focus-visible:bg-muted/60 focus-visible:outline-none",
-      )}
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <button type="button" onClick={onToggle} aria-expanded={open} className={cn(ROW_GRID, ROW_BUTTON, "pt-0 text-muted-foreground")}>
       <span className="flex min-w-0 flex-wrap items-center gap-2 pl-1 [grid-area:dest]">
         <CornerDownRight className="size-3.5 shrink-0" />
         <NoTimeOffTag />
@@ -125,15 +117,19 @@ function AlternativeRow({ fare, href }) {
       <span className="text-right font-heading font-bold text-foreground tabular-nums [grid-area:price]">
         {f.money(fare.price, fare.cur)}
       </span>
-      <Chevron />
-    </a>
+      <Chevron open={open} />
+    </button>
   );
 }
 
-// Destinations sorted by price: destination, travel dates, stay and price
+// Destinations sorted by price: destination, travel dates, stay and price.
+// One row open at a time, showing its flights with "Book" and "Save trip".
 export default function DestinationTable({ fares, origin, roundTrip, weekend }) {
-  const { t, f } = useI18n();
+  const { t } = useI18n();
   const results = t.results;
+  const [openKey, setOpenKey] = useState(null);
+  const toggle = (key) => setOpenKey((current) => (current === key ? null : key));
+
   return (
     <div className="divide-y overflow-hidden rounded-xl bg-card ring-1 ring-foreground/10">
       <div
@@ -148,14 +144,31 @@ export default function DestinationTable({ fares, origin, roundTrip, weekend }) 
         <span className="[grid-area:stay]">{roundTrip ? results.colStay : results.colDeparture}</span>
         <span className="text-right [grid-area:price]">{roundTrip ? results.colPriceReturn : results.colPriceOneway}</span>
       </div>
-      {fares.map((fare) => (
-        <div key={fare.code}>
-          <DestinationRow fare={fare} href={f.fareLinks(fare, origin)[0].href} weekend={weekend} />
-          {fare.noTimeOffAlt && (
-            <AlternativeRow fare={fare.noTimeOffAlt} href={f.fareLinks(fare.noTimeOffAlt, origin)[0].href} />
-          )}
-        </div>
-      ))}
+      {fares.map((fare) => {
+        // The alternative only has the flights: it is the same destination
+        const alternative = fare.noTimeOffAlt && { code: fare.code, city: fare.city, country: fare.country, ...fare.noTimeOffAlt };
+        const altKey = `${fare.code}-alt`;
+        return (
+          <div key={fare.code}>
+            <DestinationRow fare={fare} weekend={weekend} open={openKey === fare.code} onToggle={() => toggle(fare.code)} />
+            <Collapse open={openKey === fare.code}>
+              <div className="bg-muted/40 pt-1">
+                <FareDetails fare={fare} origin={origin} />
+              </div>
+            </Collapse>
+            {alternative && (
+              <>
+                <AlternativeRow fare={alternative} open={openKey === altKey} onToggle={() => toggle(altKey)} />
+                <Collapse open={openKey === altKey}>
+                  <div className="bg-muted/40 pt-1">
+                    <FareDetails fare={alternative} origin={origin} />
+                  </div>
+                </Collapse>
+              </>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }

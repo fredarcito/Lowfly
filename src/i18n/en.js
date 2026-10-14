@@ -121,6 +121,8 @@ const en = {
     unmarkBooked: "Unmark as booked",
     save: "Save trip",
     saved: "Saved",
+    viewInTrips: "View in My trips",
+    unsave: "Remove from My trips",
     savedAria: "Saved in My trips. Press to remove it",
     empty: "You have no saved trips yet",
     emptyHint: "When you find a flight you like, press “Save trip” and it will show up here, with a day-by-day itinerary.",

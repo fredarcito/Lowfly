@@ -121,6 +121,8 @@ const es = {
     unmarkBooked: "Quitar de reservados",
     save: "Guardar viaje",
     saved: "Guardado",
+    viewInTrips: "Ver en Mis viajes",
+    unsave: "Quitar de Mis viajes",
     savedAria: "Guardado en Mis viajes. Pulsa para quitarlo",
     empty: "Aún no tienes viajes guardados",
     emptyHint: "Cuando encuentres un vuelo que te guste, pulsa «Guardar viaje» y aparecerá aquí, con su itinerario día a día.",

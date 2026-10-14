@@ -21,7 +21,8 @@ import { searchFromParams, searchToParams } from "@/utils/share";
 import { DEFAULT_ORIGIN } from "@/constants/airports";
 import { savedOrigin, saveOrigin } from "@/store/origin";
 import { apiError, isCancelled } from "@/api/client";
-import { getAirports, getDefaultOrigin } from "@/api/airports";
+import { getDefaultOrigin } from "@/api/airports";
+import { findAirport, useAirports } from "@/hooks/useAirports";
 import { getDestinations, searchFlights } from "@/api/flights";
 import { cn } from "@/utils/cn";
 
@@ -35,7 +36,6 @@ export default function FlightSearch() {
   const { lang, t } = useI18n();
   const [mode, setMode] = useState("everywhere");
   const [form, setForm] = useState({ origin: "", country: "", from: "", to: "", ida: "", vuelta: "", flex: "2", max: "", trip: "oneway", minN: "2", maxN: "7", weekend: false });
-  const [airports, setAirports] = useState({ status: "loading", list: [] });
   const [countries, setCountries] = useState({ status: "loading", list: [] });
   const [result, setResult] = useState({ status: "idle" });
   // While searching and with results, the form folds into a one-line summary of `query`
@@ -66,14 +66,8 @@ export default function FlightSearch() {
       .then((origin) => setForm((current) => (current.origin ? current : { ...current, origin })));
   }, []);
 
-  // Every departure airport, with names in the page language
-  useEffect(() => {
-    const request = new AbortController();
-    getAirports(lang, { signal: request.signal })
-      .then((list) => setAirports({ status: "ok", list }))
-      .catch((error) => !isCancelled(error) && setAirports({ status: "error", list: [] }));
-    return () => request.abort();
-  }, [lang]);
+  // Every departure airport, with names in the page language (shared with the result cards)
+  const airports = useAirports(lang);
 
   // Country list, refreshed whenever the departure airport changes
   useEffect(() => {
@@ -202,7 +196,7 @@ export default function FlightSearch() {
           <Collapse open={collapsed}>
             <SearchSummary
               query={query}
-              originName={airports.list.find((a) => a.code === query?.origin)?.city}
+              originName={findAirport(airports, query?.origin)?.city}
               onEdit={expand}
             />
           </Collapse>
@@ -306,7 +300,7 @@ function HeroPhoto() {
 // Before searching: this weekend's cheapest trips; without them, what each mode does (the selected one highlighted)
 function EmptyState({ mode, origin, airports, onSeeAll }) {
   const { t } = useI18n();
-  const originName = airports.list.find((a) => a.code === origin)?.city;
+  const originName = findAirport(airports, origin)?.city;
   return (
     <>
       <WeekendDeals origin={origin} originName={originName} onSeeAll={onSeeAll} fallback={<SearchModes mode={mode} />} />

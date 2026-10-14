@@ -58,6 +58,8 @@ export function createFormat(lang, t) {
   return {
     fmtDay,
     fmtShort,
+    // Flight length: "1 h 20 min" / "1h 20m"
+    duration: (minutes) => t.units.duration(Math.floor(minutes / 60), minutes % 60),
     // "16–19 Oct", "30 Oct – 2 Nov"
     fmtRange: (a, b) => rangeFmt.formatRange(parseDay(a), parseDay(b)),
     fmtMonth: (s) => monthFmt.format(parseDay(s)),

@@ -11,7 +11,8 @@ export function useCountUp(value, duration = 700) {
     const start = performance.now();
     const tick = (now) => {
       const progress = Math.min(1, (now - start) / duration);
-      setShown(value * (0.4 + 0.6 * (1 - (1 - progress) ** 3)));
+      // Ends on the exact value (the eased product can land a cent below it)
+      setShown(progress < 1 ? value * (0.4 + 0.6 * (1 - (1 - progress) ** 3)) : value);
       if (progress < 1) frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick);

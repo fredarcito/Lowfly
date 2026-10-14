@@ -165,10 +165,12 @@ const es = {
     close: "Cerrar",
   },
   units: {
+    duration: (hours, minutes) => (hours ? `${hours} h${minutes ? ` ${minutes} min` : ""}` : `${minutes} min`),
     nights: (n) => plural(n, "noche", "noches"),
     days: (n) => plural(n, "día", "días"),
   },
   results: {
+    oneAdult: "1 adulto",
     noTimeOff: "Sin faltar al trabajo",
     noTimeOffHint: "Sales el viernes desde las 17:00 o el sábado y vuelves el domingo",
     hoursAway: (h) => `${h}\u00a0h en destino`,

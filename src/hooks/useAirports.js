@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { getAirports } from "@/api/airports";
+import { useI18n } from "@/context/i18n";
 
 // Every departure airport, in the page language. Fetched once per language and shared by every component.
 const cache = new Map(); // lang → { status, list }
@@ -39,3 +40,10 @@ export function useAirports(lang) {
 
 // The airport with that code, if we know it
 export const findAirport = (airports, code) => airports.list.find((airport) => airport.code === code);
+
+// "Malta (MLA)", or just the code until the airports load
+export function useAirportLabel(code) {
+  const { lang } = useI18n();
+  const city = findAirport(useAirports(lang), code)?.city;
+  return city ? `${city} (${code})` : code;
+}

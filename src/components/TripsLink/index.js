@@ -3,8 +3,7 @@
 import Link from "next/link";
 import { TicketsPlane } from "lucide-react";
 import { useI18n } from "@/context/i18n";
-import { isUpcoming } from "@/store/trips";
-import { useTrips } from "@/hooks/useTrips";
+import { useTripGroups } from "@/hooks/useTrips";
 import { ROUTES } from "@/constants/routes";
 import { cn } from "@/utils/cn";
 
@@ -30,7 +29,7 @@ export function NavLink({ href, active, className, children, ...props }) {
 // "My trips" in the header navigation, with how many upcoming trips there are
 export default function TripsLink({ active, className }) {
   const { lang, t } = useI18n();
-  const upcoming = useTrips().filter(isUpcoming).length;
+  const upcoming = useTripGroups().upcoming.length;
   return (
     <NavLink
       href={ROUTES.trips(lang)}

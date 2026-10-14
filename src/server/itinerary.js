@@ -87,21 +87,37 @@ const SCHEMA = {
   required: ["days"],
 };
 
-const instructionsFor = ({ lang, city, country, airport, out, ret, dates, preferences }) => {
+// How the traveller arrives and leaves, as lines of the instructions
+// By plane (a saved flight): landing at the airport, and the return flight
+const flightTravel = ({ airport, out, ret, dates }) => [
+  `- Day 1: the flight lands at ${airport.name} (${airport.code}) at ${out.arrive || out.time || "the morning"}. Start with the arrival and the real way into town (train, bus or taxi, with its approximate price).`,
+  ret
+    ? `- Day ${dates.length} (${dates.at(-1)}): the return flight leaves at ${ret.time}. Be at the airport 2 hours before and include getting there. Plan nothing after that.`
+    : "- One-way trip: plan only the arrival day.",
+];
+
+// A stop of a trip the traveller planned themselves (any means of transport): they are already in town on
+// arrival, and leave town at the given time, maybe for the next city of the trip
+const stopTravel = ({ city, arrive, leave, from, to, dates }) => [
+  `- Day 1 (${dates[0]}): the traveller arrives in ${city}${from ? ` from ${from}` : ""} at ${arrive.time || "the morning"}, already in town (no airport). Start there.`,
+  leave.time
+    ? `- Day ${dates.length} (${dates.at(-1)}): they leave ${city}${to ? ` for ${to}` : ""} at ${leave.time}. End with a "transporte" stop for that departure (place null) and plan nothing after it.`
+    : `- Day ${dates.length} (${dates.at(-1)}): they leave ${city}${to ? ` for ${to}` : ""} in the evening: plan the whole day, ending with a "transporte" stop for the departure (place null).`,
+];
+
+const instructionsFor = ({ lang, city, country, travel, dates, preferences }) => {
   const language = LANGUAGES[lang];
-  const lastDay = dates.at(-1);
   return `You are a local travel planner. Plan a realistic day-by-day itinerary for a first-time visitor to ${city}, ${country}.
 Write every text in ${language}. Return exactly ${dates.length} days, in order (${dates.join(", ")}).
 
-Flights:
-- Day 1: the flight lands at ${airport.name} (${airport.code}) at ${out.arrive || out.time || "the morning"}. Start with the arrival and the real way into town (train, bus or taxi, with its approximate price).
-${ret ? `- Day ${dates.length} (${lastDay}): the return flight leaves at ${ret.time}. Be at the airport 2 hours before and include getting there. Plan nothing after that.` : "- One-way trip: plan only the arrival day."}
+Arrival and departure:
+${travel.join("\n")}
 
 Traveller preferences:
 - Pace: ${PACE_RULES[preferences.pace] ?? PACE_RULES.balanced}.
 - Interests: ${preferences.interests.join(", ")}.
 - Getting around: ${TRANSPORT_RULES[preferences.transport] ?? TRANSPORT_RULES.transit}.
-- Accommodation check-in on day 1: ${preferences.checkIn}. Add a "logistica" stop for it at that time (place null: we don't know where they stay; say "in the centre"). Plan the hours between landing and check-in around it: if there is time before, suggest leaving the luggage in storage and light sights nearby; if it is right after landing, go straight there. If the check-in time comes before they can arrive, check in as soon as they get there.
+- Accommodation check-in on day 1: ${preferences.checkIn}. Add a "logistica" stop for it at that time (place null: we don't know where they stay; say "in the centre"). Plan the hours between arriving and check-in around it: if there is time before, suggest leaving the luggage in storage and light sights nearby; if it is right after arriving, go straight there. If the check-in time comes before they can arrive, check in as soon as they get there.
 
 Rules:
 - Order stops by time and group nearby places to avoid going back and forth. Day trips to nearby towns are fine when they suit the interests.
@@ -202,6 +218,34 @@ const planWithAi = async (request) => {
   }
 };
 
+// Plans `dates` in one town with the AI, then checks every place: where it is (Photon) and its history
+// (Wikipedia). destination: { lat, lng } of the town (only places near it are kept); label: for the logs.
+const planDays = async ({ lang, city, country, destination, dates, travel, preferences, label }) => {
+  const { data, usage, model } = await planWithAi({
+    instructions: instructionsFor({ lang, city, country, travel, dates, preferences }),
+    prompt: "Plan the itinerary now.",
+    schema: SCHEMA,
+  });
+  console.log("AI itinerary", model, label, `${dates.length} days`, JSON.stringify(usage));
+
+  const plannedDays = (Array.isArray(data?.days) ? data.days : []).slice(0, dates.length);
+  if (!plannedDays.length) throw new AppError("aiUnavailable");
+  const cleanDays = plannedDays.map((day, index) => ({
+    date: dates[index],
+    city,
+    title: text(day.title, 120) ?? "",
+    mode: MODES.includes(day.mode) ? day.mode : "walking",
+    stops: (Array.isArray(day.stops) ? day.stops : []).map((stop) => cleanStop(stop, destination)),
+  }));
+
+  const titles = cleanDays.flatMap((day) => day.stops.map((stop) => stop.place?.wikipediaTitle)).filter(Boolean);
+  const facts = await placeFacts(titles, lang);
+  const context = { city, lang, destination, facts };
+  const stops = await mapLimited(cleanDays.flatMap((day) => day.stops), CONCURRENCY, (stop) => verifyStop(stop, context));
+  let taken = 0;
+  return cleanDays.map((day) => ({ ...day, stops: stops.slice(taken, (taken += day.stops.length)) }));
+};
+
 // trip: { origin, code, city, country, out: { day, time, arrive }, ret?: { day, time } }
 export const createItinerary = async ({ trip, lang, preferences }) => {
   const dates = daysBetween(trip.out.day, trip.ret?.day ?? trip.out.day);
@@ -210,30 +254,64 @@ export const createItinerary = async ({ trip, lang, preferences }) => {
   const { airports } = await getAirports(lang);
   const airport = airports.find((candidate) => candidate.code === trip.code);
   if (!airport || !isCoordinate(airport.lat, airport.lon)) throw new AppError("aiUnavailable");
-  const destination = { lat: airport.lat, lng: airport.lon };
 
-  const { data, usage, model } = await planWithAi({
-    instructions: instructionsFor({ lang, city: trip.city, country: trip.country, airport, out: trip.out, ret: trip.ret, dates, preferences }),
-    prompt: "Plan the itinerary now.",
-    schema: SCHEMA,
+  const days = await planDays({
+    lang,
+    city: trip.city,
+    country: trip.country,
+    destination: { lat: airport.lat, lng: airport.lon },
+    dates,
+    travel: flightTravel({ airport, out: trip.out, ret: trip.ret, dates }),
+    preferences,
+    label: trip.code,
   });
-  console.log("AI itinerary", model, trip.code, `${dates.length} days`, JSON.stringify(usage));
+  return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, days };
+};
 
-  const plannedDays = (Array.isArray(data?.days) ? data.days : []).slice(0, dates.length);
-  if (!plannedDays.length) throw new AppError("aiUnavailable");
-  const cleanDays = plannedDays.map((day, index) => ({
-    date: dates[index],
-    title: text(day.title, 120) ?? "",
-    mode: MODES.includes(day.mode) ? day.mode : "walking",
-    stops: (Array.isArray(day.stops) ? day.stops : []).map((stop) => cleanStop(stop, destination)),
-  }));
+// A trip the traveller planned themselves, through one or more towns, in order:
+// stops: [{ city, country, lat, lng, arrive: { day, time }, leave: { day, time } }]
+// Every town is planned at the same time and the days are joined; on the day of a move the morning in one
+// town and the afternoon in the next become a single day.
+// Each town has its own accommodation, and the visitor does not pick a check-in time for a trip planned by
+// hand: the usual one, planned around each arrival time
+const STANDARD_CHECK_IN = "15:00";
 
-  const titles = cleanDays.flatMap((day) => day.stops.map((stop) => stop.place?.wikipediaTitle)).filter(Boolean);
-  const facts = await placeFacts(titles, lang);
-  const context = { city: trip.city, lang, destination, facts };
-  const stops = await mapLimited(cleanDays.flatMap((day) => day.stops), CONCURRENCY, (stop) => verifyStop(stop, context));
-  let taken = 0;
-  const days = cleanDays.map((day) => ({ ...day, stops: stops.slice(taken, (taken += day.stops.length)) }));
+export const createStopsItinerary = async ({ stops, lang, preferences }) => {
+  const datesOf = (stop) => daysBetween(stop.arrive.day, stop.leave.day);
+  const allDates = new Set(stops.flatMap(datesOf));
+  if (allDates.size > MAX_DAYS) throw new AppError("aiTooLong", { max: MAX_DAYS }, 400);
 
+  const plans = await Promise.all(
+    stops.map((stop, index) => {
+      const dates = datesOf(stop);
+      return planDays({
+        lang,
+        city: stop.city,
+        country: stop.country,
+        destination: { lat: stop.lat, lng: stop.lng },
+        dates,
+        travel: stopTravel({ ...stop, from: stops[index - 1]?.city, to: stops[index + 1]?.city, dates }),
+        preferences: { ...preferences, checkIn: STANDARD_CHECK_IN },
+        label: stop.city,
+      });
+    })
+  );
+
+  const days = [];
+  for (const plan of plans) {
+    for (const day of plan) {
+      const previous = days.at(-1);
+      if (previous?.date === day.date) {
+        days[days.length - 1] = {
+          ...day,
+          city: `${previous.city} → ${day.city}`,
+          title: `${previous.city} → ${day.city}`,
+          // Two towns in one day: no walking estimates between them
+          mode: "transit",
+          stops: [...previous.stops, ...day.stops],
+        };
+      } else days.push(day);
+    }
+  }
   return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, days };
 };

@@ -7,6 +7,7 @@ import { useI18n } from "@/context/i18n";
 import { errorMessage } from "@/i18n";
 import { useItineraryPreferences } from "@/hooks/useItineraryPreferences";
 import { CHECK_IN_TIMES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
+import { cn } from "@/utils/cn";
 
 // No itinerary yet: what the AI makes, the visitor's preferences and the button to create it.
 // Same layout as the search form: labelled fields in equal columns, then a note and the button.
@@ -26,11 +27,13 @@ const CreateItinerary = ({ trip, onCreate, creation }) => {
         <Sparkles className="mt-0.5 size-6 shrink-0 text-primary-ink" />
         <div className="grid gap-0.5">
           <h2 className="font-heading text-xl font-bold tracking-tight">{t.trips.aiTitle(nights + 1, fare.city)}</h2>
-          <p className="max-w-[65ch] text-sm text-muted-foreground">{t.trips.aiText(nights)}</p>
+          <p className="max-w-[65ch] text-sm text-muted-foreground">{t.trips.aiText(nights, trip.manual && trip.stops.length > 1)}</p>
         </div>
       </div>
 
-      <fieldset disabled={creating} className="grid gap-4 disabled:opacity-60 sm:grid-cols-2 lg:grid-cols-4">
+      {/* A trip planned by hand has no check-in: one time could not fit every town, and its arrival times
+          already tell the AI when to check in (server/itinerary) */}
+      <fieldset disabled={creating} className={cn("grid gap-4 disabled:opacity-60 sm:grid-cols-2", trip.manual ? "lg:grid-cols-3" : "lg:grid-cols-4")}>
         <PreferencePicker
           id="pace"
           icon={Gauge}
@@ -55,14 +58,16 @@ const CreateItinerary = ({ trip, onCreate, creation }) => {
           value={preferences.transport}
           onChange={setTransport}
         />
-        <PreferencePicker
-          id="check-in"
-          icon={BedDouble}
-          label={labels.checkIn}
-          options={CHECK_IN_TIMES.map((time) => ({ id: time, label: time }))}
-          value={preferences.checkIn}
-          onChange={setCheckIn}
-        />
+        {!trip.manual && (
+          <PreferencePicker
+            id="check-in"
+            icon={BedDouble}
+            label={labels.checkIn}
+            options={CHECK_IN_TIMES.map((time) => ({ id: time, label: time }))}
+            value={preferences.checkIn}
+            onChange={setCheckIn}
+          />
+        )}
       </fieldset>
 
       {creation.status === "error" && (

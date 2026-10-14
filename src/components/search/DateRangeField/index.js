@@ -14,7 +14,9 @@ import { cn } from "@/utils/cn";
 
 // A single picker for a date range ("YYYY-MM-DD"). Closes itself once the second day is picked.
 // `unit` decides how the length is counted: "days" for a search range, "nights" for a trip.
-const DateRangeField = ({ id, from, to, onChange, minNights = 0, maxNights, unit = "days", className }) => {
+// `labels` ({ start, end, pickStart, pickEnd }) rename the two ends and what to pick (a trip planned by hand:
+// arrival and departure); `minDay` ("YYYY-MM-DD") is the first day that can be picked (default: today).
+const DateRangeField = ({ id, from, to, onChange, minNights = 0, maxNights, unit = "days", labels, minDay, className }) => {
   const { lang, t, f } = useI18n();
   const desktop = useDesktop();
   const [open, setOpen] = useState(false);
@@ -48,12 +50,8 @@ const DateRangeField = ({ id, from, to, onChange, minNights = 0, maxNights, unit
   const length = unit === "nights" ? t.units.nights(n) : t.units.days(n + 1);
   const prompt =
     picking === "end"
-      ? unit === "nights"
-        ? t.picker.retDay
-        : t.picker.lastDay
-      : unit === "nights"
-        ? t.picker.outDay
-        : t.picker.firstDay;
+      ? (labels?.pickEnd ?? (unit === "nights" ? t.picker.retDay : t.picker.lastDay))
+      : (labels?.pickStart ?? (unit === "nights" ? t.picker.outDay : t.picker.firstDay));
 
   const trigger = (
     <Button
@@ -84,7 +82,7 @@ const DateRangeField = ({ id, from, to, onChange, minNights = 0, maxNights, unit
       onSelect={onSelect}
       min={minNights}
       max={maxNights}
-      disabled={{ before: new Date() }}
+      disabled={{ before: minDay ? parseDay(minDay) : new Date() }}
       // Days of the neighbour month would show the same date twice
       showOutsideDays={false}
       {...props}
@@ -105,8 +103,8 @@ const DateRangeField = ({ id, from, to, onChange, minNights = 0, maxNights, unit
 
   // Mobile: what is already picked, which end is being chosen, and one large month
   const ends = [
-    { key: "start", label: unit === "nights" ? t.results.out : t.picker.start, day: selected?.from },
-    { key: "end", label: unit === "nights" ? t.results.ret : t.picker.end, day: selected?.to },
+    { key: "start", label: labels?.start ?? (unit === "nights" ? t.results.out : t.picker.start), day: selected?.from },
+    { key: "end", label: labels?.end ?? (unit === "nights" ? t.results.ret : t.picker.end), day: selected?.to },
   ];
 
   return (

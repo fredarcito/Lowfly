@@ -9,6 +9,7 @@ export const useTripActions = (trip) => {
   return {
     setBooked: (booked) => updateTrip(trip.id, { booked }),
     toggleBooked: () => updateTrip(trip.id, { booked: !trip.booked }),
-    bookingLinks: f.fareLinks(trip.fare, trip.origin),
+    // A trip planned by hand has no flights to book
+    bookingLinks: trip.manual ? [] : f.fareLinks(trip.fare, trip.origin),
   };
 };

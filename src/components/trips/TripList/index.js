@@ -1,21 +1,38 @@
 "use client";
 
+import Link from "next/link";
+import { Plus } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import EmptyTrips from "@/components/trips/EmptyTrips";
 import ExploreMoreLink from "@/components/trips/ExploreMoreLink";
 import PastTrips from "@/components/trips/PastTrips";
 import TripCard from "@/components/trips/TripCard";
 import { useI18n } from "@/context/i18n";
 import { useTripGroups } from "@/hooks/useTrips";
+import { ROUTES } from "@/constants/routes";
 
-// My trips: the upcoming ones (or how to save one), then the past ones folded away
+// My trips: the upcoming ones (or how to save one), then the past ones folded away.
+// "Plan a trip" makes one without searching flights (ManualTripForm), with a line saying so.
 const TripList = () => {
-  const { t } = useI18n();
+  const { lang, t } = useI18n();
   const { upcoming, past } = useTripGroups();
   return (
     <>
-      <div className="grid gap-1">
-        <h1 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">{t.trips.title}</h1>
-        <p className="text-muted-foreground sm:text-lg">{t.trips.subtitle}</p>
+      <div className="flex flex-wrap items-end justify-between gap-4">
+        <div className="grid gap-1">
+          <h1 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">{t.trips.title}</h1>
+          <p className="text-muted-foreground sm:text-lg">{t.trips.subtitle}</p>
+        </div>
+        <div className="grid justify-items-stretch gap-1.5 max-sm:w-full sm:justify-items-end">
+          <Button asChild variant="outline" className="h-10 font-semibold">
+            <Link href={ROUTES.newTrip(lang)} aria-describedby="plan-trip-hint">
+              <Plus /> {t.trips.manual.add}
+            </Link>
+          </Button>
+          <p id="plan-trip-hint" className="max-w-64 text-xs text-muted-foreground max-sm:mx-auto max-sm:text-center sm:text-right">
+            {t.trips.manual.addHint}
+          </p>
+        </div>
       </div>
 
       {upcoming.length ? (

@@ -35,9 +35,12 @@ const TripMenu = ({ trip, onDeleted, variant = "outline", className }) => {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="min-w-52">
-          <DropdownMenuItem onSelect={toggleBooked}>
-            <Ticket /> {trip.booked ? t.trips.unmarkBooked : t.trips.markBooked}
-          </DropdownMenuItem>
+          {/* A trip planned by hand has no flights to book */}
+          {!trip.manual && (
+            <DropdownMenuItem onSelect={toggleBooked}>
+              <Ticket /> {trip.booked ? t.trips.unmarkBooked : t.trips.markBooked}
+            </DropdownMenuItem>
+          )}
           {bookingLinks.map((link) => (
             <DropdownMenuItem key={link.href} asChild>
               <a href={link.href} target="_blank" rel="noopener noreferrer">

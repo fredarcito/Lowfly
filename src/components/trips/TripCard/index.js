@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Bookmark, Clock, Ticket } from "lucide-react";
+import { ArrowRight, Bookmark, Clock, PenLine, Ticket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AirlineBadge from "@/components/shared/AirlineBadge";
 import TripChip from "@/components/trips/TripChip";
@@ -15,13 +15,15 @@ import { useTripWhen } from "@/hooks/useTripWhen";
 import { airlinesOf } from "@/utils/format";
 import { ROUTES } from "@/constants/routes";
 
-// Booked or only saved, when it is and the airlines
+// Booked or only saved (or planned by hand), when it is and the airlines
 const TripBadges = ({ trip }) => {
   const { t } = useI18n();
   const when = useTripWhen(trip);
   return (
     <div className="flex flex-wrap items-center gap-1.5 pt-1">
-      {trip.booked ? (
+      {trip.manual ? (
+        <TripChip icon={PenLine}>{t.trips.manualBadge}</TripChip>
+      ) : trip.booked ? (
         <TripChip icon={Ticket} className="bg-save/15 text-save">
           {t.trips.booked}
         </TripChip>
@@ -31,7 +33,7 @@ const TripBadges = ({ trip }) => {
       <TripChip icon={Clock}>
         <span className="first-letter:uppercase">{when}</span>
       </TripChip>
-      {airlinesOf(trip.fare).map((airline) => (
+      {!trip.manual && airlinesOf(trip.fare).map((airline) => (
         <AirlineBadge key={airline} airline={airline} />
       ))}
     </div>
@@ -60,11 +62,11 @@ const TripCard = ({ trip: savedTrip }) => {
             {fare.city}, {fare.country}
           </Link>
         </h2>
-        <TripRoute origin={origin} fare={fare} />
+        {!trip.manual && <TripRoute origin={origin} fare={fare} />}
         <TripBadges trip={trip} />
       </div>
 
-      <TripStats fare={fare} className="px-4 pt-4 [grid-area:stats] md:px-5 md:pb-4" />
+      <TripStats fare={fare} stops={trip.stops} className="px-4 pt-4 [grid-area:stats] md:px-5 md:pb-4" />
 
       <div className="relative z-10 flex items-start gap-2 p-4 [grid-area:actions] md:pl-0">
         <Button asChild className="h-10 flex-1 font-bold md:flex-none">

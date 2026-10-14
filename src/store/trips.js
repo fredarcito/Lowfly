@@ -58,6 +58,30 @@ export const saveTrip = (origin, fare) => {
   return id;
 };
 
+// A trip planned by hand (any means of transport) through one or more towns, in order:
+// stops: [{ city, region, country, countryCode, lat, lng, code, arrive: { day, time }, leave: { day, time } }]
+// It has no flights: `fare` sums it up like a saved flight (first arrival, last departure, the towns), so the
+// lists, the header and the itinerary treat both kinds alike.
+export const saveManualTrip = (stops) => {
+  const first = stops[0];
+  const last = stops.at(-1);
+  const id = `manual-${Date.now().toString(36)}`;
+  const countries = [...new Set(stops.map((stop) => stop.country).filter(Boolean))];
+  const fare = {
+    // For the photo: the first town with an airport near it
+    code: stops.find((stop) => stop.code)?.code ?? null,
+    city: stops.map((stop) => stop.city).join(" → "),
+    country: countries.join(", "),
+    day: first.arrive.day,
+    time: first.arrive.time,
+    ret: { day: last.leave.day, time: last.leave.time },
+    nights: nightsBetween(first.arrive.day, last.leave.day),
+  };
+  const trip = { id, manual: true, origin: null, stops, fare, savedAt: new Date().toISOString(), booked: false, itinerary: null };
+  write([...readTrips(), trip].sort((one, other) => (one.fare.day < other.fare.day ? -1 : 1)));
+  return id;
+};
+
 export const removeTrip = (id) => write(readTrips().filter((saved) => saved.id !== id));
 
 export const updateTrip = (id, changes) =>

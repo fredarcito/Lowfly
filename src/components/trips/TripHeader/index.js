@@ -98,7 +98,8 @@ const TripHeader = ({ trip, onDeleted }) => {
         )}
       </p>
 
-      <DestinationGuide code={fare.code} className="mt-1 max-w-[60ch] pb-0" textClassName="text-hero-muted sm:text-base" />
+      {/* Through several towns, the description of one of them would mislead */}
+      {fare.code && (!trip.manual || trip.stops.length === 1) && <DestinationGuide code={fare.code} className="mt-1 max-w-[60ch] pb-0" textClassName="text-hero-muted sm:text-base" />}
     </div>
   );
 };

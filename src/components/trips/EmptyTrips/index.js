@@ -19,6 +19,7 @@ const EmptyTrips = () => {
       <div className="grid justify-items-center gap-2 sm:justify-items-start sm:border-l sm:pl-10">
         <p className="font-heading text-xl font-bold">{t.trips.empty}</p>
         <p className="max-w-[44ch] text-sm text-muted-foreground">{t.trips.emptyHint}</p>
+        {/* Planning a trip by hand is right above, next to the title (TripList) */}
         <Button asChild variant="outline" className="mt-2 h-10 rounded-full px-5 font-semibold">
           <Link href={ROUTES.home(lang)}>
             <PlaneTakeoff /> {t.trips.exploreFlights}

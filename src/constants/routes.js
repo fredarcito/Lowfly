@@ -3,4 +3,5 @@ export const ROUTES = {
   home: (lang) => `/${lang}`,
   trips: (lang) => `/${lang}/trips`,
   trip: (lang, id) => `/${lang}/trips?id=${encodeURIComponent(id)}`,
+  newTrip: (lang) => `/${lang}/trips/new`,
 };

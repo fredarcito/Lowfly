@@ -10,7 +10,8 @@ export const useLocalizedTrip = (trip) => {
   const { lang } = useI18n();
   const airport = findAirport(useAirports(lang), trip.fare.code);
   return useMemo(
-    () => (airport ? { ...trip, fare: { ...trip.fare, city: airport.city, country: airport.country } } : trip),
+    // A trip planned by hand keeps the towns' own names (its code is only the nearest airport)
+    () => (airport && !trip.manual ? { ...trip, fare: { ...trip.fare, city: airport.city, country: airport.country } } : trip),
     [trip, airport]
   );
 };

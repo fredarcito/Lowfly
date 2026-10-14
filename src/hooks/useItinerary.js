@@ -21,6 +21,10 @@ const tripForAi = (trip) => {
   };
 };
 
+// A trip planned by hand: each town, where it is, and when they arrive and leave
+const stopsForAi = (trip) =>
+  trip.stops.map(({ city, country, lat, lng, arrive, leave }) => ({ city, country, lat, lng, arrive, leave }));
+
 // A trip's itinerary (samples follow the page language; AI ones keep theirs), the picked day,
 // and creating it with the AI: { status: "idle" | "creating" | "error", error }
 export const useItinerary = (trip) => {
@@ -34,7 +38,9 @@ export const useItinerary = (trip) => {
   const create = async (preferences) => {
     setCreation({ status: "creating" });
     try {
-      const created = await createItinerary({ trip: tripForAi(trip), lang, preferences });
+      const created = trip.manual
+        ? await createItinerary({ stops: stopsForAi(trip), lang, preferences })
+        : await createItinerary({ trip: tripForAi(trip), lang, preferences });
       updateTrip(trip.id, { itinerary: created, visited: [] });
       setPickedIndex(0);
       setCreation({ status: "idle" });

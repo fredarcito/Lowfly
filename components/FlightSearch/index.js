@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { CircleAlert, Copyright, Loader2, Plane } from "lucide-react";
+import { CircleAlert, Copyright, Loader2 } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -12,17 +12,18 @@ import Collapse from "@/components/Collapse";
 import EverywhereResults from "@/components/EverywhereResults";
 import CountryResults from "@/components/CountryResults";
 import FlexibleResults from "@/components/FlexibleResults";
-import LanguageSwitch from "@/components/LanguageSwitch";
 import WeekendDeals from "@/components/WeekendDeals";
-import ThemeToggle from "@/components/ThemeToggle";
+import TopBar from "@/components/TopBar";
 import { useI18n } from "@/components/I18nProvider";
-import { APP_NAME, errorMessage } from "@/lib/i18n";
+import { errorMessage } from "@/lib/i18n";
 import { nextFriday, shift, tomorrow } from "@/lib/dates";
 import { searchFromParams, searchToParams } from "@/lib/share";
+import { apiError, isCancelled } from "@/lib/services/client";
+import { getAirports, getDefaultOrigin } from "@/lib/services/airports";
+import { getDestinations, searchFlights } from "@/lib/services/flights";
 import { cn } from "@/lib/utils";
 
 const RESULTS = { everywhere: EverywhereResults, country: CountryResults, trip: FlexibleResults };
-const ENDPOINTS = { everywhere: "everywhere", country: "country", trip: "flexible" };
 // No results: the form opens again so the search can be changed
 const EMPTY = { everywhere: (d) => !d.results.length, country: (d) => !d.best, trip: (d) => !d.top };
 
@@ -76,51 +77,43 @@ export default function FlightSearch() {
 
     // First visit: the main airport of the visitor's country, or Malta
     if (savedOrigin()) return;
-    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    fetch(`/api/origin?tz=${encodeURIComponent(tz)}`)
-      .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then(({ origin }) => origin, () => DEFAULT_ORIGIN)
-      .then((origin) => setForm((f) => (f.origin ? f : { ...f, origin })));
+    getDefaultOrigin(Intl.DateTimeFormat().resolvedOptions().timeZone)
+      .catch(() => DEFAULT_ORIGIN)
+      .then((origin) => setForm((current) => (current.origin ? current : { ...current, origin })));
   }, []);
 
   // Every departure airport, with names in the page language
   useEffect(() => {
-    let cancelled = false;
-    fetch(`/api/airports?lang=${lang}`)
-      .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then(({ airports: list }) => {
-        if (cancelled) return;
-        setAirports({ status: "ok", list });
-      })
-      .catch(() => !cancelled && setAirports({ status: "error", list: [] }));
-    return () => {
-      cancelled = true;
-    };
+    const request = new AbortController();
+    getAirports(lang, { signal: request.signal })
+      .then((list) => setAirports({ status: "ok", list }))
+      .catch((error) => !isCancelled(error) && setAirports({ status: "error", list: [] }));
+    return () => request.abort();
   }, [lang]);
 
   // Country list, refreshed whenever the departure airport changes
   useEffect(() => {
     if (!/^[A-Z]{3}$/.test(form.origin)) return;
-    let cancelled = false;
+    const request = new AbortController();
     setCountries({ status: "loading", list: [] });
 
-    fetch(`/api/destinations?origin=${form.origin}&lang=${lang}`)
-      .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then(({ destinations }) => {
-        if (cancelled) return;
-        const counts = {};
-        destinations.forEach((d) => (counts[d.country] = (counts[d.country] || 0) + 1));
-        const list = Object.keys(counts)
-          .sort((a, b) => a.localeCompare(b, lang))
-          .map((name) => ({ name, count: counts[name] }));
+    getDestinations(form.origin, lang, { signal: request.signal })
+      .then((destinations) => {
+        const airportsPerCountry = {};
+        for (const destination of destinations)
+          airportsPerCountry[destination.country] = (airportsPerCountry[destination.country] || 0) + 1;
+        const list = Object.keys(airportsPerCountry)
+          .sort((first, second) => first.localeCompare(second, lang))
+          .map((name) => ({ name, count: airportsPerCountry[name] }));
         setCountries({ status: list.length ? "ok" : "error", list });
-        setForm((f) => ({ ...f, country: list.some((c) => c.name === f.country) ? f.country : list[0]?.name || "" }));
+        setForm((current) => ({
+          ...current,
+          country: list.some((country) => country.name === current.country) ? current.country : list[0]?.name || "",
+        }));
       })
-      .catch(() => !cancelled && setCountries({ status: "error", list: [] }));
+      .catch((error) => !isCancelled(error) && setCountries({ status: "error", list: [] }));
 
-    return () => {
-      cancelled = true;
-    };
+    return () => request.abort();
   }, [form.origin, lang]);
 
   const onField = (name, value) => {
@@ -186,13 +179,12 @@ export default function FlightSearch() {
     setCollapsed(true);
     window.scrollTo({ top: 0, behavior: reducedMotion() ? "auto" : "smooth" });
     try {
-      const r = await fetch(`/api/${ENDPOINTS[mode]}?${new URLSearchParams({ ...params, lang })}`);
-      const data = await r.json().catch(() => ({}));
-      if (!r.ok) return fail(data.error || "unknown", { ...data.params, retry: r.status >= 500 });
+      const data = await searchFlights(mode, { ...params, lang });
       setResult({ status: "done", mode, data });
       if (EMPTY[mode](data)) setCollapsed(false);
-    } catch {
-      fail("unknown", { retry: true });
+    } catch (error) {
+      const { code, params: values, retry } = apiError(error);
+      fail(code, { ...values, retry });
     }
   }
 
@@ -203,18 +195,7 @@ export default function FlightSearch() {
       <header className="relative isolate overflow-hidden bg-(image:--hero) px-4 pt-[calc(2.5rem+env(safe-area-inset-top,0px))] pb-24 text-hero-foreground sm:px-6">
         <HeroPhoto />
         <div className="mx-auto grid max-w-5xl gap-3">
-          <div className="mb-4 flex items-center justify-between gap-4 sm:mb-6">
-            <a href={`/${lang}`} className="flex items-center gap-2 font-heading text-xl font-extrabold tracking-tight">
-              <span className="grid size-8 place-items-center rounded-lg bg-primary text-primary-foreground">
-                <Plane className="size-4 -rotate-45" />
-              </span>
-              {APP_NAME}
-            </a>
-            <div className="flex items-center gap-2">
-              <ThemeToggle />
-              <LanguageSwitch />
-            </div>
-          </div>
+          <TopBar className="mb-4 sm:mb-6" />
           <Collapse open={!collapsed}>
             <div className="grid gap-3 pb-4">
               <p className="text-xs font-semibold tracking-wide text-hero-muted uppercase sm:text-sm">{t.header.kicker}</p>

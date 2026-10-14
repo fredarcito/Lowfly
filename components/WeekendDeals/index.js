@@ -5,9 +5,12 @@ import { ArrowRight, Copyright, CornerDownRight, Luggage, Plane } from "lucide-r
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import AirlineBadge from "@/components/AirlineBadge";
+import SaveTripButton from "@/components/SaveTripButton";
 import { useI18n } from "@/components/I18nProvider";
 import { airlinesOf } from "@/lib/format";
 import { nextWeekends, noTimeOff } from "@/lib/weekend";
+import { searchFlights } from "@/lib/services/flights";
+import { getPhotos } from "@/lib/services/photos";
 import { cn } from "@/lib/utils";
 
 const SHOWN = 6; // 3 × 2 on desktop, 2 × 3 on tablets, a swipeable row on phones
@@ -34,12 +37,10 @@ export default function WeekendDeals({ origin, originName, onSeeAll, fallback })
 
   useEffect(() => {
     if (!weekend || !/^[A-Z]{3}$/.test(origin) || cache[key]) return;
-    const params = new URLSearchParams({ origin, ...weekend, trip: "return", weekend: "1", lang });
-    fetch(`/api/everywhere?${params}`)
-      .then((r) => (r.ok ? r.json() : Promise.reject()))
+    searchFlights("everywhere", { origin, ...weekend, trip: "return", weekend: "1", lang })
       .then((data) => ({ status: "ok", data }))
       .catch(() => ({ status: "error" }))
-      .then((s) => setCache((c) => ({ ...c, [key]: s })));
+      .then((loaded) => setCache((current) => ({ ...current, [key]: loaded })));
   }, [origin, lang, weekend, key, cache]);
 
   // Photos of the destinations on screen that we have not asked for yet
@@ -49,12 +50,10 @@ export default function WeekendDeals({ origin, originName, onSeeAll, fallback })
     .join(",");
   useEffect(() => {
     if (!missingKey) return;
-    fetch(`/api/photos?codes=${missingKey}`)
-      .then((r) => (r.ok ? r.json() : {}))
+    const codes = missingKey.split(",");
+    getPhotos(codes)
       .catch(() => ({}))
-      .then((found) =>
-        setPhotos((p) => ({ ...p, ...Object.fromEntries(missingKey.split(",").map((c) => [c, found[c] ?? null])) }))
-      );
+      .then((found) => setPhotos((current) => ({ ...current, ...Object.fromEntries(codes.map((code) => [code, found[code] ?? null])) })));
   }, [missingKey]);
 
   if (state.status === "error") return fallback;
@@ -141,6 +140,7 @@ function DealCard({ fare, origin, photo }) {
             <Copyright className="size-3.5" />
           </a>
         )}
+        <SaveTripButton origin={origin} fare={fare} compact className="absolute top-2 right-2 z-10" />
         {noTimeOff(fare) && (
           <span
             title={t.results.noTimeOffHint}

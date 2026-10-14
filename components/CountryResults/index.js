@@ -26,7 +26,7 @@ export default function CountryResults({ data }) {
         title={`${best.city}, ${country}`}
         detail={t.results.airportAdult(best.code)}
         links={fmt.fareLinks(best, origin)}
-        fare={best}
+        fare={{ ...best, country }}
         origin={origin}
         priceNote={priceNote}
         label={t.results.bestDay}

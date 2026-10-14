@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import FareLegs from "@/components/FareLegs";
+import SaveTripButton from "@/components/SaveTripButton";
 import { useI18n } from "@/components/I18nProvider";
 
 // Counts up to `value` when it appears (skipped with reduced motion)
@@ -57,6 +58,7 @@ export default function BestPrice({ price, cur, title, detail, links = [], price
                 </a>
               </Button>
             ))}
+            {fare?.city && origin && <SaveTripButton origin={origin} fare={fare} />}
           </div>
         )}
       </div>

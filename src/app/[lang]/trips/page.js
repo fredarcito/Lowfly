@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import TripsApp from "@/components/TripsApp";
+import TripsApp from "@/components/trips/TripsApp";
 import { I18nProvider } from "@/providers/I18nProvider";
 import { APP_NAME, getDictionary } from "@/i18n";
 

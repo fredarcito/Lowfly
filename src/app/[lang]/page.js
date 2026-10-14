@@ -1,4 +1,4 @@
-import FlightSearch from "@/components/FlightSearch";
+import FlightSearch from "@/components/search/FlightSearch";
 import { I18nProvider } from "@/providers/I18nProvider";
 
 export default async function Page({ params }) {

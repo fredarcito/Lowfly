@@ -16,3 +16,8 @@ export function allow(key, limit, windowMs) {
   if (windows.size > 5000) for (const [stale, times] of windows) if (!times.some((time) => now - time < windowMs)) windows.delete(stale);
   return true;
 }
+
+// Gives back the last call of `key` (it failed, so it should not count against the visitor)
+export function release(key) {
+  windows.get(key)?.pop();
+}

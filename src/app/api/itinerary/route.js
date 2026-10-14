@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { AppError, badRequest } from "@/server/errors";
 import { createItinerary } from "@/server/itinerary";
-import { allow } from "@/server/rateLimit";
+import { allow, release } from "@/server/rateLimit";
 import { isDay } from "@/utils/dates";
 import { hasLocale } from "@/i18n/config";
 import { CHECK_IN_TIMES, DEFAULT_PREFERENCES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
@@ -9,8 +9,10 @@ import { CHECK_IN_TIMES, DEFAULT_PREFERENCES, INTERESTS, PACES, TRANSPORTS } fro
 // A long itinerary can take a few minutes: the model (Claude when Gemini is busy) and checking every place
 export const maxDuration = 300;
 
-// Each visitor may create a few itineraries an hour (the AI costs money per call)
+// Each visitor may create a few itineraries an hour (the AI costs money per call). Not in development,
+// where every request comes from the same "local" visitor.
 const PER_HOUR = 5;
+const LIMITED = process.env.NODE_ENV === "production";
 const HOUR = 3_600_000;
 
 const isTime = (value) => value == null || /^\d{2}:\d{2}$/.test(value);
@@ -37,19 +39,27 @@ export async function POST(request) {
     const lang = hasLocale(body.lang) ? body.lang : "es";
 
     const visitor = request.headers.get("x-forwarded-for")?.split(",")[0].trim() || "local";
-    if (!allow(`itinerary:${visitor}`, PER_HOUR, HOUR)) throw new AppError("aiLimit", { max: PER_HOUR }, 429);
+    const limitKey = `itinerary:${visitor}`;
+    if (LIMITED && !allow(limitKey, PER_HOUR, HOUR)) throw new AppError("aiLimit", { max: PER_HOUR }, 429);
 
-    const itinerary = await createItinerary({
-      trip: {
-        code: trip.code,
-        city: String(trip.city).slice(0, 80),
-        country: String(trip.country ?? "").slice(0, 80),
-        out: trip.out,
-        ret: trip.ret ?? null,
-      },
-      lang,
-      preferences: readPreferences(body.preferences),
-    });
+    let itinerary;
+    try {
+      itinerary = await createItinerary({
+        trip: {
+          code: trip.code,
+          city: String(trip.city).slice(0, 80),
+          country: String(trip.country ?? "").slice(0, 80),
+          out: trip.out,
+          ret: trip.ret ?? null,
+        },
+        lang,
+        preferences: readPreferences(body.preferences),
+      });
+    } catch (error) {
+      // A failed attempt does not use up one of the visitor's itineraries
+      if (LIMITED) release(limitKey);
+      throw error;
+    }
     return NextResponse.json(itinerary, { headers: { "cache-control": "no-store" } });
   } catch (error) {
     if (error instanceof AppError) return NextResponse.json({ error: error.code, params: error.params }, { status: error.status });

@@ -109,17 +109,27 @@ function Wizard() {
   );
 }
 
-// While the AI creates the itinerary: the wizard, travel icons orbiting around him, and playful
-// travel phrases that change every few seconds
+// Elapsed seconds as m:ss (1:05)
+const minutesAndSeconds = (seconds) => `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+
+// While the AI creates the itinerary: the wizard, travel icons orbiting around him, playful travel phrases
+// that change every few seconds, and how long it usually takes with the time so far (so nobody gives up)
 export default function ItineraryLoader() {
   const { t } = useI18n();
   const phrases = t.trips.loaderPhrases;
   const [phraseIndex, setPhraseIndex] = useState(0);
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => setPhraseIndex((index) => (index + 1) % phrases.length), PHRASE_MS);
     return () => clearInterval(timer);
   }, [phrases.length]);
+
+  useEffect(() => {
+    const started = Date.now();
+    const timer = setInterval(() => setElapsedSeconds(Math.floor((Date.now() - started) / 1000)), 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section
@@ -154,6 +164,16 @@ export default function ItineraryLoader() {
         <p key={phraseIndex} className="min-h-6 text-muted-foreground duration-500 animate-in fade-in slide-in-from-bottom-1 motion-reduce:animate-none">
           {phrases[phraseIndex]}
         </p>
+      </div>
+
+      {/* A quiet footnote, so the phrases above keep the spotlight. The time is not announced every second
+          to screen readers: the section is already a live region */}
+      <div className="grid gap-0.5 text-xs text-muted-foreground/70">
+        <p>
+          {t.trips.loaderWait}
+          <span aria-hidden className="tabular-nums"> · {t.trips.loaderElapsed(minutesAndSeconds(elapsedSeconds))}</span>
+        </p>
+        <p>{t.trips.loaderKeepOpen}</p>
       </div>
     </section>
   );

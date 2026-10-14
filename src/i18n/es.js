@@ -155,6 +155,9 @@ const es = {
     redoText: "Se borrará el itinerario actual y podrás crear otro con otras preferencias.",
     redoConfirm: "Rehacer",
     loaderTitle: "Preparando tu viaje…",
+    loaderWait: "Suele tardar 1–3 minutos",
+    loaderElapsed: (time) => `llevamos ${time}`,
+    loaderKeepOpen: "Puedes cambiar de pestaña, pero no cierres esta página.",
     loaderPhrases: [
       "Consultando el mapa de las estrellas…",
       "Buscando los restaurantes más ricos…",

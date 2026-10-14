@@ -155,6 +155,9 @@ const en = {
     redoText: "The current itinerary will be deleted and you can create another one with different preferences.",
     redoConfirm: "Redo",
     loaderTitle: "Getting your trip ready…",
+    loaderWait: "It usually takes 1–3 minutes",
+    loaderElapsed: (time) => `${time} so far`,
+    loaderKeepOpen: "You can switch tabs, but don't close this page.",
     loaderPhrases: [
       "Reading the map of the stars…",
       "Hunting for the tastiest restaurants…",

@@ -134,8 +134,8 @@ const es = {
     flights: "Vuelos",
     savedPrice: (price) => `Precio al guardarlo: ${price}`,
     priceMayChange: "Puede haber cambiado: compruébalo en la aerolínea antes de reservar.",
-    bookedQuestion: "¿Ya lo reservaste?",
-    bookedHint: "Márcalo para recordar que ya tienes los billetes",
+    bookedQuestion: "¿Ya reservaste los vuelos?",
+    bookedHint: "Ocultamos los botones de reserva y tu itinerario pasa primero.",
     remove: "Eliminar viaje",
     removeTitle: "¿Eliminar este viaje?",
     removeText: (city, dates, withItinerary) =>
@@ -276,6 +276,7 @@ const es = {
     },
     bagsFinalPrice: (airlines) => `Precio final y condiciones en ${airlines}`,
     bagsFinalPriceShort: (airlines) => `Precio final en ${airlines}.`,
+    bagsAfterBooking: (airlines) => `Añádelo en ${airlines} desde «Gestionar reserva»: suele costar más que al reservar.`,
     bagsHint: "Estimado, desde. El precio solo incluye un bolso pequeño bajo el asiento: las maletas se pagan aparte y su precio cambia según la ruta y la fecha.",
     noTimeOff: "Sin faltar al trabajo",
     noTimeOffHint: "Sales el viernes desde las 17:00 o el sábado y vuelves el domingo",

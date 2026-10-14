@@ -134,8 +134,8 @@ const en = {
     flights: "Flights",
     savedPrice: (price) => `Price when saved: ${price}`,
     priceMayChange: "It may have changed: check it with the airline before booking.",
-    bookedQuestion: "Booked already?",
-    bookedHint: "Tick it to remember you have the tickets",
+    bookedQuestion: "Booked the flights already?",
+    bookedHint: "We hide the booking buttons and your itinerary comes first.",
     remove: "Delete trip",
     removeTitle: "Delete this trip?",
     removeText: (city, dates, withItinerary) =>
@@ -276,6 +276,7 @@ const en = {
     },
     bagsFinalPrice: (airlines) => `Final price and conditions at ${airlines}`,
     bagsFinalPriceShort: (airlines) => `Final price at ${airlines}.`,
+    bagsAfterBooking: (airlines) => `Add it at ${airlines} from "Manage booking": it usually costs more than when booking.`,
     bagsHint: "An estimate, from. The fare only includes a small bag under the seat: bags cost extra and their price changes with the route and the date.",
     noTimeOff: "No time off needed",
     noTimeOffHint: "Leave Friday from 17:00 or Saturday, back on Sunday",

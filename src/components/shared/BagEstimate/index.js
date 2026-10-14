@@ -12,7 +12,8 @@ import { cn } from "@/utils/cn";
 // on a return trip, and where the final price is. The hint says they are estimates.
 // `large`: for the highlighted card (bigger text, prices to the edge, a line above the note).
 // `hideTitle`: when a folded row above already says it (the compact card on phones).
-const BagEstimate = ({ fare, large = false, hideTitle = false, className }) => {
+// `booked`: the flights are booked already, so the note says how to add a bag now.
+const BagEstimate = ({ fare, large = false, hideTitle = false, booked = false, className }) => {
   const { t, f } = useI18n();
   const extras = Object.keys(BAGS)
     .map((kind) => ({ kind, extra: bagExtra(fare, kind) }))
@@ -41,7 +42,11 @@ const BagEstimate = ({ fare, large = false, hideTitle = false, className }) => {
       </dl>
       <p className={cn("text-xs", large ? "ml-7.5 border-t pt-2.5" : "pl-5.5")}>
         {fare.ret && `${t.results.bagsBothFlights} `}
-        {large ? t.results.bagsFinalPriceShort(airlineNames(fare)) : t.results.bagsFinalPrice(airlineNames(fare))}
+        {booked
+          ? t.results.bagsAfterBooking(airlineNames(fare))
+          : large
+            ? t.results.bagsFinalPriceShort(airlineNames(fare))
+            : t.results.bagsFinalPrice(airlineNames(fare))}
       </p>
       <span className="sr-only">{t.results.bagsHint}</span>
     </div>

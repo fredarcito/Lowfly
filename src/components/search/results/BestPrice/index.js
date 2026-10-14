@@ -16,7 +16,7 @@ import { findAirport, useAirports } from "@/hooks/useAirports";
 // Without them (flexible dates): `title` and `detail` explain the result.
 // Desktop: destination and flights on the left, price and actions on the right.
 // Phone: destination, then price and actions, then the flights.
-export default function BestPrice({ price, cur, title, detail, links = [], priceNote, fare, origin, label }) {
+const BestPrice = ({ price, cur, title, detail, links = [], priceNote, fare, origin, label }) => {
   const { lang, t, f } = useI18n();
   const shownPrice = useCountUp(price);
   const airports = useAirports(lang);
@@ -81,4 +81,6 @@ export default function BestPrice({ price, cur, title, detail, links = [], price
       )}
     </Card>
   );
-}
+};
+
+export default BestPrice;

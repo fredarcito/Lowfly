@@ -11,7 +11,7 @@ import { ROUTES } from "@/constants/routes";
 
 // One saved trip: its photo header, flights and the day-by-day itinerary.
 // Until it is booked the flights go first (booking is the next step); once booked, the itinerary leads.
-export default function TripDetail({ trip: savedTrip }) {
+const TripDetail = ({ trip: savedTrip }) => {
   const { lang } = useI18n();
   const trip = useLocalizedTrip(savedTrip);
   const router = useRouter();
@@ -25,4 +25,6 @@ export default function TripDetail({ trip: savedTrip }) {
       {trip.booked && flights}
     </TripsPage>
   );
-}
+};
+
+export default TripDetail;

@@ -14,17 +14,17 @@ const HEADERS = {
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
 };
 
-async function get(path, params) {
+const get = async (path, params) => {
   const r = await fetch(`${BASE}/${path}?${new URLSearchParams(params)}`, {
     headers: HEADERS,
     next: { revalidate: 600 }, // 10 min cache per route and date
   });
   if (!r.ok) throw new Error(`Ryanair responded with error ${r.status}`);
   return r.json();
-}
+};
 
 // Every active Ryanair airport (city, country, coordinates and the country's main airport)
-export async function airports(lang = "es") {
+export const airports = async (lang = "es") => {
   const r = await fetch(`https://www.ryanair.com/api/views/locate/5/airports/${lang}/active`, {
     headers: HEADERS,
     next: { revalidate: 86400 },
@@ -42,10 +42,10 @@ export async function airports(lang = "es") {
     lat: a.coordinates?.latitude,
     lon: a.coordinates?.longitude,
   }));
-}
+};
 
 // Cheapest fare to every destination within the range (a single request)
-export async function cheapest(origin, from, to, lang = "es") {
+export const cheapest = async (origin, from, to, lang = "es") => {
   const data = await get("oneWayFares", {
     departureAirportIataCode: origin,
     outboundDepartureDateFrom: from,
@@ -69,10 +69,10 @@ export async function cheapest(origin, from, to, lang = "es") {
       cur: o.price.currencyCode,
     };
   });
-}
+};
 
 // Cheapest price per day on a route
-export async function daily(dep, arr, from, to) {
+export const daily = async (dep, arr, from, to) => {
   const list = [];
   for (const month of monthsBetween(from, to)) {
     const d = await get(`oneWayFares/${dep}/${arr}/cheapestPerDay`, { outboundMonthOfDate: month, currency: "EUR" });
@@ -88,13 +88,13 @@ export async function daily(dep, arr, from, to) {
     }
   }
   return list;
-}
+};
 
 // Cheapest return trip to every destination: both flights within [from, to], staying minN to maxN nights.
 // The longer the range, the fewer destinations Ryanair returns (from BUD: 22 for 30 days, 53 for three
 // 10-day windows), so the outbound dates are searched in 10-day windows, 6 at a time,
 // and the cheapest per destination is kept.
-export async function roundTrip(origin, from, to, minN, maxN, lang = "es") {
+export const roundTrip = async (origin, from, to, minN, maxN, lang = "es") => {
   const windows = chunks(from, shift(to, -minN), 10);
   const fares = [];
   for (let i = 0; i < windows.length; i += 6) {
@@ -106,12 +106,12 @@ export async function roundTrip(origin, from, to, minN, maxN, lang = "es") {
   const best = new Map();
   for (const f of fares) if (!best.has(f.code) || f.price < best.get(f.code).price) best.set(f.code, f);
   return [...best.values()];
-}
+};
 
 // Cheapest weekend trip (see lib/weekend) to every destination between `from` and `to`.
 // Ryanair filters by weekday and time itself; one request per outbound/return slot pair and 10-day window.
 // Returns up to two trips per destination: the cheapest, and the cheapest needing no time off.
-export async function weekendTrips(origin, from, to, lang = "es") {
+export const weekendTrips = async (origin, from, to, lang = "es") => {
   const jobs = [];
   for (const [a, b] of chunks(from, to, 10))
     for (const o of WEEKEND.out)
@@ -134,9 +134,9 @@ export async function weekendTrips(origin, from, to, lang = "es") {
     for (const key of noTimeOff(f) ? [f.code, `${f.code} office`] : [f.code])
       if (!best.has(key) || f.price < best.get(key).price) best.set(key, f);
   return [...new Set(best.values())];
-}
+};
 
-async function roundTripWindow(origin, outFrom, outTo, inFrom, inTo, minN, maxN, lang, filters = {}) {
+const roundTripWindow = async (origin, outFrom, outTo, inFrom, inTo, minN, maxN, lang, filters = {}) => {
   const data = await get("roundTripFares", {
     departureAirportIataCode: origin,
     outboundDepartureDateFrom: outFrom,
@@ -169,4 +169,4 @@ async function roundTripWindow(origin, outFrom, outTo, inFrom, inTo, minN, maxN,
       cur: f.summary.price.currencyCode,
     };
   });
-}
+};

@@ -1,7 +1,7 @@
 import { useI18n } from "@/context/i18n";
 
 // Heat map legend: from cheapest (yellow) to most expensive
-export default function HeatLegend({ min, max, extra }) {
+const HeatLegend = ({ min, max, extra }) => {
   const { f } = useI18n();
   return (
     <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground">
@@ -17,4 +17,6 @@ export default function HeatLegend({ min, max, extra }) {
       {extra}
     </div>
   );
-}
+};
+
+export default HeatLegend;

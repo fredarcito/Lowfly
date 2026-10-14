@@ -14,15 +14,15 @@ import { useI18n } from "@/context/i18n";
 import { removeTrip } from "@/store/trips";
 
 // Asks before deleting a saved trip (and its itinerary). `onDeleted` runs after removing it.
-export default function DeleteTripDialog({ trip, open, onOpenChange, onDeleted }) {
+const DeleteTripDialog = ({ trip, open, onOpenChange, onDeleted }) => {
   const { t, f } = useI18n();
   const { fare } = trip;
   const dates = fare.ret ? f.fmtRange(fare.day, fare.ret.day) : f.fmtDay(fare.day);
 
-  function remove() {
+  const remove = () => {
     onDeleted?.();
     removeTrip(trip.id);
-  }
+  };
 
   return (
     <AlertDialog open={open} onOpenChange={onOpenChange}>
@@ -53,4 +53,6 @@ export default function DeleteTripDialog({ trip, open, onOpenChange, onDeleted }
       </AlertDialogContent>
     </AlertDialog>
   );
-}
+};
+
+export default DeleteTripDialog;

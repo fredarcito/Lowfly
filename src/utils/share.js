@@ -4,7 +4,7 @@ import { isDay, tomorrow } from "@/utils/dates";
 
 const MODES = ["everywhere", "country", "trip"];
 
-export function searchToParams(form, mode) {
+export const searchToParams = (form, mode) => {
   const params = new URLSearchParams({ m: mode, o: form.origin });
   if (mode !== "everywhere" && form.country) params.set("c", form.country);
   if (mode !== "everywhere" && form.country && form.city) params.set("ci", form.city);
@@ -26,12 +26,12 @@ export function searchToParams(form, mode) {
     }
   }
   return params;
-}
+};
 
 // Back from a shared URL: { mode, fields, stale } or null if it holds no search.
 // A link opened later may have past dates: the start moves to tomorrow; if the whole range (or the trip)
 // is past, the dates are dropped and `stale` says not to search on its own.
-export function searchFromParams(params) {
+export const searchFromParams = (params) => {
   const mode = params.get("m");
   const origin = (params.get("o") || "").toUpperCase();
   if (!MODES.includes(mode) || !/^[A-Z]{3}$/.test(origin)) return null;
@@ -62,4 +62,4 @@ export function searchFromParams(params) {
   const [from, to] = [params.get("from"), params.get("to")];
   if (!isDay(from) || !isDay(to) || to < first) return { mode, fields, stale: true };
   return { mode, fields: { ...fields, from: from < first ? first : from, to }, stale: false };
-}
+};

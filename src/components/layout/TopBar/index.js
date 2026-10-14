@@ -11,7 +11,7 @@ import { ROUTES } from "@/constants/routes";
 import { cn } from "@/utils/cn";
 
 // Logo, the navigation (Explore · My trips), theme and language. Sits on the header colours (--hero-*).
-export default function TopBar({ className }) {
+const TopBar = ({ className }) => {
   const { lang, t } = useI18n();
   const onTrips = usePathname().startsWith(ROUTES.trips(lang));
   return (
@@ -38,4 +38,6 @@ export default function TopBar({ className }) {
       </div>
     </div>
   );
-}
+};
+
+export default TopBar;

@@ -4,7 +4,7 @@ import { defaultOrigin } from "@/server/airports";
 
 // GET /api/origin?tz=Europe/Madrid → { country: "ES", origin: "BCN" }
 // Depends on who asks (their IP), so it is never cached.
-export async function GET(req) {
+export const GET = async (req) => {
   const headers = { "cache-control": "private, no-store" };
   try {
     const country = req.headers.get("x-vercel-ip-country");
@@ -13,4 +13,4 @@ export async function GET(req) {
     console.error(e);
     return NextResponse.json({ country: null, origin: DEFAULT_ORIGIN }, { headers });
   }
-}
+};

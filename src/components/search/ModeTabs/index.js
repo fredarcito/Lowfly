@@ -11,7 +11,7 @@ export const MODES = [
   { id: "trip", icon: CalendarRange },
 ];
 
-export default function ModeTabs({ mode, onChange }) {
+const ModeTabs = ({ mode, onChange }) => {
   const { t } = useI18n();
   return (
     <Tabs value={mode} onValueChange={onChange}>
@@ -30,4 +30,6 @@ export default function ModeTabs({ mode, onChange }) {
       </TabsList>
     </Tabs>
   );
-}
+};
+
+export default ModeTabs;

@@ -13,7 +13,7 @@ const body = Atkinson_Hyperlegible({ subsets: ["latin"], weight: ["400", "700"],
 export const dynamicParams = false;
 export const generateStaticParams = () => LOCALES.map((lang) => ({ lang }));
 
-export async function generateMetadata({ params }) {
+export const generateMetadata = async ({ params }) => {
   const { lang } = await params;
   const { meta } = getDictionary(lang);
   return {
@@ -29,12 +29,12 @@ export async function generateMetadata({ params }) {
       languages: Object.fromEntries(LOCALES.map((locale) => [locale, ROUTES.home(locale)])),
     },
   };
-}
+};
 
 // themeColor: the dark default; ThemeToggle updates it when the theme changes
 export const viewport = { width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: THEME_COLORS[DEFAULT_THEME] };
 
-export default async function RootLayout({ children, params }) {
+const RootLayout = async ({ children, params }) => {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
   return (
@@ -46,4 +46,6 @@ export default async function RootLayout({ children, params }) {
       <body>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;

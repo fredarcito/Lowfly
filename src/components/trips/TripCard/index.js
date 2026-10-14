@@ -16,7 +16,7 @@ import { airlinesOf } from "@/utils/format";
 import { ROUTES } from "@/constants/routes";
 
 // Booked or only saved, when it is and the airlines
-function TripBadges({ trip }) {
+const TripBadges = ({ trip }) => {
   const { t } = useI18n();
   const when = useTripWhen(trip);
   return (
@@ -36,12 +36,12 @@ function TripBadges({ trip }) {
       ))}
     </div>
   );
-}
+};
 
 // A saved trip in the list. Phone: photo on top, then the trip, its figures and the actions.
 // Tablet and up: photo on the left; trip and actions on top, figures below.
 // The whole card opens the trip; the button and the ⋯ menu sit above that link.
-export default function TripCard({ trip: savedTrip }) {
+const TripCard = ({ trip: savedTrip }) => {
   const { lang, t } = useI18n();
   const trip = useLocalizedTrip(savedTrip);
   const { fare, origin } = trip;
@@ -77,4 +77,6 @@ export default function TripCard({ trip: savedTrip }) {
       </div>
     </article>
   );
-}
+};
+
+export default TripCard;

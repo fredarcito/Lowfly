@@ -5,29 +5,29 @@ import { AppError, badRequest } from "@/server/errors";
 import { DEFAULT_LOCALE, hasLocale } from "@/i18n/config";
 import { WEEKEND } from "@/constants/weekend";
 
-export function iata(v) {
+export const iata = (v) => {
   const code = (v || "").toUpperCase();
   if (!/^[A-Z]{3}$/.test(code)) throw badRequest("badOrigin");
   return code;
-}
+};
 
-export function day(v) {
+export const day = (v) => {
   if (!isDay(v)) throw badRequest("missingDate");
   return v;
-}
+};
 
-export function country(v) {
+export const country = (v) => {
   if (!v) throw badRequest("missingCountry");
   return v;
-}
+};
 
 // Optional city inside the country (?city=Roma); null searches the whole country
 export const city = (v) => v?.trim().slice(0, 80) || null;
 
-export function range(from, to, maxDays) {
+export const range = (from, to, maxDays) => {
   if (to < from) throw badRequest("rangeOrder");
   if (nightsBetween(from, to) > maxDays) throw badRequest("rangeTooLong", { max: maxDays });
-}
+};
 
 export const maxPrice = (v) => Number(v) || Infinity;
 
@@ -36,7 +36,7 @@ export const lang = (p) => (hasLocale(p.get("lang")) ? p.get("lang") : DEFAULT_L
 
 // Stay for a return trip (trip=return&minN=2&maxN=4). Returns null for one way.
 // With weekend=1, the stay is a weekend away (lib/weekend) instead of minN to maxN nights.
-export function stay(p, from, to) {
+export const stay = (p, from, to) => {
   if (p.get("trip") !== "return") return null;
   if (p.get("weekend") === "1") {
     if (nightsBetween(from, to) < WEEKEND.stay.min) throw badRequest("stayTooShort", { min: WEEKEND.stay.min });
@@ -47,10 +47,10 @@ export function stay(p, from, to) {
   if (!Number.isInteger(min) || !Number.isInteger(max) || min < 1 || max < min || max > 30) throw badRequest("stayInvalid");
   if (nightsBetween(from, to) < min) throw badRequest("stayTooShort", { min });
   return { min, max };
-}
+};
 
 // Wraps a handler: returns JSON, 400 if the parameters are invalid, 502 if the airlines fail
-export function handle(fn) {
+export const handle = (fn) => {
   return async (req) => {
     try {
       const data = await fn(req.nextUrl.searchParams);
@@ -63,4 +63,4 @@ export function handle(fn) {
       return NextResponse.json({ error: "unknown" }, { status: 502 });
     }
   };
-}
+};

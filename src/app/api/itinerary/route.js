@@ -18,7 +18,7 @@ const HOUR = 3_600_000;
 const isTime = (value) => value == null || /^\d{2}:\d{2}$/.test(value);
 const isFlight = (flight) => flight && isDay(flight.day) && isTime(flight.time) && isTime(flight.arrive);
 
-function readPreferences(input = {}) {
+const readPreferences = (input = {}) => {
   const interests = Array.isArray(input.interests) ? input.interests.filter((interest) => INTERESTS.includes(interest)) : [];
   return {
     pace: PACES.includes(input.pace) ? input.pace : DEFAULT_PREFERENCES.pace,
@@ -26,10 +26,10 @@ function readPreferences(input = {}) {
     transport: TRANSPORTS.includes(input.transport) ? input.transport : DEFAULT_PREFERENCES.transport,
     checkIn: CHECK_IN_TIMES.includes(input.checkIn) ? input.checkIn : DEFAULT_PREFERENCES.checkIn,
   };
-}
+};
 
 // POST /api/itinerary { trip: { origin, code, city, country, out, ret }, lang, preferences } → the itinerary
-export async function POST(request) {
+export const POST = async (request) => {
   try {
     const body = await request.json().catch(() => null);
     const trip = body?.trip;
@@ -66,4 +66,4 @@ export async function POST(request) {
     console.error(error);
     return NextResponse.json({ error: "aiUnavailable" }, { status: 502 });
   }
-}
+};

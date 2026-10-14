@@ -1,5 +1,5 @@
 // Results block with a title and an optional note
-export default function Section({ title, note, action, children }) {
+const Section = ({ title, note, action, children }) => {
   return (
     <section className="grid gap-3">
       <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2">
@@ -12,4 +12,6 @@ export default function Section({ title, note, action, children }) {
       {children}
     </section>
   );
-}
+};
+
+export default Section;

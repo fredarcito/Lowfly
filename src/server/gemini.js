@@ -7,7 +7,7 @@ const DEFAULT_MODEL = "gemini-3.1-flash-lite";
 
 // Asks the model for JSON that follows `schema` and returns it parsed, with the token usage.
 // `thinking`: minimal | low | medium | high (more thinking, better plans, more output tokens to pay).
-export async function generateJson({ instructions, prompt, schema, thinking = "low" }) {
+export const generateJson = async ({ instructions, prompt, schema, thinking = "low" }) => {
   const key = process.env.GEMINI_API_KEY;
   if (!key) throw new AppError("aiUnavailable");
   const response = await fetch(ENDPOINT, {
@@ -40,4 +40,4 @@ export async function generateJson({ instructions, prompt, schema, thinking = "l
     console.error("Gemini returned invalid JSON", text?.slice(0, 300));
     throw new AppError("aiUnavailable");
   }
-}
+};

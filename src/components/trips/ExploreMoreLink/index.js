@@ -6,7 +6,7 @@ import { useI18n } from "@/context/i18n";
 import { ROUTES } from "@/constants/routes";
 
 // "+ Explore more flights" under the trip list: back to the search
-export default function ExploreMoreLink() {
+const ExploreMoreLink = () => {
   const { lang, t } = useI18n();
   return (
     <Link
@@ -19,4 +19,6 @@ export default function ExploreMoreLink() {
       {t.trips.exploreMore}
     </Link>
   );
-}
+};
+
+export default ExploreMoreLink;

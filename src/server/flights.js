@@ -14,7 +14,7 @@ const minBy = (list) => list.reduce((a, b) => (b.price < a.price ? b : a));
 
 // A return trip shaped like a regular fare (day/time/price/airline = the outbound ones),
 // so the rest of the code can treat it like a one-way flight
-function trip(dest, out, ret, price = out.price + ret.price, cur = "EUR") {
+const trip = (dest, out, ret, price = out.price + ret.price, cur = "EUR") => {
   return {
     code: dest.code,
     city: dest.city,
@@ -29,20 +29,20 @@ function trip(dest, out, ret, price = out.price + ret.price, cur = "EUR") {
     nights: nightsBetween(out.day, ret.day),
     hours: hoursAway(out, ret),
   };
-}
+};
 
 // The cheapest return for an outbound flight, staying stay.min to stay.max nights
-function bestReturn(out, rets, stay) {
+const bestReturn = (out, rets, stay) => {
   let best = null;
   for (const r of rets) {
     const n = nightsBetween(out.day, r.day);
     if (n >= stay.min && n <= stay.max && (!best || r.price < best.price)) best = r;
   }
   return best;
-}
+};
 
 // Runs jobs at most `n` at a time and records which airline fails
-async function pool(jobs, failed, n = 6) {
+const pool = async (jobs, failed, n = 6) => {
   const res = [];
   let i = 0;
   const worker = async () => {
@@ -58,11 +58,11 @@ async function pool(jobs, failed, n = 6) {
   };
   await Promise.all(Array.from({ length: n }, worker));
   return res;
-}
+};
 
 // Destinations from both airlines, merged by airport. The city comes from the airport list, where every
 // airport of a city shares its name (Fiumicino and Ciampino are both "Roma"), and the country code with it.
-export async function getDestinations(origin, lang = "es") {
+export const getDestinations = async (origin, lang = "es") => {
   const [ry, wz, known] = await Promise.allSettled([
     ryanair.cheapest(origin, tomorrow(), shift(tomorrow(), 180), lang),
     wizz.destinations(origin, lang),
@@ -88,19 +88,19 @@ export async function getDestinations(origin, lang = "es") {
   }
   if (!byCode.size && failed.length === 2) throw new AppError("noAirlines");
   return { origin, destinations: [...byCode.values()], failed };
-}
+};
 
 // The airports of a country, or only those of one of its cities (`city` null: the whole country)
-async function airportsIn(origin, country, city, failed, lang) {
+const airportsIn = async (origin, country, city, failed, lang) => {
   const { destinations, failed: f } = await getDestinations(origin, lang);
   f.forEach((a) => failed.add(a));
   const airports = destinations.filter((d) => d.country === country && (!city || d.city === city));
   if (!airports.length) throw new AppError("noRoutes", { origin, country: city ?? country }, 404);
   return airports;
-}
+};
 
 // "Price per day" jobs for each airport and airline, in one direction
-function dailyJobs(origin, airports, dir, from, to) {
+const dailyJobs = (origin, airports, dir, from, to) => {
   return airports.flatMap((a) =>
     a.airlines.map((al) => ({
       airline: al,
@@ -111,11 +111,11 @@ function dailyJobs(origin, airports, dir, from, to) {
       },
     }))
   );
-}
+};
 
 /* ---------- Anywhere ---------- */
 // `stay` = { min, max } nights for a return trip, or null for one way
-export async function everywhere(origin, from, to, max, stay = null, lang = "es") {
+export const everywhere = async (origin, from, to, max, stay = null, lang = "es") => {
   const failed = new Set();
   const { destinations, failed: f } = await getDestinations(origin, lang);
   f.forEach((a) => failed.add(a));
@@ -204,11 +204,11 @@ export async function everywhere(origin, from, to, max, stay = null, lang = "es"
     results: results.sort((a, b) => a.price - b.price),
     failed: [...failed],
   };
-}
+};
 
 /* ---------- To a country (or one of its cities) ---------- */
 // With `stay`, each calendar day is the cheapest return trip leaving that day
-export async function country(origin, countryName, cityName, from, to, max, stay = null, lang = "es") {
+export const country = async (origin, countryName, cityName, from, to, max, stay = null, lang = "es") => {
   const failed = new Set();
   const airports = await airportsIn(origin, countryName, cityName, failed, lang);
   const jobs = stay
@@ -261,10 +261,10 @@ export async function country(origin, countryName, cityName, from, to, max, stay
     max: days[days.length - 1]?.price ?? 0,
     failed: [...failed],
   };
-}
+};
 
 /* ---------- Flexible dates ---------- */
-export async function flexible(origin, countryName, cityName, ida, vuelta, flex, lang = "es") {
+export const flexible = async (origin, countryName, cityName, ida, vuelta, flex, lang = "es") => {
   const failed = new Set();
   const airports = await airportsIn(origin, countryName, cityName, failed, lang);
 
@@ -325,4 +325,4 @@ export async function flexible(origin, countryName, cityName, ida, vuelta, flex,
     max: sorted[sorted.length - 1]?.total ?? 0,
     failed: [...failed],
   };
-}
+};

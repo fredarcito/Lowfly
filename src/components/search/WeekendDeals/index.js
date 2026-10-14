@@ -20,7 +20,7 @@ const WEEKENDS = 4;
 // Before searching: the cheapest weekend trips from the departure airport, for each of the next weekends.
 // Each weekend loads when picked and is kept, so going back to one is instant.
 // If the airlines fail it shows `fallback` instead.
-export default function WeekendDeals({ origin, originName, onSeeAll, fallback }) {
+const WeekendDeals = ({ origin, originName, onSeeAll, fallback }) => {
   const { lang, t, f } = useI18n();
   // Dates on the client only: "today" and its time zone are the visitor's, not the server's
   const [weekends, setWeekends] = useState(null);
@@ -109,11 +109,13 @@ export default function WeekendDeals({ origin, originName, onSeeAll, fallback })
       )}
     </section>
   );
-}
+};
+
+export default WeekendDeals;
 
 // A destination with its photo. The whole card opens the booking; the no-time-off alternative and
 // the photo credit are links of their own on top of it.
-function DealCard({ fare, origin, photo }) {
+const DealCard = ({ fare, origin, photo }) => {
   const { t, f } = useI18n();
   const alt = fare.noTimeOffAlt;
   return (
@@ -199,4 +201,4 @@ function DealCard({ fare, origin, photo }) {
       </div>
     </article>
   );
-}
+};

@@ -4,7 +4,7 @@ import { useI18n } from "@/context/i18n";
 import { useDestinationGuide } from "@/hooks/useDestinationGuide";
 import { cn } from "@/utils/cn";
 
-function Tags({ tags, className }) {
+const Tags = ({ tags, className }) => {
   return (
     <ul className={cn("flex flex-wrap gap-1.5", className)}>
       {tags.map((tag) => (
@@ -14,12 +14,12 @@ function Tags({ tags, className }) {
       ))}
     </ul>
   );
-}
+};
 
 // Why a destination is worth a visit: a sentence and three highlights, with its source.
 // `tagsOnly` for small spaces (weekend cards); `textClassName` restyles the sentence (a trip's photo header).
 // Shows nothing while loading or when there is no guide.
-export default function DestinationGuide({ code, tagsOnly = false, className, textClassName }) {
+const DestinationGuide = ({ code, tagsOnly = false, className, textClassName }) => {
   const { t } = useI18n();
   const guide = useDestinationGuide(code);
   if (!guide) return null;
@@ -35,4 +35,6 @@ export default function DestinationGuide({ code, tagsOnly = false, className, te
       <Tags tags={guide.tags} />
     </div>
   );
-}
+};
+
+export default DestinationGuide;

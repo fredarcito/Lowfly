@@ -3,7 +3,7 @@ import { heatOf } from "@/utils/format";
 import { cn } from "@/utils/cn";
 
 // Outbound × return table with the total price of each combination
-export default function FlexMatrix({ outDays, retDays, combos, ida, vuelta, min, max }) {
+const FlexMatrix = ({ outDays, retDays, combos, ida, vuelta, min, max }) => {
   const { t, f } = useI18n();
   return (
     <div className="overflow-x-auto rounded-xl bg-card p-3 ring-1 ring-foreground/10 sm:p-4">
@@ -54,4 +54,6 @@ export default function FlexMatrix({ outDays, retDays, combos, ida, vuelta, min,
       </table>
     </div>
   );
-}
+};
+
+export default FlexMatrix;

@@ -23,7 +23,7 @@ const VERSION_TTL = 6 * 3600 * 1000;
 // The version is kept in memory for a few hours.
 let version = { value: null, at: 0 };
 
-async function apiBase() {
+const apiBase = async () => {
   if (!version.value || Date.now() - version.at > VERSION_TTL) {
     try {
       const r = await fetch("https://www.wizzair.com/en-gb", { headers: { "user-agent": UA }, cache: "no-store" });
@@ -32,17 +32,17 @@ async function apiBase() {
     } catch {}
   }
   return `https://be.wizzair.com/${version.value || FALLBACK_VERSION}/Api`;
-}
+};
 
 // Wizz network: every city it flies from, with its connections
-async function cities(lang) {
+const cities = async (lang) => {
   const r = await fetch(`${await apiBase()}/asset/map?languageCode=${lang === "en" ? "en-gb" : "es-es"}`, { headers: HEADERS, next: { revalidate: 86400 } });
   if (!r.ok) throw new Error(`Wizz Air responded with error ${r.status}`);
   return (await r.json()).cities || [];
-}
+};
 
 // Every airport Wizz flies from
-export async function airports(lang = "es") {
+export const airports = async (lang = "es") => {
   return (await cities(lang))
     .filter((c) => c.connections?.length && !c.isFakeStation)
     .map((c) => ({
@@ -55,10 +55,10 @@ export async function airports(lang = "es") {
       lat: c.latitude,
       lon: c.longitude,
     }));
-}
+};
 
 // Wizz destinations from the departure airport
-export async function destinations(origin, lang = "es") {
+export const destinations = async (origin, lang = "es") => {
   const list = await cities(lang);
   const byIata = Object.fromEntries(list.map((c) => [c.iata, c]));
   const here = byIata[origin];
@@ -70,10 +70,10 @@ export async function destinations(origin, lang = "es") {
     .filter(Boolean)
     .flatMap(real)
     .map((c) => ({ airline: "wizz", code: c.iata, city: c.shortName.trim(), country: countryName(c.countryCode, c.countryName, lang) }));
-}
+};
 
 // Cheapest price per day on a route (in 30-day chunks)
-export async function daily(dep, arr, from, to) {
+export const daily = async (dep, arr, from, to) => {
   const base = await apiBase();
   const list = [];
   for (const [a, b] of chunks(from, to, 30)) {
@@ -101,11 +101,11 @@ export async function daily(dep, arr, from, to) {
     }
   }
   return toEur(list);
-}
+};
 
 // Wizz's own fare finder: the cheapest fare to every destination in a month, in a single request.
 // For a return trip it is the cheapest pair within a stay bucket ("1-3 days", "4-8 days" or "anytime").
-async function fareFinder(origin, month, duration) {
+const fareFinder = async (origin, month, duration) => {
   const r = await fetch(`${await apiBase()}/search/SmartSearchCheapFlightsV2`, {
     method: "POST",
     headers: HEADERS,
@@ -124,18 +124,18 @@ async function fareFinder(origin, month, duration) {
   });
   if (!r.ok) throw new Error(`Wizz Air responded with error ${r.status}`);
   return (await r.json()).items || [];
-}
+};
 
 // Stay buckets for a stay of min to max nights. "1 week" is exactly 7 nights;
 // "anytime" only when part of the stay is longer than 8 nights.
-function buckets({ min, max }) {
+const buckets = ({ min, max }) => {
   if (min === 7 && max === 7) return ["1 week"];
   const list = [];
   if (min <= 3) list.push("1-3 days");
   if (min <= 8 && max >= 4) list.push("4-8 days");
   if (max > 8) list.push("anytime");
   return list;
-}
+};
 
 const monthEnd = (month) => shift(shift(month.slice(0, 7) + "-01", 32).slice(0, 7) + "-01", -1);
 
@@ -145,7 +145,7 @@ const monthEnd = (month) => shift(shift(month.slice(0, 7) + "-01", 32).slice(0, 
 // Those months go to `recheck` ({ code, from, to, price }), to be checked day by day, unless the destination
 // already has a valid fare that is not more expensive (nothing in that month can beat it).
 // With a weekend stay (lib/weekend) it uses Wizz's "weekend" bucket (Fri/Sat out, Sun/Mon back) and also checks the times.
-export async function cheapest(origin, from, to, stay = null) {
+export const cheapest = async (origin, from, to, stay = null) => {
   const lastOut = stay ? shift(to, -stay.min) : to;
   const kinds = !stay ? [null] : stay.weekend ? ["weekend"] : buckets(stay);
   const requests = monthsBetween(from, lastOut).flatMap((m) => kinds.map((b) => [m, b]));
@@ -192,4 +192,4 @@ export async function cheapest(origin, from, to, stay = null) {
     if (!recheck.has(key) || d.price < recheck.get(key).price) recheck.set(key, { code: d.code, from: a, to: b, price: d.price });
   }
   return { fares: [...new Set([...best.values(), ...office.values()])], recheck: [...recheck.values()] };
-}
+};

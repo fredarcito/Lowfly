@@ -8,7 +8,7 @@ import { updateTrip } from "@/store/trips";
 import { itineraryIn } from "@/utils/itinerary";
 
 // What the AI needs to know about the flights: where, and when you land and leave
-function tripForAi(trip) {
+const tripForAi = (trip) => {
   const { fare } = trip;
   const out = fare.out ?? fare;
   return {
@@ -19,11 +19,11 @@ function tripForAi(trip) {
     out: { day: out.day, time: out.time ?? null, arrive: out.arrive ?? null },
     ret: fare.ret ? { day: fare.ret.day, time: fare.ret.time ?? null, arrive: fare.ret.arrive ?? null } : null,
   };
-}
+};
 
 // A trip's itinerary (samples follow the page language; AI ones keep theirs), the picked day,
 // and creating it with the AI: { status: "idle" | "creating" | "error", error }
-export function useItinerary(trip) {
+export const useItinerary = (trip) => {
   const { lang } = useI18n();
   const [pickedIndex, setPickedIndex] = useState(0);
   const [creation, setCreation] = useState({ status: "idle" });
@@ -31,7 +31,7 @@ export function useItinerary(trip) {
   const days = itinerary?.days ?? [];
   const index = Math.min(pickedIndex, Math.max(days.length - 1, 0));
 
-  async function create(preferences) {
+  const create = async (preferences) => {
     setCreation({ status: "creating" });
     try {
       const created = await createItinerary({ trip: tripForAi(trip), lang, preferences });
@@ -41,7 +41,7 @@ export function useItinerary(trip) {
     } catch (error) {
       setCreation({ status: "error", error: apiError(error) });
     }
-  }
+  };
 
   return { itinerary, days, day: days[index], dayIndex: index, pickDay: setPickedIndex, create, creation };
-}
+};

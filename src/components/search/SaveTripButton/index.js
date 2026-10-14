@@ -12,7 +12,7 @@ import { cn } from "@/utils/cn";
 // Saves the flight to "My trips". Once saved, the full button becomes "View in My trips" (to the trip and
 // its itinerary) with a small bookmark next to it to remove it. `fare` needs city and country.
 // compact: just the icon, for small spaces such as the photo of a weekend card.
-export default function SaveTripButton({ origin, fare, compact = false, className }) {
+const SaveTripButton = ({ origin, fare, compact = false, className }) => {
   const { lang, t } = useI18n();
   const id = tripId(origin, fare);
   const saved = useTrips().some((trip) => trip.id === id);
@@ -74,4 +74,6 @@ export default function SaveTripButton({ origin, fare, compact = false, classNam
       <Icon /> {t.trips.save}
     </Button>
   );
-}
+};
+
+export default SaveTripButton;

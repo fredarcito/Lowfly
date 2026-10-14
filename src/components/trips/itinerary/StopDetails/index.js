@@ -17,17 +17,17 @@ const TYPE_STYLES = {
   llegada: "bg-sea/15 text-sea",
 };
 
-function Block({ title, children }) {
+const Block = ({ title, children }) => {
   return (
     <div className="grid gap-0.5">
       <p className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">{title}</p>
       <p className="text-sm">{children}</p>
     </div>
   );
-}
+};
 
 // History and curiosities, folded; only with sources (the AI must back what it says)
-function StopHistory({ history, sources }) {
+const StopHistory = ({ history, sources }) => {
   const { t } = useI18n();
   const section = useDisclosure();
   if (!history || !sources?.length) return null;
@@ -61,10 +61,10 @@ function StopHistory({ history, sources }) {
       </Collapse>
     </div>
   );
-}
+};
 
 // What a stop holds once opened: why go, what to look for, the plan's practical note, food, labels, history
-export default function StopDetails({ stop }) {
+const StopDetails = ({ stop }) => {
   const { t } = useI18n();
   const typeLabel = t.trips.types[stop.type];
   return (
@@ -95,4 +95,6 @@ export default function StopDetails({ stop }) {
       <StopHistory history={stop.history} sources={stop.sources} />
     </div>
   );
-}
+};
+
+export default StopDetails;

@@ -8,7 +8,7 @@ import NoResults from "@/components/search/results/NoResults";
 import { useI18n } from "@/context/i18n";
 import { airlinesOf } from "@/utils/format";
 
-export default function CountryResults({ data }) {
+const CountryResults = ({ data }) => {
   const { t, f: fmt } = useI18n();
   const { origin, roundTrip, country, city, from, to, months, byDay, best, others, airports, min, max, failed } = data;
   const priceNote = roundTrip ? t.results.roundTrip : undefined;
@@ -92,4 +92,6 @@ export default function CountryResults({ data }) {
       </Section>
     </>
   );
-}
+};
+
+export default CountryResults;

@@ -10,7 +10,7 @@ import { directionsUrl } from "@/utils/itinerary";
 import { cn } from "@/utils/cn";
 
 // The stop's marker: its map number (a tick once visited), a pin for places off the map, a dot otherwise
-function StopMarker({ stop, open, visited }) {
+const StopMarker = ({ stop, open, visited }) => {
   if (stop.place && visited)
     return (
       <span className="grid size-9 place-items-center rounded-full bg-save text-white">
@@ -35,11 +35,11 @@ function StopMarker({ stop, open, visited }) {
       </span>
     );
   return <span className="size-2.5 rounded-full bg-[color-mix(in_oklab,var(--muted-foreground)_55%,var(--card))] ring-4 ring-card" />;
-}
+};
 
 // One stop. Places fold open (one at a time, in step with the map) to show the details,
 // "Directions" and "Mark as visited". Other stops (getting around, breakfast…) just show their note.
-export default function ItineraryStop({ stop, mode, open, visited, onToggle, onHover, onToggleVisited, lineAbove, lineBelow }) {
+const ItineraryStop = ({ stop, mode, open, visited, onToggle, onHover, onToggleVisited, lineAbove, lineBelow }) => {
   const { t } = useI18n();
   const foldable = Boolean(stop.place);
   const summary = stop.why ?? stop.note;
@@ -108,4 +108,6 @@ export default function ItineraryStop({ stop, mode, open, visited, onToggle, onH
       </div>
     </li>
   );
-}
+};
+
+export default ItineraryStop;

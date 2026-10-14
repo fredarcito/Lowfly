@@ -15,7 +15,7 @@ const GREEN = "#2f9e6e";
 const theme = () => (document.documentElement.dataset.theme === "light" ? "light" : "dark");
 
 // Numbered coral pin (green with a tick once visited); the active one is bigger and outlined in dark
-function markerIcon(leaflet, number, active, visited) {
+const markerIcon = (leaflet, number, active, visited) => {
   const size = active ? 34 : 26;
   const ring = active ? "0 0 0 3px #fff,0 0 0 6px rgb(14 41 61/.55)" : "0 0 0 2px #fff";
   return leaflet.divIcon({
@@ -24,13 +24,13 @@ function markerIcon(leaflet, number, active, visited) {
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
   });
-}
+};
 
 // The day's stops, numbered in order, joined by a dashed line (straight: no routing service).
 // `stops`: [{ number, name, lat, lng }]. `focus`: the stops to frame at first (without the airport).
 // `active`: the highlighted stop number; `visited`: numbers already visited; `onSelect(number)` when a pin is tapped.
 // Leaflet only runs in the browser, so it is loaded when the map mounts.
-export default function ItineraryMap({ stops, focus = stops, active, visited = [], onSelect, className }) {
+const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, className }) => {
   const box = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef(new Map()); // number → marker
@@ -97,4 +97,6 @@ export default function ItineraryMap({ stops, focus = stops, active, visited = [
   }, [active, key, visitedKey]);
 
   return <div ref={box} className={className} />;
-}
+};
+
+export default ItineraryMap;

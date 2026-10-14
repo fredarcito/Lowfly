@@ -13,7 +13,7 @@ import { useI18n } from "@/context/i18n";
 import { cn } from "@/utils/cn";
 
 // Asks before an action that cannot be undone. `destructive` paints the confirm button red.
-export default function ConfirmDialog({ open, onOpenChange, icon: Icon, title, description, confirmLabel, onConfirm, destructive }) {
+const ConfirmDialog = ({ open, onOpenChange, icon: Icon, title, description, confirmLabel, onConfirm, destructive }) => {
   const { t } = useI18n();
   return (
     <AlertDialog open={open} onOpenChange={onOpenChange}>
@@ -52,4 +52,6 @@ export default function ConfirmDialog({ open, onOpenChange, icon: Icon, title, d
       </AlertDialogContent>
     </AlertDialog>
   );
-}
+};
+
+export default ConfirmDialog;

@@ -5,7 +5,7 @@ import { usePhoto } from "@/hooks/usePhoto";
 import { cn } from "@/utils/cn";
 
 // Destination photo over a sea-to-coral gradient (a plane while there is none). `children` sit on top.
-export default function TripPhoto({ code, className, children }) {
+const TripPhoto = ({ code, className, children }) => {
   const photo = usePhoto(code);
   return (
     <div
@@ -19,4 +19,6 @@ export default function TripPhoto({ code, className, children }) {
       {children}
     </div>
   );
-}
+};
+
+export default TripPhoto;

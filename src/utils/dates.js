@@ -17,19 +17,19 @@ export const today = () => iso(new Date());
 export const tomorrow = () => iso(addDays(new Date(), 1));
 export const nightsBetween = (a, b) => Math.round((parseDay(b) - parseDay(a)) / 864e5);
 
-export function nextFriday() {
+export const nextFriday = () => {
   let d = parseDay(tomorrow());
   while (d.getDay() !== 5) d = addDays(d, 1);
   return iso(d);
-}
+};
 
-export function daysBetween(from, to) {
+export const daysBetween = (from, to) => {
   const list = [];
   for (let d = from; d <= to; d = shift(d, 1)) list.push(d);
   return list;
-}
+};
 
-export function monthsBetween(from, to) {
+export const monthsBetween = (from, to) => {
   let [y, m] = from.split("-").map(Number);
   const [y2, m2] = to.split("-").map(Number);
   const list = [];
@@ -38,14 +38,14 @@ export function monthsBetween(from, to) {
     if (++m > 12) { m = 1; y++; }
   }
   return list;
-}
+};
 
 // Splits a range into chunks of at most `size` days
-export function chunks(from, to, size) {
+export const chunks = (from, to, size) => {
   const list = [];
   for (let s = from; s <= to; s = shift(s, size)) {
     const e = shift(s, size - 1);
     list.push([s, e < to ? e : to]);
   }
   return list;
-}
+};

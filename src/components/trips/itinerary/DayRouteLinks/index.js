@@ -6,7 +6,7 @@ import { useI18n } from "@/context/i18n";
 import { cn } from "@/utils/cn";
 
 // "Open day 1 in Google Maps" (the app on phones). A long day is split into routes of up to 11 points.
-export default function DayRouteLinks({ routes, dayNumber, className }) {
+const DayRouteLinks = ({ routes, dayNumber, className }) => {
   const { t } = useI18n();
   if (!routes.length) return null;
   return (
@@ -21,4 +21,6 @@ export default function DayRouteLinks({ routes, dayNumber, className }) {
       ))}
     </div>
   );
-}
+};
+
+export default DayRouteLinks;

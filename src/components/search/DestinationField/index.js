@@ -14,7 +14,7 @@ import { cn } from "@/utils/cn";
 // countries: [{ name, countryCode, codes, cities: [{ name, codes }] }]
 // Every option is a whole country (city null) or one of its cities. With a query, only the matches:
 // a country whose name matches keeps all its cities, otherwise only the cities (or airport codes) that match.
-function optionsFor(countries, query) {
+const optionsFor = (countries, query) => {
   const searched = normalize(query.trim());
   const options = [];
   for (const country of countries) {
@@ -30,11 +30,11 @@ function optionsFor(countries, query) {
     if (country.cities.length > 1) cities.forEach((city) => options.push({ country, city }));
   }
   return options;
-}
+};
 
 const optionKey = (option) => `${option.country.name}|${option.city?.name ?? ""}`;
 
-function DestinationPicker({ countries, value, onPick }) {
+const DestinationPicker = ({ countries, value, onPick }) => {
   const { t } = useI18n();
   const listId = useId();
   const listRef = useRef(null);
@@ -50,7 +50,7 @@ function DestinationPicker({ countries, value, onPick }) {
 
   const pick = (option) => onPick({ country: option.country.name, city: option.city?.name ?? "" });
 
-  function onKeyDown(event) {
+  const onKeyDown = (event) => {
     if (event.key === "ArrowDown" || event.key === "ArrowUp") {
       event.preventDefault();
       const step = event.key === "ArrowDown" ? 1 : -1;
@@ -59,7 +59,7 @@ function DestinationPicker({ countries, value, onPick }) {
       event.preventDefault();
       pick(shown[active]);
     }
-  }
+  };
 
   if (countries.status !== "ok") {
     return (
@@ -143,11 +143,11 @@ function DestinationPicker({ countries, value, onPick }) {
       </div>
     </div>
   );
-}
+};
 
 // Destination: a whole country or one of its cities. A button that opens a searchable list
 // (popover on desktop, bottom sheet on mobile). value: { country, city } (city "" = the whole country)
-export default function DestinationField({ id, value, countries, onChange }) {
+const DestinationField = ({ id, value, countries, onChange }) => {
   const { t } = useI18n();
   const desktop = useDesktop();
   const [open, setOpen] = useState(false);
@@ -205,4 +205,6 @@ export default function DestinationField({ id, value, countries, onChange }) {
       </SheetContent>
     </Sheet>
   );
-}
+};
+
+export default DestinationField;

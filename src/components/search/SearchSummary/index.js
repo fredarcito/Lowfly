@@ -8,7 +8,7 @@ import { APP_NAME } from "@/i18n/config";
 
 // One line with the search that produced the results. Clicking it opens the form again;
 // "Share" sends the link to this search (it is in the URL, see lib/share).
-export default function SearchSummary({ query, originName, onEdit }) {
+const SearchSummary = ({ query, originName, onEdit }) => {
   const { t, f } = useI18n();
   const [copied, setCopied] = useState(false);
   if (!query) return null;
@@ -30,7 +30,7 @@ export default function SearchSummary({ query, originName, onEdit }) {
   const detail = parts.filter(Boolean).join(" · ");
 
   // On phones and tablets, the share sheet (WhatsApp, Messages…); on computers, the link is copied
-  async function share() {
+  const share = async () => {
     const url = window.location.href;
     if (navigator.share && window.matchMedia("(pointer: coarse)").matches) {
       try {
@@ -43,7 +43,7 @@ export default function SearchSummary({ query, originName, onEdit }) {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {}
-  }
+  };
 
   return (
     <div className="flex items-center gap-2">
@@ -82,4 +82,6 @@ export default function SearchSummary({ query, originName, onEdit }) {
       </span>
     </div>
   );
-}
+};
+
+export default SearchSummary;

@@ -7,7 +7,7 @@ import HeatLegend from "@/components/search/results/HeatLegend";
 import NoResults from "@/components/search/results/NoResults";
 import { useI18n } from "@/context/i18n";
 
-export default function FlexibleResults({ data }) {
+const FlexibleResults = ({ data }) => {
   const { t, f } = useI18n();
   const r = t.results;
   const { origin, country, city, ida, vuelta, outDays, retDays, combos, base, top, alternatives, alternativesKind, min, max, failed } = data;
@@ -89,4 +89,6 @@ export default function FlexibleResults({ data }) {
       </Section>
     </>
   );
-}
+};
+
+export default FlexibleResults;

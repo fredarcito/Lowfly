@@ -14,7 +14,7 @@ const MODE_ICONS = { walking: Footprints, driving: Car, transit: TrainFront };
 
 // One day: title, progress and the Maps route; then the stops (grouped into morning, afternoon and night)
 // next to the map (desktop) or under it (phone). One stop is open at a time, in step with the map.
-export default function ItineraryDay({ trip, day, dayNumber }) {
+const ItineraryDay = ({ trip, day, dayNumber }) => {
   const { t } = useI18n();
   const { stops, mapStops, routes } = useDayPlan(day);
   const { isVisited, toggleVisited, countIn } = useVisitedStops(trip);
@@ -25,12 +25,12 @@ export default function ItineraryDay({ trip, day, dayNumber }) {
   const openStop = stops.find((stop) => stop.id === openId);
 
   // From a pin: open its stop and bring it into view
-  function openNumber(number) {
+  const openNumber = (number) => {
     const stop = stops.find((candidate) => candidate.number === number);
     if (!stop) return;
     setOpenId(stop.id);
     document.getElementById(`stop-${stop.id}`)?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }
+  };
 
   // The timeline runs from the first stop's marker to the last one's
   const lastIndex = stops.length - 1;
@@ -88,4 +88,6 @@ export default function ItineraryDay({ trip, day, dayNumber }) {
       </div>
     </div>
   );
-}
+};
+
+export default ItineraryDay;

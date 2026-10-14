@@ -6,7 +6,7 @@ import { cn } from "@/utils/cn";
 const CELL = "flex aspect-square flex-col justify-between rounded-md p-1 text-[0.7rem] leading-none sm:p-1.5 sm:text-xs";
 
 // One month with the cheapest price of each day. The yellower, the cheaper.
-export default function PriceCalendar({ month, byDay, min, max, bestDay, from, to, origin }) {
+const PriceCalendar = ({ month, byDay, min, max, bestDay, from, to, origin }) => {
   const { t, f: fmt } = useI18n();
   const [y, m] = month.split("-").map(Number);
   const first = new Date(y, m - 1, 1);
@@ -70,4 +70,6 @@ export default function PriceCalendar({ month, byDay, min, max, bestDay, from, t
       </div>
     </div>
   );
-}
+};
+
+export default PriceCalendar;

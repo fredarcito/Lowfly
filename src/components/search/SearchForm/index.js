@@ -13,7 +13,7 @@ import { useI18n } from "@/context/i18n";
 
 const MAX_DAYS = { everywhere: 180, country: 120 };
 
-function Field({ id, label, hint, className = "", children }) {
+const Field = ({ id, label, hint, className = "", children }) => {
   return (
     <div className={`grid min-w-0 content-start gap-1.5 ${className}`}>
       <Label htmlFor={id} className="text-muted-foreground">
@@ -23,10 +23,10 @@ function Field({ id, label, hint, className = "", children }) {
       {hint && <p className="text-xs text-muted-foreground">{hint}</p>}
     </div>
   );
-}
+};
 
 // One way / return, and how many nights you want to stay (or, anywhere, only weekends away: lib/weekend)
-function TripType({ mode, form, onField }) {
+const TripType = ({ mode, form, onField }) => {
   const { t } = useI18n();
   const roundTrip = form.trip === "return";
   const weekendOption = roundTrip && mode === "everywhere";
@@ -81,9 +81,9 @@ function TripType({ mode, form, onField }) {
       )}
     </div>
   );
-}
+};
 
-export default function SearchForm({ mode, form, airports, countries, busy, onField, onSubmit }) {
+const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }) => {
   const { t } = useI18n();
   const show = (...modes) => modes.includes(mode);
   const roundTrip = form.trip === "return";
@@ -198,4 +198,6 @@ export default function SearchForm({ mode, form, airports, countries, busy, onFi
       </div>
     </form>
   );
-}
+};
+
+export default SearchForm;

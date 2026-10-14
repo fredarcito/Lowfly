@@ -5,7 +5,7 @@ import { cn } from "@/utils/cn";
 
 // "Day 1 · Mon 19 Oct" tabs; they scroll sideways when they do not fit, and stay at the top while the day scrolls.
 // `belowBar`: on phones and tablets the slim bar (ItineraryStickyBar) is showing, so they stick right under it.
-export default function ItineraryDayTabs({ days, picked, onPick, belowBar = false }) {
+const ItineraryDayTabs = ({ days, picked, onPick, belowBar = false }) => {
   const { t, f } = useI18n();
   return (
     <div
@@ -41,4 +41,6 @@ export default function ItineraryDayTabs({ days, picked, onPick, belowBar = fals
       </div>
     </div>
   );
-}
+};
+
+export default ItineraryDayTabs;

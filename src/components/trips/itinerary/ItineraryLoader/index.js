@@ -27,7 +27,7 @@ const WIZARD = {
 };
 
 // A friendly, elegant wizard waving his wand (an illustration in SVG, animated from globals.css)
-function Wizard() {
+const Wizard = () => {
   const c = WIZARD;
   return (
     // overflow-visible: at the top of its wave the wand's star leaves the 160-wide viewBox
@@ -107,14 +107,14 @@ function Wizard() {
       <path className="loader-twinkle [animation-delay:1s]" d="M156 70 l1 2.6 2.6 1 -2.6 1 -1 2.6 -1 -2.6 -2.6 -1 2.6 -1 z" fill={c.gold} />
     </svg>
   );
-}
+};
 
 // Elapsed seconds as m:ss (1:05)
 const minutesAndSeconds = (seconds) => `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
 
 // While the AI creates the itinerary: the wizard, travel icons orbiting around him, playful travel phrases
 // that change every few seconds, and how long it usually takes with the time so far (so nobody gives up)
-export default function ItineraryLoader() {
+const ItineraryLoader = () => {
   const { t } = useI18n();
   const phrases = t.trips.loaderPhrases;
   const [phraseIndex, setPhraseIndex] = useState(0);
@@ -177,4 +177,6 @@ export default function ItineraryLoader() {
       </div>
     </section>
   );
-}
+};
+
+export default ItineraryLoader;

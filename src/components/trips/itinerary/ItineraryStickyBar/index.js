@@ -11,7 +11,7 @@ import { cn } from "@/utils/cn";
 // Phones and tablets, once the photo header has scrolled away: a slim bar fixed at the top that keeps the
 // context (the day's title and the destination) and the actions at hand (back to the list, the day in
 // Google Maps). It slides in while `visible`; the day tabs stick right under it (ItineraryDayTabs).
-export default function ItineraryStickyBar({ trip, day, dayNumber, visible }) {
+const ItineraryStickyBar = ({ trip, day, dayNumber, visible }) => {
   const { lang, t } = useI18n();
   const { routes } = useDayPlan(day);
   const { fare } = trip;
@@ -47,4 +47,6 @@ export default function ItineraryStickyBar({ trip, day, dayNumber, visible }) {
       </div>
     </div>
   );
-}
+};
+
+export default ItineraryStickyBar;

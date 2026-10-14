@@ -14,7 +14,7 @@ import {
 // A labelled field like the search form's, opening the options. It fills its column, so picking
 // another option never changes its size. One choice (`value` + `onChange`) or several
 // (`values` + `onToggle`). `options`: [{ id, label }].
-export default function PreferencePicker({ id, icon: Icon, label, options, value, onChange, values, onToggle }) {
+const PreferencePicker = ({ id, icon: Icon, label, options, value, onChange, values, onToggle }) => {
   const multiple = Boolean(values);
   const chosen = options.filter((option) => (multiple ? values.includes(option.id) : option.id === value));
   const summary = chosen.length > 2 ? `${chosen[0].label}, ${chosen[1].label} +${chosen.length - 2}` : chosen.map((option) => option.label).join(", ");
@@ -59,4 +59,6 @@ export default function PreferencePicker({ id, icon: Icon, label, options, value
       </DropdownMenu>
     </div>
   );
-}
+};
+
+export default PreferencePicker;

@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getPhotos } from "@/server/photos";
 
 // GET /api/photos?codes=CTA,BRI → a photo of the city each airport serves (or null)
-export async function GET(req) {
+export const GET = async (req) => {
   const codes = [...new Set((req.nextUrl.searchParams.get("codes") || "").toUpperCase().split(","))]
     .filter((c) => /^[A-Z]{3}$/.test(c))
     .slice(0, 12);
@@ -14,4 +14,4 @@ export async function GET(req) {
     console.error(e);
     return NextResponse.json({}, { status: 502 });
   }
-}
+};

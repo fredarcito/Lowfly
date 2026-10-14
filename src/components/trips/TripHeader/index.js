@@ -13,7 +13,7 @@ import { ROUTES } from "@/constants/routes";
 // (fading to the left and down, so the text stays on plain dark), dimmed behind the text on phones.
 // In the dark theme it is also darkened, so the white text and the buttons on top of it always read.
 // The © in the corner credits it, as its licence requires.
-function TripBackdrop({ code }) {
+const TripBackdrop = ({ code }) => {
   const { t } = useI18n();
   const photo = usePhoto(code);
   if (!photo) return null;
@@ -45,11 +45,11 @@ function TripBackdrop({ code }) {
       </a>
     </>
   );
-}
+};
 
 // Top of a trip, over the destination photo: back to the list, destination, dates, nights and when it is,
 // why the destination is worth a visit, and the ⋯ menu
-export default function TripHeader({ trip, onDeleted }) {
+const TripHeader = ({ trip, onDeleted }) => {
   const { lang, t, f } = useI18n();
   const when = useTripWhen(trip);
   const { fare } = trip;
@@ -101,4 +101,6 @@ export default function TripHeader({ trip, onDeleted }) {
       <DestinationGuide code={fare.code} className="mt-1 max-w-[60ch] pb-0" textClassName="text-hero-muted sm:text-base" />
     </div>
   );
-}
+};
+
+export default TripHeader;

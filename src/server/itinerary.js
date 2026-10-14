@@ -87,7 +87,7 @@ const SCHEMA = {
   required: ["days"],
 };
 
-function instructionsFor({ lang, city, country, airport, out, ret, dates, preferences }) {
+const instructionsFor = ({ lang, city, country, airport, out, ret, dates, preferences }) => {
   const language = LANGUAGES[lang];
   const lastDay = dates.at(-1);
   return `You are a local travel planner. Plan a realistic day-by-day itinerary for a first-time visitor to ${city}, ${country}.
@@ -113,13 +113,13 @@ Rules:
 - For sights, "wikipediaTitle" is the exact title of the article on ${lang}.wikipedia.org, or null if there is none.
 - Do not write history or dates of construction: we add them from Wikipedia.
 - Keep texts short: titles under 60 characters, notes and "why" under 200.`;
-}
+};
 
 const text = (value, max = 300) => (typeof value === "string" && value.trim() ? value.trim().slice(0, max) : null);
 const isCoordinate = (lat, lng) => Number.isFinite(lat) && Number.isFinite(lng) && Math.abs(lat) <= 90 && Math.abs(lng) <= 180;
 
 // Keeps what the UI can trust: known types and modes, trimmed texts, and only places near the destination
-function cleanStop(stop, destination) {
+const cleanStop = (stop, destination) => {
   const type = STOP_TYPES.includes(stop.type) ? stop.type : "opcional";
   const sight = SIGHT_TYPES.has(type);
   const place = stop.place && isCoordinate(stop.place.lat, stop.place.lng) && km(stop.place, destination) <= MAX_KM_FROM_AIRPORT
@@ -136,10 +136,10 @@ function cleanStop(stop, destination) {
     cost: text(stop.cost, 60),
     place,
   };
-}
+};
 
 // Runs `task` on every item, at most `limit` at a time, keeping the order
-async function mapLimited(items, limit, task) {
+const mapLimited = async (items, limit, task) => {
   const results = new Array(items.length);
   let next = 0;
   const worker = async () => {
@@ -150,20 +150,20 @@ async function mapLimited(items, limit, task) {
   };
   await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
   return results;
-}
+};
 
 // Do the two names share a real word? ("Castello Normanno-Svevo di Bari" and "Castillo Normando-Suabo": yes)
-function sameName(first, second) {
+const sameName = (first, second) => {
   const words = (name) => new Set(normalize(name ?? "").split(/[^a-z0-9]+/).filter((word) => word.length > 3));
   const firstWords = words(first);
   return [...words(second)].some((word) => [...firstWords].some((other) => other.startsWith(word.slice(0, 5)) || word.startsWith(other.slice(0, 5))));
-}
+};
 
 // Where the stop really is, and for sights the Wikipedia history about that same spot.
 // Candidates: the map search (Photon) and Wikipedia (the article the AI named, or the best search result).
 // Each must be near the AI's rough position; the closest one wins. Meals must land on a place to eat or a
 // neighbourhood, and the rest must share a word with the name. Nothing that cannot be checked goes on the map.
-async function verifyStop(stop, { city, lang, destination, facts }) {
+const verifyStop = async (stop, { city, lang, destination, facts }) => {
   if (!stop.place) return stop;
   const { wikipediaTitle, ...guess } = stop.place;
   const plausible = (point) => point && isCoordinate(point.lat, point.lng) && km(point, guess) <= NEAR_GUESS_KM && km(point, destination) <= MAX_KM_FROM_AIRPORT;
@@ -189,10 +189,10 @@ async function verifyStop(stop, { city, lang, destination, facts }) {
 
   const verified = { ...stop, place: position ? { name: guess.name, lat: position.lat, lng: position.lng } : null };
   return sameSpot ? { ...verified, history: fact.extract, sources: [{ title: `Wikipedia: ${fact.title}`, url: fact.url }] } : verified;
-}
+};
 
 // Gemini plans the itinerary; when it is busy or fails, Claude does, with the same instructions and schema
-async function planWithAi(request) {
+const planWithAi = async (request) => {
   try {
     return { ...(await gemini.generateJson(request)), model: "gemini" };
   } catch (error) {
@@ -200,10 +200,10 @@ async function planWithAi(request) {
     console.warn(`Gemini failed (${error.code}), trying Claude`);
     return { ...(await claude.generateJson(request)), model: "claude" };
   }
-}
+};
 
 // trip: { origin, code, city, country, out: { day, time, arrive }, ret?: { day, time } }
-export async function createItinerary({ trip, lang, preferences }) {
+export const createItinerary = async ({ trip, lang, preferences }) => {
   const dates = daysBetween(trip.out.day, trip.ret?.day ?? trip.out.day);
   if (dates.length > MAX_DAYS) throw new AppError("aiTooLong", { max: MAX_DAYS }, 400);
 
@@ -236,4 +236,4 @@ export async function createItinerary({ trip, lang, preferences }) {
   const days = cleanDays.map((day) => ({ ...day, stops: stops.slice(taken, (taken += day.stops.length)) }));
 
   return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, days };
-}
+};

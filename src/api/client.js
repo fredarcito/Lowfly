@@ -8,14 +8,14 @@ export const api = axios.create({ baseURL: "/api", timeout: 60_000 });
 
 // Our API answers errors with { error, params }: the code to translate (lib/i18n) and its values.
 // Without an answer, or on a server error, retrying later may help.
-export function apiError(error) {
+export const apiError = (error) => {
   const { response } = error;
   return {
     code: response?.data?.error || "unknown",
     params: response?.data?.params,
     retry: !response || response.status >= 500,
   };
-}
+};
 
 // The call was cancelled (component unmounted, a newer search started): not an error to show
 export const isCancelled = (error) => axios.isCancel(error);

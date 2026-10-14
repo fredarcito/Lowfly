@@ -12,16 +12,16 @@ import { useDesktop } from "@/hooks/useDesktop";
 import { cn } from "@/utils/cn";
 
 // Distance in km between two points (haversine)
-function km(a, b) {
+const km = (a, b) => {
   const rad = Math.PI / 180;
   const dLat = (b.lat - a.lat) * rad;
   const dLon = (b.lon - a.lon) * rad;
   const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(dLon / 2) ** 2;
   return 12742 * Math.asin(Math.sqrt(h));
-}
+};
 
 // With no query: every airport, by country and city. With a query: exact code first, then names that start with it.
-function filter(list, query, lang) {
+const filter = (list, query, lang) => {
   const q = normalize(query.trim());
   const sorted = [...list].sort((a, b) => a.country.localeCompare(b.country, lang) || a.name.localeCompare(b.name, lang));
   if (!q) return sorted;
@@ -34,10 +34,10 @@ function filter(list, query, lang) {
   return sorted
     .filter((a) => normalize(`${a.code} ${a.name} ${a.city} ${a.country}`).includes(q))
     .sort((a, b) => rank(a) - rank(b));
-}
+};
 
 // Search box + list of airports, with keyboard navigation. Shared by the popover and the sheet.
-function AirportPicker({ airports, value, onPick }) {
+const AirportPicker = ({ airports, value, onPick }) => {
   const { lang, t } = useI18n();
   const listId = useId();
   const listRef = useRef(null);
@@ -63,7 +63,7 @@ function AirportPicker({ airports, value, onPick }) {
     listRef.current?.querySelector(`[data-index="${active}"]`)?.scrollIntoView({ block: "nearest" });
   }, [active]);
 
-  function onKeyDown(e) {
+  const onKeyDown = (e) => {
     if (e.key === "ArrowDown" || e.key === "ArrowUp") {
       e.preventDefault();
       const step = e.key === "ArrowDown" ? 1 : -1;
@@ -72,9 +72,9 @@ function AirportPicker({ airports, value, onPick }) {
       e.preventDefault();
       onPick(shown[active].code);
     }
-  }
+  };
 
-  function nearMe() {
+  const nearMe = () => {
     setLocate("busy");
     navigator.geolocation.getCurrentPosition(
       ({ coords }) => {
@@ -88,7 +88,7 @@ function AirportPicker({ airports, value, onPick }) {
       () => setLocate("error"),
       { timeout: 10000, maximumAge: 600000 }
     );
-  }
+  };
 
   if (airports.status !== "ok") {
     return (
@@ -178,10 +178,10 @@ function AirportPicker({ airports, value, onPick }) {
       </div>
     </div>
   );
-}
+};
 
 // Departure airport: a button that opens a searchable list (popover on desktop, bottom sheet on mobile)
-export default function AirportField({ id, value, airports, onChange }) {
+const AirportField = ({ id, value, airports, onChange }) => {
   const { t } = useI18n();
   const desktop = useDesktop();
   const [open, setOpen] = useState(false);
@@ -236,4 +236,6 @@ export default function AirportField({ id, value, airports, onChange }) {
       </SheetContent>
     </Sheet>
   );
-}
+};
+
+export default AirportField;

@@ -13,7 +13,7 @@ import { cn } from "@/utils/cn";
 // The trip's flights as a slim bar: "MLA ⇆ BRI · Ryanair · €29.98".
 // Not booked yet: the booking buttons stay in sight, outlined so they do not compete with the itinerary's
 // coral actions. The chevron unfolds each leg and "Booked already?".
-export default function TripFlights({ trip }) {
+const TripFlights = ({ trip }) => {
   const { t, f } = useI18n();
   const { setBooked, bookingLinks } = useTripActions(trip);
   const details = useDisclosure();
@@ -76,4 +76,6 @@ export default function TripFlights({ trip }) {
       </Collapse>
     </section>
   );
-}
+};
+
+export default TripFlights;

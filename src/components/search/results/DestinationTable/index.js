@@ -20,27 +20,27 @@ const ROW_GRID =
 const ROW_BUTTON =
   "w-full text-left transition-colors hover:bg-muted/60 focus-visible:bg-muted/60 focus-visible:outline-none aria-expanded:bg-muted/40";
 
-function NoTimeOffTag() {
+const NoTimeOffTag = () => {
   const { t } = useI18n();
   return (
     <span title={t.results.noTimeOffHint} className="rounded-full bg-save/15 px-2 py-0.5 text-xs font-medium text-save">
       {t.results.noTimeOff}
     </span>
   );
-}
+};
 
-function Pill({ icon: Icon, children }) {
+const Pill = ({ icon: Icon, children }) => {
   return (
     <span className="inline-flex items-center gap-1.5 rounded-full bg-muted px-2.5 py-1 text-xs font-medium whitespace-nowrap">
       <Icon className="size-3.5 text-muted-foreground" />
       {children}
     </span>
   );
-}
+};
 
 // Travel dates and stay: "Fri 16 Oct → Mon 19 Oct" + "3 nights".
 // Weekend trips add the times and the hours there; one way shows the departure (and arrival) time instead of the stay.
-function TripCells({ fare, weekend }) {
+const TripCells = ({ fare, weekend }) => {
   const { t, f } = useI18n();
   const dates = !fare.ret
     ? f.fmtDay(fare.day)
@@ -69,14 +69,14 @@ function TripCells({ fare, weekend }) {
       </span>
     </span>
   );
-}
+};
 
-function Chevron({ open }) {
+const Chevron = ({ open }) => {
   return <ChevronDown className={cn("size-4 text-muted-foreground transition-transform [grid-area:go]", open && "rotate-180")} />;
-}
+};
 
 // One destination; pressing it opens the details
-function DestinationRow({ fare, weekend, open, onToggle }) {
+const DestinationRow = ({ fare, weekend, open, onToggle }) => {
   const { f } = useI18n();
   return (
     <button type="button" onClick={onToggle} aria-expanded={open} className={cn(ROW_GRID, ROW_BUTTON, "group")}>
@@ -99,10 +99,10 @@ function DestinationRow({ fare, weekend, open, onToggle }) {
       <Chevron open={open} />
     </button>
   );
-}
+};
 
 // A second option under a destination: the cheapest weekend there that needs no time off
-function AlternativeRow({ fare, open, onToggle }) {
+const AlternativeRow = ({ fare, open, onToggle }) => {
   const { f } = useI18n();
   return (
     <button type="button" onClick={onToggle} aria-expanded={open} className={cn(ROW_GRID, ROW_BUTTON, "pt-0 text-muted-foreground")}>
@@ -120,11 +120,11 @@ function AlternativeRow({ fare, open, onToggle }) {
       <Chevron open={open} />
     </button>
   );
-}
+};
 
 // Destinations sorted by price: destination, travel dates, stay and price.
 // One row open at a time, showing its flights with "Book" and "Save trip".
-export default function DestinationTable({ fares, origin, roundTrip, weekend }) {
+const DestinationTable = ({ fares, origin, roundTrip, weekend }) => {
   const { t } = useI18n();
   const results = t.results;
   const [openKey, setOpenKey] = useState(null);
@@ -171,4 +171,6 @@ export default function DestinationTable({ fares, origin, roundTrip, weekend }) 
       })}
     </div>
   );
-}
+};
+
+export default DestinationTable;

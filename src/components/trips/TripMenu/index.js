@@ -19,7 +19,7 @@ import { cn } from "@/utils/cn";
 
 // ⋯ quick actions on a trip: mark as booked, book with the airline, redo the itinerary and delete
 // (both ask first; after deleting, `onDeleted`). `variant` and `className` restyle the ⋯ button.
-export default function TripMenu({ trip, onDeleted, variant = "outline", className }) {
+const TripMenu = ({ trip, onDeleted, variant = "outline", className }) => {
   const { t } = useI18n();
   const { toggleBooked, bookingLinks } = useTripActions(trip);
   const deleteDialog = useDisclosure();
@@ -68,4 +68,6 @@ export default function TripMenu({ trip, onDeleted, variant = "outline", classNa
       <DeleteTripDialog trip={trip} open={deleteDialog.open} onOpenChange={deleteDialog.setOpen} onDeleted={onDeleted} />
     </>
   );
-}
+};
+
+export default TripMenu;

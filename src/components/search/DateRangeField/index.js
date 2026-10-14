@@ -14,7 +14,7 @@ import { cn } from "@/utils/cn";
 
 // A single picker for a date range ("YYYY-MM-DD"). Closes itself once the second day is picked.
 // `unit` decides how the length is counted: "days" for a search range, "nights" for a trip.
-export default function DateRangeField({ id, from, to, onChange, minNights = 0, maxNights, unit = "days", className }) {
+const DateRangeField = ({ id, from, to, onChange, minNights = 0, maxNights, unit = "days", className }) => {
   const { lang, t, f } = useI18n();
   const desktop = useDesktop();
   const [open, setOpen] = useState(false);
@@ -24,7 +24,7 @@ export default function DateRangeField({ id, from, to, onChange, minNights = 0, 
   const selected = draft ?? committed;
   const picking = draft?.from && !draft.to ? "end" : "start";
 
-  function onSelect(range, triggerDate) {
+  const onSelect = (range, triggerDate) => {
     // With a complete range, the first click starts a new one
     if (!draft) {
       setDraft({ from: triggerDate, to: undefined });
@@ -37,7 +37,7 @@ export default function DateRangeField({ id, from, to, onChange, minNights = 0, 
     onChange(iso(range.from), iso(range.to));
     setDraft(null);
     setOpen(false);
-  }
+  };
 
   const onOpenChange = (o) => {
     setOpen(o);
@@ -146,4 +146,6 @@ export default function DateRangeField({ id, from, to, onChange, minNights = 0, 
       </SheetContent>
     </Sheet>
   );
-}
+};
+
+export default DateRangeField;

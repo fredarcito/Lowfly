@@ -7,7 +7,7 @@ import { getPhotos } from "@/api/photos";
 const cache = new Map(); // code → photo | null
 const pending = new Map(); // code → Promise
 
-function load(code) {
+const load = (code) => {
   if (!pending.has(code))
     pending.set(
       code,
@@ -16,10 +16,10 @@ function load(code) {
         .then((found) => cache.set(code, found[code] ?? null))
     );
   return pending.get(code);
-}
+};
 
 // undefined while loading, null when there is no photo
-export function usePhoto(code) {
+export const usePhoto = (code) => {
   const [photo, setPhoto] = useState(() => cache.get(code));
   useEffect(() => {
     if (!code) return;
@@ -31,4 +31,4 @@ export function usePhoto(code) {
     };
   }, [code]);
   return photo;
-}
+};

@@ -13,7 +13,7 @@ const subscribe = (cb) => {
 };
 const getTheme = () => document.documentElement.dataset.theme || DEFAULT_THEME;
 
-export default function ThemeToggle() {
+const ThemeToggle = () => {
   const { t } = useI18n();
   const theme = useSyncExternalStore(subscribe, getTheme, () => DEFAULT_THEME);
   const next = theme === "dark" ? "light" : "dark";
@@ -23,12 +23,12 @@ export default function ThemeToggle() {
     document.querySelector('meta[name="theme-color"]')?.setAttribute("content", THEME_COLORS[theme]);
   }, [theme]);
 
-  function toggle() {
+  const toggle = () => {
     document.documentElement.dataset.theme = next;
     try {
       localStorage.setItem(THEME_KEY, next);
     } catch {}
-  }
+  };
 
   return (
     <button
@@ -41,4 +41,6 @@ export default function ThemeToggle() {
       {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
     </button>
   );
-}
+};
+
+export default ThemeToggle;

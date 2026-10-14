@@ -8,7 +8,7 @@ import { ROUTES } from "@/constants/routes";
 import { cn } from "@/utils/cn";
 
 // A link in the header navigation, underlined when it is the current page
-export function NavLink({ href, active, className, children, ...props }) {
+export const NavLink = ({ href, active, className, children, ...props }) => {
   return (
     <Link
       href={href}
@@ -24,10 +24,10 @@ export function NavLink({ href, active, className, children, ...props }) {
       {children}
     </Link>
   );
-}
+};
 
 // "My trips" in the header navigation, with how many upcoming trips there are
-export default function TripsLink({ active, className }) {
+const TripsLink = ({ active, className }) => {
   const { lang, t } = useI18n();
   const upcoming = useTripGroups().upcoming.length;
   return (
@@ -46,4 +46,6 @@ export default function TripsLink({ active, className }) {
       )}
     </NavLink>
   );
-}
+};
+
+export default TripsLink;

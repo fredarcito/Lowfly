@@ -7,7 +7,7 @@ import { useDisclosure } from "@/hooks/useDisclosure";
 import { cn } from "@/utils/cn";
 
 // Trips already over, folded away at the end of the list
-export default function PastTrips({ trips }) {
+const PastTrips = ({ trips }) => {
   const { t } = useI18n();
   const section = useDisclosure();
   if (!trips.length) return null;
@@ -31,4 +31,6 @@ export default function PastTrips({ trips }) {
       )}
     </section>
   );
-}
+};
+
+export default PastTrips;

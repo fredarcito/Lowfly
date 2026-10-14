@@ -5,7 +5,7 @@ import { useAirportLabel } from "@/hooks/useAirports";
 import { cn } from "@/utils/cn";
 
 // "Malta (MLA) ⇆ Catania (CTA)", with a one-way arrow when there is no return
-export default function TripRoute({ origin, fare, className }) {
+const TripRoute = ({ origin, fare, className }) => {
   const originLabel = useAirportLabel(origin);
   const RouteIcon = fare.ret ? ArrowLeftRight : ArrowRight;
   return (
@@ -17,4 +17,6 @@ export default function TripRoute({ origin, fare, className }) {
       </span>
     </p>
   );
-}
+};
+
+export default TripRoute;

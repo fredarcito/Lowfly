@@ -7,7 +7,7 @@ const UA = "Lowfly (https://lowfly-one.vercel.app)";
 const MONTH = 30 * 86400;
 const cache = new Map(); // code → photo or null, for the life of the server instance
 
-async function cityArticles(codes) {
+const cityArticles = async (codes) => {
   const query = `SELECT ?iata ?article ?pop WHERE {
     VALUES ?iata { ${codes.map((c) => `"${c}"`).join(" ")} }
     ?airport wdt:P238 ?iata; wdt:P931 ?city.
@@ -28,13 +28,13 @@ async function cityArticles(codes) {
   return Object.fromEntries(
     Object.entries(found).map(([code, list]) => [code, [...new Set(list.sort((a, b) => b.pop - a.pop).map((a) => a.title))]])
   );
-}
+};
 
 // Lead images that are not photos of the place: maps, flags, coats of arms, logos, diagrams
 const notAPhoto = (file) => !file || /\.(svg|png|gif)$/i.test(file) || /(^|[_ -])(map|flag|coat|locator|logo|seal)/i.test(file);
 
 // Lead image file of each article: { "Venice": "Venezia_aerial_view.jpg" }
-async function leadImages(titles) {
+const leadImages = async (titles) => {
   const r = await fetch(
     `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&piprop=name&redirects=1&titles=${encodeURIComponent(titles.join("|"))}`,
     { headers: { "user-agent": UA }, next: { revalidate: MONTH } }
@@ -45,11 +45,11 @@ async function leadImages(titles) {
   // The answer uses the final title: map back the ones we asked for under another name
   for (const { from, to } of [...(q.normalized || []), ...(q.redirects || [])]) files[from] ??= files[to];
   return files;
-}
+};
 
 const plain = (html = "") => html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
 
-async function commons(files) {
+const commons = async (files) => {
   const titles = files.map((f) => `File:${f}`).join("|");
   const r = await fetch(
     `https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=800&titles=${encodeURIComponent(titles)}`,
@@ -70,10 +70,10 @@ async function commons(files) {
     };
   }
   return byFile;
-}
+};
 
 // { CTA: { src, width, height, page, author, license }, NRN: null, … }
-export async function getPhotos(codes) {
+export const getPhotos = async (codes) => {
   const missing = codes.filter((c) => !cache.has(c));
   if (missing.length) {
     const articles = await cityArticles(missing);
@@ -90,4 +90,4 @@ export async function getPhotos(codes) {
     }
   }
   return Object.fromEntries(codes.map((c) => [c, cache.get(c)]));
-}
+};

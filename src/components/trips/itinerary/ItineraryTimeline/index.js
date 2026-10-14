@@ -3,7 +3,7 @@ import { cn } from "@/utils/cn";
 // The dashed timeline through a row, under the markers' column (row padding + half the 2.25rem marker).
 // `above`: from the top edge down to the marker; `below`: from the marker to the bottom edge.
 // Rows without a marker (the period labels) get the whole height when both are set.
-export default function ItineraryTimeline({ above, below }) {
+const ItineraryTimeline = ({ above, below }) => {
   if (!above && !below) return null;
   return (
     <span
@@ -15,4 +15,6 @@ export default function ItineraryTimeline({ above, below }) {
       )}
     />
   );
-}
+};
+
+export default ItineraryTimeline;

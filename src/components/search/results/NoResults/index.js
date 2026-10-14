@@ -2,7 +2,7 @@ import { PlaneLanding } from "lucide-react";
 import FailedNote from "@/components/search/results/FailedNote";
 import { useI18n } from "@/context/i18n";
 
-export default function NoResults({ failed, children }) {
+const NoResults = ({ failed, children }) => {
   const { t } = useI18n();
   return (
     <>
@@ -14,4 +14,6 @@ export default function NoResults({ failed, children }) {
       <FailedNote failed={failed} />
     </>
   );
-}
+};
+
+export default NoResults;

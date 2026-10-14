@@ -6,10 +6,10 @@ import { getDictionary } from "@/i18n";
 import { createFormat } from "@/utils/format";
 
 // Gives every component the language, its dictionary (t) and the formatting functions (f)
-export function I18nProvider({ lang, children }) {
+export const I18nProvider = ({ lang, children }) => {
   const value = useMemo(() => {
     const dictionary = getDictionary(lang);
     return { lang, t: dictionary, f: createFormat(lang, dictionary) };
   }, [lang]);
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
-}
+};

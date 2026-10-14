@@ -11,7 +11,7 @@ import { cn } from "@/utils/cn";
 // A row inside a <ResultList>. Pressing it opens the details: each flight, "Book" and "Save trip".
 // `fare` needs city and country (for saving); `airlines` is the list of airlines
 // (two if outbound and return are with different airlines); `tag` is an optional highlight ({ label, hint })
-export default function ResultRow({ fare, origin, title, meta, airlines = [], priceNote, tag }) {
+const ResultRow = ({ fare, origin, title, meta, airlines = [], priceNote, tag }) => {
   const { f } = useI18n();
   const details = useDisclosure();
   return (
@@ -49,8 +49,10 @@ export default function ResultRow({ fare, origin, title, meta, airlines = [], pr
       </Collapse>
     </div>
   );
-}
+};
 
-export function ResultList({ children }) {
+export default ResultRow;
+
+export const ResultList = ({ children }) => {
   return <div className="divide-y overflow-hidden rounded-xl bg-card ring-1 ring-foreground/10">{children}</div>;
-}
+};

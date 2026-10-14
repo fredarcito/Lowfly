@@ -7,7 +7,7 @@ import { LOCALES } from "@/i18n/config";
 import { cn } from "@/utils/cn";
 
 // Plain links (full reload) so the search starts fresh in the other language
-export default function LanguageSwitch() {
+const LanguageSwitch = () => {
   const { lang, t } = useI18n();
   // Same page in the other language (/es/trips → /en/trips)
   const rest = usePathname().replace(/^\/[a-z]{2}(?=\/|$)/, "");
@@ -31,4 +31,6 @@ export default function LanguageSwitch() {
       ))}
     </nav>
   );
-}
+};
+
+export default LanguageSwitch;

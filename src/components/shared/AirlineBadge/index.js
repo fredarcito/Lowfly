@@ -8,10 +8,12 @@ const STYLES = {
   wizz: "bg-[#c6007e]/10 text-[#a10067] dark:bg-[#ff5cc2]/15 dark:text-[#ff9fdc]",
 };
 
-export default function AirlineBadge({ airline, className }) {
+const AirlineBadge = ({ airline, className }) => {
   return (
     <Badge variant="secondary" className={cn(STYLES[airline], className)}>
       {AIRLINES[airline]}
     </Badge>
   );
-}
+};
+
+export default AirlineBadge;

@@ -3,7 +3,7 @@ import { THEME_COLORS } from "@/constants/theme";
 
 // Web app manifest (/manifest.webmanifest): lets Lowfly be installed on the home screen and open full screen.
 // "/" redirects to the browser's language, as in the browser.
-export default function manifest() {
+const manifest = () => {
   return {
     name: `${APP_NAME} · Vuelos baratos`,
     short_name: APP_NAME,
@@ -20,4 +20,6 @@ export default function manifest() {
       { src: "/icons/icon-maskable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
     ],
   };
-}
+};
+
+export default manifest;

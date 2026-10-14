@@ -7,13 +7,13 @@ import { isUpcoming, NO_TRIPS, readTrips, subscribeToTrips } from "@/store/trips
 export const useTrips = () => useSyncExternalStore(subscribeToTrips, readTrips, () => NO_TRIPS);
 
 // One saved trip by id (undefined if it does not exist)
-export function useTrip(id) {
+export const useTrip = (id) => {
   const trips = useTrips();
   return id ? trips.find((saved) => saved.id === id) : undefined;
-}
+};
 
 // { upcoming: soonest first, past: most recent first }
-export function useTripGroups() {
+export const useTripGroups = () => {
   const trips = useTrips();
   return useMemo(
     () => ({
@@ -22,4 +22,4 @@ export function useTripGroups() {
     }),
     [trips]
   );
-}
+};

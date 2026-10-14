@@ -3,7 +3,7 @@
 import guides from "@/data/destinationGuides.json";
 
 // { BRI: { text, tags, source } | null } in `lang`
-export function getGuides(codes, lang) {
+export const getGuides = (codes, lang) => {
   return Object.fromEntries(
     codes.map((code) => {
       const guide = guides[code];
@@ -11,4 +11,4 @@ export function getGuides(codes, lang) {
       return [code, text ? { text: text.text, tags: text.tags, source: guide.sources.guide ?? guide.sources[lang] ?? guide.sources.en } : null];
     })
   );
-}
+};

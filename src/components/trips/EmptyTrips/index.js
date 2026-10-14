@@ -7,7 +7,7 @@ import { useI18n } from "@/context/i18n";
 import { ROUTES } from "@/constants/routes";
 
 // No upcoming trips: a small illustration (suitcase and plane) and the way to find one
-export default function EmptyTrips() {
+const EmptyTrips = () => {
   const { lang, t } = useI18n();
   return (
     <div className="grid items-center justify-items-center gap-6 rounded-xl bg-card px-6 py-10 text-center ring-1 ring-foreground/10 sm:grid-cols-[auto_auto] sm:justify-center sm:gap-10 sm:text-left">
@@ -27,4 +27,6 @@ export default function EmptyTrips() {
       </div>
     </div>
   );
-}
+};
+
+export default EmptyTrips;

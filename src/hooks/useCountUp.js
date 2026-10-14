@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 // Counts up to `value` when it appears (skipped with reduced motion)
-export function useCountUp(value, duration = 700) {
+export const useCountUp = (value, duration = 700) => {
   const [shown, setShown] = useState(value * 0.4);
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return setShown(value);
@@ -19,4 +19,4 @@ export function useCountUp(value, duration = 700) {
     return () => cancelAnimationFrame(frame);
   }, [value, duration]);
   return shown;
-}
+};

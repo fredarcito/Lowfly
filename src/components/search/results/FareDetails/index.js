@@ -9,7 +9,7 @@ import { useI18n } from "@/context/i18n";
 
 // An opened result, like the "Cheapest" card: each flight (times, length, airline, price), then the total,
 // booking with the airline and "Save trip". Desktop: flights on the left, price and actions on the right.
-export default function FareDetails({ fare, origin }) {
+const FareDetails = ({ fare, origin }) => {
   const { t, f } = useI18n();
   const links = f.fareLinks(fare, origin);
   return (
@@ -36,4 +36,6 @@ export default function FareDetails({ fare, origin }) {
       </div>
     </div>
   );
-}
+};
+
+export default FareDetails;

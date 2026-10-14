@@ -33,7 +33,7 @@ const EMPTY = { everywhere: (d) => !d.results.length, country: (d) => !d.best, t
 
 // Destinations grouped by country, then by city (every airport of a city together), sorted by name:
 // [{ name, countryCode, codes, cities: [{ name, codes }] }]
-function countriesOf(destinations, lang) {
+const countriesOf = (destinations, lang) => {
   const byCountry = new Map();
   for (const destination of destinations) {
     if (!byCountry.has(destination.country))
@@ -47,11 +47,11 @@ function countriesOf(destinations, lang) {
   return [...byCountry.values()]
     .map((country) => ({ ...country, cities: [...country.cities.values()].sort(byName) }))
     .sort(byName);
-}
+};
 
 const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-export default function FlightSearch() {
+const FlightSearch = () => {
   const { lang, t } = useI18n();
   const [mode, setMode] = useState("everywhere");
   const [form, setForm] = useState({ origin: "", country: "", city: "", from: "", to: "", ida: "", vuelta: "", flex: "2", max: "", trip: "oneway", minN: "2", maxN: "4", weekend: false });
@@ -131,20 +131,20 @@ export default function FlightSearch() {
     requestAnimationFrame(() => document.getElementById("origin")?.focus({ preventScroll: true }));
   };
 
-  function onSubmit(e) {
+  const onSubmit = (e) => {
     e.preventDefault();
     search(form, mode);
-  }
+  };
 
   // "See every destination" from the weekend deals: the anywhere search for that weekend
-  function searchWeekend({ from, to }) {
+  const searchWeekend = ({ from, to }) => {
     const next = { ...form, from, to, trip: "return", weekend: true };
     setForm(next);
     setMode("everywhere");
     search(next, "everywhere");
-  }
+  };
 
-  async function search(form, mode) {
+  const search = async (form, mode) => {
     const { origin, country, city, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend } = form;
 
     if (!/^[A-Z]{3}$/.test(origin)) return fail("badOrigin");
@@ -180,7 +180,7 @@ export default function FlightSearch() {
       const { code, params: values, retry } = apiError(error);
       fail(code, { ...values, retry });
     }
-  }
+  };
 
   const Results = result.status === "done" && result.mode === mode ? RESULTS[mode] : null;
 
@@ -260,9 +260,11 @@ export default function FlightSearch() {
       </main>
     </>
   );
-}
+};
 
-function LoadingState({ text }) {
+export default FlightSearch;
+
+const LoadingState = ({ text }) => {
   return (
     <div className="grid gap-4">
       <p className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -276,12 +278,12 @@ function LoadingState({ text }) {
       </div>
     </div>
   );
-}
+};
 
 // Positano (by day in the light theme, at dusk in the dark one; see .hero-photo in globals.css), blended into
 // the header colour: on the right on desktop, dimmed behind the text on mobile.
 // The © above the search card credits it (both licences require it).
-function HeroPhoto() {
+const HeroPhoto = () => {
   const { t } = useI18n();
   const credit = (href, text, className) => (
     <a
@@ -311,10 +313,10 @@ function HeroPhoto() {
       {credit("https://commons.wikimedia.org/wiki/File:Positano_Sunset.JPG", t.header.photoCreditNight, "hidden dark:grid")}
     </>
   );
-}
+};
 
 // Before searching: this weekend's cheapest trips; without them, what each mode does (the selected one highlighted)
-function EmptyState({ mode, origin, airports, onSeeAll }) {
+const EmptyState = ({ mode, origin, airports, onSeeAll }) => {
   const { t } = useI18n();
   const originName = findAirport(airports, origin)?.city;
   return (
@@ -324,9 +326,9 @@ function EmptyState({ mode, origin, airports, onSeeAll }) {
       <p className="-mt-4 text-xs text-muted-foreground">{t.empty.disclaimer}</p>
     </>
   );
-}
+};
 
-function SearchModes({ mode }) {
+const SearchModes = ({ mode }) => {
   const { t } = useI18n();
   return (
     <section className="grid gap-4">
@@ -348,4 +350,4 @@ function SearchModes({ mode }) {
       </div>
     </section>
   );
-}
+};

@@ -5,7 +5,7 @@ import { cn } from "@/utils/cn";
 
 // Animates its height between 0 and auto (grid rows 0fr ↔ 1fr). While closed the content is inert.
 // Overflow is only clipped while closed or animating, so focus rings are not cut off once open.
-export default function Collapse({ open, className, children }) {
+const Collapse = ({ open, className, children }) => {
   const [settled, setSettled] = useState(open);
   const [prevOpen, setPrevOpen] = useState(open);
   if (prevOpen !== open) {
@@ -26,4 +26,6 @@ export default function Collapse({ open, className, children }) {
       <div className={cn("min-h-0 min-w-0", !(open && settled) && "overflow-hidden")}>{children}</div>
     </div>
   );
-}
+};
+
+export default Collapse;

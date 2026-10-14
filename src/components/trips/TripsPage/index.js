@@ -6,7 +6,7 @@ import { cn } from "@/utils/cn";
 // The frame of "My trips": the header with the top bar, then the content.
 // With `hero` (a trip's photo header) the header grows to hold it, on the page background so the photo
 // fades straight into the content below.
-export default function TripsPage({ hero, children }) {
+const TripsPage = ({ hero, children }) => {
   return (
     <>
       <header
@@ -23,4 +23,6 @@ export default function TripsPage({ hero, children }) {
       </main>
     </>
   );
-}
+};
+
+export default TripsPage;

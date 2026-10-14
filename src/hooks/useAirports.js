@@ -8,7 +8,7 @@ import { useI18n } from "@/context/i18n";
 const cache = new Map(); // lang → { status, list }
 const pending = new Map(); // lang → Promise
 
-function load(lang) {
+const load = (lang) => {
   if (!pending.has(lang))
     pending.set(
       lang,
@@ -20,12 +20,12 @@ function load(lang) {
         })
     );
   return pending.get(lang);
-}
+};
 
 const LOADING = { status: "loading", list: [] };
 
 // { status: "loading" | "ok" | "error", list }
-export function useAirports(lang) {
+export const useAirports = (lang) => {
   const [airports, setAirports] = useState(() => cache.get(lang) ?? LOADING);
   useEffect(() => {
     let live = true;
@@ -36,14 +36,14 @@ export function useAirports(lang) {
     };
   }, [lang]);
   return airports;
-}
+};
 
 // The airport with that code, if we know it
 export const findAirport = (airports, code) => airports.list.find((airport) => airport.code === code);
 
 // "Malta (MLA)", or just the code until the airports load
-export function useAirportLabel(code) {
+export const useAirportLabel = (code) => {
   const { lang } = useI18n();
   const city = findAirport(useAirports(lang), code)?.city;
   return city ? `${city} (${code})` : code;
-}
+};

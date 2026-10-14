@@ -8,7 +8,7 @@ import { useI18n } from "@/context/i18n";
 import { useTripGroups } from "@/hooks/useTrips";
 
 // My trips: the upcoming ones (or how to save one), then the past ones folded away
-export default function TripList() {
+const TripList = () => {
   const { t } = useI18n();
   const { upcoming, past } = useTripGroups();
   return (
@@ -32,4 +32,6 @@ export default function TripList() {
       <PastTrips trips={past} />
     </>
   );
-}
+};
+
+export default TripList;

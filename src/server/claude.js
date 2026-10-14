@@ -10,28 +10,28 @@ const MAX_TOKENS = 64_000;
 
 let client = null;
 
-function getClient() {
+const getClient = () => {
   if (!client) {
     const workspace = process.env.ANTHROPIC_WORKSPACE_ID;
     client = new Anthropic({ defaultHeaders: workspace ? { "anthropic-workspace-id": workspace } : undefined });
   }
   return client;
-}
+};
 
 // Claude only accepts a schema whose objects close their properties (additionalProperties: false)
-function closed(schema) {
+const closed = (schema) => {
   if (Array.isArray(schema)) return schema.map(closed);
   if (!schema || typeof schema !== "object") return schema;
   const copy = Object.fromEntries(Object.entries(schema).map(([key, value]) => [key, closed(value)]));
   const isObject = copy.type === "object" || (Array.isArray(copy.type) && copy.type.includes("object"));
   return isObject ? { ...copy, additionalProperties: false } : copy;
-}
+};
 
 export const hasClaude = () => Boolean(process.env.ANTHROPIC_API_KEY);
 
 // Same contract as server/gemini: JSON that follows `schema`, parsed, with the token usage.
 // `effort`: low | medium | high (more thinking, better plans, more output tokens to pay).
-export async function generateJson({ instructions, prompt, schema, effort = "low" }) {
+export const generateJson = async ({ instructions, prompt, schema, effort = "low" }) => {
   if (!hasClaude()) throw new AppError("aiUnavailable");
   let message;
   try {
@@ -67,4 +67,4 @@ export async function generateJson({ instructions, prompt, schema, effort = "low
     console.error("Claude returned invalid JSON", text.slice(0, 300));
     throw new AppError("aiUnavailable");
   }
-}
+};

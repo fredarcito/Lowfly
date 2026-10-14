@@ -7,7 +7,7 @@ import { useI18n } from "@/context/i18n";
 import { capitalize } from "@/utils/format";
 import { cn } from "@/utils/cn";
 
-function Leg({ icon: Icon, label, day, flight, href }) {
+const Leg = ({ icon: Icon, label, day, flight, href }) => {
   const { t, f } = useI18n();
   return (
     <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-sm">
@@ -26,10 +26,10 @@ function Leg({ icon: Icon, label, day, flight, href }) {
       </Button>
     </div>
   );
-}
+};
 
 // An outbound + return combination, compared with the original plan
-export default function TripOption({ combo: c, ida, vuelta, base, origin }) {
+const TripOption = ({ combo: c, ida, vuelta, base, origin }) => {
   const { t, f } = useI18n();
   const delta = f.deltaText(c, base);
   const diff = base ? c.total - base.total : 0;
@@ -62,4 +62,6 @@ export default function TripOption({ combo: c, ida, vuelta, base, origin }) {
       </div>
     </div>
   );
-}
+};
+
+export default TripOption;

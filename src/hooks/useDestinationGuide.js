@@ -8,7 +8,7 @@ import { useI18n } from "@/context/i18n";
 const cache = new Map(); // "BRI es" → guide | null
 const pending = new Map(); // "BRI es" → Promise
 
-function load(code, lang) {
+const load = (code, lang) => {
   const key = `${code} ${lang}`;
   if (!pending.has(key))
     pending.set(
@@ -18,10 +18,10 @@ function load(code, lang) {
         .then((found) => cache.set(key, found[code] ?? null))
     );
   return pending.get(key);
-}
+};
 
 // undefined while loading, null when there is none
-export function useDestinationGuide(code) {
+export const useDestinationGuide = (code) => {
   const { lang } = useI18n();
   const key = `${code} ${lang}`;
   const [guide, setGuide] = useState(() => cache.get(key));
@@ -35,4 +35,4 @@ export function useDestinationGuide(code) {
     };
   }, [code, lang, key]);
   return guide;
-}
+};

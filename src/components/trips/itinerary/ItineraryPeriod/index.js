@@ -5,7 +5,7 @@ import { useI18n } from "@/context/i18n";
 const PERIOD_ICONS = { morning: Sunrise, afternoon: Sun, night: Moon };
 
 // Start of a part of the day: its icon sits on the timeline, then the name and a rule across the list
-export default function ItineraryPeriod({ period, lineAbove, lineBelow }) {
+const ItineraryPeriod = ({ period, lineAbove, lineBelow }) => {
   const { t } = useI18n();
   const Icon = PERIOD_ICONS[period];
   return (
@@ -20,4 +20,6 @@ export default function ItineraryPeriod({ period, lineAbove, lineBelow }) {
       </span>
     </li>
   );
-}
+};
+
+export default ItineraryPeriod;

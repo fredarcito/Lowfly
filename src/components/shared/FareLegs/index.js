@@ -7,7 +7,7 @@ import { findAirport, useAirports } from "@/hooks/useAirports";
 import { flightMinutes } from "@/utils/flightTime";
 
 // One end of a flight: time, airport code and city
-function End({ time, airport, align = "left" }) {
+const End = ({ time, airport, align = "left" }) => {
   return (
     <div className={align === "right" ? "grid text-right" : "grid"}>
       <span className="font-heading text-xl font-bold tabular-nums sm:text-2xl">{time || "—"}</span>
@@ -15,11 +15,11 @@ function End({ time, airport, align = "left" }) {
       {airport.city && <span className="truncate text-xs text-muted-foreground">{airport.city}</span>}
     </div>
   );
-}
+};
 
 // One leg: day, departure → arrival (with the flight length), airline and the price of that leg.
 // from / to: { code, city, tz }
-function Leg({ icon: Icon, label, flight, from, to }) {
+const Leg = ({ icon: Icon, label, flight, from, to }) => {
   const { f } = useI18n();
   const minutes = flightMinutes(flight, from.tz, to.tz);
   return (
@@ -50,10 +50,10 @@ function Leg({ icon: Icon, label, flight, from, to }) {
       </div>
     </div>
   );
-}
+};
 
 // Fare details: the outbound flight and, for a return trip, the stay and the return flight
-export default function FareLegs({ fare, origin }) {
+const FareLegs = ({ fare, origin }) => {
   const { lang, t } = useI18n();
   const airports = useAirports(lang);
   const out = fare.out || fare;
@@ -83,4 +83,6 @@ export default function FareLegs({ fare, origin }) {
       )}
     </div>
   );
-}
+};
+
+export default FareLegs;

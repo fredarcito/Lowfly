@@ -17,7 +17,7 @@ const toFact = (page) => ({
 
 // The best article for a free-text search ("Castello Normanno-Svevo Bari"), or null.
 // It may be about another place with the same name: callers must check where it is.
-export async function searchPlace(query, lang) {
+export const searchPlace = async (query, lang) => {
   const params = new URLSearchParams({
     action: "query",
     format: "json",
@@ -43,10 +43,10 @@ export async function searchPlace(query, lang) {
     console.error("Wikipedia search error", error);
     return null;
   }
-}
+};
 
 // { "Colosseum": { title, extract, url, lat, lng } } for the articles found, in that language's Wikipedia
-export async function placeFacts(titles, lang) {
+export const placeFacts = async (titles, lang) => {
   const unique = [...new Set(titles.filter(Boolean))];
   const facts = {};
   for (let start = 0; start < unique.length; start += BATCH) {
@@ -89,4 +89,4 @@ export async function placeFacts(titles, lang) {
     }
   }
   return facts;
-}
+};

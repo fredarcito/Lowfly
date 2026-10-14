@@ -8,7 +8,7 @@ import { useTrips } from "@/hooks/useTrips";
 import { ROUTES } from "@/constants/routes";
 
 // Under the search: what My trips holds and a way in. With no trips yet, it explains how to save one.
-export default function TripsPromo() {
+const TripsPromo = () => {
   const { lang, t } = useI18n();
   const hasTrips = useTrips().length > 0;
   return (
@@ -28,4 +28,6 @@ export default function TripsPromo() {
       </Button>
     </section>
   );
-}
+};
+
+export default TripsPromo;

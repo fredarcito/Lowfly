@@ -10,7 +10,7 @@ export const hasLocale = (l) => LOCALES.includes(l);
 export const LOCALE_TAGS = { es: "es-ES", en: "en-GB" };
 
 // The first browser language we support, in order of preference (q=)
-export function pickLocale(acceptLanguage = "") {
+export const pickLocale = (acceptLanguage = "") => {
   const prefs = acceptLanguage
     .split(",")
     .map((part) => {
@@ -19,4 +19,4 @@ export function pickLocale(acceptLanguage = "") {
     })
     .sort((a, b) => b.q - a.q);
   return prefs.find((p) => hasLocale(p.base))?.base || DEFAULT_LOCALE;
-}
+};

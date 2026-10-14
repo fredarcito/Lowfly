@@ -11,7 +11,7 @@ import { CHECK_IN_TIMES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itiner
 // No itinerary yet: what the AI makes, the visitor's preferences and the button to create it.
 // Same layout as the search form: labelled fields in equal columns, then a note and the button.
 // `creation`: { status: "idle" | "creating" | "error", error } while the AI works on it
-export default function CreateItinerary({ trip, onCreate, creation }) {
+const CreateItinerary = ({ trip, onCreate, creation }) => {
   const { t } = useI18n();
   const { preferences, setPace, setTransport, setCheckIn, toggleInterest } = useItineraryPreferences(trip);
   const { fare } = trip;
@@ -86,4 +86,6 @@ export default function CreateItinerary({ trip, onCreate, creation }) {
       </div>
     </section>
   );
-}
+};
+
+export default CreateItinerary;

@@ -3,7 +3,7 @@
 import { updateTrip } from "@/store/trips";
 
 // Stops the traveller ticked as visited, kept with the trip
-export function useVisitedStops(trip) {
+export const useVisitedStops = (trip) => {
   const visited = trip.visited ?? [];
   return {
     isVisited: (stopId) => visited.includes(stopId),
@@ -13,4 +13,4 @@ export function useVisitedStops(trip) {
       }),
     countIn: (stops) => stops.filter((stop) => visited.includes(stop.id)).length,
   };
-}
+};

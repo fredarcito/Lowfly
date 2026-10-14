@@ -10,7 +10,7 @@ export const NO_TRIPS = [];
 
 let cache = { raw: null, list: NO_TRIPS };
 
-export function readTrips() {
+export const readTrips = () => {
   let raw = null;
   try {
     raw = localStorage.getItem(KEY);
@@ -23,17 +23,17 @@ export function readTrips() {
     cache = { raw, list: Array.isArray(list) ? list : NO_TRIPS };
   }
   return cache.list;
-}
+};
 
-function write(list) {
+const write = (list) => {
   try {
     localStorage.setItem(KEY, JSON.stringify(list));
   } catch {} // private mode or full: the change only lives until reload
   cache = { raw: null, list };
   window.dispatchEvent(new Event(CHANGE));
-}
+};
 
-export function subscribeToTrips(onChange) {
+export const subscribeToTrips = (onChange) => {
   const onStorage = (event) => event.key === KEY && onChange();
   window.addEventListener(CHANGE, onChange);
   window.addEventListener("storage", onStorage);
@@ -41,7 +41,7 @@ export function subscribeToTrips(onChange) {
     window.removeEventListener(CHANGE, onChange);
     window.removeEventListener("storage", onStorage);
   };
-}
+};
 
 
 // The same flight always gets the same id, so saving it twice does not duplicate it
@@ -49,14 +49,14 @@ export const tripId = (origin, fare) =>
   [origin, fare.code, fare.day, fare.time?.replace(":", ""), fare.ret?.day ?? "ow"].join("-").toLowerCase();
 
 // fare: a result as the API returns it (one way, or with out/ret legs). origin: departure airport code.
-export function saveTrip(origin, fare) {
+export const saveTrip = (origin, fare) => {
   const id = tripId(origin, fare);
   const list = readTrips();
   if (list.some((saved) => saved.id === id)) return id;
   const trip = { id, origin, fare, savedAt: new Date().toISOString(), booked: false, itinerary: null };
   write([...list, trip].sort((first, second) => (first.fare.day < second.fare.day ? -1 : 1)));
   return id;
-}
+};
 
 export const removeTrip = (id) => write(readTrips().filter((saved) => saved.id !== id));
 

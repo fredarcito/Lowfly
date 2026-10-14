@@ -3,7 +3,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { useI18n } from "@/context/i18n";
 import { AIRLINES } from "@/utils/format";
 
-export default function FailedNote({ failed }) {
+const FailedNote = ({ failed }) => {
   const { t } = useI18n();
   if (!failed?.length) return null;
   return (
@@ -15,4 +15,6 @@ export default function FailedNote({ failed }) {
       </AlertDescription>
     </Alert>
   );
-}
+};
+
+export default FailedNote;

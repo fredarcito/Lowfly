@@ -4,7 +4,7 @@ const UA = "Lowfly (https://lowfly-one.vercel.app)";
 const WEEK = 7 * 86400;
 
 // { lat, lng, name, kind } of the best match for `query` (kind: the OpenStreetMap tag, "amenity:restaurant"), preferring results near `near` ({ lat, lng }); null if none
-export async function locate(query, near) {
+export const locate = async (query, near) => {
   const params = new URLSearchParams({ q: query, limit: "1" });
   if (near) {
     params.set("lat", String(near.lat));
@@ -25,4 +25,4 @@ export async function locate(query, near) {
     console.error("Photon error", error);
     return null;
   }
-}
+};

@@ -27,7 +27,7 @@ const SITE = {
 };
 
 // Every formatting function that depends on the language. `t` is that language's dictionary.
-export function createFormat(lang, t) {
+export const createFormat = (lang, t) => {
   const tag = LOCALE_TAGS[lang];
   const site = SITE[lang] || SITE.es;
   const dayFmt = new Intl.DateTimeFormat(tag, { weekday: "short", day: "numeric", month: "short" });
@@ -45,7 +45,7 @@ export function createFormat(lang, t) {
   // Monday to Sunday initials (5 Jan 2026 was a Monday)
   const weekdays = Array.from({ length: 7 }, (_, i) => narrowFmt.format(new Date(2026, 0, 5 + i)));
 
-  function bookUrl(airline, dep, arr, day, retDay) {
+  const bookUrl = (airline, dep, arr, day, retDay) => {
     if (airline === "wizz")
       return `https://wizzair.com/${site.wizz}/booking/select-flight/${dep}/${arr}/${day}/${retDay || "null"}/1/0/0/null`;
     return (
@@ -53,7 +53,7 @@ export function createFormat(lang, t) {
       (retDay ? `&dateIn=${retDay}&isReturn=true` : "&isReturn=false") +
       `&isConnectedFlight=false&discount=0&originIata=${dep}&destinationIata=${arr}`
     );
-  }
+  };
 
   return {
     fmtDay,
@@ -107,4 +107,4 @@ export function createFormat(lang, t) {
       return diff < 0 ? `${p.save(money(-diff))}${nights}` : `${p.payMore(money(diff))}${nights}`;
     },
   };
-}
+};

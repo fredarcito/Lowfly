@@ -11,7 +11,7 @@ import NoResults from "@/components/search/results/NoResults";
 import { useI18n } from "@/context/i18n";
 import { normalize } from "@/utils/format";
 
-export default function EverywhereResults({ data }) {
+const EverywhereResults = ({ data }) => {
   const { t, f: fmt } = useI18n();
   const { origin, roundTrip, weekend, results, failed } = data;
   const priceNote = roundTrip ? t.results.roundTrip : undefined;
@@ -67,4 +67,6 @@ export default function EverywhereResults({ data }) {
       </Section>
     </>
   );
-}
+};
+
+export default EverywhereResults;

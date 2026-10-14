@@ -153,3 +153,88 @@
     background-image: var(--hero-photo-lg);
   }
 }
+
+/* Itinerary loader: a wizard with travel icons orbiting around him (components/trips/itinerary/ItineraryLoader) */
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes orbit-upright {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes wand-wave {
+  0%,
+  100% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(18deg);
+  }
+}
+@keyframes wizard-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes blink {
+  0%,
+  92%,
+  100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}
+.loader-orbit {
+  animation: orbit 16s linear infinite;
+}
+.loader-upright {
+  animation: orbit-upright 16s linear infinite;
+}
+.loader-wand {
+  transform-box: fill-box;
+  transform-origin: 0% 100%;
+  animation: wand-wave 1.6s ease-in-out infinite;
+}
+.loader-bob {
+  animation: wizard-bob 2.4s ease-in-out infinite;
+}
+.loader-twinkle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: twinkle 1.6s ease-in-out infinite;
+}
+.loader-blink {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: blink 4s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .loader-orbit,
+  .loader-upright,
+  .loader-wand,
+  .loader-bob,
+  .loader-twinkle,
+  .loader-blink {
+    animation: none;
+  }
+}

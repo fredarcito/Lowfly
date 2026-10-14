@@ -1,19 +1,19 @@
 "use client";
 
-import { CircleAlert, Gauge, Loader2, Sparkles, TrainFront, Utensils } from "lucide-react";
+import { BedDouble, CircleAlert, Gauge, Loader2, Sparkles, TrainFront, Utensils } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import PreferencePicker from "@/components/trips/itinerary/PreferencePicker";
 import { useI18n } from "@/context/i18n";
 import { errorMessage } from "@/i18n";
 import { useItineraryPreferences } from "@/hooks/useItineraryPreferences";
-import { INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
+import { CHECK_IN_TIMES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
 
 // No itinerary yet: what the AI makes, the visitor's preferences and the button to create it.
 // Same layout as the search form: labelled fields in equal columns, then a note and the button.
 // `creation`: { status: "idle" | "creating" | "error", error } while the AI works on it
 export default function CreateItinerary({ trip, onCreate, creation }) {
   const { t } = useI18n();
-  const { preferences, setPace, setTransport, toggleInterest } = useItineraryPreferences(trip);
+  const { preferences, setPace, setTransport, setCheckIn, toggleInterest } = useItineraryPreferences(trip);
   const { fare } = trip;
   const nights = fare.ret ? fare.nights : 0;
   const labels = t.trips.preferences;
@@ -30,7 +30,7 @@ export default function CreateItinerary({ trip, onCreate, creation }) {
         </div>
       </div>
 
-      <fieldset disabled={creating} className="grid gap-4 disabled:opacity-60 sm:grid-cols-3">
+      <fieldset disabled={creating} className="grid gap-4 disabled:opacity-60 sm:grid-cols-2 lg:grid-cols-4">
         <PreferencePicker
           id="pace"
           icon={Gauge}
@@ -54,6 +54,14 @@ export default function CreateItinerary({ trip, onCreate, creation }) {
           options={optionsOf(TRANSPORTS, labels.transports)}
           value={preferences.transport}
           onChange={setTransport}
+        />
+        <PreferencePicker
+          id="check-in"
+          icon={BedDouble}
+          label={labels.checkIn}
+          options={CHECK_IN_TIMES.map((time) => ({ id: time, label: time }))}
+          value={preferences.checkIn}
+          onChange={setCheckIn}
         />
       </fieldset>
 

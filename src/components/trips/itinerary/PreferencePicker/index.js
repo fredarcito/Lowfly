@@ -33,7 +33,7 @@ export default function PreferencePicker({ id, icon: Icon, label, options, value
           <span className="min-w-0 flex-1 truncate">{summary}</span>
           <ChevronDown className="size-4 shrink-0 text-muted-foreground" />
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="start" className="w-(--radix-dropdown-menu-trigger-width) min-w-44">
+        <DropdownMenuContent align="start" className="max-h-72 w-(--radix-dropdown-menu-trigger-width) min-w-44 overflow-y-auto">
           {multiple ? (
             options.map((option) => (
               <DropdownMenuCheckboxItem

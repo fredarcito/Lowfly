@@ -4,7 +4,7 @@ import { createItinerary } from "@/server/itinerary";
 import { allow } from "@/server/rateLimit";
 import { isDay } from "@/utils/dates";
 import { hasLocale } from "@/i18n/config";
-import { DEFAULT_PREFERENCES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
+import { CHECK_IN_TIMES, DEFAULT_PREFERENCES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
 
 // A long itinerary can take the model a while
 export const maxDuration = 120;
@@ -22,6 +22,7 @@ function readPreferences(input = {}) {
     pace: PACES.includes(input.pace) ? input.pace : DEFAULT_PREFERENCES.pace,
     interests: interests.length ? interests : DEFAULT_PREFERENCES.interests,
     transport: TRANSPORTS.includes(input.transport) ? input.transport : DEFAULT_PREFERENCES.transport,
+    checkIn: CHECK_IN_TIMES.includes(input.checkIn) ? input.checkIn : DEFAULT_PREFERENCES.checkIn,
   };
 }
 

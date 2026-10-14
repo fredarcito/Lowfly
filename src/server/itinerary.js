@@ -100,6 +100,7 @@ Traveller preferences:
 - Pace: ${PACE_RULES[preferences.pace] ?? PACE_RULES.balanced}.
 - Interests: ${preferences.interests.join(", ")}.
 - Getting around: ${TRANSPORT_RULES[preferences.transport] ?? TRANSPORT_RULES.transit}.
+- Accommodation check-in on day 1: ${preferences.checkIn}. Add a "logistica" stop for it at that time (place null: we don't know where they stay; say "in the centre"). Plan the hours between landing and check-in around it: if there is time before, suggest leaving the luggage in storage and light sights nearby; if it is right after landing, go straight there. If the check-in time comes before they can arrive, check in as soon as they get there.
 
 Rules:
 - Order stops by time and group nearby places to avoid going back and forth. Day trips to nearby towns are fine when they suit the interests.

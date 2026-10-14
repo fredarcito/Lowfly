@@ -3,7 +3,7 @@
 import { updateTrip } from "@/store/trips";
 import { DEFAULT_PREFERENCES } from "@/constants/itineraryPreferences";
 
-// Pace, interests and transport for the trip's itinerary, kept with the trip
+// Pace, interests, transport and check-in time for the trip's itinerary, kept with the trip
 export function useItineraryPreferences(trip) {
   const preferences = { ...DEFAULT_PREFERENCES, ...trip.preferences };
   const save = (changes) => updateTrip(trip.id, { preferences: { ...preferences, ...changes } });
@@ -20,6 +20,7 @@ export function useItineraryPreferences(trip) {
     preferences,
     setPace: (pace) => save({ pace }),
     setTransport: (transport) => save({ transport }),
+    setCheckIn: (checkIn) => save({ checkIn }),
     toggleInterest,
   };
 }

@@ -238,6 +238,7 @@ const en = {
     days: (n) => plural(n, "day", "days"),
   },
   results: {
+    guideSource: "Source",
     oneAdult: "1 adult",
     noTimeOff: "No time off needed",
     noTimeOffHint: "Leave Friday from 17:00 or Saturday, back on Sunday",

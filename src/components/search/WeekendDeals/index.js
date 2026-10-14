@@ -5,6 +5,7 @@ import { ArrowRight, Copyright, CornerDownRight, Luggage, Plane } from "lucide-r
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import AirlineBadge from "@/components/shared/AirlineBadge";
+import DestinationGuide from "@/components/shared/DestinationGuide";
 import SaveTripButton from "@/components/search/SaveTripButton";
 import { useI18n } from "@/context/i18n";
 import { airlinesOf } from "@/utils/format";
@@ -170,6 +171,7 @@ function DealCard({ fare, origin, photo }) {
           </span>
         </div>
         <p className="text-sm text-muted-foreground">{f.weekendDates(fare)}</p>
+        <DestinationGuide code={fare.code} tagsOnly />
         <div className="mt-auto flex items-center justify-between gap-2 pt-1">
           <span className="flex gap-1.5">
             {airlinesOf(fare).map((a) => (

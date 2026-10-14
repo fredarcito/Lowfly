@@ -152,7 +152,7 @@ export default function DestinationTable({ fares, origin, roundTrip, weekend }) 
           <div key={fare.code}>
             <DestinationRow fare={fare} weekend={weekend} open={openKey === fare.code} onToggle={() => toggle(fare.code)} />
             <Collapse open={openKey === fare.code}>
-              <div className="bg-muted/40 pt-1">
+              <div className="border-t border-foreground/10 bg-muted/40 pt-4">
                 <FareDetails fare={fare} origin={origin} />
               </div>
             </Collapse>
@@ -160,7 +160,7 @@ export default function DestinationTable({ fares, origin, roundTrip, weekend }) 
               <>
                 <AlternativeRow fare={alternative} open={openKey === altKey} onToggle={() => toggle(altKey)} />
                 <Collapse open={openKey === altKey}>
-                  <div className="bg-muted/40 pt-1">
+                  <div className="border-t border-foreground/10 bg-muted/40 pt-4">
                     <FareDetails fare={alternative} origin={origin} />
                   </div>
                 </Collapse>

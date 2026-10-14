@@ -4,6 +4,7 @@ import { ArrowLeftRight, ArrowRight, ExternalLink, MapPin, Sparkles } from "luci
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import DestinationGuide from "@/components/shared/DestinationGuide";
 import FareLegs from "@/components/shared/FareLegs";
 import SaveTripButton from "@/components/search/SaveTripButton";
 import { useI18n } from "@/context/i18n";
@@ -40,6 +41,7 @@ export default function BestPrice({ price, cur, title, detail, links = [], price
           ) : (
             detail && <p className="text-muted-foreground">{detail}</p>
           )}
+          {withFlights && <DestinationGuide code={fare.code} className="mt-2 max-w-[62ch]" />}
         </div>
       </div>
 
@@ -58,7 +60,7 @@ export default function BestPrice({ price, cur, title, detail, links = [], price
           </p>
         )}
         {links.length > 0 && (
-          <div className="mt-1 grid gap-2">
+          <div className="mt-3 grid gap-2.5">
             {links.map((link) => (
               <Button key={link.href} asChild size="lg" className="h-12 w-full text-base font-bold">
                 <a href={link.href} target="_blank" rel="noopener noreferrer">

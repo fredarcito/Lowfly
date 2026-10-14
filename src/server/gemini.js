@@ -21,7 +21,8 @@ export async function generateJson({ instructions, prompt, schema, thinking = "l
     }),
     cache: "no-store",
   });
-  if (response.status === 429) throw new AppError("aiBusy");
+  // Too many requests (429) or the model overloaded (503): busy, worth retrying later
+  if (response.status === 429 || response.status === 503) throw new AppError("aiBusy");
   if (!response.ok) {
     console.error("Gemini error", response.status, (await response.text()).slice(0, 500));
     throw new AppError("aiUnavailable");

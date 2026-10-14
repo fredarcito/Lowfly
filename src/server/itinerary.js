@@ -1,9 +1,10 @@
-// AI itineraries: Gemini plans the days; Photon (OpenStreetMap) finds where each place really is, and
+// AI itineraries: Gemini plans the days (Claude when Gemini fails); Photon (OpenStreetMap) finds where each place really is, and
 // Wikipedia adds each sight's history and its source, only when the article is about that same spot.
 // Only called from the server. Same shape as the samples (utils/itinerary), plus why / lookFor / history / sources.
 import { getAirports } from "@/server/airports";
 import { AppError } from "@/server/errors";
-import { generateJson } from "@/server/gemini";
+import * as gemini from "@/server/gemini";
+import * as claude from "@/server/claude";
 import { locate } from "@/server/geocode";
 import { placeFacts, searchPlace } from "@/server/wikipedia";
 import { normalize } from "@/utils/format";
@@ -190,6 +191,17 @@ async function verifyStop(stop, { city, lang, destination, facts }) {
   return sameSpot ? { ...verified, history: fact.extract, sources: [{ title: `Wikipedia: ${fact.title}`, url: fact.url }] } : verified;
 }
 
+// Gemini plans the itinerary; when it is busy or fails, Claude does, with the same instructions and schema
+async function planWithAi(request) {
+  try {
+    return { ...(await gemini.generateJson(request)), model: "gemini" };
+  } catch (error) {
+    if (!(error instanceof AppError) || !claude.hasClaude()) throw error;
+    console.warn(`Gemini failed (${error.code}), trying Claude`);
+    return { ...(await claude.generateJson(request)), model: "claude" };
+  }
+}
+
 // trip: { origin, code, city, country, out: { day, time, arrive }, ret?: { day, time } }
 export async function createItinerary({ trip, lang, preferences }) {
   const dates = daysBetween(trip.out.day, trip.ret?.day ?? trip.out.day);
@@ -200,12 +212,12 @@ export async function createItinerary({ trip, lang, preferences }) {
   if (!airport || !isCoordinate(airport.lat, airport.lon)) throw new AppError("aiUnavailable");
   const destination = { lat: airport.lat, lng: airport.lon };
 
-  const { data, usage } = await generateJson({
+  const { data, usage, model } = await planWithAi({
     instructions: instructionsFor({ lang, city: trip.city, country: trip.country, airport, out: trip.out, ret: trip.ret, dates, preferences }),
     prompt: "Plan the itinerary now.",
     schema: SCHEMA,
   });
-  console.log("AI itinerary", trip.code, `${dates.length} days`, JSON.stringify(usage));
+  console.log("AI itinerary", model, trip.code, `${dates.length} days`, JSON.stringify(usage));
 
   const plannedDays = (Array.isArray(data?.days) ? data.days : []).slice(0, dates.length);
   if (!plannedDays.length) throw new AppError("aiUnavailable");

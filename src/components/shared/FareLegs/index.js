@@ -52,18 +52,34 @@ const Leg = ({ icon: Icon, label, flight, from, to, showPrice = true }) => {
   );
 };
 
+// The two ends of a fare (home: the departure airport; away: the destination), with their cities.
+// Ryanair and Wizz name some airports after the airport, not the town: the city is shown.
+const fareEnds = (airports, fare, origin) => {
+  const home = { code: origin, ...findAirport(airports, origin) };
+  const away = { code: fare.code, city: fare.city, ...findAirport(airports, fare.code) };
+  home.city = home.city ?? home.name;
+  away.city = fare.city ?? away.city;
+  return { home, away };
+};
+
+// One flight of a fare on its own (`direction`: out | ret), as in FareLegs
+export const FareLeg = ({ fare, origin, direction = "out", showPrice = true }) => {
+  const { lang, t } = useI18n();
+  const { home, away } = fareEnds(useAirports(lang), fare, origin);
+  return direction === "ret" ? (
+    <Leg icon={PlaneLanding} label={t.results.ret} flight={fare.ret} from={away} to={home} showPrice={showPrice} />
+  ) : (
+    <Leg icon={PlaneTakeoff} label={t.results.out} flight={fare.out || fare} from={home} to={away} showPrice={showPrice} />
+  );
+};
+
 // Fare details: the outbound flight and, for a return trip, the stay and the return flight.
 // `legPrices`: each flight's price (useless on a one-way trip shown next to its total). `footer` goes under
 // the flights, in the same box (an opened result: price, baggage and booking).
 const FareLegs = ({ fare, origin, legPrices = true, footer }) => {
   const { lang, t } = useI18n();
-  const airports = useAirports(lang);
   const out = fare.out || fare;
-  const home = { code: origin, ...findAirport(airports, origin) };
-  const away = { code: fare.code, city: fare.city, ...findAirport(airports, fare.code) };
-  // Ryanair and Wizz name some airports after the airport, not the town: show the city
-  home.city = home.city ?? home.name;
-  away.city = fare.city ?? away.city;
+  const { home, away } = fareEnds(useAirports(lang), fare, origin);
 
   return (
     <div className="grid gap-4 rounded-xl bg-muted/50 p-4 sm:p-5">

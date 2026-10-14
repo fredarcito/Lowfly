@@ -265,6 +265,10 @@ const en = {
     guideSource: "Source",
     oneAdult: "1 adult",
     bagsTitle: "Estimated extra baggage",
+    bagsShort: "Extra baggage",
+    bagsFrom: (price) => `from +${price}`,
+    seeMore: "See more",
+    seeLess: "See less",
     bagsBothFlights: "For both flights.",
     bag: {
       cabin: (kg) => `Cabin ${kg} kg`,

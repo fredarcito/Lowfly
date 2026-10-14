@@ -265,6 +265,10 @@ const es = {
     guideSource: "Fuente",
     oneAdult: "1 adulto",
     bagsTitle: "Equipaje adicional estimado",
+    bagsShort: "Equipaje adicional",
+    bagsFrom: (price) => `desde +${price}`,
+    seeMore: "Ver más",
+    seeLess: "Ver menos",
     bagsBothFlights: "Por los dos vuelos.",
     bag: {
       cabin: (kg) => `Cabina ${kg} kg`,

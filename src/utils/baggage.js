@@ -9,3 +9,11 @@ export const bagExtra = (fare, kind) => {
   if (bags.some((bag) => bag == null)) return null;
   return bags.reduce((total, bag) => total + bag, 0);
 };
+
+// The cheapest bag's extra for a fare ("from +€12"), or null
+export const cheapestBagExtra = (fare) => {
+  const extras = Object.keys(BAGS)
+    .map((kind) => bagExtra(fare, kind))
+    .filter((extra) => extra != null);
+  return extras.length ? Math.min(...extras) : null;
+};

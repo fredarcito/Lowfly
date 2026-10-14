@@ -11,7 +11,8 @@ import { cn } from "@/utils/cn";
 // bag under the seat): "Estimated extra baggage · Cabin 10 kg +€12 · Checked 20 kg +€21", for both flights
 // on a return trip, and where the final price is. The hint says they are estimates.
 // `large`: for the highlighted card (bigger text, prices to the edge, a line above the note).
-const BagEstimate = ({ fare, large = false, className }) => {
+// `hideTitle`: when a folded row above already says it (the compact card on phones).
+const BagEstimate = ({ fare, large = false, hideTitle = false, className }) => {
   const { t, f } = useI18n();
   const extras = Object.keys(BAGS)
     .map((kind) => ({ kind, extra: bagExtra(fare, kind) }))
@@ -24,10 +25,12 @@ const BagEstimate = ({ fare, large = false, className }) => {
       className={cn("grid content-start text-muted-foreground", large ? "gap-2.5" : "gap-1 text-sm", className)}
       title={t.results.bagsHint}
     >
-      <p className={cn("flex items-center text-foreground", large ? "gap-2.5" : "gap-1.5")}>
-        <Luggage className={cn("shrink-0 text-muted-foreground", large ? "size-5" : "size-4")} />
-        {t.results.bagsTitle}
-      </p>
+      {!hideTitle && (
+        <p className={cn("flex items-center text-foreground", large ? "gap-2.5" : "gap-1.5")}>
+          <Luggage className={cn("shrink-0 text-muted-foreground", large ? "size-5" : "size-4")} />
+          {t.results.bagsTitle}
+        </p>
+      )}
       <dl className={cn("grid grid-cols-[1fr_auto] gap-x-6", large ? "gap-y-1.5 pl-7.5" : "max-w-72 gap-y-0.5 pl-5.5")}>
         {extras.map(({ kind, extra }) => (
           <div key={kind} className="contents">

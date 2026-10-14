@@ -3,11 +3,17 @@
 import { useI18n } from "@/context/i18n";
 import { cn } from "@/utils/cn";
 
-// "Day 1 · Mon 19 Oct" tabs; they scroll sideways when they do not fit, and stay at the top while the day scrolls
-export default function ItineraryDayTabs({ days, picked, onPick }) {
+// "Day 1 · Mon 19 Oct" tabs; they scroll sideways when they do not fit, and stay at the top while the day scrolls.
+// `belowBar`: on phones and tablets the slim bar (ItineraryStickyBar) is showing, so they stick right under it.
+export default function ItineraryDayTabs({ days, picked, onPick, belowBar = false }) {
   const { t, f } = useI18n();
   return (
-    <div className="sticky top-0 z-20 -mx-4 self-start bg-background/90 px-4 backdrop-blur-md sm:-mx-6 sm:px-6">
+    <div
+      className={cn(
+        "sticky top-0 z-20 -mx-4 self-start bg-background/90 px-4 backdrop-blur-md transition-[top] duration-300 ease-out motion-reduce:transition-none sm:-mx-6 sm:px-6",
+        belowBar && "max-lg:top-[calc(3.5rem+1px+env(safe-area-inset-top,0px))]"
+      )}
+    >
       <div
         role="tablist"
         aria-label={t.trips.itinerary}

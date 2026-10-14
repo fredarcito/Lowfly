@@ -1,12 +1,13 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Languages, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CreateItinerary from "@/components/trips/itinerary/CreateItinerary";
 import ItineraryDay from "@/components/trips/itinerary/ItineraryDay";
 import ItineraryDayTabs from "@/components/trips/itinerary/ItineraryDayTabs";
 import ItineraryLoader from "@/components/trips/itinerary/ItineraryLoader";
+import ItineraryStickyBar from "@/components/trips/itinerary/ItineraryStickyBar";
 import { useI18n } from "@/context/i18n";
 import { errorMessage } from "@/i18n";
 import { useItinerary } from "@/hooks/useItinerary";
@@ -17,6 +18,20 @@ export default function Itinerary({ trip }) {
   const { itinerary, days, day, dayIndex, pickDay, create, creation } =
     useItinerary(trip);
   const sectionRef = useRef(null);
+  // Scrolled past the start of the days (the day tabs are stuck at the top): the slim bar shows on phones
+  const sentinelRef = useRef(null);
+  const [scrolledPast, setScrolledPast] = useState(false);
+  const showsDays = Boolean(itinerary) && creation.status !== "creating";
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel) return;
+    const observer = new IntersectionObserver(([entry]) =>
+      setScrolledPast(!entry.isIntersecting && entry.boundingClientRect.top < 0)
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [showsDays]);
+
   if (creation.status === "creating") return <ItineraryLoader />;
   if (!itinerary)
     return (
@@ -32,8 +47,10 @@ export default function Itinerary({ trip }) {
   }
 
   return (
-    <section ref={sectionRef} className="grid gap-4">
-      <ItineraryDayTabs days={days} picked={dayIndex} onPick={showDay} />
+    <section ref={sectionRef} className="grid grid-cols-1 gap-4">
+      <div ref={sentinelRef} aria-hidden className="-mb-4 h-0" />
+      <ItineraryStickyBar trip={trip} day={day} dayNumber={dayIndex + 1} visible={scrolledPast} />
+      <ItineraryDayTabs days={days} picked={dayIndex} onPick={showDay} belowBar={scrolledPast} />
       {itinerary.lang && itinerary.lang !== lang && (
         <OtherLanguage
           itinerary={itinerary}

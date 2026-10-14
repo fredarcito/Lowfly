@@ -36,7 +36,7 @@ export default function ItineraryDay({ trip, day, dayNumber }) {
   const lastIndex = stops.length - 1;
 
   return (
-    <div role="tabpanel" className="grid gap-4">
+    <div role="tabpanel" className="grid grid-cols-1 gap-4">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="grid gap-1">
           <h3 className="font-heading text-lg leading-snug font-bold sm:text-xl">{day.title}</h3>

@@ -39,7 +39,8 @@ export const createFormat = (lang, t) => {
   const fmtDay = (s) => dayFmt.format(parseDay(s));
   const fmtShort = (s) => shortFmt.format(parseDay(s));
   const rangeFmt = new Intl.DateTimeFormat(tag, { day: "numeric", month: "short" });
-  const money = (v, cur = "EUR") => new Intl.NumberFormat(tag, { style: "currency", currency: cur }).format(v);
+  // `options`: more Intl.NumberFormat options (whole euros: { minimumFractionDigits: 0, maximumFractionDigits: 0 })
+  const money = (v, cur = "EUR", options) => new Intl.NumberFormat(tag, { style: "currency", currency: cur, ...options }).format(v);
   const at = (time) => (time ? p.at(time) : "");
 
   // Monday to Sunday initials (5 Jan 2026 was a Monday)

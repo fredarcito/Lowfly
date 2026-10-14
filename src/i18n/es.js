@@ -39,7 +39,7 @@ const es = {
   },
   empty: {
     title: "Tres formas de buscar",
-    disclaimer: "Los precios son para un adulto, en euros, y pueden cambiar al reservar. Si una aerolínea da el precio en otra moneda, lo convertimos con el tipo de cambio del día (ExchangeRate-API).",
+    disclaimer: "Los precios son para un adulto, en euros, y pueden cambiar al reservar. Solo incluyen un bolso pequeño bajo el asiento: las maletas se pagan aparte. Si una aerolínea da el precio en otra moneda, lo convertimos con el tipo de cambio del día (ExchangeRate-API).",
   },
   loading: {
     everywhere: "Buscando los destinos más baratos…",
@@ -264,6 +264,14 @@ const es = {
   results: {
     guideSource: "Fuente",
     oneAdult: "1 adulto",
+    bagsTitle: "Equipaje adicional estimado",
+    bagsBothFlights: "Por los dos vuelos.",
+    bag: {
+      cabin: (kg) => `Cabina ${kg} kg`,
+      checked: (kg) => `Facturada ${kg} kg`,
+    },
+    bagsFinalPrice: (airlines) => `Precio final y condiciones en ${airlines}`,
+    bagsHint: "Estimado, desde. El precio solo incluye un bolso pequeño bajo el asiento: las maletas se pagan aparte y su precio cambia según la ruta y la fecha.",
     noTimeOff: "Sin faltar al trabajo",
     noTimeOffHint: "Sales el viernes desde las 17:00 o el sábado y vuelves el domingo",
     hoursAway: (h) => `${h}\u00a0h en destino`,

@@ -39,7 +39,7 @@ const en = {
   },
   empty: {
     title: "Three ways to search",
-    disclaimer: "Prices are for one adult, in euros, and may change when you book. If an airline quotes another currency, we convert it at the day's exchange rate (ExchangeRate-API).",
+    disclaimer: "Prices are for one adult, in euros, and may change when you book. They only include a small bag under the seat: bags cost extra. If an airline quotes another currency, we convert it at the day's exchange rate (ExchangeRate-API).",
   },
   loading: {
     everywhere: "Looking for the cheapest destinations…",
@@ -264,6 +264,14 @@ const en = {
   results: {
     guideSource: "Source",
     oneAdult: "1 adult",
+    bagsTitle: "Estimated extra baggage",
+    bagsBothFlights: "For both flights.",
+    bag: {
+      cabin: (kg) => `Cabin ${kg} kg`,
+      checked: (kg) => `Checked ${kg} kg`,
+    },
+    bagsFinalPrice: (airlines) => `Final price and conditions at ${airlines}`,
+    bagsHint: "An estimate, from. The fare only includes a small bag under the seat: bags cost extra and their price changes with the route and the date.",
     noTimeOff: "No time off needed",
     noTimeOffHint: "Leave Friday from 17:00 or Saturday, back on Sunday",
     hoursAway: (h) => `${h}\u00a0h there`,

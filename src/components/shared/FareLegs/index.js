@@ -19,7 +19,7 @@ const End = ({ time, airport, align = "left" }) => {
 
 // One leg: day, departure → arrival (with the flight length), airline and the price of that leg.
 // from / to: { code, city, tz }
-const Leg = ({ icon: Icon, label, flight, from, to }) => {
+const Leg = ({ icon: Icon, label, flight, from, to, showPrice = true }) => {
   const { f } = useI18n();
   const minutes = flightMinutes(flight, from.tz, to.tz);
   return (
@@ -46,14 +46,16 @@ const Leg = ({ icon: Icon, label, flight, from, to }) => {
 
       <div className="flex items-center justify-between gap-3 sm:justify-end">
         <AirlineBadge airline={flight.airline} />
-        <span className="min-w-20 text-right font-heading text-lg font-bold tabular-nums">{f.money(flight.price, flight.cur)}</span>
+        {showPrice && <span className="min-w-20 text-right font-heading text-lg font-bold tabular-nums">{f.money(flight.price, flight.cur)}</span>}
       </div>
     </div>
   );
 };
 
-// Fare details: the outbound flight and, for a return trip, the stay and the return flight
-const FareLegs = ({ fare, origin }) => {
+// Fare details: the outbound flight and, for a return trip, the stay and the return flight.
+// `legPrices`: each flight's price (useless on a one-way trip shown next to its total). `footer` goes under
+// the flights, in the same box (an opened result: price, baggage and booking).
+const FareLegs = ({ fare, origin, legPrices = true, footer }) => {
   const { lang, t } = useI18n();
   const airports = useAirports(lang);
   const out = fare.out || fare;
@@ -65,7 +67,7 @@ const FareLegs = ({ fare, origin }) => {
 
   return (
     <div className="grid gap-4 rounded-xl bg-muted/50 p-4 sm:p-5">
-      <Leg icon={PlaneTakeoff} label={t.results.out} flight={out} from={home} to={away} />
+      <Leg icon={PlaneTakeoff} label={t.results.out} flight={out} from={home} to={away} showPrice={legPrices} />
       {fare.ret && (
         <>
           <div className="flex items-center gap-3 text-xs text-muted-foreground">
@@ -78,9 +80,10 @@ const FareLegs = ({ fare, origin }) => {
             </span>
             <span className="h-px flex-1 bg-border" />
           </div>
-          <Leg icon={PlaneLanding} label={t.results.ret} flight={fare.ret} from={away} to={home} />
+          <Leg icon={PlaneLanding} label={t.results.ret} flight={fare.ret} from={away} to={home} showPrice={legPrices} />
         </>
       )}
+      {footer && <div className="border-t pt-4">{footer}</div>}
     </div>
   );
 };

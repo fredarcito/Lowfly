@@ -4,6 +4,7 @@ import { ArrowLeftRight, ArrowRight, ExternalLink, MapPin, Sparkles } from "luci
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import BagEstimate from "@/components/shared/BagEstimate";
 import DestinationGuide from "@/components/shared/DestinationGuide";
 import FareLegs from "@/components/shared/FareLegs";
 import SaveTripButton from "@/components/search/SaveTripButton";
@@ -55,9 +56,12 @@ const BestPrice = ({ price, cur, title, detail, links = [], priceNote, fare, ori
           <span className="sr-only">{f.money(price, cur)}</span>
         </p>
         {withFlights && (
-          <p className="text-muted-foreground first-letter:uppercase">
-            {priceNote ?? t.form.oneway} · {t.results.oneAdult}
-          </p>
+          <div className="grid gap-1.5">
+            <p className="text-muted-foreground first-letter:uppercase">
+              {priceNote ?? t.form.oneway} · {t.results.oneAdult}
+            </p>
+            <BagEstimate fare={fare} />
+          </div>
         )}
         {links.length > 0 && (
           <div className="mt-3 grid gap-2.5">

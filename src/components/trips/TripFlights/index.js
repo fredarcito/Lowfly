@@ -3,6 +3,7 @@
 import { ChevronDown, ExternalLink, Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Collapse from "@/components/shared/Collapse";
+import BagEstimate from "@/components/shared/BagEstimate";
 import FareLegs from "@/components/shared/FareLegs";
 import { useI18n } from "@/context/i18n";
 import { useDisclosure } from "@/hooks/useDisclosure";
@@ -58,6 +59,7 @@ const TripFlights = ({ trip }) => {
       <Collapse open={details.open}>
         <div className="grid gap-4 border-t p-4 sm:p-5">
           <FareLegs fare={fare} origin={origin} />
+          <BagEstimate fare={fare} />
           <div className="flex flex-wrap items-center justify-between gap-3">
             <p className="text-xs text-muted-foreground">
               {t.trips.savedPrice(f.money(fare.price, fare.cur))}. {t.trips.priceMayChange}

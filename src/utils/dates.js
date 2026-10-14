@@ -6,7 +6,7 @@ export const parseDay = (s) => {
   const [y, m, d] = s.slice(0, 10).split("-").map(Number);
   return new Date(y, m - 1, d);
 };
-export const addDays = (d, n) => {
+const addDays = (d, n) => {
   const x = new Date(d);
   x.setDate(x.getDate() + n);
   return x;

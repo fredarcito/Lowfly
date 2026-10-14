@@ -1,5 +1,4 @@
 // Colour theme: dark by default, light if the visitor chose it (remembered on this device)
-export const THEMES = ["dark", "light"];
 export const DEFAULT_THEME = "dark";
 export const THEME_KEY = "lowfly.theme";
 

@@ -1,11 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { createItinerary } from "@/api/itinerary";
 import { apiError } from "@/api/client";
 import { useI18n } from "@/context/i18n";
 import { updateTrip } from "@/store/trips";
-import { itineraryIn } from "@/utils/itinerary";
 
 // What the AI needs to know about the flights: where, and when you land and leave
 const tripForAi = (trip) => {
@@ -25,13 +24,13 @@ const tripForAi = (trip) => {
 const stopsForAi = (trip) =>
   trip.stops.map(({ city, country, lat, lng, arrive, leave }) => ({ city, country, lat, lng, arrive, leave }));
 
-// A trip's itinerary (samples follow the page language; AI ones keep theirs), the picked day,
+// A trip's itinerary (in the language it was made in), the picked day,
 // and creating it with the AI: { status: "idle" | "creating" | "error", error }
 export const useItinerary = (trip) => {
   const { lang } = useI18n();
   const [pickedIndex, setPickedIndex] = useState(0);
   const [creation, setCreation] = useState({ status: "idle" });
-  const itinerary = useMemo(() => trip.itinerary && itineraryIn(trip.itinerary, trip, lang), [trip, lang]);
+  const itinerary = trip.itinerary;
   const days = itinerary?.days ?? [];
   const index = Math.min(pickedIndex, Math.max(days.length - 1, 0));
 

@@ -12,6 +12,12 @@ import { useI18n } from "@/context/i18n";
 import { useDesktop } from "@/hooks/useDesktop";
 import { cn } from "@/utils/cn";
 
+// What the two ends are called and what to pick next, by how the range is counted
+const unitTexts = (t) => ({
+  nights: { start: t.results.out, end: t.results.ret, pickStart: t.picker.outDay, pickEnd: t.picker.retDay },
+  days: { start: t.picker.start, end: t.picker.end, pickStart: t.picker.firstDay, pickEnd: t.picker.lastDay },
+});
+
 // A single picker for a date range ("YYYY-MM-DD"). Closes itself once the second day is picked.
 // `unit` decides how the length is counted: "days" for a search range, "nights" for a trip.
 // `labels` ({ start, end, pickStart, pickEnd }) rename the two ends and what to pick (a trip planned by hand:
@@ -48,10 +54,9 @@ const DateRangeField = ({ id, from, to, onChange, minNights = 0, maxNights, unit
 
   const n = from && to ? nightsBetween(from, to) : 0;
   const length = unit === "nights" ? t.units.nights(n) : t.units.days(n + 1);
-  const prompt =
-    picking === "end"
-      ? (labels?.pickEnd ?? (unit === "nights" ? t.picker.retDay : t.picker.lastDay))
-      : (labels?.pickStart ?? (unit === "nights" ? t.picker.outDay : t.picker.firstDay));
+  // The ends' names and what to pick: the unit's own, unless `labels` renames them
+  const texts = { ...unitTexts(t)[unit], ...labels };
+  const prompt = texts[picking === "end" ? "pickEnd" : "pickStart"];
 
   const trigger = (
     <Button
@@ -103,8 +108,8 @@ const DateRangeField = ({ id, from, to, onChange, minNights = 0, maxNights, unit
 
   // Mobile: what is already picked, which end is being chosen, and one large month
   const ends = [
-    { key: "start", label: labels?.start ?? (unit === "nights" ? t.results.out : t.picker.start), day: selected?.from },
-    { key: "end", label: labels?.end ?? (unit === "nights" ? t.results.ret : t.picker.end), day: selected?.to },
+    { key: "start", label: texts.start, day: selected?.from },
+    { key: "end", label: texts.end, day: selected?.to },
   ];
 
   return (

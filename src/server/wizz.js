@@ -126,15 +126,18 @@ const fareFinder = async (origin, month, duration) => {
   return (await r.json()).items || [];
 };
 
-// Stay buckets for a stay of min to max nights. "1 week" is exactly 7 nights;
-// "anytime" only when part of the stay is longer than 8 nights.
-const buckets = ({ min, max }) => {
-  if (min === 7 && max === 7) return ["1 week"];
-  const list = [];
-  if (min <= 3) list.push("1-3 days");
-  if (min <= 8 && max >= 4) list.push("4-8 days");
-  if (max > 8) list.push("anytime");
-  return list;
+// Wizz's stay buckets and when each one covers part of a stay of min to max nights
+// ("anytime" only when part of the stay is longer than 8 nights)
+const STAY_BUCKETS = {
+  "1-3 days": ({ min }) => min <= 3,
+  "4-8 days": ({ min, max }) => min <= 8 && max >= 4,
+  anytime: ({ max }) => max > 8,
+};
+
+// The buckets to ask for a stay of min to max nights. "1 week" is exactly 7 nights.
+const buckets = (stay) => {
+  if (stay.min === 7 && stay.max === 7) return ["1 week"];
+  return Object.keys(STAY_BUCKETS).filter((bucket) => STAY_BUCKETS[bucket](stay));
 };
 
 const monthEnd = (month) => shift(shift(month.slice(0, 7) + "-01", 32).slice(0, 7) + "-01", -1);

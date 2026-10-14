@@ -88,7 +88,7 @@ export const updateTrip = (id, changes) =>
   write(readTrips().map((saved) => (saved.id === id ? { ...saved, ...changes } : saved)));
 
 // Last day of the trip: the return flight, or the outbound one for a one-way trip
-export const lastDay = (trip) => trip.fare.ret?.day ?? trip.fare.day;
+const lastDay = (trip) => trip.fare.ret?.day ?? trip.fare.day;
 
 // Not over yet (today counts)
 export const isUpcoming = (trip) => lastDay(trip) >= today();

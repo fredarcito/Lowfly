@@ -1,6 +1,6 @@
 // AI itineraries: Gemini plans the days (Claude when Gemini fails); Photon (OpenStreetMap) finds where each place really is, and
 // Wikipedia adds each sight's history and its source, only when the article is about that same spot.
-// Only called from the server. Same shape as the samples (utils/itinerary), plus why / lookFor / history / sources.
+// Only called from the server. The shape is described in utils/itinerary.
 import { getAirports } from "@/server/airports";
 import { AppError } from "@/server/errors";
 import * as gemini from "@/server/gemini";
@@ -10,8 +10,8 @@ import { placeFacts, searchPlace } from "@/server/wikipedia";
 import { normalize } from "@/utils/format";
 import { daysBetween } from "@/utils/dates";
 import { km } from "@/utils/itinerary";
+import { MAX_TRIP_DAYS } from "@/constants/manualTrips";
 
-export const MAX_DAYS = 10;
 // Places farther than this from the destination airport are not on this trip (a wrong guess by the model)
 const MAX_KM_FROM_AIRPORT = 120;
 // A Wikipedia article is about the located place only if its coordinates are this close
@@ -249,7 +249,7 @@ const planDays = async ({ lang, city, country, destination, dates, travel, prefe
 // trip: { origin, code, city, country, out: { day, time, arrive }, ret?: { day, time } }
 export const createItinerary = async ({ trip, lang, preferences }) => {
   const dates = daysBetween(trip.out.day, trip.ret?.day ?? trip.out.day);
-  if (dates.length > MAX_DAYS) throw new AppError("aiTooLong", { max: MAX_DAYS }, 400);
+  if (dates.length > MAX_TRIP_DAYS) throw new AppError("aiTooLong", { max: MAX_TRIP_DAYS }, 400);
 
   const { airports } = await getAirports(lang);
   const airport = airports.find((candidate) => candidate.code === trip.code);
@@ -279,7 +279,7 @@ const STANDARD_CHECK_IN = "15:00";
 export const createStopsItinerary = async ({ stops, lang, preferences }) => {
   const datesOf = (stop) => daysBetween(stop.arrive.day, stop.leave.day);
   const allDates = new Set(stops.flatMap(datesOf));
-  if (allDates.size > MAX_DAYS) throw new AppError("aiTooLong", { max: MAX_DAYS }, 400);
+  if (allDates.size > MAX_TRIP_DAYS) throw new AppError("aiTooLong", { max: MAX_TRIP_DAYS }, 400);
 
   const plans = await Promise.all(
     stops.map((stop, index) => {

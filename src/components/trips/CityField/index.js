@@ -8,6 +8,7 @@ import { useI18n } from "@/context/i18n";
 import { isCancelled } from "@/api/client";
 import { searchPlaces } from "@/api/places";
 import { flag } from "@/utils/format";
+import { listKeyDown } from "@/utils/listKeys";
 import { cn } from "@/utils/cn";
 
 const SEARCH_DELAY_MS = 250;
@@ -58,18 +59,15 @@ const CityField = ({ id, value, onChange, invalid = false }) => {
     requestAnimationFrame(() => inputRef.current?.focus());
   };
 
-  const onKeyDown = (event) => {
-    const { list } = results;
-    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
-      event.preventDefault();
-      setOpen(true);
-      const step = event.key === "ArrowDown" ? 1 : -1;
-      setActive((index) => Math.min(list.length - 1, Math.max(0, index + step)));
-    } else if (event.key === "Enter" && open && list[active]) {
-      event.preventDefault();
-      pick(list[active]);
-    } else if (event.key === "Escape") setOpen(false);
-  };
+  const onKeyDown = listKeyDown({
+    count: results.list.length,
+    active,
+    setActive,
+    onPick: (index) => pick(results.list[index]),
+    onMove: () => setOpen(true),
+    onClose: () => setOpen(false),
+    canPick: open,
+  });
 
   if (value) {
     return (

@@ -7,6 +7,10 @@ import { bagExtra } from "@/utils/baggage";
 import { airlineNames } from "@/utils/format";
 import { cn } from "@/utils/cn";
 
+// The note under the prices (a key of t.results): once booked, how to add a bag; otherwise where the final
+// price is, shorter in the large version
+const NOTES = { booked: "bagsAfterBooking", large: "bagsFinalPriceShort", regular: "bagsFinalPrice" };
+
 // What a bag adds to a fare, so its real cost is no surprise when booking (the fares only include a small
 // bag under the seat): "Estimated extra baggage · Cabin 10 kg +€12 · Checked 20 kg +€21", for both flights
 // on a return trip, and where the final price is. The hint says they are estimates.
@@ -14,6 +18,7 @@ import { cn } from "@/utils/cn";
 // `hideTitle`: when a folded row above already says it (the compact card on phones).
 // `booked`: the flights are booked already, so the note says how to add a bag now.
 const BagEstimate = ({ fare, large = false, hideTitle = false, booked = false, className }) => {
+  const note = NOTES[["booked", "large"].find((variant) => ({ booked, large })[variant]) ?? "regular"];
   const { t, f } = useI18n();
   const extras = Object.keys(BAGS)
     .map((kind) => ({ kind, extra: bagExtra(fare, kind) }))
@@ -42,11 +47,7 @@ const BagEstimate = ({ fare, large = false, hideTitle = false, booked = false, c
       </dl>
       <p className={cn("text-xs", large ? "ml-7.5 border-t pt-2.5" : "pl-5.5")}>
         {fare.ret && `${t.results.bagsBothFlights} `}
-        {booked
-          ? t.results.bagsAfterBooking(airlineNames(fare))
-          : large
-            ? t.results.bagsFinalPriceShort(airlineNames(fare))
-            : t.results.bagsFinalPrice(airlineNames(fare))}
+        {t.results[note](airlineNames(fare))}
       </p>
       <span className="sr-only">{t.results.bagsHint}</span>
     </div>

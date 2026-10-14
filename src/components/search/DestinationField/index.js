@@ -10,6 +10,7 @@ import { useI18n } from "@/context/i18n";
 import { flag, normalize } from "@/utils/format";
 import { useDesktop } from "@/hooks/useDesktop";
 import { cn } from "@/utils/cn";
+import { listKeyDown } from "@/utils/listKeys";
 
 // countries: [{ name, countryCode, codes, cities: [{ name, codes }] }]
 // Every option is a whole country (city null) or one of its cities. With a query, only the matches:
@@ -50,16 +51,7 @@ const DestinationPicker = ({ countries, value, onPick }) => {
 
   const pick = (option) => onPick({ country: option.country.name, city: option.city?.name ?? "" });
 
-  const onKeyDown = (event) => {
-    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
-      event.preventDefault();
-      const step = event.key === "ArrowDown" ? 1 : -1;
-      setActive((index) => Math.min(shown.length - 1, Math.max(0, index + step)));
-    } else if (event.key === "Enter" && shown[active]) {
-      event.preventDefault();
-      pick(shown[active]);
-    }
-  };
+  const onKeyDown = listKeyDown({ count: shown.length, active, setActive, onPick: (index) => pick(shown[index]) });
 
   if (countries.status !== "ok") {
     return (

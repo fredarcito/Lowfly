@@ -10,6 +10,7 @@ import { useI18n } from "@/context/i18n";
 import { flag, normalize } from "@/utils/format";
 import { useDesktop } from "@/hooks/useDesktop";
 import { cn } from "@/utils/cn";
+import { listKeyDown } from "@/utils/listKeys";
 
 // Distance in km between two points (haversine)
 const km = (a, b) => {
@@ -63,16 +64,7 @@ const AirportPicker = ({ airports, value, onPick }) => {
     listRef.current?.querySelector(`[data-index="${active}"]`)?.scrollIntoView({ block: "nearest" });
   }, [active]);
 
-  const onKeyDown = (e) => {
-    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
-      e.preventDefault();
-      const step = e.key === "ArrowDown" ? 1 : -1;
-      setActive((i) => Math.min(shown.length - 1, Math.max(0, i + step)));
-    } else if (e.key === "Enter" && shown[active]) {
-      e.preventDefault();
-      onPick(shown[active].code);
-    }
-  };
+  const onKeyDown = listKeyDown({ count: shown.length, active, setActive, onPick: (index) => onPick(shown[index].code) });
 
   const nearMe = () => {
     setLocate("busy");

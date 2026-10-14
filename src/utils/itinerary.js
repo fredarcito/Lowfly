@@ -1,10 +1,7 @@
 // Itineraries: day-by-day stops for a saved trip, and their Google Maps links.
-// Shape (the AI will return the same): { source, createdAt, days: [{ date, title, mode, stops: [
-//   { time, type, title, note?, food?, cost?, place?: { name, lat, lng, placeId? } } ] }] }
-import { daysBetween } from "@/utils/dates";
-import { SAMPLE_ITINERARIES } from "@/constants/itineraries";
-import { SAMPLE_TRANSLATIONS } from "@/constants/itineraryTranslations";
-import { PLACE_GUIDES } from "@/constants/placeGuides";
+// Shape (made by the AI, server/itinerary): { source, lang, createdAt, preferences, days: [{ date, city?, title,
+//   mode, stops: [{ time, type, title, note?, why?, lookFor?, food?, cost?, place?: { name, lat, lng },
+//   history?, sources? }] }] }
 
 // A Google Maps route takes an origin, a destination and up to 9 stops in between (in the app)
 const MAX_ROUTE_POINTS = 11;
@@ -25,7 +22,7 @@ export const km = (from, to) => {
 
 // The places of a day without an out-of-town first or last stop (arriving from or leaving for the
 // airport by train or taxi): the part you walk, and what the map frames.
-export const inTown = (places) => {
+const inTown = (places) => {
   let list = places;
   while (list.length > 2 && km(list[0], list[1]) > OUT_OF_TOWN_KM) list = list.slice(1);
   while (list.length > 2 && km(list.at(-1), list.at(-2)) > OUT_OF_TOWN_KM) list = list.slice(0, -1);
@@ -33,7 +30,7 @@ export const inTown = (places) => {
 };
 
 // Approximate minutes on foot between two places (rounded to 5), or null if they are too far apart to walk
-export const walkingMinutes = (from, to) => {
+const walkingMinutes = (from, to) => {
   const distance = km(from, to);
   if (distance > OUT_OF_TOWN_KM) return null;
   return Math.max(5, Math.round(((distance * STREET_FACTOR) / WALKING_KMH) * 12) * 5);
@@ -90,7 +87,7 @@ export const directionsUrl = (place, mode = "walking") => {
 // The day's route in Google Maps, stops in the order of the plan. Longer days are split into legs
 // (each leg starts where the previous one ended).
 // On foot, the airport legs are left out (inTown).
-export const routeUrls = (day) => {
+const routeUrls = (day) => {
   const places = day.stops.filter((stop) => stop.place).map((stop) => stop.place);
   const walking = day.mode === "walking" || !day.mode;
   const points = (walking ? inTown(places) : places).map((place) => `${place.lat},${place.lng}`);
@@ -104,71 +101,4 @@ export const routeUrls = (day) => {
     const waypoints = leg.slice(1, -1).join("|");
     return waypoints ? `${url}&waypoints=${encodeURIComponent(waypoints)}` : url;
   });
-};
-
-// Sample texts are written in Spanish: other languages look them up in SAMPLE_TRANSLATIONS,
-// and prices move the euro sign to the front ("1,50€" → "€1.50")
-const translateSample = (text, lang) => {
-  if (!text || lang === "es") return text;
-  const translated = SAMPLE_TRANSLATIONS[lang]?.[text] ?? text;
-  return translated.replace(/(\d+(?:,\d+)?(?:–\d+)?)€/g, (match, amount) => `€${amount.replace(",", ".")}`);
-};
-
-const isSample = (itinerary) => itinerary?.source?.startsWith("sample");
-
-// Stops that are only logistics (airport, station, check-in) get no guide
-const LOGISTIC_TYPES = new Set(["llegada", "logistica", "transporte"]);
-
-// Adds the guide (why, what to look for, history and its sources) to a sight, once per day
-const withGuide = (stop, lang, guided) => {
-  const guide = stop.place && !LOGISTIC_TYPES.has(stop.type) && PLACE_GUIDES[stop.place.name];
-  if (!guide || guided.has(stop.place.name)) return stop;
-  guided.add(stop.place.name);
-  const text = guide[lang] ?? guide.es;
-  return { ...stop, why: text.why, lookFor: text.lookFor, history: text.history, sources: guide.sources };
-};
-
-// The sample days for a trip, in `lang`, on the trip's dates
-const sampleDays = (trip, lang) => {
-  const sample = SAMPLE_ITINERARIES[trip.fare.code] ?? SAMPLE_ITINERARIES.FCO;
-  const dates = daysBetween(trip.fare.day, trip.fare.ret?.day ?? trip.fare.day);
-  return dates.slice(0, sample.days.length).map((date, index) => {
-    const day = sample.days[index];
-    const guided = new Set();
-    return {
-      ...day,
-      date,
-      title: translateSample(day.title, lang),
-      stops: day.stops.map((stop) =>
-        withGuide(
-          {
-            ...stop,
-            title: translateSample(stop.title, lang),
-            note: translateSample(stop.note, lang),
-            food: translateSample(stop.food, lang),
-            cost: translateSample(stop.cost, lang),
-          },
-          lang,
-          guided
-        )
-      ),
-    };
-  });
-};
-
-// Until the AI is connected: a real hand-made itinerary (Rome or Bari) fitted to the trip's dates, in `lang`.
-// Other cities get Rome's, marked as an example.
-export const sampleItinerary = (trip, lang) => {
-  return {
-    source: SAMPLE_ITINERARIES[trip.fare.code] ? "sample" : "sample-other-city",
-    lang,
-    createdAt: new Date().toISOString(),
-    days: sampleDays(trip, lang),
-  };
-};
-
-// The itinerary as it should be shown in `lang`. Samples come from fixed data, so they follow the page
-// language. AI itineraries stay in the language they were made in (`itinerary.lang`).
-export const itineraryIn = (itinerary, trip, lang) => {
-  return isSample(itinerary) ? { ...itinerary, lang, days: sampleDays(trip, lang) } : itinerary;
 };

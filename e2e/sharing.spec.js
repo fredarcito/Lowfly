@@ -46,6 +46,10 @@ test.describe("sharing", () => {
     await page.goto(`/es/shared/${shareId}`);
     await expect(page).toHaveTitle(/Roma · 3 noches/);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
+    // What Discord, Slack and X need for a full card
+    await expect(page.locator('meta[property="og:site_name"]')).toHaveAttribute("content", "Lowfly");
+    await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute("content", "summary_large_image");
+    await expect(page.locator('meta[name="twitter:image"]')).toHaveCount(1);
   });
 
   test("a link that was turned off", async ({ page }) => {

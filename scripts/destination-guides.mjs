@@ -8,7 +8,7 @@
 import fs from "node:fs";
 
 const FILE = new URL("../src/data/destinationGuides.json", import.meta.url);
-const UA = "Lowfly (https://lowfly-one.vercel.app)";
+const UA = "Lowfly (https://lowfly.travel)";
 const MODEL = process.env.GEMINI_MODEL || "gemini-3.1-flash-lite";
 // --name=value, or --name alone for true
 const args = Object.fromEntries(process.argv.slice(2).map((arg) => {

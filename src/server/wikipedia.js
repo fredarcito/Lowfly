@@ -1,6 +1,6 @@
 // Facts about places from Wikipedia: a short summary (the "history" of a stop), its link and coordinates.
 // Free, and the source is real: the AI names the article, the text comes from Wikipedia itself.
-const UA = "Lowfly (https://lowfly-one.vercel.app)";
+import { USER_AGENT as UA } from "@/constants/site";
 const MONTH = 30 * 86400;
 const BATCH = 20; // intro extracts per request (the API maximum)
 

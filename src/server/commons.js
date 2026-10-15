@@ -1,6 +1,8 @@
 // Wikimedia Commons, for the destination photos (server/photos, server/placePhotos): each file's 800 px
 // thumbnail plus its author and licence, needed to credit it. Only called from the server.
-export const UA = "Lowfly (https://lowfly-one.vercel.app)";
+import { USER_AGENT as UA } from "@/constants/site";
+
+export { UA };
 export const MONTH = 30 * 86400;
 
 const plain = (html = "") => html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();

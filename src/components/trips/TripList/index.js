@@ -7,15 +7,20 @@ import EmptyTrips from "@/components/trips/EmptyTrips";
 import ExploreMoreLink from "@/components/trips/ExploreMoreLink";
 import PastTrips from "@/components/trips/PastTrips";
 import TripCard from "@/components/trips/TripCard";
+import LocalTripsNotice from "@/components/trips/TripList/components/LocalTripsNotice";
+import { useAuth } from "@/context/auth";
 import { useI18n } from "@/context/i18n";
 import { useTripGroups } from "@/hooks/useTrips";
 import { ROUTES } from "@/constants/routes";
 
 // My trips: the upcoming ones (or how to save one), then the past ones folded away.
 // "Plan a trip" makes one without searching flights (ManualTripForm), with a line saying so.
+// Signed out with trips, a notice says they are only in this browser.
 const TripList = () => {
   const { lang, texts } = useI18n();
   const { upcoming, past } = useTripGroups();
+  const { status } = useAuth();
+  const onlyHere = status === "signedOut" && upcoming.length + past.length > 0;
   return (
     <>
       <div className="flex flex-wrap items-end justify-between gap-4">
@@ -34,6 +39,8 @@ const TripList = () => {
           </p>
         </div>
       </div>
+
+      {onlyHere && <LocalTripsNotice />}
 
       {upcoming.length ? (
         <div className="grid gap-3">

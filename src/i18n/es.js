@@ -129,6 +129,8 @@ const es = {
     promoEmpty: "Guarda los vuelos que te gusten y prepara un itinerario día a día.",
     promoAction: "Ver mis viajes",
     title: "Mis viajes",
+    localOnly: "Solo están guardados en este navegador.",
+    localOnlyHint: "Entra para tenerlos en tu cuenta y en todos tus dispositivos.",
     subtitle: "Tus viajes e itinerarios, todo en un mismo sitio.",
     exploreMore: "Explorar más vuelos",
     exploreFlights: "Explorar vuelos",

@@ -7,8 +7,9 @@ import { forgetTrips, startTripsCloud } from "@/store/tripsCloud";
 
 // Follows the Supabase session for the whole app: who is signed in, and while they are, their trips are kept
 // in their account (store/tripsCloud). Signing out forgets those trips in this browser.
+// `tripsReady`: the account's trips are in and changes are being copied (until then, a trip saved here could be lost).
 export const AuthProvider = ({ children }) => {
-  const [session, setSession] = useState({ status: "loading", user: null });
+  const [session, setSession] = useState({ status: "loading", user: null, tripsReady: false });
 
   useEffect(() => {
     const supabase = supabaseBrowser();
@@ -16,14 +17,19 @@ export const AuthProvider = ({ children }) => {
     let stopCloud = null;
 
     const follow = async (user) => {
-      setSession({ status: user ? "signedIn" : "signedOut", user });
-      if ((user?.id ?? null) === userId) return;
+      if ((user?.id ?? null) === userId) {
+        setSession((current) => ({ ...current, status: user ? "signedIn" : "signedOut", user, tripsReady: user ? current.tripsReady : true }));
+        return;
+      }
+      setSession({ status: user ? "signedIn" : "signedOut", user, tripsReady: !user });
       const wasSignedIn = Boolean(userId);
       userId = user?.id ?? null;
       stopCloud?.();
       stopCloud = null;
-      if (user) stopCloud = await startTripsCloud(user.id);
-      else if (wasSignedIn) forgetTrips();
+      if (user) {
+        stopCloud = await startTripsCloud(user.id);
+        setSession((current) => (current.user?.id === user.id ? { ...current, tripsReady: true } : current));
+      } else if (wasSignedIn) forgetTrips();
     };
 
     // Supabase: no other Supabase call inside this callback (it would wait for itself), so it runs just after

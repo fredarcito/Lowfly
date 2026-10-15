@@ -129,6 +129,8 @@ const en = {
     promoEmpty: "Save the flights you like and plan a day-by-day itinerary.",
     promoAction: "View my trips",
     title: "My trips",
+    localOnly: "They're only saved in this browser.",
+    localOnlyHint: "Sign in to keep them in your account and on all your devices.",
     subtitle: "Your trips and itineraries, all in one place.",
     exploreMore: "Explore more flights",
     exploreFlights: "Explore flights",

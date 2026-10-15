@@ -162,8 +162,6 @@ const en = {
     towns: "Towns",
     route: "Your route",
     townsCount: (count) => plural(count, "town", "towns"),
-    arrives: "You arrive",
-    leaves: "You leave",
     manual: {
       add: "Plan a trip",
       addHint: "Already have your transport? Add your towns and we plan the itinerary.",

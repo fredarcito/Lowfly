@@ -1,5 +1,5 @@
-import { DESKTOP, PHONE, expect, openWith, savedTrips, test } from "./helpers/test.js";
-import { FLORENCE_VENICE_ITINERARY, manualTrip } from "./helpers/trips.js";
+import { DESKTOP, PHONE, TABLET, expect, expectNoSidewaysScroll, openWith, savedTrips, test } from "./helpers/test.js";
+import { FLORENCE_VENICE_ITINERARY, dayFromNow, manualTrip } from "./helpers/trips.js";
 
 // A trip planned by hand (no flights): its form, what it checks, and the trip once made
 test.describe("trip planned by hand", () => {
@@ -82,6 +82,35 @@ test.describe("trip planned by hand", () => {
       await expect(page.getByRole("tab", { name: /Día 2/ })).toHaveAttribute("aria-selected", "true");
       await page.getByRole("button", { name: /Más opciones/ }).first().click();
       await expect(page.getByRole("menuitem")).toHaveText(["Rehacer itinerario", "Eliminar viaje"]);
+    });
+  }
+
+  // Five towns, one with a long name: every card keeps to its column (the name is cut with "…")
+  for (const viewport of [DESKTOP, TABLET, PHONE]) {
+    test(`a route of five towns fits (${viewport.width}px)`, async ({ page }) => {
+      await page.setViewportSize(viewport);
+      const towns = ["Madrid", "San Sebastián de los Reyes", "Zaragoza", "Barcelona", "Perpiñán"];
+      const stops = towns.map((city, index) => ({
+        city,
+        country: "España",
+        countryCode: "ES",
+        lat: 40,
+        lng: -3,
+        code: null,
+        arrive: { day: dayFromNow(30 + index * 2), time: "10:00" },
+        leave: { day: dayFromNow(32 + index * 2), time: null },
+      }));
+      const trip = { ...manualTrip({ id: "five-towns" }), stops };
+      await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+      const route = page.locator("section").filter({ hasText: "Tu ruta" }).first();
+      await expect(route.locator("li")).toHaveCount(5);
+      const routeBox = await route.boundingBox();
+      for (const card of await route.locator("li").all()) {
+        const cardBox = await card.boundingBox();
+        expect(cardBox.x + cardBox.width).toBeLessThanOrEqual(routeBox.x + routeBox.width);
+      }
+      await expect(route.getByText("2 noches").first()).toBeVisible();
+      await expectNoSidewaysScroll(page);
     });
   }
 });

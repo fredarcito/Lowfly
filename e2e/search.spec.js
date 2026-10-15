@@ -45,7 +45,8 @@ test.describe("search @live", () => {
       test(`the cheapest, highlighted (${name}, ${viewport.width}px)`, async ({ page }) => {
         await page.setViewportSize(viewport);
         await page.goto(url);
-        await expect(page.getByText("Lo más barato").first()).toBeVisible({ timeout: 150_000 });
+        // Phones and desktop each have their own version of the card: the one on screen
+        await expect(page.getByText("Lo más barato").filter({ visible: true }).first()).toBeVisible({ timeout: 150_000 });
       });
     }
   }

@@ -2,7 +2,8 @@
 // It describes what the code does; change it whenever that changes (and the date).
 // Each section: a title and paragraphs or lists (an array is a bulleted list).
 export const PRIVACY_UPDATED = "2026-10-15";
-export const PRIVACY_CONTACT = "fredar21@gmail.com";
+// Where people write about their data or the terms (shown on both legal pages)
+export const CONTACT_EMAIL = "fredar21@gmail.com";
 
 export const PRIVACY = {
   es: {

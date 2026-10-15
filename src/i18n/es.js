@@ -120,7 +120,8 @@ const es = {
     continue: "Continuar",
     why: "Los viajes que ya tengas guardados en este navegador se añadirán a tu cuenta.",
     privacy: "Política de privacidad",
-    privacyNote: "Al entrar aceptas nuestra",
+    terms: "Condiciones de uso",
+    legalNote: (terms, privacy) => ["Al entrar aceptas nuestras ", terms, " y nuestra ", privacy, "."],
   },
   trips: {
     promoTitle: "Tus viajes",

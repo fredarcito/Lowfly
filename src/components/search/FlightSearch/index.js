@@ -330,6 +330,10 @@ const EmptyState = ({ mode, origin, airports, onSeeAll }) => {
         <Link href={ROUTES.privacy(lang)} className="underline underline-offset-2 hover:text-foreground">
           {t.account.privacy}
         </Link>
+        {" · "}
+        <Link href={ROUTES.terms(lang)} className="underline underline-offset-2 hover:text-foreground">
+          {t.account.terms}
+        </Link>
       </p>
     </>
   );

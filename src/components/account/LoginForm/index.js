@@ -119,11 +119,15 @@ export const LoginForm = () => {
         </p>
       )}
       <p className="text-xs text-muted-foreground">
-        {labels.why} {labels.privacyNote}{" "}
-        <Link href={ROUTES.privacy(lang)} className="underline underline-offset-2 hover:text-foreground">
-          {labels.privacy.toLowerCase()}
-        </Link>
-        .
+        {labels.why}{" "}
+        {labels.legalNote(
+          <Link key="terms" href={ROUTES.terms(lang)} className="underline underline-offset-2 hover:text-foreground">
+            {labels.terms.toLowerCase()}
+          </Link>,
+          <Link key="privacy" href={ROUTES.privacy(lang)} className="underline underline-offset-2 hover:text-foreground">
+            {labels.privacy.toLowerCase()}
+          </Link>
+        )}
       </p>
     </section>
   );

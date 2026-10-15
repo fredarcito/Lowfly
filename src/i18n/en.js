@@ -120,7 +120,8 @@ const en = {
     continue: "Continue",
     why: "Trips you already saved in this browser will be added to your account.",
     privacy: "Privacy policy",
-    privacyNote: "By signing in you accept our",
+    terms: "Terms of use",
+    legalNote: (terms, privacy) => ["By signing in you accept our ", terms, " and our ", privacy, "."],
   },
   trips: {
     promoTitle: "Your trips",

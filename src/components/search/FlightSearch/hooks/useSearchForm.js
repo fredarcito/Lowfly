@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { getDefaultOrigin } from "@/api/airports";
-import { useDestinationCountries } from "@/hooks/useDestinationCountries";
+import { useDestinationCountries } from "@/components/search/FlightSearch/hooks/useDestinationCountries";
 import { savedOrigin, saveOrigin } from "@/store/origin";
 import { nextFriday, shift, tomorrow } from "@/utils/dates";
 import { keptDestination } from "@/utils/destinations";

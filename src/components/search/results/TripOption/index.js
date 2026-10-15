@@ -1,32 +1,10 @@
-import { ExternalLink, PlaneLanding, PlaneTakeoff } from "lucide-react";
+import { PlaneLanding, PlaneTakeoff } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import AirlineBadge from "@/components/shared/AirlineBadge";
 import { nightsBetween } from "@/utils/dates";
 import { useI18n } from "@/context/i18n";
 import { capitalize } from "@/utils/format";
 import { cn } from "@/utils/cn";
-
-const Leg = ({ icon: Icon, label, day, flight, href }) => {
-  const { texts, format } = useI18n();
-  return (
-    <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-sm">
-      <Icon className="size-4 text-muted-foreground" />
-      <span className="min-w-0 flex-1">
-        <span className="font-semibold">{label}</span> {format.fmtDay(day)}
-        {format.at(flight.time)}
-      </span>
-      <AirlineBadge airline={flight.airline} />
-      <span className="tabular-nums text-muted-foreground">{format.money(flight.price)}</span>
-      <Button asChild variant="outline" size="sm">
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          {texts.results.book}
-          <ExternalLink />
-        </a>
-      </Button>
-    </div>
-  );
-};
+import Leg from "@/components/search/results/TripOption/components/Leg";
 
 // An outbound + return combination, compared with the original plan
 const TripOption = ({ combo: combo, ida, vuelta, base, origin }) => {

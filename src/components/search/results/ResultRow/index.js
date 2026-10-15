@@ -52,7 +52,3 @@ const ResultRow = ({ fare, origin, title, meta, airlines = [], priceNote, tag })
 };
 
 export default ResultRow;
-
-export const ResultList = ({ children }) => {
-  return <div className="divide-y overflow-hidden rounded-xl bg-card ring-1 ring-foreground/10">{children}</div>;
-};

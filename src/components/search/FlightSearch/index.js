@@ -14,8 +14,8 @@ import EverywhereResults from "@/components/search/results/EverywhereResults";
 import FlexibleResults from "@/components/search/results/FlexibleResults";
 import { useI18n } from "@/context/i18n";
 import { findAirport, useAirports } from "@/hooks/useAirports";
-import { useFlightSearch } from "@/hooks/useFlightSearch";
-import { useSearchForm } from "@/hooks/useSearchForm";
+import { useFlightSearch } from "@/components/search/FlightSearch/hooks/useFlightSearch";
+import { useSearchForm } from "@/components/search/FlightSearch/hooks/useSearchForm";
 import { cn } from "@/utils/cn";
 
 const RESULTS = { everywhere: EverywhereResults, country: CountryResults, trip: FlexibleResults };

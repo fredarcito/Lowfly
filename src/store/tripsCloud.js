@@ -8,7 +8,7 @@ import { onTripsChanged, readTrips, replaceTrips } from "@/store/trips";
 
 const TABLE = "trips";
 
-const rowOf = (userId, trip) => ({ user_id: userId, id: trip.id, data: trip, updated_at: new Date().toISOString() });
+export const tripRow = (userId, trip) => ({ user_id: userId, id: trip.id, data: trip, updated_at: new Date().toISOString() });
 
 const report = (action) => ({ error }) => error && console.error(`Trips in the account: could not ${action}`, error.message);
 
@@ -19,7 +19,7 @@ const copyChanges = (userId, previous, next) => {
   const changed = next.filter((trip) => before.get(trip.id) !== trip);
   const nextIds = new Set(next.map((trip) => trip.id));
   const removed = previous.filter((trip) => !nextIds.has(trip.id)).map((trip) => trip.id);
-  if (changed.length) supabase.from(TABLE).upsert(changed.map((trip) => rowOf(userId, trip))).then(report("save"));
+  if (changed.length) supabase.from(TABLE).upsert(changed.map((trip) => tripRow(userId, trip))).then(report("save"));
   if (removed.length) supabase.from(TABLE).delete().in("id", removed).then(report("delete"));
 };
 
@@ -35,7 +35,7 @@ export const startTripsCloud = async (userId) => {
   const saved = data.map((row) => row.data);
   const savedIds = new Set(saved.map((trip) => trip.id));
   const onlyHere = readTrips().filter((trip) => !savedIds.has(trip.id));
-  if (onlyHere.length) await supabase.from(TABLE).upsert(onlyHere.map((trip) => rowOf(userId, trip))).then(report("upload"));
+  if (onlyHere.length) await supabase.from(TABLE).upsert(onlyHere.map((trip) => tripRow(userId, trip))).then(report("upload"));
   replaceTrips([...saved, ...onlyHere]);
   return onTripsChanged((previous, next) => copyChanges(userId, previous, next));
 };

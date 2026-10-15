@@ -2,20 +2,9 @@
 
 import { useState } from "react";
 import { useI18n } from "@/context/i18n";
-import { useDestinationGuide } from "@/hooks/useDestinationGuide";
+import { useDestinationGuide } from "@/components/shared/DestinationGuide/hooks/useDestinationGuide";
 import { cn } from "@/utils/cn";
-
-const Tags = ({ tags, className }) => {
-  return (
-    <ul className={cn("flex flex-wrap gap-1.5", className)}>
-      {tags.map((tag) => (
-        <li key={tag} className="rounded-full bg-selected px-2.5 py-0.5 text-xs font-medium text-primary-ink">
-          {tag}
-        </li>
-      ))}
-    </ul>
-  );
-};
+import Tags from "@/components/shared/DestinationGuide/components/Tags";
 
 // Why a destination is worth a visit: a sentence and three highlights, with its source.
 // `tagsOnly` for small spaces (weekend cards); `textClassName` restyles the sentence (a trip's photo header);

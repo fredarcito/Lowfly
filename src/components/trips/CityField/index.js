@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import PlaceChip from "@/components/trips/PlaceChip";
 import PlaceResults from "@/components/trips/PlaceResults";
 import { useI18n } from "@/context/i18n";
-import { MIN_LETTERS, usePlaceSearch } from "@/hooks/usePlaceSearch";
+import { MIN_LETTERS, usePlaceSearch } from "@/components/trips/CityField/hooks/usePlaceSearch";
 import { listKeyDown } from "@/utils/listKeys";
 
 // How long the list stays after leaving the box, so a click on a result lands first

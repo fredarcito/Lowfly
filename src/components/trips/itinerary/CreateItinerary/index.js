@@ -6,8 +6,8 @@ import ErrorNote from "@/components/shared/ErrorNote";
 import ItineraryPreferences from "@/components/trips/itinerary/ItineraryPreferences";
 import SignInToCreate from "@/components/trips/itinerary/SignInToCreate";
 import { useI18n } from "@/context/i18n";
-import { useItineraryPreferences } from "@/hooks/useItineraryPreferences";
-import { useNeedsAccount } from "@/hooks/useNeedsAccount";
+import { useItineraryPreferences } from "@/components/trips/itinerary/CreateItinerary/hooks/useItineraryPreferences";
+import { useNeedsAccount } from "@/components/trips/itinerary/CreateItinerary/hooks/useNeedsAccount";
 import { ROUTES } from "@/constants/routes";
 
 // No itinerary yet: what the AI makes, the visitor's preferences and the button to create it.

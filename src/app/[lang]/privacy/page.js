@@ -1,4 +1,4 @@
-import { LegalDocument } from "@/components/legal/LegalDocument";
+import LegalDocument from "@/components/legal/LegalDocument";
 import TripsPage from "@/components/trips/TripsPage";
 import { I18nProvider } from "@/providers/I18nProvider";
 import { APP_NAME } from "@/i18n";

@@ -6,7 +6,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import DealCard from "@/components/search/DealCard";
 import WeekendPicker from "@/components/search/WeekendPicker";
 import { useI18n } from "@/context/i18n";
-import { useWeekendDeals } from "@/hooks/useWeekendDeals";
+import { useWeekendDeals } from "@/components/search/WeekendDeals/hooks/useWeekendDeals";
 
 const SHOWN = 6; // 3 × 2 on desktop, 2 × 3 on tablets, a swipeable row on phones
 const WEEKENDS = 4;

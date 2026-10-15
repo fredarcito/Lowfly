@@ -1,51 +1,14 @@
 "use client";
 
-import { useState } from "react";
-import { ChevronDown, Luggage, PlaneLanding, PlaneTakeoff } from "lucide-react";
+import { Luggage, PlaneLanding, PlaneTakeoff } from "lucide-react";
 import BagEstimate from "@/components/shared/BagEstimate";
-import Collapse from "@/components/shared/Collapse";
 import DestinationGuide from "@/components/shared/DestinationGuide";
-import { FareLeg } from "@/components/shared/FareLegs";
+import FareLeg from "@/components/shared/FareLeg";
 import { useI18n } from "@/context/i18n";
 import { cheapestBagExtra } from "@/utils/baggage";
 import { cn } from "@/utils/cn";
-
-// A row that unfolds what is under it (a flight, the baggage)
-const FoldRow = ({ icon: Icon, summary, children, className }) => {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className={cn("border-t", className)}>
-      <button
-        type="button"
-        aria-expanded={open}
-        onClick={() => setOpen((current) => !current)}
-        className="flex w-full items-center gap-3 py-3.5 text-left outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
-      >
-        <Icon className="size-5 shrink-0 text-muted-foreground" />
-        <span className="min-w-0 flex-1">{summary}</span>
-        <ChevronDown className={cn("size-5 shrink-0 text-muted-foreground transition-transform", open && "rotate-180")} />
-      </button>
-      <Collapse open={open}>
-        <div className="pb-4">{children}</div>
-      </Collapse>
-    </div>
-  );
-};
-
-// "OUT · Fri 23 Oct · 16:25 → 17:20": the day and the times are what decide a flight (the route is above)
-const FlightSummary = ({ label, flight }) => {
-  const { format } = useI18n();
-  return (
-    <span className="flex flex-wrap items-baseline gap-x-2">
-      <span className="font-heading font-bold uppercase">{label}</span>
-      <span className="text-muted-foreground first-letter:uppercase">{format.fmtDay(flight.day)}</span>
-      <span className="font-medium tabular-nums">
-        {flight.time}
-        {flight.arrive && ` → ${flight.arrive}`}
-      </span>
-    </span>
-  );
-};
+import FoldRow from "@/components/shared/CompactFareBody/components/FoldRow";
+import FlightSummary from "@/components/shared/CompactFareBody/components/FlightSummary";
 
 // A fare on phones and tablets, compact: each flight folded into a row (day and times; tap for the details),
 // why go in three lines ("See more"), and the extra baggage folded with its "from" price.

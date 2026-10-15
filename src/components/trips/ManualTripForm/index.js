@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import FieldAlert from "@/components/shared/FieldAlert";
 import StopCard from "@/components/trips/StopCard";
 import { useI18n } from "@/context/i18n";
-import { useManualTripForm } from "@/hooks/useManualTripForm";
+import { useManualTripForm } from "@/components/trips/ManualTripForm/hooks/useManualTripForm";
 import { MAX_STOPS, MAX_TRIP_DAYS } from "@/constants/manualTrips";
 import { ROUTES } from "@/constants/routes";
 

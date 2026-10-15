@@ -1,5 +1,6 @@
 import BestPrice from "@/components/search/results/BestPrice";
-import ResultRow, { ResultList } from "@/components/search/results/ResultRow";
+import ResultList from "@/components/search/results/ResultList";
+import ResultRow from "@/components/search/results/ResultRow";
 import FailedNote from "@/components/search/results/FailedNote";
 import PriceCalendar from "@/components/search/results/PriceCalendar";
 import Section from "@/components/search/results/Section";

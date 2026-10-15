@@ -7,19 +7,10 @@ import AirportOption from "@/components/search/AirportOption";
 import PickerStatus from "@/components/shared/PickerStatus";
 import SearchBox from "@/components/shared/SearchBox";
 import { useI18n } from "@/context/i18n";
-import { useNearestAirport } from "@/hooks/useNearestAirport";
+import { useNearestAirport } from "@/components/search/AirportPicker/hooks/useNearestAirport";
 import { useSearchableList } from "@/hooks/useSearchableList";
 import { groupByCountry, searchAirports } from "@/utils/airports";
-import { flag } from "@/utils/format";
-
-// The heading of a country's airports in the full list
-const CountryHeading = ({ country, countryCode, count }) => (
-  <div aria-hidden="true" className="sticky top-0 z-10 -mx-1.5 mt-1 flex items-center gap-2 border-y border-border bg-muted px-4 py-1.5 first:mt-0">
-    <span className="text-base leading-none">{flag(countryCode)}</span>
-    <span className="font-heading text-sm font-semibold">{country}</span>
-    <span className="ml-auto text-xs text-muted-foreground tabular-nums">{count}</span>
-  </div>
-);
+import CountryHeading from "@/components/search/AirportPicker/components/CountryHeading";
 
 // The search box and the list of departure airports: by country with nothing typed (and "Use my location"),
 // the best matches otherwise. Opens on the current airport.

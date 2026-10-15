@@ -1,60 +1,12 @@
 "use client";
 
-import { ArrowRight, CornerDownRight, Plane } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import AirlineBadge from "@/components/shared/AirlineBadge";
 import DestinationGuide from "@/components/shared/DestinationGuide";
-import PhotoCredit from "@/components/shared/PhotoCredit";
-import SaveTripButton from "@/components/search/SaveTripButton";
 import { useI18n } from "@/context/i18n";
-import { usePhoto } from "@/hooks/usePhoto";
 import { airlinesOf } from "@/utils/format";
-import { noTimeOff } from "@/utils/weekend";
-
-// The top of a deal: the destination's photo (a plane without one) with its credit, "Save trip" and, when it
-// needs no time off work, a badge saying so
-const DealPhoto = ({ fare, origin }) => {
-  const { texts } = useI18n();
-  const photo = usePhoto(fare.code);
-  return (
-    <div className="relative aspect-16/10 overflow-hidden bg-[linear-gradient(135deg,var(--sea),color-mix(in_oklab,var(--primary)_70%,var(--sea)))]">
-      {photo ? (
-        <img
-          src={photo.src}
-          alt=""
-          loading="lazy"
-          className="size-full object-cover transition-transform duration-500 group-hover:scale-105 motion-reduce:transition-none"
-        />
-      ) : (
-        photo === null && <Plane className="absolute inset-0 m-auto size-10 -rotate-45 text-white/30" />
-      )}
-      {photo && <PhotoCredit page={photo.page} text={texts.deals.photoBy(photo.author, photo.license)} className="right-2 bottom-2" />}
-      <SaveTripButton origin={origin} fare={fare} compact className="absolute top-2 right-2 z-10" />
-      {noTimeOff(fare) && (
-        <span title={texts.results.noTimeOffHint} className="absolute top-2 left-2 rounded-full bg-black/55 px-2 py-0.5 text-xs font-medium text-white backdrop-blur-sm">
-          {texts.results.noTimeOff}
-        </span>
-      )}
-    </div>
-  );
-};
-
-// The cheaper trip of the same destination that needs no time off work, as a strip at the bottom of the card
-const NoTimeOffAlternative = ({ fare, origin }) => {
-  const { texts, format } = useI18n();
-  return (
-    <a
-      href={format.fareLinks(fare, origin)[0].href}
-      target="_blank"
-      rel="noopener noreferrer"
-      title={`${texts.results.noTimeOffHint} · ${format.weekendDates(fare)}`}
-      className="relative z-10 -mx-4 -mb-4 flex items-center gap-2 border-t bg-save/10 px-4 py-2 text-xs font-medium text-save hover:bg-save/20"
-    >
-      <CornerDownRight className="size-3.5" />
-      {texts.deals.noTimeOffFrom(format.money(fare.price, fare.cur))}
-      <ArrowRight className="ml-auto size-3.5" />
-    </a>
-  );
-};
+import DealPhoto from "@/components/search/DealCard/components/DealPhoto";
+import NoTimeOffAlternative from "@/components/search/DealCard/components/NoTimeOffAlternative";
 
 // A weekend destination with its photo. The whole card opens the booking; the no-time-off alternative and the
 // photo credit are links of their own on top of it.

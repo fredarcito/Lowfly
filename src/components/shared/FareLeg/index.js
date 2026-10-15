@@ -1,0 +1,19 @@
+"use client";
+
+import { PlaneLanding, PlaneTakeoff } from "lucide-react";
+import Leg from "@/components/shared/FareLeg/components/Leg";
+import { useFareEnds } from "@/components/shared/FareLeg/hooks/useFareEnds";
+import { useI18n } from "@/context/i18n";
+
+// One flight of a fare (`direction`: out | ret): day, departure → arrival, airline and, with `showPrice`, its price
+const FareLeg = ({ fare, origin, direction = "out", showPrice = true }) => {
+  const { texts } = useI18n();
+  const { home, away } = useFareEnds(fare, origin);
+  return direction === "ret" ? (
+    <Leg icon={PlaneLanding} label={texts.results.ret} flight={fare.ret} from={away} to={home} showPrice={showPrice} />
+  ) : (
+    <Leg icon={PlaneTakeoff} label={texts.results.out} flight={fare.out || fare} from={home} to={away} showPrice={showPrice} />
+  );
+};
+
+export default FareLeg;

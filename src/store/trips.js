@@ -102,6 +102,16 @@ export const saveManualTrip = (stops) => {
   return id;
 };
 
+// A trip someone shared, kept as one of the visitor's own (same id: saving it twice does not duplicate it).
+// It starts as theirs: nothing visited, not booked, not shared.
+export const saveSharedTrip = (trip) => {
+  const list = readTrips();
+  if (list.some((saved) => saved.id === trip.id)) return trip.id;
+  const copy = { ...trip, savedAt: new Date().toISOString(), booked: false, visited: [], shareId: null };
+  write(sortTrips([...list, copy]));
+  return trip.id;
+};
+
 export const removeTrip = (id) => write(readTrips().filter((saved) => saved.id !== id));
 
 export const updateTrip = (id, changes) =>

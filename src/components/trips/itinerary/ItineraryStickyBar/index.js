@@ -11,7 +11,8 @@ import { cn } from "@/utils/cn";
 // Phones and tablets, once the photo header has scrolled away: a slim bar fixed at the top that keeps the
 // context (the day's title and the destination) and the actions at hand (back to the list, the day in
 // Google Maps). It slides in while `visible`; the day tabs stick right under it (ItineraryDayTabs).
-const ItineraryStickyBar = ({ trip, day, dayNumber, visible }) => {
+// `readOnly` (a shared trip): there is no list to go back to.
+const ItineraryStickyBar = ({ trip, day, dayNumber, visible, readOnly = false }) => {
   const { lang, texts } = useI18n();
   const { routes } = useDayPlan(day);
   const { fare } = trip;
@@ -25,12 +26,14 @@ const ItineraryStickyBar = ({ trip, day, dayNumber, visible }) => {
         visible ? "translate-y-0" : "-translate-y-full"
       )}
     >
-      <div className="mx-auto flex h-14 max-w-5xl items-center gap-2 px-2 sm:px-4">
-        <Button asChild variant="ghost" size="icon" className="size-10 shrink-0">
-          <Link href={ROUTES.trips(lang)} aria-label={texts.trips.backToList}>
-            <ChevronLeft className="size-5" />
-          </Link>
-        </Button>
+      <div className={cn("mx-auto flex h-14 max-w-5xl items-center gap-2 px-2 sm:px-4", readOnly && "px-4 sm:px-6")}>
+        {!readOnly && (
+          <Button asChild variant="ghost" size="icon" className="size-10 shrink-0">
+            <Link href={ROUTES.trips(lang)} aria-label={texts.trips.backToList}>
+              <ChevronLeft className="size-5" />
+            </Link>
+          </Button>
+        )}
         <div className="grid min-w-0 flex-1 leading-tight">
           <p className="truncate font-heading text-sm font-bold">{day.title}</p>
           <p className="truncate text-xs text-muted-foreground">

@@ -3,29 +3,12 @@
 import { MapPin, Moon } from "lucide-react";
 import { useI18n } from "@/context/i18n";
 import { cn } from "@/utils/cn";
-
-// One figure: label above, value below
-const Stat = ({ label, icon: Icon, strong, children }) => {
-  return (
-    <div className="grid gap-0.5 md:px-4 md:first:pl-0 lg:px-5">
-      <dt className="text-xs whitespace-nowrap text-muted-foreground">{label}</dt>
-      <dd
-        className={cn(
-          "flex items-center gap-1.5 font-medium whitespace-nowrap first-letter:uppercase",
-          strong && "font-heading text-lg font-extrabold tabular-nums"
-        )}
-      >
-        {Icon && <Icon className="size-4 text-muted-foreground" />}
-        {children}
-      </dd>
-    </div>
-  );
-};
+import Stat from "@/components/trips/TripStats/components/Stat";
 
 // The trip in figures: departure, return and stay (or the departure time for one way) and the saved price.
 // A trip planned by hand (`stops`): arrival, departure, stay and how many towns.
-// Phone: two columns. Tablet and up: one row with dividers.
-const TripStats = ({ fare, stops, className }) => {
+// Phone: two columns. Tablet and up: one row with dividers. `priceLabel` renames the price (a shared trip).
+const TripStats = ({ fare, stops, priceLabel, className }) => {
   const { texts, format } = useI18n();
   if (stops) {
     return (
@@ -54,7 +37,7 @@ const TripStats = ({ fare, stops, className }) => {
       ) : (
         <Stat label={texts.trips.departureTime}>{fare.time}</Stat>
       )}
-      <Stat label={texts.trips.savedPriceLabel} strong>
+      <Stat label={priceLabel ?? texts.trips.savedPriceLabel} strong>
         {format.money(fare.price, fare.cur)}
       </Stat>
     </dl>

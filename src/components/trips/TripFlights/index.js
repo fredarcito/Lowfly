@@ -15,7 +15,8 @@ import { cn } from "@/utils/cn";
 // Not booked yet: the booking buttons stay in sight, outlined so they do not compete with the itinerary's
 // coral actions. The chevron unfolds the flights (left) next to what is decided around booking (right): the
 // extra baggage and "Booked the flights already?", with the saved price below. Phones: one under the other.
-const TripFlights = ({ trip }) => {
+// `readOnly` (a shared trip): booking stays (it is how to get the same flights), the "booked?" tick goes.
+const TripFlights = ({ trip, readOnly = false }) => {
   const { texts, format } = useI18n();
   const { setBooked, bookingLinks } = useTripActions(trip);
   const details = useDisclosure();
@@ -66,21 +67,23 @@ const TripFlights = ({ trip }) => {
             </div>
             <div className="grid content-start gap-5 lg:pl-6">
               <BagEstimate fare={fare} large booked={trip.booked} />
-              <label className="grid cursor-pointer grid-cols-[auto_1fr] items-start gap-x-3 gap-y-1 border-t pt-5">
-                <input
-                  type="checkbox"
-                  checked={trip.booked}
-                  onChange={(event) => setBooked(event.target.checked)}
-                  className="mt-0.5 size-5 accent-(--save)"
-                />
-                <span className="font-medium">{texts.trips.bookedQuestion}</span>
-                <span className="col-start-2 text-sm text-muted-foreground">{texts.trips.bookedHint}</span>
-              </label>
+              {!readOnly && (
+                <label className="grid cursor-pointer grid-cols-[auto_1fr] items-start gap-x-3 gap-y-1 border-t pt-5">
+                  <input
+                    type="checkbox"
+                    checked={trip.booked}
+                    onChange={(event) => setBooked(event.target.checked)}
+                    className="mt-0.5 size-5 accent-(--save)"
+                  />
+                  <span className="font-medium">{texts.trips.bookedQuestion}</span>
+                  <span className="col-start-2 text-sm text-muted-foreground">{texts.trips.bookedHint}</span>
+                </label>
+              )}
             </div>
           </div>
           <p className="flex items-start gap-2 border-t pt-4 text-sm text-muted-foreground">
             <Info className="mt-0.5 size-4 shrink-0" />
-            {texts.trips.savedPrice(format.money(fare.price, fare.cur))}.{!trip.booked && ` ${texts.trips.priceMayChange}`}
+            {readOnly ? `${texts.share.priceLabel}: ${format.money(fare.price, fare.cur)}` : texts.trips.savedPrice(format.money(fare.price, fare.cur))}.{!trip.booked && ` ${texts.trips.priceMayChange}`}
           </p>
         </div>
       </Collapse>

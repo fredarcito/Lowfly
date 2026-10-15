@@ -1,22 +1,11 @@
 import Link from "next/link";
 import { LOCALE_TAGS } from "@/i18n/config";
 import { CONTACT_EMAIL } from "@/constants/privacy";
-
-// A paragraph, or a bulleted list when it is an array
-const Block = ({ block }) =>
-  Array.isArray(block) ? (
-    <ul className="grid list-disc gap-1.5 pl-5 marker:text-muted-foreground">
-      {block.map((item) => (
-        <li key={item}>{item}</li>
-      ))}
-    </ul>
-  ) : (
-    <p>{block}</p>
-  );
+import Block from "@/components/legal/LegalDocument/components/Block";
 
 // A legal page (privacy policy, terms of use): title, date, intro, sections, the contact email and a link to
 // the other page. doc: { title, intro, updated(date), sections: [{ title, body }] } (constants/privacy, terms)
-export const LegalDocument = ({ lang, doc, updatedDay, related }) => {
+const LegalDocument = ({ lang, doc, updatedDay, related }) => {
   const updated = new Intl.DateTimeFormat(LOCALE_TAGS[lang], { dateStyle: "long" }).format(new Date(`${updatedDay}T12:00:00`));
   return (
     <article className="grid max-w-[70ch] gap-8 py-4 leading-relaxed">
@@ -42,3 +31,5 @@ export const LegalDocument = ({ lang, doc, updatedDay, related }) => {
     </article>
   );
 };
+
+export default LegalDocument;

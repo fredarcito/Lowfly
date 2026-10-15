@@ -1,27 +1,11 @@
 "use client";
 
 import { ArrowLeftRight, ArrowRight, Luggage } from "lucide-react";
-import { Input } from "@/components/ui/input";
 import { Toggle } from "@/components/ui/toggle";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { useI18n } from "@/context/i18n";
 import { WEEKEND_MODES } from "@/constants/weekend";
-
-const MAX_NIGHTS = 30;
-
-// One of the two ends of the stay ("from 2 to 4 nights")
-const NightsInput = ({ label, value, onChange }) => (
-  <Input
-    type="number"
-    min="1"
-    max={MAX_NIGHTS}
-    inputMode="numeric"
-    aria-label={label}
-    className="h-9 w-14 text-center"
-    value={value}
-    onChange={(event) => onChange(event.target.value)}
-  />
-);
+import NightsInput from "@/components/search/TripTypeField/components/NightsInput";
 
 // One way or return; for a return trip, how many nights to stay or (anywhere and to a destination) only
 // weekends away (constants/weekend)

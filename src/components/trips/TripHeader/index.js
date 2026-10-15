@@ -5,12 +5,13 @@ import { ArrowLeft, Clock, Ticket } from "lucide-react";
 import DestinationGuide from "@/components/shared/DestinationGuide";
 import TripBackdrop from "@/components/trips/TripBackdrop";
 import TripMenu from "@/components/trips/TripMenu";
+import ShareTripButton from "@/components/trips/sharing/ShareTripButton";
 import { useI18n } from "@/context/i18n";
 import { useTripWhen } from "@/hooks/useTripWhen";
 import { ROUTES } from "@/constants/routes";
 
 // Top of a trip, over the destination photo: back to the list, destination, dates, nights and when it is,
-// why the destination is worth a visit, and the ⋯ menu
+// why the destination is worth a visit, "Share" and the ⋯ menu
 const TripHeader = ({ trip, onDeleted }) => {
   const { lang, texts, format } = useI18n();
   const when = useTripWhen(trip);
@@ -28,13 +29,16 @@ const TripHeader = ({ trip, onDeleted }) => {
         >
           <ArrowLeft className="size-4" /> {texts.trips.backToList}
         </Link>
-        {/* Round and on glass like the theme button above it, so it shows over the photo */}
-        <TripMenu
-          trip={trip}
-          onDeleted={onDeleted}
-          variant="ghost"
-          className="rounded-full bg-hero-chip text-hero-foreground backdrop-blur-sm hover:bg-hero-chip hover:text-hero-foreground aria-expanded:bg-hero-chip dark:hover:bg-hero-chip"
-        />
+        {/* Round and on glass like the theme button above them, so they show over the photo */}
+        <div className="flex shrink-0 items-center gap-2">
+          <ShareTripButton trip={trip} />
+          <TripMenu
+            trip={trip}
+            onDeleted={onDeleted}
+            variant="ghost"
+            className="rounded-full bg-hero-chip text-hero-foreground backdrop-blur-sm hover:bg-hero-chip hover:text-hero-foreground aria-expanded:bg-hero-chip dark:hover:bg-hero-chip"
+          />
+        </div>
       </div>
 
       <h1 className="font-heading text-4xl leading-none font-extrabold tracking-tight drop-shadow-sm sm:text-6xl">

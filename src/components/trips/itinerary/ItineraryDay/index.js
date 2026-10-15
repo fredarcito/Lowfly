@@ -8,13 +8,14 @@ import ItineraryStop from "@/components/trips/itinerary/ItineraryStop";
 import ItineraryPeriod from "@/components/trips/itinerary/ItineraryPeriod";
 import { useI18n } from "@/context/i18n";
 import { useDayPlan } from "@/hooks/useDayPlan";
-import { useVisitedStops } from "@/hooks/useVisitedStops";
+import { useVisitedStops } from "@/components/trips/itinerary/ItineraryDay/hooks/useVisitedStops";
 
 const MODE_ICONS = { walking: Footprints, driving: Car, transit: TrainFront };
 
 // One day: title, progress and the Maps route; then the stops (grouped into morning, afternoon and night)
 // next to the map (desktop) or under it (phone). One stop is open at a time, in step with the map.
-const ItineraryDay = ({ trip, day, dayNumber }) => {
+// `readOnly` (a shared trip): without the visited ticks, which are the traveller's own.
+const ItineraryDay = ({ trip, day, dayNumber, readOnly = false }) => {
   const { texts } = useI18n();
   const { stops, mapStops, routes } = useDayPlan(day);
   const { isVisited, toggleVisited, countIn } = useVisitedStops(trip);
@@ -44,7 +45,7 @@ const ItineraryDay = ({ trip, day, dayNumber }) => {
             <span className="flex items-center gap-1.5">
               <ModeIcon className="size-4" /> {texts.trips.modes[day.mode] ?? texts.trips.modes.walking} · {texts.trips.stops(stops.length)}
             </span>
-            {places.length > 0 && (
+            {!readOnly && places.length > 0 && (
               <span className="flex items-center gap-1.5">
                 <CircleCheck className="size-4" /> {texts.trips.visitedCount(countIn(places), places.length)}
               </span>
@@ -77,7 +78,7 @@ const ItineraryDay = ({ trip, day, dayNumber }) => {
                   visited={isVisited(stop.id)}
                   onToggle={() => setOpenId((current) => (current === stop.id ? null : stop.id))}
                   onHover={setHoveredNumber}
-                  onToggleVisited={() => toggleVisited(stop.id)}
+                  onToggleVisited={readOnly ? null : () => toggleVisited(stop.id)}
                   lineAbove={index > 0 || startsPeriod}
                   lineBelow={index < lastIndex}
                 />

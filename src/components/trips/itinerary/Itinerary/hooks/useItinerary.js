@@ -27,13 +27,14 @@ const stopsForAi = (trip) =>
   trip.stops.map(({ city, country, lat, lng, arrive, leave }) => ({ city, country, lat, lng, arrive, leave }));
 
 // A trip's itinerary (in the language it was made in), the picked day,
-// and creating it with the AI: { status: "idle" | "creating" | "error", error }
+// and creating it with the AI: { status: "idle" | "creating" | "error", error }. `trip` may not exist yet
+// (the planning wizard, before its route is saved): nothing to show then.
 export const useItinerary = (trip) => {
   const { lang } = useI18n();
   const { status } = useAuth();
   const [pickedIndex, setPickedIndex] = useState(0);
   const [creation, setCreation] = useState({ status: "idle" });
-  const itinerary = trip.itinerary;
+  const itinerary = trip?.itinerary;
   const days = itinerary?.days ?? [];
   const index = Math.min(pickedIndex, Math.max(days.length - 1, 0));
 

@@ -1,0 +1,292 @@
+{
+ "flor": {
+  "places": [
+   {
+    "id": "3176959",
+    "name": "Florencia",
+    "region": "Región de Toscana",
+    "country": "Italia",
+    "countryCode": "IT",
+    "lat": 43.77925,
+    "lng": 11.24626,
+    "code": null
+   },
+   {
+    "id": "3385073",
+    "name": "Vila Flor",
+    "region": "Estado de Río Grande del Norte",
+    "country": "Brasil",
+    "countryCode": "BR",
+    "lat": -6.31444,
+    "lng": -35.07722,
+    "code": null
+   },
+   {
+    "id": "1101753",
+    "name": "Flor",
+    "region": "Inhambane",
+    "country": "Mozambique",
+    "countryCode": "MZ",
+    "lat": -22.45806,
+    "lng": 34.47944,
+    "code": null
+   },
+   {
+    "id": "2714288",
+    "name": "Flor",
+    "region": "Provincia de Jämtland",
+    "country": "Suecia",
+    "countryCode": "SE",
+    "lat": 62.15,
+    "lng": 15.05,
+    "code": null
+   },
+   {
+    "id": "2714290",
+    "name": "Flor",
+    "region": "Provincia de Gävleborg",
+    "country": "Suecia",
+    "countryCode": "SE",
+    "lat": 61.3,
+    "lng": 16.76667,
+    "code": null
+   },
+   {
+    "id": "3505727",
+    "name": "Flor",
+    "region": "Provincia San Cristóbal",
+    "country": "República Dominicana",
+    "countryCode": "DO",
+    "lat": 18.60821,
+    "lng": -70.2066,
+    "code": null
+   }
+  ]
+ },
+ "venecia": {
+  "places": [
+   {
+    "id": "3164603",
+    "name": "Venecia",
+    "region": "Región de Véneto",
+    "country": "Italia",
+    "countryCode": "IT",
+    "lat": 45.43713,
+    "lng": 12.33265,
+    "code": "VCE"
+   },
+   {
+    "id": "3666193",
+    "name": "Venecia",
+    "region": "Antioquia",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "lat": 5.96278,
+    "lng": -75.73806,
+    "code": null
+   },
+   {
+    "id": "3666203",
+    "name": "Venecia",
+    "region": "Cundinamarca",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "lat": 4.08808,
+    "lng": -74.47746,
+    "code": null
+   },
+   {
+    "id": "13100196",
+    "name": "Venecia",
+    "region": "Departamento de Cajamarca",
+    "country": "Perú",
+    "countryCode": "PE",
+    "lat": -7.25158,
+    "lng": -78.03656,
+    "code": null
+   },
+   {
+    "id": "3980453",
+    "name": "Venecia",
+    "region": "Estado de Durango",
+    "country": "México",
+    "countryCode": "MX",
+    "lat": 25.77979,
+    "lng": -103.35347,
+    "code": null
+   },
+   {
+    "id": "3514810",
+    "name": "Venecia",
+    "region": "Estado de Tamaulipas",
+    "country": "México",
+    "countryCode": "MX",
+    "lat": 26.20656,
+    "lng": -98.55034,
+    "code": null
+   }
+  ]
+ },
+ "rom": {
+  "places": [
+   {
+    "id": "3169070",
+    "name": "Roma",
+    "region": "Región de Lacio",
+    "country": "Italia",
+    "countryCode": "IT",
+    "lat": 41.89193,
+    "lng": 12.51133,
+    "code": "CIA"
+   },
+   {
+    "id": "2983052",
+    "name": "Rom",
+    "region": "Nueva Aquitania",
+    "country": "Francia",
+    "countryCode": "FR",
+    "lat": 46.29283,
+    "lng": 0.11512,
+    "code": null
+   },
+   {
+    "id": "2845371",
+    "name": "Rom",
+    "region": "Mecklenburg-Vorpommern",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "lat": 53.44472,
+    "lng": 11.94866,
+    "code": null
+   },
+   {
+    "id": "118167",
+    "name": "Rūm",
+    "region": "Jorasán del Sur",
+    "country": "Irán",
+    "countryCode": "IR",
+    "lat": 33.44562,
+    "lng": 59.18982,
+    "code": null
+   },
+   {
+    "id": "150557",
+    "name": "Roma",
+    "region": "Región de Lindi",
+    "country": "Tanzania",
+    "countryCode": "TZ",
+    "lat": -9.43333,
+    "lng": 39.43333,
+    "code": null
+   },
+   {
+    "id": "226711",
+    "name": "Rom",
+    "region": "Región Septentrional",
+    "country": "Uganda",
+    "countryCode": "UG",
+    "lat": 3.31829,
+    "lng": 33.5565,
+    "code": null
+   }
+  ]
+ },
+ "cucu": {
+  "places": [
+   {
+    "id": "3685533",
+    "name": "Cúcuta",
+    "region": "Norte de Santander",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "lat": 7.90745,
+    "lng": -72.5049,
+    "code": null
+   },
+   {
+    "id": "340447",
+    "name": "Cucu",
+    "region": "Región de Oromía",
+    "country": "Etiopía",
+    "countryCode": "ET",
+    "lat": 5.66667,
+    "lng": 38.2,
+    "code": null
+   },
+   {
+    "id": "680032",
+    "name": "Cucu",
+    "region": "Satu Mare",
+    "country": "Rumanía",
+    "countryCode": "RO",
+    "lat": 47.78619,
+    "lng": 22.96729,
+    "code": "SUJ"
+   },
+   {
+    "id": "748955",
+    "name": "Cöcü",
+    "region": "Bartın",
+    "country": "Turquía",
+    "countryCode": "TR",
+    "lat": 41.67699,
+    "lng": 32.63816,
+    "code": null
+   },
+   {
+    "id": "782661",
+    "name": "Kukes",
+    "region": "Condado de Kukes",
+    "country": "Albania",
+    "countryCode": "AL",
+    "lat": 42.07694,
+    "lng": 20.42194,
+    "code": null
+   },
+   {
+    "id": "748849",
+    "name": "Cücük",
+    "region": "Provincia de Ankara",
+    "country": "Turquía",
+    "countryCode": "TR",
+    "lat": 40.18017,
+    "lng": 33.10118,
+    "code": "ESB"
+   }
+  ]
+ },
+ "bucaramanga": {
+  "places": [
+   {
+    "id": "3688465",
+    "name": "Bucaramanga",
+    "region": "Santander",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "lat": 7.125,
+    "lng": -73.11895,
+    "code": null
+   },
+   {
+    "id": "3688466",
+    "name": "Bucaramanga",
+    "region": "Cundinamarca",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "lat": 4.98333,
+    "lng": -74.55,
+    "code": null
+   },
+   {
+    "id": "3779386",
+    "name": "Bucaramanga",
+    "region": "Departamento de Córdoba",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "lat": 8.78833,
+    "lng": -76.03556,
+    "code": null
+   }
+  ]
+ }
+}

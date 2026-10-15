@@ -5,8 +5,9 @@ import { Check } from "lucide-react";
 import { useI18n } from "@/context/i18n";
 import { cn } from "@/utils/cn";
 
-// Where the visitor is in planning the trip: "● Route ──── ○ Your style", the line filling as they go on
-const TripSteps = ({ steps, current }) => {
+// Where the visitor is in planning the trip: "● Route ──── ○ Your style". The line to the next step fills as the
+// current one is completed (`progress`, 0 to 1), and whole once past it.
+const TripSteps = ({ steps, current, progress = 0 }) => {
   const { texts } = useI18n();
   const labels = texts.trips.manual;
   return (
@@ -18,7 +19,10 @@ const TripSteps = ({ steps, current }) => {
           <Fragment key={step}>
             {index > 0 && (
               <li aria-hidden className="h-0.5 flex-1 overflow-hidden rounded-full bg-border">
-                <span className={cn("block h-full bg-primary transition-[width] duration-500 ease-out motion-reduce:transition-none", index <= current ? "w-full" : "w-0")} />
+                <span
+                  className="block h-full bg-primary transition-[width] duration-500 ease-out motion-reduce:transition-none"
+                  style={{ width: `${index <= current ? 100 : index === current + 1 ? Math.round(progress * 100) : 0}%` }}
+                />
               </li>
             )}
             <li aria-current={active ? "step" : undefined} className="flex shrink-0 items-center gap-2">

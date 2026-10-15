@@ -1,26 +1,35 @@
 import { DESKTOP, PHONE, TABLET, expect, expectNoSidewaysScroll, openWith, savedTrips, test } from "./helpers/test.js";
+import { serveRecordedPlaces } from "./helpers/places.js";
 import { FLORENCE_VENICE_ITINERARY, dayFromNow, manualTrip } from "./helpers/trips.js";
 
 // A trip planned by hand (no flights): its form, what it checks, and the trip once made
 test.describe("trip planned by hand", () => {
-  const stopItem = (page, number) => page.locator("form ol > li").nth(number - 1);
+  // Town searches answered from a recording (the real search is tested on its own, @live)
+  test.beforeEach(async ({ page }, testInfo) => {
+    if (!testInfo.title.includes("@live")) await serveRecordedPlaces(page);
+  });
+
+  const stopItem = (page, number) => page.locator("form section ol > li").nth(number - 1);
 
   const pickTown = async (page, number, search, name) => {
     await stopItem(page, number).locator("input[role=combobox]").fill(search);
     await page.getByRole("option", { name: new RegExp(name) }).first().click();
   };
 
-  // Next month's days: always ahead of today
+  // Days of next month: always ahead of today
   const pickDates = async (page, number, firstDay, lastDay) => {
     await stopItem(page, number).locator("[id$=-dates]").click();
-    // The calendar's own arrow (the form has a "Siguiente" button too)
-    await page.getByRole("button", { name: /mes siguiente|next month/i }).first().click();
+    // The first town: next month (the calendar opens on this one). A later one opens on its own month already.
+    if (number === 1) await page.getByRole("button", { name: /mes siguiente|next month/i }).first().click();
     const day = (dayNumber) => page.locator("[role=gridcell] button, button[data-day]").filter({ hasText: new RegExp(`^${dayNumber}$`) }).first();
     await day(firstDay).click();
     await day(lastDay).click();
   };
 
+  // The times are folded away: unfold them first
   const pickTime = async (page, number, which, time) => {
+    const times = stopItem(page, number).getByRole("button", { name: /Añadir horarios/ });
+    if ((await times.getAttribute("aria-expanded")) === "false") await times.click();
     await stopItem(page, number).locator(`[id$=-${which}-time]`).click();
     await page.getByRole("menuitemradio", { name: time }).click();
   };
@@ -59,17 +68,17 @@ test.describe("trip planned by hand", () => {
     await openWith(page, "/es/trips");
     await page.getByRole("link", { name: "Planear un viaje" }).first().click();
     await page.waitForURL("**/trips/new");
-    await page.getByRole("button", { name: "Siguiente" }).click();
+    await page.getByRole("button", { name: "Continuar" }).click();
     await expect(page.getByRole("alert").first()).toBeVisible();
 
     // Arriving in Venice before leaving Florence: not possible
     await fillRoute(page, "08:00");
-    await page.getByRole("button", { name: "Siguiente" }).click();
+    await page.getByRole("button", { name: "Continuar" }).click();
     await expect(page.getByRole("alert").first()).toBeVisible();
     await expect(styleStep(page)).toHaveCount(0);
 
     await pickTime(page, 2, "arrive", "11:30");
-    await page.getByRole("button", { name: "Siguiente" }).click();
+    await page.getByRole("button", { name: "Continuar" }).click();
     await expect(styleStep(page)).toBeVisible();
     await expect(page.getByRole("button", { name: "Crear itinerario" })).toBeVisible();
     // Same page; the trip is already saved
@@ -89,14 +98,14 @@ test.describe("trip planned by hand", () => {
     await page.setViewportSize({ width: 1280, height: 1000 });
     await openWith(page, "/es/trips/new");
     await fillRoute(page);
-    await page.getByRole("button", { name: "Siguiente" }).click();
+    await page.getByRole("button", { name: "Continuar" }).click();
     await expect(styleStep(page)).toBeVisible();
 
     await page.getByRole("button", { name: "Atrás" }).click();
     // The towns are still there
     await expect(stopItem(page, 2)).toContainText("Venecia");
     await pickTime(page, 2, "arrive", "12:00");
-    await page.getByRole("button", { name: "Siguiente" }).click();
+    await page.getByRole("button", { name: "Continuar" }).click();
     await expect(styleStep(page)).toBeVisible();
     const trips = await savedTrips(page);
     expect(trips).toHaveLength(1);
@@ -116,7 +125,7 @@ test.describe("trip planned by hand", () => {
     });
     await openWith(page, "/es/trips/new");
     await fillRoute(page);
-    await page.getByRole("button", { name: "Siguiente" }).click();
+    await page.getByRole("button", { name: "Continuar" }).click();
     await page.getByRole("button", { name: "Crear itinerario" }).click();
     await expect(page.locator("section[role=status]")).toBeVisible();
     await page.waitForURL(/trips\?id=manual-/);
@@ -163,4 +172,109 @@ test.describe("trip planned by hand", () => {
       await expectNoSidewaysScroll(page);
     });
   }
+
+  test("removing a town folds it away, and the summary follows", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    await openWith(page, "/es/trips/new");
+    await fillRoute(page);
+    const summary = page.locator("aside");
+    await expect(summary).toContainText("Florencia → Venecia");
+    await expect(summary).toContainText("2 ciudades");
+    await stopItem(page, 2).getByRole("button", { name: "Quitar ciudad" }).click();
+    await expect(page.locator("form section ol > li")).toHaveCount(1);
+    await expect(summary).toContainText("1 ciudad");
+    await expect(summary).not.toContainText("Venecia");
+    // The only town cannot be removed
+    await expect(stopItem(page, 1).getByRole("button", { name: "Quitar ciudad" })).toHaveCount(0);
+  });
+
+  test("phones: the dates fit and Continue stays at hand at the bottom", async ({ page }) => {
+    await page.setViewportSize(PHONE);
+    await openWith(page, "/es/trips/new");
+    await pickTown(page, 1, "flor", "Florencia");
+    await pickDates(page, 1, 13, 15);
+    await expectNoSidewaysScroll(page);
+    const card = await stopItem(page, 1).boundingBox();
+    const dates = await stopItem(page, 1).locator("[id$=-dates]").boundingBox();
+    expect(dates.x + dates.width).toBeLessThanOrEqual(card.x + card.width);
+    await expect(page.getByRole("button", { name: "Continuar" })).toBeInViewport();
+  });
+
+  test("Departure opens on its own end: the arrival stays and earlier days cannot be picked", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    await openWith(page, "/es/trips/new");
+    await pickDates(page, 1, 13, 16);
+    const arrival = stopItem(page, 1).locator("[id$=-dates]");
+    const departure = stopItem(page, 1).locator("[id$=-dates-end]");
+    const arrivalText = await arrival.innerText();
+    await departure.click();
+    const day = (dayNumber) => page.locator("[role=gridcell] button, button[data-day]").filter({ hasText: new RegExp(`^${dayNumber}$`) }).first();
+    await expect(day(12)).toBeDisabled();
+    await day(18).click();
+    await expect(arrival).toHaveText(arrivalText);
+    await expect(departure).toContainText("18");
+    await expect(stopItem(page, 1)).toContainText("6 días · 5 noches");
+  });
+
+  for (const viewport of [DESKTOP, PHONE]) {
+    test(`a town just added comes into view, ready to type (${viewport.width}px)`, async ({ page }) => {
+      await page.setViewportSize(viewport);
+      await openWith(page, "/es/trips/new");
+      await pickTown(page, 1, "flor", "Florencia");
+      await pickDates(page, 1, 13, 15);
+      await page.getByRole("button", { name: "Añadir otra ciudad" }).click();
+      const search = stopItem(page, 2).locator("input[role=combobox]");
+      await expect(search).toBeFocused();
+      await expect(search).toBeInViewport();
+      await page.keyboard.type("venecia");
+      await expect(page.getByRole("option").first()).toBeVisible();
+    });
+  }
+
+  test("the town search finds real towns @live", async ({ page }) => {
+    await openWith(page, "/es/trips/new");
+    await stopItem(page, 1).locator("input[role=combobox]").fill("flor");
+    await expect(page.getByRole("option", { name: /Florencia/ }).first()).toBeVisible({ timeout: 30_000 });
+  });
+
+  // Back to the route sits beside "Create itinerary": in the summary on desktop, in the fixed bar on phones
+  for (const viewport of [DESKTOP, PHONE]) {
+    test(`step 2's Back is beside Create and returns to the route (${viewport.width}px)`, async ({ page }) => {
+      await page.setViewportSize(viewport);
+      await openWith(page, "/es/trips/new");
+      await fillRoute(page);
+      await page.getByRole("button", { name: "Continuar" }).click();
+      const back = page.getByRole("button", { name: "Atrás" });
+      const create = page.getByRole("button", { name: "Crear itinerario" });
+      await expect(back).toBeInViewport();
+      const [backBox, createBox] = [await back.boundingBox(), await create.boundingBox()];
+      expect(Math.abs(backBox.y - createBox.y)).toBeLessThan(4);
+      await back.click();
+      await expect(stopItem(page, 2)).toContainText("Venecia");
+    });
+  }
+
+  test("phones: going between steps, the actions bar stays put (only the form slides)", async ({ page }) => {
+    await page.setViewportSize(PHONE);
+    await openWith(page, "/es/trips/new");
+    await pickTown(page, 1, "flor", "Florencia");
+    await pickDates(page, 1, 13, 15);
+    const barTop = () => page.evaluate(() => Math.round(document.querySelector(".fixed.inset-x-0.bottom-0").getBoundingClientRect().top));
+    const topsWhileChanging = async () => {
+      const tops = [];
+      for (let sample = 0; sample < 6; sample++) {
+        tops.push(await barTop());
+        await page.waitForTimeout(40);
+      }
+      return new Set(tops).size;
+    };
+    // Same height in both steps: the buttons never move
+    const before = await barTop();
+    await page.getByRole("button", { name: "Continuar" }).click();
+    expect(await topsWhileChanging()).toBe(1);
+    expect(await barTop()).toBe(before);
+    await page.getByRole("button", { name: "Atrás" }).click();
+    expect(await topsWhileChanging()).toBe(1);
+    expect(await barTop()).toBe(before);
+  });
 });

@@ -7,8 +7,9 @@ import { CHECK_IN_TIMES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itiner
 import { cn } from "@/utils/cn";
 
 // The visitor's preferences for the AI itinerary: pace, interests, getting around and check-in time.
-// `preferences`: useItineraryPreferences of the trip (the values and how to change them).
-const ItineraryPreferences = ({ trip, preferences, disabled }) => {
+// `preferences`: useItineraryPreferences of the trip (the values and how to change them). `stacked`: one under
+// the other (the wizard's step 2); otherwise side by side from tablets up.
+const ItineraryPreferences = ({ trip, preferences, disabled, stacked = false }) => {
   const { texts } = useI18n();
   const labels = texts.trips.preferences;
   const optionsOf = (ids, names) => ids.map((id) => ({ id, label: names[id] }));
@@ -16,7 +17,10 @@ const ItineraryPreferences = ({ trip, preferences, disabled }) => {
   // A trip planned by hand has no check-in: one time could not fit every town, and its arrival times already
   // tell the AI when to check in (server/itinerary)
   return (
-    <fieldset disabled={disabled} className={cn("grid gap-4 disabled:opacity-60 sm:grid-cols-2", trip.manual ? "lg:grid-cols-3" : "lg:grid-cols-4")}>
+    <fieldset
+      disabled={disabled}
+      className={cn("grid gap-4 disabled:opacity-60", !stacked && "sm:grid-cols-2", !stacked && (trip.manual ? "lg:grid-cols-3" : "lg:grid-cols-4"))}
+    >
       <PreferencePicker
         id="pace"
         icon={Gauge}

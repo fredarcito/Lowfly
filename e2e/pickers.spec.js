@@ -1,4 +1,5 @@
 import { DESKTOP, PHONE, expect, openWith, test } from "./helpers/test.js";
+import { serveRecordedPlaces } from "./helpers/places.js";
 
 // The search form's pickers: a popover on desktop, a sheet from the bottom on phones, and the keyboard
 test.describe("pickers", () => {
@@ -38,6 +39,7 @@ test.describe("pickers", () => {
 
   test("a town in the trip planned by hand: Escape closes the list, arrows and Enter pick", async ({ page }) => {
     await page.setViewportSize(DESKTOP);
+    await serveRecordedPlaces(page);
     await openWith(page, "/es/trips/new");
     await page.locator("input[role=combobox]").first().fill("venecia");
     await expect(page.getByRole("option").first()).toBeVisible();
@@ -45,7 +47,7 @@ test.describe("pickers", () => {
     await expect(page.getByRole("listbox")).toHaveCount(0);
     await page.keyboard.press("ArrowDown");
     await page.keyboard.press("Enter");
-    await expect(page.locator("form ol > li").first()).toContainText("Venecia");
+    await expect(page.locator("form section ol > li").first()).toContainText("Venecia");
   });
 
   test("the search starts as a return trip; an old shared link without a trip type is one way", async ({ page }) => {

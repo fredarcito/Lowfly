@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { Plane } from "lucide-react";
+import { AccountButton } from "@/components/layout/AccountButton";
 import LanguageSwitch from "@/components/layout/LanguageSwitch";
 import ThemeToggle from "@/components/layout/ThemeToggle";
 import TripsLink, { NavLink } from "@/components/layout/TripsLink";
@@ -10,7 +11,7 @@ import { APP_NAME } from "@/i18n/config";
 import { ROUTES } from "@/constants/routes";
 import { cn } from "@/utils/cn";
 
-// Logo, the navigation (Explore · My trips), theme and language. Sits on the header colours (--hero-*).
+// Logo, the navigation (Explore · My trips), theme, language and the account. Sits on the header colours (--hero-*).
 const TopBar = ({ className }) => {
   const { lang, t } = useI18n();
   const onTrips = usePathname().startsWith(ROUTES.trips(lang));
@@ -35,6 +36,7 @@ const TopBar = ({ className }) => {
         <ThemeToggle />
         <span aria-hidden className="h-5 w-px bg-hero-chip max-sm:hidden" />
         <LanguageSwitch />
+        <AccountButton />
       </div>
     </div>
   );

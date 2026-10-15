@@ -1,5 +1,6 @@
-// Saved trips ("My trips"), kept in localStorage while we are testing: no accounts or database yet.
-// A trip is the flight the visitor saved plus, later, its itinerary.
+// Saved trips ("My trips"), kept in this browser (localStorage). Signed in, they are also kept in the account
+// (store/tripsCloud), which copies every change made here.
+// A trip is the flight the visitor saved (or a trip planned by hand) plus, later, its itinerary.
 // Components read them with the useTrips() hook and change them with the functions below; every change
 // is broadcast, so the header count and the lists refresh at once (also across tabs).
 import { nightsBetween, today } from "@/utils/dates";
@@ -25,13 +26,32 @@ export const readTrips = () => {
   return cache.list;
 };
 
-const write = (list) => {
+// Told about every change made here, with the list before and after (the account's copy, store/tripsCloud)
+let changeListener = null;
+
+export const onTripsChanged = (listener) => {
+  changeListener = listener;
+  return () => {
+    if (changeListener === listener) changeListener = null;
+  };
+};
+
+// `quiet`: a change that comes from the account itself (nothing to copy back)
+const write = (list, { quiet = false } = {}) => {
+  const previous = readTrips();
   try {
     localStorage.setItem(KEY, JSON.stringify(list));
   } catch {} // private mode or full: the change only lives until reload
   cache = { raw: null, list };
   window.dispatchEvent(new Event(CHANGE));
+  if (!quiet) changeListener?.(previous, list);
 };
+
+// Soonest first
+export const sortTrips = (list) => [...list].sort((one, other) => (one.fare.day < other.fare.day ? -1 : 1));
+
+// All the trips at once, from the account (after signing in, or none after signing out)
+export const replaceTrips = (list) => write(sortTrips(list), { quiet: true });
 
 export const subscribeToTrips = (onChange) => {
   const onStorage = (event) => event.key === KEY && onChange();
@@ -54,7 +74,7 @@ export const saveTrip = (origin, fare) => {
   const list = readTrips();
   if (list.some((saved) => saved.id === id)) return id;
   const trip = { id, origin, fare, savedAt: new Date().toISOString(), booked: false, itinerary: null };
-  write([...list, trip].sort((first, second) => (first.fare.day < second.fare.day ? -1 : 1)));
+  write(sortTrips([...list, trip]));
   return id;
 };
 
@@ -78,7 +98,7 @@ export const saveManualTrip = (stops) => {
     nights: nightsBetween(first.arrive.day, last.leave.day),
   };
   const trip = { id, manual: true, origin: null, stops, fare, savedAt: new Date().toISOString(), booked: false, itinerary: null };
-  write([...readTrips(), trip].sort((one, other) => (one.fare.day < other.fare.day ? -1 : 1)));
+  write(sortTrips([...readTrips(), trip]));
   return id;
 };
 

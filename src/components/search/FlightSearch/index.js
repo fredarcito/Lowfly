@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { CircleAlert, Copyright, Loader2 } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Card } from "@/components/ui/card";
@@ -26,6 +27,7 @@ import { getDefaultOrigin } from "@/api/airports";
 import { findAirport, useAirports } from "@/hooks/useAirports";
 import { getDestinations, searchFlights } from "@/api/flights";
 import { cn } from "@/utils/cn";
+import { ROUTES } from "@/constants/routes";
 
 const RESULTS = { everywhere: EverywhereResults, country: CountryResults, trip: FlexibleResults };
 // No results: the form opens again so the search can be changed
@@ -317,13 +319,18 @@ const HeroPhoto = () => {
 
 // Before searching: this weekend's cheapest trips; without them, what each mode does (the selected one highlighted)
 const EmptyState = ({ mode, origin, airports, onSeeAll }) => {
-  const { t } = useI18n();
+  const { lang, t } = useI18n();
   const originName = findAirport(airports, origin)?.city;
   return (
     <>
       <TripsPromo />
       <WeekendDeals origin={origin} originName={originName} onSeeAll={onSeeAll} fallback={<SearchModes mode={mode} />} />
-      <p className="-mt-4 text-xs text-muted-foreground">{t.empty.disclaimer}</p>
+      <p className="-mt-4 text-xs text-muted-foreground">
+        {t.empty.disclaimer}{" "}
+        <Link href={ROUTES.privacy(lang)} className="underline underline-offset-2 hover:text-foreground">
+          {t.account.privacy}
+        </Link>
+      </p>
     </>
   );
 };

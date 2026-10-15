@@ -4,6 +4,7 @@ import { APP_NAME, LOCALES, LOCALE_TAGS, getDictionary, hasLocale } from "@/i18n
 import { DEFAULT_THEME, THEME_COLORS } from "@/constants/theme";
 import { themeScript } from "@/utils/theme";
 import { ROUTES } from "@/constants/routes";
+import { AuthProvider } from "@/providers/AuthProvider";
 import "@/styles/globals.css";
 
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
@@ -51,7 +52,9 @@ const RootLayout = async ({ children, params }) => {
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body>{children}</body>
+      <body>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   );
 };

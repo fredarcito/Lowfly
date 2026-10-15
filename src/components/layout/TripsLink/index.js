@@ -14,7 +14,7 @@ export const NavLink = ({ href, active, className, children, ...props }) => {
       href={href}
       aria-current={active ? "page" : undefined}
       className={cn(
-        "relative flex items-center gap-2 rounded-md py-1.5 font-heading text-[0.95rem] font-semibold transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
+        "relative flex items-center gap-2 rounded-md py-1.5 font-heading text-[0.95rem] font-semibold whitespace-nowrap transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
         "after:absolute after:inset-x-0 after:-bottom-1 after:h-0.5 after:rounded-full after:bg-primary after:transition-opacity",
         active ? "text-hero-foreground after:opacity-100" : "text-hero-muted after:opacity-0 hover:text-hero-foreground",
         className
@@ -38,7 +38,8 @@ const TripsLink = ({ active, className }) => {
       className={className}
     >
       <TicketsPlane className="size-4.5" />
-      {t.trips.title}
+      {/* On the narrowest phones only the icon, like the logo (the name stays for screen readers) */}
+      <span className="max-[380px]:sr-only">{t.trips.title}</span>
       {upcoming > 0 && (
         <span className="-mt-3 grid min-w-4.5 place-items-center rounded-full bg-primary px-1 text-[10px] leading-4.5 font-bold text-primary-foreground tabular-nums">
           {upcoming}

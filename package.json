@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.133.0",
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.117.3",
     "@tailwindcss/postcss": "^4.3.3",
     "axios": "^1.20.0",
     "class-variance-authority": "^0.7.1",

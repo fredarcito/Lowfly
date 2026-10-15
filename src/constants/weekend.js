@@ -1,3 +1,6 @@
+// Search modes that can look only for weekends away (anywhere, and a country or city)
+export const WEEKEND_MODES = ["everywhere", "country"];
+
 // A real weekend away: leave Friday or Saturday morning, come back Sunday afternoon or early Monday.
 // Each slot is a weekday (0 = Sunday … 6 = Saturday, Ryanair's name) and a departure time window.
 export const WEEKEND = {

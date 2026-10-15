@@ -41,6 +41,10 @@ const bestReturn = (out, rets, stay) => {
   return best;
 };
 
+// Does a day's cheapest flight (dir: out | ret) leave in a weekend slot?
+const fitsWeekend = (flight) =>
+  (!flight.times || flight.times.length === 1) && fits(flight.dir === "out" ? WEEKEND.out : WEEKEND.ret, flight.day, flight.time);
+
 // Runs jobs at most `n` at a time and records which airline fails
 const pool = async (jobs, failed, n = 6) => {
   const res = [];
@@ -220,7 +224,11 @@ export const country = async (origin, countryName, cityName, from, to, max, stay
   const res = await pool(jobs, failed);
   if (res.every((r) => !r)) throw new AppError("noPrices");
 
+  // A weekend away: only flights that leave in the weekend slots (constants/weekend). A day's price is its cheapest
+  // flight, so a day whose cheapest leaves at another time is left out; for Wizz, only days with one flight (with
+  // several, the price could be another flight's)
   let fares = res.filter(Boolean).flat();
+  if (stay?.weekend) fares = fares.filter(fitsWeekend);
   if (stay) {
     // Per airport, each outbound flight with its best return (may mix airlines)
     const per = new Map();

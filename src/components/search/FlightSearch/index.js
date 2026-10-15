@@ -27,6 +27,7 @@ import { getDefaultOrigin } from "@/api/airports";
 import { findAirport, useAirports } from "@/hooks/useAirports";
 import { getDestinations, searchFlights } from "@/api/flights";
 import { cn } from "@/utils/cn";
+import { WEEKEND_MODES } from "@/constants/weekend";
 import { ROUTES } from "@/constants/routes";
 
 const RESULTS = { everywhere: EverywhereResults, country: CountryResults, trip: FlexibleResults };
@@ -158,7 +159,7 @@ const FlightSearch = () => {
     } else {
       if (!from || !to || from > to) return fail("rangeOrder");
       params = { origin, from, to, ...(max && { max }), ...(mode === "country" && { country, ...(city && { city }) }) };
-      if (trip === "return" && weekend && mode === "everywhere") {
+      if (trip === "return" && weekend && WEEKEND_MODES.includes(mode)) {
         Object.assign(params, { trip, weekend: 1 });
       } else if (trip === "return") {
         const [a, b] = [Number(minN), Number(maxN)];
@@ -169,7 +170,7 @@ const FlightSearch = () => {
     if (mode !== "everywhere" && !country) return fail("missingCountry");
 
     setResult({ status: "loading", mode });
-    setQuery({ mode, ...form, weekend: weekend && trip === "return" && mode === "everywhere" });
+    setQuery({ mode, ...form, weekend: weekend && trip === "return" && WEEKEND_MODES.includes(mode) });
     // The search goes in the URL, so the link can be shared (lib/share)
     window.history.replaceState(null, "", `?${searchToParams(form, mode)}`);
     setCollapsed(true);

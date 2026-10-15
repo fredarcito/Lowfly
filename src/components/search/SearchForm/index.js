@@ -10,6 +10,7 @@ import AirportField from "@/components/search/AirportField";
 import DestinationField from "@/components/search/DestinationField";
 import DateRangeField from "@/components/search/DateRangeField";
 import { useI18n } from "@/context/i18n";
+import { WEEKEND_MODES } from "@/constants/weekend";
 
 const MAX_DAYS = { everywhere: 180, country: 120 };
 
@@ -29,7 +30,7 @@ const Field = ({ id, label, hint, className = "", children }) => {
 const TripType = ({ mode, form, onField }) => {
   const { t } = useI18n();
   const roundTrip = form.trip === "return";
-  const weekendOption = roundTrip && mode === "everywhere";
+  const weekendOption = roundTrip && WEEKEND_MODES.includes(mode);
   const weekend = weekendOption && form.weekend;
   const nights = (name, label) => (
     <Input

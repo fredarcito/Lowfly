@@ -1,6 +1,7 @@
 // A search in the URL, so it can be shared: /es?m=everywhere&o=MLA&from=2026-11-01&to=2026-11-30&trip=return&wk=1
 // (to a country: c=Italia, and to one of its cities as well: ci=Roma)
 import { isDay, tomorrow } from "@/utils/dates";
+import { WEEKEND_MODES } from "@/constants/weekend";
 
 const MODES = ["everywhere", "country", "trip"];
 
@@ -19,7 +20,7 @@ export const searchToParams = (form, mode) => {
   if (form.max) params.set("max", form.max);
   if (form.trip === "return") {
     params.set("trip", "return");
-    if (form.weekend && mode === "everywhere") params.set("wk", "1");
+    if (form.weekend && WEEKEND_MODES.includes(mode)) params.set("wk", "1");
     else {
       params.set("min", form.minN);
       params.set("maxn", form.maxN);

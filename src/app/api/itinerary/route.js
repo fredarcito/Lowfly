@@ -87,8 +87,13 @@ export const POST = async (request) => {
     const limitKey = `itinerary:${visitor}`;
     if (LIMITED && userId && (await itinerariesToday(supabase)) >= ITINERARY_LIMITS.userPerDay)
       throw new AppError("aiLimit", { max: ITINERARY_LIMITS.userPerDay }, 429);
-    // Without an account: past the guest allowance, signing in gives more
-    if (LIMITED && !userId && !allow(limitKey, ITINERARY_LIMITS.guestPerDay, DAY)) throw new AppError("aiSignIn", {}, 429);
+    // Without an account: past the guest allowance, signing in gives more (or, with the switch off, the same
+    // daily allowance as an account, per IP)
+    if (LIMITED && !userId) {
+      const { requireAccount, guestPerDay, userPerDay } = ITINERARY_LIMITS;
+      if (!allow(limitKey, requireAccount ? guestPerDay : userPerDay, DAY))
+        throw requireAccount ? new AppError("aiSignIn", {}, 429) : new AppError("aiLimit", { max: userPerDay }, 429);
+    }
 
     let itinerary;
     try {

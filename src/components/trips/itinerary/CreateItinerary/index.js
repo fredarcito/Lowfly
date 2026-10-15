@@ -61,8 +61,11 @@ const CreateItinerary = ({ trip, onCreate, creation }) => {
   const { lang, t } = useI18n();
   const { status } = useAuth();
   // Without an account, once the free itinerary is used (in this browser, or the server says so): sign in first
+  // (only while the switch in constants/itineraryLimits is on)
   const needsAccount =
-    status === "signedOut" && (guestItineraries() >= ITINERARY_LIMITS.freeInBrowser || creation.error?.code === "aiSignIn");
+    ITINERARY_LIMITS.requireAccount &&
+    status === "signedOut" &&
+    (guestItineraries() >= ITINERARY_LIMITS.freeInBrowser || creation.error?.code === "aiSignIn");
   const { preferences, setPace, setTransport, setCheckIn, toggleInterest } = useItineraryPreferences(trip);
   const { fare } = trip;
   const nights = fare.ret ? fare.nights : 0;

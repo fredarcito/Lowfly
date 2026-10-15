@@ -7,6 +7,7 @@ import TripStats from "@/components/trips/TripStats";
 import SaveSharedTripButton from "@/components/trips/sharing/SaveSharedTripButton";
 import SharedBy from "@/components/trips/sharing/SharedBy";
 import { useI18n } from "@/context/i18n";
+import { STATS_CARD } from "@/components/trips/sharing/SharedTripHeader/resources/statsCard";
 import { useTripWhen } from "@/hooks/useTripWhen";
 
 // Top of a shared trip, over the destination photo like a saved trip's: who shared it, the destination,
@@ -37,13 +38,14 @@ const SharedTripHeader = ({ trip, savedTrip, owner }) => {
         fare={fare}
         stops={trip.manual ? trip.stops : null}
         priceLabel={texts.share.priceLabel}
-        className="mt-2 w-fit rounded-xl bg-card/70 px-4 py-3 ring-1 ring-foreground/10 backdrop-blur-md md:px-5"
+        className={STATS_CARD}
       />
       <SaveSharedTripButton trip={savedTrip} className="sm:hidden" />
 
-      {/* Through several towns, the description of one of them would mislead */}
+      {/* Through several towns, the description of one of them would mislead. Phones: room on the right for the
+          photo's © in the corner, next to "See more" */}
       {fare.code && (!trip.manual || trip.stops.length === 1) && (
-        <DestinationGuide code={fare.code} className="mt-1 max-w-[60ch] pb-0" textClassName="text-hero-muted sm:text-base" />
+        <DestinationGuide code={fare.code} foldOnPhones className="mt-1 max-w-[60ch] pb-0 max-sm:pr-8" textClassName="text-hero-muted sm:text-base" />
       )}
     </div>
   );

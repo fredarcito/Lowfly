@@ -14,8 +14,9 @@ import { useScrolledPast } from "@/hooks/useScrolledPast";
 
 // The trip's day-by-day plan (day tabs, then the picked day), the loader while the AI makes it, or the card to
 // create it. Once the page scrolls past the start of the days, the slim bar shows on phones (ItineraryStickyBar).
-// `readOnly` (a shared trip): only the plan, nothing to create, redo or tick.
-const Itinerary = ({ trip, readOnly = false }) => {
+// `readOnly` (a shared trip): only the plan, nothing to create, redo or tick. `tabsAside`: kept at hand next to
+// the day tabs once they stick at the top (desktop).
+const Itinerary = ({ trip, readOnly = false, tabsAside }) => {
   const { lang } = useI18n();
   const { itinerary, days, day, dayIndex, pickDay, create, creation } = useItinerary(trip);
   const sectionRef = useRef(null);
@@ -36,7 +37,7 @@ const Itinerary = ({ trip, readOnly = false }) => {
     <section ref={sectionRef} className="grid grid-cols-1 gap-4">
       <div ref={markerRef} aria-hidden className="-mb-4 h-0" />
       <ItineraryStickyBar trip={trip} day={day} dayNumber={dayIndex + 1} visible={scrolledPast} readOnly={readOnly} />
-      <ItineraryDayTabs days={days} picked={dayIndex} onPick={showDay} belowBar={scrolledPast} />
+      <ItineraryDayTabs days={days} picked={dayIndex} onPick={showDay} belowBar={scrolledPast} aside={tabsAside} />
       {itinerary.lang && itinerary.lang !== lang && (
         <OtherLanguage itinerary={itinerary} creating={creating} onCreate={readOnly ? null : () => create(itinerary.preferences)} />
       )}

@@ -15,7 +15,10 @@ import { cn } from "@/utils/cn";
 // Logo, the navigation (Explore · My trips), theme, language and the account. Sits on the header colours (--hero-*).
 const TopBar = ({ className }) => {
   const { lang, texts } = useI18n();
-  const onTrips = usePathname().startsWith(ROUTES.trips(lang));
+  // Each tab marks its own pages; elsewhere (a shared trip, sign in, legal pages) neither is marked
+  const pathname = usePathname();
+  const onTrips = pathname.startsWith(ROUTES.trips(lang));
+  const onExplore = pathname === ROUTES.home(lang);
   return (
     <div className={cn("flex items-center justify-between gap-3", className)}>
       <div className="flex min-w-0 items-center gap-4 sm:gap-8">
@@ -26,7 +29,7 @@ const TopBar = ({ className }) => {
           <span className="max-[400px]:sr-only">{APP_NAME}</span>
         </a>
         <nav aria-label={texts.header.nav} className="flex items-center gap-4 sm:gap-6">
-          <NavLink href={ROUTES.home(lang)} active={!onTrips} className="max-sm:hidden">
+          <NavLink href={ROUTES.home(lang)} active={onExplore} className="max-sm:hidden">
             {texts.header.explore}
           </NavLink>
           <span aria-hidden className="h-5 w-px bg-hero-chip max-sm:hidden" />

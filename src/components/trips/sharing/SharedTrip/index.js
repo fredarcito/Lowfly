@@ -6,6 +6,7 @@ import TripStops from "@/components/trips/TripStops";
 import TripsPage from "@/components/trips/TripsPage";
 import SharedTripCta from "@/components/trips/sharing/SharedTripCta";
 import SharedTripHeader from "@/components/trips/sharing/SharedTripHeader";
+import StickySave from "@/components/trips/sharing/SharedTrip/components/StickySave";
 import { useSaveAfterSignIn } from "@/components/trips/sharing/SharedTrip/hooks/useSaveAfterSignIn";
 import { useLocalizedTrip } from "@/hooks/useLocalizedTrip";
 
@@ -19,7 +20,7 @@ const SharedTrip = ({ trip: sharedTrip, owner }) => {
   return (
     <TripsPage hero={<SharedTripHeader trip={trip} savedTrip={sharedTrip} owner={owner} />}>
       {trip.manual ? <TripStops trip={trip} /> : <TripFlights trip={trip} readOnly />}
-      <Itinerary trip={trip} readOnly />
+      <Itinerary trip={trip} readOnly tabsAside={<StickySave trip={sharedTrip} />} />
       <SharedTripCta trip={sharedTrip} />
     </TripsPage>
   );

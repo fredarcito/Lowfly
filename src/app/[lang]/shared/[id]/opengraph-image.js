@@ -1,10 +1,8 @@
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { APP_NAME, getDictionary } from "@/i18n";
 import { getPlacePhoto } from "@/server/placePhotos";
 import { getPhotos } from "@/server/photos";
-import { loadDisplayFonts, OG_SIZE, OgLogo } from "@/server/openGraph";
+import { asJpeg, loadDisplayFonts, OG_SIZE, OgLogo, photoForImage } from "@/server/openGraph";
 import { getSharedTrip } from "@/server/sharedTrips";
 import { createFormat } from "@/utils/format";
 
@@ -12,23 +10,21 @@ import { createFormat } from "@/utils/format";
 // who shares it, the destination and the trip in one line. Without a photo (or once the link is off), the
 // landing's Positano at dusk.
 export const size = OG_SIZE;
-export const contentType = "image/png";
+export const contentType = "image/jpeg";
+// A day in the CDN: WhatsApp and the like get it at once (a trip's dates and name rarely change)
+const MAX_AGE = 86400;
 export const alt = APP_NAME;
 
-const fallbackPhoto = async () => {
-  const photo = await readFile(join(process.cwd(), "public/hero-night-1800.jpg"));
-  return `data:image/jpeg;base64,${photo.toString("base64")}`;
-};
-
-// The destination's photo; a trip planned by hand, its first town's
+// The destination's photo (a trip planned by hand: its first town's), ready for the image
 const photoOf = async (trip, lang) => {
   const firstStop = trip?.manual ? trip.stops?.[0] : null;
   const code = trip?.fare.code;
+  let src = null;
   try {
-    if (firstStop) return (await getPlacePhoto(firstStop, lang))?.src ?? (await fallbackPhoto());
-    if (code) return (await getPhotos([code]))[code]?.src ?? (await fallbackPhoto());
+    if (firstStop) src = (await getPlacePhoto(firstStop, lang))?.src;
+    else if (code) src = (await getPhotos([code]))[code]?.src;
   } catch {}
-  return fallbackPhoto();
+  return photoForImage(src);
 };
 
 // "23 – 27 Oct · 4 nights · 5-day itinerary"
@@ -53,7 +49,7 @@ const SharedTripImage = async ({ params }) => {
   // Long names (a trip through several towns) get smaller
   const titleSize = title.length > 28 ? 60 : title.length > 16 ? 76 : 96;
 
-  return new ImageResponse(
+  const image = new ImageResponse(
     (
       <div style={{ position: "relative", display: "flex", width: "100%", height: "100%", background: "#0b1016", color: "white" }}>
         <img src={photoSrc} alt="" width={1200} height={630} style={{ position: "absolute", left: 0, top: 0, width: 1200, height: 630, objectFit: "cover" }} />
@@ -106,6 +102,7 @@ const SharedTripImage = async ({ params }) => {
     ),
     { ...size, fonts }
   );
+  return asJpeg(image, MAX_AGE);
 };
 
 export default SharedTripImage;

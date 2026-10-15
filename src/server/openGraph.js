@@ -1,6 +1,10 @@
 // Shared by the preview images of shared links (app/[lang]/opengraph-image.js and the shared trips'):
-// their size, the logo and the display font.
+// their size, the logo, the display font, the photos and the JPEG they are sent as.
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
+import sharp from "sharp";
 import { APP_NAME } from "@/i18n";
+import { UA } from "@/server/commons";
 
 export const OG_SIZE = { width: 1200, height: 630 };
 
@@ -43,4 +47,36 @@ export const loadDisplayFonts = async (text) => {
     { name: "Bricolage Grotesque", data: regular, weight: 400, style: "normal" },
     { name: "Bricolage Grotesque", data: bold, weight: 800, style: "normal" },
   ];
+};
+
+// The landing's Positano at dusk: the photo when there is no other
+export const FALLBACK_PHOTO = "public/hero-night-1800.jpg";
+
+const PHOTO_TIMEOUT_MS = 4000;
+
+const dataUrl = (bytes, type) => `data:${type};base64,${Buffer.from(bytes).toString("base64")}`;
+
+// A photo as a data URL, ready for the image: downloaded here (Wikimedia wants to know who asks, and a photo that
+// does not come in time must not leave the preview without picture), or the fallback one
+export const photoForImage = async (src) => {
+  if (src) {
+    try {
+      const response = await fetch(src, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(PHOTO_TIMEOUT_MS) });
+      const type = response.headers.get("content-type") ?? "";
+      if (response.ok && /image\/(jpeg|png)/.test(type)) return dataUrl(await response.arrayBuffer(), type.split(";")[0]);
+    } catch {}
+  }
+  return dataUrl(await readFile(join(process.cwd(), FALLBACK_PHOTO)), "image/jpeg");
+};
+
+// WhatsApp and others drop previews over ~300 KB, and a photo as PNG weighs over 1 MB: send it as JPEG (~100 KB).
+// `maxAge`: how long CDNs may keep it (seconds).
+export const asJpeg = async (imageResponse, maxAge) => {
+  const jpeg = await sharp(Buffer.from(await imageResponse.arrayBuffer())).jpeg({ quality: 82, mozjpeg: true }).toBuffer();
+  return new Response(jpeg, {
+    headers: {
+      "content-type": "image/jpeg",
+      "cache-control": `public, max-age=${Math.min(maxAge, 3600)}, s-maxage=${maxAge}, stale-while-revalidate=${maxAge * 7}`,
+    },
+  });
 };

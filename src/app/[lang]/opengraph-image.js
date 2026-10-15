@@ -2,12 +2,12 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { APP_NAME, getDictionary } from "@/i18n";
-import { loadDisplayFonts, OG_SIZE, OgLogo } from "@/server/openGraph";
+import { asJpeg, loadDisplayFonts, OG_SIZE, OgLogo } from "@/server/openGraph";
 
 // The picture shown when a link to Lowfly is shared (WhatsApp, Slack, X…), in the link's language:
-// the landing's Positano at dusk, the logo, the headline and what the app does. Made once per language at build.
+// the landing's Positano at dusk, the logo, the headline and what the app does. As JPEG (server/openGraph).
 export const size = OG_SIZE;
-export const contentType = "image/png";
+export const contentType = "image/jpeg";
 export const alt = `${APP_NAME} · Positano`;
 
 const OpenGraphImage = async ({ params }) => {
@@ -18,7 +18,7 @@ const OpenGraphImage = async ({ params }) => {
   const [firstLine, secondLine] = header.title.split("\n");
   const fonts = await loadDisplayFonts(`${header.title}${header.kicker}${header.kicker.toUpperCase()}${header.photoCreditNight}`);
 
-  return new ImageResponse(
+  const image = new ImageResponse(
     (
       <div style={{ position: "relative", display: "flex", width: "100%", height: "100%", background: "#0b1016", color: "white" }}>
         <img src={photoSrc} alt="" width={1200} height={800} style={{ position: "absolute", left: 120, top: -120, width: 1200, height: 800, objectFit: "cover" }} />
@@ -53,6 +53,8 @@ const OpenGraphImage = async ({ params }) => {
     ),
     { ...size, fonts }
   );
+  // The same every day: a week in the CDN
+  return asJpeg(image, 7 * 86400);
 };
 
 export default OpenGraphImage;

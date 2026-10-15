@@ -40,7 +40,9 @@ test.describe("sharing", () => {
   test("its preview image and its title", async ({ page, request }) => {
     const image = await request.get(`/es/shared/${shareId}/opengraph-image`);
     expect(image.status()).toBe(200);
-    expect(image.headers()["content-type"]).toBe("image/png");
+    // JPEG and light: WhatsApp drops previews over ~300 KB
+    expect(image.headers()["content-type"]).toBe("image/jpeg");
+    expect((await image.body()).length).toBeLessThan(300_000);
     await page.goto(`/es/shared/${shareId}`);
     await expect(page).toHaveTitle(/Roma · 3 noches/);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);

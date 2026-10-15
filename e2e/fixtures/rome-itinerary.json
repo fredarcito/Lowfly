@@ -1,0 +1,694 @@
+{
+  "source": "ai",
+  "lang": "es",
+  "createdAt": "2026-10-14T15:57:28.857Z",
+  "preferences": {
+    "pace": "balanced",
+    "interests": [
+      "culture",
+      "food"
+    ],
+    "transport": "transit",
+    "checkIn": "15:00"
+  },
+  "days": [
+    {
+      "date": "2026-11-13",
+      "title": "Llegada, equipaje y centro histórico",
+      "mode": "transit",
+      "stops": [
+        {
+          "time": "07:30",
+          "type": "llegada",
+          "title": "Llegada al aeropuerto de Ciampino",
+          "note": "Sigue las señales hacia los autobuses. Desde aquí sale el bus lanzadera a Termini.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": {
+            "name": "Aeroporto di Roma-Ciampino",
+            "lat": 41.799547,
+            "lng": 12.5912711
+          }
+        },
+        {
+          "time": "08:00",
+          "type": "transporte",
+          "title": "Bus lanzadera a Stazione Termini",
+          "note": "Bus Terravision o SIT, unos 45-50 min. Compra el billete en la máquina o en la web.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": "Unos 6 € el bus",
+          "place": null
+        },
+        {
+          "time": "09:15",
+          "type": "logistica",
+          "title": "Dejar el equipaje en consigna",
+          "note": "Consigna en Termini, unos 8 € por maleta. Así puedes ver la ciudad hasta las 15:00.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": "Unos 8 € por maleta",
+          "place": {
+            "name": "Stazione Roma Termini",
+            "lat": 41.8996176,
+            "lng": 12.50625
+          }
+        },
+        {
+          "time": "09:45",
+          "type": "comida",
+          "title": "Desayuno en Sant'Eustachio",
+          "note": "Cafetería histórica cerca del Panteón. Pide el café espresso y la granita.",
+          "why": null,
+          "lookFor": null,
+          "food": "Espresso con crema de café o granita de café con nata.",
+          "cost": "Unos 5 €",
+          "place": {
+            "name": "Caffè Sant'Eustachio",
+            "lat": 41.8935363,
+            "lng": 12.4761738
+          }
+        },
+        {
+          "time": "10:30",
+          "type": "imprescindible",
+          "title": "Panteón de Agripa",
+          "note": "Entrada gratuita. A veces hay cola corta en la puerta; ve a primera hora.",
+          "why": "Templo romano con la cúpula de hormigón más grande de la Antigüedad. Es imprescindible para cualquier primera visita.",
+          "lookFor": "El óculo abierto en el centro de la cúpula, por donde entra la luz.",
+          "food": null,
+          "cost": "Gratis",
+          "place": {
+            "name": "Pantheon",
+            "lat": 41.898616,
+            "lng": 12.4768334
+          },
+          "history": "El Panteón de Agripa o Panteón de Roma es un antiguo templo romano —en la actualidad, consagrado como iglesia católica—, situado en la ciudad de Roma, Italia, en el lugar de un templo construido por Marco Agripa durante el gobierno de Augusto y que resultó destruido por un incendio acaecido en el año 80. Más tarde, lo volvió a levantar el emperador Adriano, aunque la fecha de construcción es incierta porque optó por mantener la inscripción del edificio primitivo en el que figuraba Agripa como promotor. El nombre procede del griego Pántheion (en griego: Πάνθειον), que significa «templo de todos los dioses». La mayoría de los autores latinos emplean la forma latina de su transliteración, Pantheon.",
+          "sources": [
+            {
+              "title": "Wikipedia: Panteón de Agripa",
+              "url": "https://es.wikipedia.org/wiki/Pante%C3%B3n_de_Agripa"
+            }
+          ]
+        },
+        {
+          "time": "11:30",
+          "type": "recomendado",
+          "title": "Plaza Navona",
+          "note": "Los cafés de la plaza son caros; mejor comer en una trattoria de las calles cercanas.",
+          "why": "Plaza barroca construida sobre el antiguo estadio de Domiciano. Es un buen lugar para pasear y ver artistas callejeros.",
+          "lookFor": "La Fuente de los Cuatro Ríos de Bernini en el centro de la plaza.",
+          "food": null,
+          "cost": "Gratis",
+          "place": {
+            "name": "Piazza Navona",
+            "lat": 41.89888889,
+            "lng": 12.47305556
+          },
+          "history": "La plaza Navona (Piazza Navona en italiano) es uno de los espacios urbanos más destacados de Roma, que reúne esculturas, fuentes y edificios de gran valor artístico y supone un centro de la vida social, cultural y turística de la ciudad. Este espacio ha constituido un emplazamiento de importancia desde la Antigua Roma, en la que se levantaba allí un estadio para competiciones deportivas y combates de gladiadores.",
+          "sources": [
+            {
+              "title": "Wikipedia: Plaza Navona",
+              "url": "https://es.wikipedia.org/wiki/Plaza_Navona"
+            }
+          ]
+        },
+        {
+          "time": "13:00",
+          "type": "comida",
+          "title": "Almuerzo en Supplizio",
+          "note": "Pizzería romana sencilla. Pide el supplì y la pizza al corte.",
+          "why": null,
+          "lookFor": null,
+          "food": "Supplì al telefono y pizza romana al corte.",
+          "cost": "Unos 15 € por persona",
+          "place": {
+            "name": "Supplizio",
+            "lat": 41.8974708,
+            "lng": 12.467903
+          }
+        },
+        {
+          "time": "14:00",
+          "type": "transporte",
+          "title": "Metro a Termini para recoger el equipaje",
+          "note": "Metro línea A o B hasta Termini. El billete ATAC cuesta 1,50 €.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": "Unos 1,50 €",
+          "place": null
+        },
+        {
+          "time": "15:00",
+          "type": "logistica",
+          "title": "Registro en el alojamiento (en el centro)",
+          "note": "Si llegas antes de la hora, espera o deja el equipaje hasta que te den la habitación.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": null
+        },
+        {
+          "time": "16:30",
+          "type": "imprescindible",
+          "title": "Fontana di Trevi",
+          "note": "Muy concurrida. Ve al atardecer o a primera hora de la mañana para evitar la multitud.",
+          "why": "La fuente barroca más famosa de Roma, diseñada por Nicola Salvi y terminada en el siglo XVIII con escultura marina.",
+          "lookFor": "Las monedas lanzadas con la mano derecha por encima del hombro izquierdo.",
+          "food": null,
+          "cost": "Gratis",
+          "place": {
+            "name": "Fontana di Trevi",
+            "lat": 41.90093225,
+            "lng": 12.48331264
+          },
+          "history": "La Fontana de Trevi (en italiano Fontana di Trevi), con casi 50 metros de frente, es una de las mayores fuentes monumentales del Barroco en Roma (Italia). Según la actual división administrativa del centro de Roma, está situada en el rione de Trevi. Ubicada en la fachada trasera del Palacio Poli, está estructurada como un arco de triunfo.",
+          "sources": [
+            {
+              "title": "Wikipedia: Fontana di Trevi",
+              "url": "https://es.wikipedia.org/wiki/Fontana_di_Trevi"
+            }
+          ]
+        },
+        {
+          "time": "20:00",
+          "type": "comida",
+          "title": "Cena en Roscioli",
+          "note": "Restaurante histórico y salumería. Reserva con antelación.",
+          "why": null,
+          "lookFor": null,
+          "food": "Cacio e pepe o carbonara, y tabla de embutidos y quesos.",
+          "cost": "Unos 35 € por persona",
+          "place": {
+            "name": "Roscioli",
+            "lat": 41.8941094,
+            "lng": 12.5028572
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Vaticano y Trastévere",
+      "mode": "transit",
+      "stops": [
+        {
+          "time": "08:00",
+          "type": "comida",
+          "title": "Desayuno en Forno Campo de' Fiori",
+          "note": "Panadería tradicional junto a la plaza del mercado.",
+          "why": null,
+          "lookFor": null,
+          "food": "Pizza bianca rellena o cornetto con crema.",
+          "cost": "Unos 4 €",
+          "place": {
+            "name": "Forno Campo de' Fiori",
+            "lat": 41.8958016,
+            "lng": 12.4715199
+          }
+        },
+        {
+          "time": "08:45",
+          "type": "transporte",
+          "title": "Metro línea A hasta Ottaviano",
+          "note": "Billete ATAC 1,50 €. Después, 15 min a pie hasta la basílica.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": "Unos 1,50 €",
+          "place": null
+        },
+        {
+          "time": "09:30",
+          "type": "imprescindible",
+          "title": "Basílica de San Pedro",
+          "note": "Entrada gratuita, con control de seguridad. Cubre hombros y rodillas.",
+          "why": "La basílica más grande de la cristiandad, con obras de Miguel Ángel y Bernini. Se puede subir a la cúpula.",
+          "lookFor": "La Piedad de Miguel Ángel, tras un cristal a la derecha de la entrada.",
+          "food": null,
+          "cost": "Gratis; cúpula unos 10 €",
+          "place": {
+            "name": "Basilica di San Pietro in Vaticano",
+            "lat": 41.9021569,
+            "lng": 12.4537105
+          },
+          "history": "La basílica papal de San Pedro (en latín: Basilica Sancti Petri; en italiano: Basilica Papale di San Pietro), conocida comúnmente como basílica de San Pedro, es un templo católico situado en la Ciudad del Vaticano. La basílica cuenta con el mayor espacio interior de una iglesia cristiana en el mundo, presenta 193 m de longitud, 44,5 m de altura, y abarca una superficie de 2,3 hectáreas.[cita requerida] La altura que le confiere su cúpula hace que su figura domine el horizonte de Roma. Es considerada como uno de los lugares más sagrados del catolicismo.",
+          "sources": [
+            {
+              "title": "Wikipedia: Basílica de San Pedro",
+              "url": "https://es.wikipedia.org/wiki/Bas%C3%ADlica_de_San_Pedro"
+            }
+          ]
+        },
+        {
+          "time": "11:30",
+          "type": "imprescindible",
+          "title": "Capilla Sixtina en los Museos Vaticanos",
+          "note": "Reserva entrada online con antelación. Sigue la ruta hasta la capilla.",
+          "why": "Capilla papal con los frescos de Miguel Ángel en el techo y el Juicio Final en el altar.",
+          "lookFor": "El fresco de La Creación de Adán en el techo.",
+          "food": null,
+          "cost": "Unos 20 €",
+          "place": {
+            "name": "Cappella Sistina",
+            "lat": 41.90305556,
+            "lng": 12.45444444
+          },
+          "history": "La Capilla Sixtina es una capilla del Palacio Apostólico de la Ciudad del Vaticano, la residencia oficial del papa. Es la estancia más conocida del conjunto palaciego y también forma parte de los Museos Vaticanos. Originalmente servía como capilla de la fortaleza vaticana y era conocida como Cappella Magna.",
+          "sources": [
+            {
+              "title": "Wikipedia: Capilla Sixtina",
+              "url": "https://es.wikipedia.org/wiki/Capilla_Sixtina"
+            }
+          ]
+        },
+        {
+          "time": "13:00",
+          "type": "comida",
+          "title": "Almuerzo en Pizzarium",
+          "note": "Pizza al corte muy famosa. Puede haber cola; ve a mediodía.",
+          "why": null,
+          "lookFor": null,
+          "food": "Pizza al corte con ingredientes creativos.",
+          "cost": "Unos 10 €",
+          "place": {
+            "name": "Pizzarium",
+            "lat": 41.9066975,
+            "lng": 12.4466606
+          }
+        },
+        {
+          "time": "14:30",
+          "type": "transporte",
+          "title": "Paseo hasta el Castillo de Sant'Angelo",
+          "note": "Unos 10 min a pie por la Via della Conciliazione.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": null
+        },
+        {
+          "time": "15:00",
+          "type": "recomendado",
+          "title": "Castel Sant'Angelo",
+          "note": "Cierra los lunes. La entrada cuesta unos 15 €.",
+          "why": "Antiguo mausoleo del emperador Adriano, convertido en fortaleza y museo con vistas al Tíber.",
+          "lookFor": "La terraza superior con vistas a la cúpula de San Pedro.",
+          "food": null,
+          "cost": "Unos 15 €",
+          "place": {
+            "name": "Castel Sant'Angelo",
+            "lat": 41.903044,
+            "lng": 12.466307
+          },
+          "history": "El Castillo de Sant'Angelo (en italiano: Castel Sant'Angelo) o Mausoleo de Adriano (en italiano: mausoleo di Adriano), conocido entre los siglos x y xii como Mole Adrianorum o Castellum Crescentii, es un monumento de Roma (Italia), situado en la orilla derecha del Tíber, frente al Pons Aelius (actual Puente Sant'Angelo), a poca distancia del Vaticano, entre el rione de Borgo y el de Prati. Dedicado al Arcángel San Miguel, está unido a la Ciudad del Vaticano a través del pasillo fortificado denominado Passetto. El castillo ha sido modificado radicalmente varias veces en las épocas medieval y renacentista.",
+          "sources": [
+            {
+              "title": "Wikipedia: Castillo de Sant'Angelo",
+              "url": "https://es.wikipedia.org/wiki/Castillo_de_Sant%27Angelo"
+            }
+          ]
+        },
+        {
+          "time": "17:00",
+          "type": "transporte",
+          "title": "Paseo al Trastévere cruzando el Tíber",
+          "note": "Unos 25 min a pie por el Ponte Sant'Angelo.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": null
+        },
+        {
+          "time": "17:30",
+          "type": "recomendado",
+          "title": "Santa Maria in Trastevere",
+          "note": "Entrada gratuita. Ideal para un descanso en la plaza de enfrente.",
+          "why": "Una de las primeras iglesias de Roma dedicadas a la Virgen, con mosaicos medievales.",
+          "lookFor": "Los mosaicos dorados del ábside con la Virgen y Cristo.",
+          "food": null,
+          "cost": "Gratis",
+          "place": {
+            "name": "Santa Maria in Trastevere",
+            "lat": 41.8894229,
+            "lng": 12.469501
+          },
+          "history": "La basílica de Santa María en Trastévere (Basilica di Santa Maria in Trastevere en italiano) es una iglesia de Roma, la más importante del barrio Trastévere. Fundada en el siglo III por el papa Calixto I, la iglesia fue después renovada durante el papado de Inocencio II (1130-1143). La fachada, que conserva en la parte superior un mosaico del siglo XIII, está precedida por el pórtico proyectado por Carlo Fontana en 1702.",
+          "sources": [
+            {
+              "title": "Wikipedia: Basílica de Santa María en Trastevere",
+              "url": "https://es.wikipedia.org/wiki/Bas%C3%ADlica_de_Santa_Mar%C3%ADa_en_Trastevere"
+            }
+          ]
+        },
+        {
+          "time": "20:00",
+          "type": "comida",
+          "title": "Cena en Da Enzo al 29",
+          "note": "Trattoria tradicional de Trastévere. Reserva con antelación.",
+          "why": null,
+          "lookFor": null,
+          "food": "Carciofi alla giudia, cacio e pepe y coda alla vaccinara.",
+          "cost": "Unos 35 € por persona",
+          "place": {
+            "name": "Da Enzo al 29",
+            "lat": 41.8880864,
+            "lng": 12.477807
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "title": "Foro, Coliseo y Testaccio",
+      "mode": "transit",
+      "stops": [
+        {
+          "time": "08:30",
+          "type": "comida",
+          "title": "Desayuno en Pasticceria Regoli",
+          "note": "Pastelería histórica cerca de Termini, abierta desde 1916.",
+          "why": null,
+          "lookFor": null,
+          "food": "Bomboloni o cornetto con crema.",
+          "cost": "Unos 5 €",
+          "place": {
+            "name": "Pasticceria Regoli",
+            "lat": 41.8948568,
+            "lng": 12.5009038
+          }
+        },
+        {
+          "time": "09:15",
+          "type": "transporte",
+          "title": "Metro línea B hasta Colosseo",
+          "note": "Billete ATAC 1,50 €, unos 10 min desde Termini.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": "Unos 1,50 €",
+          "place": null
+        },
+        {
+          "time": "09:30",
+          "type": "imprescindible",
+          "title": "Coliseo",
+          "note": "Reserva entrada online con franja horaria. Combinada con Foro y Palatino.",
+          "why": "El anfiteatro romano más grande del mundo, símbolo de la ciudad y de su historia imperial.",
+          "lookFor": "La zona de la arena y los sótanos del hipogeo visibles desde la grada.",
+          "food": null,
+          "cost": "Unos 18 € entrada combinada",
+          "place": {
+            "name": "Colosseo",
+            "lat": 41.89027778,
+            "lng": 12.49222222
+          },
+          "history": "El Coliseo o Anfiteatro Flavio (en latín Colosseum, en italiano Colosseo) es un anfiteatro de la época del Imperio romano, construido en el siglo I. Está ubicado en el este del Foro Romano y fue el mayor de los que se construyeron en el Imperio romano. Conocido originalmente como Anfiteatro Flavio, Amphitheatrum Flavium, a partir de la Edad Media pasó a ser llamado Coliseo porque a su lado había una gran estatua dedicada al emperador Nerón, el Coloso de Nerón, «Colossus», que Adriano había transformado en una representación de Helios, el dios Sol. De este «Colossus Solis» derivó el nombre actual del edificio. La estatua llegó a desaparecer. Los materiales utilizados en la construcción de esta obra fueron bloques de travertino, hormigón, madera, ladrillo, piedra (toba), mármol y estuco.",
+          "sources": [
+            {
+              "title": "Wikipedia: Coliseo",
+              "url": "https://es.wikipedia.org/wiki/Coliseo"
+            }
+          ]
+        },
+        {
+          "time": "11:00",
+          "type": "imprescindible",
+          "title": "Foro Romano",
+          "note": "Misma entrada que el Coliseo. Incluye la subida al Palatino.",
+          "why": "Corazón político y religioso de la Roma antigua, con templos, basílicas y plazas.",
+          "lookFor": "El Arco de Tito con sus relieves del triunfo sobre Jerusalén.",
+          "food": null,
+          "cost": "Incluido en la entrada combinada",
+          "place": {
+            "name": "Foro Romano",
+            "lat": 41.8922,
+            "lng": 12.4852
+          },
+          "history": "El Foro Romano, también conocido por su nombre en latín, Forum Romanum, es un foro rectangular situado en el centro de la ciudad de Roma y rodeado por las ruinas de varios edificios antiguos. Los ciudadanos de la ciudad antigua se referían a este espacio, que originalmente era un mercado, como el Forum Magnum, o simplemente como el Forum. Durante siglos, el Foro fue el centro de la vida diaria de Roma: lugar de celebración de procesiones triunfales y elecciones; escenario de discursos públicos, juicios penales y combates de gladiadores; y núcleo de los asuntos comerciales. Aquí numerosas estatuas y monumentos conmemoraban a los líderes de la ciudad.",
+          "sources": [
+            {
+              "title": "Wikipedia: Foro Romano",
+              "url": "https://es.wikipedia.org/wiki/Foro_Romano"
+            }
+          ]
+        },
+        {
+          "time": "12:30",
+          "type": "transporte",
+          "title": "Autobús o taxi hasta Testaccio",
+          "note": "Unos 15 min. Billete ATAC 1,50 € en autobús.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": "Unos 1,50 €",
+          "place": null
+        },
+        {
+          "time": "13:00",
+          "type": "comida",
+          "title": "Almuerzo en Da Felice a Testaccio",
+          "note": "Trattoria histórica. Reserva con antelación.",
+          "why": null,
+          "lookFor": null,
+          "food": "Cacio e pepe o rigatoni con pajata.",
+          "cost": "Unos 30 € por persona",
+          "place": {
+            "name": "Da Felice a Testaccio",
+            "lat": 41.8785014,
+            "lng": 12.4774658
+          }
+        },
+        {
+          "time": "15:00",
+          "type": "transporte",
+          "title": "Paseo al Aventino y Bocca della Verità",
+          "note": "Unos 20 min a pie hasta la Piazza della Bocca della Verità.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": null
+        },
+        {
+          "time": "15:30",
+          "type": "recomendado",
+          "title": "Bocca della Verità",
+          "note": "Cola corta casi siempre. Entrada gratuita al pórtico y unos 0,50 € para la boca.",
+          "why": "Mascarón de mármol del siglo XIII en el pórtico de Santa Maria in Cosmedin, ligado a una leyenda medieval.",
+          "lookFor": "La boca abierta donde se dice que no se puede mentir.",
+          "food": null,
+          "cost": "Unos 0,50 €",
+          "place": {
+            "name": "Bocca della Verità",
+            "lat": 41.8882567,
+            "lng": 12.4815441
+          },
+          "history": "La Boca de la verdad (en italiano: Bocca della Verità) es una antigua máscara de mármol pavonazzetto, colocada en la pared del pronaos de la Iglesia de Santa Maria in Cosmedin, construida sobre un antiguo templo de Hércules en Roma el año 1632. La escultura, datable alrededor del siglo I, tiene un diámetro de 1,75 metros y representa un rostro masculino con barba en el cual los ojos, la nariz y la boca están perforados y huecos. No se tiene una completa certeza de a quién es que representa dicho rostro, aunque algunas fuentes sugieren que podría tratarse del dios Neptuno (Poseidón). Tampoco se tiene certeza acerca de su utilidad antigua: si era una fuente, la salida de agua de un compluvium o incluso una cloaca (hipótesis surgida a raíz de su cercanía a la Cloaca Máxima). En cambio, se sabe que la máscara goza de fama antigua y legendaria: se presume que este sea el objeto mencionado en el siglo XI en los Mirabilia Urbis Romae, donde se lee: Un texto alemán del siglo XII describe detalladamente cómo, desde detrás de la boca, el diablo −autodenominándose Mercurio (dios del comercio, pero también de los embrollos)− aferró por largo rato la mano de Juliano el Apóstata (que había engañado a una mujer y ante aquel ídolo debía jurar su buena fe), prometiéndole lavar su reputación y una gran fortuna si volvía al antiguo esplendor del paganismo (actualmente dodecateísmo o helenismo).",
+          "sources": [
+            {
+              "title": "Wikipedia: Bocca della Verità",
+              "url": "https://es.wikipedia.org/wiki/Bocca_della_Verit%C3%A0"
+            }
+          ]
+        },
+        {
+          "time": "16:15",
+          "type": "opcional",
+          "title": "Termas de Caracalla",
+          "note": "Entrada unos 12 €. Llega con cómodo calzado; el recorrido es amplio.",
+          "why": "Enormes ruinas de unas termas romanas, con mosaicos y salas de gran escala.",
+          "lookFor": "Los restos de mosaicos del suelo en las salas.",
+          "food": null,
+          "cost": "Unos 12 €",
+          "place": {
+            "name": "Terme di Caracalla",
+            "lat": 41.880264,
+            "lng": 12.492764
+          },
+          "history": "Las termas de Caracalla, o termas Antoninas, fueron las segundas termas más grandes de la ciudad de Roma. El complejo hidráulico fue construido entre los años 212 y 217, durante el reinado de los emperadores Septimio Severo y Caracalla. Continuaron en funcionamiento hasta la guerra gótica en 537, cuando se cortaron los suministros de agua y se abandonaron, y posteriormente la estructura fue destruida en gran medida durante el terremoto de 847.",
+          "sources": [
+            {
+              "title": "Wikipedia: Termas de Caracalla",
+              "url": "https://es.wikipedia.org/wiki/Termas_de_Caracalla"
+            }
+          ]
+        },
+        {
+          "time": "18:45",
+          "type": "transporte",
+          "title": "Metro línea B hasta Colosseo y paseo al Panteón",
+          "note": "Billete ATAC 1,50 €. Después, 15 min a pie.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": "Unos 1,50 €",
+          "place": null
+        },
+        {
+          "time": "19:30",
+          "type": "comida",
+          "title": "Cena en Armando al Pantheon",
+          "note": "Trattoria familiar muy tradicional. Reserva con antelación.",
+          "why": null,
+          "lookFor": null,
+          "food": "Amatriciana, saltimbocca alla romana o carciofi.",
+          "cost": "Unos 40 € por persona",
+          "place": {
+            "name": "Armando al Pantheon",
+            "lat": 41.8990605,
+            "lng": 12.476199
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "title": "Villa Borghese, Trinidad de los Montes y adiós",
+      "mode": "transit",
+      "stops": [
+        {
+          "time": "08:30",
+          "type": "comida",
+          "title": "Desayuno en Sant'Eustachio",
+          "note": "Cafetería histórica cerca del Panteón.",
+          "why": null,
+          "lookFor": null,
+          "food": "Espresso con crema o granita de café.",
+          "cost": "Unos 5 €",
+          "place": {
+            "name": "Caffè Sant'Eustachio",
+            "lat": 41.8935363,
+            "lng": 12.4761738
+          }
+        },
+        {
+          "time": "08:50",
+          "type": "transporte",
+          "title": "Metro línea A hasta Spagna y paseo a Villa Borghese",
+          "note": "Billete ATAC 1,50 €. Después, 20 min a pie o subida en la escalera mecánica.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": "Unos 1,50 €",
+          "place": null
+        },
+        {
+          "time": "09:30",
+          "type": "imprescindible",
+          "title": "Galleria Borghese",
+          "note": "Reserva obligatoria con franja horaria. La visita dura unas 2 horas.",
+          "why": "Villa con una gran colección de esculturas de Bernini y pinturas de Caravaggio.",
+          "lookFor": "El Rapto de Proserpina de Bernini en la sala central.",
+          "food": null,
+          "cost": "Unos 15 € más tasa de reserva",
+          "place": {
+            "name": "Galleria Borghese",
+            "lat": 41.91421,
+            "lng": 12.492144
+          },
+          "history": "La Galería Borghese (del italiano: Galleria Borghese) es un museo de arte situado en los jardines de Villa Borghese, Roma. El edificio de la Galería se encuentra enclavado en los jardines de Villa Borghese, cuyo conjunto conformaba anteriormente la Villa Borghese Pinciana, propiedad de la familia homónima. La Galería Borghese conserva una parte sustancial de la colección Borghese de pintura, escultura y antigüedades, la cual fue iniciada por el cardenal Scipione Borghese (1576 – 1633), sobrino del papa Paulo V (papado: 1605–1621).",
+          "sources": [
+            {
+              "title": "Wikipedia: Galería Borghese",
+              "url": "https://es.wikipedia.org/wiki/Galer%C3%ADa_Borghese"
+            }
+          ]
+        },
+        {
+          "time": "11:45",
+          "type": "recomendado",
+          "title": "Scalinata di Trinità dei Monti",
+          "note": "Gratis. Se puede sentar en los escalones, pero hay mucha gente.",
+          "why": "Escalinata barroca que une la Plaza de España con la iglesia de Trinità dei Monti.",
+          "lookFor": "La Fontana della Barcaccia al pie de las escaleras.",
+          "food": null,
+          "cost": "Gratis",
+          "place": {
+            "name": "Scalinata di Trinità dei Monti",
+            "lat": 41.90611,
+            "lng": 12.48278
+          },
+          "history": "La Escalinata de la plaza de España (en italiano: Scalinata di Trinità dei Monti) es una escalera escenográfica situada en Roma, Italia. De estilo rococó, fue erigida entre los años 1723-1725 según el diseño de Francesco De Sanctis y Alessandro Specchi. Las escaleras conectan la plaza de España con la iglesia de Trinità dei Monti.",
+          "sources": [
+            {
+              "title": "Wikipedia: Escalinata de la plaza de España",
+              "url": "https://es.wikipedia.org/wiki/Escalinata_de_la_plaza_de_Espa%C3%B1a"
+            }
+          ]
+        },
+        {
+          "time": "12:15",
+          "type": "recomendado",
+          "title": "Santa Maria sopra Minerva",
+          "note": "Entrada gratuita. Cubre hombros y rodillas.",
+          "why": "Única iglesia gótica de Roma, con frescos y la tumba de Fra Angelico.",
+          "lookFor": "La bóveda azul estrellada sobre el altar mayor.",
+          "food": null,
+          "cost": "Gratis",
+          "place": {
+            "name": "Santa Maria sopra Minerva",
+            "lat": 41.8979835,
+            "lng": 12.4783622
+          },
+          "history": "Santa María sobre Minerva (en italiano: Santa Maria sopra Minerva) es una de las basílicas menores de Roma (Italia). La iglesia, ubicada en la zona del Campo de Marte, está considerada la única iglesia gótica de Roma, y después de Santa Sabina la principal iglesia de los dominicos en la ciudad. La basílica recibe su nombre de la tradición según la cual, como muchas otras basílicas de los primeros tiempos del cristianismo, está construida sobre (sopra) un templo pagano, dedicado a la diosa Minerva.",
+          "sources": [
+            {
+              "title": "Wikipedia: Santa María sobre Minerva",
+              "url": "https://es.wikipedia.org/wiki/Santa_Mar%C3%ADa_sobre_Minerva"
+            }
+          ]
+        },
+        {
+          "time": "13:00",
+          "type": "comida",
+          "title": "Almuerzo en Da Francesco",
+          "note": "Restaurante histórico en Campo de' Fiori. Reserva con antelación.",
+          "why": null,
+          "lookFor": null,
+          "food": "Pasta romana y bistecca alla fiorentina.",
+          "cost": "Unos 25 € por persona",
+          "place": {
+            "name": "Da Francesco",
+            "lat": 41.8993181,
+            "lng": 12.4704034
+          }
+        },
+        {
+          "time": "14:30",
+          "type": "transporte",
+          "title": "Autobús a Termini y lanzadera al aeropuerto",
+          "note": "Autobús a Termini desde Largo Argentina; luego lanzadera Terravision o SIT, unos 45-50 min.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": "Unos 6 € el bus",
+          "place": null
+        },
+        {
+          "time": "16:45",
+          "type": "logistica",
+          "title": "Llegada al aeropuerto de Ciampino",
+          "note": "Llega 2 horas antes del vuelo de las 19:00. Facturación y control de seguridad.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": {
+            "name": "Aeroporto di Roma-Ciampino",
+            "lat": 41.799547,
+            "lng": 12.5912711
+          }
+        }
+      ]
+    }
+  ]
+}

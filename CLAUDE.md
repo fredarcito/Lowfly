@@ -32,3 +32,12 @@ These apply to every file of the project (except shadcn's `src/components/ui/`).
 - When logic is cleaner as a hook (state, effects, fetching, derived data), write the hook and keep the
   component to rendering.
 - Hooks used by one component live in its `hooks/` folder; hooks used across the app live in `src/hooks/`.
+
+## Tests
+- Browser tests live in `e2e/` (Playwright): `pnpm test:e2e` runs them all, `pnpm test:e2e:quick` leaves out the
+  ones tagged `@live` (real searches at Ryanair and Wizz: slow, and they depend on the airlines answering).
+  `pnpm test:e2e:report` opens the last report. They use the dev server on port 3001 (started if it is not running).
+- Every page in a test fails on an uncaught error or a console error (`e2e/helpers/test.js`).
+- Dates are counted from today (`dayFromNow`), never fixed. Tests that need an account create a temporary one
+  and delete it (`e2e/helpers/accounts.js`; needs the Supabase secret key in `.env.local`).
+- A change to a flow comes with its test, or an update to the existing one.

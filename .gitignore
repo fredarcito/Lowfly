@@ -3,3 +3,7 @@ node_modules
 .vercel
 .env*.local
 .env*
+
+# Playwright reports and failure traces
+/e2e/report
+/e2e/results

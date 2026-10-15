@@ -1,0 +1,368 @@
+{
+  "source": "ai",
+  "lang": "es",
+  "createdAt": "2026-10-14T19:08:23.595Z",
+  "preferences": {
+    "pace": "balanced",
+    "interests": [
+      "culture",
+      "food"
+    ],
+    "transport": "transit",
+    "checkIn": "15:00"
+  },
+  "days": [
+    {
+      "date": "2026-11-13",
+      "city": "Florencia",
+      "title": "Centro Histórico y la Cuna del Renacimiento",
+      "mode": "walking",
+      "stops": [
+        {
+          "time": "10:00",
+          "type": "llegada",
+          "title": "Llegada a Florencia",
+          "note": "Deja las maletas en una consigna cerca de la estación Santa Maria Novella antes de comenzar.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": {
+            "name": "Firenze Santa Maria Novella",
+            "lat": 43.7775719,
+            "lng": 11.2474177
+          }
+        },
+        {
+          "time": "10:30–12:00",
+          "type": "imprescindible",
+          "title": "Basilica di Santa Maria del Fiore",
+          "note": "Reserva tu entrada con antelación si deseas subir a la cúpula, se agotan rápido.",
+          "why": "Es el símbolo indiscutible de la ciudad y una de las iglesias más grandes de la cristiandad.",
+          "lookFor": "El complejo contraste de mármoles blanco, verde y rosa de la fachada.",
+          "food": null,
+          "cost": "Gratis (catedral), entrada de pago para cúpula/museo",
+          "place": {
+            "name": "Cattedrale di Santa Maria del Fiore",
+            "lat": 43.7731015,
+            "lng": 11.2565742
+          },
+          "history": "La basílica catedral metropolitana de Santa María de la Flor (en italiano: Cattedrale di Santa Maria del Fiore), es la sede episcopal (en italiano, duomo) de la arquidiócesis de Florencia, Italia. Es una de las obras maestras de la primera arquitectura renacentista del Renacimiento italiano. Símbolo de la riqueza y del poder de la capital toscana durante los siglos XIII y siglo XIV, la catedral florentina es uno de los edificios más grandes de la cristiandad.",
+          "sources": [
+            {
+              "title": "Wikipedia: Catedral de Santa María del Fiore",
+              "url": "https://es.wikipedia.org/wiki/Catedral_de_Santa_Mar%C3%ADa_del_Fiore"
+            }
+          ]
+        },
+        {
+          "time": "12:00–13:30",
+          "type": "comida",
+          "title": "Almuerzo cerca de Piazza della Repubblica",
+          "note": "Busca una 'trattoria' tradicional en las calles laterales para evitar precios turísticos.",
+          "why": null,
+          "lookFor": null,
+          "food": "Pici al ragù o una Bistecca alla Fiorentina.",
+          "cost": "20-40 €",
+          "place": null
+        },
+        {
+          "time": "13:30–15:00",
+          "type": "recomendado",
+          "title": "Mercato Centrale",
+          "note": "Un lugar vibrante para ver productos locales y la vida diaria florentina.",
+          "why": "Es el corazón gastronómico de la ciudad, ideal para observar ingredientes frescos.",
+          "lookFor": "El edificio de hierro fundido del siglo XIX.",
+          "food": null,
+          "cost": "Gratis",
+          "place": {
+            "name": "Mercato Centrale",
+            "lat": 43.77666667,
+            "lng": 11.25333333
+          },
+          "history": "El Mercado central de Florencia (en italiano: Mercato Centrale di Firenze; también llamado Mercato di San Lorenzo o Mercado de San Lorenzo) es un espacio comercial en Florencia que se encuentra entre la vía dell'Ariento, vía de Sant'Antonino, vía de Panicale y la Piazza del Mercato Centrale (plaza del mercado central). Es uno de los resultados de la época del Risanamento, el período en que Florencia fue la capital de Italia a finales del siglo XIX. La inauguración tuvo lugar en 1874 con la Exposición Internacional de Agricultura. Con el crecimiento de la población y la destrucción del viejo mercado para dar paso a la Plaza de la República, el mercado en la Loggia del Porcellino, ya no era suficiente para la ciudad por lo que se planificaron 3 espacios cubiertos: San Lorenzo, el mercado de San Ambrosio, y un tercero en San Frediano, éste jamás se hizo.",
+          "sources": [
+            {
+              "title": "Wikipedia: Mercado central de Florencia",
+              "url": "https://es.wikipedia.org/wiki/Mercado_central_de_Florencia"
+            }
+          ]
+        },
+        {
+          "time": "15:00",
+          "type": "logistica",
+          "title": "Check-in en el alojamiento",
+          "note": "Dirígete al centro para hacer el registro.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": null
+        },
+        {
+          "time": "16:00–18:00",
+          "type": "imprescindible",
+          "title": "Galleria degli Uffizi",
+          "note": "Reserva tu entrada online semanas antes; es obligatorio para evitar filas masivas.",
+          "why": "Alberga la colección de pintura renacentista más importante del mundo.",
+          "lookFor": "El 'Nacimiento de Venus' de Botticelli.",
+          "food": null,
+          "cost": "Desde 12-25 € según temporada",
+          "place": {
+            "name": "Galleria degli Uffizi",
+            "lat": 43.76833333,
+            "lng": 11.25527778
+          },
+          "history": "La Galería Uffizi (del italiano: Galleria degli Uffizi) es un palacio y museo de Florencia que posee una de las más antiguas e importantes colecciones de arte del mundo. Es una de las atracciones turísticas más visitadas de Florencia y la pinacoteca más concurrida de Italia, que en 2019 recibió 2,8 millones de visitantes. Si bien tiene obras representativas de hasta veinte siglos atrás (como piezas romanas y griegas del siglo I a. C., así como colecciones de la Edad Media y modernas), Uffizi es famosa por sus obras maestras del Trecento, el Prerrenacimiento, el Renacimiento y el Barroco, de artistas italianos como Giotto, Cimabue, Fra Angelico, Fra Filippo Lippi, Piero della Francesca, Sandro Botticelli, Domenico Ghirlandaio, Rafael, Miguel Ángel, Leonardo Da Vinci, Tiziano y Caravaggio, entre muchos otros. Cuenta también con importantes ejemplos de otras escuelas artísticas europeas, de maestros como Hugo van der Goes, Rogier van der Weyden, Rubens, Rembrandt y Goya.",
+          "sources": [
+            {
+              "title": "Wikipedia: Galería Uffizi",
+              "url": "https://es.wikipedia.org/wiki/Galer%C3%ADa_Uffizi"
+            }
+          ]
+        },
+        {
+          "time": "20:00",
+          "type": "comida",
+          "title": "Cena cerca del Ponte Vecchio",
+          "note": "Reserva con tiempo, es una zona muy popular al atardecer.",
+          "why": null,
+          "lookFor": null,
+          "food": "Ribollita (sopa toscana) o vino Chianti local.",
+          "cost": "30-50 €",
+          "place": null
+        }
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "city": "Florencia → Venecia",
+      "title": "Florencia → Venecia",
+      "mode": "transit",
+      "stops": [
+        {
+          "time": "08:00",
+          "type": "comida",
+          "title": "Desayuno en pastelería local",
+          "note": "Toma un café rápido de pie en la barra como un auténtico italiano.",
+          "why": null,
+          "lookFor": null,
+          "food": "Cornetto y un cappuccino.",
+          "cost": "5-8 €",
+          "place": null
+        },
+        {
+          "time": "08:30–09:00",
+          "type": "transporte",
+          "title": "Salida a Venecia",
+          "note": "Dirígete a la estación ferroviaria con tiempo para tu tren.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": {
+            "name": "Firenze Santa Maria Novella",
+            "lat": 43.7775719,
+            "lng": 11.2474177
+          }
+        },
+        {
+          "time": "11:30",
+          "type": "llegada",
+          "title": "Llegada a Venezia Santa Lucia",
+          "note": "La estación principal; sal y disfruta la vista del Gran Canal de inmediato.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": {
+            "name": "Stazione di Venezia Santa Lucia",
+            "lat": 45.4415912,
+            "lng": 12.3212402
+          }
+        },
+        {
+          "time": "12:00–13:30",
+          "type": "comida",
+          "title": "Almuerzo cerca de la estación",
+          "note": "Busca un 'bacaro' (bar de vinos) por el barrio de Cannaregio para probar cicchetti.",
+          "why": null,
+          "lookFor": null,
+          "food": "Cicchetti (tapas venecianas) con una copa de vino local (ombra).",
+          "cost": "15-25 EUR",
+          "place": null
+        },
+        {
+          "time": "13:30–14:30",
+          "type": "recomendado",
+          "title": "Iglesia de Santa Maria dei Miracoli",
+          "note": "Es una joya del Renacimiento temprano, menos concurrida.",
+          "why": "Es conocida como la 'iglesia de mármol' por su exterior completamente revestido de mármol policromado.",
+          "lookFor": "Los detalles finos de las incrustaciones de mármol en la fachada.",
+          "food": null,
+          "cost": "3 EUR",
+          "place": {
+            "name": "Chiesa di Santa Maria dei Miracoli",
+            "lat": 45.43943,
+            "lng": 12.3392
+          },
+          "history": "La iglesia de Santa María de los Milagros (en italiano: Chiesa di Santa Maria dei Miracoli) sita en la ciudad de Venecia (Véneto, Italia) es un templo católico de estilo renacentista construido entre los años 1481 y 1489, que fue proyectado por Pietro Lombardo con la finalidad de dar una ubicación digna a la imagen de la Virgen María venerada en ese lugar desde el 1408.",
+          "sources": [
+            {
+              "title": "Wikipedia: Iglesia de Santa María de los Milagros (Venecia)",
+              "url": "https://es.wikipedia.org/wiki/Iglesia_de_Santa_Mar%C3%ADa_de_los_Milagros_(Venecia)"
+            }
+          ]
+        },
+        {
+          "time": "15:00",
+          "type": "logistica",
+          "title": "Check-in en el alojamiento",
+          "note": "Registro en tu hotel o apartamento en el centro histórico.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": null
+        },
+        {
+          "time": "16:00–17:30",
+          "type": "imprescindible",
+          "title": "Piazza San Marco y Basílica",
+          "note": "Reserva tu entrada online para evitar las largas colas de espera.",
+          "why": "Es el centro religioso y político histórico de la República de Venecia, mostrando su riqueza pasada.",
+          "lookFor": "Los mosaicos dorados que cubren el techo del interior.",
+          "food": null,
+          "cost": "Gratis (acceso plaza), pago (basílica)",
+          "place": {
+            "name": "Basilica di San Marco",
+            "lat": 45.4345479,
+            "lng": 12.3398218
+          },
+          "history": "La basílica de San Marcos es el principal templo católico de la ciudad de Venecia (Italia) y la obra maestra de la arquitectura bizantina en el Véneto. Posee el rango de catedral y también el de iglesia patriarcal, además del de basílica.",
+          "sources": [
+            {
+              "title": "Wikipedia: Basílica de San Marcos",
+              "url": "https://es.wikipedia.org/wiki/Bas%C3%ADlica_de_San_Marcos"
+            }
+          ]
+        },
+        {
+          "time": "19:30–21:00",
+          "type": "comida",
+          "title": "Cena tradicional cerca de Rialto",
+          "note": "Evita los menús turísticos con fotos; busca callejones laterales.",
+          "why": null,
+          "lookFor": null,
+          "food": "Sarde in saor (sardinas agridulces) o risotto al nero di seppia.",
+          "cost": "30-50 EUR",
+          "place": null
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "city": "Venecia",
+      "title": "Arte y Cultura en Dorsoduro",
+      "mode": "transit",
+      "stops": [
+        {
+          "time": "09:00–10:00",
+          "type": "comida",
+          "title": "Desayuno veneciano",
+          "note": "Un café y un 'focaccia' o pastelería local cerca del hotel.",
+          "why": null,
+          "lookFor": null,
+          "food": "Cappuccino y pasteles (frittelle si es temporada).",
+          "cost": "5-10 EUR",
+          "place": null
+        },
+        {
+          "time": "10:30–12:30",
+          "type": "imprescindible",
+          "title": "Gallerie dell'Accademia",
+          "note": "Compra entradas con antelación para no perder tiempo.",
+          "why": "Alberga la colección más importante de pintura veneciana, esencial para entender el arte local.",
+          "lookFor": "La 'Tempestad' de Giorgione.",
+          "food": null,
+          "cost": "12-15 EUR",
+          "place": {
+            "name": "Gallerie dell'Accademia",
+            "lat": 45.4313662,
+            "lng": 12.3280919
+          },
+          "history": "Galería de la Academia puede referirse a: la Galería de la Academia, museo de arte situado en Venecia; la Galería de la Academia, museo de arte de Florencia. la Galería de la Academia, museo de arte de Napolés. la Galería de la Academia, museo de arte de la Academia de San Lucas, Roma.",
+          "sources": [
+            {
+              "title": "Wikipedia: Galería de la Academia",
+              "url": "https://es.wikipedia.org/wiki/Galer%C3%ADa_de_la_Academia"
+            }
+          ]
+        },
+        {
+          "time": "12:30–13:00",
+          "type": "transporte",
+          "title": "Vaporetto a Dorsoduro",
+          "note": "Cruza el Gran Canal en el vaporetto público.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": "9.50 EUR (billete único)",
+          "place": {
+            "name": "Accademia (vaporetto)",
+            "lat": 45.431684,
+            "lng": 12.3289497
+          }
+        },
+        {
+          "time": "13:00–14:30",
+          "type": "comida",
+          "title": "Almuerzo en Campo Santa Margherita",
+          "note": "Zona universitaria, precios más amigables y ambiente auténtico.",
+          "why": null,
+          "lookFor": null,
+          "food": "Pasta fresca o pizza al taglio.",
+          "cost": "15-20 EUR",
+          "place": null
+        },
+        {
+          "time": "15:00–16:30",
+          "type": "recomendado",
+          "title": "Scuola Grande di San Rocco",
+          "note": "A menudo olvidada por turistas masivos, es una joya artística.",
+          "why": "Contiene una colección impresionante de pinturas de Tintoretto que cubren paredes y techos.",
+          "lookFor": "El techo de la Sala dell'Albergo.",
+          "food": null,
+          "cost": "10 EUR",
+          "place": {
+            "name": "Scuola Grande di San Rocco",
+            "lat": 45.436571,
+            "lng": 12.325309
+          },
+          "history": "La Escuela Grande de San Roque («Scuola Grande di San Rocco» en italiano) se encuentra en el campo de San Roque, en el distrito de San Polo de Venecia (Véneto, Italia). Era una confraternidad formada por ciudadanos venecianos en 1478 que se hizo particularmente próspera a principios del siglo XVI. Fue creada para asistir a los ciudadanos en tiempos de peste. San Roque, cuyas reliquias se guardan en la vecina iglesia de San Roque, fue declarado santo patrón de la ciudad en 1576.",
+          "sources": [
+            {
+              "title": "Wikipedia: Escuela Grande de San Roque",
+              "url": "https://es.wikipedia.org/wiki/Escuela_Grande_de_San_Roque"
+            }
+          ]
+        },
+        {
+          "time": "17:00",
+          "type": "transporte",
+          "title": "Salida hacia la estación",
+          "note": "Calcula tiempo suficiente para llegar al vaporetto y la estación de tren.",
+          "why": null,
+          "lookFor": null,
+          "food": null,
+          "cost": null,
+          "place": {
+            "name": "Stazione di Venezia Santa Lucia",
+            "lat": 45.4415912,
+            "lng": 12.3212402
+          }
+        }
+      ]
+    }
+  ]
+}

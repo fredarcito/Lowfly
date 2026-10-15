@@ -27,20 +27,24 @@ const TripList = () => {
         <div className="grid gap-1">
           <h1 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">{texts.trips.title}</h1>
           <p className="text-muted-foreground sm:text-lg">{texts.trips.subtitle}</p>
+          {/* Desktop: one small line, part of the header */}
+          {onlyHere && <LocalTripsNotice inline className="mt-1.5 max-md:hidden" />}
         </div>
-        <div className="grid justify-items-stretch gap-1.5 max-sm:w-full sm:justify-items-end">
-          <Button asChild variant="outline" className="h-10 font-semibold">
-            <Link href={ROUTES.newTrip(lang)} aria-describedby="plan-trip-hint">
-              <Plus /> {texts.trips.manual.add}
-            </Link>
-          </Button>
-          <p id="plan-trip-hint" className="max-w-64 text-xs text-muted-foreground max-sm:mx-auto max-sm:text-center sm:text-right">
+        {/* Planning a trip by hand, outlined (coral is for each trip's itinerary). Phones and tablets: what it
+            does, then the button across; desktop: the button beside the title, the line under it */}
+        <div className="grid gap-2 max-md:w-full md:justify-items-end md:gap-1.5">
+          <p id="plan-trip-hint" className="text-sm text-muted-foreground md:order-2 md:max-w-64 md:text-right md:text-xs">
             {texts.trips.manual.addHint}
           </p>
+          <Button asChild variant="outline" className="group h-12 font-semibold md:order-1 md:h-10">
+            <Link href={ROUTES.newTrip(lang)} aria-describedby="plan-trip-hint">
+              <Plus className="transition-transform duration-300 group-hover:rotate-90" /> {texts.trips.manual.add}
+            </Link>
+          </Button>
         </div>
       </div>
 
-      {onlyHere && <LocalTripsNotice />}
+      {onlyHere && <LocalTripsNotice className="md:hidden" />}
 
       {upcoming.length ? (
         <div className="grid gap-3">

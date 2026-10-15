@@ -29,12 +29,12 @@ test.describe("account", () => {
       await openWith(page, "/es/trips", { trips: [trip] });
       await expect(header.getByRole("link", { name: /Entrar/ })).toBeVisible();
       // Signed out with trips: they are only in this browser, and the page says so
-      await expect(page.getByText("Solo están guardados en este navegador")).toBeVisible();
+      await expect(page.getByText("Guardados en este navegador").filter({ visible: true })).toBeVisible();
 
       await signIn(page, user);
       await page.reload();
       await expect(header.getByRole("button", { name: /Tu cuenta/ })).toBeVisible();
-      await expect(page.getByText("Solo están guardados en este navegador")).toHaveCount(0);
+      await expect(page.getByText("Guardados en este navegador")).toHaveCount(0);
       await expect.poll(async () => (await accountTrips(user)).map((row) => row.id)).toEqual(["guest-trip"]);
 
       // Marked as booked here: the account has it too

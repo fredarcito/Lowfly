@@ -1,12 +1,12 @@
 "use client";
 
 import { Plane } from "lucide-react";
-import { usePhoto } from "@/hooks/usePhoto";
+import { useTripPhoto } from "@/hooks/useTripPhoto";
 import { cn } from "@/utils/cn";
 
-// Destination photo over a sea-to-coral gradient (a plane while there is none). `children` sit on top.
-const TripPhoto = ({ code, className, children }) => {
-  const photo = usePhoto(code);
+// The trip's photo (the destination's; a trip planned by hand, its first town's) over a sea-to-coral gradient (a plane while there is none). `children` sit on top.
+const TripPhoto = ({ trip, className, children }) => {
+  const photo = useTripPhoto(trip);
   return (
     <div
       className={cn(

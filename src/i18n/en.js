@@ -186,7 +186,11 @@ const en = {
       addStop: "Add another town",
       summary: (towns, days) => `${plural(towns, "town", "towns")}${days ? ` · ${plural(days, "day", "days")}` : ""}`,
       createHint: "Then you pick your pace and interests and the AI plans the itinerary. The time is optional: without it we plan the whole day.",
-      create: "Create trip",
+      steps: { route: "Route", style: "Your style" },
+      step: (number, total) => `Step ${number} of ${total}`,
+      next: "Next",
+      back: "Back",
+      skip: "I'll create it later",
       errors: {
         city: "Pick the town from the list.",
         dates: "Add the day you arrive and the day you leave.",

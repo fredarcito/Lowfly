@@ -2,15 +2,15 @@
 
 import PhotoCredit from "@/components/shared/PhotoCredit";
 import { useI18n } from "@/context/i18n";
-import { usePhoto } from "@/hooks/usePhoto";
+import { useTripPhoto } from "@/hooks/useTripPhoto";
 
 // The destination photo behind the header, blended into its dark background: on the right on desktop
 // (fading to the left and down, so the text stays on plain dark), dimmed behind the text on phones.
 // In the dark theme it is also darkened, so the white text and the buttons on top of it always read.
-// The © in the corner credits it, as its licence requires.
-const TripBackdrop = ({ code }) => {
+// The © in the corner credits it, as its licence requires. A trip planned by hand shows its first town.
+const TripBackdrop = ({ trip }) => {
   const { texts } = useI18n();
-  const photo = usePhoto(code);
+  const photo = useTripPhoto(trip);
   if (!photo) return null;
   return (
     <>

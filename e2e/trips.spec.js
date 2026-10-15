@@ -90,4 +90,18 @@ test.describe("my trips", () => {
     await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
     await expect(page.getByRole("heading", { level: 1 })).toContainText("Catania");
   });
+
+  // A trip planned by hand anywhere (no airport of ours nearby): the first town's photo, from Wikipedia
+  test("a trip planned by hand shows its first town's photo @live", async ({ page }) => {
+    const trip = manualTrip({ id: "colombia-test" });
+    trip.stops = [
+      { ...trip.stops[0], city: "Cúcuta", country: "Colombia", countryCode: "CO", lat: 7.89391, lng: -72.50782, code: null },
+      { ...trip.stops[1], city: "Pamplona", country: "Colombia", countryCode: "CO", lat: 7.37565, lng: -72.64795, code: null },
+    ];
+    trip.fare = { ...trip.fare, code: null, city: "Cúcuta → Pamplona", country: "Colombia" };
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    await expect(page.locator("header img[src*='wikimedia']").first()).toHaveAttribute("src", /C%C3%BAcuta/, { timeout: 30_000 });
+    await page.goto("/es/trips");
+    await expect(page.locator("article img[src*='wikimedia']").first()).toBeVisible({ timeout: 30_000 });
+  });
 });

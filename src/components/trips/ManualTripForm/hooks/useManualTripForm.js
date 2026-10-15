@@ -2,11 +2,11 @@
 
 import { useRef, useState } from "react";
 import { problemsOf, savedStops, tripDaysOf } from "@/utils/manualTrips";
-import { saveManualTrip } from "@/store/trips";
+import { changeManualTrip, saveManualTrip } from "@/store/trips";
 
 // The towns of a trip planned by hand, in order (each: place, arrival and departure day and time), what is wrong
-// with them once the visitor tries to create it, and creating it: `create()` saves the trip and returns its id,
-// or null when something has to be fixed first.
+// with them once the visitor tries to go on, and saving them: `save(id)` saves the trip (or, with the id of the one
+// saved before, changes it) and returns its id, or null when something has to be fixed first.
 export const useManualTripForm = () => {
   const nextKey = useRef(1);
   const newStop = (arriveDay = "") => ({ key: nextKey.current++, place: null, arriveDay, arriveTime: "", leaveDay: "", leaveTime: "" });
@@ -19,9 +19,12 @@ export const useManualTripForm = () => {
   // The next town starts the day you leave the last one
   const add = () => setStops((current) => [...current, newStop(current.at(-1).leaveDay)]);
 
-  const create = () => {
+  const save = (savedId) => {
     setSubmitted(true);
-    return problems.valid ? saveManualTrip(savedStops(stops)) : null;
+    if (!problems.valid) return null;
+    if (!savedId) return saveManualTrip(savedStops(stops));
+    changeManualTrip(savedId, savedStops(stops));
+    return savedId;
   };
 
   return {
@@ -29,7 +32,7 @@ export const useManualTripForm = () => {
     change,
     remove,
     add,
-    create,
+    save,
     tripDays: tripDaysOf(stops),
     // Shown only after the first try
     problemOf: (index) => (submitted ? problems.each[index] : null),

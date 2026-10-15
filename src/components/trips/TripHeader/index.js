@@ -20,7 +20,7 @@ const TripHeader = ({ trip, onDeleted }) => {
 
   return (
     <div className="grid gap-3">
-      <TripBackdrop code={fare.code} />
+      <TripBackdrop trip={trip} />
 
       <div className="flex items-start justify-between gap-4">
         <Link

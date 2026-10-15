@@ -186,7 +186,11 @@ const es = {
       addStop: "Añadir otra ciudad",
       summary: (towns, days) => `${plural(towns, "ciudad", "ciudades")}${days ? ` · ${plural(days, "día", "días")}` : ""}`,
       createHint: "Después eliges tu ritmo e intereses y la IA crea el itinerario. La hora es opcional: sin ella planeamos el día entero.",
-      create: "Crear viaje",
+      steps: { route: "Ruta", style: "Tu estilo" },
+      step: (number, total) => `Paso ${number} de ${total}`,
+      next: "Siguiente",
+      back: "Atrás",
+      skip: "Prefiero crearlo después",
       errors: {
         city: "Elige la ciudad de la lista.",
         dates: "Pon el día en que llegas y el día en que te vas.",

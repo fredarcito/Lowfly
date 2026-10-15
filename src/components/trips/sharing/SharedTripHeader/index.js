@@ -19,7 +19,7 @@ const SharedTripHeader = ({ trip, savedTrip, owner }) => {
 
   return (
     <div className="grid gap-3">
-      <TripBackdrop code={fare.code} />
+      <TripBackdrop trip={trip} />
 
       <div className="flex flex-wrap items-center justify-between gap-3">
         <SharedBy owner={owner} />

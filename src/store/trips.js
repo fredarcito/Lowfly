@@ -82,12 +82,11 @@ export const saveTrip = (origin, fare) => {
 // stops: [{ city, region, country, countryCode, lat, lng, code, arrive: { day, time }, leave: { day, time } }]
 // It has no flights: `fare` sums it up like a saved flight (first arrival, last departure, the towns), so the
 // lists, the header and the itinerary treat both kinds alike.
-export const saveManualTrip = (stops) => {
+const manualFare = (stops) => {
   const first = stops[0];
   const last = stops.at(-1);
-  const id = `manual-${Date.now().toString(36)}`;
   const countries = [...new Set(stops.map((stop) => stop.country).filter(Boolean))];
-  const fare = {
+  return {
     // For the photo: the first town with an airport near it
     code: stops.find((stop) => stop.code)?.code ?? null,
     city: stops.map((stop) => stop.city).join(" → "),
@@ -97,10 +96,17 @@ export const saveManualTrip = (stops) => {
     ret: { day: last.leave.day, time: last.leave.time },
     nights: nightsBetween(first.arrive.day, last.leave.day),
   };
-  const trip = { id, manual: true, origin: null, stops, fare, savedAt: new Date().toISOString(), booked: false, itinerary: null };
+};
+
+export const saveManualTrip = (stops) => {
+  const id = `manual-${Date.now().toString(36)}`;
+  const trip = { id, manual: true, origin: null, stops, fare: manualFare(stops), savedAt: new Date().toISOString(), booked: false, itinerary: null };
   write(sortTrips([...readTrips(), trip]));
   return id;
 };
+
+// The same trip with other towns (back in the form before its itinerary exists)
+export const changeManualTrip = (id, stops) => write(sortTrips(readTrips().map((saved) => (saved.id === id ? { ...saved, stops, fare: manualFare(stops) } : saved))));
 
 // A trip someone shared, kept as one of the visitor's own (same id: saving it twice does not duplicate it).
 // It starts as theirs: nothing visited, not booked, not shared.

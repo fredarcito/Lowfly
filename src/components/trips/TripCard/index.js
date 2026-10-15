@@ -23,7 +23,7 @@ const TripCard = ({ trip: savedTrip }) => {
 
   return (
     <article className="group relative grid overflow-hidden rounded-xl bg-card ring-1 ring-foreground/10 transition-shadow [grid-template-areas:'photo''info''stats''actions'] hover:shadow-lg hover:ring-foreground/20 md:grid-cols-[11rem_minmax(0,1fr)_auto] md:[grid-template-areas:'photo_info_actions''photo_stats_stats'] lg:grid-cols-[13rem_minmax(0,1fr)_auto]">
-      <TripPhoto code={fare.code} className="h-40 [grid-area:photo] md:m-3 md:mr-0 md:h-auto md:rounded-lg" />
+      <TripPhoto trip={trip} className="h-40 [grid-area:photo] md:m-3 md:mr-0 md:h-auto md:rounded-lg" />
 
       <div className="grid content-start gap-2 px-4 pt-4 [grid-area:info] md:px-5">
         <h2 className="font-heading text-xl leading-tight font-bold tracking-tight sm:text-2xl">

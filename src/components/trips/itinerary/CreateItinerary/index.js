@@ -1,6 +1,6 @@
 "use client";
 
-import { Loader2, Sparkles } from "lucide-react";
+import { ArrowLeft, Loader2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ErrorNote from "@/components/shared/ErrorNote";
 import ItineraryPreferences from "@/components/trips/itinerary/ItineraryPreferences";
@@ -12,8 +12,9 @@ import { ROUTES } from "@/constants/routes";
 
 // No itinerary yet: what the AI makes, the visitor's preferences and the button to create it.
 // Same layout as the search form: labelled fields in equal columns, then a note and the button.
-// `creation`: { status: "idle" | "creating" | "error", error } while the AI works on it
-const CreateItinerary = ({ trip, onCreate, creation }) => {
+// `creation`: { status: "idle" | "creating" | "error", error } while the AI works on it.
+// In the wizard of a trip planned by hand: `onBack` (to the route) and `onSkip` (create it later).
+const CreateItinerary = ({ trip, onCreate, creation, onBack, onSkip }) => {
   const { lang, texts } = useI18n();
   const needsAccount = useNeedsAccount(creation.error);
   const preferences = useItineraryPreferences(trip);
@@ -42,11 +43,28 @@ const CreateItinerary = ({ trip, onCreate, creation }) => {
           <p className="text-sm text-muted-foreground" aria-live="polite">
             {creating ? texts.trips.aiCreating : texts.trips.aiNote}
           </p>
-          <Button size="lg" disabled={creating} className="h-11 shrink-0 px-6 text-base font-bold" onClick={() => onCreate(preferences.preferences)}>
-            {creating ? <Loader2 className="animate-spin" /> : <Sparkles />}
-            {creating ? texts.trips.aiGenerating : texts.trips.aiGenerate}
-          </Button>
+          <div className="flex shrink-0 flex-col-reverse gap-2 sm:flex-row">
+            {onBack && (
+              <Button variant="outline" size="lg" disabled={creating} className="h-11 px-5 font-semibold" onClick={onBack}>
+                <ArrowLeft /> {texts.trips.manual.back}
+              </Button>
+            )}
+            <Button size="lg" disabled={creating} className="h-11 px-6 text-base font-bold" onClick={() => onCreate(preferences.preferences)}>
+              {creating ? <Loader2 className="animate-spin" /> : <Sparkles />}
+              {creating ? texts.trips.aiGenerating : texts.trips.aiGenerate}
+            </Button>
+          </div>
         </div>
+      )}
+
+      {onSkip && (
+        <button
+          type="button"
+          onClick={onSkip}
+          className="-mt-1 w-fit justify-self-center text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground sm:justify-self-end"
+        >
+          {texts.trips.manual.skip}
+        </button>
       )}
     </section>
   );

@@ -2,6 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { APP_NAME, getDictionary } from "@/i18n";
+import { getPlacePhoto } from "@/server/placePhotos";
 import { getPhotos } from "@/server/photos";
 import { loadDisplayFonts, OG_SIZE, OgLogo } from "@/server/openGraph";
 import { getSharedTrip } from "@/server/sharedTrips";
@@ -19,14 +20,15 @@ const fallbackPhoto = async () => {
   return `data:image/jpeg;base64,${photo.toString("base64")}`;
 };
 
-const photoOf = async (code) => {
-  if (!code) return fallbackPhoto();
+// The destination's photo; a trip planned by hand, its first town's
+const photoOf = async (trip, lang) => {
+  const firstStop = trip?.manual ? trip.stops?.[0] : null;
+  const code = trip?.fare.code;
   try {
-    const photos = await getPhotos([code]);
-    return photos[code]?.src ?? (await fallbackPhoto());
-  } catch {
-    return fallbackPhoto();
-  }
+    if (firstStop) return (await getPlacePhoto(firstStop, lang))?.src ?? (await fallbackPhoto());
+    if (code) return (await getPhotos([code]))[code]?.src ?? (await fallbackPhoto());
+  } catch {}
+  return fallbackPhoto();
 };
 
 // "23 – 27 Oct · 4 nights · 5-day itinerary"
@@ -47,7 +49,7 @@ const SharedTripImage = async ({ params }) => {
   const kicker = shared ? texts.share.sharedBy(shared.owner.name) : texts.share.goneTitle;
   const title = trip ? trip.fare.city : APP_NAME;
   const line = trip ? tripLine(trip, texts, format) : "";
-  const [photoSrc, fonts] = await Promise.all([photoOf(trip?.fare.code), loadDisplayFonts(`${kicker}${title}${line}`)]);
+  const [photoSrc, fonts] = await Promise.all([photoOf(trip, lang), loadDisplayFonts(`${kicker}${title}${line}`)]);
   // Long names (a trip through several towns) get smaller
   const titleSize = title.length > 28 ? 60 : title.length > 16 ? 76 : 96;
 

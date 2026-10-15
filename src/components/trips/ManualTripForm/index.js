@@ -1,30 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { ArrowLeft, Plus, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import FieldAlert from "@/components/shared/FieldAlert";
-import StopCard from "@/components/trips/StopCard";
-import { useI18n } from "@/context/i18n";
+import { ArrowLeft } from "lucide-react";
+import RouteStep from "@/components/trips/ManualTripForm/components/RouteStep";
+import StyleStep from "@/components/trips/ManualTripForm/components/StyleStep";
+import TripSteps from "@/components/trips/ManualTripForm/components/TripSteps";
 import { useManualTripForm } from "@/components/trips/ManualTripForm/hooks/useManualTripForm";
-import { MAX_STOPS, MAX_TRIP_DAYS } from "@/constants/manualTrips";
+import { useTripWizard } from "@/components/trips/ManualTripForm/hooks/useTripWizard";
+import { useI18n } from "@/context/i18n";
 import { ROUTES } from "@/constants/routes";
+import { cn } from "@/utils/cn";
 
-// Planning a trip by hand: the towns in order, each with when you arrive and leave (time optional).
-// Creating it saves the trip and opens it, where the visitor picks the pace and interests and the AI
-// plans the whole route. The towns and their checks live in useManualTripForm.
+// Planning a trip by hand, in two steps on the same page: the route (towns, days and times), then the style of
+// its itinerary, which the AI creates right here before the trip opens. Each step slides in from the side it
+// comes from. The towns live in useManualTripForm and the steps in useTripWizard.
 const ManualTripForm = () => {
   const { lang, texts } = useI18n();
-  const router = useRouter();
-  const trip = useManualTripForm();
+  const form = useManualTripForm();
+  const wizard = useTripWizard(form);
   const labels = texts.trips.manual;
-
-  const create = (event) => {
-    event.preventDefault();
-    const id = trip.create();
-    if (id) router.push(ROUTES.trip(lang, id));
-  };
 
   return (
     <>
@@ -36,38 +30,21 @@ const ManualTripForm = () => {
         <p className="max-w-[60ch] text-muted-foreground sm:text-lg">{labels.subtitle}</p>
       </div>
 
-      <form onSubmit={create} noValidate className="grid gap-4">
-        <ol className="grid gap-3">
-          {trip.stops.map((stop, index) => (
-            <StopCard
-              key={stop.key}
-              stop={stop}
-              number={index + 1}
-              firstDay={trip.stops[index - 1]?.leaveDay}
-              problem={trip.problemOf(index)}
-              onChange={(changes) => trip.change(stop.key, changes)}
-              onRemove={trip.stops.length > 1 ? () => trip.remove(stop.key) : null}
-            />
-          ))}
-        </ol>
+      <TripSteps steps={wizard.steps} current={wizard.stepIndex} />
 
-        {trip.stops.length < MAX_STOPS && (
-          <Button type="button" variant="outline" onClick={trip.add} className="h-11 w-full border-dashed font-semibold sm:w-fit sm:px-5">
-            <Plus /> {labels.addStop}
-          </Button>
+      <div
+        key={wizard.step}
+        className={cn(
+          "grid gap-4 duration-300 ease-out animate-in fade-in motion-reduce:animate-none",
+          wizard.direction > 0 ? "slide-in-from-right-8" : "slide-in-from-left-8"
         )}
-
-        <div className="flex flex-col gap-3 rounded-xl bg-card p-4 ring-1 ring-foreground/10 sm:flex-row sm:items-center sm:justify-between sm:p-5">
-          <div className="grid gap-0.5">
-            <p className="font-medium">{labels.summary(trip.stops.length, trip.tripDays)}</p>
-            <p className="text-sm text-muted-foreground">{labels.createHint}</p>
-            {trip.tooLong && <FieldAlert>{labels.errors.tooLong(MAX_TRIP_DAYS)}</FieldAlert>}
-          </div>
-          <Button type="submit" size="lg" className="h-11 shrink-0 px-6 text-base font-bold">
-            <Sparkles /> {labels.create}
-          </Button>
-        </div>
-      </form>
+      >
+        {wizard.step === "route" || !wizard.trip ? (
+          <RouteStep form={form} onNext={wizard.goToStyle} />
+        ) : (
+          <StyleStep trip={wizard.trip} onBack={wizard.goBack} />
+        )}
+      </div>
     </>
   );
 };

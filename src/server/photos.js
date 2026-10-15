@@ -3,8 +3,8 @@
 // several cities (Treviso: Venice and Treviso) the most populated one with a real photo wins.
 // Wikipedia: the article's lead image (curated, nicer than Wikidata's own image).
 // Wikimedia Commons: an 800 px thumbnail plus author and licence, needed to credit the photo.
-const UA = "Lowfly (https://lowfly-one.vercel.app)";
-const MONTH = 30 * 86400;
+export const UA = "Lowfly (https://lowfly-one.vercel.app)";
+export const MONTH = 30 * 86400;
 const cache = new Map(); // code → photo or null, for the life of the server instance
 
 const cityArticles = async (codes) => {
@@ -49,7 +49,8 @@ const leadImages = async (titles) => {
 
 const plain = (html = "") => html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
 
-const commons = async (files) => {
+// { file: { src, width, height, page, author, license } } for Commons files (also used by server/placePhotos)
+export const commons = async (files) => {
   const titles = files.map((file) => `File:${file}`).join("|");
   const response = await fetch(
     `https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=800&titles=${encodeURIComponent(titles)}`,

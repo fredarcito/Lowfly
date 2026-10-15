@@ -13,7 +13,8 @@ test.describe("trip planned by hand", () => {
   // Next month's days: always ahead of today
   const pickDates = async (page, number, firstDay, lastDay) => {
     await stopItem(page, number).locator("[id$=-dates]").click();
-    await page.getByRole("button", { name: /next|siguiente/i }).first().click();
+    // The calendar's own arrow (the form has a "Siguiente" button too)
+    await page.getByRole("button", { name: /mes siguiente|next month/i }).first().click();
     const day = (dayNumber) => page.locator("[role=gridcell] button, button[data-day]").filter({ hasText: new RegExp(`^${dayNumber}$`) }).first();
     await day(firstDay).click();
     await day(lastDay).click();
@@ -39,14 +40,8 @@ test.describe("trip planned by hand", () => {
     });
   }
 
-  test("checks the form, then saves the trip and opens it", async ({ page }) => {
-    await page.setViewportSize({ width: 1280, height: 1000 });
-    await openWith(page, "/es/trips");
-    await page.getByRole("link", { name: "Planear un viaje" }).first().click();
-    await page.waitForURL("**/trips/new");
-    await page.getByRole("button", { name: "Crear viaje" }).click();
-    await expect(page.getByRole("alert").first()).toBeVisible();
-
+  // Florence (13 → 15 of next month), then Venice (15 → 17); Venice arrives after leaving Florence
+  const fillRoute = async (page, veniceArrival = "11:30") => {
     await pickTown(page, 1, "flor", "Florencia");
     await pickDates(page, 1, 13, 15);
     await pickTime(page, 1, "arrive", "10:00");
@@ -54,14 +49,31 @@ test.describe("trip planned by hand", () => {
     await page.getByRole("button", { name: "Añadir otra ciudad" }).click();
     await pickTown(page, 2, "venecia", "Venecia");
     await pickDates(page, 2, 15, 17);
-    // Arriving in Venice before leaving Florence: not possible
-    await pickTime(page, 2, "arrive", "08:00");
-    await page.getByRole("button", { name: "Crear viaje" }).click();
+    await pickTime(page, 2, "arrive", veniceArrival);
+  };
+
+  const styleStep = (page) => page.locator('[aria-current="step"]', { hasText: "Tu estilo" });
+
+  test("step 1 checks the route, then saves the trip and goes on to its style", async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 1000 });
+    await openWith(page, "/es/trips");
+    await page.getByRole("link", { name: "Planear un viaje" }).first().click();
+    await page.waitForURL("**/trips/new");
+    await page.getByRole("button", { name: "Siguiente" }).click();
     await expect(page.getByRole("alert").first()).toBeVisible();
 
+    // Arriving in Venice before leaving Florence: not possible
+    await fillRoute(page, "08:00");
+    await page.getByRole("button", { name: "Siguiente" }).click();
+    await expect(page.getByRole("alert").first()).toBeVisible();
+    await expect(styleStep(page)).toHaveCount(0);
+
     await pickTime(page, 2, "arrive", "11:30");
-    await page.getByRole("button", { name: "Crear viaje" }).click();
-    await page.waitForURL(/trips\?id=manual-/);
+    await page.getByRole("button", { name: "Siguiente" }).click();
+    await expect(styleStep(page)).toBeVisible();
+    await expect(page.getByRole("button", { name: "Crear itinerario" })).toBeVisible();
+    // Same page; the trip is already saved
+    expect(page.url()).toMatch(/\/trips\/new$/);
     const [trip] = await savedTrips(page);
     expect(trip.manual).toBe(true);
     expect(trip.fare.city).toBe("Florencia → Venecia");
@@ -71,6 +83,44 @@ test.describe("trip planned by hand", () => {
       // Leaving Venice without a time: it is optional
       ["Venecia", "11:30", null],
     ]);
+  });
+
+  test("back to the route and on again changes the same trip; or leave the itinerary for later", async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 1000 });
+    await openWith(page, "/es/trips/new");
+    await fillRoute(page);
+    await page.getByRole("button", { name: "Siguiente" }).click();
+    await expect(styleStep(page)).toBeVisible();
+
+    await page.getByRole("button", { name: "Atrás" }).click();
+    // The towns are still there
+    await expect(stopItem(page, 2)).toContainText("Venecia");
+    await pickTime(page, 2, "arrive", "12:00");
+    await page.getByRole("button", { name: "Siguiente" }).click();
+    await expect(styleStep(page)).toBeVisible();
+    const trips = await savedTrips(page);
+    expect(trips).toHaveLength(1);
+    expect(trips[0].stops[1].arrive.time).toBe("12:00");
+
+    await page.getByRole("button", { name: "Prefiero crearlo después" }).click();
+    await page.waitForURL(/trips\?id=manual-/);
+    await expect(page.getByRole("button", { name: "Crear itinerario" })).toBeVisible();
+  });
+
+  test("the itinerary is created in step 2, then the trip opens with it", async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 1000 });
+    // The AI answers with a real itinerary after a moment
+    await page.route("**/api/itinerary", async (route) => {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      await route.fulfill({ json: FLORENCE_VENICE_ITINERARY });
+    });
+    await openWith(page, "/es/trips/new");
+    await fillRoute(page);
+    await page.getByRole("button", { name: "Siguiente" }).click();
+    await page.getByRole("button", { name: "Crear itinerario" }).click();
+    await expect(page.locator("section[role=status]")).toBeVisible();
+    await page.waitForURL(/trips\?id=manual-/);
+    await expect(page.getByRole("tab", { name: /Día 1/ })).toBeVisible();
   });
 
   for (const viewport of [DESKTOP, PHONE]) {

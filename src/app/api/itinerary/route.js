@@ -2,19 +2,35 @@ import { NextResponse } from "next/server";
 import { AppError, badRequest } from "@/server/errors";
 import { createItinerary, createStopsItinerary } from "@/server/itinerary";
 import { allow, release } from "@/server/rateLimit";
+import { supabaseServer } from "@/supabase/server";
 import { isDay } from "@/utils/dates";
 import { hasLocale } from "@/i18n/config";
 import { CHECK_IN_TIMES, DEFAULT_PREFERENCES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
 import { MAX_STOPS } from "@/constants/manualTrips";
+import { ITINERARY_LIMITS } from "@/constants/itineraryLimits";
 
 // A long itinerary can take a few minutes: the model (Claude when Gemini is busy) and checking every place
 export const maxDuration = 300;
 
-// Each visitor may create a few itineraries an hour (the AI costs money per call). Not in development,
-// where every request comes from the same "local" visitor.
-const PER_HOUR = 5;
-const LIMITED = process.env.NODE_ENV === "production";
-const HOUR = 3_600_000;
+// A few itineraries a day each (the AI costs money per call; constants/itineraryLimits): per person when signed in
+// (counted in Supabase, the same on every server), per IP otherwise (in this server's memory). Not in
+// development, where every request comes from the same "local" visitor, unless ITINERARY_LIMITS=on.
+const LIMITED = process.env.NODE_ENV === "production" || process.env.ITINERARY_LIMITS === "on";
+const DAY = 86_400_000;
+
+// The signed-in person (their id), from the session cookies, or null
+const signedInUser = async (supabase) => {
+  const { data } = await supabase.auth.getClaims();
+  return data?.claims?.sub ?? null;
+};
+
+// How many itineraries this person made in the last 24 hours
+const itinerariesToday = async (supabase) => {
+  const since = new Date(Date.now() - DAY).toISOString();
+  const { count, error } = await supabase.from("itinerary_requests").select("id", { count: "exact", head: true }).gte("created_at", since);
+  if (error) throw error;
+  return count;
+};
 
 const isTime = (value) => value == null || /^\d{2}:\d{2}$/.test(value);
 const isFlight = (flight) => flight && isDay(flight.day) && isTime(flight.time) && isTime(flight.arrive);
@@ -65,9 +81,14 @@ export const POST = async (request) => {
     }
     const lang = hasLocale(body.lang) ? body.lang : "es";
 
+    const supabase = await supabaseServer();
+    const userId = await signedInUser(supabase);
     const visitor = request.headers.get("x-forwarded-for")?.split(",")[0].trim() || "local";
     const limitKey = `itinerary:${visitor}`;
-    if (LIMITED && !allow(limitKey, PER_HOUR, HOUR)) throw new AppError("aiLimit", { max: PER_HOUR }, 429);
+    if (LIMITED && userId && (await itinerariesToday(supabase)) >= ITINERARY_LIMITS.userPerDay)
+      throw new AppError("aiLimit", { max: ITINERARY_LIMITS.userPerDay }, 429);
+    // Without an account: past the guest allowance, signing in gives more
+    if (LIMITED && !userId && !allow(limitKey, ITINERARY_LIMITS.guestPerDay, DAY)) throw new AppError("aiSignIn", {}, 429);
 
     let itinerary;
     try {
@@ -87,8 +108,13 @@ export const POST = async (request) => {
           });
     } catch (error) {
       // A failed attempt does not use up one of the visitor's itineraries
-      if (LIMITED) release(limitKey);
+      if (LIMITED && !userId) release(limitKey);
       throw error;
+    }
+    // Counted once it is made (a failed attempt does not count)
+    if (userId) {
+      const { error } = await supabase.from("itinerary_requests").insert({ user_id: userId });
+      if (error) console.error("Could not count the itinerary", error.message);
     }
     return NextResponse.json(itinerary, { headers: { "cache-control": "no-store" } });
   } catch (error) {

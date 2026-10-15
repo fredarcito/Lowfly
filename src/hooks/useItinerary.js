@@ -3,7 +3,9 @@
 import { useState } from "react";
 import { createItinerary } from "@/api/itinerary";
 import { apiError } from "@/api/client";
+import { useAuth } from "@/context/auth";
 import { useI18n } from "@/context/i18n";
+import { countGuestItinerary } from "@/store/guestItineraries";
 import { updateTrip } from "@/store/trips";
 
 // What the AI needs to know about the flights: where, and when you land and leave
@@ -28,6 +30,7 @@ const stopsForAi = (trip) =>
 // and creating it with the AI: { status: "idle" | "creating" | "error", error }
 export const useItinerary = (trip) => {
   const { lang } = useI18n();
+  const { status } = useAuth();
   const [pickedIndex, setPickedIndex] = useState(0);
   const [creation, setCreation] = useState({ status: "idle" });
   const itinerary = trip.itinerary;
@@ -41,6 +44,8 @@ export const useItinerary = (trip) => {
         ? await createItinerary({ stops: stopsForAi(trip), lang, preferences })
         : await createItinerary({ trip: tripForAi(trip), lang, preferences });
       updateTrip(trip.id, { itinerary: created, visited: [] });
+      // Without an account, the free ones are counted in this browser
+      if (status !== "signedIn") countGuestItinerary();
       setPickedIndex(0);
       setCreation({ status: "idle" });
     } catch (error) {

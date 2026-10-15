@@ -212,6 +212,11 @@ const es = {
     aiText: (nights, route) =>
       `Un plan día a día con lo imprescindible y dónde comer, y la ruta de cada día lista en Google Maps${nights ? `. Pensado para tus ${plural(nights, "noche", "noches")} ${route ? "de ruta" : "allí"}` : ""}.`,
     aiGenerate: "Crear itinerario",
+    signInToCreate: {
+      title: "Ya creaste tu itinerario gratis",
+      text: "Entra con tu cuenta para crear más itinerarios y tener tus viajes en todos tus dispositivos. Con Google es un clic.",
+      otherWays: "Otras formas de entrar",
+    },
     inLanguage: (language) => `Este itinerario está en ${language}.`,
     createIn: (language) => `Crearlo en ${language}`,
     languageNames: { es: "español", en: "inglés" },
@@ -436,7 +441,8 @@ const es = {
     outPast: "La fecha de ida ya ha pasado.",
     aiUnavailable: "No pudimos crear el itinerario.",
     aiBusy: "La IA está saturada ahora mismo.",
-    aiLimit: ({ max }) => `Has creado ${max} itinerarios en la última hora. Vuelve a intentarlo más tarde.`,
+    aiLimit: ({ max }) => `Has creado ${max} itinerarios en las últimas 24 horas. Vuelve a intentarlo mañana.`,
+    aiSignIn: "Para crear más itinerarios, entra con tu cuenta.",
     aiTooLong: ({ max }) => `Por ahora creamos itinerarios de hasta ${max} días.`,
     aiBadTrip: "Faltan datos del viaje para crear el itinerario.",
     unknown: "Algo ha fallado.",

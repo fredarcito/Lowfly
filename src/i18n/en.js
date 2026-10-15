@@ -212,6 +212,11 @@ const en = {
     aiText: (nights, route) =>
       `A day-by-day plan with the must-sees and where to eat, and each day's route ready in Google Maps${nights ? `. Made for your ${plural(nights, "night", "nights")} ${route ? "on the road" : "there"}` : ""}.`,
     aiGenerate: "Create itinerary",
+    signInToCreate: {
+      title: "You've used your free itinerary",
+      text: "Sign in to create more itineraries and have your trips on all your devices. With Google it's one click.",
+      otherWays: "Other ways to sign in",
+    },
     inLanguage: (language) => `This itinerary is in ${language}.`,
     createIn: (language) => `Make it in ${language}`,
     languageNames: { es: "Spanish", en: "English" },
@@ -434,7 +439,8 @@ const en = {
     outPast: "The outbound date has already passed.",
     aiUnavailable: "We couldn't create the itinerary.",
     aiBusy: "The AI is overloaded right now.",
-    aiLimit: ({ max }) => `You've created ${max} itineraries in the last hour. Please try again later.`,
+    aiLimit: ({ max }) => `You've created ${max} itineraries in the last 24 hours. Please try again tomorrow.`,
+    aiSignIn: "To create more itineraries, sign in to your account.",
     aiTooLong: ({ max }) => `For now we create itineraries of up to ${max} days.`,
     aiBadTrip: "Some trip details are missing to create the itinerary.",
     unknown: "Something went wrong.",

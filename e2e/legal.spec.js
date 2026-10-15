@@ -34,6 +34,8 @@ test.describe("legal pages", () => {
   // Installed on an iPhone, the app opens on its launch screen (one image per screen size), not a blank one
   test("the iPhone launch screens are declared and served", async ({ page, request }) => {
     await page.goto("/es");
+    // Without Safari's own tag the launch images are ignored (Next only writes the standard one)
+    await expect(page.locator('meta[name="apple-mobile-web-app-capable"]')).toHaveAttribute("content", "yes");
     const images = await page.locator('link[rel="apple-touch-startup-image"]').evaluateAll((links) => links.map((link) => link.getAttribute("href")));
     expect(images.length).toBeGreaterThanOrEqual(10);
     for (const image of images) {

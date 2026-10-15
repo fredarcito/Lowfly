@@ -42,6 +42,9 @@ export const generateMetadata = async ({ params }) => {
         media: `screen and (device-width: ${screen.width}px) and (device-height: ${screen.height}px) and (-webkit-device-pixel-ratio: ${screen.ratio}) and (orientation: portrait)`,
       })),
     },
+    // Next only writes the standard "mobile-web-app-capable"; Safari on iPhone still needs its own to open the
+    // installed app full screen and show the launch images above
+    other: { "apple-mobile-web-app-capable": "yes" },
     openGraph: openGraphOf(lang, { title: meta.title, description: meta.description }),
     twitter: twitterCardOf({ title: meta.title, description: meta.description }),
     alternates: {

@@ -4,6 +4,7 @@ import { APP_NAME, LOCALES, getDictionary, hasLocale } from "@/i18n";
 import { DEFAULT_THEME, THEME_COLORS } from "@/constants/theme";
 import { themeScript } from "@/utils/theme";
 import { ROUTES } from "@/constants/routes";
+import { SPLASH_SCREENS, splashPath } from "@/constants/splashScreens";
 import { AuthProvider } from "@/providers/AuthProvider";
 import { openGraphOf, twitterCardOf } from "@/utils/metadata";
 import "@/styles/globals.css";
@@ -30,8 +31,17 @@ export const generateMetadata = async ({ params }) => {
     description: meta.description,
     applicationName: APP_NAME,
     // Installed on an iPhone home screen: full screen, the header runs under the status bar (it already
-    // leaves room for it with env(safe-area-inset-top))
-    appleWebApp: { capable: true, title: APP_NAME, statusBarStyle: "black-translucent" },
+    // leaves room for it with env(safe-area-inset-top)), and while it opens, the logo on the night gradient
+    // (iOS takes a launch image of each screen's exact size; without one it shows a blank screen)
+    appleWebApp: {
+      capable: true,
+      title: APP_NAME,
+      statusBarStyle: "black-translucent",
+      startupImage: SPLASH_SCREENS.map((screen) => ({
+        url: splashPath(screen),
+        media: `screen and (device-width: ${screen.width}px) and (device-height: ${screen.height}px) and (-webkit-device-pixel-ratio: ${screen.ratio}) and (orientation: portrait)`,
+      })),
+    },
     openGraph: openGraphOf(lang, { title: meta.title, description: meta.description }),
     twitter: twitterCardOf({ title: meta.title, description: meta.description }),
     alternates: {

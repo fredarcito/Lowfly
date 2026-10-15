@@ -30,4 +30,15 @@ test.describe("legal pages", () => {
     expect((await request.get("/favicon.ico")).headers()["content-type"]).toBe("image/x-icon");
     expect((await request.get("/icon1.png")).headers()["content-type"]).toBe("image/png");
   });
+
+  // Installed on an iPhone, the app opens on its launch screen (one image per screen size), not a blank one
+  test("the iPhone launch screens are declared and served", async ({ page, request }) => {
+    await page.goto("/es");
+    const images = await page.locator('link[rel="apple-touch-startup-image"]').evaluateAll((links) => links.map((link) => link.getAttribute("href")));
+    expect(images.length).toBeGreaterThanOrEqual(10);
+    for (const image of images) {
+      const response = await request.get(image);
+      expect(response.headers()["content-type"], image).toBe("image/png");
+    }
+  });
 });

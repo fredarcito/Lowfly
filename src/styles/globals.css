@@ -43,6 +43,9 @@
   --hero-chip: oklch(0.91 0.014 80);
   --hero-chip-active: oklch(1 0 0);
   --hero-chip-active-foreground: oklch(0.23 0.035 245);
+  /* The top bar's buttons: frosted glass dense enough to read over any part of the photo */
+  --hero-glass: oklch(1 0 0 / 84%);
+  --hero-glass-edge: oklch(0.23 0.035 245 / 10%);
   --hero-photo-sm: url("/hero-day-900.jpg");
   --hero-photo-lg: url("/hero-day-1800.jpg");
 }
@@ -79,6 +82,8 @@
   --hero-chip: oklch(1 0 0 / 10%);
   --hero-chip-active: oklch(1 0 0);
   --hero-chip-active-foreground: oklch(0.23 0.035 245);
+  --hero-glass: oklch(0.2 0.03 245 / 55%);
+  --hero-glass-edge: oklch(1 0 0 / 14%);
   --hero-photo-sm: url("/hero-night-900.jpg");
   --hero-photo-lg: url("/hero-night-1800.jpg");
 }
@@ -115,6 +120,8 @@
   --color-hero-chip: var(--hero-chip);
   --color-hero-chip-active: var(--hero-chip-active);
   --color-hero-chip-active-foreground: var(--hero-chip-active-foreground);
+  --color-hero-glass: var(--hero-glass);
+  --color-hero-glass-edge: var(--hero-glass-edge);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);

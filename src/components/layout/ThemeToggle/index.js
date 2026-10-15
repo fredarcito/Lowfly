@@ -36,7 +36,7 @@ const ThemeToggle = () => {
       onClick={toggle}
       aria-label={next === "light" ? texts.header.toLight : texts.header.toDark}
       title={next === "light" ? texts.header.toLight : texts.header.toDark}
-      className="grid size-9 shrink-0 place-items-center rounded-full bg-hero-chip text-hero-muted transition-colors hover:text-hero-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
+      className="grid size-9 shrink-0 place-items-center rounded-full bg-hero-glass ring-1 ring-hero-glass-edge backdrop-blur-md text-hero-foreground/85 transition-colors hover:text-hero-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
     >
       {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
     </button>

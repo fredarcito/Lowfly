@@ -313,6 +313,8 @@ const en = {
     hideFlights: "Hide flight details",
     backToList: "Back to My trips",
     stops: (count) => plural(count, "stop", "stops"),
+    excursion: (town, duration) => `Day trip to ${town} · ${duration} each way`,
+    excursionStop: (town) => `Part of the day trip to ${town}`,
     modes: { walking: "On foot", driving: "By car", transit: "Public transport" },
     types: {
       imprescindible: "Must see",

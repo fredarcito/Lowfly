@@ -3,6 +3,7 @@
 import { Fragment, useState } from "react";
 import { Car, CircleCheck, Footprints, TrainFront } from "lucide-react";
 import DayRouteLinks from "@/components/trips/itinerary/DayRouteLinks";
+import ExcursionBadge from "@/components/trips/itinerary/ItineraryDay/components/ExcursionBadge";
 import ItineraryMap from "@/components/trips/itinerary/ItineraryMap";
 import ItineraryStop from "@/components/trips/itinerary/ItineraryStop";
 import ItineraryPeriod from "@/components/trips/itinerary/ItineraryPeriod";
@@ -40,6 +41,8 @@ const ItineraryDay = ({ trip, day, dayNumber, readOnly = false }) => {
     <div role="tabpanel" className="grid grid-cols-1 gap-4">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="grid gap-1">
+          {/* A day out of town says so first */}
+          {day.excursion && <ExcursionBadge excursion={day.excursion} />}
           <h3 className="font-heading text-lg leading-snug font-bold sm:text-xl">{day.title}</h3>
           <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
             <span className="flex items-center gap-1.5">
@@ -74,6 +77,7 @@ const ItineraryDay = ({ trip, day, dayNumber, readOnly = false }) => {
                 <ItineraryStop
                   stop={stop}
                   mode={day.mode}
+                  excursionTown={stop.excursion ? day.excursion?.town : null}
                   open={stop.id === openId}
                   visited={isVisited(stop.id)}
                   onToggle={() => setOpenId((current) => (current === stop.id ? null : stop.id))}

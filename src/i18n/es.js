@@ -313,6 +313,8 @@ const es = {
     hideFlights: "Ocultar detalles de los vuelos",
     backToList: "Volver a Mis viajes",
     stops: (count) => plural(count, "parada", "paradas"),
+    excursion: (town, duration) => `Excursión a ${town} · ${duration} por trayecto`,
+    excursionStop: (town) => `Parte de la excursión a ${town}`,
     modes: { walking: "A pie", driving: "En coche", transit: "Transporte público" },
     types: {
       imprescindible: "Imprescindible",

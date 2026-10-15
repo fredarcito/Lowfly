@@ -55,7 +55,8 @@ const periodOf = (time) => {
 //   (`outOfTown`), since the day is about the town
 // - numbered stops on walking days carry the estimated walk to the next one
 export const dayPlan = (day) => {
-  const walking = day.mode === "walking" || !day.mode;
+  // A day trip is not a walk around town: its places far from the centre stay in
+  const walking = (day.mode === "walking" || !day.mode) && !day.excursion;
   const places = day.stops.filter((stop) => stop.place).map((stop) => stop.place);
   const onMap = new Set(walking ? inTown(places) : places);
   let placeCount = 0;
@@ -89,7 +90,8 @@ export const directionsUrl = (place, mode = "walking") => {
 // On foot, the airport legs are left out (inTown).
 const routeUrls = (day) => {
   const places = day.stops.filter((stop) => stop.place).map((stop) => stop.place);
-  const walking = day.mode === "walking" || !day.mode;
+  // A day trip is not a walk around town: its places far from the centre stay in
+  const walking = (day.mode === "walking" || !day.mode) && !day.excursion;
   const points = (walking ? inTown(places) : places).map((place) => `${place.lat},${place.lng}`);
   // The same place twice in a row adds nothing to the route
   const path = points.filter((point, index) => point !== points[index - 1]);

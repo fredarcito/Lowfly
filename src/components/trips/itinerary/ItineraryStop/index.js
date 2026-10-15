@@ -8,11 +8,13 @@ import StopDetails from "@/components/trips/itinerary/StopDetails";
 import { useI18n } from "@/context/i18n";
 import { directionsUrl } from "@/utils/itinerary";
 import { cn } from "@/utils/cn";
+import ExcursionMark from "@/components/trips/itinerary/ItineraryStop/components/ExcursionMark";
 import StopMarker from "@/components/trips/itinerary/ItineraryStop/components/StopMarker";
 
 // One stop. Places fold open (one at a time, in step with the map) to show the details,
 // "Directions" and "Mark as visited" (with `onToggleVisited`). Other stops (getting around, breakfast…) just show their note.
-const ItineraryStop = ({ stop, mode, open, visited, onToggle, onHover, onToggleVisited, lineAbove, lineBelow }) => {
+// `excursionTown`: the stop is in the town of the day's trip, marked with a signpost beside its name.
+const ItineraryStop = ({ stop, mode, excursionTown, open, visited, onToggle, onHover, onToggleVisited, lineAbove, lineBelow }) => {
   const { texts } = useI18n();
   const foldable = Boolean(stop.place);
   const summary = stop.why ?? stop.note;
@@ -21,7 +23,10 @@ const ItineraryStop = ({ stop, mode, open, visited, onToggle, onHover, onToggleV
     <>
       {stop.time && <span className="text-xs font-semibold text-muted-foreground tabular-nums">{stop.time}</span>}
       {/* Places lead; steps in between (getting around, breakfast…) are quieter */}
-      <span className={cn(foldable ? "font-heading font-semibold" : "text-sm font-medium", visited && "text-muted-foreground")}>{stop.title}</span>
+      <span className={cn("flex items-center gap-1.5", foldable ? "font-heading font-semibold" : "text-sm font-medium", visited && "text-muted-foreground")}>
+        <span className="min-w-0">{stop.title}</span>
+        {excursionTown && <ExcursionMark town={excursionTown} />}
+      </span>
       {foldable && !open && summary && <span className="line-clamp-1 text-sm text-muted-foreground">{summary}</span>}
     </>
   );

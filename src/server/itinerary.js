@@ -12,8 +12,13 @@ import { daysBetween } from "@/utils/dates";
 import { km } from "@/utils/itinerary";
 import { MAX_TRIP_DAYS } from "@/constants/manualTrips";
 
-// Places farther than this from the destination airport are not on this trip (a wrong guess by the model)
+// Places farther than this from the destination airport are not on this trip (a wrong guess by the model).
+// It also bounds day trips: about 2 hours away at most.
 const MAX_KM_FROM_AIRPORT = 120;
+// On a day trip, the stops this far from the destination are the trip's (the town visited), not the home town's
+const OUT_OF_TOWN_KM = 12;
+// A day trip's travel time each way, in minutes: what is believable
+const EXCURSION_MINUTES = { min: 10, max: 150 };
 // A Wikipedia article is about the located place only if its coordinates are this close
 const SAME_PLACE_KM = 2;
 // Lookups at the same time against the free services (be gentle with them)
@@ -52,6 +57,15 @@ const SCHEMA = {
         properties: {
           title: { type: "string", description: "Short title for the day" },
           mode: { type: "string", enum: MODES, description: "Main way of getting around that day" },
+          excursion: {
+            type: ["object", "null"],
+            description: "Only for a day trip out of town: the town and the travel time each way. Otherwise null",
+            properties: {
+              town: { type: "string" },
+              travelMinutes: { type: "integer", description: "Travel time each way, in minutes" },
+            },
+            required: ["town", "travelMinutes"],
+          },
           stops: {
             type: "array",
             items: {
@@ -80,7 +94,7 @@ const SCHEMA = {
             },
           },
         },
-        required: ["title", "mode", "stops"],
+        required: ["title", "mode", "excursion", "stops"],
       },
     },
   },
@@ -120,7 +134,8 @@ Traveller preferences:
 - Accommodation check-in on day 1: ${preferences.checkIn}. Add a "logistica" stop for it at that time (place null: we don't know where they stay; say "in the centre"). Plan the hours between arriving and check-in around it: if there is time before, suggest leaving the luggage in storage and light sights nearby; if it is right after arriving, go straight there. If the check-in time comes before they can arrive, check in as soon as they get there.
 
 Rules:
-- Order stops by time and group nearby places to avoid going back and forth. Day trips to nearby towns are fine when they suit the interests.
+- Order stops by time and group nearby places to avoid going back and forth.
+- Day trips: a nearby town is fine when it suits the interests, at most about 2 hours away each way (within ${MAX_KM_FROM_AIRPORT} km), only on full days (never the first or the last day) and at most one every 3 days. That day, set "excursion" to the town and the travel time each way in minutes, start with a "transporte" stop to get there and end with one to come back, and its "mode" is transit or driving. Every other day, "excursion" is null.
 - Every full day has breakfast, lunch and dinner as "comida" stops, and "transporte" steps when moving between areas. The arrival and departure days only use the hours available.
 - Meals: prefer long-established places. If you are not sure a restaurant exists, describe the area and the dish in "food" and set place to null. Never invent a restaurant.
 - Types: imprescindible = must see, recomendado = recommended, opcional = optional, comida = meal, transporte = getting around, logistica = check-in, luggage, airport tasks, llegada = arrival.
@@ -154,6 +169,16 @@ const cleanStop = (stop, destination) => {
   };
 };
 
+// A day trip as the UI can show it ({ town, travelMinutes }), or null: never on the first or last day (flights
+// or the next town), and only with a believable travel time
+const cleanExcursion = (excursion, index, dayCount) => {
+  const town = text(excursion?.town, 80);
+  const minutes = excursion?.travelMinutes;
+  const fullDay = index > 0 && index < dayCount - 1;
+  const believable = Number.isInteger(minutes) && minutes >= EXCURSION_MINUTES.min && minutes <= EXCURSION_MINUTES.max;
+  return town && fullDay && believable ? { town, travelMinutes: minutes } : null;
+};
+
 // Runs `task` on every item, at most `limit` at a time, keeping the order
 const mapLimited = async (items, limit, task) => {
   const results = new Array(items.length);
@@ -179,19 +204,22 @@ const sameName = (first, second) => {
 // Candidates: the map search (Photon) and Wikipedia (the article the AI named, or the best search result).
 // Each must be near the AI's rough position; the closest one wins. Meals must land on a place to eat or a
 // neighbourhood, and the rest must share a word with the name. Nothing that cannot be checked goes on the map.
+// Searches go with the town's name first; a day trip out of town (the covered bridges of Madison County from
+// Des Moines) is searched again without it, near the AI's position.
 const verifyStop = async (stop, { city, lang, destination, facts }) => {
   if (!stop.place) return stop;
   const { wikipediaTitle, ...guess } = stop.place;
   const plausible = (point) => point && isCoordinate(point.lat, point.lng) && km(point, guess) <= NEAR_GUESS_KM && km(point, destination) <= MAX_KM_FROM_AIRPORT;
+  const fits = (found) => found && (stop.type === "comida" ? MEAL_KINDS.test(found.kind) : sameName(found.name, guess.name)) && plausible(found);
 
-  const found = await locate(`${guess.name}, ${city}`, guess);
-  const fits = found && (stop.type === "comida" ? MEAL_KINDS.test(found.kind) : sameName(found.name, guess.name));
-  const mapped = fits && plausible(found) ? found : null;
+  const inTown = await locate(`${guess.name}, ${city}`, guess);
+  const mapped = fits(inTown) ? inTown : await locate(guess.name, guess).then((found) => (fits(found) ? found : null));
 
   let fact = null;
   if (SIGHT_TYPES.has(stop.type)) {
     const named = wikipediaTitle ? facts[wikipediaTitle] : null;
-    const candidate = named ?? (await searchPlace(`${guess.name} ${city}`, lang));
+    const searched = named ?? (await searchPlace(`${guess.name} ${city}`, lang));
+    const candidate = plausible(searched) ? searched : named ? null : await searchPlace(guess.name, lang);
     if (candidate && plausible(candidate)) fact = candidate;
     // An article the AI named exactly but without coordinates: trust the title when the map confirmed the place
     else if (named && !isCoordinate(named.lat, named.lng) && mapped) fact = named;
@@ -235,6 +263,7 @@ const planDays = async ({ lang, city, country, destination, dates, travel, prefe
     city,
     title: text(day.title, 120) ?? "",
     mode: MODES.includes(day.mode) ? day.mode : "walking",
+    excursion: cleanExcursion(day.excursion, index, plannedDays.length),
     stops: (Array.isArray(day.stops) ? day.stops : []).map((stop) => cleanStop(stop, destination)),
   }));
 
@@ -243,7 +272,14 @@ const planDays = async ({ lang, city, country, destination, dates, travel, prefe
   const context = { city, lang, destination, facts };
   const stops = await mapLimited(cleanDays.flatMap((day) => day.stops), CONCURRENCY, (stop) => verifyStop(stop, context));
   let taken = 0;
-  return cleanDays.map((day) => ({ ...day, stops: stops.slice(taken, (taken += day.stops.length)) }));
+  return cleanDays.map((day) => {
+    const dayStops = stops.slice(taken, (taken += day.stops.length));
+    // A day trip: mark the stops in the town visited (where the place is out of town)
+    const marked = day.excursion
+      ? dayStops.map((stop) => (stop.place && km(stop.place, destination) > OUT_OF_TOWN_KM ? { ...stop, excursion: true } : stop))
+      : dayStops;
+    return { ...day, stops: marked };
+  });
 };
 
 // trip: { origin, code, city, country, out: { day, time, arrive }, ret?: { day, time } }

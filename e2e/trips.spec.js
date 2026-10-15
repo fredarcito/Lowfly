@@ -104,4 +104,24 @@ test.describe("my trips", () => {
     await page.goto("/es/trips");
     await expect(page.locator("article img[src*='wikimedia']").first()).toBeVisible({ timeout: 30_000 });
   });
+
+  // A day out of town says where, and how long it takes to get there
+  test("a day trip is marked on its day", async ({ page }) => {
+    const trip = romeTrip();
+    // Day 2 is a trip to Tivoli; its third and fourth stops are there
+    trip.itinerary = {
+      ...trip.itinerary,
+      days: trip.itinerary.days.map((day, index) =>
+        index === 1
+          ? { ...day, excursion: { town: "Tivoli", travelMinutes: 50 }, stops: day.stops.map((stop, stopIndex) => (stopIndex === 2 || stopIndex === 3 ? { ...stop, excursion: true } : stop)) }
+          : day
+      ),
+    };
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    await expect(page.getByText("Excursión a Tivoli")).toHaveCount(0);
+    await page.getByRole("tab", { name: /Día 2/ }).click();
+    await expect(page.getByText("Excursión a Tivoli · 50 min por trayecto")).toBeVisible();
+    // A signpost beside each stop of the trip, and only those
+    await expect(page.locator('[role="tabpanel"] li').getByText("Parte de la excursión a Tivoli")).toHaveCount(2);
+  });
 });

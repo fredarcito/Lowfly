@@ -1,5 +1,6 @@
 "use client";
 
+import FadeImage from "@/components/shared/FadeImage";
 import PhotoCredit from "@/components/shared/PhotoCredit";
 import { useI18n } from "@/context/i18n";
 import { useTripPhoto } from "@/hooks/useTripPhoto";
@@ -14,12 +15,13 @@ const TripBackdrop = ({ trip }) => {
   if (!photo) return null;
   return (
     <>
-      {/* Two nested masks (fade to the bottom, then to the left) instead of one with two layers */}
+      {/* Two nested masks (fade to the bottom, then to the left) instead of one with two layers. The photo fades
+          in when it opens */}
       <div
         aria-hidden
         className="absolute inset-0 -z-10 opacity-35 mask-[linear-gradient(to_bottom,black_45%,transparent)] duration-700 animate-in fade-in motion-reduce:animate-none md:left-auto md:w-[68%] md:opacity-90 md:mask-[linear-gradient(to_bottom,black_60%,transparent)]"
       >
-        <img
+        <FadeImage
           src={photo.src}
           alt=""
           className="size-full object-cover dark:brightness-75 md:mask-[linear-gradient(to_right,transparent,rgb(0_0_0/0.15)_18%,rgb(0_0_0/0.6)_40%,black_62%)]"

@@ -1,10 +1,11 @@
 import { notFound } from "next/navigation";
 import { Atkinson_Hyperlegible, Bricolage_Grotesque } from "next/font/google";
-import { APP_NAME, LOCALES, LOCALE_TAGS, getDictionary, hasLocale } from "@/i18n";
+import { APP_NAME, LOCALES, getDictionary, hasLocale } from "@/i18n";
 import { DEFAULT_THEME, THEME_COLORS } from "@/constants/theme";
 import { themeScript } from "@/utils/theme";
 import { ROUTES } from "@/constants/routes";
 import { AuthProvider } from "@/providers/AuthProvider";
+import { openGraphOf, twitterCardOf } from "@/utils/metadata";
 import "@/styles/globals.css";
 
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
@@ -31,8 +32,8 @@ export const generateMetadata = async ({ params }) => {
     // Installed on an iPhone home screen: full screen, the header runs under the status bar (it already
     // leaves room for it with env(safe-area-inset-top))
     appleWebApp: { capable: true, title: APP_NAME, statusBarStyle: "black-translucent" },
-    openGraph: { type: "website", siteName: APP_NAME, title: meta.title, description: meta.description, locale: LOCALE_TAGS[lang].replace("-", "_") },
-    twitter: { card: "summary_large_image", title: meta.title, description: meta.description },
+    openGraph: openGraphOf(lang, { title: meta.title, description: meta.description }),
+    twitter: twitterCardOf({ title: meta.title, description: meta.description }),
     alternates: {
       canonical: ROUTES.home(lang),
       languages: Object.fromEntries(LOCALES.map((locale) => [locale, ROUTES.home(locale)])),

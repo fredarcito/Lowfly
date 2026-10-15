@@ -24,4 +24,10 @@ test.describe("legal pages", () => {
     await page.goto("/es");
     await expect(page.getByRole("link", { name: /Política de privacidad|Condiciones de uso/ })).toHaveCount(2);
   });
+
+  // Google shows a site's icon in its results only as .ico or .png (not SVG)
+  test("the favicon exists as .ico and .png", async ({ request }) => {
+    expect((await request.get("/favicon.ico")).headers()["content-type"]).toBe("image/x-icon");
+    expect((await request.get("/icon1.png")).headers()["content-type"]).toBe("image/png");
+  });
 });

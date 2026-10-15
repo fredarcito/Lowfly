@@ -2,7 +2,9 @@ import SharedTrip from "@/components/trips/sharing/SharedTrip";
 import SharedTripGone from "@/components/trips/sharing/SharedTripGone";
 import TripsPage from "@/components/trips/TripsPage";
 import { I18nProvider } from "@/providers/I18nProvider";
-import { APP_NAME, LOCALE_TAGS, getDictionary } from "@/i18n";
+import { APP_NAME, getDictionary } from "@/i18n";
+import { ROUTES } from "@/constants/routes";
+import { openGraphOf, twitterCardOf } from "@/utils/metadata";
 import { getSharedTrip } from "@/server/sharedTrips";
 
 // Any share id reaches the page (the language above only allows /es and /en); each request reads the trip
@@ -20,14 +22,12 @@ export const generateMetadata = async ({ params }) => {
   const { fare } = shared.trip;
   const title = `${texts.share.metaTitle(fare.city, fare.ret && texts.units.nights(fare.nights))} · ${APP_NAME}`;
   const description = texts.share.metaText(shared.owner.name);
-  // Whole blocks: a page's openGraph and twitter replace the layout's (they are not merged), so the site name,
-  // the language and the large card go again
   return {
     title,
     description,
     robots,
-    openGraph: { type: "website", siteName: APP_NAME, locale: LOCALE_TAGS[lang].replace("-", "_"), title, description },
-    twitter: { card: "summary_large_image", title, description },
+    openGraph: openGraphOf(lang, { title, description, url: ROUTES.sharedTrip(lang, id) }),
+    twitter: twitterCardOf({ title, description }),
   };
 };
 

@@ -50,6 +50,7 @@ test.describe("sharing", () => {
     await expect(page.locator('meta[property="og:site_name"]')).toHaveAttribute("content", "Lowfly");
     await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute("content", "summary_large_image");
     await expect(page.locator('meta[name="twitter:image"]')).toHaveCount(1);
+    await expect(page.locator('meta[property="og:url"]')).toHaveAttribute("content", new RegExp(`/es/shared/${shareId}$`));
   });
 
   test("a link that was turned off", async ({ page }) => {

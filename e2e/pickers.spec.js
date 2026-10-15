@@ -47,4 +47,14 @@ test.describe("pickers", () => {
     await page.keyboard.press("Enter");
     await expect(page.locator("form ol > li").first()).toContainText("Venecia");
   });
+
+  test("the search starts as a return trip; an old shared link without a trip type is one way", async ({ page }) => {
+    await openWith(page, "/es");
+    await expect(page.getByRole("radio", { name: /Ida y vuelta/ })).toBeChecked();
+    // Past dates: the link fills the form without searching
+    await page.goto("/es?m=everywhere&o=MLA&from=2020-01-01&to=2020-01-10");
+    await expect(page.getByRole("radio", { name: /Solo ida/ })).toBeChecked();
+    await page.goto("/es?m=everywhere&o=MLA&from=2020-01-01&to=2020-01-10&trip=return&min=2&maxn=4");
+    await expect(page.getByRole("radio", { name: /Ida y vuelta/ })).toBeChecked();
+  });
 });

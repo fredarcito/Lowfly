@@ -19,7 +19,8 @@ const EMPTY_FORM = {
   vuelta: "",
   flex: "2",
   max: "",
-  trip: "oneway",
+  // Most trips come back: return by default
+  trip: "return",
   minN: "2",
   maxN: "4",
   weekend: false,

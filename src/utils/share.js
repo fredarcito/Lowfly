@@ -18,8 +18,8 @@ export const searchToParams = (form, mode) => {
   params.set("from", form.from);
   params.set("to", form.to);
   if (form.max) params.set("max", form.max);
+  params.set("trip", form.trip);
   if (form.trip === "return") {
-    params.set("trip", "return");
     if (form.weekend && WEEKEND_MODES.includes(mode)) params.set("wk", "1");
     else {
       params.set("min", form.minN);
@@ -52,8 +52,9 @@ export const searchFromParams = (params) => {
   }
 
   if (/^\d+$/.test(params.get("max") || "")) fields.max = params.get("max");
-  if (params.get("trip") === "return") {
-    fields.trip = "return";
+  // Links from before "trip" was always set have it only for return trips: without it, one way
+  fields.trip = params.get("trip") === "return" ? "return" : "oneway";
+  if (fields.trip === "return") {
     if (params.get("wk") === "1") fields.weekend = true;
     else if (/^\d+$/.test(params.get("min") || "") && /^\d+$/.test(params.get("maxn") || "")) {
       fields.minN = params.get("min");

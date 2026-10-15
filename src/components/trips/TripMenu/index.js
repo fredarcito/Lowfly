@@ -19,7 +19,8 @@ import { cn } from "@/utils/cn";
 
 // ⋯ quick actions on a trip: mark as booked, book with the airline, redo the itinerary and delete
 // (both ask first; after deleting, `onDeleted`). `variant` and `className` restyle the ⋯ button.
-const TripMenu = ({ trip, onDeleted, variant = "outline", className }) => {
+// `onRemove`: removes the trip itself once confirmed (see DeleteTripDialog).
+const TripMenu = ({ trip, onDeleted, onRemove, variant = "outline", className }) => {
   const { texts } = useI18n();
   const { toggleBooked, bookingLinks } = useTripActions(trip);
   const deleteDialog = useDisclosure();
@@ -68,7 +69,7 @@ const TripMenu = ({ trip, onDeleted, variant = "outline", className }) => {
         confirmLabel={texts.trips.redoConfirm}
         onConfirm={redoItinerary}
       />
-      <DeleteTripDialog trip={trip} open={deleteDialog.open} onOpenChange={deleteDialog.setOpen} onDeleted={onDeleted} />
+      <DeleteTripDialog trip={trip} open={deleteDialog.open} onOpenChange={deleteDialog.setOpen} onDeleted={onDeleted} onRemove={onRemove} />
     </>
   );
 };

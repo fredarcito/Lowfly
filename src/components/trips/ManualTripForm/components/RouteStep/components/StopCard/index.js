@@ -9,7 +9,7 @@ import FormField from "@/components/shared/FormField";
 import CityField from "@/components/trips/CityField";
 import StopTimes from "@/components/trips/ManualTripForm/components/RouteStep/components/StopCard/components/StopTimes";
 import { useFocusWhenAdded } from "@/components/trips/ManualTripForm/components/RouteStep/components/StopCard/hooks/useFocusWhenAdded";
-import { useLeaving } from "@/components/trips/ManualTripForm/components/RouteStep/components/StopCard/hooks/useLeaving";
+import { useLeaving } from "@/hooks/useLeaving";
 import { useI18n } from "@/context/i18n";
 import { nightsBetween } from "@/utils/dates";
 import { cn } from "@/utils/cn";

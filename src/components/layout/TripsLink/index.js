@@ -22,7 +22,7 @@ const TripsLink = ({ active, className }) => {
       <span className={cn("relative", upcoming > 0 && "mr-1.5")}>
         <TicketsPlane className="size-4.5" />
         {upcoming > 0 && (
-          <span className="absolute -top-2 -right-2.5 grid min-w-4 place-items-center rounded-full bg-primary px-1 text-[10px] leading-4 font-bold text-primary-foreground tabular-nums ring-2 ring-background duration-300 animate-in zoom-in-50 motion-reduce:animate-none">
+          <span className="absolute -top-2 -right-2.5 grid min-w-4 place-items-center rounded-full bg-primary px-1 text-[10px] leading-4 font-bold text-primary-foreground tabular-nums ring-2 ring-background">
             {upcoming}
           </span>
         )}

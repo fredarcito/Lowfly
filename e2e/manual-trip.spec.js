@@ -254,27 +254,37 @@ test.describe("trip planned by hand", () => {
     });
   }
 
-  test("phones: going between steps, the actions bar stays put (only the form slides)", async ({ page }) => {
-    await page.setViewportSize(PHONE);
+  // A real phone (it rescales a page that gets wider for a moment): the bar must not jump when the step changes
+  test("phones: going between steps, the actions bar stays put (only the form slides)", async ({ browser }) => {
+    const context = await browser.newContext({ viewport: PHONE, isMobile: true, hasTouch: true, locale: "es-ES" });
+    const page = await context.newPage();
+    await serveRecordedPlaces(page);
     await openWith(page, "/es/trips/new");
     await pickTown(page, 1, "flor", "Florencia");
     await pickDates(page, 1, 13, 15);
-    const barTop = () => page.evaluate(() => Math.round(document.querySelector(".fixed.inset-x-0.bottom-0").getBoundingClientRect().top));
-    const topsWhileChanging = async () => {
-      const tops = [];
-      for (let sample = 0; sample < 6; sample++) {
-        tops.push(await barTop());
-        await page.waitForTimeout(40);
-      }
-      return new Set(tops).size;
+    // Every frame for a while: where the bar is, and how tall the screen is
+    const framesWhile = async (action) => {
+      const watching = page.evaluate(
+        () =>
+          new Promise((resolve) => {
+            const seen = new Set();
+            const started = performance.now();
+            const frame = () => {
+              const bar = document.querySelector(".fixed.inset-x-0.bottom-0");
+              seen.add(`${window.innerHeight}:${Math.round(bar.getBoundingClientRect().top)}`);
+              if (performance.now() - started < 700) requestAnimationFrame(frame);
+              else resolve([...seen]);
+            };
+            requestAnimationFrame(frame);
+          })
+      );
+      await action();
+      return watching;
     };
-    // Same height in both steps: the buttons never move
-    const before = await barTop();
-    await page.getByRole("button", { name: "Continuar" }).click();
-    expect(await topsWhileChanging()).toBe(1);
-    expect(await barTop()).toBe(before);
-    await page.getByRole("button", { name: "Atrás" }).click();
-    expect(await topsWhileChanging()).toBe(1);
-    expect(await barTop()).toBe(before);
+    const forward = await framesWhile(() => page.getByRole("button", { name: "Continuar" }).tap());
+    const back = await framesWhile(() => page.getByRole("button", { name: "Atrás" }).tap());
+    expect(forward).toHaveLength(1);
+    expect(back).toEqual(forward);
+    await context.close();
   });
 });

@@ -1,42 +1,27 @@
 "use client";
 
-import { useEffect, useSyncExternalStore } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useI18n } from "@/context/i18n";
-import { DEFAULT_THEME, THEME_COLORS, THEME_KEY } from "@/constants/theme";
+import { useTheme } from "@/hooks/useTheme";
+import { cn } from "@/utils/cn";
 
-// The theme lives in <html data-theme>, set before paint by the script in the layout
-const subscribe = (cb) => {
-  const observer = new MutationObserver(cb);
-  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
-  return () => observer.disconnect();
-};
-const getTheme = () => document.documentElement.dataset.theme || DEFAULT_THEME;
-
-const ThemeToggle = () => {
+// Light / dark in one round button on the header (useTheme)
+const ThemeToggle = ({ className }) => {
   const { texts } = useI18n();
-  const theme = useSyncExternalStore(subscribe, getTheme, () => DEFAULT_THEME);
+  const { theme, setTheme } = useTheme();
   const next = theme === "dark" ? "light" : "dark";
-
-  // Browser / system bar in the colour of the header
-  useEffect(() => {
-    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", THEME_COLORS[theme]);
-  }, [theme]);
-
-  const toggle = () => {
-    document.documentElement.dataset.theme = next;
-    try {
-      localStorage.setItem(THEME_KEY, next);
-    } catch {}
-  };
+  const label = next === "light" ? texts.header.toLight : texts.header.toDark;
 
   return (
     <button
       type="button"
-      onClick={toggle}
-      aria-label={next === "light" ? texts.header.toLight : texts.header.toDark}
-      title={next === "light" ? texts.header.toLight : texts.header.toDark}
-      className="grid size-9 shrink-0 place-items-center rounded-full bg-hero-glass ring-1 ring-hero-glass-edge backdrop-blur-md text-hero-foreground/85 transition-colors hover:text-hero-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
+      onClick={() => setTheme(next)}
+      aria-label={label}
+      title={label}
+      className={cn(
+        "grid size-9 shrink-0 place-items-center rounded-full bg-hero-glass text-hero-foreground/85 ring-1 ring-hero-glass-edge backdrop-blur-md transition-colors hover:text-hero-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
+        className
+      )}
     >
       {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
     </button>

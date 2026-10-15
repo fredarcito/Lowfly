@@ -1,5 +1,6 @@
 import { DESKTOP, PHONE, expect, openWith, test } from "./helpers/test.js";
 import { serveRecordedPlaces } from "./helpers/places.js";
+import { flightTrip } from "./helpers/trips.js";
 
 // The search form's pickers: a popover on desktop, a sheet from the bottom on phones, and the keyboard
 test.describe("pickers", () => {
@@ -58,5 +59,35 @@ test.describe("pickers", () => {
     await expect(page.getByRole("radio", { name: /Solo ida/ })).toBeChecked();
     await page.goto("/es?m=everywhere&o=MLA&from=2020-01-01&to=2020-01-10&trip=return&min=2&maxn=4");
     await expect(page.getByRole("radio", { name: /Ida y vuelta/ })).toBeChecked();
+  });
+
+  // The top bar fits at every width: the navigation never runs into the buttons on the right
+  test("the top bar fits from small phones to tablets", async ({ page }) => {
+    await openWith(page, "/es/trips", {
+      trips: Array.from({ length: 9 }, (_, index) => ({ ...flightTrip({ id: `trip-${index}` }) })),
+    });
+    for (let width = 320; width <= 1024; width += 20) {
+      await page.setViewportSize({ width, height: 700 });
+      const gap = await page.evaluate(() => {
+        const navigation = document.querySelector('nav[aria-label="Navegación principal"]');
+        return navigation.parentElement.nextElementSibling.getBoundingClientRect().left - navigation.getBoundingClientRect().right;
+      });
+      expect(gap, `at ${width}px`).toBeGreaterThanOrEqual(4);
+    }
+    // Explore and My trips keep their names on phones
+    await page.setViewportSize({ width: 360, height: 700 });
+    await expect(page.getByRole("link", { name: "Explorar", exact: true })).toBeVisible();
+    await expect(page.getByRole("link", { name: /Mis viajes/ })).toBeVisible();
+  });
+
+  test("phones: theme and language live in the Settings menu", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await openWith(page, "/es/trips", { theme: "dark" });
+    await page.getByRole("button", { name: "Ajustes" }).click();
+    await page.getByRole("menuitemradio", { name: "Claro" }).click();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+    await page.getByRole("button", { name: "Ajustes" }).click();
+    await page.getByRole("menuitem", { name: "English" }).click();
+    await page.waitForURL("**/en/trips");
   });
 });

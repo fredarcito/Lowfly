@@ -19,6 +19,11 @@ const es = {
     language: "Idioma",
     toLight: "Cambiar a modo claro",
     toDark: "Cambiar a modo oscuro",
+    settings: "Ajustes",
+    theme: "Tema",
+    themes: { light: "Claro", dark: "Oscuro" },
+    // Each language in its own name
+    languageNames: { es: "Español", en: "English" },
   },
   modes: {
     aria: "Tipo de búsqueda",

@@ -1,23 +1,25 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import { Languages } from "lucide-react";
 import { useI18n } from "@/context/i18n";
+import { useLanguagePaths } from "@/hooks/useLanguagePaths";
 import { LOCALES } from "@/i18n/config";
 import { cn } from "@/utils/cn";
 
 // Plain links (full reload) so the search starts fresh in the other language
-const LanguageSwitch = () => {
+const LanguageSwitch = ({ className }) => {
   const { lang, texts } = useI18n();
-  // Same page in the other language (/es/trips → /en/trips)
-  const rest = usePathname().replace(/^\/[a-z]{2}(?=\/|$)/, "");
+  const pathIn = useLanguagePaths();
   return (
-    <nav aria-label={texts.header.language} className="flex shrink-0 items-center gap-1 rounded-full bg-hero-glass ring-1 ring-hero-glass-edge backdrop-blur-md p-1 text-xs font-semibold">
+    <nav
+      aria-label={texts.header.language}
+      className={cn("flex shrink-0 items-center gap-1 rounded-full bg-hero-glass p-1 text-xs font-semibold ring-1 ring-hero-glass-edge backdrop-blur-md", className)}
+    >
       <Languages className="mx-1 size-3.5 text-hero-muted max-sm:hidden" aria-hidden />
       {LOCALES.map((locale) => (
         <a
           key={locale}
-          href={`/${locale}${rest}`}
+          href={pathIn(locale)}
           hrefLang={locale}
           lang={locale}
           aria-current={locale === lang ? "page" : undefined}

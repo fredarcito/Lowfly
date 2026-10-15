@@ -59,8 +59,10 @@ const ManualTripForm = () => {
 
       <TripSteps steps={wizard.steps} current={wizard.stepIndex} progress={form.completion} />
 
-      {/* Phones: room at the bottom for the fixed bar */}
-      <div className="grid items-start gap-6 max-lg:pb-48 lg:grid-cols-[minmax(0,1fr)_22rem]">
+      {/* Phones: room at the bottom for the fixed bar. Clipped sideways: a step sliding in from the side must not
+          widen the page for a moment (phones then rescale it and the fixed bar jumps); clip, unlike hidden,
+          keeps the summary sticky */}
+      <div className="grid items-start gap-6 overflow-x-clip max-lg:pb-48 lg:grid-cols-[minmax(0,1fr)_22rem]">
         {onStyle ? (
           <StyleStep key="style" trip={wizard.trip} style={style} enterClassName={enterClassName} />
         ) : (

@@ -118,10 +118,14 @@ test.describe("my trips", () => {
       ),
     };
     await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
-    await expect(page.getByText("Excursión a Tivoli")).toHaveCount(0);
+    await expect(page.getByRole("tabpanel").getByText("Excursión a Tivoli")).toHaveCount(0);
     await page.getByRole("tab", { name: /Día 2/ }).click();
-    await expect(page.getByText("Excursión a Tivoli · 50 min por trayecto")).toBeVisible();
-    // A signpost beside each stop of the trip, and only those
-    await expect(page.locator('[role="tabpanel"] li').getByText("Parte de la excursión a Tivoli")).toHaveCount(2);
+    await expect(page.getByRole("tabpanel").getByText("Excursión a Tivoli · 50 min por trayecto")).toBeVisible();
+    // Phones: scrolling down, the slim bar keeps saying it is the day trip
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.mouse.wheel(0, 1300);
+    await expect(page.locator(".fixed.inset-x-0.top-0")).toContainText("Excursión a Tivoli");
+    // A "Day trip" tag beside each stop of the trip, and only those
+    await expect(page.locator('[role="tabpanel"] li').getByTitle("Parte de la excursión a Tivoli")).toHaveCount(2);
   });
 });

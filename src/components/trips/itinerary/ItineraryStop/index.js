@@ -13,7 +13,7 @@ import StopMarker from "@/components/trips/itinerary/ItineraryStop/components/St
 
 // One stop. Places fold open (one at a time, in step with the map) to show the details,
 // "Directions" and "Mark as visited" (with `onToggleVisited`). Other stops (getting around, breakfast…) just show their note.
-// `excursionTown`: the stop is in the town of the day's trip, marked with a signpost beside its name.
+// `excursionTown`: the stop is in the town of the day's trip, tagged "Day trip" beside its name.
 const ItineraryStop = ({ stop, mode, excursionTown, open, visited, onToggle, onHover, onToggleVisited, lineAbove, lineBelow }) => {
   const { texts } = useI18n();
   const foldable = Boolean(stop.place);
@@ -23,7 +23,7 @@ const ItineraryStop = ({ stop, mode, excursionTown, open, visited, onToggle, onH
     <>
       {stop.time && <span className="text-xs font-semibold text-muted-foreground tabular-nums">{stop.time}</span>}
       {/* Places lead; steps in between (getting around, breakfast…) are quieter */}
-      <span className={cn("flex items-center gap-1.5", foldable ? "font-heading font-semibold" : "text-sm font-medium", visited && "text-muted-foreground")}>
+      <span className={cn("flex flex-wrap items-center gap-x-2 gap-y-1", foldable ? "font-heading font-semibold" : "text-sm font-medium", visited && "text-muted-foreground")}>
         <span className="min-w-0">{stop.title}</span>
         {excursionTown && <ExcursionMark town={excursionTown} />}
       </span>

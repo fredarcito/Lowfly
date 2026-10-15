@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronLeft, MapPin } from "lucide-react";
+import { ChevronLeft, MapPin, Signpost } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/context/i18n";
 import { useDayPlan } from "@/hooks/useDayPlan";
@@ -9,11 +9,11 @@ import { ROUTES } from "@/constants/routes";
 import { cn } from "@/utils/cn";
 
 // Phones and tablets, once the photo header has scrolled away: a slim bar fixed at the top that keeps the
-// context (the day's title and the destination) and the actions at hand (back to the list, the day in
+// context (the day's title and the destination, or the day trip) and the actions at hand (back to the list, the day in
 // Google Maps). It slides in while `visible`; the day tabs stick right under it (ItineraryDayTabs).
 // `readOnly` (a shared trip): there is no list to go back to.
 const ItineraryStickyBar = ({ trip, day, dayNumber, visible, readOnly = false }) => {
-  const { lang, texts } = useI18n();
+  const { lang, texts, format } = useI18n();
   const { routes } = useDayPlan(day);
   const { fare } = trip;
 
@@ -36,9 +36,20 @@ const ItineraryStickyBar = ({ trip, day, dayNumber, visible, readOnly = false })
         )}
         <div className="grid min-w-0 flex-1 leading-tight">
           <p className="truncate font-heading text-sm font-bold">{day.title}</p>
-          <p className="truncate text-xs text-muted-foreground">
-            {fare.city}, {fare.country}
-          </p>
+          {/* A day trip keeps saying so while scrolling; any other day, where the trip is */}
+          {day.excursion ? (
+            <p className="flex min-w-0 items-center gap-1 text-xs font-semibold text-sea">
+              <Signpost className="size-3 shrink-0" />
+              {/* A long town name is cut, never how long it takes */}
+              <span className="truncate">{texts.trips.excursionTo(day.excursion.town)}</span>
+              {/* "55 min away": how far it is, not how long the trip lasts */}
+              <span className="shrink-0">· {texts.trips.excursionAway(format.duration(day.excursion.travelMinutes))}</span>
+            </p>
+          ) : (
+            <p className="truncate text-xs text-muted-foreground">
+              {fare.city}, {fare.country}
+            </p>
+          )}
         </div>
         {routes.length > 0 && (
           <Button asChild variant="outline" size="sm" className="h-9 shrink-0 border-primary/60 text-primary-ink hover:text-primary-ink dark:border-primary/60">

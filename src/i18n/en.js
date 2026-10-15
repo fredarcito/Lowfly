@@ -314,6 +314,9 @@ const en = {
     backToList: "Back to My trips",
     stops: (count) => plural(count, "stop", "stops"),
     excursion: (town, duration) => `Day trip to ${town} · ${duration} each way`,
+    excursionAway: (duration) => `${duration} away`,
+    excursionTo: (town) => `Day trip to ${town}`,
+    excursionTag: "Day trip",
     excursionStop: (town) => `Part of the day trip to ${town}`,
     modes: { walking: "On foot", driving: "By car", transit: "Public transport" },
     types: {

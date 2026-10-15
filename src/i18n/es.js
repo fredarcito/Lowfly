@@ -314,6 +314,9 @@ const es = {
     backToList: "Volver a Mis viajes",
     stops: (count) => plural(count, "parada", "paradas"),
     excursion: (town, duration) => `Excursión a ${town} · ${duration} por trayecto`,
+    excursionAway: (duration) => `a ${duration}`,
+    excursionTo: (town) => `Excursión a ${town}`,
+    excursionTag: "Excursión",
     excursionStop: (town) => `Parte de la excursión a ${town}`,
     modes: { walking: "A pie", driving: "En coche", transit: "Transporte público" },
     types: {

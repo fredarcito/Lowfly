@@ -7,7 +7,7 @@ import { ROUTES } from "@/constants/routes";
 
 // "+ Explore more flights" under the trip list: back to the search
 const ExploreMoreLink = () => {
-  const { lang, t } = useI18n();
+  const { lang, texts } = useI18n();
   return (
     <Link
       href={ROUTES.home(lang)}
@@ -16,7 +16,7 @@ const ExploreMoreLink = () => {
       <span className="grid size-9 place-items-center rounded-full ring-1 ring-primary-ink/60">
         <Plus className="size-4" />
       </span>
-      {t.trips.exploreMore}
+      {texts.trips.exploreMore}
     </Link>
   );
 };

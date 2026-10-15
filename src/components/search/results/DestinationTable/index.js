@@ -21,10 +21,10 @@ const ROW_BUTTON =
   "w-full text-left transition-colors hover:bg-muted/60 focus-visible:bg-muted/60 focus-visible:outline-none aria-expanded:bg-muted/40";
 
 const NoTimeOffTag = () => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   return (
-    <span title={t.results.noTimeOffHint} className="rounded-full bg-save/15 px-2 py-0.5 text-xs font-medium text-save">
-      {t.results.noTimeOff}
+    <span title={texts.results.noTimeOffHint} className="rounded-full bg-save/15 px-2 py-0.5 text-xs font-medium text-save">
+      {texts.results.noTimeOff}
     </span>
   );
 };
@@ -41,12 +41,12 @@ const Pill = ({ icon: Icon, children }) => {
 // Travel dates and stay: "Fri 16 Oct → Mon 19 Oct" + "3 nights".
 // Weekend trips add the times and the hours there; one way shows the departure (and arrival) time instead of the stay.
 const TripCells = ({ fare, weekend }) => {
-  const { t, f } = useI18n();
+  const { texts, format } = useI18n();
   const dates = !fare.ret
-    ? f.fmtDay(fare.day)
+    ? format.fmtDay(fare.day)
     : weekend
-      ? `${f.fmtShort(fare.day)} ${fare.time} → ${f.fmtShort(fare.ret.day)} ${fare.ret.time}`
-      : `${f.fmtDay(fare.day)} → ${f.fmtDay(fare.ret.day)}`;
+      ? `${format.fmtShort(fare.day)} ${fare.time} → ${format.fmtShort(fare.ret.day)} ${fare.ret.time}`
+      : `${format.fmtDay(fare.day)} → ${format.fmtDay(fare.ret.day)}`;
   const showHours = fare.hours && fare.nights <= 3;
 
   return (
@@ -55,7 +55,7 @@ const TripCells = ({ fare, weekend }) => {
       <span className="lg:[grid-area:stay]">
         {fare.ret ? (
           <Pill icon={Moon}>
-            {t.units.nights(fare.nights)}
+            {texts.units.nights(fare.nights)}
             {showHours && ` · ${fare.hours} h`}
           </Pill>
         ) : (
@@ -77,7 +77,7 @@ const Chevron = ({ open }) => {
 
 // One destination; pressing it opens the details
 const DestinationRow = ({ fare, weekend, open, onToggle }) => {
-  const { f } = useI18n();
+  const { format } = useI18n();
   return (
     <button type="button" onClick={onToggle} aria-expanded={open} className={cn(ROW_GRID, ROW_BUTTON, "group")}>
       <span className="grid min-w-0 gap-1 [grid-area:dest]">
@@ -94,7 +94,7 @@ const DestinationRow = ({ fare, weekend, open, onToggle }) => {
       </span>
       <TripCells fare={fare} weekend={weekend} />
       <span className="text-right font-heading text-xl font-extrabold tabular-nums [grid-area:price]">
-        {f.money(fare.price, fare.cur)}
+        {format.money(fare.price, fare.cur)}
       </span>
       <Chevron open={open} />
     </button>
@@ -103,7 +103,7 @@ const DestinationRow = ({ fare, weekend, open, onToggle }) => {
 
 // A second option under a destination: the cheapest weekend there that needs no time off
 const AlternativeRow = ({ fare, open, onToggle }) => {
-  const { f } = useI18n();
+  const { format } = useI18n();
   return (
     <button type="button" onClick={onToggle} aria-expanded={open} className={cn(ROW_GRID, ROW_BUTTON, "pt-0 text-muted-foreground")}>
       <span className="flex min-w-0 flex-wrap items-center gap-2 pl-1 [grid-area:dest]">
@@ -115,7 +115,7 @@ const AlternativeRow = ({ fare, open, onToggle }) => {
       </span>
       <TripCells fare={fare} weekend />
       <span className="text-right font-heading font-bold text-foreground tabular-nums [grid-area:price]">
-        {f.money(fare.price, fare.cur)}
+        {format.money(fare.price, fare.cur)}
       </span>
       <Chevron open={open} />
     </button>
@@ -125,8 +125,8 @@ const AlternativeRow = ({ fare, open, onToggle }) => {
 // Destinations sorted by price: destination, travel dates, stay and price.
 // One row open at a time, showing its flights with "Book" and "Save trip".
 const DestinationTable = ({ fares, origin, roundTrip, weekend }) => {
-  const { t } = useI18n();
-  const results = t.results;
+  const { texts } = useI18n();
+  const results = texts.results;
   const [openKey, setOpenKey] = useState(null);
   const toggle = (key) => setOpenKey((current) => (current === key ? null : key));
 

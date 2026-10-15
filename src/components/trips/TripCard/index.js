@@ -15,7 +15,7 @@ import { useTripWhen } from "@/hooks/useTripWhen";
 import { airlinesOf } from "@/utils/format";
 import { ROUTES } from "@/constants/routes";
 
-// The state chip of each kind of trip: its icon, its colours and its text (a key of t.trips)
+// The state chip of each kind of trip: its icon, its colours and its text (a key of texts.trips)
 const STATES = {
   manual: { icon: PenLine, label: "manualBadge" },
   booked: { icon: Ticket, label: "booked", className: "bg-save/15 text-save" },
@@ -26,13 +26,13 @@ const stateOf = (trip) => ["manual", "booked"].find((state) => trip[state]) ?? "
 
 // Planned by hand, booked or only saved; when it is and the airlines
 const TripBadges = ({ trip }) => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   const when = useTripWhen(trip);
   const state = STATES[stateOf(trip)];
   return (
     <div className="flex flex-wrap items-center gap-1.5 pt-1">
       <TripChip icon={state.icon} className={state.className}>
-        {t.trips[state.label]}
+        {texts.trips[state.label]}
       </TripChip>
       <TripChip icon={Clock}>
         <span className="first-letter:uppercase">{when}</span>
@@ -48,7 +48,7 @@ const TripBadges = ({ trip }) => {
 // Tablet and up: photo on the left; trip and actions on top, figures below.
 // The whole card opens the trip; the button and the ⋯ menu sit above that link.
 const TripCard = ({ trip: savedTrip }) => {
-  const { lang, t } = useI18n();
+  const { lang, texts } = useI18n();
   const trip = useLocalizedTrip(savedTrip);
   const { fare, origin } = trip;
   const href = ROUTES.trip(lang, trip.id);
@@ -75,7 +75,7 @@ const TripCard = ({ trip: savedTrip }) => {
       <div className="relative z-10 flex items-start gap-2 p-4 [grid-area:actions] md:pl-0">
         <Button asChild className="h-10 flex-1 font-bold md:flex-none">
           <Link href={href}>
-            {trip.itinerary ? t.trips.viewItinerary : t.trips.createItinerary}
+            {trip.itinerary ? texts.trips.viewItinerary : texts.trips.createItinerary}
             <ArrowRight />
           </Link>
         </Button>

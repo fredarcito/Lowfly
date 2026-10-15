@@ -12,7 +12,7 @@ import { cn } from "@/utils/cn";
 // context (the day's title and the destination) and the actions at hand (back to the list, the day in
 // Google Maps). It slides in while `visible`; the day tabs stick right under it (ItineraryDayTabs).
 const ItineraryStickyBar = ({ trip, day, dayNumber, visible }) => {
-  const { lang, t } = useI18n();
+  const { lang, texts } = useI18n();
   const { routes } = useDayPlan(day);
   const { fare } = trip;
 
@@ -27,7 +27,7 @@ const ItineraryStickyBar = ({ trip, day, dayNumber, visible }) => {
     >
       <div className="mx-auto flex h-14 max-w-5xl items-center gap-2 px-2 sm:px-4">
         <Button asChild variant="ghost" size="icon" className="size-10 shrink-0">
-          <Link href={ROUTES.trips(lang)} aria-label={t.trips.backToList}>
+          <Link href={ROUTES.trips(lang)} aria-label={texts.trips.backToList}>
             <ChevronLeft className="size-5" />
           </Link>
         </Button>
@@ -39,7 +39,7 @@ const ItineraryStickyBar = ({ trip, day, dayNumber, visible }) => {
         </div>
         {routes.length > 0 && (
           <Button asChild variant="outline" size="sm" className="h-9 shrink-0 border-primary/60 text-primary-ink hover:text-primary-ink dark:border-primary/60">
-            <a href={routes[0]} target="_blank" rel="noopener noreferrer" aria-label={t.trips.openDayRoute(dayNumber)}>
+            <a href={routes[0]} target="_blank" rel="noopener noreferrer" aria-label={texts.trips.openDayRoute(dayNumber)}>
               <MapPin /> Google Maps
             </a>
           </Button>

@@ -7,33 +7,33 @@ const CELL = "flex aspect-square flex-col justify-between rounded-md p-1 text-[0
 
 // One month with the cheapest price of each day. The yellower, the cheaper.
 const PriceCalendar = ({ month, byDay, min, max, bestDay, from, to, origin }) => {
-  const { t, f: fmt } = useI18n();
-  const [y, m] = month.split("-").map(Number);
-  const first = new Date(y, m - 1, 1);
-  const total = new Date(y, m, 0).getDate();
+  const { texts, format } = useI18n();
+  const [year, monthNumber] = month.split("-").map(Number);
+  const first = new Date(year, monthNumber - 1, 1);
+  const total = new Date(year, monthNumber, 0).getDate();
   const offset = (first.getDay() + 6) % 7;
 
   const cells = [];
-  for (let i = 0; i < offset; i++) cells.push(<div key={`e${i}`} />);
+  for (let blank = 0; blank < offset; blank++) cells.push(<div key={`e${blank}`} />);
 
-  for (let d = 1; d <= total; d++) {
-    const key = `${y}-${pad(m)}-${pad(d)}`;
-    const f = byDay[key];
+  for (let dayOfMonth = 1; dayOfMonth <= total; dayOfMonth++) {
+    const key = `${year}-${pad(monthNumber)}-${pad(dayOfMonth)}`;
+    const fare = byDay[key];
     if (key < from || key > to) {
       cells.push(
         <div key={key} className={cn(CELL, "text-muted-foreground/40")}>
-          {d}
+          {dayOfMonth}
         </div>
       );
-    } else if (!f) {
+    } else if (!fare) {
       cells.push(
-        <div key={key} className={cn(CELL, "bg-cell/60 text-muted-foreground")} title={t.results.dayNoFlights}>
-          <span>{d}</span>
+        <div key={key} className={cn(CELL, "bg-cell/60 text-muted-foreground")} title={texts.results.dayNoFlights}>
+          <span>{dayOfMonth}</span>
           <span className="self-end">–</span>
         </div>
       );
     } else {
-      const heat = heatOf(f.price, min, max);
+      const heat = heatOf(fare.price, min, max);
       cells.push(
         <a
           key={key}
@@ -44,14 +44,14 @@ const PriceCalendar = ({ month, byDay, min, max, bestDay, from, to, origin }) =>
             key === bestDay && "ring-2 ring-primary"
           )}
           style={{ "--heat": `${heat}%` }}
-          href={fmt.fareLinks(f, origin)[0].href}
+          href={format.fareLinks(fare, origin)[0].href}
           target="_blank"
           rel="noopener noreferrer"
-          title={`${fmt.money(f.price, f.cur)} · ${f.city} · ${airlineNames(f)}${f.ret ? ` · ${t.results.dayReturn(fmt.fmtDay(f.ret.day))}` : ""}`}
-          aria-label={`${t.results.dayAria(d, fmt.money(f.price, f.cur), f.city, airlineNames(f))}${f.ret ? `, ${t.results.dayReturn(fmt.fmtDay(f.ret.day))}` : ""}`}
+          title={`${format.money(fare.price, fare.cur)} · ${fare.city} · ${airlineNames(fare)}${fare.ret ? ` · ${texts.results.dayReturn(format.fmtDay(fare.ret.day))}` : ""}`}
+          aria-label={`${texts.results.dayAria(dayOfMonth, format.money(fare.price, fare.cur), fare.city, airlineNames(fare))}${fare.ret ? `, ${texts.results.dayReturn(format.fmtDay(fare.ret.day))}` : ""}`}
         >
-          <span>{d}</span>
-          <b className="self-end font-heading text-xs font-extrabold tabular-nums sm:text-sm">{Math.round(f.price)}</b>
+          <span>{dayOfMonth}</span>
+          <b className="self-end font-heading text-xs font-extrabold tabular-nums sm:text-sm">{Math.round(fare.price)}</b>
         </a>
       );
     }
@@ -59,11 +59,11 @@ const PriceCalendar = ({ month, byDay, min, max, bestDay, from, to, origin }) =>
 
   return (
     <div className="grid content-start gap-2">
-      <h3 className="font-heading text-base font-semibold first-letter:uppercase">{fmt.fmtMonth(month)}</h3>
+      <h3 className="font-heading text-base font-semibold first-letter:uppercase">{format.fmtMonth(month)}</h3>
       <div className="grid grid-cols-7 gap-1">
-        {fmt.weekdays.map((w, i) => (
-          <div key={i} className="pb-1 text-center text-xs text-muted-foreground">
-            {w}
+        {format.weekdays.map((weekday, weekdayIndex) => (
+          <div key={weekdayIndex} className="pb-1 text-center text-xs text-muted-foreground">
+            {weekday}
           </div>
         ))}
         {cells}

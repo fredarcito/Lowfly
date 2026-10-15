@@ -8,7 +8,7 @@ const DICTIONARIES = { es, en };
 export const getDictionary = (lang) => DICTIONARIES[lang] || es;
 
 // Translated API error message ({ error: code, params })
-export const errorMessage = (t, code, params = {}) => {
-  const msg = t.errors[code] ?? t.errors.unknown;
+export const errorMessage = (texts, code, params = {}) => {
+  const msg = texts.errors[code] ?? texts.errors.unknown;
   return typeof msg === "function" ? msg(params) : msg;
 };

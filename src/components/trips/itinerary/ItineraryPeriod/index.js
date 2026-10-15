@@ -6,7 +6,7 @@ const PERIOD_ICONS = { morning: Sunrise, afternoon: Sun, night: Moon };
 
 // Start of a part of the day: its icon sits on the timeline, then the name and a rule across the list
 const ItineraryPeriod = ({ period, lineAbove, lineBelow }) => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   const Icon = PERIOD_ICONS[period];
   return (
     <li className="relative grid grid-cols-[2.25rem_minmax(0,1fr)] items-center gap-x-3 px-3 py-3 sm:px-4">
@@ -15,7 +15,7 @@ const ItineraryPeriod = ({ period, lineAbove, lineBelow }) => {
         <Icon className="size-4" />
       </span>
       <span className="flex items-center gap-3">
-        <span className="font-heading text-sm font-bold tracking-wide uppercase">{t.trips.periods[period]}</span>
+        <span className="font-heading text-sm font-bold tracking-wide uppercase">{texts.trips.periods[period]}</span>
         <span aria-hidden className="h-px flex-1 bg-border" />
       </span>
     </li>

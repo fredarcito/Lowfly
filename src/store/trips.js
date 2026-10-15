@@ -48,7 +48,7 @@ const write = (list, { quiet = false } = {}) => {
 };
 
 // Soonest first
-export const sortTrips = (list) => [...list].sort((one, other) => (one.fare.day < other.fare.day ? -1 : 1));
+const sortTrips = (list) => [...list].sort((one, other) => (one.fare.day < other.fare.day ? -1 : 1));
 
 // All the trips at once, from the account (after signing in, or none after signing out)
 export const replaceTrips = (list) => write(sortTrips(list), { quiet: true });

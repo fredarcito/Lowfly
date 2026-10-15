@@ -16,14 +16,14 @@ import { ROUTES } from "@/constants/routes";
 // Signing in: with Google, or with a link sent by email (no password), then on to `next` (the page they came
 // from, or My trips). See supabase/signIn.
 export const LoginForm = () => {
-  const { lang, t } = useI18n();
+  const { lang, texts } = useI18n();
   const { status, user } = useAuth();
   const searchParams = useSearchParams();
   const asked = searchParams.get("next") ?? "";
   const next = asked.startsWith("/") && !asked.startsWith("//") ? asked : ROUTES.trips(lang);
   const [email, setEmail] = useState("");
   const [state, setState] = useState(searchParams.get("error") ? { step: "error" } : { step: "idle" });
-  const labels = t.account;
+  const labels = texts.account;
 
   const withGoogle = async () => {
     setState({ step: "google" });

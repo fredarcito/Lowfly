@@ -6,7 +6,7 @@ import { refreshSession } from "@/supabase/session";
 // Pages in a language keep the Supabase session fresh (signed-in visitors).
 export const proxy = async (request) => {
   const { pathname } = request.nextUrl;
-  if (LOCALES.some((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`))) return refreshSession(request);
+  if (LOCALES.some((locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`))) return refreshSession(request);
 
   request.nextUrl.pathname = `/${pickLocale(request.headers.get("accept-language") || "")}${pathname === "/" ? "" : pathname}`;
   return NextResponse.redirect(request.nextUrl);

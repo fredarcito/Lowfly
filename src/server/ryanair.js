@@ -15,32 +15,32 @@ const HEADERS = {
 };
 
 const get = async (path, params) => {
-  const r = await fetch(`${BASE}/${path}?${new URLSearchParams(params)}`, {
+  const response = await fetch(`${BASE}/${path}?${new URLSearchParams(params)}`, {
     headers: HEADERS,
     next: { revalidate: 600 }, // 10 min cache per route and date
   });
-  if (!r.ok) throw new Error(`Ryanair responded with error ${r.status}`);
-  return r.json();
+  if (!response.ok) throw new Error(`Ryanair responded with error ${response.status}`);
+  return response.json();
 };
 
 // Every active Ryanair airport (city, country, coordinates and the country's main airport)
 export const airports = async (lang = "es") => {
-  const r = await fetch(`https://www.ryanair.com/api/views/locate/5/airports/${lang}/active`, {
+  const response = await fetch(`https://www.ryanair.com/api/views/locate/5/airports/${lang}/active`, {
     headers: HEADERS,
     next: { revalidate: 86400 },
   });
-  if (!r.ok) throw new Error(`Ryanair responded with error ${r.status}`);
-  return (await r.json()).map((a) => ({
+  if (!response.ok) throw new Error(`Ryanair responded with error ${response.status}`);
+  return (await response.json()).map((airport) => ({
     airline: "ryanair",
-    code: a.code,
-    name: a.name,
-    city: a.city?.name || a.name,
-    country: countryName(a.country.code, a.country.name, lang),
-    countryCode: a.country.code.toUpperCase(),
-    main: a.country.defaultAirportCode === a.code,
-    tz: a.timeZone,
-    lat: a.coordinates?.latitude,
-    lon: a.coordinates?.longitude,
+    code: airport.code,
+    name: airport.name,
+    city: airport.city?.name || airport.name,
+    country: countryName(airport.country.code, airport.country.name, lang),
+    countryCode: airport.country.code.toUpperCase(),
+    main: airport.country.defaultAirportCode === airport.code,
+    tz: airport.timeZone,
+    lat: airport.coordinates?.latitude,
+    lon: airport.coordinates?.longitude,
   }));
 };
 
@@ -54,19 +54,19 @@ export const cheapest = async (origin, from, to, lang = "es") => {
     ...MARKET[lang],
     adultPaxCount: 1,
   });
-  return (data.fares || []).map((f) => {
-    const o = f.outbound;
-    const a = o.arrivalAirport;
+  return (data.fares || []).map((fare) => {
+    const outbound = fare.outbound;
+    const airport = outbound.arrivalAirport;
     return {
       airline: "ryanair",
-      code: a.iataCode,
-      city: a.city?.name || a.name,
-      country: countryName(a.city?.countryCode || a.countryCode, a.countryName, lang),
-      day: o.departureDate.slice(0, 10),
-      time: o.departureDate.slice(11, 16),
-      arrive: o.arrivalDate?.slice(11, 16),
-      price: o.price.value,
-      cur: o.price.currencyCode,
+      code: airport.iataCode,
+      city: airport.city?.name || airport.name,
+      country: countryName(airport.city?.countryCode || airport.countryCode, airport.countryName, lang),
+      day: outbound.departureDate.slice(0, 10),
+      time: outbound.departureDate.slice(11, 16),
+      arrive: outbound.arrivalDate?.slice(11, 16),
+      price: outbound.price.value,
+      cur: outbound.price.currencyCode,
     };
   });
 };
@@ -75,15 +75,15 @@ export const cheapest = async (origin, from, to, lang = "es") => {
 export const daily = async (dep, arr, from, to) => {
   const list = [];
   for (const month of monthsBetween(from, to)) {
-    const d = await get(`oneWayFares/${dep}/${arr}/cheapestPerDay`, { outboundMonthOfDate: month, currency: "EUR" });
-    for (const f of d.outbound?.fares || []) {
-      if (!f.price || f.unavailable || f.soldOut || f.day < from || f.day > to) continue;
+    const data = await get(`oneWayFares/${dep}/${arr}/cheapestPerDay`, { outboundMonthOfDate: month, currency: "EUR" });
+    for (const fare of data.outbound?.fares || []) {
+      if (!fare.price || fare.unavailable || fare.soldOut || fare.day < from || fare.day > to) continue;
       list.push({
-        day: f.day,
-        time: (f.departureDate || "").slice(11, 16),
-        arrive: f.arrivalDate?.slice(11, 16),
-        price: f.price.value,
-        cur: f.price.currencyCode,
+        day: fare.day,
+        time: (fare.departureDate || "").slice(11, 16),
+        arrive: fare.arrivalDate?.slice(11, 16),
+        price: fare.price.value,
+        cur: fare.price.currencyCode,
       });
     }
   }
@@ -97,14 +97,14 @@ export const daily = async (dep, arr, from, to) => {
 export const roundTrip = async (origin, from, to, minN, maxN, lang = "es") => {
   const windows = chunks(from, shift(to, -minN), 10);
   const fares = [];
-  for (let i = 0; i < windows.length; i += 6) {
-    const batch = windows.slice(i, i + 6).map(([a, b]) =>
-      roundTripWindow(origin, a, b, shift(a, minN), shift(b, maxN) < to ? shift(b, maxN) : to, minN, maxN, lang)
+  for (let start = 0; start < windows.length; start += 6) {
+    const batch = windows.slice(start, start + 6).map(([windowStart, windowEnd]) =>
+      roundTripWindow(origin, windowStart, windowEnd, shift(windowStart, minN), shift(windowEnd, maxN) < to ? shift(windowEnd, maxN) : to, minN, maxN, lang)
     );
     fares.push(...(await Promise.all(batch)).flat());
   }
   const best = new Map();
-  for (const f of fares) if (!best.has(f.code) || f.price < best.get(f.code).price) best.set(f.code, f);
+  for (const fare of fares) if (!best.has(fare.code) || fare.price < best.get(fare.code).price) best.set(fare.code, fare);
   return [...best.values()];
 };
 
@@ -113,26 +113,26 @@ export const roundTrip = async (origin, from, to, minN, maxN, lang = "es") => {
 // Returns up to two trips per destination: the cheapest, and the cheapest needing no time off.
 export const weekendTrips = async (origin, from, to, lang = "es") => {
   const jobs = [];
-  for (const [a, b] of chunks(from, to, 10))
-    for (const o of WEEKEND.out)
-      for (const r of WEEKEND.ret)
+  for (const [windowStart, windowEnd] of chunks(from, to, 10))
+    for (const outSlot of WEEKEND.out)
+      for (const retSlot of WEEKEND.ret)
         jobs.push(() =>
-          roundTripWindow(origin, a, b, shift(a, 1), shift(b, 3) < to ? shift(b, 3) : to, 1, 3, lang, {
-            outboundDepartureDaysOfWeek: o.name,
-            outboundDepartureTimeFrom: o.from,
-            outboundDepartureTimeTo: o.to,
-            inboundDepartureDaysOfWeek: r.name,
-            inboundDepartureTimeFrom: r.from,
-            inboundDepartureTimeTo: r.to,
+          roundTripWindow(origin, windowStart, windowEnd, shift(windowStart, 1), shift(windowEnd, 3) < to ? shift(windowEnd, 3) : to, 1, 3, lang, {
+            outboundDepartureDaysOfWeek: outSlot.name,
+            outboundDepartureTimeFrom: outSlot.from,
+            outboundDepartureTimeTo: outSlot.to,
+            inboundDepartureDaysOfWeek: retSlot.name,
+            inboundDepartureTimeFrom: retSlot.from,
+            inboundDepartureTimeTo: retSlot.to,
           })
         );
   const fares = [];
-  for (let i = 0; i < jobs.length; i += 6) fares.push(...(await Promise.all(jobs.slice(i, i + 6).map((j) => j()))).flat());
+  for (let start = 0; start < jobs.length; start += 6) fares.push(...(await Promise.all(jobs.slice(start, start + 6).map((job) => job()))).flat());
   // Per destination, the cheapest and the cheapest needing no time off (both, when they differ)
   const best = new Map();
-  for (const f of fares)
-    for (const key of noTimeOff(f) ? [f.code, `${f.code} office`] : [f.code])
-      if (!best.has(key) || f.price < best.get(key).price) best.set(key, f);
+  for (const fare of fares)
+    for (const key of noTimeOff(fare) ? [fare.code, `${fare.code} office`] : [fare.code])
+      if (!best.has(key) || fare.price < best.get(key).price) best.set(key, fare);
   return [...new Set(best.values())];
 };
 
@@ -150,23 +150,23 @@ const roundTripWindow = async (origin, outFrom, outTo, inFrom, inTo, minN, maxN,
     adultPaxCount: 1,
     ...filters,
   });
-  const leg = (l) => ({
+  const leg = (flight) => ({
     airline: "ryanair",
-    day: l.departureDate.slice(0, 10),
-    time: l.departureDate.slice(11, 16),
-    arrive: l.arrivalDate?.slice(11, 16),
-    price: l.price.value,
+    day: flight.departureDate.slice(0, 10),
+    time: flight.departureDate.slice(11, 16),
+    arrive: flight.arrivalDate?.slice(11, 16),
+    price: flight.price.value,
   });
-  return (data.fares || []).map((f) => {
-    const a = f.outbound.arrivalAirport;
+  return (data.fares || []).map((fare) => {
+    const airport = fare.outbound.arrivalAirport;
     return {
-      code: a.iataCode,
-      city: a.city?.name || a.name,
-      country: countryName(a.city?.countryCode || a.countryCode, a.countryName, lang),
-      out: leg(f.outbound),
-      ret: leg(f.inbound),
-      price: f.summary.price.value,
-      cur: f.summary.price.currencyCode,
+      code: airport.iataCode,
+      city: airport.city?.name || airport.name,
+      country: countryName(airport.city?.countryCode || airport.countryCode, airport.countryName, lang),
+      out: leg(fare.outbound),
+      ret: leg(fare.inbound),
+      price: fare.summary.price.value,
+      cur: fare.summary.price.currencyCode,
     };
   });
 };

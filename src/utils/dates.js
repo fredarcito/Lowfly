@@ -1,41 +1,41 @@
 // Dates as "YYYY-MM-DD" strings in local time, to avoid timezone headaches
-export const pad = (n) => String(n).padStart(2, "0");
-export const iso = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
-export const isDay = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s || "");
-export const parseDay = (s) => {
-  const [y, m, d] = s.slice(0, 10).split("-").map(Number);
-  return new Date(y, m - 1, d);
+export const pad = (number) => String(number).padStart(2, "0");
+export const iso = (date) => `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+export const isDay = (text) => /^\d{4}-\d{2}-\d{2}$/.test(text || "");
+export const parseDay = (text) => {
+  const [year, month, dayOfMonth] = text.slice(0, 10).split("-").map(Number);
+  return new Date(year, month - 1, dayOfMonth);
 };
-const addDays = (d, n) => {
-  const x = new Date(d);
-  x.setDate(x.getDate() + n);
-  return x;
+const addDays = (date, days) => {
+  const copy = new Date(date);
+  copy.setDate(copy.getDate() + days);
+  return copy;
 };
-export const shift = (day, n) => iso(addDays(parseDay(day), n));
-export const later = (a, b) => (a > b ? a : b);
+export const shift = (day, days) => iso(addDays(parseDay(day), days));
+export const later = (first, second) => (first > second ? first : second);
 export const today = () => iso(new Date());
 export const tomorrow = () => iso(addDays(new Date(), 1));
-export const nightsBetween = (a, b) => Math.round((parseDay(b) - parseDay(a)) / 864e5);
+export const nightsBetween = (from, to) => Math.round((parseDay(to) - parseDay(from)) / 864e5);
 
 export const nextFriday = () => {
-  let d = parseDay(tomorrow());
-  while (d.getDay() !== 5) d = addDays(d, 1);
-  return iso(d);
+  let date = parseDay(tomorrow());
+  while (date.getDay() !== 5) date = addDays(date, 1);
+  return iso(date);
 };
 
 export const daysBetween = (from, to) => {
   const list = [];
-  for (let d = from; d <= to; d = shift(d, 1)) list.push(d);
+  for (let day = from; day <= to; day = shift(day, 1)) list.push(day);
   return list;
 };
 
 export const monthsBetween = (from, to) => {
-  let [y, m] = from.split("-").map(Number);
+  let [year, month] = from.split("-").map(Number);
   const [y2, m2] = to.split("-").map(Number);
   const list = [];
-  while (y < y2 || (y === y2 && m <= m2)) {
-    list.push(`${y}-${pad(m)}-01`);
-    if (++m > 12) { m = 1; y++; }
+  while (year < y2 || (year === y2 && month <= m2)) {
+    list.push(`${year}-${pad(month)}-01`);
+    if (++month > 12) { month = 1; year++; }
   }
   return list;
 };
@@ -43,9 +43,9 @@ export const monthsBetween = (from, to) => {
 // Splits a range into chunks of at most `size` days
 export const chunks = (from, to, size) => {
   const list = [];
-  for (let s = from; s <= to; s = shift(s, size)) {
-    const e = shift(s, size - 1);
-    list.push([s, e < to ? e : to]);
+  for (let start = from; start <= to; start = shift(start, size)) {
+    const end = shift(start, size - 1);
+    list.push([start, end < to ? end : to]);
   }
   return list;
 };

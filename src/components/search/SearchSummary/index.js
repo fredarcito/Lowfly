@@ -9,23 +9,23 @@ import { APP_NAME } from "@/i18n/config";
 // One line with the search that produced the results. Clicking it opens the form again;
 // "Share" sends the link to this search (it is in the URL, see lib/share).
 const SearchSummary = ({ query, originName, onEdit }) => {
-  const { t, f } = useI18n();
+  const { texts, format } = useI18n();
   const [copied, setCopied] = useState(false);
   if (!query) return null;
 
   const { mode, origin, country, city, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend } = query;
-  const ModeIcon = MODES.find((m) => m.id === mode).icon;
-  const destination = mode === "everywhere" ? t.summary.anywhere : city || country;
+  const ModeIcon = MODES.find((candidate) => candidate.id === mode).icon;
+  const destination = mode === "everywhere" ? texts.summary.anywhere : city || country;
   const route = `${originName ?? origin} → ${destination}`;
   const parts =
     mode === "trip"
-      ? [`${f.fmtDay(ida)} → ${f.fmtDay(vuelta)}`, t.form.flexOption(Number(flex))]
+      ? [`${format.fmtDay(ida)} → ${format.fmtDay(vuelta)}`, texts.form.flexOption(Number(flex))]
       : [
-          `${f.fmtDay(from)} → ${f.fmtDay(to)}`,
+          `${format.fmtDay(from)} → ${format.fmtDay(to)}`,
           trip !== "return"
-            ? t.form.oneway
-            : `${t.form.roundTrip}, ${weekend ? t.summary.weekends : t.summary.stay(Number(minN), Number(maxN))}`,
-          max && t.summary.max(f.money(Number(max))),
+            ? texts.form.oneway
+            : `${texts.form.roundTrip}, ${weekend ? texts.summary.weekends : texts.summary.stay(Number(minN), Number(maxN))}`,
+          max && texts.summary.max(format.money(Number(max))),
         ];
   const detail = parts.filter(Boolean).join(" · ");
 
@@ -66,7 +66,7 @@ const SearchSummary = ({ query, originName, onEdit }) => {
         </span>
         <span className="flex h-9 shrink-0 items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition-colors group-hover:bg-muted">
           <Pencil className="size-3.5" />
-          <span className="sr-only sm:not-sr-only">{t.summary.edit}</span>
+          <span className="sr-only sm:not-sr-only">{texts.summary.edit}</span>
         </span>
       </button>
       <button
@@ -75,10 +75,10 @@ const SearchSummary = ({ query, originName, onEdit }) => {
         className="flex h-9 shrink-0 items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition-colors outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50"
       >
         {copied ? <Check className="size-3.5 text-save" /> : <Share2 className="size-3.5" />}
-        <span className="sr-only sm:not-sr-only">{copied ? t.summary.copied : t.summary.share}</span>
+        <span className="sr-only sm:not-sr-only">{copied ? texts.summary.copied : texts.summary.share}</span>
       </button>
       <span className="sr-only" aria-live="polite">
-        {copied ? t.summary.copied : ""}
+        {copied ? texts.summary.copied : ""}
       </span>
     </div>
   );

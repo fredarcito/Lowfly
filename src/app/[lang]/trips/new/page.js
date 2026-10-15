@@ -5,8 +5,8 @@ import { APP_NAME, getDictionary } from "@/i18n";
 
 export const generateMetadata = async ({ params }) => {
   const { lang } = await params;
-  const t = getDictionary(lang);
-  return { title: `${t.trips.manual.title} · ${APP_NAME}`, description: t.trips.manual.subtitle };
+  const texts = getDictionary(lang);
+  return { title: `${texts.trips.manual.title} · ${APP_NAME}`, description: texts.trips.manual.subtitle };
 };
 
 // Planning a trip by hand (any means of transport, one or more towns), outside "My trips" ?id=… pages

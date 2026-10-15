@@ -40,7 +40,7 @@ const StopMarker = ({ stop, open, visited }) => {
 // One stop. Places fold open (one at a time, in step with the map) to show the details,
 // "Directions" and "Mark as visited". Other stops (getting around, breakfast…) just show their note.
 const ItineraryStop = ({ stop, mode, open, visited, onToggle, onHover, onToggleVisited, lineAbove, lineBelow }) => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   const foldable = Boolean(stop.place);
   const summary = stop.why ?? stop.note;
 
@@ -90,7 +90,7 @@ const ItineraryStop = ({ stop, mode, open, visited, onToggle, onHover, onToggleV
               <div className="flex flex-wrap gap-2">
                 <Button asChild variant="outline" className="h-10">
                   <a href={directionsUrl(stop.place, mode)} target="_blank" rel="noopener noreferrer">
-                    <Navigation /> {t.trips.directions}
+                    <Navigation /> {texts.trips.directions}
                   </a>
                 </Button>
                 <Button
@@ -99,7 +99,7 @@ const ItineraryStop = ({ stop, mode, open, visited, onToggle, onHover, onToggleV
                   aria-pressed={visited}
                   className={cn("h-10", visited && "text-save")}
                 >
-                  <CircleCheck /> {visited ? t.trips.visited : t.trips.markVisited}
+                  <CircleCheck /> {visited ? texts.trips.visited : texts.trips.markVisited}
                 </Button>
               </div>
             </div>

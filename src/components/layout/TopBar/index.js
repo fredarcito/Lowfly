@@ -13,7 +13,7 @@ import { cn } from "@/utils/cn";
 
 // Logo, the navigation (Explore · My trips), theme, language and the account. Sits on the header colours (--hero-*).
 const TopBar = ({ className }) => {
-  const { lang, t } = useI18n();
+  const { lang, texts } = useI18n();
   const onTrips = usePathname().startsWith(ROUTES.trips(lang));
   return (
     <div className={cn("flex items-center justify-between gap-3", className)}>
@@ -24,9 +24,9 @@ const TopBar = ({ className }) => {
           </span>
           <span className="max-[400px]:sr-only">{APP_NAME}</span>
         </a>
-        <nav aria-label={t.header.nav} className="flex items-center gap-4 sm:gap-6">
+        <nav aria-label={texts.header.nav} className="flex items-center gap-4 sm:gap-6">
           <NavLink href={ROUTES.home(lang)} active={!onTrips} className="max-sm:hidden">
-            {t.header.explore}
+            {texts.header.explore}
           </NavLink>
           <span aria-hidden className="h-5 w-px bg-hero-chip max-sm:hidden" />
           <TripsLink active={onTrips} />

@@ -12,7 +12,7 @@ import { cn } from "@/utils/cn";
 // `fare` needs city and country (for saving); `airlines` is the list of airlines
 // (two if outbound and return are with different airlines); `tag` is an optional highlight ({ label, hint })
 const ResultRow = ({ fare, origin, title, meta, airlines = [], priceNote, tag }) => {
-  const { f } = useI18n();
+  const { format } = useI18n();
   const details = useDisclosure();
   return (
     <div>
@@ -25,8 +25,8 @@ const ResultRow = ({ fare, origin, title, meta, airlines = [], priceNote, tag })
         <span className="grid min-w-0 flex-1 gap-1">
           <span className="truncate font-heading text-base font-semibold">{title}</span>
           <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
-            {airlines.map((a) => (
-              <AirlineBadge key={a} airline={a} />
+            {airlines.map((airline) => (
+              <AirlineBadge key={airline} airline={airline} />
             ))}
             {tag && (
               <span title={tag.hint} className="rounded-full bg-save/15 px-2 py-0.5 text-xs font-medium text-save">
@@ -37,7 +37,7 @@ const ResultRow = ({ fare, origin, title, meta, airlines = [], priceNote, tag })
           </span>
         </span>
         <span className="grid justify-items-end">
-          <span className="font-heading text-xl font-extrabold tabular-nums">{f.money(fare.price, fare.cur)}</span>
+          <span className="font-heading text-xl font-extrabold tabular-nums">{format.money(fare.price, fare.cur)}</span>
           {priceNote && <span className="text-xs text-muted-foreground">{priceNote}</span>}
         </span>
         <ChevronDown className={cn("size-4 shrink-0 text-muted-foreground transition-transform", details.open && "rotate-180")} />

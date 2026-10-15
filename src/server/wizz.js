@@ -26,9 +26,9 @@ let version = { value: null, at: 0 };
 const apiBase = async () => {
   if (!version.value || Date.now() - version.at > VERSION_TTL) {
     try {
-      const r = await fetch("https://www.wizzair.com/en-gb", { headers: { "user-agent": UA }, cache: "no-store" });
-      const m = (await r.text()).match(/be\.wizzair\.com\/([\d.]+)\/Api/);
-      if (m) version = { value: m[1], at: Date.now() };
+      const response = await fetch("https://www.wizzair.com/en-gb", { headers: { "user-agent": UA }, cache: "no-store" });
+      const match = (await response.text()).match(/be\.wizzair\.com\/([\d.]+)\/Api/);
+      if (match) version = { value: match[1], at: Date.now() };
     } catch {}
   }
   return `https://be.wizzair.com/${version.value || FALLBACK_VERSION}/Api`;
@@ -36,52 +36,52 @@ const apiBase = async () => {
 
 // Wizz network: every city it flies from, with its connections
 const cities = async (lang) => {
-  const r = await fetch(`${await apiBase()}/asset/map?languageCode=${lang === "en" ? "en-gb" : "es-es"}`, { headers: HEADERS, next: { revalidate: 86400 } });
-  if (!r.ok) throw new Error(`Wizz Air responded with error ${r.status}`);
-  return (await r.json()).cities || [];
+  const response = await fetch(`${await apiBase()}/asset/map?languageCode=${lang === "en" ? "en-gb" : "es-es"}`, { headers: HEADERS, next: { revalidate: 86400 } });
+  if (!response.ok) throw new Error(`Wizz Air responded with error ${response.status}`);
+  return (await response.json()).cities || [];
 };
 
 // Every airport Wizz flies from
 export const airports = async (lang = "es") => {
   return (await cities(lang))
-    .filter((c) => c.connections?.length && !c.isFakeStation)
-    .map((c) => ({
+    .filter((city) => city.connections?.length && !city.isFakeStation)
+    .map((city) => ({
       airline: "wizz",
-      code: c.iata,
-      name: c.shortName.trim(),
-      city: c.shortName.trim(),
-      country: countryName(c.countryCode, c.countryName, lang),
-      countryCode: c.countryCode?.toUpperCase(),
-      lat: c.latitude,
-      lon: c.longitude,
+      code: city.iata,
+      name: city.shortName.trim(),
+      city: city.shortName.trim(),
+      country: countryName(city.countryCode, city.countryName, lang),
+      countryCode: city.countryCode?.toUpperCase(),
+      lat: city.latitude,
+      lon: city.longitude,
     }));
 };
 
 // Wizz destinations from the departure airport
 export const destinations = async (origin, lang = "es") => {
   const list = await cities(lang);
-  const byIata = Object.fromEntries(list.map((c) => [c.iata, c]));
+  const byIata = Object.fromEntries(list.map((city) => [city.iata, city]));
   const here = byIata[origin];
   if (!here) return [];
   // A connection can be a metropolitan area (ROM = every Rome airport): it is swapped for its real airports
-  const real = (c) => (c.isFakeStation ? list.filter((x) => x.mac === c.iata && !x.isFakeStation) : [c]);
+  const real = (city) => (city.isFakeStation ? list.filter((airport) => airport.mac === city.iata && !airport.isFakeStation) : [city]);
   return (here.connections || [])
-    .map((c) => byIata[c.iata])
+    .map((city) => byIata[city.iata])
     .filter(Boolean)
     .flatMap(real)
-    .map((c) => ({ airline: "wizz", code: c.iata, city: c.shortName.trim(), country: countryName(c.countryCode, c.countryName, lang) }));
+    .map((city) => ({ airline: "wizz", code: city.iata, city: city.shortName.trim(), country: countryName(city.countryCode, city.countryName, lang) }));
 };
 
 // Cheapest price per day on a route (in 30-day chunks)
 export const daily = async (dep, arr, from, to) => {
   const base = await apiBase();
   const list = [];
-  for (const [a, b] of chunks(from, to, 30)) {
-    const r = await fetch(`${base}/search/timetable`, {
+  for (const [chunkStart, chunkEnd] of chunks(from, to, 30)) {
+    const response = await fetch(`${base}/search/timetable`, {
       method: "POST",
       headers: HEADERS,
       body: JSON.stringify({
-        flightList: [{ departureStation: dep, arrivalStation: arr, from: a, to: b }],
+        flightList: [{ departureStation: dep, arrivalStation: arr, from: chunkStart, to: chunkEnd }],
         priceType: "regular",
         adultCount: 1,
         childCount: 0,
@@ -89,15 +89,15 @@ export const daily = async (dep, arr, from, to) => {
       }),
       next: { revalidate: 600 },
     });
-    if (!r.ok) throw new Error(`Wizz Air responded with error ${r.status}`);
-    const d = await r.json();
-    for (const f of d.outboundFlights || []) {
-      if (f.priceType === "soldOut" || !f.price?.amount) continue;
-      const day = f.departureDate.slice(0, 10);
+    if (!response.ok) throw new Error(`Wizz Air responded with error ${response.status}`);
+    const data = await response.json();
+    for (const flight of data.outboundFlights || []) {
+      if (flight.priceType === "soldOut" || !flight.price?.amount) continue;
+      const day = flight.departureDate.slice(0, 10);
       if (day < from || day > to) continue;
       // `times`: every departure that day. The price is the day's cheapest, without saying which flight.
-      const times = (f.departureDates || []).map((d) => d.slice(11, 16));
-      list.push({ day, time: times[0] || "", times, price: f.price.amount, cur: f.price.currencyCode });
+      const times = (flight.departureDates || []).map((departure) => departure.slice(11, 16));
+      list.push({ day, time: times[0] || "", times, price: flight.price.amount, cur: flight.price.currencyCode });
     }
   }
   return toEur(list);
@@ -106,7 +106,7 @@ export const daily = async (dep, arr, from, to) => {
 // Wizz's own fare finder: the cheapest fare to every destination in a month, in a single request.
 // For a return trip it is the cheapest pair within a stay bucket ("1-3 days", "4-8 days" or "anytime").
 const fareFinder = async (origin, month, duration) => {
-  const r = await fetch(`${await apiBase()}/search/SmartSearchCheapFlightsV2`, {
+  const response = await fetch(`${await apiBase()}/search/SmartSearchCheapFlightsV2`, {
     method: "POST",
     headers: HEADERS,
     body: JSON.stringify({
@@ -122,8 +122,8 @@ const fareFinder = async (origin, month, duration) => {
     }),
     next: { revalidate: 600 },
   });
-  if (!r.ok) throw new Error(`Wizz Air responded with error ${r.status}`);
-  return (await r.json()).items || [];
+  if (!response.ok) throw new Error(`Wizz Air responded with error ${response.status}`);
+  return (await response.json()).items || [];
 };
 
 // Wizz's stay buckets and when each one covers part of a stay of min to max nights
@@ -151,48 +151,48 @@ const monthEnd = (month) => shift(shift(month.slice(0, 7) + "-01", 32).slice(0, 
 export const cheapest = async (origin, from, to, stay = null) => {
   const lastOut = stay ? shift(to, -stay.min) : to;
   const kinds = !stay ? [null] : stay.weekend ? ["weekend"] : buckets(stay);
-  const requests = monthsBetween(from, lastOut).flatMap((m) => kinds.map((b) => [m, b]));
-  const pages = await Promise.all(requests.map(([m, b]) => fareFinder(origin, m, b).then((items) => ({ m, items }))));
+  const requests = monthsBetween(from, lastOut).flatMap((month) => kinds.map((bucket) => [month, bucket]));
+  const pages = await Promise.all(requests.map(([month, bucket]) => fareFinder(origin, month, bucket).then((items) => ({ m: month, items }))));
 
-  const needsRates = pages.some((p) => p.items.some((i) => i.regularPrice.currencyCode !== "EUR"));
+  const needsRates = pages.some((page) => page.items.some((item) => item.regularPrice.currencyCode !== "EUR"));
   const fx = needsRates ? await eurRates() : { EUR: 1 };
-  const eur = (p) => {
-    if (!fx[p.currencyCode]) throw new Error(`No exchange rate for ${p.currencyCode}`);
-    return Math.round((p.amount / fx[p.currencyCode]) * 100) / 100;
+  const eur = (price) => {
+    if (!fx[price.currencyCode]) throw new Error(`No exchange rate for ${price.currencyCode}`);
+    return Math.round((price.amount / fx[price.currencyCode]) * 100) / 100;
   };
-  const leg = (f) => ({ airline: "wizz", day: f.std.slice(0, 10), time: f.std.slice(11, 16), price: eur(f.regularPrice) });
+  const leg = (flight) => ({ airline: "wizz", day: flight.std.slice(0, 10), time: flight.std.slice(11, 16), price: eur(flight.regularPrice) });
 
   const best = new Map();
   const office = new Map(); // weekend: cheapest per destination needing no time off
   const doubtful = [];
-  for (const { m, items } of pages)
-    for (const i of items) {
-      const out = leg(i.outboundFlight);
-      const ret = i.inboundFlight && leg(i.inboundFlight);
-      const price = eur(i.regularPrice);
-      const n = ret && nightsBetween(out.day, ret.day);
+  for (const { m: month, items } of pages)
+    for (const item of items) {
+      const out = leg(item.outboundFlight);
+      const ret = item.inboundFlight && leg(item.inboundFlight);
+      const price = eur(item.regularPrice);
+      const nights = ret && nightsBetween(out.day, ret.day);
       const ok =
         out.day >= from &&
         out.day <= lastOut &&
-        (!stay || (ret.day <= to && n >= stay.min && n <= stay.max)) &&
+        (!stay || (ret.day <= to && nights >= stay.min && nights <= stay.max)) &&
         (!stay?.weekend || (fits(WEEKEND.out, out.day, out.time) && fits(WEEKEND.ret, ret.day, ret.time)));
       if (!ok) {
-        doubtful.push({ code: i.arrivalStation, month: m, price });
+        doubtful.push({ code: item.arrivalStation, month: month, price });
         continue;
       }
-      const fare = { code: i.arrivalStation, ...out, price, cur: "EUR", ...(ret && { out, ret }) };
+      const fare = { code: item.arrivalStation, ...out, price, cur: "EUR", ...(ret && { out, ret }) };
       if (!best.has(fare.code) || price < best.get(fare.code).price) best.set(fare.code, fare);
       if (stay?.weekend && noTimeOff(fare) && (!office.has(fare.code) || price < office.get(fare.code).price))
         office.set(fare.code, fare);
     }
 
   const recheck = new Map();
-  for (const d of doubtful) {
-    if (best.has(d.code) && best.get(d.code).price <= d.price) continue;
-    const a = d.month > from ? d.month : from;
-    const b = monthEnd(d.month) < lastOut ? monthEnd(d.month) : lastOut;
-    const key = `${d.code} ${a}`;
-    if (!recheck.has(key) || d.price < recheck.get(key).price) recheck.set(key, { code: d.code, from: a, to: b, price: d.price });
+  for (const doubt of doubtful) {
+    if (best.has(doubt.code) && best.get(doubt.code).price <= doubt.price) continue;
+    const monthStart = doubt.month > from ? doubt.month : from;
+    const monthStop = monthEnd(doubt.month) < lastOut ? monthEnd(doubt.month) : lastOut;
+    const key = `${doubt.code} ${monthStart}`;
+    if (!recheck.has(key) || doubt.price < recheck.get(key).price) recheck.set(key, { code: doubt.code, from: monthStart, to: monthStop, price: doubt.price });
   }
   return { fares: [...new Set([...best.values(), ...office.values()])], recheck: [...recheck.values()] };
 };

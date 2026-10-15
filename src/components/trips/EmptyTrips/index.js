@@ -8,7 +8,7 @@ import { ROUTES } from "@/constants/routes";
 
 // No upcoming trips: a small illustration (suitcase and plane) and the way to find one
 const EmptyTrips = () => {
-  const { lang, t } = useI18n();
+  const { lang, texts } = useI18n();
   return (
     <div className="grid items-center justify-items-center gap-6 rounded-xl bg-card px-6 py-10 text-center ring-1 ring-foreground/10 sm:grid-cols-[auto_auto] sm:justify-center sm:gap-10 sm:text-left">
       <div aria-hidden className="relative px-6 pt-4">
@@ -17,12 +17,12 @@ const EmptyTrips = () => {
         <span className="absolute top-6 right-4 h-8 w-6 rounded-tr-full border-t-2 border-r-2 border-dashed border-muted-foreground/50" />
       </div>
       <div className="grid justify-items-center gap-2 sm:justify-items-start sm:border-l sm:pl-10">
-        <p className="font-heading text-xl font-bold">{t.trips.empty}</p>
-        <p className="max-w-[44ch] text-sm text-muted-foreground">{t.trips.emptyHint}</p>
+        <p className="font-heading text-xl font-bold">{texts.trips.empty}</p>
+        <p className="max-w-[44ch] text-sm text-muted-foreground">{texts.trips.emptyHint}</p>
         {/* Planning a trip by hand is right above, next to the title (TripList) */}
         <Button asChild variant="outline" className="mt-2 h-10 rounded-full px-5 font-semibold">
           <Link href={ROUTES.home(lang)}>
-            <PlaneTakeoff /> {t.trips.exploreFlights}
+            <PlaneTakeoff /> {texts.trips.exploreFlights}
           </Link>
         </Button>
       </div>

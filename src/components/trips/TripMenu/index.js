@@ -20,7 +20,7 @@ import { cn } from "@/utils/cn";
 // ⋯ quick actions on a trip: mark as booked, book with the airline, redo the itinerary and delete
 // (both ask first; after deleting, `onDeleted`). `variant` and `className` restyle the ⋯ button.
 const TripMenu = ({ trip, onDeleted, variant = "outline", className }) => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   const { toggleBooked, bookingLinks } = useTripActions(trip);
   const deleteDialog = useDisclosure();
   const redoDialog = useDisclosure();
@@ -30,7 +30,7 @@ const TripMenu = ({ trip, onDeleted, variant = "outline", className }) => {
     <>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant={variant} size="icon" className={cn("size-10", className)} aria-label={t.trips.more}>
+          <Button variant={variant} size="icon" className={cn("size-10", className)} aria-label={texts.trips.more}>
             <Ellipsis />
           </Button>
         </DropdownMenuTrigger>
@@ -38,7 +38,7 @@ const TripMenu = ({ trip, onDeleted, variant = "outline", className }) => {
           {/* A trip planned by hand has no flights to book */}
           {!trip.manual && (
             <DropdownMenuItem onSelect={toggleBooked}>
-              <Ticket /> {trip.booked ? t.trips.unmarkBooked : t.trips.markBooked}
+              <Ticket /> {trip.booked ? texts.trips.unmarkBooked : texts.trips.markBooked}
             </DropdownMenuItem>
           )}
           {bookingLinks.map((link) => (
@@ -50,12 +50,12 @@ const TripMenu = ({ trip, onDeleted, variant = "outline", className }) => {
           ))}
           {trip.itinerary && (
             <DropdownMenuItem onSelect={redoDialog.show}>
-              <RefreshCw /> {t.trips.redoItinerary}
+              <RefreshCw /> {texts.trips.redoItinerary}
             </DropdownMenuItem>
           )}
           <DropdownMenuSeparator />
           <DropdownMenuItem variant="destructive" onSelect={deleteDialog.show}>
-            <Trash2 /> {t.trips.remove}
+            <Trash2 /> {texts.trips.remove}
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
@@ -63,9 +63,9 @@ const TripMenu = ({ trip, onDeleted, variant = "outline", className }) => {
         open={redoDialog.open}
         onOpenChange={redoDialog.setOpen}
         icon={RefreshCw}
-        title={t.trips.redoTitle}
-        description={t.trips.redoText}
-        confirmLabel={t.trips.redoConfirm}
+        title={texts.trips.redoTitle}
+        description={texts.trips.redoText}
+        confirmLabel={texts.trips.redoConfirm}
         onConfirm={redoItinerary}
       />
       <DeleteTripDialog trip={trip} open={deleteDialog.open} onOpenChange={deleteDialog.setOpen} onDeleted={onDeleted} />

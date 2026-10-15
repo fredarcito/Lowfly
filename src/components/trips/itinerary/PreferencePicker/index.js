@@ -1,7 +1,7 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
-import { Label } from "@/components/ui/label";
+import FormField from "@/components/shared/FormField";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -20,10 +20,7 @@ const PreferencePicker = ({ id, icon: Icon, label, options, value, onChange, val
   const summary = chosen.length > 2 ? `${chosen[0].label}, ${chosen[1].label} +${chosen.length - 2}` : chosen.map((option) => option.label).join(", ");
 
   return (
-    <div className="grid min-w-0 grid-cols-1 content-start gap-1.5">
-      <Label htmlFor={id} className="text-muted-foreground">
-        {label}
-      </Label>
+    <FormField id={id} label={label}>
       <DropdownMenu>
         <DropdownMenuTrigger
           id={id}
@@ -57,7 +54,7 @@ const PreferencePicker = ({ id, icon: Icon, label, options, value, onChange, val
           )}
         </DropdownMenuContent>
       </DropdownMenu>
-    </div>
+    </FormField>
   );
 };
 

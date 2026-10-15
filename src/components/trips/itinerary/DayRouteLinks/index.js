@@ -7,7 +7,7 @@ import { cn } from "@/utils/cn";
 
 // "Open day 1 in Google Maps" (the app on phones). A long day is split into routes of up to 11 points.
 const DayRouteLinks = ({ routes, dayNumber, className }) => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   if (!routes.length) return null;
   return (
     <div className={cn("flex flex-wrap gap-2", className)}>
@@ -15,7 +15,7 @@ const DayRouteLinks = ({ routes, dayNumber, className }) => {
         <Button key={href} asChild className="h-11 flex-1 px-5 font-bold sm:flex-none">
           <a href={href} target="_blank" rel="noopener noreferrer">
             <MapPin />
-            {routes.length > 1 ? t.trips.openDayRouteLeg(dayNumber, legIndex + 1, routes.length) : t.trips.openDayRoute(dayNumber)}
+            {routes.length > 1 ? texts.trips.openDayRouteLeg(dayNumber, legIndex + 1, routes.length) : texts.trips.openDayRoute(dayNumber)}
           </a>
         </Button>
       ))}

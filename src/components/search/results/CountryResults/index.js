@@ -9,14 +9,14 @@ import { useI18n } from "@/context/i18n";
 import { airlinesOf } from "@/utils/format";
 
 const CountryResults = ({ data }) => {
-  const { t, f: fmt } = useI18n();
+  const { texts, format } = useI18n();
   const { origin, roundTrip, country, city, from, to, months, byDay, best, others, airports, min, max, failed } = data;
-  const priceNote = roundTrip ? t.results.roundTrip : undefined;
+  const priceNote = roundTrip ? texts.results.roundTrip : undefined;
   // A city search (Roma) or the whole country (Italia)
   const place = city ?? country;
   if (!best) {
     return (
-      <NoResults failed={failed}>{t.results.noFlightsCountry(place)}</NoResults>
+      <NoResults failed={failed}>{texts.results.noFlightsCountry(place)}</NoResults>
     );
   }
 
@@ -26,48 +26,48 @@ const CountryResults = ({ data }) => {
         price={best.price}
         cur={best.cur}
         title={`${best.city}, ${country}`}
-        detail={t.results.airportAdult(best.code)}
-        links={fmt.fareLinks(best, origin)}
+        detail={texts.results.airportAdult(best.code)}
+        links={format.fareLinks(best, origin)}
         fare={{ ...best, country }}
         origin={origin}
         priceNote={priceNote}
-        label={t.results.bestDay}
+        label={texts.results.bestDay}
       />
       <FailedNote failed={failed} />
 
       <Section
-        title={t.results.calendar}
-        note={roundTrip ? t.results.calendarNoteReturn(place) : t.results.calendarNoteOneway(place)}
+        title={texts.results.calendar}
+        note={roundTrip ? texts.results.calendarNoteReturn(place) : texts.results.calendarNoteOneway(place)}
         action={
           <HeatLegend
             min={min}
             max={max}
             extra={
               <span className="flex items-center gap-1.5">
-                <span className="size-3 rounded-sm ring-2 ring-primary" aria-hidden /> {t.results.bestDayLegend}
+                <span className="size-3 rounded-sm ring-2 ring-primary" aria-hidden /> {texts.results.bestDayLegend}
               </span>
             }
           />
         }
       >
         <div className="grid gap-6 rounded-xl bg-card p-4 ring-1 ring-foreground/10 sm:p-5 md:grid-cols-2">
-          {months.map((m) => (
-            <PriceCalendar key={m} month={m} byDay={byDay} min={min} max={max} bestDay={best.day} from={from} to={to} origin={origin} />
+          {months.map((month) => (
+            <PriceCalendar key={month} month={month} byDay={byDay} min={min} max={max} bestDay={best.day} from={from} to={to} origin={origin} />
           ))}
         </div>
       </Section>
 
       {others.length > 0 && (
-        <Section title={t.results.otherDates}>
+        <Section title={texts.results.otherDates}>
           <ResultList>
-            {others.map((f) => (
+            {others.map((fare) => (
               <ResultRow
-                key={f.day}
-                title={f.ret ? fmt.fareDates(f) : fmt.fmtDay(f.day)}
-                meta={f.ret ? `${f.city} (${f.code})` : `${f.city} (${f.code})${fmt.at(f.time)}`}
-                airlines={airlinesOf(f)}
+                key={fare.day}
+                title={fare.ret ? format.fareDates(fare) : format.fmtDay(fare.day)}
+                meta={fare.ret ? `${fare.city} (${fare.code})` : `${fare.city} (${fare.code})${format.at(fare.time)}`}
+                airlines={airlinesOf(fare)}
                 priceNote={priceNote}
-                fare={{ ...f, country: f.country ?? country }}
+                fare={{ ...fare, country: fare.country ?? country }}
                 origin={origin}
               />
             ))}
@@ -75,16 +75,16 @@ const CountryResults = ({ data }) => {
         </Section>
       )}
 
-      <Section title={t.results.byAirport} note={roundTrip ? t.results.byAirportNoteReturn : t.results.byAirportNoteOneway}>
+      <Section title={texts.results.byAirport} note={roundTrip ? texts.results.byAirportNoteReturn : texts.results.byAirportNoteOneway}>
         <ResultList>
-          {airports.map((f) => (
+          {airports.map((fare) => (
             <ResultRow
-              key={f.code}
-              title={`${f.city} (${f.code})`}
-              meta={f.ret ? fmt.fareDates(f) : t.results.bestDayMeta(fmt.fmtDay(f.day))}
-              airlines={airlinesOf(f)}
+              key={fare.code}
+              title={`${fare.city} (${fare.code})`}
+              meta={fare.ret ? format.fareDates(fare) : texts.results.bestDayMeta(format.fmtDay(fare.day))}
+              airlines={airlinesOf(fare)}
               priceNote={priceNote}
-              fare={{ ...f, country: f.country ?? country }}
+              fare={{ ...fare, country: fare.country ?? country }}
               origin={origin}
             />
           ))}

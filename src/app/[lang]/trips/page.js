@@ -5,8 +5,8 @@ import { APP_NAME, getDictionary } from "@/i18n";
 
 export const generateMetadata = async ({ params }) => {
   const { lang } = await params;
-  const t = getDictionary(lang);
-  return { title: `${t.trips.title} · ${APP_NAME}`, description: t.trips.subtitle };
+  const texts = getDictionary(lang);
+  return { title: `${texts.trips.title} · ${APP_NAME}`, description: texts.trips.subtitle };
 };
 
 // "My trips". The trips live in the browser (localStorage), so the page is rendered there;

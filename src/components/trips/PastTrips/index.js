@@ -8,7 +8,7 @@ import { cn } from "@/utils/cn";
 
 // Trips already over, folded away at the end of the list
 const PastTrips = ({ trips }) => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   const section = useDisclosure();
   if (!trips.length) return null;
   return (
@@ -19,7 +19,7 @@ const PastTrips = ({ trips }) => {
         aria-expanded={section.open}
         className="flex w-fit items-center gap-1.5 font-heading text-lg font-semibold"
       >
-        {t.trips.past(trips.length)}
+        {texts.trips.past(trips.length)}
         <ChevronDown className={cn("size-4 transition-transform", section.open && "rotate-180")} />
       </button>
       {section.open && (

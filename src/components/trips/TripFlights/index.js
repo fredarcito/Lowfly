@@ -16,7 +16,7 @@ import { cn } from "@/utils/cn";
 // coral actions. The chevron unfolds the flights (left) next to what is decided around booking (right): the
 // extra baggage and "Booked the flights already?", with the saved price below. Phones: one under the other.
 const TripFlights = ({ trip }) => {
-  const { t, f } = useI18n();
+  const { texts, format } = useI18n();
   const { setBooked, bookingLinks } = useTripActions(trip);
   const details = useDisclosure();
   const { fare, origin } = trip;
@@ -29,11 +29,11 @@ const TripFlights = ({ trip }) => {
       <div className="flex flex-wrap items-center gap-x-4 gap-y-3 px-4 py-3 sm:px-5">
         <Plane className="size-5 shrink-0 -rotate-45 text-primary" strokeWidth={1.75} />
         <p className="min-w-0 flex-1">
-          <span className="font-heading font-bold">{t.trips.flights}: </span>
+          <span className="font-heading font-bold">{texts.trips.flights}: </span>
           <span className="text-muted-foreground">
             {origin} {fare.ret ? "⇆" : "→"} {fare.code} · {airlines} ·{" "}
           </span>
-          <span className="font-heading font-bold whitespace-nowrap tabular-nums">{f.money(fare.price, fare.cur)}</span>
+          <span className="font-heading font-bold whitespace-nowrap tabular-nums">{format.money(fare.price, fare.cur)}</span>
         </p>
         {!trip.booked && (
           <div className="flex flex-wrap gap-2 max-sm:order-last max-sm:w-full">
@@ -51,7 +51,7 @@ const TripFlights = ({ trip }) => {
           size="icon"
           onClick={details.toggle}
           aria-expanded={details.open}
-          aria-label={details.open ? t.trips.hideFlights : t.trips.showFlights}
+          aria-label={details.open ? texts.trips.hideFlights : texts.trips.showFlights}
           className="size-9"
         >
           <ChevronDown className={cn("transition-transform", details.open && "rotate-180")} />
@@ -73,14 +73,14 @@ const TripFlights = ({ trip }) => {
                   onChange={(event) => setBooked(event.target.checked)}
                   className="mt-0.5 size-5 accent-(--save)"
                 />
-                <span className="font-medium">{t.trips.bookedQuestion}</span>
-                <span className="col-start-2 text-sm text-muted-foreground">{t.trips.bookedHint}</span>
+                <span className="font-medium">{texts.trips.bookedQuestion}</span>
+                <span className="col-start-2 text-sm text-muted-foreground">{texts.trips.bookedHint}</span>
               </label>
             </div>
           </div>
           <p className="flex items-start gap-2 border-t pt-4 text-sm text-muted-foreground">
             <Info className="mt-0.5 size-4 shrink-0" />
-            {t.trips.savedPrice(f.money(fare.price, fare.cur))}.{!trip.booked && ` ${t.trips.priceMayChange}`}
+            {texts.trips.savedPrice(format.money(fare.price, fare.cur))}.{!trip.booked && ` ${texts.trips.priceMayChange}`}
           </p>
         </div>
       </Collapse>

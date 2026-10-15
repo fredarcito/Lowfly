@@ -14,7 +14,7 @@ const subscribe = (cb) => {
 const getTheme = () => document.documentElement.dataset.theme || DEFAULT_THEME;
 
 const ThemeToggle = () => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   const theme = useSyncExternalStore(subscribe, getTheme, () => DEFAULT_THEME);
   const next = theme === "dark" ? "light" : "dark";
 
@@ -34,8 +34,8 @@ const ThemeToggle = () => {
     <button
       type="button"
       onClick={toggle}
-      aria-label={next === "light" ? t.header.toLight : t.header.toDark}
-      title={next === "light" ? t.header.toLight : t.header.toDark}
+      aria-label={next === "light" ? texts.header.toLight : texts.header.toDark}
+      title={next === "light" ? texts.header.toLight : texts.header.toDark}
       className="grid size-9 shrink-0 place-items-center rounded-full bg-hero-chip text-hero-muted transition-colors hover:text-hero-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
     >
       {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}

@@ -14,8 +14,8 @@ import { useI18n } from "@/context/i18n";
 // Desktop: the strip in three columns, the buttons stacked in a narrow one so the price and the baggage have
 // room. Phones and tablets: the compact card (CompactFareBody), the price being already on the row above.
 const FareDetails = ({ fare, origin }) => {
-  const { t, f } = useI18n();
-  const links = f.fareLinks(fare, origin);
+  const { texts, format } = useI18n();
+  const links = format.fareLinks(fare, origin);
   const actions = (
     <>
       {links.map((link) => (
@@ -31,9 +31,9 @@ const FareDetails = ({ fare, origin }) => {
   const footer = (
     <div className="grid gap-4 lg:grid-cols-[auto_minmax(0,1fr)_15rem] lg:items-center lg:gap-0 lg:divide-x">
       <div className="grid gap-1.5 lg:pr-8">
-        <p className="font-heading text-4xl leading-none font-extrabold tracking-tight text-primary tabular-nums lg:text-5xl">{f.money(fare.price, fare.cur)}</p>
+        <p className="font-heading text-4xl leading-none font-extrabold tracking-tight text-primary tabular-nums lg:text-5xl">{format.money(fare.price, fare.cur)}</p>
         <p className="text-sm text-muted-foreground first-letter:uppercase">
-          {fare.ret ? t.results.roundTrip : t.form.oneway} · {t.results.oneAdult}
+          {fare.ret ? texts.results.roundTrip : texts.form.oneway} · {texts.results.oneAdult}
         </p>
       </div>
       <BagEstimate fare={fare} className="lg:px-8" />

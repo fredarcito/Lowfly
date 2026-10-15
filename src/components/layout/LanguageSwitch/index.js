@@ -8,25 +8,25 @@ import { cn } from "@/utils/cn";
 
 // Plain links (full reload) so the search starts fresh in the other language
 const LanguageSwitch = () => {
-  const { lang, t } = useI18n();
+  const { lang, texts } = useI18n();
   // Same page in the other language (/es/trips → /en/trips)
   const rest = usePathname().replace(/^\/[a-z]{2}(?=\/|$)/, "");
   return (
-    <nav aria-label={t.header.language} className="flex shrink-0 items-center gap-1 rounded-full bg-hero-chip p-1 text-xs font-semibold">
+    <nav aria-label={texts.header.language} className="flex shrink-0 items-center gap-1 rounded-full bg-hero-chip p-1 text-xs font-semibold">
       <Languages className="mx-1 size-3.5 text-hero-muted max-sm:hidden" aria-hidden />
-      {LOCALES.map((l) => (
+      {LOCALES.map((locale) => (
         <a
-          key={l}
-          href={`/${l}${rest}`}
-          hrefLang={l}
-          lang={l}
-          aria-current={l === lang ? "page" : undefined}
+          key={locale}
+          href={`/${locale}${rest}`}
+          hrefLang={locale}
+          lang={locale}
+          aria-current={locale === lang ? "page" : undefined}
           className={cn(
             "rounded-full px-2.5 py-1 uppercase transition-colors",
-            l === lang ? "bg-hero-chip-active text-hero-chip-active-foreground shadow-sm" : "text-hero-muted hover:text-hero-foreground"
+            locale === lang ? "bg-hero-chip-active text-hero-chip-active-foreground shadow-sm" : "text-hero-muted hover:text-hero-foreground"
           )}
         >
-          {l}
+          {locale}
         </a>
       ))}
     </nav>

@@ -15,9 +15,9 @@ import { removeTrip } from "@/store/trips";
 
 // Asks before deleting a saved trip (and its itinerary). `onDeleted` runs after removing it.
 const DeleteTripDialog = ({ trip, open, onOpenChange, onDeleted }) => {
-  const { t, f } = useI18n();
+  const { texts, format } = useI18n();
   const { fare } = trip;
-  const dates = fare.ret ? f.fmtRange(fare.day, fare.ret.day) : f.fmtDay(fare.day);
+  const dates = fare.ret ? format.fmtRange(fare.day, fare.ret.day) : format.fmtDay(fare.day);
 
   const remove = () => {
     onDeleted?.();
@@ -32,21 +32,21 @@ const DeleteTripDialog = ({ trip, open, onOpenChange, onDeleted }) => {
             <Trash2 className="size-5" />
           </span>
           <div className="grid gap-1.5">
-            <AlertDialogTitle>{t.trips.removeTitle}</AlertDialogTitle>
+            <AlertDialogTitle>{texts.trips.removeTitle}</AlertDialogTitle>
             <AlertDialogDescription>
-              {t.trips.removeText(fare.city, dates, Boolean(trip.itinerary))}
+              {texts.trips.removeText(fare.city, dates, Boolean(trip.itinerary))}
             </AlertDialogDescription>
           </div>
         </div>
         <div className="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
           <AlertDialogCancel asChild>
             <Button variant="outline" className="h-10 px-4">
-              {t.trips.cancel}
+              {texts.trips.cancel}
             </Button>
           </AlertDialogCancel>
           <AlertDialogAction asChild>
             <Button onClick={remove} className="h-10 bg-destructive px-4 font-semibold text-white hover:bg-destructive/90">
-              <Trash2 /> {t.trips.remove}
+              <Trash2 /> {texts.trips.remove}
             </Button>
           </AlertDialogAction>
         </div>

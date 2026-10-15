@@ -3,9 +3,9 @@ import { country } from "@/server/flights";
 
 export const maxDuration = 30;
 
-export const GET = handle((p) => {
-  const from = day(p.get("from"));
-  const to = day(p.get("to"));
+export const GET = handle((params) => {
+  const from = day(params.get("from"));
+  const to = day(params.get("to"));
   range(from, to, 120); // a country with many airports means many requests
-  return country(iata(p.get("origin")), countryParam(p.get("country")), city(p.get("city")), from, to, maxPrice(p.get("max")), stay(p, from, to), lang(p));
+  return country(iata(params.get("origin")), countryParam(params.get("country")), city(params.get("city")), from, to, maxPrice(params.get("max")), stay(params, from, to), lang(params));
 });

@@ -26,16 +26,16 @@ const Stat = ({ label, icon: Icon, strong, children }) => {
 // A trip planned by hand (`stops`): arrival, departure, stay and how many towns.
 // Phone: two columns. Tablet and up: one row with dividers.
 const TripStats = ({ fare, stops, className }) => {
-  const { t, f } = useI18n();
+  const { texts, format } = useI18n();
   if (stops) {
     return (
       <dl className={cn("grid grid-cols-2 gap-x-4 gap-y-3 md:flex md:divide-x", className)}>
-        <Stat label={t.trips.arrival}>{f.fmtDay(fare.day)}</Stat>
-        <Stat label={t.trips.leaving}>{f.fmtDay(fare.ret.day)}</Stat>
-        <Stat label={t.trips.stay} icon={Moon}>
-          {t.units.nights(fare.nights)}
+        <Stat label={texts.trips.arrival}>{format.fmtDay(fare.day)}</Stat>
+        <Stat label={texts.trips.leaving}>{format.fmtDay(fare.ret.day)}</Stat>
+        <Stat label={texts.trips.stay} icon={Moon}>
+          {texts.units.nights(fare.nights)}
         </Stat>
-        <Stat label={t.trips.towns} icon={MapPin}>
+        <Stat label={texts.trips.towns} icon={MapPin}>
           {stops.length}
         </Stat>
       </dl>
@@ -43,19 +43,19 @@ const TripStats = ({ fare, stops, className }) => {
   }
   return (
     <dl className={cn("grid grid-cols-2 gap-x-4 gap-y-3 md:flex md:divide-x", className)}>
-      <Stat label={t.trips.departure}>{f.fmtDay(fare.day)}</Stat>
+      <Stat label={texts.trips.departure}>{format.fmtDay(fare.day)}</Stat>
       {fare.ret ? (
         <>
-          <Stat label={t.trips.return}>{f.fmtDay(fare.ret.day)}</Stat>
-          <Stat label={t.trips.stay} icon={Moon}>
-            {t.units.nights(fare.nights)}
+          <Stat label={texts.trips.return}>{format.fmtDay(fare.ret.day)}</Stat>
+          <Stat label={texts.trips.stay} icon={Moon}>
+            {texts.units.nights(fare.nights)}
           </Stat>
         </>
       ) : (
-        <Stat label={t.trips.departureTime}>{fare.time}</Stat>
+        <Stat label={texts.trips.departureTime}>{fare.time}</Stat>
       )}
-      <Stat label={t.trips.savedPriceLabel} strong>
-        {f.money(fare.price, fare.cur)}
+      <Stat label={texts.trips.savedPriceLabel} strong>
+        {format.money(fare.price, fare.cur)}
       </Stat>
     </dl>
   );

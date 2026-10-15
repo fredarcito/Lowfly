@@ -16,7 +16,7 @@ const Collapse = ({ open, className, children }) => {
   return (
     <div
       inert={!open}
-      onTransitionEnd={(e) => e.target === e.currentTarget && e.propertyName === "grid-template-rows" && setSettled(open)}
+      onTransitionEnd={(event) => event.target === event.currentTarget && event.propertyName === "grid-template-rows" && setSettled(open)}
       className={cn(
         "grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(.2,.8,.2,1)] motion-reduce:transition-none",
         open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",

@@ -9,8 +9,8 @@ export const GET = async (req) => {
   try {
     const country = req.headers.get("x-vercel-ip-country");
     return NextResponse.json(await defaultOrigin(country, req.nextUrl.searchParams.get("tz")), { headers });
-  } catch (e) {
-    console.error(e);
+  } catch (error) {
+    console.error(error);
     return NextResponse.json({ country: null, origin: DEFAULT_ORIGIN }, { headers });
   }
 };

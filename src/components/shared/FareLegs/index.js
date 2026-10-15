@@ -20,7 +20,7 @@ const End = ({ time, airport, align = "left" }) => {
 // One leg: day, departure → arrival (with the flight length), airline and the price of that leg.
 // from / to: { code, city, tz }
 const Leg = ({ icon: Icon, label, flight, from, to, showPrice = true }) => {
-  const { f } = useI18n();
+  const { format } = useI18n();
   const minutes = flightMinutes(flight, from.tz, to.tz);
   return (
     <div className="grid gap-3 sm:grid-cols-[6.5rem_minmax(0,1fr)_auto] sm:items-center sm:gap-5">
@@ -28,7 +28,7 @@ const Leg = ({ icon: Icon, label, flight, from, to, showPrice = true }) => {
         <span className="flex items-center gap-1.5 text-xs font-semibold tracking-wide text-muted-foreground uppercase">
           <Icon className="size-3.5" /> {label}
         </span>
-        <span className="text-sm font-medium first-letter:uppercase">{f.fmtDay(flight.day)}</span>
+        <span className="text-sm font-medium first-letter:uppercase">{format.fmtDay(flight.day)}</span>
       </div>
 
       <div className="flex items-center gap-3">
@@ -39,14 +39,14 @@ const Leg = ({ icon: Icon, label, flight, from, to, showPrice = true }) => {
             <Plane className="size-3.5 rotate-45" />
             <span className="h-px flex-1 border-t border-dashed border-current" />
           </div>
-          {minutes && <span className="text-xs">{f.duration(minutes)}</span>}
+          {minutes && <span className="text-xs">{format.duration(minutes)}</span>}
         </div>
         <End time={flight.arrive} airport={to} align="right" />
       </div>
 
       <div className="flex items-center justify-between gap-3 sm:justify-end">
         <AirlineBadge airline={flight.airline} />
-        {showPrice && <span className="min-w-20 text-right font-heading text-lg font-bold tabular-nums">{f.money(flight.price, flight.cur)}</span>}
+        {showPrice && <span className="min-w-20 text-right font-heading text-lg font-bold tabular-nums">{format.money(flight.price, flight.cur)}</span>}
       </div>
     </div>
   );
@@ -64,12 +64,12 @@ const fareEnds = (airports, fare, origin) => {
 
 // One flight of a fare on its own (`direction`: out | ret), as in FareLegs
 export const FareLeg = ({ fare, origin, direction = "out", showPrice = true }) => {
-  const { lang, t } = useI18n();
+  const { lang, texts } = useI18n();
   const { home, away } = fareEnds(useAirports(lang), fare, origin);
   return direction === "ret" ? (
-    <Leg icon={PlaneLanding} label={t.results.ret} flight={fare.ret} from={away} to={home} showPrice={showPrice} />
+    <Leg icon={PlaneLanding} label={texts.results.ret} flight={fare.ret} from={away} to={home} showPrice={showPrice} />
   ) : (
-    <Leg icon={PlaneTakeoff} label={t.results.out} flight={fare.out || fare} from={home} to={away} showPrice={showPrice} />
+    <Leg icon={PlaneTakeoff} label={texts.results.out} flight={fare.out || fare} from={home} to={away} showPrice={showPrice} />
   );
 };
 
@@ -77,26 +77,26 @@ export const FareLeg = ({ fare, origin, direction = "out", showPrice = true }) =
 // `legPrices`: each flight's price (useless on a one-way trip shown next to its total). `footer` goes under
 // the flights, in the same box (an opened result: price, baggage and booking).
 const FareLegs = ({ fare, origin, legPrices = true, footer }) => {
-  const { lang, t } = useI18n();
+  const { lang, texts } = useI18n();
   const out = fare.out || fare;
   const { home, away } = fareEnds(useAirports(lang), fare, origin);
 
   return (
     <div className="grid gap-4 rounded-xl bg-muted/50 p-4 sm:p-5">
-      <Leg icon={PlaneTakeoff} label={t.results.out} flight={out} from={home} to={away} showPrice={legPrices} />
+      <Leg icon={PlaneTakeoff} label={texts.results.out} flight={out} from={home} to={away} showPrice={legPrices} />
       {fare.ret && (
         <>
           <div className="flex items-center gap-3 text-xs text-muted-foreground">
             <span className="h-px flex-1 bg-border" />
             <span className="flex items-center gap-1.5">
               <Moon className="size-3.5" />
-              {t.results.nightsIn(fare.nights, fare.city)}
+              {texts.results.nightsIn(fare.nights, fare.city)}
               {/* Hours there only matter on a short break */}
-              {fare.hours && fare.nights <= 3 && ` · ${t.results.hoursAway(fare.hours)}`}
+              {fare.hours && fare.nights <= 3 && ` · ${texts.results.hoursAway(fare.hours)}`}
             </span>
             <span className="h-px flex-1 bg-border" />
           </div>
-          <Leg icon={PlaneLanding} label={t.results.ret} flight={fare.ret} from={away} to={home} showPrice={legPrices} />
+          <Leg icon={PlaneLanding} label={texts.results.ret} flight={fare.ret} from={away} to={home} showPrice={legPrices} />
         </>
       )}
       {footer && <div className="border-t pt-4">{footer}</div>}

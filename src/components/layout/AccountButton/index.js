@@ -20,7 +20,7 @@ const CHIP = "grid size-9 shrink-0 place-items-center overflow-hidden rounded-fu
 // The visitor's account in the top bar: "Sign in" (back to this page afterwards), or their picture (or
 // initial) with a menu: who they are, their trips and signing out. Nothing while the session loads.
 export const AccountButton = () => {
-  const { lang, t } = useI18n();
+  const { lang, texts } = useI18n();
   const { status, user, signOut } = useAuth();
   const pathname = usePathname();
 
@@ -33,7 +33,7 @@ export const AccountButton = () => {
         className="flex h-9 shrink-0 items-center gap-1.5 rounded-full bg-hero-chip px-3 text-sm font-semibold text-hero-foreground transition-colors hover:bg-hero-chip/80 focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none max-sm:w-9 max-sm:justify-center max-sm:px-0"
       >
         <LogIn className="size-4" />
-        <span className="max-sm:sr-only">{t.account.signIn}</span>
+        <span className="max-sm:sr-only">{texts.account.signIn}</span>
       </Link>
     );
   }
@@ -43,7 +43,7 @@ export const AccountButton = () => {
   const name = user.user_metadata?.full_name ?? user.email;
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className={CHIP} aria-label={t.account.menu(name)}>
+      <DropdownMenuTrigger className={CHIP} aria-label={texts.account.menu(name)}>
         {picture ? (
           <img src={picture} alt="" referrerPolicy="no-referrer" className="size-full object-cover" />
         ) : (
@@ -58,11 +58,11 @@ export const AccountButton = () => {
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
           <Link href={ROUTES.trips(lang)}>
-            <Luggage /> {t.trips.title}
+            <Luggage /> {texts.trips.title}
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem onSelect={signOut}>
-          <LogOut /> {t.account.signOut}
+          <LogOut /> {texts.account.signOut}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

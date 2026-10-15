@@ -22,7 +22,7 @@ const Tags = ({ tags, className }) => {
 // `collapsible` (a compact card on phones): three lines and "See more", which shows the rest, the source and
 // the highlights. Shows nothing while loading or when there is no guide.
 const DestinationGuide = ({ code, tagsOnly = false, collapsible = false, className, textClassName }) => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   const guide = useDestinationGuide(code);
   const [expanded, setExpanded] = useState(false);
   if (!guide) return null;
@@ -34,7 +34,7 @@ const DestinationGuide = ({ code, tagsOnly = false, collapsible = false, classNa
         {guide.text}{" "}
         {!folded && (
           <a href={guide.source} target="_blank" rel="noopener noreferrer" className="text-xs whitespace-nowrap text-muted-foreground underline hover:text-foreground">
-            {t.results.guideSource}
+            {texts.results.guideSource}
           </a>
         )}
       </p>
@@ -46,7 +46,7 @@ const DestinationGuide = ({ code, tagsOnly = false, collapsible = false, classNa
           onClick={() => setExpanded((current) => !current)}
           className="w-fit text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
         >
-          {expanded ? t.results.seeLess : t.results.seeMore}
+          {expanded ? texts.results.seeLess : texts.results.seeMore}
         </button>
       )}
     </div>

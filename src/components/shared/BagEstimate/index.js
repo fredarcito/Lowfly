@@ -7,7 +7,7 @@ import { bagExtra } from "@/utils/baggage";
 import { airlineNames } from "@/utils/format";
 import { cn } from "@/utils/cn";
 
-// The note under the prices (a key of t.results): once booked, how to add a bag; otherwise where the final
+// The note under the prices (a key of texts.results): once booked, how to add a bag; otherwise where the final
 // price is, shorter in the large version
 const NOTES = { booked: "bagsAfterBooking", large: "bagsFinalPriceShort", regular: "bagsFinalPrice" };
 
@@ -19,37 +19,37 @@ const NOTES = { booked: "bagsAfterBooking", large: "bagsFinalPriceShort", regula
 // `booked`: the flights are booked already, so the note says how to add a bag now.
 const BagEstimate = ({ fare, large = false, hideTitle = false, booked = false, className }) => {
   const note = NOTES[["booked", "large"].find((variant) => ({ booked, large })[variant]) ?? "regular"];
-  const { t, f } = useI18n();
+  const { texts, format } = useI18n();
   const extras = Object.keys(BAGS)
     .map((kind) => ({ kind, extra: bagExtra(fare, kind) }))
     .filter((estimate) => estimate.extra != null);
   if (!extras.length) return null;
-  const wholeEuros = (amount) => f.money(Math.round(amount), fare.cur, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  const wholeEuros = (amount) => format.money(Math.round(amount), fare.cur, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
 
   return (
     <div
       className={cn("grid content-start text-muted-foreground", large ? "gap-2.5" : "gap-1 text-sm", className)}
-      title={t.results.bagsHint}
+      title={texts.results.bagsHint}
     >
       {!hideTitle && (
         <p className={cn("flex items-center text-foreground", large ? "gap-2.5" : "gap-1.5")}>
           <Luggage className={cn("shrink-0 text-muted-foreground", large ? "size-5" : "size-4")} />
-          {t.results.bagsTitle}
+          {texts.results.bagsTitle}
         </p>
       )}
       <dl className={cn("grid grid-cols-[1fr_auto] gap-x-6", large ? "gap-y-1.5 pl-7.5" : "max-w-72 gap-y-0.5 pl-5.5")}>
         {extras.map(({ kind, extra }) => (
           <div key={kind} className="contents">
-            <dt className="whitespace-nowrap">{t.results.bag[kind](BAGS[kind].kg)}</dt>
+            <dt className="whitespace-nowrap">{texts.results.bag[kind](BAGS[kind].kg)}</dt>
             <dd className="text-right font-medium whitespace-nowrap text-foreground tabular-nums">+{wholeEuros(extra)}</dd>
           </div>
         ))}
       </dl>
       <p className={cn("text-xs", large ? "ml-7.5 border-t pt-2.5" : "pl-5.5")}>
-        {fare.ret && `${t.results.bagsBothFlights} `}
-        {t.results[note](airlineNames(fare))}
+        {fare.ret && `${texts.results.bagsBothFlights} `}
+        {texts.results[note](airlineNames(fare))}
       </p>
-      <span className="sr-only">{t.results.bagsHint}</span>
+      <span className="sr-only">{texts.results.bagsHint}</span>
     </div>
   );
 };

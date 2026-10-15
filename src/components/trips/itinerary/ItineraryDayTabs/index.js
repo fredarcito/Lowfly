@@ -6,7 +6,7 @@ import { cn } from "@/utils/cn";
 // "Day 1 · Mon 19 Oct" tabs; they scroll sideways when they do not fit, and stay at the top while the day scrolls.
 // `belowBar`: on phones and tablets the slim bar (ItineraryStickyBar) is showing, so they stick right under it.
 const ItineraryDayTabs = ({ days, picked, onPick, belowBar = false }) => {
-  const { t, f } = useI18n();
+  const { texts, format } = useI18n();
   return (
     <div
       className={cn(
@@ -16,7 +16,7 @@ const ItineraryDayTabs = ({ days, picked, onPick, belowBar = false }) => {
     >
       <div
         role="tablist"
-        aria-label={t.trips.itinerary}
+        aria-label={texts.trips.itinerary}
         className="flex gap-2 overflow-x-auto py-1.5 sm:py-2 scrollbar-none"
       >
         {days.map((day, index) => (
@@ -32,9 +32,9 @@ const ItineraryDayTabs = ({ days, picked, onPick, belowBar = false }) => {
               index === picked ? "border-primary bg-primary text-primary-foreground shadow-sm" : "bg-card hover:bg-muted"
             )}
           >
-            <span className="font-heading text-sm font-bold">{t.trips.day(index + 1)}</span>
+            <span className="font-heading text-sm font-bold">{texts.trips.day(index + 1)}</span>
             <span className={cn("text-xs first-letter:uppercase", index === picked ? "text-primary-foreground/85" : "text-muted-foreground")}>
-              {f.fmtShort(day.date)}
+              {format.fmtShort(day.date)}
             </span>
           </button>
         ))}

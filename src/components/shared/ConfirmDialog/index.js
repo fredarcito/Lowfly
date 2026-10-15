@@ -14,7 +14,7 @@ import { cn } from "@/utils/cn";
 
 // Asks before an action that cannot be undone. `destructive` paints the confirm button red.
 const ConfirmDialog = ({ open, onOpenChange, icon: Icon, title, description, confirmLabel, onConfirm, destructive }) => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   return (
     <AlertDialog open={open} onOpenChange={onOpenChange}>
       <AlertDialogContent>
@@ -37,7 +37,7 @@ const ConfirmDialog = ({ open, onOpenChange, icon: Icon, title, description, con
         <div className="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
           <AlertDialogCancel asChild>
             <Button variant="outline" className="h-10 px-4">
-              {t.trips.cancel}
+              {texts.trips.cancel}
             </Button>
           </AlertDialogCancel>
           <AlertDialogAction asChild>

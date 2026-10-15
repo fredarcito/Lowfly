@@ -6,8 +6,8 @@ import { APP_NAME, getDictionary } from "@/i18n";
 
 export const generateMetadata = async ({ params }) => {
   const { lang } = await params;
-  const t = getDictionary(lang);
-  return { title: `${t.account.title} · ${APP_NAME}`, description: t.account.subtitle };
+  const texts = getDictionary(lang);
+  return { title: `${texts.account.title} · ${APP_NAME}`, description: texts.account.subtitle };
 };
 
 // Signing in (Google or a link by email). Suspense: the form reads ?next= and ?error= from the URL.

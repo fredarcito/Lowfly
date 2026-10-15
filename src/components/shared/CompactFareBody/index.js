@@ -34,11 +34,11 @@ const FoldRow = ({ icon: Icon, summary, children, className }) => {
 
 // "OUT · Fri 23 Oct · 16:25 → 17:20": the day and the times are what decide a flight (the route is above)
 const FlightSummary = ({ label, flight }) => {
-  const { f } = useI18n();
+  const { format } = useI18n();
   return (
     <span className="flex flex-wrap items-baseline gap-x-2">
       <span className="font-heading font-bold uppercase">{label}</span>
-      <span className="text-muted-foreground first-letter:uppercase">{f.fmtDay(flight.day)}</span>
+      <span className="text-muted-foreground first-letter:uppercase">{format.fmtDay(flight.day)}</span>
       <span className="font-medium tabular-nums">
         {flight.time}
         {flight.arrive && ` → ${flight.arrive}`}
@@ -51,19 +51,19 @@ const FlightSummary = ({ label, flight }) => {
 // why go in three lines ("See more"), and the extra baggage folded with its "from" price.
 // Used by the highlighted card and the opened results of the table. `firstLine`: a line above the first row.
 const CompactFareBody = ({ fare, origin, firstLine = true }) => {
-  const { t, f } = useI18n();
+  const { texts, format } = useI18n();
   const bagFrom = cheapestBagExtra(fare);
-  const wholeEuros = (amount) => f.money(Math.round(amount), fare.cur, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  const wholeEuros = (amount) => format.money(Math.round(amount), fare.cur, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
 
   return (
     <>
-      <FoldRow icon={PlaneTakeoff} summary={<FlightSummary label={t.results.out} flight={fare.out || fare} />} className={cn(!firstLine && "border-t-0")}>
+      <FoldRow icon={PlaneTakeoff} summary={<FlightSummary label={texts.results.out} flight={fare.out || fare} />} className={cn(!firstLine && "border-t-0")}>
         <div className="rounded-xl bg-muted/50 p-4">
           <FareLeg fare={fare} origin={origin} direction="out" showPrice={Boolean(fare.ret)} />
         </div>
       </FoldRow>
       {fare.ret && (
-        <FoldRow icon={PlaneLanding} summary={<FlightSummary label={t.results.ret} flight={fare.ret} />}>
+        <FoldRow icon={PlaneLanding} summary={<FlightSummary label={texts.results.ret} flight={fare.ret} />}>
           <div className="rounded-xl bg-muted/50 p-4">
             <FareLeg fare={fare} origin={origin} direction="ret" />
           </div>
@@ -77,8 +77,8 @@ const CompactFareBody = ({ fare, origin, firstLine = true }) => {
           icon={Luggage}
           summary={
             <span className="flex flex-wrap items-baseline gap-x-2">
-              <span>{t.results.bagsShort}</span>
-              <span className="text-muted-foreground tabular-nums">{t.results.bagsFrom(wholeEuros(bagFrom))}</span>
+              <span>{texts.results.bagsShort}</span>
+              <span className="text-muted-foreground tabular-nums">{texts.results.bagsFrom(wholeEuros(bagFrom))}</span>
             </span>
           }
         >

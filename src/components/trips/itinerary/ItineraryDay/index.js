@@ -15,7 +15,7 @@ const MODE_ICONS = { walking: Footprints, driving: Car, transit: TrainFront };
 // One day: title, progress and the Maps route; then the stops (grouped into morning, afternoon and night)
 // next to the map (desktop) or under it (phone). One stop is open at a time, in step with the map.
 const ItineraryDay = ({ trip, day, dayNumber }) => {
-  const { t } = useI18n();
+  const { texts } = useI18n();
   const { stops, mapStops, routes } = useDayPlan(day);
   const { isVisited, toggleVisited, countIn } = useVisitedStops(trip);
   const [openId, setOpenId] = useState(null);
@@ -42,11 +42,11 @@ const ItineraryDay = ({ trip, day, dayNumber }) => {
           <h3 className="font-heading text-lg leading-snug font-bold sm:text-xl">{day.title}</h3>
           <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
             <span className="flex items-center gap-1.5">
-              <ModeIcon className="size-4" /> {t.trips.modes[day.mode] ?? t.trips.modes.walking} · {t.trips.stops(stops.length)}
+              <ModeIcon className="size-4" /> {texts.trips.modes[day.mode] ?? texts.trips.modes.walking} · {texts.trips.stops(stops.length)}
             </span>
             {places.length > 0 && (
               <span className="flex items-center gap-1.5">
-                <CircleCheck className="size-4" /> {t.trips.visitedCount(countIn(places), places.length)}
+                <CircleCheck className="size-4" /> {texts.trips.visitedCount(countIn(places), places.length)}
               </span>
             )}
           </p>

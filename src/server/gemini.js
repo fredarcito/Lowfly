@@ -5,16 +5,17 @@ import { AppError } from "@/server/errors";
 const ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
 const DEFAULT_MODEL = "gemini-3.1-flash-lite";
 
-// Asks the model for JSON that follows `schema` and returns it parsed, with the token usage.
+// Asks the model for JSON that follows `schema` and returns it parsed, with the token usage and the model.
 // `thinking`: minimal | low | medium | high (more thinking, better plans, more output tokens to pay).
 export const generateJson = async ({ instructions, prompt, schema, thinking = "low" }) => {
   const key = process.env.GEMINI_API_KEY;
   if (!key) throw new AppError("aiUnavailable");
+  const model = process.env.GEMINI_MODEL || DEFAULT_MODEL;
   const response = await fetch(ENDPOINT, {
     method: "POST",
     headers: { "content-type": "application/json", "x-goog-api-key": key },
     body: JSON.stringify({
-      model: process.env.GEMINI_MODEL || DEFAULT_MODEL,
+      model,
       input: `${instructions}\n\n${prompt}`,
       response_format: { type: "text", mime_type: "application/json", schema },
       generation_config: { thinking_level: thinking },
@@ -35,7 +36,7 @@ export const generateJson = async ({ instructions, prompt, schema, thinking = "l
     .map((part) => part.text ?? "")
     .join("");
   try {
-    return { data: JSON.parse(text), usage: interaction.usage };
+    return { data: JSON.parse(text), usage: interaction.usage, model };
   } catch {
     console.error("Gemini returned invalid JSON", text?.slice(0, 300));
     throw new AppError("aiUnavailable");

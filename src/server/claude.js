@@ -29,15 +29,16 @@ const closed = (schema) => {
 
 export const hasClaude = () => Boolean(process.env.ANTHROPIC_API_KEY);
 
-// Same contract as server/gemini: JSON that follows `schema`, parsed, with the token usage.
+// Same contract as server/gemini: JSON that follows `schema`, parsed, with the token usage and the model.
 // `effort`: low | medium | high (more thinking, better plans, more output tokens to pay).
 export const generateJson = async ({ instructions, prompt, schema, effort = "low" }) => {
   if (!hasClaude()) throw new AppError("aiUnavailable");
+  const model = process.env.CLAUDE_MODEL || DEFAULT_MODEL;
   let message;
   try {
     message = await getClient()
       .messages.stream({
-        model: process.env.CLAUDE_MODEL || DEFAULT_MODEL,
+        model,
         max_tokens: MAX_TOKENS,
         system: instructions,
         messages: [{ role: "user", content: prompt }],
@@ -62,7 +63,7 @@ export const generateJson = async ({ instructions, prompt, schema, effort = "low
     .map((block) => block.text)
     .join("");
   try {
-    return { data: JSON.parse(text), usage: message.usage };
+    return { data: JSON.parse(text), usage: message.usage, model };
   } catch {
     console.error("Claude returned invalid JSON", text.slice(0, 300));
     throw new AppError("aiUnavailable");

@@ -1,6 +1,7 @@
-import { NextResponse } from "next/server";
+import { NextResponse, after } from "next/server";
 import { AppError, badRequest } from "@/server/errors";
 import { createItinerary, createStopsItinerary } from "@/server/itinerary";
+import { saveItineraryUsage } from "@/server/itineraryUsage";
 import { allow, release } from "@/server/rateLimit";
 import { supabaseServer } from "@/supabase/server";
 import { isDay } from "@/utils/dates";
@@ -95,11 +96,18 @@ export const POST = async (request) => {
         throw requireAccount ? new AppError("aiSignIn", {}, 429) : new AppError("aiLimit", { max: userPerDay }, 429);
     }
 
+    const preferences = readPreferences(body.preferences);
+    // What the AI cost, kept once the answer is sent (also when the itinerary failed after the AI answered)
+    const aiCalls = [];
+    const onAiCall = (call) => aiCalls.push(call);
+    after(() =>
+      saveItineraryUsage(aiCalls, { userId, kind: stops ? "stops" : "flight", lang, airport: stops ? null : trip.code, preferences })
+    );
+
     let itinerary;
     try {
-      const preferences = readPreferences(body.preferences);
       itinerary = stops
-        ? await createStopsItinerary({ stops, lang, preferences })
+        ? await createStopsItinerary({ stops, lang, preferences, onAiCall })
         : await createItinerary({
             trip: {
               code: trip.code,
@@ -110,6 +118,7 @@ export const POST = async (request) => {
             },
             lang,
             preferences,
+            onAiCall,
           });
     } catch (error) {
       // A failed attempt does not use up one of the visitor's itineraries

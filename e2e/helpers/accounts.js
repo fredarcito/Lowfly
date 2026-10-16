@@ -36,6 +36,13 @@ export const accountUser = async (user) => (await asAdmin(`/auth/v1/admin/users/
 export const accountTrips = async (user) =>
   (await asAdmin(`/rest/v1/trips?select=id,data&user_id=eq.${user.id}`)).json();
 
+// What the AI itineraries made since `since` (a Date) cost, as kept for good: rows of itinerary_usage
+export const itineraryUsageSince = async (since) =>
+  (await asAdmin(`/rest/v1/itinerary_usage?select=*&created_at=gte.${since.toISOString()}&order=id`)).json();
+
+export const deleteItineraryUsage = (rows) =>
+  rows.length ? asAdmin(`/rest/v1/itinerary_usage?id=in.(${rows.map((row) => row.id).join(",")})`, { method: "DELETE" }) : null;
+
 // A trip saved in the account and shared: the share's id (the link)
 export const shareTripAs = async (user, trip) => {
   await asAdmin("/rest/v1/trips", { method: "POST", body: JSON.stringify({ user_id: user.id, id: trip.id, data: trip }) });

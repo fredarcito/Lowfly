@@ -238,23 +238,26 @@ const verifyStop = async (stop, { city, lang, destination, facts }) => {
 // Gemini plans the itinerary; when it is busy or fails, Claude does, with the same instructions and schema
 const planWithAi = async (request) => {
   try {
-    return { ...(await gemini.generateJson(request)), model: "gemini" };
+    return { ...(await gemini.generateJson(request)), provider: "gemini" };
   } catch (error) {
     if (!(error instanceof AppError) || !claude.hasClaude()) throw error;
     console.warn(`Gemini failed (${error.code}), trying Claude`);
-    return { ...(await claude.generateJson(request)), model: "claude" };
+    return { ...(await claude.generateJson(request)), provider: "claude" };
   }
 };
 
 // Plans `dates` in one town with the AI, then checks every place: where it is (Photon) and its history
 // (Wikipedia). destination: { lat, lng } of the town (only places near it are kept); label: for the logs.
-const planDays = async ({ lang, city, country, destination, dates, travel, preferences, label }) => {
-  const { data, usage, model } = await planWithAi({
+// onAiCall: told of the AI call, { city, country, days, provider, model, usage, durationMs } (to keep its cost).
+const planDays = async ({ lang, city, country, destination, dates, travel, preferences, label, onAiCall }) => {
+  const started = Date.now();
+  const { data, usage, model, provider } = await planWithAi({
     instructions: instructionsFor({ lang, city, country, travel, dates, preferences }),
     prompt: "Plan the itinerary now.",
     schema: SCHEMA,
   });
   console.log("AI itinerary", model, label, `${dates.length} days`, JSON.stringify(usage));
+  onAiCall?.({ city, country, days: dates.length, provider, model, usage, durationMs: Date.now() - started });
 
   const plannedDays = (Array.isArray(data?.days) ? data.days : []).slice(0, dates.length);
   if (!plannedDays.length) throw new AppError("aiUnavailable");
@@ -283,7 +286,7 @@ const planDays = async ({ lang, city, country, destination, dates, travel, prefe
 };
 
 // trip: { origin, code, city, country, out: { day, time, arrive }, ret?: { day, time } }
-export const createItinerary = async ({ trip, lang, preferences }) => {
+export const createItinerary = async ({ trip, lang, preferences, onAiCall }) => {
   const dates = daysBetween(trip.out.day, trip.ret?.day ?? trip.out.day);
   if (dates.length > MAX_TRIP_DAYS) throw new AppError("aiTooLong", { max: MAX_TRIP_DAYS }, 400);
 
@@ -300,6 +303,7 @@ export const createItinerary = async ({ trip, lang, preferences }) => {
     travel: flightTravel({ airport, out: trip.out, ret: trip.ret, dates }),
     preferences,
     label: trip.code,
+    onAiCall,
   });
   return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, days };
 };
@@ -312,7 +316,7 @@ export const createItinerary = async ({ trip, lang, preferences }) => {
 // hand: the usual one, planned around each arrival time
 const STANDARD_CHECK_IN = "15:00";
 
-export const createStopsItinerary = async ({ stops, lang, preferences }) => {
+export const createStopsItinerary = async ({ stops, lang, preferences, onAiCall }) => {
   const datesOf = (stop) => daysBetween(stop.arrive.day, stop.leave.day);
   const allDates = new Set(stops.flatMap(datesOf));
   if (allDates.size > MAX_TRIP_DAYS) throw new AppError("aiTooLong", { max: MAX_TRIP_DAYS }, 400);
@@ -329,6 +333,7 @@ export const createStopsItinerary = async ({ stops, lang, preferences }) => {
         travel: stopTravel({ ...stop, from: stops[index - 1]?.city, to: stops[index + 1]?.city, dates }),
         preferences: { ...preferences, checkIn: STANDARD_CHECK_IN },
         label: stop.city,
+        onAiCall,
       });
     })
   );

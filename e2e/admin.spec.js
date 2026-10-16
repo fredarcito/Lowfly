@@ -62,6 +62,10 @@ test.describe("admin", () => {
       for (const figure of ["Cuentas", "Viajes guardados", "Itinerarios creados", "Coste estimado de IA", "Generados con Claude"])
         await expect(page.locator("dt").getByText(figure, { exact: true })).toBeVisible();
       for (const section of ["Evolución diaria", "Destinos más planeados", "Uso de IA"]) await expect(page.getByRole("heading", { name: section })).toBeVisible();
+      // Itineraries with and without an account
+      await expect(page.getByText(/^Sin cuenta: \d+ \(\d+\s?%\)$/)).toBeVisible();
+      await expect(page.locator("dd").getByText(/^Con cuenta .+ · Sin cuenta .+$/)).toBeVisible();
+      await expect(page.locator("ul").getByText("Sin cuenta", { exact: true })).toBeVisible();
       // One chart, a figure at a time
       await page.getByRole("tab", { name: "Coste IA" }).click();
       await expect(page.getByRole("tab", { name: "Coste IA" })).toHaveAttribute("aria-selected", "true");

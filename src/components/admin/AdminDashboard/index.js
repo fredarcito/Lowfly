@@ -37,8 +37,18 @@ const AdminDashboard = ({ stats, periods, lang }) => {
           footer={texts.newUsers(formats.count(users.inPeriod))}
         />
         <StatTile label={texts.savedTrips} value={formats.count(trips.saved)} hint={texts.sharedTrips(formats.count(trips.shared))} />
-        <StatTile label={texts.itineraries} value={formats.count(itineraries.count)} hint={itinerariesHint(itineraries, stats.days, texts, formats)} />
-        <StatTile label={texts.aiCost} value={formats.money(itineraries.cost)} hint={texts.listPrice} />
+        <StatTile
+          label={texts.itineraries}
+          value={formats.count(itineraries.count)}
+          hint={itinerariesHint(itineraries, stats.days, texts, formats)}
+          footer={texts.guestItineraries(formats.count(itineraries.guests), formats.percent(itineraries.count ? itineraries.guests / itineraries.count : 0))}
+        />
+        <StatTile
+          label={texts.aiCost}
+          value={formats.money(itineraries.cost)}
+          hint={texts.listPrice}
+          footer={texts.costSplit(formats.money(itineraries.cost - itineraries.guestCost), formats.money(itineraries.guestCost))}
+        />
       </dl>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)]">

@@ -1,5 +1,6 @@
 // The admin's figures for a period: accounts (and sign-ups in it), saved and shared trips, the AI itineraries made
-// in it (against the period before), what they cost, each day of it, and the destinations most planned (all time).
+// in it (against the period before; with and without an account), what they cost, each day of it, and the
+// destinations most planned (all time).
 // Read with the secret key (only the admin page calls it, after checking the visitor is an admin).
 import { supabaseAdmin } from "@/supabase/admin";
 import { aiCallCost } from "@/server/admin/aiPrices";
@@ -48,6 +49,11 @@ export const getAdminStats = async (period = DEFAULT_PERIOD) => {
   const calls = usage.filter((row) => at(row) >= since);
   const itineraries = firstCallsOf(calls);
   const cost = calls.reduce((total, row) => total + aiCallCost(row), 0);
+  // Made by visitors without an account (no user on the row)
+  const guest = (row) => !row.user_id;
+  const guestCost = calls.filter(guest).reduce((total, row) => total + aiCallCost(row), 0);
+
+  const guestsPerDay = perDay(days, itineraries.filter(guest), (row) => row.created_at);
 
   const destinations = new Map();
   for (const row of firstCallsOf(usage)) {
@@ -67,16 +73,22 @@ export const getAdminStats = async (period = DEFAULT_PERIOD) => {
     trips: { saved: savedTrips, shared: sharedTrips },
     itineraries: {
       count: itineraries.length,
+      guests: itineraries.filter(guest).length,
       // The period before it, as long (none for "all")
       previous: period === "all" ? null : firstCallsOf(usage.filter((row) => at(row) >= before && at(row) < since)).length,
       cost,
+      guestCost,
       costPerItinerary: itineraries.length ? cost / itineraries.length : 0,
       // Claude stepping in when Gemini was busy, as a share of the AI calls
       claudeShare: calls.length ? calls.filter((row) => row.provider === "claude").length / calls.length : 0,
     },
     daily: {
       users: perDay(days, users, (user) => user.created_at),
-      itineraries: perDay(days, itineraries, (row) => row.created_at),
+      // Each day's itineraries, and how many of them without an account
+      itineraries: perDay(days, itineraries, (row) => row.created_at).map((entry, index) => ({
+        ...entry,
+        guests: guestsPerDay[index].value,
+      })),
       cost: perDay(days, calls, (row) => row.created_at, aiCallCost),
     },
     destinations: [...destinations.values()].sort((first, second) => second.count - first.count).slice(0, TOP_DESTINATIONS),

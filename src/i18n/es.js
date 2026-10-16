@@ -110,6 +110,7 @@ const es = {
   account: {
     signIn: "Entrar",
     signOut: "Cerrar sesión",
+    admin: "Administración",
     menu: (name) => `Tu cuenta (${name})`,
     title: "Entra en Lowfly",
     subtitle: "Guarda tus viajes en tu cuenta y tenlos en todos tus dispositivos.",

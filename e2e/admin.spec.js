@@ -28,6 +28,11 @@ test.describe("admin", () => {
     test("with an account that is not an admin", async ({ page }) => {
       skipWithoutSupabase();
       await signInAs(page);
+      // No way in from the account menu either
+      await page.reload();
+      await page.getByRole("button", { name: /Tu cuenta/ }).click();
+      await expect(page.getByRole("menuitem", { name: "Administración" })).toHaveCount(0);
+      await page.keyboard.press("Escape");
       const response = await page.goto("/es/admin");
       expect(response.status()).toBe(404);
     });
@@ -56,6 +61,11 @@ test.describe("admin", () => {
       skipWithoutSupabase();
       await page.setViewportSize(viewport);
       await signInAs(page, { admin: true });
+      // In from the account menu
+      await page.reload();
+      await page.getByRole("button", { name: /Tu cuenta/ }).click();
+      await page.getByRole("menuitem", { name: "Administración" }).click();
+      await page.waitForURL(/\/es\/admin$/);
       const response = await page.goto("/es/admin");
       expect(response.status()).toBe(200);
       await expect(page.getByRole("heading", { name: "Resumen" })).toBeVisible();

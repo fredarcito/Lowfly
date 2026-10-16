@@ -110,6 +110,7 @@ const en = {
   account: {
     signIn: "Sign in",
     signOut: "Sign out",
+    admin: "Admin",
     menu: (name) => `Your account (${name})`,
     title: "Sign in to Lowfly",
     subtitle: "Keep your trips in your account and have them on all your devices.",

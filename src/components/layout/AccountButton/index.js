@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LogIn, LogOut, Luggage } from "lucide-react";
+import { LogIn, LogOut, Luggage, ShieldCheck } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,7 +18,8 @@ import { ROUTES } from "@/constants/routes";
 const CHIP = "grid size-9 shrink-0 place-items-center overflow-hidden rounded-full bg-hero-glass ring-1 ring-hero-glass-edge backdrop-blur-md text-hero-foreground transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none";
 
 // The visitor's account in the top bar: "Sign in" (back to this page afterwards), or their picture (or
-// initial) with a menu: who they are, their trips and signing out. Nothing while the session loads.
+// initial) with a menu: who they are, their trips, the admin (admins only: the server checks again there) and
+// signing out. Nothing while the session loads.
 export const AccountButton = () => {
   const { lang, texts } = useI18n();
   const { status, user, signOut } = useAuth();
@@ -61,6 +62,13 @@ export const AccountButton = () => {
             <Luggage /> {texts.trips.title}
           </Link>
         </DropdownMenuItem>
+        {user.app_metadata?.role === "admin" && (
+          <DropdownMenuItem asChild>
+            <Link href={ROUTES.admin(lang)}>
+              <ShieldCheck /> {texts.account.admin}
+            </Link>
+          </DropdownMenuItem>
+        )}
         <DropdownMenuItem onSelect={signOut}>
           <LogOut /> {texts.account.signOut}
         </DropdownMenuItem>

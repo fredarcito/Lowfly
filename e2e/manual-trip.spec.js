@@ -13,7 +13,7 @@ test.describe("trip planned by hand", () => {
 
   const pickTown = async (page, number, search, name) => {
     await stopItem(page, number).locator("input[role=combobox]").fill(search);
-    await page.getByRole("option", { name: new RegExp(name) }).first().click();
+    await page.getByRole("listbox").getByRole("option", { name: new RegExp(name) }).first().click();
   };
 
   // Days of next month: always ahead of today
@@ -30,8 +30,13 @@ test.describe("trip planned by hand", () => {
   const pickTime = async (page, number, which, time) => {
     const times = stopItem(page, number).getByRole("button", { name: /Añadir horarios/ });
     if ((await times.getAttribute("aria-expanded")) === "false") await times.click();
-    await stopItem(page, number).locator(`[id$=-${which}-time]`).click();
-    await page.getByRole("menuitemradio", { name: time }).click();
+    const field = stopItem(page, number).locator(`[id$=-${which}-time]`);
+    // Phones: the system's own picker (a native select); desktop: a menu
+    if ((await field.evaluate((element) => element.tagName)) === "SELECT") await field.selectOption(time);
+    else {
+      await field.click();
+      await page.getByRole("menuitemradio", { name: time }).click();
+    }
   };
 
   for (const viewport of [DESKTOP, PHONE]) {
@@ -227,14 +232,14 @@ test.describe("trip planned by hand", () => {
       await expect(search).toBeFocused();
       await expect(search).toBeInViewport();
       await page.keyboard.type("venecia");
-      await expect(page.getByRole("option").first()).toBeVisible();
+      await expect(page.getByRole("listbox").getByRole("option").first()).toBeVisible();
     });
   }
 
   test("the town search finds real towns @live", async ({ page }) => {
     await openWith(page, "/es/trips/new");
     await stopItem(page, 1).locator("input[role=combobox]").fill("flor");
-    await expect(page.getByRole("option", { name: /Florencia/ }).first()).toBeVisible({ timeout: 30_000 });
+    await expect(page.getByRole("listbox").getByRole("option", { name: /Florencia/ }).first()).toBeVisible({ timeout: 30_000 });
   });
 
   // Back to the route sits beside "Create itinerary": in the summary on desktop, in the fixed bar on phones

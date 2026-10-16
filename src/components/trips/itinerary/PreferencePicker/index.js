@@ -2,56 +2,68 @@
 
 import { ChevronDown } from "lucide-react";
 import FormField from "@/components/shared/FormField";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { useDesktop } from "@/hooks/useDesktop";
+import { cn } from "@/utils/cn";
 
-// A labelled field like the search form's, opening the options. It fills its column, so picking
-// another option never changes its size. One choice (`value` + `onChange`) or several
-// (`values` + `onToggle`). `options`: [{ id, label }].
-const PreferencePicker = ({ id, icon: Icon, label, options, value, onChange, values, onToggle }) => {
-  const multiple = Boolean(values);
-  const chosen = options.filter((option) => (multiple ? values.includes(option.id) : option.id === value));
-  const summary = chosen.length > 2 ? `${chosen[0].label}, ${chosen[1].label} +${chosen.length - 2}` : chosen.map((option) => option.label).join(", ");
+const FIELD =
+  "flex h-11 w-full min-w-0 items-center gap-2 rounded-lg border border-input bg-transparent px-3 text-left text-base transition-colors md:text-sm dark:bg-input/30";
+
+// A labelled field like the search form's, to pick one option. It fills its column, so picking another option
+// never changes its size. On desktop a menu under the field; on phones the system's own picker (the iOS wheel,
+// Android's list): an invisible native select over the same field, so it looks the same and never covers the
+// form. `options`: [{ id, label }].
+const PreferencePicker = ({ id, icon: Icon, label, options, value, onChange }) => {
+  const desktop = useDesktop();
+  const chosen = options.find((option) => option.id === value);
+  const face = (
+    <>
+      <Icon className="size-4 shrink-0 text-muted-foreground" />
+      <span className="min-w-0 flex-1 truncate">{chosen?.label}</span>
+      <ChevronDown className="size-4 shrink-0 text-muted-foreground" />
+    </>
+  );
+
+  if (!desktop) {
+    return (
+      <FormField id={id} label={label}>
+        <div className={cn(FIELD, "relative has-[select:focus-visible]:border-ring has-[select:focus-visible]:ring-3 has-[select:focus-visible]:ring-ring/50")}>
+          {face}
+          {/* 16px text: iOS zooms into smaller fields */}
+          <select
+            id={id}
+            value={value}
+            onChange={(event) => onChange(event.target.value)}
+            className="absolute inset-0 size-full cursor-pointer appearance-none text-base opacity-0"
+          >
+            {options.map((option) => (
+              <option key={option.id} value={option.id}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </div>
+      </FormField>
+    );
+  }
 
   return (
     <FormField id={id} label={label}>
       <DropdownMenu>
         <DropdownMenuTrigger
           id={id}
-          className="flex h-11 w-full min-w-0 items-center gap-2 rounded-lg border border-input bg-transparent px-3 text-left text-base transition-colors outline-none hover:bg-muted focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm dark:bg-input/30 dark:hover:bg-input/50"
+          className={cn(FIELD, "outline-none hover:bg-muted focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 dark:hover:bg-input/50")}
         >
-          <Icon className="size-4 shrink-0 text-muted-foreground" />
-          <span className="min-w-0 flex-1 truncate">{summary}</span>
-          <ChevronDown className="size-4 shrink-0 text-muted-foreground" />
+          {face}
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start" className="max-h-72 w-(--radix-dropdown-menu-trigger-width) min-w-44 overflow-y-auto">
-          {multiple ? (
-            options.map((option) => (
-              <DropdownMenuCheckboxItem
-                key={option.id}
-                checked={values.includes(option.id)}
-                onCheckedChange={() => onToggle(option.id)}
-                // Keep the menu open to pick several
-                onSelect={(event) => event.preventDefault()}
-              >
+          <DropdownMenuRadioGroup value={value} onValueChange={onChange}>
+            {options.map((option) => (
+              <DropdownMenuRadioItem key={option.id} value={option.id}>
                 {option.label}
-              </DropdownMenuCheckboxItem>
-            ))
-          ) : (
-            <DropdownMenuRadioGroup value={value} onValueChange={onChange}>
-              {options.map((option) => (
-                <DropdownMenuRadioItem key={option.id} value={option.id}>
-                  {option.label}
-                </DropdownMenuRadioItem>
-              ))}
-            </DropdownMenuRadioGroup>
-          )}
+              </DropdownMenuRadioItem>
+            ))}
+          </DropdownMenuRadioGroup>
         </DropdownMenuContent>
       </DropdownMenu>
     </FormField>

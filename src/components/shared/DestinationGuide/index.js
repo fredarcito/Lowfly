@@ -12,8 +12,9 @@ import Tags from "@/components/shared/DestinationGuide/components/Tags";
 // `tagsOnly` for small spaces (weekend cards); `textClassName` restyles the sentence (a trip's photo header);
 // `collapsible` (a compact card on phones): three lines and "See more", which shows the rest, the source and
 // the highlights. `foldOnPhones` (a shared trip's header): on phones only, two lines with "See more ⌄" beside
-// them; bigger screens show it whole. Shows nothing while loading or when there is no guide.
-const DestinationGuide = ({ code, tagsOnly = false, collapsible = false, foldOnPhones = false, className, textClassName }) => {
+// them; bigger screens show it whole. `plainTags` (a trip's photo header): the highlights as text, "A · B · C".
+// Shows nothing while loading or when there is no guide.
+const DestinationGuide = ({ code, tagsOnly = false, collapsible = false, foldOnPhones = false, plainTags = false, className, textClassName }) => {
   const { texts } = useI18n();
   const guide = useDestinationGuide(code);
   const [expanded, setExpanded] = useState(false);
@@ -56,6 +57,7 @@ const DestinationGuide = ({ code, tagsOnly = false, collapsible = false, foldOnP
       {!folded && (
         <Tags
           tags={guide.tags}
+          plain={plainTags}
           className={cn(foldedOnPhones && "max-sm:hidden", foldOnPhones && expanded && "duration-500 animate-in fade-in slide-in-from-top-1 motion-reduce:animate-none sm:animate-none")}
         />
       )}

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, Clock, Ticket } from "lucide-react";
+import { ArrowLeft, CalendarDays, Clock, Moon, Ticket } from "lucide-react";
 import DestinationGuide from "@/components/shared/DestinationGuide";
 import TripBackdrop from "@/components/trips/TripBackdrop";
 import TripMenu from "@/components/trips/TripMenu";
@@ -45,10 +45,18 @@ const TripHeader = ({ trip, onDeleted }) => {
         {fare.city}, {fare.country}
       </h1>
       <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-hero-muted sm:text-lg">
-        <span className="first-letter:uppercase">
-          {dates}
-          {fare.ret && ` · ${texts.units.nights(fare.nights)}`}
+        <span className="flex items-center gap-1.5">
+          <CalendarDays className="size-4" />
+          <span className="first-letter:uppercase">{dates}</span>
         </span>
+        {fare.ret && (
+          <>
+            <span aria-hidden>·</span>
+            <span className="flex items-center gap-1.5">
+              <Moon className="size-4" /> {texts.units.nights(fare.nights)}
+            </span>
+          </>
+        )}
         <span aria-hidden>·</span>
         <span className="flex items-center gap-1.5">
           <Clock className="size-4" />
@@ -65,7 +73,7 @@ const TripHeader = ({ trip, onDeleted }) => {
       </p>
 
       {/* Through several towns, the description of one of them would mislead */}
-      {fare.code && (!trip.manual || trip.stops.length === 1) && <DestinationGuide code={fare.code} className="mt-1 max-w-[60ch] pb-0" textClassName="text-hero-muted sm:text-base" />}
+      {fare.code && (!trip.manual || trip.stops.length === 1) && <DestinationGuide code={fare.code} plainTags className="mt-1 max-w-[60ch] pb-0" textClassName="text-hero-muted sm:text-base" />}
     </div>
   );
 };

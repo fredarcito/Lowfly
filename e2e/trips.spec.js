@@ -18,8 +18,10 @@ test.describe("my trips", () => {
         const trip = romeTrip();
         await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip], theme });
         await expect(page.getByRole("heading", { level: 1 })).toContainText("Roma");
-        // Why go: the destination guide, with its source
+        // Why go: the destination guide, with its source; its highlights as plain text, not pills
         await expect(page.getByText("Fuente").first()).toBeVisible({ timeout: 30_000 });
+        await expect(page.locator("li.bg-selected")).toHaveCount(0);
+        await expect(page.getByText(/\d+ noches/).first()).toBeVisible();
         await expectNoSidewaysScroll(page);
       });
     }
@@ -32,7 +34,9 @@ test.describe("my trips", () => {
         const trip = flightTrip({ booked });
         await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
         const flights = page.locator("section").filter({ hasText: "Vuelos:" }).first();
-        // Booking stays in sight until it is booked
+        // Under the itinerary; booking stays in sight until it is booked
+        const itinerary = page.locator("section").filter({ hasText: "Crear itinerario" }).last();
+        expect((await itinerary.boundingBox()).y).toBeLessThan((await flights.boundingBox()).y);
         await expect(flights.getByRole("link", { name: /Reservar en Ryanair/ })).toHaveCount(booked ? 0 : 1);
         await flights.getByRole("button", { name: /Ver detalles de los vuelos/ }).click();
         await expect(flights.getByText(/¿Ya reservaste/)).toBeVisible();
@@ -70,6 +74,44 @@ test.describe("my trips", () => {
     await expect(createCard()).toBeVisible();
     await expect(createCard().getByText("Check-in")).toHaveCount(0);
   });
+
+  // Interests as chips in view; one-choice fields open the system's picker on phones, a menu on desktop.
+  // The AI gets what was chosen.
+  for (const viewport of [DESKTOP, PHONE, { width: 340, height: 700 }]) {
+    test(`the itinerary preferences (${viewport.width}px)`, async ({ page }) => {
+      await page.setViewportSize(viewport);
+      let sent;
+      // The AI never answers: only what was sent matters
+      await page.route("**/api/itinerary", (route) => {
+        sent = route.request().postDataJSON();
+      });
+      const trip = flightTrip({ id: "preferences-test", inDays: 10 });
+      await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+
+      const chip = (name) => page.getByRole("group", { name: "Intereses" }).getByRole("button", { name });
+      await expect(chip("Cultura")).toHaveAttribute("aria-pressed", "true");
+      await expect(chip("Playa")).toHaveAttribute("aria-pressed", "false");
+      await chip("Playa").click();
+      await chip("Cultura").click();
+      await chip("Comida").click();
+      await expect(chip("Playa")).toHaveAttribute("aria-pressed", "true");
+      await expect(chip("Cultura")).toHaveAttribute("aria-pressed", "false");
+      // The last one chosen stays
+      await chip("Playa").click();
+      await expect(chip("Playa")).toHaveAttribute("aria-pressed", "true");
+
+      const pace = page.locator("#pace");
+      if (viewport === DESKTOP) {
+        await pace.click();
+        await page.getByRole("menuitemradio", { name: "Intenso" }).click();
+      } else await pace.selectOption("intense");
+      await expect(page.getByText("Intenso").first()).toBeVisible();
+      await expectNoSidewaysScroll(page);
+
+      await page.getByRole("button", { name: /Crear itinerario/ }).click();
+      await expect.poll(() => sent?.preferences).toMatchObject({ pace: "intense", interests: ["beach"] });
+    });
+  }
 
   for (const viewport of [DESKTOP, PHONE]) {
     test(`the loader while the AI makes the itinerary (${viewport.width}px)`, async ({ page }) => {

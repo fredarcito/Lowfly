@@ -45,7 +45,7 @@ const SharedTripHeader = ({ trip, savedTrip, owner }) => {
       {/* Through several towns, the description of one of them would mislead. Phones: room on the right for the
           photo's © in the corner, next to "See more" */}
       {fare.code && (!trip.manual || trip.stops.length === 1) && (
-        <DestinationGuide code={fare.code} foldOnPhones className="mt-1 max-w-[60ch] pb-0 max-sm:pr-8" textClassName="text-hero-muted sm:text-base" />
+        <DestinationGuide code={fare.code} foldOnPhones plainTags className="mt-1 max-w-[60ch] pb-0 max-sm:pr-8" textClassName="text-hero-muted sm:text-base" />
       )}
     </div>
   );

@@ -1,7 +1,8 @@
 "use client";
 
-import { BedDouble, Gauge, TrainFront, Utensils } from "lucide-react";
+import { BedDouble, Gauge, TrainFront } from "lucide-react";
 import PreferencePicker from "@/components/trips/itinerary/PreferencePicker";
+import InterestChips from "@/components/trips/itinerary/ItineraryPreferences/components/InterestChips";
 import { useI18n } from "@/context/i18n";
 import { CHECK_IN_TIMES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
 import { cn } from "@/utils/cn";
@@ -19,7 +20,7 @@ const ItineraryPreferences = ({ trip, preferences, disabled, stacked = false }) 
   return (
     <fieldset
       disabled={disabled}
-      className={cn("grid gap-4 disabled:opacity-60", !stacked && "sm:grid-cols-2", !stacked && (trip.manual ? "lg:grid-cols-3" : "lg:grid-cols-4"))}
+      className={cn("grid gap-4 disabled:opacity-60", !stacked && "sm:grid-cols-2", !stacked && (trip.manual ? "lg:grid-cols-2" : "lg:grid-cols-3"))}
     >
       <PreferencePicker
         id="pace"
@@ -28,14 +29,6 @@ const ItineraryPreferences = ({ trip, preferences, disabled, stacked = false }) 
         options={optionsOf(PACES, labels.paces)}
         value={pace}
         onChange={preferences.setPace}
-      />
-      <PreferencePicker
-        id="interests"
-        icon={Utensils}
-        label={labels.interests}
-        options={optionsOf(INTERESTS, labels.interestNames)}
-        values={interests}
-        onToggle={preferences.toggleInterest}
       />
       <PreferencePicker
         id="transport"
@@ -55,6 +48,16 @@ const ItineraryPreferences = ({ trip, preferences, disabled, stacked = false }) 
           onChange={preferences.setCheckIn}
         />
       )}
+      {/* In view, on a row of its own */}
+      <InterestChips
+        id="interests"
+        label={labels.interests}
+        note={labels.interestsNote}
+        options={optionsOf(INTERESTS, labels.interestNames)}
+        values={interests}
+        onToggle={preferences.toggleInterest}
+        className="col-span-full"
+      />
     </fieldset>
   );
 };

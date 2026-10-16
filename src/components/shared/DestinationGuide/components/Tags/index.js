@@ -2,7 +2,21 @@
 
 import { cn } from "@/utils/cn";
 
-const Tags = ({ tags, className }) => {
+// A destination's highlights: coral pills, or `plain` text joined by dots (over a photo, where pills would
+// compete with the title)
+const Tags = ({ tags, plain = false, className }) => {
+  if (plain) {
+    return (
+      <ul className={cn("flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-hero-muted sm:text-base", className)}>
+        {tags.map((tag, index) => (
+          <li key={tag} className="flex items-center gap-2">
+            {index > 0 && <span aria-hidden>·</span>}
+            {tag}
+          </li>
+        ))}
+      </ul>
+    );
+  }
   return (
     <ul className={cn("flex flex-wrap gap-1.5", className)}>
       {tags.map((tag) => (

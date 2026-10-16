@@ -293,6 +293,7 @@ const en = {
     preferences: {
       pace: "Pace",
       interests: "Interests",
+      interestsNote: "Pick one or more",
       checkIn: "Check-in",
       transport: "Transport",
       paces: { relaxed: "Relaxed", balanced: "Balanced", intense: "Intense" },

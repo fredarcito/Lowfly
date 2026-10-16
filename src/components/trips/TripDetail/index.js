@@ -10,15 +10,13 @@ import { useI18n } from "@/context/i18n";
 import { useLocalizedTrip } from "@/hooks/useLocalizedTrip";
 import { ROUTES } from "@/constants/routes";
 
-// One saved trip: its photo header, flights and the day-by-day itinerary.
-// Until it is booked the flights go first (booking is the next step); once booked, the itinerary leads.
+// One saved trip: its photo header, the day-by-day itinerary and, under it, the flights.
 // A trip planned by hand shows its towns (arrival and departure) instead of flights.
 const TripDetail = ({ trip: savedTrip }) => {
   const { lang } = useI18n();
   const trip = useLocalizedTrip(savedTrip);
   const router = useRouter();
   const backToList = () => router.replace(ROUTES.trips(lang));
-  const flights = <TripFlights trip={trip} />;
 
   if (trip.manual) {
     return (
@@ -31,9 +29,8 @@ const TripDetail = ({ trip: savedTrip }) => {
 
   return (
     <TripsPage hero={<TripHeader trip={trip} onDeleted={backToList} />}>
-      {!trip.booked && flights}
       <Itinerary trip={trip} />
-      {trip.booked && flights}
+      <TripFlights trip={trip} />
     </TripsPage>
   );
 };

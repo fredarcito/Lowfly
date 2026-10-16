@@ -25,11 +25,11 @@ const FareDetails = ({ fare, origin }) => {
           </a>
         </Button>
       ))}
-      {fare.city && <SaveTripButton origin={origin} fare={fare} className="h-11 w-full px-5 text-base" />}
+      {fare.city && <SaveTripButton origin={origin} fare={fare} className="h-11 w-full" />}
     </>
   );
   const footer = (
-    <div className="grid gap-4 lg:grid-cols-[auto_minmax(0,1fr)_15rem] lg:items-center lg:gap-0 lg:divide-x">
+    <div className="grid gap-4 lg:grid-cols-[auto_minmax(0,1fr)_17rem] lg:items-center lg:gap-0 lg:divide-x">
       <div className="grid gap-1.5 lg:pr-8">
         <p className="font-heading text-4xl leading-none font-extrabold tracking-tight text-primary tabular-nums lg:text-5xl">{format.money(fare.price, fare.cur)}</p>
         <p className="text-sm text-muted-foreground first-letter:uppercase">
@@ -37,7 +37,7 @@ const FareDetails = ({ fare, origin }) => {
         </p>
       </div>
       <BagEstimate fare={fare} className="lg:px-8" />
-      <div className="grid gap-2.5 lg:pl-6">{actions}</div>
+      <div className="grid grid-cols-1 gap-2.5 lg:pl-6">{actions}</div>
     </div>
   );
 

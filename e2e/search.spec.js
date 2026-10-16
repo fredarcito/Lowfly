@@ -47,6 +47,11 @@ test.describe("search @live", () => {
         await page.goto(url);
         // Phones and desktop each have their own version of the card: the one on screen
         await expect(page.getByText("Lo más barato").filter({ visible: true }).first()).toBeVisible({ timeout: 150_000 });
+        // Saving says we plan the itinerary, then offers it without leaving the search
+        await expect(page.getByText("Y te preparamos el itinerario día a día").filter({ visible: true }).first()).toBeVisible();
+        await page.getByRole("button", { name: "Guardar viaje" }).filter({ visible: true }).first().click();
+        await expect(page.getByRole("link", { name: "Prepárame el itinerario" }).filter({ visible: true }).first()).toBeVisible();
+        expect(new URL(page.url()).searchParams.get("m")).toBe("everywhere");
       });
     }
   }

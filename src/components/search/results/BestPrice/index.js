@@ -72,7 +72,7 @@ const BestPrice = ({ price, cur, title, detail, links = [], priceNote, fare, ori
             </div>
           )}
           {links.length > 0 && (
-            <div className="mt-3 grid gap-2.5">
+            <div className="mt-3 grid grid-cols-1 gap-2.5">
               {links.map((link) => (
                 <Button key={link.href} asChild size="lg" className="h-12 w-full text-base font-bold">
                   <a href={link.href} target="_blank" rel="noopener noreferrer">

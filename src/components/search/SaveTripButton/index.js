@@ -1,21 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Bookmark, BookmarkCheck } from "lucide-react";
+import { ArrowRight, Bookmark, BookmarkCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/context/i18n";
 import { removeTrip, saveTrip, tripId } from "@/store/trips";
 import { useTrips } from "@/hooks/useTrips";
 import { ROUTES } from "@/constants/routes";
 import { cn } from "@/utils/cn";
+import SaveHint from "@/components/search/SaveTripButton/components/SaveHint";
 
-// Saves the flight to "My trips". Once saved, the full button becomes "View in My trips" (to the trip and
-// its itinerary) with a small bookmark next to it to remove it. `fare` needs city and country.
+// Saves the flight to "My trips", saying under it that we plan the day-by-day itinerary too. Once saved it
+// offers it, without forcing it: "✨ Plan my itinerary" (or "See my itinerary →" once made) opens the trip, and
+// the bookmark next to it removes it. `fare` needs city and country; `className` sizes the buttons' row.
 // compact: just the icon, for small spaces such as the photo of a weekend card.
 const SaveTripButton = ({ origin, fare, compact = false, className }) => {
   const { lang, texts } = useI18n();
   const id = tripId(origin, fare);
-  const saved = useTrips().some((trip) => trip.id === id);
+  const savedTrip = useTrips().find((trip) => trip.id === id);
+  const saved = Boolean(savedTrip);
   const Icon = saved ? BookmarkCheck : Bookmark;
   const toggle = () => (saved ? removeTrip(id) : saveTrip(origin, fare));
 
@@ -39,40 +42,49 @@ const SaveTripButton = ({ origin, fare, compact = false, className }) => {
   }
 
   if (saved) {
+    const ready = Boolean(savedTrip.itinerary);
     return (
-      <div className={cn("flex gap-2", className)}>
-        <Button asChild variant="outline" size="lg" className="h-full min-h-11 flex-1 border-primary/40 bg-selected px-5 text-base text-primary-ink hover:bg-selected/80 hover:text-primary-ink">
-          <Link href={ROUTES.trip(lang, id)}>
-            {texts.trips.viewInTrips} <ArrowRight />
-          </Link>
-        </Button>
-        <Button
-          type="button"
-          variant="outline"
-          size="icon"
-          onClick={toggle}
-          aria-pressed
-          aria-label={texts.trips.unsave}
-          title={texts.trips.unsave}
-          className="size-auto min-h-11 w-11 shrink-0 border-primary/40 text-primary-ink"
-        >
-          <BookmarkCheck />
-        </Button>
+      <div className="grid w-full min-w-0 grid-cols-1 gap-1.5">
+        <div className={cn("flex gap-2", className)}>
+          <Button asChild variant="outline" size="lg" className="h-full min-h-11 min-w-0 flex-1 shrink gap-1.5 border-primary/40 bg-selected px-2.5 text-base lg:text-sm text-primary-ink hover:bg-selected/80 hover:text-primary-ink">
+            <Link href={ROUTES.trip(lang, id)}>
+              {/* Narrow columns: the sparkles lead, the arrow only when it fits */}
+              {ready ? <ArrowRight className="order-last" /> : <Sparkles />}
+              <span className="truncate">{ready ? texts.trips.viewMyItinerary : texts.trips.prepareItinerary}</span>
+            </Link>
+          </Button>
+          <Button
+            type="button"
+            variant="outline"
+            size="icon"
+            onClick={toggle}
+            aria-pressed
+            aria-label={texts.trips.unsave}
+            title={texts.trips.unsave}
+            className="size-auto min-h-11 w-11 shrink-0 border-primary/40 text-primary-ink lg:w-10"
+          >
+            <BookmarkCheck />
+          </Button>
+        </div>
+        <SaveHint>{ready ? texts.trips.savedReady : texts.trips.savedHint}</SaveHint>
       </div>
     );
   }
 
   return (
-    <Button
-      type="button"
-      variant="outline"
-      size="lg"
-      onClick={toggle}
-      aria-pressed={false}
-      className={cn("h-11 px-5 text-base", className)}
-    >
-      <Icon /> {texts.trips.save}
-    </Button>
+    <div className="grid w-full min-w-0 grid-cols-1 gap-1.5">
+      <Button
+        type="button"
+        variant="outline"
+        size="lg"
+        onClick={toggle}
+        aria-pressed={false}
+        className={cn("h-11 px-5 text-base", className)}
+      >
+        <Icon /> {texts.trips.save}
+      </Button>
+      <SaveHint>{texts.trips.saveHint}</SaveHint>
+    </div>
   );
 };
 

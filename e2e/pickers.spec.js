@@ -19,6 +19,30 @@ test.describe("pickers", () => {
     });
   }
 
+  // Phones: the sheet opens with the list in view and no keyboard (it would cover the list, and iOS pushed the
+  // sheet's top off the screen scrolling to the box); a tap on the box brings it. Desktop focuses the box at once.
+  test("phones: the airport sheet opens without the keyboard, whole on the screen", async ({ page }) => {
+    await page.setViewportSize(PHONE);
+    await openWith(page, "/es");
+    await page.locator("#origin").click();
+    const sheet = page.getByRole("dialog");
+    await expect(sheet.locator("h2")).toBeInViewport();
+    const search = sheet.getByRole("combobox");
+    await expect(search).not.toBeFocused();
+    await expect(sheet.getByRole("button", { name: /ubicación/ })).toBeVisible();
+    await search.click();
+    await expect(search).toBeFocused();
+    await search.fill("buda");
+    await expect(sheet.getByRole("option", { name: /Budapest/ })).toBeVisible();
+  });
+
+  test("desktop: the airport search is ready to type", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    await openWith(page, "/es");
+    await page.locator("#origin").click();
+    await expect(page.getByRole("combobox")).toBeFocused();
+  });
+
   test("airport and destination with the keyboard", async ({ page }) => {
     await page.setViewportSize(DESKTOP);
     await openWith(page, "/es");

@@ -1,5 +1,5 @@
 import { PHONE, expect, expectNoSidewaysScroll, openWith, savedTrips, test } from "./helpers/test.js";
-import { accountTrips, createTestUser, deleteTestUser, signIn, skipWithoutSupabase } from "./helpers/accounts.js";
+import { accountTrips, accountUser, createTestUser, deleteTestUser, signIn, skipWithoutSupabase } from "./helpers/accounts.js";
 import { flightTrip } from "./helpers/trips.js";
 
 // Accounts: the sign-in page, and the trips kept in the account (the same on every device)
@@ -21,6 +21,16 @@ test.describe("account", () => {
     });
     test.afterEach(async () => {
       if (user) await deleteTestUser(user);
+    });
+
+    test("the account keeps the page's language, so Supabase's emails come in it", async ({ page }) => {
+      await page.goto("/en");
+      await signIn(page, user);
+      await page.reload();
+      await expect.poll(async () => (await accountUser(user)).user_metadata?.locale).toBe("en");
+
+      await page.goto("/es");
+      await expect.poll(async () => (await accountUser(user)).user_metadata?.locale).toBe("es");
     });
 
     test("trips saved before signing in go to the account, and changes follow on every device", async ({ page, browser }) => {

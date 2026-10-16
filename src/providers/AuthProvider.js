@@ -8,7 +8,8 @@ import { forgetTrips, startTripsCloud } from "@/store/tripsCloud";
 // Follows the Supabase session for the whole app: who is signed in, and while they are, their trips are kept
 // in their account (store/tripsCloud). Signing out forgets those trips in this browser.
 // `tripsReady`: the account's trips are in and changes are being copied (until then, a trip saved here could be lost).
-export const AuthProvider = ({ children }) => {
+// The account keeps the language of the page (user_metadata.locale): Supabase's emails are written in it.
+export const AuthProvider = ({ lang, children }) => {
   const [session, setSession] = useState({ status: "loading", user: null, tripsReady: false });
 
   useEffect(() => {
@@ -41,6 +42,11 @@ export const AuthProvider = ({ children }) => {
       stopCloud?.();
     };
   }, []);
+
+  const accountLocale = session.user?.user_metadata?.locale;
+  useEffect(() => {
+    if (session.status === "signedIn" && accountLocale !== lang) supabaseBrowser().auth.updateUser({ data: { locale: lang } });
+  }, [session.status, accountLocale, lang]);
 
   const value = useMemo(() => ({ ...session, signOut: () => supabaseBrowser().auth.signOut() }), [session]);
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

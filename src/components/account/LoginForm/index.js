@@ -34,7 +34,7 @@ export const LoginForm = () => {
   const withEmail = async (event) => {
     event.preventDefault();
     setState({ step: "sending" });
-    const { error } = await signInWithEmail(email.trim(), next);
+    const { error } = await signInWithEmail(email.trim(), next, lang);
     setState(error ? { step: "error", message: error.message } : { step: "sent" });
   };
 

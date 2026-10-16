@@ -67,7 +67,7 @@ const RootLayout = async ({ children, params }) => {
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body>
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider lang={lang}>{children}</AuthProvider>
       </body>
     </html>
   );

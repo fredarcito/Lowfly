@@ -10,6 +10,6 @@ const callbackTo = (next) => `${window.location.origin}/api/auth/callback?next=$
 export const signInWithGoogle = (next) =>
   supabaseBrowser().auth.signInWithOAuth({ provider: "google", options: { redirectTo: callbackTo(next) } });
 
-// Sends a sign-in link to `email`: { error } or nothing
-export const signInWithEmail = (email, next) =>
-  supabaseBrowser().auth.signInWithOtp({ email, options: { emailRedirectTo: callbackTo(next) } });
+// Sends a sign-in link to `email`, written in `lang` for a new account (AuthProvider keeps it after): { error } or nothing
+export const signInWithEmail = (email, next, lang) =>
+  supabaseBrowser().auth.signInWithOtp({ email, options: { emailRedirectTo: callbackTo(next), data: { locale: lang } } });

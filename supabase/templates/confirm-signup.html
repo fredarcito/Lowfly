@@ -1,14 +1,14 @@
-<!doctype html>
-<html lang="es">
+{{ $en := false }}{{ with .Data }}{{ if eq (printf "%v" .locale) "en" }}{{ $en = true }}{{ end }}{{ end }}<!doctype html>
+<html lang="{{ if $en }}en{{ else }}es{{ end }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light">
 <title>Lowfly</title>
 </head>
 <body style="margin:0;padding:0;background:#f4efe6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#13243a;">
-<div style="display:none;max-height:0;overflow:hidden;">Confirma tu email y empieza a planear tu próximo viaje.</div>
+<div style="display:none;max-height:0;overflow:hidden;">{{ if $en }}Confirm your email and start planning your next trip.{{ else }}Confirma tu email y empieza a planear tu próximo viaje.{{ end }}</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4efe6;padding:32px 16px;">
 <tr><td align="center">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:480px;">
@@ -19,19 +19,16 @@
     </a>
   </td></tr>
   <tr><td style="background:#ffffff;border-radius:16px;padding:36px 32px;box-shadow:0 1px 3px rgba(19,36,58,0.08);">
-    <h1 style="margin:0 0 12px;font-size:22px;line-height:1.3;font-weight:800;">Bienvenido a Lowfly ✈️</h1>
-    <p style="margin:0 0 28px;font-size:16px;line-height:1.55;color:#4a5a6e;">Confirma tu email para crear tu cuenta. Tus viajes e itinerarios quedarán guardados y los tendrás en todos tus dispositivos.</p>
+    <h1 style="margin:0 0 12px;font-size:22px;line-height:1.3;font-weight:800;">{{ if $en }}Welcome to Lowfly ✈️{{ else }}Bienvenido a Lowfly ✈️{{ end }}</h1>
+    <p style="margin:0 0 28px;font-size:16px;line-height:1.55;color:#4a5a6e;">{{ if $en }}Confirm your email to create your account. Your trips and itineraries will be saved and you'll have them on all your devices.{{ else }}Confirma tu email para crear tu cuenta. Tus viajes e itinerarios quedarán guardados y los tendrás en todos tus dispositivos.{{ end }}</p>
     <table role="presentation" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center">
-      <a href="{{ .ConfirmationURL }}" style="display:inline-block;background:#ed604e;color:#ffffff;font-size:16px;font-weight:700;text-decoration:none;padding:14px 32px;border-radius:12px;">Confirmar y entrar &rarr;</a>
+      <a href="{{ .ConfirmationURL }}" style="display:inline-block;background:#d9503d;color:#ffffff;font-size:16px;font-weight:700;text-decoration:none;padding:14px 32px;border-radius:12px;">{{ if $en }}Confirm and sign in{{ else }}Confirmar y entrar{{ end }} &rarr;</a>
     </td></tr></table>
-    <p style="margin:28px 0 0;font-size:13px;line-height:1.5;color:#7a8696;">El enlace caduca en 1 hora y solo sirve una vez. Si no creaste una cuenta en Lowfly, ignora este email.</p>
-    <hr style="border:0;border-top:1px solid #ece6db;margin:28px 0;">
-    <p style="margin:0 0 6px;font-size:15px;font-weight:700;">Welcome to Lowfly ✈️</p>
-    <p style="margin:0;font-size:14px;line-height:1.5;color:#4a5a6e;">Confirm your email to create your account and keep your trips on all your devices: <a href="{{ .ConfirmationURL }}" style="color:#d14b39;font-weight:600;">Confirm and sign in</a></p>
-    <p style="margin:12px 0 0;font-size:13px;line-height:1.5;color:#7a8696;">The link expires in 1 hour and works once. If you didn't sign up, just ignore this email.</p>
+    <p style="margin:28px 0 0;font-size:13px;line-height:1.5;color:#7a8696;">{{ if $en }}The link expires in 1 hour and works once. If you didn't sign up for Lowfly, just ignore this email.{{ else }}El enlace caduca en 1 hora y solo sirve una vez. Si no creaste una cuenta en Lowfly, ignora este email.{{ end }}</p>
+    <p style="margin:16px 0 0;font-size:12px;line-height:1.5;color:#7a8696;">{{ if $en }}Button not working? Copy this link into your browser:{{ else }}¿El botón no funciona? Copia este enlace en tu navegador:{{ end }}<br><a href="{{ .ConfirmationURL }}" style="color:#7a8696;word-break:break-all;">{{ .ConfirmationURL }}</a></p>
   </td></tr>
   <tr><td align="center" style="padding:24px 8px 0;font-size:12px;line-height:1.6;color:#8a8478;">
-    Lowfly &middot; Vuelos baratos y el mejor itinerario &middot; <a href="https://lowfly.travel" style="color:#8a8478;">lowfly.travel</a>
+    Lowfly &middot; {{ if $en }}Cheap flights and the best itinerary{{ else }}Vuelos baratos y el mejor itinerario{{ end }} &middot; <a href="https://lowfly.travel" style="color:#8a8478;">lowfly.travel</a>
   </td></tr>
 </table>
 </td></tr>

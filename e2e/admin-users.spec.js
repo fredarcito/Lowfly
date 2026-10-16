@@ -42,7 +42,7 @@ test.describe("admin: accounts", () => {
       await row.click();
       await expect(page.getByRole("heading", { level: 1, name: "Persona Prueba" })).toBeVisible();
       await expect(page.getByText("Roma, Italia").first()).toBeVisible();
-      await page.getByRole("button", { name: /^Consumo de IA/ }).click();
+      await page.getByRole("tab", { name: /Consumo de IA/ }).click();
       await expect(page.getByRole("cell", { name: "gemini-3.1-flash-lite" })).toBeVisible();
       await expectNoSidewaysScroll(page);
     });
@@ -65,8 +65,8 @@ test.describe("admin: accounts", () => {
 
   test("an account's own daily limit, and back to the app-wide one", async ({ page }) => {
     await page.goto(`/es/admin/users/${person.id}`);
-    await page.getByRole("button", { name: /^Itinerarios al día/ }).click();
-    const limits = page.locator("section").filter({ has: page.getByRole("heading", { name: /^Itinerarios al día/ }) });
+    await page.getByRole("tab", { name: /Límite/ }).click();
+    const limits = page.getByRole("tabpanel");
     await limits.getByRole("radio", { name: "Uno propio" }).check();
     await limits.getByRole("spinbutton", { name: "Itinerarios al día" }).fill("2");
     await limits.getByRole("button", { name: "Guardar", exact: true }).click();
@@ -81,8 +81,8 @@ test.describe("admin: accounts", () => {
 
   test("editing an account: name, email, admin and blocked", async ({ page }) => {
     await page.goto(`/es/admin/users/${person.id}`);
-    await page.getByRole("button", { name: /^Cuenta/ }).click();
-    const account = page.locator("section").filter({ has: page.getByRole("heading", { name: /^Cuenta/ }) });
+    await page.getByRole("tab", { name: /Cuenta/ }).click();
+    const account = page.getByRole("tabpanel");
     const newEmail = person.email.replace("@", "-new@");
     await account.getByLabel("Nombre").fill("Nombre Nuevo");
     await account.getByLabel("Email").fill(newEmail);
@@ -93,7 +93,7 @@ test.describe("admin: accounts", () => {
     await page.reload();
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("Nombre Nuevo");
     await expect(page.getByText("Bloqueado", { exact: true })).toBeVisible();
-    await page.getByRole("button", { name: /^Cuenta/ }).click();
+    await page.getByRole("tab", { name: /Cuenta/ }).click();
     const saved = await accountUser(person);
     expect(saved.email).toBe(newEmail);
     expect(saved.user_metadata.full_name).toBe("Nombre Nuevo");
@@ -112,7 +112,7 @@ test.describe("admin: accounts", () => {
 
   test("deleting an account, then back to the list", async ({ page }) => {
     await page.goto(`/es/admin/users/${person.id}`);
-    await page.getByRole("button", { name: /^Eliminar cuenta No se puede/ }).click();
+    await page.getByRole("tab", { name: /Cuenta/ }).click();
     await page.getByRole("button", { name: "Eliminar cuenta", exact: true }).click();
     await page.getByRole("alertdialog").getByRole("button", { name: "Eliminar cuenta" }).click();
     await page.waitForURL(/\/es\/admin\/users$/);
@@ -123,11 +123,11 @@ test.describe("admin: accounts", () => {
 
   test("their own account: no blocking, giving up the admin or deleting", async ({ page }) => {
     await page.goto(`/es/admin/users/${admin.id}`);
-    await page.getByRole("button", { name: /^Cuenta/ }).click();
-    const account = page.locator("section").filter({ has: page.getByRole("heading", { name: /^Cuenta/ }) });
+    await page.getByRole("tab", { name: /Cuenta/ }).click();
+    const account = page.getByRole("tabpanel");
     await expect(account.getByRole("checkbox", { name: /Administrador/ })).toBeDisabled();
     await expect(account.getByRole("checkbox", { name: /Acceso bloqueado/ })).toBeDisabled();
-    await page.getByRole("button", { name: /^Eliminar cuenta No se puede/ }).click();
+    await page.getByRole("tab", { name: /Cuenta/ }).click();
     await expect(page.getByRole("button", { name: "Eliminar cuenta", exact: true })).toBeDisabled();
   });
 

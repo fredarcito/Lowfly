@@ -1,23 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { BarChart3, Settings, Users } from "lucide-react";
 import { useAdmin } from "@/components/admin/hooks/useAdmin";
-import { ROUTES } from "@/constants/routes";
+import { useAdminSections } from "@/components/admin/hooks/useAdminSections";
 import { cn } from "@/utils/cn";
 
-// The admin's sections as tabs; the one open is marked (an account's page belongs to Users)
-const AdminNav = () => {
-  const { lang, texts } = useAdmin();
-  const pathname = usePathname();
-  const sections = [
-    { href: ROUTES.admin(lang), label: texts.nav.dashboard, icon: BarChart3, active: pathname === ROUTES.admin(lang) },
-    { href: ROUTES.adminUsers(lang), label: texts.nav.users, icon: Users, active: pathname.startsWith(ROUTES.adminUsers(lang)) },
-    { href: ROUTES.adminSettings(lang), label: texts.nav.settings, icon: Settings, active: pathname.startsWith(ROUTES.adminSettings(lang)) },
-  ];
+// The admin's sections as tabs, on phones and tablets (wider screens have the sidebar); the one open is marked
+const AdminNav = ({ className }) => {
+  const { texts } = useAdmin();
+  const sections = useAdminSections();
   return (
-    <nav aria-label={texts.nav.label} className="flex gap-1 overflow-x-auto rounded-xl bg-card p-1 ring-1 ring-foreground/10 sm:w-fit">
+    <nav aria-label={texts.nav.label} className={cn("flex gap-1 overflow-x-auto rounded-xl bg-card p-1 ring-1 ring-foreground/10 sm:w-fit", className)}>
       {sections.map((section) => (
         <Link
           key={section.href}

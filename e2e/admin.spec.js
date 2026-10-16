@@ -22,7 +22,7 @@ test.describe("admin", () => {
     test("without an account", async ({ page }) => {
       const response = await page.goto("/es/admin");
       expect(response.status()).toBe(404);
-      await expect(page.getByRole("heading", { name: "Panel" })).toHaveCount(0);
+      await expect(page.getByRole("heading", { name: "Resumen" })).toHaveCount(0);
     });
 
     test("with an account that is not an admin", async ({ page }) => {
@@ -38,9 +38,11 @@ test.describe("admin", () => {
     skipWithoutSupabase();
     await signInAs(page, { admin: true });
     await page.goto("/en/admin");
-    await expect(page.getByRole("heading", { name: "Dashboard" })).toBeVisible();
-    await expect(page.getByText("AI cost", { exact: true })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Itineraries per day" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Overview" })).toBeVisible();
+    await expect(page.locator("dt").getByText("Estimated AI cost", { exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Daily trend" })).toBeVisible();
+    await expect(page.getByRole("button", { name: "Period" })).toContainText("Last 30 days");
+    await expect(page.getByRole("link", { name: "Back to Lowfly" })).toBeVisible();
     await page.getByRole("link", { name: "Users" }).click();
     await expect(page.getByRole("heading", { level: 1, name: "Users" })).toBeVisible();
     await expect(page.getByRole("searchbox", { name: "Search users" })).toBeVisible();
@@ -56,10 +58,20 @@ test.describe("admin", () => {
       await signInAs(page, { admin: true });
       const response = await page.goto("/es/admin");
       expect(response.status()).toBe(200);
-      await expect(page.getByRole("heading", { name: "Panel" })).toBeVisible();
-      for (const figure of ["Cuentas", "Itinerarios", "Coste de IA", "Hechos por Claude"]) await expect(page.getByText(figure, { exact: true })).toBeVisible();
-      for (const chart of ["Itinerarios por día", "Coste de IA por día", "Altas por día", "Destinos más planeados"])
-        await expect(page.getByRole("heading", { name: chart })).toBeVisible();
+      await expect(page.getByRole("heading", { name: "Resumen" })).toBeVisible();
+      for (const figure of ["Cuentas", "Viajes guardados", "Itinerarios creados", "Coste estimado de IA", "Generados con Claude"])
+        await expect(page.locator("dt").getByText(figure, { exact: true })).toBeVisible();
+      for (const section of ["Evolución diaria", "Destinos más planeados", "Uso de IA"]) await expect(page.getByRole("heading", { name: section })).toBeVisible();
+      // One chart, a figure at a time
+      await page.getByRole("tab", { name: "Coste IA" }).click();
+      await expect(page.getByRole("tab", { name: "Coste IA" })).toHaveAttribute("aria-selected", "true");
+      await expect(page.locator("p").getByText("Coste de IA", { exact: true })).toBeVisible();
+      // The period, for every figure, kept in the address
+      await page.getByRole("button", { name: "Período" }).click();
+      await page.getByRole("menuitemradio", { name: "Últimos 7 días" }).click();
+      await page.waitForURL(/period=7/);
+      await expect(page.getByRole("button", { name: "Período" })).toContainText("Últimos 7 días");
+      await expect(page.getByText(/vs\. los 7 días anteriores/)).toBeVisible();
       // Search engines leave it out
       await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
       await expectNoSidewaysScroll(page);

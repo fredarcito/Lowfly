@@ -9,7 +9,7 @@ const UsageTable = ({ calls, lang }) => {
   const columns = texts.usageColumns;
   if (!calls.length) return <p className="text-sm text-muted-foreground">{texts.noUsage}</p>;
   return (
-    <div className="overflow-x-auto">
+    <div className="min-w-0 overflow-x-auto">
       <table className="w-full min-w-[40rem] text-sm">
         <thead className="text-left text-xs text-muted-foreground">
           <tr className="border-b">

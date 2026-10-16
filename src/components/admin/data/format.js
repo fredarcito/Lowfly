@@ -10,6 +10,8 @@ const makeFormat = (lang) => {
   const dollars = new Intl.NumberFormat(tag, { style: "currency", currency: "USD", minimumFractionDigits: 2, maximumFractionDigits: 2 });
   const cents = new Intl.NumberFormat(tag, { style: "currency", currency: "USD", minimumFractionDigits: 4, maximumFractionDigits: 4 });
   const whole = new Intl.NumberFormat(tag);
+  const scale = new Intl.NumberFormat(tag, { style: "currency", currency: "USD", minimumFractionDigits: 0, maximumSignificantDigits: 2 });
+  const decimal = new Intl.NumberFormat(tag, { maximumFractionDigits: 1 });
   const percent = new Intl.NumberFormat(tag, { style: "percent", maximumFractionDigits: 0 });
   const longDay = new Intl.DateTimeFormat(tag, { day: "numeric", month: "short", year: "numeric", timeZone: ZONE });
   const dayTime = new Intl.DateTimeFormat(tag, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: ZONE });
@@ -18,6 +20,10 @@ const makeFormat = (lang) => {
     // Under a dollar, four decimals (an itinerary costs fractions of a cent); nothing spent, plainly 0.00
     money: (amount) => (amount > 0 && amount < 1 ? cents : dollars).format(amount),
     count: (amount) => whole.format(amount),
+    // A chart's scale in dollars, without trailing zeros: "0,005 US$", "0 US$"
+    moneyScale: (amount) => scale.format(amount),
+    // One decimal at most: "1,5"
+    decimal: (amount) => decimal.format(amount),
     percent: (share) => percent.format(share),
     // A day ("2026-10-16"): "16 oct"
     day: (day) => shortDay.format(new Date(`${day}T00:00:00Z`)),

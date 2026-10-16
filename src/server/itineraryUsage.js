@@ -18,13 +18,14 @@ const tokensOf = (provider, usage = {}) =>
       };
 
 // calls: what planDays reported ({ city, country, days, provider, model, usage, durationMs });
-// request: { userId, kind: "flight" | "stops", lang, airport, preferences }. A failure is only logged.
-export const saveItineraryUsage = async (calls, { userId, kind, lang, airport, preferences }) => {
+// request: { userId, tripId, kind: "flight" | "stops", lang, airport, preferences }. A failure is only logged.
+export const saveItineraryUsage = async (calls, { userId, tripId, kind, lang, airport, preferences }) => {
   if (!calls.length || !process.env.SUPABASE_SECRET_KEY) return;
   const requestId = crypto.randomUUID();
   const rows = calls.map((call) => ({
     request_id: requestId,
     user_id: userId,
+    trip_id: tripId ?? null,
     kind,
     lang,
     city: call.city,

@@ -11,6 +11,11 @@ export const ROUTES = {
   // (back from signing in to save it)
   sharedTrip: (lang, shareId, saveIt = false) => `/${lang}/shared/${shareId}${saveIt ? `?${SAVE_SHARED_TRIP}=1` : ""}`,
   privacy: (lang) => `/${lang}/privacy`,
+  // The team's pages (admins only; anyone else gets "not found"): figures, accounts, settings
+  admin: (lang) => `/${lang}/admin`,
+  adminUsers: (lang, query) => `/${lang}/admin/users${query ? `?q=${encodeURIComponent(query)}` : ""}`,
+  adminUser: (lang, id) => `/${lang}/admin/users/${id}`,
+  adminSettings: (lang) => `/${lang}/admin/settings`,
   terms: (lang) => `/${lang}/terms`,
   // Signing in, then back to `next` (a path of this site)
   login: (lang, next) => `/${lang}/login${next ? `?next=${encodeURIComponent(next)}` : ""}`,

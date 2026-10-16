@@ -42,8 +42,8 @@ export const useItinerary = (trip) => {
     setCreation({ status: "creating" });
     try {
       const created = trip.manual
-        ? await createItinerary({ stops: stopsForAi(trip), lang, preferences })
-        : await createItinerary({ trip: tripForAi(trip), lang, preferences });
+        ? await createItinerary({ stops: stopsForAi(trip), lang, preferences, tripId: trip.id })
+        : await createItinerary({ trip: tripForAi(trip), lang, preferences, tripId: trip.id });
       updateTrip(trip.id, { itinerary: created, visited: [] });
       // Without an account, the free ones are counted in this browser
       if (status !== "signedIn") countGuestItinerary();

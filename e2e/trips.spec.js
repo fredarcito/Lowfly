@@ -110,6 +110,8 @@ test.describe("my trips", () => {
 
       await page.getByRole("button", { name: /Crear itinerario/ }).click();
       await expect.poll(() => sent?.preferences).toMatchObject({ pace: "intense", interests: ["beach"] });
+      // The trip goes with it, so its cost is kept per trip (the admin)
+      expect(sent.tripId).toBe(trip.id);
     });
   }
 

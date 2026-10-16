@@ -2,6 +2,7 @@ import { NextResponse, after } from "next/server";
 import { AppError, badRequest } from "@/server/errors";
 import { createItinerary, createStopsItinerary } from "@/server/itinerary";
 import { saveItineraryUsage } from "@/server/itineraryUsage";
+import { globalItineraryLimit, itineraryLimitFor } from "@/server/itineraryLimits";
 import { allow, release } from "@/server/rateLimit";
 import { supabaseServer } from "@/supabase/server";
 import { isDay } from "@/utils/dates";
@@ -70,6 +71,7 @@ const readPreferences = (input = {}) => {
 // POST /api/itinerary → the itinerary, for a saved flight or for a trip planned by hand:
 // { trip: { origin, code, city, country, out, ret }, lang, preferences }
 // { stops: [{ city, country, lat, lng, arrive: { day, time }, leave: { day, time } }], lang, preferences }
+// Either may say `tripId`, the saved trip's id, kept with what the AI cost.
 export const POST = async (request) => {
   try {
     const body = await request.json().catch(() => null);
@@ -86,12 +88,16 @@ export const POST = async (request) => {
     const userId = await signedInUser(supabase);
     const visitor = request.headers.get("x-forwarded-for")?.split(",")[0].trim() || "local";
     const limitKey = `itinerary:${visitor}`;
-    if (LIMITED && userId && (await itinerariesToday(supabase)) >= ITINERARY_LIMITS.userPerDay)
-      throw new AppError("aiLimit", { max: ITINERARY_LIMITS.userPerDay }, 429);
+    // The account's own daily limit, or the app-wide one (both set in the admin)
+    if (LIMITED && userId) {
+      const userPerDay = await itineraryLimitFor(userId);
+      if ((await itinerariesToday(supabase)) >= userPerDay) throw new AppError("aiLimit", { max: userPerDay }, 429);
+    }
     // Without an account: past the guest allowance, signing in gives more (or, with the switch off, the same
     // daily allowance as an account, per IP)
     if (LIMITED && !userId) {
-      const { requireAccount, guestPerDay, userPerDay } = ITINERARY_LIMITS;
+      const { requireAccount, guestPerDay } = ITINERARY_LIMITS;
+      const userPerDay = requireAccount ? null : await globalItineraryLimit();
       if (!allow(limitKey, requireAccount ? guestPerDay : userPerDay, DAY))
         throw requireAccount ? new AppError("aiSignIn", {}, 429) : new AppError("aiLimit", { max: userPerDay }, 429);
     }
@@ -100,8 +106,9 @@ export const POST = async (request) => {
     // What the AI cost, kept once the answer is sent (also when the itinerary failed after the AI answered)
     const aiCalls = [];
     const onAiCall = (call) => aiCalls.push(call);
+    const tripId = typeof body.tripId === "string" ? body.tripId.slice(0, 100) : null;
     after(() =>
-      saveItineraryUsage(aiCalls, { userId, kind: stops ? "stops" : "flight", lang, airport: stops ? null : trip.code, preferences })
+      saveItineraryUsage(aiCalls, { userId, tripId, kind: stops ? "stops" : "flight", lang, airport: stops ? null : trip.code, preferences })
     );
 
     let itinerary;

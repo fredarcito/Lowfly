@@ -14,13 +14,13 @@ const asAdmin = (path, init = {}) =>
     headers: { apikey: SECRET_KEY, authorization: `Bearer ${SECRET_KEY}`, "content-type": "application/json", ...init.headers },
   });
 
-// A new confirmed account: { id, email, password }
-export const createTestUser = async ({ fullName = "Tester Lowfly" } = {}) => {
+// A new confirmed account: { id, email, password }. `admin`: with the admin role (app_metadata)
+export const createTestUser = async ({ fullName = "Tester Lowfly", admin = false } = {}) => {
   const email = `lowfly-e2e-${Date.now()}-${Math.random().toString(36).slice(2, 7)}@example.com`;
   const password = `Test-${Math.random().toString(36).slice(2)}-Aa1`;
   const response = await asAdmin("/auth/v1/admin/users", {
     method: "POST",
-    body: JSON.stringify({ email, password, email_confirm: true, user_metadata: { full_name: fullName } }),
+    body: JSON.stringify({ email, password, email_confirm: true, user_metadata: { full_name: fullName }, ...(admin && { app_metadata: { role: "admin" } }) }),
   });
   const created = await response.json();
   if (!created.id) throw new Error(`Could not create a test user: ${JSON.stringify(created)}`);
@@ -42,6 +42,13 @@ export const itineraryUsageSince = async (since) =>
 
 export const deleteItineraryUsage = (rows) =>
   rows.length ? asAdmin(`/rest/v1/itinerary_usage?id=in.(${rows.map((row) => row.id).join(",")})`, { method: "DELETE" }) : null;
+
+// Rows straight into a table (as the app would have saved them), and reading them back
+export const insertRows = (table, rows) => asAdmin(`/rest/v1/${table}`, { method: "POST", body: JSON.stringify(rows) });
+export const readRows = async (table, query) => (await asAdmin(`/rest/v1/${table}?${query}`)).json();
+export const updateRows = (table, query, values) => asAdmin(`/rest/v1/${table}?${query}`, { method: "PATCH", body: JSON.stringify(values) });
+export const deleteRows = (table, query) => asAdmin(`/rest/v1/${table}?${query}`, { method: "DELETE" });
+export const saveTripAs = (user, trip) => insertRows("trips", [{ user_id: user.id, id: trip.id, data: trip }]);
 
 // A trip saved in the account and shared: the share's id (the link)
 export const shareTripAs = async (user, trip) => {

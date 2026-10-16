@@ -2,10 +2,11 @@ const plural = (count, one, many) => `${count} ${count === 1 ? one : many}`;
 
 const es = {
   meta: {
-    // Search engines and shared links: the two halves of Lowfly, the cheapest flights and the best itinerary
-    title: "Lowfly · Vuelos baratos y el mejor itinerario",
+    // Search engines and shared links: the two halves of Lowfly, the cheapest flights and an itinerary made for
+    // the visitor (no airline named: more are coming)
+    title: "Lowfly · Vuelos baratos e itinerarios a tu medida",
     description:
-      "Encuentra los vuelos más baratos de Ryanair y Wizz Air desde tu aeropuerto y el mejor itinerario día a día para tu viaje, adaptado a tu ritmo y tus gustos.",
+      "Encuentra los vuelos más baratos para tus fechas, directo con la aerolínea, y te creamos el itinerario a tu medida: qué ver, dónde comer y cómo moverte.",
   },
   header: {
     kicker: "Vuelos baratos · itinerarios a tu medida",

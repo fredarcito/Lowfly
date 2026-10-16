@@ -10,14 +10,21 @@ const pending = new Map(); // place key → Promise
 
 const keyOf = (place) => (place ? `${place.city}@${place.lat},${place.lng}` : null);
 
+// A failed request shows no photo but is not remembered: the next time it is needed it is asked again
 const load = (place, lang) => {
   const key = keyOf(place);
   if (!pending.has(key)) {
     pending.set(
       key,
       getPlacePhoto(place, lang)
-        .catch(() => null)
-        .then((photo) => cache.set(key, photo))
+        .then((photo) => {
+          cache.set(key, photo);
+          return photo;
+        })
+        .catch(() => {
+          pending.delete(key);
+          return null;
+        })
     );
   }
   return pending.get(key);
@@ -32,7 +39,7 @@ export const usePlacePhoto = (place) => {
     if (!place) return;
     if (cache.has(key)) return setPhoto(cache.get(key));
     let live = true;
-    load(place, lang).then(() => live && setPhoto(cache.get(key)));
+    load(place, lang).then((found) => live && setPhoto(found));
     return () => {
       live = false;
     };

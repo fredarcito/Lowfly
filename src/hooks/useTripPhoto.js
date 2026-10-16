@@ -3,6 +3,9 @@
 import { usePhoto } from "@/hooks/usePhoto";
 import { usePlacePhoto } from "@/hooks/usePlacePhoto";
 
+// What a trip's generic photo is chosen by (utils/fallbackPhoto): its airport, or its first town
+export const tripPhotoKey = (trip) => (trip.manual ? trip.stops?.[0]?.city : trip.fare.code) ?? "";
+
 // A trip's photo: the destination's (by its airport) for a flight; the first town's for a trip planned by hand,
 // wherever it is. undefined while loading, null when there is none.
 export const useTripPhoto = (trip) => {

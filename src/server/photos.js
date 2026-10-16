@@ -79,6 +79,7 @@ const findPhoto = async (code) => {
 };
 
 // { CTA: { src, width, height, page, author, license }, NRN: null, … }. The airports are looked up side by side.
+// An airport whose lookup failed (Wikidata is often busy) is left out, so it is not taken for one without a photo.
 export const getPhotos = async (codes) => {
   const missing = codes.filter((code) => !cache.has(code));
   await Promise.all(
@@ -91,5 +92,5 @@ export const getPhotos = async (codes) => {
       if (photo !== undefined) cache.set(code, photo);
     })
   );
-  return Object.fromEntries(codes.map((code) => [code, cache.get(code) ?? null]));
+  return Object.fromEntries(codes.filter((code) => cache.has(code)).map((code) => [code, cache.get(code)]));
 };

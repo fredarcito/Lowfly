@@ -7,15 +7,23 @@ import { useEffect, useState } from "react";
 import { getPhotos } from "@/api/photos";
 
 const cache = new Map(); // code → photo | null
-const pending = new Map(); // code → Promise
+const pending = new Map(); // code → Promise of the photo | null
 
+// A failed lookup (the request, or the server's: the code is missing) shows no photo but is not remembered:
+// the next time it is needed it is asked again
 const load = (code) => {
   if (!pending.has(code)) {
     pending.set(
       code,
       getPhotos([code])
-        .catch(() => ({}))
-        .then((found) => cache.set(code, found[code] ?? null))
+        .then((found) => {
+          if (code in found) cache.set(code, found[code]);
+          return found[code] ?? null;
+        })
+        .catch(() => null)
+        .finally(() => {
+          if (!cache.has(code)) pending.delete(code);
+        })
     );
   }
   return pending.get(code);
@@ -28,7 +36,7 @@ export const usePhoto = (code) => {
     if (!code) return;
     if (cache.has(code)) return setPhoto(cache.get(code));
     let live = true;
-    load(code).then(() => live && setPhoto(cache.get(code)));
+    load(code).then((found) => live && setPhoto(found));
     return () => {
       live = false;
     };

@@ -1,13 +1,14 @@
 "use client";
 
-import { Plane } from "lucide-react";
-import { useTripPhoto } from "@/hooks/useTripPhoto";
+import { tripPhotoKey, useTripPhoto } from "@/hooks/useTripPhoto";
 import { cn } from "@/utils/cn";
+import { fallbackPhoto } from "@/utils/fallbackPhoto";
 
-// The trip's photo (the destination's; a trip planned by hand, its first town's) over a sea-to-coral gradient,
-// with a plane on it while the photo loads or when there is none (a plane while there is none). `children` sit on top.
+// The trip's photo (the destination's; a trip planned by hand, its first town's), or a generic travel photo when
+// it has none; while it loads, a sea-to-coral gradient that pulses. `children` sit on top.
 const TripPhoto = ({ trip, className, children }) => {
   const photo = useTripPhoto(trip);
+  const image = photo ?? fallbackPhoto(tripPhotoKey(trip));
   return (
     <div
       className={cn(
@@ -15,9 +16,11 @@ const TripPhoto = ({ trip, className, children }) => {
         className
       )}
     >
-      {photo && <img src={photo.src} alt="" className="absolute inset-0 size-full object-cover" />}
-      {/* The plane while the photo comes, or when there is none */}
-      {!photo && <Plane className="absolute inset-0 m-auto size-10 -rotate-45 text-white/30" />}
+      {photo === undefined ? (
+        <div className="absolute inset-0 animate-pulse bg-white/10 motion-reduce:animate-none" />
+      ) : (
+        <img src={image.src} srcSet={image.srcSet} sizes="(min-width: 768px) 320px, 100vw" alt="" className="absolute inset-0 size-full object-cover" />
+      )}
       {children}
     </div>
   );

@@ -147,6 +147,36 @@ test.describe("my trips", () => {
     await expect(page.locator("article img[src*='wikimedia']").first()).toBeVisible({ timeout: 30_000 });
   });
 
+  // A destination without a photo of its own: a generic travel photo (a wing, clouds), on its card and its header
+  for (const viewport of [DESKTOP, PHONE]) {
+    test(`a destination without a photo gets a generic travel one (${viewport.width}px)`, async ({ page }) => {
+      await page.setViewportSize(viewport);
+      await page.route("**/api/photos?*", (route) => route.fulfill({ json: { CTA: null } }));
+      const trip = flightTrip({ id: "no-photo", inDays: 10 });
+      await openWith(page, "/es/trips", { trips: [trip] });
+      const cardPhoto = page.locator("article img").first();
+      await expect(cardPhoto).toHaveAttribute("src", /\/fallback\/travel-/);
+      await expect.poll(() => cardPhoto.evaluate((image) => image.complete && image.naturalWidth > 0)).toBe(true);
+      await page.goto(`/es/trips?id=${trip.id}`);
+      await expect(page.locator("img[src*='/fallback/travel-']").first()).toBeAttached();
+      // Not a place, so nothing to credit
+      await expect(page.locator("a[href*='commons.wikimedia']")).toHaveCount(0);
+    });
+  }
+
+  // A photo lookup that failed (Wikidata busy) is not taken for "no photo": the next page asks again
+  test("a destination photo that failed is asked for again @live", async ({ page }) => {
+    let calls = 0;
+    // The first answer leaves the airport out, as the server does when its lookup fails
+    await page.route("**/api/photos?*", (route) => (calls++ === 0 ? route.fulfill({ json: {} }) : route.fallback()));
+    const trip = flightTrip({ id: "photo-retry", inDays: 10 });
+    await openWith(page, "/es/trips", { trips: [trip] });
+    await expect.poll(() => calls).toBe(1);
+    await page.locator("article").first().getByRole("link").first().click();
+    await expect(page.locator("img[src*='wikimedia']").first()).toBeVisible({ timeout: 30_000 });
+    expect(calls).toBeGreaterThan(1);
+  });
+
   // A day out of town says where, and how long it takes to get there
   test("a day trip is marked on its day", async ({ page }) => {
     const trip = romeTrip();

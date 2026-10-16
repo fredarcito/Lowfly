@@ -8,6 +8,7 @@ const es = {
     description:
       "Encuentra los vuelos más baratos para tus fechas, directo con la aerolínea, y te creamos el itinerario a tu medida: qué ver, dónde comer y cómo moverte.",
   },
+  footer: { label: "Más de Lowfly", flightsFrom: (city) => `Vuelos baratos desde ${city}` },
   header: {
     kicker: "Vuelos baratos · itinerarios a tu medida",
     // Two lines: the title is shown with white-space: pre-line

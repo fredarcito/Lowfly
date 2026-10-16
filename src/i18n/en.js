@@ -8,6 +8,7 @@ const en = {
     description:
       "Find the cheapest flights for your dates, straight from the airline, and get an itinerary made for you: what to see, where to eat and how to get around.",
   },
+  footer: { label: "More from Lowfly", flightsFrom: (city) => `Cheap flights from ${city}` },
   header: {
     kicker: "Cheap flights · itineraries made for you",
     // Two lines: the title is shown with white-space: pre-line

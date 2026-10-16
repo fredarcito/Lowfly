@@ -7,10 +7,11 @@ import { changeManualTrip, saveManualTrip } from "@/store/trips";
 // The towns of a trip planned by hand, in order (each: place, arrival and departure day and time), what is wrong
 // with them once the visitor tries to go on, and saving them: `save(id)` saves the trip (or, with the id of the one
 // saved before, changes it) and returns its id, or null when something has to be fixed first.
-export const useManualTripForm = () => {
+// `initialPlace`: the first town already chosen (a route's page sends its destination), or null.
+export const useManualTripForm = (initialPlace = null) => {
   const nextKey = useRef(1);
-  const newStop = (arriveDay = "") => ({ key: nextKey.current++, place: null, arriveDay, arriveTime: "", leaveDay: "", leaveTime: "" });
-  const [stops, setStops] = useState(() => [newStop()]);
+  const newStop = (arriveDay = "", place = null) => ({ key: nextKey.current++, place, arriveDay, arriveTime: "", leaveDay: "", leaveTime: "" });
+  const [stops, setStops] = useState(() => [newStop("", initialPlace)]);
   const [submitted, setSubmitted] = useState(false);
   // The town just added with "Add another town" (it takes the focus), by key
   const [addedKey, setAddedKey] = useState(null);

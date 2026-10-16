@@ -1,9 +1,10 @@
 "use client";
 
+import SiteFooter from "@/components/layout/SiteFooter";
 import TopBar from "@/components/layout/TopBar";
 import { cn } from "@/utils/cn";
 
-// The frame of "My trips": the header with the top bar, then the content.
+// The frame of "My trips" (and the legal and route pages): the header with the top bar, the content, the footer.
 // With `hero` (a trip's photo header) the header grows to hold it, on the page background so the photo
 // fades straight into the content below.
 const TripsPage = ({ hero, children }) => {
@@ -21,6 +22,7 @@ const TripsPage = ({ hero, children }) => {
       <main className="mx-auto grid max-w-[calc(64rem+3rem)] grid-cols-1 gap-6 px-4 pt-2 pb-[calc(3rem+env(safe-area-inset-bottom,0px))] sm:px-6">
         {children}
       </main>
+      <SiteFooter />
     </>
   );
 };

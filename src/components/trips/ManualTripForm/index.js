@@ -24,9 +24,9 @@ import { cn } from "@/utils/cn";
 // bottom bar (phones) belong to the whole wizard and never change place: only the actions inside them change
 // with the step, in a box of fixed height. Only the step's own column slides in, from the side it comes from.
 // The towns live in useManualTripForm, the steps in useTripWizard and step 2's state in useStyleStep.
-const ManualTripForm = () => {
+const ManualTripForm = ({ initialPlace = null }) => {
   const { lang, texts } = useI18n();
-  const form = useManualTripForm();
+  const form = useManualTripForm(initialPlace);
   const wizard = useTripWizard(form);
   const style = useStyleStep(wizard.trip);
   const labels = texts.trips.manual;

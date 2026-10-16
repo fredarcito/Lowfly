@@ -19,8 +19,11 @@ test.describe("legal pages", () => {
 
   test("the sign-in page and home link to them", async ({ page }) => {
     await page.goto("/es/login");
-    await expect(page.getByRole("link", { name: "Condiciones de uso" })).toBeVisible();
-    await expect(page.getByRole("link", { name: "Política de privacidad" })).toBeVisible();
+    const main = page.getByRole("main");
+    await expect(main.getByRole("link", { name: "Condiciones de uso" })).toBeVisible();
+    await expect(main.getByRole("link", { name: "Política de privacidad" })).toBeVisible();
+    // And the footer, on every page with it
+    await expect(page.getByRole("contentinfo").getByRole("link", { name: "Política de privacidad" })).toBeVisible();
     await page.goto("/es");
     await expect(page.getByRole("link", { name: /Política de privacidad|Condiciones de uso/ })).toHaveCount(2);
   });

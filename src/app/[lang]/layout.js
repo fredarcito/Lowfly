@@ -5,6 +5,7 @@ import { DEFAULT_THEME, THEME_COLORS } from "@/constants/theme";
 import { themeScript } from "@/utils/theme";
 import { ROUTES } from "@/constants/routes";
 import { SPLASH_SCREENS, splashPath } from "@/constants/splashScreens";
+import { DRIVE_SCRIPT, TRAVELPAYOUTS_DRIVE } from "@/constants/travelpayouts";
 import { AuthProvider } from "@/providers/AuthProvider";
 import { openGraphOf, twitterCardOf } from "@/utils/metadata";
 import "@/styles/globals.css";
@@ -65,6 +66,7 @@ const RootLayout = async ({ children, params }) => {
     <html lang={lang} data-theme={DEFAULT_THEME} suppressHydrationWarning className={`${display.variable} ${body.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        {TRAVELPAYOUTS_DRIVE && <script data-cmp-ab="2" dangerouslySetInnerHTML={{ __html: DRIVE_SCRIPT }} />}
       </head>
       <body>
         <AuthProvider lang={lang}>{children}</AuthProvider>

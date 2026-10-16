@@ -8,10 +8,10 @@ const en = {
       "Find the cheapest Ryanair and Wizz Air flights from your airport and the best day-by-day itinerary for your trip, tailored to your pace and interests.",
   },
   header: {
-    kicker: "Ryanair + Wizz Air · live prices",
+    kicker: "Cheap flights · itineraries made for you",
     // Two lines: the title is shown with white-space: pre-line
     title: "Don't pick a destination.\nPick the best price.",
-    intro: "Find cheap flights within the dates you can travel: anywhere, to a country or city, or shifting your trip a few days.",
+    intro: "We show you the cheapest flights for your dates. Pick one and we plan the trip: what to see, where to eat and how to get around.",
     photoCreditDay: "Photo: Positano by day, by Nicola Cerroni (CC BY-SA 4.0), via Wikimedia Commons",
     photoCreditNight: "Photo: Positano at dusk, by JeCCo (CC BY 4.0), via Wikimedia Commons",
     nav: "Main navigation",

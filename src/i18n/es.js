@@ -8,10 +8,10 @@ const es = {
       "Encuentra los vuelos más baratos de Ryanair y Wizz Air desde tu aeropuerto y el mejor itinerario día a día para tu viaje, adaptado a tu ritmo y tus gustos.",
   },
   header: {
-    kicker: "Ryanair + Wizz Air · precios en tiempo real",
+    kicker: "Vuelos baratos · itinerarios a tu medida",
     // Two lines: the title is shown with white-space: pre-line
     title: "No elijas destino.\nElige el mejor precio.",
-    intro: "Busca vuelos baratos dentro de las fechas en las que puedes viajar: a cualquier sitio, a un país o ciudad, o moviendo tu escapada unos días.",
+    intro: "Te mostramos los vuelos más baratos para tus fechas. Elige uno y te planeamos el viaje: qué ver, dónde comer y cómo moverte.",
     photoCreditDay: "Foto: Positano de día, de Nicola Cerroni (CC BY-SA 4.0), vía Wikimedia Commons",
     photoCreditNight: "Foto: Positano al anochecer, de JeCCo (CC BY 4.0), vía Wikimedia Commons",
     nav: "Navegación principal",

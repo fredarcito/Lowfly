@@ -1,7 +1,15 @@
 import { parseDay, nightsBetween } from "@/utils/dates";
 import { LOCALE_TAGS } from "@/i18n/config";
+import { MORE_AIRLINES } from "@/constants/airlines";
 
-export const AIRLINES = { ryanair: "Ryanair", wizz: "Wizz Air" };
+export const AIRLINES = {
+  ryanair: "Ryanair",
+  wizz: "Wizz Air",
+  ...Object.fromEntries(Object.entries(MORE_AIRLINES).map(([id, airline]) => [id, airline.name])),
+};
+
+// A fare whose price was seen in recent searches (more airlines), not checked live: the airline confirms it
+export const isCachedFare = (fare) => Boolean(fare.cached || fare.out?.cached || fare.ret?.cached);
 
 // For searching: lower case and without accents ("Málaga" → "malaga")
 export const normalize = (text) => text.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
@@ -47,6 +55,9 @@ export const createFormat = (lang, texts) => {
   const weekdays = Array.from({ length: 7 }, (_, weekday) => narrowFmt.format(new Date(2026, 0, 5 + weekday)));
 
   const bookUrl = (airline, dep, arr, day, retDay) => {
+    // More airlines: that flight's search on their site when we know how to ask, else their home page
+    const other = MORE_AIRLINES[airline];
+    if (other) return other.deeplink ? other.deeplink({ lang, dep, arr, day, retDay }) : other.home;
     if (airline === "wizz")
       return `https://wizzair.com/${site.wizz}/booking/select-flight/${dep}/${arr}/${day}/${retDay || "null"}/1/0/0/null`;
     return (

@@ -1,13 +1,23 @@
-// All the search logic. Runs on the server (route handlers).
+// All the search logic. Runs on the server (route handlers). Ryanair and Wizz Air are searched live; more
+// airlines (easyJet, Vueling…) come from recent searches (server/travelpayouts), and only add to them: when that
+// data is missing or fails, the search goes on without it.
 import * as ryanair from "@/server/ryanair";
 import * as wizz from "@/server/wizz";
+import * as more from "@/server/travelpayouts";
+import { MORE_AIRLINES } from "@/constants/airlines";
 import { getAirports } from "@/server/airports";
 import { AppError } from "@/server/errors";
 import { WEEKEND } from "@/constants/weekend";
 import { fits, hoursAway, noTimeOff } from "@/utils/weekend";
 import { tomorrow, shift, later, daysBetween, monthsBetween, nightsBetween } from "@/utils/dates";
 
-const DAILY = { ryanair: ryanair.daily, wizz: wizz.daily };
+const DAILY = {
+  ryanair: ryanair.daily,
+  wizz: wizz.daily,
+  ...Object.fromEntries(Object.keys(MORE_AIRLINES).map((airline) => [airline, (dep, arr, from, to) => more.daily(dep, arr, from, to, airline)])),
+};
+// The airlines whose failure is worth telling (the others are a bonus)
+const LIVE = ["ryanair", "wizz"];
 // Most Wizz months checked day by day in a search, so Wizz does not block us (503) for too many requests
 const MAX_RECHECKS = 20;
 const minBy = (list) => list.reduce((cheapest, candidate) => (candidate.price < cheapest.price ? candidate : cheapest));
@@ -47,6 +57,7 @@ const fitsWeekend = (flight) =>
 
 // Runs jobs at most `n` at a time and records which airline fails
 const pool = async (jobs, failed, concurrency = 6) => {
+  // Only the live airlines' failures are told; the others just add nothing
   const res = [];
   let nextJob = 0;
   const worker = async () => {
@@ -56,7 +67,7 @@ const pool = async (jobs, failed, concurrency = 6) => {
         res[jobIndex] = await jobs[jobIndex].run();
       } catch {
         res[jobIndex] = null;
-        failed.add(jobs[jobIndex].airline);
+        if (LIVE.includes(jobs[jobIndex].airline)) failed.add(jobs[jobIndex].airline);
       }
     }
   };
@@ -67,10 +78,11 @@ const pool = async (jobs, failed, concurrency = 6) => {
 // Destinations from both airlines, merged by airport. The city comes from the airport list, where every
 // airport of a city shares its name (Fiumicino and Ciampino are both "Roma"), and the country code with it.
 export const getDestinations = async (origin, lang = "es") => {
-  const [ry, wz, known] = await Promise.allSettled([
+  const [ry, wz, known, others] = await Promise.allSettled([
     ryanair.cheapest(origin, tomorrow(), shift(tomorrow(), 180), lang),
     wizz.destinations(origin, lang),
     getAirports(lang),
+    more.destinations(origin, tomorrow(), lang),
   ]);
   const failed = [];
   if (ry.status === "rejected") failed.push("ryanair");
@@ -78,7 +90,7 @@ export const getDestinations = async (origin, lang = "es") => {
   const airportsByCode = new Map((known.value?.airports || []).map((airport) => [airport.code, airport]));
 
   const byCode = new Map();
-  for (const destination of [...(ry.value || []), ...(wz.value || [])]) {
+  for (const destination of [...(ry.value || []), ...(wz.value || []), ...(others.value || [])]) {
     const airport = airportsByCode.get(destination.code);
     const entry = byCode.get(destination.code) || {
       code: destination.code,
@@ -111,7 +123,7 @@ const dailyJobs = (origin, airports, dir, from, to) => {
       run: async () => {
         const [dep, arr] = dir === "out" ? [origin, airport.code] : [airport.code, origin];
         const days = await DAILY[al](dep, arr, from, to);
-        return days.map((fare) => ({ ...fare, airline: al, code: airport.code, city: airport.city, dir }));
+        return days.map((fare) => ({ ...fare, airline: fare.airline ?? al, code: airport.code, city: airport.city, dir }));
       },
     }))
   );
@@ -189,6 +201,18 @@ export const everywhere = async (origin, from, to, max, stay = null, lang = "es"
     };
   });
   fares.push(...(await pool(wizzJobs, failed, 3)).filter(Boolean));
+
+  // More airlines, from recent searches. A weekend trip: both flights in the weekend slots.
+  try {
+    if (stay) {
+      const accept = (out, ret) => !stay.weekend || (fits(WEEKEND.out, out.day, out.time) && fits(WEEKEND.ret, ret.day, ret.time));
+      for (const found of await more.roundTrips(origin, from, to, stay, accept, lang)) fares.push(trip(found.dest, found.out, found.ret, found.price));
+    } else {
+      fares.push(...(await more.cheapest(origin, from, to, lang)));
+    }
+  } catch (error) {
+    console.error("More airlines", error.message);
+  }
 
   const byDest = new Map();
   const office = new Map(); // weekend: cheapest per destination needing no time off

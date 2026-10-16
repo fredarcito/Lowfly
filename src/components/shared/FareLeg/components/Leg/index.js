@@ -6,7 +6,8 @@ import End from "@/components/shared/FareLeg/components/Leg/components/End";
 import { useI18n } from "@/context/i18n";
 import { flightMinutes } from "@/utils/flightTime";
 
-// One leg: day, departure → arrival (with the flight length), airline and the price of that leg.
+// One leg: day, departure → arrival (with the flight length), airline and the price of that leg (when it has
+// one of its own: a return trip from recent searches only has its total).
 // from / to: { code, city, tz }
 const Leg = ({ icon: Icon, label, flight, from, to, showPrice = true }) => {
   const { format } = useI18n();
@@ -35,7 +36,7 @@ const Leg = ({ icon: Icon, label, flight, from, to, showPrice = true }) => {
 
       <div className="flex items-center justify-between gap-3 sm:justify-end">
         <AirlineBadge airline={flight.airline} />
-        {showPrice && <span className="min-w-20 text-right font-heading text-lg font-bold tabular-nums">{format.money(flight.price, flight.cur)}</span>}
+        {showPrice && flight.price != null && <span className="min-w-20 text-right font-heading text-lg font-bold tabular-nums">{format.money(flight.price, flight.cur)}</span>}
       </div>
     </div>
   );

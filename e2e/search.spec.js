@@ -93,3 +93,26 @@ test.describe("search @live", () => {
     expect(params.get("wk")).toBe("1");
   });
 });
+
+// More airlines (easyJet, Vueling…) from Travelpayouts' recent searches: shown with their name, a note that the
+// airline confirms the price, and booking on the airline's own site (never an agency)
+test.describe("more airlines @live", () => {
+  test.skip(!process.env.TRAVELPAYOUTS_TOKEN, "TRAVELPAYOUTS_TOKEN is not set (.env.local)");
+
+  test("anywhere from Gatwick finds easyJet, booked on its own site", async ({ page }) => {
+    test.setTimeout(240_000);
+    await page.setViewportSize(DESKTOP);
+    await page.goto(`/es?m=everywhere&o=LGW&from=${dayFromNow(7)}&to=${dayFromNow(60)}&trip=oneway`);
+    const row = page.getByRole("button").filter({ has: page.getByText("easyJet", { exact: true }) }).first();
+    await row.waitFor({ timeout: 200_000 });
+    await row.click();
+    await expect(page.getByText(/Precio visto en búsquedas recientes: confírmalo en easyJet/).filter({ visible: true }).first()).toBeVisible();
+    const booking = page.getByRole("link", { name: /Reservar en easyJet/ }).first();
+    await expect(booking).toHaveAttribute("href", /^https:\/\/www\.easyjet\.com\//);
+    // The closed rows' details take no room: the page ends with the list
+    await row.click();
+    await page.waitForTimeout(600);
+    const room = await page.evaluate(() => document.documentElement.scrollHeight - (document.querySelector("main").getBoundingClientRect().bottom + window.scrollY));
+    expect(room).toBeLessThanOrEqual(1);
+  });
+});

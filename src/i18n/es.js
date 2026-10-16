@@ -460,6 +460,8 @@ const es = {
     nightsIn: (count, city) => `${plural(count, "noche", "noches")} en ${city}`,
     book: "Reservar",
     bookIn: (airline) => `Reservar en ${airline}`,
+    // A price from recent searches (more airlines), not checked live
+    cachedPrice: (airline) => `Precio visto en búsquedas recientes: confírmalo en ${airline}.`,
     outIn: (airline) => `Ida en ${airline}`,
     retIn: (airline) => `Vuelta en ${airline}`,
     // Flexible dates

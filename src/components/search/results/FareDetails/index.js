@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SaveTripButton from "@/components/search/SaveTripButton";
 import BagEstimate from "@/components/shared/BagEstimate";
@@ -8,14 +8,22 @@ import CompactFareBody from "@/components/shared/CompactFareBody";
 import DestinationGuide from "@/components/shared/DestinationGuide";
 import FareLegs from "@/components/shared/FareLegs";
 import { useI18n } from "@/context/i18n";
+import { airlineNames, isCachedFare } from "@/utils/format";
 
 // An opened result: why go, each flight (times, length, airline; and each price on a return trip), then a
-// strip with the total, the estimated extra baggage and booking with the airline or "Save trip".
+// strip with the total, the estimated extra baggage and booking with the airline or "Save trip". A price from
+// recent searches (more airlines) says so: the airline confirms it.
 // Desktop: the strip in three columns, the buttons stacked in a narrow one so the price and the baggage have
 // room. Phones and tablets: the compact card (CompactFareBody), the price being already on the row above.
 const FareDetails = ({ fare, origin }) => {
   const { texts, format } = useI18n();
   const links = format.fareLinks(fare, origin);
+  const cachedNote = isCachedFare(fare) && (
+    <p className="flex items-start gap-1.5 text-xs text-muted-foreground">
+      <Info className="mt-px size-3.5 shrink-0" />
+      {texts.results.cachedPrice(airlineNames(fare))}
+    </p>
+  );
   const actions = (
     <>
       {links.map((link) => (
@@ -35,6 +43,7 @@ const FareDetails = ({ fare, origin }) => {
         <p className="text-sm text-muted-foreground first-letter:uppercase">
           {fare.ret ? texts.results.roundTrip : texts.form.oneway} · {texts.results.oneAdult}
         </p>
+        {cachedNote}
       </div>
       <BagEstimate fare={fare} className="lg:px-8" />
       <div className="grid grid-cols-1 gap-2.5 lg:pl-6">{actions}</div>
@@ -45,6 +54,7 @@ const FareDetails = ({ fare, origin }) => {
     <>
       <div className="grid px-4 pb-4 sm:px-5 lg:hidden">
         <CompactFareBody fare={fare} origin={origin} firstLine={false} />
+        {cachedNote && <div className="pb-3">{cachedNote}</div>}
         <div className="grid gap-2.5 border-t pt-4 sm:grid-flow-col sm:auto-cols-fr">{actions}</div>
       </div>
       <div className="grid gap-4 px-5 pb-5 max-lg:hidden">

@@ -56,42 +56,40 @@ const leadImages = async (titles) => {
   return files;
 };
 
-// { CTA: { src, width, height, page, author, license }, NRN: null, … }
-export const getPhotos = async (codes) => {
-  const missing = codes.filter((code) => !cache.has(code));
-  if (missing.length) {
-    const citiesByCode = await cityArticles(missing);
-    const titles = [...new Set(Object.values(citiesByCode).flat().map((city) => city.title))];
-    const lead = titles.length ? await leadImages(titles) : {};
-    // Per airport: the first lead image that is a photo, else the first Wikidata image that is
-    const chosen = Object.fromEntries(
-      missing.map((code) => {
-        const cities = citiesByCode[code] || [];
-        const file = cities.map((city) => lead[city.title]).find((candidate) => !notAPhoto(candidate)) ?? cities.map((city) => city.image).find((candidate) => !notAPhoto(candidate));
-        return [code, file ?? null];
-      })
-    );
-    const files = [...new Set(Object.values(chosen).filter(Boolean))];
-    const info = files.length ? await commons(files) : {};
+// One airport's photo, or null. Each lookup asks about this airport alone, so its answers are cached on their own
+// (Next's data cache, a month, shared by every server instance) and found again for any list it is in.
+const findPhoto = async (code) => {
+  const cities = (await cityArticles([code]))[code] || [];
+  const lead = cities.length ? await leadImages(cities.map((city) => city.title)) : {};
+  // The first lead image that is a photo, else the first Wikidata image that is
+  const file = cities.map((city) => lead[city.title]).find((candidate) => !notAPhoto(candidate)) ?? cities.map((city) => city.image).find((candidate) => !notAPhoto(candidate));
+  if (file) {
+    const info = await commons([file]);
     // Commons may normalise the file name (underscores, capitals): compare loosely
     const norm = (title) => title.replace(/_/g, " ").toLowerCase();
-    const byNorm = Object.fromEntries(Object.entries(info).map(([title, value]) => [norm(title), value]));
-    for (const code of missing) cache.set(code, chosen[code] ? byNorm[norm(chosen[code])] ?? null : null);
-    // Airports whose city Wikidata does not know (Weeze for Düsseldorf, Turin, Dubai…): the town by its name
-    // and where it is, as for a trip planned by hand
-    const withoutPhoto = missing.filter((code) => !cache.get(code));
-    if (withoutPhoto.length) {
-      const { airports } = await getAirports("en").catch(() => ({ airports: [] }));
-      await Promise.all(
-        withoutPhoto.map(async (code) => {
-          const airport = airports.find((candidate) => candidate.code === code);
-          if (airport?.lat == null) return;
-          // The city it is named after can be some way off (Teesside for Newcastle)
-          const photo = await getPlacePhoto({ city: airport.city, lat: airport.lat, lng: airport.lon }, "en", AIRPORT_CITY_KM).catch(() => null);
-          cache.set(code, photo);
-        })
-      );
-    }
+    const photo = Object.entries(info).find(([title]) => norm(title) === norm(file))?.[1];
+    if (photo) return photo;
   }
-  return Object.fromEntries(codes.map((code) => [code, cache.get(code)]));
+  // An airport whose city Wikidata does not know (Weeze for Düsseldorf, Turin, Dubai…): the town by its name and
+  // where it is, as for a trip planned by hand. The city it is named after can be some way off (Teesside)
+  const { airports } = await getAirports("en").catch(() => ({ airports: [] }));
+  const airport = airports.find((candidate) => candidate.code === code);
+  if (airport?.lat == null) return null;
+  return getPlacePhoto({ city: airport.city, lat: airport.lat, lng: airport.lon }, "en", AIRPORT_CITY_KM).catch(() => null);
+};
+
+// { CTA: { src, width, height, page, author, license }, NRN: null, … }. The airports are looked up side by side.
+export const getPhotos = async (codes) => {
+  const missing = codes.filter((code) => !cache.has(code));
+  await Promise.all(
+    missing.map(async (code) => {
+      const photo = await findPhoto(code).catch((error) => {
+        console.error("Photo of", code, error.message);
+        return undefined;
+      });
+      // A failure is not remembered: it is asked again next time
+      if (photo !== undefined) cache.set(code, photo);
+    })
+  );
+  return Object.fromEntries(codes.map((code) => [code, cache.get(code) ?? null]));
 };

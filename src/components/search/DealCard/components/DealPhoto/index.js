@@ -22,7 +22,7 @@ const DealPhoto = ({ fare, origin }) => {
           className="size-full object-cover transition-transform duration-500 group-hover:scale-105 motion-reduce:transition-none"
         />
       ) : (
-        photo === null && <Plane className="absolute inset-0 m-auto size-10 -rotate-45 text-white/30" />
+        <Plane className="absolute inset-0 m-auto size-10 -rotate-45 text-white/30" />
       )}
       {photo && <PhotoCredit page={photo.page} text={texts.deals.photoBy(photo.author, photo.license)} className="right-2 bottom-2" />}
       <SaveTripButton origin={origin} fare={fare} compact className="absolute top-2 right-2 z-10" />

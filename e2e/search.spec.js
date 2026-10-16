@@ -77,15 +77,15 @@ test.describe("search @live", () => {
     }
   }
 
-  test("weekend deals load their photos in one request and lead to every destination", async ({ page }) => {
+  test("weekend deals load their photos and lead to every destination", async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 1100 });
     const photoRequests = [];
     page.on("request", (request) => request.url().includes("/api/photos") && photoRequests.push(request.url()));
     await openWith(page, "/es", { origin: "MLA" });
     await expect(page.locator("article h3").first()).toBeVisible({ timeout: 120_000 });
     await expect(page.locator("article img").first()).toBeVisible();
-    // Batched: the cards that appear together ask in one request (they can come in two rounds)
-    expect(photoRequests.length).toBeLessThan(await page.locator("article").count());
+    // One request per airport (each photo shows as soon as it is found), never twice for the same one
+    expect(new Set(photoRequests).size).toBe(photoRequests.length);
     await page.getByRole("button", { name: /Ver todos los destinos/ }).click();
     await expect(page.getByText(/destinos/).first()).toBeVisible({ timeout: 150_000 });
     const params = new URL(page.url()).searchParams;

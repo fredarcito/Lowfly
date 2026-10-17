@@ -4,20 +4,23 @@ import { Footprints, Lightbulb, Utensils } from "lucide-react";
 import { useI18n } from "@/context/i18n";
 import { cn } from "@/utils/cn";
 import Block from "@/components/trips/itinerary/StopDetails/components/Block";
+import StopDishes from "@/components/trips/itinerary/StopDetails/components/StopDishes";
 import StopHistory from "@/components/trips/itinerary/StopDetails/components/StopHistory";
 
-// Colour of each kind of stop label
+// Colour of each kind of stop label: outlined, so the kind of stop leads and the price and walk beside it stay quiet
 const TYPE_STYLES = {
-  imprescindible: "bg-primary/15 text-primary-ink",
-  recomendado: "bg-save/15 text-save",
-  opcional: "bg-muted text-muted-foreground",
-  comida: "bg-sun/25 text-foreground",
-  transporte: "bg-sea/15 text-sea",
-  logistica: "bg-sea/15 text-sea",
-  llegada: "bg-sea/15 text-sea",
+  imprescindible: "border-primary/60 text-primary-ink",
+  recomendado: "border-save/60 text-save",
+  opcional: "border-foreground/15 text-muted-foreground",
+  comida: "border-sun/70 text-foreground",
+  transporte: "border-sea/60 text-sea",
+  logistica: "border-sea/60 text-sea",
+  llegada: "border-sea/60 text-sea",
 };
+const CHIP = "rounded-full border px-2.5 py-0.5 text-xs";
 
-// What a stop holds once opened: why go, what to look for, the plan's practical note, food, labels, history
+// What a stop holds once opened: why go, what to look for, the plan's practical note, where to eat and what to
+// order, labels, history
 const StopDetails = ({ stop }) => {
   const { texts } = useI18n();
   const typeLabel = texts.trips.types[stop.type];
@@ -27,7 +30,7 @@ const StopDetails = ({ stop }) => {
       {stop.lookFor && <Block title={texts.trips.lookFor}>{stop.lookFor}</Block>}
       {stop.note && (
         <p className="flex gap-1.5 text-sm text-muted-foreground">
-          <Lightbulb className="mt-0.5 size-3.5 shrink-0" /> {stop.note}
+          <Lightbulb className="mt-0.5 size-3.5 shrink-0 text-primary-ink" /> {stop.note}
         </p>
       )}
       {stop.food && (
@@ -35,12 +38,13 @@ const StopDetails = ({ stop }) => {
           <Utensils className="mt-0.5 size-3.5 shrink-0" /> {stop.food}
         </p>
       )}
+      {stop.dishes?.length > 0 && <StopDishes dishes={stop.dishes} />}
       {(typeLabel || stop.cost || stop.walkToNext) && (
         <div className="flex flex-wrap items-center gap-1.5">
-          {typeLabel && <span className={cn("rounded-full px-2 py-0.5 text-xs font-medium", TYPE_STYLES[stop.type])}>{typeLabel}</span>}
-          {stop.cost && <span className="rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground">{stop.cost}</span>}
+          {typeLabel && <span className={cn(CHIP, "font-medium", TYPE_STYLES[stop.type])}>{typeLabel}</span>}
+          {stop.cost && <span className={cn(CHIP, "border-foreground/15 text-muted-foreground")}>{stop.cost}</span>}
           {stop.walkToNext && (
-            <span className="flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-xs font-medium" title={texts.trips.walkHint}>
+            <span className={cn(CHIP, "flex items-center gap-1 border-foreground/15 font-medium")} title={texts.trips.walkHint}>
               <Footprints className="size-3.5" /> {texts.trips.walk(stop.walkToNext)}
             </span>
           )}

@@ -99,7 +99,20 @@ const SCHEMA = {
                 note: { ...nullable("string"), description: "Practical tip: tickets, queues, how to get there" },
                 why: { ...nullable("string"), description: "Sights only: 1–2 sentences on why a first-time visitor should go" },
                 lookFor: { ...nullable("string"), description: "Sights only: one concrete detail to look for" },
-                food: { ...nullable("string"), description: "Meals: what to eat and where" },
+                food: { ...nullable("string"), description: "Meals: where to eat (the area or the kind of place)" },
+                dishes: {
+                  type: ["array", "null"],
+                  description: "Meals only: typical local dishes worth ordering (2–3 at lunch and dinner, 1–2 at breakfast). Otherwise null",
+                  items: {
+                    type: "object",
+                    properties: {
+                      name: { type: "string", description: "The dish's name, as locals call it" },
+                      what: { type: "string", description: "What it is, in one short sentence" },
+                      why: { type: "string", description: "Why to try it here, in one short sentence" },
+                    },
+                    required: ["name", "what", "why"],
+                  },
+                },
                 cost: { ...nullable("string"), description: "Short price with currency, or free" },
                 place: {
                   type: ["object", "null"],
@@ -112,7 +125,7 @@ const SCHEMA = {
                   required: ["name", "lat", "lng", "wikipediaTitle"],
                 },
               },
-              required: ["time", "type", "title", "note", "why", "lookFor", "food", "cost", "place"],
+              required: ["time", "type", "title", "note", "why", "lookFor", "food", "dishes", "cost", "place"],
             },
           },
         },
@@ -158,9 +171,10 @@ Traveller preferences:
 
 Rules:
 - Order stops by time and group nearby places to avoid going back and forth.
-- Day trips: a nearby town is fine when it suits the interests, at most about 2 hours away each way (within ${MAX_KM_FROM_AIRPORT} km), only on full days (never the first or the last day) and at most one every 3 days. That day, set "excursion" to the town and the travel time each way in minutes, start with a "transporte" stop to get there and end with one to come back, and its "mode" is transit or driving. Every other day, "excursion" is null.
-- Every full day has breakfast, lunch and dinner as "comida" stops, and "transporte" steps when moving between areas. The arrival and departure days only use the hours available.
-- Meals: prefer long-established places. If you are not sure a restaurant exists, describe the area and the dish in "food" and set place to null. Never invent a restaurant.
+- Day trips: a nearby town is fine when it suits the interests, at most about 2 hours away each way (within ${MAX_KM_FROM_AIRPORT} km), only on full days (never the first or the last day) and at most one every 3 days. That day, set "excursion" to the town and the travel time each way in minutes, start with breakfast in town before a "transporte" stop to get there, and end with one to come back, and its "mode" is transit or driving. Every other day, "excursion" is null.
+- Every day starts with breakfast as a "comida" stop, the departure day too: the only exception is the arrival day when the traveller gets there after 10:00. Check every day before answering: a day without breakfast is a mistake. Every full day also has lunch and dinner as "comida" stops, and "transporte" steps when moving between areas. The arrival and departure days only use the hours available, with the meals that fall in them.
+- Meals: prefer long-established places. If you are not sure a restaurant exists, describe the area in "food" and set place to null. Never invent a restaurant.
+- Every meal has "dishes": typical dishes of the place worth ordering (2–3 at lunch and dinner, 1–2 at breakfast), each with what it is and why to try it. Prefer variety across the trip, but repeating a dish is fine where the local cuisine is short. Never invent a dish or pass off a foreign one as local.
 - Types: imprescindible = must see, recomendado = recommended, opcional = optional, comida = meal, transporte = getting around, logistica = check-in, luggage, airport tasks, llegada = arrival.
 - Sights (imprescindible, recomendado, opcional) need "why" and "lookFor". Other stops leave them null.
 - Every place you visit (sights, restaurants, stations, airport) has a "place". Its "name" is the official name in the local language, exactly as it appears on OpenStreetMap or Google Maps (e.g. "Castello Normanno-Svevo", "Fontana di Trevi"), never a translation or a description such as "lunch near the cathedral"; the stop "title" is what gets translated. Add its coordinates (5 decimals). Pure moves (getting around) have place null.
@@ -172,6 +186,16 @@ Rules:
 
 const text = (value, max = 300) => (typeof value === "string" && value.trim() ? value.trim().slice(0, max) : null);
 const isCoordinate = (lat, lng) => Number.isFinite(lat) && Number.isFinite(lng) && Math.abs(lat) <= 90 && Math.abs(lng) <= 180;
+
+// A meal's dishes as the UI shows them ([{ name, what, why }], at most 3, each with its name), or null
+const cleanDishes = (dishes) => {
+  if (!Array.isArray(dishes)) return null;
+  const clean = dishes
+    .map((dish) => ({ name: text(dish?.name, 60), what: text(dish?.what, 200), why: text(dish?.why, 200) }))
+    .filter((dish) => dish.name)
+    .slice(0, 3);
+  return clean.length ? clean : null;
+};
 
 // Keeps what the UI can trust: known types and modes, trimmed texts, and only places near the destination
 const cleanStop = (stop, destination) => {
@@ -188,6 +212,7 @@ const cleanStop = (stop, destination) => {
     why: sight ? text(stop.why) : null,
     lookFor: sight ? text(stop.lookFor) : null,
     food: text(stop.food),
+    dishes: type === "comida" ? cleanDishes(stop.dishes) : null,
     cost: text(stop.cost, 60),
     place,
   };

@@ -2,7 +2,7 @@
 // Shape (made by the AI, server/itinerary): { source, lang, createdAt, preferences,
 //   weather?: [{ city, feels, low, high, rain, summary, clothes, essentials }] (each town's usual weather on those dates; older
 //   itineraries have none), days: [{ date, city?, title, mode, stops: [{ time, type, title, note?, why?, lookFor?,
-//   food?, cost?, place?: { name, lat, lng }, history?, sources? }] }] }
+//   food?, dishes?: [{ name, what, why }] (meals), cost?, place?: { name, lat, lng }, history?, sources? }] }] }
 
 // A Google Maps route takes an origin, a destination and up to 9 stops in between (in the app)
 const MAX_ROUTE_POINTS = 11;

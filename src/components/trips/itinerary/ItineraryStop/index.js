@@ -12,18 +12,21 @@ import ExcursionMark from "@/components/trips/itinerary/ItineraryStop/components
 import StopMarker from "@/components/trips/itinerary/ItineraryStop/components/StopMarker";
 
 // One stop. Places fold open (one at a time, in step with the map) to show the details,
-// "Directions" and "Mark as visited" (with `onToggleVisited`). Other stops (getting around, breakfast…) just show their note.
+// "Directions" and "Mark as visited" (with `onToggleVisited`). A meal without a set place (breakfast "around the
+// Plaza Mayor") folds open too, for its dishes, with nowhere to go or tick. Other stops (getting around…) just show
+// their note.
 // `excursionTown`: the stop is in the town of the day's trip, tagged "Day trip" beside its name.
 const ItineraryStop = ({ stop, mode, excursionTown, open, visited, onToggle, onHover, onToggleVisited, lineAbove, lineBelow }) => {
   const { texts } = useI18n();
-  const foldable = Boolean(stop.place);
+  const placed = Boolean(stop.place);
+  const foldable = placed || stop.dishes?.length > 0;
   const summary = stop.why ?? stop.note;
 
   const heading = (
     <>
       {stop.time && <span className="text-xs font-semibold text-muted-foreground tabular-nums">{stop.time}</span>}
       {/* Places lead; steps in between (getting around, breakfast…) are quieter */}
-      <span className={cn("flex flex-wrap items-center gap-x-2 gap-y-1", foldable ? "font-heading font-semibold" : "text-sm font-medium", visited && "text-muted-foreground")}>
+      <span className={cn("flex flex-wrap items-center gap-x-2 gap-y-1", placed ? "font-heading font-semibold" : "text-sm font-medium", visited && "text-muted-foreground")}>
         <span className="min-w-0">{stop.title}</span>
         {excursionTown && <ExcursionMark town={excursionTown} />}
       </span>
@@ -36,7 +39,8 @@ const ItineraryStop = ({ stop, mode, excursionTown, open, visited, onToggle, onH
       id={`stop-${stop.id}`}
       onMouseEnter={stop.number ? () => onHover(stop.number) : undefined}
       onMouseLeave={stop.number ? () => onHover(null) : undefined}
-      className={cn("relative grid grid-cols-[2.25rem_minmax(0,1fr)] gap-x-3 px-3 py-3 transition-colors sm:px-4", open && "bg-selected/60")}
+      // Open: a slightly lighter, neutral surface, so the text stays as readable as closed
+      className={cn("relative grid grid-cols-[2.25rem_minmax(0,1fr)] gap-x-3 px-3 py-3 transition-colors sm:px-4", open && "bg-foreground/[0.04] ring-1 ring-foreground/10 ring-inset")}
     >
       <ItineraryTimeline above={lineAbove} below={lineBelow} />
       <span className="relative z-10 grid size-9 place-items-center">
@@ -65,23 +69,25 @@ const ItineraryStop = ({ stop, mode, excursionTown, open, visited, onToggle, onH
           <Collapse open={open}>
             <div className="grid gap-4 pb-1">
               <StopDetails stop={stop} />
-              <div className="flex flex-wrap gap-2">
-                <Button asChild variant="outline" className="h-10">
-                  <a href={directionsUrl(stop.place, mode)} target="_blank" rel="noopener noreferrer">
-                    <Navigation /> {texts.trips.directions}
-                  </a>
-                </Button>
-                {onToggleVisited && (
-                  <Button
-                    variant={visited ? "secondary" : "ghost"}
-                    onClick={onToggleVisited}
-                    aria-pressed={visited}
-                    className={cn("h-10", visited && "text-save")}
-                  >
-                    <CircleCheck /> {visited ? texts.trips.visited : texts.trips.markVisited}
+              {placed && (
+                <div className="flex flex-wrap gap-2">
+                  <Button asChild variant="outline" className="h-10">
+                    <a href={directionsUrl(stop.place, mode)} target="_blank" rel="noopener noreferrer">
+                      <Navigation /> {texts.trips.directions}
+                    </a>
                   </Button>
-                )}
-              </div>
+                  {onToggleVisited && (
+                    <Button
+                      variant={visited ? "secondary" : "outline"}
+                      onClick={onToggleVisited}
+                      aria-pressed={visited}
+                      className={cn("h-10", visited && "text-save")}
+                    >
+                      <CircleCheck /> {visited ? texts.trips.visited : texts.trips.markVisited}
+                    </Button>
+                  )}
+                </div>
+              )}
             </div>
           </Collapse>
         )}

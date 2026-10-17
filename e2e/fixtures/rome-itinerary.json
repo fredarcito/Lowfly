@@ -137,6 +137,18 @@
           "why": null,
           "lookFor": null,
           "food": "Supplì al telefono y pizza romana al corte.",
+          "dishes": [
+            {
+              "name": "Supplì al telefono",
+              "what": "Croqueta de arroz con tomate y mozzarella que se estira al morderla.",
+              "why": "Es el bocado callejero romano por excelencia."
+            },
+            {
+              "name": "Pizza al taglio",
+              "what": "Pizza al corte, de masa alta y crujiente, que se paga al peso.",
+              "why": "Perfecta para probar varios sabores sin parar mucho."
+            }
+          ],
           "cost": "Unos 15 € por persona",
           "place": {
             "name": "Supplizio",

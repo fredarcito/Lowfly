@@ -333,6 +333,7 @@ const en = {
     visitedCount: (done, total) => `${done} of ${total} visited`,
     whyVisit: "Why go",
     lookFor: "What to look for",
+    whatToOrder: "What to order",
     history: "History and curiosities",
     sources: "Sources",
     walk: (minutes) => `≈ ${minutes} min walk`,

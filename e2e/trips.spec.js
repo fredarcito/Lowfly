@@ -73,6 +73,31 @@ test.describe("my trips", () => {
     });
   }
 
+  test("a meal says what to order: each typical dish, what it is and why to try it", async ({ page }) => {
+    const trip = romeTrip();
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    await page.getByRole("button", { name: /Almuerzo en Supplizio/ }).click();
+    await expect(page.getByText("Qué pedir")).toBeVisible();
+    const dishes = page.getByText("Qué pedir").locator("..");
+    await expect(dishes.getByRole("listitem")).toHaveCount(2);
+    await expect(dishes.getByRole("listitem").first()).toContainText("Croqueta de arroz con tomate y mozzarella");
+    await expect(dishes.getByRole("listitem").first()).toContainText("bocado callejero romano");
+  });
+
+  test("a meal without a set place still opens for its dishes, with nowhere to go or tick", async ({ page }) => {
+    const itinerary = structuredClone(romeTrip().itinerary);
+    itinerary.days[0].stops[6].place = null;
+    const trip = romeTrip({ itinerary });
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    const meal = page.getByRole("button", { name: /Almuerzo en Supplizio/ });
+    await meal.click();
+    await expect(meal).toHaveAttribute("aria-expanded", "true");
+    await expect(page.getByText("Supplì al telefono", { exact: true })).toBeVisible();
+    const row = page.locator("li").filter({ has: meal });
+    await expect(row.getByRole("link", { name: "Cómo llegar" })).toHaveCount(0);
+    await expect(row.getByRole("button", { name: "Marcar como visitado" })).toHaveCount(0);
+  });
+
   test("an itinerary made before the weather was added has no weather card", async ({ page }) => {
     const { weather, ...olderItinerary } = romeTrip().itinerary;
     const trip = romeTrip({ itinerary: olderItinerary });

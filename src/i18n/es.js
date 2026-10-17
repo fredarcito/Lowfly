@@ -333,6 +333,7 @@ const es = {
     visitedCount: (done, total) => `${done} de ${total} visitadas`,
     whyVisit: "Por qué visitarlo",
     lookFor: "En qué fijarte",
+    whatToOrder: "Qué pedir",
     history: "Historia y curiosidades",
     sources: "Fuentes",
     walk: (minutes) => `≈ ${minutes} min a pie`,

@@ -145,6 +145,7 @@ const instructionsFor = ({ lang, city, country, travel, dates, preferences }) =>
   const language = LANGUAGES[lang];
   return `You are a local travel planner. Plan a realistic day-by-day itinerary for a first-time visitor to ${city}, ${country}.
 Write every text in ${language}. Return exactly ${dates.length} days, in order (${dates.join(", ")}).
+Tone: warm and friendly, like a local friend sharing tips, but respectful. Speak to the traveller informally${lang === "es" ? ' (tú: "prueba", "acércate", "te recomendamos"; never usted: "busque", "diríjase")' : ""}, talking to them directly${lang === "es" ? ' (not impersonal: "compra la entrada online", not "se recomienda comprar" or "dejar maletas")' : ""}, and suggest rather than order ("try the ensaïmada at…", not "look for a bakery"). No slang, no jokes, no exclamation marks in a row, no emojis.
 
 Arrival and departure:
 ${travel.join("\n")}

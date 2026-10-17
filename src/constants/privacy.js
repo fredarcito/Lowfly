@@ -1,9 +1,12 @@
+import { SITE_DOMAIN } from "@/constants/site";
+
 // The privacy policy (/es/privacy, /en/privacy): what Lowfly keeps, where and why, in both languages.
 // It describes what the code does; change it whenever that changes (and the date).
 // Each section: a title and paragraphs or lists (an array is a bulleted list).
-export const PRIVACY_UPDATED = "2026-10-15";
-// Where people write about their data or the terms (shown on both legal pages)
-export const CONTACT_EMAIL = "fredar21@gmail.com";
+export const PRIVACY_UPDATED = "2026-10-17";
+// Where people write about their data or the terms (shown on both legal pages): the project's own address, never a
+// personal one
+export const CONTACT_EMAIL = `hola@${SITE_DOMAIN}`;
 
 export const PRIVACY = {
   es: {

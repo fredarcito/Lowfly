@@ -14,6 +14,9 @@ test.describe("legal pages", () => {
       await expect(page.locator("h1")).toHaveText(title);
       expect(await page.locator("article h2").count()).toBeGreaterThan(2);
       await expect(page.locator("article a").last()).toHaveAttribute("href", related);
+      // The contact is the project's address, never a personal one
+      await expect(page.getByRole("link", { name: "hola@lowfly.travel" })).toHaveAttribute("href", "mailto:hola@lowfly.travel");
+      await expect(page.getByText(/@gmail\.com/)).toHaveCount(0);
     });
   }
 

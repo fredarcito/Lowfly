@@ -20,24 +20,25 @@ const listed = (first, second) => ROUTE_ORIGINS.indexOf(first) - ROUTE_ORIGINS.i
 export const routesFrom = async (origin, lang = "es") => (await readOrigin(origin, lang))?.routes ?? [];
 
 // The airports we publish routes from, each with its own page (/es/flights/malta): [{ slug, code, city, country,
-// countryCode }], in ROUTE_ORIGINS' order. Two with one address: the first one listed.
+// countryCode, updatedAt }] (updatedAt: when the cron last wrote it), in ROUTE_ORIGINS' order. Two with one address:
+// the first one listed.
 export const origins = async (lang = "es") => {
   const found = (await readOrigins())
     .filter((row) => ROUTE_ORIGINS.includes(row.origin))
     .sort((first, second) => listed(first.origin, second.origin))
-    .map((row) => row.info[lang]);
+    .map((row) => ({ ...row.info[lang], updatedAt: row.updated_at }));
   return found.filter((origin, index) => found.findIndex((other) => other.slug === origin.slug) === index);
 };
 
 // An origin's page by its address, or null
 export const findOrigin = async (slug, lang = "es") => (await origins(lang)).find((origin) => origin.slug === slug) ?? null;
 
-// Every route page from all the origins we publish
+// Every route page from all the origins we publish, each with when the cron last wrote it (updatedAt)
 export const allRoutes = async (lang = "es") =>
   (await readAllRoutes(lang))
     .filter((row) => ROUTE_ORIGINS.includes(row.origin))
     .sort((first, second) => listed(first.origin, second.origin))
-    .flatMap((row) => row.routes ?? []);
+    .flatMap((row) => (row.routes ?? []).map((route) => ({ ...route, updatedAt: row.updated_at })));
 
 // One route by its address, in `lang`, or null. Only the airports its address starts with are looked into
 // ("madrid-…": Madrid's routes), not every origin's.

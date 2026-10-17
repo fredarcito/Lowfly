@@ -5,7 +5,9 @@ import { routeTexts } from "@/components/flightRoutes/data/texts";
 import { I18nProvider } from "@/providers/I18nProvider";
 import { origins } from "@/server/flightRoutes/routes";
 import { ROUTES } from "@/constants/routes";
-import { alternatesOf } from "@/utils/metadata";
+import { alternatesOf, breadcrumbsOf } from "@/utils/metadata";
+import JsonLd from "@/components/shared/JsonLd";
+import { APP_NAME } from "@/i18n";
 
 // Every airport with route pages, by country (/es/flights): linked from every page's footer, it leads search
 // engines to each airport's page and from there to every route. Made again once a day.
@@ -26,8 +28,14 @@ export const generateMetadata = async ({ params }) => {
 const FlightsIndexPage = async ({ params }) => {
   const { lang } = await params;
   const airports = await origins(lang).catch(() => []);
+  // The way to the page, for search engines: Lowfly › Cheap flights by airport
+  const steps = [
+    { name: APP_NAME, path: ROUTES.home(lang) },
+    { name: routeTexts(lang).airportsPage.title, path: ROUTES.flights(lang) },
+  ];
   return (
     <I18nProvider lang={lang}>
+      <JsonLd data={breadcrumbsOf(steps)} />
       <TripsPage hero={<AirportsHero lang={lang} count={airports.length} />}>
         <AirportsPage lang={lang} origins={airports} />
       </TripsPage>

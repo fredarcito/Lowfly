@@ -12,8 +12,8 @@ const rowsOf = ({ data, error }) => {
   return data;
 };
 
-// Every airport's page: [{ origin, info: { es, en } }]
-export const readOrigins = cache(async () => rowsOf(await supabaseAdmin().from(TABLE).select("origin, info")));
+// Every airport's page: [{ origin, info: { es, en }, updated_at }]
+export const readOrigins = cache(async () => rowsOf(await supabaseAdmin().from(TABLE).select("origin, info, updated_at")));
 
 // One airport's routes and prices in `lang`: { routes, prices }, or null before the cron has written it
 export const readOrigin = cache(async (origin, lang) => {
@@ -21,8 +21,8 @@ export const readOrigin = cache(async (origin, lang) => {
   return rows[0] ?? null;
 });
 
-// Every airport's routes in `lang`, without their prices (the sitemap): [{ origin, routes }]
-export const readAllRoutes = cache(async (lang) => rowsOf(await supabaseAdmin().from(TABLE).select(`origin, routes:routes->${lang}`)));
+// Every airport's routes in `lang`, without their prices (the sitemap): [{ origin, routes, updated_at }]
+export const readAllRoutes = cache(async (lang) => rowsOf(await supabaseAdmin().from(TABLE).select(`origin, updated_at, routes:routes->${lang}`)));
 
 // When each airport was last written: Map origin → time (ms)
 export const snapshotTimes = async () => {

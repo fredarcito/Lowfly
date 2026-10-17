@@ -6,14 +6,15 @@ import RouteHero from "@/components/flightRoutes/RoutePage/components/RouteHero"
 import TripsPage from "@/components/trips/TripsPage";
 import { routeTexts } from "@/components/flightRoutes/data/texts";
 import { I18nProvider } from "@/providers/I18nProvider";
-import { LOCALE_TAGS, getDictionary } from "@/i18n";
+import { APP_NAME, LOCALE_TAGS, getDictionary } from "@/i18n";
 import { AIRLINES, createFormat } from "@/utils/format";
 import { findOrigin, findRoute, origins, routesFrom } from "@/server/flightRoutes/routes";
 import { originPrices, routePrices } from "@/server/flightRoutes/prices";
 import { getGuides } from "@/server/guides";
 import { getPhotos } from "@/server/photos";
 import { ROUTES } from "@/constants/routes";
-import { alternatesOf } from "@/utils/metadata";
+import { alternatesOf, breadcrumbsOf } from "@/utils/metadata";
+import JsonLd from "@/components/shared/JsonLd";
 
 // Search engines' pages: an airport's (/es/flights/malta: every destination) or a route's (/es/flights/malta-barcelona).
 // Any route address may be asked for (the language layout only allows /es and /en). Made on its first visit from
@@ -88,6 +89,19 @@ export const generateMetadata = async ({ params }) => {
   };
 };
 
+// The way to the page, for search engines: Lowfly › Cheap flights by airport › Cheap flights from Malta (› the route)
+const breadcrumbs = (lang, slug, data) => {
+  const texts = routeTexts(lang);
+  const { origin } = data;
+  const steps = [
+    { name: APP_NAME, path: ROUTES.home(lang) },
+    { name: texts.airportsPage.title, path: ROUTES.flights(lang) },
+    ...(origin ? [{ name: texts.originPage.title(origin.city), path: ROUTES.flightRoute(lang, origin.slug) }] : []),
+    ...(data.kind === "route" ? [{ name: texts.title(data.route.origin.city, data.route.city), path: ROUTES.flightRoute(lang, slug) }] : []),
+  ];
+  return breadcrumbsOf(steps);
+};
+
 const FlightsPage = async ({ params }) => {
   const { lang, route: slug } = await params;
   const data = await load(lang, slug);
@@ -95,6 +109,7 @@ const FlightsPage = async ({ params }) => {
   if (data.kind === "origin") {
     return (
       <I18nProvider lang={lang}>
+        <JsonLd data={breadcrumbs(lang, slug, data)} />
         <TripsPage hero={<OriginHero lang={lang} origin={data.origin} count={data.routes.length} photo={data.photo} />}>
           <OriginPage lang={lang} routes={data.routes} prices={data.prices} />
         </TripsPage>
@@ -104,6 +119,7 @@ const FlightsPage = async ({ params }) => {
   const price = data.prices && createFormat(lang, getDictionary(lang)).money(data.prices.cheapest.price, "EUR");
   return (
     <I18nProvider lang={lang}>
+      <JsonLd data={breadcrumbs(lang, slug, data)} />
       <TripsPage hero={<RouteHero lang={lang} route={data.route} price={price} airlines={data.airlines} duration={data.duration} photo={data.photo} />}>
         <RoutePage lang={lang} {...data} />
       </TripsPage>

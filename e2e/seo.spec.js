@@ -17,8 +17,48 @@ test.describe("seo", () => {
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", new RegExp(`${canonical.replace(/\//g, "\\/")}$`));
       await expect(page.locator('link[rel="alternate"][hreflang="en"]')).toHaveAttribute("href", new RegExp(`${english.replace(/\//g, "\\/")}$`));
       await expect(page.locator('meta[name="robots"]')).toHaveCount(0);
+      // Any other language: the address without one, which sends the visitor to theirs
+      const anyLanguage = canonical.replace(/^\/(es|en)/, "") || "";
+      await expect(page.locator('link[rel="alternate"][hreflang="x-default"]')).toHaveAttribute("href", new RegExp(`:\\d+${anyLanguage.replace(/\//g, "\\/")}\\/?$`));
     });
   }
+
+  // The structured data in the page (schema.org JSON-LD): every block, parsed
+  const structuredData = async (page) => (await page.locator('script[type="application/ld+json"]').allTextContents()).map((block) => JSON.parse(block));
+
+  test("the home says who Lowfly is: the site and its organisation, with its logo", async ({ page }) => {
+    await page.goto("/es");
+    const [site] = await structuredData(page);
+    const types = site["@graph"].map((node) => node["@type"]);
+    expect(types).toEqual(["WebSite", "Organization"]);
+    expect(site["@graph"][1]).toMatchObject({ name: "Lowfly", url: "https://lowfly.travel", logo: "https://lowfly.travel/apple-icon.png" });
+  });
+
+  test("a route's page says the way to it: Lowfly › airports › its airport › the route", async ({ page }) => {
+    await page.goto("/es/flights/malta-barcelona");
+    const [breadcrumbs] = await structuredData(page);
+    expect(breadcrumbs["@type"]).toBe("BreadcrumbList");
+    expect(breadcrumbs.itemListElement.map((step) => step.name)).toEqual([
+      "Lowfly",
+      "Vuelos baratos por aeropuerto",
+      "Vuelos baratos desde Malta",
+      "Vuelos baratos de Malta a Barcelona",
+    ]);
+    expect(breadcrumbs.itemListElement.map((step) => step.item)).toEqual([
+      "https://lowfly.travel/es",
+      "https://lowfly.travel/es/flights",
+      "https://lowfly.travel/es/flights/malta",
+      "https://lowfly.travel/es/flights/malta-barcelona",
+    ]);
+  });
+
+  test("the sitemap lists every page in each language, with x-default and when its prices were written", async ({ request }) => {
+    const sitemap = await (await request.get("/sitemap.xml")).text();
+    expect(sitemap).toContain("<loc>https://lowfly.travel/en/flights/malta-barcelona</loc>");
+    expect(sitemap).toContain('hreflang="x-default" href="https://lowfly.travel/flights/malta-barcelona"');
+    const route = sitemap.split("<url>").find((entry) => entry.includes("<loc>https://lowfly.travel/es/flights/malta-barcelona</loc>"));
+    expect(route).toMatch(/<lastmod>\d{4}-\d{2}-\d{2}T/);
+  });
 
   for (const [path, title] of [
     ["/es/trips", "Mis viajes · Lowfly"],

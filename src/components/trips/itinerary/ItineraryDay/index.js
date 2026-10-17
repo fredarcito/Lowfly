@@ -25,6 +25,8 @@ const ItineraryDay = ({ trip, day, dayNumber, readOnly = false }) => {
   const ModeIcon = MODE_ICONS[day.mode] ?? Footprints;
   const places = stops.filter((stop) => stop.place);
   const openStop = stops.find((stop) => stop.id === openId);
+  // The day's town, for a meal's map search: its own (a trip of several towns), the flight's, or the only one planned
+  const dayTown = day.city || trip.fare?.city || (trip.stops?.length === 1 ? trip.stops[0].city : null);
 
   // From a pin: open its stop and bring it into view
   const openNumber = (number) => {
@@ -78,6 +80,7 @@ const ItineraryDay = ({ trip, day, dayNumber, readOnly = false }) => {
                   stop={stop}
                   mode={day.mode}
                   excursionTown={stop.excursion ? day.excursion?.town : null}
+                  town={(stop.excursion && day.excursion?.town) || dayTown}
                   open={stop.id === openId}
                   visited={isVisited(stop.id)}
                   onToggle={() => setOpenId((current) => (current === stop.id ? null : stop.id))}

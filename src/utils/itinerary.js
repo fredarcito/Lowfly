@@ -86,6 +86,9 @@ export const directionsUrl = (place, mode = "walking") => {
   return place.placeId ? `${url}&destination_place_id=${place.placeId}` : url;
 };
 
+// A search in Google Maps ("traditional bakeries around the Plaza Mayor, Palma"): for a meal with no set place
+export const searchUrl = (query) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+
 // The day's route in Google Maps, stops in the order of the plan. Longer days are split into legs
 // (each leg starts where the previous one ended).
 // On foot, the airport legs are left out (inTown).

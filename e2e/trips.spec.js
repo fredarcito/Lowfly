@@ -84,6 +84,45 @@ test.describe("my trips", () => {
     await expect(dishes.getByRole("listitem").first()).toContainText("bocado callejero romano");
   });
 
+  test("a meal: closed, its note and \"What to try and where\"; open, where to look, what to order and its rough budget", async ({ page }) => {
+    const itinerary = structuredClone(romeTrip().itinerary);
+    itinerary.days[0].stops[6].place = null;
+    const trip = romeTrip({ itinerary });
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    const meal = page.getByRole("button", { name: /Almuerzo en Supplizio/ });
+    const row = page.locator("li").filter({ has: meal });
+    const note = row.getByText("Pizzería romana sencilla. Pide el supplì y la pizza al corte.");
+    await expect(note).toBeVisible();
+    // The chip opens and closes it (the title too); the note stays where it was, under the title (the page may scroll)
+    const chip = row.getByRole("button", { name: "Qué probar y dónde" });
+    const belowTitle = async () => (await note.boundingBox()).y - (await meal.boundingBox()).y;
+    const closedOffset = await belowTitle();
+    await chip.click();
+    await expect(meal).toHaveAttribute("aria-expanded", "true");
+    await expect(chip).toHaveAttribute("aria-expanded", "true");
+    expect(await belowTitle()).toBe(closedOffset);
+    await expect(row.getByText("Dónde buscar")).toBeVisible();
+    // No set place: a Google Maps search for where to look, in the trip's town
+    const map = row.getByRole("link", { name: "Ver en el mapa" });
+    await expect(map).toHaveAttribute("href", `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Supplì al telefono y pizza romana al corte., Roma")}`);
+    await expect(row.getByText("Presupuesto orientativo: Unos 15 € por persona")).toBeVisible();
+    // A meal is not labelled "Comida": it already is one
+    await expect(row.getByText("Comida", { exact: true })).toHaveCount(0);
+    await expectNoSidewaysScroll(page);
+    await chip.click();
+    await expect(chip).toHaveAttribute("aria-expanded", "false");
+    await expect(row.getByText("Dónde buscar")).toBeHidden();
+  });
+
+  test("a meal with a set place: directions to it, no map search", async ({ page }) => {
+    const trip = romeTrip();
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    await page.getByRole("button", { name: /Almuerzo en Supplizio/ }).click();
+    const row = page.locator("li").filter({ has: page.getByRole("button", { name: /Almuerzo en Supplizio/ }) });
+    await expect(row.getByRole("link", { name: "Cómo llegar" })).toBeVisible();
+    await expect(row.getByRole("link", { name: "Ver en el mapa" })).toHaveCount(0);
+  });
+
   test("a meal without a set place still opens for its dishes, with nowhere to go or tick", async ({ page }) => {
     const itinerary = structuredClone(romeTrip().itinerary);
     itinerary.days[0].stops[6].place = null;

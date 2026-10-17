@@ -113,7 +113,13 @@ const SCHEMA = {
                     required: ["name", "what", "why"],
                   },
                 },
-                cost: { ...nullable("string"), description: "Short price with currency, or free" },
+                cost: { ...nullable("string"), description: "Sights and transport: short price with currency, or free. Meals: null" },
+                tip: {
+                  type: ["object", "null"],
+                  description: "Meals only: where a tip is expected on top of the bill at that kind of place and not included, its usual percentage there (the United States: 15–20; Mexico: 10–15). null where it is optional or already included, and for every other stop",
+                  properties: { min: { type: "integer" }, max: { type: "integer" } },
+                  required: ["min", "max"],
+                },
                 place: {
                   type: ["object", "null"],
                   properties: {
@@ -125,7 +131,7 @@ const SCHEMA = {
                   required: ["name", "lat", "lng", "wikipediaTitle"],
                 },
               },
-              required: ["time", "type", "title", "note", "why", "lookFor", "food", "dishes", "cost", "place"],
+              required: ["time", "type", "title", "note", "why", "lookFor", "food", "dishes", "cost", "tip", "place"],
             },
           },
         },
@@ -174,6 +180,8 @@ Rules:
 - Day trips: a nearby town is fine when it suits the interests, at most about 2 hours away each way (within ${MAX_KM_FROM_AIRPORT} km), only on full days (never the first or the last day) and at most one every 3 days. That day, set "excursion" to the town and the travel time each way in minutes, start with breakfast in town before a "transporte" stop to get there, and end with one to come back, and its "mode" is transit or driving. Every other day, "excursion" is null.
 - Every day starts with breakfast as a "comida" stop, the departure day too: the only exception is the arrival day when the traveller gets there after 10:00. Check every day before answering: a day without breakfast is a mistake. Every full day also has lunch and dinner as "comida" stops, and "transporte" steps when moving between areas. The arrival and departure days only use the hours available, with the meals that fall in them.
 - Meals: prefer long-established places. If you are not sure a restaurant exists, describe the area in "food" and set place to null. Never invent a restaurant.
+- Meals are good value, where locals eat: the menú del día in Spain, street food, markets, bakeries, simple trattorias and tavernas. At most one pricier, special meal in the whole trip, and its note says so.
+- Meals have no price ("cost" null): prices guessed are often off. Instead, "tip" says the usual tip where one is expected and not included.
 - Every meal has "dishes": typical dishes of the place worth ordering (2–3 at lunch and dinner, 1–2 at breakfast), each with what it is and why to try it. Prefer variety across the trip, but repeating a dish is fine where the local cuisine is short. Never invent a dish or pass off a foreign one as local.
 - Types: imprescindible = must see, recomendado = recommended, opcional = optional, comida = meal, transporte = getting around, logistica = check-in, luggage, airport tasks, llegada = arrival.
 - Sights (imprescindible, recomendado, opcional) need "why" and "lookFor". Other stops leave them null.
@@ -197,6 +205,15 @@ const cleanDishes = (dishes) => {
   return clean.length ? clean : null;
 };
 
+// A believable tip percentage
+const TIP_PERCENT = { min: 1, max: 30 };
+
+// The usual tip where one is expected ({ min, max } percent), or null
+const cleanTip = (tip) => {
+  const { min, max } = tip ?? {};
+  return Number.isInteger(min) && Number.isInteger(max) && min >= TIP_PERCENT.min && max >= min && max <= TIP_PERCENT.max ? { min, max } : null;
+};
+
 // Keeps what the UI can trust: known types and modes, trimmed texts, and only places near the destination
 const cleanStop = (stop, destination) => {
   const type = STOP_TYPES.includes(stop.type) ? stop.type : "opcional";
@@ -213,7 +230,9 @@ const cleanStop = (stop, destination) => {
     lookFor: sight ? text(stop.lookFor) : null,
     food: text(stop.food),
     dishes: type === "comida" ? cleanDishes(stop.dishes) : null,
-    cost: text(stop.cost, 60),
+    // A meal has no price (a guess often far off, which could put people off a good place), only its usual tip
+    cost: type === "comida" ? null : text(stop.cost, 60),
+    tip: type === "comida" ? cleanTip(stop.tip) : null,
     place,
   };
 };

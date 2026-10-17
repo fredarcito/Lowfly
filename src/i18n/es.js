@@ -337,7 +337,8 @@ const es = {
     mealChip: "Qué probar y dónde",
     whereToLook: "Dónde buscar",
     seeOnMap: "Ver en el mapa",
-    budget: (cost) => `Presupuesto orientativo: ${cost}`,
+    // "15–20 %" never split across lines: a word joiner after the dash and a no-break space before %
+    tip: (min, max) => `Aquí se suele dejar propina: un ${min === max ? min : `${min}–\u2060${max}`}\u00a0% de la cuenta.`,
     history: "Historia y curiosidades",
     sources: "Fuentes",
     walk: (minutes) => `≈ ${minutes} min a pie`,

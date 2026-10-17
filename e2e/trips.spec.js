@@ -84,7 +84,7 @@ test.describe("my trips", () => {
     await expect(dishes.getByRole("listitem").first()).toContainText("bocado callejero romano");
   });
 
-  test("a meal: closed, its note and \"What to try and where\"; open, where to look, what to order and its rough budget", async ({ page }) => {
+  test("a meal: closed, its note and \"What to try and where\"; open, where to look and what to order, with no price", async ({ page }) => {
     const itinerary = structuredClone(romeTrip().itinerary);
     itinerary.days[0].stops[6].place = null;
     const trip = romeTrip({ itinerary });
@@ -105,13 +105,28 @@ test.describe("my trips", () => {
     // No set place: a Google Maps search for where to look, in the trip's town
     const map = row.getByRole("link", { name: "Ver en el mapa" });
     await expect(map).toHaveAttribute("href", `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Supplì al telefono y pizza romana al corte., Roma")}`);
-    await expect(row.getByText("Presupuesto orientativo: Unos 15 € por persona")).toBeVisible();
+    // No price, even an older itinerary's ("Unos 15 € por persona"): the AI's guesses were often far off
+    await expect(row.getByText(/15 €/)).toHaveCount(0);
     // A meal is not labelled "Comida": it already is one
     await expect(row.getByText("Comida", { exact: true })).toHaveCount(0);
     await expectNoSidewaysScroll(page);
     await chip.click();
     await expect(chip).toHaveAttribute("aria-expanded", "false");
     await expect(row.getByText("Dónde buscar")).toBeHidden();
+  });
+
+  test("a meal where a tip is expected says so, with its usual percentage; elsewhere, nothing", async ({ page }) => {
+    const itinerary = structuredClone(romeTrip().itinerary);
+    itinerary.days[0].stops[6] = { ...itinerary.days[0].stops[6], tip: null };
+    itinerary.days[0].stops[10] = { ...itinerary.days[0].stops[10], tip: { min: 15, max: 20 } };
+    const trip = romeTrip({ itinerary });
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    const lunch = page.locator("li").filter({ has: page.getByRole("button", { name: /Almuerzo en Supplizio/ }) });
+    await lunch.getByRole("button", { name: "Qué probar y dónde" }).click();
+    await expect(lunch.getByText(/propina/)).toHaveCount(0);
+    const dinner = page.locator("li").filter({ has: page.getByRole("button", { name: /Cena en Roscioli/ }) });
+    await dinner.getByRole("button", { name: "Qué probar y dónde" }).click();
+    await expect(dinner.getByText("Aquí se suele dejar propina: un 15–\u206020\u00a0% de la cuenta.")).toBeVisible();
   });
 
   test("a meal with a set place: directions to it, no map search", async ({ page }) => {

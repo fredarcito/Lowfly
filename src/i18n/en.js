@@ -337,7 +337,8 @@ const en = {
     mealChip: "What to try and where",
     whereToLook: "Where to look",
     seeOnMap: "See on the map",
-    budget: (cost) => `Rough budget: ${cost}`,
+    // "15–20%" never split across lines: a word joiner after the dash
+    tip: (min, max) => `Tipping is usual here: around ${min === max ? min : `${min}–\u2060${max}`}% of the bill.`,
     history: "History and curiosities",
     sources: "Sources",
     walk: (minutes) => `≈ ${minutes} min walk`,

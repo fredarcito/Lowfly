@@ -38,9 +38,23 @@ export const PRIVACY = {
         ],
       },
       {
+        title: "Datos de tu cuenta de Google",
+        body: [
+          "Si entras con Google, Google nos da solo los datos básicos de tu perfil: tu email, tu nombre y tu foto de perfil (los permisos «email» y «profile»). No accedemos a tus contactos, tu correo, tus archivos ni a ningún otro dato de tu cuenta de Google.",
+          [
+            "Para qué: para crear tu cuenta de Lowfly, identificarte cuando vuelves y mostrar tu nombre y tu foto en la app. Nada más.",
+            "Dónde se guardan: en nuestra base de datos de Supabase, en Frankfurt (Unión Europea), protegidos por conexiones cifradas y con acceso restringido.",
+            "Con quién los compartimos: con nadie. No los vendemos, no los usamos para publicidad y no se los enviamos a los servicios de IA ni los usamos para entrenar modelos de IA.",
+            "Cuánto tiempo: mientras tengas tu cuenta. Si nos pides borrarla, los borramos en un plazo máximo de un mes. También puedes quitar el acceso de Lowfly desde la configuración de seguridad de tu cuenta de Google.",
+          ],
+          "El uso que Lowfly hace de los datos recibidos de las API de Google cumple la Política de datos de usuario de los servicios de API de Google, incluidos los requisitos de uso limitado.",
+        ],
+      },
+      {
         title: "Itinerarios con inteligencia artificial",
         body: [
           "Para crear un itinerario enviamos a un servicio de IA el destino, las fechas y horas del viaje y tus preferencias (ritmo, intereses, transporte). No enviamos tu nombre ni tu email. Usamos Google Gemini y, si no está disponible, Anthropic Claude. Después comprobamos los lugares con OpenStreetMap (Photon) y Wikipedia.",
+          "De cada itinerario guardamos un registro (destino, número de días, preferencias y el servicio de IA que lo hizo) para conocer su coste, limitar cuántos se crean y mejorar Lowfly. Si tienes cuenta, va unido a ella; si la borras, el registro se queda sin ninguna relación contigo.",
         ],
       },
       {
@@ -114,9 +128,23 @@ export const PRIVACY = {
         ],
       },
       {
+        title: "Your Google account data",
+        body: [
+          "If you sign in with Google, Google gives us only your basic profile: your email address, your name and your profile picture (the “email” and “profile” permissions). We do not access your contacts, your mail, your files or any other data in your Google account.",
+          [
+            "What for: to create your Lowfly account, recognise you when you come back and show your name and picture in the app. Nothing else.",
+            "Where it is stored: in our Supabase database in Frankfurt (European Union), over encrypted connections and with restricted access.",
+            "Who we share it with: no one. We do not sell it, we do not use it for advertising, and we do not send it to AI services or use it to train AI models.",
+            "How long: while you have your account. If you ask us to delete it, we delete this data within one month. You can also remove Lowfly's access from your Google account's security settings.",
+          ],
+          "Lowfly's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.",
+        ],
+      },
+      {
         title: "AI itineraries",
         body: [
           "To create an itinerary we send an AI service the destination, the trip's dates and times and your preferences (pace, interests, transport). We do not send your name or your email. We use Google Gemini and, when it is not available, Anthropic Claude. Then we check the places with OpenStreetMap (Photon) and Wikipedia.",
+          "For each itinerary we keep a record (destination, number of days, preferences and the AI service that made it) to know its cost, limit how many are created and improve Lowfly. If you have an account it is linked to it; if you delete the account, the record is no longer linked to you in any way.",
         ],
       },
       {

@@ -53,7 +53,7 @@ export const PRIVACY = {
       {
         title: "Itinerarios con inteligencia artificial",
         body: [
-          "Para crear un itinerario enviamos a un servicio de IA el destino, las fechas y horas del viaje y tus preferencias (ritmo, intereses, transporte). No enviamos tu nombre ni tu email. Usamos Google Gemini y, si no está disponible, Anthropic Claude. Después comprobamos los lugares con OpenStreetMap (Photon) y Wikipedia.",
+          "Para crear un itinerario enviamos a un servicio de IA el destino, las fechas y horas del viaje y tus preferencias (ritmo, intereses, transporte). No enviamos tu nombre ni tu email. Usamos Google Gemini y, si no está disponible, Anthropic Claude. Después comprobamos los lugares con OpenStreetMap (Photon o Nominatim) y Wikipedia.",
           "De cada itinerario guardamos un registro (destino, número de días, preferencias y el servicio de IA que lo hizo) para conocer su coste, limitar cuántos se crean y mejorar Lowfly. Si tienes cuenta, va unido a ella; si la borras, el registro se queda sin ninguna relación contigo.",
         ],
       },
@@ -145,7 +145,7 @@ export const PRIVACY = {
       {
         title: "AI itineraries",
         body: [
-          "To create an itinerary we send an AI service the destination, the trip's dates and times and your preferences (pace, interests, transport). We do not send your name or your email. We use Google Gemini and, when it is not available, Anthropic Claude. Then we check the places with OpenStreetMap (Photon) and Wikipedia.",
+          "To create an itinerary we send an AI service the destination, the trip's dates and times and your preferences (pace, interests, transport). We do not send your name or your email. We use Google Gemini and, when it is not available, Anthropic Claude. Then we check the places with OpenStreetMap (Photon or Nominatim) and Wikipedia.",
           "For each itinerary we keep a record (destination, number of days, preferences and the AI service that made it) to know its cost, limit how many are created and improve Lowfly. If you have an account it is linked to it; if you delete the account, the record is no longer linked to you in any way.",
         ],
       },

@@ -1,4 +1,5 @@
-// AI itineraries: Gemini plans the days (Claude when Gemini fails); Photon (OpenStreetMap) finds where each place really is, and
+// AI itineraries: Gemini plans the days (Claude when Gemini fails); OpenStreetMap's search (server/geocode: Photon, or
+// Nominatim when it is down) finds where each place really is, and
 // Wikipedia adds each sight's history and its source, only when the article is about that same spot.
 // Only called from the server. The shape is described in utils/itinerary.
 import { getAirports } from "@/server/airports";

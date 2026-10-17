@@ -47,6 +47,13 @@ const es = {
       `${count} destinos con vuelo directo desde ${origin}${price ? `, desde ${price}` : ""}. Precios de hoy de Ryanair y Wizz Air y reserva directo con la aerolínea, sin comisiones.`,
     intro: (count) => `${count} destinos con vuelo directo. El precio es el vuelo más barato de los próximos tres meses, solo ida.`,
   },
+  airportsPage: {
+    title: "Vuelos baratos por aeropuerto",
+    metaTitle: "Vuelos baratos por aeropuerto · Lowfly",
+    metaDescription: (count) =>
+      `Vuelos directos y baratos desde ${count} aeropuertos. Precios de hoy de Ryanair y Wizz Air y reserva directo con la aerolínea, sin comisiones.`,
+    intro: (count) => `Elige desde dónde sales: ${count} aeropuertos, cada uno con todos sus destinos directos y sus precios de hoy.`,
+  },
 };
 
 const en = {
@@ -95,6 +102,13 @@ const en = {
     metaDescription: (origin, count, price) =>
       `${count} destinations with a direct flight from ${origin}${price ? `, from ${price}` : ""}. Today's Ryanair and Wizz Air prices, booked straight with the airline, no fees.`,
     intro: (count) => `${count} destinations with a direct flight. The price is the cheapest flight of the next three months, one way.`,
+  },
+  airportsPage: {
+    title: "Cheap flights by airport",
+    metaTitle: "Cheap flights by airport · Lowfly",
+    metaDescription: (count) =>
+      `Cheap direct flights from ${count} airports. Today's Ryanair and Wizz Air prices, booked straight with the airline, no fees.`,
+    intro: (count) => `Pick where you fly from: ${count} airports, each with every direct destination and today's prices.`,
   },
 };
 

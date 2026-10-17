@@ -11,6 +11,8 @@ export const ROUTES = {
   // A trip shared by link (its id is the share's, not the trip's). `saveIt`: keep it in My trips on arrival
   // (back from signing in to save it)
   sharedTrip: (lang, shareId, saveIt = false) => `/${lang}/shared/${shareId}${saveIt ? `?${SAVE_SHARED_TRIP}=1` : ""}`,
+  // Every airport with route pages, by country: /es/flights
+  flights: (lang) => `/${lang}/flights`,
   // A route's page, for search engines: /es/flights/malta-barcelona
   flightRoute: (lang, slug) => `/${lang}/flights/${slug}`,
   privacy: (lang) => `/${lang}/privacy`,

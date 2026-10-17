@@ -5,8 +5,14 @@ import { regionOf } from "@/server/flightRoutes/regions";
 import { getAirports } from "@/server/airports";
 import { normalize } from "@/utils/format";
 
-// The airports whose routes have pages. First Malta; more once these are working.
-export const ROUTE_ORIGINS = ["MLA"];
+// The airports whose routes have pages: Malta and every Spanish airport Ryanair or Wizz Air fly from. One per city
+// (Tenerife North, Wizz Air only, would share Tenerife South's address).
+export const ROUTE_ORIGINS = [
+  "MLA",
+  // Spain
+  "ACE", "AGP", "ALC", "BCN", "BIO", "CDT", "FUE", "GRO", "GRX", "IBZ", "LEI", "LPA", "MAD", "MAH", "OVD", "PMI", "REU", "RMU",
+  "SCQ", "SDR", "SVQ", "TFS", "VIT", "VLC", "ZAZ",
+];
 
 // "Malta" + "Barcelona" → "malta-barcelona" (no accents, only letters, digits and dashes)
 const slugOf = (...names) =>
@@ -58,14 +64,16 @@ export const routesFrom = async (origin, lang = "es") => {
     .sort((first, second) => first.city.localeCompare(second.city, lang));
 };
 
-// The airports we publish routes from, each with its own page (/es/flights/malta): [{ slug, code, city, country }]
+// The airports we publish routes from, each with its own page (/es/flights/malta): [{ slug, code, city, country,
+// countryCode }]. Two with one address: the first one listed.
 export const origins = async (lang = "es") => {
   const [{ airports: english }, { airports: local }] = await Promise.all([getAirports("en"), getAirports(lang)]);
-  return ROUTE_ORIGINS.map((code) => {
+  const found = ROUTE_ORIGINS.map((code) => {
     const name = english.find((airport) => airport.code === code);
     const here = local.find((airport) => airport.code === code);
-    return name && here ? { slug: slugOf(name.city), code, city: here.city, country: here.country } : null;
+    return name && here ? { slug: slugOf(name.city), code, city: here.city, country: here.country, countryCode: here.countryCode } : null;
   }).filter(Boolean);
+  return found.filter((origin, index) => found.findIndex((other) => other.slug === origin.slug) === index);
 };
 
 // An origin's page by its address, or null
@@ -74,5 +82,10 @@ export const findOrigin = async (slug, lang = "es") => (await origins(lang)).fin
 // Every route page from all the origins we publish
 export const allRoutes = async (lang = "es") => (await Promise.all(ROUTE_ORIGINS.map((origin) => routesFrom(origin, lang)))).flat();
 
-// One route by its address, in `lang`, or null
-export const findRoute = async (slug, lang = "es") => (await allRoutes(lang)).find((route) => route.slug === slug) ?? null;
+// One route by its address, in `lang`, or null. Only the airports its address starts with are looked into
+// ("madrid-…": Madrid's routes), not every origin's.
+export const findRoute = async (slug, lang = "es") => {
+  const candidates = (await origins(lang)).filter((origin) => slug.startsWith(`${origin.slug}-`));
+  const routes = (await Promise.all(candidates.map((origin) => routesFrom(origin.code, lang)))).flat();
+  return routes.find((route) => route.slug === slug) ?? null;
+};

@@ -45,6 +45,28 @@ test.describe("route pages", () => {
     await expectNoSidewaysScroll(page);
   });
 
+  test("the airports' page: every airport by country, Spain's and Malta @live", async ({ page }) => {
+    test.setTimeout(120_000);
+    await page.goto("/es/flights");
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText("Vuelos baratos por aeropuerto");
+    await expect(page.getByRole("heading", { name: "España" })).toBeVisible();
+    await expect(page.getByRole("link", { name: /^Madrid MAD/ })).toHaveAttribute("href", "/es/flights/madrid");
+    await expect(page.getByRole("link", { name: /^Malta MLA/ })).toHaveAttribute("href", "/es/flights/malta");
+    await expectNoSidewaysScroll(page);
+  });
+
+  test("a route from Spain: Madrid to Palma @live", async ({ page }) => {
+    test.setTimeout(120_000);
+    await page.goto("/es/flights/madrid-palma");
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText("Vuelos baratos de Madrid a Palma");
+    await expect(page.getByRole("link", { name: /Ver todos los destinos/ })).toHaveAttribute("href", "/es/flights/madrid");
+  });
+
+  test("every page's footer links to the airports' page", async ({ page }) => {
+    await page.goto("/es/privacy");
+    await expect(page.getByRole("contentinfo").getByRole("link", { name: "Vuelos baratos por aeropuerto" })).toHaveAttribute("href", "/es/flights");
+  });
+
   test("Create itinerary opens the planner with the destination already chosen", async ({ page }) => {
     await page.setViewportSize(DESKTOP);
     await page.goto("/es/trips/new?to=BCN");
@@ -57,6 +79,8 @@ test.describe("route pages", () => {
     const sitemap = await (await request.get("/sitemap.xml")).text();
     expect(sitemap).toContain("https://lowfly.travel/es/flights/malta-barcelona");
     expect(sitemap).toContain("https://lowfly.travel/es/flights/malta</loc>");
+    expect(sitemap).toContain("https://lowfly.travel/es/flights</loc>");
+    expect(sitemap).toContain("https://lowfly.travel/es/flights/madrid-palma</loc>");
     expect(sitemap).toContain('hreflang="en" href="https://lowfly.travel/en/flights/malta-barcelona"');
   });
 });

@@ -6,11 +6,8 @@ import { useI18n } from "@/context/i18n";
 import { APP_NAME } from "@/i18n/config";
 import { ROUTES } from "@/constants/routes";
 
-// The airports' pages linked from every page (they lead search engines to every route): [{ slug, city }]
-const ORIGIN_LINKS = [{ slug: "malta", city: "Malta" }];
-
-// The foot of every page: the logo and what Lowfly is, the airports' pages and the legal pages (only pages that
-// exist: no empty "About" or social profiles)
+// The foot of every page: the logo and what Lowfly is, the page of every airport with route pages (it leads search
+// engines to every route) and the legal pages (only pages that exist: no empty "About" or social profiles)
 const SiteFooter = () => {
   const { lang, texts } = useI18n();
   return (
@@ -25,11 +22,9 @@ const SiteFooter = () => {
         <span className="text-muted-foreground max-sm:hidden">{texts.header.kicker}</span>
       </div>
       <nav aria-label={texts.footer.label} className="flex flex-wrap gap-x-5 gap-y-2 text-muted-foreground">
-        {ORIGIN_LINKS.map((origin) => (
-          <Link key={origin.slug} href={ROUTES.flightRoute(lang, origin.slug)} className="hover:text-foreground">
-            {texts.footer.flightsFrom(origin.city)}
-          </Link>
-        ))}
+        <Link href={ROUTES.flights(lang)} className="hover:text-foreground">
+          {texts.footer.flights}
+        </Link>
         <Link href={ROUTES.privacy(lang)} className="hover:text-foreground">
           {texts.account.privacy}
         </Link>

@@ -129,28 +129,6 @@ const dailyJobs = (origin, airports, dir, from, to) => {
   );
 };
 
-/* ---------- An airport's destinations ---------- */
-// The cheapest one-way flight from `origin` to each destination between `from` and `to`, as the airlines' own fare
-// finders tell it (one request to Ryanair, one per month to Wizz; no day-by-day checks, so a few seconds):
-// { [airport code]: price in euros }. For an airport's page (server/flightRoutes).
-export const cheapestByDestination = async (origin, from, to, lang = "es") => {
-  const [ry, wz] = await Promise.allSettled([ryanair.cheapest(origin, from, to, lang), wizz.cheapest(origin, from, to, null)]);
-  const prices = {};
-  for (const fare of [...(ry.value || []), ...(wz.value?.fares || [])]) {
-    if (fare.cur !== "EUR" || !(fare.price > 0)) continue;
-    if (!(fare.code in prices) || fare.price < prices[fare.code]) prices[fare.code] = fare.price;
-  }
-  return prices;
-};
-
-/* ---------- One route ---------- */
-// The cheapest flight each day from `origin` to some `airports` ([{ code, city, airlines }]) between `from` and
-// `to`, every airline: fares with their airport (`code`). For the route pages (server/flightRoutes).
-export const cheapestPerDay = async (origin, airports, from, to) => {
-  const res = await pool(dailyJobs(origin, airports, "out", from, to), new Set());
-  return res.filter(Boolean).flat();
-};
-
 /* ---------- Anywhere ---------- */
 // `stay` = { min, max } nights for a return trip, or null for one way
 export const everywhere = async (origin, from, to, max, stay = null, lang = "es") => {

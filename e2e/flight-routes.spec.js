@@ -1,7 +1,38 @@
 import { DESKTOP, NOT_FOUND_ERRORS, PHONE, expect, expectNoSidewaysScroll, test } from "./helpers/test.js";
 
 // The route pages for search engines (/es/flights/malta-barcelona): the route's lowest price, the cheapest flight of
-// each coming month, the search already filled in, the other routes; in the sitemap
+// each coming month, the search already filled in, the other routes; in the sitemap. They show what the cron last
+// saved (/api/cron/flight-routes), never asking the airlines themselves.
+test.describe("route pages' cron", () => {
+  test("only Vercel Cron may call it: without its secret, 401", async ({ request }) => {
+    expect((await request.get("/api/cron/flight-routes")).status()).toBe(401);
+    const wrong = await request.get("/api/cron/flight-routes", { headers: { authorization: "Bearer wrong" } });
+    expect(wrong.status()).toBe(401);
+  });
+
+  // Real prices from the airlines: slow, so @live
+  test("it writes an airport's routes and their prices, and the page shows them @live", async ({ request, page }) => {
+    test.skip(!process.env.CRON_SECRET, "CRON_SECRET is not set (.env.local)");
+    test.setTimeout(120_000);
+    const response = await request.get("/api/cron/flight-routes?origin=MLA", {
+      headers: { authorization: `Bearer ${process.env.CRON_SECRET}` },
+      timeout: 110_000,
+    });
+    expect(response.status()).toBe(200);
+    const { done, errors } = await response.json();
+    expect(errors).toEqual([]);
+    expect(done).toHaveLength(1);
+    expect(done[0]).toMatchObject({ origin: "MLA", failed: [] });
+    expect(done[0].routes).toBeGreaterThan(30);
+    // The page: its cheapest month and flight time, from what was just saved (the weekday is no longer shown)
+    await page.goto("/es/flights/malta-barcelona");
+    const facts = page.getByRole("heading", { name: "Ficha de la ruta" }).locator("..");
+    await expect(facts).toContainText("Mes más barato");
+    await expect(facts).toContainText("Duración del vuelo");
+    await expect(facts).not.toContainText("Día más barato");
+  });
+});
+
 test.describe("route pages", () => {
   test.describe("not published", () => {
     test.use({ expectedErrors: NOT_FOUND_ERRORS });

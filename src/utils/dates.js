@@ -40,6 +40,9 @@ export const monthsBetween = (from, to) => {
   return list;
 };
 
+// The last day of the month `day` is in ("2026-11-14" → "2026-11-30")
+export const monthEnd = (day) => shift(shift(`${day.slice(0, 7)}-01`, 32).slice(0, 7) + "-01", -1);
+
 // Splits a range into chunks of at most `size` days
 export const chunks = (from, to, size) => {
   const list = [];

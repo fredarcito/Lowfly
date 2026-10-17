@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, CalendarCheck, CalendarDays, Clock, MapPin, Plane, PlaneLanding, Waypoints } from "lucide-react";
+import { ArrowRight, CalendarDays, Clock, MapPin, Plane, PlaneLanding, Waypoints } from "lucide-react";
 import DestinationColumns from "@/components/flightRoutes/DestinationColumns";
 import MonthPrices from "@/components/flightRoutes/RoutePage/components/MonthPrices";
 import PlanCard from "@/components/flightRoutes/RoutePage/components/PlanCard";
@@ -24,8 +24,6 @@ const RoutePage = ({ lang, route, prices, guide, routes, origin, airlines, durat
   const write = (amount) => format.money(amount, "EUR");
   const monthName = (month) => new Intl.DateTimeFormat(tag, { month: "short", timeZone: "UTC" }).format(new Date(`${month}-15T12:00:00Z`));
   const longMonth = (month) => new Intl.DateTimeFormat(tag, { month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${month}-15T12:00:00Z`));
-  // Monday = 0 (5 Jan 2026 was a Monday)
-  const weekdayName = (index) => new Intl.DateTimeFormat(tag, { weekday: "long", timeZone: "UTC" }).format(new Date(Date.UTC(2026, 0, 5 + index)));
   const others = routes.filter((other) => other.slug !== route.slug);
 
   return (
@@ -42,7 +40,6 @@ const RoutePage = ({ lang, route, prices, guide, routes, origin, airlines, durat
               { icon: Clock, label: texts.duration, value: duration },
               { icon: Waypoints, label: texts.flightType, value: texts.direct },
               { icon: CalendarDays, label: texts.cheapestMonth, value: longMonth(prices.cheapestMonth) },
-              { icon: CalendarCheck, label: texts.cheapestWeekday, value: weekdayName(prices.cheapestWeekday) },
             ]}
           />
         </div>

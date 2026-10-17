@@ -9,25 +9,26 @@ import { I18nProvider } from "@/providers/I18nProvider";
 import { LOCALES, LOCALE_TAGS, getDictionary } from "@/i18n";
 import { AIRLINES, createFormat } from "@/utils/format";
 import { findOrigin, findRoute, origins, routesFrom } from "@/server/flightRoutes/routes";
-import { originPrices } from "@/server/flightRoutes/originPrices";
-import { routePrices } from "@/server/flightRoutes/prices";
+import { originPrices, routePrices } from "@/server/flightRoutes/prices";
 import { getGuides } from "@/server/guides";
 import { getPhotos } from "@/server/photos";
 import { ROUTES } from "@/constants/routes";
 
 // Search engines' pages: an airport's (/es/flights/malta: every destination) or a route's (/es/flights/malta-barcelona).
-// Any route address may be asked for (the language layout only allows /es and /en). Made on each visit, from the
-// airlines' prices kept a day in Next's data cache (and served from the CDN for a day): the airlines are asked rarely.
+// Any route address may be asked for (the language layout only allows /es and /en). Made on its first visit from
+// what the cron saved (server/flightRoutes/snapshots: never the airlines), then served from the CDN; made again a
+// day later, or as soon as the cron writes new prices. No address is made at build time: the empty list is what
+// lets Next keep the pages made on a visit (without it, every visit would make the page again).
 export const revalidate = 86400;
 export const dynamicParams = true;
+export const generateStaticParams = () => [];
 
 const photoOf = async (code) => (await getPhotos([code]).catch(() => ({})))[code] ?? null;
 
 // An airport's page: { kind: "origin", origin, routes, prices (written), photo }
 const loadOrigin = async (origin, lang) => {
   const format = createFormat(lang, getDictionary(lang));
-  const [routes, photo] = await Promise.all([routesFrom(origin.code, lang), photoOf(origin.code)]);
-  const prices = await originPrices(origin.code, routes, lang).catch(() => ({}));
+  const [routes, prices, photo] = await Promise.all([routesFrom(origin.code, lang), originPrices(origin.code, lang), photoOf(origin.code)]);
   const written = Object.fromEntries(Object.entries(prices).map(([slug, price]) => [slug, format.money(price, "EUR")]));
   return { kind: "origin", origin, routes, prices: written, cheapest: Object.values(prices).length ? Math.min(...Object.values(prices)) : null, photo };
 };
@@ -38,7 +39,7 @@ const loadRoute = async (route, lang) => {
   const format = createFormat(lang, getDictionary(lang));
   const code = route.airports[0].code;
   const [prices, routes, photo, origin] = await Promise.all([
-    routePrices(route).catch(() => null),
+    routePrices(route, lang),
     routesFrom(route.origin.code, lang),
     photoOf(code),
     origins(lang).then((all) => all.find((origin) => origin.code === route.origin.code) ?? null),

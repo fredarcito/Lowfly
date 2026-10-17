@@ -16,8 +16,9 @@ import "@/styles/globals.css";
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
 const body = Atkinson_Hyperlegible({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-body" });
 
-// Only /es and /en; any other language is a 404
-export const dynamicParams = false;
+// Only /es and /en: the proxy sends any other address to one of them, and the layout makes any other language a 404.
+// No dynamicParams = false here: it would reach every page below, and turn into a 404 each route page that is made
+// on its first visit (flights/[route])
 export const generateStaticParams = () => LOCALES.map((lang) => ({ lang }));
 
 // Absolute address of the site, so shared links get full URLs for the preview image (opengraph-image.js):

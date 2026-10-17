@@ -11,7 +11,7 @@ const es = {
   searchDates: "Ver fechas y precios",
   byMonth: "Cuándo es más barato volar",
   byMonthHint: "Solo ida, por persona. Toca un mes para buscar sus fechas.",
-  updated: "Precios de hoy, consultados en la web de cada aerolínea.",
+  updated: "Precios consultados cada día en la web de cada aerolínea.",
   facts: "Ficha de la ruta",
   airlines: "Aerolínea",
   origin: "Origen",
@@ -19,7 +19,6 @@ const es = {
   duration: "Duración del vuelo",
   flightType: "Tipo de vuelo",
   cheapestMonth: "Mes más barato",
-  cheapestWeekday: "Día más barato para volar",
   whyGo: (city) => `Por qué ir a ${city}`,
   source: "Fuente",
   plan: {
@@ -67,7 +66,7 @@ const en = {
   searchDates: "See dates and prices",
   byMonth: "When it is cheapest to fly",
   byMonthHint: "One way, per person. Tap a month to search its dates.",
-  updated: "Today's prices, checked on each airline's site.",
+  updated: "Prices checked every day on each airline's site.",
   facts: "About the route",
   airlines: "Airline",
   origin: "From",
@@ -75,7 +74,6 @@ const en = {
   duration: "Flight time",
   flightType: "Flight",
   cheapestMonth: "Cheapest month",
-  cheapestWeekday: "Cheapest day to fly",
   whyGo: (city) => `Why go to ${city}`,
   source: "Source",
   plan: {

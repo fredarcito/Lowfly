@@ -1,7 +1,7 @@
 import { routeTexts } from "@/components/flightRoutes/data/texts";
 
 // What to know about the route, at a glance: `facts` [{ icon, label, value }] (airline, from, to, flight time, direct,
-// cheapest month and weekday), the ones with no value left out
+// cheapest month), the ones with no value left out
 const RouteFacts = ({ lang, facts }) => {
   const texts = routeTexts(lang);
   return (

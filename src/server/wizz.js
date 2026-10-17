@@ -1,6 +1,6 @@
 // Wizz Air public (unofficial) API. Only called from the server.
 // Wizz changes the API version number with every deploy, so it is read from its home page.
-import { chunks, monthsBetween, nightsBetween, shift } from "@/utils/dates";
+import { chunks, monthEnd, monthsBetween, nightsBetween, shift } from "@/utils/dates";
 import { countryName } from "@/server/countries";
 import { eurRates, toEur } from "@/server/fx";
 import { WEEKEND } from "@/constants/weekend";
@@ -19,14 +19,16 @@ const HEADERS = {
 const FALLBACK_VERSION = "29.20.0"; // last resort; update it if it stops working
 const VERSION_TTL = 6 * 3600 * 1000;
 
-// The home page (~2 MB, too big for the fetch cache) links the API as be.wizzair.com/<version>/Api.
-// The version is kept in memory for a few hours.
+// The home page links the API as be.wizzair.com/<version>/Api. The version is kept in memory for a few hours.
+// The page (~2 MB) is too big for Next's data cache, so it is not kept there, but it is asked with a revalidate,
+// never no-store: a no-store request would make every page that reaches it (the route pages' photos, through the
+// airports) render on each visit instead of once a day.
 let version = { value: null, at: 0 };
 
 const apiBase = async () => {
   if (!version.value || Date.now() - version.at > VERSION_TTL) {
     try {
-      const response = await fetch("https://www.wizzair.com/en-gb", { headers: { "user-agent": UA }, cache: "no-store" });
+      const response = await fetch("https://www.wizzair.com/en-gb", { headers: { "user-agent": UA }, next: { revalidate: VERSION_TTL / 1000 } });
       const match = (await response.text()).match(/be\.wizzair\.com\/([\d.]+)\/Api/);
       if (match) version = { value: match[1], at: Date.now() };
     } catch {}
@@ -139,8 +141,6 @@ const buckets = (stay) => {
   if (stay.min === 7 && stay.max === 7) return ["1 week"];
   return Object.keys(STAY_BUCKETS).filter((bucket) => STAY_BUCKETS[bucket](stay));
 };
-
-const monthEnd = (month) => shift(shift(month.slice(0, 7) + "-01", 32).slice(0, 7) + "-01", -1);
 
 // Cheapest Wizz fare (or return trip, with `stay`) to every destination between `from` and `to`.
 // One fare finder request per month (and stay bucket). The finder only gives the cheapest fare of each month,

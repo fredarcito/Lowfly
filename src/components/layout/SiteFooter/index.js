@@ -14,7 +14,7 @@ const ORIGIN_LINKS = [{ slug: "malta", city: "Malta" }];
 const SiteFooter = () => {
   const { lang, texts } = useI18n();
   return (
-    <footer className="mx-auto mt-4 flex max-w-[calc(64rem+3rem)] flex-wrap items-center justify-between gap-x-8 gap-y-4 border-t px-4 pt-6 pb-[calc(2rem+env(safe-area-inset-bottom,0px))] text-sm sm:px-6">
+    <footer className="mx-auto mt-4 flex w-full max-w-[calc(64rem+3rem)] flex-wrap items-center justify-between gap-x-8 gap-y-4 border-t px-4 pt-6 pb-[calc(2rem+env(safe-area-inset-bottom,0px))] text-sm sm:px-6">
       <div className="flex items-center gap-3">
         <Link href={ROUTES.home(lang)} className="flex items-center gap-2 font-heading text-lg font-extrabold tracking-tight">
           <span className="grid size-7 place-items-center rounded-lg bg-primary text-primary-foreground">

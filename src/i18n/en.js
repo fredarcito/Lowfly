@@ -8,6 +8,13 @@ const en = {
     description:
       "Find the cheapest flights for your dates, straight from the airline, and get an itinerary made for you: what to see, where to eat and how to get around.",
   },
+  notFound: {
+    eyebrow: "Error 404",
+    title: "We've gone off route",
+    text: "We couldn't find the page you're looking for. It may have moved, or the link may be wrong.",
+    search: "Search flights",
+    trips: "My trips",
+  },
   footer: { label: "More from Lowfly", flightsFrom: (city) => `Cheap flights from ${city}` },
   header: {
     kicker: "Cheap flights · itineraries made for you",

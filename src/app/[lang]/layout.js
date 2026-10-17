@@ -2,11 +2,12 @@ import { notFound } from "next/navigation";
 import { Atkinson_Hyperlegible, Bricolage_Grotesque } from "next/font/google";
 import { APP_NAME, LOCALES, getDictionary, hasLocale } from "@/i18n";
 import { DEFAULT_THEME, THEME_COLORS } from "@/constants/theme";
-import { themeScript } from "@/utils/theme";
 import { ROUTES } from "@/constants/routes";
 import { SPLASH_SCREENS, splashPath } from "@/constants/splashScreens";
 import { DRIVE_SCRIPT, TRAVELPAYOUTS_DRIVE } from "@/constants/travelpayouts";
 import { AuthProvider } from "@/providers/AuthProvider";
+import ThemeScript from "@/components/layout/ThemeScript";
+import InlineScript from "@/components/shared/InlineScript";
 import { openGraphOf, twitterCardOf } from "@/utils/metadata";
 import "@/styles/globals.css";
 
@@ -62,13 +63,12 @@ const RootLayout = async ({ children, params }) => {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
   return (
-    // The theme script may change data-theme before React hydrates
+    // ThemeScript may change data-theme before React hydrates. It opens <body>, so it runs before anything is
+    // painted (next/script's beforeInteractive ran too late: a saved light theme flashed dark).
     <html lang={lang} data-theme={DEFAULT_THEME} suppressHydrationWarning className={`${display.variable} ${body.variable}`}>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        {TRAVELPAYOUTS_DRIVE && <script data-cmp-ab="2" dangerouslySetInnerHTML={{ __html: DRIVE_SCRIPT }} />}
-      </head>
+      <head>{TRAVELPAYOUTS_DRIVE && <InlineScript code={DRIVE_SCRIPT} data-cmp-ab="2" />}</head>
       <body>
+        <ThemeScript />
         <AuthProvider lang={lang}>{children}</AuthProvider>
       </body>
     </html>

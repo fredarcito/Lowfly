@@ -3,9 +3,9 @@ import { test as base, expect } from "@playwright/test";
 // Errors the app cannot avoid in a test run (the dev server's own noise)
 const IGNORED_ERRORS = [/Download the React DevTools/, /\[Fast Refresh\]/, /\[HMR\]/];
 
-// What a "not found" page logs in the dev server: the 404 itself, React re-rendering the layout's theme script, and
-// React's dev timing failing on a layout that ends in "not found" (a negative time stamp)
-export const NOT_FOUND_ERRORS = /status of 404|Encountered a script tag while rendering React component|Failed to execute 'measure' on 'Performance'/;
+// What a "not found" page logs in the dev server: the 404 itself, and React's dev timing failing on a layout that
+// ends in "not found" (a negative time stamp)
+export const NOT_FOUND_ERRORS = /status of 404|Failed to execute 'measure' on 'Performance'/;
 
 // `test` with every page watched: an uncaught error or a console error fails the test (after it ran, so the
 // steps that led there show in the report). A test that expects some sets `test.use({ expectedErrors: /pattern/ })`.
@@ -14,7 +14,9 @@ export const test = base.extend({
   page: async ({ page, expectedErrors }, use) => {
     const errors = [];
     const ignored = expectedErrors ? [...IGNORED_ERRORS, expectedErrors] : IGNORED_ERRORS;
-    page.on("pageerror", (error) => errors.push(error.message));
+    page.on("pageerror", (error) => {
+      if (!ignored.some((pattern) => pattern.test(error.message))) errors.push(error.message);
+    });
     page.on("console", (message) => {
       if (message.type() === "error" && !ignored.some((pattern) => pattern.test(message.text()))) errors.push(message.text());
     });

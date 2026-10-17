@@ -2,6 +2,9 @@
 // kilometres off, so every place on the map is located here instead.
 // Photon first; when it is down, Nominatim (OpenStreetMap's own search, the same data), at most one request a
 // second as its rules ask: an itinerary takes a little longer, but its places are still checked.
+// Every answer is kept in place_lookups (supabase/migrations): a search is made once for good (the same cathedral
+// in every Palma itinerary), so itineraries are faster, ask the services less and keep their places when they are down.
+import { supabaseAdmin } from "@/supabase/admin";
 import { USER_AGENT as UA } from "@/constants/site";
 
 const PHOTON = "https://photon.komoot.io/api/";
@@ -15,9 +18,35 @@ const PHOTON_PAUSE_MS = 10 * 60_000;
 const NOMINATIM_GAP_MS = 1100;
 // Nominatim prefers results inside this box around `near` (degrees each way)
 const NEAR_BOX = 0.5;
+// A search that found nothing is made again after this long (the place may be on the map by then)
+const NOT_FOUND_MS = 30 * 86_400_000;
 
 let photonDownUntil = 0;
 let nextNominatimSlot = 0;
+let database = null;
+
+// A search's key in place_lookups: the query in lowercase, and `near` rounded to about 10 km (the AI's positions
+// for one place differ a little between itineraries)
+const keyOf = (query, near) => ({ query: query.trim().toLowerCase(), near: near ? `${near.lat.toFixed(1)},${near.lng.toFixed(1)}` : "" });
+
+// What a search found before: the place, null (nothing, recently), or undefined (never asked, or unknown: the
+// database is not set up or does not answer, and the search is made)
+const stored = async (key) => {
+  if (!process.env.SUPABASE_SECRET_KEY) return undefined;
+  database ??= supabaseAdmin();
+  const { data, error } = await database.from("place_lookups").select("result, created_at").match(key).maybeSingle();
+  if (error || !data) return undefined;
+  if (!data.result && Date.now() - Date.parse(data.created_at) > NOT_FOUND_MS) return undefined;
+  return data.result;
+};
+
+// Keeps what a search found (a failure is only logged: the place was found anyway)
+const store = async (key, result, source) => {
+  if (!process.env.SUPABASE_SECRET_KEY) return;
+  database ??= supabaseAdmin();
+  const { error } = await database.from("place_lookups").upsert({ ...key, result, source, created_at: new Date().toISOString() });
+  if (error) console.error("Could not keep the place", error.message);
+};
 
 // Waits for this server's next free second for Nominatim
 const nominatimTurn = async () => {
@@ -57,21 +86,33 @@ const nominatim = async (query, near) => {
   return { lat: Number(result.lat), lng: Number(result.lon), name: result.name || result.display_name?.split(",")[0], kind: `${result.category}:${result.type}` };
 };
 
-// { lat, lng, name, kind } of the best match for `query` (kind: the OpenStreetMap tag, "amenity:restaurant"),
-// preferring results near `near` ({ lat, lng }); null if none, or if neither search answers
-export const locate = async (query, near) => {
+// The search made now: { result, source }; throws when neither service answers
+const search = async (query, near) => {
   if (Date.now() >= photonDownUntil) {
     try {
-      return await photon(query, near);
+      return { result: await photon(query, near), source: "photon" };
     } catch (error) {
       photonDownUntil = Date.now() + PHOTON_PAUSE_MS;
       console.warn(`Photon failed (${error.message}): Nominatim for the next minutes`);
     }
   }
+  return { result: await nominatim(query, near), source: "nominatim" };
+};
+
+// { lat, lng, name, kind } of the best match for `query` (kind: the OpenStreetMap tag, "amenity:restaurant"),
+// preferring results near `near` ({ lat, lng }); null if none, or if no search answers (not kept then).
+// "Nothing found" is only kept when Photon said it: Nominatim is stricter with names (it misses "Catedral-Basílica de
+// Santa María de Mallorca"), and Photon is asked again once it is back.
+export const locate = async (query, near) => {
+  const key = keyOf(query, near);
+  const known = await stored(key).catch(() => undefined);
+  if (known !== undefined) return known;
   try {
-    return await nominatim(query, near);
+    const { result, source } = await search(query, near);
+    if (result || source === "photon") await store(key, result, source).catch((error) => console.error("Could not keep the place", error.message));
+    return result;
   } catch (error) {
-    console.error("Nominatim error", error.message);
+    console.error("Map search error", error.message);
     return null;
   }
 };

@@ -53,9 +53,16 @@ export const savedTrips = (page) => page.evaluate(() => JSON.parse(localStorage.
 
 // No sideways scroll: nothing wider than the screen
 export const expectNoSidewaysScroll = async (page) => {
-  const { scrollWidth, clientWidth } = await page.evaluate(() => ({
-    scrollWidth: document.documentElement.scrollWidth,
-    clientWidth: document.documentElement.clientWidth,
-  }));
-  expect(scrollWidth).toBeLessThanOrEqual(clientWidth);
+  const { scrollWidth, clientWidth, culprits } = await page.evaluate(() => {
+    const width = document.documentElement.clientWidth;
+    // The innermost elements past the right edge: what to fix when it fails
+    const outside = [...document.body.querySelectorAll("*")].filter((element) => element.getBoundingClientRect().right > width + 0.5);
+    const innermost = outside.filter((element) => !outside.some((other) => other !== element && element.contains(other)));
+    return {
+      scrollWidth: document.documentElement.scrollWidth,
+      clientWidth: width,
+      culprits: innermost.slice(0, 5).map((element) => `<${element.tagName.toLowerCase()} class="${element.className}"> ${element.textContent.trim().slice(0, 40)}`),
+    };
+  });
+  expect(scrollWidth, `Wider than the screen because of:\n${culprits.join("\n")}`).toBeLessThanOrEqual(clientWidth);
 };

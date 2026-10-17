@@ -7,6 +7,7 @@ import { useAuth } from "@/context/auth";
 import { useI18n } from "@/context/i18n";
 import { countGuestItinerary } from "@/store/guestItineraries";
 import { updateTrip } from "@/store/trips";
+import { track } from "@/utils/analytics";
 
 // What the AI needs to know about the flights: where, and when you land and leave
 const tripForAi = (trip) => {
@@ -45,6 +46,7 @@ export const useItinerary = (trip) => {
         ? await createItinerary({ stops: stopsForAi(trip), lang, preferences, tripId: trip.id })
         : await createItinerary({ trip: tripForAi(trip), lang, preferences, tripId: trip.id });
       updateTrip(trip.id, { itinerary: created, visited: [] });
+      track("itinerary_created", { kind: trip.manual ? "stops" : "flight", city: trip.manual ? trip.stops[0]?.city : trip.fare.city, signed_in: status === "signedIn" });
       // Without an account, the free ones are counted in this browser
       if (status !== "signedIn") countGuestItinerary();
       setPickedIndex(0);

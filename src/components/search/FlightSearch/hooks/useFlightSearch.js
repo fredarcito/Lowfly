@@ -4,6 +4,7 @@ import { useState } from "react";
 import { apiError } from "@/api/client";
 import { searchFlights } from "@/api/flights";
 import { searchToParams } from "@/utils/share";
+import { track } from "@/utils/analytics";
 import { WEEKEND_MODES } from "@/constants/weekend";
 
 // No results: the form opens again so the search can be changed
@@ -52,6 +53,7 @@ export const useFlightSearch = (lang) => {
     if (request.error) return fail(request.error);
 
     setResult({ status: "loading", mode });
+    track("search", { search_term: `${form.origin} → ${form.city || form.country || "anywhere"}`, mode, trip: mode === "trip" ? "return" : form.trip });
     setQuery({ mode, ...form, weekend: form.weekend && form.trip === "return" && WEEKEND_MODES.includes(mode) });
     window.history.replaceState(null, "", `?${searchToParams(form, mode)}`);
     setCollapsed(true);

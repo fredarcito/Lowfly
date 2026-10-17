@@ -65,6 +65,7 @@ export const PRIVACY = {
             "Supabase: base de datos e inicio de sesión. Los datos de tu cuenta se guardan en Frankfurt (Unión Europea).",
             "Google: inicio de sesión con Google (si lo eliges) e itinerarios con Gemini.",
             "Anthropic: itinerarios con Claude cuando Gemini no está disponible.",
+            "Google Analytics: estadísticas de uso de Lowfly (páginas que visitas, búsquedas, itinerarios creados, clics en «Reservar», tipo de dispositivo y país o ciudad aproximados). No le enviamos tu nombre, tu email ni el contenido de tus viajes.",
             "Open-Meteo: busca las ciudades que escribes al planear un viaje.",
             "Ryanair y Wizz Air: consultamos sus precios desde nuestro servidor. Al pulsar «Reservar» vas a su web, donde se aplica su propia política de privacidad.",
             "OpenStreetMap, Wikipedia, Wikimedia Commons y ExchangeRate-API: mapas, descripciones, fotos y tipos de cambio. Las consultas salen de nuestro servidor, sin datos tuyos.",
@@ -74,7 +75,8 @@ export const PRIVACY = {
       {
         title: "Cookies",
         body: [
-          "Solo usamos las cookies necesarias para mantener tu sesión cuando entras en tu cuenta. No usamos cookies de publicidad ni de analítica.",
+          "Usamos las cookies necesarias para mantener tu sesión cuando entras en tu cuenta y las de Google Analytics, que miden de forma agregada cómo se usa Lowfly para poder mejorarla. No usamos cookies de publicidad.",
+          "Puedes bloquear o borrar las cookies desde la configuración de tu navegador (Lowfly sigue funcionando sin las de analítica) o desactivar Google Analytics en todas las webs con el complemento de inhabilitación de Google: tools.google.com/dlpage/gaoptout.",
         ],
       },
       {
@@ -155,6 +157,7 @@ export const PRIVACY = {
             "Supabase: database and sign-in. Your account data is stored in Frankfurt (European Union).",
             "Google: sign-in with Google (if you choose it) and itineraries with Gemini.",
             "Anthropic: itineraries with Claude when Gemini is not available.",
+            "Google Analytics: statistics on how Lowfly is used (the pages you visit, searches, itineraries created, clicks on “Book”, device type and approximate country or city). We do not send it your name, your email or the content of your trips.",
             "Open-Meteo: finds the towns you type when planning a trip.",
             "Ryanair and Wizz Air: we check their prices from our server. When you press “Book” you go to their website, where their own privacy policy applies.",
             "OpenStreetMap, Wikipedia, Wikimedia Commons and ExchangeRate-API: maps, descriptions, photos and exchange rates. Those requests come from our server, without any of your data.",
@@ -163,7 +166,10 @@ export const PRIVACY = {
       },
       {
         title: "Cookies",
-        body: ["We only use the cookies needed to keep you signed in to your account. We use no advertising or analytics cookies."],
+        body: [
+          "We use the cookies needed to keep you signed in to your account and those of Google Analytics, which measure in aggregate how Lowfly is used so we can improve it. We use no advertising cookies.",
+          "You can block or delete cookies in your browser's settings (Lowfly keeps working without the analytics ones) or turn Google Analytics off on every website with Google's opt-out add-on: tools.google.com/dlpage/gaoptout.",
+        ],
       },
       {
         title: "How long we keep it",

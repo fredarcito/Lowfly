@@ -8,6 +8,8 @@ import { DRIVE_SCRIPT, TRAVELPAYOUTS_DRIVE } from "@/constants/travelpayouts";
 import { AuthProvider } from "@/providers/AuthProvider";
 import ThemeScript from "@/components/layout/ThemeScript";
 import InlineScript from "@/components/shared/InlineScript";
+import Analytics from "@/components/layout/Analytics";
+import { GA_ID } from "@/constants/analytics";
 import { openGraphOf, twitterCardOf } from "@/utils/metadata";
 import "@/styles/globals.css";
 
@@ -70,6 +72,7 @@ const RootLayout = async ({ children, params }) => {
       <body>
         <ThemeScript />
         <AuthProvider lang={lang}>{children}</AuthProvider>
+        {GA_ID && <Analytics />}
       </body>
     </html>
   );

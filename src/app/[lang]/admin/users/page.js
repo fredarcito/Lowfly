@@ -2,13 +2,14 @@ import { notFound } from "next/navigation";
 import UserList from "@/components/admin/UserList";
 import { isAdmin } from "@/server/admin/access";
 import { listAdminUsers } from "@/server/admin/users";
+import { readUserListParams } from "@/constants/adminUserList";
 
-// Every account, or the ones found by ?q= (email or name)
+// The accounts, one page at a time, as the address asks: ?q= (email or name), &filter=, &sort=, &dir=, &page=
 const AdminUsersPage = async ({ params, searchParams }) => {
   if (!(await isAdmin())) notFound();
-  const query = String((await searchParams).q ?? "").slice(0, 100);
-  const { users, globalLimit } = await listAdminUsers(query);
-  return <UserList users={users} globalLimit={globalLimit} query={query} lang={(await params).lang} />;
+  const view = readUserListParams(await searchParams);
+  const list = await listAdminUsers(view);
+  return <UserList {...list} view={{ ...view, page: list.page }} lang={(await params).lang} />;
 };
 
 export default AdminUsersPage;

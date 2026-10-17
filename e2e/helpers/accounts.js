@@ -27,7 +27,11 @@ export const createTestUser = async ({ fullName = "Tester Lowfly", admin = false
   return { id: created.id, email, password };
 };
 
-export const deleteTestUser = (user) => asAdmin(`/auth/v1/admin/users/${user.id}`, { method: "DELETE" });
+// The account and the record of its saved trips (trip_history keeps it, without the account, when one goes)
+export const deleteTestUser = async (user) => {
+  await asAdmin(`/rest/v1/trip_history?user_id=eq.${user.id}`, { method: "DELETE" });
+  return asAdmin(`/auth/v1/admin/users/${user.id}`, { method: "DELETE" });
+};
 
 // The account as Supabase keeps it: { id, email, user_metadata, … }
 export const accountUser = async (user) => (await asAdmin(`/auth/v1/admin/users/${user.id}`)).json();

@@ -4,6 +4,7 @@ import { supabaseAdmin } from "@/supabase/admin";
 import { aiCallCost } from "@/server/admin/aiPrices";
 import { USAGE_COLUMNS, allRows, allUsers } from "@/server/admin/queries";
 import { globalItineraryLimit } from "@/server/itineraryLimits";
+import { FILTERS, SORTS, USERS_PER_PAGE } from "@/constants/adminUserList";
 
 // What the admin shows of an account
 const profileOf = (user) => ({
@@ -32,32 +33,68 @@ const usageByUser = (rows) => {
 
 const countBy = (rows, key) => rows.reduce((counts, row) => ({ ...counts, [row[key]]: (counts[row[key]] ?? 0) + 1 }), {});
 
-// Every account, newest first, or the ones whose email or name has `query`
-export const listAdminUsers = async (query = "") => {
+// Sorts accounts by `sort` (constants/adminUserList) in `dir`; accounts without the figure (never signed in) last
+const sortUsers = (users, sort, dir) => {
+  const { field } = SORTS[sort];
+  const order = dir === "asc" ? 1 : -1;
+  const valueOf = (user) => {
+    const value = user[field];
+    if (value === null || value === undefined) return null;
+    if (field === "createdAt" || field === "lastSignInAt") return new Date(value).getTime();
+    return value;
+  };
+  return users.toSorted((first, second) => {
+    const [a, b] = [valueOf(first), valueOf(second)];
+    if (a === null || b === null) return a === b ? 0 : a === null ? 1 : -1;
+    const compared = typeof a === "string" ? a.localeCompare(b) : a - b;
+    return compared * order || new Date(second.createdAt) - new Date(first.createdAt);
+  });
+};
+
+// One page of the accounts for the admin's list, as `view` asks (constants/adminUserList: search, filter, sort,
+// page): { users, total (found), page, pages, globalLimit }
+export const listAdminUsers = async ({ q = "", filter = "all", sort = "joined", dir = "desc", page = 1 } = {}) => {
   const supabase = supabaseAdmin();
-  const [users, usage, trips, limits, globalLimit] = await Promise.all([
+  const [users, usage, trips, saved, limits, globalLimit] = await Promise.all([
     allUsers(supabase),
     allRows(supabase, "itinerary_usage", USAGE_COLUMNS),
-    allRows(supabase, "trips", "user_id", { orderBy: "updated_at" }),
+    // Whether each trip has an itinerary now: only its date, not the whole itinerary
+    allRows(supabase, "trips", "user_id, itinerary:data->itinerary->>createdAt", { orderBy: "updated_at" }),
+    allRows(supabase, "trip_history", "user_id", { orderBy: "saved_at" }),
     allRows(supabase, "user_limits", "user_id, itineraries_per_day", { orderBy: "updated_at" }),
     globalItineraryLimit(),
   ]);
   const spent = usageByUser(usage);
   const tripCounts = countBy(trips, "user_id");
+  const savedCounts = countBy(saved, "user_id");
+  const withItineraryCounts = countBy(trips.filter((trip) => trip.itinerary), "user_id");
   const ownLimits = Object.fromEntries(limits.map((row) => [row.user_id, row.itineraries_per_day]));
-  const wanted = query.trim().toLowerCase();
-  return {
-    globalLimit,
-    users: users
-      .map((user) => ({
+  const wanted = q.trim().toLowerCase();
+  const found = users
+    .map((user) => {
+      const itinerariesActive = withItineraryCounts[user.id] ?? 0;
+      return {
         ...profileOf(user),
+        // Active (kept now) and over all time (deleted ones too): trips (trip_history) and itineraries (every one
+        // the AI made, itinerary_usage; never fewer than the active ones, made before their cost was kept)
         trips: tripCounts[user.id] ?? 0,
-        itineraries: spent[user.id]?.itineraries ?? 0,
+        tripsSaved: Math.max(savedCounts[user.id] ?? 0, tripCounts[user.id] ?? 0),
+        itinerariesActive,
+        itineraries: Math.max(spent[user.id]?.itineraries ?? 0, itinerariesActive),
         cost: spent[user.id]?.cost ?? 0,
         ownLimit: ownLimits[user.id] ?? null,
-      }))
-      .filter((user) => !wanted || user.email?.toLowerCase().includes(wanted) || user.name?.toLowerCase().includes(wanted))
-      .sort((first, second) => new Date(second.createdAt) - new Date(first.createdAt)),
+      };
+    })
+    .filter((user) => !wanted || user.email?.toLowerCase().includes(wanted) || user.name?.toLowerCase().includes(wanted))
+    .filter(FILTERS[filter] ?? FILTERS.all);
+  const pages = Math.max(1, Math.ceil(found.length / USERS_PER_PAGE));
+  const current = Math.min(page, pages);
+  return {
+    globalLimit,
+    total: found.length,
+    page: current,
+    pages,
+    users: sortUsers(found, sort, dir).slice((current - 1) * USERS_PER_PAGE, current * USERS_PER_PAGE),
   };
 };
 
@@ -96,14 +133,38 @@ const tripSummary = (trip, sharedIds, aiCost) => ({
   aiCost: aiCost ?? null,
 });
 
+// What an account did, newest first: each trip it saved ({ type: "trip", at, destination, manual, deleted }, deleted
+// ones too) and each itinerary it made ({ type: "itinerary", at, cities, days, cost }: one per request, however
+// many towns). `saved`: its trip_history rows; `calls`: its AI calls with their cost; `keptIds`: its trips now.
+const historyOf = (saved, calls, keptIds) => {
+  const trips = saved.map((row) => ({
+    type: "trip",
+    at: row.saved_at,
+    destination: row.destination,
+    manual: row.kind === "manual",
+    deleted: !keptIds.has(row.trip_id),
+  }));
+  const requests = new Map();
+  for (const call of calls) {
+    const request = requests.get(call.request_id) ?? { type: "itinerary", at: call.created_at, cities: [], days: 0, cost: 0 };
+    if (call.created_at < request.at) request.at = call.created_at;
+    if (!request.cities.includes(call.city)) request.cities.push(call.city);
+    request.days += call.days ?? 0;
+    request.cost += call.cost;
+    requests.set(call.request_id, request);
+  }
+  return [...trips, ...requests.values()].sort((first, second) => new Date(second.at) - new Date(first.at));
+};
+
 // One account in full, or null when there is none with that id
 export const getAdminUser = async (userId) => {
   const supabase = supabaseAdmin();
   const { data, error } = await supabase.auth.admin.getUserById(userId);
   if (error || !data?.user) return null;
   const mine = { filter: (query) => query.eq("user_id", userId) };
-  const [trips, shares, usage, limits, globalLimit] = await Promise.all([
+  const [trips, saved, shares, usage, limits, globalLimit] = await Promise.all([
     allRows(supabase, "trips", "data", { ...mine, orderBy: "updated_at" }),
+    allRows(supabase, "trip_history", "trip_id, kind, destination, saved_at", { ...mine, orderBy: "saved_at" }),
     allRows(supabase, "trip_shares", "trip_id", mine),
     allRows(supabase, "itinerary_usage", USAGE_COLUMNS, mine),
     allRows(supabase, "user_limits", "itineraries_per_day", { ...mine, orderBy: "updated_at" }),
@@ -115,6 +176,8 @@ export const getAdminUser = async (userId) => {
   return {
     ...profileOf(data.user),
     trips: trips.map((row) => tripSummary(row.data, sharedIds, tripCosts[row.data.id])).reverse(),
+    tripsSaved: saved.length,
+    history: historyOf(saved, calls, new Set(trips.map((row) => row.data.id))),
     usage: calls,
     itineraries: new Set(usage.map((row) => row.request_id)).size,
     cost: calls.reduce((total, call) => total + call.cost, 0),

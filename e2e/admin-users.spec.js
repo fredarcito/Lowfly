@@ -26,6 +26,8 @@ test.describe("admin: accounts", () => {
     // The usage stays when an account goes (it is the app's cost): this test's goes by hand
     await deleteRows("itinerary_usage", `request_id=eq.${requestId}`);
     await Promise.all([admin, person].filter(Boolean).map(deleteTestUser));
+    // An account deleted from the admin keeps its saved trips' record, without the account: this test's goes too
+    await deleteRows("trip_history", "user_id=is.null&trip_id=like.admin-test-trip*");
   });
 
   for (const viewport of [DESKTOP, PHONE]) {
@@ -47,6 +49,59 @@ test.describe("admin: accounts", () => {
       await expectNoSidewaysScroll(page);
     });
   }
+
+  test("trips saved count the deleted ones too: saved over time, and how many are kept now", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    await saveTripAs(person, romeTrip({ id: "admin-test-trip-2" }));
+    await deleteRows("trips", `user_id=eq.${person.id}&id=eq.admin-test-trip-2`);
+    await page.goto(`/es/admin/users?q=${encodeURIComponent(person.email)}`);
+    const row = page.getByRole("link", { name: /Persona Prueba/ });
+    // Active now and all time, side by side: 1 and 2 trips; 1 itinerary active (its trip has one) and 1 made
+    const figure = (label) => row.locator("div").filter({ has: page.getByText(label, { exact: true }) }).locator("dd");
+    await expect(figure("Viajes activos")).toHaveText("1");
+    await expect(figure("Viajes en total")).toHaveText("2");
+    await expect(figure("Itinerarios activos")).toHaveText("1");
+    await expect(figure("Itinerarios en total")).toHaveText("1");
+    await row.click();
+    await expect(page.getByText("1 ahora · 0 compartidos")).toBeVisible();
+    // The history: both trips saved (one deleted later) and the itinerary made, each with its date
+    await page.getByRole("tab", { name: "Historial" }).click();
+    const history = page.getByRole("tabpanel");
+    await expect(history.getByText("Guardó un vuelo a Roma")).toHaveCount(2);
+    await expect(history.getByText("Borrado después")).toHaveCount(1);
+    await expect(history.getByText("Creó un itinerario de 4 días en Roma")).toBeVisible();
+    await expect(history.getByText(/0,0033/)).toBeVisible();
+  });
+
+  test("the list filters, sorts (by the menu or a column's name) and keeps both in the address", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    await page.goto("/es/admin/users");
+    // Each account is a link to its page
+    const rows = page.getByRole("link").filter({ hasText: "@example.com" });
+    // Only admins: the test's admin, not the person
+    await page.getByRole("combobox", { name: "Filtrar cuentas" }).selectOption("admins");
+    await expect(page).toHaveURL(/filter=admins/);
+    await expect(rows.filter({ hasText: admin.email })).toHaveCount(1);
+    await expect(rows.filter({ hasText: person.email })).toHaveCount(0);
+    // All accounts, the most AI cost first: the figures go down
+    await page.getByRole("combobox", { name: "Filtrar cuentas" }).selectOption("all");
+    await expect(page).not.toHaveURL(/filter=/);
+    await page.getByRole("combobox", { name: "Ordenar por" }).selectOption("cost");
+    await expect(page).toHaveURL(/sort=cost/);
+    const costs = await page.locator("dd").filter({ hasText: /US\$/ }).allTextContents();
+    const amounts = costs.map((cost) => Number(cost.replace(/[^\d,]/g, "").replace(",", ".")));
+    expect(amounts).toEqual(amounts.toSorted((first, second) => second - first));
+    // A column's name sorts by it, and again the other way
+    await page.getByRole("link", { name: /Ordenar por viajes en total/ }).click();
+    await expect(page).toHaveURL(/sort=tripsTotal/);
+    await page.getByRole("link", { name: /Ordenar por viajes en total \(de menos a más\)/ }).click();
+    await expect(page).toHaveURL(/sort=tripsTotal&dir=asc/);
+    // A search keeps the order
+    await page.getByRole("searchbox", { name: "Buscar usuarios" }).fill(person.email);
+    await page.keyboard.press("Enter");
+    await expect(page).toHaveURL(/sort=tripsTotal/);
+    await expect(rows).toHaveCount(1);
+  });
 
   test("deleting a trip's itinerary keeps the trip", async ({ page }) => {
     await page.goto(`/es/admin/users/${person.id}`);

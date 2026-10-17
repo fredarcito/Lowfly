@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import StatTile from "@/components/admin/StatTile";
 import AccountForm from "@/components/admin/UserDetail/components/AccountForm";
+import ActivityHistory from "@/components/admin/UserDetail/components/ActivityHistory";
 import DeleteAccount from "@/components/admin/UserDetail/components/DeleteAccount";
 import LimitForm from "@/components/admin/UserDetail/components/LimitForm";
 import TripItem from "@/components/admin/UserDetail/components/TripItem";
@@ -20,7 +21,8 @@ const TRIGGER =
 const COUNT = "rounded-full bg-muted px-1.5 text-xs font-medium tabular-nums text-muted-foreground";
 
 // One account for the admin: who it is and its figures, then tabs: its trips (whose itineraries can be deleted),
-// every AI call it made, its daily limit, and its details (name, email, admin, blocked) with deleting it.
+// its history (every trip it saved and itinerary it made, with dates), every AI call it made, its daily limit, and
+// its details (name, email, admin, blocked) with deleting it.
 // `user`: server/admin/users's getAdminUser; `self`: the admin's own account.
 const UserDetail = ({ user, lang, self }) => {
   const all = adminTexts(lang);
@@ -35,7 +37,12 @@ const UserDetail = ({ user, lang, self }) => {
       <UserHeader user={user} lang={lang} />
 
       <dl className="grid grid-cols-2 gap-2.5 lg:grid-cols-4">
-        <StatTile compact label={texts.trips} value={formats.count(user.trips.length)} hint={texts.shared(user.trips.filter((trip) => trip.shared).length)} />
+        <StatTile
+          compact
+          label={texts.trips}
+          value={formats.count(user.tripsSaved)}
+          hint={texts.tripsHint(user.trips.length, user.trips.filter((trip) => trip.shared).length)}
+        />
         <StatTile compact label={texts.itineraries} value={formats.count(user.itineraries)} hint={texts.itinerariesHint} />
         <StatTile compact label={texts.aiCost} value={formats.money(user.cost)} hint={texts.listPrice} />
         <StatTile compact label={texts.limit} value={limit} hint={user.ownLimit === null ? texts.limitGlobal : texts.limitOwn} />
@@ -45,6 +52,9 @@ const UserDetail = ({ user, lang, self }) => {
         <TabsList variant="line" aria-label={texts.tabs.label} className="h-auto! w-full justify-start gap-1 overflow-x-auto border-b p-0">
           <TabsTrigger value="trips" className={TRIGGER}>
             {texts.tabs.trips} <span className={COUNT}>{formats.count(user.trips.length)}</span>
+          </TabsTrigger>
+          <TabsTrigger value="history" className={TRIGGER}>
+            {texts.tabs.history}
           </TabsTrigger>
           <TabsTrigger value="usage" aria-label={texts.tabs.usage} className={TRIGGER}>
             {/* Phones: the short name, so the four tabs fit */}
@@ -70,6 +80,10 @@ const UserDetail = ({ user, lang, self }) => {
               ))}
             </ul>
           )}
+        </TabsContent>
+
+        <TabsContent value="history" className={PANEL}>
+          <ActivityHistory history={user.history} lang={lang} />
         </TabsContent>
 
         <TabsContent value="usage" className={`${PANEL} grid grid-cols-1 gap-3`}>

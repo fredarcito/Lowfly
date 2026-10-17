@@ -3,9 +3,9 @@ import AirportsHero from "@/components/flightRoutes/AirportsPage/components/Airp
 import TripsPage from "@/components/trips/TripsPage";
 import { routeTexts } from "@/components/flightRoutes/data/texts";
 import { I18nProvider } from "@/providers/I18nProvider";
-import { LOCALES } from "@/i18n";
 import { origins } from "@/server/flightRoutes/routes";
 import { ROUTES } from "@/constants/routes";
+import { alternatesOf } from "@/utils/metadata";
 
 // Every airport with route pages, by country (/es/flights): linked from every page's footer, it leads search
 // engines to each airport's page and from there to every route. Made again once a day.
@@ -18,7 +18,7 @@ export const generateMetadata = async ({ params }) => {
   return {
     title: texts.metaTitle,
     description: texts.metaDescription(count),
-    alternates: { canonical: ROUTES.flights(lang), languages: Object.fromEntries(LOCALES.map((locale) => [locale, ROUTES.flights(locale)])) },
+    alternates: alternatesOf(lang, ROUTES.flights),
     openGraph: { title: texts.metaTitle, description: texts.metaDescription(count), url: ROUTES.flights(lang) },
   };
 };

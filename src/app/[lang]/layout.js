@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { Atkinson_Hyperlegible, Bricolage_Grotesque } from "next/font/google";
 import { APP_NAME, LOCALES, getDictionary, hasLocale } from "@/i18n";
 import { DEFAULT_THEME, THEME_COLORS } from "@/constants/theme";
-import { ROUTES } from "@/constants/routes";
 import { SPLASH_SCREENS, splashPath } from "@/constants/splashScreens";
 import { DRIVE_SCRIPT, TRAVELPAYOUTS_DRIVE } from "@/constants/travelpayouts";
 import { AuthProvider } from "@/providers/AuthProvider";
@@ -52,10 +51,8 @@ export const generateMetadata = async ({ params }) => {
     other: { "apple-mobile-web-app-capable": "yes" },
     openGraph: openGraphOf(lang, { title: meta.title, description: meta.description }),
     twitter: twitterCardOf({ title: meta.title, description: meta.description }),
-    alternates: {
-      canonical: ROUTES.home(lang),
-      languages: Object.fromEntries(LOCALES.map((locale) => [locale, ROUTES.home(locale)])),
-    },
+    // No canonical or languages here: each page says its own (utils/metadata alternatesOf), or every page without
+    // them would claim to be the home
   };
 };
 

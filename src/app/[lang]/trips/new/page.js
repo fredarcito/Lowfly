@@ -3,11 +3,14 @@ import TripsPage from "@/components/trips/TripsPage";
 import { I18nProvider } from "@/providers/I18nProvider";
 import { APP_NAME, getDictionary } from "@/i18n";
 import { getAirports } from "@/server/airports";
+import { ROUTES } from "@/constants/routes";
+import { alternatesOf } from "@/utils/metadata";
 
 export const generateMetadata = async ({ params }) => {
   const { lang } = await params;
   const texts = getDictionary(lang);
-  return { title: `${texts.trips.manual.title} · ${APP_NAME}`, description: texts.trips.manual.subtitle };
+  // The planner itself, whatever town it starts with (?to=BCN): one page for search engines
+  return { title: `${texts.trips.manual.title} · ${APP_NAME}`, description: texts.trips.manual.subtitle, alternates: alternatesOf(lang, (locale) => ROUTES.newTrip(locale)) };
 };
 
 // The town of the airport `code` as the form's first stop (?to=BCN, from a route's page), or null

@@ -3,11 +3,19 @@ import { LoginForm } from "@/components/account/LoginForm";
 import TripsPage from "@/components/trips/TripsPage";
 import { I18nProvider } from "@/providers/I18nProvider";
 import { APP_NAME, getDictionary } from "@/i18n";
+import { ROUTES } from "@/constants/routes";
+import { PRIVATE_PAGE, alternatesOf } from "@/utils/metadata";
 
 export const generateMetadata = async ({ params }) => {
   const { lang } = await params;
   const texts = getDictionary(lang);
-  return { title: `${texts.account.title} · ${APP_NAME}`, description: texts.account.subtitle };
+  // "Entrar · Lowfly": the page's own heading ("Entra en Lowfly") already says the name
+  return {
+    title: `${texts.account.signIn} · ${APP_NAME}`,
+    description: texts.account.subtitle,
+    robots: PRIVATE_PAGE,
+    alternates: alternatesOf(lang, (locale) => ROUTES.login(locale)),
+  };
 };
 
 // Signing in (Google or a link by email). Suspense: the form reads ?next= and ?error= from the URL.

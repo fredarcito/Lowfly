@@ -2,6 +2,7 @@
 // language. Prices are one way, per person.
 const es = {
   title: (origin, city) => `Vuelos baratos de ${origin} a ${city}`,
+  photoAlt: (city) => `Vista de ${city}`,
   metaTitle: (origin, city, price) => `Vuelos baratos de ${origin} a ${city}${price ? ` desde ${price}` : ""} · Lowfly`,
   metaDescription: (origin, city, price, airlines) =>
     `${price ? `Vuelos de ${origin} a ${city} desde ${price}` : `Vuelos de ${origin} a ${city}`} con ${airlines}. Mira el mes más barato, compara fechas y reserva directo con la aerolínea, sin comisiones.`,
@@ -57,6 +58,7 @@ const es = {
 
 const en = {
   title: (origin, city) => `Cheap flights from ${origin} to ${city}`,
+  photoAlt: (city) => `View of ${city}`,
   metaTitle: (origin, city, price) => `Cheap flights from ${origin} to ${city}${price ? ` from ${price}` : ""} · Lowfly`,
   metaDescription: (origin, city, price, airlines) =>
     `${price ? `Flights from ${origin} to ${city} from ${price}` : `Flights from ${origin} to ${city}`} with ${airlines}. See the cheapest month, compare dates and book straight with the airline, no fees.`,

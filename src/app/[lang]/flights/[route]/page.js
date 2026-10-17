@@ -6,13 +6,14 @@ import RouteHero from "@/components/flightRoutes/RoutePage/components/RouteHero"
 import TripsPage from "@/components/trips/TripsPage";
 import { routeTexts } from "@/components/flightRoutes/data/texts";
 import { I18nProvider } from "@/providers/I18nProvider";
-import { LOCALES, LOCALE_TAGS, getDictionary } from "@/i18n";
+import { LOCALE_TAGS, getDictionary } from "@/i18n";
 import { AIRLINES, createFormat } from "@/utils/format";
 import { findOrigin, findRoute, origins, routesFrom } from "@/server/flightRoutes/routes";
 import { originPrices, routePrices } from "@/server/flightRoutes/prices";
 import { getGuides } from "@/server/guides";
 import { getPhotos } from "@/server/photos";
 import { ROUTES } from "@/constants/routes";
+import { alternatesOf } from "@/utils/metadata";
 
 // Search engines' pages: an airport's (/es/flights/malta: every destination) or a route's (/es/flights/malta-barcelona).
 // Any route address may be asked for (the language layout only allows /es and /en). Made on its first visit from
@@ -65,11 +66,6 @@ const load = async (lang, slug) => {
   return route ? loadRoute(route, lang) : null;
 };
 
-const alternates = (slug, lang) => ({
-  canonical: ROUTES.flightRoute(lang, slug),
-  languages: Object.fromEntries(LOCALES.map((locale) => [locale, ROUTES.flightRoute(locale, slug)])),
-});
-
 export const generateMetadata = async ({ params }) => {
   const { lang, route: slug } = await params;
   const data = await load(lang, slug);
@@ -87,7 +83,7 @@ export const generateMetadata = async ({ params }) => {
   return {
     title,
     description,
-    alternates: alternates(slug, lang),
+    alternates: alternatesOf(lang, (locale) => ROUTES.flightRoute(locale, slug)),
     openGraph: { title, description, url: ROUTES.flightRoute(lang, slug), ...(data.photo && { images: [data.photo.src] }) },
   };
 };

@@ -52,6 +52,8 @@ test.describe("route pages", () => {
       await expect(page).toHaveTitle(/Vuelos baratos de Malta a Barcelona desde [\d,]+\s€ · Lowfly/);
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", /\/es\/flights\/malta-barcelona$/);
       await expect(page.locator('link[rel="alternate"][hreflang="en"]')).toHaveAttribute("href", /\/en\/flights\/malta-barcelona$/);
+      // The destination's photo says what it shows, for image search
+      await expect(page.locator('img[alt="Vista de Barcelona"]')).toHaveCount(1);
       // A month opens the search for it, already filled in
       const months = page.getByRole("heading", { name: "Cuándo es más barato volar" }).locator("..").locator("..").getByRole("link");
       expect(await months.count()).toBeGreaterThan(2);

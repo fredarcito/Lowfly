@@ -5,10 +5,11 @@ import { APP_NAME } from "@/i18n";
 import { PRIVACY, PRIVACY_UPDATED } from "@/constants/privacy";
 import { TERMS } from "@/constants/terms";
 import { ROUTES } from "@/constants/routes";
+import { alternatesOf } from "@/utils/metadata";
 
 export const generateMetadata = async ({ params }) => {
   const { lang } = await params;
-  return { title: `${PRIVACY[lang].title} · ${APP_NAME}`, description: PRIVACY[lang].intro };
+  return { title: `${PRIVACY[lang].title} · ${APP_NAME}`, description: PRIVACY[lang].intro, alternates: alternatesOf(lang, ROUTES.privacy) };
 };
 
 // The privacy policy (Google asks for it to publish sign-in with Google; the app stores need it too)

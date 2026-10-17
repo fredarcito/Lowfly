@@ -79,8 +79,12 @@ test.describe("search @live", () => {
 
   test("weekend deals load their photos and lead to every destination", async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 1100 });
-    const photoRequests = [];
-    page.on("request", (request) => request.url().includes("/api/photos") && photoRequests.push(request.url()));
+    // The photos this page asked for. A new page starts the count again, and so does the dev server's Fast Refresh
+    // (it runs the app's code again, its photo cache with it, when other tests make it rebuild): neither is the app's
+    let photoRequests = [];
+    page.on("domcontentloaded", () => (photoRequests = []));
+    page.on("console", (message) => message.text().startsWith("[Fast Refresh] rebuilding") && (photoRequests = []));
+    page.on("request", (request) => new URL(request.url()).pathname === "/api/photos" && photoRequests.push(request.url()));
     await openWith(page, "/es", { origin: "MLA" });
     await expect(page.locator("article h3").first()).toBeVisible({ timeout: 120_000 });
     await expect(page.locator("article img").first()).toBeVisible();

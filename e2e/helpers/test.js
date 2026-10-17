@@ -33,9 +33,10 @@ export const TABLET = { width: 800, height: 900 };
 export const DESKTOP = { width: 1280, height: 900 };
 
 // Before the app loads: saved trips, theme and departure airport, as the browser keeps them (localStorage).
-// Set on the first page of the origin, then the page is opened again with them.
+// Set on a light page of the same origin (robots.txt: not the app, which would start searching and fetching
+// photos of its own), then the page is opened with them.
 export const openWith = async (page, path, { trips, theme, origin } = {}) => {
-  await page.goto("/es");
+  await page.goto("/robots.txt");
   await page.evaluate(
     ({ savedTrips, chosenTheme, chosenOrigin }) => {
       if (savedTrips) localStorage.setItem("lowfly.trips", JSON.stringify(savedTrips));

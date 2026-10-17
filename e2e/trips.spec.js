@@ -102,9 +102,9 @@ test.describe("my trips", () => {
     await expect(chip).toHaveAttribute("aria-expanded", "true");
     expect(await belowTitle()).toBe(closedOffset);
     await expect(row.getByText("Dónde buscar")).toBeVisible();
-    // No set place: a Google Maps search for where to look, in the trip's town
+    // No set place: the restaurants in Google Maps around the place before it in the plan (Piazza Navona)
     const map = row.getByRole("link", { name: "Ver en el mapa" });
-    await expect(map).toHaveAttribute("href", `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Supplì al telefono y pizza romana al corte., Roma")}`);
+    await expect(map).toHaveAttribute("href", "https://www.google.com/maps/search/restaurants/@41.89888889,12.47305556,16z");
     // No price, even an older itinerary's ("Unos 15 € por persona"): the AI's guesses were often far off
     await expect(row.getByText(/15 €/)).toHaveCount(0);
     // A meal is not labelled "Comida": it already is one
@@ -317,5 +317,32 @@ test.describe("my trips", () => {
     await expect(page.locator(".fixed.inset-x-0.top-0")).toContainText("Excursión a Tivoli");
     // A "Day trip" tag beside each stop of the trip, and only those
     await expect(page.locator('[role="tabpanel"] li').getByTitle("Parte de la excursión a Tivoli")).toHaveCount(2);
+  });
+
+  // By car, a day trip can stop on the way: the day says so, and each stop says the town it is in
+  test("a day trip by car shows its stops on the way", async ({ page }) => {
+    const trip = romeTrip();
+    // Day 2 drives to Orvieto, stopping at Civita di Bagnoregio: its third stop is there, the fourth in Orvieto
+    trip.itinerary = {
+      ...trip.itinerary,
+      days: trip.itinerary.days.map((day, index) =>
+        index === 1
+          ? {
+              ...day,
+              mode: "driving",
+              excursion: { town: "Orvieto", via: ["Civita di Bagnoregio"], travelMinutes: 90 },
+              stops: day.stops.map((stop, stopIndex) =>
+                stopIndex === 2 ? { ...stop, excursion: true, town: "Civita di Bagnoregio" } : stopIndex === 3 ? { ...stop, excursion: true, town: "Orvieto" } : stop
+              ),
+            }
+          : day
+      ),
+    };
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    await page.getByRole("tab", { name: /Día 2/ }).click();
+    await expect(page.getByRole("tabpanel").getByText("Excursión a Orvieto, pasando por Civita di Bagnoregio · 1 h 30 min por trayecto")).toBeVisible();
+    const stops = page.locator('[role="tabpanel"] li');
+    await expect(stops.getByTitle("Parte de la excursión a Civita di Bagnoregio")).toHaveCount(1);
+    await expect(stops.getByTitle("Parte de la excursión a Orvieto")).toHaveCount(1);
   });
 });

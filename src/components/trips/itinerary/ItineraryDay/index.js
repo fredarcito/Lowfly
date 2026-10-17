@@ -79,8 +79,8 @@ const ItineraryDay = ({ trip, day, dayNumber, readOnly = false }) => {
                 <ItineraryStop
                   stop={stop}
                   mode={day.mode}
-                  excursionTown={stop.excursion ? day.excursion?.town : null}
-                  town={(stop.excursion && day.excursion?.town) || dayTown}
+                  excursionTown={stop.excursion ? stop.town || day.excursion?.town : null}
+                  town={(stop.excursion && (stop.town || day.excursion?.town)) || dayTown}
                   open={stop.id === openId}
                   visited={isVisited(stop.id)}
                   onToggle={() => setOpenId((current) => (current === stop.id ? null : stop.id))}

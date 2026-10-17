@@ -41,7 +41,7 @@ const ItineraryStickyBar = ({ trip, day, dayNumber, visible, readOnly = false })
             <p className="flex min-w-0 items-center gap-1 text-xs font-semibold text-sea">
               <Signpost className="size-3 shrink-0" />
               {/* A long town name is cut, never how long it takes */}
-              <span className="truncate">{texts.trips.excursionTo(day.excursion.town)}</span>
+              <span className="truncate">{texts.trips.excursionTo(texts.trips.excursionRoute(day.excursion.town, day.excursion.via))}</span>
               {/* "55 min away": how far it is, not how long the trip lasts */}
               <span className="shrink-0">· {texts.trips.excursionAway(format.duration(day.excursion.travelMinutes))}</span>
             </p>

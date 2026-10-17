@@ -56,6 +56,7 @@ const periodOf = (time) => {
 // - places in town are numbered as on the map; on walking days the airport ends are left off the map
 //   (`outOfTown`), since the day is about the town
 // - numbered stops on walking days carry the estimated walk to the next one
+// - a meal with no set place carries the place `near` it, to look for restaurants around
 export const dayPlan = (day) => {
   // A day trip is not a walk around town: its places far from the centre stay in
   const walking = (day.mode === "walking" || !day.mode) && !day.excursion;
@@ -72,6 +73,9 @@ export const dayPlan = (day) => {
       outOfTown: Boolean(stop.place && !mapped),
     };
   });
+  stops.forEach((stop, index) => {
+    if (stop.type === "comida" && !stop.place) stop.near = nearestPlace(stops, index);
+  });
   const numbered = stops.filter((stop) => stop.number);
   numbered.forEach((stop, index) => {
     const next = numbered[index + 1];
@@ -87,8 +91,31 @@ export const directionsUrl = (place, mode = "walking") => {
   return place.placeId ? `${url}&destination_place_id=${place.placeId}` : url;
 };
 
-// A search in Google Maps ("traditional bakeries around the Plaza Mayor, Palma"): for a meal with no set place
+// A search in Google Maps ("traditional bakeries around the Plaza Mayor, Palma")
 export const searchUrl = (query) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+
+// Stops that are not where the day happens: getting there and around, the airport, check-in
+const NOT_A_SIGHT = new Set(["transporte", "logistica", "llegada"]);
+
+// The place closest in the plan to a meal with no set place, in the same town (on a day trip, out there or back
+// in town): the one before it first. null when the day has none
+const nearestPlace = (stops, index) => {
+  const meal = stops[index];
+  const fits = (stop) => stop?.place && !NOT_A_SIGHT.has(stop.type) && Boolean(stop.excursion) === Boolean(meal.excursion);
+  for (let distance = 1; distance < stops.length; distance += 1) {
+    const found = [stops[index - distance], stops[index + distance]].find(fits);
+    if (found) return { lat: found.place.lat, lng: found.place.lng };
+  }
+  return null;
+};
+
+// The restaurants around a meal with no set place, in Google Maps. Searched by text, its area ("Restaurant inside
+// the castle, Berat") opened the place itself or even directions to it; "restaurants" around the place next to it
+// in the plan opens the list. Without one, a search in the town.
+export const restaurantsUrl = (stop, town) =>
+  stop.near
+    ? `https://www.google.com/maps/search/restaurants/@${stop.near.lat},${stop.near.lng},16z`
+    : searchUrl(["restaurants", town].filter(Boolean).join(" "));
 
 // The day's route in Google Maps, stops in the order of the plan. Longer days are split into legs
 // (each leg starts where the previous one ended).

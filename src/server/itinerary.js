@@ -20,6 +20,8 @@ const MAX_KM_FROM_AIRPORT = 120;
 const OUT_OF_TOWN_KM = 12;
 // A day trip's travel time each way, in minutes: what is believable
 const EXCURSION_MINUTES = { min: 10, max: 150 };
+// Towns stopped at on the way of a day trip by car, besides the one it goes to
+const MAX_VIA_TOWNS = 2;
 // A Wikipedia article is about the located place only if its coordinates are this close
 const SAME_PLACE_KM = 2;
 // Lookups at the same time against the free services (be gentle with them)
@@ -83,10 +85,11 @@ const SCHEMA = {
             type: ["object", "null"],
             description: "Only for a day trip out of town: the town and the travel time each way. Otherwise null",
             properties: {
-              town: { type: "string" },
-              travelMinutes: { type: "integer", description: "Travel time each way, in minutes" },
+              town: { type: "string", description: "The town of the trip; on a route by car, the farthest one" },
+              via: { type: "array", items: { type: "string" }, description: "By car only: the towns stopped at on the way, in order (at most 2). Otherwise empty" },
+              travelMinutes: { type: "integer", description: "Travel time each way to the town, in minutes, without the stops on the way" },
             },
-            required: ["town", "travelMinutes"],
+            required: ["town", "via", "travelMinutes"],
           },
           stops: {
             type: "array",
@@ -96,6 +99,7 @@ const SCHEMA = {
                 time: { type: "string", description: "24h local time, HH:MM or HH:MM–HH:MM" },
                 type: { type: "string", enum: STOP_TYPES },
                 title: { type: "string" },
+                town: { ...nullable("string"), description: "Day trips only: the town the stop is in, when it is not the one the traveller sleeps in. Otherwise null" },
                 note: { ...nullable("string"), description: "Practical tip: tickets, queues, how to get there" },
                 why: { ...nullable("string"), description: "Sights only: 1–2 sentences on why a first-time visitor should go" },
                 lookFor: { ...nullable("string"), description: "Sights only: one concrete detail to look for" },
@@ -131,7 +135,7 @@ const SCHEMA = {
                   required: ["name", "lat", "lng", "wikipediaTitle"],
                 },
               },
-              required: ["time", "type", "title", "note", "why", "lookFor", "food", "dishes", "cost", "tip", "place"],
+              required: ["time", "type", "title", "town", "note", "why", "lookFor", "food", "dishes", "cost", "tip", "place"],
             },
           },
         },
@@ -160,6 +164,13 @@ const stopTravel = ({ city, arrive, leave, from, to, dates }) => [
     : `- Day ${dates.length} (${dates.at(-1)}): they leave ${city}${to ? ` for ${to}` : ""} in the evening: plan the whole day, ending with a "transporte" stop for the departure (place null).`,
 ];
 
+// By car, a day trip can be a route stopping on the way; by bus or train, getting off halfway often means
+// waiting hours for the next one, so it is one town
+const dayTripRoute = (transport) =>
+  transport === "driving"
+    ? `- By car, a day trip can be a route: up to 2 more towns or sights on the way, each worth stopping for (something to see or a meal), listed in "via" in the order visited going there, with "town" the farthest one. Come back in one go.`
+    : `- A day trip goes to one town ("via" empty): stopping halfway by bus or train often means waiting hours for the next one.`;
+
 const instructionsFor = ({ lang, city, country, travel, dates, preferences }) => {
   const language = LANGUAGES[lang];
   return `You are a local travel planner. Plan a realistic day-by-day itinerary for a first-time visitor to ${city}, ${country}.
@@ -177,8 +188,9 @@ Traveller preferences:
 
 Rules:
 - Order stops by time and group nearby places to avoid going back and forth.
-- Day trips: a nearby town is fine when it suits the interests, at most about 2 hours away each way (within ${MAX_KM_FROM_AIRPORT} km), only on full days (never the first or the last day) and at most one every 3 days. That day, set "excursion" to the town and the travel time each way in minutes, start with breakfast in town before a "transporte" stop to get there, and end with one to come back, and its "mode" is transit or driving. Every other day, "excursion" is null.
-- Every day starts with breakfast as a "comida" stop, the departure day too: the only exception is the arrival day when the traveller gets there after 10:00. Check every day before answering: a day without breakfast is a mistake. Every full day also has lunch and dinner as "comida" stops, and "transporte" steps when moving between areas. The arrival and departure days only use the hours available, with the meals that fall in them.
+- Day trips: a nearby town is fine when it suits the interests and is worth the trip, at most about 2 hours away each way (within ${MAX_KM_FROM_AIRPORT} km), only on full days (never the first or the last day) and at most one every 3 days. Worth the trip means at least 2 or 3 things to see there (or a meal it is known for) and more time there than on the road: a single sight an hour away is not worth a day. That day, set "excursion" to the town and the travel time each way in minutes, start with breakfast in town before a "transporte" stop to get there, then a "transporte" stop to come back, and after it dinner back in ${city} (the traveller sleeps there), and its "mode" is transit or driving. The day keeps the traveller's pace (its sights count, out there and back in ${city}), and coming back early, fill the hours before dinner in ${city} (a neighbourhood, a viewpoint at sunset, a market): no gap of more than about 1.5 hours. Every stop out of ${city} has "town" set to the town it is in. Every other day, "excursion" is null.
+${dayTripRoute(preferences.transport)}
+- Every day starts with breakfast as a "comida" stop, the departure day too: the only exception is the arrival day when the traveller gets there after 10:00. Check every day before answering: a day without breakfast is a mistake. Every full day also has lunch and dinner as "comida" stops (a day trip too: dinner back in town, after the trip back), and "transporte" steps when moving between areas. The arrival and departure days only use the hours available, with the meals that fall in them. Every day that ends with the traveller sleeping in ${city} has dinner, the arrival day too, however late they get there: a day without dinner is a mistake, like one without breakfast. Only the departure day has nothing after leaving.
 - Meals: prefer long-established places. If you are not sure a restaurant exists, describe the area in "food" and set place to null. Never invent a restaurant.
 - Meals are good value, where locals eat: the menú del día in Spain, street food, markets, bakeries, simple trattorias and tavernas. At most one pricier, special meal in the whole trip, and its note says so.
 - Meals have no price ("cost" null): prices guessed are often off. Instead, "tip" says the usual tip where one is expected and not included.
@@ -225,6 +237,7 @@ const cleanStop = (stop, destination) => {
     time: text(stop.time, 20),
     type,
     title: text(stop.title, 120) ?? "",
+    town: text(stop.town, 80),
     note: text(stop.note),
     why: sight ? text(stop.why) : null,
     lookFor: sight ? text(stop.lookFor) : null,
@@ -237,14 +250,17 @@ const cleanStop = (stop, destination) => {
   };
 };
 
-// A day trip as the UI can show it ({ town, travelMinutes }), or null: never on the first or last day (flights
-// or the next town), and only with a believable travel time
-const cleanExcursion = (excursion, index, dayCount) => {
+// A day trip as the UI can show it ({ town, via, travelMinutes }), or null: never on the first or last day (flights
+// or the next town), and only with a believable travel time. Towns on the way (`via`) only by car
+const cleanExcursion = (excursion, index, dayCount, mode) => {
   const town = text(excursion?.town, 80);
   const minutes = excursion?.travelMinutes;
   const fullDay = index > 0 && index < dayCount - 1;
   const believable = Number.isInteger(minutes) && minutes >= EXCURSION_MINUTES.min && minutes <= EXCURSION_MINUTES.max;
-  return town && fullDay && believable ? { town, travelMinutes: minutes } : null;
+  if (!town || !fullDay || !believable) return null;
+  const stopsOnTheWay = mode === "driving" && Array.isArray(excursion.via) ? excursion.via.map((name) => text(name, 80)) : [];
+  const via = [...new Set(stopsOnTheWay.filter((name) => name && !sameName(name, town)))].slice(0, MAX_VIA_TOWNS);
+  return { town, via, travelMinutes: minutes };
 };
 
 // What to wear or bring, without a label of its own in front ("Layers: a T-shirt…" → "a T-shirt…"): the card
@@ -344,7 +360,52 @@ const planWithAi = async (request) => {
 // onAiCall: told of the AI call, { city, country, days, provider, model, usage, durationMs } (to keep its cost).
 // airport: { lat, lng } of the arrival airport, on a trip by plane (its stops go there without a search).
 // → { days, weather } (the town's usual weather on those dates, or null)
-const planDays = async ({ lang, city, country, destination, dates, travel, preferences, label, onAiCall, airport }) => {
+// A day the traveller sleeps in town always has dinner: when the AI leaves it out (it did on arrival days), a plain
+// one in the evening, after the last stop, "around" the last place of the day in town
+const DINNER = {
+  es: { title: "Cena", food: (place) => (place ? `Por la zona de ${place}` : "En el centro") },
+  en: { title: "Dinner", food: (place) => (place ? `Around ${place}` : "In the centre") },
+};
+const DINNER_FROM = 20 * 60;
+const DINNER_MINUTES = 90;
+
+const minutesOf = (time) => {
+  const [hours, minutes] = time.split(":").map(Number);
+  return hours * 60 + minutes;
+};
+const clockOf = (minutes) => `${String(Math.floor(minutes / 60) % 24).padStart(2, "0")}:${String(minutes % 60).padStart(2, "0")}`;
+// Where a stop starts and ends, in minutes from midnight ("13:00–14:30"; "16:00" ends when it starts), or null
+const spanOf = (stop) => {
+  const times = stop.time?.match(/\d{1,2}:\d{2}/g);
+  return times ? { start: minutesOf(times[0]), end: minutesOf(times.at(-1)) } : null;
+};
+
+const withDinner = (day, lang) => {
+  const hasDinner = day.stops.some((stop) => stop.type === "comida" && (spanOf(stop)?.start ?? 0) >= 18 * 60);
+  if (hasDinner) return day;
+  const lastEnd = Math.max(0, ...day.stops.map((stop) => spanOf(stop)?.end ?? 0));
+  const start = Math.max(DINNER_FROM, Math.ceil(lastEnd / 15) * 15);
+  const lastPlace = day.stops.filter((stop) => stop.place && !stop.town).at(-1)?.place.name;
+  const texts = DINNER[lang] ?? DINNER.en;
+  const dinner = {
+    time: `${clockOf(start)}–${clockOf(start + DINNER_MINUTES)}`,
+    type: "comida",
+    title: texts.title,
+    town: null,
+    note: null,
+    why: null,
+    lookFor: null,
+    food: texts.food(lastPlace),
+    dishes: null,
+    cost: null,
+    tip: null,
+    place: null,
+  };
+  return { ...day, stops: [...day.stops, dinner] };
+};
+
+// `staysLastNight`: the traveller sleeps in town after the last day too (a one-way flight); otherwise they leave that day
+const planDays = async ({ lang, city, country, destination, dates, travel, preferences, label, onAiCall, airport, staysLastNight = false }) => {
   const started = Date.now();
   const { data, usage, model, provider } = await planWithAi({
     instructions: instructionsFor({ lang, city, country, travel, dates, preferences }),
@@ -356,14 +417,17 @@ const planDays = async ({ lang, city, country, destination, dates, travel, prefe
 
   const plannedDays = (Array.isArray(data?.days) ? data.days : []).slice(0, dates.length);
   if (!plannedDays.length) throw new AppError("aiUnavailable");
-  const cleanDays = plannedDays.map((day, index) => ({
-    date: dates[index],
-    city,
-    title: text(day.title, 120) ?? "",
-    mode: MODES.includes(day.mode) ? day.mode : "walking",
-    excursion: cleanExcursion(day.excursion, index, plannedDays.length),
-    stops: (Array.isArray(day.stops) ? day.stops : []).map((stop) => cleanStop(stop, destination)),
-  }));
+  const cleanDays = plannedDays.map((day, index) => {
+    const mode = MODES.includes(day.mode) ? day.mode : "walking";
+    return {
+      date: dates[index],
+      city,
+      title: text(day.title, 120) ?? "",
+      mode,
+      excursion: cleanExcursion(day.excursion, index, plannedDays.length, mode),
+      stops: (Array.isArray(day.stops) ? day.stops : []).map((stop) => cleanStop(stop, destination)),
+    };
+  }).map((day, index, days) => (index < days.length - 1 || staysLastNight ? withDinner(day, lang) : day));
 
   const titles = cleanDays.flatMap((day) => day.stops.map((stop) => stop.place?.wikipediaTitle)).filter(Boolean);
   const facts = await placeFacts(titles, lang);
@@ -372,10 +436,12 @@ const planDays = async ({ lang, city, country, destination, dates, travel, prefe
   let taken = 0;
   const days = cleanDays.map((day) => {
     const dayStops = stops.slice(taken, (taken += day.stops.length));
-    // A day trip: mark the stops in the town visited (where the place is out of town)
+    // A day trip: mark the stops out there (the place out of town, or the AI said a town other than the city: a
+    // meal with no set place); each keeps its town, which on a route by car is not always the farthest one
+    const outThere = (stop) => (stop.place && km(stop.place, destination) > OUT_OF_TOWN_KM) || (stop.town && !sameName(stop.town, city));
     const marked = day.excursion
-      ? dayStops.map((stop) => (stop.place && km(stop.place, destination) > OUT_OF_TOWN_KM ? { ...stop, excursion: true } : stop))
-      : dayStops;
+      ? dayStops.map((stop) => (outThere(stop) ? { ...stop, excursion: true } : { ...stop, town: null }))
+      : dayStops.map((stop) => ({ ...stop, town: null }));
     return { ...day, stops: marked };
   });
   return { days, weather: cleanWeather(data.weather, city) };
@@ -401,6 +467,7 @@ export const createItinerary = async ({ trip, lang, preferences, onAiCall }) => 
     label: trip.code,
     onAiCall,
     airport: { lat: airport.lat, lng: airport.lon },
+    staysLastNight: !trip.ret,
   });
   return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, weather: weather ? [weather] : [], days };
 };

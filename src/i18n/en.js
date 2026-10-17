@@ -348,6 +348,9 @@ const en = {
     backToList: "Back to My trips",
     stops: (count) => plural(count, "stop", "stops"),
     excursion: (town, duration) => `Day trip to ${town} · ${duration} each way`,
+    // A day trip by car with stops on the way: "Shkodër, via Krujë"
+    excursionRoute: (town, via = []) =>
+      via.length ? `${town}, via ${new Intl.ListFormat("en", { type: "conjunction" }).format(via)}` : town,
     excursionAway: (duration) => `${duration} away`,
     excursionTo: (town) => `Day trip to ${town}`,
     excursionTag: "Day trip",

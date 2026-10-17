@@ -17,7 +17,8 @@ import MealChip from "@/components/trips/itinerary/ItineraryStop/components/Meal
 // Plaza Mayor") folds open too, for its dishes, with nowhere to go or tick. Other stops (getting around…) just show
 // their note. A meal that folds keeps its note under its title, open or closed (it does not jump into the details), and
 // "What to try and where" under it opens and closes it, instead of the arrow (its title still does too).
-// `excursionTown`: the stop is in the town of the day's trip, tagged "Day trip" beside its name. `town`: where the
+// `excursionTown`: the stop is out of town on the day's trip (in which town: on a route by car, maybe one on the way),
+// tagged "Day trip" beside its name. `town`: where the
 // stop is, for a meal's map search.
 const ItineraryStop = ({ stop, mode, excursionTown, town, open, visited, onToggle, onHover, onToggleVisited, lineAbove, lineBelow }) => {
   const { texts } = useI18n();

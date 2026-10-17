@@ -4,9 +4,9 @@ import { SITE_DOMAIN } from "@/constants/site";
 // It describes what the code does; change it whenever that changes (and the date).
 // Each section: a title and paragraphs or lists (an array is a bulleted list).
 export const PRIVACY_UPDATED = "2026-10-17";
-// Where people write about their data or the terms (shown on both legal pages): the project's own address, never a
-// personal one
-export const CONTACT_EMAIL = `hola@${SITE_DOMAIN}`;
+// Where people write about their data or the terms (shown on both legal pages), in the page's language: the
+// project's own addresses (both forwarded to the team's inbox), never a personal one
+export const CONTACT_EMAILS = { es: `hola@${SITE_DOMAIN}`, en: `hello@${SITE_DOMAIN}` };
 
 export const PRIVACY = {
   es: {

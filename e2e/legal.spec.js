@@ -3,19 +3,20 @@ import { expect, test } from "./helpers/test.js";
 // The terms of use and the privacy policy: in both languages, linked from each other, the sign-in page and home
 test.describe("legal pages", () => {
   const pages = [
-    { path: "/es/terms", title: "Condiciones de uso", related: "/es/privacy" },
-    { path: "/en/terms", title: "Terms of use", related: "/en/privacy" },
-    { path: "/es/privacy", title: "Política de privacidad", related: "/es/terms" },
+    { path: "/es/terms", title: "Condiciones de uso", related: "/es/privacy", email: "hola@lowfly.travel" },
+    { path: "/en/terms", title: "Terms of use", related: "/en/privacy", email: "hello@lowfly.travel" },
+    { path: "/es/privacy", title: "Política de privacidad", related: "/es/terms", email: "hola@lowfly.travel" },
+    { path: "/en/privacy", title: "Privacy policy", related: "/en/terms", email: "hello@lowfly.travel" },
   ];
 
-  for (const { path, title, related } of pages) {
+  for (const { path, title, related, email } of pages) {
     test(`${path} has its sections and links to the other page`, async ({ page }) => {
       await page.goto(path);
       await expect(page.locator("h1")).toHaveText(title);
       expect(await page.locator("article h2").count()).toBeGreaterThan(2);
       await expect(page.locator("article a").last()).toHaveAttribute("href", related);
-      // The contact is the project's address, never a personal one
-      await expect(page.getByRole("link", { name: "hola@lowfly.travel" })).toHaveAttribute("href", "mailto:hola@lowfly.travel");
+      // The contact is the project's address in the page's language, never a personal one
+      await expect(page.getByRole("link", { name: email })).toHaveAttribute("href", `mailto:${email}`);
       await expect(page.getByText(/@gmail\.com/)).toHaveCount(0);
     });
   }

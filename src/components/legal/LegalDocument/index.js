@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { LOCALE_TAGS } from "@/i18n/config";
-import { CONTACT_EMAIL } from "@/constants/privacy";
+import { CONTACT_EMAILS } from "@/constants/privacy";
 import Block from "@/components/legal/LegalDocument/components/Block";
 
 // A legal page (privacy policy, terms of use): title, date, intro, sections, the contact email and a link to
 // the other page. doc: { title, intro, updated(date), sections: [{ title, body }] } (constants/privacy, terms)
 const LegalDocument = ({ lang, doc, updatedDay, related }) => {
   const updated = new Intl.DateTimeFormat(LOCALE_TAGS[lang], { dateStyle: "long" }).format(new Date(`${updatedDay}T12:00:00`));
+  const contactEmail = CONTACT_EMAILS[lang];
   return (
     <article className="grid max-w-[70ch] gap-8 py-4 leading-relaxed">
       <header className="grid gap-3">
@@ -22,8 +23,8 @@ const LegalDocument = ({ lang, doc, updatedDay, related }) => {
           ))}
         </section>
       ))}
-      <a href={`mailto:${CONTACT_EMAIL}`} className="-mt-5 w-fit font-medium text-primary-ink underline underline-offset-4">
-        {CONTACT_EMAIL}
+      <a href={`mailto:${contactEmail}`} className="-mt-5 w-fit font-medium text-primary-ink underline underline-offset-4">
+        {contactEmail}
       </a>
       <Link href={related.href} className="w-fit border-t pt-4 text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground">
         {related.label}

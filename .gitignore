@@ -7,3 +7,6 @@ node_modules
 # Playwright reports and failure traces
 /e2e/report
 /e2e/results
+
+# CodeGraph: the local index of the code (for Claude Code), rebuilt on each machine
+.codegraph/

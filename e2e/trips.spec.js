@@ -44,6 +44,43 @@ test.describe("my trips", () => {
     }
   }
 
+  // The weather to expect, made with the itinerary: so nobody lands somewhere colder than they thought
+  for (const viewport of [DESKTOP, PHONE]) {
+    test(`the weather to expect on the trip (${viewport.width}px)`, async ({ page }) => {
+      await page.setViewportSize(viewport);
+      const trip = romeTrip();
+      await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+      const weather = page.getByRole("region", { name: "Qué tiempo esperar" });
+      await expect(weather.getByText("8 a 17 °C · Lluvias ocasionales")).toBeVisible();
+      // The usual climate of the month, not a forecast: on phones the month under the weather (and the note once
+      // unfolded); on wider screens all in one line
+      if (viewport === PHONE) await expect(weather.getByText("Clima habitual en noviembre", { exact: true })).toBeVisible();
+      else await expect(weather.getByText("Clima típico, no es un pronóstico").filter({ visible: true })).toBeVisible();
+      // The weather and the month each fit in one line (no extra lines)
+      for (const line of await weather.locator("p").filter({ visible: true }).all()) expect((await line.boundingBox()).height).toBeLessThan(30);
+      // Above the days
+      expect((await weather.boundingBox()).y).toBeLessThan((await page.getByRole("tab", { name: /Día 1/ }).boundingBox()).y);
+      // What it is like and what to pack, unfolded
+      const pack = weather.getByRole("button", { name: "Qué llevar" });
+      await expect(weather.getByText(/Ropa:/)).toBeHidden();
+      await pack.click();
+      await expect(pack).toHaveAttribute("aria-expanded", "true");
+      await expect(weather.getByText(/Otoño suave/)).toBeVisible();
+      await expect(weather.getByText("Ropa: una chaqueta ligera o un jersey para la noche.")).toBeVisible();
+      await expect(weather.getByText("Imprescindibles: calzado cómodo y un paraguas plegable.")).toBeVisible();
+      await expect(weather.getByText("Clima típico para estas fechas, no es un pronóstico.")).toBeVisible();
+      await expectNoSidewaysScroll(page);
+    });
+  }
+
+  test("an itinerary made before the weather was added has no weather card", async ({ page }) => {
+    const { weather, ...olderItinerary } = romeTrip().itinerary;
+    const trip = romeTrip({ itinerary: olderItinerary });
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    await expect(page.getByRole("tab", { name: /Día 1/ })).toBeVisible();
+    await expect(page.getByRole("region", { name: "Qué tiempo esperar" })).toHaveCount(0);
+  });
+
   test("phones: the slim bar shows once the header scrolls away; desktop never shows it", async ({ browser }) => {
     const trip = romeTrip();
     for (const viewport of [PHONE, DESKTOP]) {

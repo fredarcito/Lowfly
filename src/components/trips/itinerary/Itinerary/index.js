@@ -7,12 +7,13 @@ import ItineraryDay from "@/components/trips/itinerary/ItineraryDay";
 import ItineraryDayTabs from "@/components/trips/itinerary/ItineraryDayTabs";
 import ItineraryLoader from "@/components/trips/itinerary/ItineraryLoader";
 import ItineraryStickyBar from "@/components/trips/itinerary/ItineraryStickyBar";
+import ItineraryWeather from "@/components/trips/itinerary/ItineraryWeather";
 import OtherLanguage from "@/components/trips/itinerary/OtherLanguage";
 import { useI18n } from "@/context/i18n";
 import { useItinerary } from "@/components/trips/itinerary/Itinerary/hooks/useItinerary";
 import { useScrolledPast } from "@/hooks/useScrolledPast";
 
-// The trip's day-by-day plan (day tabs, then the picked day), the loader while the AI makes it, or the card to
+// The trip's day-by-day plan (the weather to expect, day tabs, then the picked day), the loader while the AI makes it, or the card to
 // create it. Once the page scrolls past the start of the days, the slim bar shows on phones (ItineraryStickyBar).
 // `readOnly` (a shared trip): only the plan, nothing to create, redo or tick. `tabsAside`: kept at hand next to
 // the day tabs once they stick at the top (desktop).
@@ -37,6 +38,7 @@ const Itinerary = ({ trip, readOnly = false, tabsAside }) => {
     <section ref={sectionRef} className="grid grid-cols-1 gap-4">
       <div ref={markerRef} aria-hidden className="-mb-4 h-0" />
       <ItineraryStickyBar trip={trip} day={day} dayNumber={dayIndex + 1} visible={scrolledPast} readOnly={readOnly} />
+      {itinerary.weather?.length > 0 && <ItineraryWeather weather={itinerary.weather} days={days} />}
       <ItineraryDayTabs days={days} picked={dayIndex} onPick={showDay} belowBar={scrolledPast} aside={tabsAside} />
       {itinerary.lang && itinerary.lang !== lang && (
         <OtherLanguage itinerary={itinerary} creating={creating} onCreate={readOnly ? null : () => create(itinerary.preferences)} />

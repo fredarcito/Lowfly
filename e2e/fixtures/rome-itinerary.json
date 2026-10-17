@@ -11,6 +11,18 @@
     "transport": "transit",
     "checkIn": "15:00"
   },
+  "weather": [
+    {
+      "city": "Roma",
+      "feels": "mild",
+      "low": 8,
+      "high": 17,
+      "rain": "some",
+      "summary": "Otoño suave: tardes agradables y noches frescas, con algún día de lluvia.",
+      "clothes": "Una chaqueta ligera o un jersey para la noche.",
+      "essentials": "Calzado cómodo y un paraguas plegable."
+    }
+  ],
   "days": [
     {
       "date": "2026-11-13",

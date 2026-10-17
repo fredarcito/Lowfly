@@ -26,6 +26,8 @@ const CONCURRENCY = 4;
 // The AI's coordinates are a few kilometres off at worst: a candidate farther than this from them is another place
 // with the same name (a town called Modugno instead of Modugno's statue)
 const NEAR_GUESS_KM = 10;
+// The AI's position for the arrival airport is this close to the real one at worst (it is a big place)
+const AIRPORT_KM = 5;
 // A meal is placed only on a real place to eat, or on a neighbourhood ("lunch in Monti")
 const MEAL_KINDS = /^(amenity:(restaurant|cafe|bar|pub|fast_food|ice_cream|food_court)|shop:(bakery|pastry|deli)|place:(suburb|neighbourhood|quarter))$/;
 
@@ -33,6 +35,11 @@ const STOP_TYPES = ["imprescindible", "recomendado", "opcional", "comida", "tran
 const SIGHT_TYPES = new Set(["imprescindible", "recomendado", "opcional"]);
 const MODES = ["walking", "transit", "driving"];
 const LANGUAGES = { es: "Spanish", en: "English" };
+// The usual weather on the trip's dates, as the card shows it (components/trips/itinerary/ItineraryWeather)
+const FEELS = ["cold", "cool", "mild", "warm", "hot"];
+const RAIN = ["rare", "some", "often"];
+// Believable typical temperatures (°C) for a place people travel to
+const TEMPERATURE = { min: -40, max: 50 };
 
 const PACE_RULES = {
   relaxed: "relaxed: 3 to 4 sights a day, long breaks",
@@ -50,6 +57,20 @@ const nullable = (type) => ({ type: [type, "null"] });
 const SCHEMA = {
   type: "object",
   properties: {
+    weather: {
+      type: "object",
+      description: "The weather usually expected in the town on these dates (climate averages, not a forecast)",
+      properties: {
+        feels: { type: "string", enum: FEELS, description: "How it usually feels outdoors during the day" },
+        low: { type: "integer", description: "Typical lowest temperature at night, °C" },
+        high: { type: "integer", description: "Typical highest temperature in the day, °C" },
+        rain: { type: "string", enum: RAIN, description: "How often it usually rains: rare, some days, or often" },
+        summary: { type: "string", description: "One short sentence on what the weather is usually like" },
+        clothes: { type: "string", description: "What to wear for it, short" },
+        essentials: { type: "string", description: "Other things to bring for it (umbrella, sunscreen, shoes…), short" },
+      },
+      required: ["feels", "low", "high", "rain", "summary", "clothes", "essentials"],
+    },
     days: {
       type: "array",
       items: {
@@ -98,7 +119,7 @@ const SCHEMA = {
       },
     },
   },
-  required: ["days"],
+  required: ["weather", "days"],
 };
 
 // How the traveller arrives and leaves, as lines of the instructions
@@ -143,7 +164,8 @@ Rules:
 - Every place you visit (sights, restaurants, stations, airport) has a "place". Its "name" is the official name in the local language, exactly as it appears on OpenStreetMap or Google Maps (e.g. "Castello Normanno-Svevo", "Fontana di Trevi"), never a translation or a description such as "lunch near the cathedral"; the stop "title" is what gets translated. Add its coordinates (5 decimals). Pure moves (getting around) have place null.
 - For sights, "wikipediaTitle" is the exact title of the article on ${lang}.wikipedia.org, or null if there is none.
 - Do not write history or dates of construction: we add them from Wikipedia.
-- Keep texts short: titles under 60 characters, notes and "why" under 200.`;
+- Keep texts short: titles under 60 characters, notes and "why" under 200.
+- "weather": the weather usually expected in ${city} on these dates, from what you know of its climate (typical values, not a forecast): typical night low and day high in °C, how often it rains, a one-sentence summary (under 140 characters), what to wear and the other things to bring (each under 90 characters, written as a plain list such as "a light jacket and a jumper for the evening", with no label or colon). Be honest about cold, heat and rain: travellers who do not know the place rely on it. When it is usually cold, very hot or rainy, favour indoor sights at the worst hours.`;
 };
 
 const text = (value, max = 300) => (typeof value === "string" && value.trim() ? value.trim().slice(0, max) : null);
@@ -179,6 +201,28 @@ const cleanExcursion = (excursion, index, dayCount) => {
   return town && fullDay && believable ? { town, travelMinutes: minutes } : null;
 };
 
+// What to wear or bring, without a label of its own in front ("Layers: a T-shirt…" → "a T-shirt…"): the card
+// adds its own
+const packText = (value) => text(typeof value === "string" ? value.replace(/^[^:,.]{1,20}:\s*/, "") : value, 120);
+
+// The weather as the card can show it ({ city, feels, low, high, rain, summary, clothes, essentials }), or null when the model's
+// answer is not believable
+const cleanWeather = (weather, city) => {
+  const { low, high } = weather ?? {};
+  const believable = (value) => Number.isInteger(value) && value >= TEMPERATURE.min && value <= TEMPERATURE.max;
+  if (!FEELS.includes(weather?.feels) || !RAIN.includes(weather.rain) || !believable(low) || !believable(high) || low > high) return null;
+  return {
+    city,
+    feels: weather.feels,
+    low,
+    high,
+    rain: weather.rain,
+    summary: text(weather.summary, 160),
+    clothes: packText(weather.clothes),
+    essentials: packText(weather.essentials),
+  };
+};
+
 // Runs `task` on every item, at most `limit` at a time, keeping the order
 const mapLimited = async (items, limit, task) => {
   const results = new Array(items.length);
@@ -206,9 +250,12 @@ const sameName = (first, second) => {
 // neighbourhood, and the rest must share a word with the name. Nothing that cannot be checked goes on the map.
 // Searches go with the town's name first; a day trip out of town (the covered bridges of Madison County from
 // Des Moines) is searched again without it, near the AI's position.
-const verifyStop = async (stop, { city, lang, destination, facts }) => {
+const verifyStop = async (stop, { city, lang, destination, facts, airport }) => {
   if (!stop.place) return stop;
   const { wikipediaTitle, ...guess } = stop.place;
+  // The airport of a trip by plane (landing, the way into town, the flight back): we know where it is, so it needs
+  // no search and is on the map even when the map search is down
+  if (airport && !SIGHT_TYPES.has(stop.type) && km(guess, airport) <= AIRPORT_KM) return { ...stop, place: { name: guess.name, lat: airport.lat, lng: airport.lng } };
   const plausible = (point) => point && isCoordinate(point.lat, point.lng) && km(point, guess) <= NEAR_GUESS_KM && km(point, destination) <= MAX_KM_FROM_AIRPORT;
   const fits = (found) => found && (stop.type === "comida" ? MEAL_KINDS.test(found.kind) : sameName(found.name, guess.name)) && plausible(found);
 
@@ -249,7 +296,9 @@ const planWithAi = async (request) => {
 // Plans `dates` in one town with the AI, then checks every place: where it is (Photon) and its history
 // (Wikipedia). destination: { lat, lng } of the town (only places near it are kept); label: for the logs.
 // onAiCall: told of the AI call, { city, country, days, provider, model, usage, durationMs } (to keep its cost).
-const planDays = async ({ lang, city, country, destination, dates, travel, preferences, label, onAiCall }) => {
+// airport: { lat, lng } of the arrival airport, on a trip by plane (its stops go there without a search).
+// → { days, weather } (the town's usual weather on those dates, or null)
+const planDays = async ({ lang, city, country, destination, dates, travel, preferences, label, onAiCall, airport }) => {
   const started = Date.now();
   const { data, usage, model, provider } = await planWithAi({
     instructions: instructionsFor({ lang, city, country, travel, dates, preferences }),
@@ -272,10 +321,10 @@ const planDays = async ({ lang, city, country, destination, dates, travel, prefe
 
   const titles = cleanDays.flatMap((day) => day.stops.map((stop) => stop.place?.wikipediaTitle)).filter(Boolean);
   const facts = await placeFacts(titles, lang);
-  const context = { city, lang, destination, facts };
+  const context = { city, lang, destination, facts, airport };
   const stops = await mapLimited(cleanDays.flatMap((day) => day.stops), CONCURRENCY, (stop) => verifyStop(stop, context));
   let taken = 0;
-  return cleanDays.map((day) => {
+  const days = cleanDays.map((day) => {
     const dayStops = stops.slice(taken, (taken += day.stops.length));
     // A day trip: mark the stops in the town visited (where the place is out of town)
     const marked = day.excursion
@@ -283,6 +332,7 @@ const planDays = async ({ lang, city, country, destination, dates, travel, prefe
       : dayStops;
     return { ...day, stops: marked };
   });
+  return { days, weather: cleanWeather(data.weather, city) };
 };
 
 // trip: { origin, code, city, country, out: { day, time, arrive }, ret?: { day, time } }
@@ -294,7 +344,7 @@ export const createItinerary = async ({ trip, lang, preferences, onAiCall }) => 
   const airport = airports.find((candidate) => candidate.code === trip.code);
   if (!airport || !isCoordinate(airport.lat, airport.lon)) throw new AppError("aiUnavailable");
 
-  const days = await planDays({
+  const { days, weather } = await planDays({
     lang,
     city: trip.city,
     country: trip.country,
@@ -304,8 +354,9 @@ export const createItinerary = async ({ trip, lang, preferences, onAiCall }) => 
     preferences,
     label: trip.code,
     onAiCall,
+    airport: { lat: airport.lat, lng: airport.lon },
   });
-  return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, days };
+  return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, weather: weather ? [weather] : [], days };
 };
 
 // A trip the traveller planned themselves, through one or more towns, in order:
@@ -340,7 +391,7 @@ export const createStopsItinerary = async ({ stops, lang, preferences, onAiCall 
 
   const days = [];
   for (const plan of plans) {
-    for (const day of plan) {
+    for (const day of plan.days) {
       const previous = days.at(-1);
       if (previous?.date === day.date) {
         days[days.length - 1] = {
@@ -354,5 +405,7 @@ export const createStopsItinerary = async ({ stops, lang, preferences, onAiCall 
       } else days.push(day);
     }
   }
-  return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, days };
+  // Each town's usual weather, in the route's order
+  const weather = plans.map((plan) => plan.weather).filter(Boolean);
+  return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, weather, days };
 };

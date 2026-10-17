@@ -11,6 +11,28 @@
     "transport": "transit",
     "checkIn": "15:00"
   },
+  "weather": [
+    {
+      "city": "Florencia",
+      "feels": "cool",
+      "low": 5,
+      "high": 14,
+      "rain": "often",
+      "summary": "Fresco y húmedo, con bastantes días de lluvia.",
+      "clothes": "Abrigo ligero y capas.",
+      "essentials": "Calzado impermeable y paraguas."
+    },
+    {
+      "city": "Venecia",
+      "feels": "cool",
+      "low": 4,
+      "high": 12,
+      "rain": "often",
+      "summary": "Fresco, con niebla y humedad; puede haber acqua alta.",
+      "clothes": "Abrigo y bufanda.",
+      "essentials": "Botas impermeables y paraguas."
+    }
+  ],
   "days": [
     {
       "date": "2026-11-13",

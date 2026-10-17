@@ -146,6 +146,15 @@ test.describe("trip planned by hand", () => {
       await expect(page.getByRole("tab", { name: /Día 2/ })).toHaveAttribute("aria-selected", "true");
       await page.getByRole("button", { name: /Más opciones/ }).first().click();
       await expect(page.getByRole("menuitem")).toHaveText(["Rehacer itinerario", "Eliminar viaje"]);
+      await page.keyboard.press("Escape");
+      // Each town's weather, by name, in the route's order
+      const weather = page.getByRole("region", { name: "Qué tiempo esperar" });
+      await expect(weather.getByText("Florencia 5 a 14 °C · Venecia 4 a 12 °C")).toBeVisible();
+      await weather.getByRole("button", { name: "Qué llevar" }).click();
+      await expect(weather.getByRole("listitem")).toHaveCount(2);
+      await expect(weather.getByRole("listitem").first()).toContainText("Florencia · Fresco · 5 a 14 °C · Lluvias frecuentes");
+      await expect(weather.getByRole("listitem").last()).toContainText("botas impermeables");
+      await expectNoSidewaysScroll(page);
     });
   }
 
@@ -252,8 +261,9 @@ test.describe("trip planned by hand", () => {
       const back = page.getByRole("button", { name: "Atrás" });
       const create = page.getByRole("button", { name: "Crear itinerario" });
       await expect(back).toBeInViewport();
-      const [backBox, createBox] = [await back.boundingBox(), await create.boundingBox()];
-      expect(Math.abs(backBox.y - createBox.y)).toBeLessThan(4);
+      // Measured once step 2 has finished sliding in
+      const gap = async () => Math.abs((await back.boundingBox()).y - (await create.boundingBox()).y);
+      await expect.poll(gap).toBeLessThan(4);
       await back.click();
       await expect(stopItem(page, 2)).toContainText("Venecia");
     });

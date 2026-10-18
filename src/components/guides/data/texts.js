@@ -14,24 +14,26 @@ const es = {
   },
   day: (number) => `Día ${number}`,
   stops: (count) => `${count} paradas`,
+  roughTimes: "Horario orientativo",
+  // The days' links above them
+  days: "Días de la guía",
   types: { imprescindible: "Imprescindible", recomendado: "Recomendado", opcional: "Opcional" },
-  mapNote: "En tu itinerario, el mapa se mueve, cada parada se abre al tocarla y la ruta del día va a Google Maps.",
   // Where each prompt shows: in the header, after day 1, after day 2, after the last day
   prompts: {
-    hero: { button: "Crear el mío a mi medida" },
+    hero: { button: "Personalizar este viaje" },
     afterFirstDay: {
       title: "¿Llegas a media tarde?",
-      text: "Tu itinerario empieza cuando llegas: a la hora de tu vuelo y de tu check-in.",
+      text: "Crea el tuyo y lo ajustamos a la hora a la que aterriza tu vuelo y a la de tu check-in.",
       button: "Adaptarlo a mi llegada",
     },
     afterSecondDay: {
       title: "¿Prefieres ir con calma o verlo todo?",
-      text: "Elige tu ritmo y lo que más te gusta: cultura, comida, naturaleza, vida nocturna, compras…",
+      text: "Crea el tuyo a tu ritmo y con lo que más te gusta: cultura, comida, naturaleza, vida nocturna, compras…",
       button: "Elegir mi ritmo",
     },
     afterLastDay: {
       title: (days) => `¿Tienes más de ${days} días, o menos?`,
-      text: "Créalo con los días que tengas y en tus fechas, con el tiempo que suele hacer y excursiones cerca.",
+      text: "Crea el tuyo con los días que tengas y en tus fechas: con el tiempo que suele hacer y excursiones cerca.",
       button: "Crearlo con mis días",
     },
   },
@@ -89,23 +91,24 @@ const en = {
   },
   day: (number) => `Day ${number}`,
   stops: (count) => `${count} stops`,
+  roughTimes: "Times are a rough guide",
+  days: "The guide's days",
   types: { imprescindible: "Must see", recomendado: "Recommended", opcional: "Optional" },
-  mapNote: "In your itinerary the map moves, each stop opens with a tap and the day's route goes to Google Maps.",
   prompts: {
-    hero: { button: "Make my own" },
+    hero: { button: "Personalise this trip" },
     afterFirstDay: {
       title: "Arriving in the afternoon?",
-      text: "Your itinerary starts when you get there: at your flight's time and your check-in.",
+      text: "Make your own and we fit it to when your flight lands and to your check-in.",
       button: "Fit it to my arrival",
     },
     afterSecondDay: {
       title: "Taking it easy, or seeing it all?",
-      text: "Pick your pace and what you like most: culture, food, nature, nightlife, shopping…",
+      text: "Make your own at your pace, with what you like most: culture, food, nature, nightlife, shopping…",
       button: "Pick my pace",
     },
     afterLastDay: {
       title: (days) => `More than ${days} days, or fewer?`,
-      text: "Make it with the days you have and on your dates, with the usual weather and nearby day trips.",
+      text: "Make your own with the days you have and on your dates: with the usual weather and nearby day trips.",
       button: "Make it with my days",
     },
   },

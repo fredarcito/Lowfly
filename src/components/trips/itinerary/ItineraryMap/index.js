@@ -20,10 +20,11 @@ const TILES = ESRI_KEY
 // 512 px tiles cover what four of 256 px did: one zoom level lower for the same map
 const TILE_OPTIONS = ESRI_KEY ? { tileSize: 512, zoomOffset: -1 } : {};
 const ATTRIBUTION = "Powered by Esri";
-const CORAL = "#ed604e";
-const GREEN = "#2f9e6e";
 
 const theme = () => (document.documentElement.dataset.theme === "light" ? "light" : "dark");
+
+const CORAL = "#ed604e";
+const GREEN = "#2f9e6e";
 
 // A map pin 28 × 36 (round head, pointed tip at the bottom centre), drawn with room around it for its outline
 const PIN_PATH = "M14 0C6.3 0 0 6.2 0 13.9 0 24.3 14 36 14 36s14-11.7 14-22.1C28 6.2 21.7 0 14 0z";
@@ -52,14 +53,8 @@ const markerIcon = (leaflet, number, active, visited) => {
 // The day's stops, numbered in order, joined by a dashed line (straight: no routing service).
 // `stops`: [{ number, name, lat, lng }]. `focus`: the stops to frame at first (without the airport).
 // `active`: the highlighted stop number; `visited`: numbers already visited; `onSelect(number)` when a pin is tapped.
-// `interactive: false` (a city guide's miniature): fixed, nothing to drag, zoom or tap, and only loaded once it is
-// about to be seen, so a reader who never scrolls to it costs no tiles.
 // Leaflet only runs in the browser, so it is loaded when the map mounts.
-const STILL_OPTIONS = { dragging: false, touchZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, zoomControl: false };
-// How far below the screen a miniature starts loading
-const LOAD_AHEAD = "300px";
-
-const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, interactive = true, className }) => {
+const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, className }) => {
   const box = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef(new Map()); // number → marker
@@ -70,13 +65,12 @@ const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, in
 
   useEffect(() => {
     let observer;
-    let visibility;
     let cancelled = false;
     const markers = markersRef.current;
-    const draw = () => import("leaflet").then(({ default: leaflet }) => {
+    import("leaflet").then(({ default: leaflet }) => {
       if (cancelled || !box.current || !stops.length) return;
       leafletRef.current = leaflet;
-      const map = leaflet.map(box.current, { scrollWheelZoom: false, attributionControl: true, ...(!interactive && STILL_OPTIONS) });
+      const map = leaflet.map(box.current, { scrollWheelZoom: false, attributionControl: true });
       mapRef.current = map;
       const addTiles = () => leaflet.tileLayer(TILES[theme()], { attribution: ATTRIBUTION, maxZoom: 19, ...TILE_OPTIONS }).addTo(map);
       let tiles = addTiles();
@@ -85,7 +79,7 @@ const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, in
       if (points.length > 1) leaflet.polyline(points, { color: CORAL, weight: 3, opacity: 0.85, dashArray: "6 7" }).addTo(map);
       for (const stop of stops) {
         const marker = leaflet
-          .marker([stop.lat, stop.lng], { icon: markerIcon(leaflet, stop.number, false), title: `${stop.number}. ${stop.name}`, interactive })
+          .marker([stop.lat, stop.lng], { icon: markerIcon(leaflet, stop.number, false), title: `${stop.number}. ${stop.name}` })
           .addTo(map)
           .on("click", () => onSelectRef.current?.(stop.number));
         markers.set(stop.number, marker);
@@ -101,21 +95,8 @@ const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, in
       });
       observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
     });
-    if (interactive) draw();
-    else {
-      visibility = new IntersectionObserver(
-        (entries) => {
-          if (!entries.some((entry) => entry.isIntersecting)) return;
-          visibility.disconnect();
-          draw();
-        },
-        { rootMargin: LOAD_AHEAD }
-      );
-      if (box.current) visibility.observe(box.current);
-    }
     return () => {
       cancelled = true;
-      visibility?.disconnect();
       observer?.disconnect();
       mapRef.current?.remove();
       mapRef.current = null;

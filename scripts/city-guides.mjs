@@ -1,14 +1,19 @@
-// Writes src/data/cityGuides.json: the city guides' itineraries (/es/guides/rome-3-days), in Spanish and English,
-// made once by the AI through our API (/api/city-guides: the same planner as the app's, for any visitor, with no
-// dates) and then only read by the pages. Read the diff before publishing: search engines read every word.
+// Writes src/data/cityGuides.json: the city guides' itineraries (/es/guides/rome-3-days), made once by the AI
+// through our API (/api/city-guides: the same planner as the app's, for any visitor, with no dates) and then only
+// read by the pages. Made in Spanish and translated into English: the same guide in both, its places, times and
+// order (a reader switching languages finds the same days). Read the diff before publishing: search engines read
+// every word.
 // Run it once, and again when a guide is added below: it only makes the missing ones.
 //
 //   pnpm dev   (or: npx next start -p 3002)
-//   node --env-file=.env.local scripts/city-guides.mjs [--base=http://localhost:3001] [--only=rome-3-days] [--redo]
+//   node --env-file=.env.local scripts/city-guides.mjs [--base=http://localhost:3001] [--only=rome-3-days]
+//     [--redo] (all again) [--translate] (the translations again)
 import fs from "node:fs";
 
 const FILE = new URL("../src/data/cityGuides.json", import.meta.url);
-const LANGS = ["es", "en"];
+// The language a guide is made in, and the ones it is translated into
+const FIRST_LANG = "es";
+const TRANSLATIONS = ["en"];
 const RETRIES = 3;
 
 // The guides: `codes`, the airports that fly there (a route's page to one of them links to the guide); `lat`,
@@ -52,23 +57,38 @@ const PHOTO_WIDTH = 960;
 const guides = fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, "utf8")) : {};
 const save = () => fs.writeFileSync(FILE, JSON.stringify(Object.fromEntries(Object.entries(guides).sort()), null, 1) + "\n");
 
-// One language of a guide from our API, trying again when the AI is busy
-const makeGuide = async (guide, lang) => {
+// Asks our API (/api/city-guides), trying again when the AI is busy
+const askApi = async (label, body) => {
   for (let attempt = 0; ; attempt++) {
     const response = await fetch(`${BASE}/api/city-guides`, {
       method: "POST",
       headers: { "content-type": "application/json", authorization: `Bearer ${process.env.CRON_SECRET}` },
-      body: JSON.stringify({ city: guide.city[lang], country: guide.country[lang], lat: guide.lat, lng: guide.lng, dayCount: guide.dayCount, lang }),
+      body: JSON.stringify(body),
     });
     if (response.ok) return response.json();
     if (response.status >= 500 && attempt < RETRIES) {
-      console.warn(`  ${guide.slug} ${lang}: ${response.status}, trying again`);
+      console.warn(`  ${label}: ${response.status}, trying again`);
       await wait(10_000 * 2 ** attempt);
       continue;
     }
-    throw new Error(`${guide.slug} ${lang}: ${response.status} ${await response.text()}`);
+    throw new Error(`${label}: ${response.status} ${await response.text()}`);
   }
 };
+
+// A guide made in its first language: { intro, itinerary }
+const makeGuide = (guide) =>
+  askApi(`${guide.slug} ${FIRST_LANG}`, {
+    city: guide.city[FIRST_LANG],
+    country: guide.country[FIRST_LANG],
+    lat: guide.lat,
+    lng: guide.lng,
+    dayCount: guide.dayCount,
+    lang: FIRST_LANG,
+  });
+
+// The same guide in `lang`: its texts translated, its places, times and order kept
+const translateGuide = (guide, made, lang) =>
+  askApi(`${guide.slug} ${lang}`, { city: guide.city[lang], lang, translate: { intro: made.intro, itinerary: made.itinerary } });
 
 // A Commons file as the pages show a photo: { src, page, author, license } (its licence asks for the credit)
 const commonsPhoto = async (file) => {
@@ -90,15 +110,19 @@ for (const guide of GUIDES) {
   const { slug, photo: photoFile, ...about } = guide;
   // Its photo (no AI: read again every run, so a new choice above shows)
   const photo = photoFile ? await commonsPhoto(photoFile) : null;
-  if (guides[slug] && !args.redo) {
-    guides[slug] = { ...guides[slug], ...about, photo };
-    save();
-    continue;
+  const made = !guides[slug] || args.redo;
+  if (made) {
+    console.log(`${slug}…`);
+    guides[slug] = { ...about, [FIRST_LANG]: await makeGuide(guide) };
+    console.log(`  ${slug}: ${guides[slug][FIRST_LANG].itinerary.days.map((day) => day.title).join(" · ")}`);
   }
-  console.log(`${slug}…`);
-  const languages = {};
-  for (const lang of LANGS) languages[lang] = await makeGuide(guide, lang);
-  guides[slug] = { ...about, photo, ...languages };
+  guides[slug] = { ...guides[slug], ...about, photo };
+  const first = guides[slug][FIRST_LANG];
+  // Its translations: with the guide, or again when asked
+  for (const lang of TRANSLATIONS) {
+    if (guides[slug][lang] && !made && !args.translate) continue;
+    console.log(`  ${slug} ${lang}: translating…`);
+    guides[slug][lang] = await translateGuide(guide, first, lang);
+  }
   save();
-  console.log(`  ${slug}: ${languages.es.itinerary.days.map((day) => day.title).join(" · ")}`);
 }

@@ -4,7 +4,7 @@ import { Fragment, useState } from "react";
 import { Car, CircleCheck, Footprints, TrainFront } from "lucide-react";
 import DayRouteLinks from "@/components/trips/itinerary/DayRouteLinks";
 import ExcursionBadge from "@/components/trips/itinerary/ItineraryDay/components/ExcursionBadge";
-import ItineraryMap from "@/components/shared/ItineraryMap";
+import ItineraryMap from "@/components/trips/itinerary/ItineraryMap";
 import ItineraryStop from "@/components/trips/itinerary/ItineraryStop";
 import ItineraryPeriod from "@/components/trips/itinerary/ItineraryPeriod";
 import { useI18n } from "@/context/i18n";

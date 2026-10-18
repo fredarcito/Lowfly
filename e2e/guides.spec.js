@@ -1,28 +1,32 @@
 import { DESKTOP, PHONE, expect, expectNoSidewaysScroll, test } from "./helpers/test.js";
 
 // The city guides (/es/guides/rome-3-days): the itinerary the AI wrote once (src/data/cityGuides.json), the same
-// for everyone, with a miniature map of each day and every way out going to the planner with the city chosen;
+// for everyone, day by day, and every way out going to the planner with the city chosen;
 // linked from the footer, the guides' page, the sitemap and the routes to the city
 test.describe("city guides", () => {
   for (const viewport of [DESKTOP, PHONE]) {
     test(`Rome in 3 days (${viewport.width}px)`, async ({ page }) => {
+      const mapRequests = [];
+      page.on("request", (request) => /arcgis|openstreetmap\.org/.test(request.url()) && mapRequests.push(request.url()));
       await page.setViewportSize(viewport);
       await page.goto("/es/guides/rome-3-days");
       await expect(page).toHaveTitle("Qué ver en Roma en 3 días: itinerario día a día · Lowfly");
       await expect(page.getByRole("heading", { level: 1, name: "Qué ver en Roma en 3 días" })).toBeVisible();
       for (const title of ["Sobre Roma", "Dónde alojarte", "Cómo moverte", "Cuándo ir"]) await expect(page.getByRole("heading", { name: title })).toBeVisible();
-      // Three days, each with its stops and a miniature of the city with the day's pins: fixed (nothing to drag or
-      // zoom), and only loaded once scrolled to
-      await expect(page.getByText(/^Día [1-3]$/)).toHaveCount(3);
-      expect(await page.locator(".leaflet-container").count()).toBeLessThan(3);
-      for (const number of [1, 2, 3]) {
-        await page.getByText(`Día ${number}`, { exact: true }).scrollIntoViewIfNeeded();
-        await expect(page.locator(".leaflet-container")).toHaveCount(number);
-      }
-      await expect(page.locator(".leaflet-marker-icon").first()).toBeAttached();
-      await expect(page.locator(".leaflet-control-zoom")).toHaveCount(0);
+      // Three days, each with its stops at the hour each starts (a rough one), and their links above, kept at the
+      // top: no map (the map is the reader's own itinerary's)
+      await expect(page.getByRole("heading", { level: 2, name: "Corazón de la Antigua Roma" })).toBeVisible();
+      await expect(page.getByText("7 paradas · Horario orientativo").first()).toBeVisible();
+      const days = page.getByRole("navigation", { name: "Días de la guía" }).getByRole("link");
+      await expect(days).toHaveCount(3);
+      await expect(days.first()).toHaveAttribute("aria-current", "location");
+      await days.nth(2).click();
+      await expect(page).toHaveURL(/#day-3$/);
+      await expect(days.nth(2)).toHaveAttribute("aria-current", "location");
+      await expect(page.locator(".leaflet-container, svg[aria-label^='Mapa']")).toHaveCount(0);
+      expect(mapRequests).toEqual([]);
       // Every "make it yours" goes to the planner with Rome as its first town
-      const ways = page.getByRole("link", { name: /a mi medida|mi llegada|mi ritmo|mis días|Crear mi itinerario/ });
+      const ways = page.getByRole("link", { name: /Personalizar este viaje|mi llegada|mi ritmo|mis días|Crear mi itinerario/ });
       await expect(ways).toHaveCount(5);
       for (const href of await ways.evaluateAll((links) => links.map((link) => link.getAttribute("href")))) expect(href).toBe("/es/trips/new?to=FCO");
       await expectNoSidewaysScroll(page);

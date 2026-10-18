@@ -536,6 +536,94 @@ Write in ${LANGUAGES[lang]}, warm and practical, like a local friend${lang === "
   return intro;
 };
 
+// What a guide's translation changes: every text a reader sees, nothing else (places, times and order stay)
+const STOP_TEXTS = ["title", "note", "why", "lookFor", "food"];
+const DISH_TEXTS = ["name", "what", "why"];
+const translatable = { ...nullable("string") };
+const GUIDE_TRANSLATION_SCHEMA = {
+  type: "object",
+  properties: {
+    intro: {
+      type: "object",
+      properties: Object.fromEntries(Object.keys(GUIDE_INTRO_SCHEMA.properties).map((key) => [key, { type: "string" }])),
+      required: Object.keys(GUIDE_INTRO_SCHEMA.properties),
+    },
+    days: {
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          title: { type: "string" },
+          stops: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                ...Object.fromEntries(STOP_TEXTS.map((key) => [key, translatable])),
+                dishes: {
+                  type: ["array", "null"],
+                  items: { type: "object", properties: Object.fromEntries(DISH_TEXTS.map((key) => [key, { type: "string" }])), required: DISH_TEXTS },
+                },
+              },
+              required: [...STOP_TEXTS, "dishes"],
+            },
+          },
+        },
+        required: ["title", "stops"],
+      },
+    },
+  },
+  required: ["intro", "days"],
+};
+
+// The texts of a guide, without what does not change
+const textsOf = (intro, itinerary) => ({
+  intro,
+  days: itinerary.days.map((day) => ({
+    title: day.title,
+    stops: day.stops.map((stop) => ({
+      ...Object.fromEntries(STOP_TEXTS.map((key) => [key, stop[key] ?? null])),
+      dishes: stop.dishes?.map((dish) => Object.fromEntries(DISH_TEXTS.map((key) => [key, dish[key]]))) ?? null,
+    })),
+  })),
+});
+
+// A city guide in another language: the same itinerary (its places, times and order) with its texts translated,
+// so a reader switching languages finds the same guide. The places keep their local names (as on the map); the
+// history from Wikipedia, in the first language, is left out. → { intro, itinerary }
+export const translateGuide = async ({ intro, itinerary, to, city, onAiCall }) => {
+  const started = Date.now();
+  const { data, usage, model, provider } = await planWithAi({
+    instructions: `Translate this travel guide of ${city} into ${LANGUAGES[to]}. Keep every item, in the same order and the same number of days, stops and dishes: only the words change. Keep the same warm, friendly tone, speaking to the traveller directly. Keep proper names as they are (places, streets, dishes as locals call them); translate only what describes them. null stays null.`,
+    prompt: JSON.stringify(textsOf(intro, itinerary)),
+    schema: GUIDE_TRANSLATION_SCHEMA,
+  });
+  onAiCall?.({ city, days: itinerary.days.length, provider, model, usage, durationMs: Date.now() - started });
+  const translated = data?.days;
+  const sameShape =
+    Array.isArray(translated) &&
+    translated.length === itinerary.days.length &&
+    translated.every((day, index) => day.stops?.length === itinerary.days[index].stops.length);
+  if (!sameShape || !data.intro) throw new AppError("aiUnavailable");
+  const days = itinerary.days.map((day, dayIndex) => ({
+    ...day,
+    title: text(translated[dayIndex].title, 120) ?? day.title,
+    stops: day.stops.map((stop, stopIndex) => {
+      const words = translated[dayIndex].stops[stopIndex];
+      const { history, sources, ...kept } = stop;
+      return {
+        ...kept,
+        ...Object.fromEntries(STOP_TEXTS.map((key) => [key, stop[key] == null ? null : text(words[key], 300) ?? stop[key]])),
+        dishes: stop.dishes?.map((dish, dishIndex) => ({ ...dish, ...(words.dishes?.[dishIndex] ?? {}) })) ?? null,
+      };
+    }),
+  }));
+  return {
+    intro: Object.fromEntries(Object.keys(intro).map((key) => [key, text(data.intro[key], 500) ?? intro[key]])),
+    itinerary: { ...itinerary, lang: to, createdAt: new Date().toISOString(), days },
+  };
+};
+
 // A trip the traveller planned themselves, through one or more towns, in order:
 // stops: [{ city, country, lat, lng, arrive: { day, time }, leave: { day, time } }]
 // Every town is planned at the same time and the days are joined; on the day of a move the morning in one

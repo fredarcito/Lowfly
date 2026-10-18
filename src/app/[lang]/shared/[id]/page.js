@@ -4,7 +4,7 @@ import TripsPage from "@/components/trips/TripsPage";
 import { I18nProvider } from "@/providers/I18nProvider";
 import { APP_NAME, getDictionary } from "@/i18n";
 import { ROUTES } from "@/constants/routes";
-import { openGraphOf, twitterCardOf } from "@/utils/metadata";
+import { TWITTER_CARD, openGraphOf } from "@/utils/metadata";
 import { getSharedTrip } from "@/server/sharedTrips";
 
 // Any share id reaches the page (the language above only allows /es and /en); each request reads the trip
@@ -26,8 +26,8 @@ export const generateMetadata = async ({ params }) => {
     title,
     description,
     robots,
-    openGraph: openGraphOf(lang, { title, description, url: ROUTES.sharedTrip(lang, id) }),
-    twitter: twitterCardOf({ title, description }),
+    openGraph: openGraphOf(lang, { title, description, url: ROUTES.sharedTrip(lang, id), image: null }),
+    twitter: TWITTER_CARD,
   };
 };
 

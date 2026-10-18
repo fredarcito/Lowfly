@@ -52,6 +52,26 @@ test.describe("seo", () => {
     ]);
   });
 
+  // A shared link's preview (Open Graph, and X's own tags) says the page's title, description and picture, never
+  // the home's from the layout
+  const HOME_TITLE = "Lowfly · Vuelos baratos e itinerarios a tu medida";
+  for (const path of ["/es", "/es/flights/malta-barcelona", "/es/flights/malta", "/es/flights", "/es/privacy", "/es/terms", "/es/trips/new", "/es/login"]) {
+    test(`${path}: its own preview, the same on X`, async ({ page }) => {
+      await page.goto(path);
+      const content = (selector) => page.locator(selector).getAttribute("content");
+      const title = await page.title();
+      expect(await content('meta[property="og:title"]')).toBe(title);
+      if (path !== "/es") expect(title).not.toBe(HOME_TITLE);
+      expect(await content('meta[property="og:description"]')).toBe(await content('meta[name="description"]'));
+      await expect(page.locator('meta[property="og:image"]')).toHaveCount(1);
+      expect(await content('meta[name="twitter:card"]')).toBe("summary_large_image");
+      expect(await content('meta[name="twitter:title"]')).toBe(await content('meta[property="og:title"]'));
+      expect(await content('meta[name="twitter:description"]')).toBe(await content('meta[property="og:description"]'));
+      expect(await content('meta[name="twitter:image"]')).toBe(await content('meta[property="og:image"]'));
+      await expect(page.locator('meta[property="og:site_name"]')).toHaveAttribute("content", "Lowfly");
+    });
+  }
+
   test("the sitemap lists every page in each language, with x-default and when its prices were written", async ({ request }) => {
     const sitemap = await (await request.get("/sitemap.xml")).text();
     expect(sitemap).toContain("<loc>https://lowfly.travel/en/flights/malta-barcelona</loc>");

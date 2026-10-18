@@ -13,7 +13,7 @@ import { originPrices, routePrices } from "@/server/flightRoutes/prices";
 import { getGuides } from "@/server/guides";
 import { getPhotos } from "@/server/photos";
 import { ROUTES } from "@/constants/routes";
-import { alternatesOf, breadcrumbsOf } from "@/utils/metadata";
+import { alternatesOf, breadcrumbsOf, openGraphOf } from "@/utils/metadata";
 import JsonLd from "@/components/shared/JsonLd";
 import { faqPageOf, routeFaq } from "@/components/flightRoutes/RoutePage/utils/routeFaq";
 
@@ -86,7 +86,8 @@ export const generateMetadata = async ({ params }) => {
     title,
     description,
     alternates: alternatesOf(lang, (locale) => ROUTES.flightRoute(locale, slug)),
-    openGraph: { title, description, url: ROUTES.flightRoute(lang, slug), ...(data.photo && { images: [data.photo.src] }) },
+    // Its picture: this folder's opengraph-image (the photo with the route and its price)
+    openGraph: openGraphOf(lang, { title, description, url: ROUTES.flightRoute(lang, slug), image: null }),
   };
 };
 

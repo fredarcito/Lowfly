@@ -11,7 +11,7 @@ export const generateMetadata = async ({ params }) => {
   const { meta } = getDictionary(lang);
   return {
     alternates: alternatesOf(lang, ROUTES.home),
-    openGraph: openGraphOf(lang, { title: meta.title, description: meta.description, url: ROUTES.home(lang) }),
+    openGraph: openGraphOf(lang, { title: meta.title, description: meta.description, url: ROUTES.home(lang), image: null }),
   };
 };
 

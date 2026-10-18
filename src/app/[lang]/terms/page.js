@@ -5,11 +5,12 @@ import { APP_NAME } from "@/i18n";
 import { PRIVACY } from "@/constants/privacy";
 import { TERMS, TERMS_UPDATED } from "@/constants/terms";
 import { ROUTES } from "@/constants/routes";
-import { alternatesOf } from "@/utils/metadata";
+import { alternatesOf, openGraphOf } from "@/utils/metadata";
 
 export const generateMetadata = async ({ params }) => {
   const { lang } = await params;
-  return { title: `${TERMS[lang].title} · ${APP_NAME}`, description: TERMS[lang].intro, alternates: alternatesOf(lang, ROUTES.terms) };
+  const [title, description] = [`${TERMS[lang].title} · ${APP_NAME}`, TERMS[lang].intro];
+  return { title, description, alternates: alternatesOf(lang, ROUTES.terms), openGraph: openGraphOf(lang, { title, description, url: ROUTES.terms(lang) }) };
 };
 
 // The terms of use: what Lowfly is (no tickets sold), what its prices and AI itineraries are worth, fair use

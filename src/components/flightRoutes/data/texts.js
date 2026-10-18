@@ -79,6 +79,8 @@ const es = {
     metaDescription: (origin, count, price) =>
       `${count} destinos con vuelo directo desde ${origin}${price ? `, desde ${price}` : ""}. Precios de hoy de Ryanair y Wizz Air y reserva directo con la aerolínea, sin comisiones.`,
     intro: (count) => `${count} destinos con vuelo directo. El precio es el vuelo más barato de los próximos tres meses, solo ida.`,
+    // Its preview picture (opengraph-image)
+    destinations: (count) => `${count} destinos directos`,
   },
   airportsPage: {
     title: "Vuelos baratos por aeropuerto",
@@ -168,6 +170,8 @@ const en = {
     metaDescription: (origin, count, price) =>
       `${count} destinations with a direct flight from ${origin}${price ? `, from ${price}` : ""}. Today's Ryanair and Wizz Air prices, booked straight with the airline, no fees.`,
     intro: (count) => `${count} destinations with a direct flight. The price is the cheapest flight of the next three months, one way.`,
+    // Its preview picture (opengraph-image)
+    destinations: (count) => `${count} direct destinations`,
   },
   airportsPage: {
     title: "Cheap flights by airport",

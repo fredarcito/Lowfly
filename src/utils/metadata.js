@@ -3,14 +3,17 @@
 import { APP_NAME, DEFAULT_LOCALE, LOCALES, LOCALE_TAGS } from "@/i18n/config";
 import { SITE_DOMAIN } from "@/constants/site";
 
-// og: site name, type and language, plus the page's own title, description and address (`url`, a path)
-export const openGraphOf = (lang, { title, description, url }) => ({
+// og: site name, type and language, plus the page's own title, description, address (`url`, a path) and picture
+// (`image`, a URL). Without one, Lowfly's (app/[lang]/opengraph-image): a page's openGraph drops the layout's.
+// `image: null` for a page whose own opengraph-image file gives it (the home, a shared trip).
+export const openGraphOf = (lang, { title, description, url, image }) => ({
   type: "website",
   siteName: APP_NAME,
   locale: LOCALE_TAGS[lang].replace("-", "_"),
   title,
   description,
   ...(url && { url }),
+  ...(image !== null && { images: [image ?? `/${lang}/opengraph-image`] }),
 });
 
 // The site's address, for what search engines need absolute (structured data)
@@ -56,5 +59,6 @@ export const siteOf = (lang, description) => ({
 // but their links may be followed
 export const PRIVATE_PAGE = { index: false, follow: true };
 
-// The large card on X (the preview image in full)
-export const twitterCardOf = ({ title, description }) => ({ card: "summary_large_image", title, description });
+// The large card on X (the preview image in full). Only the kind of card: Next fills its title, description and
+// image from the page's own openGraph, so X never shows another page's (the home's, from the layout)
+export const TWITTER_CARD = { card: "summary_large_image" };

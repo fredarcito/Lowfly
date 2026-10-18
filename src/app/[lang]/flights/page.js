@@ -5,7 +5,7 @@ import { routeTexts } from "@/components/flightRoutes/data/texts";
 import { I18nProvider } from "@/providers/I18nProvider";
 import { origins } from "@/server/flightRoutes/routes";
 import { ROUTES } from "@/constants/routes";
-import { alternatesOf, breadcrumbsOf } from "@/utils/metadata";
+import { alternatesOf, breadcrumbsOf, openGraphOf } from "@/utils/metadata";
 import JsonLd from "@/components/shared/JsonLd";
 import { APP_NAME } from "@/i18n";
 
@@ -21,7 +21,7 @@ export const generateMetadata = async ({ params }) => {
     title: texts.metaTitle,
     description: texts.metaDescription(count),
     alternates: alternatesOf(lang, ROUTES.flights),
-    openGraph: { title: texts.metaTitle, description: texts.metaDescription(count), url: ROUTES.flights(lang) },
+    openGraph: openGraphOf(lang, { title: texts.metaTitle, description: texts.metaDescription(count), url: ROUTES.flights(lang) }),
   };
 };
 

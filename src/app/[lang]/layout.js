@@ -9,7 +9,7 @@ import ThemeScript from "@/components/layout/ThemeScript";
 import InlineScript from "@/components/shared/InlineScript";
 import Analytics from "@/components/layout/Analytics";
 import { GA_ID } from "@/constants/analytics";
-import { openGraphOf, twitterCardOf } from "@/utils/metadata";
+import { TWITTER_CARD, openGraphOf } from "@/utils/metadata";
 import "@/styles/globals.css";
 
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
@@ -49,8 +49,8 @@ export const generateMetadata = async ({ params }) => {
     // Next only writes the standard "mobile-web-app-capable"; Safari on iPhone still needs its own to open the
     // installed app full screen and show the launch images above
     other: { "apple-mobile-web-app-capable": "yes" },
-    openGraph: openGraphOf(lang, { title: meta.title, description: meta.description }),
-    twitter: twitterCardOf({ title: meta.title, description: meta.description }),
+    openGraph: openGraphOf(lang, { title: meta.title, description: meta.description, image: null }),
+    twitter: TWITTER_CARD,
     // No canonical or languages here: each page says its own (utils/metadata alternatesOf), or every page without
     // them would claim to be the home
   };

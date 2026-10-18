@@ -112,6 +112,21 @@ test.describe("route pages", () => {
     await expect(page.getByRole("link", { name: /Ver todos los destinos/ })).toHaveAttribute("href", "/es/flights/madrid");
   });
 
+  // Its own picture when shared (the route and its price over the photo), as JPEG and light: WhatsApp drops
+  // previews over ~300 KB
+  for (const path of ["/es/flights/malta-barcelona", "/es/flights/malta"]) {
+    test(`${path}: its own preview picture`, async ({ page, request }) => {
+      await page.goto(path);
+      const image = await page.locator('meta[property="og:image"]').getAttribute("content");
+      expect(new URL(image).pathname).toBe(`${path}/opengraph-image`);
+      await expect(page.locator('meta[name="twitter:image"]')).toHaveAttribute("content", image);
+      const response = await request.get(new URL(image).pathname);
+      expect(response.status()).toBe(200);
+      expect(response.headers()["content-type"]).toBe("image/jpeg");
+      expect((await response.body()).length).toBeLessThan(300_000);
+    });
+  }
+
   test("every page's footer links to the airports' page", async ({ page }) => {
     await page.goto("/es/privacy");
     await expect(page.getByRole("contentinfo").getByRole("link", { name: "Vuelos baratos por aeropuerto" })).toHaveAttribute("href", "/es/flights");

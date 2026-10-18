@@ -3,12 +3,23 @@
 import { useEffect, useRef } from "react";
 import "leaflet/dist/leaflet.css";
 
-// Esri basemaps (no key needed): streets in the light theme, dark grey in the dark one
-const TILES = {
-  light: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
-  dark: "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-};
-const ATTRIBUTION = "Tiles &copy; Esri";
+// Esri basemaps: streets in the light theme, dark grey in the dark one. With Lowfly's key (NEXT_PUBLIC_ESRI_KEY,
+// ArcGIS Location Platform: 2 million tiles a month free, only from lowfly.travel and localhost), its static tiles
+// service, 512 px tiles; without it (tests, previews), the old keyless one
+const ESRI_KEY = process.env.NEXT_PUBLIC_ESRI_KEY;
+const STATIC_TILES = "https://static-map-tiles-api.arcgis.com/arcgis/rest/services/static-basemap-tiles-service/v1/arcgis";
+const TILES = ESRI_KEY
+  ? {
+      light: `${STATIC_TILES}/streets/static/tile/{z}/{y}/{x}?token=${ESRI_KEY}`,
+      dark: `${STATIC_TILES}/dark-gray/static/tile/{z}/{y}/{x}?token=${ESRI_KEY}`,
+    }
+  : {
+      light: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+      dark: "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+    };
+// 512 px tiles cover what four of 256 px did: one zoom level lower for the same map
+const TILE_OPTIONS = ESRI_KEY ? { tileSize: 512, zoomOffset: -1 } : {};
+const ATTRIBUTION = "Powered by Esri";
 const CORAL = "#ed604e";
 const GREEN = "#2f9e6e";
 
@@ -60,7 +71,7 @@ const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, cl
       leafletRef.current = leaflet;
       const map = leaflet.map(box.current, { scrollWheelZoom: false, attributionControl: true });
       mapRef.current = map;
-      const addTiles = () => leaflet.tileLayer(TILES[theme()], { attribution: ATTRIBUTION, maxZoom: 19 }).addTo(map);
+      const addTiles = () => leaflet.tileLayer(TILES[theme()], { attribution: ATTRIBUTION, maxZoom: 19, ...TILE_OPTIONS }).addTo(map);
       let tiles = addTiles();
 
       const points = stops.map((stop) => [stop.lat, stop.lng]);

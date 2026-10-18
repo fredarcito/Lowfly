@@ -14,15 +14,27 @@ const GREEN = "#2f9e6e";
 
 const theme = () => (document.documentElement.dataset.theme === "light" ? "light" : "dark");
 
-// Numbered coral pin (green with a tick once visited); the active one is bigger and outlined in dark
+// A map pin 28 × 36 (round head, pointed tip at the bottom centre), drawn with room around it for its outline
+const PIN_PATH = "M14 0C6.3 0 0 6.2 0 13.9 0 24.3 14 36 14 36s14-11.7 14-22.1C28 6.2 21.7 0 14 0z";
+const PIN_MARGIN = 4;
+
+// Numbered coral pin (green with a tick once visited); the active one is bigger and outlined in dark. Its tip is on
+// the stop, so the dashed line meets the tips.
 const markerIcon = (leaflet, number, active, visited) => {
-  const size = active ? 34 : 26;
-  const ring = active ? "0 0 0 3px #fff,0 0 0 6px rgb(14 41 61/.55)" : "0 0 0 2px #fff";
+  const scale = active ? 1.3 : 1;
+  const width = (28 + PIN_MARGIN * 2) * scale;
+  const height = (36 + PIN_MARGIN * 2) * scale;
+  const outline = active ? `<path d="${PIN_PATH}" fill="none" stroke="rgb(14 41 61/.55)" stroke-width="6" stroke-linejoin="round"/>` : "";
   return leaflet.divIcon({
     className: "",
-    html: `<span style="display:grid;place-items:center;width:${size}px;height:${size}px;border-radius:9999px;background:${visited ? GREEN : CORAL};color:#fff;font:700 ${active ? 14 : 12}px/1 system-ui;box-shadow:${ring},0 2px 6px rgb(0 0 0/.35);transition:all .15s">${visited ? "✓" : number}</span>`,
-    iconSize: [size, size],
-    iconAnchor: [size / 2, size / 2],
+    html: `<span style="position:relative;display:block;width:${width}px;height:${height}px;filter:drop-shadow(0 2px 3px rgb(0 0 0/.35))">
+      <svg width="${width}" height="${height}" viewBox="${-PIN_MARGIN} ${-PIN_MARGIN} ${28 + PIN_MARGIN * 2} ${36 + PIN_MARGIN * 2}" style="display:block">
+        ${outline}<path d="${PIN_PATH}" fill="${visited ? GREEN : CORAL}" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <span style="position:absolute;left:0;right:0;top:${PIN_MARGIN * scale}px;height:${28 * scale}px;display:grid;place-items:center;color:#fff;font:700 ${active ? 15 : 12}px/1 system-ui">${visited ? "✓" : number}</span>
+    </span>`,
+    iconSize: [width, height],
+    iconAnchor: [width / 2, height - PIN_MARGIN * scale],
   });
 };
 
@@ -61,7 +73,8 @@ const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, cl
         markers.set(stop.number, marker);
       }
       const framed = focus.map((stop) => [stop.lat, stop.lng]);
-      map.fitBounds(framed.length > 1 ? framed : [framed[0], framed[0]], { padding: [32, 32], maxZoom: 15 });
+      // More room on top: the pins stand above their stops
+      map.fitBounds(framed.length > 1 ? framed : [framed[0], framed[0]], { paddingTopLeft: [32, 56], paddingBottomRight: [32, 24], maxZoom: 15 });
 
       // Theme switch: swap the tiles
       observer = new MutationObserver(() => {

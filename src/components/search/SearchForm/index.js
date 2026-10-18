@@ -27,7 +27,9 @@ const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }
     <form onSubmit={onSubmit} className="grid gap-4 sm:gap-5">
       {shows("everywhere", "country") && <TripTypeField mode={mode} form={form} onField={onField} />}
       <div className="grid gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-12">
-        <FormField id="origin" label={texts.form.origin} hint={texts.form.originHint} className="lg:col-span-3">
+        {/* Phones: no hints under the airport and the dates (their pickers only take what fits), so the form stays
+            short */}
+        <FormField id="origin" label={texts.form.origin} hint={texts.form.originHint} hintClassName="max-sm:hidden" className="lg:col-span-3">
           <AirportField id="origin" value={form.origin} airports={airports} onChange={(code) => onField("origin", code)} />
         </FormField>
 
@@ -56,6 +58,7 @@ const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }
               id="dates"
               label={roundTrip ? texts.form.datesReturn : texts.form.datesOneway}
               hint={roundTrip ? texts.form.datesHintReturn(MAX_DAYS[mode]) : texts.form.datesHintOneway(MAX_DAYS[mode])}
+              hintClassName="max-sm:hidden"
               className={everywhere ? "lg:col-span-6" : "lg:col-span-4"}
             >
               <DateRangeField
@@ -69,7 +72,16 @@ const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }
                 }}
               />
             </FormField>
-            <FormField id="max" label={texts.form.maxPrice} hint={texts.form.optional} className={everywhere ? "lg:col-span-3" : "lg:col-span-2"}>
+            {/* "Optional": under the field, or beside its label on phones (one line less) */}
+            <FormField
+              id="max"
+              label={texts.form.maxPrice}
+              note={texts.form.optional}
+              noteClassName="sm:hidden"
+              hint={texts.form.optional}
+              hintClassName="max-sm:hidden"
+              className={everywhere ? "lg:col-span-3" : "lg:col-span-2"}
+            >
               <MaxPriceField id="max" value={form.max} placeholder={texts.form.noLimit} onChange={(price) => onField("max", price)} />
             </FormField>
           </>

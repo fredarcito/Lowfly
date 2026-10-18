@@ -52,13 +52,16 @@ const SearchSummary = ({ query, originName, onEdit }) => {
         onClick={onEdit}
         className="group flex min-w-0 flex-1 items-center gap-3 rounded-lg text-left outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
       >
-        <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-muted text-primary">
+        {/* Small phones: without the mode's icon, so the route has room */}
+        <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-muted text-primary max-[400px]:hidden">
           <ModeIcon className="size-4" />
         </span>
-        <span className="grid min-w-0 flex-1 gap-0.5">
-          <span className="flex items-center gap-1.5 font-heading text-base font-semibold">
+        {/* One column that can shrink: a long route is cut short ("…") instead of running under the buttons */}
+        <span className="grid min-w-0 flex-1 grid-cols-1 gap-0.5">
+          <span className="flex min-w-0 items-center gap-1.5 font-heading text-base font-semibold">
             <PlaneTakeoff className="size-4 shrink-0 text-muted-foreground" />
-            <span className="truncate">{originName ?? origin}</span>
+            {/* The origin whole (up to half the line); the destination is the one cut short */}
+            <span className="max-w-1/2 shrink-0 truncate">{originName ?? origin}</span>
             <ArrowRight className="size-4 shrink-0 text-muted-foreground" />
             <span className="truncate">{destination}</span>
           </span>

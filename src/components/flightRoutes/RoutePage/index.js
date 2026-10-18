@@ -4,6 +4,7 @@ import DestinationColumns from "@/components/flightRoutes/DestinationColumns";
 import MonthPrices from "@/components/flightRoutes/RoutePage/components/MonthPrices";
 import PlanCard from "@/components/flightRoutes/RoutePage/components/PlanCard";
 import RouteFacts from "@/components/flightRoutes/RoutePage/components/RouteFacts";
+import RouteFaq from "@/components/flightRoutes/RoutePage/components/RouteFaq";
 import WhyGo from "@/components/flightRoutes/RoutePage/components/WhyGo";
 import { routeTexts } from "@/components/flightRoutes/data/texts";
 import { getDictionary, LOCALE_TAGS } from "@/i18n";
@@ -14,10 +15,10 @@ import { createFormat } from "@/utils/format";
 const PER_REGION = 10;
 
 // A route's page body (/es/flights/malta-barcelona; the photo header is RouteHero), rendered on the server for search
-// engines: when it is cheapest to fly next to what to know about the route, why go next to "Create itinerary", and
-// the other destinations from the same airport by region. `prices`: server/flightRoutes/prices (null: none now);
-// `facts`: the written airlines and flight time.
-const RoutePage = ({ lang, route, prices, guide, routes, origin, airlines, duration }) => {
+// engines: when it is cheapest to fly next to what to know about the route, why go next to "Create itinerary", the
+// questions people ask about it, and the other destinations from the same airport by region. `prices`:
+// server/flightRoutes/prices (null: none now); `airlines`, `duration`: written; `faq`: utils/routeFaq.
+const RoutePage = ({ lang, route, prices, guide, routes, origin, airlines, duration, faq }) => {
   const texts = routeTexts(lang);
   const format = createFormat(lang, getDictionary(lang));
   const tag = LOCALE_TAGS[lang];
@@ -51,6 +52,8 @@ const RoutePage = ({ lang, route, prices, guide, routes, origin, airlines, durat
         {guide ? <WhyGo lang={lang} city={route.city} guide={guide} /> : <span className="max-lg:hidden" />}
         <PlanCard lang={lang} route={route} />
       </div>
+
+      <RouteFaq lang={lang} route={route} faq={faq} />
 
       {others.length > 0 && (
         <section className="grid gap-5 rounded-xl bg-card p-5 ring-1 ring-foreground/10 sm:p-6">

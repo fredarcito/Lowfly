@@ -85,23 +85,47 @@ test.describe("pickers", () => {
     await expect(page.getByRole("radio", { name: /Ida y vuelta/ })).toBeChecked();
   });
 
-  // The top bar fits at every width: the navigation never runs into the buttons on the right
-  test("the top bar fits from small phones to tablets", async ({ page }) => {
+  // The top bar fits at every width: phones and tablets put the navigation in its own row below the logo and
+  // the buttons; desktop keeps it all in one row. The tabs never run into each other, the buttons or the edge.
+  test("the top bar fits from small phones to desktop", async ({ page }) => {
     await openWith(page, "/es/trips", {
       trips: Array.from({ length: 9 }, (_, index) => ({ ...flightTrip({ id: `trip-${index}` }) })),
     });
-    for (let width = 320; width <= 1024; width += 20) {
+    for (let width = 320; width <= 1280; width += 20) {
       await page.setViewportSize({ width, height: 700 });
-      const gap = await page.evaluate(() => {
+      const layout = await page.evaluate(() => {
         const navigation = document.querySelector('nav[aria-label="Navegación principal"]');
-        return navigation.parentElement.nextElementSibling.getBoundingClientRect().left - navigation.getBoundingClientRect().right;
+        const buttons = navigation.nextElementSibling.getBoundingClientRect();
+        const tabs = [...navigation.querySelectorAll("a")].map((tab) => tab.getBoundingClientRect());
+        const bar = navigation.getBoundingClientRect();
+        return {
+          stacked: bar.top >= buttons.bottom,
+          gapToButtons: buttons.left - bar.right,
+          tabGaps: tabs.slice(1).map((tab, index) => tab.left - tabs[index].right),
+          overflow: document.documentElement.scrollWidth - window.innerWidth,
+        };
       });
-      expect(gap, `at ${width}px`).toBeGreaterThanOrEqual(4);
+      expect(layout.overflow, `at ${width}px`).toBeLessThanOrEqual(0);
+      expect(layout.stacked, `at ${width}px`).toBe(width < 1024);
+      if (!layout.stacked) expect(layout.gapToButtons, `at ${width}px`).toBeGreaterThanOrEqual(4);
+      for (const gap of layout.tabGaps) expect(gap, `at ${width}px`).toBeGreaterThanOrEqual(4);
     }
-    // Explore and My trips keep their names on phones
+    const nav = page.getByRole("navigation", { name: "Navegación principal" });
+    // The three tabs keep their names on phones; the one of this page is marked
     await page.setViewportSize({ width: 360, height: 700 });
-    await expect(page.getByRole("link", { name: "Explorar", exact: true })).toBeVisible();
-    await expect(page.getByRole("link", { name: /Mis viajes/ })).toBeVisible();
+    await expect(nav.getByRole("link", { name: "Explorar", exact: true })).toBeVisible();
+    await expect(nav.getByRole("link", { name: "Crear itinerario", exact: true })).toBeVisible();
+    await expect(nav.getByRole("link", { name: /Mis viajes/ })).toHaveAttribute("aria-current", "page");
+  });
+
+  test("Create itinerary in the top bar opens the planner, marked as the current tab", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    await openWith(page, "/es/trips");
+    const nav = page.getByRole("navigation", { name: "Navegación principal" });
+    await nav.getByRole("link", { name: "Crear itinerario", exact: true }).click();
+    await page.waitForURL("**/es/trips/new");
+    await expect(nav.getByRole("link", { name: "Crear itinerario", exact: true })).toHaveAttribute("aria-current", "page");
+    await expect(nav.getByRole("link", { name: /Mis viajes/ })).not.toHaveAttribute("aria-current", "page");
   });
 
   test("phones: theme and language live in the Settings menu", async ({ page }) => {

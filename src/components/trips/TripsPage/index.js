@@ -13,7 +13,7 @@ const TripsPage = ({ hero, children }) => {
     <div className="flex min-h-dvh flex-col">
       <header
         className={cn(
-          "relative isolate overflow-hidden px-4 pt-[calc(2.5rem+env(safe-area-inset-top,0px))] text-hero-foreground sm:px-6",
+          "relative isolate overflow-hidden px-4 pt-[calc(1rem+env(safe-area-inset-top,0px))] sm:pt-[calc(1.75rem+env(safe-area-inset-top,0px))] text-hero-foreground sm:px-6",
           hero ? "bg-background pb-6 sm:pb-8" : "bg-(image:--hero) pb-8"
         )}
       >

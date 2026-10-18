@@ -15,6 +15,7 @@ import { getPhotos } from "@/server/photos";
 import { ROUTES } from "@/constants/routes";
 import { alternatesOf, breadcrumbsOf } from "@/utils/metadata";
 import JsonLd from "@/components/shared/JsonLd";
+import { faqPageOf, routeFaq } from "@/components/flightRoutes/RoutePage/utils/routeFaq";
 
 // Search engines' pages: an airport's (/es/flights/malta: every destination) or a route's (/es/flights/malta-barcelona).
 // Any route address may be asked for (the language layout only allows /es and /en). Made on its first visit from
@@ -117,11 +118,14 @@ const FlightsPage = async ({ params }) => {
     );
   }
   const price = data.prices && createFormat(lang, getDictionary(lang)).money(data.prices.cheapest.price, "EUR");
+  // The same questions on the page and, for search engines, as FAQPage
+  const faq = routeFaq({ lang, ...data });
   return (
     <I18nProvider lang={lang}>
       <JsonLd data={breadcrumbs(lang, slug, data)} />
+      <JsonLd data={faqPageOf(faq)} />
       <TripsPage hero={<RouteHero lang={lang} route={data.route} price={price} airlines={data.airlines} duration={data.duration} photo={data.photo} />}>
-        <RoutePage lang={lang} {...data} />
+        <RoutePage lang={lang} {...data} faq={faq} />
       </TripsPage>
     </I18nProvider>
   );

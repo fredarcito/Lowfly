@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LogIn, LogOut, Luggage, ShieldCheck } from "lucide-react";
+import { ChevronDown, LogIn, LogOut, Luggage, ShieldCheck } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,7 +15,7 @@ import { useAuth } from "@/context/auth";
 import { useI18n } from "@/context/i18n";
 import { ROUTES } from "@/constants/routes";
 
-const CHIP = "grid size-9 shrink-0 place-items-center overflow-hidden rounded-full bg-hero-glass ring-1 ring-hero-glass-edge backdrop-blur-md text-hero-foreground transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none";
+const CHIP = "grid size-9 shrink-0 place-items-center overflow-hidden rounded-full bg-hero-glass ring-1 ring-hero-glass-edge backdrop-blur-md text-hero-foreground md:size-10";
 
 // The visitor's account in the top bar: "Sign in" (back to this page afterwards), or their picture (or
 // initial) with a menu: who they are, their trips, the admin (admins only: the server checks again there) and
@@ -25,13 +25,13 @@ export const AccountButton = () => {
   const { status, user, signOut } = useAuth();
   const pathname = usePathname();
 
-  if (status === "loading") return <span aria-hidden className="size-9 shrink-0" />;
+  if (status === "loading") return <span aria-hidden className="size-9 shrink-0 md:size-10" />;
 
   if (status === "signedOut") {
     return (
       <Link
         href={ROUTES.login(lang, pathname)}
-        className="flex h-9 shrink-0 items-center gap-1.5 rounded-full bg-hero-glass ring-1 ring-hero-glass-edge backdrop-blur-md px-3.5 text-sm font-bold text-hero-foreground transition-colors hover:bg-hero-glass/80 focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none max-sm:w-9 max-sm:justify-center max-sm:px-0"
+        className="flex h-9 shrink-0 items-center gap-1.5 rounded-full md:h-10 bg-hero-glass ring-1 ring-hero-glass-edge backdrop-blur-md px-3.5 text-sm font-bold text-hero-foreground transition-colors hover:bg-hero-glass/80 focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none max-sm:w-9 max-sm:justify-center max-sm:px-0"
       >
         <LogIn className="size-4" />
         <span className="max-sm:sr-only">{texts.account.signIn}</span>
@@ -44,12 +44,19 @@ export const AccountButton = () => {
   const name = user.user_metadata?.full_name ?? user.email;
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className={CHIP} aria-label={texts.account.menu(name)}>
-        {picture ? (
-          <img src={picture} alt="" referrerPolicy="no-referrer" className="size-full object-cover" />
-        ) : (
-          <span className="font-heading text-sm font-bold uppercase">{user.email?.[0] ?? "?"}</span>
-        )}
+      {/* Desktop: a chevron beside the picture says it opens a menu */}
+      <DropdownMenuTrigger
+        aria-label={texts.account.menu(name)}
+        className="group flex shrink-0 items-center gap-1.5 rounded-full text-hero-muted transition-colors hover:text-hero-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
+      >
+        <span className={CHIP}>
+          {picture ? (
+            <img src={picture} alt="" referrerPolicy="no-referrer" className="size-full object-cover" />
+          ) : (
+            <span className="font-heading text-sm font-bold uppercase">{user.email?.[0] ?? "?"}</span>
+          )}
+        </span>
+        <ChevronDown className="size-4 transition-transform group-data-[state=open]:rotate-180 max-md:hidden" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-56">
         <DropdownMenuLabel className="grid gap-0.5 font-normal">

@@ -13,7 +13,7 @@ const LanguageSwitch = ({ className }) => {
   return (
     <nav
       aria-label={texts.header.language}
-      className={cn("flex shrink-0 items-center gap-1 rounded-full bg-hero-glass p-1 text-xs font-semibold ring-1 ring-hero-glass-edge backdrop-blur-md", className)}
+      className={cn("flex shrink-0 items-center gap-1 rounded-full bg-hero-glass p-1 text-xs font-semibold md:h-10 md:p-1.5 md:text-sm ring-1 ring-hero-glass-edge backdrop-blur-md", className)}
     >
       <Languages className="mx-1 size-3.5 text-hero-muted max-sm:hidden" aria-hidden />
       {LOCALES.map((locale) => (
@@ -24,7 +24,7 @@ const LanguageSwitch = ({ className }) => {
           lang={locale}
           aria-current={locale === lang ? "page" : undefined}
           className={cn(
-            "rounded-full px-2.5 py-1 uppercase transition-colors",
+            "rounded-full px-2.5 py-1 uppercase transition-colors md:px-3",
             locale === lang ? "bg-hero-chip-active text-hero-chip-active-foreground shadow-sm" : "text-hero-muted hover:text-hero-foreground"
           )}
         >

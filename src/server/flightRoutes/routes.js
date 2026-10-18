@@ -16,7 +16,7 @@ export const ROUTE_ORIGINS = [
 const listed = (first, second) => ROUTE_ORIGINS.indexOf(first) - ROUTE_ORIGINS.indexOf(second);
 
 // Every route from `origin`: [{ slug, origin: { code, city, country, tz }, city, country, countryCode, region,
-// airports: [{ code, airlines, tz }] }], named in `lang`, by city name
+// airports: [{ code, name, airlines, tz }] }], named in `lang`, by city name
 export const routesFrom = async (origin, lang = "es") => (await readOrigin(origin, lang))?.routes ?? [];
 
 // The airports we publish routes from, each with its own page (/es/flights/malta): [{ slug, code, city, country,

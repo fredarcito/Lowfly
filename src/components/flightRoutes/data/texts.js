@@ -28,6 +28,39 @@ const es = {
     points: ["Un plan día a día", "Qué ver y hacer", "Dónde comer", "La ruta de cada día en Google Maps"],
     button: "Crear itinerario",
   },
+  // The questions people ask about a route, answered with its own figures (RoutePage/utils/routeFaq)
+  faq: {
+    title: (origin, city) => `Preguntas frecuentes sobre los vuelos de ${origin} a ${city}`,
+    price: {
+      question: (origin, city) => `¿Cuánto cuesta volar de ${origin} a ${city}?`,
+      answer: (price, airline, day) =>
+        `El vuelo más barato de los próximos seis meses cuesta ${price} solo ida por persona, con ${airline}, el ${day}. Incluye un bolso pequeño bajo el asiento; la maleta se paga aparte.`,
+    },
+    month: {
+      question: (origin, city) => `¿Cuál es el mes más barato para volar de ${origin} a ${city}?`,
+      answer: (month, price, next) =>
+        `${month}, con vuelos desde ${price}.${next.length ? ` Le ${next.length === 1 ? "sigue" : "siguen"} ${next.map(([nextMonth, nextPrice]) => `${nextMonth} (desde ${nextPrice})`).join(" y ")}.` : ""}`,
+    },
+    airlines: {
+      question: (origin, city) => `¿Qué aerolíneas vuelan directo de ${origin} a ${city}?`,
+      answer: (airlines, count) =>
+        `${count === 1 ? `Solo ${airlines} vuela` : `${airlines} vuelan`} directo en esta ruta. Reservas en la web de la aerolínea, sin intermediarios ni comisiones.`,
+    },
+    duration: {
+      question: (origin, city) => `¿Cuánto dura el vuelo de ${origin} a ${city}?`,
+      answer: (duration) => `Unas ${duration}, en vuelo directo y sin escalas.`,
+    },
+    airports: {
+      question: (origin, city) => `¿A qué aeropuertos de ${city} se puede volar desde ${origin}?`,
+      answer: (airports, city) => `${airports}. Cuando buscas ${city}, comparamos todos a la vez.`,
+    },
+    plan: {
+      question: (city) => `¿Qué ver en ${city}?`,
+      answer: (city, highlights) =>
+        `${highlights ? `Destaca por ${highlights}. ` : ""}Si quieres, te creamos gratis un itinerario día a día de ${city} para tus fechas: qué ver, dónde comer y cómo moverte.`,
+      link: "Crear itinerario",
+    },
+  },
   others: (origin) => `Más destinos desde ${origin}`,
   othersHint: (origin) => `Vuelos baratos desde ${origin}, directos con la aerolínea.`,
   seeAll: "Ver todos los destinos",
@@ -83,6 +116,39 @@ const en = {
     subtitle: (city) => `We make your ${city} itinerary, made for you.`,
     points: ["A day-by-day plan", "What to see and do", "Where to eat", "Each day's route in Google Maps"],
     button: "Create itinerary",
+  },
+  // The questions people ask about a route, answered with its own figures (RoutePage/utils/routeFaq)
+  faq: {
+    title: (origin, city) => `Frequently asked questions about flights from ${origin} to ${city}`,
+    price: {
+      question: (origin, city) => `How much does it cost to fly from ${origin} to ${city}?`,
+      answer: (price, airline, day) =>
+        `The cheapest flight in the next six months costs ${price} one way per person, with ${airline}, on ${day}. It includes a small bag under the seat; a suitcase costs extra.`,
+    },
+    month: {
+      question: (origin, city) => `What is the cheapest month to fly from ${origin} to ${city}?`,
+      answer: (month, price, next) =>
+        `${month}, with flights from ${price}.${next.length ? ` Then ${next.map(([nextMonth, nextPrice]) => `${nextMonth} (from ${nextPrice})`).join(" and ")}.` : ""}`,
+    },
+    airlines: {
+      question: (origin, city) => `Which airlines fly direct from ${origin} to ${city}?`,
+      answer: (airlines, count) =>
+        `${count === 1 ? `Only ${airlines} flies` : `${airlines} fly`} direct on this route. You book on the airline's own site, with no middlemen or fees.`,
+    },
+    duration: {
+      question: (origin, city) => `How long is the flight from ${origin} to ${city}?`,
+      answer: (duration) => `About ${duration}, direct and non-stop.`,
+    },
+    airports: {
+      question: (origin, city) => `Which airports in ${city} can you fly to from ${origin}?`,
+      answer: (airports, city) => `${airports}. When you search for ${city}, we compare them all at once.`,
+    },
+    plan: {
+      question: (city) => `What to see in ${city}?`,
+      answer: (city, highlights) =>
+        `${highlights ? `Known for ${highlights}. ` : ""}If you like, we make you a free day-by-day itinerary of ${city} for your dates: what to see, where to eat and how to get around.`,
+      link: "Create itinerary",
+    },
   },
   others: (origin) => `More destinations from ${origin}`,
   othersHint: (origin) => `Cheap flights from ${origin}, booked straight with the airline.`,

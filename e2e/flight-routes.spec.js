@@ -61,13 +61,30 @@ test.describe("route pages", () => {
       await expect(page.getByRole("link", { name: "Ver fechas y precios" })).toBeVisible();
       await expect(page.getByRole("heading", { name: "Ficha de la ruta" })).toBeVisible();
       // The itinerary: the trip planner with Barcelona already its first town
-      await expect(page.getByRole("link", { name: /Crear itinerario/ })).toHaveAttribute("href", "/es/trips/new?to=BCN");
+      const plan = page.getByRole("heading", { name: "¿Planeas tu viaje?" }).locator("../../..");
+      await expect(plan.getByRole("link", { name: /Crear itinerario/ })).toHaveAttribute("href", "/es/trips/new?to=BCN");
       // The other routes from Malta, each its own page
       await expect(page.getByRole("link", { name: "Atenas", exact: true })).toHaveAttribute("href", "/es/flights/malta-athens");
       await expect(page.getByRole("link", { name: /Ver todos los destinos/ })).toHaveAttribute("href", "/es/flights/malta");
       await expectNoSidewaysScroll(page);
     });
   }
+
+  test("a route answers the usual questions with its own figures, the same ones search engines get @live", async ({ page }) => {
+    await page.goto("/es/flights/madrid-london");
+    const faq = page.getByRole("heading", { name: "Preguntas frecuentes sobre los vuelos de Madrid a Londres" }).locator("..");
+    await expect(faq.getByRole("heading", { name: "¿Cuánto cuesta volar de Madrid a Londres?" })).toBeVisible();
+    await expect(faq.getByText(/^El vuelo más barato de los próximos seis meses cuesta [\d,]+\s€ solo ida por persona/)).toBeVisible();
+    // Several airports: each by its name
+    await expect(faq.getByText(/Londres Stansted \(STN\)/)).toBeVisible();
+    await expect(faq.getByRole("link", { name: /Crear itinerario/ })).toHaveAttribute("href", "/es/trips/new?to=STN");
+    // FAQPage: the very questions and answers on the page
+    const blocks = (await page.locator('script[type="application/ld+json"]').allTextContents()).map((block) => JSON.parse(block));
+    const faqPage = blocks.find((block) => block["@type"] === "FAQPage");
+    const shown = await faq.getByRole("heading", { level: 3 }).allTextContents();
+    expect(faqPage.mainEntity.map((question) => question.name)).toEqual(shown);
+    for (const question of faqPage.mainEntity) await expect(faq.getByText(question.acceptedAnswer.text, { exact: true })).toBeVisible();
+  });
 
   test("Malta's page: every destination by region, with its price @live", async ({ page }) => {
     test.setTimeout(120_000);

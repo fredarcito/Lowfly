@@ -33,7 +33,8 @@ const citiesFrom = async (origin, lang) => {
       region: regionOf(destination.countryCode),
       airports: [],
     };
-    route.airports.push({ code: destination.code, airlines: destination.airlines, tz: byCode.get(destination.code)?.tz });
+    const airport = byCode.get(destination.code);
+    route.airports.push({ code: destination.code, name: airport?.name ?? null, airlines: destination.airlines, tz: airport?.tz });
     byCity.set(key, route);
   }
   return { routes: [...byCity.values()], failed };

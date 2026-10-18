@@ -9,7 +9,7 @@ import { useI18n } from "@/context/i18n";
 const SearchHero = ({ collapsed }) => {
   const { texts } = useI18n();
   return (
-    <header className="relative isolate overflow-hidden bg-(image:--hero) px-4 pt-[calc(2.5rem+env(safe-area-inset-top,0px))] pb-24 text-hero-foreground sm:px-6">
+    <header className="relative isolate overflow-hidden bg-(image:--hero) px-4 pt-[calc(1rem+env(safe-area-inset-top,0px))] sm:pt-[calc(1.75rem+env(safe-area-inset-top,0px))] pb-24 text-hero-foreground sm:px-6">
       <HeroPhoto />
       <div className="mx-auto grid max-w-5xl gap-3">
         <TopBar className="mb-4 sm:mb-6" />

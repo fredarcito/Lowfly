@@ -1,7 +1,9 @@
 // A shared trip's page with ?save=1 keeps it in My trips (SharedTrip)
 export const SAVE_SHARED_TRIP = "save";
 
-// App pages (always in English; the language is the first segment)
+import { sectionIn } from "@/constants/sections";
+
+// App pages (in English, the language the first segment), but the sections named in each language (constants/sections)
 export const ROUTES = {
   home: (lang) => `/${lang}`,
   trips: (lang) => `/${lang}/trips`,
@@ -15,9 +17,10 @@ export const ROUTES = {
   flights: (lang) => `/${lang}/flights`,
   // A route's page, for search engines: /es/flights/malta-barcelona
   flightRoute: (lang, slug) => `/${lang}/flights/${slug}`,
-  // The city guides: every one (/es/guides), and one city's itinerary (/es/guides/rome-3-days)
-  guides: (lang) => `/${lang}/guides`,
-  guide: (lang, slug) => `/${lang}/guides/${slug}`,
+  // The city guides, named in each language: every one (/es/guias), and one city's itinerary (/es/guias/roma-3-dias;
+  // `slug`: the guide's in that language, server/cityGuides)
+  guides: (lang) => `/${lang}/${sectionIn(lang, "guides")}`,
+  guide: (lang, slug) => `/${lang}/${sectionIn(lang, "guides")}/${slug}`,
   privacy: (lang) => `/${lang}/privacy`,
   // The team's pages (admins only; anyone else gets "not found"): figures, accounts, settings
   admin: (lang) => `/${lang}/admin`,

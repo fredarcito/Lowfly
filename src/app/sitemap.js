@@ -32,7 +32,7 @@ const sitemap = async () => {
     ...airports.flatMap((origin) => entries((lang) => ROUTES.flightRoute(lang, origin.slug), 0.8, origin.updatedAt)),
     ...routes.flatMap((route) => entries((lang) => ROUTES.flightRoute(lang, route.slug), 0.7, route.updatedAt)),
     ...entries(ROUTES.guides, 0.6),
-    ...listCityGuides("en").flatMap((guide) => entries((lang) => ROUTES.guide(lang, guide.slug), 0.7)),
+    ...listCityGuides("en").flatMap((guide) => entries((lang) => ROUTES.guide(lang, guide.slugs[lang] ?? guide.id), 0.7)),
   ];
 };
 

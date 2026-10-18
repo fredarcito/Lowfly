@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import GuidePage from "@/components/guides/GuidePage";
 import GuideHero from "@/components/guides/GuidePage/components/GuideHero";
 import TripsPage from "@/components/trips/TripsPage";
@@ -6,16 +6,17 @@ import { guideTexts } from "@/components/guides/data/texts";
 import { I18nProvider } from "@/providers/I18nProvider";
 import { LOCALES } from "@/i18n/config";
 import { APP_NAME, LOCALE_TAGS } from "@/i18n";
-import { getCityGuide, listCityGuides } from "@/server/cityGuides";
+import { cityGuideSlugIn, getCityGuide, listCityGuides } from "@/server/cityGuides";
 import { getPhotos } from "@/server/photos";
 import { ROUTES } from "@/constants/routes";
 import { SITE_URL, alternatesOf, breadcrumbsOf, openGraphOf } from "@/utils/metadata";
 import JsonLd from "@/components/shared/JsonLd";
 
-// A city guide (/es/guides/rome-3-days): its itinerary as scripts/city-guides.mjs wrote it (never made on a visit),
-// every guide made at build time; the city's photo is read again once a day
+// A city guide (/es/guias/roma-3-dias; /en/guides/rome-3-days): its itinerary as scripts/city-guides.mjs wrote it
+// (never made on a visit), every guide made at build time; the city's photo is read again once a day. Its name in
+// another language (/es/guias/rome-3-days) is sent to this language's; any other name is not found.
 export const revalidate = 86400;
-export const dynamicParams = false;
+export const dynamicParams = true;
 export const generateStaticParams = () => LOCALES.flatMap((lang) => listCityGuides(lang).map((guide) => ({ lang, guide: guide.slug })));
 
 // Its own photo, or its city's usual one
@@ -31,7 +32,7 @@ export const generateMetadata = async ({ params }) => {
   return {
     title,
     description,
-    alternates: alternatesOf(lang, (locale) => ROUTES.guide(locale, slug)),
+    alternates: alternatesOf(lang, (locale) => ROUTES.guide(locale, guide.slugs[locale] ?? guide.id)),
     openGraph: openGraphOf(lang, { title, description, url: ROUTES.guide(lang, slug), image: photo?.src }),
   };
 };
@@ -78,11 +79,17 @@ const structuredData = (lang, guide) => {
 const CityGuidePage = async ({ params }) => {
   const { lang, guide: slug } = await params;
   const guide = getCityGuide(slug, lang);
-  if (!guide) notFound();
+  if (!guide) {
+    const named = cityGuideSlugIn(slug, lang);
+    if (named) permanentRedirect(ROUTES.guide(lang, named));
+    notFound();
+  }
   const photo = await photoOf(guide);
+  // The language switch goes to the same guide under its name in the other language
+  const paths = Object.fromEntries(LOCALES.map((locale) => [locale, ROUTES.guide(locale, guide.slugs[locale] ?? guide.id)]));
   const [breadcrumbs, trip] = structuredData(lang, guide);
   return (
-    <I18nProvider lang={lang}>
+    <I18nProvider lang={lang} paths={paths}>
       <JsonLd data={breadcrumbs} />
       <JsonLd data={trip} />
       <TripsPage hero={<GuideHero lang={lang} guide={guide} photo={photo} href={ROUTES.newTrip(lang, guide.codes[0])} />}>

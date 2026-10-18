@@ -1,4 +1,4 @@
-// The city guides' words (/es/guides/rome-3-days) and their list (/es/guides), in each language. Every "make it
+// The city guides' words (/es/guias/roma-3-dias) and their list (/es/guias), in each language. Every "make it
 // yours" prompt names something the app's itinerary does and the guide cannot: dates, arrival time, pace,
 // interests, more days.
 const es = {

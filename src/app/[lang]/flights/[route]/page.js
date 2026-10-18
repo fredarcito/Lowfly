@@ -56,7 +56,7 @@ const loadRoute = async (route, lang) => {
     routes,
     origin,
     guide: getGuides([code], lang)[code],
-    // The city's day-by-day guide (/es/guides/rome-3-days), when there is one
+    // The city's day-by-day guide (/es/guias/roma-3-dias), when there is one
     cityGuide: route.airports.map((airport) => cityGuideFor(airport.code, lang)).find(Boolean) ?? null,
     photo,
     airlines: new Intl.ListFormat(LOCALE_TAGS[lang], { style: "long", type: "conjunction" }).format(names),

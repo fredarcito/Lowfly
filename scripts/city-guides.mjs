@@ -1,4 +1,4 @@
-// Writes src/data/cityGuides.json: the city guides' itineraries (/es/guides/rome-3-days), made once by the AI
+// Writes src/data/cityGuides.json: the city guides' itineraries (/es/guias/roma-3-dias), made once by the AI
 // through our API (/api/city-guides: the same planner as the app's, for any visitor, with no dates) and then only
 // read by the pages. Made in Spanish and translated into English: the same guide in both, its places, times and
 // order (a reader switching languages finds the same days). Read the diff before publishing: search engines read
@@ -16,12 +16,14 @@ const FIRST_LANG = "es";
 const TRANSLATIONS = ["en"];
 const RETRIES = 3;
 
-// The guides: `codes`, the airports that fly there (a route's page to one of them links to the guide); `lat`,
+// The guides, by their id (the file's key): `slugs`, their names in the address in each language (/es/guias/roma-3-dias);
+// `codes`, the airports that fly there (a route's page to one of them links to the guide); `lat`,
 // `lng`, the centre (only places near it are kept); `photo`, a Wikimedia Commons file for its card and header
 // (otherwise the city's usual one, server/photos), with its author and licence read from Commons on every run
 const GUIDES = [
   {
     slug: "rome-3-days",
+    slugs: { es: "roma-3-dias", en: "rome-3-days" },
     dayCount: 3,
     codes: ["FCO", "CIA"],
     city: { es: "Roma", en: "Rome" },
@@ -31,6 +33,7 @@ const GUIDES = [
   },
   {
     slug: "lisbon-3-days",
+    slugs: { es: "lisboa-3-dias", en: "lisbon-3-days" },
     dayCount: 3,
     codes: ["LIS"],
     city: { es: "Lisboa", en: "Lisbon" },

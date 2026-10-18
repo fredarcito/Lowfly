@@ -36,7 +36,7 @@ const GuideCard = ({ guide, photo }) => {
           title={texts.share.title}
           description={texts.share.text}
           message={texts.title(guide.city, guide.dayCount)}
-          analytics={{ content_type: "guide", item_id: guide.slug }}
+          analytics={{ content_type: "guide", item_id: guide.id }}
           className="absolute top-3 right-3 z-20 h-9 bg-black/45 px-3.5 text-white hover:bg-black/65 hover:text-white dark:hover:bg-black/65"
         />
       </div>

@@ -1158,7 +1158,11 @@
     ]
    }
   },
-  "photo": null
+  "photo": null,
+  "slugs": {
+   "es": "lisboa-3-dias",
+   "en": "lisbon-3-days"
+  }
  },
  "rome-3-days": {
   "dayCount": 3,
@@ -2266,6 +2270,10 @@
     ]
    }
   },
-  "photo": null
+  "photo": null,
+  "slugs": {
+   "es": "roma-3-dias",
+   "en": "rome-3-days"
+  }
  }
 }

@@ -24,7 +24,7 @@ export const generateMetadata = async ({ params }) => {
 // Every city's photo is read again once a day
 export const revalidate = 86400;
 
-// Every city guide: /es/guides, each with its photo: its own, or its city's
+// Every city guide: /es/guias, each with its photo: its own, or its city's
 const CityGuidesPage = async ({ params }) => {
   const { lang } = await params;
   const texts = guideTexts(lang).list;

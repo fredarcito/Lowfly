@@ -481,7 +481,7 @@ export const createItinerary = async ({ trip, lang, preferences, onAiCall }) => 
   return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, weather: weather ? [weather] : [], days };
 };
 
-// A city guide's itinerary (/es/guides/rome-3-days), the same for every visitor: `dayCount` full days in town, with
+// A city guide's itinerary (/es/guias/roma-3-dias), the same for every visitor: `dayCount` full days in town, with
 // no dates, no arrival, no departure and no check-in, at a balanced pace for the usual interests. Made once by
 // scripts/city-guides.mjs and kept in src/data/cityGuides.json. Its days are "day-1", "day-2"… instead of dates.
 // city: { city, country, lat, lng } (the centre: only places near it are kept)

@@ -21,7 +21,7 @@ const GuideHero = ({ lang, guide, photo, href }) => {
       </h1>
       <p className="max-w-[60ch] text-hero-muted sm:text-lg">{guide.intro.summary}</p>
       <div className="mt-1 flex flex-wrap items-center gap-3">
-        <TailorLink href={href} guide={guide.slug} spot="hero" className="h-12 w-fit px-6 text-base font-bold">
+        <TailorLink href={href} guide={guide.id} spot="hero" className="h-12 w-fit px-6 text-base font-bold">
           {texts.prompts.hero.button}
         </TailorLink>
         <ShareButton
@@ -29,7 +29,7 @@ const GuideHero = ({ lang, guide, photo, href }) => {
           title={texts.share.title}
           description={texts.share.text}
           message={texts.title(guide.city, guide.dayCount)}
-          analytics={{ content_type: "guide", item_id: guide.slug }}
+          analytics={{ content_type: "guide", item_id: guide.id }}
           className="h-12 px-5 text-base"
         />
       </div>

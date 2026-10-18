@@ -51,6 +51,28 @@ test.describe("city guides", () => {
     await expect(page.locator("form section ol > li").first()).toContainText("Roma");
   });
 
+  // With many guides, a country picked as in the flight search (searchable, with the keyboard) and the length in
+  // sight; the cards follow
+  test("filtering the guides by country and length", async ({ page }) => {
+    await page.goto("/es/guias");
+    const cards = page.getByRole("article");
+    const all = await cards.count();
+    await page.getByRole("button", { name: "Todos los países" }).click();
+    await page.getByRole("combobox", { name: "Busca un país" }).fill("ita");
+    await page.keyboard.press("Enter");
+    await expect(page.getByRole("button", { name: "Italia" })).toBeVisible();
+    const italian = await cards.count();
+    expect(italian).toBeLessThan(all);
+    await expect(cards.filter({ hasText: "Italia" })).toHaveCount(italian);
+    await page.getByRole("radio", { name: "1 día" }).click();
+    const oneDay = await cards.count();
+    expect(oneDay).toBeGreaterThan(0);
+    expect(oneDay).toBeLessThan(italian);
+    await expect(cards.filter({ hasText: "1 día ·" })).toHaveCount(oneDay);
+    await page.getByRole("radio", { name: "Todas" }).click();
+    await expect(cards).toHaveCount(italian);
+  });
+
   // The guides from anywhere: a tab of the top bar (marked on their pages), and the foot of every page, the home too
   test("the top bar and the home's foot lead to the guides", async ({ page }) => {
     await page.goto("/es");
@@ -134,10 +156,11 @@ test.describe("city guides", () => {
     await expect(cards).toHaveCount(1);
     await expect(cards.first()).toContainText("París");
     await page.getByRole("searchbox").fill("");
-    await page.getByRole("combobox").nth(0).selectOption({ label: "Italia" });
-    await page.getByRole("combobox").nth(1).selectOption({ label: "1 día" });
+    await page.getByRole("button", { name: "Todos los países" }).click();
+    await page.getByRole("option", { name: "Francia" }).click();
+    await page.getByRole("radio", { name: "3 días" }).click();
     await expect(cards).toHaveCount(1);
-    await expect(cards.first()).toContainText("Bolonia");
+    await expect(cards.first()).toContainText("París");
     await page.getByRole("searchbox").fill("no existe");
     await expect(cards).toHaveCount(0);
     await expect(page.getByText("No hay guías con esa búsqueda.", { exact: false })).toBeVisible();

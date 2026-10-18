@@ -1,6 +1,8 @@
 "use client";
 
-import { CalendarDays, ChevronDown, Globe, Search } from "lucide-react";
+import { Search } from "lucide-react";
+import CountryFilter from "@/components/guides/GuidesPage/components/GuideBrowser/components/CountryFilter";
+import LengthFilter from "@/components/guides/GuidesPage/components/GuideBrowser/components/LengthFilter";
 import GuideCard from "@/components/guides/GuidesPage/components/GuideCard";
 import { guideTexts } from "@/components/guides/data/texts";
 import { useGuideFilters } from "@/components/guides/GuidesPage/components/GuideBrowser/hooks/useGuideFilters";
@@ -14,18 +16,6 @@ const FILTERS_FROM = 7;
 
 const FIELD = "h-12 w-full rounded-xl bg-card text-sm ring-1 ring-foreground/10 outline-none focus-visible:ring-2 focus-visible:ring-primary";
 
-// A filter: a plain select (the phone's own picker), with its icon and arrow
-const Filter = ({ icon: Icon, label, value, onChange, children }) => (
-  <label className="relative">
-    <span className="sr-only">{label}</span>
-    <Icon className="pointer-events-none absolute top-1/2 left-4 size-4.5 -translate-y-1/2 text-muted-foreground" />
-    <select value={value} onChange={(event) => onChange(event.target.value)} className={cn(FIELD, "appearance-none pr-10 pl-11")}>
-      {children}
-    </select>
-    <ChevronDown className="pointer-events-none absolute top-1/2 right-4 size-4 -translate-y-1/2 text-muted-foreground" />
-  </label>
-);
-
 // Every guide as a card, under the search when there are enough of them. `guides`: server/cityGuides
 // listCityGuides; `photos`: { guide's slug: its photo, or null }.
 const GuideBrowser = ({ guides, photos }) => {
@@ -37,7 +27,7 @@ const GuideBrowser = ({ guides, photos }) => {
   return (
     <section className="grid gap-6">
       {filtered && (
-        <div className="grid gap-3 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)_minmax(0,1fr)]">
+        <div className="grid gap-3 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_auto]">
           <label className="relative">
             <span className="sr-only">{texts.search}</span>
             <Search className="pointer-events-none absolute top-1/2 left-4 size-4.5 -translate-y-1/2 text-muted-foreground" />
@@ -49,22 +39,8 @@ const GuideBrowser = ({ guides, photos }) => {
               className={cn(FIELD, "pr-4 pl-11 placeholder:text-muted-foreground")}
             />
           </label>
-          <Filter icon={Globe} label={texts.allCountries} value={filters.country} onChange={filters.setCountry}>
-            <option value="">{texts.allCountries}</option>
-            {filters.countries.map((country) => (
-              <option key={country} value={country}>
-                {country}
-              </option>
-            ))}
-          </Filter>
-          <Filter icon={CalendarDays} label={texts.anyLength} value={filters.dayCount} onChange={filters.setDayCount}>
-            <option value="">{texts.anyLength}</option>
-            {filters.dayCounts.map((dayCount) => (
-              <option key={dayCount} value={dayCount}>
-                {texts.days(dayCount)}
-              </option>
-            ))}
-          </Filter>
+          <CountryFilter countries={filters.countries} value={filters.country} onChange={filters.setCountry} texts={texts} />
+          <LengthFilter dayCounts={filters.dayCounts} value={filters.dayCount} onChange={filters.setDayCount} texts={texts} />
         </div>
       )}
       <h2 className="font-heading text-2xl font-extrabold tracking-tight sm:text-3xl">{texts.explore}</h2>

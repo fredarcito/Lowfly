@@ -17,10 +17,12 @@ const GuidePage = ({ lang, guide }) => {
   const texts = allTexts.prompts;
   const href = ROUTES.newTrip(lang, guide.codes[0]);
   const { days } = guide.itinerary;
+  const firstStart = days[0]?.stops[0]?.time?.match(/\d{1,2}:\d{2}/)?.[0] ?? "9:00";
   // After which day each prompt shows (a short guide keeps only the last one)
   const promptAfter = (index) => {
     if (index === days.length - 1) return { spot: "afterLastDay", prompt: { ...texts.afterLastDay, title: texts.afterLastDay.title(days.length) } };
-    if (index === 0) return { spot: "afterFirstDay", prompt: texts.afterFirstDay };
+    // When the guide's first day starts ("08:30"), which the reader's own may not
+    if (index === 0) return { spot: "afterFirstDay", prompt: { ...texts.afterFirstDay, text: texts.afterFirstDay.text(firstStart) } };
     if (index === 1) return { spot: "afterSecondDay", prompt: texts.afterSecondDay };
     return null;
   };

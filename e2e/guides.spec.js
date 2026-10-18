@@ -68,8 +68,7 @@ test.describe("city guides", () => {
     await page.goto("/es/privacy");
     await page.getByRole("contentinfo").getByRole("link", { name: "Guías de viaje" }).click();
     await expect(page).toHaveURL(/\/es\/guias$/);
-    // With few guides, no search to get in the way; and for any other trip, the planner
-    await expect(page.getByRole("searchbox")).toHaveCount(0);
+    // For any other trip, the planner
     await expect(page.getByRole("link", { name: "Crear itinerario", exact: true }).last()).toHaveAttribute("href", "/es/trips/new");
     await expect(page.getByRole("article").filter({ hasText: "Italia" }).filter({ hasText: "3 días · 12 lugares" })).toBeVisible();
     await page.getByRole("link", { name: /Qué ver en Roma en 3 días/ }).click();
@@ -124,5 +123,36 @@ test.describe("city guides", () => {
       await expect(page).toHaveURL(to);
     }
     expect((await request.get("/es/guias/no-existe")).status()).toBe(404);
+  });
+
+  // With enough guides, the list has a search and filters by country and length
+  test("searching and filtering the guides", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    await page.goto("/es/guias");
+    const cards = page.getByRole("article");
+    await page.getByRole("searchbox").fill("paris");
+    await expect(cards).toHaveCount(1);
+    await expect(cards.first()).toContainText("París");
+    await page.getByRole("searchbox").fill("");
+    await page.getByRole("combobox").nth(0).selectOption({ label: "Italia" });
+    await page.getByRole("combobox").nth(1).selectOption({ label: "1 día" });
+    await expect(cards).toHaveCount(1);
+    await expect(cards.first()).toContainText("Bolonia");
+    await page.getByRole("searchbox").fill("no existe");
+    await expect(cards).toHaveCount(0);
+    await expect(page.getByText("No hay guías con esa búsqueda.", { exact: false })).toBeVisible();
+  });
+
+  // A one-day guide says "1 día", "1 day", never "1 días"
+  test("a one-day guide, in the singular", async ({ page }) => {
+    await page.goto("/es/guias/bolonia-1-dia");
+    await expect(page).toHaveTitle("Qué ver en Bolonia en 1 día: itinerario día a día · Lowfly");
+    await expect(page.getByRole("heading", { level: 1, name: "Qué ver en Bolonia en 1 día" })).toBeVisible();
+    await expect(page.getByText("Itinerario de 1 día · día a día")).toBeVisible();
+    await expect(page.getByText("¿Tienes más de un día?")).toBeVisible();
+    await page.goto("/en/guides/bologna-1-day");
+    await expect(page).toHaveTitle("Bologna in 1 day: a day-by-day itinerary · Lowfly");
+    await expect(page.getByRole("heading", { level: 1, name: "Bologna in 1 day: what to see" })).toBeVisible();
+    await expect(page.getByText("More than one day?")).toBeVisible();
   });
 });

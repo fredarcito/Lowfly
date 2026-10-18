@@ -525,7 +525,7 @@ const GUIDE_INTRO_SCHEMA = {
 export const writeGuideIntro = async ({ city, country, dayCount, lang, onAiCall }) => {
   const started = Date.now();
   const { data, usage, model, provider } = await planWithAi({
-    instructions: `You write the introduction of a public travel guide: "${city} in ${dayCount} days", for a first-time visitor to ${city}, ${country}.
+    instructions: `You write the introduction of a public travel guide: "${city} in ${dayCount === 1 ? "1 day" : `${dayCount} days`}", for a first-time visitor to ${city}, ${country}.
 Write in ${LANGUAGES[lang]}, warm and practical, like a local friend${lang === "es" ? ' (tú, never usted)' : ""}. Only facts you are sure of: no prices, no opening hours, no dates of construction. No emojis, no exclamation marks.`,
     prompt: "Write the introduction now.",
     schema: GUIDE_INTRO_SCHEMA,

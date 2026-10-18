@@ -184,8 +184,7 @@ Traveller preferences:
 - Pace: ${PACE_RULES[preferences.pace] ?? PACE_RULES.balanced}.
 - Interests: ${preferences.interests.join(", ")}.
 - Getting around: ${TRANSPORT_RULES[preferences.transport] ?? TRANSPORT_RULES.transit}.
-- Accommodation check-in on day 1: ${preferences.checkIn}. Add a "logistica" stop for it at that time (place null: we don't know where they stay; say "in the centre"). Plan the hours between arriving and check-in around it: if there is time before, suggest leaving the luggage in storage and light sights nearby; if it is right after arriving, go straight there. If the check-in time comes before they can arrive, check in as soon as they get there.
-
+${preferences.checkIn ? `- Accommodation check-in on day 1: ${preferences.checkIn}. Add a "logistica" stop for it at that time (place null: we don't know where they stay; say "in the centre"). Plan the hours between arriving and check-in around it: if there is time before, suggest leaving the luggage in storage and light sights nearby; if it is right after arriving, go straight there. If the check-in time comes before they can arrive, check in as soon as they get there.\n` : ""}
 Rules:
 - Order stops by time and group nearby places to avoid going back and forth.
 - Day trips: a nearby town is fine when it suits the interests and is worth the trip, at most about 2 hours away each way (within ${MAX_KM_FROM_AIRPORT} km), only on full days (never the first or the last day) and at most one every 3 days. Worth the trip means at least 2 or 3 things to see there (or a meal it is known for) and more time there than on the road: a single sight an hour away is not worth a day. That day, set "excursion" to the town and the travel time each way in minutes, start with breakfast in town before a "transporte" stop to get there, then a "transporte" stop to come back, and after it dinner back in ${city} (the traveller sleeps there), and its "mode" is transit or driving. The day keeps the traveller's pace (its sights count, out there and back in ${city}), and coming back early, fill the hours before dinner in ${city} (a neighbourhood, a viewpoint at sunset, a market): no gap of more than about 1.5 hours. Every stop out of ${city} has "town" set to the town it is in. Every other day, "excursion" is null.
@@ -480,6 +479,61 @@ export const createItinerary = async ({ trip, lang, preferences, onAiCall }) => 
     staysLastNight: !trip.ret,
   });
   return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, weather: weather ? [weather] : [], days };
+};
+
+// A city guide's itinerary (/es/guides/rome-3-days), the same for every visitor: `dayCount` full days in town, with
+// no dates, no arrival, no departure and no check-in, at a balanced pace for the usual interests. Made once by
+// scripts/city-guides.mjs and kept in src/data/cityGuides.json. Its days are "day-1", "day-2"… instead of dates.
+// city: { city, country, lat, lng } (the centre: only places near it are kept)
+export const GUIDE_PREFERENCES = { pace: "balanced", interests: ["culture", "food"], transport: "transit", checkIn: null };
+
+export const createGuideItinerary = async ({ city, country, lat, lng, dayCount, lang, onAiCall }) => {
+  const dates = Array.from({ length: dayCount }, (_, index) => `day-${index + 1}`);
+  const travel = [
+    `- This is a public guide for any first-time visitor, with no dates: every day is a full day in ${city}, from breakfast to dinner. The traveller is already in town and sleeps in the centre. No arrival, no departure, no airport, no check-in, no luggage.`,
+    `- No day trips: every day stays in ${city}, and "excursion" is always null. Each day covers one or two areas, so the whole guide shows the essential ${city} once, without repeating a sight.`,
+  ];
+  const { days } = await planDays({
+    lang,
+    city,
+    country,
+    destination: { lat, lng },
+    dates,
+    travel,
+    preferences: GUIDE_PREFERENCES,
+    label: `guide ${city}`,
+    onAiCall,
+    staysLastNight: true,
+  });
+  return { source: "guide", lang, createdAt: new Date().toISOString(), preferences: GUIDE_PREFERENCES, days };
+};
+
+const GUIDE_INTRO_SCHEMA = {
+  type: "object",
+  properties: {
+    summary: { type: "string", description: "One sentence for search results: what the guide covers, under 150 characters" },
+    about: { type: "string", description: "2–3 sentences on the city for a first-time visitor: what it is like and why go" },
+    stay: { type: "string", description: "1–2 sentences on the best area to stay for this itinerary, and why" },
+    gettingAround: { type: "string", description: "1–2 sentences on getting around: on foot, metro, bus, tickets" },
+    bestTime: { type: "string", description: "1–2 sentences on the best time of year to go, and what to expect in the others" },
+  },
+  required: ["summary", "about", "stay", "gettingAround", "bestTime"],
+};
+
+// A city guide's introduction (the page's text above the days), in `lang`: { summary, about, stay, gettingAround,
+// bestTime }. Made with the guide (createGuideItinerary).
+export const writeGuideIntro = async ({ city, country, dayCount, lang, onAiCall }) => {
+  const started = Date.now();
+  const { data, usage, model, provider } = await planWithAi({
+    instructions: `You write the introduction of a public travel guide: "${city} in ${dayCount} days", for a first-time visitor to ${city}, ${country}.
+Write in ${LANGUAGES[lang]}, warm and practical, like a local friend${lang === "es" ? ' (tú, never usted)' : ""}. Only facts you are sure of: no prices, no opening hours, no dates of construction. No emojis, no exclamation marks.`,
+    prompt: "Write the introduction now.",
+    schema: GUIDE_INTRO_SCHEMA,
+  });
+  onAiCall?.({ city, country, days: dayCount, provider, model, usage, durationMs: Date.now() - started });
+  const intro = Object.fromEntries(Object.keys(GUIDE_INTRO_SCHEMA.properties).map((key) => [key, text(data?.[key], 500)]));
+  if (Object.values(intro).some((value) => !value)) throw new AppError("aiUnavailable");
+  return intro;
 };
 
 // A trip the traveller planned themselves, through one or more towns, in order:

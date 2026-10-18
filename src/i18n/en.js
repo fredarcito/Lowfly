@@ -15,7 +15,7 @@ const en = {
     search: "Search flights",
     trips: "My trips",
   },
-  footer: { label: "More from Lowfly", flights: "Cheap flights by airport" },
+  footer: { label: "More from Lowfly", flights: "Cheap flights by airport", guides: "Travel guides" },
   header: {
     kicker: "Cheap flights · itineraries made for you",
     // Two lines: the title is shown with white-space: pre-line

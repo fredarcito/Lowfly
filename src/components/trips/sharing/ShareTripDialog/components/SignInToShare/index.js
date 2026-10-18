@@ -5,7 +5,7 @@ import { LogIn, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/context/i18n";
 import { ROUTES } from "@/constants/routes";
-import DialogHeading from "@/components/trips/sharing/ShareTripDialog/components/DialogHeading";
+import DialogHeading from "@/components/shared/DialogHeading";
 
 // Signed out: links live in the account (so they can be turned off), so sign in first and come back here
 const SignInToShare = () => {

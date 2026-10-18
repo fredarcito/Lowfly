@@ -15,7 +15,7 @@ const es = {
     search: "Buscar vuelos",
     trips: "Mis viajes",
   },
-  footer: { label: "Más de Lowfly", flights: "Vuelos baratos por aeropuerto" },
+  footer: { label: "Más de Lowfly", flights: "Vuelos baratos por aeropuerto", guides: "Guías de viaje" },
   header: {
     kicker: "Vuelos baratos · itinerarios a tu medida",
     // Two lines: the title is shown with white-space: pre-line

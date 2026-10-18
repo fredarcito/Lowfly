@@ -15,6 +15,9 @@ export const ROUTES = {
   flights: (lang) => `/${lang}/flights`,
   // A route's page, for search engines: /es/flights/malta-barcelona
   flightRoute: (lang, slug) => `/${lang}/flights/${slug}`,
+  // The city guides: every one (/es/guides), and one city's itinerary (/es/guides/rome-3-days)
+  guides: (lang) => `/${lang}/guides`,
+  guide: (lang, slug) => `/${lang}/guides/${slug}`,
   privacy: (lang) => `/${lang}/privacy`,
   // The team's pages (admins only; anyone else gets "not found"): figures, accounts, settings
   admin: (lang) => `/${lang}/admin`,

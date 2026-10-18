@@ -7,7 +7,7 @@ import { APP_NAME } from "@/i18n/config";
 import { ROUTES } from "@/constants/routes";
 
 // The foot of every page: the logo and what Lowfly is, the page of every airport with route pages (it leads search
-// engines to every route) and the legal pages (only pages that exist: no empty "About" or social profiles)
+// engines to every route), the city guides and the legal pages (only pages that exist: no empty "About" or social profiles)
 const SiteFooter = () => {
   const { lang, texts } = useI18n();
   return (
@@ -24,6 +24,9 @@ const SiteFooter = () => {
       <nav aria-label={texts.footer.label} className="flex flex-wrap gap-x-5 gap-y-2 text-muted-foreground">
         <Link href={ROUTES.flights(lang)} className="hover:text-foreground">
           {texts.footer.flights}
+        </Link>
+        <Link href={ROUTES.guides(lang)} className="hover:text-foreground">
+          {texts.footer.guides}
         </Link>
         <Link href={ROUTES.privacy(lang)} className="hover:text-foreground">
           {texts.account.privacy}

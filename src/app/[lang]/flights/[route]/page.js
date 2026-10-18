@@ -11,6 +11,7 @@ import { AIRLINES, createFormat } from "@/utils/format";
 import { findOrigin, findRoute, origins, routesFrom } from "@/server/flightRoutes/routes";
 import { originPrices, routePrices } from "@/server/flightRoutes/prices";
 import { getGuides } from "@/server/guides";
+import { cityGuideFor } from "@/server/cityGuides";
 import { getPhotos } from "@/server/photos";
 import { ROUTES } from "@/constants/routes";
 import { alternatesOf, breadcrumbsOf, openGraphOf } from "@/utils/metadata";
@@ -36,7 +37,7 @@ const loadOrigin = async (origin, lang) => {
   return { kind: "origin", origin, routes, prices: written, cheapest: Object.values(prices).length ? Math.min(...Object.values(prices)) : null, photo };
 };
 
-// A route's page: { kind: "route", route, prices, routes (from the same airport), origin, guide, photo, airlines,
+// A route's page: { kind: "route", route, prices, routes (from the same airport), origin, guide, cityGuide, photo, airlines,
 // duration (written) }
 const loadRoute = async (route, lang) => {
   const format = createFormat(lang, getDictionary(lang));
@@ -55,6 +56,8 @@ const loadRoute = async (route, lang) => {
     routes,
     origin,
     guide: getGuides([code], lang)[code],
+    // The city's day-by-day guide (/es/guides/rome-3-days), when there is one
+    cityGuide: route.airports.map((airport) => cityGuideFor(airport.code, lang)).find(Boolean) ?? null,
     photo,
     airlines: new Intl.ListFormat(LOCALE_TAGS[lang], { style: "long", type: "conjunction" }).format(names),
     duration: prices?.minutes ? format.duration(prices.minutes) : null,

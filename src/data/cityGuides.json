@@ -1,0 +1,2362 @@
+{
+ "lisbon-3-days": {
+  "dayCount": 3,
+  "codes": [
+   "LIS"
+  ],
+  "city": {
+   "es": "Lisboa",
+   "en": "Lisbon"
+  },
+  "country": {
+   "es": "Portugal",
+   "en": "Portugal"
+  },
+  "lat": 38.7139,
+  "lng": -9.1394,
+  "es": {
+   "intro": {
+    "summary": "Esta guía te ayuda a aprovechar al máximo tus tres días en Lisboa recorriendo sus colinas, barrios históricos y miradores emblemáticos.",
+    "about": "Lisboa es una ciudad de luz, fachadas de azulejos y una melancolía encantadora que se siente en cada esquina. Es un destino perfecto para perderse por sus calles empinadas, disfrutar de su gastronomía tradicional y vivir el ritmo pausado de la capital portuguesa.",
+    "stay": "Te recomiendo alojarte en los barrios de Baixa o Chiado, ya que estarás en el corazón de la ciudad y podrás llegar caminando a los principales puntos de interés.",
+    "gettingAround": "La mejor forma de descubrir la ciudad es caminando, aunque el tranvía y el metro son excelentes aliados para salvar las cuestas más pronunciadas. Recuerda validar tu tarjeta de transporte al subir a cualquier medio público.",
+    "bestTime": "La primavera y el otoño son las mejores estaciones para visitar la ciudad gracias a sus temperaturas suaves y cielos despejados. En verano hace mucho calor y en invierno es frecuente la lluvia, pero siempre encontrarás rincones acogedores para refugiarte."
+   },
+   "itinerary": {
+    "source": "guide",
+    "lang": "es",
+    "createdAt": "2026-10-18T19:38:01.970Z",
+    "preferences": {
+     "pace": "balanced",
+     "interests": [
+      "culture",
+      "food"
+     ],
+     "transport": "transit",
+     "checkIn": null
+    },
+    "days": [
+     {
+      "date": "day-1",
+      "city": "Lisboa",
+      "title": "El corazón histórico y Alfama",
+      "mode": "walking",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "09:00",
+        "type": "comida",
+        "title": "Desayuno tradicional en la Baixa",
+        "town": null,
+        "note": "Es un lugar histórico donde probar la pastelería portuguesa clásica.",
+        "why": null,
+        "lookFor": null,
+        "food": "Confeitaria Nacional",
+        "dishes": [
+         {
+          "name": "Pastel de nata",
+          "what": "Tarta de crema de huevo horneada.",
+          "why": "Es el icono dulce nacional, imprescindible recién hecho."
+         },
+         {
+          "name": "Café pingado",
+          "what": "Un espresso con una gota de leche.",
+          "why": "Es la forma en que los locales disfrutan su dosis de cafeína."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": {
+         "name": "Confeitaria Nacional",
+         "lat": 38.7131355,
+         "lng": -9.1380797
+        }
+       },
+       {
+        "time": "10:30",
+        "type": "imprescindible",
+        "title": "Arco da Rua Augusta",
+        "town": null,
+        "note": "Puedes subir a la terraza para ver la Praça do Comércio desde arriba.",
+        "why": "Es la puerta monumental que simboliza la reconstrucción de Lisboa tras el terremoto.",
+        "lookFor": "Las esculturas de los personajes históricos portugueses en la parte superior.",
+        "food": null,
+        "dishes": null,
+        "cost": "3,00 EUR",
+        "tip": null,
+        "place": {
+         "name": "Arco da Rua Augusta",
+         "lat": 38.7084,
+         "lng": -9.1368
+        },
+        "history": "El arco de Augusta o arco del triunfo de la Rua Augusta es un arco situado en la parte norte de la Praça do Comércio, en la Rua Augusta, en Lisboa (Portugal).",
+        "sources": [
+         {
+          "title": "Wikipedia: Arco de la Rua Augusta",
+          "url": "https://es.wikipedia.org/wiki/Arco_de_la_Rua_Augusta"
+         }
+        ]
+       },
+       {
+        "time": "12:00",
+        "type": "recomendado",
+        "title": "Elevador de Santa Justa",
+        "town": null,
+        "note": "Te sugiero ir temprano para evitar la fila más larga.",
+        "why": "Es una joya de la arquitectura en hierro forjado del siglo XIX.",
+        "lookFor": "Los detalles neogóticos y los acabados en madera de la cabina.",
+        "food": null,
+        "dishes": null,
+        "cost": "5,30 EUR",
+        "tip": null,
+        "place": {
+         "name": "Elevador de Santa Justa",
+         "lat": 38.7121169,
+         "lng": -9.1393753
+        },
+        "history": "El elevador de Santa Justa o elevador do Carmo, es un ascensor que une los barrios de la Baixa Pombalina y el Chiado en Lisboa, Portugal. Se levanta sobre la calle de Santa Justa y enlaza este céntrico paseo con la plaza do Carmo, junto al Museo Arqueológico do Carmo. Este ascensor fue diseñado por Raúl Mesnier, autor también del elevador do Lavra, en esta misma ciudad.",
+        "sources": [
+         {
+          "title": "Wikipedia: Elevador de Santa Justa",
+          "url": "https://es.wikipedia.org/wiki/Elevador_de_Santa_Justa"
+         }
+        ]
+       },
+       {
+        "time": "13:30",
+        "type": "comida",
+        "title": "Almuerzo en una taberna tradicional",
+        "town": null,
+        "note": "Busca un lugar con mesas de madera donde sirvan pescado fresco.",
+        "why": null,
+        "lookFor": null,
+        "food": "Zona de la Baixa",
+        "dishes": [
+         {
+          "name": "Bacalhau à Brás",
+          "what": "Bacalao desmigado con patatas paja y huevo.",
+          "why": "Es la receta de bacalao más querida y reconfortante de Portugal."
+         },
+         {
+          "name": "Sopa de legumes",
+          "what": "Crema de verduras casera.",
+          "why": "Es la forma más sencilla y auténtica de empezar una comida lusa."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 10,
+         "max": 15
+        },
+        "place": {
+         "name": "Restaurante da Baixa",
+         "lat": 38.7097954,
+         "lng": -9.1360848
+        }
+       },
+       {
+        "time": "15:30",
+        "type": "imprescindible",
+        "title": "Sé de Lisboa",
+        "town": null,
+        "note": "La entrada a la catedral es gratuita, el claustro tiene un coste aparte.",
+        "why": "Es la iglesia más antigua de la ciudad, una fortaleza románica impresionante.",
+        "lookFor": "Los rosetones y la robustez de sus torres defensivas.",
+        "food": null,
+        "dishes": null,
+        "cost": "Gratis",
+        "tip": null,
+        "place": {
+         "name": "Sé de Lisboa",
+         "lat": 38.70985,
+         "lng": -9.13298333
+        },
+        "history": "Basílica de Santa María la Mayor de Lisboa o Sé de Lisboa (en portugués: Catedral de Santa Maria Maior) es la catedral metropolitana y sede patriarcal de la ciudad de Lisboa en Portugal. Su construcción se inició en 1148, un año después de que Alfonso Enriques conquistara la ciudad. Está considerada como la iglesia más antigua de Lisboa.",
+        "sources": [
+         {
+          "title": "Wikipedia: Catedral de Lisboa",
+          "url": "https://es.wikipedia.org/wiki/Catedral_de_Lisboa"
+         }
+        ]
+       },
+       {
+        "time": "17:00",
+        "type": "imprescindible",
+        "title": "Castelo de São Jorge",
+        "town": null,
+        "note": "Reserva tu entrada online para asegurar el acceso al atardecer.",
+        "why": "Ofrece la mejor vista panorámica de Lisboa sobre la colina más alta.",
+        "lookFor": "Los pavos reales que pasean libremente por los jardines del recinto.",
+        "food": null,
+        "dishes": null,
+        "cost": "15,00 EUR",
+        "tip": null,
+        "place": {
+         "name": "Castelo de São Jorge",
+         "lat": 38.7139258,
+         "lng": -9.133483
+        },
+        "history": "Castillo de San Jorge puede referirse a: Castillo de San Jorge de Lisboa, en Portugal. Castillo de San Jorge de Sevilla, en España. Castillo de San Jorge de la Isla de Celafonia, en Grecia.",
+        "sources": [
+         {
+          "title": "Wikipedia: Castillo de San Jorge",
+          "url": "https://es.wikipedia.org/wiki/Castillo_de_San_Jorge"
+         }
+        ]
+       },
+       {
+        "time": "20:00",
+        "type": "comida",
+        "title": "Cena con fado en Alfama",
+        "town": null,
+        "note": "Elige una casa de fado pequeña y familiar.",
+        "why": null,
+        "lookFor": null,
+        "food": "Casas de Fado en Alfama",
+        "dishes": [
+         {
+          "name": "Caldo Verde",
+          "what": "Sopa de col, patata y chorizo.",
+          "why": "Es un clásico sencillo que calienta el cuerpo antes del fado."
+         },
+         {
+          "name": "Vinho Verde",
+          "what": "Vino joven, ligero y ligeramente espumoso.",
+          "why": "Es el acompañamiento perfecto para la cocina tradicional lisboeta."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 10,
+         "max": 15
+        },
+        "place": {
+         "name": "Alfama",
+         "lat": 38.7117704,
+         "lng": -9.12838
+        }
+       }
+      ]
+     },
+     {
+      "date": "day-2",
+      "city": "Lisboa",
+      "title": "El esplendor de los descubrimientos en Belém",
+      "mode": "transit",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "09:00",
+        "type": "comida",
+        "title": "Desayuno en Belém",
+        "town": null,
+        "note": "Llega a primera hora para evitar las colas kilométricas.",
+        "why": null,
+        "lookFor": null,
+        "food": "Pastéis de Belém",
+        "dishes": [
+         {
+          "name": "Pastel de Belém",
+          "what": "El original pastel de nata con receta secreta.",
+          "why": "No se pueden visitar Lisboa sin probar el original aquí."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": {
+         "name": "Pastéis de Belém",
+         "lat": 38.6974795,
+         "lng": -9.2033202
+        }
+       },
+       {
+        "time": "10:30",
+        "type": "imprescindible",
+        "title": "Mosteiro dos Jerónimos",
+        "town": null,
+        "note": "La fila para la iglesia suele ser más corta que para el claustro.",
+        "why": "Es la obra maestra del estilo manuelino y Patrimonio de la Humanidad.",
+        "lookFor": "Las tallas de piedra con motivos marinos y cuerdas de barco.",
+        "food": null,
+        "dishes": null,
+        "cost": "10,00 EUR",
+        "tip": null,
+        "place": {
+         "name": "Mosteiro dos Jerónimos",
+         "lat": 38.6977577,
+         "lng": -9.2066239
+        },
+        "history": "El monasterio de los Jerónimos de Santa María de Belém (en portugués: mosteiro dos Jerónimos de Santa Maria de Belém) es un antiguo monasterio de la Orden de San Jerónimo y que se ubica en el barrio de Belén, en Lisboa, Portugal. Diseñado en estilo manuelino por el arquitecto Juan de Castillo, fue encargado por el rey Manuel I de Portugal para conmemorar el afortunado regreso de la India de Vasco de Gama. Se fundó en 1501 sobre el enclave de la ermida do Restelo en lo que fue la playa de Restelo, ermita fundada por Enrique el Navegante, y en la cual, Vasco de Gama y sus hombres pasaron la noche en oración antes de partir hacia la India.",
+        "sources": [
+         {
+          "title": "Wikipedia: Monasterio de los Jerónimos de Belém",
+          "url": "https://es.wikipedia.org/wiki/Monasterio_de_los_Jer%C3%B3nimos_de_Bel%C3%A9m"
+         }
+        ]
+       },
+       {
+        "time": "12:30",
+        "type": "recomendado",
+        "title": "Padrão dos Descobrimentos",
+        "town": null,
+        "note": "Puedes subir al mirador para ver el mapa del mundo en el suelo.",
+        "why": "Rinde homenaje a los navegantes portugueses que cambiaron la historia.",
+        "lookFor": "La figura de Enrique el Navegante en la proa del monumento.",
+        "food": null,
+        "dishes": null,
+        "cost": "6,00 EUR",
+        "tip": null,
+        "place": {
+         "name": "Padrão dos Descobrimentos",
+         "lat": 38.693676,
+         "lng": -9.20569
+        },
+        "history": "El Monumento a los Descubrimientos (en portugués: Monumento aos Descobrimentos), popularmente conocido como Padrão dos Descobrimentos (ver padrão), es un monumento construido en 1960, en la margen del río Tajo, en Belém, Lisboa, para conmemorar los 500 años de la muerte de Enrique el Navegante. Fue encargado por el régimen de António de Oliveira Salazar, tiene 52 metros de altura y celebra a los marineros, patrones reales y todos los que participaron en el desarrollo de la Era de los Descubrimientos. Los autores de la obra fueron el arquitecto José Ângelo Cottinelli Telmo y el escultor Leopoldo de Almeida, que se encargó de las esculturas.",
+        "sources": [
+         {
+          "title": "Wikipedia: Monumento a los Descubrimientos",
+          "url": "https://es.wikipedia.org/wiki/Monumento_a_los_Descubrimientos"
+         }
+        ]
+       },
+       {
+        "time": "14:00",
+        "type": "comida",
+        "title": "Almuerzo cerca del río",
+        "town": null,
+        "note": "Busca un restaurante con terraza que ofrezca pescado fresco del día.",
+        "why": null,
+        "lookFor": null,
+        "food": "Restaurantes en Belém",
+        "dishes": [
+         {
+          "name": "Polvo à Lagareiro",
+          "what": "Pulpo asado con aceite de oliva y patatas.",
+          "why": "Es una de las formas más sabrosas de comer pulpo en Portugal."
+         },
+         {
+          "name": "Salada de polvo",
+          "what": "Ensalada fría de pulpo con cebolla y perejil.",
+          "why": "Es refrescante y perfecta para un almuerzo al lado del río."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 10,
+         "max": 15
+        },
+        "place": null
+       },
+       {
+        "time": "16:00",
+        "type": "imprescindible",
+        "title": "Torre de Belém",
+        "town": null,
+        "note": "El interior es pequeño, lo más bello es ver su exterior desde la orilla.",
+        "why": "Fue el punto de partida y llegada de las expediciones marítimas.",
+        "lookFor": "La decoración tallada que recuerda a las fortalezas medievales.",
+        "food": null,
+        "dishes": null,
+        "cost": "6,00 EUR",
+        "tip": null,
+        "place": {
+         "name": "Torre de Belém",
+         "lat": 38.691586,
+         "lng": -9.2159288
+        },
+        "history": "La torre de Belém es una antigua construcción militar situada en la ciudad de Lisboa, capital de Portugal. Es una obra de Francisco de Arruda y Diogo de Boitaca que tuvo gran importancia en la Era de los Descubrimientos de Europa, ya que sirvió como fortaleza y como puerto desde donde partieron los exploradores portugueses para establecer el que sería el primer comercio europeo en la historia con China e India. Cuando dejó de servir como defensa de invasores en el estuario del río Tajo se utilizó como prisión, como faro y también como centro de recaudación de impuestos para ingresar en la ciudad. Se encuentra situada en la desembocadura del río Tajo, en el barrio de Santa Maria de Belém, al suroeste de Lisboa.",
+        "sources": [
+         {
+          "title": "Wikipedia: Torre de Belém",
+          "url": "https://es.wikipedia.org/wiki/Torre_de_Bel%C3%A9m"
+         }
+        ]
+       },
+       {
+        "time": "18:00",
+        "type": "recomendado",
+        "title": "Museu Nacional dos Coches",
+        "town": null,
+        "note": "Es una colección única en el mundo, ideal para ver la historia de la corte.",
+        "why": "Alberga una de las colecciones de carruajes reales más importantes del mundo.",
+        "lookFor": "Los carruajes dorados decorados con estatuas de madera.",
+        "food": null,
+        "dishes": null,
+        "cost": "8,00 EUR",
+        "tip": null,
+        "place": {
+         "name": "Museu Nacional dos Coches",
+         "lat": 38.6968643,
+         "lng": -9.1979875
+        }
+       },
+       {
+        "time": "20:30",
+        "type": "comida",
+        "title": "Cena en el centro",
+        "town": null,
+        "note": "Regresa al centro para terminar el día con ambiente urbano.",
+        "why": null,
+        "lookFor": null,
+        "food": "Zona de Chiado",
+        "dishes": [
+         {
+          "name": "Arroz de marisco",
+          "what": "Arroz caldoso con varios mariscos.",
+          "why": "Es un plato contundente que sabe a océano puro."
+         },
+         {
+          "name": "Amêijoas à Bulhão Pato",
+          "what": "Almejas al ajillo y cilantro.",
+          "why": "Es el aperitivo marino definitivo de la cocina portuguesa."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 10,
+         "max": 15
+        },
+        "place": {
+         "name": "Chiado",
+         "lat": 38.7103298,
+         "lng": -9.1405186
+        }
+       }
+      ]
+     },
+     {
+      "date": "day-3",
+      "city": "Lisboa",
+      "title": "Chiado, bohemia y vistas panorámicas",
+      "mode": "walking",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "09:30",
+        "type": "comida",
+        "title": "Desayuno en el Chiado",
+        "town": null,
+        "note": "Disfruta de la elegancia histórica de este barrio literario.",
+        "why": null,
+        "lookFor": null,
+        "food": "Cafés históricos del Chiado",
+        "dishes": [
+         {
+          "name": "Torrada",
+          "what": "Pan tostado grueso con mantequilla abundante.",
+          "why": "Es el desayuno básico de los portugueses, simple y delicioso."
+         },
+         {
+          "name": "Sumo de laranja",
+          "what": "Zumo de naranja recién exprimido.",
+          "why": "Portugal tiene las mejores naranjas, frescas y dulces."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": {
+         "name": "A Brasileira",
+         "lat": 38.7106819,
+         "lng": -9.1420119
+        }
+       },
+       {
+        "time": "11:00",
+        "type": "imprescindible",
+        "title": "Convento do Carmo",
+        "town": null,
+        "note": "No te pierdas la zona arqueológica del interior.",
+        "why": "Es el recordatorio más sobrecogedor del gran terremoto de 1755.",
+        "lookFor": "Los arcos góticos que quedaron sin techo tras el desastre.",
+        "food": null,
+        "dishes": null,
+        "cost": "5,00 EUR",
+        "tip": null,
+        "place": {
+         "name": "Convento do Carmo",
+         "lat": 38.71222222,
+         "lng": -9.14
+        },
+        "history": "El convento de la Orden del Carmen (en portugués: Convento da Ordem do Carmo) es un antiguo convento católico ubicado en freguesia de Santa María Mayor, en la ciudad de Lisboa, Portugal. El convento medieval se derrumbó durante el terremoto de Lisboa de 1755 y destruyó la iglesia gótica de Nuestra Señora do Carmo. Actualmente aún puede notarse en la fachada meridional del convento las evidencias de dicho sísmo.",
+        "sources": [
+         {
+          "title": "Wikipedia: Convento do Carmo (Lisboa)",
+          "url": "https://es.wikipedia.org/wiki/Convento_do_Carmo_(Lisboa)"
+         }
+        ]
+       },
+       {
+        "time": "12:30",
+        "type": "recomendado",
+        "title": "Livraria Bertrand",
+        "town": null,
+        "note": "Es la librería más antigua del mundo, pide que sellen tu libro.",
+        "why": "Es un lugar con mucha historia donde se reunían los grandes intelectuales.",
+        "lookFor": "Las salas con estanterías de madera de suelo a techo.",
+        "food": null,
+        "dishes": null,
+        "cost": "Gratis",
+        "tip": null,
+        "place": {
+         "name": "Livraria Bertrand",
+         "lat": 38.7106621,
+         "lng": -9.1411539
+        }
+       },
+       {
+        "time": "13:30",
+        "type": "comida",
+        "title": "Almuerzo en el mercado",
+        "town": null,
+        "note": "Es una experiencia vibrante con muchas opciones de alta calidad.",
+        "why": null,
+        "lookFor": null,
+        "food": "Mercado da Ribeira",
+        "dishes": [
+         {
+          "name": "Prego no pão",
+          "what": "Sándwich de carne de ternera al ajo.",
+          "why": "Es el sándwich de carne por excelencia en Lisboa."
+         },
+         {
+          "name": "Queijo da Serra",
+          "what": "Queso de oveja cremoso y untuoso.",
+          "why": "Es un manjar protegido que representa la riqueza láctea nacional."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": {
+         "name": "Time Out Market Lisboa",
+         "lat": 38.7070934,
+         "lng": -9.1458973
+        }
+       },
+       {
+        "time": "15:30",
+        "type": "opcional",
+        "title": "Jardim do Príncipe Real",
+        "town": null,
+        "note": "Es un parque muy relajado y perfecto para ver la vida local.",
+        "why": "Es un oasis verde rodeado de palacios del siglo XIX.",
+        "lookFor": "El enorme cedro protector en el centro del jardín.",
+        "food": null,
+        "dishes": null,
+        "cost": "Gratis",
+        "tip": null,
+        "place": {
+         "name": "Jardim do Príncipe Real",
+         "lat": 38.7162843,
+         "lng": -9.1486158
+        }
+       },
+       {
+        "time": "17:30",
+        "type": "imprescindible",
+        "title": "Miradouro de São Pedro de Alcântara",
+        "town": null,
+        "note": "Llega justo antes del atardecer para ver cambiar los colores de la ciudad.",
+        "why": "Ofrece una vista espectacular hacia el Castillo de San Jorge.",
+        "lookFor": "El mapa de azulejos que identifica los monumentos a la vista.",
+        "food": null,
+        "dishes": null,
+        "cost": "Gratis",
+        "tip": null,
+        "place": {
+         "name": "Miradouro de São Pedro de Alcântara",
+         "lat": 38.7154576,
+         "lng": -9.1440371
+        }
+       },
+       {
+        "time": "20:00",
+        "type": "comida",
+        "title": "Cena de despedida en Bairro Alto",
+        "town": null,
+        "note": "Esta zona es perfecta para terminar el viaje con ambiente nocturno.",
+        "why": null,
+        "lookFor": null,
+        "food": "Restaurantes del Bairro Alto",
+        "dishes": [
+         {
+          "name": "Bife à Café",
+          "what": "Filete con una salsa especial de café y crema.",
+          "why": "Es una receta original lisboeta con un toque sofisticado."
+         },
+         {
+          "name": "Pudim Abade de Priscos",
+          "what": "Pudin de huevo, azúcar y canela.",
+          "why": "Es un postre conventual rico, dulce y un final dulce perfecto."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 10,
+         "max": 15
+        },
+        "place": {
+         "name": "Bairro Alto",
+         "lat": 38.7133919,
+         "lng": -9.1455522
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "en": {
+   "intro": {
+    "summary": "A practical three-day itinerary to help first-time visitors explore Lisbon’s historic hills, riverside charm, and coastal neighborhoods.",
+    "about": "Lisbon is a city defined by its steep hills, tiled facades, and golden light that seems to reflect off the Tagus River. It offers a unique mix of slow-paced charm and vibrant energy, where you can explore ancient neighborhoods in the morning and enjoy fresh seafood by the water in the evening.",
+    "stay": "Baixa or Chiado are excellent bases, as they sit in the heart of the city and provide easy walking access to the main attractions and transit hubs.",
+    "gettingAround": "Walking is the best way to see the city, though you should be prepared for steep inclines. For longer distances, the historic yellow trams, the metro system, and funiculars are very efficient, and you can buy a rechargeable travel card at any station.",
+    "bestTime": "Spring and autumn offer the most comfortable weather for walking the city's hills. Summers can be quite hot, while winter is mild but brings occasional rain."
+   },
+   "itinerary": {
+    "source": "guide",
+    "lang": "en",
+    "createdAt": "2026-10-18T19:38:42.865Z",
+    "preferences": {
+     "pace": "balanced",
+     "interests": [
+      "culture",
+      "food"
+     ],
+     "transport": "transit",
+     "checkIn": null
+    },
+    "days": [
+     {
+      "date": "day-1",
+      "city": "Lisbon",
+      "title": "Historic Alfama and the Castle",
+      "mode": "walking",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "09:00–10:00",
+        "type": "comida",
+        "title": "Breakfast in Alfama",
+        "town": null,
+        "note": "Find a local pastelaria tucked into the narrow streets.",
+        "why": null,
+        "lookFor": null,
+        "food": "Alfama district",
+        "dishes": [
+         {
+          "name": "Pastel de nata",
+          "what": "A classic Portuguese custard tart with crispy pastry.",
+          "why": "It is the essential start to a day in Lisbon."
+         },
+         {
+          "name": "Galão",
+          "what": "A milky coffee served in a tall glass.",
+          "why": "It pairs perfectly with the sweetness of the tart."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": {
+         "name": "Alfama",
+         "lat": 38.7117704,
+         "lng": -9.12838
+        }
+       },
+       {
+        "time": "10:15–12:00",
+        "type": "imprescindible",
+        "title": "Castelo de S. Jorge",
+        "town": null,
+        "note": "Arrive early to avoid the longest queues at the entrance.",
+        "why": "This Moorish castle offers the most iconic panoramic views of the entire city.",
+        "lookFor": "The peacocks that roam freely within the castle walls.",
+        "food": null,
+        "dishes": null,
+        "cost": "15 EUR",
+        "tip": null,
+        "place": {
+         "name": "Castelo de S. Jorge",
+         "lat": 38.7139258,
+         "lng": -9.133483
+        },
+        "history": "São Jorge Castle (Portuguese: Castelo de São Jorge; Portuguese pronunciation: [kɐʃˈtɛlu dɨ sɐ̃w̃ ˈʒɔɾʒɨ]), sometimes known in English as Saint George's Castle, is a historic castle in the Portuguese capital of Lisbon, located in the freguesia of Santa Maria Maior. Human occupation of the castle hill dates to at least the 8th century BC while the oldest fortifications on the site date from the 2nd century BC. The hill on which Saint George's Castle stands has played an important part in the history of Lisbon, having served as the location of fortifications occupied successively by Phoenicians, Carthaginians, Romans, and Moors, before its conquest by the Portuguese in the 1147 Siege of Lisbon. Since the 12th century, the castle has variously served as a royal palace, a military barracks, home of the Torre do Tombo National Archive, and now as a national monument and museum.",
+        "sources": [
+         {
+          "title": "Wikipedia: São Jorge Castle",
+          "url": "https://en.wikipedia.org/wiki/S%C3%A3o_Jorge_Castle"
+         }
+        ]
+       },
+       {
+        "time": "12:15–13:30",
+        "type": "imprescindible",
+        "title": "Lisbon Cathedral",
+        "town": null,
+        "note": "Look for the gothic cloisters behind the main nave.",
+        "why": "It is the oldest church in the city, standing as a fortress-like symbol of Lisbon.",
+        "lookFor": "The beautiful rose window on the main facade.",
+        "food": null,
+        "dishes": null,
+        "cost": "Free",
+        "tip": null,
+        "place": {
+         "name": "Sé de Lisboa",
+         "lat": 38.70972222,
+         "lng": -9.13305556
+        },
+        "history": "The Cathedral of Saint Mary Major (Portuguese: Santa Maria Maior de Lisboa or Sé-Catedral Metropolitana Patriarcal de Santa Maria Maior de Lisboa), often called Lisbon Cathedral or simply the Sé (Sé de Lisboa), is a Roman Catholic cathedral located in Lisbon, Portugal. It is the oldest church in the city, built in 1147. The cathedral has survived many earthquakes and has been modified, renovated and restored several times, resulting in a mix of different architectural styles.",
+        "sources": [
+         {
+          "title": "Wikipedia: Lisbon Cathedral",
+          "url": "https://en.wikipedia.org/wiki/Lisbon_Cathedral"
+         }
+        ]
+       },
+       {
+        "time": "13:30–15:00",
+        "type": "comida",
+        "title": "Lunch in Baixa",
+        "town": null,
+        "note": "Walk down towards the flat streets of the Baixa district.",
+        "why": null,
+        "lookFor": null,
+        "food": "Traditional tasca in Baixa",
+        "dishes": [
+         {
+          "name": "Bacalhau à Brás",
+          "what": "Salted cod shredded with onions and crispy matchstick potatoes.",
+          "why": "This is a quintessential Lisbon comfort food."
+         },
+         {
+          "name": "Caldo Verde",
+          "what": "A traditional soup made with kale, potatoes, and chorizo.",
+          "why": "It is simple, hearty, and deeply connected to local culture."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": null
+       },
+       {
+        "time": "15:00–16:30",
+        "type": "recomendado",
+        "title": "Praça do Comércio",
+        "town": null,
+        "note": "Walk around the square and enjoy the view of the river.",
+        "why": "It is the grand entrance to the city, rebuilt after the great earthquake.",
+        "lookFor": "The triumphal arch at the northern end.",
+        "food": null,
+        "dishes": null,
+        "cost": "Free",
+        "tip": null,
+        "place": {
+         "name": "Praça do Comércio",
+         "lat": 38.7077151,
+         "lng": -9.1365238
+        },
+        "history": "The Praça do Comércio (Portuguese pronunciation: [ˈpɾasɐ ðu kuˈmɛɾsju]; transl. Commerce Square), more commonly known in Portuguese as Terreiro do Paço ([tɨˈʁɐjɾu ðu ˈpasu] (transl. Palace Yard), is a large, harbour-facing plaza in Portugal's capital, Lisbon, and is one of the largest in Portugal, with an area of 175 by 175 m (574 by 574 ft), that is, 30,600 m2 (329,000 ft2). Facing the Tagus river to the south, the square hosted Ribeira Palace, the King of Portugal's residence, until the latter was destroyed by the great 1755 Lisbon earthquake. Terreiro do Paço metro station is located beneath the plaza.",
+        "sources": [
+         {
+          "title": "Wikipedia: Praça do Comércio",
+          "url": "https://en.wikipedia.org/wiki/Pra%C3%A7a_do_Com%C3%A9rcio"
+         }
+        ]
+       },
+       {
+        "time": "16:30–18:00",
+        "type": "imprescindible",
+        "title": "Santa Justa Lift",
+        "town": null,
+        "note": "Expect queues; sometimes it is faster to walk up the hill.",
+        "why": "This iron lift is a masterpiece of industrial engineering.",
+        "lookFor": "The intricate Neo-Gothic ironwork details.",
+        "food": null,
+        "dishes": null,
+        "cost": "5.30 EUR",
+        "tip": null,
+        "place": {
+         "name": "Elevador de Santa Justa",
+         "lat": 38.7121169,
+         "lng": -9.1393753
+        },
+        "history": "The Santa Justa Lift (Portuguese: Elevador de Santa Justa, pronounced [elɨvɐˈðoɾ ðɨ ˈsɐ̃tɐ ˈʒuʃtɐ]), also called Carmo Lift (Portuguese: Elevador do Carmo, [elɨvɐˈðoɾ ðu ˈkaɾmu]), is an elevator, or lift, in the civil parish of Santa Maria Maior, in the historic center of Lisbon, Portugal. Situated at the end of Rua de Santa Justa, it connects the lower streets of the Baixa with the higher Largo do Carmo (Carmo Square). Since its construction the lift has become a tourist attraction for Lisbon as, among the urban lifts in the city, Santa Justa is the only remaining vertical (conventional) one.",
+        "sources": [
+         {
+          "title": "Wikipedia: Santa Justa Lift",
+          "url": "https://en.wikipedia.org/wiki/Santa_Justa_Lift"
+         }
+        ]
+       },
+       {
+        "time": "19:30–21:00",
+        "type": "comida",
+        "title": "Dinner in Chiado",
+        "town": null,
+        "note": "Chiado is perfect for a lively evening atmosphere.",
+        "why": null,
+        "lookFor": null,
+        "food": "Modern tavern in Chiado",
+        "dishes": [
+         {
+          "name": "Polvo à Lagareiro",
+          "what": "Roasted octopus with lots of olive oil and potatoes.",
+          "why": "Portuguese octopus is world-renowned for its tenderness."
+         },
+         {
+          "name": "Vinho Verde",
+          "what": "A young, slightly effervescent crisp white wine.",
+          "why": "It is the perfect refreshing pairing for seafood."
+         },
+         {
+          "name": "Queijadas",
+          "what": "Small, sweet egg and cheese tarts.",
+          "why": "A delightful way to end a meal on a sweet note."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": {
+         "name": "Chiado",
+         "lat": 38.7103298,
+         "lng": -9.1405186
+        }
+       }
+      ]
+     },
+     {
+      "date": "day-2",
+      "city": "Lisbon",
+      "title": "Belem and the Age of Discovery",
+      "mode": "transit",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "09:00–10:00",
+        "type": "comida",
+        "title": "Breakfast near the station",
+        "town": null,
+        "note": "Grab a quick bite near the Cais do Sodré station before heading west.",
+        "why": null,
+        "lookFor": null,
+        "food": "Cais do Sodré area",
+        "dishes": [
+         {
+          "name": "Torrada",
+          "what": "Thick, toasted bread slathered in butter.",
+          "why": "A simple, comforting breakfast staple here."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": null
+       },
+       {
+        "time": "10:30–12:30",
+        "type": "imprescindible",
+        "title": "Mosteiro dos Jerónimos",
+        "town": null,
+        "note": "Book tickets online in advance to avoid long waits.",
+        "why": "This is the zenith of Manueline architecture, a true monument to the Age of Discovery.",
+        "lookFor": "The elaborate, maritime-themed stone carvings.",
+        "food": null,
+        "dishes": null,
+        "cost": "10 EUR",
+        "tip": null,
+        "place": {
+         "name": "Mosteiro dos Jerónimos",
+         "lat": 38.6977577,
+         "lng": -9.2066239
+        },
+        "history": "The Jerónimos Monastery or Hieronymites Monastery (Portuguese: Mosteiro dos Jerónimos, pronounced [muʃˈtɐjɾu ðu(ʒ) ʒɨˈɾɔnimuʃ]) is a former monastery of the Order of Saint Jerome near the Tagus river in the parish of Belém, in the Lisbon Municipality, Portugal. It became the necropolis of the Portuguese royal dynasty of Aviz in the 16th century but was secularized on 28 December 1833 by state decree and its ownership transferred to the charitable institution, Real Casa Pia de Lisboa. The Jerónimos Monastery is one of the most prominent examples of the late Portuguese Gothic Manueline style of architecture in Lisbon.",
+        "sources": [
+         {
+          "title": "Wikipedia: Jerónimos Monastery",
+          "url": "https://en.wikipedia.org/wiki/Jer%C3%B3nimos_Monastery"
+         }
+        ]
+       },
+       {
+        "time": "12:30–13:30",
+        "type": "comida",
+        "title": "Lunch in Belém",
+        "town": null,
+        "note": "Try a bakery near the monastery.",
+        "why": null,
+        "lookFor": null,
+        "food": "Belém local bakery",
+        "dishes": [
+         {
+          "name": "Pastéis de Belém",
+          "what": "The original recipe for the famous custard tart.",
+          "why": "You must try them at the source where the recipe was born."
+         },
+         {
+          "name": "Sopa de legumes",
+          "what": "A healthy vegetable soup.",
+          "why": "It is a reliable and light lunch option."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": {
+         "name": "Pastéis de Belém",
+         "lat": 38.6974795,
+         "lng": -9.2033202
+        }
+       },
+       {
+        "time": "13:30–14:30",
+        "type": "imprescindible",
+        "title": "Torre de Belém",
+        "town": null,
+        "note": "Walking along the riverfront to reach it is part of the experience.",
+        "why": "This fortress sits on the Tagus and served as the ceremonial gateway to Lisbon.",
+        "lookFor": "The rhinoceros sculpture on the north facade.",
+        "food": null,
+        "dishes": null,
+        "cost": "6 EUR",
+        "tip": null,
+        "place": {
+         "name": "Torre de Belém",
+         "lat": 38.691586,
+         "lng": -9.2159288
+        },
+        "history": "Belém Tower (Portuguese: Torre de Belém, pronounced [ˈtoʁɨ ðɨ βɨˈlɐ̃j]; literally: Bethlehem Tower), officially the Tower of Saint Vincent (Portuguese: Torre de São Vicente), is a 16th-century fortification located in Lisbon, Portugal, which served as a point of embarkation and disembarkation for Portuguese explorers and as a ceremonial gateway to Lisbon. The tower symbolizes Portugal's maritime and colonial power in early modern Europe. It was built during the height of the Portuguese Renaissance and is a prominent example of the Portuguese Manueline style, but it also incorporates other architectural styles, such as the minarets, which are inspired by Moorish architecture.",
+        "sources": [
+         {
+          "title": "Wikipedia: Belém Tower",
+          "url": "https://en.wikipedia.org/wiki/Bel%C3%A9m_Tower"
+         }
+        ]
+       },
+       {
+        "time": "14:30–15:30",
+        "type": "recomendado",
+        "title": "Padrão dos Descobrimentos",
+        "town": null,
+        "note": "The view from the top is great if you have time.",
+        "why": "It celebrates the Age of Discovery and the great Portuguese explorers.",
+        "lookFor": "The massive map of the world on the ground in front of the monument.",
+        "food": null,
+        "dishes": null,
+        "cost": "10 EUR",
+        "tip": null,
+        "place": {
+         "name": "Padrão dos Descobrimentos",
+         "lat": 38.6936054,
+         "lng": -9.2057002
+        },
+        "history": "The Monument of the Discoveries (Portuguese: Padrão dos Descobrimentos, Portuguese pronunciation: [pɐˈðɾɐ̃w duʒ ðɨʃkuβɾiˈmẽtuʃ]) is a monument on the northern bank of the Tagus River estuary, in the civil parish of Santa Maria de Belém, Lisbon. Located along the river where ships departed to explore and trade with India and the Orient, the monument celebrates the Portuguese Age of Discovery (or \"Age of Exploration\") during the 15th and 16th centuries.",
+        "sources": [
+         {
+          "title": "Wikipedia: Monument of the Discoveries",
+          "url": "https://en.wikipedia.org/wiki/Monument_of_the_Discoveries"
+         }
+        ]
+       },
+       {
+        "time": "16:00–17:30",
+        "type": "opcional",
+        "title": "MAAT Museum",
+        "town": null,
+        "note": "Walk along the roof for a nice view of the bridge.",
+        "why": "The architecture alone is striking, merging art and technology.",
+        "lookFor": "The bridge view from the building's rooftop terrace.",
+        "food": null,
+        "dishes": null,
+        "cost": "9 EUR",
+        "tip": null,
+        "place": {
+         "name": "MAAT",
+         "lat": 38.69591,
+         "lng": -9.19464
+        },
+        "history": "The Museum of Art, Architecture and Technology or MAAT (Portuguese: Museu de Arte, Arquitetura e Tecnologia) (MAAT) is a museum in Lisbon, Portugal.",
+        "sources": [
+         {
+          "title": "Wikipedia: Museum of Art, Architecture and Technology",
+          "url": "https://en.wikipedia.org/wiki/Museum_of_Art,_Architecture_and_Technology"
+         }
+        ]
+       },
+       {
+        "time": "19:00–21:00",
+        "type": "comida",
+        "title": "Dinner in Bairro Alto",
+        "town": null,
+        "note": "This area wakes up at night and is full of character.",
+        "why": null,
+        "lookFor": null,
+        "food": "Bairro Alto traditional kitchen",
+        "dishes": [
+         {
+          "name": "Carne de Porco à Alentejana",
+          "what": "Pork and clam stew, a classic surf and turf.",
+          "why": "It is a surprising but delicious combination."
+         },
+         {
+          "name": "Arroz de marisco",
+          "what": "Rich, soupy rice packed with various seafood.",
+          "why": "It is a true celebration of Portugal's oceanic bounty."
+         },
+         {
+          "name": "Mousse de chocolate",
+          "what": "Simple, dense, and homemade chocolate mousse.",
+          "why": "A staple dessert in almost every local restaurant."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 10,
+         "max": 15
+        },
+        "place": {
+         "name": "Bairro Alto",
+         "lat": 38.7133919,
+         "lng": -9.1455522
+        }
+       }
+      ]
+     },
+     {
+      "date": "day-3",
+      "city": "Lisbon",
+      "title": "Avenida da Liberdade and Art",
+      "mode": "walking",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "09:00–10:00",
+        "type": "comida",
+        "title": "Breakfast in Principe Real",
+        "town": null,
+        "note": "A calmer, more residential neighborhood to start your day.",
+        "why": null,
+        "lookFor": null,
+        "food": "Principe Real garden area",
+        "dishes": [
+         {
+          "name": "Pão de Deus",
+          "what": "A sweet bread roll topped with a coconut crust.",
+          "why": "It is a lovely, indulgent treat for breakfast."
+         },
+         {
+          "name": "Sumo de laranja",
+          "what": "Freshly squeezed orange juice.",
+          "why": "The quality of Portuguese oranges is exceptional."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": null
+       },
+       {
+        "time": "10:00–12:00",
+        "type": "recomendado",
+        "title": "Museu Calouste Gulbenkian",
+        "town": null,
+        "note": "It is a bit of a walk or short metro ride from the center.",
+        "why": "This is arguably the best art collection in the country, spanning from ancient to modern.",
+        "lookFor": "The Lalique jewelry collection.",
+        "food": null,
+        "dishes": null,
+        "cost": "10 EUR",
+        "tip": null,
+        "place": {
+         "name": "Museu Calouste Gulbenkian",
+         "lat": 38.73666667,
+         "lng": -9.15416667
+        },
+        "history": "Lisbon's Calouste Gulbenkian Museum houses one of the world's most important private art collections. It includes works from Ancient Egypt to the early 20th century, spanning the arts of the Islamic World, China and Japan, as well as French decorative arts. It also features the jewellery of René Lalique and works by some of the most important painters of all time, such as Rembrandt, Monet, Rubens, Manet, Renoir, Degas and Turner.",
+        "sources": [
+         {
+          "title": "Wikipedia: Calouste Gulbenkian Museum",
+          "url": "https://en.wikipedia.org/wiki/Calouste_Gulbenkian_Museum"
+         }
+        ]
+       },
+       {
+        "time": "12:30–14:00",
+        "type": "comida",
+        "title": "Lunch near Gulbenkian",
+        "town": null,
+        "note": "Look for small eateries used by local office workers.",
+        "why": null,
+        "lookFor": null,
+        "food": "Avenidas Novas area",
+        "dishes": [
+         {
+          "name": "Dourada grelhada",
+          "what": "Grilled sea bream, simple and fresh.",
+          "why": "It shows how good local fish is without much fuss."
+         },
+         {
+          "name": "Salada de polvo",
+          "what": "Octopus salad with peppers and onion.",
+          "why": "A light, flavorful way to start a lunch."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": null
+       },
+       {
+        "time": "14:30–16:00",
+        "type": "recomendado",
+        "title": "Avenida da Liberdade",
+        "town": null,
+        "note": "A long, pleasant walk downwards towards the center.",
+        "why": "This grand, tree-lined avenue is the city's elegant central artery.",
+        "lookFor": "The intricate calçada portuguesa (mosaic) pavements.",
+        "food": null,
+        "dishes": null,
+        "cost": "Free",
+        "tip": null,
+        "place": {
+         "name": "Avenida da Liberdade",
+         "lat": 38.72027778,
+         "lng": -9.14583333
+        },
+        "history": "Avenida da Liberdade (Portuguese pronunciation: [ɐveˈniðɐ ðɐ liβɐɾˈðaðɯ]; meaning 'Avenue of Liberty') is a boulevard in central Lisbon, Portugal. It was built between 1879 and 1886 and designed by engineer Frederico Ressano Garcia. Measuring 90 metres wide, the avenue was modeled after Paris's Champs-Élysées and is known for its luxury retail stores and architecture.",
+        "sources": [
+         {
+          "title": "Wikipedia: Avenida da Liberdade",
+          "url": "https://en.wikipedia.org/wiki/Avenida_da_Liberdade"
+         }
+        ]
+       },
+       {
+        "time": "16:00–17:30",
+        "type": "imprescindible",
+        "title": "Miradouro de São Pedro de Alcântara",
+        "town": null,
+        "note": "Grab a coffee from the kiosk and just watch the city.",
+        "why": "It offers the best sunset view of the castle and the old city.",
+        "lookFor": "The map made of tiles identifying landmarks in the view.",
+        "food": null,
+        "dishes": null,
+        "cost": "Free",
+        "tip": null,
+        "place": {
+         "name": "Miradouro de São Pedro de Alcântara",
+         "lat": 38.7154576,
+         "lng": -9.1440371
+        }
+       },
+       {
+        "time": "19:00–21:00",
+        "type": "comida",
+        "title": "Farewell dinner in Baixa",
+        "town": null,
+        "note": "This is a special meal to end your trip.",
+        "why": null,
+        "lookFor": null,
+        "food": "Upscale traditional restaurant",
+        "dishes": [
+         {
+          "name": "Cataplana de marisco",
+          "what": "A seafood stew cooked in a copper clam-shaped pot.",
+          "why": "It is an impressive dish, perfect for a final dinner."
+         },
+         {
+          "name": "Bolo de bolacha",
+          "what": "Layered biscuit and coffee cream cake.",
+          "why": "A much-loved, classic Portuguese comfort dessert."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 10,
+         "max": 15
+        },
+        "place": {
+         "name": "Baixa",
+         "lat": 38.7101237,
+         "lng": -9.1370238
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "photo": null
+ },
+ "rome-3-days": {
+  "dayCount": 3,
+  "codes": [
+   "FCO",
+   "CIA"
+  ],
+  "city": {
+   "es": "Roma",
+   "en": "Rome"
+  },
+  "country": {
+   "es": "Italia",
+   "en": "Italy"
+  },
+  "lat": 41.8986,
+  "lng": 12.4768,
+  "es": {
+   "intro": {
+    "summary": "Esta guía práctica de tres días te ayuda a recorrer los lugares imprescindibles de Roma sin agobios y disfrutando de la esencia de la ciudad.",
+    "about": "Roma es un museo al aire libre donde cada esquina revela siglos de historia mezclados con la vida cotidiana moderna. Es el destino perfecto para perderse por calles empedradas, disfrutar de una auténtica pasta y maravillarse con la magnitud de sus monumentos antiguos.",
+    "stay": "El centro histórico es la mejor zona para alojarse, ya que te permite llegar caminando a casi todos los puntos de interés y vivir el ambiente romano desde primera hora.",
+    "gettingAround": "Roma se descubre mejor a pie, aunque puedes usar el metro o el tranvía para distancias más largas. Recuerda validar tu billete siempre que subas a un autobús o tranvía.",
+    "bestTime": "La primavera y el otoño son las mejores estaciones por su temperatura suave. En verano el calor es intenso y el invierno es fresco, pero mucho más tranquilo para visitar los monumentos."
+   },
+   "itinerary": {
+    "source": "guide",
+    "lang": "es",
+    "createdAt": "2026-10-18T19:21:03.592Z",
+    "preferences": {
+     "pace": "balanced",
+     "interests": [
+      "culture",
+      "food"
+     ],
+     "transport": "transit",
+     "checkIn": null
+    },
+    "days": [
+     {
+      "date": "day-1",
+      "city": "Roma",
+      "title": "Corazón de la Antigua Roma",
+      "mode": "walking",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "08:30–09:30",
+        "type": "comida",
+        "title": "Desayuno en el centro",
+        "town": null,
+        "note": "Busca una cafetería tradicional cerca de la Piazza Venezia para empezar con energía.",
+        "why": null,
+        "lookFor": null,
+        "food": "cerca de Piazza Venezia",
+        "dishes": [
+         {
+          "name": "Cornetto",
+          "what": "Bollo dulce de hojaldre similar al croissant, a menudo relleno de crema o chocolate.",
+          "why": "Es el desayuno romano por excelencia, perfecto para mojar en el café."
+         },
+         {
+          "name": "Caffè espresso",
+          "what": "Café concentrado servido en taza pequeña.",
+          "why": "La cultura del café en Italia es un ritual diario obligatorio."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": null
+       },
+       {
+        "time": "10:00–12:30",
+        "type": "imprescindible",
+        "title": "Coliseo",
+        "town": null,
+        "note": "Reserva tu entrada con antelación online para evitar las colas masivas.",
+        "why": "Es el símbolo indiscutible de la Roma imperial y una obra de ingeniería impresionante.",
+        "lookFor": "los hipogeos, la zona subterránea donde se alojaban gladiadores y animales.",
+        "food": null,
+        "dishes": null,
+        "cost": "18 EUR",
+        "tip": null,
+        "place": {
+         "name": "Colosseo",
+         "lat": 41.89027778,
+         "lng": 12.49222222
+        },
+        "history": "El Coliseo o Anfiteatro Flavio (en latín Colosseum, en italiano Colosseo) es un anfiteatro de la época del Imperio romano, construido en el siglo I. Está ubicado en el este del Foro Romano y fue el mayor de los que se construyeron en el Imperio romano. Conocido originalmente como Anfiteatro Flavio, Amphitheatrum Flavium, a partir de la Edad Media pasó a ser llamado Coliseo porque a su lado había una gran estatua dedicada al emperador Nerón, el Coloso de Nerón, «Colossus», que Adriano había transformado en una representación de Helios, el dios Sol. De este «Colossus Solis» derivó el nombre actual del edificio. La estatua llegó a desaparecer. Los materiales utilizados en la construcción de esta obra fueron bloques de travertino, hormigón, madera, ladrillo, piedra (toba), mármol y estuco.",
+        "sources": [
+         {
+          "title": "Wikipedia: Coliseo",
+          "url": "https://es.wikipedia.org/wiki/Coliseo"
+         }
+        ]
+       },
+       {
+        "time": "12:30–14:00",
+        "type": "imprescindible",
+        "title": "Foro Romano",
+        "town": null,
+        "note": "La entrada del Coliseo suele incluir el acceso al Foro; explora los caminos de piedra.",
+        "why": "Aquí latía el corazón político y social de la antigua civilización romana.",
+        "lookFor": "el Arco de Tito y el Templo de Vesta, vestigios fundamentales de la historia.",
+        "food": null,
+        "dishes": null,
+        "cost": "Incluido en la entrada",
+        "tip": null,
+        "place": {
+         "name": "Foro Romano",
+         "lat": 41.8922,
+         "lng": 12.4852
+        },
+        "history": "El Foro Romano, también conocido por su nombre en latín, Forum Romanum, es un foro rectangular situado en el centro de la ciudad de Roma y rodeado por las ruinas de varios edificios antiguos. Los ciudadanos de la ciudad antigua se referían a este espacio, que originalmente era un mercado, como el Forum Magnum, o simplemente como el Forum. Durante siglos, el Foro fue el centro de la vida diaria de Roma: lugar de celebración de procesiones triunfales y elecciones; escenario de discursos públicos, juicios penales y combates de gladiadores; y núcleo de los asuntos comerciales. Aquí numerosas estatuas y monumentos conmemoraban a los líderes de la ciudad.",
+        "sources": [
+         {
+          "title": "Wikipedia: Foro Romano",
+          "url": "https://es.wikipedia.org/wiki/Foro_Romano"
+         }
+        ]
+       },
+       {
+        "time": "14:00–15:30",
+        "type": "comida",
+        "title": "Almuerzo cerca del Monti",
+        "town": null,
+        "note": "El barrio de Monti es encantador y está a pocos minutos caminando.",
+        "why": null,
+        "lookFor": null,
+        "food": "Trattorias del barrio de Monti",
+        "dishes": [
+         {
+          "name": "Pasta alla Carbonara",
+          "what": "Pasta con huevo, queso pecorino romano, guanciale y pimienta negra.",
+          "why": "Es la receta romana por excelencia, sencilla pero llena de sabor."
+         },
+         {
+          "name": "Carciofi alla giudia",
+          "what": "Alcachofa frita al estilo de la cocina judía romana.",
+          "why": "Es un plato histórico único de Roma, crujiente por fuera y tierno por dentro."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": null
+       },
+       {
+        "time": "16:00–17:30",
+        "type": "recomendado",
+        "title": "Colina del Palatino",
+        "town": null,
+        "note": "La entrada suele ser conjunta con el Coliseo.",
+        "why": "Ofrece las mejores vistas sobre el Foro y fue el lugar donde vivían los emperadores.",
+        "lookFor": "los jardines Farnesio y las vistas panorámicas sobre la ciudad.",
+        "food": null,
+        "dishes": null,
+        "cost": "Incluido en la entrada",
+        "tip": null,
+        "place": {
+         "name": "Palatino",
+         "lat": 41.8893064,
+         "lng": 12.4871093
+        },
+        "history": "Palatino hace referencia a varios artículos:",
+        "sources": [
+         {
+          "title": "Wikipedia: Palatino",
+          "url": "https://es.wikipedia.org/wiki/Palatino"
+         }
+        ]
+       },
+       {
+        "time": "18:00–19:30",
+        "type": "recomendado",
+        "title": "Piazza del Campidoglio",
+        "town": null,
+        "note": "Sube por la escalinata diseñada por Miguel Ángel.",
+        "why": "Es una de las plazas más bellas de Roma y centro del gobierno municipal.",
+        "lookFor": "la estatua ecuestre de Marco Aurelio y la vista trasera hacia el Foro.",
+        "food": null,
+        "dishes": null,
+        "cost": "Gratis",
+        "tip": null,
+        "place": {
+         "name": "Piazza del Campidoglio",
+         "lat": 41.8932482,
+         "lng": 12.4829853
+        },
+        "history": "La Piazza del Campidoglio se encuentra en la cima de la colina Capitolina en Roma, Italia, más concretamente en el Asylum, la depresión situada entre el Arx y el Capitolium, las dos cimas de la colina. Aquí se encuentra uno de los monumentos más importantes de la ciudad, el Tabularium, aunque antiguamente la entrada se realizaba desde la zona del Foro Romano. Esta zona, como toda la colina capitolina, tras haber conocido los esplendores de la Roma antigua, fue progresivamente abandonada al final del mundo antiguo, hasta reducirse en la Edad Media a pasto de cabras, motivo por el cual era conocido como monte Caprino.",
+        "sources": [
+         {
+          "title": "Wikipedia: Plaza del Campidoglio",
+          "url": "https://es.wikipedia.org/wiki/Plaza_del_Campidoglio"
+         }
+        ]
+       },
+       {
+        "time": "20:00–21:30",
+        "type": "comida",
+        "title": "Cena en el centro histórico",
+        "town": null,
+        "note": "Busca una osteria alejada de las calles principales para evitar precios turísticos.",
+        "why": null,
+        "lookFor": null,
+        "food": "Osterias en el centro histórico",
+        "dishes": [
+         {
+          "name": "Saltimbocca alla romana",
+          "what": "Filete de ternera con jamón y salvia, salteado en vino blanco.",
+          "why": "Es una forma deliciosa y tradicional de comer ternera romana."
+         },
+         {
+          "name": "Vino della casa",
+          "what": "Vino local servido en jarra.",
+          "why": "Acompaña perfectamente la comida y es muy asequible."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": null
+       }
+      ]
+     },
+     {
+      "date": "day-2",
+      "city": "Roma",
+      "title": "Vaticano y el encanto del Tíber",
+      "mode": "transit",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "08:30–09:30",
+        "type": "comida",
+        "title": "Desayuno en Prati",
+        "town": null,
+        "note": "El barrio de Prati tiene excelentes pastelerías cerca del Vaticano.",
+        "why": null,
+        "lookFor": null,
+        "food": "Pastelerías en el barrio de Prati",
+        "dishes": [
+         {
+          "name": "Maritozzo",
+          "what": "Bollo dulce relleno de nata montada.",
+          "why": "Es un dulce histórico muy popular para empezar la mañana en Roma."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": null
+       },
+       {
+        "time": "10:00–13:00",
+        "type": "imprescindible",
+        "title": "Musei Vaticani",
+        "town": null,
+        "note": "La cola es inevitable; compra el ticket online con mucha antelación.",
+        "why": "Albergan una de las colecciones de arte más importantes del mundo.",
+        "lookFor": "la Capilla Sixtina y las Estancias de Rafael.",
+        "food": null,
+        "dishes": null,
+        "cost": "20 EUR",
+        "tip": null,
+        "place": {
+         "name": "Musei Vaticani",
+         "lat": 41.90638889,
+         "lng": 12.45444444
+        },
+        "history": "Los Museos Vaticanos (en italiano Musei Vaticani, en latín Musea Vaticana) son un conjunto de galerías y estancias de gran valor artístico, propiedad de la Iglesia y abiertas al público en la Ciudad del Vaticano. La entrada al museo, se encuentra en territorio italiano en Viale Vaticano, Roma. Muestran obras de una extensa colección de la Iglesia católica y el papado a lo largo de los siglos, incluidas varias de las esculturas romanas más conocidas y las obras maestras del arte renacentista más importantes del mundo.",
+        "sources": [
+         {
+          "title": "Wikipedia: Museos Vaticanos",
+          "url": "https://es.wikipedia.org/wiki/Museos_Vaticanos"
+         }
+        ]
+       },
+       {
+        "time": "13:00–14:00",
+        "type": "imprescindible",
+        "title": "Basilica di San Pietro",
+        "town": null,
+        "note": "Recuerda que debes vestir cubriendo hombros y rodillas para entrar.",
+        "why": "Es el centro espiritual de la cristiandad y una obra maestra de la arquitectura.",
+        "lookFor": "la Piedad de Miguel Ángel y el baldaquino de Bernini.",
+        "food": null,
+        "dishes": null,
+        "cost": "Gratis",
+        "tip": null,
+        "place": {
+         "name": "Basilica di San Pietro",
+         "lat": 41.90222222,
+         "lng": 12.45341667
+        },
+        "history": "La basílica papal de San Pedro (en latín: Basilica Sancti Petri; en italiano: Basilica Papale di San Pietro), conocida comúnmente como basílica de San Pedro, es un templo católico situado en la Ciudad del Vaticano. La basílica cuenta con el mayor espacio interior de una iglesia cristiana en el mundo, presenta 193 m de longitud, 44,5 m de altura, y abarca una superficie de 2,3 hectáreas.[cita requerida] La altura que le confiere su cúpula hace que su figura domine el horizonte de Roma. Es considerada como uno de los lugares más sagrados del catolicismo.",
+        "sources": [
+         {
+          "title": "Wikipedia: Basílica de San Pedro",
+          "url": "https://es.wikipedia.org/wiki/Bas%C3%ADlica_de_San_Pedro"
+         }
+        ]
+       },
+       {
+        "time": "14:00–15:30",
+        "type": "comida",
+        "title": "Almuerzo cerca de Borgo Pio",
+        "town": null,
+        "note": "Es un área muy cercana al Vaticano con buenos locales de comida rápida de calidad.",
+        "why": null,
+        "lookFor": null,
+        "food": "Borgo Pio",
+        "dishes": [
+         {
+          "name": "Pizza al taglio",
+          "what": "Pizza cocinada en bandejas rectangulares y vendida al peso.",
+          "why": "Es la forma romana más auténtica y rápida de comer pizza al mediodía."
+         },
+         {
+          "name": "Supplí",
+          "what": "Croqueta de arroz con tomate y mozzarella en el centro.",
+          "why": "El snack callejero romano por excelencia que no puedes dejar de probar."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": null
+       },
+       {
+        "time": "16:00–17:30",
+        "type": "recomendado",
+        "title": "Castel Sant'Angelo",
+        "town": null,
+        "note": "El paseo por el puente frente al castillo ofrece fotos espectaculares.",
+        "why": "Fue originalmente el mausoleo del emperador Adriano y luego fortaleza papal.",
+        "lookFor": "la estatua del ángel en la cima y las vistas desde la terraza.",
+        "food": null,
+        "dishes": null,
+        "cost": "15 EUR",
+        "tip": null,
+        "place": {
+         "name": "Castel Sant'Angelo",
+         "lat": 41.903044,
+         "lng": 12.466307
+        },
+        "history": "El Castillo de Sant'Angelo (en italiano: Castel Sant'Angelo) o Mausoleo de Adriano (en italiano: mausoleo di Adriano), conocido entre los siglos x y xii como Mole Adrianorum o Castellum Crescentii, es un monumento de Roma (Italia), situado en la orilla derecha del Tíber, frente al Pons Aelius (actual Puente Sant'Angelo), a poca distancia del Vaticano, entre el rione de Borgo y el de Prati. Dedicado al Arcángel San Miguel, está unido a la Ciudad del Vaticano a través del pasillo fortificado denominado Passetto. El castillo ha sido modificado radicalmente varias veces en las épocas medieval y renacentista.",
+        "sources": [
+         {
+          "title": "Wikipedia: Castillo de Sant'Angelo",
+          "url": "https://es.wikipedia.org/wiki/Castillo_de_Sant%27Angelo"
+         }
+        ]
+       },
+       {
+        "time": "18:00–19:30",
+        "type": "opcional",
+        "title": "Ponte Sant'Angelo",
+        "town": null,
+        "note": "Disfruta el atardecer paseando hacia el otro lado del Tíber.",
+        "why": "Es uno de los puentes más bellos de la ciudad, adornado con estatuas de ángeles.",
+        "lookFor": "las estatuas de Bernini que decoran el puente.",
+        "food": null,
+        "dishes": null,
+        "cost": "Gratis",
+        "tip": null,
+        "place": {
+         "name": "Ponte Sant'Angelo",
+         "lat": 41.901803,
+         "lng": 12.46645
+        },
+        "history": "El puente de Sant'Angelo, originalmente puente de Elio (Pons Aelius) y también conocido como puente de Adriano, es un puente situado en la ciudad de Roma, construido entre los años 134-139 por el emperador romano Adriano, destinado a extender el centro de la ciudad a su mausoleo de reciente construcción, que hoy en día constituye el Castillo de Sant'Angelo. Se encuentra cubierto de mármol travertino y cruza el río Tíber con cinco arcadas. Hoy, el puente es exclusivamente peatonal y proporciona una vista fotogénica del castillo de Sant'Angelo.",
+        "sources": [
+         {
+          "title": "Wikipedia: Puente de Sant'Angelo",
+          "url": "https://es.wikipedia.org/wiki/Puente_de_Sant%27Angelo"
+         }
+        ]
+       },
+       {
+        "time": "20:00–21:30",
+        "type": "comida",
+        "title": "Cena en Trastevere",
+        "town": null,
+        "note": "Este barrio tiene el ambiente nocturno más auténtico de Roma.",
+        "why": null,
+        "lookFor": null,
+        "food": "Trastevere",
+        "dishes": [
+         {
+          "name": "Tonnarelli cacio e pepe",
+          "what": "Pasta fresca con queso pecorino y mucha pimienta negra.",
+          "why": "Es una explosión de sabor sencilla que define la cocina romana de barrio."
+         },
+         {
+          "name": "Abbacchio a scottadito",
+          "what": "Chuletas de cordero lechal a la parrilla.",
+          "why": "Un plato de carne tradicional delicioso, muy típico de las tabernas locales."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": null
+       }
+      ]
+     },
+     {
+      "date": "day-3",
+      "city": "Roma",
+      "title": "Barroco y plazas legendarias",
+      "mode": "walking",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "08:30–09:30",
+        "type": "comida",
+        "title": "Desayuno en Piazza Navona",
+        "town": null,
+        "note": "Intenta evitar los cafés con terraza directa en la plaza por el precio, camina dos calles hacia afuera.",
+        "why": null,
+        "lookFor": null,
+        "food": "Alrededores de Piazza Navona",
+        "dishes": [
+         {
+          "name": "Caffè macchiato",
+          "what": "Café espresso manchado con una gota de leche.",
+          "why": "Ideal si quieres un toque de suavidad sin perder la intensidad del café."
+         },
+         {
+          "name": "Biscotti",
+          "what": "Galletas italianas secas, a menudo con almendras.",
+          "why": "Un acompañamiento crujiente y clásico para el café matutino."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": null
+       },
+       {
+        "time": "10:00–11:00",
+        "type": "imprescindible",
+        "title": "Piazza Navona",
+        "town": null,
+        "note": "Admira la fuente central de Bernini temprano para evitar multitudes.",
+        "why": "Es el ejemplo perfecto de la elegancia barroca romana.",
+        "lookFor": "la Fontana dei Quattro Fiumi en el centro de la plaza.",
+        "food": null,
+        "dishes": null,
+        "cost": "Gratis",
+        "tip": null,
+        "place": {
+         "name": "Piazza Navona",
+         "lat": 41.8989282,
+         "lng": 12.4731178
+        },
+        "history": "La plaza Navona (Piazza Navona en italiano) es uno de los espacios urbanos más destacados de Roma, que reúne esculturas, fuentes y edificios de gran valor artístico y supone un centro de la vida social, cultural y turística de la ciudad. Este espacio ha constituido un emplazamiento de importancia desde la Antigua Roma, en la que se levantaba allí un estadio para competiciones deportivas y combates de gladiadores.",
+        "sources": [
+         {
+          "title": "Wikipedia: Plaza Navona",
+          "url": "https://es.wikipedia.org/wiki/Plaza_Navona"
+         }
+        ]
+       },
+       {
+        "time": "11:30–12:30",
+        "type": "imprescindible",
+        "title": "Pantheon",
+        "town": null,
+        "note": "Es obligatorio reservar entrada con antelación online.",
+        "why": "Es el edificio antiguo mejor conservado de Roma y un milagro arquitectónico.",
+        "lookFor": "el óculo central en la cúpula, la única fuente de luz.",
+        "food": null,
+        "dishes": null,
+        "cost": "5 EUR",
+        "tip": null,
+        "place": {
+         "name": "Pantheon",
+         "lat": 41.898616,
+         "lng": 12.4768334
+        },
+        "history": "El Panteón de Agripa o Panteón de Roma es un antiguo templo romano —en la actualidad, consagrado como iglesia católica—, situado en la ciudad de Roma, Italia, en el lugar de un templo construido por Marco Agripa durante el gobierno de Augusto y que resultó destruido por un incendio acaecido en el año 80. Más tarde, lo volvió a levantar el emperador Adriano, aunque la fecha de construcción es incierta porque optó por mantener la inscripción del edificio primitivo en el que figuraba Agripa como promotor. El nombre procede del griego Pántheion (en griego: Πάνθειον), que significa «templo de todos los dioses». La mayoría de los autores latinos emplean la forma latina de su transliteración, Pantheon.",
+        "sources": [
+         {
+          "title": "Wikipedia: Panteón de Agripa",
+          "url": "https://es.wikipedia.org/wiki/Pante%C3%B3n_de_Agripa"
+         }
+        ]
+       },
+       {
+        "time": "13:00–14:30",
+        "type": "comida",
+        "title": "Almuerzo en el centro",
+        "town": null,
+        "note": "Cerca del Panteón hay tabernas históricas muy recomendables.",
+        "why": null,
+        "lookFor": null,
+        "food": "Alrededores del Panteón",
+        "dishes": [
+         {
+          "name": "Amatriciana",
+          "what": "Pasta con salsa de tomate, guanciale y queso pecorino.",
+          "why": "Un sabor intenso y profundo que representa la tradición de la cocina romana."
+         },
+         {
+          "name": "Insalata di carciofi",
+          "what": "Ensalada de alcachofas crudas laminadas con limón y parmesano.",
+          "why": "Es fresca, ligera y utiliza uno de los ingredientes más amados de Roma."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": null
+       },
+       {
+        "time": "15:00–16:00",
+        "type": "imprescindible",
+        "title": "Fontana di Trevi",
+        "town": null,
+        "note": "Es la zona más concurrida, ten paciencia con las fotos.",
+        "why": "Es la fuente más famosa y espectacular del mundo.",
+        "lookFor": "la estatua de Neptuno en el centro de la escena.",
+        "food": null,
+        "dishes": null,
+        "cost": "Gratis",
+        "tip": null,
+        "place": {
+         "name": "Fontana di Trevi",
+         "lat": 41.90093225,
+         "lng": 12.48331264
+        },
+        "history": "La Fontana de Trevi (en italiano Fontana di Trevi), con casi 50 metros de frente, es una de las mayores fuentes monumentales del Barroco en Roma (Italia). Según la actual división administrativa del centro de Roma, está situada en el rione de Trevi. Ubicada en la fachada trasera del Palacio Poli, está estructurada como un arco de triunfo.",
+        "sources": [
+         {
+          "title": "Wikipedia: Fontana di Trevi",
+          "url": "https://es.wikipedia.org/wiki/Fontana_di_Trevi"
+         }
+        ]
+       },
+       {
+        "time": "16:30–17:30",
+        "type": "recomendado",
+        "title": "Piazza di Spagna",
+        "town": null,
+        "note": "Sube los escalones para descansar un momento y ver la ciudad desde arriba.",
+        "why": "Es un lugar icónico de la vida social romana con sus famosas escalinatas.",
+        "lookFor": "la fuente de la Barcaccia al pie de la escalinata.",
+        "food": null,
+        "dishes": null,
+        "cost": "Gratis",
+        "tip": null,
+        "place": {
+         "name": "Piazza di Spagna",
+         "lat": 41.9056392,
+         "lng": 12.482358
+        },
+        "history": "La plaza de España (en italiano Piazza di Spagna) es una de las plazas más famosas de Roma. Toma su nombre del Palacio de España, sede de la embajada española ante la Santa Sede y ante la Orden de Malta. En la plaza destacan la conocida escalinata que sube hasta la iglesia de Trinità dei Monti y la barroca fuente de la Barcaza.",
+        "sources": [
+         {
+          "title": "Wikipedia: Plaza de España (Roma)",
+          "url": "https://es.wikipedia.org/wiki/Plaza_de_Espa%C3%B1a_(Roma)"
+         }
+        ]
+       },
+       {
+        "time": "19:00–21:00",
+        "type": "comida",
+        "title": "Cena de despedida",
+        "town": null,
+        "note": "Date un capricho en un restaurante con terraza o ambiente histórico.",
+        "why": null,
+        "lookFor": null,
+        "food": "Restaurantes del centro histórico",
+        "dishes": [
+         {
+          "name": "Ossobuco alla romana",
+          "what": "Jarrete de ternera guisado lentamente con verduras y vino.",
+          "why": "Un plato contundente y tradicional para celebrar la última noche."
+         },
+         {
+          "name": "Tiramisù",
+          "what": "Postre de café, bizcochos y crema de mascarpone.",
+          "why": "El postre italiano más famoso que siempre sabe mejor en su lugar de origen."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 10,
+         "max": 15
+        },
+        "place": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "en": {
+   "intro": {
+    "summary": "This three-day itinerary balances major ancient landmarks with charming neighborhoods to help you experience the best of Rome efficiently.",
+    "about": "Rome is an open-air museum where thousands of years of history blend seamlessly into the rhythm of modern daily life. Visitors are drawn here by the sheer density of iconic architecture, vibrant piazzas, and a legendary food culture that defines the Italian experience.",
+    "stay": "I recommend staying in the historic center near Piazza Navona or the Pantheon, as this puts you within walking distance of most major monuments and sets the stage for a classic Roman experience.",
+    "gettingAround": "Rome is a very walkable city, and the best way to see the historic center is on foot. For longer distances, the metro and bus systems are reliable, and you can purchase tickets at most tobacco shops or newsstands.",
+    "bestTime": "Spring and autumn offer the most pleasant weather for walking, with mild temperatures and clear skies. Summer can be quite hot, while winter is cooler and quieter, though you will need to pack layers for the occasional rain."
+   },
+   "itinerary": {
+    "source": "guide",
+    "lang": "en",
+    "createdAt": "2026-10-18T19:21:35.516Z",
+    "preferences": {
+     "pace": "balanced",
+     "interests": [
+      "culture",
+      "food"
+     ],
+     "transport": "transit",
+     "checkIn": null
+    },
+    "days": [
+     {
+      "date": "day-1",
+      "city": "Rome",
+      "title": "Ancient Rome and the Colosseum",
+      "mode": "walking",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "08:30–09:30",
+        "type": "comida",
+        "title": "Breakfast near Monti",
+        "town": null,
+        "note": "A quiet neighborhood breakfast spot is perfect before the crowds arrive.",
+        "why": null,
+        "lookFor": null,
+        "food": "Look for a local cafe or bar in the Rione Monti area.",
+        "dishes": [
+         {
+          "name": "Cornetto",
+          "what": "An Italian crescent-shaped pastry, often filled with crema or marmalade.",
+          "why": "It is the essential morning pastry that pairs perfectly with a cappuccino."
+         },
+         {
+          "name": "Maritozzo",
+          "what": "A sweet brioche bun split and filled with a generous amount of whipped cream.",
+          "why": "This is a Roman classic that provides a rich start to a long walking day."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": {
+         "name": "Monti",
+         "lat": 41.8919732,
+         "lng": 12.4956579
+        }
+       },
+       {
+        "time": "10:00–12:30",
+        "type": "imprescindible",
+        "title": "Colosseum",
+        "town": null,
+        "note": "Book your tickets online well in advance to avoid the long entry queues.",
+        "why": "This is the world's most famous amphitheater and the symbol of Rome's ancient power.",
+        "lookFor": "The intricate underground chambers, known as the hypogeum, which were once hidden by the arena floor.",
+        "food": null,
+        "dishes": null,
+        "cost": "€18-€24",
+        "tip": null,
+        "place": {
+         "name": "Colosseo",
+         "lat": 41.8903,
+         "lng": 12.4922
+        },
+        "history": "The Colosseum ( KOL-ə-SEE-əm; Italian: Colosseo [kolosˈsɛːo]) is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is the largest standing amphitheatre in the world. Construction began under the Emperor Vespasian (r. 69–79 AD) in 72 and was completed in AD 80 under his successor and heir, Titus (r. 79–81).",
+        "sources": [
+         {
+          "title": "Wikipedia: Colosseum",
+          "url": "https://en.wikipedia.org/wiki/Colosseum"
+         }
+        ]
+       },
+       {
+        "time": "12:30–13:00",
+        "type": "imprescindible",
+        "title": "Arch of Constantine",
+        "town": null,
+        "note": "Located right outside the Colosseum, you can see it while walking toward the Forum.",
+        "why": "It is the largest Roman triumphal arch and remarkably well-preserved.",
+        "lookFor": "The relief sculptures taken from older monuments to honor different emperors.",
+        "food": null,
+        "dishes": null,
+        "cost": "Free",
+        "tip": null,
+        "place": {
+         "name": "Arco di Costantino",
+         "lat": 41.88972222,
+         "lng": 12.49083333
+        },
+        "history": "The Arch of Constantine (Italian: Arco di Costantino) is a triumphal arch in Rome dedicated to the emperor Constantine the Great. The arch was commissioned by the Roman Senate to commemorate Constantine's victory over Maxentius at the Battle of the Milvian Bridge in AD 312. Situated between the Colosseum and the Palatine Hill, the arch spans the Via Triumphalis, the route taken by victorious military leaders when they entered the city in a triumphal procession.",
+        "sources": [
+         {
+          "title": "Wikipedia: Arch of Constantine",
+          "url": "https://en.wikipedia.org/wiki/Arch_of_Constantine"
+         }
+        ]
+       },
+       {
+        "time": "13:30–15:00",
+        "type": "comida",
+        "title": "Lunch in Celio",
+        "town": null,
+        "note": "A simple trattoria in this area offers respite from the tourist crowds.",
+        "why": null,
+        "lookFor": null,
+        "food": "Look for a traditional trattoria on Via dei Santi Quattro.",
+        "dishes": [
+         {
+          "name": "Pasta alla Carbonara",
+          "what": "Pasta with a sauce made of eggs, pecorino romano, guanciale, and black pepper.",
+          "why": "Rome is the birthplace of this dish, and it is usually executed perfectly here."
+         },
+         {
+          "name": "Carciofo alla giudia",
+          "what": "A Jewish-style deep-fried artichoke.",
+          "why": "It is a crisp and savory seasonal specialty that defines Roman culinary history."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": null
+       },
+       {
+        "time": "15:30–18:00",
+        "type": "imprescindible",
+        "title": "Roman Forum and Palatine Hill",
+        "town": null,
+        "note": "The entrance is usually shared with the Colosseum ticket.",
+        "why": "This valley was the heart of ancient Rome's political and social life.",
+        "lookFor": "The Temple of Julius Caesar and the panoramic views of the ruins from the Palatine Hill.",
+        "food": null,
+        "dishes": null,
+        "cost": "Included in Colosseum ticket",
+        "tip": null,
+        "place": {
+         "name": "Foro Romano",
+         "lat": 41.8922,
+         "lng": 12.4852
+        },
+        "history": "The Roman Forum (Italian: Foro Romano), also known by its Latin name Forum Romanum, is a rectangular forum (plaza) surrounded by the ruins of several important ancient government buildings at the centre of the city of Rome. Citizens of the ancient city referred to this space, originally a marketplace, as the Forum Magnum, or simply the Forum. For centuries, the Forum was the centre of day-to-day life in Rome: the site of triumphal processions and elections; the venue for public speeches, criminal trials and gladiatorial matches; and the nucleus of commercial and legal affairs.",
+        "sources": [
+         {
+          "title": "Wikipedia: Roman Forum",
+          "url": "https://en.wikipedia.org/wiki/Roman_Forum"
+         }
+        ]
+       },
+       {
+        "time": "19:30–21:00",
+        "type": "comida",
+        "title": "Dinner in Monti",
+        "town": null,
+        "note": "Monti has a vibrant evening atmosphere with many small eateries.",
+        "why": null,
+        "lookFor": null,
+        "food": "Find a cozy tavern near Piazza della Madonna dei Monti.",
+        "dishes": [
+         {
+          "name": "Saltimbocca alla romana",
+          "what": "Veal lined with prosciutto and sage, marinated in white wine.",
+          "why": "It is a refined and savory classic that you will find on most local menus."
+         },
+         {
+          "name": "Tiramisù",
+          "what": "A coffee-flavored dessert made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone.",
+          "why": "It is the most famous Italian dessert and a perfect end to the meal."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": null
+       }
+      ]
+     },
+     {
+      "date": "day-2",
+      "city": "Rome",
+      "title": "The Vatican and Renaissance Rome",
+      "mode": "transit",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "08:00–09:00",
+        "type": "comida",
+        "title": "Breakfast near Prati",
+        "town": null,
+        "note": "Grab a quick bite before heading to the Vatican Museums.",
+        "why": null,
+        "lookFor": null,
+        "food": "Look for a cafe on Via Cola di Rienzo.",
+        "dishes": [
+         {
+          "name": "Caffè espresso",
+          "what": "A concentrated form of coffee served in small, strong shots.",
+          "why": "It is the fuel that keeps Romans energized throughout the morning."
+         },
+         {
+          "name": "Crostatina",
+          "what": "A small tart usually filled with jam or ricotta.",
+          "why": "It is a delicious, simple morning treat often found in local bars."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": null
+       },
+       {
+        "time": "09:30–13:00",
+        "type": "imprescindible",
+        "title": "Vatican Museums and Sistine Chapel",
+        "town": null,
+        "note": "Buy tickets well in advance. Wear modest clothing covering shoulders and knees.",
+        "why": "It is one of the world's most significant art collections, housing immense masterpieces.",
+        "lookFor": "The ceiling of the Sistine Chapel, painted by Michelangelo.",
+        "food": null,
+        "dishes": null,
+        "cost": "€20-€25",
+        "tip": null,
+        "place": {
+         "name": "Musei Vaticani",
+         "lat": 41.9064,
+         "lng": 12.4544
+        },
+        "history": "The Vatican Museums (Italian: Musei Vaticani; Latin: Musea Vaticana) are the public museums of the Vatican City. They display works from the immense collection amassed by the Catholic Church and the papacy throughout the centuries, including several of the best-known Roman sculptures and most important masterpieces of Renaissance art in the world. The museums contain roughly 70,000 works, of which 20,000 are on display, and currently employ 640 people who work in 40 different administrative, scholarly, and restoration departments.",
+        "sources": [
+         {
+          "title": "Wikipedia: Vatican Museums",
+          "url": "https://en.wikipedia.org/wiki/Vatican_Museums"
+         }
+        ]
+       },
+       {
+        "time": "13:30–14:30",
+        "type": "comida",
+        "title": "Lunch in Borgo",
+        "town": null,
+        "note": "Avoid the restaurants immediately facing the square for better value.",
+        "why": null,
+        "lookFor": null,
+        "food": "Look for a family-run trattoria tucked into the Borgo streets.",
+        "dishes": [
+         {
+          "name": "Pasta all'Amatriciana",
+          "what": "Pasta with a sauce of guanciale, pecorino cheese, and tomato.",
+          "why": "This is a robust and savory pasta dish that reflects the rustic side of Roman cooking."
+         },
+         {
+          "name": "Supplí",
+          "what": "A fried rice ball with a mozzarella center.",
+          "why": "It is the ultimate Roman street food snack to enjoy as an antipasto."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": null
+       },
+       {
+        "time": "15:00–16:30",
+        "type": "imprescindible",
+        "title": "St. Peter's Basilica",
+        "town": null,
+        "note": "There is a security line; it moves reasonably fast.",
+        "why": "This is the center of the Catholic world and an architectural marvel.",
+        "lookFor": "Michelangelo's Pietà sculpture, which is displayed in the first chapel on the right.",
+        "food": null,
+        "dishes": null,
+        "cost": "Free",
+        "tip": null,
+        "place": {
+         "name": "Basilica di San Pietro",
+         "lat": 41.90222222,
+         "lng": 12.45333333
+        },
+        "history": "The Papal Basilica of Saint Peter in the Vatican (Italian: Basilica Papale di San Pietro in Vaticano), or simply St. Peter's Basilica (Latin: Basilica Sancti Petri; Italian: Basilica di San Pietro [baˈziːlika di sam ˈpjɛːtro]), is a church of the Italian Renaissance located in Vatican City, an independent microstate enclaved within the city of Rome, Italy. It was initially planned in the 15th century by Pope Nicholas V and then Pope Julius II to replace the ageing Old St.",
+        "sources": [
+         {
+          "title": "Wikipedia: St. Peter's Basilica",
+          "url": "https://en.wikipedia.org/wiki/St._Peter%27s_Basilica"
+         }
+        ]
+       },
+       {
+        "time": "17:00–18:30",
+        "type": "recomendado",
+        "title": "Castel Sant'Angelo",
+        "town": null,
+        "note": "Walk along the river bank to reach it from St. Peter's.",
+        "why": "It offers a fascinating history from tomb to fortress to museum.",
+        "lookFor": "The terrace at the top, which offers a beautiful view over the Tiber River.",
+        "food": null,
+        "dishes": null,
+        "cost": "€15",
+        "tip": null,
+        "place": {
+         "name": "Castel Sant'Angelo",
+         "lat": 41.9031178,
+         "lng": 12.4663427
+        },
+        "history": "Castel Sant'Angelo (pronounced [kaˈstɛl sanˈtandʒelo] Italian for 'Castle of the Holy Angel'), also known as Mausoleum of Hadrian (Italian: Mausoleo di Adriano), is a towering rotunda (cylindrical building) in Parco Adriano, Rome, Italy. It was initially commissioned by the Roman Emperor Hadrian as a mausoleum for himself and his family. The popes later used the building as a fortress and castle dedicated to Saint Michael the Archangel, and it is now a museum.",
+        "sources": [
+         {
+          "title": "Wikipedia: Castel Sant'Angelo",
+          "url": "https://en.wikipedia.org/wiki/Castel_Sant%27Angelo"
+         }
+        ]
+       },
+       {
+        "time": "20:00–21:30",
+        "type": "comida",
+        "title": "Dinner in Trastevere",
+        "town": null,
+        "note": "A bit of a walk, but very atmospheric for a nice dinner.",
+        "why": null,
+        "lookFor": null,
+        "food": "Find a lively osteria near Piazza di Santa Maria.",
+        "dishes": [
+         {
+          "name": "Coda alla vaccinara",
+          "what": "A classic Roman oxtail stew, slow-cooked until tender.",
+          "why": "This is a traditional, hearty dish of Roman \"quinto quarto\" (offal) cooking."
+         },
+         {
+          "name": "Vino della casa",
+          "what": "House wine, usually a simple red or white from the Lazio region.",
+          "why": "It is the affordable and authentic way to accompany a Roman dinner."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 5,
+         "max": 10
+        },
+        "place": {
+         "name": "Trastevere",
+         "lat": 41.8911586,
+         "lng": 12.4668459
+        }
+       }
+      ]
+     },
+     {
+      "date": "day-3",
+      "city": "Rome",
+      "title": "Baroque Fountains and Pantheon",
+      "mode": "walking",
+      "excursion": null,
+      "stops": [
+       {
+        "time": "09:00–10:00",
+        "type": "comida",
+        "title": "Breakfast near Pantheon",
+        "town": null,
+        "note": "There are some historic cafes here worth finding.",
+        "why": null,
+        "lookFor": null,
+        "food": "Look for a cafe near Piazza della Rotonda.",
+        "dishes": [
+         {
+          "name": "Cappuccino",
+          "what": "Espresso-based coffee drink with steamed milk foam.",
+          "why": "It is the quintessential Italian breakfast drink, enjoyed exclusively in the morning."
+         },
+         {
+          "name": "Biscotti",
+          "what": "Twice-baked almond biscuits.",
+          "why": "They are perfect for dipping into your coffee."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": null
+       },
+       {
+        "time": "10:30–12:00",
+        "type": "imprescindible",
+        "title": "Pantheon",
+        "town": null,
+        "note": "Entry requires a pre-booked ticket or a queue at the ticket office.",
+        "why": "It is the best-preserved monument of ancient Rome, famous for its massive dome.",
+        "lookFor": "The oculus at the top of the dome, the only source of light in the building.",
+        "food": null,
+        "dishes": null,
+        "cost": "€5",
+        "tip": null,
+        "place": {
+         "name": "Pantheon",
+         "lat": 41.898616,
+         "lng": 12.4768334
+        },
+        "history": "Pantheon may refer to:",
+        "sources": [
+         {
+          "title": "Wikipedia: Pantheon",
+          "url": "https://en.wikipedia.org/wiki/Pantheon"
+         }
+        ]
+       },
+       {
+        "time": "12:30–13:00",
+        "type": "imprescindible",
+        "title": "Piazza Navona",
+        "town": null,
+        "note": "A large public square, perfect for people-watching.",
+        "why": "It showcases Baroque architecture and the famous Fountain of the Four Rivers.",
+        "lookFor": "Bernini's Fountain of the Four Rivers in the center of the square.",
+        "food": null,
+        "dishes": null,
+        "cost": "Free",
+        "tip": null,
+        "place": {
+         "name": "Piazza Navona",
+         "lat": 41.899,
+         "lng": 12.4731
+        },
+        "history": "Piazza Navona (pronounced [ˈpjattsa naˈvoːna]) is a public open space in Rome, Italy. It is built on the site of the 1st century AD Stadium of Domitian and follows the form of the open space of the stadium in an elongated oval. The ancient Romans went there to watch the agones (\"games\"), and hence it was known as \"Circus Agonalis\" (\"competition arena\").",
+        "sources": [
+         {
+          "title": "Wikipedia: Piazza Navona",
+          "url": "https://en.wikipedia.org/wiki/Piazza_Navona"
+         }
+        ]
+       },
+       {
+        "time": "13:30–15:00",
+        "type": "comida",
+        "title": "Lunch near Piazza Navona",
+        "town": null,
+        "note": "Look for a deli or 'tavola calda' for a quick, authentic lunch.",
+        "why": null,
+        "lookFor": null,
+        "food": "Look for a small deli serving 'pizza al taglio' (pizza by the slice).",
+        "dishes": [
+         {
+          "name": "Pizza Bianca",
+          "what": "Simple flatbread seasoned with olive oil and salt.",
+          "why": "It is the base of Roman street food and delicious on its own."
+         },
+         {
+          "name": "Porchetta",
+          "what": "Savory, fatty, and moist boneless pork roast.",
+          "why": "Often served in a sandwich, it is a flavorful treat found in many delis."
+         }
+        ],
+        "cost": null,
+        "tip": null,
+        "place": null
+       },
+       {
+        "time": "15:30–16:30",
+        "type": "imprescindible",
+        "title": "Trevi Fountain",
+        "town": null,
+        "note": "Expect it to be very crowded; visiting in the late afternoon is best.",
+        "why": "It is the largest and most famous Baroque fountain in Rome.",
+        "lookFor": "The central statue of Oceanus, the god of water.",
+        "food": null,
+        "dishes": null,
+        "cost": "Free",
+        "tip": null,
+        "place": {
+         "name": "Fontana di Trevi",
+         "lat": 41.9009778,
+         "lng": 12.4832848
+        },
+        "history": "The Trevi Fountain (Italian: Fontana di Trevi) is an 18th-century fountain in the Trevi district in Rome, Italy, designed by Italian architect Nicola Salvi and completed by Giuseppe Pannini in 1762. Standing 26.3 metres (86 ft) high and 49.15 metres (161.3 ft) wide, it is the largest Baroque fountain in the world and one of the most famous fountains in the world.",
+        "sources": [
+         {
+          "title": "Wikipedia: Trevi Fountain",
+          "url": "https://en.wikipedia.org/wiki/Trevi_Fountain"
+         }
+        ]
+       },
+       {
+        "time": "17:00–18:00",
+        "type": "recomendado",
+        "title": "Spanish Steps",
+        "town": null,
+        "note": "A short walk from the Trevi Fountain.",
+        "why": "These monumental steps are a classic Roman meeting place.",
+        "lookFor": "The Barcaccia fountain at the bottom of the steps.",
+        "food": null,
+        "dishes": null,
+        "cost": "Free",
+        "tip": null,
+        "place": {
+         "name": "Scalinata di Trinità dei Monti",
+         "lat": 41.9061,
+         "lng": 12.4828
+        },
+        "history": "The Spanish Steps (Italian: Scalinata di Trinità dei Monti) in Rome, Italy, climb a steep slope between the Piazza di Spagna at the base and the Piazza Trinità dei Monti, dominated by the Trinità dei Monti church, at the top. The monumental stairway of 135 steps is linked with the Trinità dei Monti church, under the patronage of the Bourbon kings of France, at the top of the steps and the Spanish Embassy to the Holy See in the Palazzo Monaldeschi at the bottom of the steps. The stairway was designed by the architects Francesco de Sanctis and Alessandro Specchi.",
+        "sources": [
+         {
+          "title": "Wikipedia: Spanish Steps",
+          "url": "https://en.wikipedia.org/wiki/Spanish_Steps"
+         }
+        ]
+       },
+       {
+        "time": "20:00–21:30",
+        "type": "comida",
+        "title": "Farewell Dinner near Spanish Steps",
+        "town": null,
+        "note": "Treat yourself to a nice dinner in this elegant area.",
+        "why": null,
+        "lookFor": null,
+        "food": "Look for a slightly more upscale restaurant in the streets around Via del Babuino.",
+        "dishes": [
+         {
+          "name": "Tonarelli Cacio e Pepe",
+          "what": "Pasta with a simple sauce of pecorino romano cheese and black pepper.",
+          "why": "A minimalist dish where the quality of the ingredients shines."
+         },
+         {
+          "name": "Abbacchio a scottadito",
+          "what": "Grilled lamb chops, typically eaten with the fingers.",
+          "why": "It is a delicious and tender meat dish that highlights local lamb."
+         }
+        ],
+        "cost": null,
+        "tip": {
+         "min": 10,
+         "max": 15
+        },
+        "place": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "photo": null
+ }
+}

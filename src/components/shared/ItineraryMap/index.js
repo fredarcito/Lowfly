@@ -52,8 +52,14 @@ const markerIcon = (leaflet, number, active, visited) => {
 // The day's stops, numbered in order, joined by a dashed line (straight: no routing service).
 // `stops`: [{ number, name, lat, lng }]. `focus`: the stops to frame at first (without the airport).
 // `active`: the highlighted stop number; `visited`: numbers already visited; `onSelect(number)` when a pin is tapped.
+// `interactive: false` (a city guide's miniature): fixed, nothing to drag, zoom or tap, and only loaded once it is
+// about to be seen, so a reader who never scrolls to it costs no tiles.
 // Leaflet only runs in the browser, so it is loaded when the map mounts.
-const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, className }) => {
+const STILL_OPTIONS = { dragging: false, touchZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, zoomControl: false };
+// How far below the screen a miniature starts loading
+const LOAD_AHEAD = "300px";
+
+const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, interactive = true, className }) => {
   const box = useRef(null);
   const mapRef = useRef(null);
   const markersRef = useRef(new Map()); // number → marker
@@ -64,12 +70,13 @@ const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, cl
 
   useEffect(() => {
     let observer;
+    let visibility;
     let cancelled = false;
     const markers = markersRef.current;
-    import("leaflet").then(({ default: leaflet }) => {
+    const draw = () => import("leaflet").then(({ default: leaflet }) => {
       if (cancelled || !box.current || !stops.length) return;
       leafletRef.current = leaflet;
-      const map = leaflet.map(box.current, { scrollWheelZoom: false, attributionControl: true });
+      const map = leaflet.map(box.current, { scrollWheelZoom: false, attributionControl: true, ...(!interactive && STILL_OPTIONS) });
       mapRef.current = map;
       const addTiles = () => leaflet.tileLayer(TILES[theme()], { attribution: ATTRIBUTION, maxZoom: 19, ...TILE_OPTIONS }).addTo(map);
       let tiles = addTiles();
@@ -78,7 +85,7 @@ const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, cl
       if (points.length > 1) leaflet.polyline(points, { color: CORAL, weight: 3, opacity: 0.85, dashArray: "6 7" }).addTo(map);
       for (const stop of stops) {
         const marker = leaflet
-          .marker([stop.lat, stop.lng], { icon: markerIcon(leaflet, stop.number, false), title: `${stop.number}. ${stop.name}` })
+          .marker([stop.lat, stop.lng], { icon: markerIcon(leaflet, stop.number, false), title: `${stop.number}. ${stop.name}`, interactive })
           .addTo(map)
           .on("click", () => onSelectRef.current?.(stop.number));
         markers.set(stop.number, marker);
@@ -94,8 +101,21 @@ const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, cl
       });
       observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
     });
+    if (interactive) draw();
+    else {
+      visibility = new IntersectionObserver(
+        (entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          visibility.disconnect();
+          draw();
+        },
+        { rootMargin: LOAD_AHEAD }
+      );
+      if (box.current) visibility.observe(box.current);
+    }
     return () => {
       cancelled = true;
+      visibility?.disconnect();
       observer?.disconnect();
       mapRef.current?.remove();
       mapRef.current = null;

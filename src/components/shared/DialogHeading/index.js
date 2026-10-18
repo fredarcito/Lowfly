@@ -2,6 +2,7 @@
 
 import { DialogDescription, DialogTitle } from "@/components/ui/dialog";
 
+// A dialog's top: its icon in a coral circle, its title and what it is about
 const DialogHeading = ({ icon: Icon, title, description }) => {
   return (
     <div className="flex gap-4 pr-6">

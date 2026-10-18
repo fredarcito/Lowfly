@@ -42,12 +42,17 @@ export const cityGuideSlugIn = (slug, lang) => {
   return id ? (guideIn(id, lang)?.slug ?? null) : null;
 };
 
-// Every guide in `lang`, without its itinerary (the guides' page, the sitemap), by city name
+// How many places a guide visits (its sights, not its meals or moves)
+const SIGHTS = new Set(["imprescindible", "recomendado", "opcional"]);
+const placesIn = (itinerary) => itinerary.days.reduce((total, day) => total + day.stops.filter((stop) => SIGHTS.has(stop.type)).length, 0);
+
+// Every guide in `lang`, without its itinerary but with how many places it visits (`placeCount`; the guides' page,
+// the sitemap), by city name
 export const listCityGuides = (lang) =>
   Object.keys(guides)
     .map((id) => guideIn(id, lang))
     .filter(Boolean)
-    .map(({ itinerary, ...guide }) => guide)
+    .map(({ itinerary, ...guide }) => ({ ...guide, placeCount: placesIn(itinerary) }))
     .sort((first, second) => first.city.localeCompare(second.city, lang));
 
 // The guide of a destination airport (a route's page to Rome links to Rome's), or null: the shortest one

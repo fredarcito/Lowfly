@@ -58,7 +58,7 @@ test.describe("city guides", () => {
     // With few guides, no search to get in the way; and for any other trip, the planner
     await expect(page.getByRole("searchbox")).toHaveCount(0);
     await expect(page.getByRole("link", { name: "Crear itinerario", exact: true }).last()).toHaveAttribute("href", "/es/trips/new");
-    await expect(page.getByRole("article").filter({ hasText: "Italia · 3 días" })).toBeVisible();
+    await expect(page.getByRole("article").filter({ hasText: "Italia" }).filter({ hasText: "3 días · 12 lugares" })).toBeVisible();
     await page.getByRole("link", { name: /Qué ver en Roma en 3 días/ }).click();
     await expect(page).toHaveURL(/\/es\/guias\/roma-3-dias$/);
   });

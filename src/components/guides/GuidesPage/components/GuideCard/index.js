@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CalendarDays } from "lucide-react";
 import PhotoCredit from "@/components/shared/PhotoCredit";
 import ShareButton from "@/components/shared/ShareButton";
 import { guideTexts } from "@/components/guides/data/texts";
@@ -9,8 +9,8 @@ import { useI18n } from "@/context/i18n";
 import { ROUTES } from "@/constants/routes";
 import { fallbackPhoto } from "@/utils/fallbackPhoto";
 
-// One guide on the guides' page: its photo (with its credit and "Share"), country and length, title, what it covers
-// and "See guide". The whole card opens it (its title's link stretched over it); the © and "Share" stay their own,
+// One guide on the guides' page: its photo (with its credit and "Share"), its country, its city (what stands out:
+// every guide is "what to see in…"), what it covers, then its length and places and "See guide". The whole card opens it (its title's link stretched over it); the © and "Share" stay their own,
 // above it.
 // `photo`: server/photos, or null for a generic one.
 const GuideCard = ({ guide, photo }) => {
@@ -40,19 +40,24 @@ const GuideCard = ({ guide, photo }) => {
           className="absolute top-3 right-3 z-20 h-9 bg-black/45 px-3.5 text-white hover:bg-black/65 hover:text-white dark:hover:bg-black/65"
         />
       </div>
-      <div className="grid content-start gap-2 p-5">
-        <p className="text-sm text-muted-foreground">
-          {guide.country} · {texts.list.days(guide.dayCount)}
-        </p>
-        <h3 className="font-heading text-xl font-bold">
+      <div className="grid grid-rows-[auto_auto_1fr_auto] gap-1.5 p-5">
+        <p className="text-sm text-muted-foreground">{guide.country}</p>
+        {/* The city stands out (every guide is "what to see in…"); its link still says the guide's whole title */}
+        <h3 className="font-heading text-2xl font-extrabold tracking-tight">
           <Link href={ROUTES.guide(lang, guide.slug)} className="after:absolute after:inset-0 after:z-10">
-            {texts.title(guide.city, guide.dayCount)}
+            {guide.city}
+            <span className="sr-only"> · {texts.title(guide.city, guide.dayCount)}</span>
           </Link>
         </h3>
         <p className="text-sm leading-relaxed text-muted-foreground">{guide.intro.summary}</p>
-        <p className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-primary-ink">
-          {texts.list.see} <ArrowRight className="size-4 transition group-hover:translate-x-1" />
-        </p>
+        <div className="mt-2 flex items-center justify-between gap-3 text-sm">
+          <span className="flex items-center gap-1.5 text-muted-foreground">
+            <CalendarDays className="size-4" /> {texts.list.days(guide.dayCount)} · {texts.list.places(guide.placeCount)}
+          </span>
+          <span className="flex items-center gap-1.5 font-semibold text-primary-ink">
+            {texts.list.see} <ArrowRight className="size-4 transition group-hover:translate-x-1" />
+          </span>
+        </div>
       </div>
     </article>
   );

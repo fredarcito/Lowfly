@@ -26,7 +26,13 @@ const WeekendDeals = ({ origin, originName, onSeeAll, fallback }) => {
         <h2 className="flex items-center gap-2 font-heading text-xl font-bold tracking-tight sm:text-2xl">
           <Luggage className="size-5 text-primary sm:size-6" /> {texts.deals.title}
         </h2>
-        <p className="text-sm text-muted-foreground">{texts.deals.subtitle(originName ?? origin)}</p>
+        {/* The departure airport is only known in the browser (saved, or guessed from the time zone): until then a
+            placeholder, never "Cheapest from" with nothing after it */}
+        {originName || origin ? (
+          <p className="text-sm text-muted-foreground">{texts.deals.subtitle(originName ?? origin)}</p>
+        ) : (
+          <Skeleton className="h-5 w-44" />
+        )}
       </div>
 
       <WeekendPicker weekends={deals.weekends} picked={deals.picked} onPick={deals.setPicked} />

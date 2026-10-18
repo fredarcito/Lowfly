@@ -5,6 +5,7 @@ import GuideCard from "@/components/guides/GuidesPage/components/GuideCard";
 import { guideTexts } from "@/components/guides/data/texts";
 import { useGuideFilters } from "@/components/guides/GuidesPage/components/GuideBrowser/hooks/useGuideFilters";
 import { useI18n } from "@/context/i18n";
+import { ENTER_RISE, riseDelay } from "@/constants/motion";
 import { cn } from "@/utils/cn";
 
 // From this many guides on, a search and two filters above them (with fewer, they would only be in the way). Every
@@ -69,8 +70,8 @@ const GuideBrowser = ({ guides, photos }) => {
       <h2 className="font-heading text-2xl font-extrabold tracking-tight sm:text-3xl">{texts.explore}</h2>
       {shown.length ? (
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {shown.map((guide) => (
-            <li key={guide.slug}>
+          {shown.map((guide, index) => (
+            <li key={guide.slug} className={ENTER_RISE} style={riseDelay(index)}>
               <GuideCard guide={guide} photo={photos[guide.slug]} />
             </li>
           ))}

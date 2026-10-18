@@ -4,6 +4,8 @@ import GuideIntro from "@/components/guides/GuidePage/components/GuideIntro";
 import TailorCard from "@/components/guides/GuidePage/components/TailorCard";
 import TailorPrompt from "@/components/guides/GuidePage/components/TailorPrompt";
 import { guideTexts } from "@/components/guides/data/texts";
+import { ENTER_RISE, riseDelay } from "@/constants/motion";
+import { cn } from "@/utils/cn";
 import { ROUTES } from "@/constants/routes";
 
 // A city guide's body (/es/guias/roma-3-dias; the photo header is GuideHero), rendered on the server for search
@@ -26,7 +28,8 @@ const GuidePage = ({ lang, guide }) => {
   return (
     <article className="grid gap-10">
       <GuideIntro lang={lang} city={guide.city} intro={guide.intro} />
-      <div className="grid gap-10">
+      {/* After the four cards of what to know */}
+      <div className={cn("grid gap-10", ENTER_RISE)} style={riseDelay(4)}>
         <GuideDayNav
           days={days.map((day, index) => ({ id: day.date, name: allTexts.day(index + 1), title: day.title }))}
           label={allTexts.days}

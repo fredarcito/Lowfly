@@ -358,7 +358,8 @@ const planWithAi = async (request) => {
 // Plans `dates` in one town with the AI, then checks every place: where it is (Photon) and its history
 // (Wikipedia). destination: { lat, lng } of the town (only places near it are kept); label: for the logs.
 // onAiCall: told of the AI call, { city, country, days, provider, model, usage, durationMs } (to keep its cost).
-// airport: { lat, lng } of the arrival airport, on a trip by plane (its stops go there without a search).
+// airport: { name, lat, lng } of the arrival airport, on a trip by plane (its stops go there without a search; the
+// landing always does).
 // → { days, weather } (the town's usual weather on those dates, or null)
 // A day the traveller sleeps in town always has dinner: when the AI leaves it out (it did on arrival days), a plain
 // one in the evening, after the last stop, "around" the last place of the day in town
@@ -404,6 +405,14 @@ const withDinner = (day, lang) => {
   return { ...day, stops: [...day.stops, dinner] };
 };
 
+// On a trip by plane the landing ("llegada" on day 1) is always at the airport, whatever the AI said: we know where
+// it is, so day 1 is never left without its map when the AI gave no place for it (or one too far to check)
+const withAirportArrival = (day, airport) => {
+  if (!airport) return day;
+  const place = { name: airport.name, lat: airport.lat, lng: airport.lng, wikipediaTitle: null };
+  return { ...day, stops: day.stops.map((stop) => (stop.type === "llegada" ? { ...stop, place } : stop)) };
+};
+
 // `staysLastNight`: the traveller sleeps in town after the last day too (a one-way flight); otherwise they leave that day
 const planDays = async ({ lang, city, country, destination, dates, travel, preferences, label, onAiCall, airport, staysLastNight = false }) => {
   const started = Date.now();
@@ -427,7 +436,8 @@ const planDays = async ({ lang, city, country, destination, dates, travel, prefe
       excursion: cleanExcursion(day.excursion, index, plannedDays.length, mode),
       stops: (Array.isArray(day.stops) ? day.stops : []).map((stop) => cleanStop(stop, destination)),
     };
-  }).map((day, index, days) => (index < days.length - 1 || staysLastNight ? withDinner(day, lang) : day));
+  }).map((day, index, days) => (index < days.length - 1 || staysLastNight ? withDinner(day, lang) : day))
+    .map((day, index) => (index === 0 ? withAirportArrival(day, airport) : day));
 
   const titles = cleanDays.flatMap((day) => day.stops.map((stop) => stop.place?.wikipediaTitle)).filter(Boolean);
   const facts = await placeFacts(titles, lang);
@@ -466,7 +476,7 @@ export const createItinerary = async ({ trip, lang, preferences, onAiCall }) => 
     preferences,
     label: trip.code,
     onAiCall,
-    airport: { lat: airport.lat, lng: airport.lon },
+    airport: { name: airport.name, lat: airport.lat, lng: airport.lon },
     staysLastNight: !trip.ret,
   });
   return { source: "ai", lang, createdAt: new Date().toISOString(), preferences, weather: weather ? [weather] : [], days };

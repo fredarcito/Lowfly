@@ -152,6 +152,25 @@ test.describe("my trips", () => {
     await expect(row.getByRole("button", { name: "Marcar como visitado" })).toHaveCount(0);
   });
 
+  // An arrival day without places (made before the landing was always at the airport): no map, and on desktop the
+  // stops take the whole width instead of leaving the map's half empty
+  test("a day with no places has no map, and its stops take the whole width", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    const itinerary = structuredClone(romeTrip().itinerary);
+    itinerary.days[0].stops = itinerary.days[0].stops.map((stop) => ({ ...stop, place: null }));
+    const trip = romeTrip({ itinerary });
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    const panel = page.getByRole("tabpanel");
+    const stops = panel.locator("ol").first();
+    await expect(stops).toBeVisible();
+    await expect(panel.locator(".leaflet-container")).toHaveCount(0);
+    expect((await stops.boundingBox()).width).toBeGreaterThan((await panel.boundingBox()).width - 2);
+    // The next day has places: its map is back, beside the stops
+    await page.getByRole("tab", { name: /Día 2/ }).click();
+    await expect(panel.locator(".leaflet-container")).toBeVisible();
+    expect((await stops.boundingBox()).width).toBeLessThan((await panel.boundingBox()).width * 0.6);
+  });
+
   test("an itinerary made before the weather was added has no weather card", async ({ page }) => {
     const { weather, ...olderItinerary } = romeTrip().itinerary;
     const trip = romeTrip({ itinerary: olderItinerary });

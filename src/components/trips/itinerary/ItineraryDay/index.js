@@ -10,6 +10,7 @@ import ItineraryPeriod from "@/components/trips/itinerary/ItineraryPeriod";
 import { useI18n } from "@/context/i18n";
 import { useDayPlan } from "@/hooks/useDayPlan";
 import { useVisitedStops } from "@/components/trips/itinerary/ItineraryDay/hooks/useVisitedStops";
+import { cn } from "@/utils/cn";
 
 const MODE_ICONS = { walking: Footprints, driving: Car, transit: TrainFront };
 
@@ -60,7 +61,9 @@ const ItineraryDay = ({ trip, day, dayNumber, readOnly = false }) => {
         <DayRouteLinks routes={routes} dayNumber={dayNumber} className="w-full sm:w-auto" />
       </div>
 
-      <div className="grid items-start gap-4 lg:grid-cols-2">
+      {/* Desktop: the stops beside the map; a day without places to show (an itinerary made before the landing was
+          always placed) has no map, and its stops take the whole width */}
+      <div className={cn("grid items-start gap-4", mapStops.length > 0 && "lg:grid-cols-2")}>
         {mapStops.length > 0 && (
           <ItineraryMap
             stops={mapStops}

@@ -8,6 +8,7 @@
 //   pnpm dev   (or: npx next start -p 3002)
 //   node --env-file=.env.local scripts/city-guides.mjs [--base=http://localhost:3001] [--only=rome-3-days]
 //     [--redo] (all again) [--translate] (the translations again)
+//     [--rewrite-summaries] (only each guide's summary again, in both languages: nothing else changes)
 import fs from "node:fs";
 
 const FILE = new URL("../src/data/cityGuides.json", import.meta.url);
@@ -523,6 +524,19 @@ const makeGuide = (guide) =>
 const translateGuide = (guide, made, lang) =>
   askApi(`${guide.slug} ${lang}`, { city: guide.city[lang], lang, translate: { intro: made.intro, itinerary: made.itinerary } });
 
+// A made guide's summary written again in both languages, naming its stops: { es, en }. `avoid`: the openings
+// the other summaries already have, so they do not all start the same
+const rewriteSummary = (guide, made, avoid) => {
+  const placesIn = (lang) =>
+    made[lang].itinerary.days.flatMap((day) => day.stops.filter((stop) => stop.type !== "comida").map((stop) => stop.title));
+  return askApi(`${guide.slug} summary`, {
+    city: guide.city[FIRST_LANG],
+    country: guide.country[FIRST_LANG],
+    dayCount: guide.dayCount,
+    summary: { places: { es: placesIn("es"), en: placesIn("en") }, avoid },
+  });
+};
+
 // A Commons file as the pages show a photo: { src, page, author, license } (its licence asks for the credit)
 const commonsPhoto = async (file) => {
   const url = new URL("https://commons.wikimedia.org/w/api.php");
@@ -541,6 +555,15 @@ if (!process.env.CRON_SECRET) throw new Error("CRON_SECRET is not set: run with 
 for (const guide of GUIDES) {
   if (ONLY && !ONLY.has(guide.slug)) continue;
   const { slug, photo: photoFile, ...about } = guide;
+  if (args["rewrite-summaries"]) {
+    if (!guides[slug]) continue;
+    const avoid = [...new Set(Object.values(guides).map((other) => other[FIRST_LANG].intro.summary.split(/\s+/)[0]))];
+    const summary = await rewriteSummary(guide, guides[slug], avoid);
+    for (const lang of [FIRST_LANG, ...TRANSLATIONS]) guides[slug][lang].intro.summary = summary[lang];
+    console.log(`  ${slug}: ${summary[FIRST_LANG]}`);
+    save();
+    continue;
+  }
   // Its photo (no AI: read again every run, so a new choice above shows)
   const photo = photoFile ? await commonsPhoto(photoFile) : null;
   const made = !guides[slug] || args.redo;

@@ -5,11 +5,16 @@ import TailorLink from "@/components/guides/GuidePage/components/TailorLink";
 import { guideTexts } from "@/components/guides/data/texts";
 import { fallbackPhoto } from "@/utils/fallbackPhoto";
 import { ROUTES } from "@/constants/routes";
+import { LOCALE_TAGS } from "@/i18n";
 
 // The top of a guide, over the city's photo: "Qué ver en Roma en 3 días", what it covers, the first way to make
-// one's own and "Share". `photo`: the city's (server/photos), or null for a generic one.
+// one's own and "Share"; under the title, when it was written. `photo`: the city's (server/photos), or null for a
+// generic one.
 const GuideHero = ({ lang, guide, photo, href }) => {
   const texts = guideTexts(lang);
+  const written = new Intl.DateTimeFormat(LOCALE_TAGS[lang], { month: "long", year: "numeric", timeZone: "UTC" }).format(
+    new Date(guide.itinerary.createdAt)
+  );
   return (
     <div className="grid gap-4 pt-4 pb-2 sm:pt-2 sm:pb-6">
       <PhotoBackdrop image={photo ?? fallbackPhoto(guide.codes[0])} photo={photo} alt={texts.photoAlt(guide.city)} />
@@ -19,6 +24,7 @@ const GuideHero = ({ lang, guide, photo, href }) => {
       <h1 className="max-w-[16ch] font-heading text-4xl leading-[1.05] font-extrabold tracking-tight drop-shadow-sm sm:text-6xl">
         {texts.title(guide.city, guide.dayCount)}
       </h1>
+      <p className="text-sm text-hero-muted">{texts.updated(written)}</p>
       <p className="max-w-[60ch] text-hero-muted sm:text-lg">{guide.intro.summary}</p>
       <div className="mt-1 flex flex-wrap items-center gap-3">
         <TailorLink href={href} guide={guide.id} spot="hero" className="h-12 w-fit px-6 text-base font-bold">

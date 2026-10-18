@@ -12,7 +12,7 @@ test.describe("city guides", () => {
       await page.goto("/es/guias/roma-3-dias");
       await expect(page).toHaveTitle("Qué ver en Roma en 3 días: itinerario día a día · Lowfly");
       await expect(page.getByRole("heading", { level: 1, name: "Qué ver en Roma en 3 días" })).toBeVisible();
-      for (const title of ["Sobre Roma", "Dónde alojarte", "Cómo moverte", "Cuándo ir"]) await expect(page.getByRole("heading", { name: title })).toBeVisible();
+      for (const title of ["Sobre Roma", "Dónde alojarte", "Cómo moverte", "Cuándo ir"]) await expect(page.getByRole("heading", { name: title, exact: true })).toBeVisible();
       // Three days, each with its stops at the hour each starts (a rough one), and their links above, kept at the
       // top: no map (the map is the reader's own itinerary's)
       await expect(page.getByRole("heading", { level: 2, name: "Corazón de la Antigua Roma" })).toBeVisible();
@@ -41,6 +41,24 @@ test.describe("city guides", () => {
     const trip = blocks.find((block) => block["@type"] === "TouristTrip");
     expect(trip.itinerary.itemListElement).toHaveLength(3);
     expect(trip.itinerary.itemListElement[0].item.itemListElement.length).toBeGreaterThan(1);
+    expect(Date.parse(trip.dateModified)).not.toBeNaN();
+  });
+
+  // What people ask about the city, answered with the guide: in view, and the same ones for search engines
+  // (FAQPage); and when it was written
+  test("its frequently asked questions, and when it was written", async ({ page }) => {
+    await page.goto("/es/guias/roma-3-dias");
+    const faq = page.getByRole("region", { name: "Preguntas frecuentes sobre Roma" });
+    for (const question of ["¿Cuántos días hacen falta para ver Roma?", "¿Dónde alojarse en Roma?", "¿Qué es imprescindible ver en Roma?"])
+      await expect(faq.getByRole("heading", { level: 3, name: question })).toBeVisible();
+    await expect(faq).toContainText("Día 1: Corazón de la Antigua Roma.");
+    const blocks = (await page.locator('script[type="application/ld+json"]').allTextContents()).map((block) => JSON.parse(block));
+    const faqPage = blocks.find((block) => block["@type"] === "FAQPage");
+    expect(faqPage.mainEntity.map((entry) => entry.name)).toEqual(await faq.getByRole("heading", { level: 3 }).allTextContents());
+    // Each sight: how long it takes and what to look for there
+    await expect(page.getByText(/\d+ (h|min).* de visita/).first()).toBeVisible();
+    await expect(page.getByText("En qué fijarte:").first()).toBeVisible();
+    await expect(page.getByText(/^Actualizada en \S+ de \d{4}$/)).toBeVisible();
   });
 
   test("the planner it opens starts in Rome", async ({ page }) => {

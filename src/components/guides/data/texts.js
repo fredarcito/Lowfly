@@ -22,6 +22,30 @@ const es = {
   // The days' links above them
   days: "Días de la guía",
   types: { imprescindible: "Imprescindible", recomendado: "Recomendado", opcional: "Opcional" },
+  // Under the title: when it was written ("octubre de 2026")
+  updated: (date) => `Actualizada en ${date}`,
+  // On each sight: how long it takes ("1 h 30 min") and what to look for there
+  visitLength: (length) => `${length} de visita`,
+  lookFor: "En qué fijarte",
+  // What people ask about the city, answered with the guide itself (utils/guideFaq)
+  faq: {
+    title: (city) => `Preguntas frecuentes sobre ${city}`,
+    days: {
+      question: (city) => `¿Cuántos días hacen falta para ver ${city}?`,
+      answer: (city, days, plan) =>
+        days === 1
+          ? `En un día ves lo esencial de ${city} si vas a buen ritmo. ${plan}`
+          : `Con ${daysEs(days)} ves lo esencial de ${city} sin prisas. ${plan} Con más tiempo, puedes sumar excursiones cerca.`,
+      plan: (number, title) => `Día ${number}: ${title}.`,
+    },
+    stay: (city) => `¿Dónde alojarse en ${city}?`,
+    gettingAround: (city) => `¿Cómo moverse por ${city}?`,
+    bestTime: (city) => `¿Cuál es la mejor época para ir a ${city}?`,
+    mustSee: {
+      question: (city) => `¿Qué es imprescindible ver en ${city}?`,
+      answer: (places) => `Lo imprescindible en esta guía: ${places}.`,
+    },
+  },
   // Where each prompt shows: in the header, after day 1, after day 2, after the last day
   prompts: {
     hero: { button: "Personalizar este viaje" },
@@ -103,6 +127,27 @@ const en = {
   roughTimes: "Times are a rough guide",
   days: "The guide's days",
   types: { imprescindible: "Must see", recomendado: "Recommended", opcional: "Optional" },
+  updated: (date) => `Updated ${date}`,
+  visitLength: (length) => `${length} visit`,
+  lookFor: "What to look for",
+  faq: {
+    title: (city) => `${city}: frequently asked questions`,
+    days: {
+      question: (city) => `How many days do you need in ${city}?`,
+      answer: (city, days, plan) =>
+        days === 1
+          ? `One day is enough for the essentials of ${city} at a good pace. ${plan}`
+          : `${daysEn(days)} are enough for the essentials of ${city} without rushing. ${plan} With more time, add day trips nearby.`,
+      plan: (number, title) => `Day ${number}: ${title}.`,
+    },
+    stay: (city) => `Where to stay in ${city}?`,
+    gettingAround: (city) => `How to get around ${city}?`,
+    bestTime: (city) => `When is the best time to visit ${city}?`,
+    mustSee: {
+      question: (city) => `What are the must-sees in ${city}?`,
+      answer: (places) => `This guide's must-sees: ${places}.`,
+    },
+  },
   prompts: {
     hero: { button: "Personalise this trip" },
     afterFirstDay: {

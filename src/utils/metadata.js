@@ -38,6 +38,13 @@ export const breadcrumbsOf = (steps) => ({
   itemListElement: steps.map((step, index) => ({ "@type": "ListItem", position: index + 1, name: step.name, item: `${SITE_URL}${step.path}` })),
 });
 
+// Questions and answers for search engines (schema.org FAQPage), answers as plain text: [{ question, answer }]
+export const faqPageOf = (faq) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((entry) => ({ "@type": "Question", name: entry.question, acceptedAnswer: { "@type": "Answer", text: entry.answer } })),
+});
+
 // Who Lowfly is, for search engines (its name and logo in the results): the site and the organisation behind it
 export const siteOf = (lang, description) => ({
   "@context": "https://schema.org",

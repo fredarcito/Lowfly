@@ -1,5 +1,6 @@
 import { Coffee, TrainFront, UtensilsCrossed } from "lucide-react";
 import { guideTexts } from "@/components/guides/data/texts";
+import { visitLength } from "@/components/guides/GuidePage/components/GuideDay/utils/visitLength";
 import { cn } from "@/utils/cn";
 
 const SIGHTS = new Set(["imprescindible", "recomendado", "opcional"]);
@@ -11,8 +12,8 @@ const iconOf = (stop) => {
 };
 
 // One day of a guide (its section is #day-1, the days' links' target): its title, then its stops, what each sight
-// is worth and where to eat, at the hour each starts (a rough one: the times are a guide). Lighter than the app's
-// day: what to order, the history and the map are the reader's own itinerary's. `children`: the foot of its card, part of
+// is worth, how long it takes and what to look for there, and where to eat, at the hour each starts (a rough one: the
+// times are a guide). Lighter than the app's day: what to order, the history and the map are the reader's own itinerary's. `children`: the foot of its card, part of
 // the day (a "make it yours" prompt, TailorPrompt: a reader who jumps to the day meets it at its end).
 const GuideDay = ({ lang, day, number, children }) => {
   const texts = guideTexts(lang);
@@ -37,6 +38,7 @@ const GuideDay = ({ lang, day, number, children }) => {
           const number = sight ? ++sightCount : null;
           // Only when it starts ("09:00", not "09:00–10:30"): easier to read, and a rough hour anyway
           const time = stop.time?.match(/\d{1,2}:\d{2}/)?.[0];
+          const length = sight ? visitLength(stop.time) : null;
           return (
             <li
               key={`${day.date}-${index}`}
@@ -65,8 +67,14 @@ const GuideDay = ({ lang, day, number, children }) => {
                       {texts.types[stop.type]}
                     </span>
                   )}
+                  {length && <span className="text-xs text-muted-foreground">{texts.visitLength(length)}</span>}
                 </p>
                 {sight && stop.why && <p className="text-sm leading-relaxed text-muted-foreground">{stop.why}</p>}
+                {sight && stop.lookFor && (
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    <span className="font-medium text-foreground">{texts.lookFor}:</span> {stop.lookFor}
+                  </p>
+                )}
                 {stop.type === "comida" && stop.food && <p className="text-sm text-muted-foreground">{stop.food}</p>}
                 {sight && stop.note && <p className="text-sm text-muted-foreground/80 italic">{stop.note}</p>}
               </div>

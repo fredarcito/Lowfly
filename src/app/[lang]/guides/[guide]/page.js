@@ -9,7 +9,8 @@ import { APP_NAME, LOCALE_TAGS } from "@/i18n";
 import { cityGuideSlugIn, getCityGuide, listCityGuides } from "@/server/cityGuides";
 import { getPhotos } from "@/server/photos";
 import { ROUTES } from "@/constants/routes";
-import { SITE_URL, alternatesOf, breadcrumbsOf, openGraphOf } from "@/utils/metadata";
+import { SITE_URL, alternatesOf, breadcrumbsOf, faqPageOf, openGraphOf } from "@/utils/metadata";
+import { guideFaq } from "@/components/guides/GuidePage/utils/guideFaq";
 import JsonLd from "@/components/shared/JsonLd";
 
 // A city guide (/es/guias/roma-3-dias; /en/guides/rome-3-days): its itinerary as scripts/city-guides.mjs wrote it
@@ -38,7 +39,7 @@ export const generateMetadata = async ({ params }) => {
 };
 
 // For search engines: the way to it (Lowfly › Travel guides › the guide) and the trip itself, day by day, each day
-// a list of its places (schema.org TouristTrip)
+// a list of its places (schema.org TouristTrip), with when it was written
 const structuredData = (lang, guide) => {
   const texts = guideTexts(lang);
   const path = ROUTES.guide(lang, guide.slug);
@@ -49,6 +50,7 @@ const structuredData = (lang, guide) => {
     description: guide.intro.summary,
     inLanguage: LOCALE_TAGS[lang],
     url: `${SITE_URL}${path}`,
+    dateModified: guide.itinerary.createdAt,
     itinerary: {
       "@type": "ItemList",
       itemListElement: guide.itinerary.days.map((day, index) => ({
@@ -85,6 +87,7 @@ const CityGuidePage = async ({ params }) => {
     notFound();
   }
   const photo = await photoOf(guide);
+  const faq = guideFaq(lang, guide);
   // The language switch goes to the same guide under its name in the other language
   const paths = Object.fromEntries(LOCALES.map((locale) => [locale, ROUTES.guide(locale, guide.slugs[locale] ?? guide.id)]));
   const [breadcrumbs, trip] = structuredData(lang, guide);
@@ -92,8 +95,9 @@ const CityGuidePage = async ({ params }) => {
     <I18nProvider lang={lang} paths={paths}>
       <JsonLd data={breadcrumbs} />
       <JsonLd data={trip} />
+      <JsonLd data={faqPageOf(faq)} />
       <TripsPage hero={<GuideHero lang={lang} guide={guide} photo={photo} href={ROUTES.newTrip(lang, guide.codes[0])} />}>
-        <GuidePage lang={lang} guide={guide} />
+        <GuidePage lang={lang} guide={guide} faq={faq} />
       </TripsPage>
     </I18nProvider>
   );

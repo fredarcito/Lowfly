@@ -1,5 +1,6 @@
 import GuideDay from "@/components/guides/GuidePage/components/GuideDay";
 import GuideDayNav from "@/components/guides/GuidePage/components/GuideDayNav";
+import GuideFaq from "@/components/guides/GuidePage/components/GuideFaq";
 import GuideIntro from "@/components/guides/GuidePage/components/GuideIntro";
 import TailorCard from "@/components/guides/GuidePage/components/TailorCard";
 import TailorPrompt from "@/components/guides/GuidePage/components/TailorPrompt";
@@ -10,9 +11,9 @@ import { ROUTES } from "@/constants/routes";
 
 // A city guide's body (/es/guias/roma-3-dias; the photo header is GuideHero), rendered on the server for search
 // engines: what to know, the days' links, then the days, each one ending with a question only the reader's own itinerary answers,
-// and at the end what that itinerary brings. Every way out goes to the planner with the city already chosen.
-// `guide`: server/cityGuides getCityGuide.
-const GuidePage = ({ lang, guide }) => {
+// then what people ask about the city, and at the end what that itinerary brings. Every way out goes to the planner
+// with the city already chosen. `guide`: server/cityGuides getCityGuide; `faq`: utils/guideFaq.
+const GuidePage = ({ lang, guide, faq }) => {
   const allTexts = guideTexts(lang);
   const texts = allTexts.prompts;
   const href = ROUTES.newTrip(lang, guide.codes[0]);
@@ -45,6 +46,7 @@ const GuidePage = ({ lang, guide }) => {
           );
         })}
       </div>
+      <GuideFaq lang={lang} city={guide.city} faq={faq} />
       <TailorCard lang={lang} city={guide.city} href={href} guide={guide.id} />
     </article>
   );

@@ -4,8 +4,8 @@ import { useState } from "react";
 import { useI18n } from "@/context/i18n";
 import { useDestinationGuide } from "@/components/shared/DestinationGuide/hooks/useDestinationGuide";
 import { cn } from "@/utils/cn";
-import { useFoldedText } from "@/components/shared/DestinationGuide/hooks/useFoldedText";
-import FoldToggle from "@/components/shared/DestinationGuide/components/FoldToggle";
+import { useFoldedText } from "@/hooks/useFoldedText";
+import FoldToggle from "@/components/shared/FoldToggle";
 import Tags from "@/components/shared/DestinationGuide/components/Tags";
 
 // Why a destination is worth a visit: a sentence and three highlights, with its source.

@@ -53,10 +53,3 @@ export const routeFaq = ({ lang, route, prices, airlines, duration, guide }) => 
   });
   return faq;
 };
-
-// The same questions for search engines (schema.org FAQPage), answers as plain text
-export const faqPageOf = (faq) => ({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faq.map((entry) => ({ "@type": "Question", name: entry.question, acceptedAnswer: { "@type": "Answer", text: entry.answer } })),
-});

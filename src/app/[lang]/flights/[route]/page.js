@@ -14,9 +14,9 @@ import { getGuides } from "@/server/guides";
 import { cityGuideFor } from "@/server/cityGuides";
 import { getPhotos } from "@/server/photos";
 import { ROUTES } from "@/constants/routes";
-import { alternatesOf, breadcrumbsOf, openGraphOf } from "@/utils/metadata";
+import { alternatesOf, breadcrumbsOf, faqPageOf, openGraphOf } from "@/utils/metadata";
 import JsonLd from "@/components/shared/JsonLd";
-import { faqPageOf, routeFaq } from "@/components/flightRoutes/RoutePage/utils/routeFaq";
+import { routeFaq } from "@/components/flightRoutes/RoutePage/utils/routeFaq";
 
 // Search engines' pages: an airport's (/es/flights/malta: every destination) or a route's (/es/flights/malta-barcelona).
 // Any route address may be asked for (the language layout only allows /es and /en). Made on its first visit from

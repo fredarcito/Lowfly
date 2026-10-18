@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
 import { hasLocale } from "@/i18n/config";
-import { createGuideItinerary, translateGuide, writeGuideIntro } from "@/server/itinerary";
+import { createGuideItinerary, rewriteGuideSummary, translateGuide, writeGuideIntro } from "@/server/itinerary";
 import { AppError } from "@/server/errors";
 
 // POST /api/city-guides { city, country, lat, lng, dayCount, lang } → { intro, itinerary }: a city guide's text and
 // its itinerary (server/itinerary createGuideItinerary); with { translate: { intro, itinerary }, city, lang }, the
-// same guide translated into `lang` (translateGuide). Only scripts/city-guides.mjs calls it, with CRON_SECRET as a
+// same guide translated into `lang` (translateGuide); with { summary: { places: { es, en }, avoid }, city, country, dayCount },
+// its summary written again in both languages, { es, en } (rewriteGuideSummary). Only scripts/city-guides.mjs calls it, with CRON_SECRET as a
 // bearer token: the guides are made once and kept in src/data/cityGuides.json, never on a visit.
 export const maxDuration = 300;
 
@@ -16,7 +17,19 @@ const isCoordinate = (lat, lng) => Number.isFinite(lat) && Number.isFinite(lng) 
 export const POST = async (request) => {
   if (!authorized(request)) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   const body = await request.json().catch(() => null);
-  const { city, country, lat, lng, dayCount, lang, translate } = body ?? {};
+  const { city, country, lat, lng, dayCount, lang, translate, summary } = body ?? {};
+  if (summary) {
+    if (!city || !country || !Number.isInteger(dayCount) || !Array.isArray(summary.places?.es) || !Array.isArray(summary.places?.en))
+      return NextResponse.json({ error: "bad request" }, { status: 400 });
+    try {
+      return NextResponse.json(
+        await rewriteGuideSummary({ city: String(city).slice(0, 80), country: String(country).slice(0, 80), dayCount, places: summary.places, avoid: Array.isArray(summary.avoid) ? summary.avoid.map(String).slice(0, 60) : [] })
+      );
+    } catch (error) {
+      console.error("Could not rewrite the city guide's summary", error);
+      return NextResponse.json({ error: error instanceof AppError ? error.code : "aiUnavailable" }, { status: 502 });
+    }
+  }
   if (translate) {
     if (!city || !hasLocale(lang) || !translate.intro || !Array.isArray(translate.itinerary?.days))
       return NextResponse.json({ error: "bad request" }, { status: 400 });

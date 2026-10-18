@@ -536,6 +536,32 @@ Write in ${LANGUAGES[lang]}, warm and practical, like a local friend${lang === "
   return intro;
 };
 
+// A guide's summary written again (its page's subtitle and meta description), in Spanish and English: { es, en }.
+// `places`: { es, en }, the names of its stops in each language, so it names real ones; `avoid`: first words the other
+// guides' summaries already use. Nothing else changes.
+const SUMMARY_LENGTH = 150;
+const GUIDE_SUMMARY_SCHEMA = {
+  type: "object",
+  properties: { es: { type: "string" }, en: { type: "string" } },
+  required: ["es", "en"],
+};
+export const rewriteGuideSummary = async ({ city, country, dayCount, places, avoid = [], onAiCall }) => {
+  const started = Date.now();
+  const { data, usage, model, provider } = await planWithAi({
+    instructions: `You write the one-sentence summary of a public travel guide: "${city} in ${dayCount === 1 ? "1 day" : `${dayCount} days`}", ${country}. It is the page's subtitle and its description in search results.
+"es": in Spanish, under ${SUMMARY_LENGTH} characters, warm and close, like a local friend (tú, never usted). Name 2 or 3 real places or neighbourhoods from the guide's stops, as they are written there. Never start with "Esta guía", "Descubre" or "Explora"${avoid.length ? `, nor with any of these words: ${avoid.slice(0, 60).join(", ")}` : ""}; a full sentence that starts with a capital letter; no emojis, no exclamation marks. Concrete, no clichés: never "inolvidable", "mágico", "te esperan", "rincones", "encanto" (nor "unforgettable", "magical", "await", "charm" in English): say what the traveller does there.
+"en": the same sentence in English, under ${SUMMARY_LENGTH} characters, with the places' names as the English stops write them.`,
+    prompt: JSON.stringify(places),
+    schema: GUIDE_SUMMARY_SCHEMA,
+  });
+  onAiCall?.({ city, country, days: dayCount, provider, model, usage, durationMs: Date.now() - started });
+  const summary = { es: text(data?.es, SUMMARY_LENGTH + 30), en: text(data?.en, SUMMARY_LENGTH + 30) };
+  // A sentence of its own: never "Esta guía…", never cut short ("caminando por…")
+  const sentence = (value) => /^[\p{Lu}¿¡]/u.test(value ?? "");
+  if (!sentence(summary.es) || !sentence(summary.en) || /^esta guía/i.test(summary.es)) throw new AppError("aiUnavailable");
+  return summary;
+};
+
 // What a guide's translation changes: every text a reader sees, nothing else (places, times and order stay)
 const STOP_TEXTS = ["title", "note", "why", "lookFor", "food"];
 const DISH_TEXTS = ["name", "what", "why"];

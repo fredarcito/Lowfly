@@ -11,11 +11,13 @@ import LocalTripsNotice from "@/components/trips/TripList/components/LocalTripsN
 import { useAuth } from "@/context/auth";
 import { useI18n } from "@/context/i18n";
 import { useTripGroups } from "@/hooks/useTrips";
+import { ENTER_RISE, riseDelay } from "@/constants/motion";
 import { ROUTES } from "@/constants/routes";
 
 // My trips: the upcoming ones (or how to save one), then the past ones folded away.
 // "Plan a trip" makes one without searching flights (ManualTripForm), with a line saying so.
-// Signed out with trips, a notice says they are only in this browser.
+// Signed out with trips, a notice says they are only in this browser. On arriving the title stays put and the trips
+// rise one after another.
 const TripList = () => {
   const { lang, texts } = useI18n();
   const { upcoming, past } = useTripGroups();
@@ -48,16 +50,26 @@ const TripList = () => {
 
       {upcoming.length ? (
         <div className="grid gap-3">
-          {upcoming.map((trip) => (
-            <TripCard key={trip.id} trip={trip} />
+          {upcoming.map((trip, index) => (
+            <div key={trip.id} className={ENTER_RISE} style={riseDelay(index)}>
+              <TripCard trip={trip} />
+            </div>
           ))}
-          <ExploreMoreLink />
+          <div className={ENTER_RISE} style={riseDelay(upcoming.length)}>
+            <ExploreMoreLink />
+          </div>
         </div>
       ) : (
-        <EmptyTrips />
+        <div className={ENTER_RISE} style={riseDelay(0)}>
+          <EmptyTrips />
+        </div>
       )}
 
-      <PastTrips trips={past} />
+      {past.length > 0 && (
+        <div className={ENTER_RISE} style={riseDelay(Math.max(upcoming.length, 1) + 1)}>
+          <PastTrips trips={past} />
+        </div>
+      )}
     </>
   );
 };

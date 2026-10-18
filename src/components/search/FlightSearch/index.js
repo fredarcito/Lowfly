@@ -16,6 +16,7 @@ import { useI18n } from "@/context/i18n";
 import { findAirport, useAirports } from "@/hooks/useAirports";
 import { useFlightSearch } from "@/components/search/FlightSearch/hooks/useFlightSearch";
 import { useSearchForm } from "@/components/search/FlightSearch/hooks/useSearchForm";
+import { ENTER_RISE } from "@/constants/motion";
 import { cn } from "@/utils/cn";
 
 const RESULTS = { everywhere: EverywhereResults, country: CountryResults, trip: FlexibleResults };
@@ -54,7 +55,9 @@ const FlightSearch = () => {
     <>
       <SearchHero collapsed={collapsed} />
 
-      <div className="relative z-10 -mt-20 px-4 sm:px-6">
+      {/* The only thing that moves on arriving: the form rises in, as the trip planner's does (the headline is
+          already there) */}
+      <div className={cn("relative z-10 -mt-20 px-4 sm:px-6", ENTER_RISE)}>
         <Card
           className={cn(
             "mx-auto max-w-5xl gap-0 px-4 shadow-xl transition-[padding] duration-300 motion-reduce:transition-none sm:px-6",

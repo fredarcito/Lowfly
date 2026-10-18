@@ -6,7 +6,7 @@ import { travelPhoto } from "@/utils/fallbackPhoto";
 const AirportsHero = ({ lang, count }) => {
   const texts = routeTexts(lang).airportsPage;
   return (
-    <div className="grid gap-4 pt-4 pb-2 sm:pt-8 sm:pb-6">
+    <div className="grid gap-4 pt-4 pb-2 sm:pt-2 sm:pb-6">
       <PhotoBackdrop image={travelPhoto("sun")} photo={null} />
       <h1 className="max-w-[16ch] font-heading text-4xl leading-[1.05] font-extrabold tracking-tight drop-shadow-sm sm:text-6xl">{texts.title}</h1>
       <p className="max-w-[55ch] text-hero-muted sm:text-lg">{texts.intro(count)}</p>

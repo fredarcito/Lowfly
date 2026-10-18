@@ -19,7 +19,7 @@ const ThemeToggle = ({ className }) => {
       aria-label={label}
       title={label}
       className={cn(
-        "grid size-9 shrink-0 place-items-center rounded-full md:size-10 bg-hero-glass text-hero-foreground/85 ring-1 ring-hero-glass-edge backdrop-blur-md transition-colors hover:text-hero-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
+        "grid size-9 shrink-0 place-items-center rounded-full bg-hero-glass text-hero-foreground/85 ring-1 ring-hero-glass-edge backdrop-blur-md transition-colors hover:text-hero-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
         className
       )}
     >

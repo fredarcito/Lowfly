@@ -13,7 +13,7 @@ const PHOTO = {
 const GuidesHero = ({ lang }) => {
   const texts = guideTexts(lang).list;
   return (
-    <div className="grid gap-4 pt-4 pb-2 sm:pt-8 sm:pb-6">
+    <div className="grid gap-4 pt-4 pb-2 sm:pt-2 sm:pb-6">
       <PhotoBackdrop image={PHOTO} photo={null} alignTop />
       <h1 className="font-heading text-4xl leading-[1.05] font-extrabold tracking-tight drop-shadow-sm sm:text-6xl">{texts.title}</h1>
       <p className="max-w-[46ch] text-hero-muted sm:text-lg">{texts.intro}</p>

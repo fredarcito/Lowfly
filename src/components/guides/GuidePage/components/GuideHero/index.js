@@ -11,7 +11,7 @@ import { ROUTES } from "@/constants/routes";
 const GuideHero = ({ lang, guide, photo, href }) => {
   const texts = guideTexts(lang);
   return (
-    <div className="grid gap-4 pt-4 pb-2 sm:pt-8 sm:pb-6">
+    <div className="grid gap-4 pt-4 pb-2 sm:pt-2 sm:pb-6">
       <PhotoBackdrop image={photo ?? fallbackPhoto(guide.codes[0])} photo={photo} alt={texts.photoAlt(guide.city)} />
       <p className="flex items-center gap-1.5 text-sm font-semibold tracking-wide text-hero-muted uppercase">
         <CalendarDays className="size-4" /> {texts.kicker(guide.dayCount)}

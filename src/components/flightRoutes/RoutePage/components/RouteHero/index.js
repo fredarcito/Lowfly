@@ -12,7 +12,7 @@ import { fallbackPhoto } from "@/utils/fallbackPhoto";
 const RouteHero = ({ lang, route, price, airlines, duration, photo }) => {
   const texts = routeTexts(lang);
   return (
-    <div className="grid gap-4 pt-4 pb-2 sm:pt-8 sm:pb-6">
+    <div className="grid gap-4 pt-4 pb-2 sm:pt-2 sm:pb-6">
       <PhotoBackdrop image={photo ?? fallbackPhoto(route.airports[0].code)} photo={photo} alt={texts.photoAlt(route.city)} />
       <h1 className="max-w-[16ch] font-heading text-4xl leading-[1.05] font-extrabold tracking-tight drop-shadow-sm sm:text-6xl">
         {texts.title(route.origin.city, route.city)}

@@ -22,7 +22,7 @@ const es = {
   prompts: {
     hero: { button: "Personalizar este viaje" },
     afterFirstDay: {
-      title: "¿Llegas a media tarde?",
+      title: "¿Llegas por la tarde?",
       text: "Crea el tuyo y lo ajustamos a la hora a la que aterriza tu vuelo y a la de tu check-in.",
       button: "Adaptarlo a mi llegada",
     },

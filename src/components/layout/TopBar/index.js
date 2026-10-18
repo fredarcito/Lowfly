@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { Compass, Map as MapIcon, Plane } from "lucide-react";
+import { Compass, Landmark, Plane, Sparkles } from "lucide-react";
 import { AccountButton } from "@/components/layout/AccountButton";
 import LanguageSwitch from "@/components/layout/LanguageSwitch";
 import SettingsMenu from "@/components/layout/SettingsMenu";
@@ -13,10 +13,10 @@ import { APP_NAME } from "@/i18n/config";
 import { ROUTES } from "@/constants/routes";
 import { cn } from "@/utils/cn";
 
-// Narrow phones: the tabs' names alone, so the three fit in a row
-const NAV_ICON = "size-4.5 max-[379px]:hidden";
+// Narrow phones: the tabs' names alone, so the four fit in a row
+const NAV_ICON = "size-4.5 max-[449px]:hidden";
 
-// Logo, the navigation (Explore · Create itinerary · My trips), theme, language and the account. Sits on the header
+// Logo, the navigation (Explore · Create itinerary · Guides · My trips), theme, language and the account. Sits on the header
 // colours (--hero-*). Desktop: all in one row. Phones and tablets: the logo and the buttons on top, the
 // navigation below across the whole width.
 const TopBar = ({ className }) => {
@@ -26,6 +26,7 @@ const TopBar = ({ className }) => {
   const onNewTrip = pathname.startsWith(ROUTES.newTrip(lang));
   const onTrips = pathname.startsWith(ROUTES.trips(lang)) && !onNewTrip;
   const onExplore = pathname === ROUTES.home(lang);
+  const onGuides = pathname.startsWith(ROUTES.guides(lang));
   return (
     <div className={cn("flex flex-wrap items-center justify-between gap-x-3 gap-y-4", className)}>
       <a href={ROUTES.home(lang)} className="flex items-center gap-2 font-heading text-xl font-extrabold tracking-tight">
@@ -36,7 +37,7 @@ const TopBar = ({ className }) => {
       </a>
       <nav
         aria-label={texts.header.nav}
-        className="flex items-center justify-between gap-2 max-lg:order-last max-lg:w-full max-lg:sm:justify-start max-lg:sm:gap-10 lg:mr-auto lg:ml-8 lg:gap-9 xl:ml-10"
+        className="flex items-center justify-between gap-2 max-lg:order-last max-lg:w-full max-lg:sm:justify-start max-lg:sm:gap-10 lg:mr-auto lg:ml-8 lg:gap-7 xl:ml-10"
       >
         {/* Always there, also on phones: the way back to searching */}
         <NavLink href={ROUTES.home(lang)} active={onExplore}>
@@ -44,8 +45,12 @@ const TopBar = ({ className }) => {
           {texts.header.explore}
         </NavLink>
         <NavLink href={ROUTES.newTrip(lang)} active={onNewTrip}>
-          <MapIcon className={NAV_ICON} />
+          <Sparkles className={NAV_ICON} />
           {texts.trips.createItinerary}
+        </NavLink>
+        <NavLink href={ROUTES.guides(lang)} active={onGuides}>
+          <Landmark className={NAV_ICON} />
+          {texts.header.guides}
         </NavLink>
         <TripsLink active={onTrips} iconClassName={NAV_ICON} />
       </nav>

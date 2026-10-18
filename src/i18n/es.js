@@ -27,6 +27,7 @@ const es = {
     photoCreditNight: "Foto: Positano al anochecer, de JeCCo (CC BY 4.0), vía Wikimedia Commons",
     nav: "Navegación principal",
     explore: "Explorar",
+    guides: "Guías",
     language: "Idioma",
     toLight: "Cambiar a modo claro",
     toDark: "Cambiar a modo oscuro",

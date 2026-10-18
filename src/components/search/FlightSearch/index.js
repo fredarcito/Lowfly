@@ -9,6 +9,7 @@ import SearchLoading from "@/components/search/SearchLoading";
 import SearchStart from "@/components/search/SearchStart";
 import SearchSummary from "@/components/search/SearchSummary";
 import Collapse from "@/components/shared/Collapse";
+import SiteFooter from "@/components/layout/SiteFooter";
 import CountryResults from "@/components/search/results/CountryResults";
 import EverywhereResults from "@/components/search/results/EverywhereResults";
 import FlexibleResults from "@/components/search/results/FlexibleResults";
@@ -100,6 +101,8 @@ const FlightSearch = () => {
           </div>
         )}
       </main>
+      {/* The same foot as every page: the airports, the guides and the legal pages */}
+      <SiteFooter />
     </>
   );
 };

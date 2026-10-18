@@ -27,6 +27,7 @@ const en = {
     photoCreditNight: "Photo: Positano at dusk, by JeCCo (CC BY 4.0), via Wikimedia Commons",
     nav: "Main navigation",
     explore: "Explore",
+    guides: "Guides",
     language: "Language",
     toLight: "Switch to light mode",
     toDark: "Switch to dark mode",

@@ -22,12 +22,12 @@ const TripsLink = ({ active, className, iconClassName }) => {
     >
       {/* How many upcoming trips: a bubble on the icon, like a notification (it takes no room in the bar). Narrow
           phones show the tabs without icons (TopBar): the bubble then follows the name. */}
-      <span className={cn("relative max-[379px]:hidden", upcoming > 0 && "mr-1.5")}>
+      <span className={cn("relative max-[449px]:hidden", upcoming > 0 && "mr-1.5")}>
         <TicketsPlane className={cn("size-4.5", iconClassName)} />
         {upcoming > 0 && <span className={cn(BUBBLE, "absolute -top-2 -right-2.5")}>{upcoming}</span>}
       </span>
       {texts.trips.title}
-      {upcoming > 0 && <span className={cn(BUBBLE, "min-[380px]:hidden")}>{upcoming}</span>}
+      {upcoming > 0 && <span className={cn(BUBBLE, "min-[450px]:hidden")}>{upcoming}</span>}
     </NavLink>
   );
 };

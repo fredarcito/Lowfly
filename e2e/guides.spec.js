@@ -51,6 +51,19 @@ test.describe("city guides", () => {
     await expect(page.locator("form section ol > li").first()).toContainText("Roma");
   });
 
+  // The guides from anywhere: a tab of the top bar (marked on their pages), and the foot of every page, the home too
+  test("the top bar and the home's foot lead to the guides", async ({ page }) => {
+    await page.goto("/es");
+    await expect(page.getByRole("contentinfo").getByRole("link", { name: "Guías de viaje" })).toHaveAttribute("href", "/es/guias");
+    const tab = page.getByRole("navigation", { name: "Navegación principal" }).getByRole("link", { name: "Guías" });
+    await expect(tab).not.toHaveAttribute("aria-current", "page");
+    await tab.click();
+    await expect(page).toHaveURL(/\/es\/guias$/);
+    await expect(tab).toHaveAttribute("aria-current", "page");
+    await page.goto("/es/guias/roma-3-dias");
+    await expect(tab).toHaveAttribute("aria-current", "page");
+  });
+
   test("the guides' page and the footer lead to it", async ({ page }) => {
     await page.goto("/es/privacy");
     await page.getByRole("contentinfo").getByRole("link", { name: "Guías de viaje" }).click();

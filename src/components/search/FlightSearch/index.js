@@ -68,7 +68,7 @@ const FlightSearch = () => {
             <SearchSummary query={query} originName={findAirport(airports, query?.origin)?.city} onEdit={flightSearch.expand} />
           </Collapse>
           <Collapse open={!collapsed}>
-            <div className="grid gap-5">
+            <div className="grid gap-4 sm:gap-5">
               <ModeTabs mode={mode} onChange={changeMode} />
               <SearchForm
                 mode={mode}

@@ -24,7 +24,7 @@ const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }
   const everywhere = mode === "everywhere";
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-5">
+    <form onSubmit={onSubmit} className="grid gap-4 sm:gap-5">
       {shows("everywhere", "country") && <TripTypeField mode={mode} form={form} onField={onField} />}
       <div className="grid gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-12">
         <FormField id="origin" label={texts.form.origin} hint={texts.form.originHint} className="lg:col-span-3">

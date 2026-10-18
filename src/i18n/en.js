@@ -20,6 +20,8 @@ const en = {
     kicker: "Cheap flights · itineraries made for you",
     // Two lines: the title is shown with white-space: pre-line
     title: "Don't pick a destination.\nPick the best price.",
+    // Phones: one short line, so the search form starts higher up
+    introShort: "Pick your flight and we'll plan the trip.",
     intro: "We show you the cheapest flights for your dates. Pick one and we plan the trip: what to see, where to eat and how to get around.",
     photoCreditDay: "Photo: Positano by day, by Nicola Cerroni (CC BY-SA 4.0), via Wikimedia Commons",
     photoCreditNight: "Photo: Positano at dusk, by JeCCo (CC BY 4.0), via Wikimedia Commons",

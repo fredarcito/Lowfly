@@ -20,6 +20,8 @@ const es = {
     kicker: "Vuelos baratos · itinerarios a tu medida",
     // Two lines: the title is shown with white-space: pre-line
     title: "No elijas destino.\nElige el mejor precio.",
+    // Phones: one short line, so the search form starts higher up
+    introShort: "Elige tu vuelo y te planeamos el viaje.",
     intro: "Te mostramos los vuelos más baratos para tus fechas. Elige uno y te planeamos el viaje: qué ver, dónde comer y cómo moverte.",
     photoCreditDay: "Foto: Positano de día, de Nicola Cerroni (CC BY-SA 4.0), vía Wikimedia Commons",
     photoCreditNight: "Foto: Positano al anochecer, de JeCCo (CC BY 4.0), vía Wikimedia Commons",

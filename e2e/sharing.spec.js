@@ -1,6 +1,6 @@
 import { DESKTOP, PHONE, expect, expectNoSidewaysScroll, openWith, savedTrips, test } from "./helpers/test.js";
 import { accountTrips, createTestUser, deleteTestUser, shareTripAs, signIn, skipWithoutSupabase } from "./helpers/accounts.js";
-import { flightTrip, romeTrip } from "./helpers/trips.js";
+import { FLORENCE_VENICE_ITINERARY, flightTrip, manualTrip, romeTrip } from "./helpers/trips.js";
 
 // Sharing a trip by link: the owner's dialog, the read-only page anyone can open, and keeping a shared trip
 test.describe("sharing", () => {
@@ -82,6 +82,23 @@ test.describe("sharing", () => {
     await page.mouse.wheel(0, 900);
     await expect(aside).toHaveCSS("opacity", "1");
     await expect(aside.getByRole("button", { name: "Guardar en mis viajes" })).toBeVisible();
+  });
+
+  // A route of several towns: its name next to the stuck tabs is cut at its end ("…"), never at its start
+  test("desktop: a long route's name next to the stuck day tabs is cut at its end", async ({ page }) => {
+    const base = manualTrip({ id: "shared-long-route", itinerary: FLORENCE_VENICE_ITINERARY });
+    const city = "Florencia → San Gimignano → Montepulciano → Venecia";
+    const longShareId = await shareTripAs(owner, { ...base, fare: { ...base.fare, city } });
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await openWith(page, `/es/shared/${longShareId}`);
+    const aside = page.locator('[role="tablist"] + div');
+    await page.mouse.wheel(0, 900);
+    await expect(aside).toHaveCSS("opacity", "1");
+    const name = aside.getByTitle(city).locator("span").first();
+    await expect(name).toHaveText(city);
+    const [nameBox, asideBox] = [await name.boundingBox(), await aside.boundingBox()];
+    expect(nameBox.x).toBeGreaterThanOrEqual(asideBox.x);
+    expect(await name.evaluate((element) => element.scrollWidth > element.clientWidth)).toBe(true);
   });
 
   test("saving it asks to sign in, and it is saved in the account on the way back", async ({ page }) => {

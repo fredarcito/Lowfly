@@ -7,10 +7,11 @@ import SaveSharedTripButton from "@/components/trips/sharing/SaveSharedTripButto
 const StickySave = ({ trip }) => {
   const { fare } = trip;
   return (
-    <div className="flex items-center gap-3 whitespace-nowrap">
-      <p className="grid text-right leading-tight">
-        <span className="font-heading text-sm font-bold">{fare.city}</span>
-        <span className="text-xs text-muted-foreground">{fare.country}</span>
+    <div className="flex min-w-0 items-center gap-3 whitespace-nowrap">
+      {/* A long route ("Roma → Nápoles → Venecia → Milán") is cut at its end with "…", whole on hover */}
+      <p title={fare.city} className="grid min-w-0 text-right leading-tight">
+        <span className="truncate font-heading text-sm font-bold">{fare.city}</span>
+        <span className="truncate text-xs text-muted-foreground">{fare.country}</span>
       </p>
       <SaveSharedTripButton trip={trip} className="h-9 px-4" />
     </div>

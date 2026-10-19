@@ -342,6 +342,7 @@ const en = {
       transports: { walking: "Walking", transit: "Public transport", driving: "Car" },
     },
     day: (number) => `Day ${number}`,
+    openInMaps: "Open in Google Maps",
     openDayRoute: (day) => `Open day ${day} in Google Maps`,
     openDayRouteLeg: (day, leg, legs) => `Day ${day} · route ${leg} of ${legs} in Maps`,
     periods: { morning: "Morning", afternoon: "Afternoon", night: "Evening" },

@@ -52,9 +52,9 @@ const ItineraryStickyBar = ({ trip, day, dayNumber, visible, readOnly = false })
           )}
         </div>
         {routes.length > 0 && (
-          <Button asChild variant="outline" size="sm" className="h-9 shrink-0 border-primary/60 text-primary-ink hover:text-primary-ink dark:border-primary/60">
+          <Button asChild variant="outline" size="sm" className="h-9 shrink-0">
             <a href={routes[0]} target="_blank" rel="noopener noreferrer" aria-label={texts.trips.openDayRoute(dayNumber)}>
-              <MapPin /> Google Maps
+              <MapPin className="text-primary-ink" /> {texts.trips.openInMaps}
             </a>
           </Button>
         )}

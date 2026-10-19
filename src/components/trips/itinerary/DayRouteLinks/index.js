@@ -6,15 +6,16 @@ import { useI18n } from "@/context/i18n";
 import { cn } from "@/utils/cn";
 
 // "Open day 1 in Google Maps" (the app on phones). A long day is split into routes of up to 11 points.
+// Outlined with a coral pin, not filled: a tool of the day, so it does not compete with the page's main action.
 const DayRouteLinks = ({ routes, dayNumber, className }) => {
   const { texts } = useI18n();
   if (!routes.length) return null;
   return (
     <div className={cn("flex flex-wrap gap-2", className)}>
       {routes.map((href, legIndex) => (
-        <Button key={href} asChild className="h-11 flex-1 px-5 font-bold sm:flex-none">
+        <Button key={href} asChild variant="outline" className="h-11 flex-1 px-5 font-bold sm:flex-none">
           <a href={href} target="_blank" rel="noopener noreferrer">
-            <MapPin />
+            <MapPin className="text-primary-ink" />
             {routes.length > 1 ? texts.trips.openDayRouteLeg(dayNumber, legIndex + 1, routes.length) : texts.trips.openDayRoute(dayNumber)}
           </a>
         </Button>

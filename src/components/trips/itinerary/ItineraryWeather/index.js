@@ -50,7 +50,7 @@ const ItineraryWeather = ({ weather, days }) => {
       </div>
       <Collapse open={open}>
         <div id={detailsId} className="mt-3 grid gap-3 border-t pt-3">
-          <ul className="grid gap-4">
+          <ul className="grid gap-3">
             {weather.map((town) => (
               <TownWeather key={town.city} weather={town} showCity={weather.length > 1} />
             ))}

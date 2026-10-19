@@ -152,7 +152,8 @@ test.describe("trip planned by hand", () => {
       await expect(weather.getByText("Florencia 5 a 14 °C · Venecia 4 a 12 °C")).toBeVisible();
       await weather.getByRole("button", { name: "Qué llevar" }).click();
       await expect(weather.getByRole("listitem")).toHaveCount(2);
-      await expect(weather.getByRole("listitem").first()).toContainText("Florencia · Fresco · 5 a 14 °C · Lluvias frecuentes");
+      await expect(weather.getByRole("listitem").first()).toContainText("Florencia");
+      await expect(weather.getByRole("listitem").first()).toContainText("Fresco · 5 a 14 °C · Lluvias frecuentes");
       await expect(weather.getByRole("listitem").last()).toContainText("botas impermeables");
       await expectNoSidewaysScroll(page);
     });
@@ -176,16 +177,47 @@ test.describe("trip planned by hand", () => {
       const trip = { ...manualTrip({ id: "five-towns" }), stops };
       await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
       const route = page.locator("section").filter({ hasText: "Tu ruta" }).first();
+      await route.getByRole("button", { name: /Tu ruta/ }).click();
       await expect(route.locator("li")).toHaveCount(5);
+      await expect(route.locator("li").last()).toBeVisible();
       const routeBox = await route.boundingBox();
       for (const card of await route.locator("li").all()) {
         const cardBox = await card.boundingBox();
         expect(cardBox.x + cardBox.width).toBeLessThanOrEqual(routeBox.x + routeBox.width);
       }
-      await expect(route.getByText("2 noches").first()).toBeVisible();
+      await expect(route.locator("li").getByText("2 noches").first()).toBeVisible();
       await expectNoSidewaysScroll(page);
     });
   }
+
+  // The route starts folded (one line: each town and its nights) and opens into a card per town with its dates.
+  // A town left the same day it is reached shows its hours, or "De paso" without times.
+  test("the route folds to one line and opens into its towns", async ({ page }) => {
+    const base = manualTrip({ id: "folded-route" });
+    const day = base.stops[1].leave.day;
+    const stops = [
+      ...base.stops,
+      { ...base.stops[1], city: "Padua", code: null, arrive: { day, time: "19:00" }, leave: { day, time: "23:30" } },
+      { ...base.stops[1], city: "Verona", code: null, arrive: { day, time: null }, leave: { day, time: null } },
+    ];
+    const trip = { ...base, stops };
+    await openWith(page, `/es/trips?id=${trip.id}`, { trips: [trip] });
+    const route = page.locator("section").filter({ hasText: "Tu ruta" }).first();
+    const toggle = route.getByRole("button", { name: /Tu ruta/ });
+    await expect(toggle).toHaveAttribute("aria-expanded", "false");
+    await expect(route).toContainText("Florencia");
+    await expect(route).toContainText("Verona");
+    await expect(route.locator("li").first()).toBeHidden();
+    await toggle.click();
+    await expect(toggle).toHaveAttribute("aria-expanded", "true");
+    await expect(route.locator("li")).toHaveCount(4);
+    await expect(route.locator("li").first()).toBeVisible();
+    await expect(route.locator("li").nth(0)).toContainText("1 noche");
+    await expect(route.locator("li").nth(2)).toContainText("4 h 30 min");
+    await expect(route.locator("li").nth(3)).toContainText("De paso");
+    await toggle.click();
+    await expect(route.locator("li").first()).toBeHidden();
+  });
 
   test("removing a town folds it away, and the summary follows", async ({ page }) => {
     await page.setViewportSize(DESKTOP);

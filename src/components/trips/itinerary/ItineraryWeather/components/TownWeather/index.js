@@ -3,21 +3,27 @@ import PackItem from "@/components/trips/itinerary/ItineraryWeather/components/P
 import { useI18n } from "@/context/i18n";
 import { degrees } from "@/components/trips/itinerary/ItineraryWeather/data/degrees";
 import { weatherIcon } from "@/components/trips/itinerary/ItineraryWeather/data/icons";
+import { cn } from "@/utils/cn";
 
 // One town's weather in detail, under "What to pack": what it is usually like, then what to wear and what else to
 // bring (side by side on wider screens). `showCity` (a route of several towns): its name, how it feels, its
-// temperatures and the rain first.
+// temperatures and the rain first, each town in its own block so they do not run together.
 const TownWeather = ({ weather, showCity }) => {
   const { texts } = useI18n();
   const words = texts.trips.weather;
   const Icon = weatherIcon(weather);
   return (
-    <li className="grid min-w-0 gap-3 text-sm">
+    <li className={cn("grid min-w-0 gap-3 text-sm", showCity && "gap-4 rounded-lg bg-muted/40 p-4 sm:p-5")}>
       {showCity && (
-        <p className="flex items-center gap-2 font-semibold">
-          <Icon aria-hidden className="size-4 shrink-0 text-muted-foreground" />
-          {weather.city} · {words.feels[weather.feels]} · {words.range(degrees(weather.low), degrees(weather.high))} · {words.rain[weather.rain]}
-        </p>
+        <div className="flex items-start gap-2.5">
+          <Icon aria-hidden className="mt-0.5 size-5 shrink-0 text-muted-foreground" />
+          <p className="grid gap-0.5">
+            <span className="font-heading text-base font-bold">{weather.city}</span>
+            <span className="text-muted-foreground">
+              {words.feels[weather.feels]} · {words.range(degrees(weather.low), degrees(weather.high))} · {words.rain[weather.rain]}
+            </span>
+          </p>
+        </div>
       )}
       {weather.summary && <p className="text-muted-foreground">{weather.summary}</p>}
       <div className="grid gap-3 sm:grid-cols-2 sm:gap-0 sm:divide-x">

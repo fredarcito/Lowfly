@@ -198,6 +198,7 @@ const es = {
     leaving: "Salida",
     towns: "Ciudades",
     route: "Tu ruta",
+    passingThrough: "De paso",
     townsCount: (count) => plural(count, "ciudad", "ciudades"),
     manual: {
       add: "Planear un viaje",

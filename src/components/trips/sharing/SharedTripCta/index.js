@@ -34,10 +34,9 @@ const SharedTripCta = ({ trip }) => {
       </section>
       <p className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
         {texts.share.plannedWith}
-        <Link href={ROUTES.home(lang)} className="flex items-center gap-1.5 font-heading font-extrabold text-foreground">
-          <span className="grid size-6 place-items-center rounded-md bg-primary text-primary-foreground">
-            <Plane className="size-3.5 -rotate-45" />
-          </span>
+        {/* A small white plane, not the coral logo: the footer just below already shows it */}
+        <Link href={ROUTES.home(lang)} className="flex items-center gap-1 font-heading font-extrabold text-foreground hover:text-primary-ink">
+          <Plane aria-hidden className="size-3.5 -rotate-45" />
           {APP_NAME}
         </Link>
       </p>

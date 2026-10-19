@@ -118,6 +118,8 @@ const load = async (airline, key, request, { fresh, keep, perSecond }) => {
   } catch (error) {
     // Several requests can fail together: one block counts once
     if (BLOCKING.includes(error.status) && !(await isBlocked(store, airline))) await block(store, airline, error.status, error.retryAfter);
+    // Why a search says an airline did not answer (a block is told above)
+    else if (!(error instanceof AirlineBlocked)) console.warn(`${airline} request failed (${key}): ${error.message}${cached ? ", serving an older answer" : ""}`);
     // An old answer beats none: the price is confirmed at the airline anyway
     if (cached) return { ...cached, stale: true };
     throw error;

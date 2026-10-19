@@ -1,7 +1,7 @@
 "use client";
 
 import { CalendarRange, Globe, MapPinned } from "lucide-react";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useI18n } from "@/context/i18n";
 
 // Texts live in the dictionary: texts.modes[id].label / short / hint
@@ -11,10 +11,13 @@ export const MODES = [
   { id: "trip", icon: CalendarRange },
 ];
 
-const ModeTabs = ({ mode, onChange }) => {
+// The three ways to search, as tabs over `children` (the search form): the form is the open tab's panel, so each tab
+// points to something real for screen readers (aria-controls). Not a stop of its own when tabbing: the form's
+// fields are.
+const ModeTabs = ({ mode, onChange, children }) => {
   const { texts } = useI18n();
   return (
-    <Tabs value={mode} onValueChange={onChange}>
+    <Tabs value={mode} onValueChange={onChange} className="gap-4 sm:gap-5">
       <TabsList aria-label={texts.modes.aria} className="grid h-auto! w-full grid-cols-3 p-1 sm:inline-grid sm:w-auto">
         {MODES.map(({ id, icon: Icon }) => (
           <TabsTrigger
@@ -28,6 +31,9 @@ const ModeTabs = ({ mode, onChange }) => {
           </TabsTrigger>
         ))}
       </TabsList>
+      <TabsContent value={mode} tabIndex={-1} className="[font-size:inherit]">
+        {children}
+      </TabsContent>
     </Tabs>
   );
 };

@@ -70,8 +70,7 @@ const FlightSearch = () => {
             <SearchSummary query={query} originName={findAirport(airports, query?.origin)?.city} onEdit={flightSearch.expand} />
           </Collapse>
           <Collapse open={!collapsed}>
-            <div className="grid gap-4 sm:gap-5">
-              <ModeTabs mode={mode} onChange={changeMode} />
+            <ModeTabs mode={mode} onChange={changeMode}>
               <SearchForm
                 mode={mode}
                 form={form}
@@ -81,7 +80,7 @@ const FlightSearch = () => {
                 onField={setField}
                 onSubmit={onSubmit}
               />
-            </div>
+            </ModeTabs>
           </Collapse>
         </Card>
       </div>

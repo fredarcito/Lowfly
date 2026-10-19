@@ -48,8 +48,8 @@
   /* The top bar's buttons: frosted glass dense enough to read over any part of the photo */
   --hero-glass: oklch(1 0 0 / 84%);
   --hero-glass-edge: oklch(0.23 0.035 245 / 10%);
-  --hero-photo-sm: url("/hero-day-900.jpg");
-  --hero-photo-lg: url("/hero-day-1800.jpg");
+  --hero-photo-sm: url("/hero-day-900.webp");
+  --hero-photo-lg: url("/hero-day-1800.webp");
 }
 
 :root[data-theme="dark"] {
@@ -87,8 +87,8 @@
   --hero-chip-active-foreground: oklch(0.23 0.035 245);
   --hero-glass: oklch(0.2 0.03 245 / 55%);
   --hero-glass-edge: oklch(1 0 0 / 14%);
-  --hero-photo-sm: url("/hero-night-900.jpg");
-  --hero-photo-lg: url("/hero-night-1800.jpg");
+  --hero-photo-sm: url("/hero-night-900.webp");
+  --hero-photo-lg: url("/hero-night-1800.webp");
 }
 
 @theme inline {

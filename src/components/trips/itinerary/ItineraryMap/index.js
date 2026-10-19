@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import "leaflet/dist/leaflet.css";
 
 // Esri basemaps: streets in the light theme, dark grey in the dark one. With Lowfly's key (NEXT_PUBLIC_ESRI_KEY,
 // ArcGIS Location Platform: 2 million tiles a month free, only from lowfly.travel and localhost), its static tiles
@@ -67,7 +66,9 @@ const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, cl
     let observer;
     let cancelled = false;
     const markers = markersRef.current;
-    import("leaflet").then(({ default: leaflet }) => {
+    // Leaflet and its styles only once a map is shown: imported at the top, its CSS was preloaded with the trips
+    // route (prefetched from the menu on every page) and never used there
+    Promise.all([import("leaflet"), import("leaflet/dist/leaflet.css")]).then(([{ default: leaflet }]) => {
       if (cancelled || !box.current || !stops.length) return;
       leafletRef.current = leaflet;
       const map = leaflet.map(box.current, { scrollWheelZoom: false, attributionControl: true });

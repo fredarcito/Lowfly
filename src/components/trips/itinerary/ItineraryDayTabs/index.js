@@ -1,15 +1,17 @@
 "use client";
 
+import { useHiddenSides } from "@/components/trips/itinerary/ItineraryDayTabs/hooks/useHiddenSides";
 import { useI18n } from "@/context/i18n";
 import { cn } from "@/utils/cn";
 
 // "Day 1 · Mon 19 Oct" tabs, as compact chips from the left (a few days do not stretch across the page); they
-// scroll sideways when they do not fit, and stay at the top while the day scrolls. The picked one is tinted coral,
+// scroll sideways when they do not fit (fading out at an edge while more are hidden past it), and stay at the top while the day scrolls. The picked one is tinted coral,
 // not filled: filled coral is kept for the page's main action.
 // `belowBar`: on phones and tablets the slim bar (ItineraryStickyBar) is showing, so they stick right under it.
 // `aside` (desktop): something kept at hand at the right of the tabs, sliding in while `belowBar` (stuck at the top).
 const ItineraryDayTabs = ({ days, picked, onPick, belowBar = false, aside }) => {
   const { texts, format } = useI18n();
+  const { rowRef, hidden, onScroll } = useHiddenSides();
   return (
     <div
       className={cn(
@@ -19,9 +21,17 @@ const ItineraryDayTabs = ({ days, picked, onPick, belowBar = false, aside }) => 
     >
       <div className="flex items-center">
         <div
+          ref={rowRef}
+          onScroll={onScroll}
           role="tablist"
           aria-label={texts.trips.itinerary}
-          className="flex min-w-0 flex-1 gap-2 overflow-x-auto py-1.5 sm:py-2 scrollbar-none"
+          className={cn(
+            "flex min-w-0 flex-1 gap-2 overflow-x-auto py-1.5 sm:py-2 scrollbar-none",
+            // Days hidden past an edge fade out there instead of being cut straight
+            hidden.left && hidden.right && "[mask-image:linear-gradient(to_right,transparent,black_3rem,black_calc(100%-3rem),transparent)]",
+            hidden.left && !hidden.right && "[mask-image:linear-gradient(to_right,transparent,black_3rem)]",
+            !hidden.left && hidden.right && "[mask-image:linear-gradient(to_right,black_calc(100%-3rem),transparent)]"
+          )}
         >
           {days.map((day, index) => (
             <button

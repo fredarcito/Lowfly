@@ -66,6 +66,17 @@ const es = {
     country: "Revisando precios día a día…",
     trip: "Comparando combinaciones de fechas…",
   },
+  // Below the loader's title, one every few seconds while the search runs
+  loadingPhrases: [
+    "Abrochándonos el cinturón…",
+    "Regateando con las nubes…",
+    "Buscando ventanilla para ti…",
+    "Contando los céntimos uno a uno…",
+    "Midiendo la maleta de mano (otra vez)…",
+    "Despegando las ofertas del suelo…",
+    "Haciendo hueco en el compartimento de arriba…",
+    "Esquivando turbulencias de precios…",
+  ],
   form: {
     tripType: "Tipo de viaje",
     oneway: "Solo ida",

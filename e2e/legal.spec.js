@@ -28,8 +28,9 @@ test.describe("legal pages", () => {
     await expect(main.getByRole("link", { name: "Política de privacidad" })).toBeVisible();
     // And the footer, on every page with it
     await expect(page.getByRole("contentinfo").getByRole("link", { name: "Política de privacidad" })).toBeVisible();
+    // Home: below the prices' note (the footer's are checked above)
     await page.goto("/es");
-    await expect(page.getByRole("link", { name: /Política de privacidad|Condiciones de uso/ })).toHaveCount(2);
+    await expect(page.getByRole("main").getByRole("link", { name: /Política de privacidad|Condiciones de uso/ })).toHaveCount(2);
   });
 
   // Google shows a site's icon in its results only as .ico or .png (not SVG)

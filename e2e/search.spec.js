@@ -124,3 +124,29 @@ test.describe("more airlines @live", () => {
     expect(room).toBeLessThanOrEqual(1);
   });
 });
+
+// While a search runs: a plane flying from the departure airport, the search's text and playful phrases (never an
+// airline's name). The search is held back, so no airline is asked.
+test.describe("search loader", () => {
+  for (const viewport of [DESKTOP, PHONE]) {
+    test(`a plane leaves the departure airport while searching (${viewport.width}px)`, async ({ page }) => {
+      await page.setViewportSize(viewport);
+      await page.route("**/api/everywhere**", () => {});
+      await page.goto(`/es?m=everywhere&o=BUD&from=${dayFromNow(20)}&to=${dayFromNow(35)}`);
+      const loader = page.getByRole("status").filter({ hasText: "Buscando los destinos más baratos" });
+      await expect(loader).toBeVisible({ timeout: 60_000 });
+      await expect(loader.locator("svg text").first()).toHaveText("BUD");
+      await expect(loader.locator("svg animateMotion")).toHaveCount(1);
+      await expect(loader).not.toContainText(/Ryanair|Wizz|easyJet|Vueling/);
+    });
+  }
+
+  test("with reduced motion, the plane waits mid-way", async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await page.route("**/api/everywhere**", () => {});
+    await page.goto(`/es?m=everywhere&o=BUD&from=${dayFromNow(20)}&to=${dayFromNow(35)}`);
+    const loader = page.getByRole("status").filter({ hasText: "Buscando los destinos más baratos" });
+    await expect(loader).toBeVisible({ timeout: 60_000 });
+    await expect(loader.locator("svg animateMotion")).toHaveCount(0);
+  });
+});

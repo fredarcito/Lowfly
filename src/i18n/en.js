@@ -66,6 +66,17 @@ const en = {
     country: "Checking prices day by day…",
     trip: "Comparing date combinations…",
   },
+  // Below the loader's title, one every few seconds while the search runs
+  loadingPhrases: [
+    "Fastening our seatbelts…",
+    "Haggling with the clouds…",
+    "Saving you a window seat…",
+    "Counting every cent…",
+    "Measuring the hand luggage (again)…",
+    "Getting the deals off the ground…",
+    "Making room in the overhead locker…",
+    "Dodging price turbulence…",
+  ],
   form: {
     tripType: "Trip type",
     oneway: "One way",

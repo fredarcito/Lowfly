@@ -52,8 +52,9 @@ const FlightSearch = () => {
 
   const Results = result.status === "done" && result.mode === mode ? RESULTS[mode] : null;
 
+  // At least as tall as the screen, the content stretching: on a short page the footer still sits at the bottom
   return (
-    <>
+    <div className="flex min-h-dvh flex-col">
       <SearchHero collapsed={collapsed} />
 
       {/* The only thing that moves on arriving: the form rises in, as the trip planner's does (the headline is
@@ -86,14 +87,14 @@ const FlightSearch = () => {
       </div>
 
       <main
-        className="mx-auto grid max-w-[calc(64rem+3rem)] gap-8 px-4 pt-8 pb-10 sm:px-6"
+        className="mx-auto grid w-full max-w-[calc(64rem+3rem)] flex-1 auto-rows-max gap-8 px-4 pt-8 pb-10 sm:px-6"
         aria-live="polite"
         aria-busy={result.status === "loading"}
       >
         {result.status === "idle" && (
           <SearchStart mode={mode} origin={form.origin} originName={findAirport(airports, form.origin)?.city} onSeeAll={searchWeekend} />
         )}
-        {result.status === "loading" && <SearchLoading text={texts.loading[result.mode]} />}
+        {result.status === "loading" && <SearchLoading text={texts.loading[result.mode]} origin={query?.origin} />}
         {result.status === "error" && <SearchError code={result.code} params={result.params} />}
         {Results && (
           <div className="grid gap-8 duration-500 animate-in fade-in slide-in-from-bottom-4 motion-reduce:animate-none">
@@ -104,7 +105,7 @@ const FlightSearch = () => {
       </main>
       {/* The same foot as every page: the airports, the guides and the legal pages */}
       <SiteFooter />
-    </>
+    </div>
   );
 };
 

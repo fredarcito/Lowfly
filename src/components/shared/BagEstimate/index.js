@@ -46,7 +46,7 @@ const BagEstimate = ({ fare, large = false, hideTitle = false, booked = false, c
         ))}
       </dl>
       <p className={cn("text-xs", large ? "ml-7.5 border-t pt-2.5" : "pl-5.5")}>
-        {fare.ret && `${texts.results.bagsBothFlights} `}
+        {fare.legs ? `${texts.results.bagsAllFlights(fare.legs.length)} ` : fare.ret && `${texts.results.bagsBothFlights} `}
         {texts.results[note](airlineNames(fare))}
       </p>
       <span className="sr-only">{texts.results.bagsHint}</span>

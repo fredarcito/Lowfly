@@ -64,16 +64,24 @@ export const subscribeToTrips = (onChange) => {
 };
 
 
-// The same flight always gets the same id, so saving it twice does not duplicate it
+// The same flight always gets the same id, so saving it twice does not duplicate it (a trip through a hub: its
+// flights)
 export const tripId = (origin, fare) =>
-  [origin, fare.code, fare.day, fare.time?.replace(":", ""), fare.ret?.day ?? "ow"].join("-").toLowerCase();
+  fare.legs
+    ? ["stopover", origin, ...fare.legs.map((leg) => `${leg.from}${leg.to}${leg.day}`)].join("-").toLowerCase()
+    : [origin, fare.code, fare.day, fare.time?.replace(":", ""), fare.ret?.day ?? "ow"].join("-").toLowerCase();
 
 // fare: a result as the API returns it (one way, or with out/ret legs). origin: departure airport code.
-export const saveTrip = (origin, fare) => {
+// A trip through a hub (`fare.legs`, server/stopovers) is kept like a trip planned by hand, through `stops` (its
+// towns, utils/stopovers savedStopsOf), so its itinerary covers every town; its flights stay in `flights`.
+export const saveTrip = (origin, fare, stops = null) => {
   const id = tripId(origin, fare);
   const list = readTrips();
   if (list.some((saved) => saved.id === id)) return id;
-  const trip = { id, origin, fare, savedAt: new Date().toISOString(), booked: false, itinerary: null };
+  const savedAt = new Date().toISOString();
+  const trip = fare.legs
+    ? { id, manual: true, stopover: true, origin, stops, flights: fare, fare: { ...manualFare(stops), price: fare.price, cur: fare.cur }, savedAt, booked: false, itinerary: null }
+    : { id, origin, fare, savedAt, booked: false, itinerary: null };
   write(sortTrips([...list, trip]));
   return id;
 };

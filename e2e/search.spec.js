@@ -61,7 +61,7 @@ test.describe("search @live", () => {
       test(`a destination of the table opens its details (${name}, ${viewport.width}px)`, async ({ page }) => {
         await page.setViewportSize(viewport);
         await page.goto(url);
-        await expect(page.getByText(/destinos/).first()).toBeVisible({ timeout: 150_000 });
+        await expect(page.getByRole("heading", { name: /^\d+ destinos?$/ })).toBeVisible({ timeout: 150_000 });
         const table = page.locator("section").filter({ hasText: "destinos" }).filter({ visible: true }).last();
         const row = table.locator("button[aria-expanded]").first();
         await row.scrollIntoViewIfNeeded();
@@ -91,7 +91,7 @@ test.describe("search @live", () => {
     // One request per airport (each photo shows as soon as it is found), never twice for the same one
     expect(new Set(photoRequests).size).toBe(photoRequests.length);
     await page.getByRole("button", { name: /Ver todos los destinos/ }).click();
-    await expect(page.getByText(/destinos/).first()).toBeVisible({ timeout: 150_000 });
+    await expect(page.getByRole("heading", { name: /^\d+ destinos?$/ })).toBeVisible({ timeout: 150_000 });
     const params = new URL(page.url()).searchParams;
     expect(params.get("m")).toBe("everywhere");
     expect(params.get("wk")).toBe("1");

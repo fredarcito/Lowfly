@@ -3,6 +3,7 @@ import { revalidatePath } from "next/cache";
 import { ROUTE_ORIGINS } from "@/server/flightRoutes/routes";
 import { refreshOrigin } from "@/server/flightRoutes/refresh";
 import { snapshotTimes } from "@/server/flightRoutes/snapshots";
+import { isCronRequest } from "@/server/cron";
 
 // GET /api/cron/flight-routes → writes again the route pages' data (server/flightRoutes/refresh), the oldest airports
 // first, one at a time so the airlines see a few requests at once (every airport in well under a minute). Vercel
@@ -17,10 +18,8 @@ const STALE_MS = 20 * 3600 * 1000;
 // No airport is started after this long (one takes a second or two; the function may run 300 s)
 const BUDGET_MS = 240_000;
 
-const authorized = (request) => Boolean(process.env.CRON_SECRET) && request.headers.get("authorization") === `Bearer ${process.env.CRON_SECRET}`;
-
 export const GET = async (request) => {
-  if (!authorized(request)) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  if (!isCronRequest(request)) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   const started = Date.now();
   const only = request.nextUrl.searchParams.get("origin")?.toUpperCase();
   if (only && !ROUTE_ORIGINS.includes(only)) return NextResponse.json({ error: "unknownOrigin" }, { status: 400 });

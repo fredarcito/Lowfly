@@ -2,6 +2,7 @@
 
 import { ChevronDown } from "lucide-react";
 import FareDetails from "@/components/search/results/FareDetails";
+import StopoverDetails from "@/components/search/results/StopoverDetails";
 import AirlineBadge from "@/components/shared/AirlineBadge";
 import Collapse from "@/components/shared/Collapse";
 import { useI18n } from "@/context/i18n";
@@ -9,7 +10,8 @@ import { useDisclosure } from "@/hooks/useDisclosure";
 import { cn } from "@/utils/cn";
 
 // A row inside a <ResultList>. Pressing it opens the details: each flight, "Book" and "Save trip".
-// `fare` needs city and country (for saving); `airlines` is the list of airlines
+// `fare` needs city and country (for saving); a trip through a hub (`legs`, server/stopovers) opens its flights
+// instead; `airlines` is the list of airlines
 // (two if outbound and return are with different airlines); `tag` is an optional highlight ({ label, hint })
 const ResultRow = ({ fare, origin, title, meta, airlines = [], priceNote, tag }) => {
   const { format } = useI18n();
@@ -44,7 +46,7 @@ const ResultRow = ({ fare, origin, title, meta, airlines = [], priceNote, tag })
       </button>
       <Collapse open={details.open}>
         <div className="bg-muted/40 pt-1">
-          <FareDetails fare={fare} origin={origin} />
+          {fare.legs ? <StopoverDetails trip={fare} origin={origin} /> : <FareDetails fare={fare} origin={origin} />}
         </div>
       </Collapse>
     </div>

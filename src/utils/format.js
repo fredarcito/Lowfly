@@ -9,7 +9,7 @@ export const AIRLINES = {
 };
 
 // A fare whose price was seen in recent searches (more airlines), not checked live: the airline confirms it
-export const isCachedFare = (fare) => Boolean(fare.cached || fare.out?.cached || fare.ret?.cached);
+export const isCachedFare = (fare) => Boolean(fare.cached || fare.out?.cached || fare.ret?.cached || fare.legs?.some((leg) => leg.cached));
 
 // For searching: lower case and without accents ("Málaga" → "malaga")
 export const normalize = (text) => text.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
@@ -25,7 +25,11 @@ export const heatOf = (price, min, max) =>
   Math.round(100 - (max === min ? 0 : (price - min) / (max - min)) * 85);
 
 // Airlines of a fare: two if the outbound and return flights are with different airlines
-export const airlinesOf = (fare) => (fare.ret && fare.ret.airline !== fare.out.airline ? [fare.out.airline, fare.ret.airline] : [fare.airline]);
+// The fare's airlines: every one of a trip through a hub (`legs`), both of a return trip with two
+export const airlinesOf = (fare) => {
+  if (fare.legs) return [...new Set(fare.legs.map((leg) => leg.airline))];
+  return fare.ret && fare.ret.airline !== fare.out.airline ? [fare.out.airline, fare.ret.airline] : [fare.airline];
+};
 export const airlineNames = (fare) => airlinesOf(fare).map((airline) => AIRLINES[airline]).join(" + ");
 
 // Language path on the airline websites
@@ -99,6 +103,14 @@ export const createFormat = (lang, texts) => {
         { label: results.outIn(AIRLINES[fare.out.airline]), href: bookUrl(fare.out.airline, origin, fare.code, fare.day) },
         { label: results.retIn(AIRLINES[fare.ret.airline]), href: bookUrl(fare.ret.airline, fare.code, origin, fare.ret.day) },
       ];
+    },
+
+    // A trip through a hub (server/stopovers): every flight is its own ticket, so one link per flight
+    legLinks(legs) {
+      return legs.map((leg) => ({
+        label: texts.results.legIn(leg.from, leg.to, AIRLINES[leg.airline]),
+        href: bookUrl(leg.airline, leg.from, leg.to, leg.day),
+      }));
     },
 
     // "If you leave on Thu 22 Oct and come back on Tue 27 Oct"

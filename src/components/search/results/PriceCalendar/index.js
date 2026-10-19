@@ -3,9 +3,10 @@ import { useI18n } from "@/context/i18n";
 import { airlineNames, heatOf } from "@/utils/format";
 import { cn } from "@/utils/cn";
 
-const CELL = "flex aspect-square flex-col justify-between rounded-md p-1 text-[0.7rem] leading-none sm:p-1.5 sm:text-xs";
+const CELL = "flex h-13 flex-col justify-between rounded-md p-1 text-[0.7rem] leading-none sm:h-14 sm:p-1.5 sm:text-xs";
 
-// One month with the cheapest price of each day. The yellower, the cheaper.
+// One month with the cheapest price of each day. The yellower, the cheaper. A day with no flight is just its number,
+// quieter than the days with a price; a day outside the search, quieter still.
 const PriceCalendar = ({ month, byDay, min, max, bestDay, from, to, origin }) => {
   const { texts, format } = useI18n();
   const [year, monthNumber] = month.split("-").map(Number);
@@ -21,15 +22,14 @@ const PriceCalendar = ({ month, byDay, min, max, bestDay, from, to, origin }) =>
     const fare = byDay[key];
     if (key < from || key > to) {
       cells.push(
-        <div key={key} className={cn(CELL, "text-muted-foreground/40")}>
+        <div key={key} className={cn(CELL, "text-muted-foreground/25")}>
           {dayOfMonth}
         </div>
       );
     } else if (!fare) {
       cells.push(
-        <div key={key} className={cn(CELL, "bg-cell/60 text-muted-foreground")} title={texts.results.dayNoFlights}>
-          <span>{dayOfMonth}</span>
-          <span className="self-end">–</span>
+        <div key={key} className={cn(CELL, "text-muted-foreground/60")} title={texts.results.dayNoFlights}>
+          {dayOfMonth}
         </div>
       );
     } else {

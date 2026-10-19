@@ -1,96 +1,59 @@
-import BestPrice from "@/components/search/results/BestPrice";
-import ResultList from "@/components/search/results/ResultList";
-import ResultRow from "@/components/search/results/ResultRow";
+import KindChips from "@/components/search/results/KindChips";
 import FailedNote from "@/components/search/results/FailedNote";
-import PriceCalendar from "@/components/search/results/PriceCalendar";
-import Section from "@/components/search/results/Section";
-import HeatLegend from "@/components/search/results/HeatLegend";
 import NoResults from "@/components/search/results/NoResults";
+import StopoverBest from "@/components/search/results/StopoverBest";
+import StopoverResults from "@/components/search/results/StopoverResults";
+import AirportList from "@/components/search/results/CountryResults/components/AirportList";
+import DirectBest from "@/components/search/results/CountryResults/components/DirectBest";
+import DirectDates from "@/components/search/results/CountryResults/components/DirectDates";
+import { useTripKind } from "@/components/search/results/CountryResults/hooks/useTripKind";
 import { useI18n } from "@/context/i18n";
-import { airlinesOf } from "@/utils/format";
 
-const CountryResults = ({ data }) => {
+// The results to a country or city: the highlighted cheapest trip, the calendar, other dates and each airport for
+// the direct flights; and the trips through a hub (`stopovers`, from useFlightSearch; docs/stopovers.md). Chips over
+// the highlighted card switch between the kinds of trip (direct, a same-day stop, a getaway in the hub). With no
+// direct flight there, `data` is null and only the trips through a hub show.
+const CountryResults = ({ data, stopovers }) => {
   const { texts, format } = useI18n();
-  const { origin, roundTrip, country, city, from, to, months, byDay, best, others, airports, min, max, failed } = data;
-  const priceNote = roundTrip ? texts.results.roundTrip : undefined;
+  const trips = stopovers?.data?.trips ?? [];
+  const tripKind = useTripKind(data?.best ?? null, trips);
+  const loadingStopovers = stopovers?.status === "loading";
+  const { origin, country, city } = data ?? stopovers.data;
   // A city search (Roma) or the whole country (Italia)
   const place = city ?? country;
-  if (!best) {
-    return (
-      <NoResults failed={failed}>{texts.results.noFlightsCountry(place)}</NoResults>
-    );
+  const best = data?.best;
+  if (!best && !trips.length && !loadingStopovers) {
+    return <NoResults failed={data?.failed ?? stopovers?.data?.failed ?? []}>{texts.results.noFlightsCountry(place)}</NoResults>;
   }
+
+  const kindOptions = tripKind.kinds.map(({ kind, fare }) => ({
+    value: kind,
+    label: kind === "escapada" ? texts.results.visitOnTheWay(fare.via.city) : texts.results.tripKinds[kind],
+    hint: texts.results.tripKindHints[kind],
+    price: format.money(fare.price, fare.cur),
+  }));
+  const highlighted =
+    tripKind.kind === "direct" && best ? (
+      <DirectBest data={data} />
+    ) : (
+      tripKind.shown && <StopoverBest trip={tripKind.shown} origin={origin} />
+    );
 
   return (
     <>
-      <BestPrice
-        price={best.price}
-        cur={best.cur}
-        title={`${best.city}, ${country}`}
-        detail={texts.results.airportAdult(best.code)}
-        links={format.fareLinks(best, origin)}
-        fare={{ ...best, country }}
-        origin={origin}
-        priceNote={priceNote}
-        label={texts.results.bestDay}
-      />
-      <FailedNote failed={failed} />
-
-      <Section
-        title={texts.results.calendar}
-        note={roundTrip ? texts.results.calendarNoteReturn(place) : texts.results.calendarNoteOneway(place)}
-        action={
-          <HeatLegend
-            min={min}
-            max={max}
-            extra={
-              <span className="flex items-center gap-1.5">
-                <span className="size-3 rounded-sm ring-2 ring-primary" aria-hidden /> {texts.results.bestDayLegend}
-              </span>
-            }
-          />
-        }
-      >
-        <div className="grid gap-6 rounded-xl bg-card p-4 ring-1 ring-foreground/10 sm:p-5 md:grid-cols-2">
-          {months.map((month) => (
-            <PriceCalendar key={month} month={month} byDay={byDay} min={min} max={max} bestDay={best.day} from={from} to={to} origin={origin} />
-          ))}
+      {!best && <p className="text-muted-foreground">{texts.results.noDirect(place)}</p>}
+      {(kindOptions.length > 1 || loadingStopovers) && (
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          {kindOptions.length > 0 && <KindChips label={texts.results.stopovers} options={kindOptions} value={tripKind.kind} onChange={tripKind.choose} />}
+          {loadingStopovers && <span className="text-sm text-muted-foreground">{texts.results.stopoversLoading}</span>}
         </div>
-      </Section>
-
-      {others.length > 0 && (
-        <Section title={texts.results.otherDates}>
-          <ResultList>
-            {others.map((fare) => (
-              <ResultRow
-                key={fare.day}
-                title={fare.ret ? format.fareDates(fare) : format.fmtDay(fare.day)}
-                meta={fare.ret ? `${fare.city} (${fare.code})` : `${fare.city} (${fare.code})${format.at(fare.time)}`}
-                airlines={airlinesOf(fare)}
-                priceNote={priceNote}
-                fare={{ ...fare, country: fare.country ?? country }}
-                origin={origin}
-              />
-            ))}
-          </ResultList>
-        </Section>
       )}
-
-      <Section title={texts.results.byAirport} note={roundTrip ? texts.results.byAirportNoteReturn : texts.results.byAirportNoteOneway}>
-        <ResultList>
-          {airports.map((fare) => (
-            <ResultRow
-              key={fare.code}
-              title={`${fare.city} (${fare.code})`}
-              meta={fare.ret ? format.fareDates(fare) : texts.results.bestDayMeta(format.fmtDay(fare.day))}
-              airlines={airlinesOf(fare)}
-              priceNote={priceNote}
-              fare={{ ...fare, country: fare.country ?? country }}
-              origin={origin}
-            />
-          ))}
-        </ResultList>
-      </Section>
+      {highlighted}
+      <FailedNote failed={[...new Set([...(data?.failed ?? []), ...(stopovers?.data?.failed ?? [])])]} />
+      {best && <DirectDates data={data} />}
+      {trips.length > 0 && <StopoverResults trips={trips} origin={origin} place={place} />}
+      {/* With a single airport it would only repeat the highlighted trip */}
+      {best && data.airports.length > 1 && <AirportList data={data} />}
     </>
   );
 };

@@ -7,6 +7,10 @@ const SEARCH_PATHS = { everywhere: "/everywhere", country: "/country", trip: "/f
 export const searchFlights = (mode, params, options) =>
   api.get(SEARCH_PATHS[mode], { params, ...options }).then((response) => response.data);
 
-// Where you can fly from `origin`: [{ code, city, country, airlines }]
+// Where you can fly from `origin`: [{ code, city, country, airlines, stopover? }], with the airports reached with
+// one stop only (`stopover: true`)
 export const getDestinations = (origin, lang, options) =>
-  api.get("/destinations", { params: { origin, lang }, ...options }).then((response) => response.data.destinations);
+  api.get("/destinations", { params: { origin, lang, stopovers: 1 }, ...options }).then((response) => response.data.destinations);
+
+// Trips through a hub to a country or city (server/stopovers), with the country search's parameters
+export const searchStopovers = (params, options) => api.get("/stopovers", { params, ...options }).then((response) => response.data);

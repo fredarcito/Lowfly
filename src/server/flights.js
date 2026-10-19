@@ -4,20 +4,15 @@
 import * as ryanair from "@/server/ryanair";
 import * as wizz from "@/server/wizz";
 import * as more from "@/server/travelpayouts";
-import { MORE_AIRLINES } from "@/constants/airlines";
+import { DAILY, pool } from "@/server/dailyPrices";
 import { getAirports } from "@/server/airports";
+import { getGraph, routesFrom } from "@/server/routeGraph";
+import { oneStopDestinations } from "@/server/stopovers/hubs";
 import { AppError } from "@/server/errors";
 import { WEEKEND } from "@/constants/weekend";
 import { fits, hoursAway, noTimeOff } from "@/utils/weekend";
 import { tomorrow, shift, later, daysBetween, monthsBetween, nightsBetween } from "@/utils/dates";
 
-const DAILY = {
-  ryanair: ryanair.daily,
-  wizz: wizz.daily,
-  ...Object.fromEntries(Object.keys(MORE_AIRLINES).map((airline) => [airline, (dep, arr, from, to) => more.daily(dep, arr, from, to, airline)])),
-};
-// The airlines whose failure is worth telling (the others are a bonus)
-const LIVE = ["ryanair", "wizz"];
 // Most Wizz months checked day by day in a search, so Wizz does not block us (503) for too many requests
 const MAX_RECHECKS = 20;
 const minBy = (list) => list.reduce((cheapest, candidate) => (candidate.price < cheapest.price ? candidate : cheapest));
@@ -55,47 +50,40 @@ const bestReturn = (out, rets, stay) => {
 const fitsWeekend = (flight) =>
   (!flight.times || flight.times.length === 1) && fits(flight.dir === "out" ? WEEKEND.out : WEEKEND.ret, flight.day, flight.time);
 
-// Runs jobs at most `n` at a time and records which airline fails
-const pool = async (jobs, failed, concurrency = 6) => {
-  // Only the live airlines' failures are told; the others just add nothing
-  const res = [];
-  let nextJob = 0;
-  const worker = async () => {
-    while (nextJob < jobs.length) {
-      const jobIndex = nextJob++;
-      try {
-        res[jobIndex] = await jobs[jobIndex].run();
-      } catch {
-        res[jobIndex] = null;
-        if (LIVE.includes(jobs[jobIndex].airline)) failed.add(jobs[jobIndex].airline);
-      }
-    }
-  };
-  await Promise.all(Array.from({ length: concurrency }, worker));
-  return res;
-};
-
-// Destinations from both airlines, merged by airport. The city comes from the airport list, where every
-// airport of a city shares its name (Fiumicino and Ciampino are both "Roma"), and the country code with it.
-export const getDestinations = async (origin, lang = "es") => {
-  const [ry, wz, known, others] = await Promise.allSettled([
-    ryanair.cheapest(origin, tomorrow(), shift(tomorrow(), 180), lang),
-    wizz.destinations(origin, lang),
-    getAirports(lang),
-    more.destinations(origin, tomorrow(), lang),
-  ]);
+// Where Ryanair and Wizz Air fly from `origin`: { list: [{ code, airline, city?, country? }], failed: [airlines] }.
+// From the route graph (server/routeGraph), with no requests; without it, asked to the airlines (Ryanair's from its
+// fares over the next 180 days).
+const airlineRoutes = async (origin, lang) => {
+  const graph = await routesFrom(origin);
+  if (graph) return { list: Object.entries(graph).flatMap(([code, airlines]) => airlines.map((airline) => ({ code, airline }))), failed: [] };
+  const [ry, wz] = await Promise.allSettled([ryanair.cheapest(origin, tomorrow(), shift(tomorrow(), 180), lang), wizz.destinations(origin, lang)]);
   const failed = [];
   if (ry.status === "rejected") failed.push("ryanair");
   if (wz.status === "rejected") failed.push("wizz");
-  const airportsByCode = new Map((known.value?.airports || []).map((airport) => [airport.code, airport]));
+  return { list: [...(ry.value || []), ...(wz.value || [])], failed };
+};
+
+// Destinations from every airline, merged by airport. The city comes from the airport list, where every
+// airport of a city shares its name (Fiumicino and Ciampino are both "Roma"), and the country code with it.
+// With `stopovers` (the destination picker), also the airports reached with one stop only, `stopover: true` and no
+// airlines (server/stopovers).
+export const getDestinations = async (origin, lang = "es", { stopovers = false } = {}) => {
+  const [{ list, failed }, known, others] = await Promise.all([
+    airlineRoutes(origin, lang),
+    getAirports(lang).catch(() => null),
+    more.destinations(origin, tomorrow(), lang).catch(() => []),
+  ]);
+  const airportsByCode = new Map((known?.airports || []).map((airport) => [airport.code, airport]));
 
   const byCode = new Map();
-  for (const destination of [...(ry.value || []), ...(wz.value || []), ...(others.value || [])]) {
+  for (const destination of [...list, ...others]) {
     const airport = airportsByCode.get(destination.code);
+    // A route from the graph names its airport through the airport list only
+    if (!airport && !destination.city) continue;
     const entry = byCode.get(destination.code) || {
       code: destination.code,
       city: airport?.city ?? destination.city,
-      country: destination.country,
+      country: airport?.country ?? destination.country,
       countryCode: airport?.countryCode ?? null,
       airlines: [],
     };
@@ -103,6 +91,13 @@ export const getDestinations = async (origin, lang = "es") => {
     byCode.set(destination.code, entry);
   }
   if (!byCode.size && failed.length === 2) throw new AppError("noAirlines");
+  const graph = stopovers ? await getGraph() : null;
+  if (graph)
+    for (const code of oneStopDestinations(origin, graph, airportsByCode)) {
+      const airport = airportsByCode.get(code);
+      if (!byCode.has(code))
+        byCode.set(code, { code, city: airport.city, country: airport.country, countryCode: airport.countryCode, airlines: [], stopover: true });
+    }
   return { origin, destinations: [...byCode.values()], failed };
 };
 

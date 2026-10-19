@@ -13,14 +13,17 @@ import SaveHint from "@/components/search/SaveTripButton/components/SaveHint";
 // Saves the flight to "My trips", saying under it that we plan the day-by-day itinerary too. Once saved it
 // offers it, without forcing it: "✨ Plan my itinerary" (or "See my itinerary →" once made) opens the trip, and
 // the bookmark next to it removes it. `fare` needs city and country; `className` sizes the buttons' row.
-// compact: just the icon, for small spaces such as the photo of a weekend card.
-const SaveTripButton = ({ origin, fare, compact = false, className }) => {
+// compact: just the icon, for small spaces such as the photo of a weekend card. A trip through a hub (`fare.legs`)
+// is saved with its towns (`stops`, useStopoverStops): until they are known, the button waits. `hint` false: without
+// the line under it (where the itinerary is already offered next to it).
+const SaveTripButton = ({ origin, fare, stops = null, compact = false, hint = true, className }) => {
   const { lang, texts } = useI18n();
   const id = tripId(origin, fare);
   const savedTrip = useTrips().find((trip) => trip.id === id);
   const saved = Boolean(savedTrip);
   const Icon = saved ? BookmarkCheck : Bookmark;
-  const toggle = () => (saved ? removeTrip(id) : saveTrip(origin, fare));
+  const waiting = Boolean(fare.legs) && !stops;
+  const toggle = () => (saved ? removeTrip(id) : saveTrip(origin, fare, stops));
 
   if (compact) {
     return (
@@ -66,7 +69,7 @@ const SaveTripButton = ({ origin, fare, compact = false, className }) => {
             <BookmarkCheck />
           </Button>
         </div>
-        <SaveHint>{ready ? texts.trips.savedReady : texts.trips.savedHint}</SaveHint>
+        {hint && <SaveHint>{ready ? texts.trips.savedReady : texts.trips.savedHint}</SaveHint>}
       </div>
     );
   }
@@ -79,11 +82,12 @@ const SaveTripButton = ({ origin, fare, compact = false, className }) => {
         size="lg"
         onClick={toggle}
         aria-pressed={false}
+        disabled={waiting}
         className={cn("h-11 px-5 text-base", className)}
       >
         <Icon /> {texts.trips.save}
       </Button>
-      <SaveHint>{texts.trips.saveHint}</SaveHint>
+      {hint && <SaveHint>{texts.trips.saveHint}</SaveHint>}
     </div>
   );
 };

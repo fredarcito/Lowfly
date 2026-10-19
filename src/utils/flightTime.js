@@ -2,7 +2,7 @@
 // (Malta → London leaves at 06:15 and lands at 07:50, but that is 2 h 35 min, not 1 h 35 min).
 
 // Minutes the time zone is ahead of UTC on that day ("Europe/Malta" in summer → 120)
-const utcOffsetMinutes = (timeZone, day) => {
+export const utcOffsetMinutes = (timeZone, day) => {
   const name = new Intl.DateTimeFormat("en-US", { timeZone, timeZoneName: "longOffset" })
     .formatToParts(new Date(`${day}T12:00:00Z`))
     .find((part) => part.type === "timeZoneName").value; // "GMT+02:00", or "GMT" for UTC
@@ -10,7 +10,7 @@ const utcOffsetMinutes = (timeZone, day) => {
   return match ? (match[1] === "-" ? -1 : 1) * (Number(match[2]) * 60 + Number(match[3])) : 0;
 };
 
-const minutesOfDay = (time) => Number(time.slice(0, 2)) * 60 + Number(time.slice(3, 5));
+export const minutesOfDay = (time) => Number(time.slice(0, 2)) * 60 + Number(time.slice(3, 5));
 
 // Flight length in minutes, or null without the arrival time or a time zone.
 // leg: { day, time, arrive } (local times); fromZone / toZone: IANA time zones of the two airports.

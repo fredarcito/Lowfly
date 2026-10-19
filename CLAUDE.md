@@ -41,3 +41,7 @@ These apply to every file of the project (except shadcn's `src/components/ui/`).
 - Dates are counted from today (`dayFromNow`), never fixed. Tests that need an account create a temporary one
   and delete it (`e2e/helpers/accounts.js`; needs the Supabase secret key in `.env.local`).
 - A change to a flow comes with its test, or an update to the existing one.
+
+## Design docs
+- `docs/stopovers.md`: flights with a stopover (same-day connection and "escapada") and the route graph. Read it
+  before touching the flight search, the destination picker or the trip/fare shape.

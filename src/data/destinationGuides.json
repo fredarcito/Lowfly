@@ -1129,25 +1129,25 @@
  },
  "BSL": {
   "es": {
-   "text": "Explora Friburgo de Brisgovia, una soleada joya junto a la Selva Negra famosa por su histórica catedral y sus pintorescos canales conocidos como Bächle.",
+   "text": "Explora Basilea, la capital cultural de Suiza, donde el arte contemporáneo convive con una preciosa ciudad vieja medieval y el histórico Ayuntamiento renacentista.",
    "tags": [
-    "Selva Negra",
-    "Catedral histórica",
-    "Canales Bächle"
+    "Capital cultural",
+    "Arte contemporáneo",
+    "Casco antiguo"
    ]
   },
   "en": {
-   "text": "Visit sunny Freiburg on the edge of the Black Forest, known for its historic medieval Altstadt and unique small water channels called Bächle.",
+   "text": "Explore Basel, Switzerland's cultural capital, where world-class art museums meet a beautiful medieval old town and the iconic Renaissance town hall.",
    "tags": [
-    "Black Forest",
-    "Historic Altstadt",
-    "Bächle channels"
+    "Cultural capital",
+    "World-class museums",
+    "Medieval old town"
    ]
   },
   "sources": {
-   "en": "https://en.wikipedia.org/wiki/Freiburg_im_Breisgau",
-   "es": "https://es.wikipedia.org/wiki/Friburgo_de_Brisgovia",
-   "guide": "https://en.wikivoyage.org/wiki/Freiburg"
+   "en": "https://en.wikipedia.org/wiki/Basel",
+   "es": "https://es.wikipedia.org/wiki/Basilea",
+   "guide": "https://en.wikivoyage.org/wiki/Basel"
   },
   "city": {
    "en": "Basel",
@@ -1210,25 +1210,25 @@
  },
  "BVA": {
   "es": {
-   "text": "Explora Beauvais, la ciudad que alberga una impresionante catedral del siglo XIII famosa por sus vidrieras y su espectacular reloj astronómico del siglo XVIII.",
+   "text": "Explora la Ciudad de la Luz, donde la icónica Torre Eiffel y los bancos del Sena definen un destino legendario lleno de arte, moda y una gastronomía de clase mundial.",
    "tags": [
-    "Catedral gótica",
-    "Reloj astronómico",
-    "Vidrieras históricas"
+    "Torre Eiffel",
+    "Río Sena",
+    "Gastronomía francesa"
    ]
   },
   "en": {
-   "text": "Visit Beauvais to marvel at its stunning 13th-century cathedral, home to beautiful stained glass windows and a spectacular 18th-century astronomical clock.",
+   "text": "Discover the City of Light, home to the iconic Eiffel Tower and the historic River Seine, a global hub for art, fashion, and world-class Michelin-starred dining.",
    "tags": [
-    "Gothic cathedral",
-    "Astronomical clock",
-    "Stained glass"
+    "Eiffel Tower",
+    "River Seine",
+    "Michelin dining"
    ]
   },
   "sources": {
-   "en": "https://en.wikipedia.org/wiki/Beauvais",
-   "es": "https://es.wikipedia.org/wiki/Beauvais",
-   "guide": "https://en.wikivoyage.org/wiki/Beauvais"
+   "en": "https://en.wikipedia.org/wiki/Paris",
+   "es": "https://es.wikipedia.org/wiki/Par%C3%ADs",
+   "guide": "https://en.wikivoyage.org/wiki/Paris"
   },
   "city": {
    "en": "Paris",
@@ -6777,25 +6777,25 @@
  },
  "TLV": {
   "es": {
-   "text": "Explora Jerusalén, una de las ciudades más antiguas del mundo, famosa por su Ciudad Vieja declarada Patrimonio de la Humanidad y su profundo significado espiritual.",
+   "text": "Disfruta de Tel Aviv, la ciudad mediterránea de las playas, la Ciudad Blanca de edificios Bauhaus declarada Patrimonio de la Humanidad y el antiguo puerto de Jaffa.",
    "tags": [
-    "Ciudad Vieja",
-    "Patrimonio Unesco",
-    "Significado religioso"
+    "Playas mediterráneas",
+    "Ciudad Blanca Bauhaus",
+    "Antigua Jaffa"
    ]
   },
   "en": {
-   "text": "Discover Jerusalem, an ancient city in the Judean Hills that serves as a unique spiritual and cultural center for three major world religions.",
+   "text": "Enjoy Tel Aviv, a Mediterranean city of beaches, the UNESCO-listed White City of Bauhaus buildings and the ancient port of Jaffa.",
    "tags": [
-    "Ancient city",
-    "Old City sites",
-    "Religious history"
+    "Mediterranean beaches",
+    "Bauhaus White City",
+    "Old Jaffa"
    ]
   },
   "sources": {
-   "en": "https://en.wikipedia.org/wiki/Jerusalem",
-   "es": "https://es.wikipedia.org/wiki/Jerusal%C3%A9n",
-   "guide": "https://en.wikivoyage.org/wiki/Jerusalem"
+   "en": "https://en.wikipedia.org/wiki/Tel_Aviv",
+   "es": "https://es.wikipedia.org/wiki/Tel_Aviv",
+   "guide": "https://en.wikivoyage.org/wiki/Tel_Aviv"
   },
   "city": {
    "en": "Tel-Aviv",

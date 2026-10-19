@@ -1,4 +1,6 @@
 const plural = (count, one, many) => `${count} ${count === 1 ? one : many}`;
+// ["A", "B", "C"] → "A, B y C"
+const listOf = (items) => (items.length > 1 ? `${items.slice(0, -1).join(", ")} y ${items.at(-1)}` : items[0]);
 
 const es = {
   meta: {
@@ -79,6 +81,7 @@ const es = {
     originHint: "Ciudad, aeropuerto o código",
     country: "Destino",
     countryHint: (origin) => `Con vuelo directo desde ${origin}`,
+    countryHintStop: (origin) => `Con escala desde ${origin}`,
     countryLoading: "Cargando destinos…",
     countryError: "No se pudieron cargar los destinos",
     countryChoose: "Elige país o ciudad",
@@ -414,6 +417,7 @@ const es = {
     title: "¿Adónde vas?",
     search: "Busca país, ciudad o aeropuerto",
     wholeCountry: "Todo el país",
+    withStop: "Con escala",
     none: (query) => `Ningún destino coincide con «${query}».`,
   },
   picker: {
@@ -440,6 +444,7 @@ const es = {
     seeMore: "Ver más",
     seeLess: "Ver menos",
     bagsBothFlights: "Por los dos vuelos.",
+    bagsAllFlights: (count) => `Por los ${count} vuelos.`,
     bag: {
       cabin: (kg) => `Cabina ${kg} kg`,
       checked: (kg) => `Facturada ${kg} kg`,
@@ -477,6 +482,8 @@ const es = {
     calendarNoteReturn: (place) =>
       `Cada día es la ida y vuelta más barata saliendo ese día a cualquier aeropuerto de ${place}, con la vuelta dentro de tus fechas. Toca un día para reservarlo.`,
     bestDayLegend: "Mejor día",
+    previousMonths: "Mes anterior",
+    nextMonths: "Mes siguiente",
     dayNoFlights: "Sin vuelos",
     dayAria: (day, price, city, airline) => `${day}: ${price} a ${city} con ${airline}`,
     dayReturn: (date) => `vuelta el ${date}`,
@@ -491,6 +498,53 @@ const es = {
     out: "Ida",
     ret: "Vuelta",
     nightsIn: (count, city) => `${plural(count, "noche", "noches")} en ${city}`,
+    // Trips through a hub (docs/stopovers.md)
+    tripKinds: { direct: "Directo", connection: "Con escala", escapada: "Escala con visita" },
+    // The kind's chip over the highlighted card, with the city of its cheapest trip
+    visitOnTheWay: (city) => `Conoce ${city} de paso`,
+    tripKindHints: {
+      direct: "Un solo vuelo hasta tu destino",
+      connection: "Una parada corta en la ciudad de la escala: el mismo día, o una noche de menos de 24 h",
+      escapada: "Un día entero o más en la ciudad de la escala para conocerla, y luego a tu destino",
+    },
+    via: (city) => `vía ${city}`,
+    connectionIn: (time, city) => `Escala de ${time} en ${city}`,
+    stopIn: (city) => `Escala en ${city}`,
+    estimatedTime: "Hora estimada: la aerolínea no la da con sus precios",
+    longStopIn: (city, count) => `Escala larga en ${city} · ${plural(count, "noche", "noches")}`,
+    landLeave: (land, leave) => `llegas ${land}, sales ${leave}`,
+    moreOnWayBack: (count) => `y ${plural(count, "noche", "noches")} más a la vuelta`,
+    escapadaIn: (city) => `Tu visita a ${city}`,
+    titleEscapada: (city, hub, days) => `${city} con ${plural(days, "día", "días")} en ${hub}`,
+    titleConnection: (city, hub) => `${city} con escala en ${hub}`,
+    backWithStop: (city) => `Vuelta con escala en ${city}`,
+    // Every night of a trip through a hub, in order: "6 noches: 2 en Roma y 4 en Tirana"
+    tripNights: (count, parts) => `${plural(count, "noche", "noches")}: ${listOf(parts)}`,
+    nightsPart: (count, city, back) => `${count} en ${city}${back ? " a la vuelta" : ""}`,
+    // A row's title: "2 noches en Roma + 4 en Tirana"
+    hubAndStay: (hubNights, hub, nights, city) => `${plural(hubNights, "noche", "noches")} en ${hub} + ${nights} en ${city}`,
+    flightsRoundTrip: "Vuelos de ida y vuelta",
+    flightsOneWay: "Vuelos de ida",
+    flightCount: (count) => plural(count, "vuelo", "vuelos"),
+    showFlights: (count) => `Ver los ${count} vuelos`,
+    hideFlights: (count) => `Ocultar los ${count} vuelos`,
+    yourFlights: (count) => `Tus ${count} vuelos`,
+    buyDirect: "Compra directamente en la web oficial de cada aerolínea: cada vuelo se reserva por separado.",
+    buyIn: (airline) => `Comprar en ${airline}`,
+    separateCount: (count) => `${count} billetes separados · Las conexiones corren de tu cuenta`,
+    separateDetail: "Si un retraso te hace perder el siguiente vuelo, la aerolínea no te recoloca.",
+    showBags: "Ver estimación de equipaje",
+    hideBags: "Ocultar estimación de equipaje",
+    planQuestion: "¿No sabes cómo organizar tu viaje?",
+    // ["Zagreb", "Basilea"] → "Te armamos el itinerario día a día de Zagreb y Basilea"
+    planAction: (cities) => `Te armamos el itinerario día a día de ${listOf(cities)}`,
+    hoursToSee: (hours) => `${hours}\u00a0h para conocerla`,
+    legIn: (from, to, airline) => `${from} → ${to} en ${airline}`,
+    stopovers: "Viajes con escala",
+    stopoversNote: (place) => `Sin vuelo directo, o más baratos que él: el viaje más barato a ${place} de cada tipo y día de salida.`,
+    stopoversLoading: "Buscando viajes con escala…",
+    stopoversAll: "Todos",
+    noDirect: (place) => `No hay vuelo directo a ${place}: estos son los viajes con escala.`,
     book: "Reservar",
     bookIn: (airline) => `Reservar en ${airline}`,
     // A price from recent searches (more airlines), not checked live

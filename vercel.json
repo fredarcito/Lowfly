@@ -2,6 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "regions": ["fra1"],
   "crons": [
+    { "path": "/api/cron/route-graph", "schedule": "0 2 * * 1" },
     { "path": "/api/cron/flight-routes?run=1", "schedule": "0 3 * * *" },
     { "path": "/api/cron/flight-routes?run=2", "schedule": "0 4 * * *" },
     { "path": "/api/cron/flight-routes?run=3", "schedule": "0 5 * * *" }

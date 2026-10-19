@@ -1,5 +1,5 @@
-import { daysBetween } from "@/utils/dates";
-import { MAX_TRIP_DAYS } from "@/constants/manualTrips";
+import { daysBetween, isDay } from "@/utils/dates";
+import { MAX_STOPS, MAX_TRIP_DAYS } from "@/constants/manualTrips";
 
 // "2026-11-13" + "10:00" → comparable text; without a time, the start of the day
 const momentOf = (day, time) => `${day}T${time || "00:00"}`;
@@ -40,3 +40,34 @@ export const savedStops = (stops) =>
     arrive: { day: arriveDay, time: arriveTime || null },
     leave: { day: leaveDay, time: leaveTime || null },
   }));
+
+// Towns for a link to the planner (?stops=…), each { code, arriveDay, arriveTime, leaveDay, leaveTime } (days and
+// times may be empty): "ZAG,2026-11-26,07:55,2026-11-28,17:55;BSL,2026-11-28,19:30,2026-11-30,07:50"
+export const stopsParam = (stops) =>
+  stops.map((stop) => [stop.code, stop.arriveDay, stop.arriveTime, stop.leaveDay, stop.leaveTime].map((part) => part ?? "").join(",")).join(";");
+
+const isTime = (text) => /^\d{2}:\d{2}$/.test(text);
+
+// The form offers times every half hour: an arrival is rounded up (07:55 → 08:00) and a departure down
+// (17:55 → 17:30), so the itinerary never counts on time there is not
+const toHalfHour = (time, up) => {
+  if (!isTime(time)) return "";
+  const minutes = Number(time.slice(0, 2)) * 60 + Number(time.slice(3, 5));
+  const rounded = Math.min((up ? Math.ceil(minutes / 30) : Math.floor(minutes / 30)) * 30, 23 * 60 + 30);
+  return `${String(Math.floor(rounded / 60)).padStart(2, "0")}:${String(rounded % 60).padStart(2, "0")}`;
+};
+
+// The towns of a ?stops=… link, the invalid parts left empty and at most MAX_STOPS: [{ code, arriveDay, … }]
+export const stopsFromParam = (text) =>
+  String(text ?? "")
+    .split(";")
+    .map((part) => part.split(","))
+    .filter(([code]) => /^[A-Z]{3}$/.test(code ?? ""))
+    .slice(0, MAX_STOPS)
+    .map(([code, arriveDay, arriveTime, leaveDay, leaveTime]) => ({
+      code,
+      arriveDay: isDay(arriveDay) ? arriveDay : "",
+      arriveTime: toHalfHour(arriveTime, true),
+      leaveDay: isDay(leaveDay) ? leaveDay : "",
+      leaveTime: toHalfHour(leaveTime, false),
+    }));

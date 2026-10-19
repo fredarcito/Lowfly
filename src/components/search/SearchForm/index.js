@@ -11,6 +11,7 @@ import TripTypeField from "@/components/search/TripTypeField";
 import FormField from "@/components/shared/FormField";
 import { useI18n } from "@/context/i18n";
 import { findAirport } from "@/hooks/useAirports";
+import { isStopoverOnly } from "@/utils/destinations";
 
 // The longest search range for each mode (a country means many airports, so many requests)
 const MAX_DAYS = { everywhere: 180, country: 120 };
@@ -22,6 +23,9 @@ const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }
   const shows = (...modes) => modes.includes(mode);
   const roundTrip = form.trip === "return";
   const everywhere = mode === "everywhere";
+  const originName = findAirport(airports, form.origin)?.name ?? form.origin;
+  // A destination reached with a stop only says so
+  const withStop = isStopoverOnly(countries.list, { country: form.country, city: form.city });
 
   return (
     <form onSubmit={onSubmit} className="grid gap-4 sm:gap-5">
@@ -37,7 +41,7 @@ const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }
           <FormField
             id="country"
             label={texts.form.country}
-            hint={texts.form.countryHint(findAirport(airports, form.origin)?.name ?? form.origin)}
+            hint={withStop ? texts.form.countryHintStop(originName) : texts.form.countryHint(originName)}
             className="lg:col-span-3"
           >
             <DestinationField

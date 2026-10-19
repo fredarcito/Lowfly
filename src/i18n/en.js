@@ -1,4 +1,6 @@
 const plural = (count, one, many) => `${count} ${count === 1 ? one : many}`;
+// ["A", "B", "C"] → "A, B and C"
+const listOf = (items) => (items.length > 1 ? `${items.slice(0, -1).join(", ")} and ${items.at(-1)}` : items[0]);
 
 const en = {
   meta: {
@@ -79,6 +81,7 @@ const en = {
     originHint: "City, airport or code",
     country: "Destination",
     countryHint: (origin) => `With direct flights from ${origin}`,
+    countryHintStop: (origin) => `With a stop from ${origin}`,
     countryLoading: "Loading destinations…",
     countryError: "Couldn't load destinations",
     countryChoose: "Choose a country or city",
@@ -414,6 +417,7 @@ const en = {
     title: "Where are you going?",
     search: "Search country, city or airport",
     wholeCountry: "The whole country",
+    withStop: "With a stop",
     none: (query) => `No destination matches “${query}”.`,
   },
   picker: {
@@ -440,6 +444,7 @@ const en = {
     seeMore: "See more",
     seeLess: "See less",
     bagsBothFlights: "For both flights.",
+    bagsAllFlights: (count) => `For the ${count} flights.`,
     bag: {
       cabin: (kg) => `Cabin ${kg} kg`,
       checked: (kg) => `Checked ${kg} kg`,
@@ -476,6 +481,8 @@ const en = {
     calendarNoteReturn: (place) =>
       `Each day is the cheapest return trip leaving that day to any airport in ${place}, coming back within your dates. Tap a day to book it.`,
     bestDayLegend: "Best day",
+    previousMonths: "Previous month",
+    nextMonths: "Next month",
     dayNoFlights: "No flights",
     dayAria: (day, price, city, airline) => `${day}: ${price} to ${city} with ${airline}`,
     dayReturn: (date) => `back on ${date}`,
@@ -490,6 +497,53 @@ const en = {
     out: "Out",
     ret: "Back",
     nightsIn: (count, city) => `${plural(count, "night", "nights")} in ${city}`,
+    // Trips through a hub (docs/stopovers.md)
+    tripKinds: { direct: "Direct", connection: "With a stop", escapada: "Stop with a visit" },
+    // The kind's chip over the highlighted card, with the city of its cheapest trip
+    visitOnTheWay: (city) => `See ${city} on the way`,
+    tripKindHints: {
+      direct: "A single flight to your destination",
+      connection: "A short stop in the stop's city: the same day, or a night of under 24 hours",
+      escapada: "A whole day or more in the stop's city to see it, then on to your destination",
+    },
+    via: (city) => `via ${city}`,
+    connectionIn: (time, city) => `${time} stop in ${city}`,
+    stopIn: (city) => `Stop in ${city}`,
+    estimatedTime: "Estimated time: the airline does not give it with its prices",
+    longStopIn: (city, count) => `Long stop in ${city} · ${plural(count, "night", "nights")}`,
+    landLeave: (land, leave) => `you land ${land}, you leave ${leave}`,
+    moreOnWayBack: (count) => `and ${plural(count, "night", "nights")} more on the way back`,
+    escapadaIn: (city) => `Your visit to ${city}`,
+    titleEscapada: (city, hub, days) => `${city} with ${plural(days, "day", "days")} in ${hub}`,
+    titleConnection: (city, hub) => `${city} with a stop in ${hub}`,
+    backWithStop: (city) => `Back with a stop in ${city}`,
+    // Every night of a trip through a hub, in order: "6 nights: 2 in Rome and 4 in Tirana"
+    tripNights: (count, parts) => `${plural(count, "night", "nights")}: ${listOf(parts)}`,
+    nightsPart: (count, city, back) => `${count} in ${city}${back ? " on the way back" : ""}`,
+    // A row's title: "2 nights in Rome + 4 in Tirana"
+    hubAndStay: (hubNights, hub, nights, city) => `${plural(hubNights, "night", "nights")} in ${hub} + ${nights} in ${city}`,
+    flightsRoundTrip: "Return flights",
+    flightsOneWay: "One-way flights",
+    flightCount: (count) => plural(count, "flight", "flights"),
+    showFlights: (count) => `Show the ${count} flights`,
+    hideFlights: (count) => `Hide the ${count} flights`,
+    yourFlights: (count) => `Your ${count} flights`,
+    buyDirect: "Buy straight from each airline's own website: every flight is booked on its own.",
+    buyIn: (airline) => `Buy with ${airline}`,
+    separateCount: (count) => `${count} separate tickets · The connections are up to you`,
+    separateDetail: "If a delay makes you miss the next flight, the airline does not rebook you.",
+    showBags: "Show the baggage estimate",
+    hideBags: "Hide the baggage estimate",
+    planQuestion: "Not sure how to plan your trip?",
+    // ["Zagreb", "Basel"] → "We plan your day-by-day itinerary for Zagreb and Basel"
+    planAction: (cities) => `We plan your day-by-day itinerary for ${listOf(cities)}`,
+    hoursToSee: (hours) => `${hours}\u00a0h to see it`,
+    legIn: (from, to, airline) => `${from} → ${to} with ${airline}`,
+    stopovers: "Trips with a stop",
+    stopoversNote: (place) => `No direct flight, or cheaper than it: the cheapest trip to ${place} of each kind and departure day.`,
+    stopoversLoading: "Looking for trips with a stop…",
+    stopoversAll: "All",
+    noDirect: (place) => `There is no direct flight to ${place}: these are the trips with a stop.`,
     book: "Book",
     bookIn: (airline) => `Book with ${airline}`,
     // A price from recent searches (more airlines), not checked live

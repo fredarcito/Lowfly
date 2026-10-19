@@ -10,6 +10,8 @@ export const ROUTES = {
   trip: (lang, id) => `/${lang}/trips?id=${encodeURIComponent(id)}`,
   // `to`: an airport code, its town already the first stop (from a route's page)
   newTrip: (lang, to) => `/${lang}/trips/new${to ? `?to=${to}` : ""}`,
+  // The planner with every town already filled in (utils/manualTrips stopsParam)
+  plannedTrip: (lang, stops) => `/${lang}/trips/new?stops=${encodeURIComponent(stops)}`,
   // A trip shared by link (its id is the share's, not the trip's). `saveIt`: keep it in My trips on arrival
   // (back from signing in to save it)
   sharedTrip: (lang, shareId, saveIt = false) => `/${lang}/shared/${shareId}${saveIt ? `?${SAVE_SHARED_TRIP}=1` : ""}`,

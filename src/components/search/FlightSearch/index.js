@@ -97,7 +97,8 @@ const FlightSearch = () => {
         {result.status === "error" && <SearchError code={result.code} params={result.params} />}
         {Results && (
           <div className="grid gap-8 duration-500 animate-in fade-in slide-in-from-bottom-4 motion-reduce:animate-none">
-            <Results data={result.data} />
+            {/* A new search starts its results afresh (a kind of trip picked before does not stay) */}
+            <Results key={result.searchId} data={result.data} stopovers={result.stopovers} />
           </div>
         )}
       </main>

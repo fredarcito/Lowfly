@@ -1,16 +1,33 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { apiError } from "@/api/client";
-import { searchFlights } from "@/api/flights";
+import { searchFlights, searchStopovers } from "@/api/flights";
 import { searchToParams } from "@/utils/share";
 import { track } from "@/utils/analytics";
 import { WEEKEND_MODES } from "@/constants/weekend";
+import { later, nightsBetween, shift, tomorrow } from "@/utils/dates";
 
 // No results: the form opens again so the search can be changed
 const IS_EMPTY = { everywhere: (data) => !data.results.length, country: (data) => !data.best, trip: (data) => !data.top };
 
+// The search found no direct flight there: trips through a hub (server/stopovers) may still go
+const NO_DIRECT = ["noRoutes", "noPrices"];
+
 const isAirportCode = (code) => /^[A-Z]{3}$/.test(code);
+
+// What to ask for the trips through a hub (api/flights searchStopovers), or null: a country or city search (not a
+// weekend away) as it is; flexible dates as the days they allow, leaving by the latest outbound day and flying home
+// from the earliest return day
+const stopoverParamsOf = (mode, params) => {
+  if (mode === "country") return params.weekend ? null : params;
+  if (mode !== "trip") return null;
+  const { ida, vuelta, flex, ...place } = params;
+  const days = Number(flex);
+  const from = later(shift(ida, -days), tomorrow());
+  const to = shift(vuelta, days);
+  return { ...place, from, to, trip: "return", minN: 1, maxN: Math.min(30, nightsBetween(from, to)), outTo: shift(ida, days), backFrom: shift(vuelta, -days) };
+};
 const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // What to ask the API for a search, or { error } (a key of texts.errors) when the form is not valid
@@ -34,11 +51,16 @@ const requestOf = (form, mode) => {
   return { params: { ...params, trip, minN: fewestNights, maxN: mostNights } };
 };
 
-// Running a flight search: its state ({ status: "idle" | "loading" | "error" | "done", mode, data, code, params }),
-// the search shown in the one-line summary (`query`) and whether the form is folded into it (`collapsed`).
+// Running a flight search: its state ({ status: "idle" | "loading" | "error" | "done", mode, searchId, data,
+// stopovers, code, params }; `searchId` tells one search's results from the next), the search shown in the one-line summary (`query`) and whether the form is folded into it (`collapsed`).
 // A search goes in the URL, so the link can be shared (utils/share).
+// To a country or city (not a weekend away), and on flexible dates, the trips through a hub are asked at the same
+// time, and come after the direct flights: `stopovers` { status: "loading" | "done" | "error", data }. With no direct flight there, `data` is
+// null and the search waits for them before telling there is nothing.
 export const useFlightSearch = (lang) => {
   const [result, setResult] = useState({ status: "idle" });
+  // The last search started: an older one's answers arriving late are dropped
+  const latest = useRef(0);
   const [query, setQuery] = useState(null);
   const [collapsed, setCollapsed] = useState(false);
 
@@ -58,12 +80,32 @@ export const useFlightSearch = (lang) => {
     window.history.replaceState(null, "", `?${searchToParams(form, mode)}`);
     setCollapsed(true);
     window.scrollTo({ top: 0, behavior: reducedMotion() ? "auto" : "smooth" });
+    const searchId = ++latest.current;
+    const isLatest = () => searchId === latest.current;
+    const stopoverParams = stopoverParamsOf(mode, request.params);
+    const withStopovers = Boolean(stopoverParams);
+    const stopoversRequest = withStopovers ? searchStopovers({ ...stopoverParams, lang }).catch(() => null) : null;
+    // The trips through a hub, once they arrive: false when a newer search started meanwhile
+    const addStopovers = async () => {
+      const stopovers = await stopoversRequest;
+      if (!isLatest()) return false;
+      setResult((current) => ({ ...current, stopovers: stopovers ? { status: "done", data: stopovers } : { status: "error" } }));
+      return stopovers;
+    };
     try {
       const data = await searchFlights(mode, { ...request.params, lang });
-      setResult({ status: "done", mode, data });
-      if (IS_EMPTY[mode](data)) setCollapsed(false);
+      if (!isLatest()) return;
+      setResult({ status: "done", mode, searchId, data, stopovers: withStopovers ? { status: "loading" } : null });
+      const stopovers = withStopovers && (await addStopovers());
+      if (isLatest() && IS_EMPTY[mode](data) && !stopovers?.trips?.length) setCollapsed(false);
     } catch (error) {
+      if (!isLatest()) return;
       const { code, params, retry } = apiError(error);
+      if (withStopovers && NO_DIRECT.includes(code)) {
+        const stopovers = await stopoversRequest;
+        if (!isLatest()) return;
+        if (stopovers?.trips?.length) return setResult({ status: "done", mode, searchId, data: null, stopovers: { status: "done", data: stopovers } });
+      }
       fail(code, { ...params, retry });
     }
   };
@@ -74,7 +116,10 @@ export const useFlightSearch = (lang) => {
     requestAnimationFrame(() => document.getElementById("origin")?.focus({ preventScroll: true }));
   };
 
-  const reset = () => setResult({ status: "idle" });
+  const reset = () => {
+    latest.current++;
+    setResult({ status: "idle" });
+  };
 
   return { result, query, collapsed, search, expand, reset };
 };

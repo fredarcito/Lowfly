@@ -44,6 +44,21 @@ export const airports = async (lang = "es") => {
   }));
 };
 
+// Every Ryanair route, from every airport, in a single request: [[from, to]]. A route another airline operates
+// ("airport:MLA|Air Malta") is left out: it is not Ryanair's to sell.
+export const routes = async () => {
+  const response = await fetch("https://www.ryanair.com/api/views/locate/3/aggregate/all/en", {
+    headers: HEADERS,
+    next: { revalidate: 86400 },
+  });
+  if (!response.ok) throw new Error(`Ryanair responded with error ${response.status}`);
+  return (await response.json()).airports.flatMap((airport) =>
+    airport.routes
+      .filter((route) => /^airport:[A-Z]{3}$/.test(route))
+      .map((route) => [airport.iataCode, route.slice("airport:".length)])
+  );
+};
+
 // Cheapest fare to every destination within the range (a single request)
 export const cheapest = async (origin, from, to, lang = "es") => {
   const data = await get("oneWayFares", {

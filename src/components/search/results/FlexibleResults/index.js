@@ -5,11 +5,19 @@ import FlexMatrix from "@/components/search/results/FlexMatrix";
 import Section from "@/components/search/results/Section";
 import HeatLegend from "@/components/search/results/HeatLegend";
 import NoResults from "@/components/search/results/NoResults";
+import CountryResults from "@/components/search/results/CountryResults";
+import StopoverResults from "@/components/search/results/StopoverResults";
 import { useI18n } from "@/context/i18n";
 
-const FlexibleResults = ({ data }) => {
+// Flexible dates: the cheapest pair of days around the plan, its alternatives and every pair, for the direct
+// flights; then the trips through a hub in those days (`stopovers`, useFlightSearch; docs/stopovers.md). With no
+// direct flight there they show as a destination search shows them (CountryResults).
+const FlexibleResults = ({ data, stopovers }) => {
   const { texts, format } = useI18n();
   const labels = texts.results;
+  const trips = stopovers?.data?.trips ?? [];
+  if (!data?.top && trips.length) return <CountryResults data={null} stopovers={stopovers} />;
+  if (!data?.top && stopovers?.status === "loading") return <p className="text-muted-foreground">{labels.stopoversLoading}</p>;
   const { origin, country, city, ida, vuelta, outDays, retDays, combos, base, top, alternatives, alternativesKind, min, max, failed } = data;
 
   if (!top) {
@@ -87,6 +95,9 @@ const FlexibleResults = ({ data }) => {
       >
         <FlexMatrix outDays={outDays} retDays={retDays} combos={combos} ida={ida} vuelta={vuelta} min={min} max={max} />
       </Section>
+
+      {stopovers?.status === "loading" && <p className="text-sm text-muted-foreground">{labels.stopoversLoading}</p>}
+      {trips.length > 0 && <StopoverResults trips={trips} origin={origin} place={city ?? country} />}
     </>
   );
 };

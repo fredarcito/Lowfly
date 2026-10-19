@@ -59,19 +59,38 @@ export const airports = async (lang = "es") => {
     }));
 };
 
+// The real airports a city connects to. A connection can be a metropolitan area (ROM = every Rome airport): it is
+// swapped for its real airports.
+const connectionsOf = (city, list, byIata) => {
+  const real = (connection) =>
+    connection.isFakeStation ? list.filter((airport) => airport.mac === connection.iata && !airport.isFakeStation) : [connection];
+  return (city.connections || [])
+    .map((connection) => byIata[connection.iata])
+    .filter(Boolean)
+    .flatMap(real);
+};
+
 // Wizz destinations from the departure airport
 export const destinations = async (origin, lang = "es") => {
   const list = await cities(lang);
   const byIata = Object.fromEntries(list.map((city) => [city.iata, city]));
   const here = byIata[origin];
   if (!here) return [];
-  // A connection can be a metropolitan area (ROM = every Rome airport): it is swapped for its real airports
-  const real = (city) => (city.isFakeStation ? list.filter((airport) => airport.mac === city.iata && !airport.isFakeStation) : [city]);
-  return (here.connections || [])
-    .map((city) => byIata[city.iata])
-    .filter(Boolean)
-    .flatMap(real)
-    .map((city) => ({ airline: "wizz", code: city.iata, city: city.shortName.trim(), country: countryName(city.countryCode, city.countryName, lang) }));
+  return connectionsOf(here, list, byIata).map((city) => ({
+    airline: "wizz",
+    code: city.iata,
+    city: city.shortName.trim(),
+    country: countryName(city.countryCode, city.countryName, lang),
+  }));
+};
+
+// Every Wizz route, from every airport: [[from, to]]
+export const routes = async () => {
+  const list = await cities("en");
+  const byIata = Object.fromEntries(list.map((city) => [city.iata, city]));
+  return list
+    .filter((city) => !city.isFakeStation)
+    .flatMap((city) => connectionsOf(city, list, byIata).map((destination) => [city.iata, destination.iata]));
 };
 
 // Cheapest price per day on a route (in 30-day chunks)

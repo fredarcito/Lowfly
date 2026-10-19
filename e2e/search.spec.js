@@ -113,10 +113,14 @@ test.describe("more airlines @live", () => {
     await expect(page.getByText(/Precio visto en búsquedas recientes: confírmalo en easyJet/).filter({ visible: true }).first()).toBeVisible();
     const booking = page.getByRole("link", { name: /Reservar en easyJet/ }).first();
     await expect(booking).toHaveAttribute("href", /^https:\/\/www\.easyjet\.com\//);
-    // The closed rows' details take no room: the page ends with the list
+    // The closed rows' details take no room: the list is followed right away by the site's foot
     await row.click();
     await page.waitForTimeout(600);
-    const room = await page.evaluate(() => document.documentElement.scrollHeight - (document.querySelector("main").getBoundingClientRect().bottom + window.scrollY));
+    const room = await page.evaluate(() => {
+      const footer = document.querySelector("footer");
+      const footerStart = footer.getBoundingClientRect().top - parseFloat(getComputedStyle(footer).marginTop);
+      return footerStart - document.querySelector("main").getBoundingClientRect().bottom;
+    });
     expect(room).toBeLessThanOrEqual(1);
   });
 });

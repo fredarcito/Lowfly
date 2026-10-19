@@ -3,6 +3,7 @@ import { chunks, monthsBetween, shift } from "@/utils/dates";
 import { countryName } from "@/server/countries";
 import { WEEKEND } from "@/constants/weekend";
 import { noTimeOff } from "@/utils/weekend";
+import { airlineJson, fetchCacheOptions, responseError } from "@/server/airlineGuard";
 
 const BASE = "https://www.ryanair.com/api/farfnd/v4";
 // API market and language: they decide which language city and country names come in
@@ -14,13 +15,24 @@ const HEADERS = {
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
 };
 
-const get = async (path, params) => {
-  const response = await fetch(`${BASE}/${path}?${new URLSearchParams(params)}`, {
-    headers: HEADERS,
-    next: { revalidate: 600 }, // 10 min cache per route and date
-  });
-  if (!response.ok) throw new Error(`Ryanair responded with error ${response.status}`);
-  return response.json();
+// Searches: an answer is used for an hour and kept 12 hours (served when Ryanair fails or blocks us); at most 6
+// requests a second between every visitor
+const GUARD = { fresh: 3600, keep: 12 * 3600, perSecond: 6 };
+
+// A search, through server/airlineGuard so Ryanair does not block us
+const get = (path, params) => {
+  const query = new URLSearchParams(params);
+  query.sort();
+  return airlineJson(
+    "ryanair",
+    `${path}?${query}`,
+    async () => {
+      const response = await fetch(`${BASE}/${path}?${query}`, { headers: HEADERS, ...fetchCacheOptions(600) });
+      if (!response.ok) throw responseError("Ryanair", response);
+      return response.json();
+    },
+    GUARD
+  );
 };
 
 // Every active Ryanair airport (city, country, coordinates and the country's main airport)

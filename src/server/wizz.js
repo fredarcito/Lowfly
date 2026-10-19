@@ -1,8 +1,10 @@
 // Wizz Air public (unofficial) API. Only called from the server.
 // Wizz changes the API version number with every deploy, so it is read from its home page.
-import { chunks, monthEnd, monthsBetween, nightsBetween, shift } from "@/utils/dates";
+// The searches (timetable, fare finder) go through server/airlineGuard, so Wizz does not block us.
+import { later, monthEnd, monthsBetween, nightsBetween, shift, today } from "@/utils/dates";
 import { countryName } from "@/server/countries";
 import { eurRates, toEur } from "@/server/fx";
+import { airlineJson, fetchCacheOptions, responseError } from "@/server/airlineGuard";
 import { WEEKEND } from "@/constants/weekend";
 import { fits, noTimeOff } from "@/utils/weekend";
 
@@ -18,6 +20,10 @@ const HEADERS = {
 };
 const FALLBACK_VERSION = "29.20.0"; // last resort; update it if it stops working
 const VERSION_TTL = 6 * 3600 * 1000;
+// Searches: an answer is used for an hour and kept 12 hours (served when Wizz fails or blocks us); at most 3
+// requests a second between every visitor, and 3 fare finder months at a time in one search
+const GUARD = { fresh: 3600, keep: 12 * 3600, perSecond: 3 };
+const FARE_FINDER_AT_ONCE = 3;
 
 // The home page links the API as be.wizzair.com/<version>/Api. The version is kept in memory for a few hours.
 // The page (~2 MB) is too big for Next's data cache, so it is not kept there, but it is asked with a revalidate,
@@ -93,26 +99,41 @@ export const routes = async () => {
     .flatMap((city) => connectionsOf(city, list, byIata).map((destination) => [city.iata, destination.iata]));
 };
 
-// Cheapest price per day on a route (in 30-day chunks)
+// A route's timetable from `from` to `to` (at most a month): its days, with only what `daily` reads
+const timetable = (dep, arr, from, to) =>
+  airlineJson(
+    "wizz",
+    `timetable:${dep}-${arr}:${from}:${to}`,
+    async () => {
+      const response = await fetch(`${await apiBase()}/search/timetable`, {
+        method: "POST",
+        headers: HEADERS,
+        body: JSON.stringify({
+          flightList: [{ departureStation: dep, arrivalStation: arr, from, to }],
+          priceType: "regular",
+          adultCount: 1,
+          childCount: 0,
+          infantCount: 0,
+        }),
+        ...fetchCacheOptions(600),
+      });
+      if (!response.ok) throw responseError("Wizz Air", response);
+      return ((await response.json()).outboundFlights || []).map(({ priceType, price, departureDate, departureDates }) => ({
+        priceType,
+        price,
+        departureDate,
+        departureDates,
+      }));
+    },
+    GUARD
+  );
+
+// Cheapest price per day on a route. Asked a whole calendar month at a time (from today on), whatever the range,
+// so every search on the route shares the same answers.
 export const daily = async (dep, arr, from, to) => {
-  const base = await apiBase();
   const list = [];
-  for (const [chunkStart, chunkEnd] of chunks(from, to, 30)) {
-    const response = await fetch(`${base}/search/timetable`, {
-      method: "POST",
-      headers: HEADERS,
-      body: JSON.stringify({
-        flightList: [{ departureStation: dep, arrivalStation: arr, from: chunkStart, to: chunkEnd }],
-        priceType: "regular",
-        adultCount: 1,
-        childCount: 0,
-        infantCount: 0,
-      }),
-      next: { revalidate: 600 },
-    });
-    if (!response.ok) throw new Error(`Wizz Air responded with error ${response.status}`);
-    const data = await response.json();
-    for (const flight of data.outboundFlights || []) {
+  for (const month of monthsBetween(from, to)) {
+    for (const flight of await timetable(dep, arr, later(month, today()), monthEnd(month))) {
       if (flight.priceType === "soldOut" || !flight.price?.amount) continue;
       const day = flight.departureDate.slice(0, 10);
       if (day < from || day > to) continue;
@@ -126,25 +147,46 @@ export const daily = async (dep, arr, from, to) => {
 
 // Wizz's own fare finder: the cheapest fare to every destination in a month, in a single request.
 // For a return trip it is the cheapest pair within a stay bucket ("1-3 days", "4-8 days" or "anytime").
-const fareFinder = async (origin, month, duration) => {
-  const response = await fetch(`${await apiBase()}/search/SmartSearchCheapFlightsV2`, {
-    method: "POST",
-    headers: HEADERS,
-    body: JSON.stringify({
-      departureStations: [origin],
-      arrivalStations: null,
-      tripDuration: duration ?? "anytime",
-      isReturnFlight: !!duration,
-      stdPlan: [month.slice(0, 7)],
-      pax: 1,
-      dateFilterType: "Flexible",
-      departureDate: null,
-      returnDate: null,
-    }),
-    next: { revalidate: 600 },
-  });
-  if (!response.ok) throw new Error(`Wizz Air responded with error ${response.status}`);
-  return (await response.json()).items || [];
+// Only what `cheapest` reads of a flight
+const fareFlight = (flight) => flight && { std: flight.std, regularPrice: flight.regularPrice };
+
+const fareFinder = (origin, month, duration) =>
+  airlineJson(
+    "wizz",
+    `fare-finder:${origin}:${month.slice(0, 7)}:${duration ?? "one-way"}`,
+    async () => {
+      const response = await fetch(`${await apiBase()}/search/SmartSearchCheapFlightsV2`, {
+        method: "POST",
+        headers: HEADERS,
+        body: JSON.stringify({
+          departureStations: [origin],
+          arrivalStations: null,
+          tripDuration: duration ?? "anytime",
+          isReturnFlight: !!duration,
+          stdPlan: [month.slice(0, 7)],
+          pax: 1,
+          dateFilterType: "Flexible",
+          departureDate: null,
+          returnDate: null,
+        }),
+        ...fetchCacheOptions(600),
+      });
+      if (!response.ok) throw responseError("Wizz Air", response);
+      return ((await response.json()).items || []).map((item) => ({
+        arrivalStation: item.arrivalStation,
+        regularPrice: item.regularPrice,
+        outboundFlight: fareFlight(item.outboundFlight),
+        inboundFlight: fareFlight(item.inboundFlight),
+      }));
+    },
+    GUARD
+  );
+
+// Runs `run` on every item, `size` at a time, keeping their order
+const inTurns = async (items, size, run) => {
+  const results = [];
+  for (let start = 0; start < items.length; start += size) results.push(...(await Promise.all(items.slice(start, start + size).map(run))));
+  return results;
 };
 
 // Wizz's stay buckets and when each one covers part of a stay of min to max nights
@@ -171,7 +213,9 @@ export const cheapest = async (origin, from, to, stay = null) => {
   const lastOut = stay ? shift(to, -stay.min) : to;
   const kinds = !stay ? [null] : stay.weekend ? ["weekend"] : buckets(stay);
   const requests = monthsBetween(from, lastOut).flatMap((month) => kinds.map((bucket) => [month, bucket]));
-  const pages = await Promise.all(requests.map(([month, bucket]) => fareFinder(origin, month, bucket).then((items) => ({ m: month, items }))));
+  const pages = await inTurns(requests, FARE_FINDER_AT_ONCE, ([month, bucket]) =>
+    fareFinder(origin, month, bucket).then((items) => ({ m: month, items }))
+  );
 
   const needsRates = pages.some((page) => page.items.some((item) => item.regularPrice.currencyCode !== "EUR"));
   const fx = needsRates ? await eurRates() : { EUR: 1 };

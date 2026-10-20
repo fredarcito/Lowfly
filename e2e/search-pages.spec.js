@@ -9,7 +9,8 @@ test.describe("search pages", () => {
     ["A un destino", "/es/a-un-destino", /Ya sabes adónde\.\s*Te decimos cuándo\./],
     ["Fechas flexibles", "/es/fechas-flexibles", /Tus fechas,\s*un poco más baratas\./],
     ["Recorridos", "/es/recorridos", /Tú pones los días\.\s*Nosotros, el recorrido\./],
-    ["A cualquier sitio", "/es/a-cualquier-sitio", /Vuela barato\.\s*El destino, después\./],
+    // The home's headline: the same form never shows two
+    ["A cualquier sitio", "/es/a-cualquier-sitio", /No elijas destino\.\s*Elige el mejor precio\./],
   ];
 
   test("the tabs go to each kind's page, with its headline, and keep the airport chosen", async ({ page }) => {

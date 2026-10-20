@@ -63,14 +63,11 @@ const en = {
     },
   },
   // Each kind of search's own page (/en/multi-city…): its title and description for search engines, and the headline
-  // of its header (two lines: shown with white-space: pre-line)
+  // of its header (two lines: shown with white-space: pre-line; "anywhere" shows the home's, header.title)
   searchPages: {
     everywhere: {
       title: "Cheap flights to anywhere",
       description: "Every destination from your airport, sorted by price and straight with the airline. Ideal when all that matters is flying cheap.",
-      heading: "Fly cheap.\nPick the place later.",
-      introShort: "Every destination, cheapest first.",
-      intro: "Pick where from and when: we show you every destination sorted by price, straight with the airline.",
     },
     country: {
       title: "Cheap flights to your destination",

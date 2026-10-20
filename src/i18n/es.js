@@ -63,14 +63,11 @@ const es = {
     },
   },
   // Each kind of search's own page (/es/recorridos…): its title and description for search engines, and the headline
-  // of its header (two lines: shown with white-space: pre-line)
+  // of its header (two lines: shown with white-space: pre-line; "anywhere" shows the home's, header.title)
   searchPages: {
     everywhere: {
       title: "Vuelos baratos a cualquier sitio",
       description: "Todos los destinos desde tu aeropuerto, ordenados por precio y directo con la aerolínea. Ideal si lo que importa es irte barato.",
-      heading: "Vuela barato.\nEl destino, después.",
-      introShort: "Todos los destinos, del más barato al más caro.",
-      intro: "Elige desde dónde y cuándo: te enseñamos todos los destinos ordenados por precio, directo con la aerolínea.",
     },
     country: {
       title: "Vuelos baratos a tu destino",

@@ -1,0 +1,5593 @@
+{
+  "benelux": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Benelux",
+      "en": "Benelux"
+    },
+    "summary": {
+      "es": "Canales de Ámsterdam, arquitectura moderna en Róterdam y las ciudades medievales de Flandes, todo a golpe de tren.",
+      "en": "Amsterdam's canals, modern Rotterdam and the medieval towns of Flanders, all a short train ride apart."
+    },
+    "countries": [
+      "NL",
+      "BE"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Ámsterdam",
+              "en": "Amsterdam"
+            },
+            "countryCode": "NL",
+            "lat": 52.3731,
+            "lng": 4.8922,
+            "codes": [
+              "AMS",
+              "EIN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "amsterdam-3-days",
+            "land": {
+              "minutes": 110,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bruselas",
+              "en": "Brussels"
+            },
+            "countryCode": "BE",
+            "lat": 50.8467,
+            "lng": 4.3525,
+            "codes": [
+              "BRU",
+              "CRL"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "brussels-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Ámsterdam",
+              "en": "Amsterdam"
+            },
+            "countryCode": "NL",
+            "lat": 52.3731,
+            "lng": 4.8922,
+            "codes": [
+              "AMS",
+              "EIN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "amsterdam-3-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Róterdam",
+              "en": "Rotterdam"
+            },
+            "countryCode": "NL",
+            "lat": 51.9244,
+            "lng": 4.4777,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Amberes",
+              "en": "Antwerp"
+            },
+            "countryCode": "BE",
+            "lat": 51.2194,
+            "lng": 4.4025,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Gante",
+              "en": "Ghent"
+            },
+            "countryCode": "BE",
+            "lat": 51.0543,
+            "lng": 3.7174,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Brujas",
+              "en": "Bruges"
+            },
+            "countryCode": "BE",
+            "lat": 51.2093,
+            "lng": 3.2247,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bruselas",
+              "en": "Brussels"
+            },
+            "countryCode": "BE",
+            "lat": 50.8467,
+            "lng": 4.3525,
+            "codes": [
+              "BRU",
+              "CRL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "brussels-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Ámsterdam",
+              "en": "Amsterdam"
+            },
+            "countryCode": "NL",
+            "lat": 52.3731,
+            "lng": 4.8922,
+            "codes": [
+              "AMS",
+              "EIN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "amsterdam-3-days",
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Utrecht",
+              "en": "Utrecht"
+            },
+            "countryCode": "NL",
+            "lat": 52.0907,
+            "lng": 5.1214,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Delft (y La Haya)",
+              "en": "Delft (and The Hague)"
+            },
+            "countryCode": "NL",
+            "lat": 52.0116,
+            "lng": 4.3571,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 15,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Róterdam",
+              "en": "Rotterdam"
+            },
+            "countryCode": "NL",
+            "lat": 51.9244,
+            "lng": 4.4777,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Amberes",
+              "en": "Antwerp"
+            },
+            "countryCode": "BE",
+            "lat": 51.2194,
+            "lng": 4.4025,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Gante",
+              "en": "Ghent"
+            },
+            "countryCode": "BE",
+            "lat": 51.0543,
+            "lng": 3.7174,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Brujas",
+              "en": "Bruges"
+            },
+            "countryCode": "BE",
+            "lat": 51.2093,
+            "lng": 3.2247,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bruselas",
+              "en": "Brussels"
+            },
+            "countryCode": "BE",
+            "lat": 50.8467,
+            "lng": 4.3525,
+            "codes": [
+              "BRU",
+              "CRL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "brussels-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En primavera (mediados de abril a mediados de mayo) los campos de tulipanes de Keukenhof quedan a un paso de Ámsterdam y Delft.",
+      "en": "In spring (mid-April to mid-May) the Keukenhof tulip fields are close to Amsterdam and Delft."
+    }
+  },
+  "baviera-y-salzburgo": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Baviera y Salzburgo",
+      "en": "Bavaria and Salzburg"
+    },
+    "summary": {
+      "es": "Cervecerías de Múnich, el castillo de Neuschwanstein, los Alpes del Tirol y los lagos de Salzburgo y Hallstatt.",
+      "en": "Munich's beer halls, Neuschwanstein Castle, the Tyrolean Alps and the lakes around Salzburg and Hallstatt."
+    },
+    "countries": [
+      "DE",
+      "AT"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Múnich",
+              "en": "Munich"
+            },
+            "countryCode": "DE",
+            "lat": 48.1374,
+            "lng": 11.5755,
+            "codes": [
+              "MUC",
+              "FMM"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Salzburgo",
+              "en": "Salzburg"
+            },
+            "countryCode": "AT",
+            "lat": 47.8095,
+            "lng": 13.055,
+            "codes": [
+              "SZG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "salzburg-1-day"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Múnich",
+              "en": "Munich"
+            },
+            "countryCode": "DE",
+            "lat": 48.1374,
+            "lng": 11.5755,
+            "codes": [
+              "MUC",
+              "FMM"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Salzburgo",
+              "en": "Salzburg"
+            },
+            "countryCode": "AT",
+            "lat": 47.8095,
+            "lng": 13.055,
+            "codes": [
+              "SZG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "salzburg-1-day",
+            "land": {
+              "minutes": 135,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Hallstatt",
+              "en": "Hallstatt"
+            },
+            "countryCode": "AT",
+            "lat": 47.5622,
+            "lng": 13.6493,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Viena",
+              "en": "Vienna"
+            },
+            "countryCode": "AT",
+            "lat": 48.2082,
+            "lng": 16.3738,
+            "codes": [
+              "VIE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "vienna-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Múnich",
+              "en": "Munich"
+            },
+            "countryCode": "DE",
+            "lat": 48.1374,
+            "lng": 11.5755,
+            "codes": [
+              "MUC",
+              "FMM"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Füssen (Neuschwanstein)",
+              "en": "Füssen (Neuschwanstein)"
+            },
+            "countryCode": "DE",
+            "lat": 47.5696,
+            "lng": 10.7004,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Garmisch-Partenkirchen",
+              "en": "Garmisch-Partenkirchen"
+            },
+            "countryCode": "DE",
+            "lat": 47.4921,
+            "lng": 11.0955,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 85,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Innsbruck",
+              "en": "Innsbruck"
+            },
+            "countryCode": "AT",
+            "lat": 47.2692,
+            "lng": 11.4041,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Salzburgo",
+              "en": "Salzburg"
+            },
+            "countryCode": "AT",
+            "lat": 47.8095,
+            "lng": 13.055,
+            "codes": [
+              "SZG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "salzburg-1-day",
+            "land": {
+              "minutes": 135,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Hallstatt",
+              "en": "Hallstatt"
+            },
+            "countryCode": "AT",
+            "lat": 47.5622,
+            "lng": 13.6493,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Viena",
+              "en": "Vienna"
+            },
+            "countryCode": "AT",
+            "lat": 48.2082,
+            "lng": 16.3738,
+            "codes": [
+              "VIE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "vienna-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En las versiones cortas, Neuschwanstein se visita en excursión de un día desde Múnich (unas 2 h en tren). En diciembre, mercadillos de Navidad.",
+      "en": "In the shorter versions, Neuschwanstein is a day trip from Munich (about 2 h by train). In December, Christmas markets."
+    }
+  },
+  "berlin-dresde-praga": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Berlín, Dresde y Praga",
+      "en": "Berlin, Dresden and Prague"
+    },
+    "summary": {
+      "es": "De la capital más alternativa de Europa al barroco de Dresde y las rocas de la Suiza Sajona, para acabar en Praga.",
+      "en": "From Europe's most alternative capital to baroque Dresden and the rocks of Saxon Switzerland, ending in Prague."
+    },
+    "countries": [
+      "DE",
+      "CZ"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Berlín",
+              "en": "Berlin"
+            },
+            "countryCode": "DE",
+            "lat": 52.52,
+            "lng": 13.405,
+            "codes": [
+              "BER"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "berlin-3-days",
+            "land": {
+              "minutes": 255,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0755,
+            "lng": 14.4378,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Berlín",
+              "en": "Berlin"
+            },
+            "countryCode": "DE",
+            "lat": 52.52,
+            "lng": 13.405,
+            "codes": [
+              "BER"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "berlin-3-days",
+            "land": {
+              "minutes": 115,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Dresde",
+              "en": "Dresden"
+            },
+            "countryCode": "DE",
+            "lat": 51.0504,
+            "lng": 13.7373,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Suiza Sajona (Bad Schandau)",
+              "en": "Saxon Switzerland (Bad Schandau)"
+            },
+            "countryCode": "DE",
+            "lat": 50.9178,
+            "lng": 14.153,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 135,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0755,
+            "lng": 14.4378,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Berlín",
+              "en": "Berlin"
+            },
+            "countryCode": "DE",
+            "lat": 52.52,
+            "lng": 13.405,
+            "codes": [
+              "BER"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "berlin-3-days",
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Leipzig",
+              "en": "Leipzig"
+            },
+            "countryCode": "DE",
+            "lat": 51.3397,
+            "lng": 12.3731,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Dresde",
+              "en": "Dresden"
+            },
+            "countryCode": "DE",
+            "lat": 51.0504,
+            "lng": 13.7373,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Suiza Sajona (Bad Schandau)",
+              "en": "Saxon Switzerland (Bad Schandau)"
+            },
+            "countryCode": "DE",
+            "lat": 50.9178,
+            "lng": 14.153,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 135,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0755,
+            "lng": 14.4378,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days"
+          }
+        ]
+      }
+    }
+  },
+  "valle-del-rin": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Valle del Rin",
+      "en": "Rhine Valley"
+    },
+    "summary": {
+      "es": "La catedral de Colonia, castillos sobre el Rin, pueblos de viñedos y el Mosela, de Colonia a Fráncfort.",
+      "en": "Cologne Cathedral, castles above the Rhine, vineyard villages and the Moselle, from Cologne to Frankfurt."
+    },
+    "countries": [
+      "DE"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Colonia",
+              "en": "Cologne"
+            },
+            "countryCode": "DE",
+            "lat": 50.9375,
+            "lng": 6.9603,
+            "codes": [
+              "CGN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Coblenza",
+              "en": "Koblenz"
+            },
+            "countryCode": "DE",
+            "lat": 50.3569,
+            "lng": 7.589,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Rüdesheim",
+              "en": "Rüdesheim"
+            },
+            "countryCode": "DE",
+            "lat": 49.979,
+            "lng": 7.9234,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Fráncfort",
+              "en": "Frankfurt"
+            },
+            "countryCode": "DE",
+            "lat": 50.1109,
+            "lng": 8.6821,
+            "codes": [
+              "FRA",
+              "HHN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Colonia",
+              "en": "Cologne"
+            },
+            "countryCode": "DE",
+            "lat": 50.9375,
+            "lng": 6.9603,
+            "codes": [
+              "CGN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bonn",
+              "en": "Bonn"
+            },
+            "countryCode": "DE",
+            "lat": 50.7374,
+            "lng": 7.0982,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Coblenza",
+              "en": "Koblenz"
+            },
+            "countryCode": "DE",
+            "lat": 50.3569,
+            "lng": 7.589,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bacharach",
+              "en": "Bacharach"
+            },
+            "countryCode": "DE",
+            "lat": 50.059,
+            "lng": 7.7685,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Rüdesheim",
+              "en": "Rüdesheim"
+            },
+            "countryCode": "DE",
+            "lat": 49.979,
+            "lng": 7.9234,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Fráncfort",
+              "en": "Frankfurt"
+            },
+            "countryCode": "DE",
+            "lat": 50.1109,
+            "lng": 8.6821,
+            "codes": [
+              "FRA",
+              "HHN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Colonia",
+              "en": "Cologne"
+            },
+            "countryCode": "DE",
+            "lat": 50.9375,
+            "lng": 6.9603,
+            "codes": [
+              "CGN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bonn",
+              "en": "Bonn"
+            },
+            "countryCode": "DE",
+            "lat": 50.7374,
+            "lng": 7.0982,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cochem (Mosela)",
+              "en": "Cochem (Moselle)"
+            },
+            "countryCode": "DE",
+            "lat": 50.1469,
+            "lng": 7.1667,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Coblenza",
+              "en": "Koblenz"
+            },
+            "countryCode": "DE",
+            "lat": 50.3569,
+            "lng": 7.589,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bacharach",
+              "en": "Bacharach"
+            },
+            "countryCode": "DE",
+            "lat": 50.059,
+            "lng": 7.7685,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Rüdesheim",
+              "en": "Rüdesheim"
+            },
+            "countryCode": "DE",
+            "lat": 49.979,
+            "lng": 7.9234,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 110,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Heidelberg",
+              "en": "Heidelberg"
+            },
+            "countryCode": "DE",
+            "lat": 49.3988,
+            "lng": 8.6724,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Fráncfort",
+              "en": "Frankfurt"
+            },
+            "countryCode": "DE",
+            "lat": 50.1109,
+            "lng": 8.6821,
+            "codes": [
+              "FRA",
+              "HHN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "El tramo más bonito (Coblenza–Bingen) se disfruta mejor en barco por el Rin, de abril a octubre. Hahn (HHN) queda lejos de Fráncfort: unas 2 h en autobús.",
+      "en": "The finest stretch (Koblenz–Bingen) is best seen from a Rhine boat, April to October. Hahn (HHN) is far from Frankfurt: about 2 h by bus."
+    }
+  },
+  "suiza": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Suiza",
+      "en": "Switzerland"
+    },
+    "summary": {
+      "es": "Lagos, glaciares y trenes panorámicos: Lucerna, Interlaken y la Jungfrau, Zermatt y el lago Lemán.",
+      "en": "Lakes, glaciers and scenic trains: Lucerne, Interlaken and the Jungfrau, Zermatt and Lake Geneva."
+    },
+    "countries": [
+      "CH"
+    ],
+    "reversible": true,
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Zúrich",
+              "en": "Zurich"
+            },
+            "countryCode": "CH",
+            "lat": 47.3769,
+            "lng": 8.5417,
+            "codes": [
+              "ZRH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lucerna",
+              "en": "Lucerne"
+            },
+            "countryCode": "CH",
+            "lat": 47.0502,
+            "lng": 8.3093,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 110,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Interlaken",
+              "en": "Interlaken"
+            },
+            "countryCode": "CH",
+            "lat": 46.6863,
+            "lng": 7.8632,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 165,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ginebra",
+              "en": "Geneva"
+            },
+            "countryCode": "CH",
+            "lat": 46.2044,
+            "lng": 6.1432,
+            "codes": [
+              "GVA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Zúrich",
+              "en": "Zurich"
+            },
+            "countryCode": "CH",
+            "lat": 47.3769,
+            "lng": 8.5417,
+            "codes": [
+              "ZRH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lucerna",
+              "en": "Lucerne"
+            },
+            "countryCode": "CH",
+            "lat": 47.0502,
+            "lng": 8.3093,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 110,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Interlaken",
+              "en": "Interlaken"
+            },
+            "countryCode": "CH",
+            "lat": 46.6863,
+            "lng": 7.8632,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Berna",
+              "en": "Bern"
+            },
+            "countryCode": "CH",
+            "lat": 46.948,
+            "lng": 7.4474,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lausana",
+              "en": "Lausanne"
+            },
+            "countryCode": "CH",
+            "lat": 46.5197,
+            "lng": 6.6323,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ginebra",
+              "en": "Geneva"
+            },
+            "countryCode": "CH",
+            "lat": 46.2044,
+            "lng": 6.1432,
+            "codes": [
+              "GVA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Basilea",
+              "en": "Basel"
+            },
+            "countryCode": "CH",
+            "lat": 47.5596,
+            "lng": 7.5886,
+            "codes": [
+              "BSL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Zúrich",
+              "en": "Zurich"
+            },
+            "countryCode": "CH",
+            "lat": 47.3769,
+            "lng": 8.5417,
+            "codes": [
+              "ZRH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lucerna",
+              "en": "Lucerne"
+            },
+            "countryCode": "CH",
+            "lat": 47.0502,
+            "lng": 8.3093,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 110,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Interlaken",
+              "en": "Interlaken"
+            },
+            "countryCode": "CH",
+            "lat": 46.6863,
+            "lng": 7.8632,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Berna",
+              "en": "Bern"
+            },
+            "countryCode": "CH",
+            "lat": 46.948,
+            "lng": 7.4474,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 130,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Zermatt",
+              "en": "Zermatt"
+            },
+            "countryCode": "CH",
+            "lat": 46.0207,
+            "lng": 7.7491,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 160,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Montreux",
+              "en": "Montreux"
+            },
+            "countryCode": "CH",
+            "lat": 46.4312,
+            "lng": 6.9107,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ginebra",
+              "en": "Geneva"
+            },
+            "countryCode": "CH",
+            "lat": 46.2044,
+            "lng": 6.1432,
+            "codes": [
+              "GVA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Suiza es cara: el Swiss Travel Pass o el Half Fare Card suelen compensar si vas a moverte mucho en tren y teleférico. Basilea (BSL) está en Francia, a 20 min del centro.",
+      "en": "Switzerland is expensive: the Swiss Travel Pass or Half Fare Card usually pays off if you take many trains and cable cars. Basel airport (BSL) is in France, 20 min from the centre."
+    }
+  },
+  "escocia": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Escocia",
+      "en": "Scotland"
+    },
+    "summary": {
+      "es": "Edimburgo, el lago Ness, las Highlands y la isla de Skye: castillos, whisky y paisajes que quitan el aliento.",
+      "en": "Edinburgh, Loch Ness, the Highlands and the Isle of Skye: castles, whisky and breathtaking landscapes."
+    },
+    "countries": [
+      "GB"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Edimburgo",
+              "en": "Edinburgh"
+            },
+            "countryCode": "GB",
+            "lat": 55.9533,
+            "lng": -3.1883,
+            "codes": [
+              "EDI"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "edinburgh-2-days",
+            "land": {
+              "minutes": 210,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Inverness (Lago Ness)",
+              "en": "Inverness (Loch Ness)"
+            },
+            "countryCode": "GB",
+            "lat": 57.4778,
+            "lng": -4.2247,
+            "codes": [
+              "INV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Edimburgo",
+              "en": "Edinburgh"
+            },
+            "countryCode": "GB",
+            "lat": 55.9533,
+            "lng": -3.1883,
+            "codes": [
+              "EDI"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "edinburgh-2-days",
+            "land": {
+              "minutes": 210,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Inverness (Lago Ness)",
+              "en": "Inverness (Loch Ness)"
+            },
+            "countryCode": "GB",
+            "lat": 57.4778,
+            "lng": -4.2247,
+            "codes": [
+              "INV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Isla de Skye (Portree)",
+              "en": "Isle of Skye (Portree)"
+            },
+            "countryCode": "GB",
+            "lat": 57.4125,
+            "lng": -6.1964,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Fort William (Glencoe)",
+              "en": "Fort William (Glencoe)"
+            },
+            "countryCode": "GB",
+            "lat": 56.8198,
+            "lng": -5.1052,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Glasgow",
+              "en": "Glasgow"
+            },
+            "countryCode": "GB",
+            "lat": 55.8642,
+            "lng": -4.2518,
+            "codes": [
+              "GLA",
+              "PIK"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Edimburgo",
+              "en": "Edinburgh"
+            },
+            "countryCode": "GB",
+            "lat": 55.9533,
+            "lng": -3.1883,
+            "codes": [
+              "EDI"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "edinburgh-2-days",
+            "land": {
+              "minutes": 50,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Stirling",
+              "en": "Stirling"
+            },
+            "countryCode": "GB",
+            "lat": 56.1165,
+            "lng": -3.9369,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pitlochry",
+              "en": "Pitlochry"
+            },
+            "countryCode": "GB",
+            "lat": 56.7024,
+            "lng": -3.735,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Inverness (Lago Ness)",
+              "en": "Inverness (Loch Ness)"
+            },
+            "countryCode": "GB",
+            "lat": 57.4778,
+            "lng": -4.2247,
+            "codes": [
+              "INV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Isla de Skye (Portree)",
+              "en": "Isle of Skye (Portree)"
+            },
+            "countryCode": "GB",
+            "lat": 57.4125,
+            "lng": -6.1964,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Fort William (Glencoe)",
+              "en": "Fort William (Glencoe)"
+            },
+            "countryCode": "GB",
+            "lat": 56.8198,
+            "lng": -5.1052,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Oban",
+              "en": "Oban"
+            },
+            "countryCode": "GB",
+            "lat": 56.4152,
+            "lng": -5.4718,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Glasgow",
+              "en": "Glasgow"
+            },
+            "countryCode": "GB",
+            "lat": 55.8642,
+            "lng": -4.2518,
+            "codes": [
+              "GLA",
+              "PIK"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En las Highlands y Skye el coche marca la diferencia: los autobuses existen, pero son pocos y tardan más. Se conduce por la izquierda.",
+      "en": "In the Highlands and on Skye a car makes all the difference: buses exist but are few and slower. Driving is on the left."
+    }
+  },
+  "inglaterra-clasica": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Inglaterra clásica",
+      "en": "Classic England"
+    },
+    "summary": {
+      "es": "Londres, los colleges de Oxford, los pueblos de piedra de los Cotswolds y las termas romanas de Bath.",
+      "en": "London, Oxford's colleges, the stone villages of the Cotswolds and the Roman baths of Bath."
+    },
+    "countries": [
+      "GB"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Londres",
+              "en": "London"
+            },
+            "countryCode": "GB",
+            "lat": 51.5072,
+            "lng": -0.1276,
+            "codes": [
+              "STN",
+              "LGW",
+              "LTN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "london-3-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oxford",
+              "en": "Oxford"
+            },
+            "countryCode": "GB",
+            "lat": 51.752,
+            "lng": -1.2577,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bath",
+              "en": "Bath"
+            },
+            "countryCode": "GB",
+            "lat": 51.3811,
+            "lng": -2.359,
+            "codes": [
+              "BRS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Londres",
+              "en": "London"
+            },
+            "countryCode": "GB",
+            "lat": 51.5072,
+            "lng": -0.1276,
+            "codes": [
+              "STN",
+              "LGW",
+              "LTN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "london-3-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oxford",
+              "en": "Oxford"
+            },
+            "countryCode": "GB",
+            "lat": 51.752,
+            "lng": -1.2577,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Cotswolds (Bourton-on-the-Water)",
+              "en": "Cotswolds (Bourton-on-the-Water)"
+            },
+            "countryCode": "GB",
+            "lat": 51.8857,
+            "lng": -1.7586,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Bath",
+              "en": "Bath"
+            },
+            "countryCode": "GB",
+            "lat": 51.3811,
+            "lng": -2.359,
+            "codes": [
+              "BRS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Cambridge",
+              "en": "Cambridge"
+            },
+            "countryCode": "GB",
+            "lat": 52.2053,
+            "lng": 0.1218,
+            "codes": [
+              "STN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Londres",
+              "en": "London"
+            },
+            "countryCode": "GB",
+            "lat": 51.5072,
+            "lng": -0.1276,
+            "codes": [
+              "STN",
+              "LGW",
+              "LTN"
+            ],
+            "nights": {
+              "min": 3,
+              "ideal": 4
+            },
+            "guide": "london-3-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oxford",
+              "en": "Oxford"
+            },
+            "countryCode": "GB",
+            "lat": 51.752,
+            "lng": -1.2577,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Stratford-upon-Avon",
+              "en": "Stratford-upon-Avon"
+            },
+            "countryCode": "GB",
+            "lat": 52.1917,
+            "lng": -1.7073,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Cotswolds (Bourton-on-the-Water)",
+              "en": "Cotswolds (Bourton-on-the-Water)"
+            },
+            "countryCode": "GB",
+            "lat": 51.8857,
+            "lng": -1.7586,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Bath",
+              "en": "Bath"
+            },
+            "countryCode": "GB",
+            "lat": 51.3811,
+            "lng": -2.359,
+            "codes": [
+              "BRS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 15,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bristol",
+              "en": "Bristol"
+            },
+            "countryCode": "GB",
+            "lat": 51.4545,
+            "lng": -2.5879,
+            "codes": [
+              "BRS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Los Cotswolds se recorren mucho mejor en coche o en excursión organizada. Bath y Bristol vuelan desde el aeropuerto de Bristol (BRS); desde Bath es casi 1 h en autobús.",
+      "en": "The Cotswolds are far easier by car or on a tour. Bath and Bristol fly from Bristol Airport (BRS); from Bath it is almost 1 h by bus."
+    }
+  },
+  "irlanda": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Irlanda",
+      "en": "Ireland"
+    },
+    "summary": {
+      "es": "Pubs de Dublín, el ambiente de Galway, los Acantilados de Moher y los paisajes verdes de Kerry.",
+      "en": "Dublin's pubs, lively Galway, the Cliffs of Moher and the green landscapes of Kerry."
+    },
+    "countries": [
+      "IE"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Dublín",
+              "en": "Dublin"
+            },
+            "countryCode": "IE",
+            "lat": 53.3498,
+            "lng": -6.2603,
+            "codes": [
+              "DUB"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "dublin-2-days",
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Galway",
+              "en": "Galway"
+            },
+            "countryCode": "IE",
+            "lat": 53.2707,
+            "lng": -9.0568,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Limerick",
+              "en": "Limerick"
+            },
+            "countryCode": "IE",
+            "lat": 52.6638,
+            "lng": -8.6267,
+            "codes": [
+              "SNN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Dublín",
+              "en": "Dublin"
+            },
+            "countryCode": "IE",
+            "lat": 53.3498,
+            "lng": -6.2603,
+            "codes": [
+              "DUB"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "dublin-2-days",
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Galway",
+              "en": "Galway"
+            },
+            "countryCode": "IE",
+            "lat": 53.2707,
+            "lng": -9.0568,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Doolin (Acantilados de Moher)",
+              "en": "Doolin (Cliffs of Moher)"
+            },
+            "countryCode": "IE",
+            "lat": 53.0167,
+            "lng": -9.4038,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Killarney (Kerry)",
+              "en": "Killarney (Kerry)"
+            },
+            "countryCode": "IE",
+            "lat": 52.0599,
+            "lng": -9.5044,
+            "codes": [
+              "KIR"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 100,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Cork",
+              "en": "Cork"
+            },
+            "countryCode": "IE",
+            "lat": 51.8985,
+            "lng": -8.4756,
+            "codes": [
+              "ORK"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Dublín",
+              "en": "Dublin"
+            },
+            "countryCode": "IE",
+            "lat": 53.3498,
+            "lng": -6.2603,
+            "codes": [
+              "DUB"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "dublin-2-days",
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Galway",
+              "en": "Galway"
+            },
+            "countryCode": "IE",
+            "lat": 53.2707,
+            "lng": -9.0568,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Doolin (Acantilados de Moher)",
+              "en": "Doolin (Cliffs of Moher)"
+            },
+            "countryCode": "IE",
+            "lat": 53.0167,
+            "lng": -9.4038,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Dingle",
+              "en": "Dingle"
+            },
+            "countryCode": "IE",
+            "lat": 52.1408,
+            "lng": -10.2689,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Killarney (Kerry)",
+              "en": "Killarney (Kerry)"
+            },
+            "countryCode": "IE",
+            "lat": 52.0599,
+            "lng": -9.5044,
+            "codes": [
+              "KIR"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 100,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Cork",
+              "en": "Cork"
+            },
+            "countryCode": "IE",
+            "lat": 51.8985,
+            "lng": -8.4756,
+            "codes": [
+              "ORK"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En la costa oeste (Moher, Dingle, el Anillo de Kerry, Connemara) el coche ayuda mucho; se conduce por la izquierda. En la versión corta, Moher se visita desde Galway camino de Shannon (SNN).",
+      "en": "On the west coast (Moher, Dingle, the Ring of Kerry, Connemara) a car helps a lot; driving is on the left. In the short version, Moher is visited from Galway on the way to Shannon (SNN)."
+    }
+  },
+  "escandinavia": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Escandinavia",
+      "en": "Scandinavia"
+    },
+    "summary": {
+      "es": "Tres capitales nórdicas en tren: el diseño de Copenhague, la costa oeste sueca, Oslo y Estocolmo.",
+      "en": "Three Nordic capitals by train: design-loving Copenhagen, Sweden's west coast, Oslo and Stockholm."
+    },
+    "countries": [
+      "DK",
+      "SE",
+      "NO"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Copenhague",
+              "en": "Copenhagen"
+            },
+            "countryCode": "DK",
+            "lat": 55.6761,
+            "lng": 12.5683,
+            "codes": [
+              "CPH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "copenhagen-2-days",
+            "land": {
+              "minutes": 315,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Estocolmo",
+              "en": "Stockholm"
+            },
+            "countryCode": "SE",
+            "lat": 59.3293,
+            "lng": 18.0686,
+            "codes": [
+              "ARN",
+              "NYO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "stockholm-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Copenhague",
+              "en": "Copenhagen"
+            },
+            "countryCode": "DK",
+            "lat": 55.6761,
+            "lng": 12.5683,
+            "codes": [
+              "CPH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "copenhagen-2-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Malmö",
+              "en": "Malmö"
+            },
+            "countryCode": "SE",
+            "lat": 55.605,
+            "lng": 13.0038,
+            "codes": [
+              "MMX"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 155,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Gotemburgo",
+              "en": "Gothenburg"
+            },
+            "countryCode": "SE",
+            "lat": 57.7089,
+            "lng": 11.9746,
+            "codes": [
+              "GOT"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 220,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oslo",
+              "en": "Oslo"
+            },
+            "countryCode": "NO",
+            "lat": 59.9139,
+            "lng": 10.7522,
+            "codes": [
+              "OSL",
+              "TRF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "oslo-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Copenhague",
+              "en": "Copenhagen"
+            },
+            "countryCode": "DK",
+            "lat": 55.6761,
+            "lng": 12.5683,
+            "codes": [
+              "CPH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "copenhagen-2-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Malmö",
+              "en": "Malmö"
+            },
+            "countryCode": "SE",
+            "lat": 55.605,
+            "lng": 13.0038,
+            "codes": [
+              "MMX"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 155,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Gotemburgo",
+              "en": "Gothenburg"
+            },
+            "countryCode": "SE",
+            "lat": 57.7089,
+            "lng": 11.9746,
+            "codes": [
+              "GOT"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 220,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oslo",
+              "en": "Oslo"
+            },
+            "countryCode": "NO",
+            "lat": 59.9139,
+            "lng": 10.7522,
+            "codes": [
+              "OSL",
+              "TRF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "oslo-2-days",
+            "land": {
+              "minutes": 340,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Estocolmo",
+              "en": "Stockholm"
+            },
+            "countryCode": "SE",
+            "lat": 59.3293,
+            "lng": 18.0686,
+            "codes": [
+              "ARN",
+              "NYO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "stockholm-2-days"
+          }
+        ]
+      }
+    }
+  },
+  "fiordos-de-noruega": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Fiordos de Noruega",
+      "en": "Norway's fjords"
+    },
+    "summary": {
+      "es": "El tren de Flåm, cruceros por el Sognefjord, las casas de colores de Bergen y el Preikestolen.",
+      "en": "The Flåm Railway, cruises on the Sognefjord, Bergen's colourful houses and Preikestolen."
+    },
+    "countries": [
+      "NO"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Oslo",
+              "en": "Oslo"
+            },
+            "countryCode": "NO",
+            "lat": 59.9139,
+            "lng": 10.7522,
+            "codes": [
+              "OSL",
+              "TRF"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "oslo-2-days",
+            "land": {
+              "minutes": 300,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Flåm",
+              "en": "Flåm"
+            },
+            "countryCode": "NO",
+            "lat": 60.8628,
+            "lng": 7.1137,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 300,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Bergen",
+              "en": "Bergen"
+            },
+            "countryCode": "NO",
+            "lat": 60.3913,
+            "lng": 5.3221,
+            "codes": [
+              "BGO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Oslo",
+              "en": "Oslo"
+            },
+            "countryCode": "NO",
+            "lat": 59.9139,
+            "lng": 10.7522,
+            "codes": [
+              "OSL",
+              "TRF"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "oslo-2-days",
+            "land": {
+              "minutes": 300,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Flåm",
+              "en": "Flåm"
+            },
+            "countryCode": "NO",
+            "lat": 60.8628,
+            "lng": 7.1137,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 300,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Bergen",
+              "en": "Bergen"
+            },
+            "countryCode": "NO",
+            "lat": 60.3913,
+            "lng": 5.3221,
+            "codes": [
+              "BGO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 300,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Stavanger (Preikestolen)",
+              "en": "Stavanger (Preikestolen)"
+            },
+            "countryCode": "NO",
+            "lat": 58.97,
+            "lng": 5.7331,
+            "codes": [
+              "SVG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Oslo",
+              "en": "Oslo"
+            },
+            "countryCode": "NO",
+            "lat": 59.9139,
+            "lng": 10.7522,
+            "codes": [
+              "OSL",
+              "TRF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "oslo-2-days",
+            "land": {
+              "minutes": 300,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Flåm",
+              "en": "Flåm"
+            },
+            "countryCode": "NO",
+            "lat": 60.8628,
+            "lng": 7.1137,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Balestrand (Sognefjord)",
+              "en": "Balestrand (Sognefjord)"
+            },
+            "countryCode": "NO",
+            "lat": 61.2084,
+            "lng": 6.5323,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Bergen",
+              "en": "Bergen"
+            },
+            "countryCode": "NO",
+            "lat": 60.3913,
+            "lng": 5.3221,
+            "codes": [
+              "BGO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 300,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Stavanger (Preikestolen)",
+              "en": "Stavanger (Preikestolen)"
+            },
+            "countryCode": "NO",
+            "lat": 58.97,
+            "lng": 5.7331,
+            "codes": [
+              "SVG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "De Flåm a Bergen se suele hacer el «Norway in a Nutshell»: barco por el Nærøyfjord, autobús a Voss y tren. Los barcos rápidos por los fiordos funcionan sobre todo en verano.",
+      "en": "Flåm to Bergen is usually done as 'Norway in a Nutshell': boat on the Nærøyfjord, bus to Voss and train. Express fjord boats mostly run in summer."
+    }
+  },
+  "norte-de-alemania": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Norte de Alemania",
+      "en": "Northern Germany"
+    },
+    "summary": {
+      "es": "Ciudades hanseáticas de ladrillo rojo, el puerto de Hamburgo, el castillo de Schwerin y el Báltico, hasta Berlín.",
+      "en": "Red-brick Hanseatic towns, the port of Hamburg, Schwerin Castle and the Baltic coast, all the way to Berlin."
+    },
+    "countries": [
+      "DE"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Hamburgo",
+              "en": "Hamburg"
+            },
+            "countryCode": "DE",
+            "lat": 53.5511,
+            "lng": 9.9937,
+            "codes": [
+              "HAM"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "hamburg-2-days",
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lübeck",
+              "en": "Lübeck"
+            },
+            "countryCode": "DE",
+            "lat": 53.8655,
+            "lng": 10.6866,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Berlín",
+              "en": "Berlin"
+            },
+            "countryCode": "DE",
+            "lat": 52.52,
+            "lng": 13.405,
+            "codes": [
+              "BER"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "berlin-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bremen",
+              "en": "Bremen"
+            },
+            "countryCode": "DE",
+            "lat": 53.0793,
+            "lng": 8.8017,
+            "codes": [
+              "BRE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Hamburgo",
+              "en": "Hamburg"
+            },
+            "countryCode": "DE",
+            "lat": 53.5511,
+            "lng": 9.9937,
+            "codes": [
+              "HAM"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "hamburg-2-days",
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lübeck",
+              "en": "Lübeck"
+            },
+            "countryCode": "DE",
+            "lat": 53.8655,
+            "lng": 10.6866,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Schwerin",
+              "en": "Schwerin"
+            },
+            "countryCode": "DE",
+            "lat": 53.6355,
+            "lng": 11.4012,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 115,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Berlín",
+              "en": "Berlin"
+            },
+            "countryCode": "DE",
+            "lat": 52.52,
+            "lng": 13.405,
+            "codes": [
+              "BER"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "berlin-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bremen",
+              "en": "Bremen"
+            },
+            "countryCode": "DE",
+            "lat": 53.0793,
+            "lng": 8.8017,
+            "codes": [
+              "BRE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Hamburgo",
+              "en": "Hamburg"
+            },
+            "countryCode": "DE",
+            "lat": 53.5511,
+            "lng": 9.9937,
+            "codes": [
+              "HAM"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "hamburg-2-days",
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lübeck",
+              "en": "Lübeck"
+            },
+            "countryCode": "DE",
+            "lat": 53.8655,
+            "lng": 10.6866,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Schwerin",
+              "en": "Schwerin"
+            },
+            "countryCode": "DE",
+            "lat": 53.6355,
+            "lng": 11.4012,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Rostock (Warnemünde)",
+              "en": "Rostock (Warnemünde)"
+            },
+            "countryCode": "DE",
+            "lat": 54.0924,
+            "lng": 12.0991,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 160,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Berlín",
+              "en": "Berlin"
+            },
+            "countryCode": "DE",
+            "lat": 52.52,
+            "lng": 13.405,
+            "codes": [
+              "BER"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "berlin-3-days"
+          }
+        ]
+      }
+    }
+  },
+  "laponia-finlandesa": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Laponia finlandesa",
+      "en": "Finnish Lapland"
+    },
+    "summary": {
+      "es": "Auroras boreales, trineos de huskies y renos, la aldea de Papá Noel en Rovaniemi y la cultura sami en Inari.",
+      "en": "Northern lights, husky and reindeer sleds, Santa's village in Rovaniemi and Sámi culture in Inari."
+    },
+    "countries": [
+      "FI"
+    ],
+    "reversible": false,
+    "months": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Rovaniemi",
+              "en": "Rovaniemi"
+            },
+            "countryCode": "FI",
+            "lat": 66.5039,
+            "lng": 25.7294,
+            "codes": [
+              "RVN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 165,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Levi",
+              "en": "Levi"
+            },
+            "countryCode": "FI",
+            "lat": 67.8048,
+            "lng": 24.8088,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 165,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Rovaniemi",
+              "en": "Rovaniemi"
+            },
+            "countryCode": "FI",
+            "lat": 66.5039,
+            "lng": 25.7294,
+            "codes": [
+              "RVN"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Rovaniemi",
+              "en": "Rovaniemi"
+            },
+            "countryCode": "FI",
+            "lat": 66.5039,
+            "lng": 25.7294,
+            "codes": [
+              "RVN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 225,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Saariselkä",
+              "en": "Saariselkä"
+            },
+            "countryCode": "FI",
+            "lat": 68.418,
+            "lng": 27.417,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 45,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Inari",
+              "en": "Inari"
+            },
+            "countryCode": "FI",
+            "lat": 68.9058,
+            "lng": 27.0277,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 300,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Rovaniemi",
+              "en": "Rovaniemi"
+            },
+            "countryCode": "FI",
+            "lat": 66.5039,
+            "lng": 25.7294,
+            "codes": [
+              "RVN"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Rovaniemi",
+              "en": "Rovaniemi"
+            },
+            "countryCode": "FI",
+            "lat": 66.5039,
+            "lng": 25.7294,
+            "codes": [
+              "RVN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 165,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Levi",
+              "en": "Levi"
+            },
+            "countryCode": "FI",
+            "lat": 67.8048,
+            "lng": 24.8088,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 210,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Saariselkä",
+              "en": "Saariselkä"
+            },
+            "countryCode": "FI",
+            "lat": 68.418,
+            "lng": 27.417,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 45,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Inari",
+              "en": "Inari"
+            },
+            "countryCode": "FI",
+            "lat": 68.9058,
+            "lng": 27.0277,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 300,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Rovaniemi",
+              "en": "Rovaniemi"
+            },
+            "countryCode": "FI",
+            "lat": 66.5039,
+            "lng": 25.7294,
+            "codes": [
+              "RVN"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Hace mucho frío (de -15 a -30 °C): ropa térmica por capas, y muchos alojamientos y tours la prestan. Las auroras se ven de septiembre a marzo con cielo despejado, lejos de las luces. Hay buses (Eskelisen) de Rovaniemi a Levi y a Saariselkä e Inari, pero pocos al día; entre Levi y Saariselkä no hay bus directo: coche (con experiencia en nieve) o vuelta por Rovaniemi. Huskies, renos y motos de nieve se contratan como excursión.",
+      "en": "It is very cold (−15 to −30 °C): wear thermal layers, and many lodgings and tours lend them. Northern lights show from September to March on clear nights, away from lights. Eskelinen buses run from Rovaniemi to Levi and to Saariselkä and Inari, but few a day; there is no direct bus between Levi and Saariselkä: drive (with snow experience) or go back through Rovaniemi. Huskies, reindeer and snowmobiles are booked as tours."
+    }
+  },
+  "tromso-y-laponia-noruega": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Tromsø y la Laponia noruega",
+      "en": "Tromsø and Norwegian Lapland"
+    },
+    "summary": {
+      "es": "Caza de auroras sobre los fiordos de Tromsø, las montañas que caen al mar en Senja y el cielo despejado de Abisko.",
+      "en": "Aurora hunting over Tromsø's fjords, Senja's mountains dropping into the sea and Abisko's clear skies."
+    },
+    "countries": [
+      "NO",
+      "SE"
+    ],
+    "reversible": false,
+    "months": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tromsø",
+              "en": "Tromsø"
+            },
+            "countryCode": "NO",
+            "lat": 69.6492,
+            "lng": 18.9553,
+            "codes": [
+              "TOS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Senja",
+              "en": "Senja"
+            },
+            "countryCode": "NO",
+            "lat": 69.2296,
+            "lng": 17.9811,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Tromsø",
+              "en": "Tromsø"
+            },
+            "countryCode": "NO",
+            "lat": 69.6492,
+            "lng": 18.9553,
+            "codes": [
+              "TOS"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tromsø",
+              "en": "Tromsø"
+            },
+            "countryCode": "NO",
+            "lat": 69.6492,
+            "lng": 18.9553,
+            "codes": [
+              "TOS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Senja",
+              "en": "Senja"
+            },
+            "countryCode": "NO",
+            "lat": 69.2296,
+            "lng": 17.9811,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Abisko",
+              "en": "Abisko"
+            },
+            "countryCode": "SE",
+            "lat": 68.3495,
+            "lng": 18.8312,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 255,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Tromsø",
+              "en": "Tromsø"
+            },
+            "countryCode": "NO",
+            "lat": 69.6492,
+            "lng": 18.9553,
+            "codes": [
+              "TOS"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Hace frío (de -5 a -15 °C en la costa, más en Abisko) y en pleno invierno apenas hay luz de día. Para Senja y Abisko lo mejor es coche de alquiler con ruedas de invierno y experiencia en nieve; sin coche, haz Tromsø con excursiones (auroras, fiordos, ballenas de noviembre a enero, huskies) y a Abisko en bus a Narvik y tren. Abisko, en Suecia, es de los sitios con más noches despejadas para ver auroras.",
+      "en": "It is cold (−5 to −15 °C on the coast, colder in Abisko) and in midwinter there is hardly any daylight. For Senja and Abisko a rental car with winter tyres and snow experience is best; without one, do Tromsø with tours (auroras, fjords, whales from November to January, huskies) and reach Abisko by bus to Narvik and train. Abisko, in Sweden, is one of the places with the most clear nights for seeing auroras."
+    }
+  },
+  "selva-negra": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Selva Negra",
+      "en": "Black Forest"
+    },
+    "summary": {
+      "es": "Termas en Baden-Baden, relojes de cuco, cascadas de Triberg, el lago Titisee y Friburgo: bosques y pueblos de cuento.",
+      "en": "Spas in Baden-Baden, cuckoo clocks, the Triberg falls, Lake Titisee and Freiburg: forests and fairy-tale villages."
+    },
+    "countries": [
+      "DE",
+      "CH",
+      "FR"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Baden-Baden",
+              "en": "Baden-Baden"
+            },
+            "countryCode": "DE",
+            "lat": 48.7606,
+            "lng": 8.2398,
+            "codes": [
+              "FKB"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Friburgo",
+              "en": "Freiburg"
+            },
+            "countryCode": "DE",
+            "lat": 47.999,
+            "lng": 7.8421,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Basilea",
+              "en": "Basel"
+            },
+            "countryCode": "CH",
+            "lat": 47.5596,
+            "lng": 7.5886,
+            "codes": [
+              "BSL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Baden-Baden",
+              "en": "Baden-Baden"
+            },
+            "countryCode": "DE",
+            "lat": 48.7606,
+            "lng": 8.2398,
+            "codes": [
+              "FKB"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Gengenbach",
+              "en": "Gengenbach"
+            },
+            "countryCode": "DE",
+            "lat": 48.4047,
+            "lng": 8.0153,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Triberg",
+              "en": "Triberg"
+            },
+            "countryCode": "DE",
+            "lat": 48.1306,
+            "lng": 8.2319,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Titisee",
+              "en": "Titisee"
+            },
+            "countryCode": "DE",
+            "lat": 47.9018,
+            "lng": 8.1544,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Friburgo",
+              "en": "Freiburg"
+            },
+            "countryCode": "DE",
+            "lat": 47.999,
+            "lng": 7.8421,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Basilea",
+              "en": "Basel"
+            },
+            "countryCode": "CH",
+            "lat": 47.5596,
+            "lng": 7.5886,
+            "codes": [
+              "BSL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Stuttgart",
+              "en": "Stuttgart"
+            },
+            "countryCode": "DE",
+            "lat": 48.7758,
+            "lng": 9.1829,
+            "codes": [
+              "STR"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Baden-Baden",
+              "en": "Baden-Baden"
+            },
+            "countryCode": "DE",
+            "lat": 48.7606,
+            "lng": 8.2398,
+            "codes": [
+              "FKB"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Estrasburgo",
+              "en": "Strasbourg"
+            },
+            "countryCode": "FR",
+            "lat": 48.5734,
+            "lng": 7.7521,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Gengenbach",
+              "en": "Gengenbach"
+            },
+            "countryCode": "DE",
+            "lat": 48.4047,
+            "lng": 8.0153,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Triberg",
+              "en": "Triberg"
+            },
+            "countryCode": "DE",
+            "lat": 48.1306,
+            "lng": 8.2319,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Titisee",
+              "en": "Titisee"
+            },
+            "countryCode": "DE",
+            "lat": 47.9018,
+            "lng": 8.1544,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Friburgo",
+              "en": "Freiburg"
+            },
+            "countryCode": "DE",
+            "lat": 47.999,
+            "lng": 7.8421,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Colmar",
+              "en": "Colmar"
+            },
+            "countryCode": "FR",
+            "lat": 48.0794,
+            "lng": 7.3585,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Basilea",
+              "en": "Basel"
+            },
+            "countryCode": "CH",
+            "lat": 47.5596,
+            "lng": 7.5886,
+            "codes": [
+              "BSL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Si duermes en la Selva Negra, el alojamiento suele darte la tarjeta KONUS: autobús y tren regional gratis. Para los pueblos pequeños y los miradores, mejor coche. En diciembre hay mercadillos de Navidad.",
+      "en": "Staying overnight in the Black Forest usually gets you the KONUS card: free regional buses and trains. For the small villages and viewpoints a car is better. December brings Christmas markets."
+    }
+  },
+  "irlanda-del-norte": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Irlanda del Norte",
+      "en": "Northern Ireland"
+    },
+    "summary": {
+      "es": "Belfast y el Titanic, la costa de Antrim, la Calzada del Gigante y las murallas de Derry: acantilados y leyendas.",
+      "en": "Belfast and the Titanic, the Antrim coast, the Giant's Causeway and the walls of Derry: cliffs and legends."
+    },
+    "countries": [
+      "GB",
+      "IE"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Belfast",
+              "en": "Belfast"
+            },
+            "countryCode": "GB",
+            "lat": 54.5973,
+            "lng": -5.9301,
+            "codes": [
+              "BFS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Bushmills (Calzada del Gigante)",
+              "en": "Bushmills (Giant's Causeway)"
+            },
+            "countryCode": "GB",
+            "lat": 55.2047,
+            "lng": -6.5197,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Derry",
+              "en": "Derry"
+            },
+            "countryCode": "GB",
+            "lat": 54.9966,
+            "lng": -7.3086,
+            "codes": [
+              "LDY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Dublín",
+              "en": "Dublin"
+            },
+            "countryCode": "IE",
+            "lat": 53.3498,
+            "lng": -6.2603,
+            "codes": [
+              "DUB"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "dublin-2-days",
+            "land": {
+              "minutes": 130,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Belfast",
+              "en": "Belfast"
+            },
+            "countryCode": "GB",
+            "lat": 54.5973,
+            "lng": -5.9301,
+            "codes": [
+              "BFS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Ballycastle",
+              "en": "Ballycastle"
+            },
+            "countryCode": "GB",
+            "lat": 55.2041,
+            "lng": -6.244,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 25,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Bushmills (Calzada del Gigante)",
+              "en": "Bushmills (Giant's Causeway)"
+            },
+            "countryCode": "GB",
+            "lat": 55.2047,
+            "lng": -6.5197,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Derry",
+              "en": "Derry"
+            },
+            "countryCode": "GB",
+            "lat": 54.9966,
+            "lng": -7.3086,
+            "codes": [
+              "LDY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Dublín",
+              "en": "Dublin"
+            },
+            "countryCode": "IE",
+            "lat": 53.3498,
+            "lng": -6.2603,
+            "codes": [
+              "DUB"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "dublin-2-days",
+            "land": {
+              "minutes": 130,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Belfast",
+              "en": "Belfast"
+            },
+            "countryCode": "GB",
+            "lat": 54.5973,
+            "lng": -5.9301,
+            "codes": [
+              "BFS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Cushendall (Glens of Antrim)",
+              "en": "Cushendall (Glens of Antrim)"
+            },
+            "countryCode": "GB",
+            "lat": 55.0806,
+            "lng": -6.0617,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Ballycastle",
+              "en": "Ballycastle"
+            },
+            "countryCode": "GB",
+            "lat": 55.2041,
+            "lng": -6.244,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 25,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Bushmills (Calzada del Gigante)",
+              "en": "Bushmills (Giant's Causeway)"
+            },
+            "countryCode": "GB",
+            "lat": 55.2047,
+            "lng": -6.5197,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Derry",
+              "en": "Derry"
+            },
+            "countryCode": "GB",
+            "lat": 54.9966,
+            "lng": -7.3086,
+            "codes": [
+              "LDY"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Enniskillen",
+              "en": "Enniskillen"
+            },
+            "countryCode": "GB",
+            "lat": 54.3438,
+            "lng": -7.6315,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 140,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Dublín",
+              "en": "Dublin"
+            },
+            "countryCode": "IE",
+            "lat": 53.3498,
+            "lng": -6.2603,
+            "codes": [
+              "DUB"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "dublin-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "La costa de Antrim se disfruta mucho más en coche (se conduce por la izquierda); si no, hay excursiones de un día desde Belfast. En Irlanda del Norte se paga en libras, en Dublín en euros.",
+      "en": "The Antrim coast is far better by car (driving is on the left); otherwise there are day tours from Belfast. Northern Ireland uses pounds, Dublin uses euros."
+    }
+  },
+  "gales": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Gales",
+      "en": "Wales"
+    },
+    "summary": {
+      "es": "Castillos por todas partes, los páramos de Brecon Beacons y las montañas de Snowdonia: el rincón más salvaje de Gran Bretaña.",
+      "en": "Castles everywhere, the moors of the Brecon Beacons and the mountains of Snowdonia: the wildest corner of Britain."
+    },
+    "countries": [
+      "GB"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Cardiff",
+              "en": "Cardiff"
+            },
+            "countryCode": "GB",
+            "lat": 51.4816,
+            "lng": -3.1791,
+            "codes": [
+              "CWL"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Brecon (Brecon Beacons)",
+              "en": "Brecon (Brecon Beacons)"
+            },
+            "countryCode": "GB",
+            "lat": 51.9462,
+            "lng": -3.3914,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Bristol",
+              "en": "Bristol"
+            },
+            "countryCode": "GB",
+            "lat": 51.4545,
+            "lng": -2.5879,
+            "codes": [
+              "BRS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Cardiff",
+              "en": "Cardiff"
+            },
+            "countryCode": "GB",
+            "lat": 51.4816,
+            "lng": -3.1791,
+            "codes": [
+              "CWL"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Brecon (Brecon Beacons)",
+              "en": "Brecon (Brecon Beacons)"
+            },
+            "countryCode": "GB",
+            "lat": 51.9462,
+            "lng": -3.3914,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 160,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Betws-y-Coed (Snowdonia)",
+              "en": "Betws-y-Coed (Snowdonia)"
+            },
+            "countryCode": "GB",
+            "lat": 53.0929,
+            "lng": -3.8008,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 25,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Conwy",
+              "en": "Conwy"
+            },
+            "countryCode": "GB",
+            "lat": 53.2802,
+            "lng": -3.827,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Liverpool",
+              "en": "Liverpool"
+            },
+            "countryCode": "GB",
+            "lat": 53.4084,
+            "lng": -2.9916,
+            "codes": [
+              "LPL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Cardiff",
+              "en": "Cardiff"
+            },
+            "countryCode": "GB",
+            "lat": 51.4816,
+            "lng": -3.1791,
+            "codes": [
+              "CWL"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Brecon (Brecon Beacons)",
+              "en": "Brecon (Brecon Beacons)"
+            },
+            "countryCode": "GB",
+            "lat": 51.9462,
+            "lng": -3.3914,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Tenby",
+              "en": "Tenby"
+            },
+            "countryCode": "GB",
+            "lat": 51.6727,
+            "lng": -4.7034,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "St Davids",
+              "en": "St Davids"
+            },
+            "countryCode": "GB",
+            "lat": 51.8812,
+            "lng": -5.266,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Aberystwyth",
+              "en": "Aberystwyth"
+            },
+            "countryCode": "GB",
+            "lat": 52.4153,
+            "lng": -4.0829,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 110,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Betws-y-Coed (Snowdonia)",
+              "en": "Betws-y-Coed (Snowdonia)"
+            },
+            "countryCode": "GB",
+            "lat": 53.0929,
+            "lng": -3.8008,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Caernarfon",
+              "en": "Caernarfon"
+            },
+            "countryCode": "GB",
+            "lat": 53.1393,
+            "lng": -4.2737,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 35,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Conwy",
+              "en": "Conwy"
+            },
+            "countryCode": "GB",
+            "lat": 53.2802,
+            "lng": -3.827,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Liverpool",
+              "en": "Liverpool"
+            },
+            "countryCode": "GB",
+            "lat": 53.4084,
+            "lng": -2.9916,
+            "codes": [
+              "LPL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Fuera de Cardiff y la costa norte el transporte público es escaso: en Gales el coche es casi imprescindible (se conduce por la izquierda). Lleva chubasquero también en verano.",
+      "en": "Outside Cardiff and the north coast public transport is thin: in Wales a car is almost a must (driving is on the left). Bring a rain jacket even in summer."
+    }
+  },
+  "cornualles": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Cornualles",
+      "en": "Cornwall"
+    },
+    "summary": {
+      "es": "Playas de surf en Newquay, el pueblo de pescadores de St Ives, St Michael's Mount y los acantilados de Land's End: el fin de Inglaterra.",
+      "en": "Surf beaches in Newquay, the fishing town of St Ives, St Michael's Mount and the cliffs of Land's End: the end of England."
+    },
+    "countries": [
+      "GB"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Newquay",
+              "en": "Newquay"
+            },
+            "countryCode": "GB",
+            "lat": 50.4155,
+            "lng": -5.0737,
+            "codes": [
+              "NQY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "St Ives",
+              "en": "St Ives"
+            },
+            "countryCode": "GB",
+            "lat": 50.2083,
+            "lng": -5.4908,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 25,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Penzance",
+              "en": "Penzance"
+            },
+            "countryCode": "GB",
+            "lat": 50.1186,
+            "lng": -5.5371,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Falmouth",
+              "en": "Falmouth"
+            },
+            "countryCode": "GB",
+            "lat": 50.1532,
+            "lng": -5.0663,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Newquay",
+              "en": "Newquay"
+            },
+            "countryCode": "GB",
+            "lat": 50.4155,
+            "lng": -5.0737,
+            "codes": [
+              "NQY"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Newquay",
+              "en": "Newquay"
+            },
+            "countryCode": "GB",
+            "lat": 50.4155,
+            "lng": -5.0737,
+            "codes": [
+              "NQY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "St Ives",
+              "en": "St Ives"
+            },
+            "countryCode": "GB",
+            "lat": 50.2083,
+            "lng": -5.4908,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 25,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Penzance",
+              "en": "Penzance"
+            },
+            "countryCode": "GB",
+            "lat": 50.1186,
+            "lng": -5.5371,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Falmouth",
+              "en": "Falmouth"
+            },
+            "countryCode": "GB",
+            "lat": 50.1532,
+            "lng": -5.0663,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Fowey",
+              "en": "Fowey"
+            },
+            "countryCode": "GB",
+            "lat": 50.336,
+            "lng": -4.637,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Exeter",
+              "en": "Exeter"
+            },
+            "countryCode": "GB",
+            "lat": 50.7184,
+            "lng": -3.5339,
+            "codes": [
+              "EXT"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Newquay",
+              "en": "Newquay"
+            },
+            "countryCode": "GB",
+            "lat": 50.4155,
+            "lng": -5.0737,
+            "codes": [
+              "NQY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Padstow",
+              "en": "Padstow"
+            },
+            "countryCode": "GB",
+            "lat": 50.5418,
+            "lng": -4.939,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "St Ives",
+              "en": "St Ives"
+            },
+            "countryCode": "GB",
+            "lat": 50.2083,
+            "lng": -5.4908,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 25,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Penzance",
+              "en": "Penzance"
+            },
+            "countryCode": "GB",
+            "lat": 50.1186,
+            "lng": -5.5371,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Falmouth",
+              "en": "Falmouth"
+            },
+            "countryCode": "GB",
+            "lat": 50.1532,
+            "lng": -5.0663,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Fowey",
+              "en": "Fowey"
+            },
+            "countryCode": "GB",
+            "lat": 50.336,
+            "lng": -4.637,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Dartmouth",
+              "en": "Dartmouth"
+            },
+            "countryCode": "GB",
+            "lat": 50.3515,
+            "lng": -3.5794,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Exeter",
+              "en": "Exeter"
+            },
+            "countryCode": "GB",
+            "lat": 50.7184,
+            "lng": -3.5339,
+            "codes": [
+              "EXT"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 65,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bristol",
+              "en": "Bristol"
+            },
+            "countryCode": "GB",
+            "lat": 51.4545,
+            "lng": -2.5879,
+            "codes": [
+              "BRS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Los pueblos de Cornualles están mal comunicados entre sí: con coche (por la izquierda y por carreteras muy estrechas) se aprovecha mucho más. En agosto se llena: reserva pronto.",
+      "en": "Cornish towns are poorly linked to each other: a car (on the left, on very narrow lanes) gets far more out of it. August is packed: book early."
+    }
+  },
+  "islandia": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Islandia",
+      "en": "Iceland"
+    },
+    "summary": {
+      "es": "Géiseres, cascadas como Skógafoss, playas de arena negra en Vík y los icebergs de Jökulsárlón: la naturaleza en estado puro.",
+      "en": "Geysers, waterfalls like Skógafoss, black-sand beaches at Vík and the icebergs of Jökulsárlón: nature at its rawest."
+    },
+    "countries": [
+      "IS"
+    ],
+    "reversible": false,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Reikiavik",
+              "en": "Reykjavík"
+            },
+            "countryCode": "IS",
+            "lat": 64.1466,
+            "lng": -21.9426,
+            "codes": [
+              "KEF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Círculo Dorado (Geysir)",
+              "en": "Golden Circle (Geysir)"
+            },
+            "countryCode": "IS",
+            "lat": 64.3104,
+            "lng": -20.3024,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 130,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Vík",
+              "en": "Vík"
+            },
+            "countryCode": "IS",
+            "lat": 63.4186,
+            "lng": -19.006,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Reikiavik",
+              "en": "Reykjavík"
+            },
+            "countryCode": "IS",
+            "lat": 64.1466,
+            "lng": -21.9426,
+            "codes": [
+              "KEF"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Reikiavik",
+              "en": "Reykjavík"
+            },
+            "countryCode": "IS",
+            "lat": 64.1466,
+            "lng": -21.9426,
+            "codes": [
+              "KEF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Círculo Dorado (Geysir)",
+              "en": "Golden Circle (Geysir)"
+            },
+            "countryCode": "IS",
+            "lat": 64.3104,
+            "lng": -20.3024,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 130,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Vík",
+              "en": "Vík"
+            },
+            "countryCode": "IS",
+            "lat": 63.4186,
+            "lng": -19.006,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Skaftafell (Jökulsárlón)",
+              "en": "Skaftafell (Jökulsárlón)"
+            },
+            "countryCode": "IS",
+            "lat": 64.016,
+            "lng": -16.966,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 300,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Reikiavik",
+              "en": "Reykjavík"
+            },
+            "countryCode": "IS",
+            "lat": 64.1466,
+            "lng": -21.9426,
+            "codes": [
+              "KEF"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Reikiavik",
+              "en": "Reykjavík"
+            },
+            "countryCode": "IS",
+            "lat": 64.1466,
+            "lng": -21.9426,
+            "codes": [
+              "KEF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Snæfellsnes (Grundarfjörður)",
+              "en": "Snæfellsnes (Grundarfjörður)"
+            },
+            "countryCode": "IS",
+            "lat": 64.9238,
+            "lng": -23.2584,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 210,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Círculo Dorado (Geysir)",
+              "en": "Golden Circle (Geysir)"
+            },
+            "countryCode": "IS",
+            "lat": 64.3104,
+            "lng": -20.3024,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 130,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Vík",
+              "en": "Vík"
+            },
+            "countryCode": "IS",
+            "lat": 63.4186,
+            "lng": -19.006,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Skaftafell (Jökulsárlón)",
+              "en": "Skaftafell (Jökulsárlón)"
+            },
+            "countryCode": "IS",
+            "lat": 64.016,
+            "lng": -16.966,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Höfn",
+              "en": "Höfn"
+            },
+            "countryCode": "IS",
+            "lat": 64.2539,
+            "lng": -15.2082,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 330,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Hella",
+              "en": "Hella"
+            },
+            "countryCode": "IS",
+            "lat": 63.8358,
+            "lng": -20.3998,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Reikiavik",
+              "en": "Reykjavík"
+            },
+            "countryCode": "IS",
+            "lat": 64.1466,
+            "lng": -21.9426,
+            "codes": [
+              "KEF"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En Islandia el viaje se hace en coche de alquiler desde el aeropuerto de Keflavík: los autobuses no llegan a casi nada. Fuera del verano, revisa el estado de las carreteras (road.is) cada día.",
+      "en": "Iceland is done by rental car from Keflavík airport: buses barely reach anything. Outside summer, check the road conditions (road.is) every day."
+    }
+  }
+}

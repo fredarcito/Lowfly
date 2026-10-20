@@ -4,7 +4,7 @@
 import * as more from "@/server/travelpayouts";
 import { getAirports } from "@/server/airports";
 import { getGraph } from "@/server/routeGraph";
-import { DAILY, pool } from "@/server/dailyPrices";
+import { legOf, routeFares } from "@/server/dailyPrices";
 import { chooseHubs } from "@/server/stopovers/hubs";
 import { combineLegs } from "@/server/stopovers/combine";
 import { connects, estimatedArrival, isGetaway, landingDay, stayMinutes } from "@/server/stopovers/connection";
@@ -17,44 +17,6 @@ export const HUB_NIGHTS = { connection: { min: 0, max: 1 }, escapada: { min: 1, 
 const RETURN_HUB_NIGHTS = { min: 0, max: 1 };
 
 const cityKey = (airport) => (airport ? `${airport.city}|${airport.countryCode}` : null);
-
-// The flights per day of every route asked ([{ dep, arr, airlines, from, to }]), each route and airline once over
-// the widest dates asked: Map "dep|arr" → [fares with from, to and airline]
-const routeFares = async (requests, failed) => {
-  const byRoute = new Map();
-  for (const request of requests)
-    for (const airline of request.airlines) {
-      const key = `${request.dep}|${request.arr}|${airline}`;
-      const known = byRoute.get(key);
-      if (!known) byRoute.set(key, { ...request, airline });
-      else byRoute.set(key, { ...known, from: request.from < known.from ? request.from : known.from, to: request.to > known.to ? request.to : known.to });
-    }
-  const jobs = [...byRoute.values()]
-    .filter((route) => DAILY[route.airline] && route.from <= route.to)
-    .map((route) => ({
-      airline: route.airline,
-      run: async () =>
-        (await DAILY[route.airline](route.dep, route.arr, route.from, route.to)).map((fare) => ({
-          ...fare,
-          airline: fare.airline ?? route.airline,
-          from: route.dep,
-          to: route.arr,
-        })),
-    }));
-  // Few at a time, so Wizz does not block us
-  const answers = await pool(jobs, failed, 3);
-  const fares = new Map();
-  for (const fare of answers.filter(Boolean).flat()) {
-    const key = `${fare.from}|${fare.to}`;
-    if (!fares.has(key)) fares.set(key, []);
-    fares.get(key).push(fare);
-  }
-  return fares;
-};
-
-// The flights of a leg (several routes) between two days
-const legOf = (fares, routes, from, to) =>
-  routes.flatMap((route) => fares.get(`${route.dep}|${route.arr}`) ?? []).filter((fare) => fare.day >= from && fare.day <= to);
 
 // Trips from `origin` to the airports `destinations` (codes) through a hub, leaving between `from` and `to`; with
 // `stay` ({ min, max } nights at the destination) a return trip, all of it within `from` to `to`.

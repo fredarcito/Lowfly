@@ -5,7 +5,8 @@ import { APP_NAME, getDictionary } from "@/i18n";
 import { getAirports } from "@/server/airports";
 import { ROUTES } from "@/constants/routes";
 import { alternatesOf, openGraphOf } from "@/utils/metadata";
-import { stopsFromParam } from "@/utils/manualTrips";
+import { multiCityRoute } from "@/server/multiCity/routes";
+import { isRouteTown, stopsFromParam } from "@/utils/manualTrips";
 
 export const generateMetadata = async ({ params }) => {
   const { lang } = await params;
@@ -29,10 +30,20 @@ const placeOf = async (code, lang) => {
   return { id: `airport-${code}`, name: airport.city, region: null, country: airport.country, countryCode: airport.countryCode, lat: airport.lat, lng: airport.lon, code };
 };
 
-// Every town of a ?stops=… link (a trip through a hub, from the search) with its days and times, or null
+// A town of a multi-city route ("italia-clasica/full/2", utils/manualTrips isRouteTown), or null
+const routeTownOf = (ref, lang) => {
+  const [id, version, index] = ref.split("/");
+  const town = multiCityRoute(id)?.versions[version]?.stops[Number(index)];
+  if (!town) return null;
+  const country = new Intl.DisplayNames([lang], { type: "region" }).of(town.countryCode) ?? town.countryCode;
+  return { id: `route-${ref}`, name: town.city[lang], region: null, country, countryCode: town.countryCode, lat: town.lat, lng: town.lng, code: town.codes[0] ?? null };
+};
+
+// Every town of a ?stops=… link (a trip through a hub or a multi-city route, from the search) with its days and
+// times, or null
 const stopsOf = async (text, lang) => {
   const stops = stopsFromParam(text);
-  const places = await Promise.all(stops.map((stop) => placeOf(stop.code, lang)));
+  const places = await Promise.all(stops.map((stop) => (isRouteTown(stop.code) ? routeTownOf(stop.code, lang) : placeOf(stop.code, lang))));
   const known = stops.map((stop, index) => ({ ...stop, place: places[index] })).filter((stop) => stop.place);
   return known.length ? known : null;
 };

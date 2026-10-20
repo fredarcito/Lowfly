@@ -7,8 +7,10 @@ Status (agreed 2026-10-19). Update this file as the pieces land.
 - Phase 4, results UI (kind chips, stopover card and list): **done**.
 - Saving a stopover trip ("Guardar viaje") with its towns, and its itinerary over all of them: **done**.
 - Stopovers on flexible dates: **done** (`outTo` / `backFrom`).
-- Pending: a global Wizz request budget and longer caching of stopover legs (before real traffic); stopovers in
-  weekend searches.
+- Throttling protection: **done** by `src/server/airlineGuard.js` (shared Redis cache, one request for many visitors,
+  a per-second limit per airline across instances, pause and stale answers after a block).
+- Pending: longer freshness for stopover legs if blocks show up (`docs/multi-city.md` 3b); stopovers in weekend
+  searches.
 
 ## Why
 

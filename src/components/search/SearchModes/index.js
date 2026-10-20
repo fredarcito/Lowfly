@@ -10,7 +10,7 @@ const SearchModes = ({ mode }) => {
   return (
     <section className="grid gap-4">
       <h2 className="font-heading text-xl font-bold tracking-tight">{texts.empty.title}</h2>
-      <div className="grid gap-3 sm:grid-cols-3">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {MODES.map(({ id, icon: Icon }) => (
           <div
             key={id}

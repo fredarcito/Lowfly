@@ -12,12 +12,14 @@ import FormField from "@/components/shared/FormField";
 import { useI18n } from "@/context/i18n";
 import { findAirport } from "@/hooks/useAirports";
 import { isStopoverOnly } from "@/utils/destinations";
+import { MAX_FREE_NIGHTS, MIN_FREE_NIGHTS } from "@/constants/multiCity";
 
 // The longest search range for each mode (a country means many airports, so many requests)
 const MAX_DAYS = { everywhere: 180, country: 120 };
 
-// The search form of each mode: anywhere (dates and price), to a destination (also the destination) and
-// flexible dates (destination, the trip's dates and how many days they may move). `onField(name, value)`.
+// The search form of each mode: anywhere (dates and price), to a destination (also the destination), flexible
+// dates (destination, the trip's dates and how many days they may move) and routes (the days you are free, 5 to 15).
+// `onField(name, value)`.
 const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }) => {
   const { texts } = useI18n();
   const shows = (...modes) => modes.includes(mode);
@@ -89,6 +91,27 @@ const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }
               <MaxPriceField id="max" value={form.max} placeholder={texts.form.noLimit} onChange={(price) => onField("max", price)} />
             </FormField>
           </>
+        )}
+
+        {shows("multiCity") && (
+          <FormField
+            id="free-dates"
+            label={texts.form.freeDates}
+            hint={texts.form.freeDatesHint(MIN_FREE_NIGHTS + 1, MAX_FREE_NIGHTS + 1)}
+            className="lg:col-span-6"
+          >
+            <DateRangeField
+              id="free-dates"
+              from={form.freeFrom}
+              to={form.freeTo}
+              minNights={MIN_FREE_NIGHTS}
+              maxNights={MAX_FREE_NIGHTS}
+              onChange={(from, to) => {
+                onField("freeFrom", from);
+                onField("freeTo", to);
+              }}
+            />
+          </FormField>
         )}
 
         {shows("trip") && (

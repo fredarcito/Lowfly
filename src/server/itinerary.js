@@ -11,7 +11,7 @@ import { placeFacts, searchPlace } from "@/server/wikipedia";
 import { normalize } from "@/utils/format";
 import { daysBetween } from "@/utils/dates";
 import { km } from "@/utils/itinerary";
-import { MAX_TRIP_DAYS } from "@/constants/manualTrips";
+import { MAX_TOWN_DAYS, MAX_TRIP_DAYS } from "@/constants/manualTrips";
 
 // Places farther than this from the destination airport are not on this trip (a wrong guess by the model).
 // It also bounds day trips: about 2 hours away at most.
@@ -459,7 +459,7 @@ const planDays = async ({ lang, city, country, destination, dates, travel, prefe
 // trip: { origin, code, city, country, out: { day, time, arrive }, ret?: { day, time } }
 export const createItinerary = async ({ trip, lang, preferences, onAiCall }) => {
   const dates = daysBetween(trip.out.day, trip.ret?.day ?? trip.out.day);
-  if (dates.length > MAX_TRIP_DAYS) throw new AppError("aiTooLong", { max: MAX_TRIP_DAYS }, 400);
+  if (dates.length > MAX_TOWN_DAYS) throw new AppError("aiTooLong", { max: MAX_TOWN_DAYS }, 400);
 
   const { airports } = await getAirports(lang);
   const airport = airports.find((candidate) => candidate.code === trip.code);
@@ -662,6 +662,7 @@ export const createStopsItinerary = async ({ stops, lang, preferences, onAiCall 
   const datesOf = (stop) => daysBetween(stop.arrive.day, stop.leave.day);
   const allDates = new Set(stops.flatMap(datesOf));
   if (allDates.size > MAX_TRIP_DAYS) throw new AppError("aiTooLong", { max: MAX_TRIP_DAYS }, 400);
+  if (stops.some((stop) => datesOf(stop).length > MAX_TOWN_DAYS)) throw new AppError("aiTooLong", { max: MAX_TOWN_DAYS }, 400);
 
   const plans = await Promise.all(
     stops.map((stop, index) => {

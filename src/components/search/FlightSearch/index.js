@@ -13,14 +13,25 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import CountryResults from "@/components/search/results/CountryResults";
 import EverywhereResults from "@/components/search/results/EverywhereResults";
 import FlexibleResults from "@/components/search/results/FlexibleResults";
+import MultiCityResults from "@/components/search/results/MultiCityResults";
+import MultiCityPromo from "@/components/search/MultiCityPromo";
 import { useI18n } from "@/context/i18n";
 import { findAirport, useAirports } from "@/hooks/useAirports";
 import { useFlightSearch } from "@/components/search/FlightSearch/hooks/useFlightSearch";
 import { useSearchForm } from "@/components/search/FlightSearch/hooks/useSearchForm";
 import { ENTER_RISE } from "@/constants/motion";
+import { MAX_FREE_NIGHTS, MIN_FREE_NIGHTS } from "@/constants/multiCity";
 import { cn } from "@/utils/cn";
+import { nightsBetween } from "@/utils/dates";
 
-const RESULTS = { everywhere: EverywhereResults, country: CountryResults, trip: FlexibleResults };
+const RESULTS = { everywhere: EverywhereResults, country: CountryResults, trip: FlexibleResults, multiCity: MultiCityResults };
+
+// An "A cualquier sitio" search whose dates are enough for a route (5 to 15 days)
+const fitsRoute = (query) => {
+  if (query?.mode !== "everywhere" || !query.from || !query.to) return false;
+  const nights = nightsBetween(query.from, query.to);
+  return nights >= MIN_FREE_NIGHTS && nights <= MAX_FREE_NIGHTS;
+};
 
 // The home page: the header, the search card (the form, or a one-line summary of the search while showing
 // its results) and below it what there is before searching, the progress, an error or the results.
@@ -48,6 +59,14 @@ const FlightSearch = () => {
     setForm(weekendForm);
     setMode("everywhere");
     flightSearch.search(weekendForm, "everywhere");
+  };
+
+  // "Ver recorridos con estas fechas" under the "A cualquier sitio" results: the same days in the routes search
+  const searchRoutes = () => {
+    const routesForm = { ...form, freeFrom: query.from, freeTo: query.to };
+    setForm(routesForm);
+    setMode("multiCity");
+    flightSearch.search(routesForm, "multiCity");
   };
 
   const Results = result.status === "done" && result.mode === mode ? RESULTS[mode] : null;
@@ -99,6 +118,7 @@ const FlightSearch = () => {
           <div className="grid gap-8 duration-500 animate-in fade-in slide-in-from-bottom-4 motion-reduce:animate-none">
             {/* A new search starts its results afresh (a kind of trip picked before does not stay) */}
             <Results key={result.searchId} data={result.data} stopovers={result.stopovers} />
+            {fitsRoute(query) && <MultiCityPromo onSearch={searchRoutes} />}
           </div>
         )}
       </main>

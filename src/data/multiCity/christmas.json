@@ -1,0 +1,1140 @@
+{
+  "navidad-en-alsacia": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Navidad en Alsacia",
+      "en": "Christmas in Alsace"
+    },
+    "summary": {
+      "es": "Estrasburgo, Colmar y los pueblos de la ruta del vino iluminados, entre casas de entramado y vino caliente.",
+      "en": "Strasbourg, Colmar and the wine-route villages lit up, among half-timbered houses and mulled wine."
+    },
+    "countries": [
+      "FR",
+      "DE",
+      "CH"
+    ],
+    "reversible": true,
+    "months": [
+      11,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Estrasburgo",
+              "en": "Strasbourg"
+            },
+            "countryCode": "FR",
+            "lat": 48.5818,
+            "lng": 7.7509,
+            "codes": [
+              "FKB",
+              "BSL"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Colmar",
+              "en": "Colmar"
+            },
+            "countryCode": "FR",
+            "lat": 48.0794,
+            "lng": 7.3585,
+            "codes": [
+              "BSL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Basilea",
+              "en": "Basel"
+            },
+            "countryCode": "CH",
+            "lat": 47.5596,
+            "lng": 7.5886,
+            "codes": [
+              "BSL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Baden-Baden",
+              "en": "Baden-Baden"
+            },
+            "countryCode": "DE",
+            "lat": 48.7606,
+            "lng": 8.2398,
+            "codes": [
+              "FKB",
+              "STR"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Estrasburgo",
+              "en": "Strasbourg"
+            },
+            "countryCode": "FR",
+            "lat": 48.5818,
+            "lng": 7.7509,
+            "codes": [
+              "FKB",
+              "BSL"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 80,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Riquewihr",
+              "en": "Riquewihr"
+            },
+            "countryCode": "FR",
+            "lat": 48.1667,
+            "lng": 7.2978,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Colmar",
+              "en": "Colmar"
+            },
+            "countryCode": "FR",
+            "lat": 48.0794,
+            "lng": 7.3585,
+            "codes": [
+              "BSL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Basilea",
+              "en": "Basel"
+            },
+            "countryCode": "CH",
+            "lat": 47.5596,
+            "lng": 7.5886,
+            "codes": [
+              "BSL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Estrasburgo no tiene vuelos de Ryanair ni Wizz: se llega por Karlsruhe/Baden-Baden (o Stuttgart) y se vuelve desde Basilea-Mulhouse, o al revés. Mercadillos: el Christkindelsmärik de Estrasburgo (desde 1570, de los más antiguos de Francia), los seis de Colmar, los de Riquewihr, Kaysersberg y Eguisheim (algunos solo en fin de semana), el de la Münsterplatz de Basilea y el Christkindelsmarkt de Baden-Baden. A Riquewihr se va en bus desde Colmar. Las fechas cambian cada año: compruébalas antes de reservar. Hace frío y anochece hacia las 16:30: abrígate y aprovecha la mañana.",
+      "en": "Strasbourg has no Ryanair or Wizz flights: fly into Karlsruhe/Baden-Baden (or Stuttgart) and home from Basel-Mulhouse, or the other way round. Markets: Strasbourg's Christkindelsmärik (since 1570, one of the oldest in France), Colmar's six, those of Riquewihr, Kaysersberg and Eguisheim (some only at weekends), Basel's on the Münsterplatz and Baden-Baden's Christkindelsmarkt. Riquewihr is a bus ride from Colmar. The dates change every year: check them before booking. It is cold and dark by about 4:30 pm: wrap up and make the most of the mornings."
+    },
+    "season": {
+      "from": "11-27",
+      "to": "12-23",
+      "name": {
+        "es": "Mercadillos de Navidad",
+        "en": "Christmas markets"
+      }
+    }
+  },
+  "navidad-en-baviera": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Navidad en Baviera",
+      "en": "Christmas in Bavaria"
+    },
+    "summary": {
+      "es": "Núremberg, Rothenburg, Múnich y Salzburgo: los mercadillos más famosos de Alemania, con pan de especias y salchichas a la brasa.",
+      "en": "Nuremberg, Rothenburg, Munich and Salzburg: Germany's most famous markets, with gingerbread and grilled sausages."
+    },
+    "countries": [
+      "DE",
+      "AT"
+    ],
+    "reversible": true,
+    "months": [
+      11,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Núremberg",
+              "en": "Nuremberg"
+            },
+            "countryCode": "DE",
+            "lat": 49.4538,
+            "lng": 11.0773,
+            "codes": [
+              "NUE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Múnich",
+              "en": "Munich"
+            },
+            "countryCode": "DE",
+            "lat": 48.1372,
+            "lng": 11.5755,
+            "codes": [
+              "FMM"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bamberg",
+              "en": "Bamberg"
+            },
+            "countryCode": "DE",
+            "lat": 49.8988,
+            "lng": 10.9028,
+            "codes": [
+              "NUE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Núremberg",
+              "en": "Nuremberg"
+            },
+            "countryCode": "DE",
+            "lat": 49.4538,
+            "lng": 11.0773,
+            "codes": [
+              "NUE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Rothenburg ob der Tauber",
+              "en": "Rothenburg ob der Tauber"
+            },
+            "countryCode": "DE",
+            "lat": 49.3772,
+            "lng": 10.1867,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Múnich",
+              "en": "Munich"
+            },
+            "countryCode": "DE",
+            "lat": 48.1372,
+            "lng": 11.5755,
+            "codes": [
+              "FMM"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Salzburgo",
+              "en": "Salzburg"
+            },
+            "countryCode": "AT",
+            "lat": 47.8095,
+            "lng": 13.055,
+            "codes": [
+              "SZG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "salzburg-1-day"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Mercadillos: el Christkindlesmarkt de Núremberg (de los más famosos de Alemania), el Reiterlesmarkt de Rothenburg, el de Bamberg con su ruta de belenes, el Christkindlmarkt de Marienplatz en Múnich y el de la catedral de Salzburgo. Múnich no tiene Ryanair ni Wizz: su aeropuerto más cercano con ellas es Memmingen (unos 110 km, hay bus directo). Las fechas cambian cada año: compruébalas antes de reservar. Hace mucho frío y anochece hacia las 16:30: lleva ropa de abrigo.",
+      "en": "Markets: Nuremberg's Christkindlesmarkt (one of Germany's most famous), Rothenburg's Reiterlesmarkt, Bamberg's with its nativity-scene trail, the Christkindlmarkt on Munich's Marienplatz and Salzburg's by the cathedral. Munich has no Ryanair or Wizz: the nearest airport with them is Memmingen (about 110 km, with a direct bus). The dates change every year: check them before booking. It is very cold and dark by about 4:30 pm: bring warm clothes."
+    },
+    "season": {
+      "from": "11-27",
+      "to": "12-23",
+      "name": {
+        "es": "Mercadillos de Navidad",
+        "en": "Christmas markets"
+      }
+    }
+  },
+  "navidad-en-el-rin": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Navidad en el Rin",
+      "en": "Christmas on the Rhine"
+    },
+    "summary": {
+      "es": "Colonia, Düsseldorf, Aquisgrán y Coblenza: mercadillos a la sombra de catedrales y a orillas del Rin.",
+      "en": "Cologne, Düsseldorf, Aachen and Koblenz: markets beneath cathedrals and along the Rhine."
+    },
+    "countries": [
+      "DE"
+    ],
+    "reversible": true,
+    "months": [
+      11,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Colonia",
+              "en": "Cologne"
+            },
+            "countryCode": "DE",
+            "lat": 50.9375,
+            "lng": 6.9603,
+            "codes": [
+              "CGN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Düsseldorf",
+              "en": "Düsseldorf"
+            },
+            "countryCode": "DE",
+            "lat": 51.2277,
+            "lng": 6.7735,
+            "codes": [
+              "CGN",
+              "NRN",
+              "DTM"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Coblenza",
+              "en": "Koblenz"
+            },
+            "countryCode": "DE",
+            "lat": 50.3569,
+            "lng": 7.589,
+            "codes": [
+              "CGN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Colonia",
+              "en": "Cologne"
+            },
+            "countryCode": "DE",
+            "lat": 50.9375,
+            "lng": 6.9603,
+            "codes": [
+              "CGN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Aquisgrán",
+              "en": "Aachen"
+            },
+            "countryCode": "DE",
+            "lat": 50.7753,
+            "lng": 6.0839,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Düsseldorf",
+              "en": "Düsseldorf"
+            },
+            "countryCode": "DE",
+            "lat": 51.2277,
+            "lng": 6.7735,
+            "codes": [
+              "CGN",
+              "NRN",
+              "DTM"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Mercadillos: los de Colonia (el de la catedral, el de Heumarkt y el del puerto, entre otros), el de Düsseldorf repartido por el casco antiguo, el de la catedral de Aquisgrán con sus Printen (galletas de especias) y el de Coblenza en sus plazas. Düsseldorf no tiene Ryanair ni Wizz: vuela a Colonia, Weeze (unos 80 km) o Dortmund. Las fechas cambian cada año: compruébalas antes de reservar. Hace frío, llueve a menudo y anochece hacia las 16:30.",
+      "en": "Markets: Cologne's (by the cathedral, on the Heumarkt and at the harbour, among others), Düsseldorf's spread across the old town, the one by Aachen cathedral with its Printen (spiced biscuits) and Koblenz's in its squares. Düsseldorf has no Ryanair or Wizz: fly to Cologne, Weeze (about 80 km) or Dortmund. The dates change every year: check them before booking. It is cold, often rainy and dark by about 4:30 pm."
+    },
+    "season": {
+      "from": "11-20",
+      "to": "12-22",
+      "name": {
+        "es": "Mercadillos de Navidad",
+        "en": "Christmas markets"
+      }
+    }
+  },
+  "navidad-berlin-dresde-praga": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Navidad: Berlín, Dresde y Praga",
+      "en": "Christmas: Berlin, Dresden and Prague"
+    },
+    "summary": {
+      "es": "Del Gendarmenmarkt de Berlín al Striezelmarkt de Dresde y la plaza de la Ciudad Vieja de Praga, en tren por el Elba.",
+      "en": "From Berlin's Gendarmenmarkt to Dresden's Striezelmarkt and Prague's Old Town Square, by train along the Elbe."
+    },
+    "countries": [
+      "DE",
+      "CZ"
+    ],
+    "reversible": true,
+    "months": [
+      11,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Berlín",
+              "en": "Berlin"
+            },
+            "countryCode": "DE",
+            "lat": 52.52,
+            "lng": 13.405,
+            "codes": [
+              "BER"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "berlin-3-days",
+            "land": {
+              "minutes": 115,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Dresde",
+              "en": "Dresden"
+            },
+            "countryCode": "DE",
+            "lat": 51.0504,
+            "lng": 13.7373,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 145,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0875,
+            "lng": 14.4213,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "prague-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Berlín",
+              "en": "Berlin"
+            },
+            "countryCode": "DE",
+            "lat": 52.52,
+            "lng": 13.405,
+            "codes": [
+              "BER"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "berlin-3-days",
+            "land": {
+              "minutes": 115,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Dresde",
+              "en": "Dresden"
+            },
+            "countryCode": "DE",
+            "lat": 51.0504,
+            "lng": 13.7373,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 145,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0875,
+            "lng": 14.4213,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Mercadillos: los de Berlín (Gendarmenmarkt, Charlottenburg, Alexanderplatz…), el Striezelmarkt de Dresde (de 1434, el más antiguo de Alemania, con su Stollen) y los de la plaza de la Ciudad Vieja y la plaza de Wenceslao en Praga. Dresde no tiene Ryanair ni Wizz: se visita en tren entre Berlín y Praga. Las fechas cambian cada año: compruébalas antes de reservar. Hace mucho frío y anochece hacia las 16:00: abrígate bien.",
+      "en": "Markets: Berlin's (Gendarmenmarkt, Charlottenburg, Alexanderplatz…), Dresden's Striezelmarkt (from 1434, Germany's oldest, with its Stollen) and those on Prague's Old Town Square and Wenceslas Square. Dresden has no Ryanair or Wizz: visit it by train between Berlin and Prague. The dates change every year: check them before booking. It is very cold and dark by about 4 pm: wrap up well."
+    },
+    "season": {
+      "from": "11-28",
+      "to": "12-23",
+      "name": {
+        "es": "Mercadillos de Navidad",
+        "en": "Christmas markets"
+      }
+    }
+  },
+  "navidad-en-centroeuropa": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Navidad en Centroeuropa",
+      "en": "Christmas in Central Europe"
+    },
+    "summary": {
+      "es": "Praga, Viena, Bratislava y Budapest: mercadillos imperiales, ponche y pistas de hielo junto al Danubio.",
+      "en": "Prague, Vienna, Bratislava and Budapest: imperial markets, punch and ice rinks along the Danube."
+    },
+    "countries": [
+      "CZ",
+      "AT",
+      "SK",
+      "HU"
+    ],
+    "reversible": true,
+    "months": [
+      11,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0875,
+            "lng": 14.4213,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days",
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Viena",
+              "en": "Vienna"
+            },
+            "countryCode": "AT",
+            "lat": 48.2082,
+            "lng": 16.3738,
+            "codes": [
+              "VIE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "vienna-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0875,
+            "lng": 14.4213,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days",
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Viena",
+              "en": "Vienna"
+            },
+            "countryCode": "AT",
+            "lat": 48.2082,
+            "lng": 16.3738,
+            "codes": [
+              "VIE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "vienna-3-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bratislava",
+              "en": "Bratislava"
+            },
+            "countryCode": "SK",
+            "lat": 48.1486,
+            "lng": 17.1077,
+            "codes": [
+              "BTS",
+              "VIE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "bratislava-1-day",
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Budapest",
+              "en": "Budapest"
+            },
+            "countryCode": "HU",
+            "lat": 47.4979,
+            "lng": 19.0402,
+            "codes": [
+              "BUD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "budapest-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Mercadillos: los de la plaza de la Ciudad Vieja y la plaza de Wenceslao en Praga, el Christkindlmarkt del Ayuntamiento y el de Schönbrunn en Viena, el de la plaza Mayor de Bratislava y los de la plaza Vörösmarty y la basílica de San Esteban en Budapest. El aeropuerto de Viena está a una hora de Bratislava: puedes volar a uno y volver desde el otro. Las fechas cambian cada año: compruébalas antes de reservar. Hace mucho frío y anochece hacia las 16:00.",
+      "en": "Markets: those on Prague's Old Town Square and Wenceslas Square, Vienna's Christkindlmarkt at the City Hall and the one at Schönbrunn, Bratislava's Main Square and Budapest's on Vörösmarty Square and by St Stephen's Basilica. Vienna airport is an hour from Bratislava: you can fly into one and home from the other. The dates change every year: check them before booking. It is very cold and dark by about 4 pm."
+    },
+    "season": {
+      "from": "11-28",
+      "to": "12-23",
+      "name": {
+        "es": "Mercadillos de Navidad",
+        "en": "Christmas markets"
+      }
+    }
+  },
+  "navidad-en-polonia": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Navidad en Polonia",
+      "en": "Christmas in Poland"
+    },
+    "summary": {
+      "es": "Breslavia, Cracovia, Varsovia y Gdansk: plazas medievales iluminadas, pierogi y precios que sorprenden.",
+      "en": "Wrocław, Kraków, Warsaw and Gdańsk: lit-up medieval squares, pierogi and surprisingly low prices."
+    },
+    "countries": [
+      "PL"
+    ],
+    "reversible": true,
+    "months": [
+      11,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Breslavia",
+              "en": "Wrocław"
+            },
+            "countryCode": "PL",
+            "lat": 51.11,
+            "lng": 17.032,
+            "codes": [
+              "WRO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 195,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0617,
+            "lng": 19.9373,
+            "codes": [
+              "KRK"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "krakow-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Gdansk",
+              "en": "Gdańsk"
+            },
+            "countryCode": "PL",
+            "lat": 54.3486,
+            "lng": 18.6532,
+            "codes": [
+              "GDN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 170,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Varsovia",
+              "en": "Warsaw"
+            },
+            "countryCode": "PL",
+            "lat": 52.2497,
+            "lng": 21.0122,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "warsaw-2-days",
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0617,
+            "lng": 19.9373,
+            "codes": [
+              "KRK"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "krakow-2-days",
+            "land": {
+              "minutes": 195,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Breslavia",
+              "en": "Wrocław"
+            },
+            "countryCode": "PL",
+            "lat": 51.11,
+            "lng": 17.032,
+            "codes": [
+              "WRO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Mercadillos: el de la plaza del Mercado de Breslavia (de los más grandes de Polonia), el de la plaza del Mercado de Cracovia, el del casco antiguo de Varsovia y el del mercado del Carbón de Gdansk, con su noria. Las fechas cambian cada año: compruébalas antes de reservar. Hace mucho frío, sobre todo en Gdansk junto al Báltico, y anochece hacia las 15:30.",
+      "en": "Markets: the one on Wrocław's Market Square (one of the biggest in Poland), Kraków's Main Market Square, Warsaw's old town and Gdańsk's on the Coal Market, with its big wheel. The dates change every year: check them before booking. It is very cold, especially in Gdańsk by the Baltic, and dark by about 3:30 pm."
+    },
+    "season": {
+      "from": "11-28",
+      "to": "12-23",
+      "name": {
+        "es": "Mercadillos de Navidad",
+        "en": "Christmas markets"
+      }
+    }
+  },
+  "navidad-en-el-baltico": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Navidad en el Báltico",
+      "en": "Christmas in the Baltics"
+    },
+    "summary": {
+      "es": "Tallin y Riga bajo la nieve: cascos medievales, mercadillos al calor de la hoguera y vino caliente.",
+      "en": "Tallinn and Riga under the snow: medieval old towns, markets by the fire and mulled wine."
+    },
+    "countries": [
+      "EE",
+      "LV"
+    ],
+    "reversible": true,
+    "months": [
+      11,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tallin",
+              "en": "Tallinn"
+            },
+            "countryCode": "EE",
+            "lat": 59.4372,
+            "lng": 24.745,
+            "codes": [
+              "TLL"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "tallinn-1-day",
+            "land": {
+              "minutes": 270,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Riga",
+              "en": "Riga"
+            },
+            "countryCode": "LV",
+            "lat": 56.9496,
+            "lng": 24.1052,
+            "codes": [
+              "RIX"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "riga-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tallin",
+              "en": "Tallinn"
+            },
+            "countryCode": "EE",
+            "lat": 59.4372,
+            "lng": 24.745,
+            "codes": [
+              "TLL"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "tallinn-1-day",
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Tartu",
+              "en": "Tartu"
+            },
+            "countryCode": "EE",
+            "lat": 58.378,
+            "lng": 26.729,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Riga",
+              "en": "Riga"
+            },
+            "countryCode": "LV",
+            "lat": 56.9496,
+            "lng": 24.1052,
+            "codes": [
+              "RIX"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "riga-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Mercadillos: el de la plaza del Ayuntamiento de Tallin, junto a uno de los primeros árboles de Navidad públicos de Europa, el de Tartu y el de la plaza de la Catedral de Riga, ciudad que también presume de haber tenido el primer árbol de Navidad. Siguen abiertos hasta primeros de enero. Las fechas cambian cada año: compruébalas antes de reservar. Hace muchísimo frío (a menudo bajo cero) y anochece hacia las 15:30: abrígate de verdad.",
+      "en": "Markets: the one on Tallinn's Town Hall Square, by one of Europe's first public Christmas trees, Tartu's and the one on Riga's Cathedral Square, a city that also claims the first Christmas tree. They stay open until early January. The dates change every year: check them before booking. It is bitterly cold (often below zero) and dark by about 3:30 pm: wrap up properly."
+    },
+    "season": {
+      "from": "11-28",
+      "to": "01-04",
+      "name": {
+        "es": "Mercadillos de Navidad",
+        "en": "Christmas markets"
+      }
+    }
+  }
+}

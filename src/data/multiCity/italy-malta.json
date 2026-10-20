@@ -1,0 +1,3534 @@
+{
+  "italia-clasica": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Italia clásica",
+      "en": "Classic Italy"
+    },
+    "summary": {
+      "es": "Canales en Venecia, Renacimiento en Florencia y ruinas en Roma: el viaje por Italia que siempre has querido hacer.",
+      "en": "Canals in Venice, the Renaissance in Florence and ruins in Rome: the Italy trip you have always wanted to do."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Venecia",
+              "en": "Venice"
+            },
+            "countryCode": "IT",
+            "lat": 45.4408,
+            "lng": 12.3155,
+            "codes": [
+              "VCE",
+              "TSF"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "venice-2-days",
+            "land": {
+              "minutes": 125,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Florencia",
+              "en": "Florence"
+            },
+            "countryCode": "IT",
+            "lat": 43.7696,
+            "lng": 11.2558,
+            "codes": [
+              "FLR",
+              "PSA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "florence-2-days",
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Roma",
+              "en": "Rome"
+            },
+            "countryCode": "IT",
+            "lat": 41.9028,
+            "lng": 12.4964,
+            "codes": [
+              "FCO",
+              "CIA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "rome-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Venecia",
+              "en": "Venice"
+            },
+            "countryCode": "IT",
+            "lat": 45.4408,
+            "lng": 12.3155,
+            "codes": [
+              "VCE",
+              "TSF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "venice-2-days",
+            "land": {
+              "minutes": 95,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bolonia",
+              "en": "Bologna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4949,
+            "lng": 11.3426,
+            "codes": [
+              "BLQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "bologna-1-day",
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Florencia",
+              "en": "Florence"
+            },
+            "countryCode": "IT",
+            "lat": 43.7696,
+            "lng": 11.2558,
+            "codes": [
+              "FLR",
+              "PSA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "florence-2-days",
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Roma",
+              "en": "Rome"
+            },
+            "countryCode": "IT",
+            "lat": 41.9028,
+            "lng": 12.4964,
+            "codes": [
+              "FCO",
+              "CIA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "rome-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Venecia",
+              "en": "Venice"
+            },
+            "countryCode": "IT",
+            "lat": 45.4408,
+            "lng": 12.3155,
+            "codes": [
+              "VCE",
+              "TSF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "venice-2-days",
+            "land": {
+              "minutes": 95,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bolonia",
+              "en": "Bologna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4949,
+            "lng": 11.3426,
+            "codes": [
+              "BLQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "bologna-1-day",
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Florencia",
+              "en": "Florence"
+            },
+            "countryCode": "IT",
+            "lat": 43.7696,
+            "lng": 11.2558,
+            "codes": [
+              "FLR",
+              "PSA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "florence-2-days",
+            "land": {
+              "minutes": 80,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Siena",
+              "en": "Siena"
+            },
+            "countryCode": "IT",
+            "lat": 43.3188,
+            "lng": 11.3308,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Roma",
+              "en": "Rome"
+            },
+            "countryCode": "IT",
+            "lat": 41.9028,
+            "lng": 12.4964,
+            "codes": [
+              "FCO",
+              "CIA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "rome-3-days",
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Nápoles",
+              "en": "Naples"
+            },
+            "countryCode": "IT",
+            "lat": 40.8518,
+            "lng": 14.2681,
+            "codes": [
+              "NAP"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "naples-2-days"
+          }
+        ]
+      }
+    }
+  },
+  "norte-de-italia-y-lagos": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Norte de Italia y lagos",
+      "en": "Northern Italy and the lakes"
+    },
+    "summary": {
+      "es": "Del Duomo de Milán a los pueblos del lago de Como y de ahí a Verona y Venecia, todo en tren.",
+      "en": "From Milan's Duomo to the villages of Lake Como, then on to Verona and Venice, all by train."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Milán",
+              "en": "Milan"
+            },
+            "countryCode": "IT",
+            "lat": 45.4642,
+            "lng": 9.19,
+            "codes": [
+              "BGY",
+              "MXP",
+              "LIN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "milan-2-days",
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Varenna (lago de Como)",
+              "en": "Varenna (Lake Como)"
+            },
+            "countryCode": "IT",
+            "lat": 46.0106,
+            "lng": 9.2836,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bérgamo",
+              "en": "Bergamo"
+            },
+            "countryCode": "IT",
+            "lat": 45.6983,
+            "lng": 9.6773,
+            "codes": [
+              "BGY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Milán",
+              "en": "Milan"
+            },
+            "countryCode": "IT",
+            "lat": 45.4642,
+            "lng": 9.19,
+            "codes": [
+              "BGY",
+              "MXP",
+              "LIN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "milan-2-days",
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Varenna (lago de Como)",
+              "en": "Varenna (Lake Como)"
+            },
+            "countryCode": "IT",
+            "lat": 46.0106,
+            "lng": 9.2836,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bérgamo",
+              "en": "Bergamo"
+            },
+            "countryCode": "IT",
+            "lat": 45.6983,
+            "lng": 9.6773,
+            "codes": [
+              "BGY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 110,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Verona",
+              "en": "Verona"
+            },
+            "countryCode": "IT",
+            "lat": 45.4384,
+            "lng": 10.9916,
+            "codes": [
+              "VRN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "verona-1-day",
+            "land": {
+              "minutes": 85,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Venecia",
+              "en": "Venice"
+            },
+            "countryCode": "IT",
+            "lat": 45.4408,
+            "lng": 12.3155,
+            "codes": [
+              "VCE",
+              "TSF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "venice-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Milán",
+              "en": "Milan"
+            },
+            "countryCode": "IT",
+            "lat": 45.4642,
+            "lng": 9.19,
+            "codes": [
+              "BGY",
+              "MXP",
+              "LIN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "milan-2-days",
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Varenna (lago de Como)",
+              "en": "Varenna (Lake Como)"
+            },
+            "countryCode": "IT",
+            "lat": 46.0106,
+            "lng": 9.2836,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bérgamo",
+              "en": "Bergamo"
+            },
+            "countryCode": "IT",
+            "lat": 45.6983,
+            "lng": 9.6773,
+            "codes": [
+              "BGY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 110,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sirmione (lago de Garda)",
+              "en": "Sirmione (Lake Garda)"
+            },
+            "countryCode": "IT",
+            "lat": 45.4925,
+            "lng": 10.6086,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Verona",
+              "en": "Verona"
+            },
+            "countryCode": "IT",
+            "lat": 45.4384,
+            "lng": 10.9916,
+            "codes": [
+              "VRN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "verona-1-day",
+            "land": {
+              "minutes": 85,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Venecia",
+              "en": "Venice"
+            },
+            "countryCode": "IT",
+            "lat": 45.4408,
+            "lng": 12.3155,
+            "codes": [
+              "VCE",
+              "TSF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "venice-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En el lago de Como, los barcos entre Varenna, Bellagio y Menaggio son la mejor forma de moverse.",
+      "en": "On Lake Como, the boats between Varenna, Bellagio and Menaggio are the best way to get around."
+    }
+  },
+  "toscana": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Toscana",
+      "en": "Tuscany"
+    },
+    "summary": {
+      "es": "La torre de Pisa, las murallas de Lucca, Florencia y los pueblos medievales entre colinas y cipreses.",
+      "en": "Pisa's tower, Lucca's walls, Florence and medieval hill towns among cypresses."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Pisa",
+              "en": "Pisa"
+            },
+            "countryCode": "IT",
+            "lat": 43.7228,
+            "lng": 10.4017,
+            "codes": [
+              "PSA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lucca",
+              "en": "Lucca"
+            },
+            "countryCode": "IT",
+            "lat": 43.8429,
+            "lng": 10.5027,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Florencia",
+              "en": "Florence"
+            },
+            "countryCode": "IT",
+            "lat": 43.7696,
+            "lng": 11.2558,
+            "codes": [
+              "FLR",
+              "PSA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "florence-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Pisa",
+              "en": "Pisa"
+            },
+            "countryCode": "IT",
+            "lat": 43.7228,
+            "lng": 10.4017,
+            "codes": [
+              "PSA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lucca",
+              "en": "Lucca"
+            },
+            "countryCode": "IT",
+            "lat": 43.8429,
+            "lng": 10.5027,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 140,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Siena",
+              "en": "Siena"
+            },
+            "countryCode": "IT",
+            "lat": 43.3188,
+            "lng": 11.3308,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 80,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "San Gimignano",
+              "en": "San Gimignano"
+            },
+            "countryCode": "IT",
+            "lat": 43.4677,
+            "lng": 11.0431,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Florencia",
+              "en": "Florence"
+            },
+            "countryCode": "IT",
+            "lat": 43.7696,
+            "lng": 11.2558,
+            "codes": [
+              "FLR",
+              "PSA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "florence-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Pisa",
+              "en": "Pisa"
+            },
+            "countryCode": "IT",
+            "lat": 43.7228,
+            "lng": 10.4017,
+            "codes": [
+              "PSA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lucca",
+              "en": "Lucca"
+            },
+            "countryCode": "IT",
+            "lat": 43.8429,
+            "lng": 10.5027,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 140,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Siena",
+              "en": "Siena"
+            },
+            "countryCode": "IT",
+            "lat": 43.3188,
+            "lng": 11.3308,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Val d'Orcia (Pienza)",
+              "en": "Val d'Orcia (Pienza)"
+            },
+            "countryCode": "IT",
+            "lat": 43.0766,
+            "lng": 11.6789,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 100,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "San Gimignano",
+              "en": "San Gimignano"
+            },
+            "countryCode": "IT",
+            "lat": 43.4677,
+            "lng": 11.0431,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 100,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Florencia",
+              "en": "Florence"
+            },
+            "countryCode": "IT",
+            "lat": 43.7696,
+            "lng": 11.2558,
+            "codes": [
+              "FLR",
+              "PSA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "florence-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Para la Val d'Orcia y San Gimignano, mejor alquilar un coche: los autobuses entre pueblos son escasos.",
+      "en": "For the Val d'Orcia and San Gimignano a hire car is best: buses between the villages are scarce."
+    }
+  },
+  "napoles-y-costa-amalfitana": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Nápoles y la Costa Amalfitana",
+      "en": "Naples and the Amalfi Coast"
+    },
+    "summary": {
+      "es": "Pizza en Nápoles, las ruinas de Pompeya y pueblos colgados sobre el mar en la Costa Amalfitana.",
+      "en": "Pizza in Naples, the ruins of Pompeii and villages clinging to the cliffs of the Amalfi Coast."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Nápoles",
+              "en": "Naples"
+            },
+            "countryCode": "IT",
+            "lat": 40.8518,
+            "lng": 14.2681,
+            "codes": [
+              "NAP"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "naples-2-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pompeya",
+              "en": "Pompeii"
+            },
+            "countryCode": "IT",
+            "lat": 40.7462,
+            "lng": 14.4989,
+            "codes": [],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sorrento",
+              "en": "Sorrento"
+            },
+            "countryCode": "IT",
+            "lat": 40.6263,
+            "lng": 14.3757,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Nápoles",
+              "en": "Naples"
+            },
+            "countryCode": "IT",
+            "lat": 40.8518,
+            "lng": 14.2681,
+            "codes": [
+              "NAP"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "naples-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Nápoles",
+              "en": "Naples"
+            },
+            "countryCode": "IT",
+            "lat": 40.8518,
+            "lng": 14.2681,
+            "codes": [
+              "NAP"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "naples-2-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pompeya",
+              "en": "Pompeii"
+            },
+            "countryCode": "IT",
+            "lat": 40.7462,
+            "lng": 14.4989,
+            "codes": [],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sorrento",
+              "en": "Sorrento"
+            },
+            "countryCode": "IT",
+            "lat": 40.6263,
+            "lng": 14.3757,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Positano",
+              "en": "Positano"
+            },
+            "countryCode": "IT",
+            "lat": 40.6281,
+            "lng": 14.485,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Amalfi",
+              "en": "Amalfi"
+            },
+            "countryCode": "IT",
+            "lat": 40.634,
+            "lng": 14.6027,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 110,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Nápoles",
+              "en": "Naples"
+            },
+            "countryCode": "IT",
+            "lat": 40.8518,
+            "lng": 14.2681,
+            "codes": [
+              "NAP"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "naples-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Nápoles",
+              "en": "Naples"
+            },
+            "countryCode": "IT",
+            "lat": 40.8518,
+            "lng": 14.2681,
+            "codes": [
+              "NAP"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "naples-2-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pompeya",
+              "en": "Pompeii"
+            },
+            "countryCode": "IT",
+            "lat": 40.7462,
+            "lng": 14.4989,
+            "codes": [],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sorrento",
+              "en": "Sorrento"
+            },
+            "countryCode": "IT",
+            "lat": 40.6263,
+            "lng": 14.3757,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Capri",
+              "en": "Capri"
+            },
+            "countryCode": "IT",
+            "lat": 40.5507,
+            "lng": 14.2426,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Positano",
+              "en": "Positano"
+            },
+            "countryCode": "IT",
+            "lat": 40.6281,
+            "lng": 14.485,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Amalfi",
+              "en": "Amalfi"
+            },
+            "countryCode": "IT",
+            "lat": 40.634,
+            "lng": 14.6027,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Salerno",
+              "en": "Salerno"
+            },
+            "countryCode": "IT",
+            "lat": 40.6824,
+            "lng": 14.7681,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Nápoles",
+              "en": "Naples"
+            },
+            "countryCode": "IT",
+            "lat": 40.8518,
+            "lng": 14.2681,
+            "codes": [
+              "NAP"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "naples-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Pompeya se visita de paso en el tren Circumvesuviana. Los ferris de la costa y a Capri funcionan sobre todo de abril a octubre; fuera de temporada, autobús SITA.",
+      "en": "Pompeii is a stop on the Circumvesuviana train on the way. Ferries along the coast and to Capri run mostly from April to October; off season, take the SITA bus."
+    }
+  },
+  "sicilia": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Sicilia",
+      "en": "Sicily"
+    },
+    "summary": {
+      "es": "Mercados de Palermo, el Etna, el teatro griego de Taormina y la isla de Ortigia en Siracusa.",
+      "en": "Palermo's markets, Mount Etna, Taormina's Greek theatre and the island of Ortigia in Syracuse."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Catania",
+              "en": "Catania"
+            },
+            "countryCode": "IT",
+            "lat": 37.5079,
+            "lng": 15.083,
+            "codes": [
+              "CTA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Taormina",
+              "en": "Taormina"
+            },
+            "countryCode": "IT",
+            "lat": 37.8526,
+            "lng": 15.2866,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 130,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Siracusa",
+              "en": "Syracuse"
+            },
+            "countryCode": "IT",
+            "lat": 37.0755,
+            "lng": 15.2866,
+            "codes": [
+              "CTA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Palermo",
+              "en": "Palermo"
+            },
+            "countryCode": "IT",
+            "lat": 38.1157,
+            "lng": 13.3615,
+            "codes": [
+              "PMO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "palermo-2-days",
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cefalú",
+              "en": "Cefalù"
+            },
+            "countryCode": "IT",
+            "lat": 38.0389,
+            "lng": 14.0225,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Taormina",
+              "en": "Taormina"
+            },
+            "countryCode": "IT",
+            "lat": 37.8526,
+            "lng": 15.2866,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Catania",
+              "en": "Catania"
+            },
+            "countryCode": "IT",
+            "lat": 37.5079,
+            "lng": 15.083,
+            "codes": [
+              "CTA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Siracusa",
+              "en": "Syracuse"
+            },
+            "countryCode": "IT",
+            "lat": 37.0755,
+            "lng": 15.2866,
+            "codes": [
+              "CTA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Palermo",
+              "en": "Palermo"
+            },
+            "countryCode": "IT",
+            "lat": 38.1157,
+            "lng": 13.3615,
+            "codes": [
+              "PMO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "palermo-2-days",
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cefalú",
+              "en": "Cefalù"
+            },
+            "countryCode": "IT",
+            "lat": 38.0389,
+            "lng": 14.0225,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Taormina",
+              "en": "Taormina"
+            },
+            "countryCode": "IT",
+            "lat": 37.8526,
+            "lng": 15.2866,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Catania",
+              "en": "Catania"
+            },
+            "countryCode": "IT",
+            "lat": 37.5079,
+            "lng": 15.083,
+            "codes": [
+              "CTA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Siracusa",
+              "en": "Syracuse"
+            },
+            "countryCode": "IT",
+            "lat": 37.0755,
+            "lng": 15.2866,
+            "codes": [
+              "CTA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 130,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ragusa",
+              "en": "Ragusa"
+            },
+            "countryCode": "IT",
+            "lat": 36.9269,
+            "lng": 14.7255,
+            "codes": [
+              "CIY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 170,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Agrigento",
+              "en": "Agrigento"
+            },
+            "countryCode": "IT",
+            "lat": 37.3111,
+            "lng": 13.5765,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Trapani",
+              "en": "Trapani"
+            },
+            "countryCode": "IT",
+            "lat": 38.0176,
+            "lng": 12.5365,
+            "codes": [
+              "TPS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Por el sur (Ragusa, Agrigento, Trapani) los autobuses son pocos y lentos: un coche ayuda mucho.",
+      "en": "In the south (Ragusa, Agrigento, Trapani) buses are few and slow: a car helps a lot."
+    }
+  },
+  "puglia-y-matera": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Puglia y Matera",
+      "en": "Puglia and Matera"
+    },
+    "summary": {
+      "es": "Las cuevas de Matera, los trulli de Alberobello, pueblos blancos sobre el Adriático y el barroco de Lecce.",
+      "en": "Matera's cave dwellings, Alberobello's trulli, white towns on the Adriatic and baroque Lecce."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bari",
+              "en": "Bari"
+            },
+            "countryCode": "IT",
+            "lat": 41.1171,
+            "lng": 16.8719,
+            "codes": [
+              "BRI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Matera",
+              "en": "Matera"
+            },
+            "countryCode": "IT",
+            "lat": 40.6664,
+            "lng": 16.6043,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Alberobello",
+              "en": "Alberobello"
+            },
+            "countryCode": "IT",
+            "lat": 40.7847,
+            "lng": 17.2378,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lecce",
+              "en": "Lecce"
+            },
+            "countryCode": "IT",
+            "lat": 40.3515,
+            "lng": 18.175,
+            "codes": [
+              "BDS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bari",
+              "en": "Bari"
+            },
+            "countryCode": "IT",
+            "lat": 41.1171,
+            "lng": 16.8719,
+            "codes": [
+              "BRI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Matera",
+              "en": "Matera"
+            },
+            "countryCode": "IT",
+            "lat": 40.6664,
+            "lng": 16.6043,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Alberobello",
+              "en": "Alberobello"
+            },
+            "countryCode": "IT",
+            "lat": 40.7847,
+            "lng": 17.2378,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Polignano a Mare",
+              "en": "Polignano a Mare"
+            },
+            "countryCode": "IT",
+            "lat": 40.996,
+            "lng": 17.2195,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ostuni",
+              "en": "Ostuni"
+            },
+            "countryCode": "IT",
+            "lat": 40.729,
+            "lng": 17.5778,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 65,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lecce",
+              "en": "Lecce"
+            },
+            "countryCode": "IT",
+            "lat": 40.3515,
+            "lng": 18.175,
+            "codes": [
+              "BDS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bari",
+              "en": "Bari"
+            },
+            "countryCode": "IT",
+            "lat": 41.1171,
+            "lng": 16.8719,
+            "codes": [
+              "BRI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Matera",
+              "en": "Matera"
+            },
+            "countryCode": "IT",
+            "lat": 40.6664,
+            "lng": 16.6043,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Alberobello",
+              "en": "Alberobello"
+            },
+            "countryCode": "IT",
+            "lat": 40.7847,
+            "lng": 17.2378,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Polignano a Mare",
+              "en": "Polignano a Mare"
+            },
+            "countryCode": "IT",
+            "lat": 40.996,
+            "lng": 17.2195,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ostuni",
+              "en": "Ostuni"
+            },
+            "countryCode": "IT",
+            "lat": 40.729,
+            "lng": 17.5778,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Otranto",
+              "en": "Otranto"
+            },
+            "countryCode": "IT",
+            "lat": 40.1467,
+            "lng": 18.491,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lecce",
+              "en": "Lecce"
+            },
+            "countryCode": "IT",
+            "lat": 40.3515,
+            "lng": 18.175,
+            "codes": [
+              "BDS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Matera no tiene aeropuerto (se llega en tren desde Bari) y de Matera a Alberobello no hay tren directo: coche o autobús. Para el Valle de Itria, un coche lo pone todo más fácil. Se vuela de vuelta desde Brindisi, a 40 minutos de Lecce.",
+      "en": "Matera has no airport (trains run from Bari) and there is no direct train from Matera to Alberobello: car or bus. In the Itria Valley a car makes everything easier. You fly home from Brindisi, 40 minutes from Lecce."
+    }
+  },
+  "liguria-y-cinque-terre": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Liguria y Cinque Terre",
+      "en": "Liguria and the Cinque Terre"
+    },
+    "summary": {
+      "es": "Callejones de Génova, Portofino y los cinco pueblos de colores de Cinque Terre colgados sobre el mar.",
+      "en": "Genoa's alleys, Portofino and the five colourful Cinque Terre villages perched above the sea."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Génova",
+              "en": "Genoa"
+            },
+            "countryCode": "IT",
+            "lat": 44.4056,
+            "lng": 8.9463,
+            "codes": [
+              "GOA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cinque Terre",
+              "en": "Cinque Terre"
+            },
+            "countryCode": "IT",
+            "lat": 44.135,
+            "lng": 9.6847,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pisa",
+              "en": "Pisa"
+            },
+            "countryCode": "IT",
+            "lat": 43.7228,
+            "lng": 10.4017,
+            "codes": [
+              "PSA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Génova",
+              "en": "Genoa"
+            },
+            "countryCode": "IT",
+            "lat": 44.4056,
+            "lng": 8.9463,
+            "codes": [
+              "GOA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Santa Margherita Ligure (Portofino)",
+              "en": "Santa Margherita Ligure (Portofino)"
+            },
+            "countryCode": "IT",
+            "lat": 44.335,
+            "lng": 9.2111,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cinque Terre",
+              "en": "Cinque Terre"
+            },
+            "countryCode": "IT",
+            "lat": 44.135,
+            "lng": 9.6847,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pisa",
+              "en": "Pisa"
+            },
+            "countryCode": "IT",
+            "lat": 43.7228,
+            "lng": 10.4017,
+            "codes": [
+              "PSA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Génova",
+              "en": "Genoa"
+            },
+            "countryCode": "IT",
+            "lat": 44.4056,
+            "lng": 8.9463,
+            "codes": [
+              "GOA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Santa Margherita Ligure (Portofino)",
+              "en": "Santa Margherita Ligure (Portofino)"
+            },
+            "countryCode": "IT",
+            "lat": 44.335,
+            "lng": 9.2111,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cinque Terre",
+              "en": "Cinque Terre"
+            },
+            "countryCode": "IT",
+            "lat": 44.135,
+            "lng": 9.6847,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lucca",
+              "en": "Lucca"
+            },
+            "countryCode": "IT",
+            "lat": 43.8429,
+            "lng": 10.5027,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Florencia",
+              "en": "Florence"
+            },
+            "countryCode": "IT",
+            "lat": 43.7696,
+            "lng": 11.2558,
+            "codes": [
+              "FLR",
+              "PSA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "florence-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Entre los pueblos de Cinque Terre hay tren cada pocos minutos y senderos junto al mar; en verano, también barcos.",
+      "en": "A train runs every few minutes between the Cinque Terre villages, plus coastal paths; in summer, boats too."
+    }
+  },
+  "cerdena": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Cerdeña",
+      "en": "Sardinia"
+    },
+    "summary": {
+      "es": "Calas de agua turquesa, pueblos de colores y el archipiélago de La Maddalena, en coche de punta a punta.",
+      "en": "Turquoise coves, colourful towns and the La Maddalena archipelago, driving from end to end."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Alghero",
+              "en": "Alghero"
+            },
+            "countryCode": "IT",
+            "lat": 40.558,
+            "lng": 8.3191,
+            "codes": [
+              "AHO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Palau (La Maddalena)",
+              "en": "Palau (La Maddalena)"
+            },
+            "countryCode": "IT",
+            "lat": 41.1806,
+            "lng": 9.3824,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Olbia",
+              "en": "Olbia"
+            },
+            "countryCode": "IT",
+            "lat": 40.923,
+            "lng": 9.4965,
+            "codes": [
+              "OLB"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Cagliari",
+              "en": "Cagliari"
+            },
+            "countryCode": "IT",
+            "lat": 39.2238,
+            "lng": 9.1217,
+            "codes": [
+              "CAG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Bosa",
+              "en": "Bosa"
+            },
+            "countryCode": "IT",
+            "lat": 40.2985,
+            "lng": 8.498,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Alghero",
+              "en": "Alghero"
+            },
+            "countryCode": "IT",
+            "lat": 40.558,
+            "lng": 8.3191,
+            "codes": [
+              "AHO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Palau (La Maddalena)",
+              "en": "Palau (La Maddalena)"
+            },
+            "countryCode": "IT",
+            "lat": 41.1806,
+            "lng": 9.3824,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Olbia",
+              "en": "Olbia"
+            },
+            "countryCode": "IT",
+            "lat": 40.923,
+            "lng": 9.4965,
+            "codes": [
+              "OLB"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Cagliari",
+              "en": "Cagliari"
+            },
+            "countryCode": "IT",
+            "lat": 39.2238,
+            "lng": 9.1217,
+            "codes": [
+              "CAG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Villasimius",
+              "en": "Villasimius"
+            },
+            "countryCode": "IT",
+            "lat": 39.1407,
+            "lng": 9.5205,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Cala Gonone",
+              "en": "Cala Gonone"
+            },
+            "countryCode": "IT",
+            "lat": 40.2811,
+            "lng": 9.6303,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "San Teodoro",
+              "en": "San Teodoro"
+            },
+            "countryCode": "IT",
+            "lat": 40.77,
+            "lng": 9.672,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Palau (La Maddalena)",
+              "en": "Palau (La Maddalena)"
+            },
+            "countryCode": "IT",
+            "lat": 41.1806,
+            "lng": 9.3824,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Alghero",
+              "en": "Alghero"
+            },
+            "countryCode": "IT",
+            "lat": 40.558,
+            "lng": 8.3191,
+            "codes": [
+              "AHO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Cerdeña se recorre en coche: el transporte público entre pueblos y playas es muy escaso. Alquílalo en el aeropuerto de llegada.",
+      "en": "Sardinia is a road trip: public transport between towns and beaches is very limited. Hire a car at the arrival airport."
+    }
+  },
+  "malta-y-gozo": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Malta y Gozo",
+      "en": "Malta and Gozo"
+    },
+    "summary": {
+      "es": "Las murallas de La Valeta, Mdina y los acantilados y calas tranquilas de Gozo, a un ferri de distancia.",
+      "en": "Valletta's fortifications, Mdina and the cliffs and quiet coves of Gozo, a short ferry away."
+    },
+    "countries": [
+      "MT"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "La Valeta",
+              "en": "Valletta"
+            },
+            "countryCode": "MT",
+            "lat": 35.8989,
+            "lng": 14.5146,
+            "codes": [
+              "MLA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "valletta-2-days",
+            "land": {
+              "minutes": 75,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Gozo",
+              "en": "Gozo"
+            },
+            "countryCode": "MT",
+            "lat": 36.0443,
+            "lng": 14.2399,
+            "codes": [
+              "MLA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "El ferri rápido une La Valeta con Gozo en unos 45 minutos; el aeropuerto de Malta está a 1 h 30 de Gozo.",
+      "en": "The fast ferry links Valletta and Gozo in about 45 minutes; Malta airport is 1 h 30 from Gozo."
+    }
+  },
+  "dolomitas": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Dolomitas",
+      "en": "The Dolomites"
+    },
+    "summary": {
+      "es": "De Venecia a las cumbres de Cortina y Val Gardena, con lagos alpinos, refugios y pueblos tiroleses.",
+      "en": "From Venice to the peaks of Cortina and Val Gardena, with alpine lakes, mountain huts and Tyrolean villages."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Venecia",
+              "en": "Venice"
+            },
+            "countryCode": "IT",
+            "lat": 45.4408,
+            "lng": 12.3155,
+            "codes": [
+              "VCE",
+              "TSF"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "venice-2-days",
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Cortina d'Ampezzo",
+              "en": "Cortina d'Ampezzo"
+            },
+            "countryCode": "IT",
+            "lat": 46.5405,
+            "lng": 12.1357,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 110,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Val Gardena (Ortisei)",
+              "en": "Val Gardena (Ortisei)"
+            },
+            "countryCode": "IT",
+            "lat": 46.5747,
+            "lng": 11.6717,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Bolzano",
+              "en": "Bolzano"
+            },
+            "countryCode": "IT",
+            "lat": 46.4983,
+            "lng": 11.3548,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Verona",
+              "en": "Verona"
+            },
+            "countryCode": "IT",
+            "lat": 45.4384,
+            "lng": 10.9916,
+            "codes": [
+              "VRN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "verona-1-day"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Venecia",
+              "en": "Venice"
+            },
+            "countryCode": "IT",
+            "lat": 45.4408,
+            "lng": 12.3155,
+            "codes": [
+              "VCE",
+              "TSF"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "venice-2-days",
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Cortina d'Ampezzo",
+              "en": "Cortina d'Ampezzo"
+            },
+            "countryCode": "IT",
+            "lat": 46.5405,
+            "lng": 12.1357,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 110,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Val Gardena (Ortisei)",
+              "en": "Val Gardena (Ortisei)"
+            },
+            "countryCode": "IT",
+            "lat": 46.5747,
+            "lng": 11.6717,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Bolzano",
+              "en": "Bolzano"
+            },
+            "countryCode": "IT",
+            "lat": 46.4983,
+            "lng": 11.3548,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Verona",
+              "en": "Verona"
+            },
+            "countryCode": "IT",
+            "lat": 45.4384,
+            "lng": 10.9916,
+            "codes": [
+              "VRN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "verona-1-day"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Mejor de junio a septiembre, cuando funcionan los remontes y los autobuses de los puertos. Entre Cortina y Val Gardena, el coche ahorra mucho tiempo.",
+      "en": "Best from June to September, when the lifts and mountain-pass buses run. Between Cortina and Val Gardena a car saves a lot of time."
+    }
+  },
+  "emilia-romana": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Emilia-Romaña",
+      "en": "Emilia-Romagna"
+    },
+    "summary": {
+      "es": "La tierra del parmesano, el vinagre de Módena y la mortadela, con los mosaicos de Rávena de postre.",
+      "en": "The land of Parmesan, Modena's balsamic vinegar and mortadella, with Ravenna's mosaics for dessert."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bolonia",
+              "en": "Bologna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4949,
+            "lng": 11.3426,
+            "codes": [
+              "BLQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "bologna-1-day",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ferrara",
+              "en": "Ferrara"
+            },
+            "countryCode": "IT",
+            "lat": 44.8381,
+            "lng": 11.6198,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Rávena",
+              "en": "Ravenna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4184,
+            "lng": 12.2035,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bolonia",
+              "en": "Bologna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4949,
+            "lng": 11.3426,
+            "codes": [
+              "BLQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "bologna-1-day"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bolonia",
+              "en": "Bologna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4949,
+            "lng": 11.3426,
+            "codes": [
+              "BLQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "bologna-1-day",
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Parma",
+              "en": "Parma"
+            },
+            "countryCode": "IT",
+            "lat": 44.8015,
+            "lng": 10.3279,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Módena",
+              "en": "Modena"
+            },
+            "countryCode": "IT",
+            "lat": 44.6471,
+            "lng": 10.9252,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ferrara",
+              "en": "Ferrara"
+            },
+            "countryCode": "IT",
+            "lat": 44.8381,
+            "lng": 11.6198,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Rávena",
+              "en": "Ravenna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4184,
+            "lng": 12.2035,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bolonia",
+              "en": "Bologna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4949,
+            "lng": 11.3426,
+            "codes": [
+              "BLQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "bologna-1-day"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bolonia",
+              "en": "Bologna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4949,
+            "lng": 11.3426,
+            "codes": [
+              "BLQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "bologna-1-day",
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Parma",
+              "en": "Parma"
+            },
+            "countryCode": "IT",
+            "lat": 44.8015,
+            "lng": 10.3279,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Módena",
+              "en": "Modena"
+            },
+            "countryCode": "IT",
+            "lat": 44.6471,
+            "lng": 10.9252,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ferrara",
+              "en": "Ferrara"
+            },
+            "countryCode": "IT",
+            "lat": 44.8381,
+            "lng": 11.6198,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Rávena",
+              "en": "Ravenna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4184,
+            "lng": 12.2035,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Rímini",
+              "en": "Rimini"
+            },
+            "countryCode": "IT",
+            "lat": 44.0594,
+            "lng": 12.5683,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bolonia",
+              "en": "Bologna"
+            },
+            "countryCode": "IT",
+            "lat": 44.4949,
+            "lng": 11.3426,
+            "codes": [
+              "BLQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "bologna-1-day"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Todas las ciudades están a menos de 1 h 30 en tren de Bolonia: también puedes alojarte allí y hacer excursiones de un día.",
+      "en": "Every city is under 1 h 30 by train from Bologna: you can also stay there and do day trips."
+    }
+  },
+  "umbria": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Umbría",
+      "en": "Umbria"
+    },
+    "summary": {
+      "es": "Pueblos de piedra en lo alto de las colinas, Asís y su basílica, Orvieto y su catedral: la Toscana sin las multitudes.",
+      "en": "Stone hill towns, Assisi and its basilica, Orvieto and its cathedral: Tuscany without the crowds."
+    },
+    "countries": [
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Perugia",
+              "en": "Perugia"
+            },
+            "countryCode": "IT",
+            "lat": 43.1107,
+            "lng": 12.3908,
+            "codes": [
+              "PEG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Asís",
+              "en": "Assisi"
+            },
+            "countryCode": "IT",
+            "lat": 43.0707,
+            "lng": 12.6196,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 140,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Roma",
+              "en": "Rome"
+            },
+            "countryCode": "IT",
+            "lat": 41.9028,
+            "lng": 12.4964,
+            "codes": [
+              "FCO",
+              "CIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "rome-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Perugia",
+              "en": "Perugia"
+            },
+            "countryCode": "IT",
+            "lat": 43.1107,
+            "lng": 12.3908,
+            "codes": [
+              "PEG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Asís",
+              "en": "Assisi"
+            },
+            "countryCode": "IT",
+            "lat": 43.0707,
+            "lng": 12.6196,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 10,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Spello",
+              "en": "Spello"
+            },
+            "countryCode": "IT",
+            "lat": 42.9906,
+            "lng": 12.6716,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Todi",
+              "en": "Todi"
+            },
+            "countryCode": "IT",
+            "lat": 42.7808,
+            "lng": 12.4066,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Orvieto",
+              "en": "Orvieto"
+            },
+            "countryCode": "IT",
+            "lat": 42.7185,
+            "lng": 12.1107,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Roma",
+              "en": "Rome"
+            },
+            "countryCode": "IT",
+            "lat": 41.9028,
+            "lng": 12.4964,
+            "codes": [
+              "FCO",
+              "CIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "rome-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Perugia",
+              "en": "Perugia"
+            },
+            "countryCode": "IT",
+            "lat": 43.1107,
+            "lng": 12.3908,
+            "codes": [
+              "PEG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Gubbio",
+              "en": "Gubbio"
+            },
+            "countryCode": "IT",
+            "lat": 43.351,
+            "lng": 12.5772,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Asís",
+              "en": "Assisi"
+            },
+            "countryCode": "IT",
+            "lat": 43.0707,
+            "lng": 12.6196,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 10,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Spello",
+              "en": "Spello"
+            },
+            "countryCode": "IT",
+            "lat": 42.9906,
+            "lng": 12.6716,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Spoleto",
+              "en": "Spoleto"
+            },
+            "countryCode": "IT",
+            "lat": 42.734,
+            "lng": 12.738,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Todi",
+              "en": "Todi"
+            },
+            "countryCode": "IT",
+            "lat": 42.7808,
+            "lng": 12.4066,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Orvieto",
+              "en": "Orvieto"
+            },
+            "countryCode": "IT",
+            "lat": 42.7185,
+            "lng": 12.1107,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Roma",
+              "en": "Rome"
+            },
+            "countryCode": "IT",
+            "lat": 41.9028,
+            "lng": 12.4964,
+            "codes": [
+              "FCO",
+              "CIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "rome-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Perugia, Asís, Spello, Spoleto y Orvieto tienen tren; para Todi y Gubbio el coche es mucho más cómodo que el autobús.",
+      "en": "Perugia, Assisi, Spello, Spoleto and Orvieto have trains; Todi and Gubbio are much easier by car than by bus."
+    }
+  }
+}

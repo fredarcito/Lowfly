@@ -1,0 +1,2542 @@
+{
+  "centroeuropa": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Centroeuropa",
+      "en": "Central Europe"
+    },
+    "summary": {
+      "es": "Praga, Viena y Budapest en tren: tres capitales imperiales unidas por el Danubio, cafés y castillos.",
+      "en": "Prague, Vienna and Budapest by train: three imperial capitals linked by the Danube, cafés and castles."
+    },
+    "countries": [
+      "CZ",
+      "AT",
+      "SK",
+      "HU"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0875,
+            "lng": 14.4213,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days",
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Viena",
+              "en": "Vienna"
+            },
+            "countryCode": "AT",
+            "lat": 48.2082,
+            "lng": 16.3738,
+            "codes": [
+              "VIE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "vienna-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0875,
+            "lng": 14.4213,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days",
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Viena",
+              "en": "Vienna"
+            },
+            "countryCode": "AT",
+            "lat": 48.2082,
+            "lng": 16.3738,
+            "codes": [
+              "VIE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "vienna-3-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bratislava",
+              "en": "Bratislava"
+            },
+            "countryCode": "SK",
+            "lat": 48.1486,
+            "lng": 17.1077,
+            "codes": [
+              "BTS",
+              "VIE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "bratislava-1-day",
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Budapest",
+              "en": "Budapest"
+            },
+            "countryCode": "HU",
+            "lat": 47.4979,
+            "lng": 19.0402,
+            "codes": [
+              "BUD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "budapest-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0875,
+            "lng": 14.4213,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days",
+            "land": {
+              "minutes": 170,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Český Krumlov",
+              "en": "Český Krumlov"
+            },
+            "countryCode": "CZ",
+            "lat": 48.8127,
+            "lng": 14.3175,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Viena",
+              "en": "Vienna"
+            },
+            "countryCode": "AT",
+            "lat": 48.2082,
+            "lng": 16.3738,
+            "codes": [
+              "VIE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "vienna-3-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bratislava",
+              "en": "Bratislava"
+            },
+            "countryCode": "SK",
+            "lat": 48.1486,
+            "lng": 17.1077,
+            "codes": [
+              "BTS",
+              "VIE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "bratislava-1-day",
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Budapest",
+              "en": "Budapest"
+            },
+            "countryCode": "HU",
+            "lat": 47.4979,
+            "lng": 19.0402,
+            "codes": [
+              "BUD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "budapest-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En diciembre, mercadillos de Navidad en las cuatro ciudades. De Český Krumlov a Viena hay lanzaderas directas; en transporte público se cambia en Linz o České Budějovice.",
+      "en": "In December, Christmas markets in all four cities. From Český Krumlov to Vienna there are direct shuttles; by public transport you change in Linz or České Budějovice."
+    }
+  },
+  "viena-y-bratislava": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Viena y Bratislava",
+      "en": "Vienna and Bratislava"
+    },
+    "summary": {
+      "es": "Dos capitales a una hora de tren: palacios y cafés en Viena, casco antiguo y castillo junto al Danubio en Bratislava.",
+      "en": "Two capitals an hour apart by train: palaces and cafés in Vienna, an old town and castle on the Danube in Bratislava."
+    },
+    "countries": [
+      "AT",
+      "SK"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Viena",
+              "en": "Vienna"
+            },
+            "countryCode": "AT",
+            "lat": 48.2082,
+            "lng": 16.3738,
+            "codes": [
+              "VIE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "vienna-3-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bratislava",
+              "en": "Bratislava"
+            },
+            "countryCode": "SK",
+            "lat": 48.1486,
+            "lng": 17.1077,
+            "codes": [
+              "BTS",
+              "VIE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "bratislava-1-day"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "El aeropuerto de Viena está a una hora de Bratislava en bus: puedes volar a uno y volver desde el otro.",
+      "en": "Vienna airport is an hour from Bratislava by bus: you can fly into one and home from the other."
+    }
+  },
+  "viena-y-budapest": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Viena y Budapest",
+      "en": "Vienna and Budapest"
+    },
+    "summary": {
+      "es": "Las dos capitales del antiguo imperio austrohúngaro, a menos de tres horas de tren por el Danubio.",
+      "en": "The two capitals of the old Austro-Hungarian empire, under three hours apart by train along the Danube."
+    },
+    "countries": [
+      "AT",
+      "HU"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Viena",
+              "en": "Vienna"
+            },
+            "countryCode": "AT",
+            "lat": 48.2082,
+            "lng": 16.3738,
+            "codes": [
+              "VIE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "vienna-3-days",
+            "land": {
+              "minutes": 160,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Budapest",
+              "en": "Budapest"
+            },
+            "countryCode": "HU",
+            "lat": 47.4979,
+            "lng": 19.0402,
+            "codes": [
+              "BUD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "budapest-3-days"
+          }
+        ]
+      }
+    }
+  },
+  "polonia": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Polonia",
+      "en": "Poland"
+    },
+    "summary": {
+      "es": "De Gdansk y el Báltico a Cracovia pasando por Varsovia: cascos históricos reconstruidos, pierogi y mucha historia.",
+      "en": "From Gdańsk and the Baltic to Kraków via Warsaw: rebuilt old towns, pierogi and plenty of history."
+    },
+    "countries": [
+      "PL"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Varsovia",
+              "en": "Warsaw"
+            },
+            "countryCode": "PL",
+            "lat": 52.2297,
+            "lng": 21.0122,
+            "codes": [
+              "WAW",
+              "WMI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "warsaw-2-days",
+            "land": {
+              "minutes": 140,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0647,
+            "lng": 19.945,
+            "codes": [
+              "KRK",
+              "KTW"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "krakow-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Gdansk",
+              "en": "Gdańsk"
+            },
+            "countryCode": "PL",
+            "lat": 54.352,
+            "lng": 18.6466,
+            "codes": [
+              "GDN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Toruń",
+              "en": "Toruń"
+            },
+            "countryCode": "PL",
+            "lat": 53.0138,
+            "lng": 18.5984,
+            "codes": [
+              "BZG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 165,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Varsovia",
+              "en": "Warsaw"
+            },
+            "countryCode": "PL",
+            "lat": 52.2297,
+            "lng": 21.0122,
+            "codes": [
+              "WAW",
+              "WMI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "warsaw-2-days",
+            "land": {
+              "minutes": 140,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0647,
+            "lng": 19.945,
+            "codes": [
+              "KRK",
+              "KTW"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "krakow-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Gdansk",
+              "en": "Gdańsk"
+            },
+            "countryCode": "PL",
+            "lat": 54.352,
+            "lng": 18.6466,
+            "codes": [
+              "GDN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Toruń",
+              "en": "Toruń"
+            },
+            "countryCode": "PL",
+            "lat": 53.0138,
+            "lng": 18.5984,
+            "codes": [
+              "BZG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Poznań",
+              "en": "Poznań"
+            },
+            "countryCode": "PL",
+            "lat": 52.4064,
+            "lng": 16.9252,
+            "codes": [
+              "POZ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 145,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Breslavia",
+              "en": "Wrocław"
+            },
+            "countryCode": "PL",
+            "lat": 51.1079,
+            "lng": 17.0385,
+            "codes": [
+              "WRO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 190,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0647,
+            "lng": 19.945,
+            "codes": [
+              "KRK",
+              "KTW"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "krakow-2-days",
+            "land": {
+              "minutes": 140,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Varsovia",
+              "en": "Warsaw"
+            },
+            "countryCode": "PL",
+            "lat": 52.2297,
+            "lng": 21.0122,
+            "codes": [
+              "WAW",
+              "WMI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "warsaw-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Desde Gdansk, el castillo de Malbork y la playa de Sopot son excursiones de medio día; desde Cracovia, la mina de sal de Wieliczka y Auschwitz-Birkenau.",
+      "en": "From Gdańsk, Malbork castle and the beach at Sopot are half-day trips; from Kraków, the Wieliczka salt mine and Auschwitz-Birkenau."
+    }
+  },
+  "cracovia-y-tatras": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Cracovia y los Tatras",
+      "en": "Kraków and the Tatras"
+    },
+    "summary": {
+      "es": "La ciudad más bonita de Polonia y las montañas de Zakopane, a dos horas en bus.",
+      "en": "Poland's most beautiful city and the mountains around Zakopane, two hours away by bus."
+    },
+    "countries": [
+      "PL"
+    ],
+    "reversible": false,
+    "months": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      9,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0647,
+            "lng": 19.945,
+            "codes": [
+              "KRK",
+              "KTW"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "krakow-2-days",
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Zakopane",
+              "en": "Zakopane"
+            },
+            "countryCode": "PL",
+            "lat": 49.2992,
+            "lng": 19.9496,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0647,
+            "lng": 19.945,
+            "codes": [
+              "KRK",
+              "KTW"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            },
+            "guide": "krakow-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Desde Cracovia, la mina de sal de Wieliczka y Auschwitz-Birkenau son excursiones de un día. Zakopane en invierno es nieve y esquí; en verano, rutas por los Tatras y el lago Morskie Oko.",
+      "en": "From Kraków, the Wieliczka salt mine and Auschwitz-Birkenau are day trips. Zakopane means snow and skiing in winter; in summer, Tatra hikes and Morskie Oko lake."
+    }
+  },
+  "balticos": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Países bálticos",
+      "en": "The Baltics"
+    },
+    "summary": {
+      "es": "Vilna, Riga y Tallin en bus: tres cascos medievales, bosques y el mar Báltico, y si quieres, Helsinki en ferry.",
+      "en": "Vilnius, Riga and Tallinn by bus: three medieval old towns, forests and the Baltic Sea, and Helsinki by ferry if you like."
+    },
+    "countries": [
+      "LT",
+      "LV",
+      "EE",
+      "FI"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Riga",
+              "en": "Riga"
+            },
+            "countryCode": "LV",
+            "lat": 56.9496,
+            "lng": 24.1052,
+            "codes": [
+              "RIX"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "riga-2-days",
+            "land": {
+              "minutes": 270,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Tallin",
+              "en": "Tallinn"
+            },
+            "countryCode": "EE",
+            "lat": 59.437,
+            "lng": 24.7536,
+            "codes": [
+              "TLL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "tallinn-1-day"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Vilna",
+              "en": "Vilnius"
+            },
+            "countryCode": "LT",
+            "lat": 54.6872,
+            "lng": 25.2797,
+            "codes": [
+              "VNO",
+              "KUN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Riga",
+              "en": "Riga"
+            },
+            "countryCode": "LV",
+            "lat": 56.9496,
+            "lng": 24.1052,
+            "codes": [
+              "RIX"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "riga-2-days",
+            "land": {
+              "minutes": 270,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Tallin",
+              "en": "Tallinn"
+            },
+            "countryCode": "EE",
+            "lat": 59.437,
+            "lng": 24.7536,
+            "codes": [
+              "TLL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "tallinn-1-day"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Kaunas",
+              "en": "Kaunas"
+            },
+            "countryCode": "LT",
+            "lat": 54.8985,
+            "lng": 23.9036,
+            "codes": [
+              "KUN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Vilna",
+              "en": "Vilnius"
+            },
+            "countryCode": "LT",
+            "lat": 54.6872,
+            "lng": 25.2797,
+            "codes": [
+              "VNO",
+              "KUN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Riga",
+              "en": "Riga"
+            },
+            "countryCode": "LV",
+            "lat": 56.9496,
+            "lng": 24.1052,
+            "codes": [
+              "RIX"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "riga-2-days",
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sigulda",
+              "en": "Sigulda"
+            },
+            "countryCode": "LV",
+            "lat": 57.1537,
+            "lng": 24.8597,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Tartu",
+              "en": "Tartu"
+            },
+            "countryCode": "EE",
+            "lat": 58.378,
+            "lng": 26.729,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 140,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Tallin",
+              "en": "Tallinn"
+            },
+            "countryCode": "EE",
+            "lat": 59.437,
+            "lng": 24.7536,
+            "codes": [
+              "TLL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "tallinn-1-day",
+            "land": {
+              "minutes": 120,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Helsinki",
+              "en": "Helsinki"
+            },
+            "countryCode": "FI",
+            "lat": 60.1699,
+            "lng": 24.9384,
+            "codes": [
+              "HEL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Desde Vilna, el castillo de Trakai es una excursión de medio día. El ferry de Tallin a Helsinki sale varias veces al día.",
+      "en": "From Vilnius, Trakai castle is a half-day trip. The Tallinn–Helsinki ferry runs several times a day."
+    }
+  },
+  "tallin-y-helsinki": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Tallin y Helsinki",
+      "en": "Tallinn and Helsinki"
+    },
+    "summary": {
+      "es": "Un casco medieval de cuento y una capital nórdica de diseño, separados por dos horas de ferry.",
+      "en": "A fairy-tale medieval old town and a Nordic design capital, two hours apart by ferry."
+    },
+    "countries": [
+      "EE",
+      "FI"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tallin",
+              "en": "Tallinn"
+            },
+            "countryCode": "EE",
+            "lat": 59.437,
+            "lng": 24.7536,
+            "codes": [
+              "TLL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "tallinn-1-day",
+            "land": {
+              "minutes": 120,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Helsinki",
+              "en": "Helsinki"
+            },
+            "countryCode": "FI",
+            "lat": 60.1699,
+            "lng": 24.9384,
+            "codes": [
+              "HEL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    }
+  },
+  "silesia-y-breslavia": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Silesia y Breslavia",
+      "en": "Silesia and Wrocław"
+    },
+    "summary": {
+      "es": "Breslavia y sus islas en el Óder, castillos de la Baja Silesia y el pasado minero de Katowice, lejos de las multitudes.",
+      "en": "Wrocław and its islands on the Oder, Lower Silesian castles and Katowice's mining past, away from the crowds."
+    },
+    "countries": [
+      "PL"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Breslavia",
+              "en": "Wrocław"
+            },
+            "countryCode": "PL",
+            "lat": 51.1079,
+            "lng": 17.0385,
+            "codes": [
+              "WRO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Katowice",
+              "en": "Katowice"
+            },
+            "countryCode": "PL",
+            "lat": 50.2649,
+            "lng": 19.0238,
+            "codes": [
+              "KTW",
+              "KRK"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Breslavia",
+              "en": "Wrocław"
+            },
+            "countryCode": "PL",
+            "lat": 51.1079,
+            "lng": 17.0385,
+            "codes": [
+              "WRO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Świdnica",
+              "en": "Świdnica"
+            },
+            "countryCode": "PL",
+            "lat": 50.8429,
+            "lng": 16.4885,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Katowice",
+              "en": "Katowice"
+            },
+            "countryCode": "PL",
+            "lat": 50.2649,
+            "lng": 19.0238,
+            "codes": [
+              "KTW",
+              "KRK"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0647,
+            "lng": 19.945,
+            "codes": [
+              "KRK",
+              "KTW"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "krakow-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Breslavia",
+              "en": "Wrocław"
+            },
+            "countryCode": "PL",
+            "lat": 51.1079,
+            "lng": 17.0385,
+            "codes": [
+              "WRO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 170,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Jelenia Góra",
+              "en": "Jelenia Góra"
+            },
+            "countryCode": "PL",
+            "lat": 50.9044,
+            "lng": 15.7194,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Świdnica",
+              "en": "Świdnica"
+            },
+            "countryCode": "PL",
+            "lat": 50.8429,
+            "lng": 16.4885,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Katowice",
+              "en": "Katowice"
+            },
+            "countryCode": "PL",
+            "lat": 50.2649,
+            "lng": 19.0238,
+            "codes": [
+              "KTW",
+              "KRK"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0647,
+            "lng": 19.945,
+            "codes": [
+              "KRK",
+              "KTW"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "krakow-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Desde Świdnica (Iglesia de la Paz) se visita el castillo de Książ; desde Katowice, el barrio obrero de Nikiszowiec y la mina Guido de Zabrze. En Jelenia Góra empiezan los montes Karkonosze y el valle de los palacios.",
+      "en": "From Świdnica (Church of Peace) you visit Książ castle; from Katowice, the Nikiszowiec workers' quarter and the Guido mine in Zabrze. Jelenia Góra is the gateway to the Karkonosze mountains and the valley of palaces."
+    }
+  },
+  "sur-de-polonia": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Sur de Polonia y Bieszczady",
+      "en": "Southern Poland and the Bieszczady"
+    },
+    "summary": {
+      "es": "La Polonia que casi nadie ve: Przemyśl, iglesias de madera, los montes salvajes de Bieszczady y el final en Cracovia.",
+      "en": "The Poland hardly anyone sees: Przemyśl, wooden churches, the wild Bieszczady mountains and Kraków to finish."
+    },
+    "countries": [
+      "PL"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Rzeszów",
+              "en": "Rzeszów"
+            },
+            "countryCode": "PL",
+            "lat": 50.0412,
+            "lng": 21.9991,
+            "codes": [
+              "RZE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Przemyśl",
+              "en": "Przemyśl"
+            },
+            "countryCode": "PL",
+            "lat": 49.7838,
+            "lng": 22.7678,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 225,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0647,
+            "lng": 19.945,
+            "codes": [
+              "KRK",
+              "KTW"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "krakow-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Rzeszów",
+              "en": "Rzeszów"
+            },
+            "countryCode": "PL",
+            "lat": 50.0412,
+            "lng": 21.9991,
+            "codes": [
+              "RZE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Przemyśl",
+              "en": "Przemyśl"
+            },
+            "countryCode": "PL",
+            "lat": 49.7838,
+            "lng": 22.7678,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sanok",
+              "en": "Sanok"
+            },
+            "countryCode": "PL",
+            "lat": 49.5557,
+            "lng": 22.2056,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0647,
+            "lng": 19.945,
+            "codes": [
+              "KRK",
+              "KTW"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "krakow-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Rzeszów",
+              "en": "Rzeszów"
+            },
+            "countryCode": "PL",
+            "lat": 50.0412,
+            "lng": 21.9991,
+            "codes": [
+              "RZE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Przemyśl",
+              "en": "Przemyśl"
+            },
+            "countryCode": "PL",
+            "lat": 49.7838,
+            "lng": 22.7678,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sanok",
+              "en": "Sanok"
+            },
+            "countryCode": "PL",
+            "lat": 49.5557,
+            "lng": 22.2056,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Wetlina (Bieszczady)",
+              "en": "Wetlina (Bieszczady)"
+            },
+            "countryCode": "PL",
+            "lat": 49.143,
+            "lng": 22.479,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Tarnów",
+              "en": "Tarnów"
+            },
+            "countryCode": "PL",
+            "lat": 50.0121,
+            "lng": 20.9858,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cracovia",
+              "en": "Kraków"
+            },
+            "countryCode": "PL",
+            "lat": 50.0647,
+            "lng": 19.945,
+            "codes": [
+              "KRK",
+              "KTW"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "krakow-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Desde Rzeszów, el palacio de Łańcut está a media hora. En Bieszczady los buses son pocos: un coche de alquiler desde Rzeszów lo hace mucho más fácil.",
+      "en": "From Rzeszów, Łańcut palace is half an hour away. Buses are scarce in the Bieszczady: a hire car from Rzeszów makes it much easier."
+    }
+  },
+  "eslovaquia": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Eslovaquia",
+      "en": "Slovakia"
+    },
+    "summary": {
+      "es": "Los Altos Tatras, castillos en ruinas y pueblos mineros de cuento, con Košice y Bratislava en los extremos.",
+      "en": "The High Tatras, ruined castles and storybook mining towns, with Košice and Bratislava at either end."
+    },
+    "countries": [
+      "SK"
+    ],
+    "reversible": true,
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Poprad (Altos Tatras)",
+              "en": "Poprad (High Tatras)"
+            },
+            "countryCode": "SK",
+            "lat": 49.0614,
+            "lng": 20.298,
+            "codes": [
+              "TAT"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Košice",
+              "en": "Košice"
+            },
+            "countryCode": "SK",
+            "lat": 48.7164,
+            "lng": 21.2611,
+            "codes": [
+              "KSC"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bratislava",
+              "en": "Bratislava"
+            },
+            "countryCode": "SK",
+            "lat": 48.1486,
+            "lng": 17.1077,
+            "codes": [
+              "BTS",
+              "VIE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "bratislava-1-day",
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Banská Štiavnica",
+              "en": "Banská Štiavnica"
+            },
+            "countryCode": "SK",
+            "lat": 48.4588,
+            "lng": 18.8931,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Poprad (Altos Tatras)",
+              "en": "Poprad (High Tatras)"
+            },
+            "countryCode": "SK",
+            "lat": 49.0614,
+            "lng": 20.298,
+            "codes": [
+              "TAT"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Košice",
+              "en": "Košice"
+            },
+            "countryCode": "SK",
+            "lat": 48.7164,
+            "lng": 21.2611,
+            "codes": [
+              "KSC"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bratislava",
+              "en": "Bratislava"
+            },
+            "countryCode": "SK",
+            "lat": 48.1486,
+            "lng": 17.1077,
+            "codes": [
+              "BTS",
+              "VIE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "bratislava-1-day",
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Banská Štiavnica",
+              "en": "Banská Štiavnica"
+            },
+            "countryCode": "SK",
+            "lat": 48.4588,
+            "lng": 18.8931,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Liptovský Mikuláš",
+              "en": "Liptovský Mikuláš"
+            },
+            "countryCode": "SK",
+            "lat": 49.0833,
+            "lng": 19.6119,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Poprad (Altos Tatras)",
+              "en": "Poprad (High Tatras)"
+            },
+            "countryCode": "SK",
+            "lat": 49.0614,
+            "lng": 20.298,
+            "codes": [
+              "TAT"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 30,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Levoča",
+              "en": "Levoča"
+            },
+            "countryCode": "SK",
+            "lat": 49.0256,
+            "lng": 20.5882,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Košice",
+              "en": "Košice"
+            },
+            "countryCode": "SK",
+            "lat": 48.7164,
+            "lng": 21.2611,
+            "codes": [
+              "KSC"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Desde Poprad, el tren eléctrico de los Tatras sube a Štrbské Pleso y Starý Smokovec; desde Levoča, el castillo de Spiš y el Paraíso Eslovaco. Poprad y Košice tienen pocos vuelos: Bratislava (o Viena, a una hora) es la entrada más fácil.",
+      "en": "From Poprad, the Tatra electric railway climbs to Štrbské Pleso and Starý Smokovec; from Levoča, Spiš castle and the Slovak Paradise. Poprad and Košice have few flights: Bratislava (or Vienna, an hour away) is the easiest way in."
+    }
+  },
+  "hungria-y-balaton": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Hungría y el lago Balaton",
+      "en": "Hungary and Lake Balaton"
+    },
+    "summary": {
+      "es": "Budapest y sus balnearios, el gran lago de Hungría con sus pueblos de vino y la mediterránea Pécs.",
+      "en": "Budapest and its baths, Hungary's great lake with its wine villages, and Mediterranean-feeling Pécs."
+    },
+    "countries": [
+      "HU"
+    ],
+    "reversible": false,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Budapest",
+              "en": "Budapest"
+            },
+            "countryCode": "HU",
+            "lat": 47.4979,
+            "lng": 19.0402,
+            "codes": [
+              "BUD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "budapest-3-days",
+            "land": {
+              "minutes": 130,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Balatonfüred y Tihany",
+              "en": "Balatonfüred and Tihany"
+            },
+            "countryCode": "HU",
+            "lat": 46.959,
+            "lng": 17.893,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 130,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Budapest",
+              "en": "Budapest"
+            },
+            "countryCode": "HU",
+            "lat": 47.4979,
+            "lng": 19.0402,
+            "codes": [
+              "BUD"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            },
+            "guide": "budapest-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Budapest",
+              "en": "Budapest"
+            },
+            "countryCode": "HU",
+            "lat": 47.4979,
+            "lng": 19.0402,
+            "codes": [
+              "BUD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "budapest-3-days",
+            "land": {
+              "minutes": 170,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pécs",
+              "en": "Pécs"
+            },
+            "countryCode": "HU",
+            "lat": 46.0727,
+            "lng": 18.2323,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Keszthely y Hévíz",
+              "en": "Keszthely and Hévíz"
+            },
+            "countryCode": "HU",
+            "lat": 46.7681,
+            "lng": 17.2432,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Balatonfüred y Tihany",
+              "en": "Balatonfüred and Tihany"
+            },
+            "countryCode": "HU",
+            "lat": 46.959,
+            "lng": 17.893,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 130,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Budapest",
+              "en": "Budapest"
+            },
+            "countryCode": "HU",
+            "lat": 47.4979,
+            "lng": 19.0402,
+            "codes": [
+              "BUD"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            },
+            "guide": "budapest-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Budapest",
+              "en": "Budapest"
+            },
+            "countryCode": "HU",
+            "lat": 47.4979,
+            "lng": 19.0402,
+            "codes": [
+              "BUD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "budapest-3-days",
+            "land": {
+              "minutes": 170,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pécs",
+              "en": "Pécs"
+            },
+            "countryCode": "HU",
+            "lat": 46.0727,
+            "lng": 18.2323,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Keszthely y Hévíz",
+              "en": "Keszthely and Hévíz"
+            },
+            "countryCode": "HU",
+            "lat": 46.7681,
+            "lng": 17.2432,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Balatonfüred y Tihany",
+              "en": "Balatonfüred and Tihany"
+            },
+            "countryCode": "HU",
+            "lat": 46.959,
+            "lng": 17.893,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Eger",
+              "en": "Eger"
+            },
+            "countryCode": "HU",
+            "lat": 47.9025,
+            "lng": 20.3772,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Budapest",
+              "en": "Budapest"
+            },
+            "countryCode": "HU",
+            "lat": 47.4979,
+            "lng": 19.0402,
+            "codes": [
+              "BUD"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            },
+            "guide": "budapest-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "La vuelta termina en Budapest el día del vuelo. Hévíz tiene un lago termal en el que te puedes bañar todo el año.",
+      "en": "The trip ends back in Budapest on the day of your flight. Hévíz has a thermal lake you can bathe in all year."
+    }
+  },
+  "bohemia-y-moravia": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Bohemia y Moravia",
+      "en": "Bohemia and Moravia"
+    },
+    "summary": {
+      "es": "Chequia más allá de Praga: el osario de Kutná Hora, Český Krumlov, plazas renacentistas y bodegas de Moravia.",
+      "en": "Czechia beyond Prague: the Kutná Hora ossuary, Český Krumlov, Renaissance squares and Moravian wine cellars."
+    },
+    "countries": [
+      "CZ",
+      "AT"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0875,
+            "lng": 14.4213,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "prague-3-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Kutná Hora",
+              "en": "Kutná Hora"
+            },
+            "countryCode": "CZ",
+            "lat": 49.9484,
+            "lng": 15.2682,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Brno",
+              "en": "Brno"
+            },
+            "countryCode": "CZ",
+            "lat": 49.1951,
+            "lng": 16.6068,
+            "codes": [
+              "BRQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0875,
+            "lng": 14.4213,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days",
+            "land": {
+              "minutes": 170,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Český Krumlov",
+              "en": "Český Krumlov"
+            },
+            "countryCode": "CZ",
+            "lat": 48.8127,
+            "lng": 14.3175,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Telč",
+              "en": "Telč"
+            },
+            "countryCode": "CZ",
+            "lat": 49.1842,
+            "lng": 15.4528,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Brno",
+              "en": "Brno"
+            },
+            "countryCode": "CZ",
+            "lat": 49.1951,
+            "lng": 16.6068,
+            "codes": [
+              "BRQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Praga",
+              "en": "Prague"
+            },
+            "countryCode": "CZ",
+            "lat": 50.0875,
+            "lng": 14.4213,
+            "codes": [
+              "PRG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "prague-3-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Kutná Hora",
+              "en": "Kutná Hora"
+            },
+            "countryCode": "CZ",
+            "lat": 49.9484,
+            "lng": 15.2682,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Český Krumlov",
+              "en": "Český Krumlov"
+            },
+            "countryCode": "CZ",
+            "lat": 48.8127,
+            "lng": 14.3175,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Telč",
+              "en": "Telč"
+            },
+            "countryCode": "CZ",
+            "lat": 49.1842,
+            "lng": 15.4528,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Olomouc",
+              "en": "Olomouc"
+            },
+            "countryCode": "CZ",
+            "lat": 49.5938,
+            "lng": 17.2509,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Brno",
+              "en": "Brno"
+            },
+            "countryCode": "CZ",
+            "lat": 49.1951,
+            "lng": 16.6068,
+            "codes": [
+              "BRQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Mikulov",
+              "en": "Mikulov"
+            },
+            "countryCode": "CZ",
+            "lat": 48.8056,
+            "lng": 16.6378,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 110,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Viena",
+              "en": "Vienna"
+            },
+            "countryCode": "AT",
+            "lat": 48.2082,
+            "lng": 16.3738,
+            "codes": [
+              "VIE"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            },
+            "guide": "vienna-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Brno tiene pocos vuelos; en la versión larga se termina en Viena, a menos de dos horas de Mikulov.",
+      "en": "Brno has few flights; the long version ends in Vienna, under two hours from Mikulov."
+    }
+  }
+}

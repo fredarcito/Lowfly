@@ -7,9 +7,15 @@ import { searchToParams } from "@/utils/share";
 import { track } from "@/utils/analytics";
 import { WEEKEND_MODES } from "@/constants/weekend";
 import { later, nightsBetween, shift, tomorrow } from "@/utils/dates";
+import { MAX_FREE_NIGHTS, MIN_FREE_NIGHTS } from "@/constants/multiCity";
 
 // No results: the form opens again so the search can be changed
-const IS_EMPTY = { everywhere: (data) => !data.results.length, country: (data) => !data.best, trip: (data) => !data.top };
+const IS_EMPTY = {
+  everywhere: (data) => !data.results.length,
+  country: (data) => !data.best,
+  trip: (data) => !data.top,
+  multiCity: (data) => !data.routes.length,
+};
 
 // The search found no direct flight there: trips through a hub (server/stopovers) may still go
 const NO_DIRECT = ["noRoutes", "noPrices"];
@@ -30,10 +36,17 @@ const stopoverParamsOf = (mode, params) => {
 };
 const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// What to ask the API for a search, or { error } (a key of texts.errors) when the form is not valid
+// What to ask the API for a search, or { error, params? } (a key of texts.errors and its values) when the form is not
+// valid
 const requestOf = (form, mode) => {
-  const { origin, country, city, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend } = form;
+  const { origin, country, city, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend, freeFrom, freeTo } = form;
   if (!isAirportCode(origin)) return { error: "badOrigin" };
+  if (mode === "multiCity") {
+    if (!freeFrom || !freeTo || freeFrom > freeTo) return { error: "rangeOrder" };
+    if (nightsBetween(freeFrom, freeTo) < MIN_FREE_NIGHTS) return { error: "multiCityTooShort", params: { min: MIN_FREE_NIGHTS + 1 } };
+    if (nightsBetween(freeFrom, freeTo) > MAX_FREE_NIGHTS) return { error: "rangeTooLong", params: { max: MAX_FREE_NIGHTS + 1 } };
+    return { params: { origin, from: freeFrom, to: freeTo } };
+  }
   if (mode !== "everywhere" && !country) return { error: "missingCountry" };
   const destination = mode === "everywhere" ? {} : { country, ...(city && { city }) };
 
@@ -72,10 +85,11 @@ export const useFlightSearch = (lang) => {
 
   const search = async (form, mode) => {
     const request = requestOf(form, mode);
-    if (request.error) return fail(request.error);
+    if (request.error) return fail(request.error, request.params);
 
     setResult({ status: "loading", mode });
-    track("search", { search_term: `${form.origin} → ${form.city || form.country || "anywhere"}`, mode, trip: mode === "trip" ? "return" : form.trip });
+    const destination = mode === "multiCity" ? "routes" : form.city || form.country || "anywhere";
+    track("search", { search_term: `${form.origin} → ${destination}`, mode, trip: mode === "trip" || mode === "multiCity" ? "return" : form.trip });
     setQuery({ mode, ...form, weekend: form.weekend && form.trip === "return" && WEEKEND_MODES.includes(mode) });
     window.history.replaceState(null, "", `?${searchToParams(form, mode)}`);
     setCollapsed(true);

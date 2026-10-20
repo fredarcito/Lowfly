@@ -1,0 +1,5712 @@
+{
+  "andalucia": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Andalucía",
+      "en": "Andalusia"
+    },
+    "summary": {
+      "es": "Patios de Sevilla, la Mezquita de Córdoba y la Alhambra: el sur en su versión más clásica, de tapa en tapa.",
+      "en": "Seville's patios, Córdoba's Mezquita and the Alhambra: the classic south of Spain, one tapa at a time."
+    },
+    "countries": [
+      "ES"
+    ],
+    "reversible": true,
+    "months": [
+      3,
+      4,
+      5,
+      10,
+      11
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Sevilla",
+              "en": "Seville"
+            },
+            "countryCode": "ES",
+            "lat": 37.3891,
+            "lng": -5.9845,
+            "codes": [
+              "SVQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "seville-2-days",
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Granada",
+              "en": "Granada"
+            },
+            "countryCode": "ES",
+            "lat": 37.1773,
+            "lng": -3.5986,
+            "codes": [
+              "GRX"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "granada-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Sevilla",
+              "en": "Seville"
+            },
+            "countryCode": "ES",
+            "lat": 37.3891,
+            "lng": -5.9845,
+            "codes": [
+              "SVQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "seville-2-days",
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Córdoba",
+              "en": "Córdoba"
+            },
+            "countryCode": "ES",
+            "lat": 37.8882,
+            "lng": -4.7794,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 95,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Granada",
+              "en": "Granada"
+            },
+            "countryCode": "ES",
+            "lat": 37.1773,
+            "lng": -3.5986,
+            "codes": [
+              "GRX"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "granada-2-days",
+            "land": {
+              "minutes": 100,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Málaga",
+              "en": "Málaga"
+            },
+            "countryCode": "ES",
+            "lat": 36.7213,
+            "lng": -4.4214,
+            "codes": [
+              "AGP"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "malaga-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Granada",
+              "en": "Granada"
+            },
+            "countryCode": "ES",
+            "lat": 37.1773,
+            "lng": -3.5986,
+            "codes": [
+              "GRX"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "granada-2-days",
+            "land": {
+              "minutes": 95,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Córdoba",
+              "en": "Córdoba"
+            },
+            "countryCode": "ES",
+            "lat": 37.8882,
+            "lng": -4.7794,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sevilla",
+              "en": "Seville"
+            },
+            "countryCode": "ES",
+            "lat": 37.3891,
+            "lng": -5.9845,
+            "codes": [
+              "SVQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "seville-2-days",
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cádiz",
+              "en": "Cádiz"
+            },
+            "countryCode": "ES",
+            "lat": 36.5271,
+            "lng": -6.2886,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ronda",
+              "en": "Ronda"
+            },
+            "countryCode": "ES",
+            "lat": 36.7423,
+            "lng": -5.1671,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 110,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Málaga",
+              "en": "Málaga"
+            },
+            "countryCode": "ES",
+            "lat": 36.7213,
+            "lng": -4.4214,
+            "codes": [
+              "AGP"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "malaga-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En verano el interior pasa de 40 °C: mejor primavera u otoño. Ronda y los pueblos blancos son más cómodos en coche.",
+      "en": "Inland Andalusia tops 40 °C in summer: spring or autumn are better. Ronda and the white villages are easier by car."
+    }
+  },
+  "portugal-clasico": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Portugal clásico",
+      "en": "Classic Portugal"
+    },
+    "summary": {
+      "es": "De las bodegas de Oporto a los tranvías de Lisboa, con la Coímbra universitaria y pueblos de costa por el camino.",
+      "en": "From Porto's wine cellars to Lisbon's trams, with university Coimbra and seaside towns along the way."
+    },
+    "countries": [
+      "PT"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "porto-2-days",
+            "land": {
+              "minutes": 170,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lisboa",
+              "en": "Lisbon"
+            },
+            "countryCode": "PT",
+            "lat": 38.7223,
+            "lng": -9.1393,
+            "codes": [
+              "LIS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "lisbon-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "porto-2-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Aveiro",
+              "en": "Aveiro"
+            },
+            "countryCode": "PT",
+            "lat": 40.6405,
+            "lng": -8.6538,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Coímbra",
+              "en": "Coimbra"
+            },
+            "countryCode": "PT",
+            "lat": 40.2033,
+            "lng": -8.4103,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 110,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lisboa",
+              "en": "Lisbon"
+            },
+            "countryCode": "PT",
+            "lat": 38.7223,
+            "lng": -9.1393,
+            "codes": [
+              "LIS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "lisbon-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "porto-2-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Aveiro",
+              "en": "Aveiro"
+            },
+            "countryCode": "PT",
+            "lat": 40.6405,
+            "lng": -8.6538,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Coímbra",
+              "en": "Coimbra"
+            },
+            "countryCode": "PT",
+            "lat": 40.2033,
+            "lng": -8.4103,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 105,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Nazaré",
+              "en": "Nazaré"
+            },
+            "countryCode": "PT",
+            "lat": 39.6012,
+            "lng": -9.07,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Óbidos",
+              "en": "Óbidos"
+            },
+            "countryCode": "PT",
+            "lat": 39.3606,
+            "lng": -9.1571,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sintra",
+              "en": "Sintra"
+            },
+            "countryCode": "PT",
+            "lat": 38.8029,
+            "lng": -9.3817,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Lisboa",
+              "en": "Lisbon"
+            },
+            "countryCode": "PT",
+            "lat": 38.7223,
+            "lng": -9.1393,
+            "codes": [
+              "LIS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "lisbon-3-days"
+          }
+        ]
+      }
+    }
+  },
+  "lisboa-y-algarve": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Lisboa y el Algarve",
+      "en": "Lisbon and the Algarve"
+    },
+    "summary": {
+      "es": "Miradores y fado en Lisboa, palacios en Sintra y luego acantilados y playas doradas en el Algarve.",
+      "en": "Viewpoints and fado in Lisbon, palaces in Sintra, then cliffs and golden beaches in the Algarve."
+    },
+    "countries": [
+      "PT"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Lisboa",
+              "en": "Lisbon"
+            },
+            "countryCode": "PT",
+            "lat": 38.7223,
+            "lng": -9.1393,
+            "codes": [
+              "LIS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "lisbon-3-days",
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Lagos",
+              "en": "Lagos"
+            },
+            "countryCode": "PT",
+            "lat": 37.1028,
+            "lng": -8.673,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Faro",
+              "en": "Faro"
+            },
+            "countryCode": "PT",
+            "lat": 37.0194,
+            "lng": -7.9322,
+            "codes": [
+              "FAO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Lisboa",
+              "en": "Lisbon"
+            },
+            "countryCode": "PT",
+            "lat": 38.7223,
+            "lng": -9.1393,
+            "codes": [
+              "LIS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "lisbon-3-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sintra",
+              "en": "Sintra"
+            },
+            "countryCode": "PT",
+            "lat": 38.8029,
+            "lng": -9.3817,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 270,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Lagos",
+              "en": "Lagos"
+            },
+            "countryCode": "PT",
+            "lat": 37.1028,
+            "lng": -8.673,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 100,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Faro",
+              "en": "Faro"
+            },
+            "countryCode": "PT",
+            "lat": 37.0194,
+            "lng": -7.9322,
+            "codes": [
+              "FAO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Lisboa",
+              "en": "Lisbon"
+            },
+            "countryCode": "PT",
+            "lat": 38.7223,
+            "lng": -9.1393,
+            "codes": [
+              "LIS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "lisbon-3-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sintra",
+              "en": "Sintra"
+            },
+            "countryCode": "PT",
+            "lat": 38.8029,
+            "lng": -9.3817,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Évora",
+              "en": "Évora"
+            },
+            "countryCode": "PT",
+            "lat": 38.5714,
+            "lng": -7.9135,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Lagos",
+              "en": "Lagos"
+            },
+            "countryCode": "PT",
+            "lat": 37.1028,
+            "lng": -8.673,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Tavira",
+              "en": "Tavira"
+            },
+            "countryCode": "PT",
+            "lat": 37.1274,
+            "lng": -7.6506,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Faro",
+              "en": "Faro"
+            },
+            "countryCode": "PT",
+            "lat": 37.0194,
+            "lng": -7.9322,
+            "codes": [
+              "FAO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Las calas del Algarve (Benagil, Ponta da Piedade) se ven mejor en barco desde Lagos o Portimão.",
+      "en": "The Algarve coves (Benagil, Ponta da Piedade) are best seen by boat from Lagos or Portimão."
+    }
+  },
+  "norte-de-espana": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Norte de España",
+      "en": "Northern Spain"
+    },
+    "summary": {
+      "es": "Pintxos en San Sebastián, el Guggenheim en Bilbao y el verde de Cantabria y Asturias, con la costa siempre cerca.",
+      "en": "Pintxos in San Sebastián, the Guggenheim in Bilbao and the green of Cantabria and Asturias, never far from the sea."
+    },
+    "countries": [
+      "ES"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Bilbao",
+              "en": "Bilbao"
+            },
+            "countryCode": "ES",
+            "lat": 43.263,
+            "lng": -2.935,
+            "codes": [
+              "BIO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "bilbao-1-day",
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "San Sebastián",
+              "en": "San Sebastián"
+            },
+            "countryCode": "ES",
+            "lat": 43.3183,
+            "lng": -1.9812,
+            "codes": [
+              "EAS",
+              "BIQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Santander",
+              "en": "Santander"
+            },
+            "countryCode": "ES",
+            "lat": 43.4623,
+            "lng": -3.8099,
+            "codes": [
+              "SDR"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Bilbao",
+              "en": "Bilbao"
+            },
+            "countryCode": "ES",
+            "lat": 43.263,
+            "lng": -2.935,
+            "codes": [
+              "BIO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "bilbao-1-day",
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "San Sebastián",
+              "en": "San Sebastián"
+            },
+            "countryCode": "ES",
+            "lat": 43.3183,
+            "lng": -1.9812,
+            "codes": [
+              "EAS",
+              "BIQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Oviedo",
+              "en": "Oviedo"
+            },
+            "countryCode": "ES",
+            "lat": 43.3614,
+            "lng": -5.8494,
+            "codes": [
+              "OVD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Cangas de Onís (Picos de Europa)",
+              "en": "Cangas de Onís (Picos de Europa)"
+            },
+            "countryCode": "ES",
+            "lat": 43.351,
+            "lng": -5.1296,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Santillana del Mar",
+              "en": "Santillana del Mar"
+            },
+            "countryCode": "ES",
+            "lat": 43.3906,
+            "lng": -4.1077,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Santander",
+              "en": "Santander"
+            },
+            "countryCode": "ES",
+            "lat": 43.4623,
+            "lng": -3.8099,
+            "codes": [
+              "SDR"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Bilbao",
+              "en": "Bilbao"
+            },
+            "countryCode": "ES",
+            "lat": 43.263,
+            "lng": -2.935,
+            "codes": [
+              "BIO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "bilbao-1-day",
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "San Sebastián",
+              "en": "San Sebastián"
+            },
+            "countryCode": "ES",
+            "lat": 43.3183,
+            "lng": -1.9812,
+            "codes": [
+              "EAS",
+              "BIQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Los Picos de Europa (lagos de Covadonga, ruta del Cares) son mucho más fáciles en coche.",
+      "en": "The Picos de Europa (Covadonga lakes, Cares gorge) are much easier by car."
+    }
+  },
+  "galicia-y-oporto": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Galicia y Oporto",
+      "en": "Galicia and Porto"
+    },
+    "summary": {
+      "es": "De la catedral de Santiago a las Rías Baixas y el Duero de Oporto, entre marisco, piedra y verde.",
+      "en": "From Santiago's cathedral through the Rías Baixas to Porto on the Douro: seafood, granite and green."
+    },
+    "countries": [
+      "ES",
+      "PT"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Santiago de Compostela",
+              "en": "Santiago de Compostela"
+            },
+            "countryCode": "ES",
+            "lat": 42.8782,
+            "lng": -8.5448,
+            "codes": [
+              "SCQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Vigo",
+              "en": "Vigo"
+            },
+            "countryCode": "ES",
+            "lat": 42.2406,
+            "lng": -8.7207,
+            "codes": [
+              "VGO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 140,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "porto-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Santiago de Compostela",
+              "en": "Santiago de Compostela"
+            },
+            "countryCode": "ES",
+            "lat": 42.8782,
+            "lng": -8.5448,
+            "codes": [
+              "SCQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pontevedra",
+              "en": "Pontevedra"
+            },
+            "countryCode": "ES",
+            "lat": 42.431,
+            "lng": -8.6444,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 20,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Vigo",
+              "en": "Vigo"
+            },
+            "countryCode": "ES",
+            "lat": 42.2406,
+            "lng": -8.7207,
+            "codes": [
+              "VGO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 140,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "porto-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Santiago de Compostela",
+              "en": "Santiago de Compostela"
+            },
+            "countryCode": "ES",
+            "lat": 42.8782,
+            "lng": -8.5448,
+            "codes": [
+              "SCQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "A Coruña",
+              "en": "A Coruña"
+            },
+            "countryCode": "ES",
+            "lat": 43.3623,
+            "lng": -8.4115,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pontevedra",
+              "en": "Pontevedra"
+            },
+            "countryCode": "ES",
+            "lat": 42.431,
+            "lng": -8.6444,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 20,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Vigo",
+              "en": "Vigo"
+            },
+            "countryCode": "ES",
+            "lat": 42.2406,
+            "lng": -8.7207,
+            "codes": [
+              "VGO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Braga",
+              "en": "Braga"
+            },
+            "countryCode": "PT",
+            "lat": 41.5454,
+            "lng": -8.4265,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "porto-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Las islas Cíes se visitan en barco desde Vigo (de mayo a septiembre, con plazas limitadas: reserva antes).",
+      "en": "The Cíes Islands are a boat trip from Vigo (May to September, limited places: book ahead)."
+    }
+  },
+  "provenza-y-costa-azul": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Provenza y Costa Azul",
+      "en": "Provence and the Côte d'Azur"
+    },
+    "summary": {
+      "es": "Ruinas romanas en Arlés, el Palacio de los Papas en Aviñón y el mar turquesa de Niza y Mónaco.",
+      "en": "Roman ruins in Arles, the Palace of the Popes in Avignon and the turquoise sea of Nice and Monaco."
+    },
+    "countries": [
+      "FR"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Marsella",
+              "en": "Marseille"
+            },
+            "countryCode": "FR",
+            "lat": 43.2965,
+            "lng": 5.3698,
+            "codes": [
+              "MRS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 160,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Niza",
+              "en": "Nice"
+            },
+            "countryCode": "FR",
+            "lat": 43.7102,
+            "lng": 7.262,
+            "codes": [
+              "NCE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "nice-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Marsella",
+              "en": "Marseille"
+            },
+            "countryCode": "FR",
+            "lat": 43.2965,
+            "lng": 5.3698,
+            "codes": [
+              "MRS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Arlés",
+              "en": "Arles"
+            },
+            "countryCode": "FR",
+            "lat": 43.6766,
+            "lng": 4.6278,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 20,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Aviñón",
+              "en": "Avignon"
+            },
+            "countryCode": "FR",
+            "lat": 43.9493,
+            "lng": 4.8055,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 200,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Niza",
+              "en": "Nice"
+            },
+            "countryCode": "FR",
+            "lat": 43.7102,
+            "lng": 7.262,
+            "codes": [
+              "NCE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "nice-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Nimes",
+              "en": "Nîmes"
+            },
+            "countryCode": "FR",
+            "lat": 43.8367,
+            "lng": 4.3601,
+            "codes": [
+              "FNI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Arlés",
+              "en": "Arles"
+            },
+            "countryCode": "FR",
+            "lat": 43.6766,
+            "lng": 4.6278,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 20,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Aviñón",
+              "en": "Avignon"
+            },
+            "countryCode": "FR",
+            "lat": 43.9493,
+            "lng": 4.8055,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Aix-en-Provence",
+              "en": "Aix-en-Provence"
+            },
+            "countryCode": "FR",
+            "lat": 43.5297,
+            "lng": 5.4474,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 35,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Marsella",
+              "en": "Marseille"
+            },
+            "countryCode": "FR",
+            "lat": 43.2965,
+            "lng": 5.3698,
+            "codes": [
+              "MRS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cannes",
+              "en": "Cannes"
+            },
+            "countryCode": "FR",
+            "lat": 43.5528,
+            "lng": 7.0174,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Niza",
+              "en": "Nice"
+            },
+            "countryCode": "FR",
+            "lat": 43.7102,
+            "lng": 7.262,
+            "codes": [
+              "NCE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "nice-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Mónaco y Èze se hacen en el día desde Niza en tren o bus. La lavanda florece de finales de junio a mediados de julio; para los pueblos del Luberon, mejor coche.",
+      "en": "Monaco and Èze are easy day trips from Nice by train or bus. Lavender blooms late June to mid July; the Luberon villages are best by car."
+    }
+  },
+  "alsacia": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Alsacia",
+      "en": "Alsace"
+    },
+    "summary": {
+      "es": "Casas de entramado, canales y pueblos de la ruta del vino, de Estrasburgo a Colmar y hasta Basilea.",
+      "en": "Half-timbered houses, canals and wine-route villages, from Strasbourg to Colmar and on to Basel."
+    },
+    "countries": [
+      "FR",
+      "CH"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      9,
+      10,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Estrasburgo",
+              "en": "Strasbourg"
+            },
+            "countryCode": "FR",
+            "lat": 48.5734,
+            "lng": 7.7521,
+            "codes": [
+              "SXB",
+              "FKB"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Colmar",
+              "en": "Colmar"
+            },
+            "countryCode": "FR",
+            "lat": 48.0794,
+            "lng": 7.3585,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Basilea",
+              "en": "Basel"
+            },
+            "countryCode": "CH",
+            "lat": 47.5596,
+            "lng": 7.5886,
+            "codes": [
+              "BSL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Estrasburgo",
+              "en": "Strasbourg"
+            },
+            "countryCode": "FR",
+            "lat": 48.5734,
+            "lng": 7.7521,
+            "codes": [
+              "SXB",
+              "FKB"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Obernai",
+              "en": "Obernai"
+            },
+            "countryCode": "FR",
+            "lat": 48.4623,
+            "lng": 7.4819,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Riquewihr",
+              "en": "Riquewihr"
+            },
+            "countryCode": "FR",
+            "lat": 48.1667,
+            "lng": 7.2975,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Colmar",
+              "en": "Colmar"
+            },
+            "countryCode": "FR",
+            "lat": 48.0794,
+            "lng": 7.3585,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Basilea",
+              "en": "Basel"
+            },
+            "countryCode": "CH",
+            "lat": 47.5596,
+            "lng": 7.5886,
+            "codes": [
+              "BSL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Pocos vuelos a Estrasburgo: lo normal es entrar o salir por Basilea-Mulhouse (BSL). En diciembre, mercados de Navidad; los pueblos del vino son más fáciles en coche.",
+      "en": "Few flights reach Strasbourg: flying in or out of Basel-Mulhouse (BSL) is usual. Christmas markets in December; the wine villages are easier by car."
+    }
+  },
+  "burdeos-y-pais-vasco-frances": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Burdeos y el País Vasco francés",
+      "en": "Bordeaux and the French Basque Country"
+    },
+    "summary": {
+      "es": "Vino en Burdeos, la duna de Pilat y las playas surferas de Biarritz, hasta los pintxos de San Sebastián.",
+      "en": "Wine in Bordeaux, the Dune of Pilat and Biarritz's surf beaches, all the way to San Sebastián's pintxos."
+    },
+    "countries": [
+      "FR",
+      "ES"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Burdeos",
+              "en": "Bordeaux"
+            },
+            "countryCode": "FR",
+            "lat": 44.8378,
+            "lng": -0.5792,
+            "codes": [
+              "BOD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 125,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Biarritz",
+              "en": "Biarritz"
+            },
+            "countryCode": "FR",
+            "lat": 43.4832,
+            "lng": -1.5586,
+            "codes": [
+              "BIQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Burdeos",
+              "en": "Bordeaux"
+            },
+            "countryCode": "FR",
+            "lat": 44.8378,
+            "lng": -0.5792,
+            "codes": [
+              "BOD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 50,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Arcachon (duna de Pilat)",
+              "en": "Arcachon (Dune of Pilat)"
+            },
+            "countryCode": "FR",
+            "lat": 44.6586,
+            "lng": -1.1689,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Biarritz",
+              "en": "Biarritz"
+            },
+            "countryCode": "FR",
+            "lat": 43.4832,
+            "lng": -1.5586,
+            "codes": [
+              "BIQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "San Sebastián",
+              "en": "San Sebastián"
+            },
+            "countryCode": "ES",
+            "lat": 43.3183,
+            "lng": -1.9812,
+            "codes": [
+              "EAS",
+              "BIQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Burdeos",
+              "en": "Bordeaux"
+            },
+            "countryCode": "FR",
+            "lat": 44.8378,
+            "lng": -0.5792,
+            "codes": [
+              "BOD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Saint-Émilion",
+              "en": "Saint-Émilion"
+            },
+            "countryCode": "FR",
+            "lat": 44.8939,
+            "lng": -0.1556,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Arcachon (duna de Pilat)",
+              "en": "Arcachon (Dune of Pilat)"
+            },
+            "countryCode": "FR",
+            "lat": 44.6586,
+            "lng": -1.1689,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Biarritz",
+              "en": "Biarritz"
+            },
+            "countryCode": "FR",
+            "lat": 43.4832,
+            "lng": -1.5586,
+            "codes": [
+              "BIQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 15,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "San Juan de Luz",
+              "en": "Saint-Jean-de-Luz"
+            },
+            "countryCode": "FR",
+            "lat": 43.3881,
+            "lng": -1.6634,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "San Sebastián",
+              "en": "San Sebastián"
+            },
+            "countryCode": "ES",
+            "lat": 43.3183,
+            "lng": -1.9812,
+            "codes": [
+              "EAS",
+              "BIQ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Bilbao",
+              "en": "Bilbao"
+            },
+            "countryCode": "ES",
+            "lat": 43.263,
+            "lng": -2.935,
+            "codes": [
+              "BIO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "bilbao-1-day"
+          }
+        ]
+      }
+    }
+  },
+  "paris-y-normandia": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "París y Normandía",
+      "en": "Paris and Normandy"
+    },
+    "summary": {
+      "es": "París y después la Normandía de Monet: Ruan, los acantilados de Étretat, las playas del Desembarco y el Mont-Saint-Michel.",
+      "en": "Paris, then Monet's Normandy: Rouen, the Étretat cliffs, the D-Day beaches and Mont-Saint-Michel."
+    },
+    "countries": [
+      "FR"
+    ],
+    "reversible": false,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "París",
+              "en": "Paris"
+            },
+            "countryCode": "FR",
+            "lat": 48.8566,
+            "lng": 2.3522,
+            "codes": [
+              "BVA",
+              "ORY",
+              "CDG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "paris-3-days",
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ruan",
+              "en": "Rouen"
+            },
+            "countryCode": "FR",
+            "lat": 49.4432,
+            "lng": 1.0999,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Étretat",
+              "en": "Étretat"
+            },
+            "countryCode": "FR",
+            "lat": 49.7071,
+            "lng": 0.2056,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 165,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "París",
+              "en": "Paris"
+            },
+            "countryCode": "FR",
+            "lat": 48.8566,
+            "lng": 2.3522,
+            "codes": [
+              "BVA",
+              "ORY",
+              "CDG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "paris-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "París",
+              "en": "Paris"
+            },
+            "countryCode": "FR",
+            "lat": 48.8566,
+            "lng": 2.3522,
+            "codes": [
+              "BVA",
+              "ORY",
+              "CDG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "paris-3-days",
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ruan",
+              "en": "Rouen"
+            },
+            "countryCode": "FR",
+            "lat": 49.4432,
+            "lng": 1.0999,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Étretat",
+              "en": "Étretat"
+            },
+            "countryCode": "FR",
+            "lat": 49.7071,
+            "lng": 0.2056,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Bayeux (playas del Desembarco)",
+              "en": "Bayeux (D-Day beaches)"
+            },
+            "countryCode": "FR",
+            "lat": 49.2764,
+            "lng": -0.7024,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Mont-Saint-Michel",
+              "en": "Mont-Saint-Michel"
+            },
+            "countryCode": "FR",
+            "lat": 48.6361,
+            "lng": -1.5115,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "París",
+              "en": "Paris"
+            },
+            "countryCode": "FR",
+            "lat": 48.8566,
+            "lng": 2.3522,
+            "codes": [
+              "BVA",
+              "ORY",
+              "CDG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "paris-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "París",
+              "en": "Paris"
+            },
+            "countryCode": "FR",
+            "lat": 48.8566,
+            "lng": 2.3522,
+            "codes": [
+              "BVA",
+              "ORY",
+              "CDG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "paris-3-days",
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Giverny",
+              "en": "Giverny"
+            },
+            "countryCode": "FR",
+            "lat": 49.0756,
+            "lng": 1.5339,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Ruan",
+              "en": "Rouen"
+            },
+            "countryCode": "FR",
+            "lat": 49.4432,
+            "lng": 1.0999,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Étretat",
+              "en": "Étretat"
+            },
+            "countryCode": "FR",
+            "lat": 49.7071,
+            "lng": 0.2056,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Honfleur",
+              "en": "Honfleur"
+            },
+            "countryCode": "FR",
+            "lat": 49.419,
+            "lng": 0.233,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Bayeux (playas del Desembarco)",
+              "en": "Bayeux (D-Day beaches)"
+            },
+            "countryCode": "FR",
+            "lat": 49.2764,
+            "lng": -0.7024,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Mont-Saint-Michel",
+              "en": "Mont-Saint-Michel"
+            },
+            "countryCode": "FR",
+            "lat": 48.6361,
+            "lng": -1.5115,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Saint-Malo",
+              "en": "Saint-Malo"
+            },
+            "countryCode": "FR",
+            "lat": 48.6493,
+            "lng": -2.0257,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 140,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "París",
+              "en": "Paris"
+            },
+            "countryCode": "FR",
+            "lat": 48.8566,
+            "lng": 2.3522,
+            "codes": [
+              "BVA",
+              "ORY",
+              "CDG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "paris-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Normandía en transporte público es lenta (Étretat, Honfleur y las playas del Desembarco casi sin tren): mejor alquilar coche en Ruan o hacer excursiones organizadas desde Bayeux.",
+      "en": "Normandy by public transport is slow (Étretat, Honfleur and the D-Day beaches have almost no trains): rent a car in Rouen or take tours from Bayeux."
+    }
+  },
+  "castilla": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Madrid y Castilla",
+      "en": "Madrid and Castile"
+    },
+    "summary": {
+      "es": "Madrid y las ciudades Patrimonio que la rodean: Toledo, el acueducto de Segovia, las murallas de Ávila y la Salamanca dorada.",
+      "en": "Madrid and the World Heritage cities around it: Toledo, Segovia's aqueduct, Ávila's walls and golden Salamanca."
+    },
+    "countries": [
+      "ES"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "madrid-3-days",
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Toledo",
+              "en": "Toledo"
+            },
+            "countryCode": "ES",
+            "lat": 39.8628,
+            "lng": -4.0273,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Segovia",
+              "en": "Segovia"
+            },
+            "countryCode": "ES",
+            "lat": 40.9429,
+            "lng": -4.1088,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "madrid-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "madrid-3-days",
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Toledo",
+              "en": "Toledo"
+            },
+            "countryCode": "ES",
+            "lat": 39.8628,
+            "lng": -4.0273,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Segovia",
+              "en": "Segovia"
+            },
+            "countryCode": "ES",
+            "lat": 40.9429,
+            "lng": -4.1088,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ávila",
+              "en": "Ávila"
+            },
+            "countryCode": "ES",
+            "lat": 40.6565,
+            "lng": -4.6818,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Salamanca",
+              "en": "Salamanca"
+            },
+            "countryCode": "ES",
+            "lat": 40.9701,
+            "lng": -5.6635,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 95,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "madrid-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "madrid-3-days",
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Toledo",
+              "en": "Toledo"
+            },
+            "countryCode": "ES",
+            "lat": 39.8628,
+            "lng": -4.0273,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Segovia",
+              "en": "Segovia"
+            },
+            "countryCode": "ES",
+            "lat": 40.9429,
+            "lng": -4.1088,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ávila",
+              "en": "Ávila"
+            },
+            "countryCode": "ES",
+            "lat": 40.6565,
+            "lng": -4.6818,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Salamanca",
+              "en": "Salamanca"
+            },
+            "countryCode": "ES",
+            "lat": 40.9701,
+            "lng": -5.6635,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 135,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "León",
+              "en": "León"
+            },
+            "countryCode": "ES",
+            "lat": 42.5987,
+            "lng": -5.5671,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 125,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "madrid-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En julio y agosto la meseta es muy calurosa; en invierno, fría pero con menos gente.",
+      "en": "July and August on the plateau are very hot; winter is cold but quieter."
+    }
+  },
+  "cataluna": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Cataluña",
+      "en": "Catalonia"
+    },
+    "summary": {
+      "es": "Ruinas romanas en Tarragona, Gaudí en Barcelona y la Costa Brava de Dalí, de Figueres a Cadaqués.",
+      "en": "Roman ruins in Tarragona, Gaudí in Barcelona and Dalí's Costa Brava, from Figueres to Cadaqués."
+    },
+    "countries": [
+      "ES"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Barcelona",
+              "en": "Barcelona"
+            },
+            "countryCode": "ES",
+            "lat": 41.3874,
+            "lng": 2.1686,
+            "codes": [
+              "BCN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "barcelona-3-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Girona",
+              "en": "Girona"
+            },
+            "countryCode": "ES",
+            "lat": 41.9794,
+            "lng": 2.8214,
+            "codes": [
+              "GRO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tarragona",
+              "en": "Tarragona"
+            },
+            "countryCode": "ES",
+            "lat": 41.1189,
+            "lng": 1.2445,
+            "codes": [
+              "REU"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sitges",
+              "en": "Sitges"
+            },
+            "countryCode": "ES",
+            "lat": 41.2372,
+            "lng": 1.8059,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Barcelona",
+              "en": "Barcelona"
+            },
+            "countryCode": "ES",
+            "lat": 41.3874,
+            "lng": 2.1686,
+            "codes": [
+              "BCN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "barcelona-3-days",
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Girona",
+              "en": "Girona"
+            },
+            "countryCode": "ES",
+            "lat": 41.9794,
+            "lng": 2.8214,
+            "codes": [
+              "GRO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tarragona",
+              "en": "Tarragona"
+            },
+            "countryCode": "ES",
+            "lat": 41.1189,
+            "lng": 1.2445,
+            "codes": [
+              "REU"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sitges",
+              "en": "Sitges"
+            },
+            "countryCode": "ES",
+            "lat": 41.2372,
+            "lng": 1.8059,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Barcelona",
+              "en": "Barcelona"
+            },
+            "countryCode": "ES",
+            "lat": 41.3874,
+            "lng": 2.1686,
+            "codes": [
+              "BCN"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "barcelona-3-days",
+            "land": {
+              "minutes": 55,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Figueres",
+              "en": "Figueres"
+            },
+            "countryCode": "ES",
+            "lat": 42.2666,
+            "lng": 2.9615,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Cadaqués",
+              "en": "Cadaqués"
+            },
+            "countryCode": "ES",
+            "lat": 42.2889,
+            "lng": 3.2775,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 105,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Girona",
+              "en": "Girona"
+            },
+            "countryCode": "ES",
+            "lat": 41.9794,
+            "lng": 2.8214,
+            "codes": [
+              "GRO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Las calas de la Costa Brava se disfrutan más con coche; en agosto hay mucha gente.",
+      "en": "The Costa Brava coves are best with a car; August is very crowded."
+    }
+  },
+  "madeira": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Madeira",
+      "en": "Madeira"
+    },
+    "summary": {
+      "es": "Levadas entre laurisilva, piscinas volcánicas en Porto Moniz y acantilados sobre el Atlántico, en primavera todo el año.",
+      "en": "Levada walks through laurel forest, volcanic pools at Porto Moniz and Atlantic cliffs, in year-round spring."
+    },
+    "countries": [
+      "PT"
+    ],
+    "reversible": true,
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Funchal",
+              "en": "Funchal"
+            },
+            "countryCode": "PT",
+            "lat": 32.6669,
+            "lng": -16.9241,
+            "codes": [
+              "FNC"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Porto Moniz",
+              "en": "Porto Moniz"
+            },
+            "countryCode": "PT",
+            "lat": 32.8667,
+            "lng": -17.1667,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Santana",
+              "en": "Santana"
+            },
+            "countryCode": "PT",
+            "lat": 32.8065,
+            "lng": -16.8815,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Funchal",
+              "en": "Funchal"
+            },
+            "countryCode": "PT",
+            "lat": 32.6669,
+            "lng": -16.9241,
+            "codes": [
+              "FNC"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Funchal",
+              "en": "Funchal"
+            },
+            "countryCode": "PT",
+            "lat": 32.6669,
+            "lng": -16.9241,
+            "codes": [
+              "FNC"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Calheta",
+              "en": "Calheta"
+            },
+            "countryCode": "PT",
+            "lat": 32.7224,
+            "lng": -17.1755,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Porto Moniz",
+              "en": "Porto Moniz"
+            },
+            "countryCode": "PT",
+            "lat": 32.8667,
+            "lng": -17.1667,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Santana",
+              "en": "Santana"
+            },
+            "countryCode": "PT",
+            "lat": 32.8065,
+            "lng": -16.8815,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 30,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Machico",
+              "en": "Machico"
+            },
+            "countryCode": "PT",
+            "lat": 32.7171,
+            "lng": -16.7666,
+            "codes": [
+              "FNC"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Alquila coche: los buses entre pueblos son lentos y escasos. Las levadas y el Pico Ruivo madrugando, antes de que suban las nubes.",
+      "en": "Rent a car: buses between villages are slow and infrequent. Do the levadas and Pico Ruivo early, before the clouds roll in."
+    }
+  },
+  "azores-sao-miguel": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Azores: São Miguel",
+      "en": "Azores: São Miguel"
+    },
+    "summary": {
+      "es": "Lagos en cráteres, aguas termales en Furnas y ballenas frente a la costa, en la isla verde de las Azores.",
+      "en": "Crater lakes, hot springs in Furnas and whales offshore, on the green island of the Azores."
+    },
+    "countries": [
+      "PT"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Ponta Delgada",
+              "en": "Ponta Delgada"
+            },
+            "countryCode": "PT",
+            "lat": 37.7412,
+            "lng": -25.6756,
+            "codes": [
+              "PDL"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Furnas",
+              "en": "Furnas"
+            },
+            "countryCode": "PT",
+            "lat": 37.7726,
+            "lng": -25.3195,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Ponta Delgada",
+              "en": "Ponta Delgada"
+            },
+            "countryCode": "PT",
+            "lat": 37.7412,
+            "lng": -25.6756,
+            "codes": [
+              "PDL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Ponta Delgada",
+              "en": "Ponta Delgada"
+            },
+            "countryCode": "PT",
+            "lat": 37.7412,
+            "lng": -25.6756,
+            "codes": [
+              "PDL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 30,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Sete Cidades",
+              "en": "Sete Cidades"
+            },
+            "countryCode": "PT",
+            "lat": 37.8636,
+            "lng": -25.788,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Ribeira Grande",
+              "en": "Ribeira Grande"
+            },
+            "countryCode": "PT",
+            "lat": 37.8213,
+            "lng": -25.5227,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Nordeste",
+              "en": "Nordeste"
+            },
+            "countryCode": "PT",
+            "lat": 37.8326,
+            "lng": -25.1462,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Furnas",
+              "en": "Furnas"
+            },
+            "countryCode": "PT",
+            "lat": 37.7726,
+            "lng": -25.3195,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Ponta Delgada",
+              "en": "Ponta Delgada"
+            },
+            "countryCode": "PT",
+            "lat": 37.7412,
+            "lng": -25.6756,
+            "codes": [
+              "PDL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Alquila coche: el bus apenas llega a los miradores. El tiempo cambia en minutos; mira las webcams antes de subir a Sete Cidades.",
+      "en": "Rent a car: buses barely reach the viewpoints. The weather changes by the minute; check the webcams before driving up to Sete Cidades."
+    }
+  },
+  "comunidad-valenciana": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Comunidad Valenciana",
+      "en": "Valencia region"
+    },
+    "summary": {
+      "es": "Paella en Valencia, el castillo de Xàtiva, las casas blancas de Altea y el paseo de Alicante: Mediterráneo de punta a punta.",
+      "en": "Paella in Valencia, Xàtiva castle, the white houses of Altea and the seafront of Alicante: the Mediterranean end to end."
+    },
+    "countries": [
+      "ES"
+    ],
+    "reversible": true,
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Valencia",
+              "en": "Valencia"
+            },
+            "countryCode": "ES",
+            "lat": 39.4699,
+            "lng": -0.3763,
+            "codes": [
+              "VLC"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "valencia-2-days",
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Altea",
+              "en": "Altea"
+            },
+            "countryCode": "ES",
+            "lat": 38.5988,
+            "lng": -0.0515,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Alicante",
+              "en": "Alicante"
+            },
+            "countryCode": "ES",
+            "lat": 38.3452,
+            "lng": -0.481,
+            "codes": [
+              "ALC"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Valencia",
+              "en": "Valencia"
+            },
+            "countryCode": "ES",
+            "lat": 39.4699,
+            "lng": -0.3763,
+            "codes": [
+              "VLC"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "valencia-2-days",
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Xàtiva",
+              "en": "Xàtiva"
+            },
+            "countryCode": "ES",
+            "lat": 38.99,
+            "lng": -0.5187,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Dénia",
+              "en": "Dénia"
+            },
+            "countryCode": "ES",
+            "lat": 38.8408,
+            "lng": 0.1057,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Altea",
+              "en": "Altea"
+            },
+            "countryCode": "ES",
+            "lat": 38.5988,
+            "lng": -0.0515,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Alicante",
+              "en": "Alicante"
+            },
+            "countryCode": "ES",
+            "lat": 38.3452,
+            "lng": -0.481,
+            "codes": [
+              "ALC"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Valencia",
+              "en": "Valencia"
+            },
+            "countryCode": "ES",
+            "lat": 39.4699,
+            "lng": -0.3763,
+            "codes": [
+              "VLC"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "valencia-2-days",
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Xàtiva",
+              "en": "Xàtiva"
+            },
+            "countryCode": "ES",
+            "lat": 38.99,
+            "lng": -0.5187,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Dénia",
+              "en": "Dénia"
+            },
+            "countryCode": "ES",
+            "lat": 38.8408,
+            "lng": 0.1057,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 20,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Jávea",
+              "en": "Jávea"
+            },
+            "countryCode": "ES",
+            "lat": 38.7896,
+            "lng": 0.1663,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Altea",
+              "en": "Altea"
+            },
+            "countryCode": "ES",
+            "lat": 38.5988,
+            "lng": -0.0515,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Alicante",
+              "en": "Alicante"
+            },
+            "countryCode": "ES",
+            "lat": 38.3452,
+            "lng": -0.481,
+            "codes": [
+              "ALC"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 30,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Elche",
+              "en": "Elche"
+            },
+            "countryCode": "ES",
+            "lat": 38.2669,
+            "lng": -0.6984,
+            "codes": [
+              "ALC"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Entre Xàtiva y la costa (Dénia, Jávea) el coche ahorra mucho tiempo; de Dénia a Alicante va el TRAM por la costa, lento pero bonito.",
+      "en": "Between Xàtiva and the coast (Dénia, Jávea) a car saves a lot of time; from Dénia to Alicante the coastal TRAM is slow but scenic."
+    }
+  },
+  "valle-del-duero": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Valle del Duero",
+      "en": "Douro Valley"
+    },
+    "summary": {
+      "es": "Oporto y sus bodegas, el tren junto al río y las terrazas de viñedos del Alto Douro: el vino de Oporto en su origen.",
+      "en": "Porto and its port lodges, the riverside train and the terraced vineyards of the Upper Douro: port wine at its source."
+    },
+    "countries": [
+      "PT"
+    ],
+    "reversible": false,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "porto-2-days",
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Peso da Régua",
+              "en": "Peso da Régua"
+            },
+            "countryCode": "PT",
+            "lat": 41.1636,
+            "lng": -7.7876,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pinhão",
+              "en": "Pinhão"
+            },
+            "countryCode": "PT",
+            "lat": 41.1903,
+            "lng": -7.545,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            },
+            "guide": "porto-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "porto-2-days",
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Guimarães",
+              "en": "Guimarães"
+            },
+            "countryCode": "PT",
+            "lat": 41.4425,
+            "lng": -8.2918,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Amarante",
+              "en": "Amarante"
+            },
+            "countryCode": "PT",
+            "lat": 41.2717,
+            "lng": -8.082,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Peso da Régua",
+              "en": "Peso da Régua"
+            },
+            "countryCode": "PT",
+            "lat": 41.1636,
+            "lng": -7.7876,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pinhão",
+              "en": "Pinhão"
+            },
+            "countryCode": "PT",
+            "lat": 41.1903,
+            "lng": -7.545,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "porto-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "porto-2-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Braga",
+              "en": "Braga"
+            },
+            "countryCode": "PT",
+            "lat": 41.5454,
+            "lng": -8.4265,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Guimarães",
+              "en": "Guimarães"
+            },
+            "countryCode": "PT",
+            "lat": 41.4425,
+            "lng": -8.2918,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Amarante",
+              "en": "Amarante"
+            },
+            "countryCode": "PT",
+            "lat": 41.2717,
+            "lng": -8.082,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Lamego",
+              "en": "Lamego"
+            },
+            "countryCode": "PT",
+            "lat": 41.097,
+            "lng": -7.8095,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 20,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Peso da Régua",
+              "en": "Peso da Régua"
+            },
+            "countryCode": "PT",
+            "lat": 41.1636,
+            "lng": -7.7876,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Pinhão",
+              "en": "Pinhão"
+            },
+            "countryCode": "PT",
+            "lat": 41.1903,
+            "lng": -7.545,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Oporto",
+              "en": "Porto"
+            },
+            "countryCode": "PT",
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "codes": [
+              "OPO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "porto-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "El tren del Duero (Oporto–Régua–Pinhão) es un viaje en sí mismo; para las quintas y los miradores, mejor coche. En vendimia (septiembre) hay más ambiente y más gente.",
+      "en": "The Douro line (Porto–Régua–Pinhão) is a trip in itself; for the wine estates and viewpoints a car is better. Harvest time (September) is livelier and busier."
+    }
+  },
+  "extremadura": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Extremadura",
+      "en": "Extremadura"
+    },
+    "summary": {
+      "es": "El teatro romano de Mérida, la ciudad medieval de Cáceres y la plaza de Trujillo: la España monumental que casi nadie visita.",
+      "en": "Mérida's Roman theatre, medieval Cáceres and Trujillo's main square: the monumental Spain hardly anyone visits."
+    },
+    "countries": [
+      "ES"
+    ],
+    "reversible": false,
+    "months": [
+      3,
+      4,
+      5,
+      10,
+      11
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "madrid-3-days",
+            "land": {
+              "minutes": 230,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Mérida",
+              "en": "Mérida"
+            },
+            "countryCode": "ES",
+            "lat": 38.9161,
+            "lng": -6.3437,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Cáceres",
+              "en": "Cáceres"
+            },
+            "countryCode": "ES",
+            "lat": 39.4753,
+            "lng": -6.3724,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Trujillo",
+              "en": "Trujillo"
+            },
+            "countryCode": "ES",
+            "lat": 39.4597,
+            "lng": -5.8826,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 160,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            },
+            "guide": "madrid-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "madrid-3-days",
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Plasencia",
+              "en": "Plasencia"
+            },
+            "countryCode": "ES",
+            "lat": 40.0303,
+            "lng": -6.0884,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Cáceres",
+              "en": "Cáceres"
+            },
+            "countryCode": "ES",
+            "lat": 39.4753,
+            "lng": -6.3724,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Mérida",
+              "en": "Mérida"
+            },
+            "countryCode": "ES",
+            "lat": 38.9161,
+            "lng": -6.3437,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Trujillo",
+              "en": "Trujillo"
+            },
+            "countryCode": "ES",
+            "lat": 39.4597,
+            "lng": -5.8826,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 160,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "madrid-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "madrid-3-days",
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Hervás",
+              "en": "Hervás"
+            },
+            "countryCode": "ES",
+            "lat": 40.2722,
+            "lng": -5.8606,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 40,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Plasencia",
+              "en": "Plasencia"
+            },
+            "countryCode": "ES",
+            "lat": 40.0303,
+            "lng": -6.0884,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Cáceres",
+              "en": "Cáceres"
+            },
+            "countryCode": "ES",
+            "lat": 39.4753,
+            "lng": -6.3724,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Mérida",
+              "en": "Mérida"
+            },
+            "countryCode": "ES",
+            "lat": 38.9161,
+            "lng": -6.3437,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 70,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Trujillo",
+              "en": "Trujillo"
+            },
+            "countryCode": "ES",
+            "lat": 39.4597,
+            "lng": -5.8826,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Guadalupe",
+              "en": "Guadalupe"
+            },
+            "countryCode": "ES",
+            "lat": 39.4516,
+            "lng": -5.3275,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 170,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Madrid",
+              "en": "Madrid"
+            },
+            "countryCode": "ES",
+            "lat": 40.4168,
+            "lng": -3.7038,
+            "codes": [
+              "MAD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "madrid-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Badajoz no tiene vuelos de Ryanair ni Wizz, así que se entra y se sale por Madrid. Aquí el coche es casi imprescindible: los trenes son pocos y lentos. En verano pasa de 40 °C.",
+      "en": "Badajoz has no Ryanair or Wizz flights, so you fly in and out of Madrid. A car is almost a must here: trains are few and slow. Summer goes above 40 °C."
+    }
+  },
+  "castillos-del-loira": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Castillos del Loira",
+      "en": "Loire Valley castles"
+    },
+    "summary": {
+      "es": "Chenonceau sobre el río, Chambord y sus torres, Amboise y Blois: los castillos más bonitos de Francia, uno detrás de otro.",
+      "en": "Chenonceau over the river, Chambord and its towers, Amboise and Blois: France's finest castles, one after another."
+    },
+    "countries": [
+      "FR"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tours",
+              "en": "Tours"
+            },
+            "countryCode": "FR",
+            "lat": 47.3941,
+            "lng": 0.6848,
+            "codes": [
+              "TUF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 20,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Amboise (Chenonceau)",
+              "en": "Amboise (Chenonceau)"
+            },
+            "countryCode": "FR",
+            "lat": 47.4125,
+            "lng": 0.9824,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 20,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Blois (Chambord)",
+              "en": "Blois (Chambord)"
+            },
+            "countryCode": "FR",
+            "lat": 47.5861,
+            "lng": 1.3359,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "París",
+              "en": "Paris"
+            },
+            "countryCode": "FR",
+            "lat": 48.8566,
+            "lng": 2.3522,
+            "codes": [
+              "BVA",
+              "ORY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "paris-3-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tours",
+              "en": "Tours"
+            },
+            "countryCode": "FR",
+            "lat": 47.3941,
+            "lng": 0.6848,
+            "codes": [
+              "TUF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 20,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Amboise (Chenonceau)",
+              "en": "Amboise (Chenonceau)"
+            },
+            "countryCode": "FR",
+            "lat": 47.4125,
+            "lng": 0.9824,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 20,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Blois (Chambord)",
+              "en": "Blois (Chambord)"
+            },
+            "countryCode": "FR",
+            "lat": 47.5861,
+            "lng": 1.3359,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Orleans",
+              "en": "Orléans"
+            },
+            "countryCode": "FR",
+            "lat": 47.903,
+            "lng": 1.9093,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 65,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "París",
+              "en": "Paris"
+            },
+            "countryCode": "FR",
+            "lat": 48.8566,
+            "lng": 2.3522,
+            "codes": [
+              "BVA",
+              "ORY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "paris-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Nantes",
+              "en": "Nantes"
+            },
+            "countryCode": "FR",
+            "lat": 47.2184,
+            "lng": -1.5536,
+            "codes": [
+              "NTE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Angers",
+              "en": "Angers"
+            },
+            "countryCode": "FR",
+            "lat": 47.4784,
+            "lng": -0.5632,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 25,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Saumur",
+              "en": "Saumur"
+            },
+            "countryCode": "FR",
+            "lat": 47.26,
+            "lng": -0.0769,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 35,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Chinon",
+              "en": "Chinon"
+            },
+            "countryCode": "FR",
+            "lat": 47.1672,
+            "lng": 0.2425,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Tours",
+              "en": "Tours"
+            },
+            "countryCode": "FR",
+            "lat": 47.3941,
+            "lng": 0.6848,
+            "codes": [
+              "TUF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 20,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Amboise (Chenonceau)",
+              "en": "Amboise (Chenonceau)"
+            },
+            "countryCode": "FR",
+            "lat": 47.4125,
+            "lng": 0.9824,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 20,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Blois (Chambord)",
+              "en": "Blois (Chambord)"
+            },
+            "countryCode": "FR",
+            "lat": 47.5861,
+            "lng": 1.3359,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "París",
+              "en": "Paris"
+            },
+            "countryCode": "FR",
+            "lat": 48.8566,
+            "lng": 2.3522,
+            "codes": [
+              "BVA",
+              "ORY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "paris-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Los trenes unen las ciudades, pero a los castillos (Chenonceau, Chambord, Villandry) se llega mejor en coche, en bici por la Loire à Vélo o en minibús desde Tours.",
+      "en": "Trains link the towns, but the castles (Chenonceau, Chambord, Villandry) are easier by car, by bike on the Loire à Vélo or by minibus tour from Tours."
+    }
+  },
+  "occitania": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Occitania",
+      "en": "Occitanie"
+    },
+    "summary": {
+      "es": "La ciudad rosa de Toulouse, las murallas de Carcasona, la catedral roja de Albi y la Arena de Nimes: el sur de Francia menos conocido.",
+      "en": "Pink Toulouse, the walls of Carcassonne, Albi's red cathedral and the Arena of Nîmes: the lesser-known south of France."
+    },
+    "countries": [
+      "FR"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Toulouse",
+              "en": "Toulouse"
+            },
+            "countryCode": "FR",
+            "lat": 43.6047,
+            "lng": 1.4442,
+            "codes": [
+              "TLS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 65,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Albi",
+              "en": "Albi"
+            },
+            "countryCode": "FR",
+            "lat": 43.9289,
+            "lng": 2.1464,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Carcasona",
+              "en": "Carcassonne"
+            },
+            "countryCode": "FR",
+            "lat": 43.213,
+            "lng": 2.3491,
+            "codes": [
+              "CCF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Toulouse",
+              "en": "Toulouse"
+            },
+            "countryCode": "FR",
+            "lat": 43.6047,
+            "lng": 1.4442,
+            "codes": [
+              "TLS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 65,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Albi",
+              "en": "Albi"
+            },
+            "countryCode": "FR",
+            "lat": 43.9289,
+            "lng": 2.1464,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 100,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Carcasona",
+              "en": "Carcassonne"
+            },
+            "countryCode": "FR",
+            "lat": 43.213,
+            "lng": 2.3491,
+            "codes": [
+              "CCF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Narbona",
+              "en": "Narbonne"
+            },
+            "countryCode": "FR",
+            "lat": 43.1843,
+            "lng": 3.0039,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Montpellier",
+              "en": "Montpellier"
+            },
+            "countryCode": "FR",
+            "lat": 43.6108,
+            "lng": 3.8767,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Nimes",
+              "en": "Nîmes"
+            },
+            "countryCode": "FR",
+            "lat": 43.8367,
+            "lng": 4.3601,
+            "codes": [
+              "FNI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Rodez",
+              "en": "Rodez"
+            },
+            "countryCode": "FR",
+            "lat": 44.3506,
+            "lng": 2.575,
+            "codes": [
+              "RDZ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Conques",
+              "en": "Conques"
+            },
+            "countryCode": "FR",
+            "lat": 44.5989,
+            "lng": 2.398,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Cordes-sur-Ciel",
+              "en": "Cordes-sur-Ciel"
+            },
+            "countryCode": "FR",
+            "lat": 44.0636,
+            "lng": 1.9536,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Albi",
+              "en": "Albi"
+            },
+            "countryCode": "FR",
+            "lat": 43.9289,
+            "lng": 2.1464,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 65,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Toulouse",
+              "en": "Toulouse"
+            },
+            "countryCode": "FR",
+            "lat": 43.6047,
+            "lng": 1.4442,
+            "codes": [
+              "TLS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Carcasona",
+              "en": "Carcassonne"
+            },
+            "countryCode": "FR",
+            "lat": 43.213,
+            "lng": 2.3491,
+            "codes": [
+              "CCF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 35,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Narbona",
+              "en": "Narbonne"
+            },
+            "countryCode": "FR",
+            "lat": 43.1843,
+            "lng": 3.0039,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 70,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Montpellier",
+              "en": "Montpellier"
+            },
+            "countryCode": "FR",
+            "lat": 43.6108,
+            "lng": 3.8767,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Nimes",
+              "en": "Nîmes"
+            },
+            "countryCode": "FR",
+            "lat": 43.8367,
+            "lng": 4.3601,
+            "codes": [
+              "FNI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Entre Toulouse, Carcasona, Narbona, Montpellier y Nimes hay buenos trenes; Conques, Cordes-sur-Ciel y los castillos cátaros piden coche.",
+      "en": "Toulouse, Carcassonne, Narbonne, Montpellier and Nîmes have good trains; Conques, Cordes-sur-Ciel and the Cathar castles need a car."
+    }
+  },
+  "bretana": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Bretaña",
+      "en": "Brittany"
+    },
+    "summary": {
+      "es": "Las murallas de Saint-Malo, el Mont-Saint-Michel, los menhires de Carnac y el golfo de Morbihan: costa salvaje, crêpes y sidra.",
+      "en": "The walls of Saint-Malo, Mont-Saint-Michel, the standing stones of Carnac and the Gulf of Morbihan: wild coast, crêpes and cider."
+    },
+    "countries": [
+      "FR"
+    ],
+    "reversible": false,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Nantes",
+              "en": "Nantes"
+            },
+            "countryCode": "FR",
+            "lat": 47.2184,
+            "lng": -1.5536,
+            "codes": [
+              "NTE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Saint-Malo",
+              "en": "Saint-Malo"
+            },
+            "countryCode": "FR",
+            "lat": 48.6493,
+            "lng": -2.0257,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Mont-Saint-Michel",
+              "en": "Mont-Saint-Michel"
+            },
+            "countryCode": "FR",
+            "lat": 48.6361,
+            "lng": -1.5115,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Nantes",
+              "en": "Nantes"
+            },
+            "countryCode": "FR",
+            "lat": 47.2184,
+            "lng": -1.5536,
+            "codes": [
+              "NTE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Nantes",
+              "en": "Nantes"
+            },
+            "countryCode": "FR",
+            "lat": 47.2184,
+            "lng": -1.5536,
+            "codes": [
+              "NTE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Vannes (Golfo de Morbihan)",
+              "en": "Vannes (Gulf of Morbihan)"
+            },
+            "countryCode": "FR",
+            "lat": 47.6582,
+            "lng": -2.7608,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 110,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Dinan",
+              "en": "Dinan"
+            },
+            "countryCode": "FR",
+            "lat": 48.4556,
+            "lng": -2.0503,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Saint-Malo",
+              "en": "Saint-Malo"
+            },
+            "countryCode": "FR",
+            "lat": 48.6493,
+            "lng": -2.0257,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Mont-Saint-Michel",
+              "en": "Mont-Saint-Michel"
+            },
+            "countryCode": "FR",
+            "lat": 48.6361,
+            "lng": -1.5115,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Nantes",
+              "en": "Nantes"
+            },
+            "countryCode": "FR",
+            "lat": 47.2184,
+            "lng": -1.5536,
+            "codes": [
+              "NTE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Nantes",
+              "en": "Nantes"
+            },
+            "countryCode": "FR",
+            "lat": 47.2184,
+            "lng": -1.5536,
+            "codes": [
+              "NTE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Vannes (Golfo de Morbihan)",
+              "en": "Vannes (Gulf of Morbihan)"
+            },
+            "countryCode": "FR",
+            "lat": 47.6582,
+            "lng": -2.7608,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 30,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Carnac",
+              "en": "Carnac"
+            },
+            "countryCode": "FR",
+            "lat": 47.5841,
+            "lng": -3.0779,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Quimper",
+              "en": "Quimper"
+            },
+            "countryCode": "FR",
+            "lat": 47.996,
+            "lng": -4.1024,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 160,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Dinan",
+              "en": "Dinan"
+            },
+            "countryCode": "FR",
+            "lat": 48.4556,
+            "lng": -2.0503,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Saint-Malo",
+              "en": "Saint-Malo"
+            },
+            "countryCode": "FR",
+            "lat": 48.6493,
+            "lng": -2.0257,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Mont-Saint-Michel",
+              "en": "Mont-Saint-Michel"
+            },
+            "countryCode": "FR",
+            "lat": 48.6361,
+            "lng": -1.5115,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 80,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Rennes",
+              "en": "Rennes"
+            },
+            "countryCode": "FR",
+            "lat": 48.1173,
+            "lng": -1.6778,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Nantes",
+              "en": "Nantes"
+            },
+            "countryCode": "FR",
+            "lat": 47.2184,
+            "lng": -1.5536,
+            "codes": [
+              "NTE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Rennes, Dinard y Brest no tienen vuelos de Ryanair ni Wizz: se entra y se sale por Nantes. En Bretaña el coche marca la diferencia; en tren y autobús se puede, pero tardas bastante más.",
+      "en": "Rennes, Dinard and Brest have no Ryanair or Wizz flights: you fly in and out of Nantes. In Brittany a car makes all the difference; trains and buses work, but take much longer."
+    }
+  }
+}

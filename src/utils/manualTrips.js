@@ -1,5 +1,5 @@
 import { daysBetween, isDay } from "@/utils/dates";
-import { MAX_STOPS, MAX_TRIP_DAYS } from "@/constants/manualTrips";
+import { MAX_STOPS, MAX_TOWN_DAYS, MAX_TRIP_DAYS } from "@/constants/manualTrips";
 
 // "2026-11-13" + "10:00" → comparable text; without a time, the start of the day
 const momentOf = (day, time) => `${day}T${time || "00:00"}`;
@@ -10,6 +10,7 @@ const problemOf = (stop, previous) => {
   if (!stop.arriveDay || !stop.leaveDay) return "dates";
   if (momentOf(stop.leaveDay, stop.leaveTime) < momentOf(stop.arriveDay, stop.arriveTime)) return "leaveBeforeArrive";
   if (previous?.leaveDay && momentOf(stop.arriveDay, stop.arriveTime) < momentOf(previous.leaveDay, previous.leaveTime)) return "overlap";
+  if (daysBetween(stop.arriveDay, stop.leaveDay).length > MAX_TOWN_DAYS) return "townTooLong";
   return null;
 };
 
@@ -41,8 +42,13 @@ export const savedStops = (stops) =>
     leave: { day: leaveDay, time: leaveTime || null },
   }));
 
+// A town of a multi-city route by its place in the route as written ("italia-clasica/full/2"): towns with no airport
+// (Matera, Siena) go to the planner this way
+export const isRouteTown = (code) => /^[a-z0-9-]+\/(short|full|long)\/\d+$/.test(code ?? "");
+
 // Towns for a link to the planner (?stops=…), each { code, arriveDay, arriveTime, leaveDay, leaveTime } (days and
-// times may be empty): "ZAG,2026-11-26,07:55,2026-11-28,17:55;BSL,2026-11-28,19:30,2026-11-30,07:50"
+// times may be empty; `code` an airport's or a route town's, isRouteTown):
+// "ZAG,2026-11-26,07:55,2026-11-28,17:55;BSL,2026-11-28,19:30,2026-11-30,07:50"
 export const stopsParam = (stops) =>
   stops.map((stop) => [stop.code, stop.arriveDay, stop.arriveTime, stop.leaveDay, stop.leaveTime].map((part) => part ?? "").join(",")).join(";");
 
@@ -62,7 +68,7 @@ export const stopsFromParam = (text) =>
   String(text ?? "")
     .split(";")
     .map((part) => part.split(","))
-    .filter(([code]) => /^[A-Z]{3}$/.test(code ?? ""))
+    .filter(([code]) => /^[A-Z]{3}$/.test(code ?? "") || isRouteTown(code))
     .slice(0, MAX_STOPS)
     .map(([code, arriveDay, arriveTime, leaveDay, leaveTime]) => ({
       code,

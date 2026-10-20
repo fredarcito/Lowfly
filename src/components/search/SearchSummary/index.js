@@ -5,6 +5,7 @@ import { ArrowRight, Check, Pencil, PlaneTakeoff, Share2 } from "lucide-react";
 import { MODES } from "@/components/search/ModeTabs";
 import { useI18n } from "@/context/i18n";
 import { APP_NAME } from "@/i18n/config";
+import { daysBetween } from "@/utils/dates";
 
 // One line with the search that produced the results. Clicking it opens the form again;
 // "Share" sends the link to this search (it is in the URL, see lib/share).
@@ -13,14 +14,16 @@ const SearchSummary = ({ query, originName, onEdit }) => {
   const [copied, setCopied] = useState(false);
   if (!query) return null;
 
-  const { mode, origin, country, city, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend } = query;
+  const { mode, origin, country, city, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend, freeFrom, freeTo } = query;
   const ModeIcon = MODES.find((candidate) => candidate.id === mode).icon;
-  const destination = mode === "everywhere" ? texts.summary.anywhere : city || country;
+  const destination = { everywhere: texts.summary.anywhere, multiCity: texts.summary.multiCity }[mode] ?? (city || country);
   const route = `${originName ?? origin} → ${destination}`;
   const parts =
     mode === "trip"
       ? [`${format.fmtDay(ida)} → ${format.fmtDay(vuelta)}`, texts.form.flexOption(Number(flex))]
-      : [
+      : mode === "multiCity"
+        ? [`${format.fmtDay(freeFrom)} → ${format.fmtDay(freeTo)}`, texts.summary.freeDays(daysBetween(freeFrom, freeTo).length)]
+        : [
           `${format.fmtDay(from)} → ${format.fmtDay(to)}`,
           trip !== "return"
             ? texts.form.oneway

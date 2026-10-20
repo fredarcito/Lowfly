@@ -1,0 +1,1067 @@
+{
+  "canarias-occidentales": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Tenerife, La Gomera y La Palma",
+      "en": "Tenerife, La Gomera and La Palma"
+    },
+    "summary": {
+      "es": "El Teide y los bosques de Anaga, la laurisilva de Garajonay en La Gomera y los volcanes y cielos estrellados de La Palma.",
+      "en": "Mount Teide and the Anaga forests, the Garajonay laurel forest on La Gomera, and La Palma's volcanoes and starry skies."
+    },
+    "countries": [
+      "ES"
+    ],
+    "reversible": true,
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Puerto de la Cruz (Tenerife)",
+              "en": "Puerto de la Cruz (Tenerife)"
+            },
+            "countryCode": "ES",
+            "lat": 28.4142,
+            "lng": -16.5481,
+            "codes": [
+              "TFN",
+              "TFS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "San Sebastián de La Gomera",
+              "en": "San Sebastián de La Gomera"
+            },
+            "countryCode": "ES",
+            "lat": 28.0916,
+            "lng": -17.1133,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Los Cristianos (Tenerife)",
+              "en": "Los Cristianos (Tenerife)"
+            },
+            "countryCode": "ES",
+            "lat": 28.0505,
+            "lng": -16.7166,
+            "codes": [
+              "TFS"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Puerto de la Cruz (Tenerife)",
+              "en": "Puerto de la Cruz (Tenerife)"
+            },
+            "countryCode": "ES",
+            "lat": 28.4142,
+            "lng": -16.5481,
+            "codes": [
+              "TFN",
+              "TFS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 240,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Santa Cruz de La Palma",
+              "en": "Santa Cruz de La Palma"
+            },
+            "countryCode": "ES",
+            "lat": 28.6835,
+            "lng": -17.7642,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "San Sebastián de La Gomera",
+              "en": "San Sebastián de La Gomera"
+            },
+            "countryCode": "ES",
+            "lat": 28.0916,
+            "lng": -17.1133,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Los Cristianos (Tenerife)",
+              "en": "Los Cristianos (Tenerife)"
+            },
+            "countryCode": "ES",
+            "lat": 28.0505,
+            "lng": -16.7166,
+            "codes": [
+              "TFS"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Puerto de la Cruz (Tenerife)",
+              "en": "Puerto de la Cruz (Tenerife)"
+            },
+            "countryCode": "ES",
+            "lat": 28.4142,
+            "lng": -16.5481,
+            "codes": [
+              "TFN",
+              "TFS"
+            ],
+            "nights": {
+              "min": 3,
+              "ideal": 4
+            },
+            "land": {
+              "minutes": 240,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Santa Cruz de La Palma",
+              "en": "Santa Cruz de La Palma"
+            },
+            "countryCode": "ES",
+            "lat": 28.6835,
+            "lng": -17.7642,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 4
+            },
+            "land": {
+              "minutes": 150,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "San Sebastián de La Gomera",
+              "en": "San Sebastián de La Gomera"
+            },
+            "countryCode": "ES",
+            "lat": 28.0916,
+            "lng": -17.1133,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 60,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Los Cristianos (Tenerife)",
+              "en": "Los Cristianos (Tenerife)"
+            },
+            "countryCode": "ES",
+            "lat": 28.0505,
+            "lng": -16.7166,
+            "codes": [
+              "TFS"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Los ferris (Fred. Olsen y Naviera Armas) salen de Los Cristianos, en el sur de Tenerife, a 1 h 30 en guagua de Puerto de la Cruz; La Palma también se une con Santa Cruz de Tenerife. En La Gomera y La Palma las guaguas son escasas: alquila un coche para Garajonay, la Caldera de Taburiente o los volcanes de Fuencaliente. El Hierro también tiene ferri desde Los Cristianos.",
+      "en": "The ferries (Fred. Olsen and Naviera Armas) leave from Los Cristianos, in the south of Tenerife, 1 h 30 by bus from Puerto de la Cruz; La Palma is also linked with Santa Cruz de Tenerife. On La Gomera and La Palma buses are few: rent a car for Garajonay, the Caldera de Taburiente or the Fuencaliente volcanoes. El Hierro also has a ferry from Los Cristianos."
+    }
+  },
+  "canarias-orientales": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Gran Canaria, Fuerteventura y Lanzarote",
+      "en": "Gran Canaria, Fuerteventura and Lanzarote"
+    },
+    "summary": {
+      "es": "Las dunas de Maspalomas y Corralejo, playas infinitas en Jandía y los volcanes de Timanfaya y César Manrique en Lanzarote.",
+      "en": "The dunes of Maspalomas and Corralejo, endless beaches in Jandía and Timanfaya's volcanoes and César Manrique's Lanzarote."
+    },
+    "countries": [
+      "ES"
+    ],
+    "reversible": true,
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Corralejo (Fuerteventura)",
+              "en": "Corralejo (Fuerteventura)"
+            },
+            "countryCode": "ES",
+            "lat": 28.73,
+            "lng": -13.867,
+            "codes": [
+              "FUE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Arrecife (Lanzarote)",
+              "en": "Arrecife (Lanzarote)"
+            },
+            "countryCode": "ES",
+            "lat": 28.963,
+            "lng": -13.5477,
+            "codes": [
+              "ACE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Las Palmas de Gran Canaria",
+              "en": "Las Palmas de Gran Canaria"
+            },
+            "countryCode": "ES",
+            "lat": 28.1235,
+            "lng": -15.4363,
+            "codes": [
+              "LPA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Morro Jable (Fuerteventura)",
+              "en": "Morro Jable (Fuerteventura)"
+            },
+            "countryCode": "ES",
+            "lat": 28.0526,
+            "lng": -14.3539,
+            "codes": [
+              "FUE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 165,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Corralejo (Fuerteventura)",
+              "en": "Corralejo (Fuerteventura)"
+            },
+            "countryCode": "ES",
+            "lat": 28.73,
+            "lng": -13.867,
+            "codes": [
+              "FUE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Arrecife (Lanzarote)",
+              "en": "Arrecife (Lanzarote)"
+            },
+            "countryCode": "ES",
+            "lat": 28.963,
+            "lng": -13.5477,
+            "codes": [
+              "ACE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Las Palmas de Gran Canaria",
+              "en": "Las Palmas de Gran Canaria"
+            },
+            "countryCode": "ES",
+            "lat": 28.1235,
+            "lng": -15.4363,
+            "codes": [
+              "LPA"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 50,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Maspalomas (Gran Canaria)",
+              "en": "Maspalomas (Gran Canaria)"
+            },
+            "countryCode": "ES",
+            "lat": 27.7606,
+            "lng": -15.586,
+            "codes": [
+              "LPA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 220,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Morro Jable (Fuerteventura)",
+              "en": "Morro Jable (Fuerteventura)"
+            },
+            "countryCode": "ES",
+            "lat": 28.0526,
+            "lng": -14.3539,
+            "codes": [
+              "FUE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 165,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Corralejo (Fuerteventura)",
+              "en": "Corralejo (Fuerteventura)"
+            },
+            "countryCode": "ES",
+            "lat": 28.73,
+            "lng": -13.867,
+            "codes": [
+              "FUE"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Arrecife (Lanzarote)",
+              "en": "Arrecife (Lanzarote)"
+            },
+            "countryCode": "ES",
+            "lat": 28.963,
+            "lng": -13.5477,
+            "codes": [
+              "ACE"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Ferris de Las Palmas a Morro Jable (unas 2 h) y de Corralejo a Playa Blanca, en Lanzarote (unos 30 min, cada hora). En Lanzarote y en el interior de Gran Canaria (Roque Nublo, Tejeda) un coche ayuda mucho: Timanfaya no tiene guagua. Desde Órzola, en el norte de Lanzarote, barco a La Graciosa en el día.",
+      "en": "Ferries from Las Palmas to Morro Jable (about 2 h) and from Corralejo to Playa Blanca on Lanzarote (about 30 min, hourly). On Lanzarote and in inland Gran Canaria (Roque Nublo, Tejeda) a car helps a lot: Timanfaya has no bus. From Órzola, in the north of Lanzarote, a boat to La Graciosa makes a day trip."
+    }
+  },
+  "mallorca-y-menorca": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Mallorca y Menorca",
+      "en": "Mallorca and Menorca"
+    },
+    "summary": {
+      "es": "La catedral de Palma, el tren de Sóller por la Tramuntana y las calas vírgenes de Menorca entre Ciutadella y Mahón.",
+      "en": "Palma's cathedral, the Sóller train through the Tramuntana and Menorca's unspoilt coves between Ciutadella and Mahón."
+    },
+    "countries": [
+      "ES"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Palma",
+              "en": "Palma"
+            },
+            "countryCode": "ES",
+            "lat": 39.5696,
+            "lng": 2.6502,
+            "codes": [
+              "PMI"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "palma-2-days",
+            "land": {
+              "minutes": 165,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Ciutadella",
+              "en": "Ciutadella"
+            },
+            "countryCode": "ES",
+            "lat": 40.001,
+            "lng": 3.84,
+            "codes": [
+              "MAH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Mahón",
+              "en": "Mahón"
+            },
+            "countryCode": "ES",
+            "lat": 39.8885,
+            "lng": 4.2658,
+            "codes": [
+              "MAH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Palma",
+              "en": "Palma"
+            },
+            "countryCode": "ES",
+            "lat": 39.5696,
+            "lng": 2.6502,
+            "codes": [
+              "PMI"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "palma-2-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sóller",
+              "en": "Sóller"
+            },
+            "countryCode": "ES",
+            "lat": 39.7667,
+            "lng": 2.715,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Alcúdia",
+              "en": "Alcúdia"
+            },
+            "countryCode": "ES",
+            "lat": 39.853,
+            "lng": 3.1214,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Ciutadella",
+              "en": "Ciutadella"
+            },
+            "countryCode": "ES",
+            "lat": 40.001,
+            "lng": 3.84,
+            "codes": [
+              "MAH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Mahón",
+              "en": "Mahón"
+            },
+            "countryCode": "ES",
+            "lat": 39.8885,
+            "lng": 4.2658,
+            "codes": [
+              "MAH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Palma",
+              "en": "Palma"
+            },
+            "countryCode": "ES",
+            "lat": 39.5696,
+            "lng": 2.6502,
+            "codes": [
+              "PMI"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "palma-2-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sóller",
+              "en": "Sóller"
+            },
+            "countryCode": "ES",
+            "lat": 39.7667,
+            "lng": 2.715,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Alcúdia",
+              "en": "Alcúdia"
+            },
+            "countryCode": "ES",
+            "lat": 39.853,
+            "lng": 3.1214,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Ciutadella",
+              "en": "Ciutadella"
+            },
+            "countryCode": "ES",
+            "lat": 40.001,
+            "lng": 3.84,
+            "codes": [
+              "MAH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Mahón",
+              "en": "Mahón"
+            },
+            "countryCode": "ES",
+            "lat": 39.8885,
+            "lng": 4.2658,
+            "codes": [
+              "MAH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "El ferri entre Mallorca y Menorca sale de Alcúdia hacia Ciutadella (1–2 h, varias veces al día en temporada); a Alcúdia se llega en bus desde Palma. Para las calas de Menorca (Macarella, Turqueta) y los pueblos de la Tramuntana, mejor coche o moto; en julio y agosto hay que reservar el aparcamiento de algunas calas.",
+      "en": "The ferry between Mallorca and Menorca runs from Alcúdia to Ciutadella (1–2 h, several a day in season); Alcúdia is reached by bus from Palma. For Menorca's coves (Macarella, Turqueta) and the Tramuntana villages, a car or scooter is best; in July and August some coves need their parking booked."
+    }
+  },
+  "ibiza-y-formentera": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Ibiza y Formentera",
+      "en": "Ibiza and Formentera"
+    },
+    "summary": {
+      "es": "Dalt Vila y las calas de Ibiza, y el agua cristalina de Ses Illetes en Formentera, a media hora en barco.",
+      "en": "Dalt Vila and Ibiza's coves, and the crystal-clear water of Ses Illetes on Formentera, half an hour away by boat."
+    },
+    "countries": [
+      "ES"
+    ],
+    "reversible": false,
+    "months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Ibiza (Eivissa)",
+              "en": "Ibiza Town (Eivissa)"
+            },
+            "countryCode": "ES",
+            "lat": 38.9067,
+            "lng": 1.4206,
+            "codes": [
+              "IBZ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 35,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Formentera",
+              "en": "Formentera"
+            },
+            "countryCode": "ES",
+            "lat": 38.7058,
+            "lng": 1.43,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 35,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Ibiza (Eivissa)",
+              "en": "Ibiza Town (Eivissa)"
+            },
+            "countryCode": "ES",
+            "lat": 38.9067,
+            "lng": 1.4206,
+            "codes": [
+              "IBZ"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Ibiza (Eivissa)",
+              "en": "Ibiza Town (Eivissa)"
+            },
+            "countryCode": "ES",
+            "lat": 38.9067,
+            "lng": 1.4206,
+            "codes": [
+              "IBZ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 30,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Santa Eulària des Riu",
+              "en": "Santa Eulària des Riu"
+            },
+            "countryCode": "ES",
+            "lat": 38.9849,
+            "lng": 1.5336,
+            "codes": [
+              "IBZ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Formentera",
+              "en": "Formentera"
+            },
+            "countryCode": "ES",
+            "lat": 38.7058,
+            "lng": 1.43,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 35,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Ibiza (Eivissa)",
+              "en": "Ibiza Town (Eivissa)"
+            },
+            "countryCode": "ES",
+            "lat": 38.9067,
+            "lng": 1.4206,
+            "codes": [
+              "IBZ"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Palma",
+              "en": "Palma"
+            },
+            "countryCode": "ES",
+            "lat": 39.5696,
+            "lng": 2.6502,
+            "codes": [
+              "PMI"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "palma-2-days",
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sóller",
+              "en": "Sóller"
+            },
+            "countryCode": "ES",
+            "lat": 39.7667,
+            "lng": 2.715,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Ibiza (Eivissa)",
+              "en": "Ibiza Town (Eivissa)"
+            },
+            "countryCode": "ES",
+            "lat": 38.9067,
+            "lng": 1.4206,
+            "codes": [
+              "IBZ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 30,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Santa Eulària des Riu",
+              "en": "Santa Eulària des Riu"
+            },
+            "countryCode": "ES",
+            "lat": 38.9849,
+            "lng": 1.5336,
+            "codes": [
+              "IBZ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Formentera",
+              "en": "Formentera"
+            },
+            "countryCode": "ES",
+            "lat": 38.7058,
+            "lng": 1.43,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 35,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Ibiza (Eivissa)",
+              "en": "Ibiza Town (Eivissa)"
+            },
+            "countryCode": "ES",
+            "lat": 38.9067,
+            "lng": 1.4206,
+            "codes": [
+              "IBZ"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Formentera no tiene aeropuerto: barcos desde el puerto de Ibiza cada media hora (30–35 min); en verano también desde Santa Eulària y Sant Antoni. En Formentera se va en bici, moto o coche de alquiler. La versión larga empieza en Mallorca y cruza a Ibiza en ferri desde Palma (2–4 h). En julio y agosto todo se llena y sube mucho: mejor junio o septiembre.",
+      "en": "Formentera has no airport: boats from Ibiza harbour every half hour (30–35 min); in summer also from Santa Eulària and Sant Antoni. On Formentera you get around by rented bike, scooter or car. The long version starts in Mallorca and crosses to Ibiza by ferry from Palma (2–4 h). In July and August everything is full and expensive: June or September are better."
+    }
+  }
+}

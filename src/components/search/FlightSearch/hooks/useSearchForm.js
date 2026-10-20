@@ -24,12 +24,17 @@ const EMPTY_FORM = {
   minN: "2",
   maxN: "4",
   weekend: false,
+  // The days someone is free, for a multi-city route (5 to 15 days)
+  freeFrom: "",
+  freeTo: "",
 };
 
 // How many days ahead the default search range ends
 const DEFAULT_RANGE_DAYS = 60;
 // The default flexible trip: next Friday to Monday
 const DEFAULT_TRIP_NIGHTS = 3;
+// The default free days for a route: from next Friday, a week and a half (a short or a week-long route fits)
+const DEFAULT_FREE_NIGHTS = 9;
 
 // The search form's fields and mode. In the browser (to avoid hydration mismatches) it fills the default dates,
 // a shared link's search (?m=…&o=…, run straight away with `onShared` unless its dates have passed) and, on a
@@ -50,6 +55,8 @@ export const useSearchForm = ({ lang, onShared }) => {
       to: shift(firstDay, DEFAULT_RANGE_DAYS),
       ida: friday,
       vuelta: shift(friday, DEFAULT_TRIP_NIGHTS),
+      freeFrom: friday,
+      freeTo: shift(friday, DEFAULT_FREE_NIGHTS),
     };
 
     const shared = searchFromParams(new URLSearchParams(window.location.search));

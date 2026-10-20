@@ -1,9 +1,9 @@
 // A search in the URL, so it can be shared: /es?m=everywhere&o=MLA&from=2026-11-01&to=2026-11-30&trip=return&wk=1
-// (to a country: c=Italia, and to one of its cities as well: ci=Roma)
+// (to a country: c=Italia, and to one of its cities as well: ci=Roma; routes: m=multiCity&o=MLA&from=…&to=…)
 import { isDay, tomorrow } from "@/utils/dates";
 import { WEEKEND_MODES } from "@/constants/weekend";
 
-const MODES = ["everywhere", "country", "trip"];
+const MODES = ["everywhere", "country", "trip", "multiCity"];
 
 export const searchToParams = (form, mode) => {
   const params = new URLSearchParams({ m: mode, o: form.origin });
@@ -13,6 +13,11 @@ export const searchToParams = (form, mode) => {
     params.set("ida", form.ida);
     params.set("vuelta", form.vuelta);
     params.set("flex", form.flex);
+    return params;
+  }
+  if (mode === "multiCity") {
+    params.set("from", form.freeFrom);
+    params.set("to", form.freeTo);
     return params;
   }
   params.set("from", form.from);
@@ -49,6 +54,12 @@ export const searchFromParams = (params) => {
     if (["1", "2", "3"].includes(params.get("flex"))) fields.flex = params.get("flex");
     if (!isDay(ida) || !isDay(vuelta) || ida < first || vuelta <= ida) return { mode, fields, stale: true };
     return { mode, fields: { ...fields, ida, vuelta }, stale: false };
+  }
+
+  if (mode === "multiCity") {
+    const [from, to] = [params.get("from"), params.get("to")];
+    if (!isDay(from) || !isDay(to) || from < first || to < from) return { mode, fields, stale: true };
+    return { mode, fields: { ...fields, freeFrom: from, freeTo: to }, stale: false };
   }
 
   if (/^\d+$/.test(params.get("max") || "")) fields.max = params.get("max");

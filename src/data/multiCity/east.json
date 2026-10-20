@@ -1,0 +1,1972 @@
+{
+  "transilvania": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Transilvania",
+      "en": "Transylvania"
+    },
+    "summary": {
+      "es": "Ciudades sajonas de cuento, castillos entre bosques y los Cárpatos de fondo, mucho más barato de lo que imaginas.",
+      "en": "Fairy-tale Saxon towns, castles among forests and the Carpathians as a backdrop, far cheaper than you'd think."
+    },
+    "countries": [
+      "RO"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Sibiu",
+              "en": "Sibiu"
+            },
+            "countryCode": "RO",
+            "lat": 45.7983,
+            "lng": 24.1256,
+            "codes": [
+              "SBZ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Brașov",
+              "en": "Brașov"
+            },
+            "countryCode": "RO",
+            "lat": 45.6427,
+            "lng": 25.5887,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 170,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bucarest",
+              "en": "Bucharest"
+            },
+            "countryCode": "RO",
+            "lat": 44.4268,
+            "lng": 26.1025,
+            "codes": [
+              "OTP"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Cluj-Napoca",
+              "en": "Cluj-Napoca"
+            },
+            "countryCode": "RO",
+            "lat": 46.7712,
+            "lng": 23.6236,
+            "codes": [
+              "CLJ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 210,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sibiu",
+              "en": "Sibiu"
+            },
+            "countryCode": "RO",
+            "lat": 45.7983,
+            "lng": 24.1256,
+            "codes": [
+              "SBZ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sighișoara",
+              "en": "Sighișoara"
+            },
+            "countryCode": "RO",
+            "lat": 46.2197,
+            "lng": 24.7964,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 165,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Brașov",
+              "en": "Brașov"
+            },
+            "countryCode": "RO",
+            "lat": 45.6427,
+            "lng": 25.5887,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 170,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bucarest",
+              "en": "Bucharest"
+            },
+            "countryCode": "RO",
+            "lat": 44.4268,
+            "lng": 26.1025,
+            "codes": [
+              "OTP"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Cluj-Napoca",
+              "en": "Cluj-Napoca"
+            },
+            "countryCode": "RO",
+            "lat": 46.7712,
+            "lng": 23.6236,
+            "codes": [
+              "CLJ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 210,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sibiu",
+              "en": "Sibiu"
+            },
+            "countryCode": "RO",
+            "lat": 45.7983,
+            "lng": 24.1256,
+            "codes": [
+              "SBZ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sighișoara",
+              "en": "Sighișoara"
+            },
+            "countryCode": "RO",
+            "lat": 46.2197,
+            "lng": 24.7964,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 165,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Brașov",
+              "en": "Brașov"
+            },
+            "countryCode": "RO",
+            "lat": 45.6427,
+            "lng": 25.5887,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 60,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sinaia",
+              "en": "Sinaia"
+            },
+            "countryCode": "RO",
+            "lat": 45.35,
+            "lng": 25.5508,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Bucarest",
+              "en": "Bucharest"
+            },
+            "countryCode": "RO",
+            "lat": 44.4268,
+            "lng": 26.1025,
+            "codes": [
+              "OTP"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Desde Brașov se va en bus al castillo de Bran y a la fortaleza de Râșnov en el día. Las iglesias fortificadas (Biertan, Viscri) cerca de Sighișoara se ven mejor en coche o con excursión.",
+      "en": "From Brașov, Bran Castle and Râșnov fortress are an easy day trip by bus. The fortified churches near Sighișoara (Biertan, Viscri) are best seen by car or on a tour."
+    }
+  },
+  "bucovina": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Bucovina y Maramureș",
+      "en": "Bucovina and Maramureș"
+    },
+    "summary": {
+      "es": "Monasterios pintados por fuera, iglesias de madera y aldeas donde el tiempo va más lento: la Rumanía más rural.",
+      "en": "Monasteries painted on the outside, wooden churches and villages where time slows down: Romania at its most rural."
+    },
+    "countries": [
+      "RO"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Iași",
+              "en": "Iași"
+            },
+            "countryCode": "RO",
+            "lat": 47.1585,
+            "lng": 27.6014,
+            "codes": [
+              "IAS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Suceava",
+              "en": "Suceava"
+            },
+            "countryCode": "RO",
+            "lat": 47.6514,
+            "lng": 26.2556,
+            "codes": [
+              "SCV"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Iași",
+              "en": "Iași"
+            },
+            "countryCode": "RO",
+            "lat": 47.1585,
+            "lng": 27.6014,
+            "codes": [
+              "IAS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Suceava",
+              "en": "Suceava"
+            },
+            "countryCode": "RO",
+            "lat": 47.6514,
+            "lng": 26.2556,
+            "codes": [
+              "SCV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Gura Humorului",
+              "en": "Gura Humorului"
+            },
+            "countryCode": "RO",
+            "lat": 47.5536,
+            "lng": 25.8873,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 330,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Cluj-Napoca",
+              "en": "Cluj-Napoca"
+            },
+            "countryCode": "RO",
+            "lat": 46.7712,
+            "lng": 23.6236,
+            "codes": [
+              "CLJ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Iași",
+              "en": "Iași"
+            },
+            "countryCode": "RO",
+            "lat": 47.1585,
+            "lng": 27.6014,
+            "codes": [
+              "IAS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Suceava",
+              "en": "Suceava"
+            },
+            "countryCode": "RO",
+            "lat": 47.6514,
+            "lng": 26.2556,
+            "codes": [
+              "SCV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Gura Humorului",
+              "en": "Gura Humorului"
+            },
+            "countryCode": "RO",
+            "lat": 47.5536,
+            "lng": 25.8873,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 270,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Sighetu Marmației",
+              "en": "Sighetu Marmației"
+            },
+            "countryCode": "RO",
+            "lat": 47.9294,
+            "lng": 23.8925,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 330,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Cluj-Napoca",
+              "en": "Cluj-Napoca"
+            },
+            "countryCode": "RO",
+            "lat": 46.7712,
+            "lng": 23.6236,
+            "codes": [
+              "CLJ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Los monasterios pintados (Voroneț, Humor, Moldovița, Sucevița) están dispersos: mejor coche de alquiler o excursión desde Suceava o Gura Humorului. Entre Bucovina y Maramureș (paso de Prislop) casi no hay transporte público.",
+      "en": "The painted monasteries (Voroneț, Humor, Moldovița, Sucevița) are spread out: rent a car or join a tour from Suceava or Gura Humorului. There is hardly any public transport between Bucovina and Maramureș (Prislop Pass)."
+    }
+  },
+  "bulgaria": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Bulgaria",
+      "en": "Bulgaria"
+    },
+    "summary": {
+      "es": "Del monasterio de Rila a las playas del mar Negro, pasando por la Plovdiv romana y la medieval Veliko Tarnovo.",
+      "en": "From Rila Monastery to the Black Sea beaches, by way of Roman Plovdiv and medieval Veliko Tarnovo."
+    },
+    "countries": [
+      "BG"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Sofía",
+              "en": "Sofia"
+            },
+            "countryCode": "BG",
+            "lat": 42.6977,
+            "lng": 23.3219,
+            "codes": [
+              "SOF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 135,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Plovdiv",
+              "en": "Plovdiv"
+            },
+            "countryCode": "BG",
+            "lat": 42.1354,
+            "lng": 24.7453,
+            "codes": [
+              "PDV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Sofía",
+              "en": "Sofia"
+            },
+            "countryCode": "BG",
+            "lat": 42.6977,
+            "lng": 23.3219,
+            "codes": [
+              "SOF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 135,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Plovdiv",
+              "en": "Plovdiv"
+            },
+            "countryCode": "BG",
+            "lat": 42.1354,
+            "lng": 24.7453,
+            "codes": [
+              "PDV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Veliko Tarnovo",
+              "en": "Veliko Tarnovo"
+            },
+            "countryCode": "BG",
+            "lat": 43.0757,
+            "lng": 25.6172,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 225,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Varna",
+              "en": "Varna"
+            },
+            "countryCode": "BG",
+            "lat": 43.2141,
+            "lng": 27.9147,
+            "codes": [
+              "VAR"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Sofía",
+              "en": "Sofia"
+            },
+            "countryCode": "BG",
+            "lat": 42.6977,
+            "lng": 23.3219,
+            "codes": [
+              "SOF"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 135,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Plovdiv",
+              "en": "Plovdiv"
+            },
+            "countryCode": "BG",
+            "lat": 42.1354,
+            "lng": 24.7453,
+            "codes": [
+              "PDV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Veliko Tarnovo",
+              "en": "Veliko Tarnovo"
+            },
+            "countryCode": "BG",
+            "lat": 43.0757,
+            "lng": 25.6172,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 225,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Varna",
+              "en": "Varna"
+            },
+            "countryCode": "BG",
+            "lat": 43.2141,
+            "lng": 27.9147,
+            "codes": [
+              "VAR"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Nesebar",
+              "en": "Nesebar"
+            },
+            "countryCode": "BG",
+            "lat": 42.6589,
+            "lng": 27.7359,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Burgas",
+              "en": "Burgas"
+            },
+            "countryCode": "BG",
+            "lat": 42.5048,
+            "lng": 27.4626,
+            "codes": [
+              "BOJ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "El monasterio de Rila se visita en el día desde Sofía (bus o excursión). En julio y agosto la costa se llena y conviene reservar.",
+      "en": "Rila Monastery is a day trip from Sofia (bus or tour). In July and August the coast gets busy, so book ahead."
+    }
+  },
+  "costa-mar-negro": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Costa búlgara del mar Negro",
+      "en": "Bulgarian Black Sea coast"
+    },
+    "summary": {
+      "es": "Playas largas, pueblos de piedra y madera como Nesebar y Sozopol y verano barato junto al mar Negro.",
+      "en": "Long beaches, stone-and-timber towns like Nesebar and Sozopol and a cheap summer by the Black Sea."
+    },
+    "countries": [
+      "BG"
+    ],
+    "reversible": true,
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Varna",
+              "en": "Varna"
+            },
+            "countryCode": "BG",
+            "lat": 43.2141,
+            "lng": 27.9147,
+            "codes": [
+              "VAR"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Nesebar",
+              "en": "Nesebar"
+            },
+            "countryCode": "BG",
+            "lat": 42.6589,
+            "lng": 27.7359,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Burgas",
+              "en": "Burgas"
+            },
+            "countryCode": "BG",
+            "lat": 42.5048,
+            "lng": 27.4626,
+            "codes": [
+              "BOJ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Varna",
+              "en": "Varna"
+            },
+            "countryCode": "BG",
+            "lat": 43.2141,
+            "lng": 27.9147,
+            "codes": [
+              "VAR"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Nesebar",
+              "en": "Nesebar"
+            },
+            "countryCode": "BG",
+            "lat": 42.6589,
+            "lng": 27.7359,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sozopol",
+              "en": "Sozopol"
+            },
+            "countryCode": "BG",
+            "lat": 42.4178,
+            "lng": 27.6956,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 40,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Burgas",
+              "en": "Burgas"
+            },
+            "countryCode": "BG",
+            "lat": 42.5048,
+            "lng": 27.4626,
+            "codes": [
+              "BOJ"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Desde Varna se va en el día al palacio y jardín botánico de Balchik.",
+      "en": "From Varna, Balchik's palace and botanical garden make an easy day trip."
+    }
+  },
+  "serbia": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Serbia",
+      "en": "Serbia"
+    },
+    "summary": {
+      "es": "La noche de Belgrado, el Danubio en Novi Sad y montañas verdes al sur: los Balcanes que casi nadie visita.",
+      "en": "Belgrade's nightlife, the Danube at Novi Sad and green mountains to the south: the Balkans hardly anyone visits."
+    },
+    "countries": [
+      "RS"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Novi Sad",
+              "en": "Novi Sad"
+            },
+            "countryCode": "RS",
+            "lat": 45.2671,
+            "lng": 19.8335,
+            "codes": [
+              "BEG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Belgrado",
+              "en": "Belgrade"
+            },
+            "countryCode": "RS",
+            "lat": 44.8125,
+            "lng": 20.4612,
+            "codes": [
+              "BEG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Novi Sad",
+              "en": "Novi Sad"
+            },
+            "countryCode": "RS",
+            "lat": 45.2671,
+            "lng": 19.8335,
+            "codes": [
+              "BEG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Belgrado",
+              "en": "Belgrade"
+            },
+            "countryCode": "RS",
+            "lat": 44.8125,
+            "lng": 20.4612,
+            "codes": [
+              "BEG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Niš",
+              "en": "Niš"
+            },
+            "countryCode": "RS",
+            "lat": 43.3209,
+            "lng": 21.8958,
+            "codes": [
+              "INI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Novi Sad",
+              "en": "Novi Sad"
+            },
+            "countryCode": "RS",
+            "lat": 45.2671,
+            "lng": 19.8335,
+            "codes": [
+              "BEG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 40,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Belgrado",
+              "en": "Belgrade"
+            },
+            "countryCode": "RS",
+            "lat": 44.8125,
+            "lng": 20.4612,
+            "codes": [
+              "BEG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 4
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Zlatibor",
+              "en": "Zlatibor"
+            },
+            "countryCode": "RS",
+            "lat": 43.729,
+            "lng": 19.701,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 300,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Niš",
+              "en": "Niš"
+            },
+            "countryCode": "RS",
+            "lat": 43.3209,
+            "lng": 21.8958,
+            "codes": [
+              "INI"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Novi Sad no tiene aeropuerto: se llega desde el de Belgrado (tren rápido Belgrado–Novi Sad en unos 40 min). Desde Zlatibor, el tren turístico Šargan Eight en Mokra Gora.",
+      "en": "Novi Sad has no airport: you get there from Belgrade's (the fast Belgrade–Novi Sad train takes about 40 min). From Zlatibor, the Šargan Eight heritage railway at Mokra Gora."
+    }
+  },
+  "moldavia": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Moldavia",
+      "en": "Moldova"
+    },
+    "summary": {
+      "es": "Bodegas con kilómetros de galerías bajo tierra, monasterios en acantilados y uno de los países menos visitados de Europa.",
+      "en": "Wineries with miles of underground cellars, cliffside monasteries and one of Europe's least visited countries."
+    },
+    "countries": [
+      "MD",
+      "RO"
+    ],
+    "reversible": false,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Iași",
+              "en": "Iași"
+            },
+            "countryCode": "RO",
+            "lat": 47.1585,
+            "lng": 27.6014,
+            "codes": [
+              "IAS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 270,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Chisináu",
+              "en": "Chișinău"
+            },
+            "countryCode": "MD",
+            "lat": 47.0105,
+            "lng": 28.8638,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 270,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Iași",
+              "en": "Iași"
+            },
+            "countryCode": "RO",
+            "lat": 47.1585,
+            "lng": 27.6014,
+            "codes": [
+              "IAS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Suceava",
+              "en": "Suceava"
+            },
+            "countryCode": "RO",
+            "lat": 47.6514,
+            "lng": 26.2556,
+            "codes": [
+              "SCV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Iași",
+              "en": "Iași"
+            },
+            "countryCode": "RO",
+            "lat": 47.1585,
+            "lng": 27.6014,
+            "codes": [
+              "IAS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 270,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Chisináu",
+              "en": "Chișinău"
+            },
+            "countryCode": "MD",
+            "lat": 47.0105,
+            "lng": 28.8638,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 270,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Iași",
+              "en": "Iași"
+            },
+            "countryCode": "RO",
+            "lat": 47.1585,
+            "lng": 27.6014,
+            "codes": [
+              "IAS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Desde Chisináu se va en el día a Orheiul Vechi (monasterio excavado en la roca) y a las bodegas de Cricova y Mileștii Mici (reserva la visita). Lleva pasaporte o DNI: hay frontera entre Rumanía y Moldavia. No se recomienda entrar en Transnistria.",
+      "en": "From Chișinău, Orheiul Vechi (a cave monastery) and the Cricova and Mileștii Mici wineries are day trips (book the tours). Bring your passport or ID card: there is a border between Romania and Moldova. Visiting Transnistria is not advised."
+    }
+  },
+  "chipre": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Chipre",
+      "en": "Cyprus"
+    },
+    "summary": {
+      "es": "Mosaicos romanos en Pafos, aldeas de montaña en Troodos y la última capital dividida de Europa, con sol casi todo el año.",
+      "en": "Roman mosaics in Paphos, mountain villages in Troodos and Europe's last divided capital, with sun almost all year."
+    },
+    "countries": [
+      "CY"
+    ],
+    "reversible": true,
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Pafos",
+              "en": "Paphos"
+            },
+            "countryCode": "CY",
+            "lat": 34.7754,
+            "lng": 32.4245,
+            "codes": [
+              "PFO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Limasol",
+              "en": "Limassol"
+            },
+            "countryCode": "CY",
+            "lat": 34.6786,
+            "lng": 33.0413,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Lárnaca",
+              "en": "Larnaca"
+            },
+            "countryCode": "CY",
+            "lat": 34.9167,
+            "lng": 33.629,
+            "codes": [
+              "LCA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Pafos",
+              "en": "Paphos"
+            },
+            "countryCode": "CY",
+            "lat": 34.7754,
+            "lng": 32.4245,
+            "codes": [
+              "PFO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Limasol",
+              "en": "Limassol"
+            },
+            "countryCode": "CY",
+            "lat": 34.6786,
+            "lng": 33.0413,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Troodos (Platres)",
+              "en": "Troodos (Platres)"
+            },
+            "countryCode": "CY",
+            "lat": 34.8897,
+            "lng": 32.8636,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 80,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Nicosia",
+              "en": "Nicosia"
+            },
+            "countryCode": "CY",
+            "lat": 35.1856,
+            "lng": 33.3823,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Lárnaca",
+              "en": "Larnaca"
+            },
+            "countryCode": "CY",
+            "lat": 34.9167,
+            "lng": 33.629,
+            "codes": [
+              "LCA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Pafos",
+              "en": "Paphos"
+            },
+            "countryCode": "CY",
+            "lat": 34.7754,
+            "lng": 32.4245,
+            "codes": [
+              "PFO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Limasol",
+              "en": "Limassol"
+            },
+            "countryCode": "CY",
+            "lat": 34.6786,
+            "lng": 33.0413,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Troodos (Platres)",
+              "en": "Troodos (Platres)"
+            },
+            "countryCode": "CY",
+            "lat": 34.8897,
+            "lng": 32.8636,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 80,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Nicosia",
+              "en": "Nicosia"
+            },
+            "countryCode": "CY",
+            "lat": 35.1856,
+            "lng": 33.3823,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ayia Napa",
+              "en": "Ayia Napa"
+            },
+            "countryCode": "CY",
+            "lat": 34.9823,
+            "lng": 34,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 50,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Lárnaca",
+              "en": "Larnaca"
+            },
+            "countryCode": "CY",
+            "lat": 34.9167,
+            "lng": 33.629,
+            "codes": [
+              "LCA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Las montañas de Troodos casi no tienen autobuses: mejor coche (se conduce por la izquierda). En Nicosia se cruza a pie al norte con pasaporte o DNI. Desde Lárnaca, Nicosia está a 45 min en bus.",
+      "en": "The Troodos mountains have hardly any buses: a car is best (they drive on the left). In Nicosia you can walk across to the north with a passport or ID card. From Larnaca, Nicosia is 45 min by bus."
+    }
+  },
+  "georgia": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Georgia",
+      "en": "Georgia"
+    },
+    "summary": {
+      "es": "Tiflis y sus baños, iglesias en lo alto del Cáucaso, vino de ánfora en Kajetia y una hospitalidad que no olvidarás.",
+      "en": "Tbilisi and its baths, churches high in the Caucasus, amphora wine in Kakheti and hospitality you won't forget."
+    },
+    "countries": [
+      "GE"
+    ],
+    "reversible": false,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Kutaisi",
+              "en": "Kutaisi"
+            },
+            "countryCode": "GE",
+            "lat": 42.2679,
+            "lng": 42.6946,
+            "codes": [
+              "KUT"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Tiflis",
+              "en": "Tbilisi"
+            },
+            "countryCode": "GE",
+            "lat": 41.7151,
+            "lng": 44.8271,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Kutaisi",
+              "en": "Kutaisi"
+            },
+            "countryCode": "GE",
+            "lat": 42.2679,
+            "lng": 42.6946,
+            "codes": [
+              "KUT"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Kutaisi",
+              "en": "Kutaisi"
+            },
+            "countryCode": "GE",
+            "lat": 42.2679,
+            "lng": 42.6946,
+            "codes": [
+              "KUT"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Tiflis",
+              "en": "Tbilisi"
+            },
+            "countryCode": "GE",
+            "lat": 41.7151,
+            "lng": 44.8271,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Signagi",
+              "en": "Sighnaghi"
+            },
+            "countryCode": "GE",
+            "lat": 41.6206,
+            "lng": 45.9218,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 300,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Kazbegi (Stepantsminda)",
+              "en": "Kazbegi (Stepantsminda)"
+            },
+            "countryCode": "GE",
+            "lat": 42.6575,
+            "lng": 44.6433,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 360,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Kutaisi",
+              "en": "Kutaisi"
+            },
+            "countryCode": "GE",
+            "lat": 42.2679,
+            "lng": 42.6946,
+            "codes": [
+              "KUT"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Kutaisi",
+              "en": "Kutaisi"
+            },
+            "countryCode": "GE",
+            "lat": 42.2679,
+            "lng": 42.6946,
+            "codes": [
+              "KUT"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Tiflis",
+              "en": "Tbilisi"
+            },
+            "countryCode": "GE",
+            "lat": 41.7151,
+            "lng": 44.8271,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Signagi",
+              "en": "Sighnaghi"
+            },
+            "countryCode": "GE",
+            "lat": 41.6206,
+            "lng": 45.9218,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 300,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Kazbegi (Stepantsminda)",
+              "en": "Kazbegi (Stepantsminda)"
+            },
+            "countryCode": "GE",
+            "lat": 42.6575,
+            "lng": 44.6433,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 360,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Kutaisi",
+              "en": "Kutaisi"
+            },
+            "countryCode": "GE",
+            "lat": 42.2679,
+            "lng": 42.6946,
+            "codes": [
+              "KUT"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 330,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Mestia",
+              "en": "Mestia"
+            },
+            "countryCode": "GE",
+            "lat": 43.045,
+            "lng": 42.7296,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 330,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Batumi",
+              "en": "Batumi"
+            },
+            "countryCode": "GE",
+            "lat": 41.6168,
+            "lng": 41.6367,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Kutaisi",
+              "en": "Kutaisi"
+            },
+            "countryCode": "GE",
+            "lat": 42.2679,
+            "lng": 42.6946,
+            "codes": [
+              "KUT"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Mtskheta se ve en el día desde Tiflis. Signagi y Kazbegi se enlazan en marshrutka cambiando en Tiflis (o con chófer, barato). La carretera a Kazbegi puede cerrarse por nieve en invierno y Mestia es mejor de junio a septiembre.",
+      "en": "Mtskheta is a day trip from Tbilisi. Sighnaghi and Kazbegi are linked by marshrutka with a change in Tbilisi (or a cheap private driver). The Kazbegi road can close for snow in winter and Mestia is best from June to September."
+    }
+  }
+}

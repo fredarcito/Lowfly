@@ -1,9 +1,9 @@
 // Flights: destinations and searches (Ryanair and Wizz Air, through our API)
 import { api } from "@/api/client";
 
-const SEARCH_PATHS = { everywhere: "/everywhere", country: "/country", trip: "/flexible" };
+const SEARCH_PATHS = { everywhere: "/everywhere", country: "/country", trip: "/flexible", multiCity: "/multi-city" };
 
-// A flight search: mode is everywhere, country or trip (flexible dates)
+// A flight search: mode is everywhere, country, trip (flexible dates) or multiCity (routes through several cities)
 export const searchFlights = (mode, params, options) =>
   api.get(SEARCH_PATHS[mode], { params, ...options }).then((response) => response.data);
 

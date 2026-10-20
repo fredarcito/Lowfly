@@ -1,0 +1,4211 @@
+{
+  "dalmacia": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Dalmacia",
+      "en": "Dalmatia"
+    },
+    "summary": {
+      "es": "Salta de Split a Dubrovnik en catamarán, parando en las islas de Hvar y Korčula.",
+      "en": "Hop from Split to Dubrovnik by catamaran, stopping on the islands of Hvar and Korčula."
+    },
+    "countries": [
+      "HR"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Split",
+              "en": "Split"
+            },
+            "countryCode": "HR",
+            "lat": 43.5081,
+            "lng": 16.4402,
+            "codes": [
+              "SPU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Hvar",
+              "en": "Hvar"
+            },
+            "countryCode": "HR",
+            "lat": 43.1729,
+            "lng": 16.4411,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Dubrovnik",
+              "en": "Dubrovnik"
+            },
+            "countryCode": "HR",
+            "lat": 42.6507,
+            "lng": 18.0944,
+            "codes": [
+              "DBV"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "dubrovnik-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Split",
+              "en": "Split"
+            },
+            "countryCode": "HR",
+            "lat": 43.5081,
+            "lng": 16.4402,
+            "codes": [
+              "SPU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Hvar",
+              "en": "Hvar"
+            },
+            "countryCode": "HR",
+            "lat": 43.1729,
+            "lng": 16.4411,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 105,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Korčula",
+              "en": "Korčula"
+            },
+            "countryCode": "HR",
+            "lat": 42.9597,
+            "lng": 17.1356,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Dubrovnik",
+              "en": "Dubrovnik"
+            },
+            "countryCode": "HR",
+            "lat": 42.6507,
+            "lng": 18.0944,
+            "codes": [
+              "DBV"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "dubrovnik-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Zadar",
+              "en": "Zadar"
+            },
+            "countryCode": "HR",
+            "lat": 44.1194,
+            "lng": 15.2314,
+            "codes": [
+              "ZAD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Šibenik (Krka)",
+              "en": "Šibenik (Krka)"
+            },
+            "countryCode": "HR",
+            "lat": 43.735,
+            "lng": 15.8952,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Trogir",
+              "en": "Trogir"
+            },
+            "countryCode": "HR",
+            "lat": 43.5169,
+            "lng": 16.2514,
+            "codes": [
+              "SPU"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 30,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Split",
+              "en": "Split"
+            },
+            "countryCode": "HR",
+            "lat": 43.5081,
+            "lng": 16.4402,
+            "codes": [
+              "SPU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Hvar",
+              "en": "Hvar"
+            },
+            "countryCode": "HR",
+            "lat": 43.1729,
+            "lng": 16.4411,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 105,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Korčula",
+              "en": "Korčula"
+            },
+            "countryCode": "HR",
+            "lat": 42.9597,
+            "lng": 17.1356,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Dubrovnik",
+              "en": "Dubrovnik"
+            },
+            "countryCode": "HR",
+            "lat": 42.6507,
+            "lng": 18.0944,
+            "codes": [
+              "DBV"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "dubrovnik-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Los catamaranes entre islas van a diario de junio a septiembre; fuera de temporada hay muchos menos.",
+      "en": "Catamarans between the islands run daily from June to September; off season there are far fewer."
+    }
+  },
+  "croacia-interior": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Zagreb, Plitvice y la costa",
+      "en": "Zagreb, Plitvice and the coast"
+    },
+    "summary": {
+      "es": "De la capital croata a la costa dálmata pasando por las cascadas de Plitvice.",
+      "en": "From the Croatian capital to the Dalmatian coast by way of the Plitvice waterfalls."
+    },
+    "countries": [
+      "HR"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Zagreb",
+              "en": "Zagreb"
+            },
+            "countryCode": "HR",
+            "lat": 45.815,
+            "lng": 15.9819,
+            "codes": [
+              "ZAG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Lagos de Plitvice",
+              "en": "Plitvice Lakes"
+            },
+            "countryCode": "HR",
+            "lat": 44.8654,
+            "lng": 15.582,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Zadar",
+              "en": "Zadar"
+            },
+            "countryCode": "HR",
+            "lat": 44.1194,
+            "lng": 15.2314,
+            "codes": [
+              "ZAD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Zagreb",
+              "en": "Zagreb"
+            },
+            "countryCode": "HR",
+            "lat": 45.815,
+            "lng": 15.9819,
+            "codes": [
+              "ZAG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Lagos de Plitvice",
+              "en": "Plitvice Lakes"
+            },
+            "countryCode": "HR",
+            "lat": 44.8654,
+            "lng": 15.582,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Zadar",
+              "en": "Zadar"
+            },
+            "countryCode": "HR",
+            "lat": 44.1194,
+            "lng": 15.2314,
+            "codes": [
+              "ZAD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Šibenik (Krka)",
+              "en": "Šibenik (Krka)"
+            },
+            "countryCode": "HR",
+            "lat": 43.735,
+            "lng": 15.8952,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Split",
+              "en": "Split"
+            },
+            "countryCode": "HR",
+            "lat": 43.5081,
+            "lng": 16.4402,
+            "codes": [
+              "SPU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Zagreb",
+              "en": "Zagreb"
+            },
+            "countryCode": "HR",
+            "lat": 45.815,
+            "lng": 15.9819,
+            "codes": [
+              "ZAG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Lagos de Plitvice",
+              "en": "Plitvice Lakes"
+            },
+            "countryCode": "HR",
+            "lat": 44.8654,
+            "lng": 15.582,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Zadar",
+              "en": "Zadar"
+            },
+            "countryCode": "HR",
+            "lat": 44.1194,
+            "lng": 15.2314,
+            "codes": [
+              "ZAD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Šibenik (Krka)",
+              "en": "Šibenik (Krka)"
+            },
+            "countryCode": "HR",
+            "lat": 43.735,
+            "lng": 15.8952,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Split",
+              "en": "Split"
+            },
+            "countryCode": "HR",
+            "lat": 43.5081,
+            "lng": 16.4402,
+            "codes": [
+              "SPU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En Plitvice duerme junto al parque y entra temprano: a media mañana se llena de grupos.",
+      "en": "In Plitvice sleep next to the park and go in early: by mid-morning it fills with groups."
+    }
+  },
+  "eslovenia-e-istria": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Eslovenia e Istria",
+      "en": "Slovenia and Istria"
+    },
+    "summary": {
+      "es": "Liubliana, el lago de Bled y las cuevas de Postojna antes de bajar a los pueblos venecianos de la costa de Istria.",
+      "en": "Ljubljana, Lake Bled and the Postojna caves before heading down to the Venetian towns of the Istrian coast."
+    },
+    "countries": [
+      "SI",
+      "HR",
+      "IT"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Liubliana",
+              "en": "Ljubljana"
+            },
+            "countryCode": "SI",
+            "lat": 46.0569,
+            "lng": 14.5058,
+            "codes": [
+              "LJU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "ljubljana-1-day",
+            "land": {
+              "minutes": 80,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Bled",
+              "en": "Bled"
+            },
+            "countryCode": "SI",
+            "lat": 46.3683,
+            "lng": 14.1146,
+            "codes": [
+              "LJU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Liubliana",
+              "en": "Ljubljana"
+            },
+            "countryCode": "SI",
+            "lat": 46.0569,
+            "lng": 14.5058,
+            "codes": [
+              "LJU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "ljubljana-1-day",
+            "land": {
+              "minutes": 80,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Bled",
+              "en": "Bled"
+            },
+            "countryCode": "SI",
+            "lat": 46.3683,
+            "lng": 14.1146,
+            "codes": [
+              "LJU"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Postojna",
+              "en": "Postojna"
+            },
+            "countryCode": "SI",
+            "lat": 45.7743,
+            "lng": 14.2153,
+            "codes": [],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Piran",
+              "en": "Piran"
+            },
+            "countryCode": "SI",
+            "lat": 45.5285,
+            "lng": 13.5683,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Trieste",
+              "en": "Trieste"
+            },
+            "countryCode": "IT",
+            "lat": 45.6495,
+            "lng": 13.7768,
+            "codes": [
+              "TRS"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Liubliana",
+              "en": "Ljubljana"
+            },
+            "countryCode": "SI",
+            "lat": 46.0569,
+            "lng": 14.5058,
+            "codes": [
+              "LJU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "ljubljana-1-day",
+            "land": {
+              "minutes": 80,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Bled",
+              "en": "Bled"
+            },
+            "countryCode": "SI",
+            "lat": 46.3683,
+            "lng": 14.1146,
+            "codes": [
+              "LJU"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Postojna",
+              "en": "Postojna"
+            },
+            "countryCode": "SI",
+            "lat": 45.7743,
+            "lng": 14.2153,
+            "codes": [],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Piran",
+              "en": "Piran"
+            },
+            "countryCode": "SI",
+            "lat": 45.5285,
+            "lng": 13.5683,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Rovinj",
+              "en": "Rovinj"
+            },
+            "countryCode": "HR",
+            "lat": 45.0812,
+            "lng": 13.6387,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 45,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Pula",
+              "en": "Pula"
+            },
+            "countryCode": "HR",
+            "lat": 44.8666,
+            "lng": 13.8496,
+            "codes": [
+              "PUY"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En Istria los autobuses son escasos fuera de verano; un coche facilita mucho moverte entre pueblos.",
+      "en": "In Istria buses are scarce outside summer; a car makes moving between towns much easier."
+    }
+  },
+  "balcanes": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Balcanes",
+      "en": "The Balkans"
+    },
+    "summary": {
+      "es": "Tres países en un viaje: la costa croata, el puente de Mostar, Sarajevo y la bahía de Kotor.",
+      "en": "Three countries in one trip: the Croatian coast, the Mostar bridge, Sarajevo and the Bay of Kotor."
+    },
+    "countries": [
+      "HR",
+      "BA",
+      "ME"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Split",
+              "en": "Split"
+            },
+            "countryCode": "HR",
+            "lat": 43.5081,
+            "lng": 16.4402,
+            "codes": [
+              "SPU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Mostar",
+              "en": "Mostar"
+            },
+            "countryCode": "BA",
+            "lat": 43.3438,
+            "lng": 17.8078,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Dubrovnik",
+              "en": "Dubrovnik"
+            },
+            "countryCode": "HR",
+            "lat": 42.6507,
+            "lng": 18.0944,
+            "codes": [
+              "DBV"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "dubrovnik-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Split",
+              "en": "Split"
+            },
+            "countryCode": "HR",
+            "lat": 43.5081,
+            "lng": 16.4402,
+            "codes": [
+              "SPU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Mostar",
+              "en": "Mostar"
+            },
+            "countryCode": "BA",
+            "lat": 43.3438,
+            "lng": 17.8078,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Dubrovnik",
+              "en": "Dubrovnik"
+            },
+            "countryCode": "HR",
+            "lat": 42.6507,
+            "lng": 18.0944,
+            "codes": [
+              "DBV"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "dubrovnik-2-days",
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Kotor",
+              "en": "Kotor"
+            },
+            "countryCode": "ME",
+            "lat": 42.4247,
+            "lng": 18.7712,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Split",
+              "en": "Split"
+            },
+            "countryCode": "HR",
+            "lat": 43.5081,
+            "lng": 16.4402,
+            "codes": [
+              "SPU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Mostar",
+              "en": "Mostar"
+            },
+            "countryCode": "BA",
+            "lat": 43.3438,
+            "lng": 17.8078,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Sarajevo",
+              "en": "Sarajevo"
+            },
+            "countryCode": "BA",
+            "lat": 43.8563,
+            "lng": 18.4131,
+            "codes": [
+              "SJJ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 300,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Dubrovnik",
+              "en": "Dubrovnik"
+            },
+            "countryCode": "HR",
+            "lat": 42.6507,
+            "lng": 18.0944,
+            "codes": [
+              "DBV"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "dubrovnik-2-days",
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Kotor",
+              "en": "Kotor"
+            },
+            "countryCode": "ME",
+            "lat": 42.4247,
+            "lng": 18.7712,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Lleva el pasaporte o DNI a mano: cruzas varias fronteras por carretera y en verano hay colas.",
+      "en": "Keep your passport or ID card at hand: you cross several borders by road and in summer there are queues."
+    }
+  },
+  "montenegro": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Montenegro",
+      "en": "Montenegro"
+    },
+    "summary": {
+      "es": "La bahía de Kotor, las playas de Budva y las montañas de Durmitor en un país pequeño.",
+      "en": "The Bay of Kotor, the beaches of Budva and the Durmitor mountains in one small country."
+    },
+    "countries": [
+      "ME"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Kotor",
+              "en": "Kotor"
+            },
+            "countryCode": "ME",
+            "lat": 42.4247,
+            "lng": 18.7712,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 25,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Perast",
+              "en": "Perast"
+            },
+            "countryCode": "ME",
+            "lat": 42.4864,
+            "lng": 18.6989,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Budva",
+              "en": "Budva"
+            },
+            "countryCode": "ME",
+            "lat": 42.2911,
+            "lng": 18.8403,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Kotor",
+              "en": "Kotor"
+            },
+            "countryCode": "ME",
+            "lat": 42.4247,
+            "lng": 18.7712,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 25,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Perast",
+              "en": "Perast"
+            },
+            "countryCode": "ME",
+            "lat": 42.4864,
+            "lng": 18.6989,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Budva",
+              "en": "Budva"
+            },
+            "countryCode": "ME",
+            "lat": 42.2911,
+            "lng": 18.8403,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Žabljak (Durmitor)",
+              "en": "Žabljak (Durmitor)"
+            },
+            "countryCode": "ME",
+            "lat": 43.1542,
+            "lng": 19.1231,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Podgorica",
+              "en": "Podgorica"
+            },
+            "countryCode": "ME",
+            "lat": 42.4304,
+            "lng": 19.2594,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Kotor",
+              "en": "Kotor"
+            },
+            "countryCode": "ME",
+            "lat": 42.4247,
+            "lng": 18.7712,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 25,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Perast",
+              "en": "Perast"
+            },
+            "countryCode": "ME",
+            "lat": 42.4864,
+            "lng": 18.6989,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Budva",
+              "en": "Budva"
+            },
+            "countryCode": "ME",
+            "lat": 42.2911,
+            "lng": 18.8403,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ulcinj",
+              "en": "Ulcinj"
+            },
+            "countryCode": "ME",
+            "lat": 41.9294,
+            "lng": 19.2244,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Virpazar (lago Skadar)",
+              "en": "Virpazar (Lake Skadar)"
+            },
+            "countryCode": "ME",
+            "lat": 42.2453,
+            "lng": 19.0928,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Žabljak (Durmitor)",
+              "en": "Žabljak (Durmitor)"
+            },
+            "countryCode": "ME",
+            "lat": 43.1542,
+            "lng": 19.1231,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Podgorica",
+              "en": "Podgorica"
+            },
+            "countryCode": "ME",
+            "lat": 42.4304,
+            "lng": 19.2594,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Durmitor y el lago Skadar tienen pocos autobuses: con coche de alquiler ganas mucho tiempo.",
+      "en": "Durmitor and Lake Skadar have few buses: a hire car saves a lot of time."
+    }
+  },
+  "bosnia-a-fondo": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Bosnia a fondo",
+      "en": "Bosnia in depth"
+    },
+    "summary": {
+      "es": "Sarajevo, Mostar y pueblos otomanos como Blagaj y Počitelj, en uno de los países más baratos de Europa.",
+      "en": "Sarajevo, Mostar and Ottoman villages like Blagaj and Počitelj, in one of Europe's cheapest countries."
+    },
+    "countries": [
+      "BA",
+      "HR"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Sarajevo",
+              "en": "Sarajevo"
+            },
+            "countryCode": "BA",
+            "lat": 43.8563,
+            "lng": 18.4131,
+            "codes": [
+              "SJJ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Mostar",
+              "en": "Mostar"
+            },
+            "countryCode": "BA",
+            "lat": 43.3438,
+            "lng": 17.8078,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Dubrovnik",
+              "en": "Dubrovnik"
+            },
+            "countryCode": "HR",
+            "lat": 42.6507,
+            "lng": 18.0944,
+            "codes": [
+              "DBV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "dubrovnik-2-days"
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tuzla",
+              "en": "Tuzla"
+            },
+            "countryCode": "BA",
+            "lat": 44.5384,
+            "lng": 18.6763,
+            "codes": [
+              "TZL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sarajevo",
+              "en": "Sarajevo"
+            },
+            "countryCode": "BA",
+            "lat": 43.8563,
+            "lng": 18.4131,
+            "codes": [
+              "SJJ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Mostar",
+              "en": "Mostar"
+            },
+            "countryCode": "BA",
+            "lat": 43.3438,
+            "lng": 17.8078,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Trebinje",
+              "en": "Trebinje"
+            },
+            "countryCode": "BA",
+            "lat": 42.7119,
+            "lng": 18.3442,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Dubrovnik",
+              "en": "Dubrovnik"
+            },
+            "countryCode": "HR",
+            "lat": 42.6507,
+            "lng": 18.0944,
+            "codes": [
+              "DBV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "dubrovnik-2-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tuzla",
+              "en": "Tuzla"
+            },
+            "countryCode": "BA",
+            "lat": 44.5384,
+            "lng": 18.6763,
+            "codes": [
+              "TZL"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Jajce",
+              "en": "Jajce"
+            },
+            "countryCode": "BA",
+            "lat": 44.342,
+            "lng": 17.27,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sarajevo",
+              "en": "Sarajevo"
+            },
+            "countryCode": "BA",
+            "lat": 43.8563,
+            "lng": 18.4131,
+            "codes": [
+              "SJJ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 120,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Mostar",
+              "en": "Mostar"
+            },
+            "countryCode": "BA",
+            "lat": 43.3438,
+            "lng": 17.8078,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 20,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Blagaj",
+              "en": "Blagaj"
+            },
+            "countryCode": "BA",
+            "lat": 43.2567,
+            "lng": 17.8853,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 25,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Počitelj",
+              "en": "Počitelj"
+            },
+            "countryCode": "BA",
+            "lat": 43.1336,
+            "lng": 17.7311,
+            "codes": [],
+            "nights": {
+              "min": 0,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Trebinje",
+              "en": "Trebinje"
+            },
+            "countryCode": "BA",
+            "lat": 42.7119,
+            "lng": 18.3442,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Dubrovnik",
+              "en": "Dubrovnik"
+            },
+            "countryCode": "HR",
+            "lat": 42.6507,
+            "lng": 18.0944,
+            "codes": [
+              "DBV"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "dubrovnik-2-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "El tren Sarajevo–Mostar es de los más bonitos de los Balcanes. Blagaj y Počitelj se ven mejor con coche.",
+      "en": "The Sarajevo–Mostar train is one of the most scenic in the Balkans. Blagaj and Počitelj are easier by car."
+    }
+  },
+  "albania": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Albania",
+      "en": "Albania"
+    },
+    "summary": {
+      "es": "Ciudades otomanas de piedra, la Riviera albanesa y aguas turquesa en Ksamil, a un ferry de Corfú.",
+      "en": "Stone Ottoman towns, the Albanian Riviera and turquoise water in Ksamil, a ferry ride from Corfu."
+    },
+    "countries": [
+      "AL",
+      "GR"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tirana",
+              "en": "Tirana"
+            },
+            "countryCode": "AL",
+            "lat": 41.3275,
+            "lng": 19.8187,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Berat",
+              "en": "Berat"
+            },
+            "countryCode": "AL",
+            "lat": 40.7058,
+            "lng": 19.9522,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Durrës",
+              "en": "Durrës"
+            },
+            "countryCode": "AL",
+            "lat": 41.3231,
+            "lng": 19.4414,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tirana",
+              "en": "Tirana"
+            },
+            "countryCode": "AL",
+            "lat": 41.3275,
+            "lng": 19.8187,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Berat",
+              "en": "Berat"
+            },
+            "countryCode": "AL",
+            "lat": 40.7058,
+            "lng": 19.9522,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Gjirokastër",
+              "en": "Gjirokastër"
+            },
+            "countryCode": "AL",
+            "lat": 40.0758,
+            "lng": 20.1389,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Sarandë",
+              "en": "Sarandë"
+            },
+            "countryCode": "AL",
+            "lat": 39.8756,
+            "lng": 20.0053,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Corfú",
+              "en": "Corfu"
+            },
+            "countryCode": "GR",
+            "lat": 39.6243,
+            "lng": 19.9217,
+            "codes": [
+              "CFU"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tirana",
+              "en": "Tirana"
+            },
+            "countryCode": "AL",
+            "lat": 41.3275,
+            "lng": 19.8187,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Berat",
+              "en": "Berat"
+            },
+            "countryCode": "AL",
+            "lat": 40.7058,
+            "lng": 19.9522,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Himarë",
+              "en": "Himarë"
+            },
+            "countryCode": "AL",
+            "lat": 40.1017,
+            "lng": 19.7447,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Gjirokastër",
+              "en": "Gjirokastër"
+            },
+            "countryCode": "AL",
+            "lat": 40.0758,
+            "lng": 20.1389,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ksamil",
+              "en": "Ksamil"
+            },
+            "countryCode": "AL",
+            "lat": 39.7686,
+            "lng": 20.0003,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Corfú",
+              "en": "Corfu"
+            },
+            "countryCode": "GR",
+            "lat": 39.6243,
+            "lng": 19.9217,
+            "codes": [
+              "CFU"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Los furgones (minibuses) no tienen horario fijo: sal temprano. El ferry Sarandë–Corfú va todo el año, con más barcos en verano.",
+      "en": "Minibuses (furgons) have no fixed timetable: leave early. The Sarandë–Corfu ferry runs all year, with more boats in summer."
+    }
+  },
+  "macedonia-del-norte-y-ocrid": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Macedonia del Norte y Ocrid",
+      "en": "North Macedonia and Ohrid"
+    },
+    "summary": {
+      "es": "Skopie, el cañón de Matka y el lago de Ocrid, con sus iglesias bizantinas junto al agua.",
+      "en": "Skopje, Matka Canyon and Lake Ohrid, with its Byzantine churches by the water."
+    },
+    "countries": [
+      "MK",
+      "AL"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Skopie",
+              "en": "Skopje"
+            },
+            "countryCode": "MK",
+            "lat": 41.9981,
+            "lng": 21.4254,
+            "codes": [
+              "SKP"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ocrid",
+              "en": "Ohrid"
+            },
+            "countryCode": "MK",
+            "lat": 41.1172,
+            "lng": 20.8016,
+            "codes": [
+              "OHD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Skopie",
+              "en": "Skopje"
+            },
+            "countryCode": "MK",
+            "lat": 41.9981,
+            "lng": 21.4254,
+            "codes": [
+              "SKP"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 210,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Bitola",
+              "en": "Bitola"
+            },
+            "countryCode": "MK",
+            "lat": 41.0297,
+            "lng": 21.3292,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ocrid",
+              "en": "Ohrid"
+            },
+            "countryCode": "MK",
+            "lat": 41.1172,
+            "lng": 20.8016,
+            "codes": [
+              "OHD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Tirana",
+              "en": "Tirana"
+            },
+            "countryCode": "AL",
+            "lat": 41.3275,
+            "lng": 19.8187,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Skopie",
+              "en": "Skopje"
+            },
+            "countryCode": "MK",
+            "lat": 41.9981,
+            "lng": 21.4254,
+            "codes": [
+              "SKP"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 210,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Bitola",
+              "en": "Bitola"
+            },
+            "countryCode": "MK",
+            "lat": 41.0297,
+            "lng": 21.3292,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ocrid",
+              "en": "Ohrid"
+            },
+            "countryCode": "MK",
+            "lat": 41.1172,
+            "lng": 20.8016,
+            "codes": [
+              "OHD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 300,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Berat",
+              "en": "Berat"
+            },
+            "countryCode": "AL",
+            "lat": 40.7058,
+            "lng": 19.9522,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Tirana",
+              "en": "Tirana"
+            },
+            "countryCode": "AL",
+            "lat": 41.3275,
+            "lng": 19.8187,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "El cañón de Matka es una excursión de medio día desde Skopie, en autobús urbano o taxi.",
+      "en": "Matka Canyon is a half-day trip from Skopje, by city bus or taxi."
+    }
+  },
+  "atenas-y-cicladas": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Atenas y las Cícladas",
+      "en": "Athens and the Cyclades"
+    },
+    "summary": {
+      "es": "La Acrópolis y luego islas en ferry: pueblos blancos, playas y atardeceres en Santorini.",
+      "en": "The Acropolis and then islands by ferry: white villages, beaches and sunsets in Santorini."
+    },
+    "countries": [
+      "GR"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Atenas",
+              "en": "Athens"
+            },
+            "countryCode": "GR",
+            "lat": 37.9838,
+            "lng": 23.7275,
+            "codes": [
+              "ATH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "athens-3-days",
+            "land": {
+              "minutes": 330,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Santorini",
+              "en": "Santorini"
+            },
+            "countryCode": "GR",
+            "lat": 36.4167,
+            "lng": 25.4318,
+            "codes": [
+              "JTR"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Atenas",
+              "en": "Athens"
+            },
+            "countryCode": "GR",
+            "lat": 37.9838,
+            "lng": 23.7275,
+            "codes": [
+              "ATH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "athens-3-days",
+            "land": {
+              "minutes": 240,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Paros",
+              "en": "Paros"
+            },
+            "countryCode": "GR",
+            "lat": 37.0853,
+            "lng": 25.1489,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Naxos",
+              "en": "Naxos"
+            },
+            "countryCode": "GR",
+            "lat": 37.1036,
+            "lng": 25.3763,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Santorini",
+              "en": "Santorini"
+            },
+            "countryCode": "GR",
+            "lat": 36.4167,
+            "lng": 25.4318,
+            "codes": [
+              "JTR"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Atenas",
+              "en": "Athens"
+            },
+            "countryCode": "GR",
+            "lat": 37.9838,
+            "lng": 23.7275,
+            "codes": [
+              "ATH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "athens-3-days",
+            "land": {
+              "minutes": 210,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Míkonos",
+              "en": "Mykonos"
+            },
+            "countryCode": "GR",
+            "lat": 37.4467,
+            "lng": 25.3289,
+            "codes": [
+              "JMK"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 60,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Paros",
+              "en": "Paros"
+            },
+            "countryCode": "GR",
+            "lat": 37.0853,
+            "lng": 25.1489,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Naxos",
+              "en": "Naxos"
+            },
+            "countryCode": "GR",
+            "lat": 37.1036,
+            "lng": 25.3763,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 120,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Santorini",
+              "en": "Santorini"
+            },
+            "countryCode": "GR",
+            "lat": 36.4167,
+            "lng": 25.4318,
+            "codes": [
+              "JTR"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Los ferris entre islas van a diario de mayo a octubre; en julio y agosto reserva el billete con antelación.",
+      "en": "Ferries between the islands run daily from May to October; in July and August book your ticket ahead."
+    }
+  },
+  "grecia-continental": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Grecia continental",
+      "en": "Mainland Greece"
+    },
+    "summary": {
+      "es": "De Atenas a Tesalónica pasando por el oráculo de Delfos y los monasterios colgados de Meteora.",
+      "en": "From Athens to Thessaloniki by way of the oracle at Delphi and the cliff-top monasteries of Meteora."
+    },
+    "countries": [
+      "GR"
+    ],
+    "reversible": true,
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Atenas",
+              "en": "Athens"
+            },
+            "countryCode": "GR",
+            "lat": 37.9838,
+            "lng": 23.7275,
+            "codes": [
+              "ATH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "guide": "athens-3-days",
+            "land": {
+              "minutes": 270,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Meteora (Kalambaka)",
+              "en": "Meteora (Kalambaka)"
+            },
+            "countryCode": "GR",
+            "lat": 39.7065,
+            "lng": 21.6309,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Tesalónica",
+              "en": "Thessaloniki"
+            },
+            "countryCode": "GR",
+            "lat": 40.6401,
+            "lng": 22.9444,
+            "codes": [
+              "SKG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Atenas",
+              "en": "Athens"
+            },
+            "countryCode": "GR",
+            "lat": 37.9838,
+            "lng": 23.7275,
+            "codes": [
+              "ATH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "athens-3-days",
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Delfos",
+              "en": "Delphi"
+            },
+            "countryCode": "GR",
+            "lat": 38.4824,
+            "lng": 22.501,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 300,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Meteora (Kalambaka)",
+              "en": "Meteora (Kalambaka)"
+            },
+            "countryCode": "GR",
+            "lat": 39.7065,
+            "lng": 21.6309,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Tesalónica",
+              "en": "Thessaloniki"
+            },
+            "countryCode": "GR",
+            "lat": 40.6401,
+            "lng": 22.9444,
+            "codes": [
+              "SKG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Atenas",
+              "en": "Athens"
+            },
+            "countryCode": "GR",
+            "lat": 37.9838,
+            "lng": 23.7275,
+            "codes": [
+              "ATH"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "guide": "athens-3-days",
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Nauplia",
+              "en": "Nafplio"
+            },
+            "countryCode": "GR",
+            "lat": 37.5673,
+            "lng": 22.8016,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 300,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Delfos",
+              "en": "Delphi"
+            },
+            "countryCode": "GR",
+            "lat": 38.4824,
+            "lng": 22.501,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 300,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Meteora (Kalambaka)",
+              "en": "Meteora (Kalambaka)"
+            },
+            "countryCode": "GR",
+            "lat": 39.7065,
+            "lng": 21.6309,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Tesalónica",
+              "en": "Thessaloniki"
+            },
+            "countryCode": "GR",
+            "lat": 40.6401,
+            "lng": 22.9444,
+            "codes": [
+              "SKG"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Entre Delfos y Meteora no hay autobús directo; en coche son unas 3 horas.",
+      "en": "There is no direct bus between Delphi and Meteora; by car it takes about 3 hours."
+    }
+  },
+  "creta": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Creta",
+      "en": "Crete"
+    },
+    "summary": {
+      "es": "El puerto veneciano de Chania, playas como Balos y Elafonisi y el palacio de Cnosos.",
+      "en": "Chania's Venetian harbour, beaches like Balos and Elafonisi and the palace of Knossos."
+    },
+    "countries": [
+      "GR"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Chania",
+              "en": "Chania"
+            },
+            "countryCode": "GR",
+            "lat": 35.5138,
+            "lng": 24.018,
+            "codes": [
+              "CHQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Rétino",
+              "en": "Rethymno"
+            },
+            "countryCode": "GR",
+            "lat": 35.3644,
+            "lng": 24.4822,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Heraclión",
+              "en": "Heraklion"
+            },
+            "countryCode": "GR",
+            "lat": 35.3387,
+            "lng": 25.1442,
+            "codes": [
+              "HER"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Chania",
+              "en": "Chania"
+            },
+            "countryCode": "GR",
+            "lat": 35.5138,
+            "lng": 24.018,
+            "codes": [
+              "CHQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 60,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Rétino",
+              "en": "Rethymno"
+            },
+            "countryCode": "GR",
+            "lat": 35.3644,
+            "lng": 24.4822,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Heraclión",
+              "en": "Heraklion"
+            },
+            "countryCode": "GR",
+            "lat": 35.3387,
+            "lng": 25.1442,
+            "codes": [
+              "HER"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Chania",
+              "en": "Chania"
+            },
+            "countryCode": "GR",
+            "lat": 35.5138,
+            "lng": 24.018,
+            "codes": [
+              "CHQ"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Loutro",
+              "en": "Loutro"
+            },
+            "countryCode": "GR",
+            "lat": 35.1984,
+            "lng": 24.0781,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Rétino",
+              "en": "Rethymno"
+            },
+            "countryCode": "GR",
+            "lat": 35.3644,
+            "lng": 24.4822,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Agios Nikolaos",
+              "en": "Agios Nikolaos"
+            },
+            "countryCode": "GR",
+            "lat": 35.19,
+            "lng": 25.7164,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 75,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Heraclión",
+              "en": "Heraklion"
+            },
+            "countryCode": "GR",
+            "lat": 35.3387,
+            "lng": 25.1442,
+            "codes": [
+              "HER"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Los autobuses KTEL unen las ciudades, pero para las playas del oeste (Balos, Elafonisi) un coche ayuda mucho.",
+      "en": "KTEL buses link the towns, but a car helps a lot for the western beaches (Balos, Elafonisi)."
+    }
+  },
+  "peloponeso": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Peloponeso",
+      "en": "The Peloponnese"
+    },
+    "summary": {
+      "es": "Una vuelta en coche desde Atenas por Nauplia, Monemvasía, la península de Mani y Olimpia.",
+      "en": "A road trip from Athens through Nafplio, Monemvasia, the Mani peninsula and Olympia."
+    },
+    "countries": [
+      "GR"
+    ],
+    "reversible": true,
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Atenas",
+              "en": "Athens"
+            },
+            "countryCode": "GR",
+            "lat": 37.9838,
+            "lng": 23.7275,
+            "codes": [
+              "ATH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "athens-3-days",
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Nauplia",
+              "en": "Nafplio"
+            },
+            "countryCode": "GR",
+            "lat": 37.5673,
+            "lng": 22.8016,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Monemvasía",
+              "en": "Monemvasia"
+            },
+            "countryCode": "GR",
+            "lat": 36.6872,
+            "lng": 23.0567,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Areópoli (Mani)",
+              "en": "Areopoli (Mani)"
+            },
+            "countryCode": "GR",
+            "lat": 36.6676,
+            "lng": 22.3836,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Olimpia",
+              "en": "Olympia"
+            },
+            "countryCode": "GR",
+            "lat": 37.6383,
+            "lng": 21.63,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Atenas",
+              "en": "Athens"
+            },
+            "countryCode": "GR",
+            "lat": 37.9838,
+            "lng": 23.7275,
+            "codes": [
+              "ATH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "athens-3-days"
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Atenas",
+              "en": "Athens"
+            },
+            "countryCode": "GR",
+            "lat": 37.9838,
+            "lng": 23.7275,
+            "codes": [
+              "ATH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "guide": "athens-3-days",
+            "land": {
+              "minutes": 150,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Nauplia",
+              "en": "Nafplio"
+            },
+            "countryCode": "GR",
+            "lat": 37.5673,
+            "lng": 22.8016,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Monemvasía",
+              "en": "Monemvasia"
+            },
+            "countryCode": "GR",
+            "lat": 36.6872,
+            "lng": 23.0567,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Areópoli (Mani)",
+              "en": "Areopoli (Mani)"
+            },
+            "countryCode": "GR",
+            "lat": 36.6676,
+            "lng": 22.3836,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 45,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Kardamili",
+              "en": "Kardamyli"
+            },
+            "countryCode": "GR",
+            "lat": 36.8869,
+            "lng": 22.2347,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Olimpia",
+              "en": "Olympia"
+            },
+            "countryCode": "GR",
+            "lat": 37.6383,
+            "lng": 21.63,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Atenas",
+              "en": "Athens"
+            },
+            "countryCode": "GR",
+            "lat": 37.9838,
+            "lng": 23.7275,
+            "codes": [
+              "ATH"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "guide": "athens-3-days"
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Es una ruta para hacer en coche: alquílalo en Nauplia o en Atenas; en autobús, Monemvasía y Mani son muy lentas.",
+      "en": "This is a road trip: hire a car in Nafplio or Athens; by bus, Monemvasia and the Mani are very slow."
+    }
+  },
+  "corfu-y-epiro": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Corfú y Epiro",
+      "en": "Corfu and Epirus"
+    },
+    "summary": {
+      "es": "De Corfú al continente: Parga, los pueblos de piedra de Zagori, la garganta de Vikos y Meteora.",
+      "en": "From Corfu to the mainland: Parga, the stone villages of Zagori, the Vikos Gorge and Meteora."
+    },
+    "countries": [
+      "GR"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "versions": {
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Corfú",
+              "en": "Corfu"
+            },
+            "countryCode": "GR",
+            "lat": 39.6243,
+            "lng": 19.9217,
+            "codes": [
+              "CFU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 180,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Ioánina",
+              "en": "Ioannina"
+            },
+            "countryCode": "GR",
+            "lat": 39.665,
+            "lng": 20.8537,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Zagori (Pápingo)",
+              "en": "Zagori (Papingo)"
+            },
+            "countryCode": "GR",
+            "lat": 39.9667,
+            "lng": 20.7333,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Meteora (Kalambaka)",
+              "en": "Meteora (Kalambaka)"
+            },
+            "countryCode": "GR",
+            "lat": 39.7065,
+            "lng": 21.6309,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Tesalónica",
+              "en": "Thessaloniki"
+            },
+            "countryCode": "GR",
+            "lat": 40.6401,
+            "lng": 22.9444,
+            "codes": [
+              "SKG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Corfú",
+              "en": "Corfu"
+            },
+            "countryCode": "GR",
+            "lat": 39.6243,
+            "lng": 19.9217,
+            "codes": [
+              "CFU"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 120,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Parga",
+              "en": "Parga"
+            },
+            "countryCode": "GR",
+            "lat": 39.2853,
+            "lng": 20.4006,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ioánina",
+              "en": "Ioannina"
+            },
+            "countryCode": "GR",
+            "lat": 39.665,
+            "lng": 20.8537,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 50,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Zagori (Pápingo)",
+              "en": "Zagori (Papingo)"
+            },
+            "countryCode": "GR",
+            "lat": 39.9667,
+            "lng": 20.7333,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "car"
+            }
+          },
+          {
+            "city": {
+              "es": "Meteora (Kalambaka)",
+              "en": "Meteora (Kalambaka)"
+            },
+            "countryCode": "GR",
+            "lat": 39.7065,
+            "lng": 21.6309,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "train"
+            }
+          },
+          {
+            "city": {
+              "es": "Tesalónica",
+              "en": "Thessaloniki"
+            },
+            "countryCode": "GR",
+            "lat": 40.6401,
+            "lng": 22.9444,
+            "codes": [
+              "SKG"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Zagori y Meteora quedan mal comunicados en autobús: alquila un coche en Ioánina o en Igumenitsa.",
+      "en": "Zagori and Meteora are poorly served by bus: hire a car in Ioannina or Igoumenitsa."
+    }
+  },
+  "dodecaneso": {
+    "kind": "classic",
+    "reviewed": false,
+    "name": {
+      "es": "Dodecaneso",
+      "en": "Dodecanese"
+    },
+    "summary": {
+      "es": "La ciudad medieval de Rodas, las casas de colores de Symi, las playas de Kos y el monasterio de Patmos: islas a un ferry de distancia.",
+      "en": "The medieval town of Rhodes, the colourful houses of Symi, the beaches of Kos and the monastery of Patmos: islands a ferry apart."
+    },
+    "countries": [
+      "GR"
+    ],
+    "reversible": true,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Kos",
+              "en": "Kos"
+            },
+            "countryCode": "GR",
+            "lat": 36.8933,
+            "lng": 27.2878,
+            "codes": [
+              "KGS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Symi",
+              "en": "Symi"
+            },
+            "countryCode": "GR",
+            "lat": 36.6146,
+            "lng": 27.8378,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 75,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Rodas",
+              "en": "Rhodes"
+            },
+            "countryCode": "GR",
+            "lat": 36.4341,
+            "lng": 28.2176,
+            "codes": [
+              "RHO"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Rodas",
+              "en": "Rhodes"
+            },
+            "countryCode": "GR",
+            "lat": 36.4341,
+            "lng": 28.2176,
+            "codes": [
+              "RHO"
+            ],
+            "nights": {
+              "min": 3,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 75,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Symi",
+              "en": "Symi"
+            },
+            "countryCode": "GR",
+            "lat": 36.6146,
+            "lng": 27.8378,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 180,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Kalymnos",
+              "en": "Kalymnos"
+            },
+            "countryCode": "GR",
+            "lat": 36.95,
+            "lng": 26.9833,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 45,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Kos",
+              "en": "Kos"
+            },
+            "countryCode": "GR",
+            "lat": 36.8933,
+            "lng": 27.2878,
+            "codes": [
+              "KGS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Rodas",
+              "en": "Rhodes"
+            },
+            "countryCode": "GR",
+            "lat": 36.4341,
+            "lng": 28.2176,
+            "codes": [
+              "RHO"
+            ],
+            "nights": {
+              "min": 3,
+              "ideal": 3
+            },
+            "land": {
+              "minutes": 75,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Symi",
+              "en": "Symi"
+            },
+            "countryCode": "GR",
+            "lat": 36.6146,
+            "lng": 27.8378,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Kalymnos",
+              "en": "Kalymnos"
+            },
+            "countryCode": "GR",
+            "lat": 36.95,
+            "lng": 26.9833,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Patmos",
+              "en": "Patmos"
+            },
+            "countryCode": "GR",
+            "lat": 37.3236,
+            "lng": 26.545,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 150,
+              "by": "ferry"
+            }
+          },
+          {
+            "city": {
+              "es": "Kos",
+              "en": "Kos"
+            },
+            "countryCode": "GR",
+            "lat": 36.8933,
+            "lng": 27.2878,
+            "codes": [
+              "KGS"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 3
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "En verano hay ferris rápidos casi a diario entre Rodas, Symi, Kos, Kalymnos y Patmos; fuera de temporada son menos: mira los horarios antes de cerrar las noches.",
+      "en": "In summer fast ferries run almost daily between Rhodes, Symi, Kos, Kalymnos and Patmos; off-season there are fewer: check the timetables before fixing the nights."
+    }
+  },
+  "balcanes-del-sur": {
+    "kind": "surprise",
+    "reviewed": false,
+    "name": {
+      "es": "Balcanes del sur",
+      "en": "Southern Balkans"
+    },
+    "summary": {
+      "es": "El casco otomano de Prizren, la Pristina más joven, el bazar de Skopie y el lago de Ocrid: cuatro países en una vuelta en autobús.",
+      "en": "Prizren's Ottoman old town, youthful Pristina, Skopje's bazaar and Lake Ohrid: four countries in one loop by bus."
+    },
+    "countries": [
+      "AL",
+      "XK",
+      "MK",
+      "ME"
+    ],
+    "reversible": false,
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "versions": {
+      "short": {
+        "stops": [
+          {
+            "city": {
+              "es": "Pristina",
+              "en": "Pristina"
+            },
+            "countryCode": "XK",
+            "lat": 42.6629,
+            "lng": 21.1655,
+            "codes": [
+              "PRN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 105,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Prizren",
+              "en": "Prizren"
+            },
+            "countryCode": "XK",
+            "lat": 42.2139,
+            "lng": 20.7397,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Tirana",
+              "en": "Tirana"
+            },
+            "countryCode": "AL",
+            "lat": 41.3275,
+            "lng": 19.8187,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            }
+          }
+        ]
+      },
+      "full": {
+        "stops": [
+          {
+            "city": {
+              "es": "Tirana",
+              "en": "Tirana"
+            },
+            "countryCode": "AL",
+            "lat": 41.3275,
+            "lng": 19.8187,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Prizren",
+              "en": "Prizren"
+            },
+            "countryCode": "XK",
+            "lat": 42.2139,
+            "lng": 20.7397,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 105,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Pristina",
+              "en": "Pristina"
+            },
+            "countryCode": "XK",
+            "lat": 42.6629,
+            "lng": 21.1655,
+            "codes": [
+              "PRN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Skopie",
+              "en": "Skopje"
+            },
+            "countryCode": "MK",
+            "lat": 41.9981,
+            "lng": 21.4254,
+            "codes": [
+              "SKP"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ocrid",
+              "en": "Ohrid"
+            },
+            "countryCode": "MK",
+            "lat": 41.1172,
+            "lng": 20.8016,
+            "codes": [
+              "OHD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Tirana",
+              "en": "Tirana"
+            },
+            "countryCode": "AL",
+            "lat": 41.3275,
+            "lng": 19.8187,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            }
+          }
+        ]
+      },
+      "long": {
+        "stops": [
+          {
+            "city": {
+              "es": "Kotor",
+              "en": "Kotor"
+            },
+            "countryCode": "ME",
+            "lat": 42.4247,
+            "lng": 18.7712,
+            "codes": [
+              "TGD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 210,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Shkodër",
+              "en": "Shkodër"
+            },
+            "countryCode": "AL",
+            "lat": 42.0693,
+            "lng": 19.5126,
+            "codes": [],
+            "nights": {
+              "min": 1,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 120,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Tirana",
+              "en": "Tirana"
+            },
+            "countryCode": "AL",
+            "lat": 41.3275,
+            "lng": 19.8187,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 240,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Prizren",
+              "en": "Prizren"
+            },
+            "countryCode": "XK",
+            "lat": 42.2139,
+            "lng": 20.7397,
+            "codes": [],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 105,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Pristina",
+              "en": "Pristina"
+            },
+            "countryCode": "XK",
+            "lat": 42.6629,
+            "lng": 21.1655,
+            "codes": [
+              "PRN"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 90,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Skopie",
+              "en": "Skopje"
+            },
+            "countryCode": "MK",
+            "lat": 41.9981,
+            "lng": 21.4254,
+            "codes": [
+              "SKP"
+            ],
+            "nights": {
+              "min": 1,
+              "ideal": 1
+            },
+            "land": {
+              "minutes": 210,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Ocrid",
+              "en": "Ohrid"
+            },
+            "countryCode": "MK",
+            "lat": 41.1172,
+            "lng": 20.8016,
+            "codes": [
+              "OHD"
+            ],
+            "nights": {
+              "min": 2,
+              "ideal": 2
+            },
+            "land": {
+              "minutes": 180,
+              "by": "bus"
+            }
+          },
+          {
+            "city": {
+              "es": "Tirana",
+              "en": "Tirana"
+            },
+            "countryCode": "AL",
+            "lat": 41.3275,
+            "lng": 19.8187,
+            "codes": [
+              "TIA"
+            ],
+            "nights": {
+              "min": 0,
+              "ideal": 0
+            }
+          }
+        ]
+      }
+    },
+    "note": {
+      "es": "Cruzas varias fronteras por carretera: lleva el pasaporte o DNI a mano. Los autobuses se pagan en efectivo y a menudo al conductor, sin horarios fijos: pregunta en la estación el día antes. Esta ruta no pasa por Serbia a propósito: si entras en Kosovo desde otro país, no salgas luego hacia Serbia, porque puede darte problemas en la frontera. Desde Shkodër salen las excursiones de senderismo a Theth y Valbona.",
+      "en": "You cross several borders by road: keep your passport or ID card at hand. Buses are paid in cash, often to the driver, with no fixed timetables: ask at the station the day before. This route skips Serbia on purpose: if you enter Kosovo from another country, do not leave it towards Serbia, as it can cause trouble at the border. Shkodër is the base for the Theth and Valbona hikes."
+    }
+  }
+}

@@ -24,6 +24,9 @@ const guideIn = (id, lang) => {
   };
 };
 
+// One guide in `lang` by its id (rome-3-days), or null: a multi-city route's town links to it
+export const cityGuideById = (id, lang) => guideIn(id, lang);
+
 // The id of the guide named `slug` in any language, or null
 export const cityGuideId = (slug) =>
   Object.keys(guides).find((id) => id === slug || Object.values(guides[id].slugs ?? {}).includes(slug)) ?? null;

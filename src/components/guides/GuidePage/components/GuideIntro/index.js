@@ -1,7 +1,7 @@
 "use client";
 
 import { BedDouble, CalendarDays, Landmark, TramFront } from "lucide-react";
-import IntroCard from "@/components/guides/GuidePage/components/GuideIntro/components/IntroCard";
+import IntroCard from "@/components/shared/IntroCard";
 import { guideTexts } from "@/components/guides/data/texts";
 import { ENTER_RISE, riseDelay } from "@/constants/motion";
 

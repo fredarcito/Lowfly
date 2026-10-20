@@ -3,10 +3,11 @@ import { ROUTES } from "@/constants/routes";
 import { allRoutes, origins } from "@/server/flightRoutes/routes";
 import { SITE_URL, languagesOf } from "@/utils/metadata";
 import { listCityGuides } from "@/server/cityGuides";
+import { listRoutePages } from "@/server/multiCity/pages";
 import { SEARCH_PAGES } from "@/constants/searchPages";
 
 // /sitemap.xml: the pages search engines should know, each in every language with its other languages (and
-// x-default): the home, each kind of search's page, the airports' page, every airport's page, every route page and the city guides, with when the cron last wrote
+// x-default): the home, each kind of search's page, the airports' page, every airport's page, every route page, the city guides and the multi-city routes' pages, with when the cron last wrote
 // their prices (lastmod) so the changed ones are read first. Made again once a day, as the routes change.
 export const revalidate = 86400;
 
@@ -35,6 +36,7 @@ const sitemap = async () => {
     ...routes.flatMap((route) => entries((lang) => ROUTES.flightRoute(lang, route.slug), 0.7, route.updatedAt)),
     ...entries(ROUTES.guides, 0.6),
     ...listCityGuides("en").flatMap((guide) => entries((lang) => ROUTES.guide(lang, guide.slugs[lang] ?? guide.id), 0.7)),
+    ...listRoutePages("en").flatMap((page) => entries((lang) => ROUTES.multiCityRoute(lang, page.slugs[lang] ?? page.id), 0.7)),
   ];
 };
 

@@ -10,7 +10,7 @@ import FlightPair from "@/components/search/results/MultiCityResults/components/
 import LengthPicker from "@/components/search/results/MultiCityResults/components/RouteCard/components/LengthPicker";
 import PlanButton from "@/components/search/results/MultiCityResults/components/RouteCard/components/PlanButton";
 import RoutePhoto from "@/components/search/results/MultiCityResults/components/RouteCard/components/RoutePhoto";
-import TownChain from "@/components/search/results/MultiCityResults/components/RouteCard/components/TownChain";
+import TownChain from "@/components/shared/TownChain";
 import { useRouteTrip } from "@/components/search/results/MultiCityResults/components/RouteCard/hooks/useRouteTrip";
 import { useI18n } from "@/context/i18n";
 import { useDisclosure } from "@/hooks/useDisclosure";

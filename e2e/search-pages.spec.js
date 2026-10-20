@@ -66,4 +66,18 @@ test.describe("search pages", () => {
     const modes = page.getByRole("heading", { name: "Cuatro formas de buscar" }).locator("..");
     if (await modes.count()) await expect(modes.getByRole("link", { name: /Recorridos/ })).toHaveAttribute("href", "/es/recorridos");
   });
+
+  // Their content is the layout's (the search), so each page marks its top: a link from the bottom of another page
+  // opens the search at the top, as any other page (Next.js only scrolls to a page's own first element)
+  for (const viewport of [DESKTOP, PHONE]) {
+    test(`a link from the bottom of a guide opens the search at the top (${viewport.width}px)`, async ({ page }) => {
+      await page.setViewportSize(viewport);
+      await page.goto("/es/recorridos/italia-clasica");
+      await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+      await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(1000);
+      await page.getByRole("link", { name: "Descubre más recorridos como este al mejor precio" }).click();
+      await expect(page).toHaveURL(/\/es\/recorridos$/);
+      await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+    });
+  }
 });

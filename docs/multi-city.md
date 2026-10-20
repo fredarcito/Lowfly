@@ -11,8 +11,15 @@ Status (built 2026-10-20). Update this file as the pieces land.
   their note (docs/stopovers.md, route graph); dry run 2026-10-20: from Barcelona 47 → 66 routes, Málaga 43 → 50,
   Madrid 45 → 48 (Suiza through Geneva). Each card shows first the version that ranked it (`bestVersion`), "Recomendados / Más baratos" order,
   fixed photos per route, search pages per kind (`/es/recorridos`…), usage metrics in the admin (`/admin/usage`).
+- Route pages (SEO), pilot (2026-10-21): only "Italia clásica" (`/es/recorridos/italia-clasica`,
+  `/en/multi-city/classic-italy`), text in `src/data/multiCityPages.json` (`reviewed: false`). What each town is like,
+  what to see, a tip, its guide, on a line with the way by land between towns; the route's lengths; getting around, when to go, FAQ. No day by day (the guides' and
+  the reader's itinerary) and no prices (no airline request on a visit): both buttons go to the "Recorridos" search
+  as usual (counted as `route_page_search_click`). The guides of its towns link to it. Next: a script that drafts the
+  other routes' text with the rules below (Writing route pages), reviewed a region at a time; later the search
+  filtered to one route (`?route=`) if the clicks justify it.
 - Pending: "ver más" asking prices in parts (today the ~8 candidates are priced at once), the loops through the
-  airlines' return-trip finders, the prices-in-advance cron, route pages (SEO), joining two routes, reviewing the
+  airlines' return-trip finders, the prices-in-advance cron, route pages for the other routes, joining two routes, reviewing the
   routes (all `reviewed: false`), measuring before tuning the cache (`fresh` by how far the flight is).
 
 ## Map of the code
@@ -33,7 +40,21 @@ Status (built 2026-10-20). Update this file as the pieces land.
 - Planner taking route towns: `src/utils/manualTrips.js` (`isRouteTown`), `src/app/[lang]/trips/new/page.js`.
 - Metrics: `src/server/metrics.js` (daily Redis counters), counted in `src/server/airlineGuard.js` and by
   `src/app/api/metrics/search/route.js`; read by `src/server/admin/usage.js`, shown by `src/components/admin/AdminUsage`.
-- Tests: `e2e/multi-city.spec.js`, `e2e/search-pages.spec.js`, `e2e/usage.spec.js`.
+- Route pages: text `src/data/multiCityPages.json` (per route id: `slugs`, `photos` by the town's English name —
+  Wikimedia Commons, chosen by looking at them, with author and licence, never one the route's own photo looks like, nor
+  one whose author adds conditions beyond the licence —, and per language `title`, `metaTitle`,
+  `summary`, `why`, `towns` by the town's English name, `gettingAround`, `bestTime`, `faq`), joined with the route's
+  data in `src/server/multiCity/pages.js`; page `src/app/[lang]/multi-city/[route]/page.js` (outside the search pages'
+  group: no search form), `ROUTES.multiCityRoute`; UI `src/components/multiCity/RoutePage/`, the guides' link to it
+  `src/components/multiCity/RouteLink`; shared with the guides: `shared/IntroCard`, `shared/FaqSection`; the town chain
+  `shared/TownChain` (also the search's cards).
+- Tests: `e2e/multi-city.spec.js`, `e2e/search-pages.spec.js`, `e2e/usage.spec.js`, `e2e/route-pages.spec.js`.
+
+Writing route pages (so they read as written by someone who knows the place, and are useful): concrete details
+over adjectives (a place, an hour, a trick); an opinion where it helps ("Bologna is the one everyone skips, and
+shouldn't"); never "fascinating", "hidden gem", "perfect blend", "rich heritage", "unforgettable", "immerse
+yourself", lists of three nouns; each town told from what makes it different, not the same template; facts checked
+(opening days, which city a sight is in); short. The day by day stays in the guides.
 
 Reviewing a route: read it with the checker's output for it (`--only=<id>`), fix stops / nights / land times /
 airports in its JSON, set `reviewed: true`. Routes may start and end in the same city (a loop, `reversible: false`):

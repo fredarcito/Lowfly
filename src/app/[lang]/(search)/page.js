@@ -1,6 +1,7 @@
 import { getDictionary } from "@/i18n";
 import { ROUTES } from "@/constants/routes";
 import { alternatesOf, openGraphOf, siteOf } from "@/utils/metadata";
+import PageTop from "@/components/shared/PageTop";
 import JsonLd from "@/components/shared/JsonLd";
 
 // The home page's own address in its preview (og:url), on top of the layout's title and description
@@ -17,7 +18,12 @@ export const generateMetadata = async ({ params }) => {
 // the results)
 const Page = async ({ params }) => {
   const { lang } = await params;
-  return <JsonLd data={siteOf(lang, getDictionary(lang).meta.description)} />;
+  return (
+    <>
+      <PageTop />
+      <JsonLd data={siteOf(lang, getDictionary(lang).meta.description)} />
+    </>
+  );
 };
 
 export default Page;

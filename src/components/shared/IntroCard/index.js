@@ -8,7 +8,7 @@ import { cn } from "@/utils/cn";
 // How many lines of its text a card shows on phones before "See more"
 const FOLDED_LINES = 2;
 
-// One card of what to know before the days ("Where to stay"): on phones its text folds to a few lines with
+// One card of what to know (a guide's "Where to stay", a route's "When to go"): on phones its text folds to a few lines with
 // "See more ⌄" (it grows smoothly, as a shared trip's destination text), so the days come sooner; from tablets up,
 // all of it. The whole text is in the page either way (search engines read it).
 const IntroCard = ({ icon: Icon, title, text, className, style }) => {

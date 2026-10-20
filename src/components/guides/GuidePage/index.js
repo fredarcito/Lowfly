@@ -4,6 +4,7 @@ import GuideFaq from "@/components/guides/GuidePage/components/GuideFaq";
 import GuideIntro from "@/components/guides/GuidePage/components/GuideIntro";
 import TailorCard from "@/components/guides/GuidePage/components/TailorCard";
 import TailorPrompt from "@/components/guides/GuidePage/components/TailorPrompt";
+import RouteLink from "@/components/multiCity/RouteLink";
 import { guideTexts } from "@/components/guides/data/texts";
 import { ENTER_RISE, riseDelay } from "@/constants/motion";
 import { cn } from "@/utils/cn";
@@ -11,9 +12,10 @@ import { ROUTES } from "@/constants/routes";
 
 // A city guide's body (/es/guias/roma-3-dias; the photo header is GuideHero), rendered on the server for search
 // engines: what to know, the days' links, then the days, each one ending with a question only the reader's own itinerary answers,
-// then what people ask about the city, and at the end what that itinerary brings. Every way out goes to the planner
-// with the city already chosen. `guide`: server/cityGuides getCityGuide; `faq`: utils/guideFaq.
-const GuidePage = ({ lang, guide, faq }) => {
+// then what people ask about the city, the multi-city routes the city is in (a quiet link each), and at the end what
+// that itinerary brings. Every coloured way out goes to the planner with the city already chosen.
+// `guide`: server/cityGuides getCityGuide; `faq`: utils/guideFaq; `routes`: server/multiCity/pages routePagesWithGuide.
+const GuidePage = ({ lang, guide, faq, routes = [] }) => {
   const allTexts = guideTexts(lang);
   const texts = allTexts.prompts;
   const href = ROUTES.newTrip(lang, guide.codes[0]);
@@ -47,6 +49,9 @@ const GuidePage = ({ lang, guide, faq }) => {
         })}
       </div>
       <GuideFaq lang={lang} city={guide.city} faq={faq} />
+      {routes.map((route) => (
+        <RouteLink key={route.id} lang={lang} city={guide.city} route={route} />
+      ))}
       <TailorCard lang={lang} city={guide.city} href={href} guide={guide.id} />
     </article>
   );

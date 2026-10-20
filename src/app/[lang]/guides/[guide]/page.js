@@ -8,6 +8,7 @@ import { LOCALES } from "@/i18n/config";
 import { APP_NAME, LOCALE_TAGS } from "@/i18n";
 import { cityGuideSlugIn, getCityGuide, listCityGuides } from "@/server/cityGuides";
 import { getPhotos } from "@/server/photos";
+import { routePagesWithGuide } from "@/server/multiCity/pages";
 import { ROUTES } from "@/constants/routes";
 import { SITE_URL, alternatesOf, breadcrumbsOf, faqPageOf, openGraphOf } from "@/utils/metadata";
 import { guideFaq } from "@/components/guides/GuidePage/utils/guideFaq";
@@ -97,7 +98,7 @@ const CityGuidePage = async ({ params }) => {
       <JsonLd data={trip} />
       <JsonLd data={faqPageOf(faq)} />
       <TripsPage hero={<GuideHero lang={lang} guide={guide} photo={photo} href={ROUTES.newTrip(lang, guide.codes[0])} />}>
-        <GuidePage lang={lang} guide={guide} faq={faq} />
+        <GuidePage lang={lang} guide={guide} faq={faq} routes={routePagesWithGuide(guide.id, lang)} />
       </TripsPage>
     </I18nProvider>
   );

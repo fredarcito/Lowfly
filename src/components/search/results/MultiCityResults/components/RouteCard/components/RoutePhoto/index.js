@@ -7,13 +7,16 @@ import { usePhoto } from "@/hooks/usePhoto";
 import { fallbackPhoto } from "@/utils/fallbackPhoto";
 import { tripDays } from "@/utils/multiCity";
 
-// The top of a route's card (its side on wide screens): the photo of the city you land in, with its credit (a
-// generic travel photo when it has none; the gradient, pulsing, while it loads), and on it what kind of route it is
-// (a surprise, a seasonal one) and how many days
+// The top of a route's card (its side on wide screens): the route's own photo, chosen once and kept with it
+// (`route.photo`, scripts/multi-city-photos.mjs: no request) or, without one, the city you land in's; with its credit
+// (a generic travel photo when neither is there; the gradient, pulsing, while the landing one loads), and on it what
+// kind of route it is (a surprise, a seasonal one) and how many days
 const RoutePhoto = ({ route, trip }) => {
   const { texts } = useI18n();
   const labels = texts.multiCity;
-  const photo = usePhoto(trip.code);
+  // Asked only for a route with no photo of its own
+  const landingPhoto = usePhoto(route.photo ? null : trip.code);
+  const photo = route.photo ?? landingPhoto;
   const image = photo ?? fallbackPhoto(trip.code);
   const KindIcon = route.season ? Snowflake : Sparkles;
   const kind = route.season?.name ?? labels.kind[route.kind];

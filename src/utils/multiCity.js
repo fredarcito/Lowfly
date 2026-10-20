@@ -4,6 +4,13 @@ import { shift } from "@/utils/dates";
 // How many days a trip lasts: landing on the 14th and flying home on the 21st is 8 days
 export const tripDays = (trip) => trip.nights + 1;
 
+// The trip a route's card shows until another length is picked: `preferred` (the length filter's version) when the
+// route has it, else the one that ranked it (`bestVersion`), so the order and the prices seen agree
+export const defaultTripOf = (route, preferred) => {
+  const byVersion = (version) => route.trips.find((trip) => trip.version === version);
+  return byVersion(preferred) ?? byVersion(route.bestVersion) ?? route.trips.at(-1);
+};
+
 // Every town with the days you are there, from landing (the flight in) to flying home: each town its nights, the
 // first with the flight's arrival time and the last with the flight home's departure.
 // [{ ...town, arriveDay, arriveTime, leaveDay, leaveTime }] (times empty when unknown)

@@ -224,6 +224,15 @@
     "note": {
       "es": "A Imlil se sube en taxi colectivo o con chófer desde Marrakech (cambiando en Asni); de allí a Esauira se vuelve por Marrakech y se sigue en bus (CTM o Supratours). De Aït Ben Haddou a Imlil no hay transporte directo: mejor coche o chófer. El desierto de Merzouga queda a un día entero de viaje de Marrakech: solo merece la pena con más días o en excursión de 3 días.",
       "en": "Imlil is reached by shared taxi or with a driver from Marrakesh (changing in Asni); from there to Essaouira you go back through Marrakesh and take the bus (CTM or Supratours). There is no direct transport from Aït Benhaddou to Imlil: a car or driver is best. The Merzouga desert is a full day's travel from Marrakesh: only worth it with more days or on a 3-day tour."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Ramparts_of_Essaouira.JPG/960px-Ramparts_of_Essaouira.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Ramparts_of_Essaouira.JPG",
+      "author": "Kayaky",
+      "license": "CC BY 3.0",
+      "town": "Esauira"
     }
   },
   "norte-de-marruecos": {
@@ -503,6 +512,15 @@
     "note": {
       "es": "Chauen no tiene tren: se llega en bus CTM desde Tánger, Tetuán o Fez (compra el billete con un día de antelación en temporada alta). Desde Mequinez, las ruinas romanas de Volubilis se ven en el día en taxi.",
       "en": "Chefchaouen has no train: you get there by CTM bus from Tangier, Tetouan or Fez (buy the ticket a day ahead in high season). From Meknes, the Roman ruins of Volubilis are a day trip by taxi."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Medina_of_Fes%2C_Marocco.jpg/960px-Medina_of_Fes%2C_Marocco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 469,
+      "page": "https://commons.wikimedia.org/wiki/File:Medina_of_Fes,_Marocco.jpg",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "town": "Fez"
     }
   },
   "ciudades-imperiales": {
@@ -766,6 +784,15 @@
     "note": {
       "es": "Todo el recorrido se hace en tren (ONCF), cómodo y barato; de Rabat a Casablanca va también el tren de alta velocidad Al Boraq. Casablanca se visita sobre todo por la mezquita de Hassan II.",
       "en": "The whole route is done by train (ONCF), comfortable and cheap; the Al Boraq high-speed train also runs from Rabat to Casablanca. Casablanca is mostly visited for the Hassan II Mosque."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/MoroccoMarrakech_townfromhill.jpg/960px-MoroccoMarrakech_townfromhill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:MoroccoMarrakech_townfromhill.jpg",
+      "author": "CS.D.",
+      "license": "CC BY-SA 3.0",
+      "town": "Marrakech"
     }
   },
   "estambul-y-capadocia": {
@@ -992,6 +1019,15 @@
     "note": {
       "es": "Capadocia no tiene vuelos de Ryanair ni Wizz: se va en bus nocturno desde Estambul (unas 11 h, a Göreme) o en vuelo nacional (Turkish, Pegasus o AJet) a Kayseri o Nevşehir más un traslado de 1 h; con pocos días compensa el vuelo. Reserva el globo con antelación y deja un día de margen, que se cancela con viento. De Capadocia a Pamukkale también hay bus nocturno.",
       "en": "Cappadocia has no Ryanair or Wizz flights: take the night bus from Istanbul (about 11 h, to Göreme) or a domestic flight (Turkish, Pegasus or AJet) to Kayseri or Nevşehir plus a 1-hour transfer; with few days the flight is worth it. Book the balloon ahead and leave a spare day, as it is cancelled in wind. There is also a night bus from Cappadocia to Pamukkale."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Heart_Of_Istanbul_From_Air.jpg/960px-Heart_Of_Istanbul_From_Air.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Heart_Of_Istanbul_From_Air.jpg",
+      "author": "Ail Subway",
+      "license": "CC BY 3.0",
+      "town": "Estambul"
     }
   },
   "costa-turquesa": {
@@ -1253,6 +1289,15 @@
     "note": {
       "es": "Los dolmuş (minibuses) unen todos los pueblos de la costa a menudo. Desde Kaş, excursión en barco a Kekova y la ciudad hundida; desde Fethiye, el Valle de las Mariposas y la Ruta Licia a pie; desde Dalyan, las tumbas licias y la playa de las tortugas (İztuzu). Pamukkale queda a unas 3 h de Fethiye en bus si quieres añadirlo.",
       "en": "Dolmuş minibuses link every town on the coast often. From Kaş, a boat trip to Kekova and the sunken city; from Fethiye, Butterfly Valley and the Lycian Way on foot; from Dalyan, the Lycian tombs and the turtle beach (İztuzu). Pamukkale is about 3 h by bus from Fethiye if you want to add it."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Kastelorizo.svg/960px-Kastelorizo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 534,
+      "page": "https://commons.wikimedia.org/wiki/File:Kastelorizo.svg",
+      "author": "Fut.Perf.",
+      "license": "CC BY-SA 4.0",
+      "town": "Kaş"
     }
   }
 }

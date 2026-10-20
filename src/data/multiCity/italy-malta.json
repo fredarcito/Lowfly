@@ -302,6 +302,15 @@
           }
         ]
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Rome_Skyline_%288012016319%29.jpg/960px-Rome_Skyline_%288012016319%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Rome_Skyline_(8012016319).jpg",
+      "author": "Bert Kaufmann from Roermond, Netherlands",
+      "license": "CC BY-SA 2.0",
+      "town": "Roma"
     }
   },
   "norte-de-italia-y-lagos": {
@@ -619,6 +628,15 @@
     "note": {
       "es": "En el lago de Como, los barcos entre Varenna, Bellagio y Menaggio son la mejor forma de moverse.",
       "en": "On Lake Como, the boats between Varenna, Bellagio and Menaggio are the best way to get around."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Aerial_picture_of_Verona.jpg/960px-Aerial_picture_of_Verona.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1000,
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_picture_of_Verona.jpg",
+      "author": "Guglielmo Giambartolomei",
+      "license": "CC BY-SA 4.0",
+      "town": "Verona"
     }
   },
   "toscana": {
@@ -918,6 +936,15 @@
     "note": {
       "es": "Para la Val d'Orcia y San Gimignano, mejor alquilar un coche: los autobuses entre pueblos son escasos.",
       "en": "For the Val d'Orcia and San Gimignano a hire car is best: buses between the villages are scarce."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/PiazzadelCampoSiena.jpg/960px-PiazzadelCampoSiena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:PiazzadelCampoSiena.jpg",
+      "author": "Massimo Catarinella",
+      "license": "CC BY-SA 3.0",
+      "town": "Siena"
     }
   },
   "napoles-y-costa-amalfitana": {
@@ -1289,6 +1316,15 @@
     "note": {
       "es": "Pompeya se visita de paso en el tren Circumvesuviana. Los ferris de la costa y a Capri funcionan sobre todo de abril a octubre; fuera de temporada, autobús SITA.",
       "en": "Pompeii is a stop on the Circumvesuviana train on the way. Ferries along the coast and to Capri run mostly from April to October; off season, take the SITA bus."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/View_of_Sorrento.jpg/960px-View_of_Sorrento.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 414,
+      "page": "https://commons.wikimedia.org/wiki/File:View_of_Sorrento.jpg",
+      "author": "Kim Traynor",
+      "license": "CC BY-SA 3.0",
+      "town": "Sorrento"
     }
   },
   "sicilia": {
@@ -1628,6 +1664,15 @@
     "note": {
       "es": "Por el sur (Ragusa, Agrigento, Trapani) los autobuses son pocos y lentos: un coche ayuda mucho.",
       "en": "In the south (Ragusa, Agrigento, Trapani) buses are few and slow: a car helps a lot."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Mt_Etna_and_Taormina_as_seen_from_the_Ancient_Theatre_of_Taormina_%2822290641726%29.jpg/960px-Mt_Etna_and_Taormina_as_seen_from_the_Ancient_Theatre_of_Taormina_%2822290641726%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 452,
+      "page": "https://commons.wikimedia.org/wiki/File:Mt_Etna_and_Taormina_as_seen_from_the_Ancient_Theatre_of_Taormina_(22290641726).jpg",
+      "author": "John Menard from Phoenix, USA",
+      "license": "CC BY-SA 2.0",
+      "town": "Taormina"
     }
   },
   "puglia-y-matera": {
@@ -1974,6 +2019,15 @@
     "note": {
       "es": "Matera no tiene aeropuerto (se llega en tren desde Bari) y de Matera a Alberobello no hay tren directo: coche o autobús. Para el Valle de Itria, un coche lo pone todo más fácil. Se vuela de vuelta desde Brindisi, a 40 minutos de Lecce.",
       "en": "Matera has no airport (trains run from Bari) and there is no direct train from Matera to Alberobello: car or bus. In the Itria Valley a car makes everything easier. You fly home from Brindisi, 40 minutes from Lecce."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Square_in_Lecce.jpg/960px-Square_in_Lecce.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Square_in_Lecce.jpg",
+      "author": "F Crippa",
+      "license": "CC BY 2.0",
+      "town": "Lecce"
     }
   },
   "liguria-y-cinque-terre": {
@@ -2233,6 +2287,15 @@
     "note": {
       "es": "Entre los pueblos de Cinque Terre hay tren cada pocos minutos y senderos junto al mar; en verano, también barcos.",
       "en": "A train runs every few minutes between the Cinque Terre villages, plus coastal paths; in summer, boats too."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Manarola_NW_Cemetery_Corniglia_Monterosso_Cinque_Terre_Sep23_A7C_06872.jpg/960px-Manarola_NW_Cemetery_Corniglia_Monterosso_Cinque_Terre_Sep23_A7C_06872.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Manarola_NW_Cemetery_Corniglia_Monterosso_Cinque_Terre_Sep23_A7C_06872.jpg",
+      "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+      "license": "CC BY-SA 4.0",
+      "town": "Cinque Terre"
     }
   },
   "cerdena": {
@@ -2528,6 +2591,15 @@
     "note": {
       "es": "Cerdeña se recorre en coche: el transporte público entre pueblos y playas es muy escaso. Alquílalo en el aeropuerto de llegada.",
       "en": "Sardinia is a road trip: public transport between towns and beaches is very limited. Hire a car at the arrival airport."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Alghero_-_Panorama_%2802%29.jpg/960px-Alghero_-_Panorama_%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Alghero_-_Panorama_(02).jpg",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 4.0",
+      "town": "Alghero"
     }
   },
   "malta-y-gozo": {
@@ -2599,6 +2671,15 @@
     "note": {
       "es": "El ferri rápido une La Valeta con Gozo en unos 45 minutos; el aeropuerto de Malta está a 1 h 30 de Gozo.",
       "en": "The fast ferry links Valletta and Gozo in about 45 minutes; Malta airport is 1 h 30 from Gozo."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Gozo_from_space_via_laser_ESA378503_%28cropped%29.jpg/960px-Gozo_from_space_via_laser_ESA378503_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 555,
+      "page": "https://commons.wikimedia.org/wiki/File:Gozo_from_space_via_laser_ESA378503_(cropped).jpg",
+      "author": "European Space Agency",
+      "license": "CC BY-SA 3.0 igo",
+      "town": "Gozo"
     }
   },
   "dolomitas": {
@@ -2821,6 +2902,15 @@
     "note": {
       "es": "Mejor de junio a septiembre, cuando funcionan los remontes y los autobuses de los puertos. Entre Cortina y Val Gardena, el coche ahorra mucho tiempo.",
       "en": "Best from June to September, when the lifts and mountain-pass buses run. Between Cortina and Val Gardena a car saves a lot of time."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Faloria_Cortina_d%27Ampezzo_10.jpg/960px-Faloria_Cortina_d%27Ampezzo_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 553,
+      "page": "https://commons.wikimedia.org/wiki/File:Faloria_Cortina_d%27Ampezzo_10.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "town": "Cortina d'Ampezzo"
     }
   },
   "emilia-romana": {
@@ -3176,6 +3266,15 @@
     "note": {
       "es": "Todas las ciudades están a menos de 1 h 30 en tren de Bolonia: también puedes alojarte allí y hacer excursiones de un día.",
       "en": "Every city is under 1 h 30 by train from Bologna: you can also stay there and do day trips."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Parma_dal_Duomo%2C_settembre_2014-1_%2815481932581%29.jpg/960px-Parma_dal_Duomo%2C_settembre_2014-1_%2815481932581%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Parma_dal_Duomo,_settembre_2014-1_(15481932581).jpg",
+      "author": "Città di Parma",
+      "license": "CC BY-SA 2.0",
+      "town": "Parma"
     }
   },
   "umbria": {
@@ -3529,6 +3628,15 @@
     "note": {
       "es": "Perugia, Asís, Spello, Spoleto y Orvieto tienen tren; para Todi y Gubbio el coche es mucho más cómodo que el autobús.",
       "en": "Perugia, Assisi, Spello, Spoleto and Orvieto have trains; Todi and Gubbio are much easier by car than by bus."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Assisi_panorama.jpg/960px-Assisi_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Assisi_panorama.jpg",
+      "author": "Gunnar Bach Pedersen",
+      "license": "Public domain",
+      "town": "Asís"
     }
   }
 }

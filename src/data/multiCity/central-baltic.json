@@ -260,6 +260,15 @@
     "note": {
       "es": "En diciembre, mercadillos de Navidad en las cuatro ciudades. De Český Krumlov a Viena hay lanzaderas directas; en transporte público se cambia en Linz o České Budějovice.",
       "en": "In December, Christmas markets in all four cities. From Český Krumlov to Vienna there are direct shuttles; by public transport you change in Linz or České Budějovice."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg/960px-Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Budapest,_Hungary_(explored)_(14995308504).jpg",
+      "author": "Thomas Depenbusch (Depi) from Cologne, Germany",
+      "license": "CC BY 2.0",
+      "town": "Budapest"
     }
   },
   "viena-y-bratislava": {
@@ -334,6 +343,15 @@
     "note": {
       "es": "El aeropuerto de Viena está a una hora de Bratislava en bus: puedes volar a uno y volver desde el otro.",
       "en": "Vienna airport is an hour from Bratislava by bus: you can fly into one and home from the other."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Hlavn%C3%A9_Namestie_%2835096533142%29.jpg/960px-Hlavn%C3%A9_Namestie_%2835096533142%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 551,
+      "page": "https://commons.wikimedia.org/wiki/File:Hlavn%C3%A9_Namestie_(35096533142).jpg",
+      "author": "Rob Hurson from Kentstown, Ireland",
+      "license": "CC BY-SA 2.0",
+      "town": "Bratislava"
     }
   },
   "viena-y-budapest": {
@@ -403,6 +421,15 @@
           }
         ]
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Wien_katedra_sw_Szczepana_widok_z_wiezy_6.jpg/960px-Wien_katedra_sw_Szczepana_widok_z_wiezy_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Wien_katedra_sw_Szczepana_widok_z_wiezy_6.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0",
+      "town": "Viena"
     }
   },
   "polonia": {
@@ -685,6 +712,15 @@
     "note": {
       "es": "Desde Gdansk, el castillo de Malbork y la playa de Sopot son excursiones de medio día; desde Cracovia, la mina de sal de Wieliczka y Auschwitz-Birkenau.",
       "en": "From Gdańsk, Malbork castle and the beach at Sopot are half-day trips; from Kraków, the Wieliczka salt mine and Auschwitz-Birkenau."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Zamek_Kr%C3%B3lewski_na_Wawelu_%281%29.jpg/960px-Zamek_Kr%C3%B3lewski_na_Wawelu_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Zamek_Kr%C3%B3lewski_na_Wawelu_(1).jpg",
+      "author": "XEvansGambitx",
+      "license": "CC BY-SA 4.0",
+      "town": "Cracovia"
     }
   },
   "cracovia-y-tatras": {
@@ -778,6 +814,15 @@
     "note": {
       "es": "Desde Cracovia, la mina de sal de Wieliczka y Auschwitz-Birkenau son excursiones de un día. Zakopane en invierno es nieve y esquí; en verano, rutas por los Tatras y el lago Morskie Oko.",
       "en": "From Kraków, the Wieliczka salt mine and Auschwitz-Birkenau are day trips. Zakopane means snow and skiing in winter; in summer, Tatra hikes and Morskie Oko lake."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/2018-07-03_Zakopane_from_air_05.jpg/960px-2018-07-03_Zakopane_from_air_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:2018-07-03_Zakopane_from_air_05.jpg",
+      "author": "Maksym Kozlenko",
+      "license": "CC BY-SA 4.0",
+      "town": "Zakopane"
     }
   },
   "balticos": {
@@ -1055,6 +1100,15 @@
     "note": {
       "es": "Desde Vilna, el castillo de Trakai es una excursión de medio día. El ferry de Tallin a Helsinki sale varias veces al día.",
       "en": "From Vilnius, Trakai castle is a half-day trip. The Tallinn–Helsinki ferry runs several times a day."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Vistas_desde_la_iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_12.JPG/960px-Vistas_desde_la_iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_12.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 519,
+      "page": "https://commons.wikimedia.org/wiki/File:Vistas_desde_la_iglesia_de_San_Pedro,_Riga,_Letonia,_2012-08-07,_DD_12.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "town": "Riga"
     }
   },
   "tallin-y-helsinki": {
@@ -1123,6 +1177,15 @@
           }
         ]
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Helsinki_Lutheran_Cathedral_%28panoraaman%C3%A4k%C3%B6ala%29-2_%28s%C3%A4%C3%A4t%C3%B6%29.jpg/960px-Helsinki_Lutheran_Cathedral_%28panoraaman%C3%A4k%C3%B6ala%29-2_%28s%C3%A4%C3%A4t%C3%B6%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 525,
+      "page": "https://commons.wikimedia.org/wiki/File:Helsinki_Lutheran_Cathedral_(panoraaman%C3%A4k%C3%B6ala)-2_(s%C3%A4%C3%A4t%C3%B6).jpg",
+      "author": "Old Pionear",
+      "license": "CC BY-SA 4.0",
+      "town": "Helsinki"
     }
   },
   "silesia-y-breslavia": {
@@ -1374,6 +1437,15 @@
     "note": {
       "es": "Desde Świdnica (Iglesia de la Paz) se visita el castillo de Książ; desde Katowice, el barrio obrero de Nikiszowiec y la mina Guido de Zabrze. En Jelenia Góra empiezan los montes Karkonosze y el valle de los palacios.",
       "en": "From Świdnica (Church of Peace) you visit Książ castle; from Katowice, the Nikiszowiec workers' quarter and the Guido mine in Zabrze. Jelenia Góra is the gateway to the Karkonosze mountains and the valley of palaces."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Katowice_Rynek.jpg/960px-Katowice_Rynek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 530,
+      "page": "https://commons.wikimedia.org/wiki/File:Katowice_Rynek.jpg",
+      "author": "Thepoweroflight",
+      "license": "CC BY-SA 4.0",
+      "town": "Katowice"
     }
   },
   "sur-de-polonia": {
@@ -1656,6 +1728,15 @@
     "note": {
       "es": "Desde Rzeszów, el palacio de Łańcut está a media hora. En Bieszczady los buses son pocos: un coche de alquiler desde Rzeszów lo hace mucho más fácil.",
       "en": "From Rzeszów, Łańcut palace is half an hour away. Buses are scarce in the Bieszczady: a hire car from Rzeszów makes it much easier."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Bazylika_archikatedralna_Wniebowzi%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny2.jpg/960px-Bazylika_archikatedralna_Wniebowzi%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Bazylika_archikatedralna_Wniebowzi%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny2.jpg",
+      "author": "Ferdziu",
+      "license": "CC BY-SA 3.0 pl",
+      "town": "Przemyśl"
     }
   },
   "eslovaquia": {
@@ -1920,6 +2001,15 @@
     "note": {
       "es": "Desde Poprad, el tren eléctrico de los Tatras sube a Štrbské Pleso y Starý Smokovec; desde Levoča, el castillo de Spiš y el Paraíso Eslovaco. Poprad y Košice tienen pocos vuelos: Bratislava (o Viena, a una hora) es la entrada más fácil.",
       "en": "From Poprad, the Tatra electric railway climbs to Štrbské Pleso and Starý Smokovec; from Levoča, Spiš castle and the Slovak Paradise. Poprad and Košice have few flights: Bratislava (or Vienna, an hour away) is the easiest way in."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Cathedral_of_St._Elizabeth_in_Ko%C5%A1ice.jpg/960px-Cathedral_of_St._Elizabeth_in_Ko%C5%A1ice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1295,
+      "page": "https://commons.wikimedia.org/wiki/File:Cathedral_of_St._Elizabeth_in_Ko%C5%A1ice.jpg",
+      "author": "Ville Miettinen",
+      "license": "CC BY 2.0",
+      "town": "Košice"
     }
   },
   "hungria-y-balaton": {
@@ -2219,6 +2309,15 @@
     "note": {
       "es": "La vuelta termina en Budapest el día del vuelo. Hévíz tiene un lago termal en el que te puedes bañar todo el año.",
       "en": "The trip ends back in Budapest on the day of your flight. Hévíz has a thermal lake you can bathe in all year."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/P%C3%A9cs_%28145%29.jpg/960px-P%C3%A9cs_%28145%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:P%C3%A9cs_(145).jpg",
+      "author": "Elekes Andor",
+      "license": "CC BY 4.0",
+      "town": "Pécs"
     }
   },
   "bohemia-y-moravia": {
@@ -2537,6 +2636,15 @@
     "note": {
       "es": "Brno tiene pocos vuelos; en la versión larga se termina en Viena, a menos de dos horas de Mikulov.",
       "en": "Brno has few flights; the long version ends in Vienna, under two hours from Mikulov."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/%C4%8Cesk%C3%BD_Krumlov%2C_historick%C3%A9_j%C3%A1dro.jpg/960px-%C4%8Cesk%C3%BD_Krumlov%2C_historick%C3%A9_j%C3%A1dro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:%C4%8Cesk%C3%BD_Krumlov,_historick%C3%A9_j%C3%A1dro.jpg",
+      "author": "Xth-Floor",
+      "license": "CC BY-SA 4.0",
+      "town": "Český Krumlov"
     }
   }
 }

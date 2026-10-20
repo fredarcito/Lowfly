@@ -340,6 +340,15 @@
     "note": {
       "es": "En primavera (mediados de abril a mediados de mayo) los campos de tulipanes de Keukenhof quedan a un paso de Ámsterdam y Delft.",
       "en": "In spring (mid-April to mid-May) the Keukenhof tulip fields are close to Amsterdam and Delft."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg/960px-Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 480,
+      "page": "https://commons.wikimedia.org/wiki/File:Brussels_view_from_Mont_des_Arts,_Brussels,_Belgium_(cropped).jpg",
+      "author": "Ank Kumar",
+      "license": "CC BY-SA 4.0",
+      "town": "Bruselas"
     }
   },
   "baviera-y-salzburgo": {
@@ -629,6 +638,15 @@
     "note": {
       "es": "En las versiones cortas, Neuschwanstein se visita en excursión de un día desde Múnich (unas 2 h en tren). En diciembre, mercadillos de Navidad.",
       "en": "In the shorter versions, Neuschwanstein is a day trip from Munich (about 2 h by train). In December, Christmas markets."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Salzburg_Altstadt_vom_M%C3%B6nchsberg.jpg/960px-Salzburg_Altstadt_vom_M%C3%B6nchsberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Salzburg_Altstadt_vom_M%C3%B6nchsberg.jpg",
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "town": "Salzburgo"
     }
   },
   "berlin-dresde-praga": {
@@ -874,6 +892,15 @@
           }
         ]
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Cityscape_Berlin.jpg/960px-Cityscape_Berlin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 409,
+      "page": "https://commons.wikimedia.org/wiki/File:Cityscape_Berlin.jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0",
+      "town": "Berlín"
     }
   },
   "valle-del-rin": {
@@ -1245,6 +1272,15 @@
     "note": {
       "es": "El tramo más bonito (Coblenza–Bingen) se disfruta mejor en barco por el Rin, de abril a octubre. Hahn (HHN) queda lejos de Fráncfort: unas 2 h en autobús.",
       "en": "The finest stretch (Koblenz–Bingen) is best seen from a Rhine boat, April to October. Hahn (HHN) is far from Frankfurt: about 2 h by bus."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Frankfurter_Altstadt_mit_Skyline_2019_%28100MP%29.jpg/960px-Frankfurter_Altstadt_mit_Skyline_2019_%28100MP%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 472,
+      "page": "https://commons.wikimedia.org/wiki/File:Frankfurter_Altstadt_mit_Skyline_2019_(100MP).jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "town": "Fráncfort"
     }
   },
   "suiza": {
@@ -1611,6 +1647,15 @@
     "note": {
       "es": "Suiza es cara: el Swiss Travel Pass o el Half Fare Card suelen compensar si vas a moverte mucho en tren y teleférico. Basilea (BSL) está en Francia, a 20 min del centro.",
       "en": "Switzerland is expensive: the Swiss Travel Pass or Half Fare Card usually pays off if you take many trains and cable cars. Basel airport (BSL) is in France, 20 min from the centre."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Interlaken01.JPG/960px-Interlaken01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 488,
+      "page": "https://commons.wikimedia.org/wiki/File:Interlaken01.JPG",
+      "author": "Paebi",
+      "license": "CC BY-SA 3.0",
+      "town": "Interlaken"
     }
   },
   "escocia": {
@@ -1931,6 +1976,15 @@
     "note": {
       "es": "En las Highlands y Skye el coche marca la diferencia: los autobuses existen, pero son pocos y tardan más. Se conduce por la izquierda.",
       "en": "In the Highlands and on Skye a car makes all the difference: buses exist but are few and slower. Driving is on the left."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Glasgow_-_aerial_-_2025-04-17_12.jpg/960px-Glasgow_-_aerial_-_2025-04-17_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Glasgow_-_aerial_-_2025-04-17_12.jpg",
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "town": "Glasgow"
     }
   },
   "inglaterra-clasica": {
@@ -2237,6 +2291,15 @@
     "note": {
       "es": "Los Cotswolds se recorren mucho mejor en coche o en excursión organizada. Bath y Bristol vuelan desde el aeropuerto de Bristol (BRS); desde Bath es casi 1 h en autobús.",
       "en": "The Cotswolds are far easier by car or on a tour. Bath and Bristol fly from Bristol Airport (BRS); from Bath it is almost 1 h by bus."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Bath_Somerset_2023_-City-_by-RaBoe_055.jpg/960px-Bath_Somerset_2023_-City-_by-RaBoe_055.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 523,
+      "page": "https://commons.wikimedia.org/wiki/File:Bath_Somerset_2023_-City-_by-RaBoe_055.jpg",
+      "author": "Raboe001",
+      "license": "CC BY-SA 3.0",
+      "town": "Bath"
     }
   },
   "irlanda": {
@@ -2537,6 +2600,15 @@
     "note": {
       "es": "En la costa oeste (Moher, Dingle, el Anillo de Kerry, Connemara) el coche ayuda mucho; se conduce por la izquierda. En la versión corta, Moher se visita desde Galway camino de Shannon (SNN).",
       "en": "On the west coast (Moher, Dingle, the Ring of Kerry, Connemara) a car helps a lot; driving is on the left. In the short version, Moher is visited from Galway on the way to Shannon (SNN)."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Galway_%286254035726%29.jpg/960px-Galway_%286254035726%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 531,
+      "page": "https://commons.wikimedia.org/wiki/File:Galway_(6254035726).jpg",
+      "author": "Miguel Mendez from Malahide, Ireland",
+      "license": "CC BY 2.0",
+      "town": "Galway"
     }
   },
   "escandinavia": {
@@ -2795,6 +2867,15 @@
           }
         ]
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/View_from_siloen.jpg/960px-View_from_siloen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:View_from_siloen.jpg",
+      "author": "Sean Hayford O'Leary",
+      "license": "CC BY 2.0",
+      "town": "Oslo"
     }
   },
   "fiordos-de-noruega": {
@@ -3062,6 +3143,15 @@
     "note": {
       "es": "De Flåm a Bergen se suele hacer el «Norway in a Nutshell»: barco por el Nærøyfjord, autobús a Voss y tren. Los barcos rápidos por los fiordos funcionan sobre todo en verano.",
       "en": "Flåm to Bergen is usually done as 'Norway in a Nutshell': boat on the Nærøyfjord, bus to Voss and train. Express fjord boats mostly run in summer."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Flam.jpg/960px-Flam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Flam.jpg",
+      "author": "The original uploader was Palmiped at English Wikipedia.",
+      "license": "CC BY-SA 3.0",
+      "town": "Flåm"
     }
   },
   "norte-de-alemania": {
@@ -3362,6 +3452,15 @@
           }
         ]
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Hamburg_view_St._Nikolai.jpg/960px-Hamburg_view_St._Nikolai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 529,
+      "page": "https://commons.wikimedia.org/wiki/File:Hamburg_view_St._Nikolai.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "town": "Hamburgo"
     }
   },
   "laponia-finlandesa": {
@@ -3618,6 +3717,15 @@
     "note": {
       "es": "Hace mucho frío (de -15 a -30 °C): ropa térmica por capas, y muchos alojamientos y tours la prestan. Las auroras se ven de septiembre a marzo con cielo despejado, lejos de las luces. Hay buses (Eskelisen) de Rovaniemi a Levi y a Saariselkä e Inari, pero pocos al día; entre Levi y Saariselkä no hay bus directo: coche (con experiencia en nieve) o vuelta por Rovaniemi. Huskies, renos y motos de nieve se contratan como excursión.",
       "en": "It is very cold (−15 to −30 °C): wear thermal layers, and many lodgings and tours lend them. Northern lights show from September to March on clear nights, away from lights. Eskelinen buses run from Rovaniemi to Levi and to Saariselkä and Inari, but few a day; there is no direct bus between Levi and Saariselkä: drive (with snow experience) or go back through Rovaniemi. Huskies, reindeer and snowmobiles are booked as tours."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Huippu-ravintola.JPG/960px-Huippu-ravintola.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Huippu-ravintola.JPG",
+      "author": "Birit Schenk (Birit)",
+      "license": "CC BY 2.5",
+      "town": "Saariselkä"
     }
   },
   "tromso-y-laponia-noruega": {
@@ -3781,6 +3889,15 @@
     "note": {
       "es": "Hace frío (de -5 a -15 °C en la costa, más en Abisko) y en pleno invierno apenas hay luz de día. Para Senja y Abisko lo mejor es coche de alquiler con ruedas de invierno y experiencia en nieve; sin coche, haz Tromsø con excursiones (auroras, fiordos, ballenas de noviembre a enero, huskies) y a Abisko en bus a Narvik y tren. Abisko, en Suecia, es de los sitios con más noches despejadas para ver auroras.",
       "en": "It is cold (−5 to −15 °C on the coast, colder in Abisko) and in midwinter there is hardly any daylight. For Senja and Abisko a rental car with winter tyres and snow experience is best; without one, do Tromsø with tours (auroras, fjords, whales from November to January, huskies) and reach Abisko by bus to Narvik and train. Abisko, in Sweden, is one of the places with the most clear nights for seeing auroras."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Abiskoj%C3%A5kka.jpg/960px-Abiskoj%C3%A5kka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Abiskoj%C3%A5kka.jpg",
+      "author": "q8",
+      "license": "CC BY-SA 2.0",
+      "town": "Abisko"
     }
   },
   "selva-negra": {
@@ -4152,6 +4269,15 @@
     "note": {
       "es": "Si duermes en la Selva Negra, el alojamiento suele darte la tarjeta KONUS: autobús y tren regional gratis. Para los pueblos pequeños y los miradores, mejor coche. En diciembre hay mercadillos de Navidad.",
       "en": "Staying overnight in the Black Forest usually gets you the KONUS card: free regional buses and trains. For the small villages and viewpoints a car is better. December brings Christmas markets."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Schlossbergblick_Freiburg_i._B._14.jpg/960px-Schlossbergblick_Freiburg_i._B._14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Schlossbergblick_Freiburg_i._B._14.jpg",
+      "author": "H.Helmlechner",
+      "license": "CC BY-SA 4.0",
+      "town": "Friburgo"
     }
   },
   "irlanda-del-norte": {
@@ -4491,6 +4617,15 @@
     "note": {
       "es": "La costa de Antrim se disfruta mucho más en coche (se conduce por la izquierda); si no, hay excursiones de un día desde Belfast. En Irlanda del Norte se paga en libras, en Dublín en euros.",
       "en": "The Antrim coast is far better by car (driving is on the left); otherwise there are day tours from Belfast. Northern Ireland uses pounds, Dublin uses euros."
+    },
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Wikibelfast1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 1006,
+      "page": "https://commons.wikimedia.org/wiki/File:Wikibelfast1.jpg",
+      "author": "Conor2k10",
+      "license": "Public domain",
+      "town": "Belfast"
     }
   },
   "gales": {
@@ -4838,6 +4973,15 @@
     "note": {
       "es": "Fuera de Cardiff y la costa norte el transporte público es escaso: en Gales el coche es casi imprescindible (se conduce por la izquierda). Lleva chubasquero también en verano.",
       "en": "Outside Cardiff and the north coast public transport is thin: in Wales a car is almost a must (driving is on the left). Bring a rain jacket even in summer."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Awyrlun_o_Gastell_Conwy_-_Aerial_photograph_of_Castell_Conwy%2C_Conwy_County_Borough%2C_Cymru_%28Wales%29.jpg/960px-Awyrlun_o_Gastell_Conwy_-_Aerial_photograph_of_Castell_Conwy%2C_Conwy_County_Borough%2C_Cymru_%28Wales%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Awyrlun_o_Gastell_Conwy_-_Aerial_photograph_of_Castell_Conwy,_Conwy_County_Borough,_Cymru_(Wales).jpg",
+      "author": "Llywelyn2000",
+      "license": "CC BY-SA 4.0",
+      "town": "Conwy"
     }
   },
   "cornualles": {
@@ -5241,6 +5385,15 @@
     "note": {
       "es": "Los pueblos de Cornualles están mal comunicados entre sí: con coche (por la izquierda y por carreteras muy estrechas) se aprovecha mucho más. En agosto se llena: reserva pronto.",
       "en": "Cornish towns are poorly linked to each other: a car (on the left, on very narrow lanes) gets far more out of it. August is packed: book early."
+    },
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Stives1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Stives1.jpg",
+      "author": "waterborough",
+      "license": "Public domain",
+      "town": "St Ives"
     }
   },
   "islandia": {

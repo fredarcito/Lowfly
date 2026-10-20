@@ -165,7 +165,8 @@ const bestTrip = (option, origin, fares, airportsByCode, countryName, lang) => {
   };
 };
 
-// A route as the results show it, in `lang`
+// A route as the results show it, in `lang`. `bestVersion`: the version whose trip ranked it (rank.js tripScore),
+// the one its card shows first, so the order and the prices seen agree.
 const describeRoute = (route, trips, countryName, lang) => ({
   id: route.id,
   kind: route.kind,
@@ -174,6 +175,9 @@ const describeRoute = (route, trips, countryName, lang) => ({
   note: route.note?.[lang] ?? null,
   countries: route.countries.map(countryName),
   season: route.season ? { name: route.season.name[lang], from: route.season.from, to: route.season.to } : null,
+  bestVersion: trips.reduce((best, trip) => (tripScore(trip) < tripScore(best) ? trip : best)).version,
+  // Chosen once and kept in its file (scripts/multi-city-photos.mjs): its card asks for no photo
+  photo: route.photo ?? null,
   // Shortest first: the card shows the longest by default, the others one tap away
   trips: trips.sort((first, second) => first.nights - second.nights),
 });

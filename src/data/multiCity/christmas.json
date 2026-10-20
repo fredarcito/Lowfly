@@ -194,6 +194,15 @@
         "es": "Mercadillos de Navidad",
         "en": "Christmas markets"
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Strasburg.jpg/960px-Strasburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 534,
+      "page": "https://commons.wikimedia.org/wiki/File:Strasburg.jpg",
+      "author": "Radek Kucharski",
+      "license": "CC BY 2.0",
+      "town": "Estrasburgo"
     }
   },
   "navidad-en-baviera": {
@@ -368,6 +377,15 @@
         "es": "Mercadillos de Navidad",
         "en": "Christmas markets"
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/960px-Stadtbild_M%C3%BCnchen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 541,
+      "page": "https://commons.wikimedia.org/wiki/File:Stadtbild_M%C3%BCnchen.jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "town": "Múnich"
     }
   },
   "navidad-en-el-rin": {
@@ -524,6 +542,15 @@
         "es": "Mercadillos de Navidad",
         "en": "Christmas markets"
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Stadtbild_K%C3%B6ln_%2850MP%29.jpg/960px-Stadtbild_K%C3%B6ln_%2850MP%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 581,
+      "page": "https://commons.wikimedia.org/wiki/File:Stadtbild_K%C3%B6ln_(50MP).jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "town": "Colonia"
     }
   },
   "navidad-berlin-dresde-praga": {
@@ -679,6 +706,15 @@
         "es": "Mercadillos de Navidad",
         "en": "Christmas markets"
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG/960px-Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG",
+      "author": "Deror_avi",
+      "license": "CC BY-SA 4.0",
+      "town": "Praga"
     }
   },
   "navidad-en-centroeuropa": {
@@ -998,6 +1034,15 @@
         "es": "Mercadillos de Navidad",
         "en": "Christmas markets"
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Castle_Square_%2822346p%29.jpg/960px-Castle_Square_%2822346p%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 630,
+      "page": "https://commons.wikimedia.org/wiki/File:Castle_Square_(22346p).jpg",
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0",
+      "town": "Varsovia"
     }
   },
   "navidad-en-el-baltico": {
@@ -1135,6 +1180,15 @@
         "es": "Mercadillos de Navidad",
         "en": "Christmas markets"
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg/960px-Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg",
+      "author": "A.Savin",
+      "license": "FAL",
+      "town": "Tartu"
     }
   }
 }

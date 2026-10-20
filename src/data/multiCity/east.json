@@ -295,6 +295,15 @@
     "note": {
       "es": "Desde Brașov se va en bus al castillo de Bran y a la fortaleza de Râșnov en el día. Las iglesias fortificadas (Biertan, Viscri) cerca de Sighișoara se ven mejor en coche o con excursión.",
       "en": "From Brașov, Bran Castle and Râșnov fortress are an easy day trip by bus. The fortified churches near Sighișoara (Biertan, Viscri) are best seen by car or on a tour."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Hermannstadt%2C_Gro%C3%9Fer_Ring_2011a.jpeg/960px-Hermannstadt%2C_Gro%C3%9Fer_Ring_2011a.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Hermannstadt,_Gro%C3%9Fer_Ring_2011a.jpeg",
+      "author": "Aisano",
+      "license": "CC BY-SA 3.0",
+      "town": "Sibiu"
     }
   },
   "bucovina": {
@@ -539,6 +548,15 @@
     "note": {
       "es": "Los monasterios pintados (Voroneț, Humor, Moldovița, Sucevița) están dispersos: mejor coche de alquiler o excursión desde Suceava o Gura Humorului. Entre Bucovina y Maramureș (paso de Prislop) casi no hay transporte público.",
       "en": "The painted monasteries (Voroneț, Humor, Moldovița, Sucevița) are spread out: rent a car or join a tour from Suceava or Gura Humorului. There is hardly any public transport between Bucovina and Maramureș (Prislop Pass)."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Primaria_din_Gura_Humorului3.jpg/960px-Primaria_din_Gura_Humorului3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Primaria_din_Gura_Humorului3.jpg",
+      "author": "Cezar Suceveanu",
+      "license": "CC BY 3.0",
+      "town": "Gura Humorului"
     }
   },
   "bulgaria": {
@@ -802,6 +820,15 @@
     "note": {
       "es": "El monasterio de Rila se visita en el día desde Sofía (bus o excursión). En julio y agosto la costa se llena y conviene reservar.",
       "en": "Rila Monastery is a day trip from Sofia (bus or tour). In July and August the coast gets busy, so book ahead."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Plovdiv_view.jpg/960px-Plovdiv_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Plovdiv_view.jpg",
+      "author": "Ilia Markov from Sofia, Bulgaria",
+      "license": "CC BY-SA 2.0",
+      "town": "Plovdiv"
     }
   },
   "costa-mar-negro": {
@@ -964,6 +991,15 @@
     "note": {
       "es": "Desde Varna se va en el día al palacio y jardín botánico de Balchik.",
       "en": "From Varna, Balchik's palace and botanical garden make an easy day trip."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Sozopol2.jpg/960px-Sozopol2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Sozopol2.jpg",
+      "author": "Nenko Lazarov",
+      "license": "CC BY 2.5",
+      "town": "Sozopol"
     }
   },
   "serbia": {
@@ -1173,6 +1209,15 @@
     "note": {
       "es": "Novi Sad no tiene aeropuerto: se llega desde el de Belgrado (tren rápido Belgrado–Novi Sad en unos 40 min). Desde Zlatibor, el tren turístico Šargan Eight en Mokra Gora.",
       "en": "Novi Sad has no airport: you get there from Belgrade's (the fast Belgrade–Novi Sad train takes about 40 min). From Zlatibor, the Šargan Eight heritage railway at Mokra Gora."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/040_Belgrade%2C_Serbia.jpg/960px-040_Belgrade%2C_Serbia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:040_Belgrade,_Serbia.jpg",
+      "author": "Marek Ślusarczyk (Tupungato) Photo gallery",
+      "license": "CC BY 3.0",
+      "town": "Belgrado"
     }
   },
   "moldavia": {
@@ -1340,6 +1385,15 @@
     "note": {
       "es": "Desde Chisináu se va en el día a Orheiul Vechi (monasterio excavado en la roca) y a las bodegas de Cricova y Mileștii Mici (reserva la visita). Lleva pasaporte o DNI: hay frontera entre Rumanía y Moldavia. No se recomienda entrar en Transnistria.",
       "en": "From Chișinău, Orheiul Vechi (a cave monastery) and the Cricova and Mileștii Mici wineries are day trips (book the tours). Bring your passport or ID card: there is a border between Romania and Moldova. Visiting Transnistria is not advised."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Arch_of_Triumph%2C_Chisinau%2C_Republic_of_Moldova_%2851160304626_cropped%29.jpg/960px-Arch_of_Triumph%2C_Chisinau%2C_Republic_of_Moldova_%2851160304626_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 471,
+      "page": "https://commons.wikimedia.org/wiki/File:Arch_of_Triumph,_Chisinau,_Republic_of_Moldova_(51160304626_cropped).jpg",
+      "author": "Photobank MD from Chisinau, Moldova",
+      "license": "CC0",
+      "town": "Chisináu"
     }
   },
   "chipre": {
@@ -1635,6 +1689,15 @@
     "note": {
       "es": "Las montañas de Troodos casi no tienen autobuses: mejor coche (se conduce por la izquierda). En Nicosia se cruza a pie al norte con pasaporte o DNI. Desde Lárnaca, Nicosia está a 45 min en bus.",
       "en": "The Troodos mountains have hardly any buses: a car is best (they drive on the left). In Nicosia you can walk across to the north with a passport or ID card. From Larnaca, Nicosia is 45 min by bus."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Nicosia_01-2017_img23_View_from_Shacolas_Tower.jpg/960px-Nicosia_01-2017_img23_View_from_Shacolas_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 500,
+      "page": "https://commons.wikimedia.org/wiki/File:Nicosia_01-2017_img23_View_from_Shacolas_Tower.jpg",
+      "author": "A.Savin",
+      "license": "FAL",
+      "town": "Nicosia"
     }
   },
   "georgia": {
@@ -1967,6 +2030,15 @@
     "note": {
       "es": "Mtskheta se ve en el día desde Tiflis. Signagi y Kazbegi se enlazan en marshrutka cambiando en Tiflis (o con chófer, barato). La carretera a Kazbegi puede cerrarse por nieve en invierno y Mestia es mejor de junio a septiembre.",
       "en": "Mtskheta is a day trip from Tbilisi. Sighnaghi and Kazbegi are linked by marshrutka with a change in Tbilisi (or a cheap private driver). The Kazbegi road can close for snow in winter and Mestia is best from June to September."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/View_of_Tbilisi_from_Tabori_Church_2023-10-08-2.jpg/960px-View_of_Tbilisi_from_Tabori_Church_2023-10-08-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:View_of_Tbilisi_from_Tabori_Church_2023-10-08-2.jpg",
+      "author": "Alexey Komarov",
+      "license": "CC BY-SA 4.0",
+      "town": "Tiflis"
     }
   }
 }

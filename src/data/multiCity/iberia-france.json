@@ -266,6 +266,15 @@
     "note": {
       "es": "En verano el interior pasa de 40 °C: mejor primavera u otoño. Ronda y los pueblos blancos son más cómodos en coche.",
       "en": "Inland Andalusia tops 40 °C in summer: spring or autumn are better. Ronda and the white villages are easier by car."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/%22Der_Blick_von_der_Alhambra_auf_Granada_ist_einfach_atemberaubend%22._01.jpg/960px-%22Der_Blick_von_der_Alhambra_auf_Granada_ist_einfach_atemberaubend%22._01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 515,
+      "page": "https://commons.wikimedia.org/wiki/File:%22Der_Blick_von_der_Alhambra_auf_Granada_ist_einfach_atemberaubend%22._01.jpg",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "town": "Granada"
     }
   },
   "portugal-clasico": {
@@ -543,6 +552,15 @@
           }
         ]
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Lisboa837.png/960px-Lisboa837.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 491,
+      "page": "https://commons.wikimedia.org/wiki/File:Lisboa837.png",
+      "author": "Lacobrigo",
+      "license": "CC BY-SA 4.0",
+      "town": "Lisboa"
     }
   },
   "lisboa-y-algarve": {
@@ -822,6 +840,15 @@
     "note": {
       "es": "Las calas del Algarve (Benagil, Ponta da Piedade) se ven mejor en barco desde Lagos o Portimão.",
       "en": "The Algarve coves (Benagil, Ponta da Piedade) are best seen by boat from Lagos or Portimão."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Pal%C3%A1cio_Nacional_de_Sintra_from_above_74.jpg/960px-Pal%C3%A1cio_Nacional_de_Sintra_from_above_74.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_Nacional_de_Sintra_from_above_74.jpg",
+      "author": "Kent Wang",
+      "license": "CC BY 4.0",
+      "town": "Sintra"
     }
   },
   "norte-de-espana": {
@@ -1073,6 +1100,15 @@
     "note": {
       "es": "Los Picos de Europa (lagos de Covadonga, ruta del Cares) son mucho más fáciles en coche.",
       "en": "The Picos de Europa (Covadonga lakes, Cares gorge) are much easier by car."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Cityscape_-_Bilbao%2C_Spain_-_panoramio_%281%29.jpg/960px-Cityscape_-_Bilbao%2C_Spain_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Cityscape_-_Bilbao,_Spain_-_panoramio_(1).jpg",
+      "author": "Tommie Hansen",
+      "license": "CC BY 3.0",
+      "town": "Bilbao"
     }
   },
   "galicia-y-oporto": {
@@ -1358,6 +1394,15 @@
     "note": {
       "es": "Las islas Cíes se visitan en barco desde Vigo (de mayo a septiembre, con plazas limitadas: reserva antes).",
       "en": "The Cíes Islands are a boat trip from Vigo (May to September, limited places: book ahead)."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/O_Porto_%28visto_da_Ponte_Dom_Luis_I%29.jpg/960px-O_Porto_%28visto_da_Ponte_Dom_Luis_I%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:O_Porto_(visto_da_Ponte_Dom_Luis_I).jpg",
+      "author": "Rititaneves",
+      "license": "CC BY-SA 3.0",
+      "town": "Oporto"
     }
   },
   "provenza-y-costa-azul": {
@@ -1638,6 +1683,15 @@
     "note": {
       "es": "Mónaco y Èze se hacen en el día desde Niza en tren o bus. La lavanda florece de finales de junio a mediados de julio; para los pueblos del Luberon, mejor coche.",
       "en": "Monaco and Èze are easy day trips from Nice by train or bus. Lavender blooms late June to mid July; the Luberon villages are best by car."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Port_Of_Nice%2C_C%C3%B4te_d%27Azur.jpg/960px-Port_Of_Nice%2C_C%C3%B4te_d%27Azur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Port_Of_Nice,_C%C3%B4te_d%27Azur.jpg",
+      "author": "Moody Dreiza (Moody751 at English Wikipedia)",
+      "license": "CC BY 2.5",
+      "town": "Niza"
     }
   },
   "alsacia": {
@@ -1822,6 +1876,15 @@
     "note": {
       "es": "Pocos vuelos a Estrasburgo: lo normal es entrar o salir por Basilea-Mulhouse (BSL). En diciembre, mercados de Navidad; los pueblos del vino son más fáciles en coche.",
       "en": "Few flights reach Strasbourg: flying in or out of Basel-Mulhouse (BSL) is usual. Christmas markets in December; the wine villages are easier by car."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/View_of_%C3%89glise_Saint-Martin_%2843833049001%29.jpg/960px-View_of_%C3%89glise_Saint-Martin_%2843833049001%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 573,
+      "page": "https://commons.wikimedia.org/wiki/File:View_of_%C3%89glise_Saint-Martin_(43833049001).jpg",
+      "author": "--sinava-- from Berlin",
+      "license": "CC BY 2.0",
+      "town": "Colmar"
     }
   },
   "burdeos-y-pais-vasco-frances": {
@@ -2103,6 +2166,15 @@
           }
         ]
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Biarritz-Plage.JPG/960px-Biarritz-Plage.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Biarritz-Plage.JPG",
+      "author": "Florian Pépellin",
+      "license": "CC BY-SA 3.0",
+      "town": "Biarritz"
     }
   },
   "paris-y-normandia": {
@@ -2504,6 +2576,15 @@
     "note": {
       "es": "Normandía en transporte público es lenta (Étretat, Honfleur y las playas del Desembarco casi sin tren): mejor alquilar coche en Ruan o hacer excursiones organizadas desde Bayeux.",
       "en": "Normandy by public transport is slow (Étretat, Honfleur and the D-Day beaches have almost no trains): rent a car in Rouen or take tours from Bayeux."
+    },
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Rouen_mosaique.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 1250,
+      "page": "https://commons.wikimedia.org/wiki/File:Rouen_mosaique.png",
+      "author": "Foulques1996",
+      "license": "CC BY-SA 4.0",
+      "town": "Ruan"
     }
   },
   "castilla": {
@@ -2857,6 +2938,15 @@
     "note": {
       "es": "En julio y agosto la meseta es muy calurosa; en invierno, fría pero con menos gente.",
       "en": "July and August on the plateau are very hot; winter is cold but quieter."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Reflejos_de_la_Catedrales_de_Salamanca.jpg/960px-Reflejos_de_la_Catedrales_de_Salamanca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:Reflejos_de_la_Catedrales_de_Salamanca.jpg",
+      "author": "Santiagova",
+      "license": "CC BY-SA 3.0 es",
+      "town": "Salamanca"
     }
   },
   "cataluna": {
@@ -3120,6 +3210,15 @@
     "note": {
       "es": "Las calas de la Costa Brava se disfrutan más con coche; en agosto hay mucha gente.",
       "en": "The Costa Brava coves are best with a car; August is very crowded."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Aerial_view_of_La_Sagrada_Familia%2C_Barcelona%2C_Spain_%2851227006134%29.jpg/960px-Aerial_view_of_La_Sagrada_Familia%2C_Barcelona%2C_Spain_%2851227006134%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_La_Sagrada_Familia,_Barcelona,_Spain_(51227006134).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "town": "Barcelona"
     }
   },
   "madeira": {
@@ -3320,6 +3419,15 @@
     "note": {
       "es": "Alquila coche: los buses entre pueblos son lentos y escasos. Las levadas y el Pico Ruivo madrugando, antes de que suban las nubes.",
       "en": "Rent a car: buses between villages are slow and infrequent. Do the levadas and Pico Ruivo early, before the clouds roll in."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Levada_do_Caldeir%C3%A3o_Verde%2C_Madeira_-_Aug_2012_-_05.jpg/960px-Levada_do_Caldeir%C3%A3o_Verde%2C_Madeira_-_Aug_2012_-_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 531,
+      "page": "https://commons.wikimedia.org/wiki/File:Levada_do_Caldeir%C3%A3o_Verde,_Madeira_-_Aug_2012_-_05.jpg",
+      "author": "cudi",
+      "license": "CC BY 2.0",
+      "town": "Santana"
     }
   },
   "azores-sao-miguel": {
@@ -3519,6 +3627,15 @@
     "note": {
       "es": "Alquila coche: el bus apenas llega a los miradores. El tiempo cambia en minutos; mira las webcams antes de subir a Sete Cidades.",
       "en": "Rent a car: buses barely reach the viewpoints. The weather changes by the minute; check the webcams before driving up to Sete Cidades."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Caldeira%2C_Vale_das_Furnas%2C_Povoa%C3%A7%C3%A3o%2C_ilha_de_S%C3%A3o_Miguel%2C_A%C3%A7ores.JPG/960px-Caldeira%2C_Vale_das_Furnas%2C_Povoa%C3%A7%C3%A3o%2C_ilha_de_S%C3%A3o_Miguel%2C_A%C3%A7ores.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1195,
+      "page": "https://commons.wikimedia.org/wiki/File:Caldeira,_Vale_das_Furnas,_Povoa%C3%A7%C3%A3o,_ilha_de_S%C3%A3o_Miguel,_A%C3%A7ores.JPG",
+      "author": "José Luís Ávila Silveira/Pedro Noronha e Costa",
+      "license": "Public domain",
+      "town": "Furnas"
     }
   },
   "comunidad-valenciana": {
@@ -3836,6 +3953,15 @@
     "note": {
       "es": "Entre Xàtiva y la costa (Dénia, Jávea) el coche ahorra mucho tiempo; de Dénia a Alicante va el TRAM por la costa, lento pero bonito.",
       "en": "Between Xàtiva and the coast (Dénia, Jávea) a car saves a lot of time; from Dénia to Alicante the coastal TRAM is slow but scenic."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Vista_de_Alicante%2C_Espa%C3%B1a%2C_2014-07-04%2C_DD_49.JPG/960px-Vista_de_Alicante%2C_Espa%C3%B1a%2C_2014-07-04%2C_DD_49.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 445,
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_de_Alicante,_Espa%C3%B1a,_2014-07-04,_DD_49.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "town": "Alicante"
     }
   },
   "valle-del-duero": {
@@ -4207,6 +4333,15 @@
     "note": {
       "es": "El tren del Duero (Oporto–Régua–Pinhão) es un viaje en sí mismo; para las quintas y los miradores, mejor coche. En vendimia (septiembre) hay más ambiente y más gente.",
       "en": "The Douro line (Porto–Régua–Pinhão) is a trip in itself; for the wine estates and viewpoints a car is better. Harvest time (September) is livelier and busier."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Pinh%C3%A3o_train_station_02.jpg/960px-Pinh%C3%A3o_train_station_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 523,
+      "page": "https://commons.wikimedia.org/wiki/File:Pinh%C3%A3o_train_station_02.jpg",
+      "author": "sanjorgepinho",
+      "license": "CC BY-SA 4.0",
+      "town": "Pinhão"
     }
   },
   "extremadura": {
@@ -4596,6 +4731,15 @@
     "note": {
       "es": "Badajoz no tiene vuelos de Ryanair ni Wizz, así que se entra y se sale por Madrid. Aquí el coche es casi imprescindible: los trenes son pocos y lentos. En verano pasa de 40 °C.",
       "en": "Badajoz has no Ryanair or Wizz flights, so you fly in and out of Madrid. A car is almost a must here: trains are few and slow. Summer goes above 40 °C."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/M%C3%A9rida._Mayor_square._Badajoz._Extremadura._Spain_%284923902587%29.jpg/960px-M%C3%A9rida._Mayor_square._Badajoz._Extremadura._Spain_%284923902587%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:M%C3%A9rida._Mayor_square._Badajoz._Extremadura._Spain_(4923902587).jpg",
+      "author": "Tomás Fano",
+      "license": "CC BY-SA 2.0",
+      "town": "Mérida"
     }
   },
   "castillos-del-loira": {
@@ -4953,6 +5097,15 @@
     "note": {
       "es": "Los trenes unen las ciudades, pero a los castillos (Chenonceau, Chambord, Villandry) se llega mejor en coche, en bici por la Loire à Vélo o en minibús desde Tours.",
       "en": "Trains link the towns, but the castles (Chenonceau, Chambord, Villandry) are easier by car, by bike on the Loire à Vélo or by minibus tour from Tours."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Orl%C3%A9ans%2C_l%27automne_est_l%C3%A0_%21.jpg/960px-Orl%C3%A9ans%2C_l%27automne_est_l%C3%A0_%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1084,
+      "page": "https://commons.wikimedia.org/wiki/File:Orl%C3%A9ans,_l%27automne_est_l%C3%A0_!.jpg",
+      "author": "Anthony Bourgouin",
+      "license": "CC BY-SA 4.0",
+      "town": "Orleans"
     }
   },
   "occitania": {
@@ -5324,6 +5477,15 @@
     "note": {
       "es": "Entre Toulouse, Carcasona, Narbona, Montpellier y Nimes hay buenos trenes; Conques, Cordes-sur-Ciel y los castillos cátaros piden coche.",
       "en": "Toulouse, Carcassonne, Narbonne, Montpellier and Nîmes have good trains; Conques, Cordes-sur-Ciel and the Cathar castles need a car."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/1_carcassonne_aerial_2016.jpg/960px-1_carcassonne_aerial_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 472,
+      "page": "https://commons.wikimedia.org/wiki/File:1_carcassonne_aerial_2016.jpg",
+      "author": "Chensiyuan",
+      "license": "CC BY-SA 4.0",
+      "town": "Carcasona"
     }
   },
   "bretana": {
@@ -5707,6 +5869,15 @@
     "note": {
       "es": "Rennes, Dinard y Brest no tienen vuelos de Ryanair ni Wizz: se entra y se sale por Nantes. En Bretaña el coche marca la diferencia; en tren y autobús se puede, pero tardas bastante más.",
       "en": "Rennes, Dinard and Brest have no Ryanair or Wizz flights: you fly in and out of Nantes. In Brittany a car makes all the difference; trains and buses work, but take much longer."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Aerial_image_of_Saint-Malo_%28view_from_the_south%29.jpg/960px-Aerial_image_of_Saint-Malo_%28view_from_the_south%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 498,
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Saint-Malo_(view_from_the_south).jpg",
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "town": "Saint-Malo"
     }
   }
 }

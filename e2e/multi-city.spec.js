@@ -97,7 +97,9 @@ test.describe("multi-city: the rules", () => {
 test.describe("multi-city: the routes' data", () => {
   test("every version flies in and home from a town with an airport, with nights and ways by land", () => {
     expect(ROUTES.length).toBeGreaterThan(50);
-    for (const route of ROUTES)
+    for (const route of ROUTES) {
+      // Its own photo (scripts/multi-city-photos.mjs), creditable: author and licence; never another route's
+      if (route.photo) expect(route.photo, route.id).toMatchObject({ src: expect.stringMatching(/^https:/), page: expect.stringMatching(/^https:/), author: expect.any(String), license: expect.any(String) });
       for (const [version, { stops }] of Object.entries(route.versions)) {
         const where = `${route.id}/${version}`;
         expect(["short", "full", "long"], where).toContain(version);
@@ -111,6 +113,10 @@ test.describe("multi-city: the routes' data", () => {
         // The planner takes the towns of any route (constants/manualTrips MAX_STOPS)
         expect(stops.length, where).toBeLessThanOrEqual(9);
       }
+    }
+    const pages = ROUTES.filter((route) => route.photo).map((route) => route.photo.page);
+    expect(new Set(pages).size).toBe(pages.length);
+    expect(pages.length).toBeGreaterThan(ROUTES.length * 0.9);
   });
 });
 
@@ -240,6 +246,24 @@ test.describe("multi-city: the search", () => {
     const [saved] = await savedTrips(page);
     expect(saved.stops.map((stop) => stop.city)).toEqual(["Bari", "Matera", "Alberobello", "Polignano a Mare", "Ostuni", "Lecce"]);
     expect(saved.flights.legs).toHaveLength(2);
+  });
+
+  test("each card shows first the length that placed it; 'Más baratos' orders by that price", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    // Puglia ranked by its short version (41,98 €), Albania after it at 55,50 €, a pricier full Puglia (47,98 €)
+    const routes = [{ ...pugliaRoute(30), bestVersion: "short" }, albaniaRoute(30)];
+    const cheaperAlbania = { ...albaniaRoute(30), trips: [{ ...pugliaTrip(30, "short"), price: 30.5 }] };
+    await page.route("**/api/multi-city?**", (route) => route.fulfill({ json: { ...answer(30), routes: [...routes, { ...cheaperAlbania, id: "albania-2", name: "Albania barata" }] } }));
+    await openWith(page, searchPath(30), { origin: "MLA" });
+
+    const puglia = card(page, "Puglia y Matera");
+    await expect(puglia.getByRole("radio", { name: "6 días" })).toHaveAttribute("aria-checked", "true");
+    await expect(puglia.getByText(/41,98/).first()).toBeVisible();
+
+    const names = () => page.locator("main [data-slot=card] h3:visible").allTextContents();
+    expect(await names()).toEqual(["Puglia y Matera", "Albania", "Albania barata"]);
+    await page.getByRole("radiogroup", { name: "Orden de los recorridos" }).getByRole("radio", { name: "Más baratos" }).click();
+    await expect.poll(names).toEqual(["Albania barata", "Puglia y Matera", "Albania"]);
   });
 
   test("the planner opens with every town of the route, those with no airport too", async ({ page }) => {

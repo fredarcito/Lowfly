@@ -91,6 +91,10 @@ const checkRoute = (route, { airportsByCode, graph, guides, origins }) => {
   if (!Array.isArray(route.countries) || !route.countries.length) errors.push("countries");
   if (typeof route.reversible !== "boolean") errors.push("reversible is not true / false");
   if (!Array.isArray(route.months) || route.months.some((month) => !Number.isInteger(month) || month < 1 || month > 12)) errors.push("months");
+  if (route.photo) {
+    const { src, page, author, license } = route.photo;
+    if (!/^https:\/\//.test(src ?? "") || !/^https:\/\//.test(page ?? "") || !author || !license) errors.push("photo: src, page (https), author and license");
+  } else warnings.push("no photo: its card shows its landing city's (scripts/multi-city-photos.mjs)");
   if (route.season) {
     const { from, to } = route.season;
     const isDay = (day) => /^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/.test(day ?? "");

@@ -630,6 +630,8 @@ const en = {
     subtitle: (origin) => `Fly from ${origin} into one city and home from another; in between, by land.`,
     empty: "We found no routes with flights for those dates. Try other days or “Anywhere”.",
     filterAria: "Route length",
+    sortAria: "Order of the routes",
+    sort: { recommended: "Recommended", price: "Cheapest" },
     filter: { all: "All", short: "Short", full: "A week", long: "Long" },
     noneInFilter: "No route of that length for your dates.",
     kind: { classic: "Classic", surprise: "Surprise" },

@@ -298,6 +298,15 @@
     "note": {
       "es": "Los catamaranes entre islas van a diario de junio a septiembre; fuera de temporada hay muchos menos.",
       "en": "Catamarans between the islands run daily from June to September; off season there are far fewer."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Aerial_image_of_Hvar_%28view_from_the_south%29.jpg/960px-Aerial_image_of_Hvar_%28view_from_the_south%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 489,
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Hvar_(view_from_the_south).jpg",
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "town": "Hvar"
     }
   },
   "croacia-interior": {
@@ -579,6 +588,15 @@
     "note": {
       "es": "En Plitvice duerme junto al parque y entra temprano: a media mañana se llena de grupos.",
       "en": "In Plitvice sleep next to the park and go in early: by mid-morning it fills with groups."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Roman_Forum_in_Zadar%2C_Croatia_%2848607823862%29.jpg/960px-Roman_Forum_in_Zadar%2C_Croatia_%2848607823862%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Roman_Forum_in_Zadar,_Croatia_(48607823862).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "town": "Zadar"
     }
   },
   "eslovenia-e-istria": {
@@ -864,6 +882,15 @@
     "note": {
       "es": "En Istria los autobuses son escasos fuera de verano; un coche facilita mucho moverte entre pueblos.",
       "en": "In Istria buses are scarce outside summer; a car makes moving between towns much easier."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Blejsko_jezero.jpg/960px-Blejsko_jezero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Blejsko_jezero.jpg",
+      "author": "No machine-readable author provided. Matijap assumed (based on copyright claims).",
+      "license": "Public domain",
+      "town": "Bled"
     }
   },
   "balcanes": {
@@ -1133,6 +1160,15 @@
     "note": {
       "es": "Lleva el pasaporte o DNI a mano: cruzas varias fronteras por carretera y en verano hay colas.",
       "en": "Keep your passport or ID card at hand: you cross several borders by road and in summer there are queues."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/960px-Mostar_Old_Town_Panorama_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama_2007.jpg",
+      "author": "Ramirez",
+      "license": "CC BY-SA 4.0",
+      "town": "Mostar"
     }
   },
   "montenegro": {
@@ -1448,6 +1484,15 @@
     "note": {
       "es": "Durmitor y el lago Skadar tienen pocos autobuses: con coche de alquiler ganas mucho tiempo.",
       "en": "Durmitor and Lake Skadar have few buses: a hire car saves a lot of time."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Budva%2C_view_from_Gospostina.jpg/960px-Budva%2C_view_from_Gospostina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 451,
+      "page": "https://commons.wikimedia.org/wiki/File:Budva,_view_from_Gospostina.jpg",
+      "author": "Bratislav Tabaš",
+      "license": "CC BY-SA 3.0",
+      "town": "Budva"
     }
   },
   "bosnia-a-fondo": {
@@ -1787,6 +1832,15 @@
     "note": {
       "es": "El tren Sarajevo–Mostar es de los más bonitos de los Balcanes. Blagaj y Počitelj se ven mejor con coche.",
       "en": "The Sarajevo–Mostar train is one of the most scenic in the Balkans. Blagaj and Počitelj are easier by car."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Sarajevo_City_Panorama.JPG/960px-Sarajevo_City_Panorama.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 478,
+      "page": "https://commons.wikimedia.org/wiki/File:Sarajevo_City_Panorama.JPG",
+      "author": "Julian Nyča",
+      "license": "CC BY-SA 4.0",
+      "town": "Sarajevo"
     }
   },
   "albania": {
@@ -2082,6 +2136,15 @@
     "note": {
       "es": "Los furgones (minibuses) no tienen horario fijo: sal temprano. El ferry Sarandë–Corfú va todo el año, con más barcos en verano.",
       "en": "Minibuses (furgons) have no fixed timetable: leave early. The Sarandë–Corfu ferry runs all year, with more boats in summer."
+    },
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Mangalem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Mangalem.jpg",
+      "author": "Etrusko25",
+      "license": "CC BY-SA 3.0",
+      "town": "Berat"
     }
   },
   "macedonia-del-norte-y-ocrid": {
@@ -2326,6 +2389,15 @@
     "note": {
       "es": "El cañón de Matka es una excursión de medio día desde Skopie, en autobús urbano o taxi.",
       "en": "Matka Canyon is a half-day trip from Skopje, by city bus or taxi."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/BitolskiKorzo.JPG/960px-BitolskiKorzo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:BitolskiKorzo.JPG",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 3.0",
+      "town": "Bitola"
     }
   },
   "atenas-y-cicladas": {
@@ -2571,6 +2643,15 @@
     "note": {
       "es": "Los ferris entre islas van a diario de mayo a octubre; en julio y agosto reserva el billete con antelación.",
       "en": "Ferries between the islands run daily from May to October; in July and August book your ticket ahead."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Paros_Alyki2_tango7174.jpg/960px-Paros_Alyki2_tango7174.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 457,
+      "page": "https://commons.wikimedia.org/wiki/File:Paros_Alyki2_tango7174.jpg",
+      "author": "Tango7174",
+      "license": "CC BY-SA 4.0",
+      "town": "Paros"
     }
   },
   "grecia-continental": {
@@ -2833,6 +2914,15 @@
     "note": {
       "es": "Entre Delfos y Meteora no hay autobús directo; en coche son unas 3 horas.",
       "en": "There is no direct bus between Delphi and Meteora; by car it takes about 3 hours."
+    },
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Salonica-view-aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Salonica-view-aerial.jpg",
+      "author": "en:User:Salonica84",
+      "license": "Public domain",
+      "town": "Tesalónica"
     }
   },
   "creta": {
@@ -3074,6 +3164,15 @@
     "note": {
       "es": "Los autobuses KTEL unen las ciudades, pero para las playas del oeste (Balos, Elafonisi) un coche ayuda mucho.",
       "en": "KTEL buses link the towns, but a car helps a lot for the western beaches (Balos, Elafonisi)."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rethymno_-_Venetian_fortress.jpg/960px-Rethymno_-_Venetian_fortress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Rethymno_-_Venetian_fortress.jpg",
+      "author": "Lapplaender",
+      "license": "CC BY-SA 3.0 de",
+      "town": "Rétino"
     }
   },
   "peloponeso": {
@@ -3349,6 +3448,15 @@
     "note": {
       "es": "Es una ruta para hacer en coche: alquílalo en Nauplia o en Atenas; en autobús, Monemvasía y Mani son muy lentas.",
       "en": "This is a road trip: hire a car in Nafplio or Athens; by bus, Monemvasia and the Mani are very slow."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/NafplionViewFromAkronauplia.jpg/960px-NafplionViewFromAkronauplia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:NafplionViewFromAkronauplia.jpg",
+      "author": "Andreas Tille This image is the original work of Andreas Tille. More images can be found at his image gallery, with this image being hosted at http://people.debian.org/~tille/nafplion/02_nafplion/castles/p4180061.html.",
+      "license": "CC BY-SA 3.0",
+      "town": "Nauplia"
     }
   },
   "corfu-y-epiro": {
@@ -3583,6 +3691,15 @@
     "note": {
       "es": "Zagori y Meteora quedan mal comunicados en autobús: alquila un coche en Ioánina o en Igumenitsa.",
       "en": "Zagori and Meteora are poorly served by bus: hire a car in Ioannina or Igoumenitsa."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/%CE%9A%CE%AC%CF%83%CF%84%CF%81%CE%BF_%CE%99%CF%89%CE%B1%CE%BD%CE%BD%CE%AF%CE%BD%CF%89%CE%BD%2C_%CE%AC%CF%80%CE%BF%CF%88%CE%B7_%CF%84%CE%BF%CF%85_%CF%84%CE%B6%CE%B1%CE%BC%CE%B9%CE%BF%CF%8D_%CE%BC%CE%B5_%CF%86%CF%8C%CE%BD%CF%84%CE%BF_%CF%84%CE%B7%CE%BD_%CE%BB%CE%AF%CE%BC%CE%BD%CE%B7_%CF%84%CE%BF%CE%BD_%CE%BF%CF%85%CF%81%CE%B1%CE%BD%CF%8C_%CE%BA%CE%B1%CE%B9_%CF%84%CE%BF%CF%85%CF%82_%CE%B3%CE%BB%CE%AC%CF%81%CE%BF%CF%85%CF%82%21%21%21%28photosiotas%29_%285%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 443,
+      "page": "https://commons.wikimedia.org/wiki/File:%CE%9A%CE%AC%CF%83%CF%84%CF%81%CE%BF_%CE%99%CF%89%CE%B1%CE%BD%CE%BD%CE%AF%CE%BD%CF%89%CE%BD,_%CE%AC%CF%80%CE%BF%CF%88%CE%B7_%CF%84%CE%BF%CF%85_%CF%84%CE%B6%CE%B1%CE%BC%CE%B9%CE%BF%CF%8D_%CE%BC%CE%B5_%CF%86%CF%8C%CE%BD%CF%84%CE%BF_%CF%84%CE%B7%CE%BD_%CE%BB%CE%AF%CE%BC%CE%BD%CE%B7_%CF%84%CE%BF%CE%BD_%CE%BF%CF%85%CF%81%CE%B1%CE%BD%CF%8C_%CE%BA%CE%B1%CE%B9_%CF%84%CE%BF%CF%85%CF%82_%CE%B3%CE%BB%CE%AC%CF%81%CE%BF%CF%85%CF%82!!!(photosiotas)_(5).jpg",
+      "author": "photosiotas",
+      "license": "CC BY-SA 4.0",
+      "town": "Ioánina"
     }
   },
   "dodecaneso": {
@@ -3841,6 +3958,15 @@
     "note": {
       "es": "En verano hay ferris rápidos casi a diario entre Rodas, Symi, Kos, Kalymnos y Patmos; fuera de temporada son menos: mira los horarios antes de cerrar las noches.",
       "en": "In summer fast ferries run almost daily between Rhodes, Symi, Kos, Kalymnos and Patmos; off-season there are fewer: check the timetables before fixing the nights."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Kos_seaport.jpg/960px-Kos_seaport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 598,
+      "page": "https://commons.wikimedia.org/wiki/File:Kos_seaport.jpg",
+      "author": "Steven Fruitsmaak",
+      "license": "CC BY-SA 3.0",
+      "town": "Kos"
     }
   },
   "balcanes-del-sur": {
@@ -4206,6 +4332,15 @@
     "note": {
       "es": "Cruzas varias fronteras por carretera: lleva el pasaporte o DNI a mano. Los autobuses se pagan en efectivo y a menudo al conductor, sin horarios fijos: pregunta en la estación el día antes. Esta ruta no pasa por Serbia a propósito: si entras en Kosovo desde otro país, no salgas luego hacia Serbia, porque puede darte problemas en la frontera. Desde Shkodër salen las excursiones de senderismo a Theth y Valbona.",
       "en": "You cross several borders by road: keep your passport or ID card at hand. Buses are paid in cash, often to the driver, with no fixed timetables: ask at the station the day before. This route skips Serbia on purpose: if you enter Kosovo from another country, do not leave it towards Serbia, as it can cause trouble at the border. Shkodër is the base for the Theth and Valbona hikes."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/2011_Prizren%2C_Meczet_Sinana_Paszy_04.JPG/960px-2011_Prizren%2C_Meczet_Sinana_Paszy_04.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:2011_Prizren,_Meczet_Sinana_Paszy_04.JPG",
+      "author": "Marcin Konsek",
+      "license": "CC BY-SA 4.0",
+      "town": "Prizren"
     }
   }
 }

@@ -244,6 +244,15 @@
     "note": {
       "es": "Los ferris (Fred. Olsen y Naviera Armas) salen de Los Cristianos, en el sur de Tenerife, a 1 h 30 en guagua de Puerto de la Cruz; La Palma también se une con Santa Cruz de Tenerife. En La Gomera y La Palma las guaguas son escasas: alquila un coche para Garajonay, la Caldera de Taburiente o los volcanes de Fuencaliente. El Hierro también tiene ferri desde Los Cristianos.",
       "en": "The ferries (Fred. Olsen and Naviera Armas) leave from Los Cristianos, in the south of Tenerife, 1 h 30 by bus from Puerto de la Cruz; La Palma is also linked with Santa Cruz de Tenerife. On La Gomera and La Palma buses are few: rent a car for Garajonay, the Caldera de Taburiente or the Fuencaliente volcanoes. El Hierro also has a ferry from Los Cristianos."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Santa_Cruz_de_La_Palma%2C_en_Santa_Cruz_de_Tenerife_%28Espa%C3%B1a%29.jpg/960px-Santa_Cruz_de_La_Palma%2C_en_Santa_Cruz_de_Tenerife_%28Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Santa_Cruz_de_La_Palma,_en_Santa_Cruz_de_Tenerife_(Espa%C3%B1a).jpg",
+      "author": "Pwagenblast",
+      "license": "CC BY-SA 3.0",
+      "town": "Santa Cruz de La Palma"
     }
   },
   "canarias-orientales": {
@@ -498,6 +507,15 @@
     "note": {
       "es": "Ferris de Las Palmas a Morro Jable (unas 2 h) y de Corralejo a Playa Blanca, en Lanzarote (unos 30 min, cada hora). En Lanzarote y en el interior de Gran Canaria (Roque Nublo, Tejeda) un coche ayuda mucho: Timanfaya no tiene guagua. Desde Órzola, en el norte de Lanzarote, barco a La Graciosa en el día.",
       "en": "Ferries from Las Palmas to Morro Jable (about 2 h) and from Corralejo to Playa Blanca on Lanzarote (about 30 min, hourly). On Lanzarote and in inland Gran Canaria (Roque Nublo, Tejeda) a car helps a lot: Timanfaya has no bus. From Órzola, in the north of Lanzarote, a boat to La Graciosa makes a day trip."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Arrecife%2C_en_Lanzarote_%28Las_Palmas%2C_Espa%C3%B1a%29.jpg/960px-Arrecife%2C_en_Lanzarote_%28Las_Palmas%2C_Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Arrecife,_en_Lanzarote_(Las_Palmas,_Espa%C3%B1a).jpg",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "town": "Arrecife (Lanzarote)"
     }
   },
   "mallorca-y-menorca": {
@@ -781,6 +799,15 @@
     "note": {
       "es": "El ferri entre Mallorca y Menorca sale de Alcúdia hacia Ciutadella (1–2 h, varias veces al día en temporada); a Alcúdia se llega en bus desde Palma. Para las calas de Menorca (Macarella, Turqueta) y los pueblos de la Tramuntana, mejor coche o moto; en julio y agosto hay que reservar el aparcamiento de algunas calas.",
       "en": "The ferry between Mallorca and Menorca runs from Alcúdia to Ciutadella (1–2 h, several a day in season); Alcúdia is reached by bus from Palma. For Menorca's coves (Macarella, Turqueta) and the Tramuntana villages, a car or scooter is best; in July and August some coves need their parking booked."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/S%C3%B3ller%2C_en_Mallorca_%28Baleares%2C_Espa%C3%B1a%29.jpg/960px-S%C3%B3ller%2C_en_Mallorca_%28Baleares%2C_Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 444,
+      "page": "https://commons.wikimedia.org/wiki/File:S%C3%B3ller,_en_Mallorca_(Baleares,_Espa%C3%B1a).jpg",
+      "author": "Heuschrecke (Dmitry Tonkonog and Ksenia Fedosova)",
+      "license": "CC BY-SA 3.0",
+      "town": "Sóller"
     }
   },
   "ibiza-y-formentera": {

@@ -1,22 +1,23 @@
 "use client";
 
-import { ChevronDown, Route } from "lucide-react";
+import { ArrowDownUp, ChevronDown, Clock, Route } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FailedNote from "@/components/search/results/FailedNote";
-import KindChips from "@/components/search/results/KindChips";
 import RouteCard from "@/components/search/results/MultiCityResults/components/RouteCard";
+import QuietPicker from "@/components/search/results/MultiCityResults/components/QuietPicker";
 import { useRouteFilter } from "@/components/search/results/MultiCityResults/hooks/useRouteFilter";
 import { useI18n } from "@/context/i18n";
 import { findAirport, useAirports } from "@/hooks/useAirports";
 
 // The "Recorridos" search's results (server/multiCity, docs/multi-city.md): a few routes for the days you are free,
-// each a card; a filter by length when there are several, and "see more" past the first few
+// each a card; their order (recommended, or cheapest first), a filter by length when there are several, and "see
+// more" past the first few
 const MultiCityResults = ({ data }) => {
   const { lang, texts } = useI18n();
   const labels = texts.multiCity;
   const airports = useAirports(lang);
   const { origin, routes, failed } = data;
-  const { filter, choose, versions, shown, hidden, matching, showAll } = useRouteFilter(routes);
+  const { filter, choose, sort, order, versions, shown, hidden, matching, showAll } = useRouteFilter(routes);
   const originName = findAirport(airports, origin)?.city ?? origin;
 
   if (!routes.length) {
@@ -32,6 +33,7 @@ const MultiCityResults = ({ data }) => {
   }
 
   const filters = [{ value: "all", label: labels.filter.all }, ...versions.map((version) => ({ value: version, label: labels.filter[version] }))];
+  const sorts = ["recommended", "price"].map((value) => ({ value, label: labels.sort[value] }));
 
   return (
     <section className="grid gap-5">
@@ -40,7 +42,10 @@ const MultiCityResults = ({ data }) => {
           <h2 className="font-heading text-2xl font-bold tracking-tight">{labels.title}</h2>
           <p className="max-w-[65ch] text-sm text-muted-foreground">{labels.subtitle(originName)}</p>
         </div>
-        {versions.length > 1 && <KindChips label={labels.filterAria} options={filters} value={filter} onChange={choose} />}
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-2 sm:gap-x-4">
+          {routes.length > 1 && <QuietPicker label={labels.sortAria} icon={ArrowDownUp} options={sorts} value={sort} onChange={order} accent />}
+          {versions.length > 1 && <QuietPicker label={labels.filterAria} icon={Clock} options={filters} value={filter} onChange={choose} />}
+        </div>
       </div>
       <FailedNote failed={failed} />
 

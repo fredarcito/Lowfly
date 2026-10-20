@@ -632,6 +632,8 @@ const es = {
     subtitle: (origin) => `Vuelas desde ${origin} a una ciudad y vuelves desde otra; entre medias, por tierra.`,
     empty: "No encontramos recorridos con vuelos para esas fechas. Prueba con otros días o con «A cualquier sitio».",
     filterAria: "Duración del recorrido",
+    sortAria: "Orden de los recorridos",
+    sort: { recommended: "Recomendados", price: "Más baratos" },
     filter: { all: "Todos", short: "Cortos", full: "Una semana", long: "Largos" },
     noneInFilter: "Ningún recorrido de esa duración para tus fechas.",
     kind: { classic: "Clásico", surprise: "Sorpresa" },

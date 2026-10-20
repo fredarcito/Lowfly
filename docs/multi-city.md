@@ -112,6 +112,10 @@ the routes can be reviewed a region at a time. `node --env-file=.env.local scrip
 - Several versions fit the free dates (12 days fit the short, the full and the long): every one is a candidate, each
   placed anywhere inside the dates; the card shows one and lets you switch (see 5 and 8).
 - `guide`: a `cityGuides.json` key, when there is one for that city.
+- `photo` (route): `{ src, width, height, page, author, license, town }`, chosen once by
+  `scripts/multi-city-photos.mjs` (Wikimedia Commons, the town stayed longest in; never another route's, a panorama or
+  one without author and licence) and kept in the file, so a card asks for no photo. Change it by hand for a better
+  one; the script keeps it. Without one, the card shows its landing city's.
 - **Seasonal routes** (`season`, in `christmas.json`…): offered only within their days, and ranked first then
   (Christmas markets from late November to December 23). Unlike `months`, `season` is a filter.
 - `land.by`: "train", "bus", "ferry" or "car" ("mejor en coche": Matera → Alberobello, Sardinia, the Highlands).

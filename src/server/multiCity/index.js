@@ -19,7 +19,7 @@ import { MULTI_CITY_ROUTES } from "@/server/multiCity/routes";
 import { possibleOptions } from "@/server/multiCity/possible";
 import { MIN_WINDOW_NIGHTS, idealNights, nightsWithin, seasonWindow, shareNights, stayRange } from "@/server/multiCity/fit";
 import { pickCandidates, rankRoutes, tripScore } from "@/server/multiCity/rank";
-import { nightsBetween, shift } from "@/utils/dates";
+import { later, monthEnd, monthsBetween, nightsBetween, shift, tomorrow } from "@/utils/dates";
 
 // Routes whose prices are asked in one search (each is a few requests the first time, shared after)
 const MAX_CANDIDATES = 8;
@@ -55,14 +55,22 @@ const countryNames = (lang) => {
   };
 };
 
+// The months the screening asks Ryanair about: every month the flights in can fall in, whole (from tomorrow at the
+// earliest), so every search from the origin that month shares the answer in the airline guard's cache, whatever its
+// exact dates. Asked by the dates themselves, nearly every search would be a request of its own.
+const screeningMonths = (from, lastOut) => monthsBetween(from, lastOut).map((month) => ({ from: later(month, tomorrow()), to: monthEnd(month) }));
+
 // The cheapest flight in to every destination, from the screening: Map code → { price, airlines } (the airlines that
-// fly there in those dates)
+// fly there those months). Whole months: a price may fall outside the dates, but it only ranks the routes; the prices
+// shown come from the flights per day within the dates. Wizz's fare finder already answers by month.
 const cheapestIn = async (origin, from, lastOut, lang, failed) => {
   const [ryanairFares, wizzFares] = await Promise.all([
-    ryanair.cheapest(origin, from, lastOut, lang).catch(() => {
-      failed.add("ryanair");
-      return [];
-    }),
+    Promise.all(screeningMonths(from, lastOut).map((month) => ryanair.cheapest(origin, month.from, month.to, lang)))
+      .then((months) => months.flat())
+      .catch(() => {
+        failed.add("ryanair");
+        return [];
+      }),
     // A month whose cheapest Wizz fare fell outside the dates (`recheck`) still says Wizz flies there, at about that
     wizz
       .cheapest(origin, from, lastOut)

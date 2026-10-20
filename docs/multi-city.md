@@ -150,8 +150,10 @@ ideal nights.
 
 For a search `{ origin, from, to }` (the free dates; a trip length of `to - from` days, or `minN` / `maxN` nights):
 
-1. **Screening, 2–3 requests**: `ryanair.cheapest(origin, from, to)` (one request) and `wizz.cheapest` (its fare
-   finder, one request a month, at most 2 with a 15-day window) give the cheapest fare to every destination. One fare
+1. **Screening, 2–4 requests**: `ryanair.cheapest` and `wizz.cheapest` (its fare finder) give the cheapest fare to
+   every destination, both **by whole month** (1–2 with a 15-day window): every search from the same origin that
+   month shares the answer, whatever its exact dates (asked by the dates, nearly every search was a request of its
+   own). One fare
    per destination only (the cheapest day of the window), so they rank candidates; they cannot build the trip.
    Why not the airlines' return-trip finders, as "A cualquier sitio" does (`ryanair.roundTrip`, `wizz.cheapest` with
    a stay)? They only return from the airport you flew to (Malta → Rome → Malta). Most routes are open-jaw (into

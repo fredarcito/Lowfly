@@ -1,12 +1,14 @@
-// A search in the URL, so it can be shared: /es?m=everywhere&o=MLA&from=2026-11-01&to=2026-11-30&trip=return&wk=1
-// (to a country: c=Italia, and to one of its cities as well: ci=Roma; routes: m=multiCity&o=MLA&from=…&to=…)
+// A search in the URL, so it can be shared: its kind is the page (/es/a-cualquier-sitio, constants/searchPages), the
+// rest the query: ?o=MLA&from=2026-11-01&to=2026-11-30&trip=return&wk=1 (to a country: c=Italia, and to one of its
+// cities as well: ci=Roma; routes: o=MLA&from=…&to=…). Links from before the pages (/es?m=everywhere&…) are sent to
+// them (src/proxy.js).
 import { isDay, tomorrow } from "@/utils/dates";
 import { WEEKEND_MODES } from "@/constants/weekend";
 
 const MODES = ["everywhere", "country", "trip", "multiCity"];
 
 export const searchToParams = (form, mode) => {
-  const params = new URLSearchParams({ m: mode, o: form.origin });
+  const params = new URLSearchParams({ o: form.origin });
   if (mode !== "everywhere" && form.country) params.set("c", form.country);
   if (mode !== "everywhere" && form.country && form.city) params.set("ci", form.city);
   if (mode === "trip") {
@@ -37,8 +39,8 @@ export const searchToParams = (form, mode) => {
 // Back from a shared URL: { mode, fields, stale } or null if it holds no search.
 // A link opened later may have past dates: the start moves to tomorrow; if the whole range (or the trip)
 // is past, the dates are dropped and `stale` says not to search on its own.
-export const searchFromParams = (params) => {
-  const mode = params.get("m");
+// `mode`: the page's (constants/searchPages modeOfPath).
+export const searchFromParams = (params, mode) => {
   const origin = (params.get("o") || "").toUpperCase();
   if (!MODES.includes(mode) || !/^[A-Z]{3}$/.test(origin)) return null;
 

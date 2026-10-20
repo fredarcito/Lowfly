@@ -14,7 +14,8 @@ export const MODES = [
 
 // The four ways to search, as tabs over `children` (the search form): the form is the open tab's panel, so each tab
 // points to something real for screen readers (aria-controls). Not a stop of its own when tabbing: the form's
-// fields are.
+// fields are. A click picks the tab without focusing it: Radix focuses it by script on mousedown, and Chrome then
+// sometimes draws the keyboard focus ring after a mouse click; from the keyboard the ring shows as it should.
 const ModeTabs = ({ mode, onChange, children }) => {
   const { texts } = useI18n();
   return (
@@ -24,6 +25,12 @@ const ModeTabs = ({ mode, onChange, children }) => {
           <TabsTrigger
             key={id}
             value={id}
+            onMouseDown={(event) => {
+              if (event.button !== 0 || event.ctrlKey) return;
+              // Not focused (no stray ring), and Radix's own mousedown, which would focus it, is skipped
+              event.preventDefault();
+              if (id !== mode) onChange(id);
+            }}
             className="h-auto min-h-10 min-w-0 flex-col gap-1 px-1 py-1.5 text-xs leading-tight whitespace-normal data-active:bg-selected! data-active:[-webkit-text-stroke:0.4px_currentColor] data-active:text-foreground! data-active:[&_svg]:text-primary sm:flex-row sm:gap-2 sm:px-4 sm:text-sm sm:whitespace-nowrap"
           >
             <Icon />

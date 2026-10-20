@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { apiError } from "@/api/client";
 import { searchFlights, searchStopovers } from "@/api/flights";
 import { reportSearch } from "@/api/metrics";
@@ -10,6 +11,7 @@ import { WEEKEND_MODES } from "@/constants/weekend";
 import { later, nightsBetween, shift, tomorrow } from "@/utils/dates";
 import { MAX_FREE_NIGHTS, MIN_FREE_NIGHTS } from "@/constants/multiCity";
 import { DEFAULT_RANGE_DAYS } from "@/constants/searchForm";
+import { ROUTES } from "@/constants/routes";
 
 // No results: the form opens again so the search can be changed
 const IS_EMPTY = {
@@ -73,11 +75,13 @@ const requestOf = (form, mode) => {
 
 // Running a flight search: its state ({ status: "idle" | "loading" | "error" | "done", mode, searchId, data,
 // stopovers, code, params }; `searchId` tells one search's results from the next), the search shown in the one-line summary (`query`) and whether the form is folded into it (`collapsed`).
-// A search goes in the URL, so the link can be shared (utils/share).
+// A search goes in the URL, so the link can be shared (utils/share): its kind's page with the search as the query
+// (from the home, the page it belongs to).
 // To a country or city (not a weekend away), and on flexible dates, the trips through a hub are asked at the same
 // time, and come after the direct flights: `stopovers` { status: "loading" | "done" | "error", data }. With no direct flight there, `data` is
 // null and the search waits for them before telling there is nothing.
 export const useFlightSearch = (lang) => {
+  const router = useRouter();
   const [result, setResult] = useState({ status: "idle" });
   // The last search started: an older one's answers arriving late are dropped
   const latest = useRef(0);
@@ -103,7 +107,12 @@ export const useFlightSearch = (lang) => {
     const destination = mode === "multiCity" ? "routes" : form.city || form.country || "anywhere";
     track("search", { search_term: `${form.origin} → ${destination}`, mode, trip: mode === "trip" || mode === "multiCity" ? "return" : form.trip });
     setQuery({ mode, ...form, weekend: form.weekend && form.trip === "return" && WEEKEND_MODES.includes(mode) });
-    window.history.replaceState(null, "", `?${searchToParams(form, mode)}`);
+    const page = ROUTES.search(lang, mode);
+    const address = `${page}?${searchToParams(form, mode)}`;
+    // On its page already: only the query changes; from another (the home), to its page (the search stays, it lives in
+    // the layout shared by every search page)
+    if (window.location.pathname === page) window.history.replaceState(null, "", address);
+    else router.replace(address, { scroll: false });
     setCollapsed(true);
     window.scrollTo({ top: 0, behavior: reducedMotion() ? "auto" : "smooth" });
     const searchId = ++latest.current;

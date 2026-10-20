@@ -1,5 +1,3 @@
-import FlightSearch from "@/components/search/FlightSearch";
-import { I18nProvider } from "@/providers/I18nProvider";
 import { getDictionary } from "@/i18n";
 import { ROUTES } from "@/constants/routes";
 import { alternatesOf, openGraphOf, siteOf } from "@/utils/metadata";
@@ -15,15 +13,11 @@ export const generateMetadata = async ({ params }) => {
   };
 };
 
+// The home: the search (its layout, searching "anywhere") and who Lowfly is, for search engines (its name and logo in
+// the results)
 const Page = async ({ params }) => {
   const { lang } = await params;
-  // Who Lowfly is, for search engines: its name and logo in the results
-  return (
-    <I18nProvider lang={lang}>
-      <JsonLd data={siteOf(lang, getDictionary(lang).meta.description)} />
-      <FlightSearch />
-    </I18nProvider>
-  );
+  return <JsonLd data={siteOf(lang, getDictionary(lang).meta.description)} />;
 };
 
 export default Page;

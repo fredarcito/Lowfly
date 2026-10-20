@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import ModeTabs from "@/components/search/ModeTabs";
 import SearchError from "@/components/search/SearchError";
@@ -20,6 +22,8 @@ import { findAirport, useAirports } from "@/hooks/useAirports";
 import { useFlightSearch } from "@/components/search/FlightSearch/hooks/useFlightSearch";
 import { useSearchForm } from "@/components/search/FlightSearch/hooks/useSearchForm";
 import { ENTER_RISE } from "@/constants/motion";
+import { ROUTES } from "@/constants/routes";
+import { modeOfPath } from "@/constants/searchPages";
 import { MAX_FREE_NIGHTS, MIN_FREE_NIGHTS } from "@/constants/multiCity";
 import { cn } from "@/utils/cn";
 import { nightsBetween } from "@/utils/dates";
@@ -33,19 +37,30 @@ const fitsRoute = (query) => {
   return nights >= MIN_FREE_NIGHTS && nights <= MAX_FREE_NIGHTS;
 };
 
-// The home page: the header, the search card (the form, or a one-line summary of the search while showing
-// its results) and below it what there is before searching, the progress, an error or the results.
+// The search pages (the home and each kind's own page, app/[lang]/(search)): the header, the search card (the form,
+// or a one-line summary of the search while showing its results) and below it what there is before searching, the
+// progress, an error or the results. The kind of search is the page's (constants/searchPages; the home: anywhere);
+// a tab goes to another kind's page, and as every search page shares this (their layout), what was typed stays.
 // The form lives in useSearchForm and running a search in useFlightSearch.
 const FlightSearch = () => {
   const { lang, texts } = useI18n();
+  const router = useRouter();
+  const pathname = usePathname();
+  // The kind of search: the page's, or the tab just picked while its page loads (a search started meanwhile is of
+  // the new kind). `page`: the kind whose headline shows (none on the home).
+  const pageOf = (path) => ({ pathname: path, page: modeOfPath(path), mode: modeOfPath(path) ?? "everywhere" });
+  const [shown, setShown] = useState(() => pageOf(pathname));
+  if (shown.pathname !== pathname) setShown(pageOf(pathname));
+  const { mode, page: pageMode } = shown;
   const airports = useAirports(lang);
   const flightSearch = useFlightSearch(lang);
   const { result, query, collapsed } = flightSearch;
-  const { mode, setMode, form, setForm, setField, countries } = useSearchForm({ lang, onShared: flightSearch.search });
+  const { form, setForm, setField, countries } = useSearchForm({ lang, mode, onShared: flightSearch.search });
 
   const changeMode = (nextMode) => {
-    setMode(nextMode);
     flightSearch.reset();
+    setShown({ pathname, page: nextMode, mode: nextMode });
+    router.push(ROUTES.search(lang, nextMode), { scroll: false });
   };
 
   const onSubmit = (event) => {
@@ -57,7 +72,6 @@ const FlightSearch = () => {
   const searchWeekend = ({ from, to }) => {
     const weekendForm = { ...form, from, to, trip: "return", weekend: true };
     setForm(weekendForm);
-    setMode("everywhere");
     flightSearch.search(weekendForm, "everywhere");
   };
 
@@ -65,7 +79,6 @@ const FlightSearch = () => {
   const searchRoutes = () => {
     const routesForm = { ...form, freeFrom: query.from, freeTo: query.to };
     setForm(routesForm);
-    setMode("multiCity");
     flightSearch.search(routesForm, "multiCity");
   };
 
@@ -74,7 +87,7 @@ const FlightSearch = () => {
   // At least as tall as the screen, the content stretching: on a short page the footer still sits at the bottom
   return (
     <div className="flex min-h-dvh flex-col">
-      <SearchHero collapsed={collapsed} />
+      <SearchHero collapsed={collapsed} mode={pageMode} />
 
       {/* The only thing that moves on arriving: the form rises in, as the trip planner's does (the headline is
           already there) */}

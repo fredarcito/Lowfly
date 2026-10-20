@@ -8,6 +8,11 @@ test.describe("seo", () => {
     ["/es/privacy", "/es/privacy", "/en/privacy"],
     ["/en/terms", "/en/terms", "/en/terms"],
     ["/es/flights", "/es/flights", "/en/flights"],
+    // Each kind of search, named in each language
+    ["/es/recorridos", "/es/recorridos", "/en/multi-city"],
+    ["/es/a-cualquier-sitio", "/es/a-cualquier-sitio", "/en/anywhere"],
+    ["/es/a-un-destino", "/es/a-un-destino", "/en/destination"],
+    ["/es/fechas-flexibles", "/es/fechas-flexibles", "/en/flexible-dates"],
     // The planner is one page, whatever town it starts with
     ["/es/trips/new?to=BCN", "/es/trips/new", "/en/trips/new"],
   ];

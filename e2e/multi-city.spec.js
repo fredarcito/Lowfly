@@ -198,7 +198,7 @@ test.describe("multi-city: the towns' days", () => {
 // The "Recorridos" search, with its API answered here
 test.describe("multi-city: the search", () => {
   const answer = (days) => ({ origin: "MLA", from: dayFromNow(days), to: dayFromNow(days + 9), routes: [pugliaRoute(days), albaniaRoute(days)], failed: [] });
-  const searchPath = (days) => `/es?m=multiCity&o=MLA&from=${dayFromNow(days)}&to=${dayFromNow(days + 9)}`;
+  const searchPath = (days) => `/es/recorridos?o=MLA&from=${dayFromNow(days)}&to=${dayFromNow(days + 9)}`;
   const card = (page, name) => page.locator("main").getByRole("heading", { name }).locator("xpath=ancestor::*[@data-slot='card'][1]");
 
   test("the routes for the free days: towns, flights, lengths, the planner and saving it", async ({ page }) => {
@@ -261,10 +261,10 @@ test.describe("multi-city: the search", () => {
     const fare = { airline: "ryanair", code: "BRI", city: "Bari", country: "Italia", day: dayFromNow(31), time: "09:10", arrive: "10:30", price: 19.99, cur: "EUR" };
     await page.route("**/api/everywhere?**", (route) => route.fulfill({ json: { origin: "MLA", roundTrip: false, weekend: false, results: [fare], failed: [] } }));
     await page.route("**/api/multi-city?**", (route) => route.fulfill({ json: answer(30) }));
-    await openWith(page, `/es?m=everywhere&o=MLA&from=${dayFromNow(30)}&to=${dayFromNow(39)}&trip=oneway`, { origin: "MLA" });
+    await openWith(page, `/es/a-cualquier-sitio?o=MLA&from=${dayFromNow(30)}&to=${dayFromNow(39)}&trip=oneway`, { origin: "MLA" });
     await page.getByRole("button", { name: "Ver recorridos con estas fechas" }).click();
     await expect(page.getByRole("heading", { name: "Recorridos para tus días libres" })).toBeVisible();
-    await expect(page).toHaveURL(/m=multiCity/);
+    await expect(page).toHaveURL(/\/es\/recorridos\?o=MLA/);
   });
 
   test("too few days: one city is better", async ({ request }) => {

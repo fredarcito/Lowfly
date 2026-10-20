@@ -2,10 +2,13 @@
 export const SAVE_SHARED_TRIP = "save";
 
 import { sectionIn } from "@/constants/sections";
+import { SEARCH_PAGES } from "@/constants/searchPages";
 
 // App pages (in English, the language the first segment), but the sections named in each language (constants/sections)
 export const ROUTES = {
   home: (lang) => `/${lang}`,
+  // A kind of search's own page, named in each language: /es/recorridos, /en/multi-city (constants/searchPages)
+  search: (lang, mode) => `/${lang}/${sectionIn(lang, SEARCH_PAGES[mode])}`,
   trips: (lang) => `/${lang}/trips`,
   trip: (lang, id) => `/${lang}/trips?id=${encodeURIComponent(id)}`,
   // `to`: an airport code, its town already the first stop (from a route's page)

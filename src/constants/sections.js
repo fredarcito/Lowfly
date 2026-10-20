@@ -4,6 +4,11 @@
 // another one is a row here (and its tests).
 export const SECTIONS = {
   guides: { es: "guias", en: "guides" },
+  // The kinds of search, each a page of its own (constants/searchPages)
+  anywhere: { es: "a-cualquier-sitio", en: "anywhere" },
+  destination: { es: "a-un-destino", en: "destination" },
+  "flexible-dates": { es: "fechas-flexibles", en: "flexible-dates" },
+  "multi-city": { es: "recorridos", en: "multi-city" },
 };
 
 // A section's name in `lang`: /es/{guias}

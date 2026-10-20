@@ -57,7 +57,7 @@ test.describe("route pages", () => {
       // A month opens the search for it, already filled in
       const months = page.getByRole("heading", { name: "Cuándo es más barato volar" }).locator("..").locator("..").getByRole("link");
       expect(await months.count()).toBeGreaterThan(2);
-      await expect(months.first()).toHaveAttribute("href", /m=country&o=MLA&c=Espa%C3%B1a&ci=Barcelona/);
+      await expect(months.first()).toHaveAttribute("href", /^\/es\/a-un-destino\?o=MLA&c=Espa%C3%B1a&ci=Barcelona/);
       await expect(page.getByRole("link", { name: "Ver fechas y precios" })).toBeVisible();
       await expect(page.getByRole("heading", { name: "Ficha de la ruta" })).toBeVisible();
       // The itinerary: the trip planner with Barcelona already its first town

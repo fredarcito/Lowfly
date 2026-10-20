@@ -35,12 +35,12 @@ const DEFAULT_TRIP_NIGHTS = 3;
 // The default free days for a route: from next Friday, a week and a half (a short or a week-long route fits)
 const DEFAULT_FREE_NIGHTS = 9;
 
-// The search form's fields and mode. In the browser (to avoid hydration mismatches) it fills the default dates,
-// a shared link's search (?m=…&o=…, run straight away with `onShared` unless its dates have passed) and, on a
-// first visit, the departure airport of the visitor's country. It also loads where the departure airport flies
-// (`countries`) and, when that changes, keeps the chosen destination if the new airport flies there.
-export const useSearchForm = ({ lang, onShared }) => {
-  const [mode, setMode] = useState("everywhere");
+// The search form's fields, for the kind of search of the page (`mode`). In the browser (to avoid hydration
+// mismatches) it fills the default dates, a shared link's search (?o=…, run straight away with `onShared` unless its
+// dates have passed) and, on a first visit, the departure airport of the visitor's country. It also loads where the
+// departure airport flies (`countries`) and, when that changes, keeps the chosen destination if the new airport
+// flies there.
+export const useSearchForm = ({ lang, mode, onShared }) => {
   const [form, setForm] = useState(EMPTY_FORM);
   const countries = useDestinationCountries(form.origin, lang);
 
@@ -58,11 +58,10 @@ export const useSearchForm = ({ lang, onShared }) => {
       freeTo: shift(friday, DEFAULT_FREE_NIGHTS),
     };
 
-    const shared = searchFromParams(new URLSearchParams(window.location.search));
+    const shared = searchFromParams(new URLSearchParams(window.location.search), mode);
     if (shared) {
       const fields = { ...defaults, ...shared.fields };
       setForm(fields);
-      setMode(shared.mode);
       if (!shared.stale) onShared(fields, shared.mode);
       return;
     }
@@ -85,5 +84,5 @@ export const useSearchForm = ({ lang, onShared }) => {
     setForm((current) => ({ ...current, [name]: value }));
   };
 
-  return { mode, setMode, form, setForm, setField, countries };
+  return { form, setForm, setField, countries };
 };

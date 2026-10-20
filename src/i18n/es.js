@@ -62,6 +62,38 @@ const es = {
       hint: "Tienes unos días libres: te proponemos un viaje por varias ciudades, con los vuelos más baratos.",
     },
   },
+  // Each kind of search's own page (/es/recorridos…): its title and description for search engines, and the headline
+  // of its header (two lines: shown with white-space: pre-line)
+  searchPages: {
+    everywhere: {
+      title: "Vuelos baratos a cualquier sitio",
+      description: "Todos los destinos desde tu aeropuerto, ordenados por precio y directo con la aerolínea. Ideal si lo que importa es irte barato.",
+      heading: "Vuela barato.\nEl destino, después.",
+      introShort: "Todos los destinos, del más barato al más caro.",
+      intro: "Elige desde dónde y cuándo: te enseñamos todos los destinos ordenados por precio, directo con la aerolínea.",
+    },
+    country: {
+      title: "Vuelos baratos a tu destino",
+      description: "Elige destino y te enseñamos el día más barato para volar, un calendario de precios y los viajes con escala si no hay vuelo directo.",
+      heading: "Ya sabes adónde.\nTe decimos cuándo.",
+      introShort: "El día más barato para volar a tu destino.",
+      intro: "Elige país o ciudad: te mostramos el día más barato, un calendario de precios y los viajes con escala si no hay vuelo directo.",
+    },
+    trip: {
+      title: "Vuelos con fechas flexibles",
+      description: "Pon tu ida y vuelta y comprobamos si moverlas uno, dos o tres días te ahorra dinero.",
+      heading: "Tus fechas,\nun poco más baratas.",
+      introShort: "Mueve tus fechas unos días y ahorra.",
+      intro: "Pon tu ida y vuelta: comprobamos si salir o volver unos días antes o después te ahorra dinero.",
+    },
+    multiCity: {
+      title: "Recorridos por Europa con vuelos baratos",
+      description: "Dinos qué días tienes libres y te proponemos un viaje por varias ciudades: vuelos baratos de ida y vuelta y, entre ciudades, por tierra.",
+      heading: "Tú pones los días.\nNosotros, el recorrido.",
+      introShort: "Varias ciudades, vuelos baratos de ida y vuelta.",
+      intro: "Dinos qué días tienes libres: te proponemos un viaje por varias ciudades, con los vuelos más baratos y el itinerario día a día.",
+    },
+  },
   empty: {
     title: "Cuatro formas de buscar",
     disclaimer: "Los precios son para un adulto, en euros, y pueden cambiar al reservar. Solo incluyen un bolso pequeño bajo el asiento: las maletas se pagan aparte. Si una aerolínea da el precio en otra moneda, lo convertimos con el tipo de cambio del día (ExchangeRate-API).",

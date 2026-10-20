@@ -62,6 +62,38 @@ const en = {
       hint: "You have a few free days: we suggest a trip through several cities, with the cheapest flights.",
     },
   },
+  // Each kind of search's own page (/en/multi-city…): its title and description for search engines, and the headline
+  // of its header (two lines: shown with white-space: pre-line)
+  searchPages: {
+    everywhere: {
+      title: "Cheap flights to anywhere",
+      description: "Every destination from your airport, sorted by price and straight with the airline. Ideal when all that matters is flying cheap.",
+      heading: "Fly cheap.\nPick the place later.",
+      introShort: "Every destination, cheapest first.",
+      intro: "Pick where from and when: we show you every destination sorted by price, straight with the airline.",
+    },
+    country: {
+      title: "Cheap flights to your destination",
+      description: "Pick a destination and we show you the cheapest day to fly, a price calendar and trips with a stop when there is no direct flight.",
+      heading: "You know where.\nWe tell you when.",
+      introShort: "The cheapest day to fly to your destination.",
+      intro: "Pick a country or city: we show you the cheapest day, a price calendar and trips with a stop when there is no direct flight.",
+    },
+    trip: {
+      title: "Flights with flexible dates",
+      description: "Enter your outbound and return dates and we check whether moving them one, two or three days saves you money.",
+      heading: "Your dates,\na little cheaper.",
+      introShort: "Shift your dates a few days and save.",
+      intro: "Enter your outbound and return dates: we check whether leaving or coming back a few days earlier or later saves you money.",
+    },
+    multiCity: {
+      title: "Multi-city trips through Europe with cheap flights",
+      description: "Tell us the days you are free and we suggest a trip through several cities: cheap flights out and back and, between cities, by land.",
+      heading: "You bring the days.\nWe bring the route.",
+      introShort: "Several cities, cheap flights out and back.",
+      intro: "Tell us the days you are free: we suggest a trip through several cities, with the cheapest flights and a day-by-day itinerary.",
+    },
+  },
   empty: {
     title: "Four ways to search",
     disclaimer: "Prices are for one adult, in euros, and may change when you book. They only include a small bag under the seat: bags cost extra. If an airline quotes another currency, we convert it at the day's exchange rate (ExchangeRate-API).",

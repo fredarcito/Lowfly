@@ -1,12 +1,16 @@
 import { NextResponse } from "next/server";
 import { LOCALES, pickLocale } from "@/i18n/config";
 import { folderOf, sectionIn } from "@/constants/sections";
+import { SEARCH_PAGES } from "@/constants/searchPages";
+import { ROUTES } from "@/constants/routes";
 import { refreshSession } from "@/supabase/session";
 
 // No language in the URL (/ or /something) → redirect to the browser language (/es or /en).
 // A section named in each language (constants/sections): its name in the page's language shows its folder's page
 // (/es/guias → src/app/[lang]/guides), and any other name for it is sent there for good (/es/guides → /es/guias,
 // /en/guias → /en/guides: old or hand-written links).
+// A search shared before each kind had its page (/es?m=multiCity&o=MLA…) is sent to its page, with the same search
+// (/es/recorridos?o=MLA…).
 // Pages in a language keep the Supabase session fresh (signed-in visitors).
 export const proxy = async (request) => {
   const { pathname } = request.nextUrl;
@@ -14,6 +18,14 @@ export const proxy = async (request) => {
   if (!lang) {
     request.nextUrl.pathname = `/${pickLocale(request.headers.get("accept-language") || "")}${pathname === "/" ? "" : pathname}`;
     return NextResponse.redirect(request.nextUrl);
+  }
+
+  const oldSearch = request.nextUrl.searchParams.get("m");
+  if (pathname === `/${lang}` && SEARCH_PAGES[oldSearch]) {
+    const url = request.nextUrl.clone();
+    url.pathname = ROUTES.search(lang, oldSearch);
+    url.searchParams.delete("m");
+    return NextResponse.redirect(url, 308);
   }
 
   const [, , section, ...rest] = pathname.split("/");

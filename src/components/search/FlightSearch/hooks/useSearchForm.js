@@ -8,6 +8,7 @@ import { nextFriday, shift, tomorrow } from "@/utils/dates";
 import { keptDestination } from "@/utils/destinations";
 import { searchFromParams } from "@/utils/share";
 import { DEFAULT_ORIGIN } from "@/constants/airports";
+import { DEFAULT_RANGE_DAYS } from "@/constants/searchForm";
 
 const EMPTY_FORM = {
   origin: "",
@@ -29,8 +30,6 @@ const EMPTY_FORM = {
   freeTo: "",
 };
 
-// How many days ahead the default search range ends
-const DEFAULT_RANGE_DAYS = 60;
 // The default flexible trip: next Friday to Monday
 const DEFAULT_TRIP_NIGHTS = 3;
 // The default free days for a route: from next Friday, a week and a half (a short or a week-long route fits)

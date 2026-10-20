@@ -12,10 +12,10 @@ const TOP_DESTINATIONS = 10;
 export const PERIODS = ["7", "30", "90", "all"];
 export const DEFAULT_PERIOD = "30";
 
-const dayKey = (date) => new Date(date).toISOString().slice(0, 10);
+export const dayKey = (date) => new Date(date).toISOString().slice(0, 10);
 
 // The period's days, oldest first: ["2026-09-17", …, today]
-const daysOf = (count) => Array.from({ length: count }, (_, index) => dayKey(Date.now() - (count - 1 - index) * DAY));
+export const daysOf = (count) => Array.from({ length: count }, (_, index) => dayKey(Date.now() - (count - 1 - index) * DAY));
 
 // [{ day, value }] for `days`, adding up `valueOf(item)` per day of `dateOf(item)`
 const perDay = (days, items, dateOf, valueOf = () => 1) => {

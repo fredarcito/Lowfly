@@ -29,6 +29,7 @@ export const ROUTES = {
   adminUsers: (lang, query) => `/${lang}/admin/users${query ? `?q=${encodeURIComponent(query)}` : ""}`,
   adminUser: (lang, id) => `/${lang}/admin/users/${id}`,
   adminSettings: (lang) => `/${lang}/admin/settings`,
+  adminUsage: (lang) => `/${lang}/admin/usage`,
   terms: (lang) => `/${lang}/terms`,
   // Signing in, then back to `next` (a path of this site)
   login: (lang, next) => `/${lang}/login${next ? `?next=${encodeURIComponent(next)}` : ""}`,

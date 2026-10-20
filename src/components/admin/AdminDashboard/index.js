@@ -1,7 +1,7 @@
 import StatTile from "@/components/admin/StatTile";
 import AiUsage from "@/components/admin/AdminDashboard/components/AiUsage";
 import DailyChart from "@/components/admin/AdminDashboard/components/DailyChart";
-import PeriodSelect from "@/components/admin/AdminDashboard/components/PeriodSelect";
+import PeriodSelect from "@/components/admin/PeriodSelect";
 import TopDestinations from "@/components/admin/AdminDashboard/components/TopDestinations";
 import { adminTexts } from "@/components/admin/data/texts";
 import { adminFormat } from "@/components/admin/data/format";

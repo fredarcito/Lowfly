@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { BarChart3, Settings, Users } from "lucide-react";
+import { Activity, BarChart3, Settings, Users } from "lucide-react";
 import { useAdmin } from "@/components/admin/hooks/useAdmin";
 import { ROUTES } from "@/constants/routes";
 
@@ -12,6 +12,7 @@ export const useAdminSections = () => {
   const pathname = usePathname();
   return [
     { href: ROUTES.admin(lang), label: texts.nav.dashboard, icon: BarChart3, active: pathname === ROUTES.admin(lang) },
+    { href: ROUTES.adminUsage(lang), label: texts.nav.usage, icon: Activity, active: pathname.startsWith(ROUTES.adminUsage(lang)) },
     { href: ROUTES.adminUsers(lang), label: texts.nav.users, icon: Users, active: pathname.startsWith(ROUTES.adminUsers(lang)) },
     { href: ROUTES.adminSettings(lang), label: texts.nav.settings, icon: Settings, active: pathname.startsWith(ROUTES.adminSettings(lang)) },
   ];

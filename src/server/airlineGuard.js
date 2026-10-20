@@ -8,10 +8,19 @@
 // - after a block, stops asking for a few minutes (longer if it repeats) and serves what it kept, even if old.
 // Without Redis, only this instance's memory and the requests already on their way in it are shared. Only called
 // from the server.
+// Every answer is counted for the admin's "Uso" page (server/metrics): `airline:<airline>:<outcome>`, see OUTCOMES.
+import { countMetric } from "@/server/metrics";
 import { redis, redisKey } from "@/server/redis";
 
 // The answers that mean "too many requests"
 const BLOCKING = [403, 429, 503];
+
+// How a request ended, as counted: from a cache (this instance's memory, Redis, or another instance's request for the
+// same), asked and answered, refused by the airline as too many (blocked) or failed otherwise (error), not asked
+// because the airline was paused after a block or the queue for its turn was too long (busy); `stale` on top when an
+// old answer was served instead
+export const OUTCOMES = ["cached", "asked", "blocked", "error", "paused", "busy", "stale"];
+const count = (airline, outcome) => countMetric(`airline:${airline}:${outcome}`);
 // How long a block stops the requests: a minute, doubled each time it repeats in the hour, up to 10. Wizz lets us
 // back in after a few minutes, so a longer pause would only leave its fares out
 const BLOCK_SECONDS = 60;
@@ -75,7 +84,7 @@ const takeTurn = async (store, airline, perSecond) => {
     if (count <= perSecond) return;
     await sleep((second + 1) * 1000 - Date.now() + Math.random() * 100);
   }
-  throw new Error(`${airline} is busy: too many requests waiting`);
+  throw Object.assign(new Error(`${airline} is busy: too many requests waiting`), { busy: true });
 };
 
 // Another instance is asking the same: its answer, once it keeps it (null if it does not in LOCK_MS)
@@ -99,7 +108,10 @@ const load = async (airline, key, request, { fresh, keep, perSecond }) => {
   const cacheKey = redisKey(airline, "cache", key);
   const lockKey = redisKey(airline, "lock", key);
   const cached = await safely(() => store.get(cacheKey));
-  if (cached && Date.now() - cached.at < fresh * 1000) return cached;
+  if (cached && Date.now() - cached.at < fresh * 1000) {
+    count(airline, "cached");
+    return cached;
+  }
 
   let locked = false;
   try {
@@ -107,15 +119,21 @@ const load = async (airline, key, request, { fresh, keep, perSecond }) => {
     locked = Boolean(await safely(() => store.set(lockKey, 1, { nx: true, px: LOCK_MS }), true));
     if (!locked) {
       const answer = await awaitAnswer(store, cacheKey, lockKey, cached?.at ?? 0);
-      if (answer) return answer;
+      if (answer) {
+        count(airline, "cached");
+        return answer;
+      }
       // The other one did not get it: ask ourselves, unless that was because of a block
       if (await isBlocked(store, airline)) throw new AirlineBlocked(airline);
     }
     await takeTurn(store, airline, perSecond);
     const answer = { at: Date.now(), data: await request() };
+    count(airline, "asked");
     await safely(() => store.set(cacheKey, answer, { ex: keep }));
     return answer;
   } catch (error) {
+    count(airline, BLOCKING.includes(error.status) ? "blocked" : error instanceof AirlineBlocked ? "paused" : error.busy ? "busy" : "error");
+    if (cached) count(airline, "stale");
     // Several requests can fail together: one block counts once
     if (BLOCKING.includes(error.status) && !(await isBlocked(store, airline))) await block(store, airline, error.status, error.retryAfter);
     // Why a search says an airline did not answer (a block is told above)
@@ -155,8 +173,13 @@ const inFlight = new Map(); // `${airline}:${key}` → the request on its way in
 export const airlineJson = async (airline, key, request, options) => {
   const id = `${airline}:${key}`;
   const known = remembered(id);
-  if (known !== undefined) return known;
-  if (!inFlight.has(id))
+  if (known !== undefined) {
+    count(airline, "cached");
+    return known;
+  }
+  // The same request already on its way in this instance: its answer, counted as from a cache
+  if (inFlight.has(id)) count(airline, "cached");
+  else
     inFlight.set(
       id,
       load(airline, key, request, options)

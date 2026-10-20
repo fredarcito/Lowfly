@@ -6,8 +6,8 @@ import { CalendarDays, ChevronDown, Loader2 } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { useAdmin } from "@/components/admin/hooks/useAdmin";
 
-// The overview's period (7, 30 or 90 days, or all time), kept in the address (?period=) so a reload or a shared
-// link shows the same; the figures are read again for it
+// An admin page's period (7, 30 or 90 days, or all time on the overview), kept in the address (?period=) so a reload
+// or a shared link shows the same; the figures are read again for it
 const PeriodSelect = ({ period, periods }) => {
   const { texts } = useAdmin();
   const router = useRouter();

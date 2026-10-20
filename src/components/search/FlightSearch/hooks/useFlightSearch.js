@@ -3,11 +3,13 @@
 import { useRef, useState } from "react";
 import { apiError } from "@/api/client";
 import { searchFlights, searchStopovers } from "@/api/flights";
+import { reportSearch } from "@/api/metrics";
 import { searchToParams } from "@/utils/share";
 import { track } from "@/utils/analytics";
 import { WEEKEND_MODES } from "@/constants/weekend";
 import { later, nightsBetween, shift, tomorrow } from "@/utils/dates";
 import { MAX_FREE_NIGHTS, MIN_FREE_NIGHTS } from "@/constants/multiCity";
+import { DEFAULT_RANGE_DAYS } from "@/constants/searchForm";
 
 // No results: the form opens again so the search can be changed
 const IS_EMPTY = {
@@ -34,6 +36,11 @@ const stopoverParamsOf = (mode, params) => {
   const to = shift(vuelta, days);
   return { ...place, from, to, trip: "return", minN: 1, maxN: Math.min(30, nightsBetween(from, to)), outTo: shift(ida, days), backFrom: shift(vuelta, -days) };
 };
+// A search over a range of dates whose dates were changed from the form's (from tomorrow, DEFAULT_RANGE_DAYS): for the
+// admin's "Uso" page, which tells how many searches share the airlines' answers (the same dates) and how many do not
+const changedDates = (form, mode) =>
+  ["everywhere", "country"].includes(mode) && (form.from !== tomorrow() || form.to !== shift(tomorrow(), DEFAULT_RANGE_DAYS));
+
 const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // What to ask the API for a search, or { error, params? } (a key of texts.errors and its values) when the form is not
@@ -85,7 +92,12 @@ export const useFlightSearch = (lang) => {
 
   const search = async (form, mode) => {
     const request = requestOf(form, mode);
-    if (request.error) return fail(request.error, request.params);
+    // How it ended ("results", "empty" or an error code), for the admin's "Uso" page
+    const report = (outcome) => reportSearch({ mode, outcome, customDates: changedDates(form, mode) });
+    if (request.error) {
+      report(request.error);
+      return fail(request.error, request.params);
+    }
 
     setResult({ status: "loading", mode });
     const destination = mode === "multiCity" ? "routes" : form.city || form.country || "anywhere";
@@ -111,15 +123,21 @@ export const useFlightSearch = (lang) => {
       if (!isLatest()) return;
       setResult({ status: "done", mode, searchId, data, stopovers: withStopovers ? { status: "loading" } : null });
       const stopovers = withStopovers && (await addStopovers());
-      if (isLatest() && IS_EMPTY[mode](data) && !stopovers?.trips?.length) setCollapsed(false);
+      const empty = IS_EMPTY[mode](data) && !stopovers?.trips?.length;
+      report(empty ? "empty" : "results");
+      if (isLatest() && empty) setCollapsed(false);
     } catch (error) {
       if (!isLatest()) return;
       const { code, params, retry } = apiError(error);
       if (withStopovers && NO_DIRECT.includes(code)) {
         const stopovers = await stopoversRequest;
         if (!isLatest()) return;
-        if (stopovers?.trips?.length) return setResult({ status: "done", mode, searchId, data: null, stopovers: { status: "done", data: stopovers } });
+        if (stopovers?.trips?.length) {
+          report("results");
+          return setResult({ status: "done", mode, searchId, data: null, stopovers: { status: "done", data: stopovers } });
+        }
       }
+      report(code);
       fail(code, { ...params, retry });
     }
   };

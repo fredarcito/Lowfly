@@ -7,7 +7,9 @@ Status (built 2026-10-20). Update this file as the pieces land.
   (`MultiCityResults`), the planner taking route towns (`?stops=italia-clasica/full/2,…`), "Guardar viaje", the link
   from "A cualquier sitio", the planner's limits raised (9 towns, 15 days, 10 a town) and `e2e/multi-city.spec.js`:
   **done** (2026-10-20).
-- Also done: each card shows first the version that ranked it (`bestVersion`), "Recomendados / Más baratos" order,
+- Also done: easyJet and Vueling in the route graph and in the screening (`more.cheapest`), prices not live with
+  their note (docs/stopovers.md, route graph); dry run 2026-10-20: from Barcelona 47 → 66 routes, Málaga 43 → 50,
+  Madrid 45 → 48 (Suiza through Geneva). Each card shows first the version that ranked it (`bestVersion`), "Recomendados / Más baratos" order,
   fixed photos per route, search pages per kind (`/es/recorridos`…), usage metrics in the admin (`/admin/usage`).
 - Pending: "ver más" asking prices in parts (today the ~8 candidates are priced at once), the loops through the
   airlines' return-trip finders, the prices-in-advance cron, route pages (SEO), joining two routes, reviewing the

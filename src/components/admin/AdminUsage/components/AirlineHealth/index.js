@@ -44,7 +44,7 @@ const AirlineHealth = ({ airlines, lang }) => {
                   <th scope="row" className="py-3 pr-3 text-left font-medium">
                     <span className="flex items-center gap-2">
                       <Icon className={trouble ? "size-4 text-destructive" : "size-4 text-muted-foreground"} />
-                      {AIRLINES[airline.airline]}
+                      {AIRLINES[airline.airline] ?? texts.airlineNames[airline.airline] ?? airline.airline}
                     </span>
                     <span className="block text-xs font-normal text-muted-foreground">{texts.failShare(formats.percent(airline.failShare))}</span>
                   </th>

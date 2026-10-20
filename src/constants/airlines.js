@@ -19,5 +19,9 @@ export const MORE_AIRLINES = {
   pegasus: { name: "Pegasus", codes: ["PC"], home: "https://www.flypgs.com" },
 };
 
+// The ones of them whose routes go into the route graph (server/routeGraph, scripts/extra-airports.mjs), so the
+// stopovers' getaways and the multi-city routes use them too (never a same-day connection: their prices are not live)
+export const GRAPH_MORE_AIRLINES = ["easyjet", "vueling"];
+
 // The airline for an IATA code ("U2" → "easyjet"), or undefined for one we do not show
 export const airlineOfCode = Object.fromEntries(Object.entries(MORE_AIRLINES).flatMap(([id, airline]) => airline.codes.map((code) => [code, id])));

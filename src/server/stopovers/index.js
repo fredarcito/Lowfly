@@ -35,13 +35,14 @@ export const stopoverTrips = async ({ origin, destinations, from, to, stay = nul
   const hubs = chooseHubs(origin, destinations, graph, airportsByCode);
   if (!hubs.length) return { trips: [], hubs: [], failed: [] };
 
-  // The more airlines (seen in recent searches) only on the first leg, the one we know they fly
+  // easyJet and Vueling come with the graph on every leg (never joined the same day: their prices are not live);
+  // the other more airlines (seen in recent searches) only on the first leg, the one we know they fly
   const moreAirlines = (code) => moreRoutes.filter((route) => route.code === code).map((route) => route.airline);
   const lastHubDay = stay ? shift(to, -stay.min) : shift(to, HUB_NIGHTS.escapada.max);
   const lastOut = stay ? shift(to, -stay.min) : to;
   const firstOutTo = outTo && outTo < lastOut ? outTo : lastOut;
   const outFirst = hubs.flatMap((hub) =>
-    hub.arrivals.map((arrival) => ({ dep: origin, arr: arrival.code, airlines: [...arrival.airlines, ...moreAirlines(arrival.code)], from, to: firstOutTo }))
+    hub.arrivals.map((arrival) => ({ dep: origin, arr: arrival.code, airlines: [...new Set([...arrival.airlines, ...moreAirlines(arrival.code)])], from, to: firstOutTo }))
   );
   const outSecond = hubs.flatMap((hub) =>
     hub.departures.flatMap((departure) => departure.to.map((destination) => ({ dep: departure.code, arr: destination.code, airlines: destination.airlines, from, to: lastHubDay })))

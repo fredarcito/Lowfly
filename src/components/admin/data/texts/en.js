@@ -195,6 +195,7 @@ const en = {
       unknown: "Unexpected error",
     },
     airlines: "Airlines",
+    airlineNames: { travelpayouts: "Travelpayouts (easyJet, Vueling…)" },
     airlinesHint: "Every answer a search needs: from the cache or asked to the airline",
     airlineColumns: {
       airline: "Airline",

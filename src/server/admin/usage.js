@@ -10,7 +10,9 @@ import { SEARCH_MODES } from "@/constants/metrics";
 // The periods the page offers, in days (the counts are kept 120 days)
 export const USAGE_PERIODS = ["7", "30", "90"];
 export const DEFAULT_USAGE_PERIOD = "7";
-const AIRLINES = ["ryanair", "wizz"];
+// Travelpayouts: easyJet, Vueling and the other more airlines' recent prices (only asked, blocked or failed: Next keeps
+// its answers, not the airline guard)
+const AIRLINES = ["ryanair", "wizz", "travelpayouts"];
 
 const sum = (values) => values.reduce((total, value) => total + value, 0);
 

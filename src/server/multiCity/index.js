@@ -10,6 +10,7 @@
 // 4. The best trip of each version, the towns' nights shared out (fit.js), the routes in order (rank.js).
 import * as ryanair from "@/server/ryanair";
 import * as wizz from "@/server/wizz";
+import * as more from "@/server/travelpayouts";
 import { getAirports } from "@/server/airports";
 import { getGraph } from "@/server/routeGraph";
 import { legOf, routeFares } from "@/server/dailyPrices";
@@ -62,10 +63,12 @@ const screeningMonths = (from, lastOut) => monthsBetween(from, lastOut).map((mon
 
 // The cheapest flight in to every destination, from the screening: Map code → { price, airlines } (the airlines that
 // fly there those months). Whole months: a price may fall outside the dates, but it only ranks the routes; the prices
-// shown come from the flights per day within the dates. Wizz's fare finder already answers by month.
+// shown come from the flights per day within the dates. Wizz's fare finder already answers by month, and so do the
+// more airlines' recent prices (easyJet, Vueling…: Travelpayouts, not live).
 const cheapestIn = async (origin, from, lastOut, lang, failed) => {
-  const [ryanairFares, wizzFares] = await Promise.all([
-    Promise.all(screeningMonths(from, lastOut).map((month) => ryanair.cheapest(origin, month.from, month.to, lang)))
+  const months = screeningMonths(from, lastOut);
+  const [ryanairFares, wizzFares, moreFares] = await Promise.all([
+    Promise.all(months.map((month) => ryanair.cheapest(origin, month.from, month.to, lang)))
       .then((months) => months.flat())
       .catch(() => {
         failed.add("ryanair");
@@ -79,15 +82,21 @@ const cheapestIn = async (origin, from, lastOut, lang, failed) => {
         failed.add("wizz");
         return [];
       }),
+    // Theirs are not live: a failure only leaves them out
+    Promise.all(months.map((month) => more.cheapest(origin, month.from, month.to, lang)))
+      .then((answers) => answers.flat())
+      .catch(() => []),
   ]);
   const found = new Map();
   for (const [airline, fares] of [
     ["ryanair", ryanairFares],
     ["wizz", wizzFares],
+    [null, moreFares],
   ])
     for (const fare of fares) {
+      const fareAirline = airline ?? fare.airline;
       const known = found.get(fare.code) ?? { price: Infinity, airlines: new Set() };
-      found.set(fare.code, { price: Math.min(known.price, fare.price), airlines: known.airlines.add(airline) });
+      found.set(fare.code, { price: Math.min(known.price, fare.price), airlines: known.airlines.add(fareAirline) });
     }
   return found;
 };

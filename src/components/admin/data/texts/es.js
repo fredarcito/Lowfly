@@ -195,6 +195,7 @@ const es = {
       unknown: "Error inesperado",
     },
     airlines: "Aerolíneas",
+    airlineNames: { travelpayouts: "Travelpayouts (easyJet, Vueling…)" },
     airlinesHint: "Cada respuesta que necesita una búsqueda: desde caché o preguntada a la aerolínea",
     airlineColumns: {
       airline: "Aerolínea",

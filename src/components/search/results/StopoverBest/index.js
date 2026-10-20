@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin } from "lucide-react";
+import { Info, MapPin } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Collapse from "@/components/shared/Collapse";
 import DestinationGuide from "@/components/shared/DestinationGuide";
@@ -14,14 +14,15 @@ import { useCountUp } from "@/hooks/useCountUp";
 import { useDisclosure } from "@/hooks/useDisclosure";
 import { useStopoverStops } from "@/hooks/useStopoverStops";
 import SaveTripButton from "@/components/search/SaveTripButton";
-import { airlineNames } from "@/utils/format";
+import { airlineNames, isCachedFare } from "@/utils/format";
 
 // The highlighted result when its best trip goes through a hub: what it is ("Basilea con escapada a Zagreb", the
 // country and dates, the destination's guide), the price, the way there and back at a glance; the getaway (its
 // city, how long, its guide and the way into the itinerary); then every flight with its own "Buy", which can be
 // folded away. Desktop: the summary and the price side by side, the separate-tickets note under the flights.
 // Phones: the price under the guide, and the note before the fold button, so it shows with the flights folded.
-// "Save trip" keeps it with its towns, so its itinerary covers all of them.
+// "Save trip" keeps it with its towns, so its itinerary covers all of them. A flight priced from recent searches
+// (easyJet, Vueling…) says so under the price.
 const StopoverBest = ({ trip, origin }) => {
   const { texts, format } = useI18n();
   const stops = useStopoverStops(trip);
@@ -60,6 +61,13 @@ const StopoverBest = ({ trip, origin }) => {
           <p className="text-sm text-muted-foreground">
             {results.flightCount(count)} · {airlineNames(trip)}
           </p>
+          {/* easyJet, Vueling… on a getaway: prices seen in recent searches, not live */}
+          {isCachedFare(trip) && (
+            <p className="flex items-start gap-1.5 text-xs text-muted-foreground">
+              <Info className="mt-px size-3.5 shrink-0" />
+              {results.cachedPrice(airlineNames({ legs: trip.legs.filter((leg) => leg.cached) }))}
+            </p>
+          )}
           <div className="mt-3 grid gap-2.5 max-lg:hidden">
             <FlightsToggle flights={flights} count={count} />
             <SaveTripButton origin={origin} fare={trip} stops={stops} className="h-11 w-full" />

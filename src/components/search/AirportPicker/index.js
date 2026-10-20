@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useMemo } from "react";
 import { Loader2, LocateFixed } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AirportOption from "@/components/search/AirportOption";
@@ -13,11 +13,13 @@ import { groupByCountry, searchAirports } from "@/utils/airports";
 import CountryHeading from "@/components/search/AirportPicker/components/CountryHeading";
 
 // The search box and the list of departure airports: by country with nothing typed (and "Use my location"),
-// the best matches otherwise. Opens on the current airport.
+// the best matches otherwise. Opens on the current airport. Only airports a live search runs from: the ones easyJet
+// and Vueling alone fly to are destinations only (server/airports `destinationOnly`).
 const AirportPicker = ({ airports, value, onPick }) => {
   const { lang, texts } = useI18n();
   const nearest = useNearestAirport();
-  const search = useCallback((query) => searchAirports(airports.list, query, lang), [airports.list, lang]);
+  const departures = useMemo(() => airports.list.filter((airport) => !airport.destinationOnly), [airports.list]);
+  const search = useCallback((query) => searchAirports(departures, query, lang), [departures, lang]);
   const list = useSearchableList({
     search,
     startAt: (options) => options.findIndex((airport) => airport.code === value),
@@ -45,7 +47,7 @@ const AirportPicker = ({ airports, value, onPick }) => {
             variant="ghost"
             size="sm"
             className="justify-start text-primary-ink"
-            onClick={() => nearest.findNearest(airports.list, (airport) => onPick(airport.code))}
+            onClick={() => nearest.findNearest(departures, (airport) => onPick(airport.code))}
             disabled={nearest.status === "busy"}
           >
             {nearest.status === "busy" ? <Loader2 className="animate-spin" /> : <LocateFixed />}

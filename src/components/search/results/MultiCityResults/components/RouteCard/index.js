@@ -15,6 +15,7 @@ import { useRouteTrip } from "@/components/search/results/MultiCityResults/compo
 import { useI18n } from "@/context/i18n";
 import { useDisclosure } from "@/hooks/useDisclosure";
 import { savedTownsOf } from "@/utils/multiCity";
+import { airlineNames, isCachedFare } from "@/utils/format";
 import { cn } from "@/utils/cn";
 
 // One route of the results: its photo, name and countries, the lengths it comes in (by its dates), how many towns
@@ -64,6 +65,14 @@ const RouteCard = ({ route, origin, preferred }) => {
             </p>
           </div>
         </div>
+
+        {/* easyJet, Vueling…: prices seen in recent searches, not live: the airline confirms them */}
+        {isCachedFare(trip) && (
+          <p className="-mt-1 flex items-start gap-1.5 text-xs text-muted-foreground">
+            <Info className="mt-px size-3.5 shrink-0" />
+            {texts.results.cachedPrice(airlineNames({ legs: trip.legs.filter((leg) => leg.cached) }))}
+          </p>
+        )}
 
         <div className="grid gap-2 sm:grid-cols-[minmax(0,1fr)_16rem] sm:items-start">
           <PlanButton trip={trip} className="w-full" />

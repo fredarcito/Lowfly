@@ -72,8 +72,13 @@ Code:
     another airline) is left out; `city:` / `country:` / `region:` entries are groupings.
   - Wizz: the route map `cities()` (`/asset/map`), one request (~3,000 routes once the metropolitan "fake stations"
     like ROM are swapped for their real airports). Every connection there is `isDirectFlight: true`.
-  - Travelpayouts airlines (easyJet, Vueling…) are not in the graph: their routes come from recent searches
-    (`more.destinations`, still asked live by `getDestinations`).
+  - easyJet and Vueling (`GRAPH_MORE_AIRLINES`, 2026-10-20): from Travelpayouts' public route list
+    (`more.graphRoutes`, ~1,000 and ~230 routes), between airports we know: Ryanair's and Wizz Air's plus the ones only
+    they fly to (`src/data/extraAirports.json`, `scripts/extra-airports.mjs`; destinations only, `destinationOnly`, never
+    in the departure picker). Their prices are Travelpayouts' recent ones (`cached`): never joined the same day
+    (`connects`), fine on a getaway or a multi-city route, with "Precio visto en búsquedas recientes". The other
+    Travelpayouts airlines still come from recent searches (`more.destinations`). `?dryRun=1` builds the graph
+    without saving it (every environment shares it).
 - Building takes ~2 seconds, so the cron has no throttling risk.
 - Refresh: a weekly Vercel cron, **Monday 02:00 UTC** (`0 2 * * 1` in `vercel.json`). The flight-routes crons
   run daily at 03:00–05:00 UTC; do not overlap them (both call Ryanair). Monday catches the IATA season changes

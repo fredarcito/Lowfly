@@ -5,7 +5,8 @@
 // time zones).
 // Without TRAVELPAYOUTS_TOKEN, or when it fails, nothing is added: the live airlines are enough.
 import { getAirports } from "@/server/airports";
-import { MORE_AIRLINES, airlineOfCode } from "@/constants/airlines";
+import { countMetric } from "@/server/metrics";
+import { GRAPH_MORE_AIRLINES, MORE_AIRLINES, airlineOfCode } from "@/constants/airlines";
 import { monthsBetween, nightsBetween, shift } from "@/utils/dates";
 
 const ENDPOINT = "https://api.travelpayouts.com/aviasales/v3/prices_for_dates";
@@ -26,8 +27,16 @@ const search = async ({ origin, destination, month, oneWay = true }) => {
   const response = await fetch(`${ENDPOINT}?${params}`, {
     headers: { "X-Access-Token": process.env.TRAVELPAYOUTS_TOKEN },
     next: { revalidate: REVALIDATE },
+  }).catch((error) => {
+    countMetric("airline:travelpayouts:error");
+    throw error;
   });
-  if (!response.ok) throw new Error(`Travelpayouts responded with error ${response.status}`);
+  // Counted for the admin's "Uso" page (server/metrics): an answer Next kept counts too (it cannot tell them apart)
+  if (!response.ok) {
+    countMetric(`airline:travelpayouts:${[403, 429].includes(response.status) ? "blocked" : "error"}`);
+    throw new Error(`Travelpayouts responded with error ${response.status}`);
+  }
+  countMetric("airline:travelpayouts:asked");
   const { data } = await response.json();
   return (data || []).filter(
     (flight) =>
@@ -146,4 +155,25 @@ export const roundTrips = async (origin, from, to, stay, accept = () => true, la
     if (!byCode.has(airport.code) || flight.price < byCode.get(airport.code).price) byCode.set(airport.code, { dest: airport, out, ret, price: flight.price });
   }
   return [...byCode.values()];
+};
+
+// Every route easyJet and Vueling fly (constants/airlines GRAPH_MORE_AIRLINES), for the route graph (server/routeGraph):
+// { [airline]: [[from, to]] }, their own direct flights (not another airline's codeshare) between airports we know
+// (server/airports, its extra airports included). From Travelpayouts' public route list (no token, ~14 MB: asked once a
+// week by the graph's cron, never cached by Next). It can lag behind the airlines: a cancelled route costs a search that
+// finds no price; a new one waits for the list.
+const ROUTES = "https://api.travelpayouts.com/data/routes.json";
+
+export const graphRoutes = async () => {
+  const response = await fetch(ROUTES, { cache: "no-store" });
+  if (!response.ok) throw new Error(`Travelpayouts routes responded with error ${response.status}`);
+  const [list, { airports }] = await Promise.all([response.json(), getAirports("en")]);
+  const known = new Set(airports.map((airport) => airport.code));
+  const byAirline = Object.fromEntries(GRAPH_MORE_AIRLINES.map((airline) => [airline, []]));
+  for (const route of list) {
+    const airline = airlineOfCode[route.airline_iata];
+    if (!byAirline[airline] || route.codeshare || route.transfers) continue;
+    if (known.has(route.departure_airport_iata) && known.has(route.arrival_airport_iata)) byAirline[airline].push([route.departure_airport_iata, route.arrival_airport_iata]);
+  }
+  return byAirline;
 };

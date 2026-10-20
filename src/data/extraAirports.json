@@ -1,0 +1,2498 @@
+{
+ "AAL": {
+  "name": {
+   "es": "Aalborg",
+   "en": "Aalborg Airport"
+  },
+  "city": {
+   "es": "Aalborg",
+   "en": "Aalborg"
+  },
+  "countryCode": "DK",
+  "lat": 57.0866,
+  "lon": 9.8722,
+  "tz": "Europe/Copenhagen",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "ABZ": {
+  "name": {
+   "es": "Dyce",
+   "en": "Aberdeen International Airport"
+  },
+  "city": {
+   "es": "Aberdeen",
+   "en": "Aberdeen"
+  },
+  "countryCode": "GB",
+  "lat": 57.2003,
+  "lon": -2.2042,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "ACE": {
+  "name": {
+   "es": "Lanzarote",
+   "en": "Lanzarote Airport"
+  },
+  "city": {
+   "es": "Arrecife",
+   "en": "Arrecife"
+  },
+  "countryCode": "ES",
+  "lat": 28.9507,
+  "lon": -13.6091,
+  "tz": "Atlantic/Canary",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "ADB": {
+  "name": {
+   "es": "Adnan Menderes Arpt",
+   "en": "Izmir Adnan Menderes Airport"
+  },
+  "city": {
+   "es": "Esmirna",
+   "en": "Izmir"
+  },
+  "countryCode": "TR",
+  "lat": 38.2944,
+  "lon": 27.1476,
+  "tz": "Europe/Istanbul",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "AGA": {
+  "name": {
+   "es": "Agadir Almassira",
+   "en": "Agadir Al Massira Airport"
+  },
+  "city": {
+   "es": "Agadir",
+   "en": "Agadir"
+  },
+  "countryCode": "MA",
+  "lat": 30.3783,
+  "lon": -9.5559,
+  "tz": "Africa/Casablanca",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "AGP": {
+  "name": {
+   "es": "Malaga",
+   "en": "Malaga Airport"
+  },
+  "city": {
+   "es": "Málaga",
+   "en": "Malaga"
+  },
+  "countryCode": "ES",
+  "lat": 36.6752,
+  "lon": -4.4896,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "AHO": {
+  "name": {
+   "es": "Fertilia",
+   "en": "Alghero-Fertilia Airport"
+  },
+  "city": {
+   "es": "Alguer",
+   "en": "Alghero"
+  },
+  "countryCode": "IT",
+  "lat": 40.6304,
+  "lon": 8.2959,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "AJA": {
+  "name": {
+   "es": "Campo Dell Oro",
+   "en": "Ajaccio Napoleon Bonaparte Airport"
+  },
+  "city": {
+   "es": "Ajaccio",
+   "en": "Ajaccio"
+  },
+  "countryCode": "FR",
+  "lat": 41.9199,
+  "lon": 8.794,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "ALC": {
+  "name": {
+   "es": "Alicante",
+   "en": "Alicante-Elche Airport"
+  },
+  "city": {
+   "es": "Alicante",
+   "en": "Alicante"
+  },
+  "countryCode": "ES",
+  "lat": 38.2871,
+  "lon": -0.5574,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "AMM": {
+  "name": {
+   "es": "Queen Alia Intl",
+   "en": "Queen Alia International Airport"
+  },
+  "city": {
+   "es": "Ammán",
+   "en": "Amman"
+  },
+  "countryCode": "JO",
+  "lat": 31.7225,
+  "lon": 35.9893,
+  "tz": "Asia/Amman",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "AMS": {
+  "name": {
+   "es": "Amsterdam-Schiphol",
+   "en": "Amsterdam Airport Schiphol"
+  },
+  "city": {
+   "es": "Ámsterdam",
+   "en": "Amsterdam"
+  },
+  "countryCode": "NL",
+  "lat": 52.3091,
+  "lon": 4.7634,
+  "tz": "Europe/Amsterdam",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "ARN": {
+  "name": {
+   "es": "Arlanda",
+   "en": "Stockholm Arlanda Airport"
+  },
+  "city": {
+   "es": "Estocolmo",
+   "en": "Stockholm"
+  },
+  "countryCode": "SE",
+  "lat": 59.6498,
+  "lon": 17.9304,
+  "tz": "Europe/Stockholm",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "ATH": {
+  "name": {
+   "es": "Eleftherios V.",
+   "en": "Eleftherios Venizelos International Airport"
+  },
+  "city": {
+   "es": "Atenas",
+   "en": "Athens"
+  },
+  "countryCode": "GR",
+  "lat": 37.9364,
+  "lon": 23.9465,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "AYT": {
+  "name": {
+   "es": "Antalya",
+   "en": "Antalya Airport"
+  },
+  "city": {
+   "es": "Antalya",
+   "en": "Antalya"
+  },
+  "countryCode": "TR",
+  "lat": 36.8993,
+  "lon": 30.8014,
+  "tz": "Europe/Istanbul",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "BCN": {
+  "name": {
+   "es": "Barcelona",
+   "en": "Barcelona-El Prat Airport"
+  },
+  "city": {
+   "es": "Barcelona",
+   "en": "Barcelona"
+  },
+  "countryCode": "ES",
+  "lat": 41.303,
+  "lon": 2.0759,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "BDS": {
+  "name": {
+   "es": "Papola Casale",
+   "en": "Brindisi - Salento Airport"
+  },
+  "city": {
+   "es": "Aeropuerto de Brindisi",
+   "en": "Brindisi"
+  },
+  "countryCode": "IT",
+  "lat": 40.658,
+  "lon": 17.9391,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "BES": {
+  "name": {
+   "es": "Guipavas",
+   "en": "Brest Bretagne Airport"
+  },
+  "city": {
+   "es": "Brest",
+   "en": "Brest"
+  },
+  "countryCode": "FR",
+  "lat": 48.4454,
+  "lon": -4.4158,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "BFS": {
+  "name": {
+   "es": "Belfast Intl Arpt",
+   "en": "Belfast International Airport"
+  },
+  "city": {
+   "es": "Belfast",
+   "en": "Belfast"
+  },
+  "countryCode": "GB",
+  "lat": 54.6624,
+  "lon": -6.2176,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "BIA": {
+  "name": {
+   "es": "Poretta",
+   "en": "Bastia Poretta Airport"
+  },
+  "city": {
+   "es": "Bastia",
+   "en": "Bastia"
+  },
+  "countryCode": "FR",
+  "lat": 42.5476,
+  "lon": 9.4801,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "BIO": {
+  "name": {
+   "es": "Bilbao",
+   "en": "Bilbao Airport"
+  },
+  "city": {
+   "es": "Ciudad de Bilbao",
+   "en": "Bilbao"
+  },
+  "countryCode": "ES",
+  "lat": 43.3055,
+  "lon": -2.9058,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "BIQ": {
+  "name": {
+   "es": "Biarritz Parme",
+   "en": "Biarritz - Anglet - Bayonne Airport"
+  },
+  "city": {
+   "es": "Biarriz",
+   "en": "Biarritz"
+  },
+  "countryCode": "FR",
+  "lat": 43.4724,
+  "lon": -1.5312,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "BJV": {
+  "name": {
+   "es": "Milas Airport",
+   "en": "Milas-Bodrum Airport"
+  },
+  "city": {
+   "es": "Bodrum",
+   "en": "Bodrum"
+  },
+  "countryCode": "TR",
+  "lat": 37.244,
+  "lon": 27.6728,
+  "tz": "Europe/Istanbul",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "BLQ": {
+  "name": {
+   "es": "Guglielmo Marconi",
+   "en": "Guglielmo Marconi Airport"
+  },
+  "city": {
+   "es": "Bolonia",
+   "en": "Bologna"
+  },
+  "countryCode": "IT",
+  "lat": 44.5293,
+  "lon": 11.2933,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "BOD": {
+  "name": {
+   "es": "Aeropuerto de Burdeos-Mérignac",
+   "en": "Bordeaux Airport"
+  },
+  "city": {
+   "es": "Burdeos",
+   "en": "Bordeaux"
+  },
+  "countryCode": "FR",
+  "lat": 44.831,
+  "lon": -0.7022,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "BRI": {
+  "name": {
+   "es": "Palese",
+   "en": "Palese Airport"
+  },
+  "city": {
+   "es": "Bari",
+   "en": "Bari"
+  },
+  "countryCode": "IT",
+  "lat": 41.1339,
+  "lon": 16.7639,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "BRS": {
+  "name": {
+   "es": "Bristol",
+   "en": "Bristol Airport"
+  },
+  "city": {
+   "es": "Bristol",
+   "en": "Bristol"
+  },
+  "countryCode": "GB",
+  "lat": 51.3868,
+  "lon": -2.7107,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "BRU": {
+  "name": {
+   "es": "National",
+   "en": "Brussels Airport"
+  },
+  "city": {
+   "es": "Bruselas",
+   "en": "Brussels"
+  },
+  "countryCode": "BE",
+  "lat": 50.8972,
+  "lon": 4.4836,
+  "tz": "Europe/Brussels",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "BSL": {
+  "name": {
+   "es": "EuroAirport Swiss",
+   "en": "EuroAirport Swiss"
+  },
+  "city": {
+   "es": "Basilea",
+   "en": "Basel"
+  },
+  "countryCode": "CH",
+  "lat": 47.5996,
+  "lon": 7.5326,
+  "tz": "Europe/Zurich",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "BUD": {
+  "name": {
+   "es": "Ferihegy",
+   "en": "Budapest Ferenc Liszt International Airport"
+  },
+  "city": {
+   "es": "Buda",
+   "en": "Budapest"
+  },
+  "countryCode": "HU",
+  "lat": 47.433,
+  "lon": 19.2616,
+  "tz": "Europe/Budapest",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "CAG": {
+  "name": {
+   "es": "Elmas",
+   "en": "Cagliari Elmas Airport"
+  },
+  "city": {
+   "es": "Cagliari",
+   "en": "Cagliari"
+  },
+  "countryCode": "IT",
+  "lat": 39.2543,
+  "lon": 9.0607,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "CDG": {
+  "name": {
+   "es": "Ch. De Gaulle",
+   "en": "Charles de Gaulle Airport"
+  },
+  "city": {
+   "es": "París",
+   "en": "Paris"
+  },
+  "countryCode": "FR",
+  "lat": 49.0032,
+  "lon": 2.567,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "CFU": {
+  "name": {
+   "es": "I. Kapodistrias",
+   "en": "Ioannis Kapodistrias Airport"
+  },
+  "city": {
+   "es": "Corfú",
+   "en": "Kerkyra"
+  },
+  "countryCode": "GR",
+  "lat": 39.6078,
+  "lon": 19.9146,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "CGN": {
+  "name": {
+   "es": "Köln/Bonn",
+   "en": "Cologne Bonn Airport"
+  },
+  "city": {
+   "es": "Colonia",
+   "en": "Cologne"
+  },
+  "countryCode": "DE",
+  "lat": 50.8784,
+  "lon": 7.1222,
+  "tz": "Europe/Berlin",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "CHQ": {
+  "name": {
+   "es": "Souda",
+   "en": "Chania International Airport"
+  },
+  "city": {
+   "es": "La Canea",
+   "en": "Chania"
+  },
+  "countryCode": "GR",
+  "lat": 35.5402,
+  "lon": 24.1404,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "CMN": {
+  "name": {
+   "es": "Mohamed V",
+   "en": "Mohamed V International Airport"
+  },
+  "city": {
+   "es": "Casablanca",
+   "en": "Casablanca"
+  },
+  "countryCode": "MA",
+  "lat": 33.3667,
+  "lon": -7.5867,
+  "tz": "Africa/Casablanca",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "CPH": {
+  "name": {
+   "es": "Kastrup Copenhagen",
+   "en": "Copenhagen Airport"
+  },
+  "city": {
+   "es": "Copenhague",
+   "en": "Copenhagen"
+  },
+  "countryCode": "DK",
+  "lat": 55.6291,
+  "lon": 12.6476,
+  "tz": "Europe/Copenhagen",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "CTA": {
+  "name": {
+   "es": "Fontanarossa",
+   "en": "Catania-Fontanarossa Airport"
+  },
+  "city": {
+   "es": "Catania",
+   "en": "Catania"
+  },
+  "countryCode": "IT",
+  "lat": 37.4707,
+  "lon": 15.0659,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "CWL": {
+  "name": {
+   "es": "Cardiff-Wales Arpt",
+   "en": "Cardiff Airport"
+  },
+  "city": {
+   "es": "Cardiff",
+   "en": "Cardiff"
+  },
+  "countryCode": "GB",
+  "lat": 51.3988,
+  "lon": -3.3391,
+  "tz": "Europe/London",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "DBV": {
+  "name": {
+   "es": "Dubrovnik",
+   "en": "Dubrovnik Airport"
+  },
+  "city": {
+   "es": "Dubrovnik",
+   "en": "Dubrovnik"
+  },
+  "countryCode": "HR",
+  "lat": 42.5607,
+  "lon": 18.2606,
+  "tz": "Europe/Zagreb",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "DLM": {
+  "name": {
+   "es": "Dalaman",
+   "en": "Dalaman Airport"
+  },
+  "city": {
+   "es": "Dalaman",
+   "en": "Dalaman"
+  },
+  "countryCode": "TR",
+  "lat": 36.7167,
+  "lon": 28.7833,
+  "tz": "Europe/Istanbul",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "DME": {
+  "name": {
+   "es": "Domodedovo",
+   "en": "Moscow Domodedovo Airport"
+  },
+  "city": {
+   "es": "Moscú",
+   "en": "Moscow"
+  },
+  "countryCode": "RU",
+  "lat": 55.4146,
+  "lon": 37.8995,
+  "tz": "Europe/Moscow",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "DRS": {
+  "name": {
+   "es": "Dresden Arpt",
+   "en": "Dresden International Airport"
+  },
+  "city": {
+   "es": "Dresde",
+   "en": "Dresden"
+  },
+  "countryCode": "DE",
+  "lat": 51.1243,
+  "lon": 13.7661,
+  "tz": "Europe/Berlin",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "DTM": {
+  "name": {
+   "es": "Dortmund",
+   "en": "Dortmund Airport"
+  },
+  "city": {
+   "es": "Dortmund",
+   "en": "Dortmund"
+  },
+  "countryCode": "DE",
+  "lat": 51.5148,
+  "lon": 7.6131,
+  "tz": "Europe/Berlin",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "DUS": {
+  "name": {
+   "es": "Düsseldorf",
+   "en": "Dusseldorf International Airport"
+  },
+  "city": {
+   "es": "Düsseldorf",
+   "en": "Dusseldorf"
+  },
+  "countryCode": "DE",
+  "lat": 51.2783,
+  "lon": 6.7656,
+  "tz": "Europe/Berlin",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "EAS": {
+  "name": {
+   "es": "San Sebastian",
+   "en": "San Sebastian Airport"
+  },
+  "city": {
+   "es": "San Sebastián de los Reyes",
+   "en": "San Sebastian"
+  },
+  "countryCode": "ES",
+  "lat": 43.3564,
+  "lon": -1.7935,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "EDI": {
+  "name": {
+   "es": "Turnhouse",
+   "en": "Edinburgh Airport"
+  },
+  "city": {
+   "es": "Edimburgo",
+   "en": "Edinburgh"
+  },
+  "countryCode": "GB",
+  "lat": 55.9481,
+  "lon": -3.3642,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "EFL": {
+  "name": {
+   "es": "Argostolion",
+   "en": "Kefallinia Airport"
+  },
+  "city": {
+   "es": "Kefallinia",
+   "en": "Kefallinia"
+  },
+  "countryCode": "GR",
+  "lat": 38.1181,
+  "lon": 20.5056,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "EWR": {
+  "name": {
+   "es": "Newark",
+   "en": "Newark Liberty International Airport"
+  },
+  "city": {
+   "es": "Nueva York",
+   "en": "New York"
+  },
+  "countryCode": "US",
+  "lat": 40.6891,
+  "lon": -74.1788,
+  "tz": "America/New_York",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "FAO": {
+  "name": {
+   "es": "Faro",
+   "en": "Faro Airport"
+  },
+  "city": {
+   "es": "Faro",
+   "en": "Faro"
+  },
+  "countryCode": "PT",
+  "lat": 37.0206,
+  "lon": -7.9685,
+  "tz": "Europe/Lisbon",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "FCO": {
+  "name": {
+   "es": "Fiumicino",
+   "en": "Leonardo da Vinci-Fiumicino Airport"
+  },
+  "city": {
+   "es": "Roma",
+   "en": "Rome"
+  },
+  "countryCode": "IT",
+  "lat": 41.7946,
+  "lon": 12.2503,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "FEZ": {
+  "name": {
+   "es": "Sais",
+   "en": "Fes-Saiss Airport"
+  },
+  "city": {
+   "es": "Fez",
+   "en": "Fez"
+  },
+  "countryCode": "MA",
+  "lat": 33.9308,
+  "lon": -4.9821,
+  "tz": "Africa/Casablanca",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "FLR": {
+  "name": {
+   "es": "Peretola",
+   "en": "Firenze-Peretola Airport"
+  },
+  "city": {
+   "es": "Florencia",
+   "en": "Florence"
+  },
+  "countryCode": "IT",
+  "lat": 43.8021,
+  "lon": 11.202,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "FNC": {
+  "name": {
+   "es": "Funchal Airport",
+   "en": "Madeira Airport"
+  },
+  "city": {
+   "es": "Madeira",
+   "en": "Funchal"
+  },
+  "countryCode": "PT",
+  "lat": 32.6931,
+  "lon": -16.7756,
+  "tz": "Atlantic/Madeira",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "FUE": {
+  "name": {
+   "es": "Puerto del Rosario",
+   "en": "Fuerteventura Airport"
+  },
+  "city": {
+   "es": "Fuerteventura",
+   "en": "Puerto del Rosario"
+  },
+  "countryCode": "ES",
+  "lat": 28.4506,
+  "lon": -13.8699,
+  "tz": "Atlantic/Canary",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "GIB": {
+  "name": {
+   "es": "North Front",
+   "en": "North Front Airport"
+  },
+  "city": {
+   "es": "Gibraltar",
+   "en": "Gibraltar"
+  },
+  "countryCode": "GI",
+  "lat": 36.1538,
+  "lon": -5.3493,
+  "tz": "Europe/Gibraltar",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "GLA": {
+  "name": {
+   "es": "Glasgow Intl",
+   "en": "Glasgow International Airport"
+  },
+  "city": {
+   "es": "Glasgow",
+   "en": "Glasgow"
+  },
+  "countryCode": "GB",
+  "lat": 55.8642,
+  "lon": -4.4318,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "GOA": {
+  "name": {
+   "es": "Cristoforo Colombo",
+   "en": "Genoa Cristoforo Colombo Airport"
+  },
+  "city": {
+   "es": "Génova",
+   "en": "Genoa"
+  },
+  "countryCode": "IT",
+  "lat": 44.4151,
+  "lon": 8.8508,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "GRQ": {
+  "name": {
+   "es": "Eelde",
+   "en": "Eelde Airport"
+  },
+  "city": {
+   "es": "Groninga",
+   "en": "Groningen"
+  },
+  "countryCode": "NL",
+  "lat": 53.1203,
+  "lon": 6.5756,
+  "tz": "Europe/Amsterdam",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "GRX": {
+  "name": {
+   "es": "Federico Garcia Lorca",
+   "en": "Granada Airport"
+  },
+  "city": {
+   "es": "Granada",
+   "en": "Granada"
+  },
+  "countryCode": "ES",
+  "lat": 37.1847,
+  "lon": -3.777,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "GVA": {
+  "name": {
+   "es": "Geneve-Cointrin",
+   "en": "Geneve Airport"
+  },
+  "city": {
+   "es": "Ginebra",
+   "en": "Geneva"
+  },
+  "countryCode": "CH",
+  "lat": 46.2296,
+  "lon": 6.1058,
+  "tz": "Europe/Zurich",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "HAM": {
+  "name": {
+   "es": "Fuhlsbüttel",
+   "en": "Hamburg Airport"
+  },
+  "city": {
+   "es": "Hamburgo",
+   "en": "Hamburg"
+  },
+  "countryCode": "DE",
+  "lat": 53.6313,
+  "lon": 10.0064,
+  "tz": "Europe/Berlin",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "HER": {
+  "name": {
+   "es": "N. Kazantzakis Apt.",
+   "en": "Heraklion Airport"
+  },
+  "city": {
+   "es": "Heraclión",
+   "en": "Heraklion"
+  },
+  "countryCode": "GR",
+  "lat": 35.3366,
+  "lon": 25.1742,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "HRG": {
+  "name": {
+   "es": "Hurghada",
+   "en": "Hurghada International Airport"
+  },
+  "city": {
+   "es": "Hurgada",
+   "en": "Hurghada"
+  },
+  "countryCode": "EG",
+  "lat": 27.1892,
+  "lon": 33.8055,
+  "tz": "Africa/Cairo",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "IBZ": {
+  "name": {
+   "es": "Ibiza",
+   "en": "Ibiza Airport"
+  },
+  "city": {
+   "es": "Ibiza",
+   "en": "Ibiza"
+  },
+  "countryCode": "ES",
+  "lat": 38.8766,
+  "lon": 1.3678,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "INN": {
+  "name": {
+   "es": "Kranebitten",
+   "en": "Innsbruck Airport"
+  },
+  "city": {
+   "es": "Innsbruck",
+   "en": "Innsbruck"
+  },
+  "countryCode": "AT",
+  "lat": 47.2575,
+  "lon": 11.3515,
+  "tz": "Europe/Vienna",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "INV": {
+  "name": {
+   "es": "Inverness",
+   "en": "Inverness Airport"
+  },
+  "city": {
+   "es": "Inverness",
+   "en": "Inverness"
+  },
+  "countryCode": "GB",
+  "lat": 57.5393,
+  "lon": -4.0637,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "IOM": {
+  "name": {
+   "es": "Ronaldsway",
+   "en": "Isle of Man Airport"
+  },
+  "city": {
+   "es": "Isle Of Man",
+   "en": "Isle Of Man"
+  },
+  "countryCode": "IM",
+  "lat": 54.0868,
+  "lon": -4.6347,
+  "tz": "Europe/Isle_of_Man",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "JER": {
+  "name": {
+   "es": "States",
+   "en": "Jersey Airport"
+  },
+  "city": {
+   "es": "Jersey City",
+   "en": "Jersey"
+  },
+  "countryCode": "JE",
+  "lat": 49.2053,
+  "lon": -2.1943,
+  "tz": "Europe/Jersey",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "JMK": {
+  "name": {
+   "es": "Mikonos",
+   "en": "Mikonos Airport"
+  },
+  "city": {
+   "es": "Mykonos",
+   "en": "Mikonos"
+  },
+  "countryCode": "GR",
+  "lat": 37.4361,
+  "lon": 25.3444,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "JTR": {
+  "name": {
+   "es": "Santorini/Thira",
+   "en": "Santorini International Airport"
+  },
+  "city": {
+   "es": "Thera",
+   "en": "Thira"
+  },
+  "countryCode": "GR",
+  "lat": 36.4,
+  "lon": 25.4833,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "KEF": {
+  "name": {
+   "es": "Keflavik Intl",
+   "en": "Keflavik International Airport"
+  },
+  "city": {
+   "es": "Reikiavik",
+   "en": "Reykjavik"
+  },
+  "countryCode": "IS",
+  "lat": 63.9978,
+  "lon": -22.6243,
+  "tz": "Atlantic/Reykjavik",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "KGS": {
+  "name": {
+   "es": "Kos",
+   "en": "Kos Airport"
+  },
+  "city": {
+   "es": "Cos",
+   "en": "Kos"
+  },
+  "countryCode": "GR",
+  "lat": 36.7931,
+  "lon": 27.0953,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "KRK": {
+  "name": {
+   "es": "J. Paul II Balice",
+   "en": "J. Paul II International Airport Krakow-Balice"
+  },
+  "city": {
+   "es": "Cracovia",
+   "en": "Krakow"
+  },
+  "countryCode": "PL",
+  "lat": 50.0755,
+  "lon": 19.7937,
+  "tz": "Europe/Warsaw",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "LCA": {
+  "name": {
+   "es": "Larnaca",
+   "en": "Larnaca International Airport"
+  },
+  "city": {
+   "es": "Lárnaca",
+   "en": "Larnaca"
+  },
+  "countryCode": "CY",
+  "lat": 34.8809,
+  "lon": 33.626,
+  "tz": "Asia/Nicosia",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "LCG": {
+  "name": {
+   "es": "La Coruna",
+   "en": "A Coruna Airport"
+  },
+  "city": {
+   "es": "Ciudad de La Coruña",
+   "en": "La Coruna"
+  },
+  "countryCode": "ES",
+  "lat": 43.3024,
+  "lon": -8.3819,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "LDE": {
+  "name": {
+   "es": "Tarbes Ossun Lourdes",
+   "en": "Tarbes Ossun Lourdes Airport"
+  },
+  "city": {
+   "es": "Lourdes",
+   "en": "Lourdes"
+  },
+  "countryCode": "FR",
+  "lat": 43.1865,
+  "lon": 0.0034,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "LED": {
+  "name": {
+   "es": "Pulkovo",
+   "en": "Pulkovo Airport"
+  },
+  "city": {
+   "es": "San Petersburgo",
+   "en": "Saint Petersburg"
+  },
+  "countryCode": "RU",
+  "lat": 59.8061,
+  "lon": 30.3083,
+  "tz": "Europe/Moscow",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "LEI": {
+  "name": {
+   "es": "Almeria",
+   "en": "Almeria Airport"
+  },
+  "city": {
+   "es": "Almería",
+   "en": "Almeria"
+  },
+  "countryCode": "ES",
+  "lat": 36.848,
+  "lon": -2.3719,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "LGW": {
+  "name": {
+   "es": "Gatwick",
+   "en": "London Gatwick Airport"
+  },
+  "city": {
+   "es": "Londres",
+   "en": "London"
+  },
+  "countryCode": "GB",
+  "lat": 51.1568,
+  "lon": -0.1619,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "LHR": {
+  "name": {
+   "es": "Heathrow",
+   "en": "London Heathrow Airport"
+  },
+  "city": {
+   "es": "Londres",
+   "en": "London"
+  },
+  "countryCode": "GB",
+  "lat": 51.4696,
+  "lon": -0.4536,
+  "tz": "Europe/London",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "LIL": {
+  "name": {
+   "es": "Lesquin",
+   "en": "Lille Airport"
+  },
+  "city": {
+   "es": "Lille",
+   "en": "Lille"
+  },
+  "countryCode": "FR",
+  "lat": 50.5721,
+  "lon": 3.1061,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "LIN": {
+  "name": {
+   "es": "Linate",
+   "en": "Milano Linate Airport"
+  },
+  "city": {
+   "es": "Milán",
+   "en": "Milan"
+  },
+  "countryCode": "IT",
+  "lat": 45.461,
+  "lon": 9.2792,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "LIS": {
+  "name": {
+   "es": "Lisboa",
+   "en": "Lisbon Portela Airport"
+  },
+  "city": {
+   "es": "Lisboa",
+   "en": "Lisbon"
+  },
+  "countryCode": "PT",
+  "lat": 38.77,
+  "lon": -9.1282,
+  "tz": "Europe/Lisbon",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "LJU": {
+  "name": {
+   "es": "Brnik",
+   "en": "Ljubljana Joze Pucnik Airport"
+  },
+  "city": {
+   "es": "Liubliana",
+   "en": "Ljubljana"
+  },
+  "countryCode": "SI",
+  "lat": 46.231,
+  "lon": 14.455,
+  "tz": "Europe/Ljubljana",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "LPA": {
+  "name": {
+   "es": "Gran Canaria",
+   "en": "Gran Canaria Airport"
+  },
+  "city": {
+   "es": "Palmas de Gran Canaria",
+   "en": "Las Palmas"
+  },
+  "countryCode": "ES",
+  "lat": 27.9389,
+  "lon": -15.3894,
+  "tz": "Atlantic/Canary",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "LPL": {
+  "name": {
+   "es": "Liverpool J. Lennon",
+   "en": "Liverpool John Lennon Airport"
+  },
+  "city": {
+   "es": "Liverpool",
+   "en": "Liverpool"
+  },
+  "countryCode": "GB",
+  "lat": 53.3376,
+  "lon": -2.8549,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "LTN": {
+  "name": {
+   "es": "Luton Airport",
+   "en": "London Luton Airport"
+  },
+  "city": {
+   "es": "Londres",
+   "en": "London"
+  },
+  "countryCode": "GB",
+  "lat": 51.8798,
+  "lon": -0.3762,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "LXR": {
+  "name": {
+   "es": "Luxor",
+   "en": "Luxor International Airport"
+  },
+  "city": {
+   "es": "Lúxor",
+   "en": "Luxor"
+  },
+  "countryCode": "EG",
+  "lat": 25.6749,
+  "lon": 32.6997,
+  "tz": "Africa/Cairo",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "LYS": {
+  "name": {
+   "es": "Lyon-Saint Exupéry",
+   "en": "Lyon Saint-Exupery International Airport"
+  },
+  "city": {
+   "es": "Lyon",
+   "en": "Lyon"
+  },
+  "countryCode": "FR",
+  "lat": 45.7214,
+  "lon": 5.0803,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "MAD": {
+  "name": {
+   "es": "Barajas",
+   "en": "Adolfo Suarez Madrid-Barajas Airport"
+  },
+  "city": {
+   "es": "Ciudad de Madrid",
+   "en": "Madrid"
+  },
+  "countryCode": "ES",
+  "lat": 40.4652,
+  "lon": -3.5702,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "MAH": {
+  "name": {
+   "es": "Menorca/Mahon",
+   "en": "Menorca Airport"
+  },
+  "city": {
+   "es": "Mahón",
+   "en": "Menorca"
+  },
+  "countryCode": "ES",
+  "lat": 39.8647,
+  "lon": 4.2263,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "MAN": {
+  "name": {
+   "es": "Manchester",
+   "en": "Manchester Airport"
+  },
+  "city": {
+   "es": "Mánchester",
+   "en": "Manchester"
+  },
+  "countryCode": "GB",
+  "lat": 53.3629,
+  "lon": -2.2734,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "MJV": {
+  "name": {
+   "es": "San Javier",
+   "en": "Murcia-San Javier Airport"
+  },
+  "city": {
+   "es": "Ciudad de Murcia",
+   "en": "Murcia"
+  },
+  "countryCode": "ES",
+  "lat": 37.7752,
+  "lon": -0.819,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "MLA": {
+  "name": {
+   "es": "Luqa",
+   "en": "Malta International Airport"
+  },
+  "city": {
+   "es": "La Valeta",
+   "en": "Malta"
+  },
+  "countryCode": "MT",
+  "lat": 35.8575,
+  "lon": 14.4775,
+  "tz": "Europe/Malta",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "MPL": {
+  "name": {
+   "es": "Meditarranee",
+   "en": "Montpellier Mediterranee Airport"
+  },
+  "city": {
+   "es": "Montpellier",
+   "en": "Montpellier"
+  },
+  "countryCode": "FR",
+  "lat": 43.5784,
+  "lon": 3.9592,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "MRS": {
+  "name": {
+   "es": "Marseille",
+   "en": "Marseille Provence Airport"
+  },
+  "city": {
+   "es": "Marsella",
+   "en": "Marseille"
+  },
+  "countryCode": "FR",
+  "lat": 43.4418,
+  "lon": 5.2221,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "MUC": {
+  "name": {
+   "es": "Franz Josef Strauss",
+   "en": "Franz Josef Strauss Airport"
+  },
+  "city": {
+   "es": "Múnich",
+   "en": "Munich"
+  },
+  "countryCode": "DE",
+  "lat": 48.353,
+  "lon": 11.7901,
+  "tz": "Europe/Berlin",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "MXP": {
+  "name": {
+   "es": "Malpensa",
+   "en": "Milano Malpensa Airport"
+  },
+  "city": {
+   "es": "Milán",
+   "en": "Milan"
+  },
+  "countryCode": "IT",
+  "lat": 45.6274,
+  "lon": 8.7124,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "NAP": {
+  "name": {
+   "es": "Naples",
+   "en": "Naples International Airport"
+  },
+  "city": {
+   "es": "Nápoles",
+   "en": "Naples"
+  },
+  "countryCode": "IT",
+  "lat": 40.8861,
+  "lon": 14.2917,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "NCE": {
+  "name": {
+   "es": "Cote D'Azur",
+   "en": "Cote D'Azur Airport"
+  },
+  "city": {
+   "es": "Niza",
+   "en": "Nice"
+  },
+  "countryCode": "FR",
+  "lat": 43.6605,
+  "lon": 7.2052,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "NCL": {
+  "name": {
+   "es": "Newcastle Airport",
+   "en": "Newcastle International Airport"
+  },
+  "city": {
+   "es": "Newcastle-upon-Tyne",
+   "en": "Newcastle"
+  },
+  "countryCode": "GB",
+  "lat": 55.0371,
+  "lon": -1.7106,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "NTE": {
+  "name": {
+   "es": "Nantes Atlantique",
+   "en": "Nantes Atlantique Airport"
+  },
+  "city": {
+   "es": "Nantes",
+   "en": "Nantes"
+  },
+  "countryCode": "FR",
+  "lat": 47.1576,
+  "lon": -1.6014,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "NUE": {
+  "name": {
+   "es": "Nürnberg",
+   "en": "Nuremberg Airport"
+  },
+  "city": {
+   "es": "Núremberg",
+   "en": "Nuremberg"
+  },
+  "countryCode": "DE",
+  "lat": 49.4942,
+  "lon": 11.0771,
+  "tz": "Europe/Berlin",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "OLB": {
+  "name": {
+   "es": "Costa Smeralda",
+   "en": "Olbia Costa Smeralda Airport"
+  },
+  "city": {
+   "es": "Olbia",
+   "en": "Olbia"
+  },
+  "countryCode": "IT",
+  "lat": 40.9031,
+  "lon": 9.5148,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "OPO": {
+  "name": {
+   "es": "Porto",
+   "en": "Porto Airport"
+  },
+  "city": {
+   "es": "Oporto",
+   "en": "Porto"
+  },
+  "countryCode": "PT",
+  "lat": 41.2378,
+  "lon": -8.6703,
+  "tz": "Europe/Lisbon",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "ORY": {
+  "name": {
+   "es": "Orly",
+   "en": "Paris Orly Airport"
+  },
+  "city": {
+   "es": "París",
+   "en": "Paris"
+  },
+  "countryCode": "FR",
+  "lat": 48.7283,
+  "lon": 2.3597,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "OVD": {
+  "name": {
+   "es": "Asturias",
+   "en": "Asturias Airport"
+  },
+  "city": {
+   "es": "Asturias",
+   "en": "Asturias"
+  },
+  "countryCode": "ES",
+  "lat": 43.5589,
+  "lon": -6.0321,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "PFO": {
+  "name": {
+   "es": "Paphos",
+   "en": "Paphos International Airport"
+  },
+  "city": {
+   "es": "Pafos",
+   "en": "Paphos"
+  },
+  "countryCode": "CY",
+  "lat": 34.7116,
+  "lon": 32.4891,
+  "tz": "Asia/Nicosia",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "PMI": {
+  "name": {
+   "es": "Palma Mallorca",
+   "en": "Palma de Mallorca Airport"
+  },
+  "city": {
+   "es": "Palma de Mallorca",
+   "en": "Palma"
+  },
+  "countryCode": "ES",
+  "lat": 39.5477,
+  "lon": 2.7304,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "PMO": {
+  "name": {
+   "es": "Palermo Airport",
+   "en": "Falcone-Borsellino Airport"
+  },
+  "city": {
+   "es": "Palermo",
+   "en": "Palermo"
+  },
+  "countryCode": "IT",
+  "lat": 38.1204,
+  "lon": 13.3603,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "PRG": {
+  "name": {
+   "es": "Ruzyne",
+   "en": "Vaclav Havel Airport Prague"
+  },
+  "city": {
+   "es": "Praga",
+   "en": "Prague"
+  },
+  "countryCode": "CZ",
+  "lat": 50.1062,
+  "lon": 14.2666,
+  "tz": "Europe/Prague",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "PRN": {
+  "name": {
+   "es": "Pristina",
+   "en": "Pristina International Airport"
+  },
+  "city": {
+   "es": "Prishtina",
+   "en": "Pristina"
+  },
+  "countryCode": "XK",
+  "lat": 42.5736,
+  "lon": 21.0356,
+  "tz": "Europe/Belgrade",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "PSA": {
+  "name": {
+   "es": "Gal Galilei",
+   "en": "Pisa International Airport"
+  },
+  "city": {
+   "es": "Pisa",
+   "en": "Pisa"
+  },
+  "countryCode": "IT",
+  "lat": 43.6987,
+  "lon": 10.3999,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "RAK": {
+  "name": {
+   "es": "Menara",
+   "en": "Menara Airport"
+  },
+  "city": {
+   "es": "Marrakesh",
+   "en": "Marrakech"
+  },
+  "countryCode": "MA",
+  "lat": 31.6019,
+  "lon": -8.0269,
+  "tz": "Africa/Casablanca",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "RHO": {
+  "name": {
+   "es": "Diagoras Airport",
+   "en": "Rhodes Airport"
+  },
+  "city": {
+   "es": "Rhodes",
+   "en": "Rhodes"
+  },
+  "countryCode": "GR",
+  "lat": 36.4019,
+  "lon": 28.0907,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "SAW": {
+  "name": {
+   "es": "Sabiha Gokcen",
+   "en": "Sabiha Gokcen International Airport"
+  },
+  "city": {
+   "es": "Estambul",
+   "en": "Istanbul"
+  },
+  "countryCode": "TR",
+  "lat": 40.9047,
+  "lon": 29.3092,
+  "tz": "Europe/Istanbul",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "SCQ": {
+  "name": {
+   "es": "Santiago De Compostela",
+   "en": "Santiago De Compostela Airport"
+  },
+  "city": {
+   "es": "Santiago de Compostela",
+   "en": "Santiago De Compostela"
+  },
+  "countryCode": "ES",
+  "lat": 42.8973,
+  "lon": -8.4203,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "SDR": {
+  "name": {
+   "es": "Santander",
+   "en": "Santander Airport"
+  },
+  "city": {
+   "es": "Santander",
+   "en": "Santander"
+  },
+  "countryCode": "ES",
+  "lat": 43.4231,
+  "lon": -3.8245,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "SEN": {
+  "name": {
+   "es": "Southend",
+   "en": "London Southend Airport"
+  },
+  "city": {
+   "es": "Londres",
+   "en": "London"
+  },
+  "countryCode": "GB",
+  "lat": 51.5728,
+  "lon": 0.7014,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "SKG": {
+  "name": {
+   "es": "Makedonia Apt.",
+   "en": "Thessaloniki International Airport"
+  },
+  "city": {
+   "es": "Salónica",
+   "en": "Thessaloniki"
+  },
+  "countryCode": "GR",
+  "lat": 40.5208,
+  "lon": 22.9722,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "SOF": {
+  "name": {
+   "es": "Sofia",
+   "en": "Sofia Airport"
+  },
+  "city": {
+   "es": "Sofía",
+   "en": "Sofia"
+  },
+  "countryCode": "BG",
+  "lat": 42.6883,
+  "lon": 23.4144,
+  "tz": "Europe/Sofia",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "SPU": {
+  "name": {
+   "es": "Split",
+   "en": "Split Airport"
+  },
+  "city": {
+   "es": "Split",
+   "en": "Split"
+  },
+  "countryCode": "HR",
+  "lat": 43.5365,
+  "lon": 16.2995,
+  "tz": "Europe/Zagreb",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "SSH": {
+  "name": {
+   "es": "Aeropuerto Internacional de Sharm el-Sheij",
+   "en": "Sharm El Sheikh Airport"
+  },
+  "city": {
+   "es": "Sharm el-Sheij",
+   "en": "Sharm el Sheikh"
+  },
+  "countryCode": "EG",
+  "lat": 27.9794,
+  "lon": 34.3853,
+  "tz": "Africa/Cairo",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "STN": {
+  "name": {
+   "es": "Stansted",
+   "en": "Stansted Airport"
+  },
+  "city": {
+   "es": "Londres",
+   "en": "London"
+  },
+  "countryCode": "GB",
+  "lat": 51.8893,
+  "lon": 0.2627,
+  "tz": "Europe/London",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "SUF": {
+  "name": {
+   "es": "S Eufemia",
+   "en": "Lamezia Terme International Airport"
+  },
+  "city": {
+   "es": "Lamezia Terme",
+   "en": "Lamezia Terme"
+  },
+  "countryCode": "IT",
+  "lat": 38.91,
+  "lon": 16.245,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "SVG": {
+  "name": {
+   "es": "Sola",
+   "en": "Stavanger Airport Sola"
+  },
+  "city": {
+   "es": "Stavanger",
+   "en": "Stavanger"
+  },
+  "countryCode": "NO",
+  "lat": 58.8822,
+  "lon": 5.6292,
+  "tz": "Europe/Oslo",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "SVQ": {
+  "name": {
+   "es": "Sevilla",
+   "en": "Seville Airport"
+  },
+  "city": {
+   "es": "Ciudad de Sevilla",
+   "en": "Sevilla"
+  },
+  "countryCode": "ES",
+  "lat": 37.4235,
+  "lon": -5.9001,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "SXB": {
+  "name": {
+   "es": "Entzheim",
+   "en": "Strasbourg Airport"
+  },
+  "city": {
+   "es": "Estrasburgo",
+   "en": "Strasbourg"
+  },
+  "countryCode": "FR",
+  "lat": 48.5449,
+  "lon": 7.6277,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "SXF": {
+  "name": {
+   "es": "Schönefeld",
+   "en": "Schonefeld Airport"
+  },
+  "city": {
+   "es": "Berlín",
+   "en": "Berlin"
+  },
+  "countryCode": "DE",
+  "lat": 52.3703,
+  "lon": 13.5214,
+  "tz": "Europe/Berlin",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "TFN": {
+  "name": {
+   "es": "Norte Los Rodeos",
+   "en": "Tenerife North Airport"
+  },
+  "city": {
+   "es": "Tenerife",
+   "en": "Tenerife"
+  },
+  "countryCode": "ES",
+  "lat": 28.4881,
+  "lon": -16.346,
+  "tz": "Atlantic/Canary",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "TFS": {
+  "name": {
+   "es": "Sur Reina Sofia",
+   "en": "Tenerife South Airport"
+  },
+  "city": {
+   "es": "Tenerife",
+   "en": "Tenerife"
+  },
+  "countryCode": "ES",
+  "lat": 28.0444,
+  "lon": -16.5725,
+  "tz": "Atlantic/Canary",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "TLL": {
+  "name": {
+   "es": "Ulemiste",
+   "en": "Tallinn Airport"
+  },
+  "city": {
+   "es": "Tallin",
+   "en": "Tallinn"
+  },
+  "countryCode": "EE",
+  "lat": 59.4166,
+  "lon": 24.7987,
+  "tz": "Europe/Tallinn",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "TLS": {
+  "name": {
+   "es": "Blagnac",
+   "en": "Toulouse-Blagnac Airport"
+  },
+  "city": {
+   "es": "Toulouse",
+   "en": "Toulouse"
+  },
+  "countryCode": "FR",
+  "lat": 43.6301,
+  "lon": 1.3743,
+  "tz": "Europe/Paris",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "TLV": {
+  "name": {
+   "es": "Ben Gurion Intl",
+   "en": "Ben Gurion International Airport"
+  },
+  "city": {
+   "es": "Tel Aviv",
+   "en": "Tel Aviv Yafo"
+  },
+  "countryCode": "IL",
+  "lat": 32.0005,
+  "lon": 34.8707,
+  "tz": "Asia/Jerusalem",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "TNG": {
+  "name": {
+   "es": "Boukhalef",
+   "en": "Tangier Ibn Battouta Airport"
+  },
+  "city": {
+   "es": "Tánger",
+   "en": "Tangier"
+  },
+  "countryCode": "MA",
+  "lat": 35.7263,
+  "lon": -5.9129,
+  "tz": "Africa/Casablanca",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "TXL": {
+  "name": {
+   "es": "Tegel",
+   "en": "Tegel Airport"
+  },
+  "city": {
+   "es": "Berlín",
+   "en": "Berlin"
+  },
+  "countryCode": "DE",
+  "lat": 52.5539,
+  "lon": 13.2917,
+  "tz": "Europe/Berlin",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "VCE": {
+  "name": {
+   "es": "Marco Polo",
+   "en": "Venice Marco Polo Airport"
+  },
+  "city": {
+   "es": "Venecia",
+   "en": "Venice"
+  },
+  "countryCode": "IT",
+  "lat": 45.5023,
+  "lon": 12.3379,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "VGO": {
+  "name": {
+   "es": "Vigo",
+   "en": "Vigo Airport"
+  },
+  "city": {
+   "es": "Vigo",
+   "en": "Vigo"
+  },
+  "countryCode": "ES",
+  "lat": 42.2246,
+  "lon": -8.634,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "vueling"
+  ]
+ },
+ "VIE": {
+  "name": {
+   "es": "Vienna International",
+   "en": "Vienna International Airport"
+  },
+  "city": {
+   "es": "Viena",
+   "en": "Vienna"
+  },
+  "countryCode": "AT",
+  "lat": 48.1197,
+  "lon": 16.5636,
+  "tz": "Europe/Vienna",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "VLC": {
+  "name": {
+   "es": "Valencia",
+   "en": "Valencia Airport"
+  },
+  "city": {
+   "es": "Valencia",
+   "en": "Valencia"
+  },
+  "countryCode": "ES",
+  "lat": 39.4918,
+  "lon": -0.4735,
+  "tz": "Europe/Madrid",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "VRN": {
+  "name": {
+   "es": "Verona",
+   "en": "Verona Villafranca Airport"
+  },
+  "city": {
+   "es": "Verona",
+   "en": "Verona"
+  },
+  "countryCode": "IT",
+  "lat": 45.4023,
+  "lon": 10.9068,
+  "tz": "Europe/Rome",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "ZAG": {
+  "name": {
+   "es": "Pleso",
+   "en": "Zagreb International Airport"
+  },
+  "city": {
+   "es": "Zagreb",
+   "en": "Zagreb"
+  },
+  "countryCode": "HR",
+  "lat": 45.7332,
+  "lon": 16.0615,
+  "tz": "Europe/Zagreb",
+  "airlines": [
+   "easyjet"
+  ]
+ },
+ "ZRH": {
+  "name": {
+   "es": "Zurich Intl",
+   "en": "Zurich Airport"
+  },
+  "city": {
+   "es": "Zúrich",
+   "en": "Zurich"
+  },
+  "countryCode": "CH",
+  "lat": 47.4506,
+  "lon": 8.5617,
+  "tz": "Europe/Zurich",
+  "airlines": [
+   "easyjet",
+   "vueling"
+  ]
+ },
+ "ZTH": {
+  "name": {
+   "es": "Zakinthos Is",
+   "en": "Zakinthos Airport"
+  },
+  "city": {
+   "es": "Zakinthos",
+   "en": "Zakinthos"
+  },
+  "countryCode": "GR",
+  "lat": 37.7558,
+  "lon": 20.8883,
+  "tz": "Europe/Athens",
+  "airlines": [
+   "easyjet"
+  ]
+ }
+}

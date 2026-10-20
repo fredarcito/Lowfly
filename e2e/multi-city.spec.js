@@ -270,6 +270,16 @@ test.describe("multi-city: the search", () => {
     await expect.poll(names).toEqual(["Albania barata", "Puglia y Matera", "Albania"]);
   });
 
+  test("a flight priced from recent searches (easyJet, Vueling…) says so on its card", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    const trip = pugliaTrip(30, "short");
+    const easyjetTrip = { ...trip, legs: [{ ...trip.legs[0], airline: "easyjet", cached: true }, trip.legs[1]] };
+    const route = { ...pugliaRoute(30), trips: [easyjetTrip] };
+    await page.route("**/api/multi-city?**", (answered) => answered.fulfill({ json: { ...answer(30), routes: [route] } }));
+    await openWith(page, searchPath(30), { origin: "MLA" });
+    await expect(card(page, "Puglia y Matera").getByText("Precio visto en búsquedas recientes: confírmalo en easyJet.")).toBeVisible();
+  });
+
   test("the planner opens with every town of the route, those with no airport too", async ({ page }) => {
     await page.setViewportSize(DESKTOP);
     const stops = [

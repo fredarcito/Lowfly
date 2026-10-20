@@ -1,7 +1,29 @@
-// Every airport you can fly from with Ryanair or Wizz Air. Only called from the server.
+// Every airport you can fly from with Ryanair or Wizz Air, plus the ones only easyJet and Vueling fly to
+// (src/data/extraAirports.json, scripts/extra-airports.mjs: Geneva, Zurich, Florence…) as destinations only
+// (`destinationOnly`: never a departure airport, no live search runs from them). Only called from the server.
 import * as ryanair from "@/server/ryanair";
 import * as wizz from "@/server/wizz";
+import { countryName } from "@/server/countries";
+import extraAirports from "@/data/extraAirports.json";
 import { DEFAULT_ORIGIN } from "@/constants/airports";
+
+// The extra airports missing from Ryanair's and Wizz Air's lists, as theirs are, in `lang`
+const extraOf = (known, lang) =>
+  Object.entries(extraAirports)
+    .filter(([code]) => !known.has(code))
+    .map(([code, airport]) => ({
+      code,
+      name: airport.name[lang] ?? airport.name.en,
+      city: airport.city[lang] ?? airport.city.en,
+      country: countryName(airport.countryCode, airport.countryCode, lang),
+      countryCode: airport.countryCode,
+      main: false,
+      tz: airport.tz,
+      lat: airport.lat,
+      lon: airport.lon,
+      airlines: airport.airlines,
+      destinationOnly: true,
+    }));
 
 export const getAirports = async (lang = "es") => {
   const [ry, wz] = await Promise.allSettled([ryanair.airports(lang), wizz.airports(lang)]);
@@ -13,7 +35,7 @@ export const getAirports = async (lang = "es") => {
     else byCode.set(airport.code, { ...airport, airlines: [airline] });
   }
   if (!byCode.size) throw new Error("No airline returned its airports");
-  return { airports: withCities([...byCode.values()]) };
+  return { airports: withCities([...byCode.values(), ...extraOf(byCode, lang)]) };
 };
 
 // Wizz names its cities after the airport ("Roma Fiumicino", "Londres Gatwick", "París-Orly", "Salerno (Nápoles)"),
@@ -42,6 +64,6 @@ const withCities = (airports) => {
 export const defaultOrigin = async (country, tz) => {
   const { airports } = await getAirports("en");
   const code = (country || airports.find((airport) => tz && airport.tz === tz)?.countryCode || "").toUpperCase();
-  const here = airports.filter((airport) => airport.countryCode === code);
+  const here = airports.filter((airport) => airport.countryCode === code && !airport.destinationOnly);
   return { country: code || null, origin: (here.find((airport) => airport.main) || here[0])?.code ?? DEFAULT_ORIGIN };
 };

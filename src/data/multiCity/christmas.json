@@ -196,13 +196,13 @@
       }
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Strasburg.jpg/960px-Strasburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 534,
-      "page": "https://commons.wikimedia.org/wiki/File:Strasburg.jpg",
-      "author": "Radek Kucharski",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Colmar_Christmas_Market.JPG/960px-Colmar_Christmas_Market.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 713,
+      "page": "https://commons.wikimedia.org/wiki/File:Colmar_Christmas_Market.JPG",
+      "author": "Office de Tourisme de Colmar",
       "license": "CC BY 2.0",
-      "town": "Estrasburgo"
+      "town": "Colmar"
     }
   },
   "navidad-en-baviera": {
@@ -379,13 +379,13 @@
       }
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/960px-Stadtbild_M%C3%BCnchen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 541,
-      "page": "https://commons.wikimedia.org/wiki/File:Stadtbild_M%C3%BCnchen.jpg",
-      "author": "Thomas Wolf, www.foto-tw.de",
-      "license": "CC BY-SA 3.0 de",
-      "town": "Múnich"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Christkindlesmarkt_Nuernberg.jpg/960px-Christkindlesmarkt_Nuernberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 643,
+      "page": "https://commons.wikimedia.org/wiki/File:Christkindlesmarkt_Nuernberg.jpg",
+      "author": "Magnus Gertkemper",
+      "license": "CC BY-SA 2.0 de",
+      "town": "Núremberg"
     }
   },
   "navidad-en-el-rin": {
@@ -544,12 +544,12 @@
       }
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Stadtbild_K%C3%B6ln_%2850MP%29.jpg/960px-Stadtbild_K%C3%B6ln_%2850MP%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 581,
-      "page": "https://commons.wikimedia.org/wiki/File:Stadtbild_K%C3%B6ln_(50MP).jpg",
-      "author": "Thomas Wolf, www.foto-tw.de",
-      "license": "CC BY-SA 3.0 de",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Cologne_Christmas_Market_4890067811.jpg/960px-Cologne_Christmas_Market_4890067811.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Cologne_Christmas_Market_4890067811.jpg",
+      "author": "CGP Grey",
+      "license": "CC BY 2.0",
       "town": "Colonia"
     }
   },
@@ -708,13 +708,13 @@
       }
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG/960px-Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 533,
-      "page": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG",
-      "author": "Deror_avi",
-      "license": "CC BY-SA 4.0",
-      "town": "Praga"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Striezelmarkt_2009_00950.jpg/960px-Striezelmarkt_2009_00950.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Striezelmarkt_2009_00950.jpg",
+      "author": "LH DD/Dittrich",
+      "license": "CC BY-SA 3.0",
+      "town": "Dresde"
     }
   },
   "navidad-en-centroeuropa": {
@@ -879,6 +879,15 @@
         "es": "Mercadillos de Navidad",
         "en": "Christmas markets"
       }
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Prague_christmas_market_9949a.jpg/960px-Prague_christmas_market_9949a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Prague_christmas_market_9949a.jpg",
+      "author": "Hynek Moravec",
+      "license": "CC BY 2.5",
+      "town": "Praga"
     }
   },
   "navidad-en-polonia": {
@@ -1036,13 +1045,13 @@
       }
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Castle_Square_%2822346p%29.jpg/960px-Castle_Square_%2822346p%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 630,
-      "page": "https://commons.wikimedia.org/wiki/File:Castle_Square_(22346p).jpg",
-      "author": "Rhododendrites",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Mercado_de_Navidad%2C_Plaza_del_Mercado%2C_Breslavia%2C_Polonia%2C_2017-12-20%2C_DD_38-40_PAN.jpg/960px-Mercado_de_Navidad%2C_Plaza_del_Mercado%2C_Breslavia%2C_Polonia%2C_2017-12-20%2C_DD_38-40_PAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 669,
+      "page": "https://commons.wikimedia.org/wiki/File:Mercado_de_Navidad,_Plaza_del_Mercado,_Breslavia,_Polonia,_2017-12-20,_DD_38-40_PAN.jpg",
+      "author": "Diego Delso",
       "license": "CC BY-SA 4.0",
-      "town": "Varsovia"
+      "town": "Breslavia"
     }
   },
   "navidad-en-el-baltico": {
@@ -1182,13 +1191,13 @@
       }
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg/960px-Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 450,
-      "page": "https://commons.wikimedia.org/wiki/File:Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg",
-      "author": "A.Savin",
-      "license": "FAL",
-      "town": "Tartu"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Christmas_Market_in_the_Town_Hall_Square.jpg/960px-Christmas_Market_in_the_Town_Hall_Square.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_Market_in_the_Town_Hall_Square.jpg",
+      "author": "Marit & Toomas Hinnosaar",
+      "license": "CC BY 2.0",
+      "town": "Tallin"
     }
   }
 }

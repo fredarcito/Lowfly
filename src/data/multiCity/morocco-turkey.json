@@ -786,13 +786,13 @@
       "en": "The whole route is done by train (ONCF), comfortable and cheap; the Al Boraq high-speed train also runs from Rabat to Casablanca. Casablanca is mostly visited for the Hassan II Mosque."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/MoroccoMarrakech_townfromhill.jpg/960px-MoroccoMarrakech_townfromhill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 600,
-      "page": "https://commons.wikimedia.org/wiki/File:MoroccoMarrakech_townfromhill.jpg",
-      "author": "CS.D.",
-      "license": "CC BY-SA 3.0",
-      "town": "Marrakech"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bab_Boujloud_Fes_Doorway.jpg/960px-Bab_Boujloud_Fes_Doorway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 636,
+      "page": "https://commons.wikimedia.org/wiki/File:Bab_Boujloud_Fes_Doorway.jpg",
+      "author": "JasmineartGallery",
+      "license": "CC BY-SA 4.0",
+      "town": "Fez"
     }
   },
   "estambul-y-capadocia": {
@@ -1291,13 +1291,13 @@
       "en": "Dolmuş minibuses link every town on the coast often. From Kaş, a boat trip to Kekova and the sunken city; from Fethiye, Butterfly Valley and the Lycian Way on foot; from Dalyan, the Lycian tombs and the turtle beach (İztuzu). Pamukkale is about 3 h by bus from Fethiye if you want to add it."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Kastelorizo.svg/960px-Kastelorizo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 534,
-      "page": "https://commons.wikimedia.org/wiki/File:Kastelorizo.svg",
-      "author": "Fut.Perf.",
-      "license": "CC BY-SA 4.0",
-      "town": "Kaş"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Swimming_area_in_the_Blue_Lagoon_in_%C3%96l%C3%BCdeniz%2C_Turkey_%2849070949277%29.jpg/960px-Swimming_area_in_the_Blue_Lagoon_in_%C3%96l%C3%BCdeniz%2C_Turkey_%2849070949277%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Swimming_area_in_the_Blue_Lagoon_in_%C3%96l%C3%BCdeniz,_Turkey_(49070949277).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "town": "Ölüdeniz"
     }
   }
 }

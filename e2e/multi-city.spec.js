@@ -99,7 +99,11 @@ test.describe("multi-city: the routes' data", () => {
     expect(ROUTES.length).toBeGreaterThan(50);
     for (const route of ROUTES) {
       // Its own photo (scripts/multi-city-photos.mjs), creditable: author and licence; never another route's
-      if (route.photo) expect(route.photo, route.id).toMatchObject({ src: expect.stringMatching(/^https:/), page: expect.stringMatching(/^https:/), author: expect.any(String), license: expect.any(String) });
+      if (route.photo) {
+        expect(route.photo, route.id).toMatchObject({ src: expect.stringMatching(/^https:/), page: expect.stringMatching(/^https:/), author: expect.any(String), license: expect.any(String) });
+        // A photo, never a map or a drawing (Commons also has .svg files)
+        expect(decodeURIComponent(route.photo.page), route.id).toMatch(/\.(jpe?g|png|webp)$/i);
+      }
       for (const [version, { stops }] of Object.entries(route.versions)) {
         const where = `${route.id}/${version}`;
         expect(["short", "full", "long"], where).toContain(version);

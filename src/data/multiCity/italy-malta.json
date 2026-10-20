@@ -938,13 +938,13 @@
       "en": "For the Val d'Orcia and San Gimignano a hire car is best: buses between the villages are scarce."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/PiazzadelCampoSiena.jpg/960px-PiazzadelCampoSiena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 533,
-      "page": "https://commons.wikimedia.org/wiki/File:PiazzadelCampoSiena.jpg",
-      "author": "Massimo Catarinella",
-      "license": "CC BY-SA 3.0",
-      "town": "Siena"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/San_Quirico_d%27Orcia_-_typical_farmhouse_on_hill_in_autumn.jpg/960px-San_Quirico_d%27Orcia_-_typical_farmhouse_on_hill_in_autumn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:San_Quirico_d%27Orcia_-_typical_farmhouse_on_hill_in_autumn.jpg",
+      "author": "Enrico Pighetti",
+      "license": "CC BY 2.0",
+      "town": "Val d'Orcia"
     }
   },
   "napoles-y-costa-amalfitana": {
@@ -1318,13 +1318,13 @@
       "en": "Pompeii is a stop on the Circumvesuviana train on the way. Ferries along the coast and to Capri run mostly from April to October; off season, take the SITA bus."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/View_of_Sorrento.jpg/960px-View_of_Sorrento.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 414,
-      "page": "https://commons.wikimedia.org/wiki/File:View_of_Sorrento.jpg",
-      "author": "Kim Traynor",
-      "license": "CC BY-SA 3.0",
-      "town": "Sorrento"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Amalfi_Coast_-Katie_Horvath.jpg/960px-Amalfi_Coast_-Katie_Horvath.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Amalfi_Coast_-Katie_Horvath.jpg",
+      "author": "KatieHorvath",
+      "license": "CC BY-SA 4.0",
+      "town": "Amalfi"
     }
   },
   "sicilia": {
@@ -2673,13 +2673,13 @@
       "en": "The fast ferry links Valletta and Gozo in about 45 minutes; Malta airport is 1 h 30 from Gozo."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Gozo_from_space_via_laser_ESA378503_%28cropped%29.jpg/960px-Gozo_from_space_via_laser_ESA378503_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 555,
-      "page": "https://commons.wikimedia.org/wiki/File:Gozo_from_space_via_laser_ESA378503_(cropped).jpg",
-      "author": "European Space Agency",
-      "license": "CC BY-SA 3.0 igo",
-      "town": "Gozo"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Malta_-_Valletta_-_Our_Lady_of_Mount_Carmel%2BSt_Paul%27s_Pro-Cathedral_%28Ferry_harbour%29_01_ies.jpg/960px-Malta_-_Valletta_-_Our_Lady_of_Mount_Carmel%2BSt_Paul%27s_Pro-Cathedral_%28Ferry_harbour%29_01_ies.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Malta_-_Valletta_-_Our_Lady_of_Mount_Carmel%2BSt_Paul%27s_Pro-Cathedral_(Ferry_harbour)_01_ies.jpg",
+      "author": "Frank Vincentz",
+      "license": "CC BY-SA 3.0",
+      "town": "La Valeta"
     }
   },
   "dolomitas": {

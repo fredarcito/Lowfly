@@ -25,8 +25,10 @@ const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, mill
 // to nothing. Height over width at least this.
 const MIN_PROPORTION = 0.5;
 
-// A photo a card can show and credit: its author and licence known (CC licences ask for both), not a panorama
-const usable = (photo) => photo?.src && photo.author && photo.license && photo.height / photo.width >= MIN_PROPORTION;
+// A photo a card can show and credit: a photo (not a map or a drawing: .svg), its author and licence known (CC licences
+// ask for both), not a panorama
+const usable = (photo) =>
+  photo?.src && /\.(jpe?g|png|webp)$/i.test(decodeURIComponent(photo.page)) && photo.author && photo.license && photo.height / photo.width >= MIN_PROPORTION;
 
 // The towns to picture a route with, best first: its fullest version's towns by nights, the one you land in last,
 // each once

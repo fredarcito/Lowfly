@@ -2138,13 +2138,13 @@
       "en": "Minibuses (furgons) have no fixed timetable: leave early. The Sarandë–Corfu ferry runs all year, with more boats in summer."
     },
     "photo": {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Mangalem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "width": 800,
-      "height": 532,
-      "page": "https://commons.wikimedia.org/wiki/File:Mangalem.jpg",
-      "author": "Etrusko25",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Gjipe_beach%2C_Albania.JPG/960px-Gjipe_beach%2C_Albania.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Gjipe_beach,_Albania.JPG",
+      "author": "Pudelek",
       "license": "CC BY-SA 3.0",
-      "town": "Berat"
+      "town": "Riviera albanesa"
     }
   },
   "macedonia-del-norte-y-ocrid": {
@@ -4334,13 +4334,13 @@
       "en": "You cross several borders by road: keep your passport or ID card at hand. Buses are paid in cash, often to the driver, with no fixed timetables: ask at the station the day before. This route skips Serbia on purpose: if you enter Kosovo from another country, do not leave it towards Serbia, as it can cause trouble at the border. Shkodër is the base for the Theth and Valbona hikes."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/2011_Prizren%2C_Meczet_Sinana_Paszy_04.JPG/960px-2011_Prizren%2C_Meczet_Sinana_Paszy_04.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "width": 800,
-      "height": 533,
-      "page": "https://commons.wikimedia.org/wiki/File:2011_Prizren,_Meczet_Sinana_Paszy_04.JPG",
-      "author": "Marcin Konsek",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Beautiful_St._John_Kaneo_Church_and_Ohrid_lake_view.jpg/960px-Beautiful_St._John_Kaneo_Church_and_Ohrid_lake_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Beautiful_St._John_Kaneo_Church_and_Ohrid_lake_view.jpg",
+      "author": "Cacar60",
       "license": "CC BY-SA 4.0",
-      "town": "Prizren"
+      "town": "Ocrid"
     }
   }
 }

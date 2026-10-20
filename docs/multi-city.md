@@ -1,14 +1,37 @@
 # Multi-city trips: suggested routes ("recorridos")
 
-Status (proposed 2026-10-20). Update this file as the pieces land.
+Status (built 2026-10-20). Update this file as the pieces land.
 - Route data, every region (`src/data/multiCity/`, 100 routes, 274 versions) and its checker
   (`scripts/check-multi-city.mjs`): **done, drafted by AI, none reviewed yet** (`reviewed: false`); all shown.
 - Engine (`src/server/multiCity/`), `GET /api/multi-city`, the "Recorridos" search mode, its results
   (`MultiCityResults`), the planner taking route towns (`?stops=italia-clasica/full/2,…`), "Guardar viaje", the link
   from "A cualquier sitio", the planner's limits raised (9 towns, 15 days, 10 a town) and `e2e/multi-city.spec.js`:
   **done** (2026-10-20).
+- Also done: each card shows first the version that ranked it (`bestVersion`), "Recomendados / Más baratos" order,
+  fixed photos per route, search pages per kind (`/es/recorridos`…), usage metrics in the admin (`/admin/usage`).
 - Pending: "ver más" asking prices in parts (today the ~8 candidates are priced at once), the loops through the
-  airlines' return-trip finders, the prices-in-advance cron, route pages (SEO), joining two routes.
+  airlines' return-trip finders, the prices-in-advance cron, route pages (SEO), joining two routes, reviewing the
+  routes (all `reviewed: false`), measuring before tuning the cache (`fresh` by how far the flight is).
+
+## Map of the code
+
+- Data: `src/data/multiCity/<region>.json` (`christmas.json`: seasonal). Checker: `scripts/check-multi-city.mjs`
+  (needs a dev server: `--base=http://localhost:3000`). Photos: `scripts/multi-city-photos.mjs` (keeps hand-set ones).
+- Engine, server only: `src/server/multiCity/` — `routes.js` (loads the JSON; add a region file there), `possible.js`
+  (graph → ways to fly a route), `fit.js` (versions in the free dates, nights shared out, season), `rank.js`
+  (candidates, order, variety), `index.js` (`multiCityTrips`: screening by month, per-day prices, combine, answer).
+  Shared with stopovers: `server/dailyPrices.js` (`routeFares`, `legOf`), `server/stopovers/combine.js`.
+- API: `src/app/api/multi-city/route.js` (5–15 free days). Constants: `src/constants/multiCity.js`.
+- Search pages: `src/app/[lang]/(search)/` (layout = the search, one page per kind), `src/constants/searchPages.js`,
+  names per language in `src/constants/sections.js`, `ROUTES.search(lang, mode)`; old `/es?m=…` links redirect in
+  `src/proxy.js`.
+- UI: `src/components/search/results/MultiCityResults/` (`QuietPicker`: order + length; `RouteCard/` with
+  `RoutePhoto`, `TownChain`, `FlightPair`, `LengthPicker`, `PlanButton`), `src/components/search/MultiCityPromo`,
+  helpers `src/utils/multiCity.js` (days per town, planner and saved towns, default trip).
+- Planner taking route towns: `src/utils/manualTrips.js` (`isRouteTown`), `src/app/[lang]/trips/new/page.js`.
+- Metrics: `src/server/metrics.js` (daily Redis counters), counted in `src/server/airlineGuard.js` and by
+  `src/app/api/metrics/search/route.js`; read by `src/server/admin/usage.js`, shown by `src/components/admin/AdminUsage`.
+- Tests: `e2e/multi-city.spec.js`, `e2e/search-pages.spec.js`, `e2e/usage.spec.js`.
 
 Reviewing a route: read it with the checker's output for it (`--only=<id>`), fix stops / nights / land times /
 airports in its JSON, set `reviewed: true`. Routes may start and end in the same city (a loop, `reversible: false`):

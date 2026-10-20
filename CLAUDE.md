@@ -45,3 +45,6 @@ These apply to every file of the project (except shadcn's `src/components/ui/`).
 ## Design docs
 - `docs/stopovers.md`: flights with a stopover (same-day connection and "escapada") and the route graph. Read it
   before touching the flight search, the destination picker or the trip/fare shape.
+- `docs/multi-city.md`: the "Recorridos" search (routes through several cities, their data, photos and the search
+  pages /es/recorridos…), plus the airline-request budget and the admin's "Uso" page. Its "Map of the code" says
+  which file does what: read it before touching any of these.

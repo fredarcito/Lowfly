@@ -36,7 +36,7 @@ const RoutePage = ({ lang, page }) => {
         {/* The towns on the route's line, in order, with the way by land between them */}
         <ol className="grid">
           {page.towns.map((town, index) => (
-            <RouteTown key={town.key} lang={lang} town={town} number={index + 1} versionCount={page.versions.length} />
+            <RouteTown key={town.id} lang={lang} town={town} number={index + 1} versionCount={page.versions.length} />
           ))}
         </ol>
       </section>

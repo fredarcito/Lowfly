@@ -50,6 +50,7 @@ const es = {
   guideLink: {
     title: (city, name) => `${city} forma parte del recorrido ${name}`,
     text: (towns, min, max) => `${towns}, en un mismo viaje de ${min} a ${max} días.`,
+    action: "Ver el recorrido",
   },
 };
 
@@ -99,6 +100,7 @@ const en = {
   guideLink: {
     title: (city, name) => `${city} is part of the ${name} route`,
     text: (towns, min, max) => `${towns}, in one trip of ${min} to ${max} days.`,
+    action: "See the route",
   },
 };
 

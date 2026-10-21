@@ -242,5 +242,263 @@
         }
       ]
     }
+  },
+  "napoles-y-costa-amalfitana": {
+    "reviewed": false,
+    "writtenAt": "2026-10-21",
+    "slugs": {
+      "es": "napoles-y-costa-amalfitana",
+      "en": "naples-and-the-amalfi-coast"
+    },
+    "photos": {
+      "Naples": {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Vesuvio_e_nave_a_Napoli.jpg/1280px-Vesuvio_e_nave_a_Napoli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "width": 1280,
+        "height": 853,
+        "page": "https://commons.wikimedia.org/wiki/File:Vesuvio_e_nave_a_Napoli.jpg",
+        "author": "PaestumPaestum",
+        "license": "CC BY-SA 4.0"
+      },
+      "Pompeii": {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Forum_%28Pompeii%29_and_the_Vesuvio.jpg/1280px-Forum_%28Pompeii%29_and_the_Vesuvio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "width": 1280,
+        "height": 845,
+        "page": "https://commons.wikimedia.org/wiki/File:Forum_(Pompeii)_and_the_Vesuvio.jpg",
+        "author": "Commonists",
+        "license": "CC BY-SA 4.0"
+      },
+      "Sorrento": {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Sorrento_Vallone_dei_Mulini.jpg/1280px-Sorrento_Vallone_dei_Mulini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "width": 1280,
+        "height": 1920,
+        "page": "https://commons.wikimedia.org/wiki/File:Sorrento_Vallone_dei_Mulini.jpg",
+        "author": "KaiBorgeest",
+        "license": "CC BY-SA 4.0"
+      },
+      "Capri": {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/FaraglioniCapri.jpg/1280px-FaraglioniCapri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "width": 1280,
+        "height": 960,
+        "page": "https://commons.wikimedia.org/wiki/File:FaraglioniCapri.jpg",
+        "author": "Владимир Шеляпин",
+        "license": "CC BY-SA 3.0"
+      },
+      "Positano": {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Positano_panorama.jpg/1280px-Positano_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "width": 1280,
+        "height": 720,
+        "page": "https://commons.wikimedia.org/wiki/File:Positano_panorama.jpg",
+        "author": "Nicola Cerroni",
+        "license": "CC BY-SA 4.0"
+      },
+      "Amalfi": {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Amalfi_-_7450.jpg/1280px-Amalfi_-_7450.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "width": 1280,
+        "height": 853,
+        "page": "https://commons.wikimedia.org/wiki/File:Amalfi_-_7450.jpg",
+        "author": "Jorge Royan",
+        "license": "CC BY-SA 3.0"
+      },
+      "Salerno": {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Lungomare_Clemente_Tafuri_%28Salerno%29.jpg/1280px-Lungomare_Clemente_Tafuri_%28Salerno%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "width": 1280,
+        "height": 793,
+        "page": "https://commons.wikimedia.org/wiki/File:Lungomare_Clemente_Tafuri_(Salerno).jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC BY 4.0"
+      }
+    },
+    "es": {
+      "title": "Ruta por Nápoles y la Costa Amalfitana",
+      "metaTitle": "Ruta por Nápoles y la Costa Amalfitana: Pompeya, Sorrento y Positano, de 6 a 14 días · Lowfly",
+      "summary": "Entras por Nápoles, ves Pompeya de paso y te quedas unos días entre Sorrento, Capri y los pueblos colgados sobre el mar. Vuelves desde el mismo aeropuerto, así que el coche sobra: trenes y ferris lo llevan todo.",
+      "why": [
+        "Nápoles, Pompeya entera bajo la ceniza y una costa que se ve mejor desde el agua que desde la carretera. Todo a menos de dos horas en tren o en barco.",
+        "El orden importa. Nápoles primero, con la cabeza fresca para el museo y la pizza, y la costa después, para bajar el ritmo. Y Pompeya cae de paso: es la misma línea de tren que va a Sorrento, te bajas, la recorres y sigues.",
+        "Lo que suele fallar es el coche. La carretera de la costa es estrecha, aparcar cuesta caro y en verano hay restricciones. Con tren y ferri se hace todo, y se disfruta más."
+      ],
+      "towns": {
+        "Naples": {
+          "text": "Caótica, ruidosa y la favorita de mucha gente cuando vuelve a casa. Dos noches, y no solo por la pizza: el centro histórico es Patrimonio de la Humanidad y se recorre a pie, aunque las aceras sean estrechas y el suelo irregular.",
+          "see": [
+            "Spaccanapoli, la calle recta que parte en dos el centro antiguo",
+            "La capilla Sansevero y el Cristo velado, con entrada reservada",
+            "El Museo Arqueológico, con lo mejor que salió de Pompeya y Herculano",
+            "El metro de Toledo, de las estaciones más bonitas de Europa"
+          ],
+          "tip": "La pizza aquí es margarita o marinara, y poco más. Las pizzerías clásicas tienen cola, pero avanza rápido. En la estación y en el autobús, la mochila delante."
+        },
+        "Pompeii": {
+          "text": "Se ve de paso: te bajas en Pompeii Scavi, recorres las ruinas y sigues en el mismo tren hacia Sorrento. Tres o cuatro horas, más si subes al Vesubio. En verano no hay sombra en casi ninguna parte.",
+          "see": [
+            "El Foro, con el Vesubio al fondo",
+            "La Casa del Fauno y la Casa de los Vettii, con frescos que aún se leen",
+            "El anfiteatro, más antiguo que el Coliseo"
+          ],
+          "tip": "Compra la entrada en la web oficial y elige puerta: la de Porta Marina es la más cómoda desde el tren, y también la más llena. Los lunes hay menos gente porque muchos museos de Nápoles cierran."
+        },
+        "Sorrento": {
+          "text": "Sorrento está en lo alto de un acantilado, y eso lo cambia todo: no hay playa en el centro, sino un puerto abajo, al que se baja por escaleras o por un ascensor. Desde aquí salen los ferris a Capri y a Positano y el tren a Pompeya.",
+          "see": [
+            "El Vallone dei Mulini, un barranco con un molino abandonado, desde un mirador en pleno centro",
+            "El centro histórico y sus talleres de marquetería, que aquí llaman intarsio",
+            "Marina Grande, el pueblo de pescadores, para cenar mirando la bahía"
+          ],
+          "tip": "El limoncello se hace con los limones de aquí. Si vas en temporada, prueba también la delizia al limone, un pastel que no aguanta el viaje de vuelta."
+        },
+        "Capri": {
+          "text": "Capri es caro y está lleno, y aun así merece medio día. El ferri desde Sorrento tarda unos 20 minutos. La isla tiene dos pueblos: Capri, arriba, con la Piazzetta y las tiendas, y Anacapri, más tranquilo y más alto.",
+          "see": [
+            "Los Faraglioni, los tres peñascos, desde el barco o desde la Via Tragara",
+            "La Gruta Azul, si el mar está bueno: se entra en barca y solo con marea baja",
+            "El silla del Monte Solaro, en Anacapri: unos 12 minutos y la mejor vista de la isla"
+          ],
+          "tip": "Ve en el primer ferri y vuelve a media tarde. Entre las once y las cuatro llegan las excursiones y la Piazzetta se llena. Y come en Anacapri, que es más barato."
+        },
+        "Positano": {
+          "text": "Positano es casas de colores en cascada hasta el mar. Es bonito y es caro, y en verano está a tope. Duerme aquí una noche y verás el pueblo casi vacío a primera hora y al atardecer, cuando se van los autobuses.",
+          "see": [
+            "La iglesia de Santa Maria Assunta y su cúpula de mayólica",
+            "La playa grande, y la de Fornillo, un poco más tranquila",
+            "El sendero de los Dioses, de Nocelle a Positano entre acantilados: unas dos horas, cuesta abajo"
+          ],
+          "tip": "Los autobuses de la costa van llenos y con retraso. Entre los pueblos, el ferri es más rápido y, de paso, la mejor forma de ver la costa desde el agua."
+        },
+        "Amalfi": {
+          "text": "Amalfi fue una república marinera que competía con Venecia y Génova, y su catedral lo recuerda. Hoy es un pueblo de una sola calle que sube desde el puerto, con la plaza del Duomo en medio.",
+          "see": [
+            "La catedral de San Andrés y su escalinata, con el claustro del Paraíso al lado",
+            "Ravello, a unos 25 minutos en autobús: Villa Cimbrone y Villa Rufolo, con vistas a toda la costa",
+            "El valle de los Molinos, la excursión corta que sale del mismo pueblo"
+          ],
+          "tip": "El limoncello se vende en todas partes, pero el limón bueno es el sfusato de la costa de Amalfi, con su etiqueta IGP. Compra en una tienda de productores, no en un puesto de souvenirs."
+        },
+        "Salerno": {
+          "text": "La ciudad grande de la costa, y por eso mucha gente la salta. Tiene un paseo marítimo largo y llano, una catedral románica con la tumba de un papa y un centro que se recorre en una tarde.",
+          "see": [
+            "El lungomare Trieste, con los jardines de la Villa Comunale",
+            "La catedral de San Mateo y su patio árabe-normando",
+            "La costa hasta Paestum, si te sobra medio día: tres templos griegos en mitad del campo"
+          ],
+          "tip": "Si vuelves a Nápoles en tren, el regional tarda más de dos horas y el rápido apenas una. Compra el rápido con antelación y no tendrás que salir con prisa."
+        }
+      },
+      "gettingAround": "Tren y ferri. Nápoles, Pompeya y Sorrento están en la línea Circumvesuviana, barata y llena: vigila la mochila. Para la costa, los ferris entre Sorrento, Positano, Amalfi y Salerno son lo más rápido, pero funcionan sobre todo de abril a octubre; fuera de temporada toca el autobús SITA, que va lleno y con retrasos. En Nápoles, el metro y el funicular llegan a casi todo el centro. El coche es un estorbo: aparcar en la costa es caro y en verano casi imposible.",
+      "bestTime": "Mayo, junio, septiembre y principios de octubre: el mar está bueno para los ferris y no hace el calor de agosto. Julio y agosto son los meses más caros y más llenos, y en agosto muchos restaurantes cierran unos días. En abril y en octubre los ferris pueden suspenderse si hay mar de fondo: ten un plan B con autobús. En invierno la costa está tranquila y barata, pero muchos hoteles y barcos cierran.",
+      "faq": [
+        {
+          "question": "¿Cuántos días hacen falta para Nápoles y la Costa Amalfitana?",
+          "answer": "Con 5 o 6 días ves Nápoles, Pompeya y Sorrento. Con 8 a 10 añades Positano y Amalfi; con 11 a 13 entran también Capri y Salerno."
+        },
+        {
+          "question": "¿Hace falta coche para la Costa Amalfitana?",
+          "answer": "No, y mejor sin él: las carreteras son estrechas, aparcar es caro y en verano hay restricciones. Con trenes, ferris y algún autobús se hace todo."
+        },
+        {
+          "question": "¿Se puede hacer la ruta al revés?",
+          "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por la costa, verás Pompeya el último día, camino del aeropuerto."
+        },
+        {
+          "question": "¿A qué aeropuerto se vuela?",
+          "answer": "A Nápoles (Capodichino, NAP), y se vuelve desde el mismo. Del aeropuerto al centro hay un autobús lanzadera y el metro, que llega a la estación central."
+        }
+      ]
+    },
+    "en": {
+      "title": "Naples and the Amalfi Coast itinerary",
+      "metaTitle": "Naples and the Amalfi Coast: Pompeii, Sorrento and Positano in 6 to 14 days · Lowfly",
+      "summary": "You fly into Naples, see Pompeii on the way and spend a few days between Sorrento, Capri and the villages stacked above the sea. You fly home from the same airport, so a car is pointless: trains and ferries do the work.",
+      "why": [
+        "Naples, Pompeii under the ash and a coastline that looks better from the water than from the road. All of it less than two hours apart by train or boat.",
+        "The order matters. Naples first, while you still have the energy for the museum and the pizza, then the coast to slow down. And Pompeii falls on the way: it's the same train line to Sorrento, so you get off, walk it and carry on.",
+        "What usually goes wrong is the car. The coast road is narrow, parking is expensive and in summer there are restrictions. Train and ferry cover it all, and it's more fun."
+      ],
+      "towns": {
+        "Naples": {
+          "text": "Chaotic, loud and a lot of people's favourite when they get home. Two nights, and not just for the pizza: the historic centre is a World Heritage site and best on foot, though the pavements are narrow and the ground uneven.",
+          "see": [
+            "Spaccanapoli, the straight street that splits the old town in two",
+            "The Sansevero Chapel and the Veiled Christ, with a booked ticket",
+            "The Archaeological Museum, with the best of what came out of Pompeii and Herculaneum",
+            "Toledo metro station, one of the most beautiful in Europe"
+          ],
+          "tip": "Pizza here is margherita or marinara, and not much else. The old pizzerias have a queue, but it moves fast. At the station and on the bus, keep your bag in front."
+        },
+        "Pompeii": {
+          "text": "You see it on the way: get off at Pompeii Scavi, walk the ruins and carry on on the same train to Sorrento. Three or four hours, more if you climb Vesuvius. In summer there's almost no shade anywhere.",
+          "see": [
+            "The Forum, with Vesuvius behind it",
+            "The House of the Faun and the House of the Vettii, with frescoes you can still read",
+            "The amphitheatre, older than the Colosseum"
+          ],
+          "tip": "Buy your ticket on the official website and pick your gate: Porta Marina is easiest from the train, and also the busiest. Mondays are quieter because many Naples museums close."
+        },
+        "Sorrento": {
+          "text": "Sorrento sits on top of a cliff, and that changes everything: no beach in the centre, just a harbour below, reached by stairs or a lift. The ferries to Capri and Positano leave from here, and so does the train to Pompeii.",
+          "see": [
+            "The Vallone dei Mulini, a gorge with an abandoned mill, from a viewpoint in the middle of town",
+            "The old town and its inlay workshops, known here as intarsio",
+            "Marina Grande, the fishing village, for dinner over the bay"
+          ],
+          "tip": "Limoncello is made with the lemons from here. In season, try a delizia al limone too: a cake that won't survive the trip home."
+        },
+        "Capri": {
+          "text": "Capri is expensive and crowded, and still worth half a day. The ferry from Sorrento takes about 20 minutes. The island has two towns: Capri, up top, with the Piazzetta and the shops, and Anacapri, quieter and higher.",
+          "see": [
+            "The Faraglioni, the three sea stacks, from the boat or from Via Tragara",
+            "The Blue Grotto, if the sea is calm: you go in by boat, only at low tide",
+            "The Monte Solaro chairlift in Anacapri: about 12 minutes and the best view on the island"
+          ],
+          "tip": "Take the first ferry and go back mid-afternoon. Between eleven and four the day trips arrive and the Piazzetta fills up. And eat in Anacapri, which is cheaper."
+        },
+        "Positano": {
+          "text": "Positano is coloured houses tumbling down to the sea. It's beautiful and it's expensive, and in summer it's packed. Stay a night and you'll see the village almost empty early in the morning and at sunset, once the coaches leave.",
+          "see": [
+            "The church of Santa Maria Assunta and its majolica dome",
+            "The main beach, and Fornillo, a little quieter",
+            "The Path of the Gods, from Nocelle down to Positano between cliffs: about two hours, downhill"
+          ],
+          "tip": "The coast buses are packed and late. Between villages the ferry is faster and, on the way, the best way to see the coast from the water."
+        },
+        "Amalfi": {
+          "text": "Amalfi was a maritime republic that rivalled Venice and Genoa, and its cathedral still says so. Today it's a village with one main street climbing from the harbour, with the cathedral square halfway.",
+          "see": [
+            "The cathedral of St Andrew and its staircase, with the Cloister of Paradise next door",
+            "Ravello, about 25 minutes by bus: Villa Cimbrone and Villa Rufolo, with views over the whole coast",
+            "The Valley of the Mills, the short walk that starts in the village itself"
+          ],
+          "tip": "Limoncello is sold everywhere, but the good lemon is the sfusato from the Amalfi Coast, with its PGI label. Buy from a producer's shop, not a souvenir stand."
+        },
+        "Salerno": {
+          "text": "The big city on the coast, which is why many people skip it. It has a long, flat seafront, a Romanesque cathedral with a pope's tomb and a centre you can walk in an afternoon.",
+          "see": [
+            "The Lungomare Trieste, with the gardens of the Villa Comunale",
+            "The cathedral of St Matthew and its Arab-Norman courtyard",
+            "The coast down to Paestum, if you have half a day spare: three Greek temples in the middle of the fields"
+          ],
+          "tip": "If you go back to Naples by train, the regional takes over two hours and the fast one barely one. Book the fast one ahead and you won't have to leave in a rush."
+        }
+      },
+      "gettingAround": "Train and ferry. Naples, Pompeii and Sorrento are on the Circumvesuviana line, cheap and crowded: watch your bag. Along the coast, the ferries between Sorrento, Positano, Amalfi and Salerno are the fastest, but they mostly run from April to October; off season it's the SITA bus, packed and late. In Naples, the metro and the funicular reach most of the centre. A car is a nuisance: parking on the coast is expensive and in summer nearly impossible.",
+      "bestTime": "May, June, September and early October: the sea is fine for the ferries and it isn't as hot as August. July and August are the most expensive and busiest months, and in August many restaurants close for a few days. In April and October ferries can be cancelled in rough weather: have a bus plan B. In winter the coast is quiet and cheap, but many hotels and boats close.",
+      "faq": [
+        {
+          "question": "How many days do you need for Naples and the Amalfi Coast?",
+          "answer": "5 or 6 days covers Naples, Pompeii and Sorrento. With 8 to 10 you add Positano and Amalfi; with 11 to 13 you also fit Capri and Salerno."
+        },
+        {
+          "question": "Do you need a car on the Amalfi Coast?",
+          "answer": "No, and better without one: the roads are narrow, parking is expensive and in summer there are restrictions. Trains, ferries and the odd bus cover it all."
+        },
+        {
+          "question": "Can the route be done the other way round?",
+          "answer": "Yes: it works both ways. If you start on the coast, you'll see Pompeii on the last day, on the way to the airport."
+        },
+        {
+          "question": "Which airport do you fly to?",
+          "answer": "Naples (Capodichino, NAP), and you fly home from the same one. From the airport to the centre there's a shuttle bus and the metro, which reaches the main station."
+        }
+      ]
+    }
   }
 }

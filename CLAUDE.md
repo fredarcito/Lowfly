@@ -42,6 +42,32 @@ These apply to every file of the project (except shadcn's `src/components/ui/`).
   and delete it (`e2e/helpers/accounts.js`; needs the Supabase secret key in `.env.local`).
 - A change to a flow comes with its test, or an update to the existing one.
 
+## Written copy
+Every text a reader sees (route pages, guides, experiences, UI strings) is written in Spanish and English and must
+read like a person wrote it, not like a model. The reference is the copy already in `src/data/multiCityPages.json`
+(`italia-clasica`): short sentences, tuteo, one concrete tip per place, and an opinion where it is useful.
+
+- Keep the shape of the file it goes in (fields, length, number of `see` bullets, `faq` entries): a new route page
+  follows `italia-clasica` exactly.
+- Vary the shape between places: if one city has 5 bullets and another 3, that is right. The same template for every
+  place is what gives it away.
+- No formulaic closers ("es la parada más corta", "merece medio día", "con una noche basta") and no tourist-brochure
+  phrases ("la postal de la costa", "sumérgete en", "el corazón de", "no te lo puedes perder").
+- Concrete over general: minutes, prices, which gate, which month, which line. "El rápido tarda poco más de una
+  hora" beats "el tren es rápido".
+- Tips have character and are not all the same kind of advice ("come en Anacapri, que es más barato", "la mochila
+  delante", "compra en una tienda de productores, no en un puesto de souvenirs").
+- Never invent a fact to fill a line. If a detail (a closing day, a duration) has not been checked against a source,
+  write it only if it is well established, and leave the page with `"reviewed": false` until someone confirms it.
+- Every fact belongs to one town and only to that town. A landmark, a dish, a station or a museum of Pompeii never
+  appears in the text of Naples, and the other way round. Before writing a town's text, check which town the fact is
+  about, not which town is nearby.
+- A list of towns must not read as a description of the first one. "Nápoles, una ciudad romana entera bajo la ceniza y
+  una costa..." makes Naples the buried town; it was Pompeii. Name each thing and give it its own words: "Nápoles,
+  Pompeya entera bajo la ceniza y una costa que...". Read every list aloud and ask, for each item, what it describes.
+- The same care with pronouns and possessives ("aquí", "su catedral", "en la isla"): they must point to the town of
+  that paragraph, never to the one mentioned before.
+
 ## Design docs
 - `docs/stopovers.md`: flights with a stopover (same-day connection and "escapada") and the route graph. Read it
   before touching the flight search, the destination picker or the trip/fare shape.

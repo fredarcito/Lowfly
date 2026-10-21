@@ -27,11 +27,13 @@ const versionsOf = (route, lang) =>
     };
   });
 
-// Every town of the route once, in the order of its longest version, with its text, its photo (chosen by hand, or
-// null), its guide (or null), its nights in the recommended version (else the first it is in), the versions it is in,
-// and the way by land to the next town in that order (or null for the last): [{ key, city, countryCode, lat, lng,
-// nights, versions, photo, guide, land: { minutes, by, to }, text, see, tip }] (`words`: each town's text and
-// `photos` each town's photo, by its English name)
+// Every stop of the route in the order of its longest version, with its text, its photo (chosen by hand, or null),
+// its guide (or null), its nights in the recommended version (else the first it is in), the versions it is in, and the
+// way by land to the next town in that order (or null for the last): [{ id, key, city, countryCode, lat, lng, nights,
+// versions, photo, guide, land: { minutes, by, to }, text, see, tip }] (`words`: each town's text and `photos` each
+// town's photo, by its English name). A route that comes back to where it started (Nápoles → … → Nápoles) has that
+// town twice, so `key` (the town's name, which its text is found by) is not unique: the page keys its towns by their
+// place on the line.
 const townsOf = (route, versions, words, photos, lang) => {
   const longest = route.versions[versions.at(-1).version].stops;
   return longest.map((stop, index) => {
@@ -39,6 +41,7 @@ const townsOf = (route, versions, words, photos, lang) => {
     const inVersions = versions.filter((version) => version.towns.some((town) => town.key === key));
     const guide = stop.guide ? cityGuideById(stop.guide, lang) : null;
     return {
+      id: `${key}-${index}`,
       key,
       city: stop.city[lang],
       countryCode: stop.countryCode,

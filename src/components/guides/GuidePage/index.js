@@ -11,9 +11,10 @@ import { cn } from "@/utils/cn";
 import { ROUTES } from "@/constants/routes";
 
 // A city guide's body (/es/guias/roma-3-dias; the photo header is GuideHero), rendered on the server for search
-// engines: what to know, the days' links, then the days, each one ending with a question only the reader's own itinerary answers,
-// then what people ask about the city, the multi-city routes the city is in (a quiet link each), and at the end what
-// that itinerary brings. Every coloured way out goes to the planner with the city already chosen.
+// engines: what to know, the multi-city routes the city is in (a quiet link each, so the reader knows where this guide
+// fits before the days), the days' links, then the days, each one ending with a question only the reader's own
+// itinerary answers, then what people ask about the city, and at the end what that itinerary brings. Every coloured
+// way out goes to the planner with the city already chosen.
 // `guide`: server/cityGuides getCityGuide; `faq`: utils/guideFaq; `routes`: server/multiCity/pages routePagesWithGuide.
 const GuidePage = ({ lang, guide, faq, routes = [] }) => {
   const allTexts = guideTexts(lang);
@@ -33,6 +34,15 @@ const GuidePage = ({ lang, guide, faq, routes = [] }) => {
   return (
     <article className="grid gap-10">
       <GuideIntro lang={lang} city={guide.city} intro={guide.intro} />
+      {/* The routes the city is in, right after what to know: the reader knows where this guide fits before the days.
+          A note, so it sits closer to the cards above than to the days below */}
+      {routes.length > 0 && (
+        <div className="-mt-4 grid gap-3">
+          {routes.map((route) => (
+            <RouteLink key={route.id} lang={lang} city={guide.city} route={route} />
+          ))}
+        </div>
+      )}
       {/* After the four cards of what to know */}
       <div className={cn("grid gap-10", ENTER_RISE)} style={riseDelay(4)}>
         <GuideDayNav
@@ -49,9 +59,6 @@ const GuidePage = ({ lang, guide, faq, routes = [] }) => {
         })}
       </div>
       <GuideFaq lang={lang} city={guide.city} faq={faq} />
-      {routes.map((route) => (
-        <RouteLink key={route.id} lang={lang} city={guide.city} route={route} />
-      ))}
       <TailorCard lang={lang} city={guide.city} href={href} guide={guide.id} />
     </article>
   );

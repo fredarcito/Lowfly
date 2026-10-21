@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "fiordos-de-noruega",
+    "en": "norwegian-fjords"
+  },
+  "photos": {
+    "Oslo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/View_from_siloen.jpg/960px-View_from_siloen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:View_from_siloen.jpg",
+      "author": "Sean Hayford O'Leary",
+      "license": "CC BY 2.0"
+    },
+    "Flåm": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Flam.jpg/960px-Flam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Flam.jpg",
+      "author": "The original uploader was Palmiped at English Wikipedia.",
+      "license": "CC BY-SA 3.0"
+    },
+    "Bergen": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Bryggen%2C_2019_%2801%29.jpg/960px-Bryggen%2C_2019_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 547,
+      "page": "https://commons.wikimedia.org/wiki/File:Bryggen,_2019_(01).jpg",
+      "author": "Bahnfrend",
+      "license": "CC BY-SA 4.0"
+    },
+    "Stavanger (Preikestolen)": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Preikestolen_Norge.jpg/960px-Preikestolen_Norge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1120,
+      "page": "https://commons.wikimedia.org/wiki/File:Preikestolen_Norge.jpg",
+      "author": "Stefan Krause, Germany",
+      "license": "CC BY-SA 3.0"
+    },
+    "Balestrand (Sognefjord)": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Balestrand%2C_in_the_Sognefjord%2C_Norway.jpg/960px-Balestrand%2C_in_the_Sognefjord%2C_Norway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Balestrand,_in_the_Sognefjord,_Norway.jpg",
+      "author": "Tastocke",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Fiordos de Noruega: Oslo, Flåm, Bergen y el Preikestolen",
+    "metaTitle": "Ruta por los fiordos de Noruega: Oslo, Flåm, Bergen y Preikestolen, de 5 a 11 días · Lowfly",
+    "summary": "Entras por Oslo y sales por Bergen o Stavanger, con el tren de Flåm, el Sognefjord y el Preikestolen en medio. Tren, barco y una caminata que lo justifica todo.",
+    "why": [
+      "Noruega es cara y grande, pero los fiordos están concentrados: en una semana puedes hacer Oslo, el Sognefjord, Bergen y el Preikestolen sin coche, combinando trenes y ferris que funcionan como transporte público.",
+      "La ruta va de este a oeste y no repite camino: entras por Oslo, bajas a Flåm en el tren más bonito del país, cruzas el fiordo en barco y acabas en Bergen o Stavanger, que tienen aeropuerto.",
+      "Lo que suele fallar es el presupuesto y el ritmo. Un menú cuesta 30 euros y una cerveza, 10. Come en supermercados y en puestos, y no intentes ver tres fiordos en cinco días: elige dos."
+    ],
+    "towns": {
+      "Oslo": {
+        "text": "Oslo es una capital pequeña con un fiordo dentro, barrios nuevos junto al agua y museos de barcos vikingos. Dos noches bastan para el centro y el barrio de Grünerløkka.",
+        "see": [
+          "El parque de Vigeland, con sus 200 esculturas",
+          "La ópera, con la azotea por la que se puede caminar",
+          "El museo de barcos vikingos, en Bygdøy",
+          "El barrio de Grünerløkka, con los cafés y las tiendas"
+        ],
+        "tip": "La azotea de la ópera es de mármol blanco y se sube gratis. Ve al atardecer: desde arriba se ve el fiordo y el centro entero."
+      },
+      "Flåm": {
+        "text": "Flåm es un pueblo de 350 habitantes al fondo del Aurlandsfjord, y existe por el tren que sube a Myrdal. El trayecto de 20 kilómetros es uno de los más bonitos del mundo.",
+        "see": [
+          "El tren de Flåm, con parada en la cascada de Kjosfossen",
+          "El mirador de Stegastein, sobre el fiordo",
+          "Un paseo en kayak por el Aurlandsfjord",
+          "El museo del ferrocarril, en el pueblo"
+        ],
+        "tip": "El tren de Flåm se agota en verano: reserva en la web de Vy con semanas de antelación. Siéntate a la izquierda subiendo y a la derecha bajando."
+      },
+      "Balestrand (Sognefjord)": {
+        "text": "Balestrand está en la orilla norte del Sognefjord, con un hotel de madera de 1890 y montañas que caen al agua. Es la parada del barco expreso entre Flåm y Bergen.",
+        "see": [
+          "El hotel Kviknes, con su salón de madera",
+          "La iglesia de San Olaf, de estilo suizo",
+          "El mirador de Tjuveholten, con una hora de subida",
+          "Un paseo en barco por el fiordo"
+        ],
+        "tip": "El barco expreso de Flåm a Bergen para en Balestrand y tarda cinco horas. Es más lento que el autobús, pero el paisaje justifica el día entero."
+      },
+      "Bergen": {
+        "text": "Bergen es la puerta de los fiordos, con el barrio hanseático de Bryggen, el mercado de pescado y el funicular al monte Fløyen. Dos noches dan para el centro y un fiordo cercano.",
+        "see": [
+          "Bryggen, las casas de madera del puerto, Patrimonio de la Humanidad",
+          "El funicular al Fløyen, con la vista a la ciudad",
+          "El mercado de pescado de Torget",
+          "El fiordo de Nærøyfjord, en tour de un día"
+        ],
+        "tip": "Bergen llueve más de 200 días al año. Lleva chubasquero y no te fíes del pronóstico: aquí cambia cada hora. Hay paraguas gratis en muchos hoteles."
+      },
+      "Stavanger (Preikestolen)": {
+        "text": "Stavanger es la capital del petróleo y la base del Preikestolen, la roca que cae 604 metros sobre el Lysefjord. El centro es pequeño y bonito, con casas blancas de madera.",
+        "see": [
+          "El Preikestolen, con la caminata de cuatro horas ida y vuelta",
+          "El barrio antiguo de Gamle Stavanger, con casas blancas",
+          "El museo del petróleo",
+          "El Lysefjord en barco, hasta el Kjerag"
+        ],
+        "tip": "La caminata al Preikestolen son 8 kilómetros ida y vuelta y 500 metros de desnivel, con piedras y escalones. Lleva calzado de montaña y agua: no hay fuentes."
+      }
+    },
+    "gettingAround": "Tren, barco y autobús. Oslo-Flåm son cinco horas y media en tren con cambio en Myrdal; Flåm-Bergen, cinco horas en barco expreso o dos horas y media en autobús; Bergen-Stavanger, cinco horas en autobús o en barco rápido. Los billetes de tren se compran en la app de Vy y los de barco en la web de Norled. En verano conviene reservar todo: los barcos y el tren de Flåm se llenan.",
+    "bestTime": "De junio a septiembre, con días largos y todos los barcos y senderos abiertos. Julio y agosto son los más llenos. En mayo hay menos gente y las cascadas bajan con el deshielo. Fuera de temporada muchos barcos y alojamientos de los fiordos cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Oslo, Flåm y Bergen. Con 7 u 8 añades Balestrand y un fiordo más. Con 11 entran también Stavanger y el Preikestolen."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No. El tren, el barco y el autobús cubren la ruta, y en los fiordos el barco es el mejor transporte."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Bergen o Stavanger y saliendo por Oslo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Oslo (OSL o Torp, TRF) al entrar y a Bergen (BGO) o Stavanger (SVG) al salir."
+      }
+    ]
+  },
+  "en": {
+    "title": "Norwegian fjords: Oslo, Flåm, Bergen and Pulpit Rock",
+    "metaTitle": "Norwegian fjords route: Oslo, Flåm, Bergen and Pulpit Rock in 5 to 11 days · Lowfly",
+    "summary": "Fly into Oslo and out of Bergen or Stavanger, with the Flåm railway, the Sognefjord and Pulpit Rock in between. Train, boat and one hike that justifies the whole trip.",
+    "why": [
+      "Norway is expensive and big, but the fjords are concentrated: in a week you can do Oslo, the Sognefjord, Bergen and Pulpit Rock without a car, combining trains and ferries that run like public transport.",
+      "The route runs east to west and doesn't double back: you land in Oslo, drop to Flåm on the country's prettiest railway, cross the fjord by boat and finish in Bergen or Stavanger, both with airports.",
+      "Where it usually goes wrong is budget and pace. A set menu costs 30 euros and a beer 10. Eat from supermarkets and stalls, and don't try to see three fjords in five days: pick two."
+    ],
+    "towns": {
+      "Oslo": {
+        "text": "Oslo is a small capital with a fjord inside it, new districts by the water and Viking ship museums. Two nights covers the centre and the Grünerløkka district.",
+        "see": [
+          "Vigeland Park, with its 200 sculptures",
+          "The opera house, whose roof you can walk on",
+          "The Viking ship museum, on Bygdøy",
+          "Grünerløkka, with its cafés and shops"
+        ],
+        "tip": "The opera roof is white marble and free to climb. Go at sunset: from the top you see the fjord and the whole centre."
+      },
+      "Flåm": {
+        "text": "Flåm is a village of 350 people at the head of the Aurlandsfjord, and it exists because of the railway up to Myrdal. The 20-kilometre run is one of the most beautiful in the world.",
+        "see": [
+          "The Flåm railway, with a stop at the Kjosfossen waterfall",
+          "The Stegastein viewpoint, above the fjord",
+          "A kayak trip on the Aurlandsfjord",
+          "The railway museum, in the village"
+        ],
+        "tip": "The Flåm railway sells out in summer: book on the Vy website weeks ahead. Sit on the left going up and the right coming down."
+      },
+      "Balestrand (Sognefjord)": {
+        "text": "Balestrand is on the north shore of the Sognefjord, with a wooden hotel from 1890 and mountains dropping into the water. It's a stop on the express boat between Flåm and Bergen.",
+        "see": [
+          "The Kviknes Hotel, with its wooden lounge",
+          "St Olaf's church, in Swiss style",
+          "The Tjuveholten viewpoint, an hour's climb",
+          "A boat trip on the fjord"
+        ],
+        "tip": "The express boat from Flåm to Bergen stops at Balestrand and takes five hours. It's slower than the bus, but the scenery justifies the whole day."
+      },
+      "Bergen": {
+        "text": "Bergen is the gateway to the fjords, with the Hanseatic Bryggen wharf, the fish market and the funicular up Mount Fløyen. Two nights covers the centre and a nearby fjord.",
+        "see": [
+          "Bryggen, the wooden houses on the wharf, a World Heritage Site",
+          "The Fløyen funicular, with the view over the city",
+          "The fish market at Torget",
+          "The Nærøyfjord, on a day tour"
+        ],
+        "tip": "Bergen has rain on more than 200 days a year. Bring a rain jacket and don't trust the forecast: it changes every hour. Many hotels lend umbrellas."
+      },
+      "Stavanger (Preikestolen)": {
+        "text": "Stavanger is the oil capital and the base for Pulpit Rock, the cliff that drops 604 metres into the Lysefjord. The centre is small and pretty, with white wooden houses.",
+        "see": [
+          "Pulpit Rock, a four-hour round-trip hike",
+          "Gamle Stavanger, the old quarter of white houses",
+          "The Norwegian Petroleum Museum",
+          "The Lysefjord by boat, as far as Kjerag"
+        ],
+        "tip": "The hike to Pulpit Rock is 8 kilometres round trip with 500 metres of climb, over rock and steps. Wear hiking boots and carry water: there are no taps."
+      }
+    },
+    "gettingAround": "Train, boat and bus. Oslo-Flåm is five and a half hours by train with a change at Myrdal; Flåm-Bergen, five hours by express boat or two and a half by bus; Bergen-Stavanger, five hours by bus or on the fast ferry. Train tickets are bought in the Vy app and boat tickets on the Norled website. In summer book everything: the boats and the Flåm railway fill up.",
+    "bestTime": "June to September, with long days and all boats and trails open. July and August are the busiest. May has fewer people and the waterfalls are full from the snowmelt. Out of season many fjord boats and lodgings close.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Oslo, Flåm and Bergen. 7 or 8 adds Balestrand and another fjord. 11 also takes in Stavanger and Pulpit Rock."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No. Train, boat and bus cover the route, and in the fjords the boat is the best transport."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Bergen or Stavanger and finish in Oslo."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Oslo (OSL or Torp, TRF) and out of Bergen (BGO) or Stavanger (SVG)."
+      }
+    ]
+  }
+}

@@ -41,6 +41,24 @@ import navidadEnElRin from "./navidad-en-el-rin.json";
 import navidadBerlinDresdePraga from "./navidad-berlin-dresde-praga.json";
 import navidadEnCentroeuropa from "./navidad-en-centroeuropa.json";
 import navidadEnPolonia from "./navidad-en-polonia.json";
+import benelux from "./benelux.json";
+import bavieraYSalzburgo from "./baviera-y-salzburgo.json";
+import berlinDresdePraga from "./berlin-dresde-praga.json";
+import valleDelRin from "./valle-del-rin.json";
+import suiza from "./suiza.json";
+import escocia from "./escocia.json";
+import inglaterraClasica from "./inglaterra-clasica.json";
+import irlanda from "./irlanda.json";
+import escandinavia from "./escandinavia.json";
+import fiordosDeNoruega from "./fiordos-de-noruega.json";
+import norteDeAlemania from "./norte-de-alemania.json";
+import laponiaFinlandesa from "./laponia-finlandesa.json";
+import tromsoYLaponiaNoruega from "./tromso-y-laponia-noruega.json";
+import selvaNegra from "./selva-negra.json";
+import irlandaDelNorte from "./irlanda-del-norte.json";
+import gales from "./gales.json";
+import cornualles from "./cornualles.json";
+import islandia from "./islandia.json";
 import navidadEnElBaltico from "./navidad-en-el-baltico.json";
 
 const pages = {
@@ -82,6 +100,24 @@ const pages = {
   "navidad-en-centroeuropa": navidadEnCentroeuropa,
   "navidad-en-polonia": navidadEnPolonia,
   "navidad-en-el-baltico": navidadEnElBaltico,
+  "benelux": benelux,
+  "baviera-y-salzburgo": bavieraYSalzburgo,
+  "berlin-dresde-praga": berlinDresdePraga,
+  "valle-del-rin": valleDelRin,
+  "suiza": suiza,
+  "escocia": escocia,
+  "inglaterra-clasica": inglaterraClasica,
+  "irlanda": irlanda,
+  "escandinavia": escandinavia,
+  "fiordos-de-noruega": fiordosDeNoruega,
+  "norte-de-alemania": norteDeAlemania,
+  "laponia-finlandesa": laponiaFinlandesa,
+  "tromso-y-laponia-noruega": tromsoYLaponiaNoruega,
+  "selva-negra": selvaNegra,
+  "irlanda-del-norte": irlandaDelNorte,
+  "gales": gales,
+  "cornualles": cornualles,
+  "islandia": islandia,
 };
 
 export default pages;

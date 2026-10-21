@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "norte-de-alemania",
+    "en": "northern-germany"
+  },
+  "photos": {
+    "Hamburg": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Hamburg_view_St._Nikolai.jpg/960px-Hamburg_view_St._Nikolai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 529,
+      "page": "https://commons.wikimedia.org/wiki/File:Hamburg_view_St._Nikolai.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0"
+    },
+    "Lübeck": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Holstentor_in_L%C3%BCbeck_Frontseite_-_Zuschnitt.jpg/960px-Holstentor_in_L%C3%BCbeck_Frontseite_-_Zuschnitt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 845,
+      "page": "https://commons.wikimedia.org/wiki/File:Holstentor_in_L%C3%BCbeck_Frontseite_-_Zuschnitt.jpg",
+      "author": "Christian Wolf (www.c-w-design.de)",
+      "license": "CC BY-SA 3.0 de"
+    },
+    "Berlin": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Berlin_Mitte_June_2023_01.jpg/960px-Berlin_Mitte_June_2023_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 500,
+      "page": "https://commons.wikimedia.org/wiki/File:Berlin_Mitte_June_2023_01.jpg",
+      "author": "ArildV",
+      "license": "CC BY-SA 4.0"
+    },
+    "Bremen": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Bremen-rathaus-dom-buergerschaft.jpg/960px-Bremen-rathaus-dom-buergerschaft.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 502,
+      "page": "https://commons.wikimedia.org/wiki/File:Bremen-rathaus-dom-buergerschaft.jpg",
+      "author": "Klaus Grünberg",
+      "license": "CC BY-SA 3.0"
+    },
+    "Schwerin": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/2019_-_Schweriner_Schloss_-_1.jpg/960px-2019_-_Schweriner_Schloss_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 488,
+      "page": "https://commons.wikimedia.org/wiki/File:2019_-_Schweriner_Schloss_-_1.jpg",
+      "author": "Moahim",
+      "license": "CC BY-SA 4.0"
+    },
+    "Rostock (Warnemünde)": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Der_Alte_Strom_in_Warnem%C3%BCnde.jpg/960px-Der_Alte_Strom_in_Warnem%C3%BCnde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Der_Alte_Strom_in_Warnem%C3%BCnde.jpg",
+      "author": "Jonas Rogowski",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Norte de Alemania: Hamburgo, Lübeck y Berlín",
+    "metaTitle": "Ruta por el norte de Alemania: Hamburgo, Lübeck y Berlín, de 4 a 11 días · Lowfly",
+    "summary": "Entras por Hamburgo y sales por Berlín, con Lübeck, Schwerin y la costa del Báltico en medio. Trenes regionales rápidos y ciudades de ladrillo.",
+    "why": [
+      "El norte de Alemania es la parte que casi nadie hace, y es de las más cómodas: Hamburgo, Lübeck, Schwerin y Berlín están en línea y el tren los une en menos de dos horas por tramo.",
+      "Es una ruta de ciudades hanseáticas: ladrillo rojo, puertos, canales y un aire más tranquilo que el sur. Lübeck y Schwerin se ven en un día cada una y son la pausa entre las dos grandes.",
+      "Lo que suele fallar es el tiempo. Aquí llueve y hace viento casi todo el año, y en invierno anochece a las cuatro. Lleva chaqueta impermeable y aprovecha las horas de luz para lo de fuera."
+    ],
+    "towns": {
+      "Bremen": {
+        "text": "Bremen es una ciudad hanseática con un centro pequeño y una estatua de los músicos de la fábula en el ayuntamiento. Se ve en un día y el aeropuerto está a diez minutos en tranvía.",
+        "see": [
+          "La estatua de los músicos de Bremen, junto al ayuntamiento",
+          "El barrio de Schnoor, con las casas más antiguas",
+          "La catedral y la plaza del mercado",
+          "El puerto antiguo de Vegesack, en el Weser"
+        ],
+        "tip": "En el barrio de Schnoor las calles son tan estrechas que no pasan coches. Es pequeño y se ve en media hora, pero es la parte más bonita de la ciudad."
+      },
+      "Hamburg": {
+        "text": "Hamburgo es la segunda ciudad de Alemania y la más rica, con el puerto más grande del país y el barrio de la Speicherstadt, de almacenes de ladrillo sobre canales. Dos noches dan para el puerto y el centro.",
+        "see": [
+          "La Speicherstadt y la Elbphilharmonie, con la plaza pública gratis",
+          "El puerto, en barco, con los grandes cargueros",
+          "La Reeperbahn, en el barrio de St Pauli",
+          "El mercado de pescado, los domingos por la mañana"
+        ],
+        "tip": "La plaza de la Elbphilharmonie es gratis, pero hay que reservar entrada por internet. Se sube en un ascensor curvo y desde arriba se ve el puerto entero."
+      },
+      "Lübeck": {
+        "text": "Lübeck es la capital de la Liga Hanseática y su casco antiguo es Patrimonio de la Humanidad, en una isla entre dos ríos. Se ve en un día, y el tren desde Hamburgo tarda 45 minutos.",
+        "see": [
+          "La puerta de Holstentor, el símbolo de la ciudad",
+          "El ayuntamiento y la plaza del mercado",
+          "La iglesia de Santa María, con el reloj astronómico",
+          "La casa de los Buddenbrook, de Thomas Mann"
+        ],
+        "tip": "El mazapán es de aquí: Niederegger lo hace desde 1806 y tiene una tienda con un café en el centro. Prueba el original, sin chocolate."
+      },
+      "Schwerin": {
+        "text": "Schwerin tiene un castillo de cuento sobre una isla en el lago, con torres y cúpulas doradas. Es pequeño y se ve en medio día, pero el castillo y el parque merecen la parada.",
+        "see": [
+          "El castillo, con el museo y los jardines",
+          "El lago de Schwerin, con el paseo de la orilla",
+          "La catedral, la más antigua del norte de Alemania",
+          "El teatro, en la plaza del mercado"
+        ],
+        "tip": "El castillo abre de martes a domingo y el parque es gratis. Ve por la mañana y come en el centro: hay pocos sitios abiertos fuera de temporada."
+      },
+      "Rostock (Warnemünde)": {
+        "text": "Rostock es una ciudad universitaria con un centro de ladrillo y un puerto pesquero, y Warnemünde es su playa, a 15 minutos en tren. Es la puerta del Báltico.",
+        "see": [
+          "El Alte Strom de Warnemünde, con las casas de pescadores",
+          "La playa de Warnemünde, con el faro",
+          "El centro de Rostock y la iglesia de Santa María",
+          "El barrio de Kröpeliner-Tor-Vorstadt, con los cafés"
+        ],
+        "tip": "El tren de Rostock a Warnemünde sale cada 15 minutos y tarda 20. En verano la playa se llena: ve por la mañana o al atardecer."
+      },
+      "Berlin": {
+        "text": "Berlín es la última parada y la más grande. Tres noches dan para el centro histórico, Kreuzberg y un museo de la isla, y aún queda barrio por ver.",
+        "see": [
+          "La Puerta de Brandeburgo y el Reichstag",
+          "El East Side Gallery, con el Muro pintado",
+          "La isla de los Museos",
+          "El barrio de Kreuzberg, para comer y salir"
+        ],
+        "tip": "El billete de día de Berlín vale para metro, tranvía y autobús hasta las tres de la mañana. Compra el de zona AB: el aeropuerto está en la C."
+      }
+    },
+    "gettingAround": "Tren. Bremen-Hamburgo, una hora; Hamburgo-Lübeck, 45 minutos; Lübeck-Schwerin, una hora con cambio; Schwerin-Rostock, una hora y media; Rostock-Berlín, dos horas. Los trenes regionales son frecuentes y el billete de fin de semana de DB vale para varios viajeros. En Hamburgo y Berlín el transporte se paga con tarjeta sin contacto o con billete de día.",
+    "bestTime": "De mayo a septiembre, con días largos y terrazas junto al agua. Julio y agosto son los mejores para la costa del Báltico. En diciembre los mercadillos de Hamburgo, Lübeck y Berlín son de los más bonitos del país, aunque hace frío y anochece pronto.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 o 5 días ves Hamburgo y Berlín. Con 7 u 8 añades Lübeck y Schwerin. Con 11 entran también Bremen y la costa del Báltico."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No. Todo está en tren y las ciudades se recorren a pie o en transporte público."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Berlín y saliendo por Hamburgo o Bremen."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Bremen (BRE) o Hamburgo (HAM) al entrar y a Berlín (BER) al salir."
+      }
+    ]
+  },
+  "en": {
+    "title": "Northern Germany: Hamburg, Lübeck and Berlin",
+    "metaTitle": "Northern Germany route: Hamburg, Lübeck and Berlin in 4 to 11 days · Lowfly",
+    "summary": "Fly into Hamburg and out of Berlin, with Lübeck, Schwerin and the Baltic coast in between. Fast regional trains and brick-built cities.",
+    "why": [
+      "Northern Germany is the part almost nobody does, and it's one of the easiest: Hamburg, Lübeck, Schwerin and Berlin sit in a line and the train links them in under two hours a leg.",
+      "It's a route of Hanseatic cities: red brick, harbours, canals and a calmer feel than the south. Lübeck and Schwerin each take a day and are the pause between the two big ones.",
+      "Where it usually goes wrong is the weather. It rains and blows almost all year, and in winter it's dark by four. Bring a waterproof jacket and use the daylight for anything outdoors."
+    ],
+    "towns": {
+      "Bremen": {
+        "text": "Bremen is a Hanseatic city with a small centre and a statue of the town musicians from the fairy tale by the town hall. A day covers it and the airport is ten minutes away by tram.",
+        "see": [
+          "The Bremen Town Musicians statue, next to the town hall",
+          "The Schnoor quarter, with the oldest houses",
+          "The cathedral and the market square",
+          "The old harbour of Vegesack, on the Weser"
+        ],
+        "tip": "In the Schnoor the streets are too narrow for cars. It's small and takes half an hour, but it's the prettiest part of the city."
+      },
+      "Hamburg": {
+        "text": "Hamburg is Germany's second city and its richest, with the country's biggest port and the Speicherstadt, brick warehouses over canals. Two nights covers the port and the centre.",
+        "see": [
+          "The Speicherstadt and the Elbphilharmonie, whose public plaza is free",
+          "The port by boat, among the big container ships",
+          "The Reeperbahn, in St Pauli",
+          "The fish market, on Sunday mornings"
+        ],
+        "tip": "The Elbphilharmonie plaza is free, but you book a ticket online. You go up in a curved lift and from the top you see the whole port."
+      },
+      "Lübeck": {
+        "text": "Lübeck was the capital of the Hanseatic League and its old town is a World Heritage Site, on an island between two rivers. A day covers it, and the train from Hamburg takes 45 minutes.",
+        "see": [
+          "The Holstentor gate, the city's symbol",
+          "The town hall and the market square",
+          "St Mary's church, with the astronomical clock",
+          "The Buddenbrook house, from Thomas Mann's novel"
+        ],
+        "tip": "Marzipan comes from here: Niederegger has made it since 1806 and has a shop with a café in the centre. Try the original, without chocolate."
+      },
+      "Schwerin": {
+        "text": "Schwerin has a fairy-tale castle on an island in the lake, with towers and golden domes. It's small and takes half a day, but the castle and park are worth the stop.",
+        "see": [
+          "The castle, with its museum and gardens",
+          "Lake Schwerin, with the lakeside walk",
+          "The cathedral, the oldest in northern Germany",
+          "The theatre, on the market square"
+        ],
+        "tip": "The castle opens Tuesday to Sunday and the park is free. Go in the morning and eat in the centre: few places are open out of season."
+      },
+      "Rostock (Warnemünde)": {
+        "text": "Rostock is a university city with a brick centre and a fishing harbour, and Warnemünde is its beach, 15 minutes away by train. It's the gateway to the Baltic.",
+        "see": [
+          "The Alte Strom in Warnemünde, with the fishermen's houses",
+          "Warnemünde beach, with the lighthouse",
+          "Rostock's centre and St Mary's church",
+          "The Kröpeliner-Tor-Vorstadt district, with its cafés"
+        ],
+        "tip": "The train from Rostock to Warnemünde leaves every 15 minutes and takes 20. In summer the beach fills up: go in the morning or at sunset."
+      },
+      "Berlin": {
+        "text": "Berlin is the last stop and the biggest. Three nights covers the historic centre, Kreuzberg and one museum on Museum Island, and there's still a district left over.",
+        "see": [
+          "The Brandenburg Gate and the Reichstag",
+          "The East Side Gallery, with the painted Wall",
+          "Museum Island",
+          "Kreuzberg, for food and nights out"
+        ],
+        "tip": "Berlin's day ticket covers metro, tram and bus until three in the morning. Buy the AB zone ticket: the airport is in zone C."
+      }
+    },
+    "gettingAround": "Train. Bremen-Hamburg, an hour; Hamburg-Lübeck, 45 minutes; Lübeck-Schwerin, an hour with a change; Schwerin-Rostock, ninety minutes; Rostock-Berlin, two hours. Regional trains are frequent and the DB weekend ticket covers several people. In Hamburg and Berlin you pay with a contactless card or a day ticket.",
+    "bestTime": "May to September, with long days and terraces by the water. July and August are best for the Baltic coast. In December the Christmas markets of Hamburg, Lübeck and Berlin are among the prettiest in the country, though it's cold and dark early.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 or 5 days gets you Hamburg and Berlin. 7 or 8 adds Lübeck and Schwerin. 11 also takes in Bremen and the Baltic coast."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No. It's all by train and the cities are covered on foot or by public transport."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Berlin and finish in Hamburg or Bremen."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Bremen (BRE) or Hamburg (HAM) and out of Berlin (BER)."
+      }
+    ]
+  }
+}

@@ -5741,6 +5741,15 @@
     "note": {
       "es": "En Islandia el viaje se hace en coche de alquiler desde el aeropuerto de Keflavík: los autobuses no llegan a casi nada. Fuera del verano, revisa el estado de las carreteras (road.is) cada día.",
       "en": "Iceland is done by rental car from Keflavík airport: buses barely reach anything. Outside summer, check the road conditions (road.is) every day."
+    },
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Icebergs_in_the_J%C3%B6kuls%C3%A1rl%C3%B3n_Glacier_Lagoon%2C_Iceland.jpg/960px-Icebergs_in_the_J%C3%B6kuls%C3%A1rl%C3%B3n_Glacier_Lagoon%2C_Iceland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 451,
+      "page": "https://commons.wikimedia.org/wiki/File:Icebergs_in_the_J%C3%B6kuls%C3%A1rl%C3%B3n_Glacier_Lagoon,_Iceland.jpg",
+      "author": "Marine SABRES",
+      "license": "CC BY 4.0",
+      "town": "Skaftafell (Jökulsárlón)"
     }
   }
 }

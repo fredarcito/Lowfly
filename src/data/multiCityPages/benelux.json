@@ -1,0 +1,300 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "benelux",
+    "en": "benelux"
+  },
+  "photos": {
+    "Amsterdam": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Colorful_canal_houses_at_golden_hour_in_Damrak_avenue_Amsterdam_the_Netherlands.jpg/960px-Colorful_canal_houses_at_golden_hour_in_Damrak_avenue_Amsterdam_the_Netherlands.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Colorful_canal_houses_at_golden_hour_in_Damrak_avenue_Amsterdam_the_Netherlands.jpg",
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0"
+    },
+    "Brussels": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg/960px-Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 480,
+      "page": "https://commons.wikimedia.org/wiki/File:Brussels_view_from_Mont_des_Arts,_Brussels,_Belgium_(cropped).jpg",
+      "author": "Ank Kumar",
+      "license": "CC BY-SA 4.0"
+    },
+    "Rotterdam": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Rotterdam%2C_de_Erasmusbrug_en_de_Kop_van_Zuid_IMG_0684_2022-03-27_20.24.jpg/960px-Rotterdam%2C_de_Erasmusbrug_en_de_Kop_van_Zuid_IMG_0684_2022-03-27_20.24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 487,
+      "page": "https://commons.wikimedia.org/wiki/File:Rotterdam,_de_Erasmusbrug_en_de_Kop_van_Zuid_IMG_0684_2022-03-27_20.24.jpg",
+      "author": "Michielverbeek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Antwerp": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Amberes%3B_vistas_MAS_2.jpg/960px-Amberes%3B_vistas_MAS_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 546,
+      "page": "https://commons.wikimedia.org/wiki/File:Amberes;_vistas_MAS_2.jpg",
+      "author": "LBM1948",
+      "license": "CC BY-SA 4.0"
+    },
+    "Ghent": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Graslei_Ghent.jpg/960px-Graslei_Ghent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Graslei_Ghent.jpg",
+      "author": "Martinvl",
+      "license": "CC BY-SA 4.0"
+    },
+    "Bruges": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Brugge-CanalRozenhoedkaai.JPG/960px-Brugge-CanalRozenhoedkaai.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Brugge-CanalRozenhoedkaai.JPG",
+      "author": "Jean-Christophe BENOIST",
+      "license": "CC BY 2.5"
+    },
+    "Utrecht": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Neude_met_Domtoren.JPG/960px-Neude_met_Domtoren.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Neude_met_Domtoren.JPG",
+      "author": "Pepijntje",
+      "license": "CC BY-SA 3.0"
+    },
+    "Delft (and The Hague)": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/0804_Delft%2C_Markt_with_Nieuwe_Kerk%2C_Delft_407.jpg/960px-0804_Delft%2C_Markt_with_Nieuwe_Kerk%2C_Delft_407.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 599,
+      "page": "https://commons.wikimedia.org/wiki/File:0804_Delft,_Markt_with_Nieuwe_Kerk,_Delft_407.jpg",
+      "author": "Jan Geerling",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Benelux: Ámsterdam, Flandes y Bruselas en tren",
+    "metaTitle": "Ruta por Benelux en tren: Ámsterdam, Brujas y Bruselas, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Ámsterdam y sales por Bruselas, con Róterdam, Amberes, Gante y Brujas en medio. Todo en tren, tramos de menos de una hora y ninguna noche de vuelta atrás.",
+    "why": [
+      "Los Países Bajos y Bélgica son pequeños y están llenos de trenes: Ámsterdam y Bruselas están a menos de dos horas, y entre Amberes, Gante y Brujas te mueves en 25 o 60 minutos. Es la ruta más fácil de Europa para quien no quiere alquilar coche.",
+      "La clave es no dormir en todas partes. Róterdam, Amberes y Gante se ven en un día cada una, pero cambiar de hotel cada noche cansa. Mejor dormir en Ámsterdam, luego en Gante o Brujas como base, y terminar en Bruselas.",
+      "Lo que suele fallar es el tiempo. En abril y mayo llueve a ratos y hace viento, pero las ciudades están tranquilas. En julio y agosto hay colas en el Museo Van Gogh y en el Anne Frank, y las plazas de Brujas se llenan de grupos."
+    ],
+    "towns": {
+      "Amsterdam": {
+        "text": "Ámsterdam se recorre en bici o andando, y el centro es pequeño: del Museo Van Gogh a la plaza Dam hay media hora a pie. Duerme dentro de la ronda de canales, no en los barrios del extrarradio, si quieres volver andando por la noche.",
+        "see": [
+          "El Museo Van Gogh y la Casa Museo de Rembrandt, con entrada reservada",
+          "La casa de Anne Frank: las entradas se venden solo por internet y con semanas de antelación",
+          "El Jordaan, el barrio de los canales estrechos y los cafés pequeños",
+          "El mercado de flores de Bloemenmarkt y el de Albert Cuyp",
+          "Un barco por los canales al atardecer, cuando se encienden las casas"
+        ],
+        "tip": "No camines por el carril bici: los ciclistas van rápido y no frenan. Y si alquilas una bici, fíjala con dos candados, que es lo normal aquí."
+      },
+      "Utrecht": {
+        "text": "Utrecht tiene el canal más raro de los Países Bajos: los muelles están un piso por debajo de la calle, con almacenes convertidos en bares y terrazas junto al agua. Es una ciudad de estudiantes y se ve en un día.",
+        "see": [
+          "Los muelles del Oudegracht, con sus terrazas al nivel del agua",
+          "La torre del Dom, lo único que queda de la catedral gótica",
+          "El Museo Speelklok, con organillos que suenan de verdad",
+          "El Rietveld Schröderhuis, la casa de 1924, Patrimonio de la Humanidad"
+        ],
+        "tip": "Desde la torre del Dom se ve toda la ciudad. Se sube en grupos pequeños y con guía: reserva el mismo día en la taquilla de la iglesia."
+      },
+      "Delft (and The Hague)": {
+        "text": "Delft es la ciudad de la cerámica azul y de Vermeer: dos plazas, dos iglesias y canales con casas del siglo XVII. La Haya está a quince minutos en tranvía y tiene el parlamento y la playa de Scheveningen.",
+        "see": [
+          "La plaza del Mercado, con el ayuntamiento y la Nieuwe Kerk",
+          "La fábrica de cerámica Royal Delft, donde se pinta a mano",
+          "El Mauritshuis, en La Haya, con la «Joven de la perla» de Vermeer",
+          "La playa de Scheveningen, si hace buen día"
+        ],
+        "tip": "El Mauritshuis es pequeño y se ve en dos horas. Compra la entrada con hora: es de los museos que se llenan sin avisar."
+      },
+      "Rotterdam": {
+        "text": "Róterdam la bombardearon en 1940 y se reconstruyó a su manera: rascacielos, el puente Erasmus y el mercado cubierto con forma de herradura. No se parece a ninguna otra ciudad del país.",
+        "see": [
+          "El Markthal, el mercado cubierto con mural en el techo",
+          "El puente Erasmus y el barrio de Kop van Zuid",
+          "El puerto antiguo de Delfshaven, lo poco que sobrevivió a la guerra",
+          "El Museo Boijmans, con su depósito de espejos"
+        ],
+        "tip": "El Markthal se ve en una hora y se come bien y barato. Prueba el arenque con cebolla en un puesto: es lo que comen aquí a media mañana."
+      },
+      "Antwerp": {
+        "text": "Amberes es la ciudad de Rubens, de los diamantes y de la estación más bonita de Europa. El centro es grande, pero todo lo importante está entre la catedral y el río.",
+        "see": [
+          "La catedral de Nuestra Señora, con los cuadros de Rubens",
+          "La estación central, con su cúpula de hierro y cristal",
+          "La casa de Rubens, con su taller",
+          "El barrio de Zurenborg, con casas modernistas"
+        ],
+        "tip": "La cerveza aquí se sirve en su vaso, y cada marca tiene el suyo. Pide una De Koninck en un café del centro: es la cerveza de la ciudad."
+      },
+      "Ghent": {
+        "text": "Gante es la ciudad universitaria de Flandes y la más animada de noche. Tiene el casco medieval más grande de Bélgica y un canal con los gremios alineados que sale en todas las fotos.",
+        "see": [
+          "El Graslei y el Korenlei, las dos orillas del canal con las casas de los gremios",
+          "El castillo de los Condes, con la subida a la torre",
+          "El retablo de los hermanos Van Eyck en la catedral de San Bavón",
+          "El barrio de Patershol, para cenar"
+        ],
+        "tip": "El retablo de Gante se ve mejor con la audioguía: tiene veinte paneles y sin explicación te pierdes. Se entra con hora reservada."
+      },
+      "Brussels": {
+        "text": "Bruselas es la capital de Europa y se nota: barrios de oficinas junto a la Grand-Place más bonita del continente. Dos días bastan para el centro, el barrio del Sablon y el Atomium.",
+        "see": [
+          "La Grand-Place, sobre todo de noche, cuando se ilumina",
+          "El barrio del Sablon, con las galerías de anticuarios y chocolateros",
+          "El Museo Magritte",
+          "El Atomium y el barrio europeo, si te interesa la arquitectura"
+        ],
+        "tip": "El Manneken Pis es diminuto y está rodeado de gente. Ve a verlo de paso y no hagas cola: hay una estatua mejor, la Jeanneke Pis, en un callejón cercano."
+      },
+      "Bruges": {
+        "text": "Brujas es pequeña y está entera dentro de su anillo de canales. En un día ves lo principal, pero si puedes duerme una noche: a las siete de la tarde los grupos se van y la ciudad se queda sola.",
+        "see": [
+          "El Markt y el Belfort, con los 366 escalones",
+          "El Rozenhoedkaai, el rincón del canal que sale en todas las postales",
+          "El Begijnhof, el convento de beguinas con su jardín",
+          "Las cervecerías De Halve Maan, con visita a la fábrica"
+        ],
+        "tip": "Los gofres de las calles del centro son turísticos y caros. Ve a un puesto de mercado o a una panadería y pide uno sin nada encima: así se comen aquí."
+      }
+    },
+    "gettingAround": "Todo en tren. Los intercity holandeses unen Ámsterdam, Utrecht, Delft y Róterdam en menos de una hora por tramo, y los belgas hacen lo mismo entre Amberes, Gante, Brujas y Bruselas. Compra los billetes en la máquina o en la app: en los Países Bajos se paga con tarjeta sin contacto al entrar y salir, y en Bélgica el billete de tren es fijo, sin descuentos por adelantado. Para Brujas, el tren desde Gante tarda 25 minutos y desde Bruselas una hora.",
+    "bestTime": "De abril a junio y en septiembre: menos lluvia que en invierno, días largos y ciudades sin las colas de julio. En julio y agosto hace buen tiempo, pero Ámsterdam y Brujas están llenas. En invierno llueve y hay viento, aunque los museos están vacíos y los hoteles baratos.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Benelux?",
+        "answer": "Con 5 días ves Ámsterdam y Bruselas. Con 7 u 8 añades Róterdam, Amberes, Gante y Brujas. Con 11 o 13 entras también en Utrecht, Delft y La Haya."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No. Es de las rutas donde el tren es más cómodo: los centros son peatonales y aparcar en Ámsterdam o Brujas cuesta caro."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí. Si entras por Bruselas, acabas en Ámsterdam, y los tramos son los mismos."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Ámsterdam (AMS) o Eindhoven (EIN) al entrar, y a Bruselas (BRU) o Charleroi (CRL) al salir. Eindhoven y Charleroi están a una hora en tren o autobús del centro."
+      }
+    ]
+  },
+  "en": {
+    "title": "Benelux: Amsterdam, Flanders and Brussels by train",
+    "metaTitle": "Benelux by train: Amsterdam, Bruges and Brussels in 5 to 13 days · Lowfly",
+    "summary": "Fly into Amsterdam and out of Brussels, with Rotterdam, Antwerp, Ghent and Bruges in between. All by train, legs under an hour, and no doubling back.",
+    "why": [
+      "The Netherlands and Belgium are small and full of trains: Amsterdam to Brussels is under two hours, and Antwerp, Ghent and Bruges are 25 to 60 minutes apart. It's the easiest route in Europe for anyone who doesn't want a hire car.",
+      "The trick is not sleeping everywhere. Rotterdam, Antwerp and Ghent each take a day, but changing hotels every night wears you down. Better to sleep in Amsterdam, then use Ghent or Bruges as a base, and finish in Brussels.",
+      "Where it usually goes wrong is timing. April and May bring showers and wind, but the cities are calm. In July and August there are queues at the Van Gogh Museum and the Anne Frank House, and Bruges' squares fill with tour groups."
+    ],
+    "towns": {
+      "Amsterdam": {
+        "text": "Amsterdam is a city for bikes and feet, and the centre is small: half an hour's walk from the Van Gogh Museum to Dam Square. Stay inside the canal ring rather than out in the suburbs if you want to walk home at night.",
+        "see": [
+          "The Van Gogh Museum and the Rembrandt House, with tickets booked",
+          "The Anne Frank House: tickets are sold online only, weeks ahead",
+          "The Jordaan, the neighbourhood of narrow canals and small cafés",
+          "Bloemenmarkt, the floating flower market, and Albert Cuyp market",
+          "A canal boat at dusk, when the houses light up"
+        ],
+        "tip": "Don't walk in the bike lane: cyclists go fast and don't brake. And if you rent a bike, lock it with two locks, because that's what everyone does here."
+      },
+      "Utrecht": {
+        "text": "Utrecht has the strangest canal in the Netherlands: the wharves sit a floor below street level, with old warehouses turned into bars and terraces right by the water. It's a student city and a day covers it.",
+        "see": [
+          "The Oudegracht wharves, with terraces at water level",
+          "The Dom tower, all that's left of the Gothic cathedral",
+          "The Speelklok Museum, with street organs that actually play",
+          "The Rietveld Schröder House, built in 1924, a World Heritage Site"
+        ],
+        "tip": "From the Dom tower you see the whole city. You go up in small groups with a guide: book at the church ticket desk the same day."
+      },
+      "Delft (and The Hague)": {
+        "text": "Delft is the city of blue pottery and Vermeer: two squares, two churches and canals lined with 17th-century houses. The Hague is fifteen minutes away by tram, with the parliament and the beach at Scheveningen.",
+        "see": [
+          "The Markt, with the town hall and the Nieuwe Kerk",
+          "The Royal Delft pottery, where everything is painted by hand",
+          "The Mauritshuis in The Hague, with Vermeer's Girl with a Pearl Earring",
+          "Scheveningen beach, if the weather holds"
+        ],
+        "tip": "The Mauritshuis is small and takes two hours. Book a timed ticket: it's one of those museums that fills up without warning."
+      },
+      "Rotterdam": {
+        "text": "Rotterdam was bombed in 1940 and rebuilt its own way: skyscrapers, the Erasmus Bridge and the horseshoe-shaped covered market. It looks like no other city in the country.",
+        "see": [
+          "The Markthal, the covered market with a mural on the ceiling",
+          "The Erasmus Bridge and the Kop van Zuid district",
+          "The old harbour of Delfshaven, the little that survived the war",
+          "The Boijmans Museum and its mirrored depot"
+        ],
+        "tip": "The Markthal takes an hour and you eat well and cheap. Try herring with onion at a stall: it's what people here eat mid-morning."
+      },
+      "Antwerp": {
+        "text": "Antwerp is the city of Rubens, diamonds and the prettiest station in Europe. The centre is big, but everything that matters sits between the cathedral and the river.",
+        "see": [
+          "The Cathedral of Our Lady, with the Rubens paintings",
+          "Central Station, with its iron and glass dome",
+          "Rubens' house and studio",
+          "The Zurenborg district, full of Art Nouveau houses"
+        ],
+        "tip": "Beer here comes in its own glass, and every brand has one. Order a De Koninck in a café in the centre: it's the city's beer."
+      },
+      "Ghent": {
+        "text": "Ghent is Flanders' student city and the liveliest at night. It has the largest medieval centre in Belgium and a canal lined with guild houses that shows up in every photo.",
+        "see": [
+          "The Graslei and Korenlei, the two banks of the canal with the guild houses",
+          "Gravensteen castle, with the climb up the tower",
+          "The Van Eyck brothers' altarpiece in St Bavo's Cathedral",
+          "The Patershol district, for dinner"
+        ],
+        "tip": "See the Ghent Altarpiece with the audio guide: it has twenty panels and without explanation you get lost. You go in at a booked time."
+      },
+      "Bruges": {
+        "text": "Bruges is small and sits entirely inside its ring of canals. A day covers the main sights, but stay a night if you can: by seven in the evening the groups are gone and the city is empty.",
+        "see": [
+          "The Markt and the Belfry, with its 366 steps",
+          "The Rozenhoedkaai, the canal corner that's on every postcard",
+          "The Begijnhof, the beguines' convent with its garden",
+          "The De Halve Maan brewery, with a tour of the works"
+        ],
+        "tip": "The waffles sold in the centre are touristy and expensive. Go to a market stall or a bakery and order one plain: that's how they're eaten here."
+      },
+      "Brussels": {
+        "text": "Brussels is the capital of Europe and it shows: office districts next to the finest square on the continent. Two days covers the centre, the Sablon and the Atomium.",
+        "see": [
+          "The Grand-Place, especially at night when it's lit up",
+          "The Sablon, with antique dealers and chocolatiers",
+          "The Magritte Museum",
+          "The Atomium and the European quarter, if architecture interests you"
+        ],
+        "tip": "The Manneken Pis is tiny and surrounded by people. See it in passing and don't queue: there's a better statue, the Jeanneke Pis, in a nearby alley."
+      }
+    },
+    "gettingAround": "Train all the way. Dutch intercity trains link Amsterdam, Utrecht, Delft and Rotterdam in under an hour a leg, and Belgian trains do the same between Antwerp, Ghent, Bruges and Brussels. Buy tickets at the machine or in the app: in the Netherlands you tap a contactless card in and out, and in Belgium the train fare is fixed, with no discount for booking ahead. For Bruges, the train from Ghent takes 25 minutes and from Brussels an hour.",
+    "bestTime": "April to June and September: less rain than in winter, long days and cities without July's queues. July and August are warm but Amsterdam and Bruges are packed. Winter is wet and windy, though the museums are empty and hotels are cheap.",
+    "faq": [
+      {
+        "question": "How many days do you need for Benelux?",
+        "answer": "5 days gets you Amsterdam and Brussels. 7 or 8 adds Rotterdam, Antwerp, Ghent and Bruges. 11 to 13 also takes in Utrecht, Delft and The Hague."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No. This is one of those routes where the train is easier: the centres are pedestrian and parking in Amsterdam or Bruges is expensive."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes. Start in Brussels and finish in Amsterdam; the legs are the same."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Amsterdam (AMS) or Eindhoven (EIN), out of Brussels (BRU) or Charleroi (CRL). Eindhoven and Charleroi are an hour from the centre by train or bus."
+      }
+    ]
+  }
+}

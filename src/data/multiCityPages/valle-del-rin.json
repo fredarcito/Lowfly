@@ -1,0 +1,298 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "valle-del-rin",
+    "en": "rhine-valley"
+  },
+  "photos": {
+    "Cologne": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Stadtbild_K%C3%B6ln_%2850MP%29.jpg/960px-Stadtbild_K%C3%B6ln_%2850MP%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 581,
+      "page": "https://commons.wikimedia.org/wiki/File:Stadtbild_K%C3%B6ln_(50MP).jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de"
+    },
+    "Koblenz": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Deutsches_Eck%2C_Koblenz%2C_May_2019.jpg/960px-Deutsches_Eck%2C_Koblenz%2C_May_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Deutsches_Eck,_Koblenz,_May_2019.jpg",
+      "author": "Mathieu Chollet - MChollet",
+      "license": "CC BY-SA 4.0"
+    },
+    "Rüdesheim": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Ruedesheim_nahe2.jpg/960px-Ruedesheim_nahe2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 564,
+      "page": "https://commons.wikimedia.org/wiki/File:Ruedesheim_nahe2.jpg",
+      "author": "Traveler100",
+      "license": "CC BY-SA 3.0"
+    },
+    "Frankfurt": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Frankfurter_Altstadt_mit_Skyline_2019_%28100MP%29.jpg/960px-Frankfurter_Altstadt_mit_Skyline_2019_%28100MP%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 472,
+      "page": "https://commons.wikimedia.org/wiki/File:Frankfurter_Altstadt_mit_Skyline_2019_(100MP).jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de"
+    },
+    "Bonn": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Altes_Rathaus_Bonn.jpg/960px-Altes_Rathaus_Bonn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 721,
+      "page": "https://commons.wikimedia.org/wiki/File:Altes_Rathaus_Bonn.jpg",
+      "author": "Thomas Wolf (Der Wolf im Wald)",
+      "license": "CC BY-SA 3.0"
+    },
+    "Bacharach": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Bacharach1.jpg/960px-Bacharach1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Bacharach1.jpg",
+      "author": "Peter Weller",
+      "license": "CC BY-SA 3.0"
+    },
+    "Cochem (Moselle)": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Cochem%2C_Moselpromenade.jpg/960px-Cochem%2C_Moselpromenade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 534,
+      "page": "https://commons.wikimedia.org/wiki/File:Cochem,_Moselpromenade.jpg",
+      "author": "Rolf Kranz",
+      "license": "CC BY-SA 4.0"
+    },
+    "Heidelberg": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Heidelberg_corr.jpg/960px-Heidelberg_corr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Heidelberg_corr.jpg",
+      "author": "Miholz",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Valle del Rin: Colonia, los castillos y Fráncfort",
+    "metaTitle": "Valle del Rin en tren y barco: Colonia, Coblenza y Fráncfort, de 4 a 13 días · Lowfly",
+    "summary": "Entras por Colonia y sales por Fráncfort, bajando el río entre viñedos, castillos y pueblos de entramado. Trenes regionales, barcos y ninguna prisa.",
+    "why": [
+      "El tramo del Rin entre Coblenza y Bingen es Patrimonio de la Humanidad y se recorre en tren por una orilla y en barco por la otra. En 60 kilómetros hay más de 40 castillos, y los pueblos de la orilla derecha son de los más bonitos de Alemania.",
+      "La ruta es corta y barata: Colonia, Bonn, Coblenza y Fráncfort están a una hora o menos en tren regional, y el billete de fin de semana vale para varios. Es una buena primera ruta alemana.",
+      "Lo que suele fallar es quedarse solo en las ciudades. El valle está en los pueblos: Bacharach, Oberwesel, Sankt Goar y Rüdesheim. Duerme al menos una noche en uno de ellos."
+    ],
+    "towns": {
+      "Cologne": {
+        "text": "Colonia tiene la catedral gótica más grande de Alemania, justo al lado de la estación, y un centro reconstruido después de la guerra. Dos noches bastan para la catedral, el museo y el barrio del Rin.",
+        "see": [
+          "La catedral, con la subida a la torre sur: 533 escalones",
+          "El museo Ludwig, con arte del siglo XX",
+          "El barrio de Belgisches Viertel, para comer y salir",
+          "El Hohenzollernbrücke, el puente con los candados"
+        ],
+        "tip": "La cerveza de aquí se llama Kölsch y se sirve en vasos pequeños de 0,2 litros. El camarero te pone otro sin preguntar hasta que pones el posavasos encima del vaso."
+      },
+      "Bonn": {
+        "text": "Bonn fue capital de Alemania Occidental hasta 1990 y conserva el aire de ciudad tranquila de funcionarios. Tiene la casa de Beethoven y un centro pequeño con plaza y universidad.",
+        "see": [
+          "La casa natal de Beethoven, con el museo",
+          "La plaza del ayuntamiento y la catedral",
+          "El Museumsmeile, con el museo de historia alemana",
+          "El Drachenfels, en Königswinter, con el tren de cremallera"
+        ],
+        "tip": "El Drachenfels está a 25 minutos en tren desde Bonn y tiene un tren de cremallera hasta arriba. Desde allí se ve el Rin y, en días claros, la catedral de Colonia."
+      },
+      "Cochem (Moselle)": {
+        "text": "Cochem está en el Mosela, no en el Rin, y merece el desvío: un castillo en lo alto, viñedos en pendiente y un casco antiguo de casas de colores. Se ve en un día.",
+        "see": [
+          "El castillo de Cochem, con visita guiada",
+          "El paseo del Mosela, con las bodegas",
+          "El pueblo de Beilstein, a 20 minutos en barco",
+          "Una cata en una bodega de la ribera"
+        ],
+        "tip": "El vino del Mosela es de uva riesling y suele ser más ligero que el del Rin. Prueba un Riesling seco de la cosecha del año: es lo que beben aquí."
+      },
+      "Koblenz": {
+        "text": "Coblenza está donde el Mosela se junta con el Rin, y el punto exacto se llama Deutsches Eck. Es la puerta del valle y una buena base para moverse por los dos ríos.",
+        "see": [
+          "El Deutsches Eck, con la estatua ecuestre y la vista a la fortaleza",
+          "La fortaleza de Ehrenbreitstein, en teleférico",
+          "El casco antiguo y la basílica de San Castor",
+          "Un barco hasta Boppard o Sankt Goar"
+        ],
+        "tip": "El teleférico a Ehrenbreitstein cruza el Rin y es de los más largos de Alemania. Desde arriba se ve el Mosela entrando en el Rin, que es la foto de la ciudad."
+      },
+      "Bacharach": {
+        "text": "Bacharach es un pueblo de 2.000 habitantes con muralla, torres y casas de entramado del siglo XVI. Es pequeño y se ve en medio día, pero es el sitio donde dormir en el valle.",
+        "see": [
+          "La iglesia de San Pedro y la muralla con sus torres",
+          "El castillo de Stahleck, hoy albergue juvenil",
+          "Los viñedos en terraza sobre el pueblo",
+          "El paseo por la orilla del Rin hasta Kaub"
+        ],
+        "tip": "El castillo de Stahleck es un albergue juvenil, así que se puede dormir dentro de un castillo del siglo XII por poco dinero. Hay que reservar con tiempo."
+      },
+      "Rüdesheim": {
+        "text": "Rüdesheim es el pueblo más turístico del valle, con la calle Drosselgasse llena de tabernas y música. Aun así, tiene el monumento a Germania y los viñedos en lo alto.",
+        "see": [
+          "El monumento a Germania, en lo alto del Niederwald",
+          "El teleférico sobre los viñedos hasta el monumento",
+          "La Drosselgasse, aunque sea para verla",
+          "El museo del vino, en el castillo de Brömserburg"
+        ],
+        "tip": "El teleférico a Germania sale del centro y tarda 15 minutos. Sube por la mañana y baja andando entre viñedos: el camino es fácil y hay sombra."
+      },
+      "Heidelberg": {
+        "text": "Heidelberg tiene la universidad más antigua de Alemania, un castillo en ruinas sobre el río Neckar y un centro de piedra roja. Se ve en un día y medio.",
+        "see": [
+          "El castillo, con el barril grande en la bodega",
+          "La calle principal y la iglesia del Espíritu Santo",
+          "El puente viejo, con la vista al castillo",
+          "El camino del filósofo, en la orilla opuesta"
+        ],
+        "tip": "El camino del filósofo es una subida de 20 minutos y la mejor vista del castillo. Ve al atardecer, cuando la piedra se pone roja."
+      },
+      "Frankfurt": {
+        "text": "Fráncfort es la capital financiera de Alemania y tiene rascacielos junto a un centro histórico reconstruido. Se ve en un día, y el aeropuerto está a 15 minutos en tren.",
+        "see": [
+          "La Römerberg, la plaza del ayuntamiento reconstruido",
+          "El Museumsufer, la orilla con los museos",
+          "La torre del Main, con el mirador",
+          "El barrio de Sachsenhausen, con las tabernas de sidra"
+        ],
+        "tip": "En Sachsenhausen se bebe Apfelwein, sidra de manzana, en jarras de barro. Se pide con agua con gas al lado, como hacen aquí."
+      }
+    },
+    "gettingAround": "Tren regional y barco. Colonia-Bonn son 25 minutos; Colonia-Coblenza, una hora; Coblenza-Bingen, una hora por la orilla izquierda o derecha; Rüdesheim-Fráncfort, una hora. Los barcos de la Köln-Düsseldorfer hacen el tramo Coblenza-Rüdesheim en unas cuatro horas y se puede subir en cualquier embarcadero. El billete de fin de semana de DB vale para dos personas en trenes regionales todo el día.",
+    "bestTime": "De mayo a octubre, cuando los viñedos están verdes y los barcos funcionan a diario. Septiembre es el mes de la vendimia y hay fiestas en los pueblos. En diciembre los mercadillos de Colonia y Fráncfort son grandes, pero el valle está vacío y muchos barcos no navegan.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 o 5 días ves Colonia, Coblenza y Fráncfort. Con 7 u 8 añades Bonn, Bacharach y Rüdesheim. Con 11 a 13 entran también el Mosela y Heidelberg."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No. El tren va por las dos orillas y los barcos paran en los pueblos. El coche solo sirve para ir a bodegas fuera de ruta."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Fráncfort y subiendo el río hasta Colonia."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Colonia (CGN) al entrar y a Fráncfort (FRA o Hahn, HHN) al salir. Hahn está lejos: a hora y media en autobús."
+      }
+    ]
+  },
+  "en": {
+    "title": "Rhine Valley: Cologne, the castles and Frankfurt",
+    "metaTitle": "Rhine Valley by train and boat: Cologne, Koblenz and Frankfurt in 4 to 13 days · Lowfly",
+    "summary": "Fly into Cologne and out of Frankfurt, heading downriver past vineyards, castles and half-timbered villages. Regional trains, boats and no rush.",
+    "why": [
+      "The stretch of the Rhine between Koblenz and Bingen is a World Heritage Site and you can do it by train on one bank and by boat on the other. In 60 kilometres there are more than 40 castles, and the villages on the right bank are among the prettiest in Germany.",
+      "The route is short and cheap: Cologne, Bonn, Koblenz and Frankfurt are an hour or less apart on regional trains, and the weekend ticket covers several people. It's a good first German route.",
+      "Where it usually goes wrong is staying only in the cities. The valley is in the villages: Bacharach, Oberwesel, Sankt Goar and Rüdesheim. Sleep at least one night in one of them."
+    ],
+    "towns": {
+      "Cologne": {
+        "text": "Cologne has Germany's largest Gothic cathedral, right beside the station, and a centre rebuilt after the war. Two nights covers the cathedral, a museum and the Rhine quarter.",
+        "see": [
+          "The cathedral, with the climb up the south tower: 533 steps",
+          "The Ludwig Museum, with 20th-century art",
+          "The Belgisches Viertel, for food and nights out",
+          "The Hohenzollern Bridge, covered in padlocks"
+        ],
+        "tip": "The local beer is Kölsch and it comes in small 0.2-litre glasses. The waiter brings another without asking until you put your coaster on top of the glass."
+      },
+      "Bonn": {
+        "text": "Bonn was the capital of West Germany until 1990 and still feels like a quiet civil servants' town. It has Beethoven's house and a small centre with a square and a university.",
+        "see": [
+          "Beethoven's birthplace, now a museum",
+          "The town hall square and the cathedral",
+          "The Museumsmeile, with the German history museum",
+          "The Drachenfels, in Königswinter, by rack railway"
+        ],
+        "tip": "The Drachenfels is 25 minutes by train from Bonn and a rack railway runs to the top. From there you see the Rhine and, on a clear day, Cologne cathedral."
+      },
+      "Cochem (Moselle)": {
+        "text": "Cochem is on the Moselle, not the Rhine, and worth the detour: a castle on the hill, vineyards on the slope and an old town of coloured houses. A day covers it.",
+        "see": [
+          "Cochem Castle, with a guided tour",
+          "The Moselle promenade, with its wine cellars",
+          "The village of Beilstein, 20 minutes away by boat",
+          "A tasting at a riverside winery"
+        ],
+        "tip": "Moselle wine is riesling and usually lighter than Rhine wine. Try a dry Riesling from this year's harvest: it's what people drink here."
+      },
+      "Koblenz": {
+        "text": "Koblenz sits where the Moselle meets the Rhine, and the exact point is called the Deutsches Eck. It's the gateway to the valley and a good base for both rivers.",
+        "see": [
+          "The Deutsches Eck, with the equestrian statue and the view to the fortress",
+          "Ehrenbreitstein Fortress, by cable car",
+          "The old town and the Basilica of St Castor",
+          "A boat to Boppard or Sankt Goar"
+        ],
+        "tip": "The cable car to Ehrenbreitstein crosses the Rhine and is one of the longest in Germany. From the top you see the Moselle flowing into the Rhine, which is the city's photo."
+      },
+      "Bacharach": {
+        "text": "Bacharach is a village of 2,000 with walls, towers and 16th-century half-timbered houses. It's small and takes half a day, but it's the place to sleep in the valley.",
+        "see": [
+          "St Peter's church and the town wall with its towers",
+          "Stahleck Castle, now a youth hostel",
+          "The terraced vineyards above the village",
+          "The riverside walk to Kaub"
+        ],
+        "tip": "Stahleck Castle is a youth hostel, so you can sleep inside a 12th-century castle for little money. Book well ahead."
+      },
+      "Rüdesheim": {
+        "text": "Rüdesheim is the valley's most touristy village, with the Drosselgasse packed with taverns and music. Even so, it has the Germania monument and vineyards above.",
+        "see": [
+          "The Germania monument, on top of the Niederwald",
+          "The cable car over the vineyards to the monument",
+          "The Drosselgasse, if only to see it",
+          "The wine museum, in Brömserburg Castle"
+        ],
+        "tip": "The cable car to Germania leaves from the centre and takes 15 minutes. Go up in the morning and walk down through the vineyards: it's an easy path with shade."
+      },
+      "Heidelberg": {
+        "text": "Heidelberg has Germany's oldest university, a ruined castle above the Neckar and a centre of red stone. A day and a half covers it.",
+        "see": [
+          "The castle, with the great barrel in the cellars",
+          "The main street and the Church of the Holy Spirit",
+          "The old bridge, with the view up to the castle",
+          "The Philosophers' Way, on the opposite bank"
+        ],
+        "tip": "The Philosophers' Way is a 20-minute climb and the best view of the castle. Go at sunset, when the stone turns red."
+      },
+      "Frankfurt": {
+        "text": "Frankfurt is Germany's financial capital, with skyscrapers next to a rebuilt old town. A day covers it, and the airport is 15 minutes away by train.",
+        "see": [
+          "The Römerberg, the square with the rebuilt town hall",
+          "The Museumsufer, the museum-lined riverbank",
+          "The Main Tower, with its viewing deck",
+          "The Sachsenhausen district, with its cider taverns"
+        ],
+        "tip": "In Sachsenhausen people drink Apfelwein, apple cider, from stoneware jugs. Order it with sparkling water on the side, the way it's done here."
+      }
+    },
+    "gettingAround": "Regional trains and boats. Cologne-Bonn is 25 minutes; Cologne-Koblenz, an hour; Koblenz-Bingen, an hour along either bank; Rüdesheim-Frankfurt, an hour. Köln-Düsseldorfer boats run Koblenz-Rüdesheim in about four hours and you can board at any pier. The DB weekend ticket covers two people on regional trains all day.",
+    "bestTime": "May to October, when the vineyards are green and boats run daily. September is harvest time and the villages hold festivals. In December the Christmas markets in Cologne and Frankfurt are big, but the valley is empty and many boats stop running.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 or 5 days gets you Cologne, Koblenz and Frankfurt. 7 or 8 adds Bonn, Bacharach and Rüdesheim. 11 to 13 also takes in the Moselle and Heidelberg."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No. Trains run along both banks and boats stop at the villages. A car only helps for wineries off the route."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Frankfurt and head upriver to Cologne."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Cologne (CGN) and out of Frankfurt (FRA or Hahn, HHN). Hahn is far: ninety minutes by bus."
+      }
+    ]
+  }
+}

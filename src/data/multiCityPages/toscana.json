@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "toscana",
+    "en": "tuscany"
+  },
+  "photos": {
+    "Pisa": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Here_it_is%2C_The_Piazza_dei_Miracoli%21_Pisa%2C_Italy.jpg/1280px-Here_it_is%2C_The_Piazza_dei_Miracoli%21_Pisa%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 898,
+      "page": "https://commons.wikimedia.org/wiki/File:Here_it_is,_The_Piazza_dei_Miracoli!_Pisa,_Italy.jpg",
+      "author": "Ввласенко",
+      "license": "CC BY-SA 3.0"
+    },
+    "Lucca": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/02_Lucca_seen_from_Torre_Guinigi.jpg/1280px-02_Lucca_seen_from_Torre_Guinigi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 908,
+      "page": "https://commons.wikimedia.org/wiki/File:02_Lucca_seen_from_Torre_Guinigi.jpg",
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0"
+    },
+    "Siena": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/PiazzadelCampoSiena.jpg/1280px-PiazzadelCampoSiena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 853,
+      "page": "https://commons.wikimedia.org/wiki/File:PiazzadelCampoSiena.jpg",
+      "author": "Massimo Catarinella",
+      "license": "CC BY-SA 3.0"
+    },
+    "Val d'Orcia (Pienza)": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Val-d_Orcia_landscape_20120926-1.JPG/1280px-Val-d_Orcia_landscape_20120926-1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 853,
+      "page": "https://commons.wikimedia.org/wiki/File:Val-d_Orcia_landscape_20120926-1.JPG",
+      "author": "Hans A. Rosbach",
+      "license": "CC BY-SA 3.0"
+    },
+    "San Gimignano": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/San_Gimignano_towers.jpg/1280px-San_Gimignano_towers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 853,
+      "page": "https://commons.wikimedia.org/wiki/File:San_Gimignano_towers.jpg",
+      "author": "Przemek P",
+      "license": "CC BY-SA 3.0"
+    },
+    "Florence": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Firenze_Panorama_del_Centro_con_il_Duomo_e_Palazzo_Vecchio.jpg/1280px-Firenze_Panorama_del_Centro_con_il_Duomo_e_Palazzo_Vecchio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 797,
+      "page": "https://commons.wikimedia.org/wiki/File:Firenze_Panorama_del_Centro_con_il_Duomo_e_Palazzo_Vecchio.jpg",
+      "author": "PROPOLI87",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por la Toscana",
+    "metaTitle": "Ruta por la Toscana: Pisa, Lucca, Siena y Florencia, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Pisa, cruzas Lucca y Siena y acabas en Florencia. Vuelves desde el mismo aeropuerto, así que el tren hace casi todo el trabajo: solo el Val d'Orcia y San Gimignano piden coche o autobús.",
+    "why": [
+      "Pisa, Lucca, Siena y Florencia caben en una semana sin correr, y cada una va a su aire: una torre que se inclina, una muralla por la que se pasea, una plaza en forma de concha y una ciudad que fue un país.",
+      "El orden importa. Pisa y Lucca primero, que son de un día, y Florencia al final, con más noches y sin prisa. Así el viaje crece en vez de desinflarse.",
+      "Lo que suele fallar es el coche. Florencia y Siena tienen el centro cerrado al tráfico y aparcar dentro cuesta caro. El tren une Pisa, Lucca y Florencia en poco más de una hora, y para el resto hay autobús."
+    ],
+    "towns": {
+      "Pisa": {
+        "text": "Pisa se ve en medio día, y no es un desprecio: la Piazza dei Miracoli está en una esquina de la ciudad, lejos del centro, y se recorre en una hora. Lo demás, el Arno y los soportales del Lungarno, es un paseo agradable que casi nadie hace porque llega en tren, ve la torre y se va.",
+        "see": [
+          "La torre, con hora reservada: sube en grupos pequeños y las entradas del día se agotan",
+          "El Duomo, el baptisterio y el Camposanto, los tres en la misma plaza",
+          "El Lungarno y la iglesia de Santa Maria della Spina, a la orilla del río",
+          "Un helado en Borgo Stretto, la calle de soportales del centro"
+        ],
+        "tip": "La torre está inclinada porque el suelo cedió mientras la construían, en el siglo XII, y siguieron con ella. Si no consigues entrada, se ve igual de bien desde la plaza: el baptisterio tiene el mejor ángulo."
+      },
+      "Lucca": {
+        "text": "Lucca es la ciudad italiana que menos parece italiana: no tiene ruido, ni motos, ni colas. Su muralla del siglo XVI sigue entera y se recorre en bici en una hora, por encima de la ciudad, entre árboles.",
+        "see": [
+          "La muralla, alquilando una bici en la puerta de San Pietro",
+          "La Piazza dell'Anfiteatro, construida sobre un anfiteatro romano y con la misma forma ovalada",
+          "La Torre Guinigi, con encinas en lo alto",
+          "El Duomo de San Martín y el Volto Santo"
+        ],
+        "tip": "Aquí se come bien y sin turistas. Busca una trattoria dentro de la muralla y pide tortelli lucchesi, la pasta rellena de la zona, o farro con verduras."
+      },
+      "Siena": {
+        "text": "Siena es medieval de verdad, no de fachada: las calles suben y bajan, se retuercen y no llevan a ninguna parte en línea recta. La Piazza del Campo, en forma de concha, es de las plazas más bonitas de Italia, y por la noche, cuando se van las excursiones, la ciudad se queda casi vacía.",
+        "see": [
+          "La Piazza del Campo y la Torre del Mangia, 400 escalones y la mejor vista de la ciudad",
+          "El Duomo y su suelo de mármol, que solo se descubre entero unas semanas al año",
+          "El barrio de Contrada, cada uno con su fuente y su escudo",
+          "San Gimignano, a una hora en autobús, si te sobra medio día"
+        ],
+        "tip": "El Palio se corre el 2 de julio y el 16 de agosto. Esos días la ciudad se llena y los precios se disparan: reserva con meses de antelación o elige otras fechas."
+      },
+      "Val d'Orcia (Pienza)": {
+        "text": "El Val d'Orcia es la Toscana de las fotos: colinas, cipreses y casas de piedra en lo alto. Pienza, en medio, es una ciudad entera construida en tres años por un papa del siglo XV, y se recorre en una tarde.",
+        "see": [
+          "Pienza y su plaza, con el palacio y la catedral en el mismo borde del pueblo",
+          "El mirador de la Via dell'Amore, sobre el valle",
+          "San Quirico d'Orcia y los baños termales de Bagno Vignoni",
+          "Montalcino, si te interesa el vino: aquí se hace el Brunello"
+        ],
+        "tip": "Aquí el coche sí hace falta: los autobuses pasan pocas veces y no llegan a los miradores. Alquílalo en Siena un día y devuélvelo por la tarde."
+      },
+      "San Gimignano": {
+        "text": "San Gimignano tenía más de setenta torres en la Edad Media y hoy le quedan catorce. Se ve desde lejos, en lo alto de una colina, y por eso llega tanta gente: es la parada de autobús de medio día por excelencia.",
+        "see": [
+          "La Piazza della Cisterna y la Piazza del Duomo, con las torres alrededor",
+          "La Torre Grossa, la más alta, para ver las demás desde arriba",
+          "La Vernaccia, el vino blanco de la zona, en una enoteca del centro"
+        ],
+        "tip": "Llega a primera hora o quédate a dormir. Entre las once y las cinco el pueblo es una procesión de grupos con paraguas, y no se puede ni caminar por la calle principal."
+      },
+      "Florence": {
+        "text": "Florencia se recorre andando y casi todo lo famoso está a diez minutos del Duomo. El problema son las colas: los Uffizi, la Academia y la cúpula de Brunelleschi se reservan antes de ir, o pierdes medio día esperando.",
+        "see": [
+          "La cúpula del Duomo: 463 escalones y la mejor vista de la ciudad, con hora reservada",
+          "La Galería de los Uffizi",
+          "El David, en la Galería de la Academia",
+          "El Oltrarno, al otro lado del río: talleres de artesanos y menos gente",
+          "San Miniato al Monte al atardecer, más arriba que el Piazzale Michelangelo y más tranquilo"
+        ],
+        "tip": "En el Mercado Central, abajo están los puestos y arriba se come. Si te atreves, el bocadillo de lampredotto es lo más florentino que vas a probar."
+      }
+    },
+    "gettingAround": "Todo en tren, salvo el Val d'Orcia. Pisa, Lucca y Florencia están en la misma línea, con trenes cada media hora y trayectos de 30 a 60 minutos. Siena se une a Florencia con autobús rápido (una hora y cuarto) o con tren regional, más lento y con transbordo en Empoli. San Gimignano se llega en autobús desde Siena o Florencia, con pocas frecuencias: mira el horario de vuelta antes de ir. Para el Val d'Orcia, alquila un coche en Siena por un día. En Florencia y Siena, el centro es peatonal y el coche es un estorbo.",
+    "bestTime": "Abril, mayo, junio, septiembre y octubre: buen tiempo, días largos y menos gente que en verano. Julio y agosto son los meses más calurosos y los más llenos, y en agosto muchos restaurantes cierran unos días. En invierno hay niebla en el valle y los pueblos se quedan para ti, pero anochece a las cinco. La vendimia, a finales de septiembre, es la mejor época para el Val d'Orcia.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para la Toscana?",
+        "answer": "Con 4 o 5 días ves Pisa, Lucca y Florencia. Con 7 a 9 añades Siena y San Gimignano; con 11 a 13 entra también el Val d'Orcia con calma."
+      },
+      {
+        "question": "¿Hace falta coche para la Toscana?",
+        "answer": "Para Pisa, Lucca, Siena y Florencia, no: el tren y el autobús bastan. El coche solo compensa para el Val d'Orcia y para los pueblos pequeños, y conviene alquilarlo por días sueltos."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Florencia, acabas en Pisa, a un paso del aeropuerto."
+      },
+      {
+        "question": "¿A qué aeropuerto se vuela?",
+        "answer": "A Pisa (Galilei, PSA) o a Florencia (Peretola, FLR). Pisa tiene más vuelos y está a una hora de Florencia en tren; Florencia está más cerca del centro, pero con menos conexiones."
+      }
+    ]
+  },
+  "en": {
+    "title": "Tuscany itinerary",
+    "metaTitle": "Tuscany itinerary: Pisa, Lucca, Siena and Florence in 5 to 13 days · Lowfly",
+    "summary": "You fly into Pisa, cross Lucca and Siena and end in Florence. You fly home from the same airport, so the train does almost all the work: only the Val d'Orcia and San Gimignano need a car or a bus.",
+    "why": [
+      "Pisa, Lucca, Siena and Florence fit into a week without rushing, and each one goes its own way: a tower that leans, a wall you cycle round, a square shaped like a shell and a city that used to be a country.",
+      "The order matters. Pisa and Lucca first, since they take a day each, and Florence last, with more nights and no rush. That way the trip builds up instead of winding down.",
+      "What usually goes wrong is the car. Florence and Siena close their centres to traffic and parking inside is expensive. The train links Pisa, Lucca and Florence in just over an hour, and a bus covers the rest."
+    ],
+    "towns": {
+      "Pisa": {
+        "text": "Pisa takes half a day, and that is not a slight: the Piazza dei Miracoli sits in a corner of the city, away from the centre, and you walk it in an hour. The rest, the Arno and the arcades of the Lungarno, is a pleasant walk almost nobody takes, because they arrive by train, see the tower and leave.",
+        "see": [
+          "The tower, with a booked slot: it goes up in small groups and the day's tickets sell out",
+          "The Duomo, the baptistery and the Camposanto, all in the same square",
+          "The Lungarno and the church of Santa Maria della Spina, on the river",
+          "An ice cream on Borgo Stretto, the arcaded street in the centre"
+        ],
+        "tip": "The tower leans because the ground gave way while they were building it in the 12th century, and they carried on anyway. If you can't get a ticket, it looks just as good from the square: the baptistery has the best angle."
+      },
+      "Lucca": {
+        "text": "Lucca is the least Italian-looking city in Italy: no noise, no scooters, no queues. Its 16th-century wall is still whole and you cycle round it in an hour, above the city, between trees.",
+        "see": [
+          "The wall, renting a bike at the Porta San Pietro",
+          "The Piazza dell'Anfiteatro, built on a Roman amphitheatre and keeping its oval shape",
+          "The Torre Guinigi, with holm oaks on top",
+          "The Duomo of San Martino and the Volto Santo"
+        ],
+        "tip": "You eat well here, without tourists. Find a trattoria inside the walls and order tortelli lucchesi, the local stuffed pasta, or farro with vegetables."
+      },
+      "Siena": {
+        "text": "Siena is genuinely medieval, not a facade: the streets climb and dip, twist and never run straight. The Piazza del Campo, shaped like a shell, is one of the finest squares in Italy, and at night, once the day trips leave, the city is almost empty.",
+        "see": [
+          "The Piazza del Campo and the Torre del Mangia, 400 steps and the best view in the city",
+          "The Duomo and its marble floor, uncovered whole only a few weeks a year",
+          "The contrada neighbourhoods, each with its fountain and its crest",
+          "San Gimignano, an hour away by bus, if you have half a day spare"
+        ],
+        "tip": "The Palio runs on 2 July and 16 August. On those days the city fills up and prices jump: book months ahead or pick other dates."
+      },
+      "Val d'Orcia (Pienza)": {
+        "text": "The Val d'Orcia is the Tuscany of the photos: hills, cypresses and stone houses on the hilltops. Pienza, in the middle, is a whole town built in three years by a 15th-century pope, and you walk it in an afternoon.",
+        "see": [
+          "Pienza and its square, with the palace and the cathedral on the very edge of town",
+          "The viewpoint on the Via dell'Amore, over the valley",
+          "San Quirico d'Orcia and the hot springs of Bagno Vignoni",
+          "Montalcino, if you care about wine: this is where Brunello comes from"
+        ],
+        "tip": "Here you do need a car: the buses are few and don't reach the viewpoints. Hire one in Siena for the day and drop it back in the evening."
+      },
+      "San Gimignano": {
+        "text": "San Gimignano had more than seventy towers in the Middle Ages and fourteen are left. You see it from far off, on top of a hill, which is why so many people come: it is the half-day bus stop par excellence.",
+        "see": [
+          "The Piazza della Cisterna and the Piazza del Duomo, with the towers around them",
+          "The Torre Grossa, the tallest, to see the others from above",
+          "Vernaccia, the local white wine, in an enoteca in the centre"
+        ],
+        "tip": "Arrive early or stay the night. Between eleven and five the town is a procession of tour groups and you can barely walk down the main street."
+      },
+      "Florence": {
+        "text": "Florence is walked, and almost everything famous is ten minutes from the Duomo. The problem is the queues: the Uffizi, the Accademia and Brunelleschi's dome are booked before you go, or you lose half a day waiting.",
+        "see": [
+          "The Duomo dome: 463 steps and the best view in the city, with a booked slot",
+          "The Uffizi Gallery",
+          "The David, in the Accademia Gallery",
+          "The Oltrarno, across the river: craftsmen's workshops and fewer people",
+          "San Miniato al Monte at sunset, higher than the Piazzale Michelangelo and quieter"
+        ],
+        "tip": "In the Mercato Centrale, the stalls are downstairs and the food is upstairs. If you dare, the lampredotto sandwich is the most Florentine thing you will try."
+      }
+    },
+    "gettingAround": "All by train, except the Val d'Orcia. Pisa, Lucca and Florence are on the same line, with trains every half hour and journeys of 30 to 60 minutes. Siena is linked to Florence by a fast bus (an hour and a quarter) or by regional train, slower and with a change at Empoli. San Gimignano is reached by bus from Siena or Florence, with few departures: check the return time before you go. For the Val d'Orcia, hire a car in Siena for the day. In Florence and Siena the centre is pedestrian and a car is a nuisance.",
+    "bestTime": "April, May, June, September and October: good weather, long days and fewer people than in summer. July and August are the hottest and busiest months, and in August many restaurants close for a few days. In winter there is fog in the valley and the towns are yours, but it gets dark at five. The grape harvest, in late September, is the best time for the Val d'Orcia.",
+    "faq": [
+      {
+        "question": "How many days do you need for Tuscany?",
+        "answer": "With 4 or 5 days you see Pisa, Lucca and Florence. With 7 to 9 you add Siena and San Gimignano; with 11 to 13 the Val d'Orcia fits too, without rushing."
+      },
+      {
+        "question": "Do you need a car in Tuscany?",
+        "answer": "Not for Pisa, Lucca, Siena and Florence: train and bus are enough. A car only pays off for the Val d'Orcia and the small villages, and it is best hired for single days."
+      },
+      {
+        "question": "Can the route be done the other way round?",
+        "answer": "Yes: it works both ways. If you start in Florence, you finish in Pisa, a step from the airport."
+      },
+      {
+        "question": "Which airport do you fly to?",
+        "answer": "Pisa (Galilei, PSA) or Florence (Peretola, FLR). Pisa has more flights and is an hour from Florence by train; Florence is closer to the centre but has fewer connections."
+      }
+    ]
+  }
+}

@@ -11,8 +11,10 @@ Status (built 2026-10-20). Update this file as the pieces land.
   their note (docs/stopovers.md, route graph); dry run 2026-10-20: from Barcelona 47 → 66 routes, Málaga 43 → 50,
   Madrid 45 → 48 (Suiza through Geneva). Each card shows first the version that ranked it (`bestVersion`), "Recomendados / Más baratos" order,
   fixed photos per route, search pages per kind (`/es/recorridos`…), usage metrics in the admin (`/admin/usage`).
-- Route pages (SEO), pilot (2026-10-21): only "Italia clásica" (`/es/recorridos/italia-clasica`,
-  `/en/multi-city/classic-italy`), text in `src/data/multiCityPages.json` (`reviewed: false`). What each town is like,
+- Route pages (SEO), pilot (2026-10-21): "Italia clásica" (`/es/recorridos/italia-clasica`,
+  `/en/multi-city/classic-italy`), Nápoles y la Costa Amalfitana, Toscana, Norte de Italia y los lagos, Sicilia and
+  Puglia y Matera, one file per route in `src/data/multiCityPages/<route>.json` joined by
+  `src/data/multiCityPages/index.js` (`reviewed: false`). What each town is like,
   what to see, a tip, its guide, on a line with the way by land between towns; the route's lengths; getting around, when to go, FAQ. No day by day (the guides' and
   the reader's itinerary) and no prices (no airline request on a visit): both buttons go to the "Recorridos" search
   as usual (counted as `route_page_search_click`). The guides of its towns link to it. Next: a script that drafts the
@@ -40,7 +42,7 @@ Status (built 2026-10-20). Update this file as the pieces land.
 - Planner taking route towns: `src/utils/manualTrips.js` (`isRouteTown`), `src/app/[lang]/trips/new/page.js`.
 - Metrics: `src/server/metrics.js` (daily Redis counters), counted in `src/server/airlineGuard.js` and by
   `src/app/api/metrics/search/route.js`; read by `src/server/admin/usage.js`, shown by `src/components/admin/AdminUsage`.
-- Route pages: text `src/data/multiCityPages.json` (per route id: `slugs`, `photos` by the town's English name —
+- Route pages: text `src/data/multiCityPages/<route>.json` (per route id: `slugs`, `photos` by the town's English name —
   Wikimedia Commons, chosen by looking at them, with author and licence, never one the route's own photo looks like, nor
   one whose author adds conditions beyond the licence —, and per language `title`, `metaTitle`,
   `summary`, `why`, `towns` by the town's English name, `gettingAround`, `bestTime`, `faq`), joined with the route's

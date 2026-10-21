@@ -1,7 +1,7 @@
 import { DESKTOP, NOT_FOUND_ERRORS, PHONE, expect, expectNoSidewaysScroll, test } from "./helpers/test.js";
 
 // A multi-city route's own page (/es/recorridos/italia-clasica, /en/multi-city/classic-italy; docs/multi-city.md,
-// route pages): what the route is like, town by town (src/data/multiCityPages.json), in the guides' look; no prices,
+// route pages): what the route is like, town by town (src/data/multiCityPages/<route>.json), in the guides' look; no prices,
 // and every way out to the "Recorridos" search as usual. The city guides of its towns link to it.
 test.describe("multi-city route pages", () => {
   for (const viewport of [DESKTOP, PHONE]) {

@@ -1,8 +1,8 @@
 // The multi-city routes' own pages (/es/recorridos/italia-clasica; docs/multi-city.md, route pages): what the route
-// is like, town by town, written once per route in src/data/multiCityPages.json (reviewed by hand, never made on a
+// is like, town by town, written once per route in src/data/multiCityPages/<route>.json (reviewed by hand, never made on a
 // visit) and joined here with the route's data (its versions, towns, nights and land legs). No prices: the page
 // sends to the "Recorridos" search. Only read on the server.
-import pages from "@/data/multiCityPages.json";
+import pages from "@/data/multiCityPages";
 import { multiCityRoute } from "@/server/multiCity/routes";
 import { cityGuideById } from "@/server/cityGuides";
 import { RECOMMENDED_VERSION } from "@/constants/multiCity";

@@ -1,0 +1,284 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "umbria",
+    "en": "umbria"
+  },
+  "photos": {
+    "Perugia": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Perugia-Piazza-del-Comune.jpg/960px-Perugia-Piazza-del-Comune.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Perugia-Piazza-del-Comune.jpg",
+      "author": "Edward Stephenson",
+      "license": "CC BY 2.0"
+    },
+    "Gubbio": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 296,
+      "page": "https://commons.wikimedia.org/wiki/File:Gubbio_panorama.jpg",
+      "author": "Labicanense",
+      "license": "CC BY 4.0"
+    },
+    "Assisi": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Assisi_panorama.jpg/960px-Assisi_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Assisi_panorama.jpg",
+      "author": "Gunnar Bach Pedersen",
+      "license": "Public domain"
+    },
+    "Spello": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Panorama_di_Spello.jpg/960px-Panorama_di_Spello.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 396,
+      "page": "https://commons.wikimedia.org/wiki/File:Panorama_di_Spello.jpg",
+      "author": "WikiRomaWiki",
+      "license": "CC BY-SA 4.0"
+    },
+    "Spoleto": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Rocca_Albornoz_and_Ponte_delle_Torri%2C_Spoleto.jpg/960px-Rocca_Albornoz_and_Ponte_delle_Torri%2C_Spoleto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Rocca_Albornoz_and_Ponte_delle_Torri,_Spoleto.jpg",
+      "author": "Zyance",
+      "license": "CC BY-SA 2.5"
+    },
+    "Todi": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Todi_piazza_del_popolo_2.JPG/960px-Todi_piazza_del_popolo_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Todi_piazza_del_popolo_2.JPG",
+      "author": "MamoSuomenpoika",
+      "license": "Public domain"
+    },
+    "Orvieto": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Orvieto_3.JPG/960px-Orvieto_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Orvieto_3.JPG",
+      "author": "Fantasy",
+      "license": "CC BY-SA 3.0"
+    },
+    "Rome": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Rome_Skyline_%288012016319%29.jpg/960px-Rome_Skyline_%288012016319%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Rome_Skyline_(8012016319).jpg",
+      "author": "Bert Kaufmann",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Umbría",
+    "metaTitle": "Ruta por Umbría: Perugia, Asís, Spoleto y Orvieto, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Perugia, recorres los pueblos de piedra de la región y acabas en Roma. Vuelves desde otro aeropuerto, así que no repites camino: trenes regionales y algún autobús.",
+    "why": [
+      "Umbría es el corazón verde de Italia: colinas, olivos y pueblos de piedra en lo alto, sin el turismo de la Toscana. Es la región de San Francisco y de los frescos de Piero della Francesca.",
+      "El orden importa. Perugia primero, que es la ciudad grande y la base natural, y los pueblos después, en tren o en autobús. Roma al final, que es la salida natural.",
+      "Lo que suele fallar es el coche. Los pueblos están en colinas y los aparcamientos fuera, con escaleras y ascensores. El tren regional une Perugia, Asís, Spoleto y Orvieto, y desde Orvieto hay tren a Roma en una hora."
+    ],
+    "towns": {
+      "Perugia": {
+        "text": "Perugia es la capital y la ciudad universitaria de la región, con un centro medieval en lo alto de una colina al que se sube en escaleras mecánicas desde abajo. Es animada y tiene buen ambiente de noche.",
+        "see": [
+          "La Piazza IV Novembre y la Fontana Maggiore",
+          "La catedral y el palacio de los Priores",
+          "La Rocca Paolina, una fortaleza con calles enteras dentro",
+          "El chocolate, con la fábrica Perugina y la casa del cioccolato"
+        ],
+        "tip": "La Rocca Paolina tiene calles enteras de la ciudad vieja dentro de sus muros: se recorre andando y está vacía casi siempre. Es la mejor entrada al centro desde abajo."
+      },
+      "Gubbio": {
+        "text": "Gubbio es un pueblo de piedra gris en la ladera del monte Ingino, con una plaza medieval enorme y una de las vistas más bonitas de Umbría.",
+        "see": [
+          "La Piazza Grande, con el palacio de los Consoli",
+          "El funicular al monte Ingino, en una jaula abierta",
+          "La basílica de San Ubaldo, en lo alto"
+        ],
+        "tip": "El funicular a San Ubaldo es una jaula de dos plazas que sube por la ladera. Da vértigo y es lo mejor del pueblo: sube al atardecer."
+      },
+      "Assisi": {
+        "text": "Asís es la ciudad de San Francisco, y la basílica es uno de los edificios más importantes del arte italiano: los frescos de Giotto y Cimabue cubren las paredes de arriba abajo.",
+        "see": [
+          "La basílica de San Francisco, con los frescos de Giotto",
+          "La basílica de Santa Clara",
+          "La Rocca Maggiore, con vistas al valle"
+        ],
+        "tip": "La basílica tiene dos iglesias superpuestas: la de abajo es más oscura y más antigua, y la de arriba tiene los frescos de Giotto. Ve temprano, que a media mañana llegan los peregrinos."
+      },
+      "Spello": {
+        "text": "Spello es un pueblo pequeño de piedra rosa, con callejones en cuesta y una iglesia con frescos de Pinturicchio que casi nadie visita.",
+        "see": [
+          "La iglesia de Santa Maria Maggiore y la capilla Baglioni",
+          "La Porta Consolare y las murallas romanas",
+          "El mirador sobre el valle de Umbría"
+        ],
+        "tip": "La capilla Baglioni tiene frescos de Pinturicchio de 1501 y está casi siempre vacía. Es uno de los tesoros escondidos de la región."
+      },
+      "Spoleto": {
+        "text": "Spoleto es una ciudad de colinas con un acueducto romano que cruza un barranco y un festival de música clásica en verano que llena la ciudad.",
+        "see": [
+          "El Ponte delle Torri, el acueducto sobre el barranco",
+          "La Rocca Albornoz",
+          "El Duomo y su plaza"
+        ],
+        "tip": "El Ponte delle Torri tiene 80 metros de altura y se cruza andando hasta el bosque del otro lado. Es de los paseos más bonitos de Umbría."
+      },
+      "Todi": {
+        "text": "Todi es un pueblo en lo alto de una colina, con una plaza medieval perfecta y una catedral que parece flotar sobre el valle.",
+        "see": [
+          "La Piazza del Popolo y el palacio del Capitano",
+          "La catedral y el templo de Santa Maria della Consolazione",
+          "El mirador sobre el Tíber"
+        ],
+        "tip": "El templo de Santa Maria della Consolazione está fuera del pueblo, en el valle, y es una obra maestra del Renacimiento que casi nadie visita."
+      },
+      "Orvieto": {
+        "text": "Orvieto está en lo alto de un peñasco de toba, con una catedral de fachada dorada que es de las más bonitas de Italia y una ciudad subterránea de túneles y pozos.",
+        "see": [
+          "La catedral y su fachada de mosaicos",
+          "El pozo de San Patricio, con dos escaleras de caracol",
+          "Orvieto Underground, los túneles bajo la ciudad"
+        ],
+        "tip": "El pozo de San Patricio tiene 248 escalones en dos escaleras de caracol que no se cruzan. Se baja y se sube en unos 20 minutos, y el frescor del fondo se agradece en verano."
+      },
+      "Rome": {
+        "text": "Roma cierra el viaje y es la ciudad que no necesita presentación. Desde Orvieto hay trenes directos en poco más de una hora, así que es la salida natural.",
+        "see": [
+          "El Coliseo y el Foro Romano, con entrada reservada",
+          "Los Museos Vaticanos y la Capilla Sixtina",
+          "Trastevere al caer la tarde"
+        ],
+        "tip": "Si solo tienes un día en Roma, elige una cosa: el centro antiguo o el Vaticano. Intentar las dos es no ver ninguna."
+      }
+    },
+    "gettingAround": "Tren regional y algún autobús. Perugia es el centro: Asís está a 25 minutos, Spello a 30, Spoleto a una hora y Orvieto a una hora y cuarto. Desde Orvieto hay trenes a Roma en poco más de una hora. Gubbio y Todi se alcanzan en autobús, con pocas frecuencias: mira el horario de vuelta. Los pueblos están en colinas y los aparcamientos fuera, con escaleras o ascensores para subir. El coche ayuda para los pueblos pequeños, pero no es imprescindible.",
+    "bestTime": "Abril, mayo, junio, septiembre y octubre: buen tiempo, verde en los campos y menos gente. Julio y agosto son calurosos y los pueblos se llenan de turismo interno. En invierno hay niebla en el valle y los pueblos se quedan para ti, pero anochece a las cinco y algunos restaurantes cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Umbría?",
+        "answer": "Con 4 o 5 días ves Perugia, Asís y Spoleto. Con 7 a 9 añades Spello, Todi y Orvieto; con 10 u 11 entra también Roma."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No es imprescindible: el tren une Perugia, Asís, Spello, Spoleto y Orvieto. El coche ayuda para Gubbio y Todi, donde los autobuses son escasos."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Roma, acabas en Perugia, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuerto se vuela?",
+        "answer": "A Perugia (PEG), pequeño y con pocos vuelos, o a Roma (FCO o CIA). Desde Roma hay trenes a Orvieto en poco más de una hora."
+      }
+    ]
+  },
+  "en": {
+    "title": "Umbria itinerary",
+    "metaTitle": "Umbria: Perugia, Assisi, Spoleto and Orvieto in 5 to 13 days · Lowfly",
+    "summary": "You fly into Perugia, cross the region's stone villages and end in Rome. You fly home from another airport, so you never double back: regional trains and the odd bus.",
+    "why": [
+      "Umbria is the green heart of Italy: hills, olives and stone villages on hilltops, without Tuscany's tourism. This is the region of St Francis and of Piero della Francesca's frescoes.",
+      "The order matters. Perugia first, the big city and the natural base, then the villages, by train or bus. Rome last, the natural way out.",
+      "What usually goes wrong is the car. The villages sit on hills and the car parks are outside, with stairs and lifts. The regional train links Perugia, Assisi, Spoleto and Orvieto, and from Orvieto there is a train to Rome in an hour."
+    ],
+    "towns": {
+      "Perugia": {
+        "text": "Perugia is the regional capital and university city, with a medieval centre on top of a hill reached by escalators from below. It is lively and has a good night scene.",
+        "see": [
+          "The Piazza IV Novembre and the Fontana Maggiore",
+          "The cathedral and the Priors' palace",
+          "The Rocca Paolina, a fortress with whole streets inside",
+          "Chocolate, with the Perugina factory and the chocolate house"
+        ],
+        "tip": "The Rocca Paolina has whole streets of the old city inside its walls: you walk through and it is almost always empty. It is the best way into the centre from below."
+      },
+      "Gubbio": {
+        "text": "Gubbio is a grey stone town on the slope of Monte Ingino, with a huge medieval square and one of the finest views in Umbria.",
+        "see": [
+          "The Piazza Grande, with the Consuls' palace",
+          "The cable car to Monte Ingino, in an open cage",
+          "The basilica of Sant'Ubaldo, at the top"
+        ],
+        "tip": "The cable car to Sant'Ubaldo is a two-person cage climbing the slope. It is dizzying and the best thing in town: go up at sunset."
+      },
+      "Assisi": {
+        "text": "Assisi is the city of St Francis, and the basilica is one of the most important buildings in Italian art: frescoes by Giotto and Cimabue cover the walls from top to bottom.",
+        "see": [
+          "The basilica of St Francis, with Giotto's frescoes",
+          "The basilica of St Clare",
+          "The Rocca Maggiore, with views over the valley"
+        ],
+        "tip": "The basilica has two churches stacked: the lower one is darker and older, and the upper one has Giotto's frescoes. Go early, because the pilgrims arrive mid-morning."
+      },
+      "Spello": {
+        "text": "Spello is a small town of pink stone, with steep lanes and a church with frescoes by Pinturicchio that almost nobody visits.",
+        "see": [
+          "The church of Santa Maria Maggiore and the Baglioni chapel",
+          "The Porta Consolare and the Roman walls",
+          "The viewpoint over the Umbrian valley"
+        ],
+        "tip": "The Baglioni chapel has frescoes by Pinturicchio from 1501 and is almost always empty. It is one of the region's hidden treasures."
+      },
+      "Spoleto": {
+        "text": "Spoleto is a city of hills with a Roman aqueduct crossing a gorge and a classical music festival in summer that fills the town.",
+        "see": [
+          "The Ponte delle Torri, the aqueduct over the gorge",
+          "The Rocca Albornoz",
+          "The Duomo and its square"
+        ],
+        "tip": "The Ponte delle Torri is 80 metres high and you walk across it to the woods on the other side. It is one of the finest walks in Umbria."
+      },
+      "Todi": {
+        "text": "Todi is a town on top of a hill, with a perfect medieval square and a cathedral that seems to float above the valley.",
+        "see": [
+          "The Piazza del Popolo and the Captain's palace",
+          "The cathedral and the temple of Santa Maria della Consolazione",
+          "The viewpoint over the Tiber"
+        ],
+        "tip": "The temple of Santa Maria della Consolazione stands outside the town, in the valley, and is a Renaissance masterpiece almost nobody visits."
+      },
+      "Orvieto": {
+        "text": "Orvieto sits on top of a tufa cliff, with a golden-faced cathedral among the finest in Italy and an underground city of tunnels and wells.",
+        "see": [
+          "The cathedral and its mosaic facade",
+          "St Patrick's Well, with two spiral staircases",
+          "Orvieto Underground, the tunnels beneath the city"
+        ],
+        "tip": "St Patrick's Well has 248 steps in two spiral staircases that never cross. You go down and up in about 20 minutes, and the cool at the bottom is welcome in summer."
+      },
+      "Rome": {
+        "text": "Rome closes the trip and needs no introduction. From Orvieto there are direct trains in just over an hour, so it is the natural way out.",
+        "see": [
+          "The Colosseum and the Roman Forum, booked ahead",
+          "The Vatican Museums and the Sistine Chapel",
+          "Trastevere as evening falls"
+        ],
+        "tip": "If you only have one day in Rome, pick one thing: the ancient centre or the Vatican. Trying both means seeing neither."
+      }
+    },
+    "gettingAround": "Regional train and the odd bus. Perugia is the centre: Assisi is 25 minutes away, Spello 30, Spoleto an hour and Orvieto an hour and a quarter. From Orvieto there are trains to Rome in just over an hour. Gubbio and Todi are reached by bus, with few departures: check the return time. The villages sit on hills and the car parks are outside, with stairs or lifts to go up. A car helps for the small villages, but it is not essential.",
+    "bestTime": "April, May, June, September and October: good weather, green fields and fewer people. July and August are hot and the villages fill with domestic tourism. In winter there is fog in the valley and the villages are yours, but it gets dark at five and some restaurants close.",
+    "faq": [
+      {
+        "question": "How many days do you need for Umbria?",
+        "answer": "With 4 or 5 days you see Perugia, Assisi and Spoleto. With 7 to 9 you add Spello, Todi and Orvieto; with 10 or 11 Rome fits too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not essential: the train links Perugia, Assisi, Spello, Spoleto and Orvieto. A car helps for Gubbio and Todi, where buses are scarce."
+      },
+      {
+        "question": "Can the route be done the other way round?",
+        "answer": "Yes: it works both ways. If you start in Rome, you finish in Perugia, with the airport a step away."
+      },
+      {
+        "question": "Which airport do you fly to?",
+        "answer": "Perugia (PEG), small with few flights, or Rome (FCO or CIA). From Rome there are trains to Orvieto in just over an hour."
+      }
+    ]
+  }
+}

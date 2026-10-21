@@ -13,7 +13,7 @@ import { SITE_URL, alternatesOf, breadcrumbsOf, faqPageOf, openGraphOf } from "@
 
 // A multi-city route's own page (/es/recorridos/italia-clasica; /en/multi-city/classic-italy, through src/proxy.js
 // as the "Recorridos" search's name), for search engines: what the route is like, town by town, as
-// src/data/multiCityPages.json has it (never made on a visit), every page made at build time. Its own folder, outside
+// src/data/multiCityPages/<route>.json has it (never made on a visit), every page made at build time. Its own folder, outside
 // the search pages' group: no search form here, only the way to it. Its name in another language
 // (/es/recorridos/classic-italy) is sent to this language's; any other name is not found.
 export const dynamicParams = true;

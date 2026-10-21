@@ -1,0 +1,236 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "norte-de-italia-y-lagos",
+    "en": "northern-italy-and-the-lakes"
+  },
+  "photos": {
+    "Milan": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Milano_Italy_Duomo-Milan-01.jpg/1280px-Milano_Italy_Duomo-Milan-01.jpg",
+      "width": 1280,
+      "height": 989,
+      "page": "https://commons.wikimedia.org/wiki/File:Milano_Italy_Duomo-Milan-01.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0"
+    },
+    "Varenna (Lake Como)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Varenna%2C_Lake_Como_1.jpg/1280px-Varenna%2C_Lake_Como_1.jpg",
+      "width": 1280,
+      "height": 763,
+      "page": "https://commons.wikimedia.org/wiki/File:Varenna,_Lake_Como_1.jpg",
+      "author": "Ray in Manila",
+      "license": "CC BY 2.0"
+    },
+    "Bergamo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/The_Upper_City_of_Bergamo._View_from_Via_al_Castello._Italy.jpg/1280px-The_Upper_City_of_Bergamo._View_from_Via_al_Castello._Italy.jpg",
+      "width": 1280,
+      "height": 915,
+      "page": "https://commons.wikimedia.org/wiki/File:The_Upper_City_of_Bergamo._View_from_Via_al_Castello._Italy.jpg",
+      "author": "Ввласенко",
+      "license": "CC BY-SA 3.0"
+    },
+    "Sirmione (Lake Garda)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Castello_Scaligero_lato_Sud_di_Sirmione.jpg/1280px-Castello_Scaligero_lato_Sud_di_Sirmione.jpg",
+      "width": 1280,
+      "height": 863,
+      "page": "https://commons.wikimedia.org/wiki/File:Castello_Scaligero_lato_Sud_di_Sirmione.jpg",
+      "author": "Wolfgang Moroder",
+      "license": "CC BY-SA 4.0"
+    },
+    "Verona": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Verona_Arena_01.jpg/1280px-Verona_Arena_01.jpg",
+      "width": 1280,
+      "height": 634,
+      "page": "https://commons.wikimedia.org/wiki/File:Verona_Arena_01.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0"
+    },
+    "Venice": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Canal_Grande_Chiesa_della_Salute_e_Dogana_dal_ponte_dell_Accademia.jpg/1280px-Canal_Grande_Chiesa_della_Salute_e_Dogana_dal_ponte_dell_Accademia.jpg",
+      "width": 1280,
+      "height": 860,
+      "page": "https://commons.wikimedia.org/wiki/File:Canal_Grande_Chiesa_della_Salute_e_Dogana_dal_ponte_dell_Accademia.jpg",
+      "author": "Wolfgang Moroder",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por el norte de Italia y los lagos",
+    "metaTitle": "Ruta por el norte de Italia y los lagos: Milán, Como, Bérgamo y Verona, de 5 a 12 días · Lowfly",
+    "summary": "Entras por Milán o Bérgamo, subes al lago de Como y acabas en Verona o Venecia. Todo en tren, con trayectos de una hora o menos, y vuelves desde otro aeropuerto para no deshacer camino.",
+    "why": [
+      "Milán, un lago con pueblos de piedra y una ciudad amurallada en lo alto de una colina. El norte de Italia se recorre en tren como si fuera una sola ciudad grande, y los trayectos no pasan de la hora.",
+      "El orden importa. Milán primero, que es la que más prisa lleva, y el lago después, para bajar el ritmo. Bérgamo y Verona cierran el viaje, y si tienes días, Venecia.",
+      "Lo que suele fallar es querer ver los dos lagos. Como y Garda están a lados distintos y unirlos cuesta medio día de tren. Elige uno y hazlo bien."
+    ],
+    "towns": {
+      "Milan": {
+        "text": "Milán es la ciudad italiana que trabaja: bancos, tiendas y aperitivos a las siete. Se ve en un día y medio, y el Duomo es la única parada obligatoria. Lo demás es caminar por Brera y comer bien.",
+        "see": [
+          "El Duomo y su terraza, subiendo en ascensor o por los 250 escalones",
+          "La Galleria Vittorio Emanuele II, a un paso de la plaza",
+          "El Cenacolo Vinciano, la Última Cena, con reserva de semanas",
+          "El Navigli al atardecer, con el aperitivo"
+        ],
+        "tip": "La Última Cena se reserva por internet y se agota meses antes. Si no consigues entrada, no es un drama: el refectorio está en una iglesia que casi nadie visita y el resto de Milán no depende de ella."
+      },
+      "Varenna (Lake Como)": {
+        "text": "Varenna es el pueblo del lago de Como que se ve desde el tren: casas de piedra colgadas sobre el agua y un paseo que no llega a un kilómetro. Desde aquí salen los barcos a Bellagio y a Menaggio.",
+        "see": [
+          "El paseo de los enamorados, el Passo della Fiume, junto al agua",
+          "Villa Monastero y sus jardines, con entrada",
+          "Bellagio, en barco, y su punta entre los dos brazos del lago"
+        ],
+        "tip": "El barco es el transporte, no la excursión: el billete de un día permite bajar en cada pueblo. Y en julio y agosto, reserva el hotel con meses: los pueblos del lago se llenan."
+      },
+      "Bergamo": {
+        "text": "Bérgamo tiene dos ciudades: la de abajo, moderna y con la estación, y la de arriba, amurallada, a la que se sube en funicular. La de arriba es de las más bonitas del norte y casi nadie le da un día entero.",
+        "see": [
+          "La Città Alta y sus murallas venecianas, Patrimonio de la Humanidad",
+          "La Piazza Vecchia y la capilla Colleoni",
+          "El funicular desde la ciudad baja, un minuto de subida"
+        ],
+        "tip": "Bérgamo es el aeropuerto de Ryanair en la zona, así que es la entrada natural. Si llegas tarde, duerme en la ciudad baja y sube a la alta por la mañana, con luz."
+      },
+      "Sirmione (Lake Garda)": {
+        "text": "Sirmione ocupa una península estrecha en el lago de Garda, con un castillo con foso a la entrada y ruinas romanas al final. Es el pueblo más visitado del lago, y en verano se nota.",
+        "see": [
+          "El castillo Scaligero y su puerto fortificado",
+          "Las Grotte di Catullo, una villa romana al final de la península",
+          "Las aguas termales, si te apetece un baño"
+        ],
+        "tip": "En temporada alta, el pueblo cierra al tráfico y el aparcamiento está fuera. Ve en tren hasta Desenzano y luego en autobús o barco: te ahorras la cola de coches."
+      },
+      "Verona": {
+        "text": "Verona es la ciudad de Romeo y Julieta, y lo sabe: el balcón es una casa-museo con cola. Pero la ciudad es mucho más que eso, con un anfiteatro romano que aún se usa para ópera y un centro de calles rosadas.",
+        "see": [
+          "La Arena, el anfiteatro romano, con entrada",
+          "La Piazza delle Erbe y la Piazza dei Signori",
+          "El Ponte Pietra y la vista desde la colina de San Pietro",
+          "La ópera en la Arena, en temporada de verano"
+        ],
+        "tip": "Si vas entre junio y agosto, mira el cartel de la Arena antes de reservar el hotel: las noches de ópera llenan la ciudad y los precios suben."
+      },
+      "Venice": {
+        "text": "Venecia cierra el viaje y es la que más se recuerda. Duerme en la isla, no en Mestre: a las ocho de la mañana, antes de que lleguen los grupos, tienes calles enteras para ti.",
+        "see": [
+          "La basílica de San Marcos, con entrada reservada para no hacer la cola",
+          "El mercado de Rialto por la mañana (la pescadería cierra domingo y lunes)",
+          "Cannaregio, el barrio donde vive la gente que aún vive en Venecia",
+          "Burano, si tienes medio día: unos 45 minutos en vaporetto"
+        ],
+        "tip": "Cena a base de cicchetti, de pie en un bacaro y con una copa de vino. Más barato que sentarse y mucho más veneciano."
+      }
+    },
+    "gettingAround": "Todo en tren, y es de las rutas más fáciles de Italia. Milán, Bérgamo, Verona y Venecia están en la misma línea, con trenes rápidos de 40 a 90 minutos. Al lago de Como se llega desde Milán en 40 minutos hasta Varenna, y desde allí los barcos unen los pueblos. Sirmione se alcanza en tren hasta Desenzano y luego en autobús o barco. Compra los billetes de tren rápido con antelación: el precio se dobla en el último día.",
+    "bestTime": "Abril, mayo, junio, septiembre y octubre: buen tiempo y menos gente. Julio y agosto son los meses de los lagos, con los pueblos llenos y los hoteles caros, y en agosto muchos restaurantes de ciudad cierran. En invierno hace frío y hay niebla en la llanura, pero Milán y Verona se recorren sin colas y los precios bajan.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para el norte de Italia?",
+        "answer": "Con 5 o 6 días ves Milán, el lago de Como y Bérgamo. Con 8 a 10 añades Verona; con 11 o 12 entra también Venecia."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No. Es la ruta de Italia donde el tren funciona mejor: todos los trayectos son de una hora o menos. El coche solo estorba en los lagos, donde aparcar es caro y difícil."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Venecia, acabas en Bérgamo, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuerto se vuela?",
+        "answer": "A Milán (Bérgamo BGY o Malpensa MXP) o a Verona (VRN). Bérgamo es el más cómodo para Ryanair y está a una hora de Milán en autobús."
+      }
+    ]
+  },
+  "en": {
+    "title": "Northern Italy and the lakes itinerary",
+    "metaTitle": "Northern Italy and the lakes: Milan, Como, Bergamo and Verona in 5 to 12 days · Lowfly",
+    "summary": "You fly into Milan or Bergamo, go up to Lake Como and end in Verona or Venice. All by train, with journeys of an hour or less, and you fly home from another airport so you never double back.",
+    "why": [
+      "Milan, a lake with stone villages and a walled town on top of a hill. Northern Italy is travelled by train as if it were one big city, and no journey takes more than an hour.",
+      "The order matters. Milan first, since it is the one in a hurry, then the lake to slow down. Bergamo and Verona close the trip, and Venice if you have the days.",
+      "What usually goes wrong is wanting both lakes. Como and Garda are on opposite sides and joining them costs half a day on the train. Pick one and do it properly."
+    ],
+    "towns": {
+      "Milan": {
+        "text": "Milan is the Italian city that works: banks, shops and aperitivo at seven. A day and a half covers it, and the Duomo is the only stop you cannot skip. The rest is walking Brera and eating well.",
+        "see": [
+          "The Duomo and its terrace, by lift or up the 250 steps",
+          "The Galleria Vittorio Emanuele II, a step from the square",
+          "Leonardo's Last Supper, booked weeks ahead",
+          "The Navigli at sunset, with aperitivo"
+        ],
+        "tip": "The Last Supper is booked online and sells out months ahead. If you can't get in, it's no disaster: the refectory is in a church almost nobody visits, and the rest of Milan doesn't depend on it."
+      },
+      "Varenna (Lake Como)": {
+        "text": "Varenna is the Lake Como village you see from the train: stone houses hanging over the water and a walk less than a kilometre long. Boats to Bellagio and Menaggio leave from here.",
+        "see": [
+          "The lovers' walk, the Passo della Fiume, by the water",
+          "Villa Monastero and its gardens, with a ticket",
+          "Bellagio, by boat, and its point between the lake's two arms"
+        ],
+        "tip": "The boat is the transport, not the excursion: a day ticket lets you get off in every village. And in July and August, book the hotel months ahead: the lake villages fill up."
+      },
+      "Bergamo": {
+        "text": "Bergamo has two towns: the lower one, modern and with the station, and the upper one, walled, reached by funicular. The upper town is one of the finest in the north and almost nobody gives it a full day.",
+        "see": [
+          "The Città Alta and its Venetian walls, a World Heritage site",
+          "The Piazza Vecchia and the Colleoni chapel",
+          "The funicular from the lower town, a minute up"
+        ],
+        "tip": "Bergamo is Ryanair's airport for the area, so it is the natural way in. If you land late, sleep in the lower town and go up in the morning, in daylight."
+      },
+      "Sirmione (Lake Garda)": {
+        "text": "Sirmione sits on a narrow peninsula in Lake Garda, with a moated castle at the entrance and Roman ruins at the far end. It is the most visited village on the lake, and in summer you notice.",
+        "see": [
+          "The Scaligero castle and its fortified harbour",
+          "The Grotte di Catullo, a Roman villa at the tip of the peninsula",
+          "The hot springs, if you fancy a dip"
+        ],
+        "tip": "In high season the village closes to traffic and parking is outside. Take the train to Desenzano and then a bus or boat: you skip the queue of cars."
+      },
+      "Verona": {
+        "text": "Verona is the city of Romeo and Juliet, and it knows it: the balcony is a house-museum with a queue. But the city is far more than that, with a Roman amphitheatre still used for opera and a centre of pink stone streets.",
+        "see": [
+          "The Arena, the Roman amphitheatre, with a ticket",
+          "The Piazza delle Erbe and the Piazza dei Signori",
+          "The Ponte Pietra and the view from the San Pietro hill",
+          "Opera at the Arena, in the summer season"
+        ],
+        "tip": "If you go between June and August, check the Arena programme before booking the hotel: opera nights fill the city and prices climb."
+      },
+      "Venice": {
+        "text": "Venice closes the trip and is the one people remember. Sleep on the island, not in Mestre: at eight in the morning, before the groups arrive, you have whole streets to yourself.",
+        "see": [
+          "St Mark's Basilica, booked ahead to skip the queue",
+          "The Rialto market in the morning (the fish market closes Sunday and Monday)",
+          "Cannaregio, the neighbourhood where the people who still live in Venice live",
+          "Burano, if you have half a day: about 45 minutes by vaporetto"
+        ],
+        "tip": "Have dinner on cicchetti, standing at a bacaro with a glass of wine. Cheaper than sitting down and far more Venetian."
+      }
+    },
+    "gettingAround": "All by train, and it is one of the easiest routes in Italy. Milan, Bergamo, Verona and Venice are on the same line, with fast trains of 40 to 90 minutes. Lake Como is 40 minutes from Milan to Varenna, and boats link the villages from there. Sirmione is reached by train to Desenzano and then bus or boat. Book the fast train tickets ahead: the price doubles on the last day.",
+    "bestTime": "April, May, June, September and October: good weather and fewer people. July and August are the lake months, with the villages full and hotels expensive, and in August many city restaurants close. In winter it is cold and foggy on the plain, but Milan and Verona are walked without queues and prices drop.",
+    "faq": [
+      {
+        "question": "How many days do you need for northern Italy?",
+        "answer": "With 5 or 6 days you see Milan, Lake Como and Bergamo. With 8 to 10 you add Verona; with 11 or 12 Venice fits too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No. This is the route in Italy where the train works best: every journey is an hour or less. A car only gets in the way at the lakes, where parking is expensive and hard."
+      },
+      {
+        "question": "Can the route be done the other way round?",
+        "answer": "Yes: it works both ways. If you start in Venice, you finish in Bergamo, with the airport a step away."
+      },
+      {
+        "question": "Which airport do you fly to?",
+        "answer": "Milan (Bergamo BGY or Malpensa MXP) or Verona (VRN). Bergamo is the easiest for Ryanair and an hour from Milan by bus."
+      }
+    ]
+  }
+}

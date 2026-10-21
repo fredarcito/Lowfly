@@ -26,7 +26,7 @@ export const ROUTES = {
   // `slug`: the guide's in that language, server/cityGuides)
   guides: (lang) => `/${lang}/${sectionIn(lang, "guides")}`,
   guide: (lang, slug) => `/${lang}/${sectionIn(lang, "guides")}/${slug}`,
-  // A multi-city route's own page, under the "Recorridos" search's name: /es/recorridos/italia-clasica (`slug`: its
+  // A multi-city route's own page, under the "Recorridos" search's name: /es/recorridos/classic-italy (`slug`: its
   // name in that language, server/multiCity/pages)
   multiCityRoute: (lang, slug) => `/${lang}/${sectionIn(lang, "multi-city")}/${slug}`,
   privacy: (lang) => `/${lang}/privacy`,

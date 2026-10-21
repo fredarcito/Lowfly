@@ -1,5 +1,5 @@
 {
-  "canarias-occidentales": {
+  "western-canaries": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -255,7 +255,7 @@
       "town": "Santa Cruz de La Palma"
     }
   },
-  "canarias-orientales": {
+  "eastern-canaries": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -518,7 +518,7 @@
       "town": "Arrecife (Lanzarote)"
     }
   },
-  "mallorca-y-menorca": {
+  "mallorca-menorca": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -810,7 +810,7 @@
       "town": "Sóller"
     }
   },
-  "ibiza-y-formentera": {
+  "ibiza-formentera": {
     "kind": "classic",
     "reviewed": false,
     "name": {

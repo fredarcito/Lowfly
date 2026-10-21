@@ -1,0 +1,158 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "navidad-berlin-dresde-praga",
+    "en": "christmas-berlin-dresden-prague"
+  },
+  "photos": {
+    "Berlin": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Christmas_Gendarmenmarkt%2C_Berlin_2006.jpg/960px-Christmas_Gendarmenmarkt%2C_Berlin_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_Gendarmenmarkt,_Berlin_2006.jpg",
+      "author": "Clouha at English Wikipedia",
+      "license": "CC BY 3.0"
+    },
+    "Dresden": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dresden%2C_Striezelmarkt_--_2023_--_9367.jpg/960px-Dresden%2C_Striezelmarkt_--_2023_--_9367.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 501,
+      "page": "https://commons.wikimedia.org/wiki/File:Dresden,_Striezelmarkt_--_2023_--_9367.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    "Prague": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Christmas_Old_Town_Square_Prague_2007.jpg/960px-Christmas_Old_Town_Square_Prague_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_Old_Town_Square_Prague_2007.jpg",
+      "author": "Pazuzu",
+      "license": "CC BY 3.0"
+    }
+  },
+  "es": {
+    "title": "Navidad en Berlín, Dresde y Praga",
+    "metaTitle": "Navidad en Berlín, Dresde y Praga en tren: de 5 a 8 días · Lowfly",
+    "summary": "Del Gendarmenmarkt de Berlín al Striezelmarkt de Dresde, el más antiguo de Alemania, y a la plaza de la Ciudad Vieja de Praga. Tres ciudades y un solo tren por el Elba.",
+    "why": [
+      "Berlín, Dresde y Praga están en línea recta por el valle del Elba, y el tren las une en dos horas y media cada tramo. En una semana se ven las tres, y cada una tiene un mercadillo distinto.",
+      "El orden importa. Berlín primero, que es la más grande y la que tiene más mercados; Dresde en medio, con el Striezelmarkt y su Stollen; y Praga al final, que es la más barata y la más bonita de noche.",
+      "Lo que suele fallar es el frío. Aquí es continental y seco: entre -5 y 2 grados, y en Praga puede nevar. Anochece a las 16:00, así que el día se aprovecha poco: madruga."
+    ],
+    "towns": {
+      "Berlin": {
+        "text": "Berlín tiene mercadillos por toda la ciudad, cada barrio el suyo, y el más elegante es el del Gendarmenmarkt, entre la catedral francesa y la alemana. La ciudad es grande y el metro es la forma de moverse.",
+        "see": [
+          "El mercadillo del Gendarmenmarkt, con entrada de pago",
+          "El de Charlottenburg, junto al palacio",
+          "El de Alexanderplatz, el más grande y el más concurrido",
+          "El mercadillo de la Kulturbrauerei, en Prenzlauer Berg"
+        ],
+        "tip": "El Gendarmenmarkt cobra entrada y merece la pena: es el más cuidado y tiene espectáculos. Los demás son gratis y más auténticos."
+      },
+      "Dresden": {
+        "text": "Dresde tiene el Striezelmarkt, el mercadillo más antiguo de Alemania, documentado desde 1434, y el centro barroco reconstruido entero. Se ve en un día, y de noche es lo mejor.",
+        "see": [
+          "El Striezelmarkt de la plaza del mercado",
+          "La Frauenkirche y el palacio de Zwinger",
+          "El mercadillo medieval del Stallhof",
+          "El Stollen, el pan dulce de Navidad, en cualquier puesto"
+        ],
+        "tip": "El Stollen de Dresde tiene denominación de origen y se vende en barras de un kilo. El original lleva mantequilla y fruta confitada, y se conserva semanas."
+      },
+      "Prague": {
+        "text": "Praga tiene el mercadillo de la plaza de la Ciudad Vieja, con el reloj astronómico al lado, y otro en la plaza de Wenceslao. La ciudad es barata y en diciembre está preciosa con nieve.",
+        "see": [
+          "El mercadillo de la plaza de la Ciudad Vieja",
+          "El reloj astronómico, que se mueve cada hora",
+          "El puente de Carlos, a primera hora",
+          "El mercadillo de la plaza de Wenceslao"
+        ],
+        "tip": "El puente de Carlos está lleno a todas horas menos a primera de la mañana. Si quieres verlo vacío, ve antes de las ocho, con frío y todo."
+      }
+    },
+    "gettingAround": "Tren. Berlín y Dresde están a dos horas en tren rápido; Dresde y Praga, a dos horas y media. Compra los billetes con antelación: en diciembre los trenes van llenos y el precio sube. El aeropuerto de Berlín-Brandeburgo está a 30 minutos del centro en tren, y el de Praga, a 30 minutos en autobús.",
+    "bestTime": "Finales de noviembre y diciembre, hasta el 23 o el 31 según el mercadillo. La primera quincena de diciembre es la mejor: menos gente que en las vacaciones escolares. Hace mucho frío, entre -5 y 2 grados, y anochece a las 16:00. Los mercadillos cierran el 25 y el 26.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para la Navidad en Berlín, Dresde y Praga?",
+        "answer": "Con 5 o 6 días ves Berlín y Praga. Con 7 u 8 añades Dresde con dos noches."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren une las tres ciudades y los trayectos son de dos horas o dos y media. El coche solo estorba en el centro de las tres."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Praga, acabas en Berlín."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Berlín-Brandeburgo (BER) o a Praga (PRG). Dresde (DRS) no tiene vuelos de Ryanair ni Wizz: se visita en tren entre las dos ciudades."
+      }
+    ]
+  },
+  "en": {
+    "title": "Christmas in Berlin, Dresden and Prague",
+    "metaTitle": "Christmas in Berlin, Dresden and Prague by train: 5 to 8 days · Lowfly",
+    "summary": "From Berlin's Gendarmenmarkt to Dresden's Striezelmarkt, the oldest in Germany, and Prague's Old Town Square. Three cities and one train along the Elbe.",
+    "why": [
+      "Berlin, Dresden and Prague sit in a line up the Elbe valley, and the train joins them in two and a half hours per leg. A week covers all three, and each has a different market.",
+      "The order matters. Berlin first, the biggest and the one with the most markets; Dresden in the middle, with the Striezelmarkt and its Stollen; and Prague last, the cheapest and the prettiest at night.",
+      "What usually goes wrong is the cold. It's continental and dry here: between -5 and 2°C, and Prague can snow. It's dark by 16:00, so the day is short: get up early."
+    ],
+    "towns": {
+      "Berlin": {
+        "text": "Berlin has markets all over the city, one per district, and the most elegant is on the Gendarmenmarkt, between the French and German cathedrals. The city is big and the U-Bahn is how you get around.",
+        "see": [
+          "The Gendarmenmarkt market, with a paid ticket",
+          "The Charlottenburg one, beside the palace",
+          "The Alexanderplatz one, the biggest and busiest",
+          "The Kulturbrauerei market, in Prenzlauer Berg"
+        ],
+        "tip": "The Gendarmenmarkt charges an entrance and it's worth it: it's the best kept and has performances. The others are free and more authentic."
+      },
+      "Dresden": {
+        "text": "Dresden has the Striezelmarkt, the oldest in Germany, documented since 1434, and a baroque centre rebuilt entirely. A day covers it, and at night it's the best part.",
+        "see": [
+          "The Striezelmarkt on the market square",
+          "The Frauenkirche and the Zwinger palace",
+          "The medieval market in the Stallhof",
+          "Stollen, the Christmas fruit bread, at any stall"
+        ],
+        "tip": "Dresden Stollen has protected origin status and is sold in one-kilo loaves. The original has butter and candied fruit, and it keeps for weeks."
+      },
+      "Prague": {
+        "text": "Prague has the market on Old Town Square, with the astronomical clock beside it, and another on Wenceslas Square. The city is cheap and in December it's beautiful in snow.",
+        "see": [
+          "The market on Old Town Square",
+          "The astronomical clock, which moves every hour",
+          "Charles Bridge, first thing",
+          "The market on Wenceslas Square"
+        ],
+        "tip": "Charles Bridge is packed at every hour except early morning. If you want it empty, go before eight, cold or not."
+      }
+    },
+    "gettingAround": "Train. Berlin and Dresden are two hours apart on a fast train; Dresden and Prague, two and a half. Book ahead: in December the trains are full and prices rise. Berlin-Brandenburg airport is 30 minutes from the centre by train, and Prague airport 30 minutes by bus.",
+    "bestTime": "Late November and December, until the 23rd or the 31st depending on the market. The first half of December is best: fewer people than in the school holidays. It's very cold, between -5 and 2°C, and dark by 16:00. The markets close on 25 and 26 December.",
+    "faq": [
+      {
+        "question": "How many days do you need for Christmas in Berlin, Dresden and Prague?",
+        "answer": "5 or 6 days covers Berlin and Prague. With 7 or 8 you add Dresden with two nights."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train links the three cities and the legs are two to two and a half hours. A car is only a nuisance in the centre of each."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Prague and you finish in Berlin."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Berlin-Brandenburg (BER) or Prague (PRG). Dresden (DRS) has no Ryanair or Wizz flights: it's visited by train between the two cities."
+      }
+    ]
+  }
+}

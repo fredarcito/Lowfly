@@ -1,0 +1,326 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "selva-negra",
+    "en": "black-forest"
+  },
+  "photos": {
+    "Baden-Baden": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Baden-Baden_10-2015_img24_Stiftskirche.jpg/960px-Baden-Baden_10-2015_img24_Stiftskirche.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Baden-Baden_10-2015_img24_Stiftskirche.jpg",
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0"
+    },
+    "Freiburg": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Schlossbergblick_Freiburg_i._B._14.jpg/960px-Schlossbergblick_Freiburg_i._B._14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Schlossbergblick_Freiburg_i._B._14.jpg",
+      "author": "H.Helmlechner",
+      "license": "CC BY-SA 4.0"
+    },
+    "Basel": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Rhine_Rhein_Basel_2006_871.JPG/960px-Rhine_Rhein_Basel_2006_871.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Rhine_Rhein_Basel_2006_871.JPG",
+      "author": "Norbert Aepli, Switzerland (User:Noebu)",
+      "license": "CC BY 2.5"
+    },
+    "Gengenbach": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gengenbach_Ansicht_West.jpg/960px-Gengenbach_Ansicht_West.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 473,
+      "page": "https://commons.wikimedia.org/wiki/File:Gengenbach_Ansicht_West.jpg",
+      "author": "Karthoo",
+      "license": "CC BY-SA 4.0"
+    },
+    "Triberg": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Triberg%2C_VS_-_Wallfahrtstr_-_Triberg_v_W.jpg/960px-Triberg%2C_VS_-_Wallfahrtstr_-_Triberg_v_W.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Triberg,_VS_-_Wallfahrtstr_-_Triberg_v_W.jpg",
+      "author": "Flodur63",
+      "license": "CC BY-SA 4.0"
+    },
+    "Titisee": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Titisee-blick_von_hochfirst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 531,
+      "page": "https://commons.wikimedia.org/wiki/File:Titisee-blick_von_hochfirst.jpg",
+      "author": "User Christian.maier on de.wikipedia",
+      "license": "CC BY-SA 3.0"
+    },
+    "Stuttgart": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Stuttgart-_Schlossplatz_Germany.jpg/960px-Stuttgart-_Schlossplatz_Germany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 480,
+      "page": "https://commons.wikimedia.org/wiki/File:Stuttgart-_Schlossplatz_Germany.jpg",
+      "author": "Jorge Franganillo",
+      "license": "CC BY 2.0"
+    },
+    "Strasbourg": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Strasburg.jpg/960px-Strasburg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 534,
+      "page": "https://commons.wikimedia.org/wiki/File:Strasburg.jpg",
+      "author": "Radek Kucharski",
+      "license": "CC BY 2.0"
+    },
+    "Colmar": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/View_of_%C3%89glise_Saint-Martin_%2843833049001%29.jpg/960px-View_of_%C3%89glise_Saint-Martin_%2843833049001%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 573,
+      "page": "https://commons.wikimedia.org/wiki/File:View_of_%C3%89glise_Saint-Martin_(43833049001).jpg",
+      "author": "--sinava-- from Berlin",
+      "license": "CC BY 2.0"
+    }
+  },
+  "es": {
+    "title": "Selva Negra: Baden-Baden, Triberg y Friburgo",
+    "metaTitle": "Ruta por la Selva Negra: Baden-Baden, Triberg y Friburgo, de 4 a 11 días · Lowfly",
+    "summary": "Entras por Baden-Baden y sales por Basilea, con Triberg, el Titisee y Friburgo en medio. Coches de alquiler, carreteras de bosque y pueblos de relojes.",
+    "why": [
+      "La Selva Negra es una franja de bosque de 150 kilómetros entre Baden-Baden y Basilea, con carreteras de montaña, balnearios y pueblos de casas de madera. Se recorre de norte a sur sin repetir camino.",
+      "La ruta combina ciudad y campo: Baden-Baden para las termas, Triberg para las cascadas y los relojes de cuco, el Titisee para el lago y Friburgo para la vida universitaria. Basilea queda al final, en la frontera.",
+      "Lo que suele fallar es el transporte. Los pueblos están mal comunicados en tren y muchos no tienen estación. Aquí el coche de alquiler es lo que marca la diferencia, aunque se puede hacer en tren y bus con paciencia."
+    ],
+    "towns": {
+      "Stuttgart": {
+        "text": "Stuttgart es la capital de Baden-Württemberg, con la sede de Mercedes y Porsche y un centro entre colinas. Se ve en un día y es la puerta de entrada a la Selva Negra.",
+        "see": [
+          "El museo de Mercedes-Benz, con coches de todas las épocas",
+          "El museo Porsche, en Zuffenhausen",
+          "La plaza del castillo y los jardines",
+          "Los viñedos de la ciudad, con el tren de cremallera"
+        ],
+        "tip": "El museo de Mercedes-Benz se ve en tres horas y el de Porsche en dos. Si solo puedes hacer uno, el de Mercedes es más grande y más variado."
+      },
+      "Baden-Baden": {
+        "text": "Baden-Baden es un balneario de lujo desde la época romana, con las termas de Friedrichsbad y Caracalla y un centro de calles elegantes. Se ve en un día y medio.",
+        "see": [
+          "Las termas de Caracalla, con piscinas interiores y exteriores",
+          "El Friedrichsbad, de 1877, con el ritual de 17 pasos",
+          "La avenida Lichtentaler Allee, con los jardines",
+          "El casino, el más antiguo de Alemania"
+        ],
+        "tip": "El Friedrichsbad es nudista y se recorre en silencio, con 17 pasos de calor y frío. Si no te convence, Caracalla es mixto y con bañador."
+      },
+      "Gengenbach": {
+        "text": "Gengenbach es un pueblo de 11.000 habitantes con muralla, torres y un ayuntamiento del siglo XVIII con fachada pintada. Es la parada tranquila de la Selva Negra.",
+        "see": [
+          "El casco antiguo, con las casas de entramado",
+          "El ayuntamiento, con la fachada pintada al fresco",
+          "Las torres de la muralla, como la Kinzigtor",
+          "Los viñedos en las colinas"
+        ],
+        "tip": "En diciembre el ayuntamiento se convierte en el calendario de Adviento más grande del mundo, con una ventana iluminada cada día. Es gratis y se ve desde la plaza."
+      },
+      "Triberg": {
+        "text": "Triberg es el pueblo de las cascadas y de los relojes de cuco, en el corazón de la Selva Negra. Las cascadas son de las más altas de Alemania, con 163 metros en siete saltos.",
+        "see": [
+          "Las cascadas del Gutach, con el sendero iluminado",
+          "El museo del reloj de cuco, con el reloj más grande del mundo",
+          "La casa de los mil relojes, con la tienda",
+          "El lago de Triberg, en la carretera de la montaña"
+        ],
+        "tip": "Los relojes de cuco de las tiendas del centro son caros y muchos son de importación. Si quieres uno de verdad, pregunta por el taller y por la procedencia."
+      },
+      "Titisee": {
+        "text": "Titisee es un lago de un kilómetro y medio en el centro de la Selva Negra, con un pueblo en la orilla sur y senderos alrededor. En verano se nada y se navega; en invierno se hiela.",
+        "see": [
+          "La vuelta al lago, de una hora y media andando",
+          "Un paseo en barco de vapor, de abril a octubre",
+          "El pueblo de Neustadt, al otro lado",
+          "El Feldberg, la montaña más alta, a 20 minutos en coche"
+        ],
+        "tip": "El lago es pequeño y se llena en agosto. Ve a primera hora y sube al Feldberg después: desde la cima se ve el lago y, en días claros, los Alpes."
+      },
+      "Freiburg": {
+        "text": "Friburgo es una ciudad universitaria con una catedral gótica, canales en las calles y el barrio de Vauban, que funciona con energía solar. Es la más animada de la Selva Negra.",
+        "see": [
+          "La catedral, con la torre y el mercado alrededor",
+          "Los canales de Bächle, con el agua que corre por las calles",
+          "El barrio de Vauban, con las casas de bajo consumo",
+          "La colina del Schlossberg, con el mirador"
+        ],
+        "tip": "Si pisas un Bächle por accidente, la tradición dice que te casas con alguien de Friburgo. Los locales los usan para refrescar la cerveza en verano."
+      },
+      "Strasbourg": {
+        "text": "Estrasburgo está al otro lado del Rin y se llega en 40 minutos desde Baden-Baden. Tiene la catedral gótica más alta de Francia y el barrio de la Petite France.",
+        "see": [
+          "La catedral, con el reloj astronómico",
+          "La Petite France, con los canales y las casas de entramado",
+          "El barrio europeo, con el parlamento",
+          "El mercado de Navidad, en diciembre"
+        ],
+        "tip": "El reloj astronómico de la catedral se pone en marcha a las 12:30 y hay que pagar entrada para verlo. Llega 20 minutos antes: se llena."
+      },
+      "Colmar": {
+        "text": "Colmar es la ciudad más bonita de Alsacia, con casas de colores, canales y el barrio de la Petite Venise. Se ve en un día y está a 45 minutos de Friburgo.",
+        "see": [
+          "La Petite Venise, con los canales y las barcas",
+          "La casa de las Cabezas, del siglo XV",
+          "El museo Unterlinden, con el retablo de Isenheim",
+          "El mercado cubierto, para comer"
+        ],
+        "tip": "El retablo de Isenheim es una de las obras maestras del Renacimiento alemán y casi nadie lo conoce. Está en el museo Unterlinden y merece la visita."
+      },
+      "Basel": {
+        "text": "Basilea está en la frontera de tres países y el Rin la cruza por el centro. Tiene un casco antiguo pequeño, cuarenta museos y una feria de arte que es la más importante del mundo.",
+        "see": [
+          "La plaza del Mercado y el ayuntamiento rojo",
+          "La catedral, con la terraza sobre el Rin",
+          "La Fundación Beyeler, con arte moderno",
+          "Un baño en el Rin, como hacen los locales en verano"
+        ],
+        "tip": "Basilea es carísima, incluso para Suiza. Si vienes de Alemania, compra el agua y la comida antes de cruzar: aquí cuesta el doble."
+      }
+    },
+    "gettingAround": "Coche de alquiler. Stuttgart-Baden-Baden, una hora y cuarto por la autopista; Baden-Baden-Triberg, una hora por la B500, la carretera de la Selva Negra; Triberg-Titisee, 40 minutos; Titisee-Friburgo, media hora; Friburgo-Basilea, 45 minutos. La B500 es la carretera panorámica y en verano se llena los fines de semana. En tren se llega a las ciudades, pero no a los pueblos pequeños.",
+    "bestTime": "De mayo a octubre, con bosques verdes y carreteras abiertas; octubre es el mejor mes por los colores. En diciembre los mercadillos de Gengenbach, Friburgo y Colmar son de los más bonitos, pero hay nieve y hielo en las carreteras de montaña.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 o 5 días ves Baden-Baden, Triberg y Friburgo. Con 7 u 8 añades Titisee, Gengenbach y Colmar. Con 11 entran también Stuttgart y Basilea."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, es lo más cómodo. Los pueblos están mal comunicados en tren y muchos no tienen estación. Sin coche hay que tirar de bus y de tours."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Basilea y subiendo hasta Baden-Baden o Stuttgart."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Stuttgart (STR) o Karlsruhe/Baden-Baden (FKB) al entrar y a Basilea (BSL) al salir."
+      }
+    ]
+  },
+  "en": {
+    "title": "Black Forest: Baden-Baden, Triberg and Freiburg",
+    "metaTitle": "Black Forest route: Baden-Baden, Triberg and Freiburg in 4 to 11 days · Lowfly",
+    "summary": "Fly into Baden-Baden and out of Basel, with Triberg, Titisee and Freiburg in between. Hire cars, forest roads and clock-making villages.",
+    "why": [
+      "The Black Forest is a 150-kilometre strip of woodland between Baden-Baden and Basel, with mountain roads, spas and villages of wooden houses. You drive it north to south without doubling back.",
+      "The route mixes city and country: Baden-Baden for the spas, Triberg for the waterfalls and cuckoo clocks, Titisee for the lake and Freiburg for student life. Basel sits at the end, on the border.",
+      "Where it usually goes wrong is transport. The villages are badly served by train and many have no station. A hire car is what makes the difference here, though you can do it by train and bus with patience."
+    ],
+    "towns": {
+      "Stuttgart": {
+        "text": "Stuttgart is the capital of Baden-Württemberg, with the Mercedes and Porsche headquarters and a centre among hills. A day covers it and it's the gateway to the Black Forest.",
+        "see": [
+          "The Mercedes-Benz Museum, with cars from every era",
+          "The Porsche Museum, in Zuffenhausen",
+          "The palace square and gardens",
+          "The city vineyards, by rack railway"
+        ],
+        "tip": "The Mercedes museum takes three hours and the Porsche one two. If you can only do one, Mercedes is bigger and more varied."
+      },
+      "Baden-Baden": {
+        "text": "Baden-Baden has been a luxury spa since Roman times, with the Friedrichsbad and Caracalla baths and an elegant centre. A day and a half covers it.",
+        "see": [
+          "The Caracalla baths, with indoor and outdoor pools",
+          "The Friedrichsbad, from 1877, with its 17-step ritual",
+          "Lichtentaler Allee, with its gardens",
+          "The casino, the oldest in Germany"
+        ],
+        "tip": "The Friedrichsbad is nude and silent, with 17 steps of heat and cold. If that doesn't appeal, Caracalla is mixed and you wear a swimsuit."
+      },
+      "Gengenbach": {
+        "text": "Gengenbach is a village of 11,000 with walls, towers and an 18th-century town hall with a painted facade. It's the quiet stop in the Black Forest.",
+        "see": [
+          "The old town, with its half-timbered houses",
+          "The town hall, with its frescoed facade",
+          "The town wall towers, such as the Kinzigtor",
+          "The vineyards on the hills"
+        ],
+        "tip": "In December the town hall becomes the world's largest Advent calendar, with one window lit each day. It's free and you see it from the square."
+      },
+      "Triberg": {
+        "text": "Triberg is the village of waterfalls and cuckoo clocks, in the heart of the Black Forest. The falls are among the highest in Germany, 163 metres in seven steps.",
+        "see": [
+          "The Gutach falls, with the lit trail",
+          "The cuckoo clock museum, with the world's largest clock",
+          "The House of a Thousand Clocks, with its shop",
+          "The Triberg lake, on the mountain road"
+        ],
+        "tip": "The cuckoo clocks in the centre shops are expensive and many are imported. If you want a real one, ask about the workshop and where it was made."
+      },
+      "Titisee": {
+        "text": "Titisee is a lake a kilometre and a half long in the middle of the Black Forest, with a village on the south shore and trails around it. In summer people swim and sail; in winter it freezes.",
+        "see": [
+          "The walk round the lake, an hour and a half",
+          "A steamboat trip, from April to October",
+          "The village of Neustadt, on the far shore",
+          "The Feldberg, the highest mountain, 20 minutes by car"
+        ],
+        "tip": "The lake is small and fills up in August. Go early and climb the Feldberg afterwards: from the top you see the lake and, on clear days, the Alps."
+      },
+      "Freiburg": {
+        "text": "Freiburg is a university city with a Gothic cathedral, street canals and the Vauban district, which runs on solar power. It's the liveliest town in the Black Forest.",
+        "see": [
+          "The cathedral, with its tower and the market around it",
+          "The Bächle canals, with water running down the streets",
+          "The Vauban district, with its low-energy houses",
+          "The Schlossberg hill, with its viewpoint"
+        ],
+        "tip": "If you step in a Bächle by accident, tradition says you marry someone from Freiburg. Locals use them to cool their beer in summer."
+      },
+      "Strasbourg": {
+        "text": "Strasbourg is across the Rhine, 40 minutes from Baden-Baden. It has the tallest Gothic cathedral in France and the Petite France quarter.",
+        "see": [
+          "The cathedral, with the astronomical clock",
+          "Petite France, with its canals and half-timbered houses",
+          "The European quarter, with the parliament",
+          "The Christmas market, in December"
+        ],
+        "tip": "The cathedral's astronomical clock starts at 12:30 and you pay to watch. Get there 20 minutes early: it fills up."
+      },
+      "Colmar": {
+        "text": "Colmar is the prettiest town in Alsace, with coloured houses, canals and the Petite Venise quarter. A day covers it and it's 45 minutes from Freiburg.",
+        "see": [
+          "Petite Venise, with its canals and boats",
+          "The House of the Heads, from the 15th century",
+          "The Unterlinden museum, with the Isenheim Altarpiece",
+          "The covered market, for food"
+        ],
+        "tip": "The Isenheim Altarpiece is a masterpiece of the German Renaissance and hardly anyone knows it. It's in the Unterlinden museum and worth the visit."
+      },
+      "Basel": {
+        "text": "Basel sits on the border of three countries, with the Rhine running through the middle. It has a small old town, forty museums and an art fair that's the biggest in the world.",
+        "see": [
+          "The Marktplatz and the red town hall",
+          "The cathedral, with its terrace over the Rhine",
+          "The Beyeler Foundation, with modern art",
+          "A swim in the Rhine, as locals do in summer"
+        ],
+        "tip": "Basel is very expensive, even for Switzerland. If you're coming from Germany, buy water and food before crossing: it costs double here."
+      }
+    },
+    "gettingAround": "Hire car. Stuttgart-Baden-Baden, an hour and a quarter on the motorway; Baden-Baden-Triberg, an hour on the B500, the Black Forest scenic road; Triberg-Titisee, 40 minutes; Titisee-Freiburg, half an hour; Freiburg-Basel, 45 minutes. The B500 is the panoramic road and fills up at weekends in summer. Trains reach the cities, but not the small villages.",
+    "bestTime": "May to October, with green woods and open roads; October is the best month for colour. In December the markets in Gengenbach, Freiburg and Colmar are among the prettiest, but there's snow and ice on the mountain roads.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 or 5 days gets you Baden-Baden, Triberg and Freiburg. 7 or 8 adds Titisee, Gengenbach and Colmar. 11 also takes in Stuttgart and Basel."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, it's easiest. The villages are badly served by train and many have no station. Without a car you rely on buses and tours."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Basel and head north to Baden-Baden or Stuttgart."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Stuttgart (STR) or Karlsruhe/Baden-Baden (FKB) and out of Basel (BSL)."
+      }
+    ]
+  }
+}

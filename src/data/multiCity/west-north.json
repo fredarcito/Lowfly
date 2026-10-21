@@ -351,7 +351,7 @@
       "town": "Bruselas"
     }
   },
-  "baviera-y-salzburgo": {
+  "bavaria-salzburg": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -649,7 +649,7 @@
       "town": "Salzburgo"
     }
   },
-  "berlin-dresde-praga": {
+  "berlin-dresden-prague": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -903,7 +903,7 @@
       "town": "Berlín"
     }
   },
-  "valle-del-rin": {
+  "rhine-valley": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -1283,7 +1283,7 @@
       "town": "Fráncfort"
     }
   },
-  "suiza": {
+  "switzerland": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -1658,7 +1658,7 @@
       "town": "Interlaken"
     }
   },
-  "escocia": {
+  "scotland": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -1987,7 +1987,7 @@
       "town": "Glasgow"
     }
   },
-  "inglaterra-clasica": {
+  "classic-england": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2302,7 +2302,7 @@
       "town": "Bath"
     }
   },
-  "irlanda": {
+  "ireland": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2611,7 +2611,7 @@
       "town": "Galway"
     }
   },
-  "escandinavia": {
+  "scandinavia": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2878,7 +2878,7 @@
       "town": "Oslo"
     }
   },
-  "fiordos-de-noruega": {
+  "norwegian-fjords": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -3154,7 +3154,7 @@
       "town": "Flåm"
     }
   },
-  "norte-de-alemania": {
+  "northern-germany": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -3463,7 +3463,7 @@
       "town": "Hamburgo"
     }
   },
-  "laponia-finlandesa": {
+  "finnish-lapland": {
     "kind": "surprise",
     "reviewed": false,
     "name": {
@@ -3728,7 +3728,7 @@
       "town": "Saariselkä"
     }
   },
-  "tromso-y-laponia-noruega": {
+  "tromso-norwegian-lapland": {
     "kind": "surprise",
     "reviewed": false,
     "name": {
@@ -3900,7 +3900,7 @@
       "town": "Abisko"
     }
   },
-  "selva-negra": {
+  "black-forest": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -4280,7 +4280,7 @@
       "town": "Friburgo"
     }
   },
-  "irlanda-del-norte": {
+  "northern-ireland": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -4628,7 +4628,7 @@
       "town": "Belfast"
     }
   },
-  "gales": {
+  "wales": {
     "kind": "surprise",
     "reviewed": false,
     "name": {
@@ -4984,7 +4984,7 @@
       "town": "Conwy"
     }
   },
-  "cornualles": {
+  "cornwall": {
     "kind": "surprise",
     "reviewed": false,
     "name": {
@@ -5396,7 +5396,7 @@
       "town": "St Ives"
     }
   },
-  "islandia": {
+  "iceland": {
     "kind": "classic",
     "reviewed": false,
     "name": {

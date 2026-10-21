@@ -1,0 +1,326 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "cornualles",
+    "en": "cornwall"
+  },
+  "photos": {
+    "Newquay": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Newquayhill.jpg/960px-Newquayhill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Newquayhill.jpg",
+      "author": "Kicior99",
+      "license": "CC BY-SA 3.0"
+    },
+    "St Ives": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/54/Stives1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Stives1.jpg",
+      "author": "waterborough",
+      "license": "Public domain"
+    },
+    "Penzance": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Penzance_Harbour_-_geograph.org.uk_-_5250055.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Penzance_Harbour_-_geograph.org.uk_-_5250055.jpg",
+      "author": "Rod Allday",
+      "license": "CC BY-SA 2.0"
+    },
+    "Falmouth": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Falmouth_Cornwall.jpg/960px-Falmouth_Cornwall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Falmouth_Cornwall.jpg",
+      "author": "EvaK",
+      "license": "CC BY-SA 2.5"
+    },
+    "Fowey": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/80/Fowey%2C_Town_Quay_-_geograph.org.uk_-_47111.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 534,
+      "page": "https://commons.wikimedia.org/wiki/File:Fowey,_Town_Quay_-_geograph.org.uk_-_47111.jpg",
+      "author": "Graham Proud",
+      "license": "CC BY-SA 2.0"
+    },
+    "Exeter": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Exeter_from_Haldon.jpg/960px-Exeter_from_Haldon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 586,
+      "page": "https://commons.wikimedia.org/wiki/File:Exeter_from_Haldon.jpg",
+      "author": "Nilfanion",
+      "license": "CC BY-SA 3.0"
+    },
+    "Padstow": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Padstow_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 604,
+      "page": "https://commons.wikimedia.org/wiki/File:Padstow_1.jpg",
+      "author": "Personal photograph taken by Mick Knapton at en.wikipedia",
+      "license": "CC BY-SA 3.0"
+    },
+    "Dartmouth": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/0/04/Dartmouth.town.750pix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 601,
+      "page": "https://commons.wikimedia.org/wiki/File:Dartmouth.town.750pix.jpg",
+      "author": "Arpingstone",
+      "license": "CC BY-SA 3.0"
+    },
+    "Bristol": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Bristol_Skyline_%28Southeast%29.JPG/960px-Bristol_Skyline_%28Southeast%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Bristol_Skyline_(Southeast).JPG",
+      "author": "Brizzleboy",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Cornualles: Newquay, St Ives, Penzance y Falmouth",
+    "metaTitle": "Ruta por Cornualles: Newquay, St Ives y Penzance, de 4 a 8 días · Lowfly",
+    "summary": "Entras por Newquay y sales por Exeter o Bristol, con St Ives, Land's End y Falmouth en medio. Coches de alquiler y carreteras estrechas entre acantilados.",
+    "why": [
+      "Cornualles es una península de 130 kilómetros con playas de arena, pueblos de pescadores y jardines subtropicales. Se recorre de norte a sur y de este a oeste sin repetir camino, y todo está a menos de dos horas.",
+      "La ruta combina costa y pueblo: Newquay para el surf, St Ives para el arte, Penzance para Land's End, Falmouth para el puerto y Exeter para volver a la civilización. El coche de alquiler es casi obligatorio.",
+      "Lo que suele fallar es el tiempo y las carreteras. Aquí llueve y hay niebla, y las carreteras son de un carril con setos altos. En agosto la costa se llena y aparcar en St Ives es un problema."
+    ],
+    "towns": {
+      "Newquay": {
+        "text": "Newquay es la capital del surf de Gran Bretaña, con siete playas y una escuela en cada esquina. Es la puerta de entrada a Cornualles y tiene aeropuerto a diez minutos.",
+        "see": [
+          "La playa de Fistral, la más famosa para surfear",
+          "El paseo de los acantilados hasta Watergate Bay",
+          "El acuario Blue Reef, en el centro",
+          "Una clase de surf, con alquiler de tabla y neopreno"
+        ],
+        "tip": "El agua está a 14 grados incluso en agosto: el neopreno no es opcional. Alquila la tabla en una escuela de la playa y no te metas sin socorrista."
+      },
+      "Padstow": {
+        "text": "Padstow es un pueblo de pescadores en la desembocadura del Camel, con restaurantes de pescado famosos y un puerto pequeño. Se ve en medio día y el sendero de la costa pasa por allí.",
+        "see": [
+          "El puerto y las casas de pescadores",
+          "El sendero de la costa hasta Trevone",
+          "El ferry a Rock, al otro lado del estuario",
+          "Los restaurantes de pescado del muelle"
+        ],
+        "tip": "El ferry a Rock tarda cinco minutos y cuesta poco. Al otro lado hay una playa enorme y menos gente que en Padstow."
+      },
+      "St Ives": {
+        "text": "St Ives es un pueblo de pescadores convertido en colonia de artistas, con el Tate St Ives y el estudio de Barbara Hepworth. Tiene cuatro playas y calles tan estrechas que no pasan coches.",
+        "see": [
+          "El Tate St Ives, con vistas a la playa de Porthmeor",
+          "El jardín de esculturas de Barbara Hepworth",
+          "La playa de Porthgwidden y el paseo del puerto",
+          "El sendero de la costa hasta Zennor"
+        ],
+        "tip": "Aparcar en St Ives es casi imposible en verano. Deja el coche en el aparcamiento de Trenwith y sube andando o en el bus lanzadera."
+      },
+      "Penzance": {
+        "text": "Penzance es la ciudad más grande del oeste de Cornualles, con un paseo marítimo, un puerto de ferry a las islas Sorlingas y el castillo de St Michael's Mount a la vista. Se ve en un día.",
+        "see": [
+          "El paseo marítimo y la piscina de agua de mar de Jubilee",
+          "El castillo de St Michael's Mount, con la marea baja",
+          "El ferry a las islas Sorlingas",
+          "El barrio de Chapel Street, con los pubs antiguos"
+        ],
+        "tip": "St Michael's Mount se cruza andando por una calzada cuando baja la marea. Comprueba las horas de marea antes: si sube, te quedas en la isla hasta la siguiente."
+      },
+      "Falmouth": {
+        "text": "Falmouth es el tercer puerto natural más grande del mundo, con dos castillos, un museo marítimo y el jardín de Trebah cerca. Se ve en un día y medio.",
+        "see": [
+          "El museo marítimo nacional, en el puerto",
+          "El castillo de Pendennis, del siglo XVI",
+          "El jardín de Trebah, con las plantas subtropicales",
+          "El ferry a St Mawes, al otro lado del estuario"
+        ],
+        "tip": "El ferry a St Mawes tarda 20 minutos y desde el agua se ven los dos castillos. St Mawes es pequeño y tiene un castillo del siglo XVI."
+      },
+      "Fowey": {
+        "text": "Fowey es un pueblo de casas colgadas sobre el estuario del Fowey, con un puerto de veleros y la casa de Daphne du Maurier. Se ve en medio día.",
+        "see": [
+          "El puerto y la calle Esplanade",
+          "La casa de Daphne du Maurier, en Readymoney",
+          "El sendero de la costa hasta Polruan",
+          "La playa de Readymoney Cove"
+        ],
+        "tip": "El ferry a Polruan tarda cinco minutos y desde allí se ve el pueblo entero. Es la foto clásica de Fowey y no cuesta casi nada."
+      },
+      "Dartmouth": {
+        "text": "Dartmouth está en Devon, al otro lado del estuario del Dart, con la academia naval y el castillo de Enrique VIII. Se ve en un día.",
+        "see": [
+          "El castillo de Dartmouth, en la bocana",
+          "El paseo en barco por el Dart hasta Totnes",
+          "La academia naval británica, en Britannia Royal Naval College",
+          "Las calles de casas de colores del centro"
+        ],
+        "tip": "El barco por el Dart hasta Totnes tarda hora y media y pasa por el paisaje de la serie de Poirot. Se puede volver en tren desde Totnes."
+      },
+      "Exeter": {
+        "text": "Exeter es la capital de Devon, con una catedral gótica, murallas romanas y un centro de ladrillo rojo reconstruido tras la guerra. Se ve en un día y tiene aeropuerto.",
+        "see": [
+          "La catedral, con la fachada de esculturas",
+          "Las murallas romanas y el paseo de Northernhay",
+          "El barrio de las casas de ladrillo rojo, en Princesshay",
+          "El canal de Exeter, con el paseo hasta Double Locks"
+        ],
+        "tip": "La catedral es gratis y el techo de nervios es de los más largos de Inglaterra. Ve a la hora del coro, a las cinco: suena sin micrófonos."
+      },
+      "Bristol": {
+        "text": "Bristol es la salida natural si vuelas desde el suroeste, con el puente colgante de Clifton, el puerto y los murales de Banksy. Se ve en un día y el aeropuerto está a 30 minutos.",
+        "see": [
+          "El puente de Clifton, sobre la garganta del Avon",
+          "El puerto y el SS Great Britain",
+          "El barrio de Stokes Croft, con los murales",
+          "El mercado de St Nicholas"
+        ],
+        "tip": "Desde Exeter hay tren directo a Bristol en una hora. Si sales en avión, el Bristol Flyer conecta la estación con el aeropuerto cada 20 minutos."
+      }
+    },
+    "gettingAround": "Coche de alquiler. Newquay-Padstow, 40 minutos; Padstow-St Ives, una hora; St Ives-Penzance, 20 minutos; Penzance-Falmouth, una hora; Falmouth-Fowey, 40 minutos; Fowey-Dartmouth, una hora y media; Dartmouth-Exeter, una hora. Las carreteras de Cornualles son estrechas y con setos: calcula más tiempo del que marca el mapa. En verano hay buses lanzadera a St Ives y Padstow.",
+    "bestTime": "De mayo a septiembre, con días largos y playas utilizables; junio y septiembre son los mejores meses por el tiempo y la gente. Julio y agosto son los más llenos y caros. En invierno muchos pueblos cierran y las carreteras de la costa son peligrosas con niebla.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 o 5 días ves Newquay, St Ives y Penzance. Con 7 u 8 añades Falmouth, Fowey y Padstow. Con más días se puede bajar a Dartmouth y Exeter."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, es lo más práctico. Los pueblos están mal comunicados en tren y los buses pasan poco. Sin coche hay que elegir una base y moverse en bus."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Exeter o Bristol y subiendo hasta Newquay."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Newquay (NQY) al entrar y a Exeter (EXT) o Bristol (BRS) al salir."
+      }
+    ]
+  },
+  "en": {
+    "title": "Cornwall: Newquay, St Ives, Penzance and Falmouth",
+    "metaTitle": "Cornwall route: Newquay, St Ives and Penzance in 4 to 8 days · Lowfly",
+    "summary": "Fly into Newquay and out of Exeter or Bristol, with St Ives, Land's End and Falmouth in between. Hire cars and narrow roads between cliffs.",
+    "why": [
+      "Cornwall is a peninsula 130 kilometres long, with sandy beaches, fishing villages and subtropical gardens. You drive it north to south and east to west without doubling back, and everything is under two hours away.",
+      "The route mixes coast and town: Newquay for surfing, St Ives for art, Penzance for Land's End, Falmouth for the harbour and Exeter to get back to civilisation. A hire car is close to essential.",
+      "Where it usually goes wrong is weather and roads. It rains and fogs here, and the roads are single-track with high hedges. In August the coast fills up and parking in St Ives is a problem."
+    ],
+    "towns": {
+      "Newquay": {
+        "text": "Newquay is Britain's surfing capital, with seven beaches and a surf school on every corner. It's the gateway to Cornwall and the airport is ten minutes away.",
+        "see": [
+          "Fistral beach, the most famous for surfing",
+          "The cliff walk to Watergate Bay",
+          "The Blue Reef aquarium, in the centre",
+          "A surf lesson, with board and wetsuit hire"
+        ],
+        "tip": "The water is 14 degrees even in August: a wetsuit isn't optional. Hire a board at a school on the beach and don't go in without lifeguards."
+      },
+      "Padstow": {
+        "text": "Padstow is a fishing village at the mouth of the Camel, with famous seafood restaurants and a small harbour. Half a day covers it and the coast path passes through.",
+        "see": [
+          "The harbour and the fishermen's cottages",
+          "The coast path to Trevone",
+          "The ferry to Rock, across the estuary",
+          "The seafood restaurants on the quay"
+        ],
+        "tip": "The ferry to Rock takes five minutes and costs little. On the other side there's a huge beach and fewer people than in Padstow."
+      },
+      "St Ives": {
+        "text": "St Ives is a fishing village turned artists' colony, with Tate St Ives and Barbara Hepworth's studio. It has four beaches and streets too narrow for cars.",
+        "see": [
+          "Tate St Ives, overlooking Porthmeor beach",
+          "Barbara Hepworth's sculpture garden",
+          "Porthgwidden beach and the harbour walk",
+          "The coast path to Zennor"
+        ],
+        "tip": "Parking in St Ives is close to impossible in summer. Leave the car at the Trenwith car park and walk up or take the shuttle bus."
+      },
+      "Penzance": {
+        "text": "Penzance is the largest town in west Cornwall, with a promenade, a ferry port to the Isles of Scilly and St Michael's Mount in view. A day covers it.",
+        "see": [
+          "The promenade and the Jubilee seawater pool",
+          "St Michael's Mount, at low tide",
+          "The ferry to the Isles of Scilly",
+          "Chapel Street, with its old pubs"
+        ],
+        "tip": "You walk to St Michael's Mount across a causeway at low tide. Check the tide times first: if it comes in, you're stuck on the island until the next one."
+      },
+      "Falmouth": {
+        "text": "Falmouth has the third largest natural harbour in the world, with two castles, a maritime museum and the Trebah garden nearby. A day and a half covers it.",
+        "see": [
+          "The National Maritime Museum, at the harbour",
+          "Pendennis Castle, from the 16th century",
+          "Trebah garden, with its subtropical plants",
+          "The ferry to St Mawes, across the estuary"
+        ],
+        "tip": "The St Mawes ferry takes 20 minutes and from the water you see both castles. St Mawes is small and has a 16th-century castle."
+      },
+      "Fowey": {
+        "text": "Fowey is a town of houses stacked above the Fowey estuary, with a sailing harbour and Daphne du Maurier's house. Half a day covers it.",
+        "see": [
+          "The harbour and Esplanade",
+          "Daphne du Maurier's house, at Readymoney",
+          "The coast path to Polruan",
+          "Readymoney Cove beach"
+        ],
+        "tip": "The ferry to Polruan takes five minutes and from there you see the whole town. It's the classic Fowey photo and costs almost nothing."
+      },
+      "Dartmouth": {
+        "text": "Dartmouth is in Devon, across the Dart estuary, with the naval college and Henry VIII's castle. A day covers it.",
+        "see": [
+          "Dartmouth Castle, at the harbour mouth",
+          "The boat up the Dart to Totnes",
+          "Britannia Royal Naval College",
+          "The coloured houses of the centre"
+        ],
+        "tip": "The boat up the Dart to Totnes takes ninety minutes and passes the Poirot landscape. You can come back by train from Totnes."
+      },
+      "Exeter": {
+        "text": "Exeter is the capital of Devon, with a Gothic cathedral, Roman walls and a red-brick centre rebuilt after the war. A day covers it and it has an airport.",
+        "see": [
+          "The cathedral, with its sculpted west front",
+          "The Roman walls and the Northernhay walk",
+          "The red-brick Princesshay quarter",
+          "The Exeter canal, with the walk to Double Locks"
+        ],
+        "tip": "The cathedral is free and its vaulted ceiling is one of the longest in England. Go at evensong, at five: it needs no microphones."
+      },
+      "Bristol": {
+        "text": "Bristol is the natural exit if you fly from the southwest, with the Clifton suspension bridge, the harbour and Banksy's murals. A day covers it and the airport is 30 minutes away.",
+        "see": [
+          "The Clifton Suspension Bridge, over the Avon gorge",
+          "The harbour and the SS Great Britain",
+          "Stokes Croft, with its murals",
+          "St Nicholas Market"
+        ],
+        "tip": "There's a direct train from Exeter to Bristol in an hour. If you're flying out, the Bristol Flyer links the station to the airport every 20 minutes."
+      }
+    },
+    "gettingAround": "Hire car. Newquay-Padstow, 40 minutes; Padstow-St Ives, an hour; St Ives-Penzance, 20 minutes; Penzance-Falmouth, an hour; Falmouth-Fowey, 40 minutes; Fowey-Dartmouth, ninety minutes; Dartmouth-Exeter, an hour. Cornwall's roads are narrow and hedged: allow more time than the map suggests. In summer there are shuttle buses to St Ives and Padstow.",
+    "bestTime": "May to September, with long days and usable beaches; June and September are best for weather and crowds. July and August are the busiest and most expensive. In winter many villages close and the coastal roads are dangerous in fog.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 or 5 days gets you Newquay, St Ives and Penzance. 7 or 8 adds Falmouth, Fowey and Padstow. With more time you can carry on to Dartmouth and Exeter."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, it's easiest. The villages are badly served by train and buses are infrequent. Without a car, pick one base and use the bus."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Exeter or Bristol and head north to Newquay."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Newquay (NQY) and out of Exeter (EXT) or Bristol (BRS)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "canarias-occidentales",
+    "en": "western-canaries"
+  },
+  "photos": {
+    "Puerto de la Cruz (Tenerife)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Puerto_Martianez_01.jpg/960px-Puerto_Martianez_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Puerto_Martianez_01.jpg",
+      "author": "Koppchen",
+      "license": "CC BY 3.0"
+    },
+    "Santa Cruz de La Palma": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Santa_Cruz_de_La_Palma%2C_houses_on_the_ocean_promenade%2C_balconies%2C_palm_tree.jpg/960px-Santa_Cruz_de_La_Palma%2C_houses_on_the_ocean_promenade%2C_balconies%2C_palm_tree.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Santa_Cruz_de_La_Palma,_houses_on_the_ocean_promenade,_balconies,_palm_tree.jpg",
+      "author": "Gerda Arendt",
+      "license": "CC0"
+    },
+    "San Sebastián de La Gomera": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/San_Sebastian_de_La_Gomera_%2823107207540%29.jpg/960px-San_Sebastian_de_La_Gomera_%2823107207540%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:San_Sebastian_de_La_Gomera_(23107207540).jpg",
+      "author": "Jukka from HELSINKI, Finland",
+      "license": "CC BY 2.0"
+    },
+    "Los Cristianos (Tenerife)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Canaries_Tenerife_Los_Cristianos_Playa_Las_Vistas_-_panoramio.jpg/960px-Canaries_Tenerife_Los_Cristianos_Playa_Las_Vistas_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Canaries_Tenerife_Los_Cristianos_Playa_Las_Vistas_-_panoramio.jpg",
+      "author": "rene boulay",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Tenerife, La Gomera y La Palma: las Canarias verdes",
+    "metaTitle": "Ruta por Tenerife, La Gomera y La Palma: volcanes y laurisilva, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Tenerife y sales por el sur de la isla, con La Palma y La Gomera en medio. Tres islas, tres volcanes y un mar de nubes que se ve desde arriba.",
+    "why": [
+      "Las Canarias occidentales son las islas altas: el Teide a 3.715 metros, la Caldera de Taburiente y el bosque de laurisilva de Garajonay. En invierno se está a 20 grados en la costa y con nieve en la cima, el mismo día.",
+      "La ruta no repite camino porque los ferris salen de Los Cristianos, en el sur de Tenerife, y vuelven allí. Entras por el norte de la isla y sales por el aeropuerto del sur, así que no deshaces kilómetros.",
+      "Lo que suele fallar es el coche. En La Gomera y La Palma las guaguas pasan tres o cuatro veces al día y no llegan a los miradores. Sin coche de alquiler te quedas en el puerto."
+    ],
+    "towns": {
+      "Puerto de la Cruz (Tenerife)": {
+        "text": "Puerto de la Cruz es la ciudad turística más antigua de Canarias, con el Lago Martiánez de César Manrique y una costa de piscinas naturales. Es la base para el Teide y el macizo de Anaga.",
+        "see": [
+          "El Lago Martiánez, las piscinas de agua de mar de Manrique",
+          "El jardín de aclimatación de La Orotava, con árboles de todo el mundo",
+          "El Teide, con el teleférico hasta 3.555 metros",
+          "El macizo de Anaga, con los senderos de laurisilva"
+        ],
+        "tip": "Para subir al cráter del Teide hace falta un permiso gratuito que se pide en la web del parque nacional y se agota semanas antes. Sin permiso se llega a la estación superior y se ve el paisaje."
+      },
+      "Santa Cruz de La Palma": {
+        "text": "Santa Cruz de La Palma es una ciudad de 15.000 habitantes con calles empedradas, casas de balcones de madera y un puerto de donde salen los barcos a Tenerife. Es la capital de la isla y la base para la Caldera de Taburiente.",
+        "see": [
+          "La avenida Marítima y los balcones de madera pintados",
+          "La iglesia de El Salvador, con el techo mudéjar",
+          "La Caldera de Taburiente, con el mirador de La Cumbrecita",
+          "Los volcanes de Fuencaliente y las salinas"
+        ],
+        "tip": "La Cumbrecita tiene el aparcamiento limitado y se reserva en la web del parque nacional. Si no hay sitio, el mirador de Los Brecitos se llega andando desde el Roque de los Muchachos."
+      },
+      "San Sebastián de La Gomera": {
+        "text": "San Sebastián de La Gomera es un pueblo de 9.000 habitantes con un puerto pequeño y la torre del conde, donde dicen que se alojó Colón antes de cruzar el Atlántico. Es la puerta de Garajonay.",
+        "see": [
+          "La torre del conde y la casa de Colón",
+          "El parque nacional de Garajonay, con la laurisilva",
+          "El mirador de Abrante, con el suelo de cristal",
+          "La playa de Santiago, al oeste"
+        ],
+        "tip": "Garajonay suele estar dentro de la nube, y eso es lo que mantiene el bosque verde. Si quieres ver el mar de nubes, sube al Alto de Garajonay por la mañana: por la tarde la nube sube."
+      },
+      "Los Cristianos (Tenerife)": {
+        "text": "Los Cristianos es el puerto del sur de Tenerife, con playas de arena importada y el ferry a La Gomera y La Palma. No es el sitio más bonito de la isla, pero es donde acaba la ruta.",
+        "see": [
+          "El puerto, con los ferris a las islas",
+          "La playa de Las Vistas, con el paseo hasta Playa de las Américas",
+          "El barranco del Infierno, en Adeje, con reserva",
+          "El Teide al atardecer, desde la costa"
+        ],
+        "tip": "El aeropuerto del sur (TFS) está a 15 minutos y el del norte (TFN) a una hora. Si vuelas desde el sur, no hace falta madrugar tanto."
+      }
+    },
+    "gettingAround": "Coche de alquiler y ferri. Puerto de la Cruz-Los Cristianos, una hora y media por la autopista del sur; Los Cristianos-Santa Cruz de La Palma, dos horas y media en ferri rápido o tres y media en el normal; Los Cristianos-San Sebastián de La Gomera, 50 minutos. Los ferris son de Fred. Olsen y Naviera Armas y conviene reservar el coche en el barco. En La Gomera y La Palma el alquiler se recoge en el puerto.",
+    "bestTime": "De octubre a mayo, cuando en Europa hace frío y aquí se está a 20 grados en la costa. Julio y agosto son los meses más calurosos y llenos, sobre todo en el sur de Tenerife. En cualquier mes el norte de las islas está más nublado y el sur, despejado.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 o 6 días ves Tenerife y La Gomera. Con 8 añades La Palma. Con 11 a 13 hay tiempo para el Teide, Garajonay y la Caldera de Taburiente sin prisas."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, sobre todo en La Gomera y La Palma. Las guaguas pasan poco y no llegan a los miradores. En Tenerife se puede hacer sin coche, pero se pierde mucho."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por el sur de Tenerife y saliendo por el norte, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Tenerife Norte (TFN) o Tenerife Sur (TFS). Los dos están en la misma isla y el ferri sale de Los Cristianos, en el sur."
+      }
+    ]
+  },
+  "en": {
+    "title": "Tenerife, La Gomera and La Palma: the green Canaries",
+    "metaTitle": "Tenerife, La Gomera and La Palma route: volcanoes and laurel forest in 5 to 13 days · Lowfly",
+    "summary": "Fly into Tenerife and out of the south of the island, with La Palma and La Gomera in between. Three islands, three volcanoes and a sea of cloud you look down on.",
+    "why": [
+      "The western Canaries are the high islands: Mount Teide at 3,715 metres, the Caldera de Taburiente and the laurel forest of Garajonay. In winter it's 20 degrees on the coast and snow on the summit, on the same day.",
+      "The route doesn't double back because the ferries leave from Los Cristianos, in the south of Tenerife, and return there. You come in through the north of the island and fly out of the southern airport, so you don't retrace your steps.",
+      "Where it usually goes wrong is the car. On La Gomera and La Palma buses run three or four times a day and don't reach the viewpoints. Without a hire car you're stuck at the port."
+    ],
+    "towns": {
+      "Puerto de la Cruz (Tenerife)": {
+        "text": "Puerto de la Cruz is the oldest resort in the Canaries, with César Manrique's Lago Martiánez and a coast of natural pools. It's the base for Mount Teide and the Anaga massif.",
+        "see": [
+          "Lago Martiánez, Manrique's seawater pools",
+          "The acclimatisation garden in La Orotava, with trees from all over",
+          "Mount Teide, with the cable car up to 3,555 metres",
+          "The Anaga massif, with its laurel-forest trails"
+        ],
+        "tip": "To go up to the Teide crater you need a free permit from the national park website, and they run out weeks ahead. Without one you reach the upper station and see the landscape."
+      },
+      "Santa Cruz de La Palma": {
+        "text": "Santa Cruz de La Palma is a town of 15,000 with cobbled streets, houses with wooden balconies and a port with boats to Tenerife. It's the island capital and the base for the Caldera de Taburiente.",
+        "see": [
+          "The Avenida Marítima and its painted wooden balconies",
+          "El Salvador church, with its Mudéjar ceiling",
+          "The Caldera de Taburiente, from the La Cumbrecita viewpoint",
+          "The Fuencaliente volcanoes and the salt pans"
+        ],
+        "tip": "La Cumbrecita has limited parking and needs booking on the national park website. If there's no space, the Los Brecitos viewpoint is reached on foot from the Roque de los Muchachos."
+      },
+      "San Sebastián de La Gomera": {
+        "text": "San Sebastián de La Gomera is a town of 9,000 with a small harbour and the count's tower, where Columbus is said to have stayed before crossing the Atlantic. It's the gateway to Garajonay.",
+        "see": [
+          "The count's tower and the Columbus house",
+          "Garajonay National Park, with its laurel forest",
+          "The Abrante viewpoint, with its glass floor",
+          "Santiago beach, to the west"
+        ],
+        "tip": "Garajonay is usually inside the cloud, and that's what keeps the forest green. If you want to see the sea of cloud, climb Alto de Garajonay in the morning: the cloud rises in the afternoon."
+      },
+      "Los Cristianos (Tenerife)": {
+        "text": "Los Cristianos is the port of southern Tenerife, with imported-sand beaches and the ferry to La Gomera and La Palma. It isn't the prettiest spot on the island, but it's where the route ends.",
+        "see": [
+          "The port, with the ferries to the islands",
+          "Las Vistas beach, with the walk to Playa de las Américas",
+          "The Infierno ravine, in Adeje, by booking",
+          "Mount Teide at sunset, from the coast"
+        ],
+        "tip": "The southern airport (TFS) is 15 minutes away and the northern one (TFN) an hour. If you fly from the south, you don't have to get up as early."
+      }
+    },
+    "gettingAround": "Hire car and ferry. Puerto de la Cruz-Los Cristianos, ninety minutes on the southern motorway; Los Cristianos-Santa Cruz de La Palma, two and a half hours on the fast ferry or three and a half on the regular one; Los Cristianos-San Sebastián de La Gomera, 50 minutes. The ferries are Fred. Olsen and Naviera Armas, and you should book the car onto the boat. On La Gomera and La Palma you pick up the hire car at the port.",
+    "bestTime": "October to May, when Europe is cold and it's 20 degrees on the coast here. July and August are the hottest and busiest months, especially in southern Tenerife. In any month the north of the islands is cloudier and the south is clear.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 or 6 days gets you Tenerife and La Gomera. 8 adds La Palma. 11 to 13 gives time for Teide, Garajonay and the Caldera de Taburiente without rushing."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, especially on La Gomera and La Palma. Buses are infrequent and don't reach the viewpoints. Tenerife can be done without one, but you miss a lot."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in southern Tenerife and finish in the north and it's the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Tenerife North (TFN) or Tenerife South (TFS). Both are on the same island, and the ferry leaves from Los Cristianos in the south."
+      }
+    ]
+  }
+}

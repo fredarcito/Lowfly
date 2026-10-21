@@ -1,5 +1,5 @@
 {
-  "andalucia": {
+  "andalusia": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -277,7 +277,7 @@
       "town": "Granada"
     }
   },
-  "portugal-clasico": {
+  "classic-portugal": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -563,7 +563,7 @@
       "town": "Lisboa"
     }
   },
-  "lisboa-y-algarve": {
+  "lisbon-algarve": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -851,7 +851,7 @@
       "town": "Sintra"
     }
   },
-  "norte-de-espana": {
+  "northern-spain": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -1111,7 +1111,7 @@
       "town": "Bilbao"
     }
   },
-  "galicia-y-oporto": {
+  "galicia-porto": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -1405,7 +1405,7 @@
       "town": "Oporto"
     }
   },
-  "provenza-y-costa-azul": {
+  "provence-cote-dazur": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -1694,7 +1694,7 @@
       "town": "Niza"
     }
   },
-  "alsacia": {
+  "alsace": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -1887,7 +1887,7 @@
       "town": "Colmar"
     }
   },
-  "burdeos-y-pais-vasco-frances": {
+  "bordeaux-french-basque": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2177,7 +2177,7 @@
       "town": "Biarritz"
     }
   },
-  "paris-y-normandia": {
+  "paris-normandy": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2587,7 +2587,7 @@
       "town": "Ruan"
     }
   },
-  "castilla": {
+  "castile": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2949,7 +2949,7 @@
       "town": "Salamanca"
     }
   },
-  "cataluna": {
+  "catalonia": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -3638,7 +3638,7 @@
       "town": "Furnas"
     }
   },
-  "comunidad-valenciana": {
+  "valencian-community": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -3964,7 +3964,7 @@
       "town": "Alicante"
     }
   },
-  "valle-del-duero": {
+  "douro-valley": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -4742,7 +4742,7 @@
       "town": "Mérida"
     }
   },
-  "castillos-del-loira": {
+  "loire-castles": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -5108,7 +5108,7 @@
       "town": "Orleans"
     }
   },
-  "occitania": {
+  "occitanie": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -5488,7 +5488,7 @@
       "town": "Carcasona"
     }
   },
-  "bretana": {
+  "brittany": {
     "kind": "classic",
     "reviewed": false,
     "name": {

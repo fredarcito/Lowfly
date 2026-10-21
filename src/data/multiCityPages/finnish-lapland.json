@@ -1,0 +1,186 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "laponia-finlandesa",
+    "en": "finnish-lapland"
+  },
+  "photos": {
+    "Rovaniemi": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Rovaniemi_06101999_rescanned.jpg/960px-Rovaniemi_06101999_rescanned.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Rovaniemi_06101999_rescanned.jpg",
+      "author": "MattiKSinisalo at Finnish Wikipedia",
+      "license": "CC BY-SA 3.0"
+    },
+    "Levi": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Levi_-_panoramio.jpg/960px-Levi_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Levi_-_panoramio.jpg",
+      "author": "Oleg Krivolapov",
+      "license": "CC BY-SA 3.0"
+    },
+    "Saariselkä": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Huippu-ravintola.JPG/960px-Huippu-ravintola.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Huippu-ravintola.JPG",
+      "author": "Birit Schenk (Birit)",
+      "license": "CC BY 2.5"
+    },
+    "Inari": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Inari%2C_Suomi_-_Finland_2013-03-10_f.jpg/960px-Inari%2C_Suomi_-_Finland_2013-03-10_f.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Inari,_Suomi_-_Finland_2013-03-10_f.jpg",
+      "author": "Manfred Werner - Tsui",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Laponia finlandesa: Rovaniemi, Saariselkä e Inari",
+    "metaTitle": "Ruta por la Laponia finlandesa: auroras, renos y Papá Noel, de 4 a 8 días · Lowfly",
+    "summary": "Entras y sales por Rovaniemi, con Levi, Saariselkä e Inari en medio. Un circuito de invierno con auroras, huskies y renos, y temperaturas de -20 grados.",
+    "why": [
+      "La Laponia finlandesa es un rectángulo de bosque y nieve con cuatro pueblos y una carretera. En invierno hay luz azul de diez a dos y auroras casi todas las noches despejadas, y todo se organiza desde Rovaniemi.",
+      "El circuito funciona porque no hay mucho más: Rovaniemi, Levi, Saariselkä e Inari. Cada uno tiene su especialidad, y entre ellos hay buses diarios o coche de alquiler con ruedas de invierno.",
+      "Lo que suele fallar es el frío y las expectativas. A -25 grados no se camina, se va en trineo o en moto de nieve, y las auroras no salen si está nublado. Reserva dos o tres noches por sitio para tener margen."
+    ],
+    "towns": {
+      "Rovaniemi": {
+        "text": "Rovaniemi es la capital de la Laponia finlandesa y está justo en el círculo polar ártico. Tiene el pueblo de Papá Noel, un museo sobre el Ártico y todos los tours de huskies y renos.",
+        "see": [
+          "El pueblo de Papá Noel, en el círculo polar",
+          "El Arktikum, el museo del Ártico, con el techo de cristal",
+          "Una excursión de huskies por el bosque",
+          "La aurora boreal, en una cabaña de cristal o en moto de nieve"
+        ],
+        "tip": "El pueblo de Papá Noel es gratis y se llega en bus 8 desde el centro. La foto con Papá Noel se paga aparte y es cara: decide antes de hacer cola."
+      },
+      "Levi": {
+        "text": "Levi es la estación de esquí más grande de Finlandia, con 43 pistas y un pueblo de cabañas al pie de la montaña. En invierno hay esquí, motos de nieve y auroras.",
+        "see": [
+          "Las pistas, con alquiler de esquís en el pueblo",
+          "Una ruta en moto de nieve por el bosque",
+          "El mirador de la cima, en teleférico",
+          "Una cena en una cabaña de leña, con salmón al fuego"
+        ],
+        "tip": "El alquiler de esquís y ropa de nieve está en el pueblo y se paga por días. Si no esquías, las motos de nieve son la mejor forma de ver el bosque."
+      },
+      "Saariselkä": {
+        "text": "Saariselkä está en el norte, dentro del parque nacional de Urho Kekkonen, con 250 kilómetros de pistas de esquí de fondo. Es el sitio más tranquilo y el mejor para ver auroras.",
+        "see": [
+          "El parque nacional, con raquetas de nieve o esquí de fondo",
+          "El mirador de Kaunispää, en la cima",
+          "Una noche en un iglú de cristal",
+          "El centro de naturaleza, con la exposición del parque"
+        ],
+        "tip": "Los iglús de cristal se reservan con meses de antelación y cuestan mucho. Si no hay, una cabaña con ventana al norte sirve igual para ver auroras desde la cama."
+      },
+      "Inari": {
+        "text": "Inari es el centro de la cultura sami, con un parlamento propio, un museo y el lago Inari, el tercero de Finlandia. Es el pueblo más auténtico del circuito.",
+        "see": [
+          "El Siida, el museo sami, con la exposición al aire libre",
+          "El parlamento sami, en el pueblo",
+          "Una granja de renos, con paseo en trineo",
+          "El lago Inari helado, con pesca en el hielo"
+        ],
+        "tip": "El museo Siida explica la cultura sami mejor que cualquier tour. Ve primero al museo y luego a la granja de renos: entenderás lo que ves."
+      }
+    },
+    "gettingAround": "Bus y coche. Rovaniemi-Levi son dos horas y media en bus (Eskelinen); Rovaniemi-Saariselkä, tres horas y media; Saariselkä-Inari, una hora. Entre Levi y Saariselkä no hay bus directo: hay que volver por Rovaniemi o alquilar coche con ruedas de invierno. Los buses salen una o dos veces al día, así que planifica con margen.",
+    "bestTime": "De diciembre a marzo, con nieve segura y auroras desde septiembre. Diciembre es el mes de Papá Noel y está lleno; enero y febrero son más fríos y tranquilos. En marzo hay más horas de luz y aún nieve, y es el mejor mes para esquiar.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 o 5 días ves Rovaniemi y Saariselkä. Con 7 u 8 añades Levi e Inari. Menos de cuatro días es poco: los traslados comen tiempo."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No, pero ayuda. Los buses existen y son baratos, aunque pasan poco. Con coche se llega a los miradores de auroras por la noche."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí, pero es un circuito: sales y entras por Rovaniemi, así que el orden da igual."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Rovaniemi (RVN), que tiene vuelos directos desde varias ciudades europeas en invierno. Desde Helsinki hay tren nocturno."
+      }
+    ]
+  },
+  "en": {
+    "title": "Finnish Lapland: Rovaniemi, Saariselkä and Inari",
+    "metaTitle": "Finnish Lapland route: auroras, reindeer and Santa in 4 to 8 days · Lowfly",
+    "summary": "In and out of Rovaniemi, with Levi, Saariselkä and Inari in between. A winter loop of auroras, huskies and reindeer, at minus 20.",
+    "why": [
+      "Finnish Lapland is a rectangle of forest and snow with four towns and one road. In winter there's blue light from ten to two and auroras on almost every clear night, and everything is organised from Rovaniemi.",
+      "The loop works because there isn't much more: Rovaniemi, Levi, Saariselkä and Inari. Each has its speciality, and daily buses or a hire car with winter tyres link them.",
+      "Where it usually goes wrong is the cold and the expectations. At minus 25 you don't walk, you go by sled or snowmobile, and the auroras don't come out if it's cloudy. Book two or three nights per place to leave room."
+    ],
+    "towns": {
+      "Rovaniemi": {
+        "text": "Rovaniemi is the capital of Finnish Lapland and sits right on the Arctic Circle. It has Santa's village, a museum about the Arctic and every husky and reindeer tour.",
+        "see": [
+          "Santa's village, on the Arctic Circle",
+          "Arktikum, the Arctic museum, with its glass roof",
+          "A husky sled ride through the forest",
+          "The northern lights, from a glass cabin or by snowmobile"
+        ],
+        "tip": "Santa's village is free and bus 8 goes there from the centre. The photo with Santa costs extra and isn't cheap: decide before you queue."
+      },
+      "Levi": {
+        "text": "Levi is Finland's biggest ski resort, with 43 runs and a village of cabins at the foot of the fell. In winter there's skiing, snowmobiles and auroras.",
+        "see": [
+          "The slopes, with ski hire in the village",
+          "A snowmobile route through the forest",
+          "The summit viewpoint, by gondola",
+          "Dinner in a log cabin, with salmon cooked over the fire"
+        ],
+        "tip": "Ski and snow gear hire is in the village and charged by the day. If you don't ski, snowmobiles are the best way to see the forest."
+      },
+      "Saariselkä": {
+        "text": "Saariselkä is in the far north, inside Urho Kekkonen National Park, with 250 kilometres of cross-country trails. It's the quietest place and the best for auroras.",
+        "see": [
+          "The national park, on snowshoes or cross-country skis",
+          "The Kaunispää viewpoint, on the summit",
+          "A night in a glass igloo",
+          "The nature centre, with its park exhibition"
+        ],
+        "tip": "Glass igloos are booked months ahead and cost a lot. If there are none, a cabin with a north-facing window works just as well for watching auroras from bed."
+      },
+      "Inari": {
+        "text": "Inari is the centre of Sámi culture, with its own parliament, a museum and Lake Inari, Finland's third largest. It's the most authentic village on the loop.",
+        "see": [
+          "Siida, the Sámi museum, with its open-air section",
+          "The Sámi parliament, in the village",
+          "A reindeer farm, with a sled ride",
+          "Frozen Lake Inari, with ice fishing"
+        ],
+        "tip": "The Siida museum explains Sámi culture better than any tour. Go to the museum first and then the reindeer farm: you'll understand what you're looking at."
+      }
+    },
+    "gettingAround": "Bus and car. Rovaniemi-Levi is two and a half hours by bus (Eskelinen); Rovaniemi-Saariselkä, three and a half; Saariselkä-Inari, an hour. There's no direct bus between Levi and Saariselkä: go back through Rovaniemi or hire a car with winter tyres. Buses run once or twice a day, so plan with margin.",
+    "bestTime": "December to March, with reliable snow, and auroras from September. December is Santa month and busy; January and February are colder and quieter. March has more daylight and still snow, and it's the best month for skiing.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 or 5 days gets you Rovaniemi and Saariselkä. 7 or 8 adds Levi and Inari. Fewer than four is too little: transfers eat the time."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No, but it helps. The buses exist and are cheap, though infrequent. A car gets you to aurora viewpoints at night."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes, but it's a loop: you fly in and out of Rovaniemi, so the order doesn't matter."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Rovaniemi (RVN), with direct winter flights from several European cities. There's also an overnight train from Helsinki."
+      }
+    ]
+  }
+}

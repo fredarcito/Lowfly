@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "canarias-orientales",
+    "en": "eastern-canaries"
+  },
+  "photos": {
+    "Las Palmas de Gran Canaria": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Plaza_Mayor_de_Santa_Ana%2C_Las_Palmas_de_Gran_Canaria%2C_May_2018.jpg/960px-Plaza_Mayor_de_Santa_Ana%2C_Las_Palmas_de_Gran_Canaria%2C_May_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 584,
+      "page": "https://commons.wikimedia.org/wiki/File:Plaza_Mayor_de_Santa_Ana,_Las_Palmas_de_Gran_Canaria,_May_2018.jpg",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0"
+    },
+    "Maspalomas (Gran Canaria)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/GC_Dunas_de_Maspalomas_R04.jpg/960px-GC_Dunas_de_Maspalomas_R04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 422,
+      "page": "https://commons.wikimedia.org/wiki/File:GC_Dunas_de_Maspalomas_R04.jpg",
+      "author": "Marc Ryckaert (MJJR)",
+      "license": "CC BY 3.0"
+    },
+    "Morro Jable (Fuerteventura)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Jandia_morro_jable_strand_leuchtturm.jpg/960px-Jandia_morro_jable_strand_leuchtturm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Jandia_morro_jable_strand_leuchtturm.jpg",
+      "author": "Dirk Vorderstraße",
+      "license": "CC BY 3.0"
+    },
+    "Corralejo (Fuerteventura)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Corralejo_from_Bayuyo_volcano_%281427329605%29.jpg/960px-Corralejo_from_Bayuyo_volcano_%281427329605%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Corralejo_from_Bayuyo_volcano_(1427329605).jpg",
+      "author": "Andy Mitchell from Glasgow, UK",
+      "license": "CC BY-SA 2.0"
+    },
+    "Arrecife (Lanzarote)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Arrecife._Lanzarote-39.jpg/960px-Arrecife._Lanzarote-39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Arrecife._Lanzarote-39.jpg",
+      "author": "L. Miguel Bugallo S. (Lmbuga)",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Gran Canaria, Fuerteventura y Lanzarote: dunas y volcanes",
+    "metaTitle": "Ruta por Gran Canaria, Fuerteventura y Lanzarote: de 5 a 11 días · Lowfly",
+    "summary": "Entras por Gran Canaria y sales por Lanzarote, con las dunas de Maspalomas y Corralejo y el Timanfaya en medio. Ferris cortos y playas de arena blanca.",
+    "why": [
+      "Las Canarias orientales son las islas secas: dunas, volcanes recientes y playas de arena blanca. Los ferris entre ellas son de media hora a dos horas, y desde Lanzarote se ve Fuerteventura al otro lado del estrecho.",
+      "La ruta va de oeste a este y no repite camino: Gran Canaria, Fuerteventura y Lanzarote. Entras por el aeropuerto de Gran Canaria y sales por el de Lanzarote, así que no vuelves atrás.",
+      "Lo que suele fallar es el viento. En Fuerteventura y Lanzarote sopla casi todo el año y en verano hay calima. Lleva una chaqueta fina para la noche y no reserves las excursiones de barco para el último día."
+    ],
+    "towns": {
+      "Las Palmas de Gran Canaria": {
+        "text": "Las Palmas es la ciudad más grande de Canarias, con la playa de Las Canteras dentro y el barrio antiguo de Vegueta, de piedra y calles estrechas. Es la base para el interior de la isla.",
+        "see": [
+          "La playa de Las Canteras, con la barra de arena que forma una piscina natural",
+          "El barrio de Vegueta y la catedral de Santa Ana",
+          "La casa de Colón, donde se alojó el navegante",
+          "El Roque Nublo y Tejeda, en el centro de la isla"
+        ],
+        "tip": "Las Canteras tiene la barra a 200 metros de la orilla y con marea baja se puede caminar hasta ella. Es lo que hace que la playa sea tan tranquila."
+      },
+      "Maspalomas (Gran Canaria)": {
+        "text": "Maspalomas es el sur turístico de Gran Canaria, con un campo de dunas de 400 hectáreas, un faro de 1890 y una playa de tres kilómetros. Se ve en un día.",
+        "see": [
+          "Las dunas de Maspalomas, con el sendero marcado",
+          "El faro y la playa del Inglés",
+          "El oasis de Maspalomas, con la laguna y las palmeras",
+          "El mirador de la Degollada de las Yeguas, hacia el interior"
+        ],
+        "tip": "Las dunas están protegidas y solo se puede caminar por los senderos marcados. Ir por la arena fuera de ellos erosiona el campo y hay multas."
+      },
+      "Morro Jable (Fuerteventura)": {
+        "text": "Morro Jable está en el sur de Fuerteventura, con una playa de arena blanca de varios kilómetros y el faro de Punta Jandía al final. Es el sitio más tranquilo de la isla.",
+        "see": [
+          "La playa de Jandía, con el paseo hasta el faro",
+          "El mirador de Cofete, con la playa salvaje",
+          "El pueblo de pescadores, con los restaurantes de pescado",
+          "La península de Jandía, en coche por la pista de tierra"
+        ],
+        "tip": "La pista de Cofete es de tierra y sin asfaltar, y el alquiler no siempre cubre los caminos. Pregunta antes de ir: hay tramos con baches y sin cobertura."
+      },
+      "Corralejo (Fuerteventura)": {
+        "text": "Corralejo está en el norte de Fuerteventura, con el parque de dunas a las afueras y el ferri a Lanzarote cada media hora. Es la base para la isla de Lobos.",
+        "see": [
+          "El parque natural de las dunas de Corralejo",
+          "La isla de Lobos, en barco desde el puerto",
+          "La playa de la Concha, dentro del parque",
+          "El paseo del puerto, con los bares de pescado"
+        ],
+        "tip": "La isla de Lobos tiene un cupo diario de visitantes y hay que pedir permiso en la web del Cabildo. El barco sale del puerto de Corralejo y tarda 15 minutos."
+      },
+      "Arrecife (Lanzarote)": {
+        "text": "Arrecife es la capital de Lanzarote y una ciudad portuaria sin turismo de masas, con el castillo de San Gabriel en una isla y el Charco de San Ginés en el centro. Es la base para Timanfaya y los centros de Manrique.",
+        "see": [
+          "El parque nacional de Timanfaya, con el restaurante del Diablo",
+          "Los Jameos del Agua y la Cueva de los Verdes, de Manrique",
+          "El Mirador del Río, sobre el archipiélago Chinijo",
+          "El Charco de San Ginés y el castillo de San Gabriel"
+        ],
+        "tip": "En Timanfaya no se puede bajar del autobús en la ruta del parque y no hay guagua pública: hay que ir en coche o en tour. La entrada se paga en la taquilla y el recorrido dura 40 minutos."
+      }
+    },
+    "gettingAround": "Coche de alquiler y ferri. Las Palmas-Maspalomas, 40 minutos por la autopista; Las Palmas-Morro Jable, dos horas y media en ferri rápido desde el puerto de Las Palmas; Morro Jable-Corralejo, hora y media por la carretera del centro; Corralejo-Arrecife, 30 minutos en ferri más 15 en coche hasta Arrecife. El ferri de Corralejo a Playa Blanca sale cada media hora y se puede llevar el coche.",
+    "bestTime": "De octubre a mayo, con temperaturas suaves y sin la calima del verano. Julio y agosto son calurosos y con viento fuerte, y en Fuerteventura hay días de calima. Diciembre y enero son buenos para la playa, aunque el agua está a 19 grados.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Fuerteventura y Lanzarote. Con 7 u 8 añades Gran Canaria. Con 11 hay tiempo para Timanfaya, las dunas y Jandía sin correr."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, sobre todo en Lanzarote y en el interior de Gran Canaria. Timanfaya no tiene transporte público y las dunas están lejos de los pueblos."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Lanzarote y saliendo por Gran Canaria, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Gran Canaria (LPA) al entrar y a Lanzarote (ACE) al salir. Fuerteventura (FUE) está en medio y tiene vuelos desde varias ciudades."
+      }
+    ]
+  },
+  "en": {
+    "title": "Gran Canaria, Fuerteventura and Lanzarote: dunes and volcanoes",
+    "metaTitle": "Gran Canaria, Fuerteventura and Lanzarote route: 5 to 11 days · Lowfly",
+    "summary": "Fly into Gran Canaria and out of Lanzarote, with the dunes of Maspalomas and Corralejo and Timanfaya in between. Short ferries and white-sand beaches.",
+    "why": [
+      "The eastern Canaries are the dry islands: dunes, recent volcanoes and white-sand beaches. The ferries between them take half an hour to two hours, and from Lanzarote you can see Fuerteventura across the strait.",
+      "The route runs west to east and doesn't double back: Gran Canaria, Fuerteventura and Lanzarote. You land at Gran Canaria airport and fly out of Lanzarote, so you never go back.",
+      "Where it usually goes wrong is the wind. Fuerteventura and Lanzarote are windy almost all year and summer brings calima dust. Bring a light jacket for the evening and don't save boat trips for the last day."
+    ],
+    "towns": {
+      "Las Palmas de Gran Canaria": {
+        "text": "Las Palmas is the biggest city in the Canaries, with Las Canteras beach inside it and the old Vegueta quarter of stone and narrow streets. It's the base for the island's interior.",
+        "see": [
+          "Las Canteras beach, with the sand bar that makes a natural pool",
+          "The Vegueta quarter and Santa Ana cathedral",
+          "The Columbus house, where the navigator stayed",
+          "Roque Nublo and Tejeda, in the middle of the island"
+        ],
+        "tip": "The bar at Las Canteras is 200 metres offshore and at low tide you can walk out to it. That's what makes the beach so calm."
+      },
+      "Maspalomas (Gran Canaria)": {
+        "text": "Maspalomas is the tourist south of Gran Canaria, with a 400-hectare dune field, a lighthouse from 1890 and a three-kilometre beach. A day covers it.",
+        "see": [
+          "The Maspalomas dunes, on the marked trail",
+          "The lighthouse and Playa del Inglés",
+          "The Maspalomas oasis, with its lagoon and palms",
+          "The Degollada de las Yeguas viewpoint, towards the interior"
+        ],
+        "tip": "The dunes are protected and you can only walk on the marked paths. Walking on the sand off them erodes the field and there are fines."
+      },
+      "Morro Jable (Fuerteventura)": {
+        "text": "Morro Jable is in southern Fuerteventura, with a white-sand beach several kilometres long and the Punta Jandía lighthouse at the end. It's the quietest spot on the island.",
+        "see": [
+          "Jandía beach, with the walk to the lighthouse",
+          "The Cofete viewpoint, over the wild beach",
+          "The fishing village, with its seafood restaurants",
+          "The Jandía peninsula, by car on the dirt track"
+        ],
+        "tip": "The Cofete track is dirt and unsurfaced, and the rental may not cover dirt roads. Ask before you go: there are rough stretches and no signal."
+      },
+      "Corralejo (Fuerteventura)": {
+        "text": "Corralejo is in northern Fuerteventura, with the dune park on its edge and the ferry to Lanzarote every half hour. It's the base for Lobos island.",
+        "see": [
+          "The Corralejo dunes nature park",
+          "Lobos island, by boat from the harbour",
+          "La Concha beach, inside the park",
+          "The harbour promenade, with its fish bars"
+        ],
+        "tip": "Lobos island has a daily visitor cap and you need a permit from the Cabildo website. The boat leaves Corralejo harbour and takes 15 minutes."
+      },
+      "Arrecife (Lanzarote)": {
+        "text": "Arrecife is the capital of Lanzarote and a port town without mass tourism, with San Gabriel castle on an island and the Charco de San Ginés in the centre. It's the base for Timanfaya and Manrique's centres.",
+        "see": [
+          "Timanfaya National Park, with the Devil's restaurant",
+          "Jameos del Agua and the Cueva de los Verdes, by Manrique",
+          "The Mirador del Río, over the Chinijo archipelago",
+          "The Charco de San Ginés and San Gabriel castle"
+        ],
+        "tip": "At Timanfaya you can't get off the bus on the park route and there's no public bus: you go by car or on a tour. You pay at the ticket office and the drive lasts 40 minutes."
+      }
+    },
+    "gettingAround": "Hire car and ferry. Las Palmas-Maspalomas, 40 minutes on the motorway; Las Palmas-Morro Jable, two and a half hours on the fast ferry from Las Palmas port; Morro Jable-Corralejo, ninety minutes on the central road; Corralejo-Arrecife, 30 minutes by ferry plus 15 by car to Arrecife. The Corralejo-Playa Blanca ferry runs every half hour and takes cars.",
+    "bestTime": "October to May, with mild temperatures and none of summer's calima. July and August are hot and windy, and Fuerteventura gets dust days. December and January are good for the beach, though the water is 19 degrees.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Fuerteventura and Lanzarote. 7 or 8 adds Gran Canaria. 11 gives time for Timanfaya, the dunes and Jandía without rushing."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, especially on Lanzarote and in inland Gran Canaria. Timanfaya has no public transport and the dunes are far from the towns."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Lanzarote and finish in Gran Canaria and it's the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Gran Canaria (LPA) and out of Lanzarote (ACE). Fuerteventura (FUE) sits in the middle and has flights from several cities."
+      }
+    ]
+  }
+}

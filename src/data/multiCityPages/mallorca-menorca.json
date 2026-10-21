@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "mallorca-y-menorca",
+    "en": "mallorca-and-menorca"
+  },
+  "photos": {
+    "Palma": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Palma_de_Mallorca_cathedral_seen_from_the_side.jpg/960px-Palma_de_Mallorca_cathedral_seen_from_the_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Palma_de_Mallorca_cathedral_seen_from_the_side.jpg",
+      "author": "JIP",
+      "license": "CC BY-SA 3.0"
+    },
+    "Sóller": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Port_de_Soller_R17.jpg/960px-Port_de_Soller_R17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 478,
+      "page": "https://commons.wikimedia.org/wiki/File:Port_de_Soller_R17.jpg",
+      "author": "Marc Ryckaert (MJJR)",
+      "license": "CC BY 3.0"
+    },
+    "Alcúdia": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Alcudia_beach.jpg/960px-Alcudia_beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Alcudia_beach.jpg",
+      "author": "Liilia Moroz",
+      "license": "CC BY-SA 4.0"
+    },
+    "Ciutadella": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Puerto_de_Ciutadella_de_Menorca_-_002.jpg/960px-Puerto_de_Ciutadella_de_Menorca_-_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Puerto_de_Ciutadella_de_Menorca_-_002.jpg",
+      "author": "Américo Toledano",
+      "license": "CC BY-SA 4.0"
+    },
+    "Mahón": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Mahon_Hafen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Mahon_Hafen.jpg",
+      "author": "Jbr",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Mallorca y Menorca: Palma, la Tramuntana y las calas",
+    "metaTitle": "Ruta por Mallorca y Menorca: Palma, Sóller y las calas, de 5 a 11 días · Lowfly",
+    "summary": "Entras por Palma y sales por Menorca, con el tren de Sóller, la Tramuntana y las calas de Ciutadella en medio. Un ferri de una hora entre las dos islas.",
+    "why": [
+      "Mallorca y Menorca son muy distintas y están a una hora de ferri. Mallorca tiene la montaña de la Tramuntana, el tren de madera de Sóller y una capital con catedral; Menorca es plana, con calas de agua transparente y dos ciudades pequeñas.",
+      "La ruta va de oeste a este y no repite camino: Palma, Sóller, Alcúdia, Ciutadella y Mahón. Entras por el aeropuerto de Palma y sales por el de Menorca, y el ferri cruza de Alcúdia a Ciutadella.",
+      "Lo que suele fallar es agosto. Las calas de Menorca se llenan y algunos aparcamientos se reservan, y la carretera de la Tramuntana se atasca. Mayo, junio y septiembre son mejores en todo."
+    ],
+    "towns": {
+      "Palma": {
+        "text": "Palma tiene la catedral gótica más alta de España, un casco antiguo de piedra dorada y un paseo marítimo de cuatro kilómetros. Dos noches dan para la catedral, el barrio de Santa Catalina y el castillo de Bellver.",
+        "see": [
+          "La Seu, la catedral, con la reforma de Gaudí en el interior",
+          "El castillo de Bellver, uno de los pocos circulares de Europa",
+          "El barrio de Santa Catalina, con el mercado y los bares",
+          "El paseo marítimo y la Lonja"
+        ],
+        "tip": "El castillo de Bellver está a 20 minutos andando del centro y la entrada es gratis los domingos. Desde la terraza se ve la bahía entera."
+      },
+      "Sóller": {
+        "text": "Sóller es un pueblo de naranjos en un valle entre montañas, al que se llega en el tren de madera de 1912 desde Palma. El puerto está a cinco kilómetros, en una bahía cerrada.",
+        "see": [
+          "El tren de Sóller, con los vagones de madera",
+          "El puerto, con el paseo y las barcas",
+          "La plaza de la Constitución y la iglesia de San Bartolomé",
+          "Los miradores de la Tramuntana, en coche hacia Deià"
+        ],
+        "tip": "El tren de Sóller sale de Palma y tarda una hora. Siéntate en el lado derecho yendo hacia Sóller: es el que da a los acantilados."
+      },
+      "Alcúdia": {
+        "text": "Alcúdia tiene un casco antiguo amurallado del siglo XIV, con calles estrechas y la puerta de Mallorca, y una playa larga al otro lado de la bahía. Es de donde sale el ferri a Menorca.",
+        "see": [
+          "El casco antiguo y las murallas, con el paseo por encima",
+          "La playa de Alcúdia y la de Muro, con las dunas",
+          "El puerto romano de Pollentia, con el museo",
+          "El mercado de los domingos, en la plaza"
+        ],
+        "tip": "El ferri a Ciutadella sale del puerto de Alcúdia, a tres kilómetros del casco antiguo. Hay bus lanzadera y conviene llegar 40 minutos antes con el coche."
+      },
+      "Ciutadella": {
+        "text": "Ciutadella fue la capital de Menorca hasta 1722 y conserva un casco antiguo de piedra, un puerto estrecho y el palacio episcopal. Es la puerta de las calas del oeste.",
+        "see": [
+          "El puerto y la plaza des Born",
+          "La catedral, construida sobre una mezquita",
+          "Las calas de Macarella y Turqueta, en coche",
+          "El faro de Punta Nati, al atardecer"
+        ],
+        "tip": "Las calas de Macarella y Turqueta tienen el aparcamiento limitado en julio y agosto y hay que reservar plaza en la web del Consell. Ve antes de las nueve si vas en coche."
+      },
+      "Mahón": {
+        "text": "Mahón es la capital de Menorca y tiene uno de los puertos naturales más grandes del Mediterráneo, con 5 kilómetros de largo. El centro está en lo alto, con casas georgianas de la época británica.",
+        "see": [
+          "El puerto, en barco hasta la fortaleza de La Mola",
+          "La iglesia de Santa María, con el órgano",
+          "El mercado del Claustro del Carmen",
+          "Las calas del este, como Binibeca y Punta Prima"
+        ],
+        "tip": "El puerto se ve mejor desde el mirador de Sa Punta des Rellotge o desde el barco que va a La Mola. En coche hay que bajar por la carretera del puerto y aparcar abajo."
+      }
+    },
+    "gettingAround": "Tren, bus, coche y ferri. Palma-Sóller, una hora en el tren de madera; Sóller-Alcúdia, hora y media en coche por la Tramuntana o dos horas en bus con cambio en Palma; Alcúdia-Ciutadella, una o dos horas en ferri; Ciutadella-Mahón, una hora en bus. El ferri de Alcúdia a Ciutadella lo hacen Balearia y Trasmediterránea y admite coches.",
+    "bestTime": "Mayo, junio, septiembre y octubre: el agua está templada, las calas no se llenan y las carreteras de la Tramuntana se conducen sin colas. Julio y agosto son los meses más calurosos y llenos, y muchos aparcamientos de calas se reservan.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Palma y Menorca. Con 7 u 8 añades Sóller y Alcúdia. Con 11 hay tiempo para la Tramuntana y las calas del este de Menorca."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Ayuda mucho en Menorca y en la Tramuntana. Palma y Mahón se hacen andando, y el tren de Sóller cubre ese trayecto sin coche."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Menorca y saliendo por Palma, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Palma (PMI) al entrar y a Menorca (MAH) al salir. Los dos aeropuertos están a menos de 15 minutos de la ciudad."
+      }
+    ]
+  },
+  "en": {
+    "title": "Mallorca and Menorca: Palma, the Tramuntana and the coves",
+    "metaTitle": "Mallorca and Menorca route: Palma, Sóller and the coves in 5 to 11 days · Lowfly",
+    "summary": "Fly into Palma and out of Menorca, with the Sóller train, the Tramuntana and the coves of Ciutadella in between. A one-hour ferry between the islands.",
+    "why": [
+      "Mallorca and Menorca are very different and an hour apart by ferry. Mallorca has the Tramuntana mountains, the wooden Sóller train and a capital with a cathedral; Menorca is flat, with transparent coves and two small cities.",
+      "The route runs west to east and doesn't double back: Palma, Sóller, Alcúdia, Ciutadella and Mahón. You land at Palma airport and fly out of Menorca, and the ferry crosses from Alcúdia to Ciutadella.",
+      "Where it usually goes wrong is August. Menorca's coves fill up and some car parks need booking, and the Tramuntana road jams. May, June and September are better all round."
+    ],
+    "towns": {
+      "Palma": {
+        "text": "Palma has the tallest Gothic cathedral in Spain, an old town of golden stone and a four-kilometre seafront. Two nights covers the cathedral, the Santa Catalina quarter and Bellver castle.",
+        "see": [
+          "La Seu, the cathedral, with Gaudí's interior rework",
+          "Bellver castle, one of the few round castles in Europe",
+          "The Santa Catalina quarter, with its market and bars",
+          "The seafront and the Lonja"
+        ],
+        "tip": "Bellver castle is a 20-minute walk from the centre and entry is free on Sundays. From the terrace you see the whole bay."
+      },
+      "Sóller": {
+        "text": "Sóller is a town of orange groves in a valley between mountains, reached on the wooden train from 1912 from Palma. The port is five kilometres away, in a sheltered bay.",
+        "see": [
+          "The Sóller train, with its wooden carriages",
+          "The port, with its promenade and boats",
+          "Plaza de la Constitución and St Bartholomew's church",
+          "The Tramuntana viewpoints, driving towards Deià"
+        ],
+        "tip": "The Sóller train leaves from Palma and takes an hour. Sit on the right going to Sóller: that's the side facing the cliffs."
+      },
+      "Alcúdia": {
+        "text": "Alcúdia has a walled old town from the 14th century, with narrow streets and the Mallorca gate, and a long beach across the bay. It's where the ferry to Menorca leaves from.",
+        "see": [
+          "The old town and walls, with the walk along the top",
+          "Alcúdia and Muro beaches, with the dunes",
+          "The Roman town of Pollentia, with its museum",
+          "The Sunday market, on the square"
+        ],
+        "tip": "The ferry to Ciutadella leaves from Alcúdia port, three kilometres from the old town. There's a shuttle bus, and with a car you should arrive 40 minutes early."
+      },
+      "Ciutadella": {
+        "text": "Ciutadella was the capital of Menorca until 1722 and keeps a stone old town, a narrow harbour and the bishop's palace. It's the gateway to the western coves.",
+        "see": [
+          "The harbour and Plaça des Born",
+          "The cathedral, built over a mosque",
+          "Macarella and Turqueta coves, by car",
+          "Punta Nati lighthouse, at sunset"
+        ],
+        "tip": "Macarella and Turqueta have limited parking in July and August and you need to book a space on the Consell website. Go before nine if you're driving."
+      },
+      "Mahón": {
+        "text": "Mahón is the capital of Menorca and has one of the largest natural harbours in the Mediterranean, five kilometres long. The centre sits above it, with Georgian houses from the British period.",
+        "see": [
+          "The harbour, by boat to La Mola fortress",
+          "St Mary's church, with its organ",
+          "The Claustre del Carme market",
+          "The eastern coves, such as Binibeca and Punta Prima"
+        ],
+        "tip": "The harbour looks best from the Sa Punta des Rellotge viewpoint or from the boat to La Mola. By car you go down the port road and park at the bottom."
+      }
+    },
+    "gettingAround": "Train, bus, car and ferry. Palma-Sóller, an hour on the wooden train; Sóller-Alcúdia, ninety minutes by car through the Tramuntana or two hours by bus with a change in Palma; Alcúdia-Ciutadella, one to two hours by ferry; Ciutadella-Mahón, an hour by bus. The Alcúdia-Ciutadella ferry is run by Balearia and Trasmediterránea and takes cars.",
+    "bestTime": "May, June, September and October: the water is warm, the coves aren't packed and the Tramuntana roads drive without queues. July and August are the hottest and busiest months, and many cove car parks need booking.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Palma and Menorca. 7 or 8 adds Sóller and Alcúdia. 11 gives time for the Tramuntana and the eastern coves of Menorca."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "It helps a lot on Menorca and in the Tramuntana. Palma and Mahón are walkable, and the Sóller train covers that leg without a car."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Menorca and finish in Palma and it's the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Palma (PMI) and out of Menorca (MAH). Both airports are under 15 minutes from the city."
+      }
+    ]
+  }
+}

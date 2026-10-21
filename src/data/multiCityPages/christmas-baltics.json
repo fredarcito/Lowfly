@@ -1,0 +1,158 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "navidad-en-el-baltico",
+    "en": "christmas-in-the-baltics"
+  },
+  "photos": {
+    "Tallinn": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Tallinn_Christmas_market_2017.jpg/960px-Tallinn_Christmas_market_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Tallinn_Christmas_market_2017.jpg",
+      "author": "Araldica81",
+      "license": "CC BY-SA 4.0"
+    },
+    "Tartu": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg/960px-Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg",
+      "author": "A.Savin",
+      "license": "FAL"
+    },
+    "Riga": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Christmas_market%2C_Riga_20241209_-_06.jpg/960px-Christmas_market%2C_Riga_20241209_-_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 602,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_market,_Riga_20241209_-_06.jpg",
+      "author": "AleWi",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Navidad en el Báltico: Tallin y Riga bajo la nieve",
+    "metaTitle": "Navidad en el Báltico en autobús: Tallin, Tartu y Riga, de 5 a 7 días · Lowfly",
+    "summary": "Cascos medievales nevados, mercadillos al calor de la hoguera y vino caliente. Tallin y Riga, con Tartu en medio, en autobús y con frío de verdad.",
+    "why": [
+      "Tallin y Riga se disputan el primer árbol de Navidad público de Europa, y las dos tienen razón a medias: hay documentos de los dos. Lo que no se discute es que sus cascos medievales, con nieve, son de los más bonitos del continente.",
+      "El orden importa. Tallin primero, que es la más pequeña y la más fotogénica; Tartu en medio, que es de un día; y Riga al final, que es la más grande y la que tiene más mercados.",
+      "Lo que suele fallar es el frío. Aquí se baja de -10 grados con frecuencia y hay viento del Báltico. Anochece a las 15:30: el día es corto y hay que aprovechar la mañana."
+    ],
+    "towns": {
+      "Tallinn": {
+        "text": "Tallin tiene el casco medieval mejor conservado del Báltico y un mercadillo en la plaza del Ayuntamiento, junto al árbol de Navidad que se planta desde 1441. Se ve en dos días.",
+        "see": [
+          "El mercadillo de la plaza del Ayuntamiento",
+          "El árbol de Navidad, uno de los primeros de Europa",
+          "La iglesia de San Olaf y la subida a la torre",
+          "El barrio de Kalamaja, con casas de madera"
+        ],
+        "tip": "El mercadillo de la plaza del Ayuntamiento es pequeño y se ve en una hora. Lo mejor es a última hora, con la nieve y las luces encendidas."
+      },
+      "Tartu": {
+        "text": "Tartu es la ciudad universitaria de Estonia, con un centro de casas de madera y un mercadillo en la plaza del Ayuntamiento. Se ve en un día, y es la parada más tranquila de la ruta.",
+        "see": [
+          "El mercadillo de la plaza del Ayuntamiento",
+          "La universidad y el observatorio antiguo",
+          "El museo nacional estonio",
+          "El barrio de Supilinn, de casas de madera"
+        ],
+        "tip": "Tartu está a dos horas y media de Tallin en autobús y a cuatro de Riga. Si vas justo de días, se puede quitar sin perder lo esencial."
+      },
+      "Riga": {
+        "text": "Riga tiene un casco medieval con la iglesia de San Pedro y un mercadillo en la plaza de la Catedral, además de la mejor colección de edificios modernistas de Europa. Se ve en tres días.",
+        "see": [
+          "El mercadillo de la plaza de la Catedral",
+          "La iglesia de San Pedro, con la subida a la torre",
+          "El barrio modernista de Alberta iela",
+          "El mercado central, en los hangares de zepelines"
+        ],
+        "tip": "El mercado central ocupa cinco hangares de zepelines y es el más grande del Báltico. Se come bien y barato: prueba el pan negro y el pescado ahumado."
+      }
+    },
+    "gettingAround": "Autobús. Tallin y Riga están a cuatro horas y media en autobús, con salidas frecuentes y wifi a bordo; Tallin y Tartu, a dos horas y media; Tartu y Riga, a cuatro. Los autobuses son más cómodos que el tren en esta zona, que es lento y con transbordos. El aeropuerto de Tallin está a 20 minutos del centro en tranvía, y el de Riga, a 30 minutos en autobús.",
+    "bestTime": "Finales de noviembre y diciembre, hasta primeros de enero. La primera quincena de diciembre es la mejor: hay nieve y menos gente que en las vacaciones escolares. Hace muchísimo frío, a menudo por debajo de -10 grados, y anochece a las 15:30. Los mercadillos siguen abiertos hasta primeros de enero.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para la Navidad en el Báltico?",
+        "answer": "Con 5 o 6 días ves Tallin y Riga. Con 7 añades Tartu."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los autobuses unen Tallin, Tartu y Riga con frecuencia y son cómodos. El coche solo complica el aparcamiento en los cascos antiguos."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Riga, acabas en Tallin."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Tallin (TLL) o a Riga (RIX). Tartu (TAY) tiene muy pocos vuelos: se visita en autobús entre las dos capitales."
+      }
+    ]
+  },
+  "en": {
+    "title": "Christmas in the Baltics: Tallinn and Riga under the snow",
+    "metaTitle": "Christmas in the Baltics by bus: Tallinn, Tartu and Riga in 5 to 7 days · Lowfly",
+    "summary": "Snow-covered medieval old towns, markets by the fire and mulled wine. Tallinn and Riga, with Tartu in between, by bus and in proper cold.",
+    "why": [
+      "Tallinn and Riga both claim the first public Christmas tree in Europe, and both are half right: there are documents for each. What isn't in dispute is that their medieval old towns, under snow, are among the prettiest on the continent.",
+      "The order matters. Tallinn first, the smallest and most photogenic; Tartu in the middle, a day; and Riga last, the biggest and the one with the most markets.",
+      "What usually goes wrong is the cold. It drops below -10°C often here, with Baltic wind. It's dark by 15:30: the day is short and you have to use the morning."
+    ],
+    "towns": {
+      "Tallinn": {
+        "text": "Tallinn has the best-preserved medieval old town on the Baltic and a market on the town-hall square, beside the Christmas tree that's been put up since 1441. Two days covers it.",
+        "see": [
+          "The market on the town-hall square",
+          "The Christmas tree, one of the first in Europe",
+          "St Olaf's church and the climb up the tower",
+          "The Kalamaja district, with its wooden houses"
+        ],
+        "tip": "The town-hall square market is small and takes an hour. It's best late in the day, with the snow and the lights on."
+      },
+      "Tartu": {
+        "text": "Tartu is Estonia's university city, with a centre of wooden houses and a market on the town-hall square. A day covers it, and it's the quietest stop on the route.",
+        "see": [
+          "The market on the town-hall square",
+          "The university and the old observatory",
+          "The Estonian National Museum",
+          "The Supilinn district, of wooden houses"
+        ],
+        "tip": "Tartu is two and a half hours from Tallinn by bus and four from Riga. If you're short on days, it can be dropped without losing the essentials."
+      },
+      "Riga": {
+        "text": "Riga has a medieval old town with St Peter's church and a market on the cathedral square, plus the best collection of Art Nouveau buildings in Europe. Three days covers it.",
+        "see": [
+          "The market on the cathedral square",
+          "St Peter's church, with the climb up the tower",
+          "The Art Nouveau district on Alberta iela",
+          "The central market, in the zeppelin hangars"
+        ],
+        "tip": "The central market fills five zeppelin hangars and is the largest on the Baltic. You eat well and cheaply: try the black bread and the smoked fish."
+      }
+    },
+    "gettingAround": "Bus. Tallinn and Riga are four and a half hours apart by bus, with frequent departures and wifi on board; Tallinn and Tartu, two and a half hours; Tartu and Riga, four. Buses are more comfortable than trains in this region, which are slow and need changes. Tallinn airport is 20 minutes from the centre by tram, and Riga airport 30 minutes by bus.",
+    "bestTime": "Late November and December, into early January. The first half of December is best: there's snow and fewer people than in the school holidays. It's very cold, often below -10°C, and dark by 15:30. The markets stay open into early January.",
+    "faq": [
+      {
+        "question": "How many days do you need for Christmas in the Baltics?",
+        "answer": "5 or 6 days covers Tallinn and Riga. With 7 you add Tartu."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses link Tallinn, Tartu and Riga frequently and comfortably. A car only complicates parking in the old towns."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Riga and you finish in Tallinn."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Tallinn (TLL) or Riga (RIX). Tartu (TAY) has very few flights: it's visited by bus between the two capitals."
+      }
+    ]
+  }
+}

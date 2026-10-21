@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "norte-de-espana",
+    "en": "northern-spain"
+  },
+  "photos": {
+    "Oviedo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Vistageneraldeoviedo.JPG/960px-Vistageneraldeoviedo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Vistageneraldeoviedo.JPG",
+      "author": "Frobles",
+      "license": "CC BY-SA 4.0"
+    },
+    "Cangas de Onís (Picos de Europa)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Cangas_de_On%C3%ADs_-_Palacio_Pintu.jpg/960px-Cangas_de_On%C3%ADs_-_Palacio_Pintu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Cangas_de_On%C3%ADs_-_Palacio_Pintu.jpg",
+      "author": "Ecelan",
+      "license": "CC BY-SA 4.0"
+    },
+    "Santillana del Mar": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Santillana_del_Mar_nucleo.jpg/960px-Santillana_del_Mar_nucleo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Santillana_del_Mar_nucleo.jpg",
+      "author": "Luis Fermín TURIEL PEREDO",
+      "license": "CC BY-SA 4.0"
+    },
+    "Santander": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Muelle_de_Albareda%2C_Santander.jpg/960px-Muelle_de_Albareda%2C_Santander.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 594,
+      "page": "https://commons.wikimedia.org/wiki/File:Muelle_de_Albareda,_Santander.jpg",
+      "author": "Emilio Gómez Fernández",
+      "license": "CC BY-SA 4.0"
+    },
+    "Bilbao": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Cityscape_-_Bilbao%2C_Spain_-_panoramio_%281%29.jpg/960px-Cityscape_-_Bilbao%2C_Spain_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Cityscape_-_Bilbao,_Spain_-_panoramio_(1).jpg",
+      "author": "Tommie Hansen",
+      "license": "CC BY 3.0"
+    },
+    "San Sebastián": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Donostia_hegazkinetik.jpg/960px-Donostia_hegazkinetik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 449,
+      "page": "https://commons.wikimedia.org/wiki/File:Donostia_hegazkinetik.jpg",
+      "author": "Joxemai",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por el norte de España: Asturias, Cantabria y el País Vasco",
+    "metaTitle": "Norte de España en tren y autobús: Oviedo, Bilbao y San Sebastián, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Asturias o por Cantabria y sigues la costa hacia el este hasta San Sebastián. Verdes montañas a un lado, mar al otro, y pintxos al final del camino.",
+    "why": [
+      "El norte es otra España: llueve, hay montaña y el mar es verde. En una semana se pasa de los Picos de Europa a la playa de la Concha, con pueblos de piedra y sidra por el camino.",
+      "El orden importa. Si entras por Asturias, empieza por Oviedo y sube a los Picos; si entras por el País Vasco, hazlo al revés y acaba en Asturias. San Sebastián se deja para el final, que es la que más apetece recordar.",
+      "Lo que suele fallar es el tiempo. Aquí no se planifica por días sino por mañanas: si amanece despejado, sube a la montaña; si llueve, quédate en la ciudad. Y lleva una chaqueta incluso en agosto."
+    ],
+    "towns": {
+      "Oviedo": {
+        "text": "Oviedo es una ciudad de piedra y de sidra, y se recorre en una mañana. La catedral tiene una cámara santa a la que solo entran unos pocos al día, y el casco antiguo está lleno de calles con sidrerías.",
+        "see": [
+          "La catedral y la Cámara Santa, con entrada limitada",
+          "La plaza del Fontán y sus sidrerías",
+          "Las esculturas de la ciudad, repartidas por el centro",
+          "El mercado del Fontán, por la mañana"
+        ],
+        "tip": "La sidra se escancia desde lo alto, con el vaso en la otra mano. En las sidrerías del Fontán lo hacen por ti, y si no, te enseñan."
+      },
+      "Cangas de Onís (Picos de Europa)": {
+        "text": "Cangas de Onís es la puerta de los Picos de Europa y el sitio donde se duerme para subir a Covadonga y a los lagos. El pueblo es pequeño, con un puente romano y un mercado de queso.",
+        "see": [
+          "El santuario de Covadonga, a 12 kilómetros",
+          "Los lagos de Enol y Ercina, con acceso restringido en verano",
+          "El puente romano y la capilla de la Santa Cruz",
+          "La ruta del Cares, si vas preparado para caminar cinco horas"
+        ],
+        "tip": "En verano el acceso a los lagos está cortado al coche particular: hay que subir en autobús desde Cangas. Compra el billete la víspera."
+      },
+      "Santillana del Mar": {
+        "text": "Santillana del Mar es un pueblo de piedra que se ve en dos horas, y por eso mucha gente lo cruza sin parar. Duerme allí y tendrás las calles vacías a primera hora, cuando los autobuses todavía no han llegado.",
+        "see": [
+          "La colegiata de Santa Juliana y su claustro",
+          "Las calles del casco, con casas blasonadas",
+          "La cueva de Altamira, con la neocueva del museo",
+          "El zoo de Santillana, si viajas con niños"
+        ],
+        "tip": "La cueva original de Altamira está cerrada al público desde 2002. Lo que se visita es la neocueva, una réplica exacta, y merece la pena igual."
+      },
+      "Santander": {
+        "text": "Santander es una ciudad de bahía, con una playa enorme en el centro y un palacio al final de un paseo. Es elegante y tranquila, y se ve en un día largo.",
+        "see": [
+          "La playa del Sardinero y el palacio de la Magdalena",
+          "El centro botín, de Renzo Piano, con vistas a la bahía",
+          "El paseo marítimo, hasta el faro",
+          "La península de la Magdalena, con sus pingüinos en invierno"
+        ],
+        "tip": "Las rabas, los calamares fritos, son la tapa de aquí. Se piden en el Sardinero, con una caña y sin prisa."
+      },
+      "Bilbao": {
+        "text": "Bilbao era una ciudad industrial y ahora es una ciudad de museos y de pintxos. El Guggenheim la cambió, pero el casco viejo y el mercado de la Ribera son lo que más se disfruta.",
+        "see": [
+          "El Museo Guggenheim, por fuera y por dentro",
+          "El casco viejo y las siete calles",
+          "El mercado de la Ribera, los sábados por la mañana",
+          "El funicular de Artxanda, para ver la ciudad entera"
+        ],
+        "tip": "Los pintxos se cogen de la barra y se pagan al final. En el casco viejo, cada bar tiene su especialidad: no pidas lo mismo en todos."
+      },
+      "San Sebastián": {
+        "text": "San Sebastián es la ciudad más elegante del norte, con una bahía casi perfecta y más estrellas Michelin por metro cuadrado que ninguna otra de España. Se recorre andando y se come de pintxo en pintxo.",
+        "see": [
+          "La playa de la Concha y el paseo hasta el Peine del Viento",
+          "La parte vieja y sus bares de pintxos",
+          "El monte Igueldo, en funicular, para ver la bahía",
+          "El mercado de la Bretxa, por la mañana"
+        ],
+        "tip": "Los pintxos de la parte vieja se pagan por unidades y se apuntan en la servilleta. Come de pie y no te sientes: es más barato y más divertido."
+      }
+    },
+    "gettingAround": "Tren y autobús, con coche para los Picos. Oviedo, Santander, Bilbao y San Sebastián están unidas por trenes regionales y autobuses, con trayectos de una a dos horas. Cangas de Onís y Santillana del Mar se alcanzan en autobús desde Oviedo y Santander, con pocas frecuencias; para los lagos de Covadonga hace falta autobús lanzadera o coche. En el País Vasco, el Euskotren y los autobuses unen Bilbao y San Sebastián cada media hora.",
+    "bestTime": "Junio, julio, agosto y septiembre: los meses con menos lluvia y más horas de luz. Agosto es el más lleno, sobre todo en San Sebastián y en la costa cántabra. En primavera y otoño llueve más, pero las ciudades están tranquilas y los precios bajan. En invierno hay nieve en los Picos y muchos pueblos de montaña cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para el norte de España?",
+        "answer": "Con 5 o 6 días ves Bilbao y San Sebastián. Con 8 a 10 añades Santander; con 11 a 13 entran también Oviedo, los Picos de Europa y Santillana del Mar."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Para las ciudades, no: el tren y el autobús bastan. Para los Picos de Europa y los lagos de Covadonga sí ayuda, aunque en verano el acceso está restringido y hay autobuses lanzadera."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por San Sebastián, acabas en Oviedo, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Bilbao (BIO), San Sebastián (EAS) o Santander (SDR). Bilbao tiene más conexiones y está a una hora de San Sebastián en autobús; San Sebastián es pequeño y muchos vuelos aterrizan en Biarritz (BIQ)."
+      }
+    ]
+  },
+  "en": {
+    "title": "Northern Spain itinerary: Asturias, Cantabria and the Basque Country",
+    "metaTitle": "Northern Spain by train and bus: Oviedo, Bilbao and San Sebastián in 5 to 13 days · Lowfly",
+    "summary": "Fly into Asturias or Cantabria and follow the coast east to San Sebastián. Green mountains on one side, sea on the other, and pintxos at the end of the road.",
+    "why": [
+      "The north is another Spain: it rains, there are mountains and the sea is green. In a week you go from the Picos de Europa to La Concha beach, with stone villages and cider along the way.",
+      "The order matters. Coming in from Asturias, start in Oviedo and head up to the Picos; coming in from the Basque Country, do it the other way round and finish in Asturias. Leave San Sebastián for last: it's the one you most want to remember.",
+      "What usually goes wrong is the weather. Here you plan by mornings, not by days: if it's clear at dawn, go up the mountain; if it's raining, stay in town. And pack a jacket even in August."
+    ],
+    "towns": {
+      "Oviedo": {
+        "text": "Oviedo is a city of stone and cider, and a morning covers it. The cathedral has a holy chamber only a handful of people enter each day, and the old town is full of streets lined with cider houses.",
+        "see": [
+          "The cathedral and the Cámara Santa, with limited entry",
+          "Plaza del Fontán and its cider houses",
+          "The city's sculptures, scattered through the centre",
+          "Fontán market, in the morning"
+        ],
+        "tip": "Cider is poured from a height, glass in the other hand. In the cider houses around Fontán they do it for you, and if not, they'll show you how."
+      },
+      "Cangas de Onís (Picos de Europa)": {
+        "text": "Cangas de Onís is the gateway to the Picos de Europa and where you sleep before heading up to Covadonga and the lakes. The town is small, with a Roman bridge and a cheese market.",
+        "see": [
+          "The sanctuary at Covadonga, 12 kilometres away",
+          "The Enol and Ercina lakes, with restricted access in summer",
+          "The Roman bridge and the chapel of the Holy Cross",
+          "The Cares gorge route, if you're ready for a five-hour walk"
+        ],
+        "tip": "In summer private cars are barred from the lakes: you go up by bus from Cangas. Buy the ticket the day before."
+      },
+      "Santillana del Mar": {
+        "text": "Santillana del Mar is a stone village that takes two hours, which is why plenty of people drive straight through. Sleep there and you get the streets empty at first light, before the coaches arrive.",
+        "see": [
+          "The collegiate church of Santa Juliana and its cloister",
+          "The old town's streets and their crested houses",
+          "Altamira cave, through the museum's replica",
+          "The Santillana zoo, if you're travelling with children"
+        ],
+        "tip": "The original Altamira cave has been closed to the public since 2002. What you visit is the neocave, an exact replica, and it's worth it all the same."
+      },
+      "Santander": {
+        "text": "Santander is a bay city, with a huge beach in the middle and a palace at the end of a promenade. It's elegant and calm, and a long day covers it.",
+        "see": [
+          "El Sardinero beach and the Magdalena palace",
+          "Centro Botín, by Renzo Piano, looking over the bay",
+          "The seafront walk out to the lighthouse",
+          "The Magdalena peninsula, with its penguins in winter"
+        ],
+        "tip": "Rabas — fried squid — are the local tapa. Order them in El Sardinero, with a beer and no hurry."
+      },
+      "Bilbao": {
+        "text": "Bilbao was an industrial city and is now a city of museums and pintxos. The Guggenheim changed it, but the old town and the Ribera market are the parts people enjoy most.",
+        "see": [
+          "The Guggenheim, outside and in",
+          "The old town and the Seven Streets",
+          "Ribera market, on Saturday mornings",
+          "The Artxanda funicular, for the whole city at once"
+        ],
+        "tip": "Pintxos are taken from the bar and paid for at the end. In the old town every bar has its speciality: don't order the same thing in all of them."
+      },
+      "San Sebastián": {
+        "text": "San Sebastián is the most elegant city in the north, with a near-perfect bay and more Michelin stars per square kilometre than anywhere else in Spain. You walk it and you eat it, pintxo by pintxo.",
+        "see": [
+          "La Concha beach and the walk out to the Peine del Viento",
+          "The old town and its pintxo bars",
+          "Monte Igueldo, by funicular, for the view of the bay",
+          "La Bretxa market, in the morning"
+        ],
+        "tip": "Pintxos in the old town are priced per piece and tallied on the napkin. Eat standing and don't sit down: it's cheaper and more fun."
+      }
+    },
+    "gettingAround": "Train and bus, with a car for the Picos. Oviedo, Santander, Bilbao and San Sebastián are linked by regional trains and buses, with journeys of one to two hours. Cangas de Onís and Santillana del Mar are reached by bus from Oviedo and Santander, with few departures; for the Covadonga lakes you need a shuttle bus or a car. In the Basque Country, Euskotren and buses link Bilbao and San Sebastián every half hour.",
+    "bestTime": "June, July, August and September: the driest months and the longest days. August is the busiest, especially in San Sebastián and on the Cantabrian coast. Spring and autumn are wetter, but the cities are quiet and prices drop. In winter there's snow in the Picos and many mountain villages close.",
+    "faq": [
+      {
+        "question": "How many days do you need for northern Spain?",
+        "answer": "5 or 6 days covers Bilbao and San Sebastián. With 8 to 10 you add Santander; with 11 to 13 Oviedo, the Picos de Europa and Santillana del Mar come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the cities: train and bus are enough. For the Picos de Europa and the Covadonga lakes it helps, though in summer access is restricted and shuttle buses run."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in San Sebastián and you finish in Oviedo, with the airport close by."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Bilbao (BIO), San Sebastián (EAS) or Santander (SDR). Bilbao has more connections and is an hour from San Sebastián by bus; San Sebastián is small and many flights land at Biarritz (BIQ)."
+      }
+    ]
+  }
+}

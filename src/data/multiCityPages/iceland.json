@@ -1,0 +1,270 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "islandia",
+    "en": "iceland"
+  },
+  "photos": {
+    "Reykjavík": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Hallgr%C3%ADmskirkja%2C_Reykjav%C3%ADk%2C_Iceland%2C_20230506_1701_5380.jpg/960px-Hallgr%C3%ADmskirkja%2C_Reykjav%C3%ADk%2C_Iceland%2C_20230506_1701_5380.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 812,
+      "page": "https://commons.wikimedia.org/wiki/File:Hallgr%C3%ADmskirkja,_Reykjav%C3%ADk,_Iceland,_20230506_1701_5380.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0"
+    },
+    "Golden Circle (Geysir)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Strokkur%2C_%C3%81rea_geot%C3%A9rmica_de_Geysir%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_086.JPG/960px-Strokkur%2C_%C3%81rea_geot%C3%A9rmica_de_Geysir%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_086.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Strokkur,_%C3%81rea_geot%C3%A9rmica_de_Geysir,_Su%C3%B0urland,_Islandia,_2014-08-16,_DD_086.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    "Vík": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/V%C3%ADkurkirkja_in_Iceland.jpg/960px-V%C3%ADkurkirkja_in_Iceland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 554,
+      "page": "https://commons.wikimedia.org/wiki/File:V%C3%ADkurkirkja_in_Iceland.jpg",
+      "author": "_大面",
+      "license": "CC BY 2.5"
+    },
+    "Skaftafell (Jökulsárlón)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Jokulsarlon_lake%2C_Iceland.jpg/960px-Jokulsarlon_lake%2C_Iceland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 529,
+      "page": "https://commons.wikimedia.org/wiki/File:Jokulsarlon_lake,_Iceland.jpg",
+      "author": "Kenny Muir",
+      "license": "CC BY 2.0"
+    },
+    "Snæfellsnes (Grundarfjörður)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Kirkjufell%2C_Iceland%2C_20240714_1631_0713.jpg/960px-Kirkjufell%2C_Iceland%2C_20240714_1631_0713.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Kirkjufell,_Iceland,_20240714_1631_0713.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0"
+    },
+    "Höfn": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Iceland_H%C3%B6fn.jpg/960px-Iceland_H%C3%B6fn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Iceland_H%C3%B6fn.jpg",
+      "author": "Maryam Laura Moazedi, www.moazedi.org",
+      "license": "CC BY-SA 3.0"
+    },
+    "Hella": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hella_2024.jpg/960px-Hella_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Hella_2024.jpg",
+      "author": "Steinninn",
+      "license": "CC BY 4.0"
+    }
+  },
+  "es": {
+    "title": "Islandia: Reikiavik, el Círculo Dorado y la costa sur",
+    "metaTitle": "Ruta por Islandia: Reikiavik, Círculo Dorado y Jökulsárlón, de 5 a 11 días · Lowfly",
+    "summary": "Entras y sales por Reikiavik, con la península de Snæfellsnes, el Círculo Dorado, Vík y el glaciar Jökulsárlón en medio. Coches de alquiler y carreteras vacías.",
+    "why": [
+      "Islandia tiene 103.000 kilómetros cuadrados y 390.000 habitantes, y casi todo lo que se viene a ver está a menos de cinco horas de Reikiavik. En una semana haces el sur completo sin llegar a dar la vuelta a la isla.",
+      "El circuito funciona porque no hay mucho más: Reikiavik, Snæfellsnes, el Círculo Dorado, la costa sur hasta Jökulsárlón y vuelta. Las carreteras son buenas y el paisaje cambia cada hora.",
+      "Lo que suele fallar es el tiempo y el presupuesto. Aquí el viento arranca las puertas de los coches y una tormenta cierra la carretera de la costa. Y todo es caro: la gasolina, la comida y el alojamiento."
+    ],
+    "towns": {
+      "Reykjavík": {
+        "text": "Reikiavik es la capital más pequeña del norte de Europa, con casas de colores, la iglesia de Hallgrímskirkja y un puerto de balleneros. Dos noches dan para el centro y un tour.",
+        "see": [
+          "La iglesia de Hallgrímskirkja, con la torre y la vista a la ciudad",
+          "El puerto viejo y el museo marítimo",
+          "La calle Laugavegur, con las tiendas y los bares",
+          "El edificio Harpa, de cristal, junto al puerto"
+        ],
+        "tip": "El agua del grifo es gratis y de manantial: no compres botellas. Y el alcohol solo se vende en las tiendas estatales Vínbúðin, que cierran pronto."
+      },
+      "Snæfellsnes (Grundarfjörður)": {
+        "text": "La península de Snæfellsnes es Islandia en miniatura: un volcán con glaciar, playas negras, campos de lava y el monte Kirkjufell, que sale en todas las fotos. Se recorre en un día largo.",
+        "see": [
+          "El monte Kirkjufell, desde la cascada de Kirkjufellsfoss",
+          "El parque nacional del Snæfellsjökull, con el volcán",
+          "La playa negra de Djúpalónssandur",
+          "El pueblo de Arnarstapi, con los acantilados de basalto"
+        ],
+        "tip": "La península se recorre en coche en un día largo desde Reikiavik, pero es mejor dormir en Grundarfjörður o Stykkishólmur. Así ves Kirkjufell al atardecer, que es cuando se pone dorado."
+      },
+      "Golden Circle (Geysir)": {
+        "text": "El Círculo Dorado es el triángulo clásico: el parque nacional de Þingvellir, la zona geotérmica de Geysir y la cascada de Gullfoss. Se hace en un día desde Reikiavik.",
+        "see": [
+          "El géiser Strokkur, que erupciona cada cinco o diez minutos",
+          "La cascada de Gullfoss, en dos saltos",
+          "El parque de Þingvellir, donde se separan las placas tectónicas",
+          "La laguna secreta de Flúðir, con agua caliente"
+        ],
+        "tip": "El Círculo Dorado se llena de autobuses a media mañana. Sal de Reikiavik a las siete y estarás en Gullfoss antes de que lleguen."
+      },
+      "Vík": {
+        "text": "Vík es el pueblo más al sur de Islandia, con una playa de arena negra, columnas de basalto y la iglesia en lo alto de la colina. Es la base para la costa sur.",
+        "see": [
+          "La playa de Reynisfjara, con las columnas de basalto",
+          "La iglesia de Vík, con la vista al pueblo",
+          "El acantilado de Dyrhólaey, con el arco de roca",
+          "La cascada de Skógafoss, a 30 minutos"
+        ],
+        "tip": "En Reynisfjara hay olas que arrastran a la gente: se llaman olas sneaker y matan cada año. No te acerques al agua y no des la espalda al mar."
+      },
+      "Skaftafell (Jökulsárlón)": {
+        "text": "Skaftafell es la puerta del glaciar Vatnajökull, el más grande de Europa, y Jökulsárlón es la laguna donde los icebergs se desprenden y flotan hasta el mar. Es lo más impresionante de la ruta.",
+        "see": [
+          "La laguna de Jökulsárlón, con los icebergs",
+          "La playa de los diamantes, con el hielo en la arena negra",
+          "Una caminata sobre el glaciar, con guía",
+          "La cascada de Svartifoss, entre columnas de basalto"
+        ],
+        "tip": "Para caminar sobre el glaciar hace falta guía y crampones: no se puede ir por libre. Las excursiones salen de Skaftafell y se reservan con días."
+      },
+      "Höfn": {
+        "text": "Höfn es un pueblo de pescadores en el sureste, con langosta y vistas al glaciar. Es la parada natural entre Jökulsárlón y el este de la isla.",
+        "see": [
+          "El puerto y los restaurantes de langosta",
+          "La laguna de Fjallsárlón, más tranquila que Jökulsárlón",
+          "El glaciar Fláajökull, con el sendero",
+          "La montaña de Vestrahorn, a 40 minutos"
+        ],
+        "tip": "La langosta de Höfn es la mejor de Islandia y se sirve en los restaurantes del puerto. Es cara, pero es lo que se come aquí."
+      },
+      "Hella": {
+        "text": "Hella está en el sur, junto al río Rangá, y es la base para las cuevas de hielo, el volcán Hekla y las piscinas termales del valle. Es la parada de vuelta a Reikiavik.",
+        "see": [
+          "Las cuevas de hielo del glaciar, con guía, de noviembre a marzo",
+          "El volcán Hekla, con el sendero desde Landmannalaugar",
+          "La piscina termal de Hveragerði, en el pueblo",
+          "El cráter de Kerið, con el lago verde"
+        ],
+        "tip": "Las cuevas de hielo solo se visitan con guía y solo en invierno. Se reservan con semanas y dependen del tiempo: si hay deshielo, se cancelan."
+      }
+    },
+    "gettingAround": "Coche de alquiler. Reikiavik-Snæfellsnes, dos horas; Snæfellsnes-Círculo Dorado, dos horas y media; Círculo Dorado-Vík, dos horas y media; Vík-Jökulsárlón, dos horas; Jökulsárlón-Höfn, una hora; Höfn-Hella, cuatro horas; Hella-Reikiavik, una hora. En invierno hay que comprobar el estado de las carreteras en la web de Vegagerðin y llevar neumáticos de invierno. La carretera 1 da la vuelta a la isla y está asfaltada.",
+    "bestTime": "De junio a agosto para el sol de medianoche y todos los caminos abiertos, aunque es la temporada más cara y llena. De septiembre a marzo hay auroras y cuevas de hielo, pero menos luz y carreteras que se cierran con temporal. Mayo y septiembre son el equilibrio.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 o 6 días ves Reikiavik, el Círculo Dorado y la costa sur hasta Jökulsárlón. Con 8 añades Snæfellsnes. Con 11 entran también Höfn y el sureste."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, es lo más práctico. Hay tours desde Reikiavik, pero para la costa sur y Snæfellsnes el coche da libertad y sale más barato si sois dos o más."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí, es un circuito: sales y entras por Reikiavik, así que el orden da igual."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Keflavík (KEF), a 45 minutos de Reikiavik. El aeropuerto doméstico de Reikiavik (RKV) solo tiene vuelos a Groenlandia y las islas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Iceland: Reykjavík, the Golden Circle and the south coast",
+    "metaTitle": "Iceland route: Reykjavík, Golden Circle and Jökulsárlón in 5 to 11 days · Lowfly",
+    "summary": "In and out of Reykjavík, with the Snæfellsnes peninsula, the Golden Circle, Vík and the Jökulsárlón glacier lagoon in between. Hire cars and empty roads.",
+    "why": [
+      "Iceland covers 103,000 square kilometres with 390,000 people, and almost everything you come to see is within five hours of Reykjavík. In a week you do the whole south without circling the island.",
+      "The loop works because there isn't much more: Reykjavík, Snæfellsnes, the Golden Circle, the south coast to Jökulsárlón and back. The roads are good and the landscape changes every hour.",
+      "Where it usually goes wrong is weather and budget. The wind here rips car doors off and one storm closes the coastal road. And everything is expensive: fuel, food and lodging."
+    ],
+    "towns": {
+      "Reykjavík": {
+        "text": "Reykjavík is the smallest capital in northern Europe, with coloured houses, Hallgrímskirkja church and a whaling harbour. Two nights covers the centre and a tour.",
+        "see": [
+          "Hallgrímskirkja, with the tower and the view over the city",
+          "The old harbour and the maritime museum",
+          "Laugavegur, with its shops and bars",
+          "The Harpa concert hall, of glass, by the harbour"
+        ],
+        "tip": "Tap water is free and comes from springs: don't buy bottles. And alcohol is only sold in the state Vínbúðin shops, which close early."
+      },
+      "Snæfellsnes (Grundarfjörður)": {
+        "text": "The Snæfellsnes peninsula is Iceland in miniature: a glacier-topped volcano, black beaches, lava fields and Mount Kirkjufell, which is in every photo. A long day drives it.",
+        "see": [
+          "Mount Kirkjufell, from Kirkjufellsfoss waterfall",
+          "Snæfellsjökull National Park, with the volcano",
+          "Djúpalónssandur black beach",
+          "The village of Arnarstapi, with its basalt cliffs"
+        ],
+        "tip": "You can drive the peninsula in a long day from Reykjavík, but it's better to sleep in Grundarfjörður or Stykkishólmur. That way you see Kirkjufell at sunset, when it turns gold."
+      },
+      "Golden Circle (Geysir)": {
+        "text": "The Golden Circle is the classic triangle: Þingvellir National Park, the Geysir geothermal area and Gullfoss waterfall. A day does it from Reykjavík.",
+        "see": [
+          "The Strokkur geyser, which erupts every five to ten minutes",
+          "Gullfoss, the waterfall in two drops",
+          "Þingvellir, where the tectonic plates pull apart",
+          "The Secret Lagoon at Flúðir, with hot water"
+        ],
+        "tip": "The Golden Circle fills with coaches by mid-morning. Leave Reykjavík at seven and you'll be at Gullfoss before they arrive."
+      },
+      "Vík": {
+        "text": "Vík is the southernmost village in Iceland, with a black-sand beach, basalt columns and a church on the hill. It's the base for the south coast.",
+        "see": [
+          "Reynisfjara beach, with its basalt columns",
+          "Vík church, with the view over the village",
+          "The Dyrhólaey cliff, with its rock arch",
+          "Skógafoss waterfall, 30 minutes away"
+        ],
+        "tip": "Reynisfjara has sneaker waves that drag people out: they kill every year. Don't go near the water and never turn your back on the sea."
+      },
+      "Skaftafell (Jökulsárlón)": {
+        "text": "Skaftafell is the gateway to the Vatnajökull glacier, the largest in Europe, and Jökulsárlón is the lagoon where icebergs break off and float out to sea. It's the most impressive part of the route.",
+        "see": [
+          "Jökulsárlón lagoon, with its icebergs",
+          "Diamond Beach, with ice on the black sand",
+          "A glacier walk, with a guide",
+          "Svartifoss waterfall, between basalt columns"
+        ],
+        "tip": "Walking on the glacier needs a guide and crampons: you can't go alone. Tours leave from Skaftafell and are booked days ahead."
+      },
+      "Höfn": {
+        "text": "Höfn is a fishing village in the southeast, with langoustine and views of the glacier. It's the natural stop between Jökulsárlón and the east.",
+        "see": [
+          "The harbour and the langoustine restaurants",
+          "Fjallsárlón lagoon, quieter than Jökulsárlón",
+          "The Fláajökull glacier, with its trail",
+          "Vestrahorn mountain, 40 minutes away"
+        ],
+        "tip": "Höfn langoustine is the best in Iceland and it's served in the harbour restaurants. It's expensive, but it's what people eat here."
+      },
+      "Hella": {
+        "text": "Hella is in the south, by the river Rangá, and is the base for ice caves, Mount Hekla and the hot pools of the valley. It's the stop on the way back to Reykjavík.",
+        "see": [
+          "The glacier ice caves, with a guide, November to March",
+          "Mount Hekla, with the trail from Landmannalaugar",
+          "The hot pool at Hveragerði, in the village",
+          "Kerið crater, with its green lake"
+        ],
+        "tip": "Ice caves are only visited with a guide and only in winter. Book weeks ahead and know that weather can cancel them: if there's meltwater, they don't run."
+      }
+    },
+    "gettingAround": "Hire car. Reykjavík-Snæfellsnes, two hours; Snæfellsnes-Golden Circle, two and a half hours; Golden Circle-Vík, two and a half hours; Vík-Jökulsárlón, two hours; Jökulsárlón-Höfn, an hour; Höfn-Hella, four hours; Hella-Reykjavík, an hour. In winter check road conditions on the Vegagerðin website and use winter tyres. Route 1 circles the island and is paved.",
+    "bestTime": "June to August for the midnight sun and every road open, though it's the most expensive and crowded season. September to March brings auroras and ice caves, but less light and roads that close in storms. May and September are the balance.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 or 6 days gets you Reykjavík, the Golden Circle and the south coast to Jökulsárlón. 8 adds Snæfellsnes. 11 also takes in Höfn and the southeast."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, it's most practical. There are tours from Reykjavík, but for the south coast and Snæfellsnes a car gives you freedom and costs less if there are two or more of you."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes, it's a loop: you fly in and out of Reykjavík, so the order doesn't matter."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Keflavík (KEF), 45 minutes from Reykjavík. Reykjavík's domestic airport (RKV) only has flights to Greenland and the islands."
+      }
+    ]
+  }
+}

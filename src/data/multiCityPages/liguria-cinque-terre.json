@@ -1,0 +1,236 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "liguria-y-cinque-terre",
+    "en": "liguria-and-cinque-terre"
+  },
+  "photos": {
+    "Genoa": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Genova_panorama_centro_storico_da_villetta_Di_Negro.jpg/960px-Genova_panorama_centro_storico_da_villetta_Di_Negro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 211,
+      "page": "https://commons.wikimedia.org/wiki/File:Genova_panorama_centro_storico_da_villetta_Di_Negro.jpg",
+      "author": "patano",
+      "license": "CC BY-SA 3.0"
+    },
+    "Santa Margherita Ligure (Portofino)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Portofino%2C_Italy_2025.jpg/960px-Portofino%2C_Italy_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 560,
+      "page": "https://commons.wikimedia.org/wiki/File:Portofino,_Italy_2025.jpg",
+      "author": "Quintin Soloviev",
+      "license": "CC BY 4.0"
+    },
+    "Cinque Terre": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Manarola_NW_Cemetery_Corniglia_Monterosso_Cinque_Terre_Sep23_A7C_06872.jpg/960px-Manarola_NW_Cemetery_Corniglia_Monterosso_Cinque_Terre_Sep23_A7C_06872.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Manarola_NW_Cemetery_Corniglia_Monterosso_Cinque_Terre_Sep23_A7C_06872.jpg",
+      "author": "Timothy A. Gonsalves",
+      "license": "CC BY-SA 4.0"
+    },
+    "Lucca": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/02_Lucca_seen_from_Torre_Guinigi.jpg/960px-02_Lucca_seen_from_Torre_Guinigi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 568,
+      "page": "https://commons.wikimedia.org/wiki/File:02_Lucca_seen_from_Torre_Guinigi.jpg",
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0"
+    },
+    "Pisa": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Pisa_-_veduta_dall%27aereo_4.JPG/960px-Pisa_-_veduta_dall%27aereo_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 631,
+      "page": "https://commons.wikimedia.org/wiki/File:Pisa_-_veduta_dall%27aereo_4.JPG",
+      "author": "Luca Aless",
+      "license": "CC BY-SA 4.0"
+    },
+    "Florence": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Panoramica_Firenze.jpg/960px-Panoramica_Firenze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 241,
+      "page": "https://commons.wikimedia.org/wiki/File:Panoramica_Firenze.jpg",
+      "author": "Wikibusters",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Liguria y Cinque Terre",
+    "metaTitle": "Ruta por Liguria y Cinque Terre: Génova, Portofino, Cinque Terre y Pisa, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Génova, bajas por la costa hasta Portofino y las Cinque Terre y acabas en Pisa o Florencia. Todo en tren regional, con trayectos de minutos entre pueblo y pueblo.",
+    "why": [
+      "La Liguria es una franja estrecha entre el mar y la montaña, y eso la hace fácil: los pueblos están a pocos minutos de tren unos de otros, y el paisaje cambia en cada curva.",
+      "El orden importa. Génova primero, que es una ciudad de verdad y no un pueblo de postal, y la costa después, de oeste a este, para acabar en Pisa o Florencia.",
+      "Lo que suele fallar es querer hacer las Cinque Terre en un día. Son cinco pueblos colgados en acantilados, unidos por un tren que va lleno: dales dos noches o no las verás."
+    ],
+    "towns": {
+      "Genoa": {
+        "text": "Génova fue una república marinera más rica que muchos reinos, y su casco antiguo es uno de los más grandes de Europa: callejones estrechos, palacios y un puerto que aún trabaja.",
+        "see": [
+          "Los Rolli, los palacios de las familias nobles, varios abiertos al público",
+          "El acuario, uno de los mayores de Europa",
+          "La catedral de San Lorenzo y la Porta Soprana",
+          "El barrio del Porto Antico, de Renzo Piano"
+        ],
+        "tip": "El pesto es de aquí, y se hace con albahaca genovesa, piñones y queso. Pídelo con trofie o con trenette, y no con espagueti: no es lo mismo."
+      },
+      "Santa Margherita Ligure (Portofino)": {
+        "text": "Portofino es un puerto diminuto con casas de colores y barcos grandes, y en verano es caro hasta el café. Santa Margherita, al lado, es más barata y más cómoda como base.",
+        "see": [
+          "La piazzetta de Portofino y el castillo Brown",
+          "La abadía de San Fruttuoso, a la que solo se llega en barco o andando",
+          "El sendero costero entre Santa Margherita y Portofino, de una hora"
+        ],
+        "tip": "A San Fruttuoso se llega en barco desde Portofino o a pie por el sendero. La abadía está en una cala sin carretera, y el baño allí es de los mejores de la costa."
+      },
+      "Cinque Terre": {
+        "text": "Las Cinque Terre son cinco pueblos (Monterosso, Vernazza, Corniglia, Manarola y Riomaggiore) colgados en acantilados, unidos por un tren y por senderos. Se recorren en tren, en barco o andando, y cada uno tiene su carácter.",
+        "see": [
+          "El sendero Azzurro entre Monterosso y Vernazza, la parte más bonita",
+          "Manarola al atardecer, desde el mirador del cementerio",
+          "El baño en Monterosso, la única playa de arena",
+          "El vino Sciacchetrà, dulce y caro, en una bodega de Vernazza"
+        ],
+        "tip": "El tren entre los pueblos tarda minutos y va lleno en verano. Compra la tarjeta de varios días y evita el coche: en los pueblos no se puede aparcar y las carreteras son estrechas."
+      },
+      "Lucca": {
+        "text": "Lucca es la ciudad italiana que menos parece italiana: sin ruido, sin motos y con una muralla del siglo XVI entera que se recorre en bici por encima de la ciudad.",
+        "see": [
+          "La muralla, alquilando una bici en la puerta de San Pietro",
+          "La Piazza dell'Anfiteatro, construida sobre un anfiteatro romano",
+          "La Torre Guinigi, con encinas en lo alto"
+        ],
+        "tip": "Aquí se come bien y sin turistas. Busca una trattoria dentro de la muralla y pide tortelli lucchesi, la pasta rellena de la zona."
+      },
+      "Pisa": {
+        "text": "Pisa se ve en medio día: la Piazza dei Miracoli está en una esquina de la ciudad, lejos del centro, y se recorre en una hora. Lo demás, el Arno y los soportales, es un paseo que casi nadie hace.",
+        "see": [
+          "La torre, con hora reservada",
+          "El Duomo, el baptisterio y el Camposanto",
+          "El Lungarno y la iglesia de Santa Maria della Spina"
+        ],
+        "tip": "La torre está inclinada porque el suelo cedió mientras la construían, en el siglo XII. Si no consigues entrada, se ve igual de bien desde la plaza."
+      },
+      "Florence": {
+        "text": "Florencia cierra el viaje y es la que más pesa: los Uffizi, la cúpula de Brunelleschi y el David. Se recorre andando y casi todo está a diez minutos del Duomo.",
+        "see": [
+          "La cúpula del Duomo, con hora reservada",
+          "La Galería de los Uffizi",
+          "El Oltrarno, al otro lado del río, con talleres de artesanos",
+          "San Miniato al Monte al atardecer"
+        ],
+        "tip": "En el Mercado Central, abajo están los puestos y arriba se come. Si te atreves, el bocadillo de lampredotto es lo más florentino que vas a probar."
+      }
+    },
+    "gettingAround": "Todo en tren regional, y es de las rutas más fáciles de Italia. Génova, Santa Margherita, las Cinque Terre, Pisa y Florencia están en la misma línea costera, con trenes cada media hora y trayectos de 20 minutos a una hora. Lucca se une a Pisa en 30 minutos. En las Cinque Terre, el tren entre pueblos es el transporte normal: el coche no entra y aparcar es casi imposible. Compra la tarjeta de tren de varios días si vas a moverte mucho.",
+    "bestTime": "Abril, mayo, junio, septiembre y octubre: buen tiempo, mar templado y menos gente. Julio y agosto son los meses de las Cinque Terre, con los senderos llenos y los trenes a rebosar; en agosto muchos restaurantes cierran unos días. En invierno llueve bastante y algunos barcos no funcionan, pero Génova y Florencia se recorren sin colas.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Liguria y Cinque Terre?",
+        "answer": "Con 4 o 5 días ves Génova, las Cinque Terre y Pisa. Con 7 a 9 añades Portofino y Lucca; con 11 o 12 entra también Florencia."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No, y en las Cinque Terre es un estorbo. El tren regional une todos los pueblos y ciudades de la ruta; el coche solo sirve para el interior de Liguria."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Florencia, acabas en Génova, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuerto se vuela?",
+        "answer": "A Génova (GOA) o a Pisa (PSA). Pisa tiene más vuelos y está a una hora de las Cinque Terre en tren."
+      }
+    ]
+  },
+  "en": {
+    "title": "Liguria and Cinque Terre itinerary",
+    "metaTitle": "Liguria and Cinque Terre: Genoa, Portofino, Cinque Terre and Pisa in 5 to 13 days · Lowfly",
+    "summary": "You fly into Genoa, come down the coast to Portofino and the Cinque Terre and end in Pisa or Florence. All by regional train, with journeys of minutes between villages.",
+    "why": [
+      "Liguria is a narrow strip between the sea and the mountains, and that makes it easy: the villages are minutes apart by train, and the landscape changes at every bend.",
+      "The order matters. Genoa first, a real city rather than a postcard village, then the coast from west to east, to end in Pisa or Florence.",
+      "What usually goes wrong is trying to do the Cinque Terre in a day. They are five villages hanging on cliffs, joined by a crowded train: give them two nights or you will not see them."
+    ],
+    "towns": {
+      "Genoa": {
+        "text": "Genoa was a maritime republic richer than many kingdoms, and its old town is one of the largest in Europe: narrow alleys, palaces and a harbour that still works.",
+        "see": [
+          "The Rolli, the palaces of the noble families, several open to visitors",
+          "The aquarium, one of the largest in Europe",
+          "The cathedral of San Lorenzo and the Porta Soprana",
+          "The Porto Antico district, by Renzo Piano"
+        ],
+        "tip": "Pesto comes from here, made with Genoese basil, pine nuts and cheese. Order it with trofie or trenette, not spaghetti: it is not the same."
+      },
+      "Santa Margherita Ligure (Portofino)": {
+        "text": "Portofino is a tiny harbour with coloured houses and big boats, and in summer it is expensive down to the coffee. Santa Margherita, next door, is cheaper and easier as a base.",
+        "see": [
+          "The Portofino piazzetta and the Brown castle",
+          "The abbey of San Fruttuoso, reached only by boat or on foot",
+          "The coastal path between Santa Margherita and Portofino, about an hour"
+        ],
+        "tip": "San Fruttuoso is reached by boat from Portofino or on foot along the path. The abbey sits in a cove with no road, and swimming there is among the best on the coast."
+      },
+      "Cinque Terre": {
+        "text": "The Cinque Terre are five villages (Monterosso, Vernazza, Corniglia, Manarola and Riomaggiore) hanging on cliffs, joined by a train and by footpaths. You see them by train, by boat or on foot, and each has its own character.",
+        "see": [
+          "The Blue Trail between Monterosso and Vernazza, the finest stretch",
+          "Manarola at sunset, from the cemetery viewpoint",
+          "Swimming at Monterosso, the only sandy beach",
+          "Sciacchetrà, sweet and expensive, in a Vernazza cellar"
+        ],
+        "tip": "The train between villages takes minutes and is packed in summer. Buy a multi-day card and leave the car behind: you cannot park in the villages and the roads are narrow."
+      },
+      "Lucca": {
+        "text": "Lucca is the least Italian-looking city in Italy: no noise, no scooters, and a 16th-century wall still whole that you cycle round above the city.",
+        "see": [
+          "The wall, renting a bike at the Porta San Pietro",
+          "The Piazza dell'Anfiteatro, built on a Roman amphitheatre",
+          "The Torre Guinigi, with holm oaks on top"
+        ],
+        "tip": "You eat well here, without tourists. Find a trattoria inside the walls and order tortelli lucchesi, the local stuffed pasta."
+      },
+      "Pisa": {
+        "text": "Pisa takes half a day: the Piazza dei Miracoli sits in a corner of the city, away from the centre, and you walk it in an hour. The rest, the Arno and the arcades, is a walk almost nobody takes.",
+        "see": [
+          "The tower, with a booked slot",
+          "The Duomo, the baptistery and the Camposanto",
+          "The Lungarno and the church of Santa Maria della Spina"
+        ],
+        "tip": "The tower leans because the ground gave way while they were building it in the 12th century. If you can't get a ticket, it looks just as good from the square."
+      },
+      "Florence": {
+        "text": "Florence closes the trip and carries the most weight: the Uffizi, Brunelleschi's dome and the David. It is walked, and almost everything is ten minutes from the Duomo.",
+        "see": [
+          "The Duomo dome, with a booked slot",
+          "The Uffizi Gallery",
+          "The Oltrarno, across the river, with craftsmen's workshops",
+          "San Miniato al Monte at sunset"
+        ],
+        "tip": "In the Mercato Centrale, the stalls are downstairs and the food is upstairs. If you dare, the lampredotto sandwich is the most Florentine thing you will try."
+      }
+    },
+    "gettingAround": "All by regional train, and it is one of the easiest routes in Italy. Genoa, Santa Margherita, the Cinque Terre, Pisa and Florence are on the same coastal line, with trains every half hour and journeys from 20 minutes to an hour. Lucca is 30 minutes from Pisa. In the Cinque Terre the train between villages is the normal transport: cars cannot get in and parking is nearly impossible. Buy a multi-day train card if you move around a lot.",
+    "bestTime": "April, May, June, September and October: good weather, warm sea and fewer people. July and August are the Cinque Terre months, with the paths full and the trains packed; in August many restaurants close for a few days. In winter it rains a fair amount and some boats stop, but Genoa and Florence are walked without queues.",
+    "faq": [
+      {
+        "question": "How many days do you need for Liguria and the Cinque Terre?",
+        "answer": "With 4 or 5 days you see Genoa, the Cinque Terre and Pisa. With 7 to 9 you add Portofino and Lucca; with 11 or 12 Florence fits too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No, and in the Cinque Terre it is a nuisance. The regional train links every village and city on the route; a car only helps in the Ligurian interior."
+      },
+      {
+        "question": "Can the route be done the other way round?",
+        "answer": "Yes: it works both ways. If you start in Florence, you finish in Genoa, with the airport a step away."
+      },
+      {
+        "question": "Which airport do you fly to?",
+        "answer": "Genoa (GOA) or Pisa (PSA). Pisa has more flights and is an hour from the Cinque Terre by train."
+      }
+    ]
+  }
+}

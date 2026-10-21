@@ -1,4 +1,4 @@
-// The multi-city routes' own pages (/es/recorridos/italia-clasica; docs/multi-city.md, route pages): what the route
+// The multi-city routes' own pages (/es/recorridos/classic-italy; docs/multi-city.md, route pages): what the route
 // is like, town by town, written once per route in src/data/multiCityPages/<route>.json (reviewed by hand, never made on a
 // visit) and joined here with the route's data (its versions, towns, nights and land legs). No prices: the page
 // sends to the "Recorridos" search. Only read on the server.
@@ -86,7 +86,7 @@ const pageIn = (id, lang) => {
 // The id of the page named `slug` in any language, or null
 const pageId = (slug) => Object.keys(pages).find((id) => id === slug || Object.values(pages[id].slugs ?? {}).includes(slug)) ?? null;
 
-// One route's page in `lang` by its name in that language (italia-clasica), or null
+// One route's page in `lang` by its name in that language (classic-italy), or null
 export const getRoutePage = (slug, lang) => {
   const id = pageId(slug);
   const page = id ? pageIn(id, lang) : null;

@@ -11,7 +11,7 @@ import { getRoutePage, listRoutePages, routePageSlugIn } from "@/server/multiCit
 import { ROUTES } from "@/constants/routes";
 import { SITE_URL, alternatesOf, breadcrumbsOf, faqPageOf, openGraphOf } from "@/utils/metadata";
 
-// A multi-city route's own page (/es/recorridos/italia-clasica; /en/multi-city/classic-italy, through src/proxy.js
+// A multi-city route's own page (/es/recorridos/classic-italy; /en/multi-city/classic-italy, through src/proxy.js
 // as the "Recorridos" search's name), for search engines: what the route is like, town by town, as
 // src/data/multiCityPages/<route>.json has it (never made on a visit), every page made at build time. Its own folder, outside
 // the search pages' group: no search form here, only the way to it. Its name in another language

@@ -7,7 +7,7 @@
   },
   "photos": {
     "Perugia": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Perugia-Piazza-del-Comune.jpg/960px-Perugia-Piazza-del-Comune.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Perugia-Piazza-del-Comune.jpg/960px-Perugia-Piazza-del-Comune.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 600,
       "page": "https://commons.wikimedia.org/wiki/File:Perugia-Piazza-del-Comune.jpg",
@@ -15,7 +15,7 @@
       "license": "CC BY 2.0"
     },
     "Gubbio": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gubbio_panorama.jpg/960px-Gubbio_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 296,
       "page": "https://commons.wikimedia.org/wiki/File:Gubbio_panorama.jpg",
@@ -23,7 +23,7 @@
       "license": "CC BY 4.0"
     },
     "Assisi": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Assisi_panorama.jpg/960px-Assisi_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Assisi_panorama.jpg/960px-Assisi_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 600,
       "page": "https://commons.wikimedia.org/wiki/File:Assisi_panorama.jpg",
@@ -31,7 +31,7 @@
       "license": "Public domain"
     },
     "Spello": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Panorama_di_Spello.jpg/960px-Panorama_di_Spello.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Panorama_di_Spello.jpg/960px-Panorama_di_Spello.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 396,
       "page": "https://commons.wikimedia.org/wiki/File:Panorama_di_Spello.jpg",
@@ -39,7 +39,7 @@
       "license": "CC BY-SA 4.0"
     },
     "Spoleto": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Rocca_Albornoz_and_Ponte_delle_Torri%2C_Spoleto.jpg/960px-Rocca_Albornoz_and_Ponte_delle_Torri%2C_Spoleto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Rocca_Albornoz_and_Ponte_delle_Torri%2C_Spoleto.jpg/960px-Rocca_Albornoz_and_Ponte_delle_Torri%2C_Spoleto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 600,
       "page": "https://commons.wikimedia.org/wiki/File:Rocca_Albornoz_and_Ponte_delle_Torri,_Spoleto.jpg",
@@ -47,7 +47,7 @@
       "license": "CC BY-SA 2.5"
     },
     "Todi": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Todi_piazza_del_popolo_2.JPG/960px-Todi_piazza_del_popolo_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Todi_piazza_del_popolo_2.JPG/960px-Todi_piazza_del_popolo_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 600,
       "page": "https://commons.wikimedia.org/wiki/File:Todi_piazza_del_popolo_2.JPG",
@@ -55,7 +55,7 @@
       "license": "Public domain"
     },
     "Orvieto": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Orvieto_3.JPG/960px-Orvieto_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Orvieto_3.JPG/960px-Orvieto_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 600,
       "page": "https://commons.wikimedia.org/wiki/File:Orvieto_3.JPG",
@@ -63,7 +63,7 @@
       "license": "CC BY-SA 3.0"
     },
     "Rome": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Rome_Skyline_%288012016319%29.jpg/960px-Rome_Skyline_%288012016319%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rome_Skyline_%288012016319%29.jpg/960px-Rome_Skyline_%288012016319%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 533,
       "page": "https://commons.wikimedia.org/wiki/File:Rome_Skyline_(8012016319).jpg",

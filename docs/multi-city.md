@@ -4,14 +4,14 @@ Status (built 2026-10-20). Update this file as the pieces land.
 - Route data, every region (`src/data/multiCity/`, 100 routes, 274 versions) and its checker
   (`scripts/check-multi-city.mjs`): **done, drafted by AI, none reviewed yet** (`reviewed: false`); all shown.
 - Engine (`src/server/multiCity/`), `GET /api/multi-city`, the "Recorridos" search mode, its results
-  (`MultiCityResults`), the planner taking route towns (`?stops=italia-clasica/full/2,…`), "Guardar viaje", the link
+  (`MultiCityResults`), the planner taking route towns (`?stops=classic-italy/full/2,…`), "Guardar viaje", the link
   from "A cualquier sitio", the planner's limits raised (9 towns, 15 days, 10 a town) and `e2e/multi-city.spec.js`:
   **done** (2026-10-20).
 - Also done: easyJet and Vueling in the route graph and in the screening (`more.cheapest`), prices not live with
   their note (docs/stopovers.md, route graph); dry run 2026-10-20: from Barcelona 47 → 66 routes, Málaga 43 → 50,
   Madrid 45 → 48 (Suiza through Geneva). Each card shows first the version that ranked it (`bestVersion`), "Recomendados / Más baratos" order,
   fixed photos per route, search pages per kind (`/es/recorridos`…), usage metrics in the admin (`/admin/usage`).
-- Route pages (SEO), pilot (2026-10-21): "Italia clásica" (`/es/recorridos/italia-clasica`,
+- Route pages (SEO), pilot (2026-10-21): "Italia clásica" (`/es/recorridos/classic-italy`,
   `/en/multi-city/classic-italy`), Nápoles y la Costa Amalfitana, Toscana, Norte de Italia y los lagos, Sicilia and
   Puglia y Matera, one file per route in `src/data/multiCityPages/<route>.json` joined by
   `src/data/multiCityPages/index.js` (`reviewed: false`). What each town is like,
@@ -118,7 +118,7 @@ the routes can be reviewed a region at a time. `node --env-file=.env.local scrip
 
 ```js
 {
-  "italia-clasica": {
+  "classic-italy": {
     kind: "classic",                         // "classic" | "surprise"
     reviewed: false,                         // true once a person has read it; tracking only: every route is shown
     name: { es: "Italia clásica", en: "Classic Italy" },
@@ -290,7 +290,7 @@ Reuses the trip / fare shape of `docs/stopovers.md`:
 
 ```js
 { trips: [{
-    route: "italia-clasica", kind: "classic", version: "short" | "full", direction: "forward" | "reverse",
+    route: "classic-italy", kind: "classic", version: "short" | "full", direction: "forward" | "reverse",
     price, cur: "EUR", day,
     legs: [{ from, to, airline, day, time, arrive?, price, … }],      // 2 flights (3 with two routes)
     stops: [{ city, code?, nights, type: "stay", land?: { minutes, by } }], // every city, in order

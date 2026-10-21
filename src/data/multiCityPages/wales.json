@@ -1,0 +1,354 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "gales",
+    "en": "wales"
+  },
+  "photos": {
+    "Cardiff": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Cardiff_northern_residential.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Cardiff_northern_residential.jpg",
+      "author": "Welshleprechaun",
+      "license": "CC0"
+    },
+    "Brecon (Brecon Beacons)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Brecon_beacons_arp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 551,
+      "page": "https://commons.wikimedia.org/wiki/File:Brecon_beacons_arp.jpg",
+      "author": "Arpingstone at English Wikipedia Later versions were uploaded by Naturenet at en.wikipedia.",
+      "license": "Public domain"
+    },
+    "Bristol": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Bristol_Skyline_%28Southeast%29.JPG/960px-Bristol_Skyline_%28Southeast%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Bristol_Skyline_(Southeast).JPG",
+      "author": "Brizzleboy",
+      "license": "CC BY-SA 3.0"
+    },
+    "Betws-y-Coed (Snowdonia)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/River_Llugwy%2C_Betws-y-Coed_-_geograph.org.uk_-_2430126.jpg/960px-River_Llugwy%2C_Betws-y-Coed_-_geograph.org.uk_-_2430126.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:River_Llugwy,_Betws-y-Coed_-_geograph.org.uk_-_2430126.jpg",
+      "author": "David Dixon",
+      "license": "CC BY-SA 2.0"
+    },
+    "Conwy": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Awyrlun_o_Gastell_Conwy_-_Aerial_photograph_of_Castell_Conwy%2C_Conwy_County_Borough%2C_Cymru_%28Wales%29.jpg/960px-Awyrlun_o_Gastell_Conwy_-_Aerial_photograph_of_Castell_Conwy%2C_Conwy_County_Borough%2C_Cymru_%28Wales%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Awyrlun_o_Gastell_Conwy_-_Aerial_photograph_of_Castell_Conwy,_Conwy_County_Borough,_Cymru_(Wales).jpg",
+      "author": "Llywelyn2000",
+      "license": "CC BY-SA 4.0"
+    },
+    "Liverpool": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Liverpool_city_centre.jpg/960px-Liverpool_city_centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Liverpool_city_centre.jpg",
+      "author": "LivingOS",
+      "license": "CC BY-SA 2.0"
+    },
+    "Tenby": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Tenby_Harbour_-_geograph.org.uk_-_1546498.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 526,
+      "page": "https://commons.wikimedia.org/wiki/File:Tenby_Harbour_-_geograph.org.uk_-_1546498.jpg",
+      "author": "RAY JONES",
+      "license": "CC BY-SA 2.0"
+    },
+    "St Davids": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/St_Davids_village_and_Cathedral_South_Wales.jpg/960px-St_Davids_village_and_Cathedral_South_Wales.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 514,
+      "page": "https://commons.wikimedia.org/wiki/File:St_Davids_village_and_Cathedral_South_Wales.jpg",
+      "author": "Manfred Heyde",
+      "license": "CC BY-SA 3.0"
+    },
+    "Aberystwyth": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Arfordir_Aberystwyth%2C_Ceredigion_-_Aberystwyth_SAC_Special_Areas_of_Conservation%2C_West_Wales_Marine_01.jpg/960px-Arfordir_Aberystwyth%2C_Ceredigion_-_Aberystwyth_SAC_Special_Areas_of_Conservation%2C_West_Wales_Marine_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Arfordir_Aberystwyth,_Ceredigion_-_Aberystwyth_SAC_Special_Areas_of_Conservation,_West_Wales_Marine_01.jpg",
+      "author": "Llywelyn2000",
+      "license": "CC BY-SA 4.0"
+    },
+    "Caernarfon": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Afon_Seiont_in_Caernarfon_%287492%29.jpg/960px-Afon_Seiont_in_Caernarfon_%287492%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 531,
+      "page": "https://commons.wikimedia.org/wiki/File:Afon_Seiont_in_Caernarfon_(7492).jpg",
+      "author": "Nilfanion",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Gales: Cardiff, Snowdonia y la costa de Pembrokeshire",
+    "metaTitle": "Ruta por Gales: Cardiff, Snowdonia y Pembrokeshire, de 5 a 11 días · Lowfly",
+    "summary": "Entras por Cardiff y sales por Liverpool, con los Brecon Beacons, Tenby, Snowdonia y Conwy en medio. Coches de alquiler y castillos por todas partes.",
+    "why": [
+      "Gales tiene 20.000 kilómetros cuadrados, 600 castillos y una lengua propia que se oye en la calle. En una semana pasas de la costa del sur a las montañas del norte sin hacer más de tres horas de coche al día.",
+      "La ruta va de sur a norte y no repite camino: Cardiff, los Brecon Beacons, Pembrokeshire, Aberystwyth, Snowdonia y Conwy, y acaba en Liverpool, que tiene aeropuerto.",
+      "Lo que suele fallar es el tiempo y las distancias. Las carreteras de montaña son lentas y llueve mucho, sobre todo en Snowdonia. Calcula dos horas para lo que en el mapa parece una."
+    ],
+    "towns": {
+      "Cardiff": {
+        "text": "Cardiff es la capital y la ciudad más grande de Gales, con un castillo normando en el centro y una bahía nueva llena de restaurantes. Dos noches dan para el centro y la bahía.",
+        "see": [
+          "El castillo de Cardiff, con la torre normanda",
+          "La bahía, con el edificio del Senedd y el Millennium Centre",
+          "El mercado cubierto, con los pasteles de Gales",
+          "El museo nacional, gratis, con pintura impresionista"
+        ],
+        "tip": "El mercado cubierto abre de lunes a sábado y es el sitio para probar un bara brith, el pan de frutas galés. Cierra a las cinco."
+      },
+      "Brecon (Brecon Beacons)": {
+        "text": "Brecon es un pueblo de mercado a la entrada del parque nacional de los Brecon Beacons, con una catedral pequeña y canales. Es la base para subir al Pen y Fan, el pico más alto del sur de Gales.",
+        "see": [
+          "El Pen y Fan, con la subida de dos horas",
+          "La catedral de Brecon, del siglo XIII",
+          "El canal de Monmouthshire y Brecon, con el paseo en barca",
+          "Las cascadas de Waterfall Country, al sur"
+        ],
+        "tip": "La subida al Pen y Fan desde el aparcamiento de Storey Arms son dos horas ida y vuelta. Lleva calzado de montaña: hay barro y piedra suelta."
+      },
+      "Tenby": {
+        "text": "Tenby es un pueblo de casas de colores dentro de una muralla, con cuatro playas y un puerto pequeño. Es el sitio más bonito de Pembrokeshire y se ve en un día.",
+        "see": [
+          "Las murallas y el casco antiguo, con las casas pintadas",
+          "La playa de Castle Beach, con el castillo en ruinas",
+          "El paseo en barco a la isla de Caldey",
+          "El sendero de la costa, hacia Saundersfoot"
+        ],
+        "tip": "En verano Tenby se llena y aparcar es imposible. Llega antes de las diez o duerme en el pueblo y muévete andando."
+      },
+      "St Davids": {
+        "text": "St Davids es la ciudad más pequeña de Gran Bretaña, con 1.600 habitantes y una catedral enorme en un valle. Es el centro religioso de Gales y la puerta de la costa oeste.",
+        "see": [
+          "La catedral de San David, en el fondo del valle",
+          "Las ruinas del palacio del obispo",
+          "La costa de St Davids Head, con los acantilados",
+          "Las playas de Whitesands y Porthselau"
+        ],
+        "tip": "La catedral se ve desde lejos porque está hundida en el valle, para que no la vieran los barcos vikingos. La entrada es gratis y piden donativo."
+      },
+      "Aberystwyth": {
+        "text": "Aberystwyth es una ciudad universitaria en la bahía de Cardigan, con un castillo en ruinas y un paseo marítimo de dos kilómetros. Es la parada entre el sur y el norte.",
+        "see": [
+          "El paseo marítimo y la playa",
+          "El castillo en ruinas, junto al mar",
+          "El funicular al Constitution Hill",
+          "La biblioteca nacional de Gales"
+        ],
+        "tip": "El funicular al Constitution Hill es el más largo de Gran Bretaña y sube 130 metros. Desde arriba se ven las dos bahías y, en días claros, Snowdonia."
+      },
+      "Betws-y-Coed (Snowdonia)": {
+        "text": "Betws-y-Coed es el pueblo de montaña de Snowdonia, con casas de piedra, un río con puentes y senderos por todas partes. Es la base para el Snowdon y los lagos.",
+        "see": [
+          "El Snowdon, con el tren de cremallera o andando",
+          "El bosque de Gwydir y el río Llugwy",
+          "El puente de Waterloo y el paseo del río",
+          "El lago de Llyn Elsi, con una hora de subida"
+        ],
+        "tip": "El tren de cremallera al Snowdon sale de Llanberis y se agota en verano: reserva en la web de Snowdon Mountain Railway. Si no hay, la subida andando son cinco horas."
+      },
+      "Caernarfon": {
+        "text": "Caernarfon es la ciudad del castillo más famoso de Gales, donde se inviste al príncipe de Gales desde 1911. El castillo y la muralla son Patrimonio de la Humanidad.",
+        "see": [
+          "El castillo, con la subida a las torres",
+          "La muralla y el paseo por encima",
+          "El puerto y el estrecho de Menai",
+          "El museo del regimiento real de Gales"
+        ],
+        "tip": "El castillo se ve en dos horas y la entrada incluye la muralla. Ve por la mañana: por la tarde llegan los autobuses de las excursiones."
+      },
+      "Conwy": {
+        "text": "Conwy es un pueblo amurallado del siglo XIII con el castillo de Eduardo I, el puente colgante de Telford y la casa más pequeña de Gran Bretaña. Se ve en un día.",
+        "see": [
+          "El castillo de Conwy, con las ocho torres",
+          "Las murallas, de 1,3 kilómetros, con el paseo",
+          "El puente colgante de Telford, de 1826",
+          "La casa más pequeña de Gran Bretaña, en el muelle"
+        ],
+        "tip": "El paseo por las murallas es gratis y da la vuelta al pueblo en una hora. Desde la torre oeste se ve el castillo y el estuario."
+      },
+      "Liverpool": {
+        "text": "Liverpool es la última parada, al otro lado del estuario, y tiene la mayor colección de edificios victorianos de Gran Bretaña. Se ve en un día y medio.",
+        "see": [
+          "El Albert Dock, con los almacenes y los museos",
+          "La catedral anglicana y la católica, a un kilómetro",
+          "El barrio de Cavern Club y Mathew Street",
+          "El ferry por el Mersey, con la canción de Gerry and the Pacemakers"
+        ],
+        "tip": "El ferry por el Mersey cuesta poco y dura 50 minutos. Pasa por delante de los tres edificios de la ciudad, que es la foto clásica de Liverpool."
+      },
+      "Bristol": {
+        "text": "Bristol es la salida natural si vuelas desde el suroeste, con el puente colgante de Clifton, el puerto y los murales de Banksy. Se ve en un día y el aeropuerto está a 30 minutos.",
+        "see": [
+          "El puente de Clifton, sobre la garganta del Avon",
+          "El puerto y el SS Great Britain",
+          "El barrio de Stokes Croft, con los murales",
+          "El mercado de St Nicholas"
+        ],
+        "tip": "Desde Cardiff hay tren directo a Bristol en 50 minutos. Si sales en avión, el Bristol Flyer conecta la estación con el aeropuerto cada 20 minutos."
+      }
+    },
+    "gettingAround": "Coche de alquiler. Cardiff-Brecon, una hora; Brecon-Tenby, una hora y media; Tenby-St Davids, una hora; St Davids-Aberystwyth, dos horas; Aberystwyth-Betws-y-Coed, dos horas; Betws-y-Coed-Conwy, 40 minutos; Conwy-Liverpool, una hora y media. Las carreteras de Snowdonia son estrechas y lentas. En Cardiff y Liverpool el coche estorba: aparca en las afueras.",
+    "bestTime": "De mayo a septiembre, con días largos y menos lluvia. Junio y julio son los mejores para la costa y las montañas. En invierno hay poca luz y muchos castillos y alojamientos cierran, aunque Cardiff y Liverpool funcionan todo el año.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Cardiff, los Brecon Beacons y Tenby. Con 7 u 8 añades St Davids y Snowdonia. Con 11 entran también Aberystwyth, Caernarfon y Liverpool."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, para la costa y las montañas. En Cardiff y Liverpool se puede estar sin coche, pero entre los pueblos el transporte público es lento."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Liverpool y bajando hasta Cardiff."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Cardiff (CWL) al entrar y a Liverpool (LPL) al salir. Bristol (BRS) también sirve para el sur de Gales."
+      }
+    ]
+  },
+  "en": {
+    "title": "Wales: Cardiff, Snowdonia and the Pembrokeshire coast",
+    "metaTitle": "Wales route: Cardiff, Snowdonia and Pembrokeshire in 5 to 11 days · Lowfly",
+    "summary": "Fly into Cardiff and out of Liverpool, with the Brecon Beacons, Tenby, Snowdonia and Conwy in between. Hire cars and castles everywhere.",
+    "why": [
+      "Wales covers 20,000 square kilometres, has 600 castles and its own language, which you hear on the street. In a week you go from the south coast to the northern mountains without driving more than three hours a day.",
+      "The route runs south to north and doesn't double back: Cardiff, the Brecon Beacons, Pembrokeshire, Aberystwyth, Snowdonia and Conwy, finishing in Liverpool, which has an airport.",
+      "Where it usually goes wrong is weather and distance. Mountain roads are slow and it rains a lot, especially in Snowdonia. Allow two hours for what looks like one on the map."
+    ],
+    "towns": {
+      "Cardiff": {
+        "text": "Cardiff is the capital and Wales' biggest city, with a Norman castle in the centre and a new bay full of restaurants. Two nights covers the centre and the bay.",
+        "see": [
+          "Cardiff Castle, with the Norman keep",
+          "The bay, with the Senedd building and the Millennium Centre",
+          "The covered market, with Welsh cakes",
+          "The national museum, free, with Impressionist painting"
+        ],
+        "tip": "The covered market opens Monday to Saturday and it's the place to try bara brith, Welsh fruit bread. It closes at five."
+      },
+      "Brecon (Brecon Beacons)": {
+        "text": "Brecon is a market town at the edge of the Brecon Beacons national park, with a small cathedral and canals. It's the base for climbing Pen y Fan, the highest peak in south Wales.",
+        "see": [
+          "Pen y Fan, a two-hour climb",
+          "Brecon Cathedral, from the 13th century",
+          "The Monmouthshire and Brecon canal, with a boat trip",
+          "Waterfall Country, to the south"
+        ],
+        "tip": "The climb to Pen y Fan from the Storey Arms car park is two hours round trip. Wear hiking boots: there's mud and loose rock."
+      },
+      "Tenby": {
+        "text": "Tenby is a town of coloured houses inside its walls, with four beaches and a small harbour. It's the prettiest spot in Pembrokeshire and a day covers it.",
+        "see": [
+          "The walls and old town, with the painted houses",
+          "Castle Beach, with the ruined castle",
+          "The boat trip to Caldey Island",
+          "The coast path, towards Saundersfoot"
+        ],
+        "tip": "In summer Tenby fills up and parking is impossible. Arrive before ten or stay in town and get around on foot."
+      },
+      "St Davids": {
+        "text": "St Davids is the smallest city in Britain, with 1,600 people and an enormous cathedral in a hollow. It's Wales' religious centre and the gateway to the west coast.",
+        "see": [
+          "St Davids Cathedral, at the bottom of the valley",
+          "The ruins of the bishop's palace",
+          "The St Davids Head coast, with its cliffs",
+          "Whitesands and Porthselau beaches"
+        ],
+        "tip": "The cathedral is hidden in the valley so Viking ships wouldn't see it. Entry is free and they ask for a donation."
+      },
+      "Aberystwyth": {
+        "text": "Aberystwyth is a university town on Cardigan Bay, with a ruined castle and a two-kilometre promenade. It's the stop between south and north.",
+        "see": [
+          "The promenade and the beach",
+          "The ruined castle, by the sea",
+          "The funicular up Constitution Hill",
+          "The National Library of Wales"
+        ],
+        "tip": "The Constitution Hill funicular is the longest in Britain and climbs 130 metres. From the top you see both bays and, on clear days, Snowdonia."
+      },
+      "Betws-y-Coed (Snowdonia)": {
+        "text": "Betws-y-Coed is Snowdonia's mountain village, with stone houses, a river with bridges and trails everywhere. It's the base for Snowdon and the lakes.",
+        "see": [
+          "Snowdon, by mountain railway or on foot",
+          "Gwydir Forest and the river Llugwy",
+          "Waterloo Bridge and the riverside walk",
+          "Llyn Elsi lake, an hour's climb"
+        ],
+        "tip": "The Snowdon mountain railway leaves from Llanberis and sells out in summer: book on the Snowdon Mountain Railway website. If there are no seats, the walk up takes five hours."
+      },
+      "Caernarfon": {
+        "text": "Caernarfon is the town of Wales' most famous castle, where the Prince of Wales has been invested since 1911. The castle and walls are a World Heritage Site.",
+        "see": [
+          "The castle, with the climb up the towers",
+          "The town walls, with the walk along the top",
+          "The harbour and the Menai Strait",
+          "The Royal Welch Fusiliers museum"
+        ],
+        "tip": "The castle takes two hours and the ticket includes the walls. Go in the morning: the tour coaches arrive after lunch."
+      },
+      "Conwy": {
+        "text": "Conwy is a walled town from the 13th century with Edward I's castle, Telford's suspension bridge and Britain's smallest house. A day covers it.",
+        "see": [
+          "Conwy Castle, with its eight towers",
+          "The walls, 1.3 kilometres long, with the walk",
+          "Telford's suspension bridge, from 1826",
+          "Britain's smallest house, on the quay"
+        ],
+        "tip": "The walk along the walls is free and circles the town in an hour. From the west tower you see the castle and the estuary."
+      },
+      "Liverpool": {
+        "text": "Liverpool is the last stop, across the estuary, and has the largest collection of Victorian buildings in Britain. A day and a half covers it.",
+        "see": [
+          "The Albert Dock, with its warehouses and museums",
+          "The Anglican and Catholic cathedrals, a kilometre apart",
+          "Mathew Street and the Cavern Club",
+          "The Mersey ferry, with the Gerry and the Pacemakers song"
+        ],
+        "tip": "The Mersey ferry is cheap and lasts 50 minutes. It passes in front of the city's three buildings, which is Liverpool's classic photo."
+      },
+      "Bristol": {
+        "text": "Bristol is the natural exit if you fly from the southwest, with the Clifton suspension bridge, the harbour and Banksy's murals. A day covers it and the airport is 30 minutes away.",
+        "see": [
+          "The Clifton Suspension Bridge, over the Avon gorge",
+          "The harbour and the SS Great Britain",
+          "Stokes Croft, with its murals",
+          "St Nicholas Market"
+        ],
+        "tip": "There's a direct train from Cardiff to Bristol in 50 minutes. If you're flying out, the Bristol Flyer links the station to the airport every 20 minutes."
+      }
+    },
+    "gettingAround": "Hire car. Cardiff-Brecon, an hour; Brecon-Tenby, ninety minutes; Tenby-St Davids, an hour; St Davids-Aberystwyth, two hours; Aberystwyth-Betws-y-Coed, two hours; Betws-y-Coed-Conwy, 40 minutes; Conwy-Liverpool, ninety minutes. Snowdonia's roads are narrow and slow. In Cardiff and Liverpool a car is a nuisance: park on the edge.",
+    "bestTime": "May to September, with long days and less rain. June and July are best for the coast and the mountains. In winter there's little light and many castles and lodgings close, though Cardiff and Liverpool work all year.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Cardiff, the Brecon Beacons and Tenby. 7 or 8 adds St Davids and Snowdonia. 11 also takes in Aberystwyth, Caernarfon and Liverpool."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, for the coast and the mountains. Cardiff and Liverpool work without one, but public transport between the villages is slow."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Liverpool and head south to Cardiff."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Cardiff (CWL) and out of Liverpool (LPL). Bristol (BRS) also works for south Wales."
+      }
+    ]
+  }
+}

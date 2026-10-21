@@ -159,7 +159,7 @@ const bestTrip = (option, origin, fares, airportsByCode, countryName, lang) => {
     // Between the two flights there is no connection to show: the towns are in `towns`
     stops: [],
     towns: option.stops.map((stop, index) => ({
-      // Its place in the route as written, for the planner (utils/manualTrips stopsParam): "italia-clasica/full/2"
+      // Its place in the route as written, for the planner (utils/manualTrips stopsParam): "classic-italy/full/2"
       ref: `${option.route.id}/${option.version}/${stop.index}`,
       city: stop.city[lang],
       country: countryName(stop.countryCode),

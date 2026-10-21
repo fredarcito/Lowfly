@@ -1,0 +1,244 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "galicia-y-oporto",
+    "en": "galicia-and-porto"
+  },
+  "photos": {
+    "Santiago de Compostela": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Santiago_de_Compostela%2C_Galiza_%28cropped%29.jpg/960px-Santiago_de_Compostela%2C_Galiza_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 453,
+      "page": "https://commons.wikimedia.org/wiki/File:Santiago_de_Compostela,_Galiza_(cropped).jpg",
+      "author": "amaianos",
+      "license": "CC BY 2.0"
+    },
+    "Pontevedra": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Pontevedra-Vista_parcial_%288663003044%29.jpg/960px-Pontevedra-Vista_parcial_%288663003044%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 165,
+      "page": "https://commons.wikimedia.org/wiki/File:Pontevedra-Vista_parcial_(8663003044).jpg",
+      "author": "juantiagues",
+      "license": "CC BY-SA 2.0"
+    },
+    "Vigo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Centro_e_porto_de_Vigo_cropped.jpg/960px-Centro_e_porto_de_Vigo_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 341,
+      "page": "https://commons.wikimedia.org/wiki/File:Centro_e_porto_de_Vigo_cropped.jpg",
+      "author": "derivative work: Kanchelskis (talk) Centro_e_porto_de_Vigo.jpg: User:Dantadd",
+      "license": "CC BY-SA 2.5"
+    },
+    "A Coruña": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Enseada_do_Orz%C3%A1n.jpg/960px-Enseada_do_Orz%C3%A1n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Enseada_do_Orz%C3%A1n.jpg",
+      "author": "Pablo Herrero from LA CORUÑA, Spain",
+      "license": "CC BY 2.0"
+    },
+    "Braga": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Arco_da_porta_nova_Braga.jpg/960px-Arco_da_porta_nova_Braga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Arco_da_porta_nova_Braga.jpg",
+      "author": "",
+      "license": "CC BY-SA 3.0"
+    },
+    "Porto": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/O_Porto_%28visto_da_Ponte_Dom_Luis_I%29.jpg/960px-O_Porto_%28visto_da_Ponte_Dom_Luis_I%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:O_Porto_(visto_da_Ponte_Dom_Luis_I).jpg",
+      "author": "Rititaneves",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Galicia y Oporto",
+    "metaTitle": "Galicia y Oporto en tren: Santiago, Vigo y Oporto, de 5 a 13 días · Lowfly",
+    "summary": "Empiezas en Santiago de Compostela y bajas por las Rías Baixas hasta Oporto, cruzando la frontera en tren. Mar, piedra y vino en el mismo viaje.",
+    "why": [
+      "Galicia y el norte de Portugal comparten más de lo que parece: lluvia, pescado, piedra y una manera lenta de comer. Cruzar la frontera aquí no se nota hasta que cambia el idioma de los carteles.",
+      "El orden importa. Santiago primero, que es la puerta y el aeropuerto; luego la costa de las Rías Baixas, con Pontevedra y Vigo; y Oporto al final, con más noches y las bodegas al otro lado del río.",
+      "Lo que suele fallar es la lluvia. En Galicia no se planifica por días sino por mañanas, y siempre hay un plan B: un mercado, un pazo, una bodega. Lleva chubasquero en cualquier mes del año."
+    ],
+    "towns": {
+      "Santiago de Compostela": {
+        "text": "Santiago es una ciudad de peregrinos y de piedra mojada, y se ve en un día entero. La catedral ocupa el centro y todo lo demás gira alrededor: plazas, soportales y bares de pulpo.",
+        "see": [
+          "La catedral y el botafumeiro, que vuela en las misas de mediodía",
+          "La plaza del Obradoiro, de noche, cuando está vacía",
+          "El mercado de abastos, por la mañana",
+          "El parque de la Alameda, para ver la ciudad desde arriba"
+        ],
+        "tip": "El pulpo se come en los bares del casco, con pimentón y aceite, y se paga por ración. En el mercado de abastos te lo cocinan al momento si lo compras allí."
+      },
+      "Pontevedra": {
+        "text": "Pontevedra es la ciudad sin coches: el centro está peatonalizado desde hace años y se camina sin ruido. Es pequeña, con soportales y plazas, y se ve en una tarde.",
+        "see": [
+          "La plaza de la Leña y el casco antiguo",
+          "Las ruinas de Santo Domingo",
+          "El puente del Burgo y la ría",
+          "La isla de Tambo, si hay barco y te apetece"
+        ],
+        "tip": "Aquí se come marisco de la ría, sobre todo berberechos y almejas. Pídelo en los bares del casco, que abren a mediodía y cierran pronto."
+      },
+      "Vigo": {
+        "text": "Vigo es una ciudad de puerto y de cuesta, más industrial que bonita, pero con una de las mejores rías para comer marisco de Europa. El casco viejo, alrededor de la piedra, es lo que más se disfruta.",
+        "see": [
+          "El barrio de la Piedra y sus bares de tapas",
+          "El monte de O Castro, para ver la ría entera",
+          "Las islas Cíes, en barco, si el tiempo lo permite",
+          "El mercado de la piedra, por la mañana"
+        ],
+        "tip": "Las ostras de la ría se comen en las bateas y en los puestos del puerto, con limón y un vino blanco. En verano hay que reservar barco a las Cíes con días de antelación."
+      },
+      "A Coruña": {
+        "text": "A Coruña tiene una península con una torre romana en la punta y un paseo marítimo que da la vuelta entera. Es una ciudad de mar y de viento, con las galerías de cristal mirando a la ría.",
+        "see": [
+          "La torre de Hércules, el faro romano en funcionamiento más antiguo del mundo",
+          "El paseo marítimo, el más largo de Europa",
+          "La ciudad vieja y la plaza de María Pita",
+          "Las galerías de la Marina, de cristal blanco"
+        ],
+        "tip": "El paseo marítimo son más de diez kilómetros. Alquila una bici o hazlo por tramos: del centro a la torre hay media hora andando."
+      },
+      "Braga": {
+        "text": "Braga es la ciudad más antigua de Portugal y la más religiosa: hay una catedral, decenas de iglesias y un santuario al que se sube por una escalinata monumental. Los estudiantes llenan las calles.",
+        "see": [
+          "El santuario de Bom Jesus do Monte, con su escalinata barroca",
+          "La catedral y su tesoro",
+          "El centro histórico y el café A Brasileira",
+          "El estadio municipal, de Eduardo Souto de Moura, si te interesa la arquitectura"
+        ],
+        "tip": "Al santuario se sube en el funicular más antiguo de la península, que funciona con agua. Cuesta un par de euros y merece la pena por el ruido."
+      },
+      "Porto": {
+        "text": "Oporto se sube y se baja, y el río es la referencia. Duerme en la Ribeira si quieres vistas y en el centro si quieres dormir: la Ribeira de noche es bonita y ruidosa a partes iguales.",
+        "see": [
+          "Las bodegas de Vila Nova de Gaia, con visita y cata",
+          "La librería Lello, con entrada de pago y hora reservada",
+          "El puente Luís I, por el piso de arriba",
+          "El mercado do Bolhão, reformado y todavía con puestos de verdad",
+          "La Sé y el barrio de la Ribeira"
+        ],
+        "tip": "La francesinha se come a mediodía y es enorme. Si no tienes hambre de verdad, pide media y compártela."
+      }
+    },
+    "gettingAround": "Tren y autobús. Santiago, Pontevedra, Vigo y A Coruña están unidas por trenes regionales y de media distancia, con trayectos de 20 minutos a hora y media. Vigo y Oporto están a dos horas y media en tren, con transbordo en Valença; Braga está a una hora de Oporto en tren regional. Para las islas Cíes hay barco desde Vigo y Cangas, solo en temporada y con cupo diario.",
+    "bestTime": "Mayo, junio, julio, septiembre y octubre: menos lluvia y buen tiempo, aunque en Galicia siempre puede llover. Julio y agosto son los meses de playa y de fiestas, con las Rías Baixas llenas. En invierno llueve mucho y hace viento, pero las ciudades están tranquilas y los precios bajan. La mejor época para el marisco es el otoño y el invierno.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Galicia y Oporto?",
+        "answer": "Con 5 o 6 días ves Santiago, Vigo y Oporto. Con 8 a 10 añades Pontevedra; con 11 a 13 entran también A Coruña y Braga."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para las ciudades: el tren y el autobús llegan. El coche ayuda para las playas de las Rías Baixas y para los pazos y bodegas del interior."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Oporto, acabas en Santiago, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Santiago (SCQ), Vigo (VGO) o Oporto (OPO). Oporto tiene más conexiones y está a dos horas y media de Vigo en tren; Santiago está a 15 minutos del centro en autobús."
+      }
+    ]
+  },
+  "en": {
+    "title": "Galicia and Porto itinerary",
+    "metaTitle": "Galicia and Porto by train: Santiago, Vigo and Porto in 5 to 13 days · Lowfly",
+    "summary": "Start in Santiago de Compostela and follow the Rías Baixas down to Porto, crossing the border by train. Sea, stone and wine on the same trip.",
+    "why": [
+      "Galicia and northern Portugal have more in common than they admit: rain, fish, stone and a slow way of eating. Crossing the border here doesn't register until the road signs change language.",
+      "The order matters. Santiago first, because it's the gateway and the airport; then the Rías Baixas coast, with Pontevedra and Vigo; and Porto last, with more nights and the cellars across the river.",
+      "What usually goes wrong is the rain. In Galicia you plan by mornings, not days, and there's always a plan B: a market, a manor house, a winery. Pack a raincoat in any month of the year."
+    ],
+    "towns": {
+      "Santiago de Compostela": {
+        "text": "Santiago is a city of pilgrims and wet stone, and a full day covers it. The cathedral holds the centre and everything else circles it: squares, arcades and octopus bars.",
+        "see": [
+          "The cathedral and the botafumeiro, which flies at the midday masses",
+          "Praza do Obradoiro, at night, when it's empty",
+          "The food market, in the morning",
+          "Alameda park, for the city from above"
+        ],
+        "tip": "Octopus is eaten in the bars of the old town, with paprika and oil, priced by the portion. At the market they'll cook it for you on the spot if you buy it there."
+      },
+      "Pontevedra": {
+        "text": "Pontevedra is the city without cars: the centre has been pedestrianised for years and you walk it in silence. It's small, with arcades and squares, and an afternoon does it.",
+        "see": [
+          "Praza da Leña and the old town",
+          "The ruins of Santo Domingo",
+          "The Burgo bridge and the estuary",
+          "Tambo island, if there's a boat and you fancy it"
+        ],
+        "tip": "This is estuary shellfish country, especially cockles and clams. Order them in the bars of the old town, which open at lunch and close early."
+      },
+      "Vigo": {
+        "text": "Vigo is a port city on a slope, more industrial than pretty, but with one of the best estuaries in Europe for seafood. The old town, around A Pedra, is the part people enjoy most.",
+        "see": [
+          "The A Pedra quarter and its tapas bars",
+          "O Castro hill, for the whole estuary",
+          "The Cíes islands, by boat, if the weather allows",
+          "The stone market, in the morning"
+        ],
+        "tip": "Estuary oysters are eaten at the raft sites and the harbour stalls, with lemon and white wine. In summer you need to book the Cíes boat days ahead."
+      },
+      "A Coruña": {
+        "text": "A Coruña has a peninsula with a Roman tower at the tip and a seafront promenade that goes all the way round. It's a city of sea and wind, with glass galleries facing the estuary.",
+        "see": [
+          "The Tower of Hercules, the oldest working Roman lighthouse in the world",
+          "The promenade, the longest in Europe",
+          "The old town and María Pita square",
+          "The glass galleries along the Marina"
+        ],
+        "tip": "The promenade runs more than ten kilometres. Hire a bike or do it in stretches: half an hour on foot from the centre to the tower."
+      },
+      "Braga": {
+        "text": "Braga is the oldest city in Portugal and the most religious: one cathedral, dozens of churches and a sanctuary you climb to by a monumental staircase. Students fill the streets.",
+        "see": [
+          "Bom Jesus do Monte sanctuary, with its baroque staircase",
+          "The cathedral and its treasury",
+          "The old centre and the A Brasileira café",
+          "The municipal stadium, by Eduardo Souto de Moura, if architecture interests you"
+        ],
+        "tip": "You go up to the sanctuary on the oldest funicular in Iberia, which runs on water. It costs a couple of euros and the noise alone is worth it."
+      },
+      "Porto": {
+        "text": "Porto is all ups and downs, and the river is the reference point. Stay in Ribeira for the views and in the centre for sleep: Ribeira at night is beautiful and noisy in equal measure.",
+        "see": [
+          "The port cellars in Vila Nova de Gaia, with a tour and tasting",
+          "Livraria Lello, with a paid ticket and a booked time",
+          "The Luís I bridge, on the upper deck",
+          "Bolhão market, renovated and still holding real stalls",
+          "The Sé and the Ribeira quarter"
+        ],
+        "tip": "Francesinha is a lunch dish and it's enormous. If you're not properly hungry, order half and share it."
+      }
+    },
+    "gettingAround": "Train and bus. Santiago, Pontevedra, Vigo and A Coruña are linked by regional and medium-distance trains, with journeys from 20 minutes to an hour and a half. Vigo and Porto are two and a half hours apart by train, changing at Valença; Braga is an hour from Porto on a regional train. Boats to the Cíes islands leave from Vigo and Cangas, in season only and with a daily cap.",
+    "bestTime": "May, June, July, September and October: less rain and good weather, though in Galicia it can always rain. July and August are the beach and festival months, with the Rías Baixas full. Winter is wet and windy, but the cities are quiet and prices drop. The best months for seafood are autumn and winter.",
+    "faq": [
+      {
+        "question": "How many days do you need for Galicia and Porto?",
+        "answer": "5 or 6 days covers Santiago, Vigo and Porto. With 8 to 10 you add Pontevedra; with 11 to 13 A Coruña and Braga come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the cities: train and bus get you there. A car helps for the beaches of the Rías Baixas and for the manor houses and wineries inland."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Porto and you finish in Santiago, with the airport close by."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Santiago (SCQ), Vigo (VGO) or Porto (OPO). Porto has more connections and is two and a half hours from Vigo by train; Santiago is 15 minutes from the centre by bus."
+      }
+    ]
+  }
+}

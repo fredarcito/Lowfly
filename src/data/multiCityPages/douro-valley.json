@@ -1,0 +1,272 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "valle-del-duero",
+    "en": "douro-valley"
+  },
+  "photos": {
+    "Porto": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/View_of_Ribeira_from_Cais_de_Gaia%2C_20250605_1628_9890.jpg/960px-View_of_Ribeira_from_Cais_de_Gaia%2C_20250605_1628_9890.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 389,
+      "page": "https://commons.wikimedia.org/wiki/File:View_of_Ribeira_from_Cais_de_Gaia,_20250605_1628_9890.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0"
+    },
+    "Braga": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Arco_da_porta_nova_Braga.jpg/960px-Arco_da_porta_nova_Braga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:Arco_da_porta_nova_Braga.jpg",
+      "author": "",
+      "license": "CC BY-SA 3.0"
+    },
+    "Guimarães": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Largo_do_Toural_%28reabilitado%29.jpg/960px-Largo_do_Toural_%28reabilitado%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Largo_do_Toural_(reabilitado).jpg",
+      "author": "PauloPinto65",
+      "license": "CC BY-SA 4.0"
+    },
+    "Amarante": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Amarante_bank.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:Amarante_bank.jpg",
+      "author": "",
+      "license": "CC BY-SA 3.0"
+    },
+    "Lamego": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/55/Lamego_Avenida2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Lamego_Avenida2.jpg",
+      "author": "Paulo Monteiro",
+      "license": "Public domain"
+    },
+    "Peso da Régua": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/R%C3%A9gua_-_Museu_do_Douro_na_Regi%C3%A3o_do_Alto_Douro.jpg/960px-R%C3%A9gua_-_Museu_do_Douro_na_Regi%C3%A3o_do_Alto_Douro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:R%C3%A9gua_-_Museu_do_Douro_na_Regi%C3%A3o_do_Alto_Douro.jpg",
+      "author": "Duca696",
+      "license": "CC BY-SA 3.0"
+    },
+    "Pinhão": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pinh%C3%A3o_train_station_02.jpg/960px-Pinh%C3%A3o_train_station_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 523,
+      "page": "https://commons.wikimedia.org/wiki/File:Pinh%C3%A3o_train_station_02.jpg",
+      "author": "sanjorgepinho",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por el Duero: Oporto, el Alto Douro y las bodegas",
+    "metaTitle": "Valle del Duero en tren y coche: Oporto, Régua y Pinhão, de 5 a 13 días · Lowfly",
+    "summary": "Empiezas en Oporto y sus bodegas, subes al Miño con Braga y Guimarães y bajas al Duero por las terrazas de viñedos. El tren de la línea del Duero es parte del viaje.",
+    "why": [
+      "El vino de Oporto se envejece en Vila Nova de Gaia, al otro lado del río, pero la uva crece a 100 kilómetros río arriba, en el Alto Douro. Esta ruta va del uno al otro, y el paisaje cambia por completo en el camino.",
+      "El orden importa. Oporto primero, con las bodegas; luego el Miño, con Braga, Guimarães y Amarante, que son de un día cada una; y el Duero al final, con Régua y Pinhão, que es donde se queda uno más tiempo.",
+      "Lo que suele fallar es el coche. La línea del Duero es preciosa pero lenta, y las quintas y los miradores están fuera de las estaciones. Alquila un coche en Oporto para los dos días del Duero y devuélvelo allí."
+    ],
+    "towns": {
+      "Porto": {
+        "text": "Oporto se sube y se baja, y el río es la referencia. Duerme en la Ribeira si quieres vistas y en el centro si quieres dormir: la Ribeira de noche es bonita y ruidosa a partes iguales.",
+        "see": [
+          "Las bodegas de Vila Nova de Gaia, con visita y cata",
+          "La librería Lello, con entrada de pago y hora reservada",
+          "El puente Luís I, por el piso de arriba",
+          "El mercado do Bolhão, reformado y todavía con puestos de verdad",
+          "La Sé y el barrio de la Ribeira"
+        ],
+        "tip": "Las bodegas de Gaia se visitan con reserva y la cata está incluida. Las de los nombres grandes se llenan: reserva con días de antelación."
+      },
+      "Braga": {
+        "text": "Braga es la ciudad más antigua de Portugal y la más religiosa: hay una catedral, decenas de iglesias y un santuario al que se sube por una escalinata monumental. Los estudiantes llenan las calles.",
+        "see": [
+          "El santuario de Bom Jesus do Monte, con su escalinata barroca",
+          "La catedral y su tesoro",
+          "El centro histórico y el café A Brasileira",
+          "El estadio municipal, de Eduardo Souto de Moura"
+        ],
+        "tip": "Al santuario se sube en el funicular más antiguo de la península, que funciona con agua. Cuesta un par de euros y merece la pena por el ruido."
+      },
+      "Guimarães": {
+        "text": "Guimarães es la cuna de Portugal, con un castillo del siglo X y un centro medieval que se conserva entero. Se ve en un día, y el casco antiguo es lo mejor.",
+        "see": [
+          "El castillo y el palacio de los duques de Braganza",
+          "El centro histórico y la plaza de Santiago",
+          "El teleférico a la Penha, con vistas a la ciudad",
+          "La iglesia de São Francisco y su claustro"
+        ],
+        "tip": "El centro histórico es peatonal y pequeño. Aparca en el parque del castillo y sube andando: son diez minutos y no hay que mover el coche."
+      },
+      "Amarante": {
+        "text": "Amarante es un pueblo junto al río Tâmega, con un puente antiguo y un convento en la otra orilla. Se ve en una mañana, y los dulces de aquí son famosos en todo Portugal.",
+        "see": [
+          "El puente de São Gonçalo y el convento",
+          "La iglesia de São Gonçalo y el mirador",
+          "El río y el paseo de la orilla",
+          "Las pastelerías del centro, para los papos de anjo"
+        ],
+        "tip": "Los papos de anjo y los toucinhos do céu son los dulces de Amarante, y se compran en las pastelerías del centro. Se comen el mismo día."
+      },
+      "Lamego": {
+        "text": "Lamego es una ciudad de interior con una catedral, un castillo y un santuario al que se sube por 686 escalones. Se ve en una tarde, y la vista desde arriba es la mejor del Duero.",
+        "see": [
+          "El santuario de Nossa Senhora dos Remédios y su escalinata",
+          "La catedral y el museo",
+          "El castillo y la cisterna",
+          "El mirador sobre los viñedos"
+        ],
+        "tip": "La escalinata del santuario tiene 686 escalones y azulejos. Se sube andando o en coche por la carretera de atrás, y se baja andando."
+      },
+      "Peso da Régua": {
+        "text": "Régua es la capital del vino de Oporto y el punto donde el Duero empieza a encajonarse. Tiene un museo del vino, un paseo junto al río y barcos rabelos que suben y bajan.",
+        "see": [
+          "El museo do Douro",
+          "El paseo del río y el puente",
+          "El mirador de São Leonardo, en Galafura",
+          "Un paseo en barco rabelo"
+        ],
+        "tip": "El mirador de São Leonardo, en Galafura, es el mejor del Duero y casi nadie sube. Está a 20 minutos en coche y la vista abarca el río entero."
+      },
+      "Pinhão": {
+        "text": "Pinhão es el corazón del Alto Douro, con viñedos en terrazas hasta el río y una estación de tren con azulejos que cuentan la vendimia. Es pequeño y se ve en un día, pero se queda uno más.",
+        "see": [
+          "La estación de tren y sus azulejos",
+          "Las quintas del valle, con cata",
+          "Un paseo en barco por el Duero",
+          "El mirador de Casal de Loivos"
+        ],
+        "tip": "La estación de Pinhão es una de las más bonitas de Portugal y está en el centro del pueblo. Los azulejos cuentan la vendimia y no hay que pagar nada."
+      }
+    },
+    "gettingAround": "Tren y coche. Oporto y Braga están a una hora en tren; Braga y Guimarães, a 30 minutos en autobús. Oporto y Régua, a dos horas en la línea del Duero, y Régua y Pinhão, a 25 minutos. Las quintas y los miradores están fuera de las estaciones: un coche de alquiler por dos días en el Duero ahorra tiempo. Compra los billetes del Duero con antelación en septiembre.",
+    "bestTime": "Abril, mayo, junio, septiembre y octubre: buen tiempo y viñedos verdes o en vendimia. Septiembre es el mes de la vendimia, con más ambiente y más gente. Julio y agosto son muy calurosos en el valle, con más de 35 grados. En invierno llueve y hace frío, pero las quintas están tranquilas y los precios bajan.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para el valle del Duero?",
+        "answer": "Con 5 o 6 días ves Oporto, Régua y Pinhão. Con 8 a 10 añades Braga y Guimarães; con 11 a 13 entran también Amarante y Lamego."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Para Oporto, Braga y Guimarães no: el tren y el autobús llegan. Para las quintas y los miradores del Duero sí ayuda, porque están fuera de las estaciones."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "No: el recorrido está pensado desde Oporto hacia el interior y de vuelta a Oporto, que es donde está el aeropuerto. Hacerlo al revés obliga a volver sobre los mismos kilómetros."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Oporto (OPO), que está a 20 minutos del centro en metro. Las demás ciudades no tienen aeropuerto con vuelos de bajo coste."
+      }
+    ]
+  },
+  "en": {
+    "title": "Douro Valley itinerary: Porto, the Upper Douro and the wine estates",
+    "metaTitle": "Douro Valley by train and car: Porto, Régua and Pinhão in 5 to 13 days · Lowfly",
+    "summary": "Start in Porto and its port lodges, go up to the Minho with Braga and Guimarães, and come down to the Douro through terraced vineyards. The Douro line is part of the trip.",
+    "why": [
+      "Port wine ages in Vila Nova de Gaia, across the river, but the grapes grow 100 kilometres upstream, in the Upper Douro. This route goes from one to the other, and the landscape changes completely on the way.",
+      "The order matters. Porto first, with the lodges; then the Minho, with Braga, Guimarães and Amarante, a day each; and the Douro last, with Régua and Pinhão, where you stay longer.",
+      "What usually goes wrong is the car. The Douro line is beautiful but slow, and the estates and viewpoints sit away from the stations. Hire a car in Porto for the two Douro days and drop it back there."
+    ],
+    "towns": {
+      "Porto": {
+        "text": "Porto is all ups and downs, and the river is the reference point. Stay in Ribeira for the views and in the centre for sleep: Ribeira at night is beautiful and noisy in equal measure.",
+        "see": [
+          "The port cellars in Vila Nova de Gaia, with a tour and tasting",
+          "Livraria Lello, with a paid ticket and a booked time",
+          "The Luís I bridge, on the upper deck",
+          "Bolhão market, renovated and still holding real stalls",
+          "The Sé and the Ribeira quarter"
+        ],
+        "tip": "The Gaia cellars are visited by booking and the tasting is included. The big names fill up: book days ahead."
+      },
+      "Braga": {
+        "text": "Braga is the oldest city in Portugal and the most religious: one cathedral, dozens of churches and a sanctuary you climb to by a monumental staircase. Students fill the streets.",
+        "see": [
+          "Bom Jesus do Monte sanctuary, with its baroque staircase",
+          "The cathedral and its treasury",
+          "The old centre and the A Brasileira café",
+          "The municipal stadium, by Eduardo Souto de Moura"
+        ],
+        "tip": "You go up to the sanctuary on the oldest funicular in Iberia, which runs on water. It costs a couple of euros and the noise alone is worth it."
+      },
+      "Guimarães": {
+        "text": "Guimarães is the cradle of Portugal, with a 10th-century castle and a medieval centre that survives intact. A day covers it, and the old town is the best part.",
+        "see": [
+          "The castle and the palace of the Dukes of Braganza",
+          "The old centre and Santiago square",
+          "The cable car to Penha, with views over the city",
+          "São Francisco church and its cloister"
+        ],
+        "tip": "The old centre is pedestrian and small. Park by the castle and walk up: ten minutes, and you don't have to move the car."
+      },
+      "Amarante": {
+        "text": "Amarante is a town on the river Tâmega, with an old bridge and a convent on the far bank. A morning covers it, and its sweets are famous all over Portugal.",
+        "see": [
+          "The São Gonçalo bridge and the convent",
+          "São Gonçalo church and the viewpoint",
+          "The river and the riverside walk",
+          "The pastry shops, for papos de anjo"
+        ],
+        "tip": "Papos de anjo and toucinhos do céu are the Amarante sweets, bought in the town's pastry shops. Eat them the same day."
+      },
+      "Lamego": {
+        "text": "Lamego is an inland town with a cathedral, a castle and a sanctuary you climb to by 686 steps. An afternoon covers it, and the view from the top is the best on the Douro.",
+        "see": [
+          "Nossa Senhora dos Remédios sanctuary and its staircase",
+          "The cathedral and the museum",
+          "The castle and the cistern",
+          "The viewpoint over the vineyards"
+        ],
+        "tip": "The sanctuary staircase has 686 steps and tiled panels. You walk up or drive round the back road, and walk down."
+      },
+      "Peso da Régua": {
+        "text": "Régua is the capital of port wine and the point where the Douro starts to close in. It has a wine museum, a riverside walk and rabelo boats going up and down.",
+        "see": [
+          "The Douro museum",
+          "The riverside walk and the bridge",
+          "The São Leonardo viewpoint, at Galafura",
+          "A rabelo boat trip"
+        ],
+        "tip": "The São Leonardo viewpoint at Galafura is the best on the Douro and almost nobody drives up. It's 20 minutes away by car and takes in the whole river."
+      },
+      "Pinhão": {
+        "text": "Pinhão is the heart of the Upper Douro, with terraced vineyards down to the river and a station tiled with scenes of the harvest. It's small and a day covers it, but people stay longer.",
+        "see": [
+          "The station and its tiles",
+          "The valley estates, with tastings",
+          "A boat trip on the Douro",
+          "The Casal de Loivos viewpoint"
+        ],
+        "tip": "Pinhão station is one of the prettiest in Portugal and sits in the middle of the town. The tiles tell the harvest story and there's nothing to pay."
+      }
+    },
+    "gettingAround": "Train and car. Porto and Braga are an hour apart by train; Braga and Guimarães, 30 minutes by bus. Porto and Régua are two hours apart on the Douro line, and Régua and Pinhão 25 minutes. The estates and viewpoints sit away from the stations: a hire car for two days on the Douro saves time. Book Douro tickets ahead in September.",
+    "bestTime": "April, May, June, September and October: good weather and green or harvesting vineyards. September is the harvest, with more atmosphere and more people. July and August are very hot in the valley, over 35°C. Winter is wet and cold, but the estates are quiet and prices drop.",
+    "faq": [
+      {
+        "question": "How many days do you need for the Douro Valley?",
+        "answer": "5 or 6 days covers Porto, Régua and Pinhão. With 8 to 10 you add Braga and Guimarães; with 11 to 13 Amarante and Lamego come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for Porto, Braga and Guimarães: train and bus get you there. For the Douro estates and viewpoints it helps, because they're away from the stations."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "No: the route runs from Porto inland and back to Porto, where the airport is. Doing it backwards means retracing the same kilometres."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Porto (OPO), 20 minutes from the centre by metro. The other cities have no airport with low-cost flights."
+      }
+    ]
+  }
+}

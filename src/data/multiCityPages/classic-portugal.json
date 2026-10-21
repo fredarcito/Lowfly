@@ -1,0 +1,274 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "portugal-clasico",
+    "en": "classic-portugal"
+  },
+  "photos": {
+    "Porto": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/O_Porto_%28visto_da_Ponte_Dom_Luis_I%29.jpg/960px-O_Porto_%28visto_da_Ponte_Dom_Luis_I%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:O_Porto_(visto_da_Ponte_Dom_Luis_I).jpg",
+      "author": "Rititaneves",
+      "license": "CC BY-SA 3.0"
+    },
+    "Aveiro": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ria_de_Aveiro.jpg/960px-Ria_de_Aveiro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 547,
+      "page": "https://commons.wikimedia.org/wiki/File:Ria_de_Aveiro.jpg",
+      "author": "Joaomartinho63",
+      "license": "CC BY-SA 3.0"
+    },
+    "Coimbra": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Almedina-CCBY.jpg/960px-Almedina-CCBY.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:Almedina-CCBY.jpg",
+      "author": "nanabou [2]",
+      "license": "CC BY 2.0"
+    },
+    "Nazaré": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/La_grande_plage_de_Nazar%C3%A9_-_panoramio_%2820%29.jpg/960px-La_grande_plage_de_Nazar%C3%A9_-_panoramio_%2820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:La_grande_plage_de_Nazar%C3%A9_-_panoramio_(20).jpg",
+      "author": "Mister No",
+      "license": "CC BY 3.0"
+    },
+    "Óbidos": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/%C3%93bidos_view592.jpg/960px-%C3%93bidos_view592.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:%C3%93bidos_view592.jpg",
+      "author": "Lacobrigo",
+      "license": "CC BY-SA 4.0"
+    },
+    "Sintra": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Pal%C3%A1cio_Nacional_de_Sintra_from_above_74.jpg/960px-Pal%C3%A1cio_Nacional_de_Sintra_from_above_74.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_Nacional_de_Sintra_from_above_74.jpg",
+      "author": "Kent Wang",
+      "license": "CC BY 4.0"
+    },
+    "Lisbon": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Lisboa837.png/960px-Lisboa837.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 491,
+      "page": "https://commons.wikimedia.org/wiki/File:Lisboa837.png",
+      "author": "Lacobrigo",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Portugal: Oporto, Coímbra y Lisboa",
+    "metaTitle": "Portugal en tren: Oporto, Coímbra y Lisboa, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Oporto y bajas hacia Lisboa parando en Aveiro, Coímbra y los pueblos de la costa. Todo en tren, con trayectos de 40 minutos a dos horas y media.",
+    "why": [
+      "Portugal se recorre de norte a sur en tren, y en una semana se ven dos ciudades muy distintas y cuatro pueblos en medio. Oporto es granito y vino; Lisboa es azulejo y colinas. Entre las dos, el país cambia despacio.",
+      "El orden importa. Oporto primero, con sus bodegas y su río; luego Aveiro y Coímbra, que son de un día cada una; y Lisboa al final, con más noches y el fado de fondo.",
+      "Lo que suele fallar es la prisa. Aveiro y Coímbra se hacen en una tarde, pero Nazaré y Óbidos no están en la línea del tren y piden autobús. Si vas justo de días, quita uno de los dos en vez de correr por los dos."
+    ],
+    "towns": {
+      "Porto": {
+        "text": "Oporto se sube y se baja, y el río es la referencia. Duerme en la Ribeira si quieres vistas y en el centro si quieres dormir: la Ribeira de noche es bonita y ruidosa a partes iguales.",
+        "see": [
+          "La librería Lello, con entrada de pago y hora reservada",
+          "Las bodegas de Vila Nova de Gaia, al otro lado del puente, con visita y cata",
+          "La Sé y el barrio de la Ribeira, bajando hasta el río",
+          "El Mercado do Bolhão, reformado y todavía con puestos de verdad",
+          "Cruzar el puente Luís I por arriba, en el piso superior, andando o en metro"
+        ],
+        "tip": "La francesinha es un bocadillo enorme con salsa y cerveza, y se come a mediodía, no de noche. Si no tienes hambre de verdad, pide media."
+      },
+      "Aveiro": {
+        "text": "Aveiro es la Venecia portuguesa, aunque el parecido se queda en los canales y los barcos pintados. La ciudad es pequeña y se ve en una tarde, con tiempo para comer junto al agua.",
+        "see": [
+          "Un paseo en moliceiro por los canales",
+          "La Costa Nova y sus casas a rayas, a 20 minutos en autobús",
+          "El mercado del pescado, por la mañana",
+          "Los ovos moles, el dulce local, en cualquier pastelería del centro"
+        ],
+        "tip": "Los ovos moles se venden en barriles de madera o en conchas de oblea. Los de la pastelería del centro son los de siempre; los de las tiendas de souvenirs, no."
+      },
+      "Coimbra": {
+        "text": "Coimbra vive de la universidad, una de las más antiguas de Europa, y se nota: las calles están llenas de estudiantes con capa negra y el ambiente cambia cuando acaba el curso. La ciudad alta y la baja están a una cuesta de distancia.",
+        "see": [
+          "La Biblioteca Joanina, con entrada reservada y horario limitado",
+          "El patio de las Escuelas y la torre de la universidad",
+          "El Portugal dos Pequenitos, si viajas con niños",
+          "La Sé Velha y la Sé Nova, una románica y otra barroca"
+        ],
+        "tip": "La queijada y el pastel de Tentúgal son los dulces de aquí, y se compran en las pastelerías del centro, no en las tiendas de la estación."
+      },
+      "Nazaré": {
+        "text": "Nazaré es un pueblo de pescadores con dos partes: la playa, abajo, y el Sítio, arriba, al que se sube en funicular. En invierno las olas de la Praia do Norte pasan de veinte metros y el pueblo se llena de fotógrafos.",
+        "see": [
+          "El mirador del Sítio, con la playa entera a los pies",
+          "La Praia do Norte, donde se rompen las olas grandes",
+          "El mercado del pescado y las mujeres con siete faldas, si quedan",
+          "El funicular, que sube desde la playa en un minuto"
+        ],
+        "tip": "El peixe seco, el pescado seco al sol, se ve en las calles y se come en guiso. Es salado y fuerte: pruébalo antes de pedir una ración entera."
+      },
+      "Óbidos": {
+        "text": "Óbidos está entera dentro de una muralla, y se recorre en dos horas. Es bonita y está llena, así que lo mejor es dormir dentro y verla a primera hora, cuando los autobuses todavía no han llegado.",
+        "see": [
+          "La muralla, que se recorre por arriba, sin barandilla",
+          "El castillo, hoy una pousada",
+          "La ginjinha, el licor de guinda, en vasito de chocolate",
+          "La iglesia de Santa Maria y sus azulejos"
+        ],
+        "tip": "La ginjinha se sirve en un vasito de chocolate que luego se come. Cuesta un par de euros y es lo que hace todo el mundo al llegar."
+      },
+      "Sintra": {
+        "text": "Sintra es un pueblo de palacios metido en un bosque, y en un día solo da tiempo a dos. Los palacios están en cuesta y los autobuses que los unen van llenos: elige dos y hazlos bien.",
+        "see": [
+          "El Palacio da Pena, con entrada reservada y hora fija",
+          "La Quinta da Regaleira y su pozo iniciático",
+          "El Palacio Nacional, en el centro, con sus dos chimeneas",
+          "El Castelo dos Mouros, si te quedan piernas"
+        ],
+        "tip": "El tren desde Lisboa sale de Rossio y tarda 40 minutos. Compra la entrada del palacio antes de subir: en taquilla se agota a media mañana."
+      },
+      "Lisbon": {
+        "text": "Lisboa se hace en cuesta y en tranvía, y el 28 es el más famoso y el más lleno. Duerme en la Baixa o en Alfama, y camina: casi todo lo que merece la pena está a menos de media hora.",
+        "see": [
+          "El mirador de São Pedro de Alcântara y el de Senhora do Monte",
+          "Alfama y el fado, en una casa de fados pequeña, no en las de la Rua dos Remédios",
+          "Belém, con los pastéis de nata y el monasterio",
+          "El mercado da Ribeira, para comer de pie",
+          "El tranvía 28, a primera hora, cuando todavía hay sitio"
+        ],
+        "tip": "Los pastéis de nata se comen con canela y azúcar glas, y los de Belém se sirven calientes. Hay cola, pero avanza rápido."
+      }
+    },
+    "gettingAround": "Todo en tren, salvo Nazaré y Óbidos. Oporto y Lisboa están unidas por el Alfa Pendular en dos horas y media, y Aveiro y Coímbra quedan en medio, a 40 minutos y hora y media de Oporto. Nazaré y Óbidos no tienen estación: se llegan en autobús desde Caldas da Rainha, con pocas frecuencias, o en coche. Sintra está a 40 minutos de Lisboa en tren de cercanías, desde Rossio. Compra los billetes de Alfa Pendular con antelación: el precio sube en los últimos días.",
+    "bestTime": "Abril, mayo, junio, septiembre y octubre: buen tiempo y menos gente. Julio y agosto son los meses de playa, con la costa llena y los hoteles caros; en agosto muchos restaurantes cierran unos días. En invierno llueve bastante en el norte y Oporto se ve gris, pero las ciudades están vacías y los precios bajan. La primavera es la mejor época para Nazaré, antes de que lleguen las olas grandes.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Portugal?",
+        "answer": "Con 5 o 6 días ves Oporto y Lisboa. Con 8 a 10 añades Aveiro y Coímbra; con 11 a 13 entran también Nazaré, Óbidos y Sintra."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para las ciudades: el tren une Oporto, Aveiro, Coímbra y Lisboa. Para Nazaré y Óbidos el autobús funciona, pero con pocas frecuencias; un coche de alquiler por dos días ahorra tiempo."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Lisboa, acabas en Oporto, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Oporto (OPO) y a Lisboa (LIS). Oporto está a 20 minutos del centro en metro; Lisboa está dentro de la ciudad y se llega en metro o en autobús."
+      }
+    ]
+  },
+  "en": {
+    "title": "Portugal itinerary: Porto, Coimbra and Lisbon",
+    "metaTitle": "Portugal by train: Porto, Coimbra and Lisbon in 5 to 13 days · Lowfly",
+    "summary": "Fly into Porto and head south to Lisbon, stopping at Aveiro, Coimbra and the coastal towns. All by train, with legs from 40 minutes to two and a half hours.",
+    "why": [
+      "Portugal runs north to south by train, and in a week you see two very different cities and four towns in between. Porto is granite and wine; Lisbon is tiles and hills. Between them, the country changes slowly.",
+      "The order matters. Porto first, with its cellars and its river; then Aveiro and Coimbra, a day each; and Lisbon last, with more nights and fado in the background.",
+      "What usually goes wrong is the rush. Aveiro and Coimbra take an afternoon each, but Nazaré and Óbidos aren't on the train line and need a bus. If you're short on days, drop one of the two rather than racing through both."
+    ],
+    "towns": {
+      "Porto": {
+        "text": "Porto is all ups and downs, and the river is the reference point. Stay in Ribeira for the views and in the centre for sleep: Ribeira at night is beautiful and noisy in equal measure.",
+        "see": [
+          "Livraria Lello, with a paid ticket and a booked time",
+          "The port cellars in Vila Nova de Gaia, across the bridge, with a tour and tasting",
+          "The Sé and the Ribeira quarter, walking down to the river",
+          "Bolhão market, renovated and still holding real stalls",
+          "Crossing the Luís I bridge on the top deck, on foot or by metro"
+        ],
+        "tip": "Francesinha is an enormous sandwich with sauce and beer, and it's a lunch dish, not a dinner one. If you're not properly hungry, order half."
+      },
+      "Aveiro": {
+        "text": "Aveiro is the Portuguese Venice, though the resemblance stops at the canals and the painted boats. The town is small and takes an afternoon, with time left to eat by the water.",
+        "see": [
+          "A moliceiro boat trip along the canals",
+          "Costa Nova and its striped houses, 20 minutes by bus",
+          "The fish market, in the morning",
+          "Ovos moles, the local sweet, from any pastry shop in the centre"
+        ],
+        "tip": "Ovos moles come in wooden barrels or in wafer shells. The ones from the old pastry shop in the centre are the real thing; the ones in souvenir shops are not."
+      },
+      "Coimbra": {
+        "text": "Coimbra lives off its university, one of the oldest in Europe, and you can tell: the streets are full of students in black capes and the mood changes when term ends. The upper and lower town are a hill apart.",
+        "see": [
+          "The Joanina Library, with a booked ticket and limited hours",
+          "The courtyard of the schools and the university tower",
+          "Portugal dos Pequenitos, if you're travelling with children",
+          "The Old and New Cathedrals, one Romanesque and one baroque"
+        ],
+        "tip": "Queijada and pastel de Tentúgal are the sweets from here, and you buy them in the town's pastry shops, not at the station."
+      },
+      "Nazaré": {
+        "text": "Nazaré is a fishing town in two halves: the beach below and the Sítio above, reached by funicular. In winter the waves at Praia do Norte go past twenty metres and the town fills with photographers.",
+        "see": [
+          "The Sítio viewpoint, with the whole beach at your feet",
+          "Praia do Norte, where the big waves break",
+          "The fish market, and the women in seven skirts, if any are left",
+          "The funicular, which climbs from the beach in a minute"
+        ],
+        "tip": "Peixe seco, fish dried in the sun, hangs in the streets and goes into stews. It's salty and strong: try it before ordering a whole portion."
+      },
+      "Óbidos": {
+        "text": "Óbidos sits entirely inside its walls and takes two hours to walk. It's pretty and it's busy, so the trick is to sleep inside and see it early, before the coaches arrive.",
+        "see": [
+          "The walls, which you walk along the top, with no railing",
+          "The castle, now a pousada",
+          "Ginjinha, the sour-cherry liqueur, in a chocolate cup",
+          "Santa Maria church and its tiles"
+        ],
+        "tip": "Ginjinha comes in a little chocolate cup that you eat afterwards. It costs a couple of euros and it's what everyone does on arrival."
+      },
+      "Sintra": {
+        "text": "Sintra is a town of palaces set in a forest, and in one day you only manage two. The palaces are uphill and the buses between them are packed: pick two and do them properly.",
+        "see": [
+          "Pena Palace, with a booked ticket and a fixed time",
+          "Quinta da Regaleira and its initiation well",
+          "The National Palace, in the centre, with its two chimneys",
+          "Castle of the Moors, if your legs are still willing"
+        ],
+        "tip": "The train from Lisbon leaves from Rossio and takes 40 minutes. Buy the palace ticket before you go up: the ticket office sells out by mid-morning."
+      },
+      "Lisbon": {
+        "text": "Lisbon is done on hills and on trams, and the 28 is the most famous and the most crowded. Stay in the Baixa or in Alfama, and walk: almost everything worth seeing is under half an hour away.",
+        "see": [
+          "The São Pedro de Alcântara and Senhora do Monte viewpoints",
+          "Alfama and fado, in a small fado house, not the ones on Rua dos Remédios",
+          "Belém, with the pastéis de nata and the monastery",
+          "Mercado da Ribeira, for eating standing up",
+          "Tram 28, first thing, while there's still room to stand"
+        ],
+        "tip": "Pastéis de nata are eaten with cinnamon and icing sugar, and the Belém ones come warm. There's a queue, but it moves fast."
+      }
+    },
+    "gettingAround": "All by train, except Nazaré and Óbidos. Porto and Lisbon are linked by the Alfa Pendular in two and a half hours, with Aveiro and Coimbra in between, 40 minutes and an hour and a half from Porto. Nazaré and Óbidos have no station: you reach them by bus from Caldas da Rainha, with few departures, or by car. Sintra is 40 minutes from Lisbon on a suburban train from Rossio. Book Alfa Pendular tickets ahead: the price rises in the last few days.",
+    "bestTime": "April, May, June, September and October: good weather and fewer people. July and August are the beach months, with the coast full and hotels expensive; in August many restaurants close for a few days. Winter is fairly wet in the north and Porto looks grey, but the cities are empty and prices drop. Spring is the best time for Nazaré, before the big waves arrive.",
+    "faq": [
+      {
+        "question": "How many days do you need for Portugal?",
+        "answer": "5 or 6 days covers Porto and Lisbon. With 8 to 10 you add Aveiro and Coimbra; with 11 to 13 Nazaré, Óbidos and Sintra come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the cities: the train links Porto, Aveiro, Coimbra and Lisbon. For Nazaré and Óbidos the bus works, but departures are few; a hire car for two days saves time."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Lisbon and you finish in Porto, with the airport close by."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Porto (OPO) and Lisbon (LIS). Porto is 20 minutes from the centre by metro; Lisbon airport is in the city and reached by metro or bus."
+      }
+    ]
+  }
+}

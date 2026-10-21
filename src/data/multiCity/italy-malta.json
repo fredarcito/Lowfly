@@ -1,5 +1,5 @@
 {
-  "italia-clasica": {
+  "classic-italy": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -313,7 +313,7 @@
       "town": "Roma"
     }
   },
-  "norte-de-italia-y-lagos": {
+  "northern-italy-lakes": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -639,7 +639,7 @@
       "town": "Verona"
     }
   },
-  "toscana": {
+  "tuscany": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -947,7 +947,7 @@
       "town": "Val d'Orcia"
     }
   },
-  "napoles-y-costa-amalfitana": {
+  "naples-amalfi-coast": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -1327,7 +1327,7 @@
       "town": "Amalfi"
     }
   },
-  "sicilia": {
+  "sicily": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -1675,7 +1675,7 @@
       "town": "Taormina"
     }
   },
-  "puglia-y-matera": {
+  "puglia-matera": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2030,7 +2030,7 @@
       "town": "Lecce"
     }
   },
-  "liguria-y-cinque-terre": {
+  "liguria-cinque-terre": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2298,7 +2298,7 @@
       "town": "Cinque Terre"
     }
   },
-  "cerdena": {
+  "sardinia": {
     "kind": "surprise",
     "reviewed": false,
     "name": {
@@ -2602,7 +2602,7 @@
       "town": "Alghero"
     }
   },
-  "malta-y-gozo": {
+  "malta-gozo": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2682,7 +2682,7 @@
       "town": "La Valeta"
     }
   },
-  "dolomitas": {
+  "dolomites": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2913,7 +2913,7 @@
       "town": "Cortina d'Ampezzo"
     }
   },
-  "emilia-romana": {
+  "emilia-romagna": {
     "kind": "surprise",
     "reviewed": false,
     "name": {

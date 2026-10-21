@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "navidad-en-alsacia",
+    "en": "christmas-in-alsace"
+  },
+  "photos": {
+    "Baden-Baden": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Baden-Baden-Christkindelsmarkt-180-Sterne-2009-gje.jpg/960px-Baden-Baden-Christkindelsmarkt-180-Sterne-2009-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Baden-Baden-Christkindelsmarkt-180-Sterne-2009-gje.jpg",
+      "author": "Gerd Eichmann",
+      "license": "CC BY-SA 4.0"
+    },
+    "Strasbourg": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Strasbourg_Christkindelsm%C3%A4rik_30_nov_2014.jpg/960px-Strasbourg_Christkindelsm%C3%A4rik_30_nov_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Strasbourg_Christkindelsm%C3%A4rik_30_nov_2014.jpg",
+      "author": "Photo Claude TRUONG-NGOC",
+      "license": "CC BY-SA 3.0"
+    },
+    "Colmar": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Colmar_Christmas_Market_2017.jpg/960px-Colmar_Christmas_Market_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Colmar_Christmas_Market_2017.jpg",
+      "author": "HarshLight",
+      "license": "CC BY 2.0"
+    },
+    "Riquewihr": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/0_Riquewihr_%282%29.jpg/960px-0_Riquewihr_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 540,
+      "page": "https://commons.wikimedia.org/wiki/File:0_Riquewihr_(2).jpg",
+      "author": "Jean-Pol GRANDMONT",
+      "license": "CC BY 4.0"
+    },
+    "Basel": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Basler_Ferris_Wheel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Basler_Ferris_Wheel.jpg",
+      "author": "Dghosal",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Navidad en Alsacia: Estrasburgo, Colmar y los pueblos del vino",
+    "metaTitle": "Navidad en Alsacia en tren: Estrasburgo, Colmar y Basilea, de 4 a 7 días · Lowfly",
+    "summary": "El Christkindelsmärik de Estrasburgo, los seis mercadillos de Colmar y los pueblos de la ruta del vino iluminados. Casas de entramado, vino caliente y frío de verdad.",
+    "why": [
+      "Alsacia lleva haciendo mercadillos de Navidad desde 1570, y se nota: no son puestos de feria montados en una plaza, son la ciudad entera puesta a funcionar de otra manera. Estrasburgo tiene once, Colmar seis y cada pueblo de la ruta del vino el suyo.",
+      "El orden importa. Estrasburgo primero, que es la más grande y la que tiene más mercados; luego Colmar como base para los pueblos; y Basilea al final, que es Suiza y cambia el idioma y los precios.",
+      "Lo que suele fallar es la luz. Anochece a las 16:30 y a esa hora los mercadillos están en su mejor momento, pero el día se acaba. Aprovecha la mañana para los pueblos y deja la tarde-noche para los mercados."
+    ],
+    "towns": {
+      "Baden-Baden": {
+        "text": "Baden-Baden es una ciudad-balneario de casas elegantes y jardines, con un mercadillo pequeño en la plaza de la colegiata y las termas romanas al lado. Se ve en un día, y es la entrada natural desde el aeropuerto de Karlsruhe.",
+        "see": [
+          "El mercadillo de la plaza de la colegiata",
+          "Las termas de Caracalla, con agua termal",
+          "La avenida Lichtentaler y sus jardines",
+          "El casino, el más antiguo de Alemania"
+        ],
+        "tip": "Las termas de Caracalla están abiertas en invierno y el agua sale a 38 grados. Es lo mejor para después de un día de mercadillos: lleva bañador y toalla."
+      },
+      "Strasbourg": {
+        "text": "Estrasburgo tiene el mercadillo más antiguo de Francia y once repartidos por el centro, cada uno con su carácter. La ciudad está iluminada entera y el centro es peatonal, así que se recorre andando con frío.",
+        "see": [
+          "El Christkindelsmärik de la plaza Broglie, el más antiguo",
+          "El mercadillo de la catedral, con el árbol de la plaza Kléber",
+          "La Petite France, iluminada y con menos gente",
+          "El mercado de Navidad del barrio de Krutenau, el de los vecinos"
+        ],
+        "tip": "El árbol de la plaza Kléber es el más alto de Europa y se enciende a principios de diciembre. Los fines de semana la ciudad está llena: si puedes, ve entre semana."
+      },
+      "Colmar": {
+        "text": "Colmar tiene seis mercadillos repartidos por el centro y es la base para los pueblos de la ruta del vino. La ciudad es pequeña y se recorre en un día, pero con los mercados se queda uno dos.",
+        "see": [
+          "El mercado de la plaza de los Dominicos",
+          "La Petite Venise, iluminada al atardecer",
+          "El mercado de la plaza de la Catedral",
+          "El mercado gastronómico del Koïfhus"
+        ],
+        "tip": "El mercado del Koïfhus es el de la comida y está dentro de un edificio del siglo XV. Se llena a mediodía: ve a primera hora o a última."
+      },
+      "Riquewihr": {
+        "text": "Riquewihr es el pueblo más bonito de la ruta del vino y en Navidad se ilumina entero dentro de sus murallas. Es pequeño y se ve en dos horas, pero merece la pena dormir allí.",
+        "see": [
+          "El mercadillo de la calle principal",
+          "La torre de los Ladrones y la puerta alta",
+          "Las bodegas del pueblo, con vino caliente",
+          "El castillo de los Duques de Württemberg"
+        ],
+        "tip": "Riquewihr no tiene estación: se llega en autobús desde Colmar, con pocas frecuencias, o en coche. Si vas en autobús, mira el último de vuelta antes de reservar."
+      },
+      "Basel": {
+        "text": "Basilea es Suiza y en Navidad tiene uno de los mercadillos más bonitos del Rin, en la plaza de la catedral. La ciudad es cara, pero el mercadillo y el paseo junto al río merecen la pena.",
+        "see": [
+          "El mercadillo de la Münsterplatz",
+          "La catedral y el mirador sobre el Rin",
+          "El centro histórico iluminado",
+          "El mercadillo de la Barfüsserplatz"
+        ],
+        "tip": "Basilea es cara: un vino caliente cuesta el doble que en Alsacia. Cambia poco dinero y vuelve a cruzar la frontera para comer."
+      }
+    },
+    "gettingAround": "Tren. Estrasburgo y Colmar están a 30 minutos en tren regional, con paradas en Sélestat. Riquewihr no tiene estación: se llega en autobús desde Colmar en 40 minutos, con pocas frecuencias. Colmar y Basilea están a 45 minutos en tren. El aeropuerto de Karlsruhe/Baden-Baden está a una hora de Estrasburgo en tren, y el de Basilea-Mulhouse sirve a las dos ciudades.",
+    "bestTime": "Finales de noviembre y diciembre, hasta el 24 o el 31 según el mercadillo. La primera quincena de diciembre es la mejor: hay menos gente que en las vacaciones escolares. Hace frío, entre 0 y 5 grados, y anochece a las 16:30. Los mercadillos cierran el 25 y el 26 de diciembre.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para la Navidad en Alsacia?",
+        "answer": "Con 4 o 5 días ves Estrasburgo y Colmar. Con 6 o 7 añades Riquewihr y Basilea."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para las ciudades: el tren une Estrasburgo, Colmar y Basilea. Para Riquewihr y los pueblos de la ruta del vino sí ayuda, aunque hay autobuses desde Colmar con pocas frecuencias."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Basilea, acabas en Estrasburgo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Karlsruhe/Baden-Baden (FKB) o Basilea-Mulhouse (BSL). Estrasburgo (SXB) no tiene vuelos de Ryanair ni Wizz. FKB está a una hora de Estrasburgo en tren; BSL sirve a Basilea y a Colmar."
+      }
+    ]
+  },
+  "en": {
+    "title": "Christmas in Alsace: Strasbourg, Colmar and the wine villages",
+    "metaTitle": "Christmas in Alsace by train: Strasbourg, Colmar and Basel in 4 to 7 days · Lowfly",
+    "summary": "Strasbourg's Christkindelsmärik, Colmar's six markets and the wine-route villages lit up. Half-timbered houses, mulled wine and proper cold.",
+    "why": [
+      "Alsace has been holding Christmas markets since 1570, and it shows: these aren't fairground stalls set up in a square, they're the whole town running differently for a month. Strasbourg has eleven, Colmar six and every village on the wine route its own.",
+      "The order matters. Strasbourg first, the biggest and the one with the most markets; then Colmar as a base for the villages; and Basel last, which is Switzerland and changes both the language and the prices.",
+      "What usually goes wrong is the light. It gets dark at 16:30, and that's when the markets look best, but the day is gone. Use the morning for the villages and leave the late afternoon for the markets."
+    ],
+    "towns": {
+      "Baden-Baden": {
+        "text": "Baden-Baden is a spa town of elegant houses and gardens, with a small market on the collegiate church square and the Roman baths next door. A day covers it, and it's the natural way in from Karlsruhe airport.",
+        "see": [
+          "The market on the collegiate church square",
+          "The Caracalla baths, with thermal water",
+          "The Lichtentaler avenue and its gardens",
+          "The casino, the oldest in Germany"
+        ],
+        "tip": "The Caracalla baths are open in winter and the water comes out at 38°C. It's the best thing after a day of markets: take a swimsuit and a towel."
+      },
+      "Strasbourg": {
+        "text": "Strasbourg has the oldest Christmas market in France and eleven spread across the centre, each with its own character. The whole city is lit up and the centre is pedestrian, so you walk it in the cold.",
+        "see": [
+          "The Christkindelsmärik on Place Broglie, the oldest one",
+          "The cathedral market, with the tree on Place Kléber",
+          "La Petite France, lit up and quieter",
+          "The Krutenau market, the one the locals use"
+        ],
+        "tip": "The tree on Place Kléber is the tallest in Europe and goes on in early December. At weekends the city is packed: go midweek if you can."
+      },
+      "Colmar": {
+        "text": "Colmar has six markets spread through the centre and is the base for the wine-route villages. The town is small and a day covers it, but with the markets people stay two.",
+        "see": [
+          "The market on Place des Dominicains",
+          "La Petite Venise, lit up at dusk",
+          "The market on the cathedral square",
+          "The food market in the Koïfhus"
+        ],
+        "tip": "The Koïfhus market is the food one and it's inside a 15th-century building. It fills at midday: go first thing or last thing."
+      },
+      "Riquewihr": {
+        "text": "Riquewihr is the prettiest village on the wine route and at Christmas it's lit up entirely inside its walls. It's small and takes two hours, but it's worth staying the night.",
+        "see": [
+          "The market on the main street",
+          "The Thieves' Tower and the upper gate",
+          "The village cellars, with mulled wine",
+          "The castle of the Dukes of Württemberg"
+        ],
+        "tip": "Riquewihr has no station: you reach it by bus from Colmar, with few departures, or by car. If you go by bus, check the last one back before booking."
+      },
+      "Basel": {
+        "text": "Basel is Switzerland and at Christmas it has one of the prettiest markets on the Rhine, on the cathedral square. The city is expensive, but the market and the walk along the river are worth it.",
+        "see": [
+          "The market on Münsterplatz",
+          "The cathedral and the view over the Rhine",
+          "The lit-up old town",
+          "The market on Barfüsserplatz"
+        ],
+        "tip": "Basel is expensive: mulled wine costs twice what it does in Alsace. Change a little money and cross back over the border to eat."
+      }
+    },
+    "gettingAround": "Train. Strasbourg and Colmar are 30 minutes apart on a regional train, with stops at Sélestat. Riquewihr has no station: you reach it by bus from Colmar in 40 minutes, with few departures. Colmar and Basel are 45 minutes apart by train. Karlsruhe/Baden-Baden airport is an hour from Strasbourg by train, and Basel-Mulhouse serves both cities.",
+    "bestTime": "Late November and December, until the 24th or the 31st depending on the market. The first half of December is best: fewer people than in the school holidays. It's cold, between 0 and 5°C, and dark by 16:30. The markets close on 25 and 26 December.",
+    "faq": [
+      {
+        "question": "How many days do you need for Christmas in Alsace?",
+        "answer": "4 or 5 days covers Strasbourg and Colmar. With 6 or 7 you add Riquewihr and Basel."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the cities: the train links Strasbourg, Colmar and Basel. For Riquewihr and the wine-route villages it helps, though there are buses from Colmar with few departures."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Basel and you finish in Strasbourg."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Karlsruhe/Baden-Baden (FKB) or Basel-Mulhouse (BSL). Strasbourg (SXB) has no Ryanair or Wizz flights. FKB is an hour from Strasbourg by train; BSL serves Basel and Colmar."
+      }
+    ]
+  }
+}

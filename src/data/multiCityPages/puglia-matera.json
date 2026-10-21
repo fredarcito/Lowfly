@@ -1,0 +1,258 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "puglia-y-matera",
+    "en": "puglia-and-matera"
+  },
+  "photos": {
+    "Bari": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Puglia_bari_old-town.jpg/960px-Puglia_bari_old-town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 499,
+      "page": "https://commons.wikimedia.org/wiki/File:Puglia_bari_old-town.jpg",
+      "author": "Francesco Di Stefano 08",
+      "license": "CC BY-SA 4.0"
+    },
+    "Matera": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Matera_Sassi.jpg/1280px-Matera_Sassi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1280,
+      "height": 890,
+      "page": "https://commons.wikimedia.org/wiki/File:Matera_Sassi.jpg",
+      "author": "Luca Aless",
+      "license": "CC BY-SA 3.0"
+    },
+    "Alberobello": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Alberobello_con_il_drone.jpg/960px-Alberobello_con_il_drone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 574,
+      "page": "https://commons.wikimedia.org/wiki/File:Alberobello_con_il_drone.jpg",
+      "author": "ParisTaras",
+      "license": "CC BY-SA 4.0"
+    },
+    "Polignano a Mare": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Polignano_a_mare_-Lama_Monachile.jpg/960px-Polignano_a_mare_-Lama_Monachile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 555,
+      "page": "https://commons.wikimedia.org/wiki/File:Polignano_a_mare_-Lama_Monachile.jpg",
+      "author": "ParisTaras",
+      "license": "CC BY-SA 4.0"
+    },
+    "Ostuni": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ostuni_col_drone.jpg/960px-Ostuni_col_drone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Ostuni_col_drone.jpg",
+      "author": "ParisTaras",
+      "license": "CC BY 4.0"
+    },
+    "Otranto": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Otranto_dal_bastione_dei_Pelasgi.jpg/960px-Otranto_dal_bastione_dei_Pelasgi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Otranto_dal_bastione_dei_Pelasgi.jpg",
+      "author": "Freddyballo",
+      "license": "CC BY-SA 3.0"
+    },
+    "Lecce": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Square_in_Lecce.jpg/960px-Square_in_Lecce.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Square_in_Lecce.jpg",
+      "author": "F Crippa",
+      "license": "CC BY 2.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Puglia y Matera",
+    "metaTitle": "Ruta por Puglia y Matera: Bari, Matera, Alberobello y Lecce, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Bari, cruzas a Matera y bajas por el valle de Itria hasta Lecce. Vuelves desde Brindisi, así que no repites camino: trenes y algún autobús bastan.",
+    "why": [
+      "Puglia es el tacón de Italia y Matera está justo por encima, en Basilicata. Juntas dan un viaje que no se parece a ningún otro: trulli de piedra seca, cuevas habitadas y una ciudad barroca entera tallada en piedra dorada.",
+      "El orden importa. Bari y Matera primero, que son las más densas, y la costa y el sur después, con Lecce al final, que es la más elegante.",
+      "Lo que suele fallar es el coche. Aquí sí ayuda: Matera y el valle de Itria se recorren mal en transporte público. Alquílalo en Bari y devuélvelo en Lecce, sin volver atrás."
+    ],
+    "towns": {
+      "Bari": {
+        "text": "Bari es la puerta de la región y mucha gente pasa de largo hacia Polignano. Error: Bari Vecchia, el casco antiguo, es un laberinto de callejones donde las mujeres hacen la orecchiette en la puerta de casa.",
+        "see": [
+          "Bari Vecchia y la calle de las orecchiette",
+          "La basílica de San Nicolás, con la tumba del santo",
+          "El lungomare, el paseo marítimo más largo de Italia"
+        ],
+        "tip": "La orecchiette se compra fresca en la Strada delle Orecchiette y se seca al sol en la calle. Es el recuerdo más barato y más útil que te puedes llevar."
+      },
+      "Matera": {
+        "text": "Matera es la ciudad más antigua habitada de Europa: cuevas excavadas en la roca, habitadas hasta los años cincuenta y hoy convertidas en hoteles y restaurantes. De noche, iluminada, parece un belén.",
+        "see": [
+          "Los Sassi, los dos barrios de cuevas",
+          "La iglesia rupestre de Santa Maria de Idris",
+          "El mirador de Murgia Timone, al otro lado del cañón"
+        ],
+        "tip": "Duerme en un sasso, en una cueva. Es más caro, pero dormir dentro de la roca es la mitad del viaje. Y reserva con tiempo: los alojamientos buenos se agotan."
+      },
+      "Alberobello": {
+        "text": "Alberobello es el pueblo de los trulli: casas blancas con tejado cónico de piedra seca, sin argamasa, construidas así para poder desmontarlas cuando pasaba el recaudador. Hoy es Patrimonio de la Humanidad y está lleno de tiendas.",
+        "see": [
+          "El Trullo Sovrano, el único de dos plantas",
+          "La zona de Aia Piccola, la más tranquila",
+          "Locorotondo, a 15 minutos, con vino blanco"
+        ],
+        "tip": "Llega antes de las diez o después de las seis. Entre medias, los autobuses de excursión convierten el pueblo en un mercadillo."
+      },
+      "Polignano a Mare": {
+        "text": "Polignano está construido sobre un acantilado de piedra blanca, con una playa diminuta entre dos paredes de roca. Es pequeño y se ve en una tarde, pero la cala es de las fotos más repetidas de Italia.",
+        "see": [
+          "La cala de Lama Monachile, desde el puente",
+          "El centro histórico y el balcón sobre el mar",
+          "El restaurante de la canción de Domenico Modugno, que era de aquí"
+        ],
+        "tip": "En verano la cala se llena y no cabe un alma. Báñate a primera hora, cuando el sol entra en el cañón y no hay nadie."
+      },
+      "Ostuni": {
+        "text": "Ostuni es la ciudad blanca: casas encaladas en lo alto de una colina, visibles desde kilómetros. El centro es un laberinto de callejones blancos y escaleras, y se recorre en dos horas.",
+        "see": [
+          "El centro histórico blanco",
+          "La catedral y su rosetón",
+          "La costa de Torre Guaceto, reserva natural, a 20 minutos"
+        ],
+        "tip": "Aquí se come bien y barato. Busca una masseria en los alrededores: son casas de campo convertidas en restaurantes, con productos de la huerta."
+      },
+      "Otranto": {
+        "text": "Otranto es el punto más al este de Italia, con un castillo, una catedral con un mosaico del siglo XII y un puerto pequeño. Desde aquí se ve Albania en los días claros.",
+        "see": [
+          "La catedral y su mosaico del árbol de la vida",
+          "El castillo aragonés",
+          "La costa hasta Santa Maria di Leuca"
+        ],
+        "tip": "El mosaico del árbol de la vida es de 1165 y ocupa todo el suelo. Siéntate en una silla y busca las figuras: hay un zodiaco, animales y escenas del Antiguo Testamento."
+      },
+      "Lecce": {
+        "text": "Lecce es la capital del barroco del sur, hecha de piedra dorada que brilla al sol. La basílica de Santa Croce es una locura de columnas y adornos, y el anfiteatro romano está en mitad de la plaza.",
+        "see": [
+          "La basílica de Santa Croce",
+          "La Piazza del Duomo, cerrada y de noche preciosa",
+          "El anfiteatro romano, medio enterrado en la plaza",
+          "Gallipoli, a 40 minutos, si te sobra un día"
+        ],
+        "tip": "El pasticciotto es el dulce de aquí, de hojaldre y crema, y se come caliente, recién hecho. Y el café en Lecce se pide en un bar de la plaza, de pie."
+      }
+    },
+    "gettingAround": "Tren y autobús, con coche para lo demás. Bari, Polignano, Monopoli y Lecce están en la línea de tren adriática, con trenes regionales frecuentes. Matera se alcanza desde Bari en autobús o en tren (con transbordo en Altamura), y desde aquí el coche ahorra una hora. Alberobello, Locorotondo y Ostuni se unen con autobuses poco frecuentes: el coche es la opción cómoda. Alquila en Bari y devuelve en Lecce o Brindisi para no volver atrás.",
+    "bestTime": "Mayo, junio, septiembre y octubre: buen tiempo, mar templado y menos gente. Julio y agosto son muy calurosos y la costa se llena; en agosto muchos restaurantes cierran unos días. En invierno hace frío en Matera y en el interior, pero las ciudades se recorren sin colas y los precios bajan.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Puglia y Matera?",
+        "answer": "Con 4 o 5 días ves Bari, Matera, Alberobello y Lecce. Con 7 a 9 añades Polignano, Ostuni y Otranto; con 11 o 12 entran también Gallipoli y la costa."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Ayuda mucho. El tren une Bari y Lecce, pero Matera y el valle de Itria se recorren mal en transporte público. Alquila en Bari y devuelve en Lecce."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Lecce, acabas en Bari, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuerto se vuela?",
+        "answer": "A Bari (BRI) o a Brindisi (BDS). Bari tiene más vuelos y está al norte; Brindisi, al sur, junto a Lecce."
+      }
+    ]
+  },
+  "en": {
+    "title": "Puglia and Matera itinerary",
+    "metaTitle": "Puglia and Matera: Bari, Matera, Alberobello and Lecce in 5 to 13 days · Lowfly",
+    "summary": "You fly into Bari, cross to Matera and come down through the Itria valley to Lecce. You fly home from Brindisi, so you never double back: trains and the odd bus are enough.",
+    "why": [
+      "Puglia is the heel of Italy and Matera sits just above it, in Basilicata. Together they make a trip like no other: dry-stone trulli, inhabited caves and a whole baroque city carved from golden stone.",
+      "The order matters. Bari and Matera first, the densest, then the coast and the south, with Lecce last, the most elegant.",
+      "What usually goes wrong is the car. Here it does help: Matera and the Itria valley are hard by public transport. Hire one in Bari and drop it in Lecce, without doubling back."
+    ],
+    "towns": {
+      "Bari": {
+        "text": "Bari is the gateway to the region and many people pass straight through towards Polignano. A mistake: Bari Vecchia, the old town, is a maze of alleys where women make orecchiette on their doorsteps.",
+        "see": [
+          "Bari Vecchia and the orecchiette street",
+          "The basilica of St Nicholas, with the saint's tomb",
+          "The lungomare, the longest seafront in Italy"
+        ],
+        "tip": "Fresh orecchiette is sold on the Strada delle Orecchiette and dried in the sun in the street. It is the cheapest and most useful souvenir you can take home."
+      },
+      "Matera": {
+        "text": "Matera is the oldest inhabited city in Europe: caves cut into the rock, lived in until the fifties and now turned into hotels and restaurants. At night, lit up, it looks like a nativity scene.",
+        "see": [
+          "The Sassi, the two cave districts",
+          "The rock church of Santa Maria de Idris",
+          "The Murgia Timone viewpoint, across the ravine"
+        ],
+        "tip": "Sleep in a sasso, in a cave. It costs more, but sleeping inside the rock is half the trip. And book early: the good places sell out."
+      },
+      "Alberobello": {
+        "text": "Alberobello is the town of trulli: white houses with conical dry-stone roofs, no mortar, built that way so they could be taken down when the tax collector came. Today it is a World Heritage site and full of shops.",
+        "see": [
+          "The Trullo Sovrano, the only two-storey one",
+          "The Aia Piccola area, the quieter one",
+          "Locorotondo, 15 minutes away, with white wine"
+        ],
+        "tip": "Arrive before ten or after six. In between, tour buses turn the town into a market."
+      },
+      "Polignano a Mare": {
+        "text": "Polignano is built on a white limestone cliff, with a tiny beach between two walls of rock. It is small and takes an afternoon, but the cove is one of the most photographed in Italy.",
+        "see": [
+          "The Lama Monachile cove, from the bridge",
+          "The old town and its balcony over the sea",
+          "The restaurant of Domenico Modugno's song, who was born here"
+        ],
+        "tip": "In summer the cove fills and there is no room. Swim early, when the sun comes into the gorge and there is nobody."
+      },
+      "Ostuni": {
+        "text": "Ostuni is the white city: whitewashed houses on top of a hill, visible for kilometres. The centre is a maze of white alleys and stairs, and takes two hours.",
+        "see": [
+          "The white old town",
+          "The cathedral and its rose window",
+          "The Torre Guaceto coast, a nature reserve, 20 minutes away"
+        ],
+        "tip": "You eat well and cheaply here. Look for a masseria nearby: farmhouses turned restaurants, with produce from the garden."
+      },
+      "Otranto": {
+        "text": "Otranto is the easternmost point of Italy, with a castle, a cathedral with a 12th-century mosaic and a small harbour. On clear days you can see Albania.",
+        "see": [
+          "The cathedral and its Tree of Life mosaic",
+          "The Aragonese castle",
+          "The coast down to Santa Maria di Leuca"
+        ],
+        "tip": "The Tree of Life mosaic is from 1165 and covers the whole floor. Sit on a chair and look for the figures: there is a zodiac, animals and scenes from the Old Testament."
+      },
+      "Lecce": {
+        "text": "Lecce is the capital of southern baroque, made of golden stone that shines in the sun. The basilica of Santa Croce is a frenzy of columns and ornament, and the Roman amphitheatre sits in the middle of the square.",
+        "see": [
+          "The basilica of Santa Croce",
+          "The Piazza del Duomo, enclosed and lovely at night",
+          "The Roman amphitheatre, half buried in the square",
+          "Gallipoli, 40 minutes away, if you have a day"
+        ],
+        "tip": "The pasticciotto is the local pastry, puff pastry and custard, eaten warm and fresh. And coffee in Lecce is ordered standing at a bar on the square."
+      }
+    },
+    "gettingAround": "Train and bus, with a car for the rest. Bari, Polignano, Monopoli and Lecce are on the Adriatic rail line, with frequent regional trains. Matera is reached from Bari by bus or train (with a change at Altamura), and from there a car saves an hour. Alberobello, Locorotondo and Ostuni are linked by infrequent buses: a car is the comfortable option. Hire in Bari and drop off in Lecce or Brindisi so you never double back.",
+    "bestTime": "May, June, September and October: good weather, warm sea and fewer people. July and August are very hot and the coast fills; in August many restaurants close for a few days. In winter it is cold in Matera and inland, but the cities are walked without queues and prices drop.",
+    "faq": [
+      {
+        "question": "How many days do you need for Puglia and Matera?",
+        "answer": "With 4 or 5 days you see Bari, Matera, Alberobello and Lecce. With 7 to 9 you add Polignano, Ostuni and Otranto; with 11 or 12 Gallipoli and the coast fit too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "It helps a lot. The train links Bari and Lecce, but Matera and the Itria valley are hard by public transport. Hire in Bari and drop off in Lecce."
+      },
+      {
+        "question": "Can the route be done the other way round?",
+        "answer": "Yes: it works both ways. If you start in Lecce, you finish in Bari, with the airport a step away."
+      },
+      {
+        "question": "Which airport do you fly to?",
+        "answer": "Bari (BRI) or Brindisi (BDS). Bari has more flights and is in the north; Brindisi is in the south, next to Lecce."
+      }
+    ]
+  }
+}

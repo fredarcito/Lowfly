@@ -1,0 +1,218 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "berlin-dresde-praga",
+    "en": "berlin-dresden-prague"
+  },
+  "photos": {
+    "Berlin": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Berlin_Mitte_June_2023_01.jpg/960px-Berlin_Mitte_June_2023_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 500,
+      "page": "https://commons.wikimedia.org/wiki/File:Berlin_Mitte_June_2023_01.jpg",
+      "author": "ArildV",
+      "license": "CC BY-SA 4.0"
+    },
+    "Prague": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG/960px-Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG",
+      "author": "Deror_avi",
+      "license": "CC BY-SA 4.0"
+    },
+    "Dresden": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Dresden%2C_Frauenkirche_--_2023_--_9387.jpg/960px-Dresden%2C_Frauenkirche_--_2023_--_9387.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Dresden,_Frauenkirche_--_2023_--_9387.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    "Saxon Switzerland (Bad Schandau)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/13-07-28-bad-schandau-03.jpg/960px-13-07-28-bad-schandau-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 531,
+      "page": "https://commons.wikimedia.org/wiki/File:13-07-28-bad-schandau-03.jpg",
+      "author": "Ralf Roletschek",
+      "license": "FAL"
+    },
+    "Leipzig": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Innenstadt_Leipzig_mit_Thomaskirche_von_Panorama_Tower_2013.jpg/960px-Innenstadt_Leipzig_mit_Thomaskirche_von_Panorama_Tower_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 534,
+      "page": "https://commons.wikimedia.org/wiki/File:Innenstadt_Leipzig_mit_Thomaskirche_von_Panorama_Tower_2013.jpg",
+      "author": "Tuxyso",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Berlín, Dresde y Praga en tren",
+    "metaTitle": "Ruta Berlín, Dresde y Praga en tren: de 5 a 11 días · Lowfly",
+    "summary": "Tres ciudades que la historia ha zarandeado, unidas por cuatro horas de tren. Entras por Berlín y sales por Praga, con Sajonia y la Suiza sajona en medio.",
+    "why": [
+      "Berlín, Dresde y Praga están en línea recta y el tren las une en tramos de una a cuatro horas. Es una ruta de ciudades, con poca naturaleza, y funciona muy bien en invierno, cuando los mercadillos y los museos tiran de la gente.",
+      "Cada una tiene su carácter: Berlín es grande, moderna y dispersa; Dresde es barroca y se recorre en un día; Praga es la más bonita y la más llena. Ponerlas en ese orden va de menos a más en postal.",
+      "Lo que suele fallar es Berlín. Es una ciudad de barrios y mucha gente se queda en la Puerta de Brandeburgo y Alexanderplatz. Elige dos barrios y camina: ahí está la ciudad."
+    ],
+    "towns": {
+      "Berlin": {
+        "text": "Berlín es enorme y no tiene un centro único: cada barrio funciona como un pueblo. Tres noches dan para el centro histórico, Kreuzberg y un museo de la isla.",
+        "see": [
+          "La Puerta de Brandeburgo y el Reichstag, con la cúpula gratis y con reserva",
+          "El Muro, en el East Side Gallery y en la Bernauer Straße",
+          "La isla de los Museos, con el Pergamon y el Neues Museum",
+          "Kreuzberg y Neukölln, para comer y salir",
+          "El memorial del Holocausto, junto a la puerta"
+        ],
+        "tip": "La cúpula del Reichstag es gratis, pero hay que reservar en la web del Bundestag con semanas de antelación. Lleva el pasaporte: lo piden en la entrada."
+      },
+      "Leipzig": {
+        "text": "Leipzig es la ciudad de Bach y de la revolución pacífica de 1989, que empezó en las plegarias de los lunes de la Nikolaikirche. Tiene un centro pequeño, pasajes comerciales y mucho arte.",
+        "see": [
+          "La Thomaskirche, donde Bach fue cantor 27 años",
+          "La Nikolaikirche, donde empezaron las protestas de 1989",
+          "Los pasajes del centro, como el Mädlerpassage",
+          "El barrio de Plagwitz, con los antiguos talleres convertidos en galerías"
+        ],
+        "tip": "El museo de Bach está frente a la Thomaskirche y es pequeño. Los motetes de los viernes por la tarde son gratis y suenan como en el siglo XVIII."
+      },
+      "Dresden": {
+        "text": "Dresde fue arrasada en febrero de 1945 y se ha reconstruido piedra a piedra, con las piedras negras mezcladas con las nuevas. El centro barroco es pequeño y se ve en un día.",
+        "see": [
+          "La Frauenkirche, reconstruida y con la cúpula visitable",
+          "El Zwinger, con la Galería de Pinturas de los Maestros Antiguos",
+          "El palacio de Dresde y la bóveda verde, con sus joyas",
+          "La orilla del Elba, en el barrio de Neustadt"
+        ],
+        "tip": "En la Frauenkirche se nota dónde están las piedras originales: son las oscuras. La subida a la cúpula es de 250 escalones y no hay ascensor."
+      },
+      "Saxon Switzerland (Bad Schandau)": {
+        "text": "La Suiza sajona es un paisaje de rocas de arenisca junto al Elba, a media hora de Dresde. Bad Schandau es el pueblo base, con el río delante y los senderos detrás.",
+        "see": [
+          "El Bastei, con el puente de piedra sobre las rocas",
+          "El mirador de Schrammsteine, si te gusta caminar",
+          "Un barco por el Elba hasta el Königsstein",
+          "La fortaleza de Königstein, una de las mayores de Europa"
+        ],
+        "tip": "El Bastei se llena a media mañana. Sube en el primer tren desde Dresde y estarás arriba antes de que lleguen los autobuses. Lleva calzado con suela: hay piedra mojada."
+      },
+      "Prague": {
+        "text": "Praga es la ciudad más bonita de la ruta y la que más gente tiene. Tres noches dan para el castillo, el centro y un barrio fuera del circuito, como Vinohrady.",
+        "see": [
+          "El puente de Carlos, a primera hora, antes de las nueve",
+          "El castillo de Praga y la catedral de San Vito",
+          "La plaza de la Ciudad Vieja y el reloj astronómico",
+          "El barrio judío de Josefov y sus sinagogas",
+          "Vyšehrad, el castillo del sur, con vistas al río"
+        ],
+        "tip": "El cambio de moneda en la calle es una trampa: usa cajeros de bancos o paga con tarjeta. Y no cambies en las oficinas con el cartel de «0 % comisión»."
+      }
+    },
+    "gettingAround": "Tren. Berlín-Dresde es hora y cuarto en ICE o dos horas en regional; Dresde-Bad Schandau, 40 minutos en tren de cercanías; Dresde-Praga, dos horas y cuarto en el tren Eurocity. Compra los billetes de larga distancia con antelación en la web de DB: el precio sube mucho. En Berlín el billete de día vale para metro, tranvía y autobús, y en Praga el billete de 24 o 72 horas cubre todo el transporte.",
+    "bestTime": "De abril a octubre para caminar por la Suiza sajona y ver las ciudades sin frío. Diciembre es buen mes para los mercadillos de Navidad de Dresde y Praga, que están entre los mejores de Europa. En enero y febrero hace frío y anochece pronto, pero hay pocos turistas.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Berlín y Praga. Con 7 u 8 añades Dresde y la Suiza sajona. Con 11 entran también Leipzig y una noche más en cada ciudad."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No. Todo está en tren y en las tres ciudades el coche es un estorbo."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Praga y saliendo por Berlín, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Berlín (BER) al entrar y a Praga (PRG) al salir. Los dos aeropuertos están a media hora del centro en tren."
+      }
+    ]
+  },
+  "en": {
+    "title": "Berlin, Dresden and Prague by train",
+    "metaTitle": "Berlin, Dresden and Prague by train: 5 to 11 days · Lowfly",
+    "summary": "Three cities that history has shaken hard, four hours of train apart. Fly into Berlin and out of Prague, with Saxony and Saxon Switzerland in between.",
+    "why": [
+      "Berlin, Dresden and Prague sit in a straight line and the train links them in legs of one to four hours. It's a city route, with little countryside, and it works well in winter, when markets and museums pull people in.",
+      "Each has its own character: Berlin is big, modern and spread out; Dresden is Baroque and takes a day; Prague is the prettiest and the most crowded. Doing them in that order goes from least to most postcard.",
+      "Where it usually goes wrong is Berlin. It's a city of neighbourhoods and plenty of people stay around the Brandenburg Gate and Alexanderplatz. Pick two districts and walk them: that's where the city is."
+    ],
+    "towns": {
+      "Berlin": {
+        "text": "Berlin is huge and has no single centre: each district works like its own town. Three nights covers the historic centre, Kreuzberg and one museum on Museum Island.",
+        "see": [
+          "The Brandenburg Gate and the Reichstag, whose dome is free but needs booking",
+          "The Wall, at the East Side Gallery and on Bernauer Straße",
+          "Museum Island, with the Pergamon and the Neues Museum",
+          "Kreuzberg and Neukölln, for food and nights out",
+          "The Holocaust Memorial, next to the gate"
+        ],
+        "tip": "The Reichstag dome is free, but you book on the Bundestag website weeks ahead. Bring your passport: they check it at the door."
+      },
+      "Leipzig": {
+        "text": "Leipzig is the city of Bach and of the 1989 peaceful revolution, which began at the Monday prayers in the Nikolaikirche. It has a small centre, arcades and a lot of art.",
+        "see": [
+          "The Thomaskirche, where Bach was cantor for 27 years",
+          "The Nikolaikirche, where the 1989 protests began",
+          "The city's arcades, such as the Mädlerpassage",
+          "The Plagwitz district, with old workshops turned into galleries"
+        ],
+        "tip": "The Bach museum faces the Thomaskirche and is small. The Friday afternoon motets are free and sound like the 18th century."
+      },
+      "Dresden": {
+        "text": "Dresden was flattened in February 1945 and rebuilt stone by stone, with the blackened originals mixed in among the new. The Baroque centre is small and takes a day.",
+        "see": [
+          "The Frauenkirche, rebuilt, with its climbable dome",
+          "The Zwinger, with the Old Masters Picture Gallery",
+          "The Royal Palace and the Green Vault, with its treasures",
+          "The Elbe embankment, in the Neustadt district"
+        ],
+        "tip": "On the Frauenkirche you can tell the original stones: they're the dark ones. The climb to the dome is 250 steps and there's no lift."
+      },
+      "Saxon Switzerland (Bad Schandau)": {
+        "text": "Saxon Switzerland is a landscape of sandstone towers along the Elbe, half an hour from Dresden. Bad Schandau is the base village, with the river in front and the trails behind.",
+        "see": [
+          "The Bastei, with the stone bridge over the rocks",
+          "The Schrammsteine viewpoint, if you like walking",
+          "A boat on the Elbe to Königstein",
+          "Königstein Fortress, one of the largest in Europe"
+        ],
+        "tip": "The Bastei fills up by mid-morning. Take the first train from Dresden and you'll be up there before the coaches. Wear shoes with grip: the rock gets wet."
+      },
+      "Prague": {
+        "text": "Prague is the prettiest city on the route and the busiest. Three nights covers the castle, the centre and a district off the circuit, such as Vinohrady.",
+        "see": [
+          "Charles Bridge, first thing, before nine",
+          "Prague Castle and St Vitus Cathedral",
+          "Old Town Square and the astronomical clock",
+          "The Jewish quarter of Josefov and its synagogues",
+          "Vyšehrad, the castle to the south, with views over the river"
+        ],
+        "tip": "Street currency exchange is a trap: use bank ATMs or pay by card. And don't change money at the offices with the \"0% commission\" signs."
+      }
+    },
+    "gettingAround": "Train. Berlin-Dresden is an hour and a quarter on ICE or two hours on a regional; Dresden-Bad Schandau, 40 minutes on the suburban train; Dresden-Prague, two and a quarter hours on the Eurocity. Book long-distance tickets ahead on the DB website: the price rises sharply. In Berlin a day ticket covers metro, tram and bus, and in Prague a 24 or 72-hour ticket covers everything.",
+    "bestTime": "April to October for walking in Saxon Switzerland and seeing the cities without the cold. December is good for the Christmas markets of Dresden and Prague, among the best in Europe. January and February are cold with early darkness, but there are few tourists.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Berlin and Prague. 7 or 8 adds Dresden and Saxon Switzerland. 11 also takes in Leipzig and an extra night in each city."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No. It's all by train, and in all three cities a car is a nuisance."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Prague and finish in Berlin and it's the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Berlin (BER) and out of Prague (PRG). Both airports are half an hour from the centre by train."
+      }
+    ]
+  }
+}

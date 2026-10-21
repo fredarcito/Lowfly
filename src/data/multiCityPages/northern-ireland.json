@@ -1,0 +1,270 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "irlanda-del-norte",
+    "en": "northern-ireland"
+  },
+  "photos": {
+    "Belfast": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Wikibelfast1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 1006,
+      "page": "https://commons.wikimedia.org/wiki/File:Wikibelfast1.jpg",
+      "author": "Conor2k10",
+      "license": "Public domain"
+    },
+    "Bushmills (Giant's Causeway)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Giant%27s_Causeway_%2814%29.JPG/960px-Giant%27s_Causeway_%2814%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 530,
+      "page": "https://commons.wikimedia.org/wiki/File:Giant%27s_Causeway_(14).JPG",
+      "author": "Chmee2",
+      "license": "CC BY 3.0"
+    },
+    "Derry": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Derry_Waterfront_-_geograph.org.uk_-_2166.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Derry_Waterfront_-_geograph.org.uk_-_2166.jpg",
+      "author": "Michael Parry",
+      "license": "CC BY-SA 2.0"
+    },
+    "Dublin": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/960px-Dublin_-_aerial_-_2025-07-07_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Dublin_-_aerial_-_2025-07-07_01.jpg",
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0"
+    },
+    "Ballycastle": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Ballycastle_and_harbour_-_geograph.org.uk_-_3335431.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Ballycastle_and_harbour_-_geograph.org.uk_-_3335431.jpg",
+      "author": "Willie Duffin",
+      "license": "CC BY-SA 2.0"
+    },
+    "Cushendall (Glens of Antrim)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Cushendall_Bay_-_geograph.org.uk_-_7076042.jpg/960px-Cushendall_Bay_-_geograph.org.uk_-_7076042.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 534,
+      "page": "https://commons.wikimedia.org/wiki/File:Cushendall_Bay_-_geograph.org.uk_-_7076042.jpg",
+      "author": "N Chadwick",
+      "license": "CC BY-SA 2.0"
+    },
+    "Enniskillen": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/Enniskillen_Round_O.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Enniskillen_Round_O.jpg",
+      "author": "Biglobiglo",
+      "license": "Public domain"
+    }
+  },
+  "es": {
+    "title": "Irlanda del Norte: Belfast, la Calzada del Gigante y Derry",
+    "metaTitle": "Ruta por Irlanda del Norte: Belfast, Calzada del Gigante y Derry, de 4 a 8 días · Lowfly",
+    "summary": "Entras por Belfast y sales por Dublín, con la costa de Antrim, la Calzada del Gigante y Derry en medio. Coches de alquiler y carreteras de acantilado.",
+    "why": [
+      "Irlanda del Norte es pequeña y se cruza en tres horas, pero la costa de Antrim es de las más bonitas de Europa: acantilados, calas y la Calzada del Gigante. Belfast y Derry añaden dos ciudades con historia reciente.",
+      "La ruta va de este a oeste por la costa y luego baja al sur hasta Dublín. No repite camino y combina paisaje con ciudades, y el coche de alquiler es lo que permite parar en los miradores.",
+      "Lo que suele fallar es el tiempo y la moneda. Aquí se paga en libras esterlinas, no en euros, y llueve casi todo el año. Lleva chubasquero y cambia dinero o paga con tarjeta."
+    ],
+    "towns": {
+      "Belfast": {
+        "text": "Belfast es una ciudad de ladrillo rojo y astilleros, con el museo del Titanic en el antiguo dique y los murales de los barrios del oeste. Dos noches dan para el centro y los murales.",
+        "see": [
+          "El museo del Titanic, en el antiguo astillero Harland & Wolff",
+          "Los murales de Falls Road y Shankill Road",
+          "El mercado de St George's, del siglo XIX",
+          "El barrio de la catedral, con los pubs"
+        ],
+        "tip": "Los murales se ven mejor con un taxi negro, que es como se llaman los taxis clásicos de aquí. El tour dura una hora y media y lo cuentan los propios vecinos."
+      },
+      "Cushendall (Glens of Antrim)": {
+        "text": "Cushendall es un pueblo de 1.200 habitantes en la costa de Antrim, con un puerto pequeño y los Glens detrás. Es la base para la costa y los valles de Glenariff y Glenballyeamon.",
+        "see": [
+          "El puerto y la playa de Cushendall",
+          "El valle de Glenariff, con la cascada y el sendero",
+          "La costa hasta Cushendun, con las cuevas",
+          "El pub McCollam's, con música los fines de semana"
+        ],
+        "tip": "La carretera de la costa entre Cushendall y Ballycastle es estrecha y con curvas, pero pasa por algunos de los mejores miradores. Ve despacio y para en los apartaderos."
+      },
+      "Ballycastle": {
+        "text": "Ballycastle es un pueblo de playa en el extremo noreste, con el ferry a la isla de Rathlin y la calzada de Fair Head al lado. Es la parada antes de la Calzada del Gigante.",
+        "see": [
+          "La playa y el puerto, con el castillo en ruinas",
+          "Fair Head, con los acantilados y la vista a Escocia",
+          "El ferry a la isla de Rathlin",
+          "El paseo marítimo, con los puestos de helados"
+        ],
+        "tip": "En días claros desde Fair Head se ve la costa de Escocia, a 20 kilómetros. La subida es de 40 minutos y el sendero está bien marcado."
+      },
+      "Bushmills (Giant's Causeway)": {
+        "text": "Bushmills es el pueblo de la destilería más antigua del mundo, con licencia de 1608, y está a tres kilómetros de la Calzada del Gigante. Se duerme aquí para ver la calzada a primera hora.",
+        "see": [
+          "La Calzada del Gigante, con las 40.000 columnas de basalto",
+          "La destilería de Bushmills, con visita y cata",
+          "El castillo de Dunluce, en ruinas sobre el acantilado",
+          "El puente de cuerda de Carrick-a-Rede, cerca"
+        ],
+        "tip": "La Calzada del Gigante es gratis si vas por el sendero público desde el centro de visitantes. El centro cobra por el aparcamiento y la audioguía."
+      },
+      "Derry": {
+        "text": "Derry es una ciudad amurallada del siglo XVII, con las murallas completas y un barrio histórico de Bogside con los murales. Se ve en un día y medio.",
+        "see": [
+          "Las murallas, de 1,5 kilómetros, con el paseo por encima",
+          "Los murales del Bogside",
+          "La catedral de San Columba",
+          "El museo de la Torre, con la historia del sitio de 1689"
+        ],
+        "tip": "El paseo por las murallas es gratis y dura una hora. Hazlo con un guía local: la historia del sitio y de los Troubles se entiende mucho mejor."
+      },
+      "Enniskillen": {
+        "text": "Enniskillen está en una isla entre dos lagos, en el condado de Fermanagh, y es la puerta del lago Erne. Se ve en medio día y el paisaje alrededor es de agua y bosque.",
+        "see": [
+          "El castillo de Enniskillen, con el museo",
+          "La catedral de San Macartin",
+          "El lago Erne, en barco hasta Devenish",
+          "La abadía de Devenish, en una isla"
+        ],
+        "tip": "El barco del lago Erne sale del muelle del centro y llega a la isla de Devenish en 45 minutos. Lleva chaqueta: en el agua hace más frío que en tierra."
+      },
+      "Dublin": {
+        "text": "Dublín es la puerta de entrada si vienes del sur, con el Trinity College, los pubs del centro y el aeropuerto a media hora. Muchos viajeros la usan solo como punto de salida o de llegada, pero merece una noche.",
+        "see": [
+          "El Trinity College y el Libro de Kells",
+          "La catedral de San Patricio",
+          "El barrio de Temple Bar, aunque sea para verlo",
+          "La calle O'Connell y el monumento a la Aguja"
+        ],
+        "tip": "El bus de Dublín a Belfast sale cada hora desde la estación de Busáras y tarda dos horas. Compra el billete en la web de Aircoach o de Translink: en taquilla es más caro."
+      }
+    },
+    "gettingAround": "Coche de alquiler. Belfast-Cushendall, una hora por la costa; Cushendall-Ballycastle, 25 minutos; Ballycastle-Bushmills, 20 minutos; Bushmills-Derry, una hora; Derry-Enniskillen, hora y media; Enniskillen-Dublín, dos horas y media. La carretera de la costa (A2) es la más bonita y la más lenta. En Belfast y Derry el coche estorba: aparca en las afueras y camina.",
+    "bestTime": "De mayo a septiembre, con días largos y menos lluvia. Junio y julio son los mejores meses para la costa. En invierno hay poca luz y muchos sitios de la costa cierran, aunque Belfast y Derry funcionan todo el año.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 o 5 días ves Belfast, la costa y la Calzada. Con 7 u 8 añades Derry y Enniskillen. Con más días se puede bajar a Dublín."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, para la costa y los pueblos. En Belfast y Derry se puede estar sin coche, pero entre ellos el transporte público es lento."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Dublín y saliendo por Belfast, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Belfast (BFS o la ciudad, BHD) al entrar y a Dublín (DUB) al salir. Desde Dublín hay bus directo a Belfast en dos horas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Northern Ireland: Belfast, the Giant's Causeway and Derry",
+    "metaTitle": "Northern Ireland route: Belfast, Giant's Causeway and Derry in 4 to 8 days · Lowfly",
+    "summary": "Fly into Belfast and out of Dublin, with the Antrim coast, the Giant's Causeway and Derry in between. Hire cars and clifftop roads.",
+    "why": [
+      "Northern Ireland is small and you can cross it in three hours, but the Antrim coast is one of the prettiest in Europe: cliffs, coves and the Giant's Causeway. Belfast and Derry add two cities with recent history.",
+      "The route runs east to west along the coast and then south to Dublin. It doesn't double back and mixes landscape with cities, and a hire car is what lets you stop at the viewpoints.",
+      "Where it usually goes wrong is the weather and the currency. You pay in pounds sterling here, not euros, and it rains almost all year. Bring a rain jacket and change money or pay by card."
+    ],
+    "towns": {
+      "Belfast": {
+        "text": "Belfast is a city of red brick and shipyards, with the Titanic museum in the old dock and the murals of the west Belfast districts. Two nights covers the centre and the murals.",
+        "see": [
+          "The Titanic museum, in the old Harland & Wolff yard",
+          "The murals on Falls Road and Shankill Road",
+          "St George's Market, from the 19th century",
+          "The Cathedral Quarter, with its pubs"
+        ],
+        "tip": "The murals are best seen from a black taxi, as the classic cabs here are called. The tour lasts ninety minutes and the locals tell it themselves."
+      },
+      "Cushendall (Glens of Antrim)": {
+        "text": "Cushendall is a village of 1,200 on the Antrim coast, with a small harbour and the Glens behind it. It's the base for the coast and the valleys of Glenariff and Glenballyeamon.",
+        "see": [
+          "The harbour and Cushendall beach",
+          "Glenariff valley, with its waterfall and trail",
+          "The coast to Cushendun, with its caves",
+          "McCollam's pub, with music at weekends"
+        ],
+        "tip": "The coast road between Cushendall and Ballycastle is narrow and winding, but it passes some of the best viewpoints. Go slowly and pull into the passing places."
+      },
+      "Ballycastle": {
+        "text": "Ballycastle is a beach town at the northeast tip, with the ferry to Rathlin Island and Fair Head next door. It's the stop before the Giant's Causeway.",
+        "see": [
+          "The beach and harbour, with the ruined castle",
+          "Fair Head, with its cliffs and the view to Scotland",
+          "The ferry to Rathlin Island",
+          "The seafront, with its ice-cream stalls"
+        ],
+        "tip": "On clear days you can see the Scottish coast from Fair Head, 20 kilometres away. The climb takes 40 minutes and the path is well marked."
+      },
+      "Bushmills (Giant's Causeway)": {
+        "text": "Bushmills is the village of the world's oldest distillery, licensed in 1608, three kilometres from the Giant's Causeway. You sleep here to see the causeway first thing.",
+        "see": [
+          "The Giant's Causeway, with its 40,000 basalt columns",
+          "The Bushmills distillery, with a tour and tasting",
+          "Dunluce Castle, in ruins on the cliff",
+          "The Carrick-a-Rede rope bridge, nearby"
+        ],
+        "tip": "The Giant's Causeway is free if you walk the public path from the visitor centre. The centre charges for parking and the audio guide."
+      },
+      "Derry": {
+        "text": "Derry is a 17th-century walled city, with the walls intact and the Bogside district of murals. A day and a half covers it.",
+        "see": [
+          "The walls, 1.5 kilometres long, with the walk along the top",
+          "The Bogside murals",
+          "St Columb's Cathedral",
+          "The Tower Museum, with the story of the 1689 siege"
+        ],
+        "tip": "The walk along the walls is free and takes an hour. Do it with a local guide: the story of the siege and the Troubles makes far more sense."
+      },
+      "Enniskillen": {
+        "text": "Enniskillen sits on an island between two lakes, in County Fermanagh, and is the gateway to Lough Erne. Half a day covers it and the landscape around is all water and woods.",
+        "see": [
+          "Enniskillen Castle, with its museum",
+          "St Macartin's Cathedral",
+          "Lough Erne by boat, to Devenish",
+          "Devenish Abbey, on its island"
+        ],
+        "tip": "The Lough Erne boat leaves from the town quay and reaches Devenish Island in 45 minutes. Bring a jacket: it's colder on the water than on land."
+      },
+      "Dublin": {
+        "text": "Dublin is the way in if you come from the south, with Trinity College, the pubs of the centre and the airport half an hour away. Many travellers use it only as a start or finish, but it's worth a night.",
+        "see": [
+          "Trinity College and the Book of Kells",
+          "St Patrick's Cathedral",
+          "Temple Bar, if only to see it",
+          "O'Connell Street and the Spire"
+        ],
+        "tip": "The bus from Dublin to Belfast leaves every hour from Busáras and takes two hours. Book on the Aircoach or Translink website: it's dearer at the counter."
+      }
+    },
+    "gettingAround": "Hire car. Belfast-Cushendall, an hour along the coast; Cushendall-Ballycastle, 25 minutes; Ballycastle-Bushmills, 20 minutes; Bushmills-Derry, an hour; Derry-Enniskillen, ninety minutes; Enniskillen-Dublin, two and a half hours. The coast road (A2) is the prettiest and the slowest. In Belfast and Derry a car is a nuisance: park on the edge and walk.",
+    "bestTime": "May to September, with long days and less rain. June and July are the best months for the coast. In winter there's little light and many coastal places close, though Belfast and Derry work all year.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 or 5 days gets you Belfast, the coast and the Causeway. 7 or 8 adds Derry and Enniskillen. With more time you can carry on to Dublin."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, for the coast and the villages. Belfast and Derry work without one, but public transport between them is slow."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Dublin and finish in Belfast and it's the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Into Belfast (BFS or the city airport, BHD) and out of Dublin (DUB). There's a direct bus from Dublin to Belfast in two hours."
+      }
+    ]
+  }
+}

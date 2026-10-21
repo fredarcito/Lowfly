@@ -7,7 +7,7 @@ import { routePageTexts } from "@/components/multiCity/data/texts";
 import { ENTER_RISE, riseDelay } from "@/constants/motion";
 import { cn } from "@/utils/cn";
 
-// A multi-city route's page body (/es/recorridos/italia-clasica; the photo header is RouteHero), rendered on the
+// A multi-city route's page body (/es/recorridos/classic-italy; the photo header is RouteHero), rendered on the
 // server for search engines, in the guides' look: why this route, its lengths, each town (what it is like, what to
 // see, a tip, its guide), getting between them and when to go, what people ask, and at the end the way to the
 // "Recorridos" search. No day by day and no prices: that is the search's and the reader's own itinerary's.

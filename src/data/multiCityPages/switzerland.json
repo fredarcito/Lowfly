@@ -1,0 +1,326 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "suiza",
+    "en": "switzerland"
+  },
+  "photos": {
+    "Zurich": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Zuerich_Fraumuenster_St_Peter.jpg/960px-Zuerich_Fraumuenster_St_Peter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Zuerich_Fraumuenster_St_Peter.jpg",
+      "author": "Ikiwaner",
+      "license": "CC BY-SA 3.0"
+    },
+    "Lucerne": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/00_0055_Buildings_in_Lucerne.jpg/960px-00_0055_Buildings_in_Lucerne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:00_0055_Buildings_in_Lucerne.jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0"
+    },
+    "Interlaken": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Interlaken01.JPG/960px-Interlaken01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 488,
+      "page": "https://commons.wikimedia.org/wiki/File:Interlaken01.JPG",
+      "author": "Paebi",
+      "license": "CC BY-SA 3.0"
+    },
+    "Geneva": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Le_jet_d-eau_de_Gen%C3%A8ve.jpg/960px-Le_jet_d-eau_de_Gen%C3%A8ve.jpg",
+      "width": 960,
+      "height": 960,
+      "page": "https://commons.wikimedia.org/wiki/File:Le_jet_d-eau_de_Gen%C3%A8ve.jpg",
+      "author": "Bernard Vogel",
+      "license": "CC BY-SA 4.0"
+    },
+    "Bern": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bern_luftaufnahme.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 538,
+      "page": "https://commons.wikimedia.org/wiki/File:Bern_luftaufnahme.png",
+      "author": "de:Benutzer:Reaast",
+      "license": "Public domain"
+    },
+    "Lausanne": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Lausanne_img_0585.jpg/960px-Lausanne_img_0585.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Lausanne_img_0585.jpg",
+      "author": "Rama",
+      "license": "CC BY-SA 2.0 fr"
+    },
+    "Basel": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Rhine_Rhein_Basel_2006_871.JPG/960px-Rhine_Rhein_Basel_2006_871.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Rhine_Rhein_Basel_2006_871.JPG",
+      "author": "Norbert Aepli, Switzerland (User:Noebu)",
+      "license": "CC BY 2.5"
+    },
+    "Zermatt": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/1_zermatt_night_2012.jpg/960px-1_zermatt_night_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 564,
+      "page": "https://commons.wikimedia.org/wiki/File:1_zermatt_night_2012.jpg",
+      "author": "chensiyuan",
+      "license": "CC BY-SA 4.0"
+    },
+    "Montreux": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Champ_de_narcisses_-.jpg/960px-Champ_de_narcisses_-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 458,
+      "page": "https://commons.wikimedia.org/wiki/File:Champ_de_narcisses_-.jpg",
+      "author": "Maude Rion",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Suiza en tren: Zúrich, Lucerna, Interlaken y Ginebra",
+    "metaTitle": "Ruta por Suiza en tren: Zúrich, Lucerna, Interlaken y Ginebra, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Zúrich y sales por Ginebra, con lagos, montañas y trenes que llegan a todas partes. La ruta más fácil de Europa para moverse sin coche, y la más cara.",
+    "why": [
+      "Suiza tiene la red de trenes más densa del mundo: no hay pueblo sin estación y los trenes salen cada media hora. Puedes dormir en Lucerna y estar en la cima de un pico a mediodía sin alquilar nada.",
+      "La ruta va de este a oeste y no repite camino: Zúrich, Lucerna, Interlaken, Berna, Zermatt o Montreux, y Ginebra. Cada tramo es de una a dos horas, y el paisaje cambia en cada uno.",
+      "Lo que suele fallar es el presupuesto. Suiza es carísima: un café cuesta 5 francos y un menú, 25. La solución es el supermercado, los pases de transporte y dormir en albergues o en pueblos en vez de en las ciudades grandes."
+    ],
+    "towns": {
+      "Basel": {
+        "text": "Basilea está en la frontera con Francia y Alemania, y el Rin la cruza por el centro. Tiene un casco antiguo pequeño, cuarenta museos y una feria de arte que es la más importante del mundo.",
+        "see": [
+          "La plaza del Mercado y el ayuntamiento rojo",
+          "La catedral, con la vista al Rin desde la terraza",
+          "La Fundación Beyeler, con arte moderno",
+          "Un baño en el Rin, como hacen los locales en verano"
+        ],
+        "tip": "En verano la gente se mete en el Rin con una bolsa estanca para la ropa y baja flotando con la corriente. Es gratis y es lo que hace todo el mundo."
+      },
+      "Zurich": {
+        "text": "Zúrich es la ciudad más grande y más cara del país, con un lago dentro y un casco antiguo de callejones. Se ve en un día, y el aeropuerto está a diez minutos en tren.",
+        "see": [
+          "El casco antiguo y la iglesia de San Pedro, con el reloj más grande de Europa",
+          "El lago de Zúrich, con el paseo hasta Tiefenbrunnen",
+          "El Kunsthaus, con la colección de arte suizo",
+          "El barrio de Niederdorf, para cenar"
+        ],
+        "tip": "El tranvía 4 sube al Polyterrasse y desde allí hay una vista del centro y el lago. Es gratis y se llega en diez minutos desde la estación."
+      },
+      "Lucerne": {
+        "text": "Lucerna es la ciudad postal de Suiza: un puente de madera del siglo XIV, un lago con montañas y una muralla con torres. Se ve en un día, pero dos dan para subir al Pilatus o al Rigi.",
+        "see": [
+          "El puente de la Capilla, con las pinturas del techo",
+          "El monumento del León, tallado en la roca",
+          "La muralla y las torres, con la subida a la Musegg",
+          "El monte Pilatus, en teleférico o en tren cremallera"
+        ],
+        "tip": "El tren cremallera del Pilatus es el más empinado del mundo, con 48 % de pendiente. Solo funciona de mayo a noviembre: en invierno se sube en teleférico."
+      },
+      "Interlaken": {
+        "text": "Interlaken está entre dos lagos y debajo de tres montañas, y es la base para el Jungfrau y el valle de Lauterbrunnen. El pueblo en sí es feo, pero la posición no tiene rival.",
+        "see": [
+          "El valle de Lauterbrunnen, con sus 72 cascadas",
+          "El Jungfraujoch, la estación de tren más alta de Europa",
+          "El lago de Brienz, en barco de vapor",
+          "El Harder Kulm, con el funicular desde el centro"
+        ],
+        "tip": "El Jungfraujoch cuesta más de 200 francos y hay que reservar. Si el día está nublado, no subas: arriba no se ve nada y no devuelven el dinero."
+      },
+      "Bern": {
+        "text": "Berna es la capital y parece un pueblo grande: un casco antiguo medieval con soportales, una torre del reloj con figuras y el río Aare dando la vuelta. Se ve en un día.",
+        "see": [
+          "El Zytglogge, la torre del reloj con las figuras en movimiento",
+          "Los soportales del casco antiguo, los más largos de Europa",
+          "La rosa de los vientos y la terraza del Bundeshaus",
+          "El oso de Berna, en el parque junto al río"
+        ],
+        "tip": "En verano la gente se baña en el Aare y se deja llevar por la corriente. Hay una escalera de entrada en el barrio de Marzili, y es gratis."
+      },
+      "Zermatt": {
+        "text": "Zermatt es un pueblo sin coches a los pies del Cervino, con casas de madera y un tren que sube a Gornergrat. Es caro, pero la vista del Cervino desde el pueblo es la mejor de los Alpes.",
+        "see": [
+          "El Cervino desde el puente de Kirchbrücke, en el centro",
+          "El Gornergrat, en tren cremallera, con vista al monte Rosa",
+          "El lago Riffelsee, con el reflejo del Cervino",
+          "El sendero de las cinco lagunas, si te gusta caminar"
+        ],
+        "tip": "El Cervino se ve mejor al amanecer y al atardecer, cuando la luz lo pone rojo. Por la mañana suele estar despejado; por la tarde se nubla."
+      },
+      "Montreux": {
+        "text": "Montreux está en la orilla norte del lago Lemán, con un paseo de flores de 13 kilómetros y el castillo de Chillon a las afueras. Es la parte francesa del país y se nota en la comida.",
+        "see": [
+          "El castillo de Chillon, a orillas del lago",
+          "El paseo de la floración, con las esculturas de Freddie Mercury",
+          "El tren panorámico de los Rochers-de-Naye",
+          "Los viñedos de Lavaux, en terraza, Patrimonio de la Humanidad"
+        ],
+        "tip": "El castillo de Chillon se ve en dos horas y está a 20 minutos andando del centro de Montreux. Ve a primera hora: los grupos llegan a las once."
+      },
+      "Geneva": {
+        "text": "Ginebra es la ciudad de la ONU y de la Cruz Roja, con un centro pequeño y un lago con el chorro de agua más famoso del país. Se ve en un día.",
+        "see": [
+          "El Jet d'Eau, el chorro de 140 metros",
+          "El casco antiguo y la catedral de San Pedro",
+          "El barrio de las organizaciones internacionales",
+          "El Museo de la Cruz Roja"
+        ],
+        "tip": "El transporte público de Ginebra es gratis para los huéspedes de hoteles y albergues: pide la tarjeta al hacer el check-in y vale toda la estancia."
+      },
+      "Lausanne": {
+        "text": "Lausana está en la orilla norte del lago Lemán, con la catedral gótica más grande de Suiza y el barrio de Ouchy junto al agua. Se ve en un día y el tren a Ginebra tarda 40 minutos.",
+        "see": [
+          "La catedral, con la subida a la torre",
+          "El barrio de Ouchy, con el puerto y el paseo del lago",
+          "El museo Olímpico, en el parque junto al lago",
+          "La plaza de la Palud, con el mercado"
+        ],
+        "tip": "La catedral es de las pocas de Suiza con vigilante en la torre: sube cada noche a las diez y grita la hora a los cuatro puntos cardinales. Es gratis verlo desde la plaza."
+      }
+    },
+    "gettingAround": "Tren. Zúrich-Lucerna, 45 minutos; Lucerna-Interlaken, dos horas por el Brünig; Interlaken-Berna, una hora; Berna-Zermatt, dos horas y cuarto con cambio en Visp; Berna-Montreux, hora y media; Montreux-Ginebra, una hora. Compra el Swiss Travel Pass si vas a hacer muchos trayectos: cubre trenes, barcos y autobuses, y da descuentos en los trenes de montaña. Los billetes sueltos se compran en la app SBB.",
+    "bestTime": "De junio a septiembre para caminar y subir a los miradores, con días largos y casi todo abierto. En octubre los colores son mejores y hay menos gente. En invierno los pueblos de montaña son bonitos, pero muchos senderos y trenes de montaña cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 o 6 días ves Zúrich, Lucerna, Interlaken y Ginebra. Con 8 añades Berna y Lausana. Con 11 a 13 entran también Zermatt, Montreux y Basilea."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No, y es mejor no tenerlo: los trenes llegan a todas partes y en Zermatt no hay coches. Aparcar en las ciudades cuesta caro."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Ginebra y saliendo por Zúrich, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Zúrich (ZRH), Basilea (BSL) o Ginebra (GVA). Los tres están a menos de 20 minutos del centro en tren."
+      }
+    ]
+  },
+  "en": {
+    "title": "Switzerland by train: Zurich, Lucerne, Interlaken and Geneva",
+    "metaTitle": "Switzerland by train: Zurich, Lucerne, Interlaken and Geneva in 5 to 13 days · Lowfly",
+    "summary": "Fly into Zurich and out of Geneva, with lakes, mountains and trains that go everywhere. The easiest route in Europe without a car, and the most expensive.",
+    "why": [
+      "Switzerland has the densest rail network in the world: there's no village without a station and trains leave every half hour. You can sleep in Lucerne and be on a summit by midday without hiring anything.",
+      "The route runs east to west and doesn't double back: Zurich, Lucerne, Interlaken, Bern, Zermatt or Montreux, and Geneva. Each leg is one to two hours, and the landscape changes with every one.",
+      "Where it usually goes wrong is the budget. Switzerland is very expensive: a coffee costs 5 francs and a set menu 25. The answer is supermarkets, travel passes, and sleeping in hostels or villages rather than the big cities."
+    ],
+    "towns": {
+      "Basel": {
+        "text": "Basel sits on the French and German border, with the Rhine running through the middle. It has a small old town, forty museums and an art fair that's the biggest in the world.",
+        "see": [
+          "The Marktplatz and the red town hall",
+          "The cathedral, with the view over the Rhine from its terrace",
+          "The Beyeler Foundation, with modern art",
+          "A swim in the Rhine, as locals do in summer"
+        ],
+        "tip": "In summer people get into the Rhine with a waterproof bag for their clothes and float downstream. It's free and everyone does it."
+      },
+      "Zurich": {
+        "text": "Zurich is the country's biggest and most expensive city, with a lake inside it and an old town of alleys. A day covers it, and the airport is ten minutes away by train.",
+        "see": [
+          "The old town and St Peter's church, with the largest clock face in Europe",
+          "Lake Zurich, with the walk to Tiefenbrunnen",
+          "The Kunsthaus, with its Swiss art collection",
+          "The Niederdorf district, for dinner"
+        ],
+        "tip": "Tram 4 goes up to the Polyterrasse and from there you get a view of the centre and the lake. It's free and ten minutes from the station."
+      },
+      "Lucerne": {
+        "text": "Lucerne is Switzerland's postcard city: a 14th-century wooden bridge, a lake ringed by mountains and a wall with towers. A day covers it, but two let you go up Pilatus or Rigi.",
+        "see": [
+          "The Chapel Bridge, with the paintings under its roof",
+          "The Lion Monument, carved into the rock",
+          "The town wall and towers, with the climb up the Musegg",
+          "Mount Pilatus, by cable car or rack railway"
+        ],
+        "tip": "The Pilatus rack railway is the steepest in the world, at 48%. It only runs from May to November: in winter you go up by cable car."
+      },
+      "Interlaken": {
+        "text": "Interlaken sits between two lakes and below three mountains, and it's the base for the Jungfrau and the Lauterbrunnen valley. The town itself is ugly, but its position has no rival.",
+        "see": [
+          "The Lauterbrunnen valley, with its 72 waterfalls",
+          "The Jungfraujoch, the highest railway station in Europe",
+          "Lake Brienz, by steamboat",
+          "The Harder Kulm, by funicular from the centre"
+        ],
+        "tip": "The Jungfraujoch costs over 200 francs and needs booking. If the day is cloudy, don't go up: you'll see nothing and they don't refund it."
+      },
+      "Bern": {
+        "text": "Bern is the capital and feels like a big village: a medieval old town with arcades, a clock tower with moving figures and the Aare looping around it. A day covers it.",
+        "see": [
+          "The Zytglogge, the clock tower with its moving figures",
+          "The old town arcades, the longest in Europe",
+          "The compass rose and the terrace by the parliament",
+          "The bears of Bern, in the park by the river"
+        ],
+        "tip": "In summer people swim in the Aare and let the current carry them. There's an entry stair in the Marzili district, and it's free."
+      },
+      "Zermatt": {
+        "text": "Zermatt is a car-free village at the foot of the Matterhorn, with wooden houses and a train up to Gornergrat. It's expensive, but the view of the Matterhorn from the village is the best in the Alps.",
+        "see": [
+          "The Matterhorn from the Kirchbrücke, in the centre",
+          "Gornergrat, by rack railway, with views of Monte Rosa",
+          "Riffelsee, with the Matterhorn reflected in it",
+          "The five-lakes trail, if you like walking"
+        ],
+        "tip": "The Matterhorn looks best at sunrise and sunset, when the light turns it red. Mornings are usually clear; afternoons cloud over."
+      },
+      "Montreux": {
+        "text": "Montreux is on the north shore of Lake Geneva, with a 13-kilometre flower promenade and Chillon Castle on the edge of town. This is the French-speaking side and you notice it in the food.",
+        "see": [
+          "Chillon Castle, on the lakeshore",
+          "The flower promenade, with the Freddie Mercury statue",
+          "The panoramic train to Rochers-de-Naye",
+          "The Lavaux vineyards, terraced, a World Heritage Site"
+        ],
+        "tip": "Chillon Castle takes two hours and is a 20-minute walk from the centre of Montreux. Go early: the groups arrive at eleven."
+      },
+      "Geneva": {
+        "text": "Geneva is the city of the UN and the Red Cross, with a small centre and a lake with the country's most famous water jet. A day covers it.",
+        "see": [
+          "The Jet d'Eau, the 140-metre jet",
+          "The old town and St Peter's Cathedral",
+          "The international organisations district",
+          "The Red Cross Museum"
+        ],
+        "tip": "Geneva's public transport is free for hotel and hostel guests: ask for the card at check-in and it covers your whole stay."
+      },
+      "Lausanne": {
+        "text": "Lausanne is on the north shore of Lake Geneva, with Switzerland's largest Gothic cathedral and the Ouchy district by the water. A day covers it and the train to Geneva takes 40 minutes.",
+        "see": [
+          "The cathedral, with the climb up the tower",
+          "The Ouchy district, with the harbour and the lakeside walk",
+          "The Olympic Museum, in the park by the lake",
+          "Place de la Palud, with its market"
+        ],
+        "tip": "The cathedral is one of the few in Switzerland with a watchman in the tower: he climbs up at ten every night and calls the hour to the four points of the compass. It's free to watch from the square."
+      }
+    },
+    "gettingAround": "Train. Zurich-Lucerne, 45 minutes; Lucerne-Interlaken, two hours via the Brünig; Interlaken-Bern, an hour; Bern-Zermatt, two and a quarter hours with a change at Visp; Bern-Montreux, ninety minutes; Montreux-Geneva, an hour. Buy the Swiss Travel Pass if you're making a lot of journeys: it covers trains, boats and buses and gives discounts on mountain railways. Single tickets are bought in the SBB app.",
+    "bestTime": "June to September for walking and going up to the viewpoints, with long days and almost everything open. October has the best colours and fewer people. In winter the mountain villages are lovely, but many trails and mountain railways close.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 or 6 days gets you Zurich, Lucerne, Interlaken and Geneva. 8 adds Bern and Lausanne. 11 to 13 also takes in Zermatt, Montreux and Basel."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No, and it's better not to have one: trains go everywhere and Zermatt has no cars. Parking in the cities is expensive."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes: start in Geneva and finish in Zurich and it's the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Zurich (ZRH), Basel (BSL) or Geneva (GVA). All three are under 20 minutes from the centre by train."
+      }
+    ]
+  }
+}

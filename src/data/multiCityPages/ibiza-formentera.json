@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "ibiza-y-formentera",
+    "en": "ibiza-and-formentera"
+  },
+  "photos": {
+    "Ibiza Town (Eivissa)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Eivissa%2C_harbour_from_castell.jpg/960px-Eivissa%2C_harbour_from_castell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Eivissa,_harbour_from_castell.jpg",
+      "author": "Gerda Arendt",
+      "license": "CC0"
+    },
+    "Santa Eulària des Riu": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Ibiza_Puig_de_Missa_asv2023-04_img1.jpg/960px-Ibiza_Puig_de_Missa_asv2023-04_img1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Ibiza_Puig_de_Missa_asv2023-04_img1.jpg",
+      "author": "A.Savin",
+      "license": "FAL"
+    },
+    "Formentera": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Platje-de-Ses-Illetes_Formentera.jpg/960px-Platje-de-Ses-Illetes_Formentera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Platje-de-Ses-Illetes_Formentera.jpg",
+      "author": "acediscovery",
+      "license": "CC BY 4.0"
+    },
+    "Palma": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Palma_de_Mallorca_cathedral_seen_from_the_side.jpg/960px-Palma_de_Mallorca_cathedral_seen_from_the_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Palma_de_Mallorca_cathedral_seen_from_the_side.jpg",
+      "author": "JIP",
+      "license": "CC BY-SA 3.0"
+    },
+    "Sóller": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Port_de_Soller_R17.jpg/960px-Port_de_Soller_R17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 478,
+      "page": "https://commons.wikimedia.org/wiki/File:Port_de_Soller_R17.jpg",
+      "author": "Marc Ryckaert (MJJR)",
+      "license": "CC BY 3.0"
+    }
+  },
+  "es": {
+    "title": "Ibiza y Formentera: Dalt Vila y el agua de Ses Illetes",
+    "metaTitle": "Ruta por Ibiza y Formentera: Dalt Vila y Ses Illetes, de 5 a 11 días · Lowfly",
+    "summary": "Entras por Ibiza y sales por el mismo aeropuerto, con Santa Eulària y Formentera en medio. Barcos cada media hora y el agua más clara del Mediterráneo.",
+    "why": [
+      "Ibiza y Formentera están a media hora de barco y se complementan: una tiene la ciudad amurallada de Dalt Vila, Patrimonio de la Humanidad, y la otra es una isla plana de playas y bicicletas. En una semana se ven las dos sin prisa.",
+      "La ruta sale y vuelve a Ibiza porque Formentera no tiene aeropuerto, así que el último tramo es siempre el barco. Eso deja la isla pequeña al final, cuando ya no quedan excursiones pendientes.",
+      "Lo que suele fallar es julio y agosto. Los barcos van llenos, los precios se doblan y las playas de Formentera no tienen sitio. Junio y septiembre son los meses buenos: agua templada y la mitad de gente."
+    ],
+    "towns": {
+      "Ibiza Town (Eivissa)": {
+        "text": "Ibiza es dos ciudades: la parte baja, con el puerto y los bares, y Dalt Vila, la ciudad amurallada del siglo XVI que se sube por una rampa desde el puerto. Duerme en la parte baja y sube a Dalt Vila al atardecer.",
+        "see": [
+          "Dalt Vila, con la catedral y las murallas",
+          "El barrio de la Marina, con las casas de pescadores",
+          "Las murallas de Ses Figueretes, con el paseo",
+          "Las playas de Talamanca y Figueretes, en la ciudad"
+        ],
+        "tip": "Dalt Vila se ve mejor a primera hora o al atardecer, cuando la piedra se pone naranja. A mediodía no hay sombra en la subida."
+      },
+      "Santa Eulària des Riu": {
+        "text": "Santa Eulària es el pueblo más tranquilo de Ibiza, con un paseo junto al río, una iglesia en lo alto y una playa de arena fina. Es la base para el norte de la isla.",
+        "see": [
+          "El paseo del río y el puente viejo",
+          "La iglesia de Santa Eulària, con la vista al pueblo",
+          "La playa de Santa Eulària y la de Es Canar",
+          "Las calas del norte, como Cala Xarraca y Benirràs"
+        ],
+        "tip": "En verano hay barcos de Santa Eulària a Formentera, además de los de Ibiza. Salen por la mañana y vuelven por la tarde, y son más tranquilos que los del puerto grande."
+      },
+      "Formentera": {
+        "text": "Formentera tiene 80 kilómetros cuadrados, un faro en el sur y playas de arena blanca con el agua a la altura de la cintura. Se recorre en bici o en moto, y el coche casi sobra.",
+        "see": [
+          "La playa de Ses Illetes, en el parque natural",
+          "El faro de la Mola, con el mercado de artesanía",
+          "La playa de Llevant, al otro lado del istmo",
+          "El pueblo de Sant Francesc, con la iglesia fortaleza"
+        ],
+        "tip": "Ses Illetes está dentro del parque natural y el aparcamiento se paga. Alquila una bici en el puerto de La Savina: la isla es llana y se llega a todo en media hora."
+      },
+      "Palma": {
+        "text": "La versión larga empieza en Palma, con la catedral, el barrio de Santa Catalina y el paseo marítimo. Si ya conoces Mallorca, aquí tienes otra oportunidad de ver lo que te quedó pendiente: el castillo de Bellver, la Lonja o el mercado de Santa Catalina.",
+        "see": [
+          "El castillo de Bellver, con la vista a la bahía",
+          "La Lonja, del siglo XV, junto al puerto",
+          "El mercado de Santa Catalina, para comer",
+          "El paseo marítimo hasta el Portitxol"
+        ],
+        "tip": "Si vienes de otro viaje por Mallorca, no repitas la catedral: sube a Bellver por la mañana y baja andando hasta el centro por el bosque. Es la parte que casi nadie hace."
+      },
+      "Sóller": {
+        "text": "Sóller aparece en la versión larga como parada de un día entre Palma e Ibiza. Si ya lo viste en la ruta de Mallorca, aprovecha para hacer lo que suele quedar fuera: el sendero de la Tramuntana hacia Deià o el puerto en barco.",
+        "see": [
+          "El sendero de Sóller a Deià, de tres horas",
+          "El puerto en barca, con las calas de la costa",
+          "La fábrica de naranjas y el museo de la naranja",
+          "El mirador de Son Marroig, hacia Deià"
+        ],
+        "tip": "El sendero a Deià sale del centro y sigue la costa por la montaña. Es de tres horas y hay que llevar agua: no hay fuentes en el camino."
+      }
+    },
+    "gettingAround": "Barco, bici y coche. Ibiza-Santa Eulària, 20 minutos en coche o 30 en bus; Ibiza-Formentera, 30 a 35 minutos en barco desde el puerto de Ibiza, cada media hora; en verano también desde Santa Eulària. En Formentera se alquila bici, moto o coche en La Savina o en Es Pujols. La versión larga empieza en Mallorca y cruza a Ibiza en ferri desde Palma.",
+    "bestTime": "Mayo, junio, septiembre y octubre: agua templada, barcos con sitio y precios normales. Julio y agosto son los meses de más gente y de precios altos, y las playas de Formentera se llenan a media mañana. En invierno muchos hoteles y barcos cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Ibiza y Formentera. Con 7 u 8 añades Santa Eulària y las calas del norte. Con 11 hay tiempo para Mallorca en la versión larga."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "En Ibiza ayuda para las calas del norte. En Formentera es mejor la bici o la moto: el coche no entra en las pistas del parque y aparcar es difícil."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "No: Formentera no tiene aeropuerto, así que la ruta empieza y acaba en Ibiza. La versión larga sí puede empezar en Mallorca."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Ibiza (IBZ), a 10 minutos de la ciudad. La versión larga entra por Palma (PMI) y sale por Ibiza."
+      }
+    ]
+  },
+  "en": {
+    "title": "Ibiza and Formentera: Dalt Vila and the water at Ses Illetes",
+    "metaTitle": "Ibiza and Formentera route: Dalt Vila and Ses Illetes in 5 to 11 days · Lowfly",
+    "summary": "Fly into Ibiza and out of the same airport, with Santa Eulària and Formentera in between. Boats every half hour and the clearest water in the Mediterranean.",
+    "why": [
+      "Ibiza and Formentera are half an hour apart by boat and complement each other: one has the walled town of Dalt Vila, a World Heritage Site, and the other is a flat island of beaches and bicycles. A week covers both without rushing.",
+      "The route starts and ends in Ibiza because Formentera has no airport, so the last leg is always the boat. That leaves the small island for the end, when no excursions are still pending.",
+      "Where it usually goes wrong is July and August. Boats are full, prices double and Formentera's beaches have no room. June and September are the good months: warm water and half the people."
+    ],
+    "towns": {
+      "Ibiza Town (Eivissa)": {
+        "text": "Ibiza is two towns: the lower one, with the harbour and the bars, and Dalt Vila, the 16th-century walled city you climb to by a ramp from the port. Sleep in the lower town and go up to Dalt Vila at sunset.",
+        "see": [
+          "Dalt Vila, with the cathedral and the walls",
+          "The Marina quarter, with its fishermen's houses",
+          "The Ses Figueretes walls, with the walk",
+          "Talamanca and Figueretes beaches, in the town"
+        ],
+        "tip": "Dalt Vila looks best early or at sunset, when the stone turns orange. At midday there's no shade on the climb."
+      },
+      "Santa Eulària des Riu": {
+        "text": "Santa Eulària is the calmest town on Ibiza, with a riverside promenade, a church on the hill and a fine-sand beach. It's the base for the north of the island.",
+        "see": [
+          "The river promenade and the old bridge",
+          "Santa Eulària church, with the view over the town",
+          "Santa Eulària and Es Canar beaches",
+          "The northern coves, such as Cala Xarraca and Benirràs"
+        ],
+        "tip": "In summer there are boats from Santa Eulària to Formentera as well as from Ibiza. They leave in the morning and return in the afternoon, and they're quieter than the big port."
+      },
+      "Formentera": {
+        "text": "Formentera covers 80 square kilometres, with a lighthouse in the south and white-sand beaches where the water is waist deep. You get around by bike or scooter, and a car is almost unnecessary.",
+        "see": [
+          "Ses Illetes beach, in the nature park",
+          "La Mola lighthouse, with its craft market",
+          "Llevant beach, on the other side of the isthmus",
+          "The village of Sant Francesc, with its fortress church"
+        ],
+        "tip": "Ses Illetes is inside the nature park and parking is charged. Hire a bike at La Savina port: the island is flat and you reach everything in half an hour."
+      },
+      "Palma": {
+        "text": "The long version starts in Palma, with the cathedral, the Santa Catalina quarter and the seafront. If you already know Mallorca, here's another chance at what you missed: Bellver castle, the Lonja or the Santa Catalina market.",
+        "see": [
+          "Bellver castle, with the view over the bay",
+          "The Lonja, from the 15th century, by the port",
+          "The Santa Catalina market, for food",
+          "The seafront walk to Portitxol"
+        ],
+        "tip": "If you've already been to Mallorca, don't repeat the cathedral: go up to Bellver in the morning and walk down to the centre through the woods. It's the part almost nobody does."
+      },
+      "Sóller": {
+        "text": "Sóller appears in the long version as a day stop between Palma and Ibiza. If you already saw it on the Mallorca route, use it for what usually gets left out: the Tramuntana trail to Deià or the port by boat.",
+        "see": [
+          "The Sóller to Deià trail, three hours",
+          "The port by boat, with the coastal coves",
+          "The orange factory and the orange museum",
+          "The Son Marroig viewpoint, towards Deià"
+        ],
+        "tip": "The Deià trail leaves from the centre and follows the coast through the mountains. It takes three hours and you need water: there are no taps on the way."
+      }
+    },
+    "gettingAround": "Boat, bike and car. Ibiza-Santa Eulària, 20 minutes by car or 30 by bus; Ibiza-Formentera, 30 to 35 minutes by boat from Ibiza port, every half hour; in summer also from Santa Eulària. On Formentera you hire a bike, scooter or car at La Savina or Es Pujols. The long version starts in Mallorca and crosses to Ibiza by ferry from Palma.",
+    "bestTime": "May, June, September and October: warm water, room on the boats and normal prices. July and August are the busiest and most expensive, and Formentera's beaches fill up by mid-morning. In winter many hotels and boats close.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Ibiza and Formentera. 7 or 8 adds Santa Eulària and the northern coves. 11 gives time for Mallorca on the long version."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "On Ibiza it helps for the northern coves. On Formentera a bike or scooter is better: cars can't go on the park tracks and parking is hard."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "No: Formentera has no airport, so the route starts and ends in Ibiza. The long version can start in Mallorca."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Ibiza (IBZ), 10 minutes from the town. The long version lands in Palma (PMI) and flies out of Ibiza."
+      }
+    ]
+  }
+}

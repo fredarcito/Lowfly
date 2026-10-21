@@ -1,0 +1,246 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "castilla",
+    "en": "madrid-and-castile"
+  },
+  "photos": {
+    "Madrid": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Madrid_%2838624991251%29.jpg/960px-Madrid_%2838624991251%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Madrid_(38624991251).jpg",
+      "author": "Dmitry Dzhus from London",
+      "license": "CC BY 2.0"
+    },
+    "Toledo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Toledo_%2837737041515%29.jpg/960px-Toledo_%2837737041515%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Toledo_(37737041515).jpg",
+      "author": "Dmitry Dzhus from London",
+      "license": "CC BY 2.0"
+    },
+    "Segovia": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Segovia_-_02_edited.jpg/960px-Segovia_-_02_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 370,
+      "page": "https://commons.wikimedia.org/wiki/File:Segovia_-_02_edited.jpg",
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0"
+    },
+    "Ávila": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Avila_001.jpg/960px-Avila_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:Avila_001.jpg",
+      "author": "Anual",
+      "license": "CC BY 3.0"
+    },
+    "Salamanca": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Reflejos_de_la_Catedrales_de_Salamanca.jpg/960px-Reflejos_de_la_Catedrales_de_Salamanca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:Reflejos_de_la_Catedrales_de_Salamanca.jpg",
+      "author": "Santiagova",
+      "license": "CC BY-SA 3.0 es"
+    },
+    "León": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Catedral_G%C3%B3tica_de_Le%C3%B3n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 1181,
+      "page": "https://commons.wikimedia.org/wiki/File:Catedral_G%C3%B3tica_de_Le%C3%B3n.jpg",
+      "author": "David Jiménez Llanes",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Madrid y Castilla",
+    "metaTitle": "Madrid y Castilla en tren: Toledo, Segovia, Ávila y Salamanca, de 5 a 13 días · Lowfly",
+    "summary": "Madrid como base y, desde allí, las ciudades Patrimonio que la rodean: Toledo, el acueducto de Segovia, las murallas de Ávila y la Salamanca dorada. Todo en tren.",
+    "why": [
+      "Castilla es una meseta alta, seca y fría en invierno, con ciudades de piedra dorada a una hora unas de otras. Madrid está en el centro y sirve de base para las primeras, pero a partir de Salamanca el viaje se hace lineal.",
+      "El orden importa. Toledo primero, que es la más densa; luego Segovia y Ávila, que se ven en un día cada una; y Salamanca al final, con dos noches, que es la que más apetece recorrer de noche.",
+      "Lo que suele fallar es el calor y el frío. En julio y agosto la meseta pasa de 35 grados y no hay sombra; en enero hiela. Mayo, junio y septiembre son los meses en que se camina a gusto."
+    ],
+    "towns": {
+      "Madrid": {
+        "text": "Madrid es una ciudad de museos y de terrazas, y se recorre por barrios. El centro está entre Sol, la Plaza Mayor y el Prado, y todo lo demás son barrios con vida propia: Malasaña, La Latina, Lavapiés.",
+        "see": [
+          "El Museo del Prado, con entrada reservada",
+          "El Reina Sofía, para el Guernica",
+          "El mercado de San Miguel, para picar de pie",
+          "El parque del Retiro, una mañana entera",
+          "La Latina, para el aperitivo del domingo"
+        ],
+        "tip": "Los domingos por la mañana el Rastro ocupa La Latina y la ciudad se llena. Es divertido, pero vigila la cartera: es donde más robos hay de Madrid."
+      },
+      "Toledo": {
+        "text": "Toledo es una ciudad de tres culturas metida en un meandro del Tajo, y se ve en un día. Las calles son empinadas y estrechas, y el centro está entero dentro de la muralla.",
+        "see": [
+          "La catedral, con el transparente barroco",
+          "La sinagoga del Tránsito y la de Santa María la Blanca",
+          "El alcázar, con el museo del ejército",
+          "El mirador del Valle, al otro lado del río"
+        ],
+        "tip": "El mirador del Valle se ve al atardecer y es la foto de Toledo. Está fuera de la ciudad: se llega en coche o en el autobús turístico."
+      },
+      "Segovia": {
+        "text": "Segovia tiene un acueducto romano que cruza la ciudad sin argamasa y un alcázar con forma de proa de barco. Se ve en un día, y el cochinillo es la comida obligada.",
+        "see": [
+          "El acueducto, desde la plaza del Azoguejo",
+          "El alcázar y su torre",
+          "La catedral y el barrio de la Judería",
+          "La iglesia de la Vera Cruz, fuera de la muralla"
+        ],
+        "tip": "El cochinillo se sirve entero y se corta con un plato, que luego se rompe. Es una ceremonia, y cuesta caro: ve a un mesón de los de siempre, no a los de la plaza."
+      },
+      "Ávila": {
+        "text": "Ávila tiene la muralla medieval mejor conservada de Europa, y se recorre por arriba en una hora. La ciudad de dentro es pequeña, con iglesias románicas y conventos de clausura.",
+        "see": [
+          "La muralla, con el paseo por el adarve",
+          "La catedral, que tiene aspecto de fortaleza",
+          "El convento de Santa Teresa",
+          "Los cuatro postes, el mirador de la muralla"
+        ],
+        "tip": "El paseo por el adarve de la muralla cuesta unos euros y hay que reservar hora en verano. Las vistas del campo son la mitad del paseo."
+      },
+      "Salamanca": {
+        "text": "Salamanca es la ciudad universitaria más antigua de España, y su plaza mayor es una de las más bonitas de Europa. La piedra es dorada y a la hora del atardecer la ciudad entera brilla.",
+        "see": [
+          "La plaza mayor, al atardecer",
+          "La universidad y su fachada plateresca",
+          "Las dos catedrales, la vieja y la nueva",
+          "La casa de las Conchas",
+          "El barrio de la Universidad, para tapear"
+        ],
+        "tip": "En la fachada de la universidad hay una rana escondida en la calavera. Encontrarla es la tradición, y los estudiantes te la señalan si preguntas."
+      },
+      "León": {
+        "text": "León tiene una catedral con las vidrieras más grandes de España y un barrio húmedo lleno de bares de tapas. Es una parada corta, de un día, pero merece la pena.",
+        "see": [
+          "La catedral y sus vidrieras, a media tarde",
+          "La basílica de San Isidoro y su panteón",
+          "El barrio húmedo, para tapear",
+          "La casa Botines, de Gaudí"
+        ],
+        "tip": "Las vidrieras se ven mejor a media tarde, cuando el sol entra de lado. La catedral cierra a mediodía y abre de nuevo por la tarde."
+      }
+    },
+    "gettingAround": "Tren de alta velocidad. Madrid y Toledo están a 35 minutos en Avant; Madrid y Segovia, a 30 minutos; Madrid y Ávila, a hora y media; Madrid y Salamanca, a hora y media en Alvia. Ávila y Salamanca están a hora y media en tren regional, y Salamanca y León, a hora y media. Compra los billetes con antelación: los Avant de Toledo y Segovia se agotan en las horas punta.",
+    "bestTime": "Abril, mayo, junio, septiembre y octubre: buen tiempo y menos gente. Julio y agosto son muy calurosos en la meseta, con más de 35 grados y sin sombra. En invierno hiela y hay niebla, pero las ciudades están tranquilas y los precios bajan. La Semana Santa en Salamanca y Ávila es muy concurrida.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Madrid y Castilla?",
+        "answer": "Con 5 o 6 días ves Madrid, Toledo y Segovia. Con 8 a 10 añades Ávila y Salamanca; con 11 a 13 entra también León."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren une todas las ciudades y los trayectos son cortos. El coche solo ayuda para los pueblos de la provincia de Segovia y para el mirador del Valle de Toledo."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por León, acabas en Madrid, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Madrid-Barajas (MAD), que tiene muchas conexiones y está a 30 minutos del centro en metro. Las demás ciudades no tienen aeropuerto con vuelos de bajo coste."
+      }
+    ]
+  },
+  "en": {
+    "title": "Madrid and Castile itinerary",
+    "metaTitle": "Madrid and Castile by train: Toledo, Segovia, Ávila and Salamanca in 5 to 13 days · Lowfly",
+    "summary": "Madrid as a base and, from there, the World Heritage cities around it: Toledo, Segovia's aqueduct, Ávila's walls and golden Salamanca. All by train.",
+    "why": [
+      "Castile is a high, dry plateau, cold in winter, with cities of golden stone an hour apart. Madrid sits in the middle and works as a base for the first ones, but from Salamanca the trip becomes a line.",
+      "The order matters. Toledo first, the densest; then Segovia and Ávila, a day each; and Salamanca last, with two nights, because it's the one you most want to walk at night.",
+      "What usually goes wrong is the heat and the cold. In July and August the plateau goes past 35°C with no shade; in January it freezes. May, June and September are the months you can walk comfortably."
+    ],
+    "towns": {
+      "Madrid": {
+        "text": "Madrid is a city of museums and terraces, and you take it neighbourhood by neighbourhood. The centre sits between Sol, Plaza Mayor and the Prado, and everything else is districts with lives of their own: Malasaña, La Latina, Lavapiés.",
+        "see": [
+          "The Prado, with a booked ticket",
+          "The Reina Sofía, for Guernica",
+          "San Miguel market, for standing-up snacks",
+          "The Retiro park, a whole morning",
+          "La Latina, for Sunday aperitivo"
+        ],
+        "tip": "On Sunday mornings the Rastro fills La Latina and the city with it. It's fun, but watch your wallet: this is where most of Madrid's pickpocketing happens."
+      },
+      "Toledo": {
+        "text": "Toledo is a city of three cultures inside a bend of the Tagus, and a day covers it. The streets are steep and narrow, and the whole centre sits inside the walls.",
+        "see": [
+          "The cathedral, with its baroque transparente",
+          "The Synagogues of El Tránsito and Santa María la Blanca",
+          "The alcázar, with the army museum",
+          "The Mirador del Valle, across the river"
+        ],
+        "tip": "The Mirador del Valle is the sunset shot of Toledo. It's outside the city: you get there by car or on the tourist bus."
+      },
+      "Segovia": {
+        "text": "Segovia has a Roman aqueduct crossing the city without mortar and a castle shaped like a ship's prow. A day covers it, and suckling pig is the compulsory meal.",
+        "see": [
+          "The aqueduct, from Plaza del Azoguejo",
+          "The alcázar and its tower",
+          "The cathedral and the Jewish quarter",
+          "Vera Cruz church, outside the walls"
+        ],
+        "tip": "Suckling pig is served whole and carved with a plate, which is then smashed. It's a ceremony and it's expensive: go to an old mesón, not to the ones on the square."
+      },
+      "Ávila": {
+        "text": "Ávila has the best-preserved medieval wall in Europe, and you walk it in an hour. The town inside is small, with Romanesque churches and cloistered convents.",
+        "see": [
+          "The walls, walking the rampart",
+          "The cathedral, which looks like a fortress",
+          "The convent of Saint Teresa",
+          "Los Cuatro Postes, the viewpoint over the walls"
+        ],
+        "tip": "Walking the rampart costs a few euros and needs a booked slot in summer. The views over the countryside are half the point."
+      },
+      "Salamanca": {
+        "text": "Salamanca has the oldest university in Spain and a main square among the finest in Europe. The stone is golden, and at sunset the whole city glows.",
+        "see": [
+          "The Plaza Mayor, at sunset",
+          "The university and its plateresque facade",
+          "The two cathedrals, old and new",
+          "The Casa de las Conchas",
+          "The university quarter, for tapas"
+        ],
+        "tip": "There's a frog hidden in the skull on the university facade. Finding it is the tradition, and students will point it out if you ask."
+      },
+      "León": {
+        "text": "León has the largest stained glass in Spain and a wet quarter full of tapas bars. It's a short stop, a day, but it earns its place.",
+        "see": [
+          "The cathedral and its windows, mid-afternoon",
+          "San Isidoro basilica and its pantheon",
+          "The Barrio Húmedo, for tapas",
+          "Casa Botines, by Gaudí"
+        ],
+        "tip": "The windows look best mid-afternoon, when the sun comes in from the side. The cathedral closes at midday and reopens in the afternoon."
+      }
+    },
+    "gettingAround": "High-speed train. Madrid and Toledo are 35 minutes apart on an Avant; Madrid and Segovia, 30 minutes; Madrid and Ávila, an hour and a half; Madrid and Salamanca, an hour and a half on an Alvia. Ávila and Salamanca are an hour and a half apart on a regional train, and Salamanca and León an hour and a half. Book ahead: the Toledo and Segovia Avants sell out at peak hours.",
+    "bestTime": "April, May, June, September and October: good weather and fewer people. July and August are very hot on the plateau, over 35°C and with no shade. Winter freezes and fogs over, but the cities are quiet and prices drop. Holy Week in Salamanca and Ávila is very busy.",
+    "faq": [
+      {
+        "question": "How many days do you need for Madrid and Castile?",
+        "answer": "5 or 6 days covers Madrid, Toledo and Segovia. With 8 to 10 you add Ávila and Salamanca; with 11 to 13 León comes in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train links every city and the journeys are short. A car only helps for the villages of Segovia province and the Mirador del Valle in Toledo."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in León and you finish in Madrid, with the airport close by."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Madrid-Barajas (MAD), which has plenty of connections and is 30 minutes from the centre by metro. The other cities have no airport with low-cost flights."
+      }
+    ]
+  }
+}

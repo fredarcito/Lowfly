@@ -1,0 +1,244 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "cataluna",
+    "en": "catalonia"
+  },
+  "photos": {
+    "Tarragona": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/E5320-Vista-de-Tarragona.jpg/960px-E5320-Vista-de-Tarragona.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:E5320-Vista-de-Tarragona.jpg",
+      "author": "User:Vmenkov",
+      "license": "CC BY-SA 3.0"
+    },
+    "Sitges": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sitges_-_Ansicht_4.jpg/960px-Sitges_-_Ansicht_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Sitges_-_Ansicht_4.jpg",
+      "author": "Werner Lang (Wela49)",
+      "license": "CC BY-SA 3.0"
+    },
+    "Barcelona": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Aerial_view_of_La_Sagrada_Familia%2C_Barcelona%2C_Spain_%2851227006134%29.jpg/960px-Aerial_view_of_La_Sagrada_Familia%2C_Barcelona%2C_Spain_%2851227006134%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_La_Sagrada_Familia,_Barcelona,_Spain_(51227006134).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0"
+    },
+    "Figueres": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/20061227-Figueres_Sant_Pere_MQ.jpg/960px-20061227-Figueres_Sant_Pere_MQ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:20061227-Figueres_Sant_Pere_MQ.jpg",
+      "author": "Photograph : Luidger",
+      "license": "CC BY-SA 3.0"
+    },
+    "Cadaqués": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cadaques_Pueblo_Marinero.JPG/960px-Cadaques_Pueblo_Marinero.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 438,
+      "page": "https://commons.wikimedia.org/wiki/File:Cadaques_Pueblo_Marinero.JPG",
+      "author": "Anthiro 57",
+      "license": "CC BY-SA 3.0 es"
+    },
+    "Girona": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Girona_des_de_l_aire_edited.jpg/960px-Girona_des_de_l_aire_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Girona_des_de_l_aire_edited.jpg",
+      "author": "Patronat de Turisme Costa Brava Pirineu de Girona",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Cataluña: Tarragona, Barcelona y la Costa Brava",
+    "metaTitle": "Cataluña en tren: Tarragona, Barcelona, Figueres y Girona, de 5 a 13 días · Lowfly",
+    "summary": "Empiezas entre ruinas romanas en Tarragona y acabas en la Costa Brava de Dalí, con Barcelona en medio. Todo en tren, salvo el último tramo hasta Cadaqués.",
+    "why": [
+      "Cataluña tiene tres capas que se superponen bien: la romana en Tarragona, la modernista en Barcelona y la de los pueblos blancos de la Costa Brava. El tren las une casi todas.",
+      "El orden importa. Tarragona y Sitges primero, que son tranquilas; Barcelona después, con tres noches; y la Costa Brava al final, con Girona como base y Cadaqués como excursión.",
+      "Lo que suele fallar es Barcelona en agosto. La ciudad está llena, hace calor y los pisos turísticos están por las nubes. Junio y septiembre son mejores, y la Costa Brava fuera de temporada es otra cosa."
+    ],
+    "towns": {
+      "Tarragona": {
+        "text": "Tarragona fue capital de la Hispania romana y conserva un anfiteatro junto al mar, un circo y una muralla. El centro medieval está encima, y se ve en un día.",
+        "see": [
+          "El anfiteatro romano, junto a la playa",
+          "El circo y las murallas romanas",
+          "La catedral y el barrio medieval",
+          "El acueducto de les Ferreres, a las afueras"
+        ],
+        "tip": "El anfiteatro está al lado de la playa y se ve desde el paseo. La entrada conjunta con el circo y el museo cuesta menos que por separado."
+      },
+      "Sitges": {
+        "text": "Sitges es un pueblo de playa con casas modernistas y un ambiente muy abierto, y está a 40 minutos de Barcelona. Se ve en una tarde, con tiempo para bañarse.",
+        "see": [
+          "La playa de San Sebastián y la iglesia junto al mar",
+          "El museo del Cau Ferrat, de Santiago Rusiñol",
+          "Las calles del casco antiguo",
+          "El paseo marítimo hasta la punta"
+        ],
+        "tip": "En verano la playa está llena y el aparcamiento es imposible. Ve en tren: la estación está a cinco minutos de la playa."
+      },
+      "Barcelona": {
+        "text": "Barcelona se recorre por barrios y en metro, y en tres días se ve lo esencial sin correr. El Eixample es cuadriculado y elegante; el Gòtic, estrecho y ruidoso; Gràcia, de pueblo.",
+        "see": [
+          "La Sagrada Família, con entrada reservada y hora fija",
+          "El Park Güell, a primera hora",
+          "El mercado de la Boqueria, entre semana",
+          "El barrio de Gràcia, para cenar",
+          "La Barceloneta, si hace buen día"
+        ],
+        "tip": "La Sagrada Família solo se visita con hora reservada, y las entradas se agotan días antes. Compra la de la torre si quieres subir: es otra cola aparte."
+      },
+      "Figueres": {
+        "text": "Figueres es la ciudad de Dalí, y el teatro-museo que construyó allí es una de las cosas más raras de Europa. Se ve en media jornada, con el museo y una vuelta por el centro.",
+        "see": [
+          "El teatro-museo Dalí, con entrada reservada",
+          "La iglesia de Sant Pere, con su fachada",
+          "El museo del juguete",
+          "La rambla y el centro histórico"
+        ],
+        "tip": "El museo Dalí es enorme y se llena: reserva la entrada con días de antelación y ve a primera hora. La visita dura dos horas como mínimo."
+      },
+      "Cadaqués": {
+        "text": "Cadaqués es un pueblo blanco al final de una carretera de curvas, con una bahía pequeña y la casa de Dalí en Portlligat al lado. Es tranquilo fuera de temporada y muy lleno en agosto.",
+        "see": [
+          "La casa-museo de Dalí, en Portlligat, con reserva",
+          "La bahía y la iglesia de Santa Maria",
+          "El paseo hasta Portlligat, por el camino de la costa",
+          "Las calas de alrededor, si tienes coche"
+        ],
+        "tip": "La casa de Dalí solo se visita con reserva previa y en grupos pequeños. Se agota semanas antes en verano: compra la entrada antes de reservar el hotel."
+      },
+      "Girona": {
+        "text": "Girona tiene un barrio judío muy bien conservado, una catedral con la nave gótica más ancha de Europa y unas murallas que se recorren enteras. Se ve en dos días sin prisa.",
+        "see": [
+          "La catedral y su escalinata",
+          "El barrio judío y el call",
+          "Las murallas y el paseo de la Muralla",
+          "Los baños árabes"
+        ],
+        "tip": "Las murallas se recorren por arriba, desde la catedral hasta el río, y son gratis. Es el mejor paseo de la ciudad y casi nadie lo hace entero."
+      }
+    },
+    "gettingAround": "Tren y autobús. Tarragona y Barcelona están a una hora en tren regional; Sitges, a 40 minutos de Barcelona. Barcelona y Figueres, a una hora en AVE o en tren regional; Figueres y Girona, a 40 minutos. Cadaqués no tiene tren: se llega en autobús desde Figueres en hora y media, con pocas frecuencias. Compra los billetes de AVE con antelación.",
+    "bestTime": "Mayo, junio, septiembre y octubre: buen tiempo y menos gente. Julio y agosto son los meses de playa, con la Costa Brava llena y precios altos. En invierno hace frío pero hay sol, y las ciudades están tranquilas. La temporada de Cadaqués es de Semana Santa a octubre: fuera de ella, muchos hoteles cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Cataluña?",
+        "answer": "Con 5 o 6 días ves Barcelona y Girona. Con 8 a 10 añades Tarragona y Sitges; con 11 a 13 entran también Figueres y Cadaqués."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para las ciudades: el tren une Tarragona, Sitges, Barcelona, Figueres y Girona. El coche ayuda para Cadaqués y para las calas de la Costa Brava, donde los autobuses pasan poco."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Girona, acabas en Tarragona, con el aeropuerto de Reus al lado."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Barcelona (BCN), Girona (GRO) o Reus (REU). Barcelona tiene muchas conexiones y está a 30 minutos del centro; Girona está a 20 minutos y Reus a 15."
+      }
+    ]
+  },
+  "en": {
+    "title": "Catalonia itinerary: Tarragona, Barcelona and the Costa Brava",
+    "metaTitle": "Catalonia by train: Tarragona, Barcelona, Figueres and Girona in 5 to 13 days · Lowfly",
+    "summary": "Start among Roman ruins in Tarragona and finish on Dalí's Costa Brava, with Barcelona in between. All by train, except the last stretch to Cadaqués.",
+    "why": [
+      "Catalonia has three layers that stack well: the Roman one in Tarragona, the modernist one in Barcelona and the white villages of the Costa Brava. The train joins almost all of them.",
+      "The order matters. Tarragona and Sitges first, the quiet ones; Barcelona after, with three nights; and the Costa Brava last, with Girona as a base and Cadaqués as a day trip.",
+      "What usually goes wrong is Barcelona in August. The city is full, it's hot and holiday flats are sky-high. June and September are better, and the Costa Brava out of season is another place."
+    ],
+    "towns": {
+      "Tarragona": {
+        "text": "Tarragona was the capital of Roman Hispania and keeps an amphitheatre by the sea, a circus and a wall. The medieval centre sits on top, and a day covers it.",
+        "see": [
+          "The Roman amphitheatre, beside the beach",
+          "The circus and the Roman walls",
+          "The cathedral and the medieval quarter",
+          "The Ferreres aqueduct, on the edge of town"
+        ],
+        "tip": "The amphitheatre is next to the beach and can be seen from the promenade. A combined ticket with the circus and the museum costs less than separate ones."
+      },
+      "Sitges": {
+        "text": "Sitges is a beach town with modernist houses and a very open mood, 40 minutes from Barcelona. An afternoon covers it, with time for a swim.",
+        "see": [
+          "San Sebastián beach and the church by the sea",
+          "The Cau Ferrat museum, of Santiago Rusiñol",
+          "The streets of the old town",
+          "The seafront walk out to the point"
+        ],
+        "tip": "In summer the beach is packed and parking is impossible. Take the train: the station is five minutes from the beach."
+      },
+      "Barcelona": {
+        "text": "Barcelona is taken neighbourhood by neighbourhood and by metro, and three days covers the essentials without rushing. The Eixample is gridded and elegant; the Gòtic, narrow and loud; Gràcia, like a village.",
+        "see": [
+          "The Sagrada Família, with a booked ticket and a fixed time",
+          "Park Güell, first thing",
+          "La Boqueria market, on a weekday",
+          "The Gràcia quarter, for dinner",
+          "The Barceloneta, if the weather's good"
+        ],
+        "tip": "The Sagrada Família is only visited with a timed ticket, and they sell out days ahead. Buy the tower one too if you want to go up: it's a separate queue."
+      },
+      "Figueres": {
+        "text": "Figueres is Dalí's town, and the theatre-museum he built there is one of the strangest things in Europe. Half a day covers the museum and a walk round the centre.",
+        "see": [
+          "The Dalí Theatre-Museum, with a booked ticket",
+          "Sant Pere church and its facade",
+          "The toy museum",
+          "The rambla and the old centre"
+        ],
+        "tip": "The Dalí museum is huge and it fills up: book days ahead and go first thing. The visit takes two hours at least."
+      },
+      "Cadaqués": {
+        "text": "Cadaqués is a white village at the end of a winding road, with a small bay and Dalí's house at Portlligat next door. It's quiet out of season and very full in August.",
+        "see": [
+          "Dalí's house-museum at Portlligat, by booking",
+          "The bay and Santa Maria church",
+          "The walk to Portlligat, along the coastal path",
+          "The coves around it, if you have a car"
+        ],
+        "tip": "Dalí's house is only visited by prior booking and in small groups. It sells out weeks ahead in summer: buy the ticket before booking the hotel."
+      },
+      "Girona": {
+        "text": "Girona has a beautifully preserved Jewish quarter, a cathedral with the widest Gothic nave in Europe and walls you can walk the whole way round. Two days covers it without hurrying.",
+        "see": [
+          "The cathedral and its staircase",
+          "The Jewish quarter, the call",
+          "The walls and the Passeig de la Muralla",
+          "The Arab baths"
+        ],
+        "tip": "The walls are walked along the top, from the cathedral down to the river, and they're free. It's the best walk in the city and almost nobody does the whole thing."
+      }
+    },
+    "gettingAround": "Train and bus. Tarragona and Barcelona are an hour apart on a regional train; Sitges is 40 minutes from Barcelona. Barcelona and Figueres are an hour apart by AVE or regional train; Figueres and Girona, 40 minutes. Cadaqués has no station: you reach it by bus from Figueres in an hour and a half, with few departures. Book AVE tickets ahead.",
+    "bestTime": "May, June, September and October: good weather and fewer people. July and August are the beach months, with the Costa Brava full and prices high. Winter is cold but sunny, and the cities are quiet. Cadaqués is open from Easter to October: outside that, many hotels close.",
+    "faq": [
+      {
+        "question": "How many days do you need for Catalonia?",
+        "answer": "5 or 6 days covers Barcelona and Girona. With 8 to 10 you add Tarragona and Sitges; with 11 to 13 Figueres and Cadaqués come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the cities: the train links Tarragona, Sitges, Barcelona, Figueres and Girona. A car helps for Cadaqués and the Costa Brava coves, where buses are infrequent."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Girona and you finish in Tarragona, with Reus airport next door."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Barcelona (BCN), Girona (GRO) or Reus (REU). Barcelona has plenty of connections and is 30 minutes from the centre; Girona is 20 minutes away and Reus 15."
+      }
+    ]
+  }
+}

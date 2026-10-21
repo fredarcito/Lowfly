@@ -1,5 +1,5 @@
 {
-  "navidad-en-alsacia": {
+  "christmas-alsace": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -205,7 +205,7 @@
       "town": "Colmar"
     }
   },
-  "navidad-en-baviera": {
+  "christmas-bavaria": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -388,7 +388,7 @@
       "town": "Núremberg"
     }
   },
-  "navidad-en-el-rin": {
+  "christmas-rhine": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -553,7 +553,7 @@
       "town": "Colonia"
     }
   },
-  "navidad-berlin-dresde-praga": {
+  "christmas-berlin-dresden-prague": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -717,7 +717,7 @@
       "town": "Dresde"
     }
   },
-  "navidad-en-centroeuropa": {
+  "christmas-central-europe": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -890,7 +890,7 @@
       "town": "Praga"
     }
   },
-  "navidad-en-polonia": {
+  "christmas-poland": {
     "kind": "surprise",
     "reviewed": false,
     "name": {
@@ -1054,7 +1054,7 @@
       "town": "Breslavia"
     }
   },
-  "navidad-en-el-baltico": {
+  "christmas-baltics": {
     "kind": "surprise",
     "reviewed": false,
     "name": {

@@ -30,7 +30,7 @@ const placeOf = async (code, lang) => {
   return { id: `airport-${code}`, name: airport.city, region: null, country: airport.country, countryCode: airport.countryCode, lat: airport.lat, lng: airport.lon, code };
 };
 
-// A town of a multi-city route ("italia-clasica/full/2", utils/manualTrips isRouteTown), or null
+// A town of a multi-city route ("classic-italy/full/2", utils/manualTrips isRouteTown), or null
 const routeTownOf = (ref, lang) => {
   const [id, version, index] = ref.split("/");
   const town = multiCityRoute(id)?.versions[version]?.stops[Number(index)];

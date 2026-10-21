@@ -1,0 +1,244 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "italia-clasica",
+    "en": "classic-italy"
+  },
+  "photos": {
+    "Venice": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Rialto_Gondoliers.jpg/1280px-Rialto_Gondoliers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 839,
+      "page": "https://commons.wikimedia.org/wiki/File:Rialto_Gondoliers.jpg",
+      "author": "Saffron Blaze",
+      "license": "CC BY-SA 3.0"
+    },
+    "Bologna": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Piazza_Maggiore_nell%27ora_blu.jpg/1280px-Piazza_Maggiore_nell%27ora_blu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 800,
+      "page": "https://commons.wikimedia.org/wiki/File:Piazza_Maggiore_nell%27ora_blu.jpg",
+      "author": "Vanni Lazzari",
+      "license": "CC BY-SA 4.0"
+    },
+    "Florence": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Ponte_Vecchio_Arno_Florence.jpg/1280px-Ponte_Vecchio_Arno_Florence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 799,
+      "page": "https://commons.wikimedia.org/wiki/File:Ponte_Vecchio_Arno_Florence.jpg",
+      "author": "Jebulon",
+      "license": "CC0"
+    },
+    "Siena": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/PiazzadelCampoSiena.jpg/1280px-PiazzadelCampoSiena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 800,
+      "page": "https://commons.wikimedia.org/wiki/File:PiazzadelCampoSiena.jpg",
+      "author": "Massimo Catarinella",
+      "license": "CC BY-SA 3.0"
+    },
+    "Rome": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg/1280px-Colosseum_in_Rome%2C_Italy_-_April_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 704,
+      "page": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome,_Italy_-_April_2007.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 2.5"
+    },
+    "Naples": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Vesuvio_e_nave_a_Napoli.jpg/1280px-Vesuvio_e_nave_a_Napoli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 1200,
+      "height": 800,
+      "page": "https://commons.wikimedia.org/wiki/File:Vesuvio_e_nave_a_Napoli.jpg",
+      "author": "PaestumPaestum",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Italia: Venecia, Florencia y Roma",
+    "metaTitle": "Ruta por Italia en tren: Venecia, Florencia y Roma, de 5 a 13 días · Lowfly",
+    "summary": "Entras volando por Venecia, bajas en tren por Bolonia y Florencia y vuelves a casa desde Roma. Sin deshacer camino y sin alquilar coche: el tren rápido te deja de un centro a otro en menos de dos horas.",
+    "why": [
+      "Es el primer viaje a Italia de mucha gente, y tiene sentido: tres ciudades que no se parecen en nada, unidas por uno de los mejores trenes de Europa. La clave está en no volver al punto de partida. Llegas a Venecia y te vas desde Roma, así que no pierdes un día deshaciendo kilómetros.",
+      "Lo que suele fallar es el ritmo. Una noche en Venecia y otra en Florencia para ver «lo importante» te deja con colas y prisas. Si tienes pocos días, mejor quitar una ciudad que correr por todas."
+    ],
+    "towns": {
+      "Venice": {
+        "text": "Duerme en la isla, no en Mestre. Es más caro, pero a las ocho de la mañana, antes de que lleguen los grupos, tienes calles enteras para ti. Y de noche, cuando se van los que vienen a pasar el día, Venecia cambia por completo. Además, los días en que la ciudad cobra entrada a los visitantes de un día, quien duerme allí no la paga (solo tiene que registrarse).",
+        "see": [
+          "La basílica de San Marcos, con entrada reservada para no hacer la cola",
+          "El mercado de Rialto por la mañana (la pescadería cierra domingo y lunes)",
+          "Cannaregio, el barrio donde vive la gente que aún vive en Venecia",
+          "Cruzar el Gran Canal en traghetto, la góndola de los venecianos, por un par de euros",
+          "Burano, si tienes medio día: unos 45 minutos en vaporetto"
+        ],
+        "tip": "Cena a base de cicchetti, las tapas venecianas, de pie en un bacaro y con una copa de vino. Más barato que sentarse y mucho más veneciano."
+      },
+      "Bologna": {
+        "text": "La ciudad que casi todo el mundo se salta, y no debería. Se come mejor que en Florencia, más barato y sin turistas en la mesa de al lado. Tiene casi 40 kilómetros de soportales en el centro: llueva o haga sol, se pasea igual.",
+        "see": [
+          "La Piazza Maggiore y la basílica de San Petronio",
+          "El Quadrilatero, el barrio del mercado, para comprar mortadela y parmesano",
+          "Las dos torres, aunque ahora solo se ven desde abajo",
+          "Subir al santuario de San Luca por el soportal más largo del mundo: casi 4 km de arcos"
+        ],
+        "tip": "Aquí no existen los «espaguetis a la boloñesa». Pide tagliatelle al ragù."
+      },
+      "Florence": {
+        "text": "Florencia se recorre andando, y casi todo lo famoso está a diez minutos del Duomo. El problema son las colas: los Uffizi, la Academia (donde está el David) y la cúpula de Brunelleschi se reservan antes de ir, o pierdes medio día esperando.",
+        "see": [
+          "La cúpula del Duomo: 463 escalones y la mejor vista de la ciudad, con hora reservada",
+          "La Galería de los Uffizi",
+          "El David, en la Galería de la Academia",
+          "El Oltrarno, al otro lado del río: talleres de artesanos y menos gente",
+          "San Miniato al Monte al atardecer, más arriba que el Piazzale Michelangelo y más tranquilo"
+        ],
+        "tip": "En el Mercado Central, abajo están los puestos y arriba se come. Si te atreves, el bocadillo de lampredotto es lo más florentino que vas a probar."
+      },
+      "Siena": {
+        "text": "Una ciudad medieval que parece no haber cambiado en siglos. La Piazza del Campo, en forma de concha, es de las plazas más bonitas de Italia. Merece la pena dormir aquí: cuando se van los autobuses de excursión, la ciudad se queda casi vacía.",
+        "see": [
+          "La Piazza del Campo y la Torre del Mangia",
+          "La catedral y su suelo de mármol, que solo se descubre entero unas semanas al año",
+          "Las contradas, los barrios que compiten en el Palio, sin rumbo fijo"
+        ],
+        "tip": "El Palio se corre el 2 de julio y el 16 de agosto. Esos días la ciudad se llena y los precios se disparan: reserva con meses de antelación o elige otras fechas."
+      },
+      "Rome": {
+        "text": "Tres noches son el mínimo para Roma, y aun así tendrás que elegir. Ordena los días por zonas: uno para la Roma antigua, otro para el Vaticano y otro sin plan, paseando por Trastevere y el centro.",
+        "see": [
+          "El Coliseo y el Foro Romano, con entrada reservada (se agotan)",
+          "Los Museos Vaticanos y la Capilla Sixtina, que cierran los domingos salvo el último del mes",
+          "El Panteón, ahora con entrada de pocos euros",
+          "Trastevere al caer la tarde",
+          "Testaccio, el barrio donde comen los romanos"
+        ],
+        "tip": "La Fontana di Trevi, a primera hora o pasada la medianoche. A cualquier otra hora verás más móviles que fuente."
+      },
+      "Naples": {
+        "text": "Caótica, ruidosa y la favorita de mucha gente cuando vuelve a casa. Es la cuna de la pizza y, a unos 40 minutos en tren, tienes Pompeya.",
+        "see": [
+          "Spaccanapoli, la calle que parte en dos el centro histórico",
+          "La Capilla Sansevero y su Cristo velado (reserva antes)",
+          "El Museo Arqueológico, con lo mejor que salió de Pompeya",
+          "Pompeya o, si prefieres algo más pequeño y mejor conservado, Herculano"
+        ],
+        "tip": "La pizza aquí es margarita o marinara, y poco más. Las pizzerías clásicas tienen cola, pero avanza rápido."
+      }
+    },
+    "gettingAround": "Todo en tren. Los rápidos (Frecciarossa e Italo) unen Venecia, Bolonia, Florencia, Roma y Nápoles en una o dos horas por tramo, y cuanto antes compres, más barato. Para Siena es mejor el autobús desde Florencia, que te deja más cerca del centro que el tren. Si compras un billete regional en papel, valídalo en la máquina del andén antes de subir: si no, la multa es segura.",
+    "bestTime": "Abril, mayo, septiembre y octubre: buen tiempo, días largos y menos gente que en verano. Marzo y junio también funcionan. En agosto hace mucho calor, Venecia y Florencia se llenan y a mediados de mes muchos restaurantes cierran por vacaciones. En otoño e invierno Venecia puede tener acqua alta: la ciudad se inunda unas horas y se camina por pasarelas.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para ver Venecia, Florencia y Roma?",
+        "answer": "Con 5 o 6 días se puede, pero justo. Con 8 a 10 vas tranquilo y puedes sumar Bolonia; con 11 a 13 llegas también a Siena y Nápoles."
+      },
+      {
+        "question": "¿Es mejor empezar por Venecia o por Roma?",
+        "answer": "Da igual: el recorrido se hace en los dos sentidos. Elige según dónde encuentres el vuelo más barato desde tu ciudad."
+      },
+      {
+        "question": "¿Hace falta coche para recorrer Italia?",
+        "answer": "Para esta ruta, no. El tren es más rápido, y en las ciudades grandes el coche es un problema: zonas de acceso restringido y aparcamiento caro."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "Llegas a Venecia (Marco Polo o Treviso) y vuelves desde Roma (Fiumicino o Ciampino). Muchos vuelos low cost usan Treviso y Ciampino."
+      }
+    ]
+  },
+  "en": {
+    "title": "Italy itinerary: Venice, Florence and Rome",
+    "metaTitle": "Italy by train: Venice, Florence and Rome in 5 to 13 days · Lowfly",
+    "summary": "Fly into Venice, head south by train through Bologna and Florence, and fly home from Rome. No doubling back and no hire car: the fast train takes you from one city centre to the next in under two hours.",
+    "why": [
+      "It's many people's first trip to Italy, and for good reason: three cities that look nothing alike, linked by one of Europe's best railways. The trick is not going back to where you started. You land in Venice and leave from Rome, so you never lose a day retracing your steps.",
+      "Where it usually goes wrong is the pace. One night in Venice and one in Florence to see \"the main things\" leaves you rushing from queue to queue. If you're short on days, drop a city rather than race through all of them."
+    ],
+    "towns": {
+      "Venice": {
+        "text": "Sleep on the islands, not in Mestre. It costs more, but at eight in the morning, before the groups arrive, you have whole streets to yourself. And at night, once the day-trippers leave, Venice is a different place. On the days the city charges day visitors an entry fee, overnight guests don't pay it (they just need to register).",
+        "see": [
+          "St Mark's Basilica, with a booked ticket to skip the queue",
+          "Rialto market in the morning (the fish market is closed on Sundays and Mondays)",
+          "Cannaregio, where the people who still live in Venice live",
+          "Crossing the Grand Canal on a traghetto, the locals' gondola, for a couple of euros",
+          "Burano, if you have half a day: about 45 minutes by vaporetto"
+        ],
+        "tip": "Make dinner a round of cicchetti, Venetian bar snacks, standing at a bacaro with a glass of wine. Cheaper than sitting down, and far more Venetian."
+      },
+      "Bologna": {
+        "text": "The city almost everyone skips, and shouldn't. You eat better than in Florence, for less, with no tourists at the next table. Its centre has nearly 40 kilometres of porticoes: rain or shine, it's a city for walking.",
+        "see": [
+          "Piazza Maggiore and the Basilica of San Petronio",
+          "The Quadrilatero, the old market quarter, for mortadella and parmesan",
+          "The Two Towers, though for now you can only see them from below",
+          "The walk up to San Luca under the world's longest portico: almost 4 km of arches"
+        ],
+        "tip": "There's no such thing as \"spaghetti bolognese\" here. Order tagliatelle al ragù."
+      },
+      "Florence": {
+        "text": "Florence is a city for walking, and nearly everything famous is ten minutes from the Duomo. The problem is the queues: book the Uffizi, the Accademia (home of David) and Brunelleschi's dome before you go, or lose half a day waiting.",
+        "see": [
+          "The Duomo's dome: 463 steps to the best view in town, at a booked time",
+          "The Uffizi Gallery",
+          "Michelangelo's David at the Galleria dell'Accademia",
+          "The Oltrarno, across the river: artisans' workshops and fewer people",
+          "San Miniato al Monte at sunset, higher than Piazzale Michelangelo and calmer"
+        ],
+        "tip": "At the Mercato Centrale, the stalls are downstairs and the food hall upstairs. If you're brave, a lampredotto sandwich is as Florentine as it gets."
+      },
+      "Siena": {
+        "text": "A medieval city that seems not to have changed in centuries. The shell-shaped Piazza del Campo is one of Italy's most beautiful squares. It's worth staying the night: once the coach tours leave, the city is almost empty.",
+        "see": [
+          "Piazza del Campo and the Torre del Mangia",
+          "The cathedral and its marble floor, fully uncovered only a few weeks a year",
+          "The contrade, the districts that race in the Palio, with no plan at all"
+        ],
+        "tip": "The Palio is run on 2 July and 16 August. Those days the city fills up and prices soar: book months ahead or pick other dates."
+      },
+      "Rome": {
+        "text": "Three nights is the minimum for Rome, and you'll still have to choose. Plan the days by area: one for ancient Rome, one for the Vatican and one with no plan at all, wandering Trastevere and the centre.",
+        "see": [
+          "The Colosseum and the Roman Forum, with a booked ticket (they sell out)",
+          "The Vatican Museums and the Sistine Chapel, closed on Sundays except the last of the month",
+          "The Pantheon, which now has a ticket of a few euros",
+          "Trastevere as the evening falls",
+          "Testaccio, where Romans go to eat"
+        ],
+        "tip": "See the Trevi Fountain first thing in the morning or after midnight. Any other time, you'll see more phones than fountain."
+      },
+      "Naples": {
+        "text": "Chaotic, loud, and the one many people call their favourite once they're home. It's the birthplace of pizza, and Pompeii is about 40 minutes away by train.",
+        "see": [
+          "Spaccanapoli, the street that splits the old town in two",
+          "The Sansevero Chapel and its Veiled Christ (book ahead)",
+          "The Archaeological Museum, with the best of what came out of Pompeii",
+          "Pompeii or, for something smaller and better preserved, Herculaneum"
+        ],
+        "tip": "Pizza here means margherita or marinara, and not much else. The classic pizzerias have queues, but they move fast."
+      }
+    },
+    "gettingAround": "Train all the way. The fast trains (Frecciarossa and Italo) link Venice, Bologna, Florence, Rome and Naples in one to two hours a leg, and the earlier you buy, the cheaper it is. For Siena, take the bus from Florence: it drops you closer to the centre than the train. If you buy a paper ticket for a regional train, validate it in the machine on the platform before boarding, or expect a fine.",
+    "bestTime": "April, May, September and October: good weather, long days and fewer people than in summer. March and June work too. August is very hot, Venice and Florence are packed, and around mid-month many restaurants close for the holidays. In autumn and winter Venice may get acqua alta: the city floods for a few hours and you walk on raised boardwalks.",
+    "faq": [
+      {
+        "question": "How many days do you need for Venice, Florence and Rome?",
+        "answer": "5 or 6 days is doable, but tight. With 8 to 10 you can take it easy and add Bologna; with 11 to 13 you also reach Siena and Naples."
+      },
+      {
+        "question": "Is it better to start in Venice or in Rome?",
+        "answer": "Either: the route works both ways. Pick whichever has the cheaper flight from your city."
+      },
+      {
+        "question": "Do you need a car to travel around Italy?",
+        "answer": "Not for this route. The train is faster, and in the big cities a car is a problem: restricted traffic zones and expensive parking."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "You land in Venice (Marco Polo or Treviso) and fly home from Rome (Fiumicino or Ciampino). Many low-cost flights use Treviso and Ciampino."
+      }
+    ]
+  }
+}

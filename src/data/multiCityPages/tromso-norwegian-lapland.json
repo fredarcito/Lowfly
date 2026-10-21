@@ -1,0 +1,158 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "tromso-y-laponia-noruega",
+    "en": "tromso-and-norwegian-lapland"
+  },
+  "photos": {
+    "Tromsø": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Tromso_Troms%C3%B8_Norway_tunliweb_02.jpg/960px-Tromso_Troms%C3%B8_Norway_tunliweb_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Tromso_Troms%C3%B8_Norway_tunliweb_02.jpg",
+      "author": "Svein-Magne Tunli - tunliweb.no",
+      "license": "CC BY-SA 4.0"
+    },
+    "Senja": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Segla_Senja.jpg/960px-Segla_Senja.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Segla_Senja.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0"
+    },
+    "Abisko": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Abiskoj%C3%A5kka.jpg/960px-Abiskoj%C3%A5kka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Abiskoj%C3%A5kka.jpg",
+      "author": "q8",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  "es": {
+    "title": "Tromsø y Laponia noruega: Senja y Abisko",
+    "metaTitle": "Ruta por Tromsø, Senja y Abisko: auroras y fiordos del Ártico, de 4 a 8 días · Lowfly",
+    "summary": "Entras y sales por Tromsø, con la isla de Senja y Abisko en medio. Un circuito de invierno con auroras, fiordos helados y carreteras vacías.",
+    "why": [
+      "Tromsø está a 350 kilómetros del círculo polar y es la ciudad más grande del Ártico, con aeropuerto, universidad y auroras encima. Desde ahí, Senja y Abisko están a tres horas en coche cada una.",
+      "El circuito es corto y no repite camino: Tromsø, la isla de Senja, Abisko en Suecia y vuelta a Tromsø. En invierno se conduce con ruedas de invierno y hay pocas horas de luz, pero el paisaje es de otro mundo.",
+      "Lo que suele fallar es la planificación. Aquí no hay buses frecuentes y las carreteras se cierran con temporal. Alquila coche con ruedas de invierno, deja un día de margen y no cuentes con ver auroras todas las noches."
+    ],
+    "towns": {
+      "Tromsø": {
+        "text": "Tromsø es una ciudad de 78.000 habitantes repartida entre una isla y la costa, con la catedral de madera más al norte del mundo y el teleférico al monte Storsteinen. Tres noches dan para la ciudad y dos excursiones.",
+        "see": [
+          "La catedral del Ártico, de cristal, en el puente",
+          "El teleférico al Storsteinen, con la vista a la ciudad",
+          "El museo Polar, en el puerto",
+          "Una cacería de auroras con guía, en minibús"
+        ],
+        "tip": "Las excursiones de auroras salen a las seis y vuelven a medianoche, y a veces cruzan a Finlandia para buscar cielo despejado. Reserva dos noches distintas: una puede salir nublada."
+      },
+      "Senja": {
+        "text": "Senja es la segunda isla más grande de Noruega y la más salvaje, con montañas que caen al mar y pueblos de pescadores. Se recorre en un día en coche, pero pide dos para ver auroras.",
+        "see": [
+          "El mirador de Tungeneset, con las montañas Okshornan",
+          "El pueblo de Husøy, en un islote",
+          "La playa de Ersfjordstranda, con arena blanca",
+          "El mirador de Bergsbotn, sobre el fiordo"
+        ],
+        "tip": "La carretera 86 y la 862 dan la vuelta a la isla en unas cuatro horas sin parar. Con paradas, cuenta el día entero: hay miradores cada pocos kilómetros."
+      },
+      "Abisko": {
+        "text": "Abisko está en Suecia, a tres horas de Tromsø, y tiene uno de los cielos más despejados del norte de Europa: el lago Torneträsk crea un microclima seco. Es el mejor sitio para ver auroras sin nubes.",
+        "see": [
+          "El parque nacional de Abisko, con el cañón de Abiskodalen",
+          "El lago Torneträsk, helado en invierno",
+          "La estación científica, con el observatorio de auroras",
+          "Una ruta en trineo de perros por el lago"
+        ],
+        "tip": "El cielo de Abisko es famoso por su «agujero azul»: las nubes se quedan al oeste de la montaña. Si en Tromsø está nublado, aquí suele estar despejado."
+      }
+    },
+    "gettingAround": "Coche de alquiler. Tromsø-Senja son dos horas y media por la carretera 86 y el puente de Gisund; Senja-Abisko, cuatro horas por Narvik; Abisko-Tromsø, tres horas. En invierno hay que llevar ruedas de invierno (vienen de serie en los alquileres noruegos) y comprobar el estado de las carreteras en la web de Statens vegvesen. Los buses existen, pero pasan una o dos veces al día.",
+    "bestTime": "De septiembre a marzo para auroras, con noches largas y cielos despejados. Enero y febrero son los más fríos y oscuros, y marzo tiene más luz y aún nieve. En junio y julio hay sol de medianoche, pero no hay auroras ni nieve.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 o 5 días ves Tromsø y Senja. Con 7 u 8 añades Abisko. Menos de cuatro es poco: los traslados son largos."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, es lo más práctico. Sin coche dependes de tours y de buses que pasan poco, y en Senja no hay transporte público útil."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí, es un circuito: sales y entras por Tromsø, así que el orden da igual."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Tromsø (TOS), con vuelos directos desde Oslo y varias ciudades europeas. Abisko se alcanza en tren desde Narvik o en coche."
+      }
+    ]
+  },
+  "en": {
+    "title": "Tromsø and Norwegian Lapland: Senja and Abisko",
+    "metaTitle": "Tromsø, Senja and Abisko route: Arctic auroras and fjords in 4 to 8 days · Lowfly",
+    "summary": "In and out of Tromsø, with the island of Senja and Abisko in between. A winter loop of auroras, frozen fjords and empty roads.",
+    "why": [
+      "Tromsø is 350 kilometres above the Arctic Circle and the largest city in the Arctic, with an airport, a university and auroras overhead. From there, Senja and Abisko are three hours away by car each.",
+      "The loop is short and doesn't double back: Tromsø, the island of Senja, Abisko in Sweden and back to Tromsø. In winter you drive on winter tyres with few hours of light, but the landscape is from another world.",
+      "Where it usually goes wrong is planning. There are no frequent buses and roads close in storms. Hire a car with winter tyres, leave a spare day and don't count on auroras every night."
+    ],
+    "towns": {
+      "Tromsø": {
+        "text": "Tromsø is a city of 78,000 spread across an island and the coast, with the world's northernmost wooden cathedral and a cable car up Mount Storsteinen. Three nights covers the city and two excursions.",
+        "see": [
+          "The Arctic Cathedral, of glass, across the bridge",
+          "The cable car up Storsteinen, with the view over the city",
+          "The Polar Museum, at the harbour",
+          "An aurora hunt with a guide, by minibus"
+        ],
+        "tip": "Aurora tours leave at six and return at midnight, and sometimes cross into Finland to find clear sky. Book two different nights: one may be cloudy."
+      },
+      "Senja": {
+        "text": "Senja is Norway's second largest island and its wildest, with mountains dropping into the sea and fishing villages. You can drive round it in a day, but it asks for two to see auroras.",
+        "see": [
+          "The Tungeneset viewpoint, with the Okshornan peaks",
+          "The village of Husøy, on a small island",
+          "Ersfjordstranda beach, with white sand",
+          "The Bergsbotn viewpoint, over the fjord"
+        ],
+        "tip": "Roads 86 and 862 circle the island in about four hours without stopping. With stops, count on the whole day: there are viewpoints every few kilometres."
+      },
+      "Abisko": {
+        "text": "Abisko is in Sweden, three hours from Tromsø, and has one of the clearest skies in northern Europe: Lake Torneträsk creates a dry microclimate. It's the best place to see auroras without cloud.",
+        "see": [
+          "Abisko National Park, with the Abiskodalen canyon",
+          "Lake Torneträsk, frozen in winter",
+          "The research station, with its aurora observatory",
+          "A dog-sled run across the lake"
+        ],
+        "tip": "Abisko's sky is famous for its \"blue hole\": the clouds stay west of the mountain. If Tromsø is cloudy, here it's usually clear."
+      }
+    },
+    "gettingAround": "Hire car. Tromsø-Senja is two and a half hours via road 86 and the Gisund bridge; Senja-Abisko, four hours via Narvik; Abisko-Tromsø, three hours. In winter you need winter tyres (standard on Norwegian rentals) and you should check road conditions on the Statens vegvesen website. Buses exist, but run once or twice a day.",
+    "bestTime": "September to March for auroras, with long nights and clear skies. January and February are the coldest and darkest, and March has more light and still snow. In June and July there's midnight sun, but no auroras and no snow.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 or 5 days gets you Tromsø and Senja. 7 or 8 adds Abisko. Fewer than four is too little: the transfers are long."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, it's the most practical. Without one you depend on tours and infrequent buses, and on Senja there's no useful public transport."
+      },
+      {
+        "question": "Can it be done the other way round?",
+        "answer": "Yes, it's a loop: you fly in and out of Tromsø, so the order doesn't matter."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Tromsø (TOS), with direct flights from Oslo and several European cities. Abisko is reached by train from Narvik or by car."
+      }
+    ]
+  }
+}

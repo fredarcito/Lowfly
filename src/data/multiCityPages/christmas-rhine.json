@@ -1,0 +1,186 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "navidad-en-el-rin",
+    "en": "christmas-on-the-rhine"
+  },
+  "photos": {
+    "Cologne": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/DE-NW_-_Cologne_-_Christmas_-_Holiday_-_Cologne_Cathedral_-_Christmas_Market_%284890028143%29.jpg/960px-DE-NW_-_Cologne_-_Christmas_-_Holiday_-_Cologne_Cathedral_-_Christmas_Market_%284890028143%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1067,
+      "page": "https://commons.wikimedia.org/wiki/File:DE-NW_-_Cologne_-_Christmas_-_Holiday_-_Cologne_Cathedral_-_Christmas_Market_(4890028143).jpg",
+      "author": "CGP Grey",
+      "license": "CC BY 2.0"
+    },
+    "Düsseldorf": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Christmas_market_in_D%C3%BCsseldorf_at_the_Marktplatz.jpg/960px-Christmas_market_in_D%C3%BCsseldorf_at_the_Marktplatz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 532,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_market_in_D%C3%BCsseldorf_at_the_Marktplatz.jpg",
+      "author": "Supercarwaar",
+      "license": "CC BY-SA 4.0"
+    },
+    "Aachen": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Greeting_from_Christmas_Market_in_Aachen%2C_Germany_%284182685106%29.jpg/960px-Greeting_from_Christmas_Market_in_Aachen%2C_Germany_%284182685106%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 531,
+      "page": "https://commons.wikimedia.org/wiki/File:Greeting_from_Christmas_Market_in_Aachen,_Germany_(4182685106).jpg",
+      "author": "Michal Osmenda from Brussels, Belgium",
+      "license": "CC BY-SA 2.0"
+    },
+    "Koblenz": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Koblenz_-_Weihnachtsmarkt.jpg/960px-Koblenz_-_Weihnachtsmarkt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 480,
+      "page": "https://commons.wikimedia.org/wiki/File:Koblenz_-_Weihnachtsmarkt.jpg",
+      "author": "Jorge Franganillo",
+      "license": "CC BY 4.0"
+    }
+  },
+  "es": {
+    "title": "Navidad en el Rin: Colonia, Düsseldorf y Aquisgrán",
+    "metaTitle": "Navidad en el Rin en tren: Colonia, Düsseldorf, Aquisgrán y Coblenza, de 4 a 7 días · Lowfly",
+    "summary": "Mercadillos a la sombra de la catedral de Colonia, el casco antiguo de Düsseldorf, los Printen de Aquisgrán y el Rin en Coblenza. Todo en tren y a menos de hora y media.",
+    "why": [
+      "El Rin es una franja de ciudades a menos de hora y media en tren, y en diciembre cada una monta su mercadillo con su carácter. Colonia tiene siete, Düsseldorf reparte el suyo por el casco antiguo y Aquisgrán huele a Printen.",
+      "El orden importa. Colonia primero, que es la más grande y la que tiene el mercadillo junto a la catedral; luego Aquisgrán, que es de un día; y Düsseldorf y Coblenza al final, que son las más tranquilas.",
+      "Lo que suele fallar es la lluvia. Aquí no hace el frío seco de Baviera: llueve a menudo y el viento del Rin cala. Lleva paraguas y calzado impermeable, y no cuentes con pasear todo el día."
+    ],
+    "towns": {
+      "Cologne": {
+        "text": "Colonia tiene siete mercadillos y el más famoso está a los pies de la catedral, con la torre gótica iluminada detrás. La ciudad es grande y el centro es peatonal, así que se recorre andando.",
+        "see": [
+          "El mercadillo de la catedral, en la plaza del Dom",
+          "El mercadillo de Heumarkt, con la pista de hielo",
+          "El mercadillo del puerto, en el Rheinauhafen",
+          "La catedral, con la subida a la torre sur"
+        ],
+        "tip": "El mercadillo del puerto es el más nuevo y el menos lleno. Está en el Rheinauhafen, a 20 minutos andando del centro, y tiene las casetas en forma de grúa."
+      },
+      "Düsseldorf": {
+        "text": "Düsseldorf reparte su mercadillo por el casco antiguo, con la noria en la plaza del ayuntamiento y puestos en cada esquina. Es más pequeña que Colonia y más manejable.",
+        "see": [
+          "La noria de la plaza del ayuntamiento",
+          "El mercadillo de la calle Flinger",
+          "El barrio de la Altstadt, con sus cervecerías",
+          "El paseo por el Rin, hasta el puente de Oberkassel"
+        ],
+        "tip": "La Altstadt de Düsseldorf tiene más de 260 bares en medio kilómetro cuadrado. Se llama la barra más larga del mundo, y en diciembre está a tope."
+      },
+      "Aachen": {
+        "text": "Aquisgrán tiene el mercadillo alrededor de la catedral de Carlomagno, con las casetas en cuesta y la torre detrás. Es pequeño y se ve en una tarde, pero los Printen son la razón para venir.",
+        "see": [
+          "El mercadillo de la plaza de la catedral",
+          "La catedral de Carlomagno, con el trono",
+          "El ayuntamiento y la sala de coronación",
+          "Las pastelerías de Printen, en el centro"
+        ],
+        "tip": "Los Printen son galletas de especias duras y se venden en cajas. Los de Klein, en la calle Friedrich-Wilhelm-Platz, son los de siempre y los más buscados."
+      },
+      "Koblenz": {
+        "text": "Coblenza está donde el Mosela se junta con el Rin, y su mercadillo ocupa las plazas del centro con la fortaleza iluminada enfrente. Se ve en un día, y el paseo por la confluencia es lo mejor.",
+        "see": [
+          "El mercadillo de la plaza del ayuntamiento",
+          "El Deutsches Eck, la confluencia de los dos ríos",
+          "La fortaleza de Ehrenbreitstein, en teleférico",
+          "El casco antiguo y la basílica de San Castor"
+        ],
+        "tip": "El teleférico a Ehrenbreitstein cruza el Rin y funciona en invierno. Desde arriba se ven los dos ríos y la ciudad iluminada: es la mejor vista de Coblenza."
+      }
+    },
+    "gettingAround": "Tren. Colonia y Düsseldorf están a 30 minutos en tren regional; Colonia y Aquisgrán, a una hora; Colonia y Coblenza, a una hora. El aeropuerto de Colonia/Bonn está a 15 minutos del centro en tren, y el de Weeze, a hora y media en autobús. Compra los billetes con antelación: en diciembre los trenes van llenos.",
+    "bestTime": "Finales de noviembre y diciembre, hasta el 23 o el 31 según el mercadillo. La primera quincena de diciembre es la mejor: menos gente que en las vacaciones escolares. Hace frío, entre 2 y 6 grados, llueve a menudo y anochece a las 16:30. Los mercadillos cierran el 25 y el 26.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para la Navidad en el Rin?",
+        "answer": "Con 4 o 5 días ves Colonia y Düsseldorf. Con 6 o 7 añades Aquisgrán y Coblenza."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren une las cuatro ciudades en menos de hora y media y los trayectos son frecuentes. El coche solo estorba en el centro."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Coblenza, acabas en Colonia."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Colonia/Bonn (CGN), Weeze (NRN) o Dortmund (DTM). Düsseldorf (DUS) no tiene vuelos de Ryanair ni Wizz. CGN está a 15 minutos del centro en tren; NRN está a hora y media en autobús."
+      }
+    ]
+  },
+  "en": {
+    "title": "Christmas on the Rhine: Cologne, Düsseldorf and Aachen",
+    "metaTitle": "Christmas on the Rhine by train: Cologne, Düsseldorf, Aachen and Koblenz in 4 to 7 days · Lowfly",
+    "summary": "Markets beneath Cologne cathedral, Düsseldorf's old town, Aachen's Printen and the Rhine at Koblenz. All by train and under an hour and a half apart.",
+    "why": [
+      "The Rhine is a strip of cities less than an hour and a half apart by train, and in December each one puts on a market with its own character. Cologne has seven, Düsseldorf spreads its through the old town and Aachen smells of Printen.",
+      "The order matters. Cologne first, the biggest and the one with the market beside the cathedral; then Aachen, a day; and Düsseldorf and Koblenz last, the quietest.",
+      "What usually goes wrong is the rain. This isn't Bavaria's dry cold: it rains often and the Rhine wind gets through. Take an umbrella and waterproof shoes, and don't plan on walking all day."
+    ],
+    "towns": {
+      "Cologne": {
+        "text": "Cologne has seven markets and the most famous sits at the foot of the cathedral, with the Gothic tower lit up behind it. The city is big and the centre is pedestrian, so you walk it.",
+        "see": [
+          "The cathedral market, on the Dom square",
+          "The Heumarkt market, with the ice rink",
+          "The harbour market, in the Rheinauhafen",
+          "The cathedral, with the climb up the south tower"
+        ],
+        "tip": "The harbour market is the newest and the least crowded. It's in the Rheinauhafen, 20 minutes on foot from the centre, with stalls shaped like cranes."
+      },
+      "Düsseldorf": {
+        "text": "Düsseldorf spreads its market through the old town, with the Ferris wheel on the town-hall square and stalls on every corner. It's smaller than Cologne and easier to handle.",
+        "see": [
+          "The Ferris wheel on the town-hall square",
+          "The market on Flingerstrasse",
+          "The Altstadt, with its brewpubs",
+          "The walk along the Rhine to the Oberkassel bridge"
+        ],
+        "tip": "Düsseldorf's Altstadt has more than 260 bars in half a square kilometre. They call it the longest bar in the world, and in December it's packed."
+      },
+      "Aachen": {
+        "text": "Aachen has its market around Charlemagne's cathedral, with stalls on a slope and the tower behind. It's small and takes an afternoon, but the Printen are the reason to come.",
+        "see": [
+          "The market on the cathedral square",
+          "Charlemagne's cathedral, with the throne",
+          "The town hall and the coronation hall",
+          "The Printen bakeries, in the centre"
+        ],
+        "tip": "Printen are hard spiced biscuits sold in boxes. The ones from Klein, on Friedrich-Wilhelm-Platz, are the classic and the most sought after."
+      },
+      "Koblenz": {
+        "text": "Koblenz sits where the Moselle meets the Rhine, and its market fills the squares of the centre with the fortress lit up opposite. A day covers it, and the walk to the confluence is the best part.",
+        "see": [
+          "The market on the town-hall square",
+          "Deutsches Eck, the meeting of the two rivers",
+          "Ehrenbreitstein fortress, by cable car",
+          "The old town and St Castor basilica"
+        ],
+        "tip": "The cable car to Ehrenbreitstein crosses the Rhine and runs in winter. From the top you see both rivers and the lit-up city: the best view in Koblenz."
+      }
+    },
+    "gettingAround": "Train. Cologne and Düsseldorf are 30 minutes apart on a regional train; Cologne and Aachen, an hour; Cologne and Koblenz, an hour. Cologne/Bonn airport is 15 minutes from the centre by train, and Weeze is an hour and a half by bus. Book ahead: in December the trains are full.",
+    "bestTime": "Late November and December, until the 23rd or the 31st depending on the market. The first half of December is best: fewer people than in the school holidays. It's cold, between 2 and 6°C, it rains often and it's dark by 16:30. The markets close on 25 and 26 December.",
+    "faq": [
+      {
+        "question": "How many days do you need for Christmas on the Rhine?",
+        "answer": "4 or 5 days covers Cologne and Düsseldorf. With 6 or 7 you add Aachen and Koblenz."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train links the four cities in under an hour and a half and runs frequently. A car is only a nuisance in the centre."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Koblenz and you finish in Cologne."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Cologne/Bonn (CGN), Weeze (NRN) or Dortmund (DTM). Düsseldorf (DUS) has no Ryanair or Wizz flights. CGN is 15 minutes from the centre by train; NRN is an hour and a half by bus."
+      }
+    ]
+  }
+}

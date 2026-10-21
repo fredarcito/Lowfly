@@ -1,0 +1,186 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "navidad-en-polonia",
+    "en": "christmas-in-poland"
+  },
+  "photos": {
+    "Gdańsk": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gdansk_jarmark_swiateczny_2.jpg/960px-Gdansk_jarmark_swiateczny_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Gdansk_jarmark_swiateczny_2.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    "Warsaw": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Christmas_tree_in_Old_Town_Market_Square_in_Warsaw.jpg/960px-Christmas_tree_in_Old_Town_Market_Square_in_Warsaw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1170,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_tree_in_Old_Town_Market_Square_in_Warsaw.jpg",
+      "author": "Guillaume Speurt from Vilnius, Lithuania",
+      "license": "CC BY-SA 2.0"
+    },
+    "Kraków": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Krakow_Rynek_Glowny_noc_1.jpg/960px-Krakow_Rynek_Glowny_noc_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Krakow_Rynek_Glowny_noc_1.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    "Wrocław": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Mercado_de_Navidad%2C_Plaza_del_Mercado%2C_Breslavia%2C_Polonia%2C_2017-12-20%2C_DD_38-40_PAN.jpg/960px-Mercado_de_Navidad%2C_Plaza_del_Mercado%2C_Breslavia%2C_Polonia%2C_2017-12-20%2C_DD_38-40_PAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 557,
+      "page": "https://commons.wikimedia.org/wiki/File:Mercado_de_Navidad,_Plaza_del_Mercado,_Breslavia,_Polonia,_2017-12-20,_DD_38-40_PAN.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Navidad en Polonia: Breslavia, Cracovia, Varsovia y Gdansk",
+    "metaTitle": "Navidad en Polonia en tren: Breslavia, Cracovia, Varsovia y Gdansk, de 5 a 8 días · Lowfly",
+    "summary": "Plazas medievales iluminadas, pierogi y precios que sorprenden. Cuatro ciudades polacas en tren, con mercadillos grandes y mucho frío.",
+    "why": [
+      "Polonia es el país más barato de Europa para un viaje de Navidad, y sus mercadillos no tienen nada que envidiar a los alemanes: Breslavia tiene uno de los más grandes del país y Gdansk monta una noria en el mercado del Carbón.",
+      "El orden importa. Si entras por el norte, empieza por Gdansk y baja por Varsovia y Cracovia hasta Breslavia. Si entras por el sur, hazlo al revés. Los trenes entre las cuatro ciudades son rápidos y baratos.",
+      "Lo que suele fallar es el frío. En Gdansk, junto al Báltico, hace viento y hiela; en Cracovia puede haber nieve. Anochece a las 15:30, así que el día es muy corto: madruga y aprovecha las horas de luz."
+    ],
+    "towns": {
+      "Gdańsk": {
+        "text": "Gdansk tiene un casco antiguo reconstruido ladrillo a ladrillo después de la guerra y un mercadillo en el mercado del Carbón, con noria y pista de hielo. Se ve en dos días.",
+        "see": [
+          "El mercadillo del mercado del Carbón, con la noria",
+          "La calle Długi Targ y la grúa medieval",
+          "La basílica de Santa María, con la subida a la torre",
+          "El museo de la Segunda Guerra Mundial"
+        ],
+        "tip": "La noria del mercadillo es la más alta de Polonia en diciembre. Se sube con entrada y desde arriba se ve la ciudad iluminada entera."
+      },
+      "Warsaw": {
+        "text": "Varsovia tiene el mercadillo del casco antiguo, reconstruido después de la guerra y Patrimonio de la Humanidad, y otro en la plaza del mercado. Se ve en dos días.",
+        "see": [
+          "El mercadillo del casco antiguo",
+          "La plaza del mercado y las casas de colores",
+          "El palacio de la Cultura, iluminado",
+          "El barrio de Praga, al otro lado del río"
+        ],
+        "tip": "El casco antiguo de Varsovia se reconstruyó con ladrillos de los edificios derruidos. Es una copia, pero es una copia hecha con los originales, y eso se nota."
+      },
+      "Kraków": {
+        "text": "Cracovia tiene el mercadillo de la plaza del Mercado, la más grande de Europa medieval, con la lonja de los Paños en medio. Es la ciudad más bonita de Polonia y se ve en tres días.",
+        "see": [
+          "El mercadillo de la plaza del Mercado",
+          "La lonja de los Paños y la basílica de Santa María",
+          "El castillo de Wawel, con la subida a la torre",
+          "El barrio judío de Kazimierz"
+        ],
+        "tip": "El toque de trompeta de la torre de Santa María suena cada hora y se corta a mitad. Es una tradición de la ciudad y se oye en toda la plaza."
+      },
+      "Wrocław": {
+        "text": "Breslavia tiene uno de los mercadillos más grandes de Polonia en la plaza del Mercado, con casas de colores y el ayuntamiento gótico. Se ve en dos días, y los enanos de bronce están por toda la ciudad.",
+        "see": [
+          "El mercadillo de la plaza del Mercado",
+          "El ayuntamiento gótico y la plaza",
+          "Los enanos de bronce, repartidos por la ciudad",
+          "La isla de la Catedral, con el puente de las cerraduras"
+        ],
+        "tip": "Los enanos de bronce son más de 600 y están por toda la ciudad. Hay un mapa en la oficina de turismo: buscarlos es la mejor manera de recorrer Breslavia."
+      }
+    },
+    "gettingAround": "Tren. Gdansk y Varsovia están a dos horas y media en tren rápido; Varsovia y Cracovia, a dos horas y media; Cracovia y Breslavia, a tres horas. Compra los billetes con antelación: en diciembre los trenes van llenos. El aeropuerto de Gdansk está a 30 minutos del centro en tren, y el de Cracovia, a 20 minutos.",
+    "bestTime": "Finales de noviembre y diciembre, hasta el 23 o el 31 según el mercadillo. La primera quincena de diciembre es la mejor: menos gente que en las vacaciones escolares. Hace mucho frío, entre -5 y 2 grados, y anochece a las 15:30. Los mercadillos cierran el 25 y el 26.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para la Navidad en Polonia?",
+        "answer": "Con 5 o 6 días ves Cracovia y Breslavia. Con 7 u 8 añades Gdansk y Varsovia."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren une las cuatro ciudades y los trayectos son de dos a tres horas. El coche solo estorba en el centro."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Breslavia, acabas en Gdansk."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Gdansk (GDN), Cracovia (KRK) o Breslavia (WRO). Varsovia (WAW) no tiene vuelos de Ryanair ni Wizz: se visita en tren entre las otras ciudades."
+      }
+    ]
+  },
+  "en": {
+    "title": "Christmas in Poland: Wrocław, Kraków, Warsaw and Gdańsk",
+    "metaTitle": "Christmas in Poland by train: Wrocław, Kraków, Warsaw and Gdańsk in 5 to 8 days · Lowfly",
+    "summary": "Lit-up medieval squares, pierogi and prices that surprise. Four Polish cities by train, with big markets and serious cold.",
+    "why": [
+      "Poland is the cheapest country in Europe for a Christmas trip, and its markets give the German ones a run for their money: Wrocław has one of the biggest in the country and Gdańsk puts a Ferris wheel in the Coal Market.",
+      "The order matters. Coming in from the north, start in Gdańsk and work down through Warsaw and Kraków to Wrocław. Coming in from the south, do it the other way. The trains between the four cities are fast and cheap.",
+      "What usually goes wrong is the cold. In Gdańsk, on the Baltic, it's windy and freezing; in Kraków there can be snow. It's dark by 15:30, so the day is very short: get up early and use the light."
+    ],
+    "towns": {
+      "Gdańsk": {
+        "text": "Gdańsk has an old town rebuilt brick by brick after the war and a market in the Coal Market, with a Ferris wheel and an ice rink. Two days covers it.",
+        "see": [
+          "The Coal Market market, with the Ferris wheel",
+          "Długi Targ and the medieval crane",
+          "St Mary's basilica, with the climb up the tower",
+          "The Second World War museum"
+        ],
+        "tip": "The market Ferris wheel is the tallest in Poland in December. You ride it by ticket and from the top you see the whole lit-up city."
+      },
+      "Warsaw": {
+        "text": "Warsaw has the market in the old town, rebuilt after the war and a World Heritage site, and another on the market square. Two days covers it.",
+        "see": [
+          "The old town market",
+          "The market square and its coloured houses",
+          "The Palace of Culture, lit up",
+          "The Praga district, across the river"
+        ],
+        "tip": "Warsaw's old town was rebuilt with bricks from the ruined buildings. It's a copy, but a copy made from the originals, and you can tell."
+      },
+      "Kraków": {
+        "text": "Kraków has the market on the Main Square, the largest medieval square in Europe, with the Cloth Hall in the middle. It's the prettiest city in Poland and three days covers it.",
+        "see": [
+          "The market on the Main Square",
+          "The Cloth Hall and St Mary's basilica",
+          "Wawel castle, with the climb up the tower",
+          "The Kazimierz Jewish quarter"
+        ],
+        "tip": "The trumpet call from St Mary's tower sounds every hour and stops halfway. It's a city tradition and you hear it across the square."
+      },
+      "Wrocław": {
+        "text": "Wrocław has one of Poland's biggest markets on the Market Square, with coloured houses and the Gothic town hall. Two days covers it, and the bronze dwarfs are all over the city.",
+        "see": [
+          "The market on the Market Square",
+          "The Gothic town hall and the square",
+          "The bronze dwarfs, scattered through the city",
+          "Cathedral Island, with the padlock bridge"
+        ],
+        "tip": "There are more than 600 bronze dwarfs across the city. There's a map at the tourist office: hunting them is the best way to walk Wrocław."
+      }
+    },
+    "gettingAround": "Train. Gdańsk and Warsaw are two and a half hours apart on a fast train; Warsaw and Kraków, two and a half; Kraków and Wrocław, three. Book ahead: in December the trains are full. Gdańsk airport is 30 minutes from the centre by train, and Kraków 20 minutes.",
+    "bestTime": "Late November and December, until the 23rd or the 31st depending on the market. The first half of December is best: fewer people than in the school holidays. It's very cold, between -5 and 2°C, and dark by 15:30. The markets close on 25 and 26 December.",
+    "faq": [
+      {
+        "question": "How many days do you need for Christmas in Poland?",
+        "answer": "5 or 6 days covers Kraków and Wrocław. With 7 or 8 you add Gdańsk and Warsaw."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train links the four cities and the legs are two to three hours. A car is only a nuisance in the centre."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Wrocław and you finish in Gdańsk."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Gdańsk (GDN), Kraków (KRK) or Wrocław (WRO). Warsaw (WAW) has no Ryanair or Wizz flights: it's visited by train between the other cities."
+      }
+    ]
+  }
+}

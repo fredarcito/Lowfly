@@ -1,4 +1,4 @@
-// The multi-city routes' own pages' words (/es/recorridos/italia-clasica), in each language. The route's own text
+// The multi-city routes' own pages' words (/es/recorridos/classic-italy), in each language. The route's own text
 // (what each town is like) is in src/data/multiCityPages/<route>.json; these are the page's frame.
 const es = {
   // The way to the page, for search engines: Lowfly › Recorridos › the route

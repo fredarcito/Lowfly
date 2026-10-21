@@ -1,0 +1,284 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "sicilia",
+    "en": "sicily"
+  },
+  "photos": {
+    "Palermo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Palermo02_flickr.jpg/960px-Palermo02_flickr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 504,
+      "page": "https://commons.wikimedia.org/wiki/File:Palermo02_flickr.jpg",
+      "author": "Xerones",
+      "license": "CC BY 2.0"
+    },
+    "Cefalù": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Cefalu_View_0832.jpg/960px-Cefalu_View_0832.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Cefalu_View_0832.jpg",
+      "author": "Ludvig14",
+      "license": "CC BY-SA 4.0"
+    },
+    "Taormina": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mt_Etna_and_Taormina_as_seen_from_the_Ancient_Theatre_of_Taormina_%2822290641726%29.jpg/960px-Mt_Etna_and_Taormina_as_seen_from_the_Ancient_Theatre_of_Taormina_%2822290641726%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 452,
+      "page": "https://commons.wikimedia.org/wiki/File:Mt_Etna_and_Taormina_as_seen_from_the_Ancient_Theatre_of_Taormina_(22290641726).jpg",
+      "author": "John Menard",
+      "license": "CC BY-SA 2.0"
+    },
+    "Catania": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Catania_panorama.jpg/960px-Catania_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 537,
+      "page": "https://commons.wikimedia.org/wiki/File:Catania_panorama.jpg",
+      "author": "stefan_fotos",
+      "license": "CC BY-SA 2.0"
+    },
+    "Syracuse": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ortigia_dall%27alto.jpg/960px-Ortigia_dall%27alto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Ortigia_dall%27alto.jpg",
+      "author": "Agostino Artnoir Sella",
+      "license": "CC BY-SA 2.0"
+    },
+    "Ragusa": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ragusa_Ibla%2C_Sicily.jpg/960px-Ragusa_Ibla%2C_Sicily.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 523,
+      "page": "https://commons.wikimedia.org/wiki/File:Ragusa_Ibla,_Sicily.jpg",
+      "author": "Chris Down",
+      "license": "CC BY 4.0"
+    },
+    "Agrigento": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Agrigento_4m1.jpg/960px-Agrigento_4m1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 534,
+      "page": "https://commons.wikimedia.org/wiki/File:Agrigento_4m1.jpg",
+      "author": "jschoenhofer",
+      "license": "CC BY-SA 2.0"
+    },
+    "Trapani": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Trapani%2C_Sicily.jpg/960px-Trapani%2C_Sicily.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 543,
+      "page": "https://commons.wikimedia.org/wiki/File:Trapani,_Sicily.jpg",
+      "author": "Myke Bryan",
+      "license": "CC BY 2.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Sicilia",
+    "metaTitle": "Ruta por Sicilia: Palermo, Cefalù, Taormina y Siracusa, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Palermo o Catania y recorres la isla en tren y autobús, con el Etna siempre al fondo. Vuelves desde el otro extremo, así que no repites camino.",
+    "why": [
+      "Sicilia es una isla dentro de una isla: normandos, árabes y griegos dejaron templos, cúpulas y mosaicos a pocos kilómetros unos de otros. Y todo con el Etna vigilando.",
+      "El orden importa. Palermo primero, que es la más ruidosa y la más barroca, y el este después, con Taormina y Siracusa, para acabar con calma junto al mar.",
+      "Lo que suele fallar es el tiempo. La isla es grande y los trenes lentos: cruzar de Palermo a Catania son casi tres horas. Elige una mitad o dale dos semanas."
+    ],
+    "towns": {
+      "Palermo": {
+        "text": "Palermo es un mosaico de culturas: una catedral normanda, un mercado árabe y un barrio entero construido por la mafia en los años sesenta. Dos noches, y aún te faltará tiempo.",
+        "see": [
+          "La catedral y el Palacio de los Normandos, con la capilla Palatina",
+          "El mercado de Ballarò, por la mañana",
+          "Monreale, a 20 minutos en autobús, con los mosaicos dorados más grandes de Italia",
+          "La Vucciria, de noche, cuando se llena de gente"
+        ],
+        "tip": "El mercado de Ballarò es ruidoso y caótico, y ahí está la gracia. Prueba las panelle, el pan con panelle y limón, y no te sientes en un restaurante: come de pie."
+      },
+      "Cefalù": {
+        "text": "Cefalù es la playa de Palermo: un pueblo de calles estrechas con una catedral normanda y una roca enorme detrás. Se ve en un día, y vale la pena quedarse a dormir.",
+        "see": [
+          "La catedral y su mosaico del Cristo Pantocrátor",
+          "La playa, con el pueblo de fondo",
+          "La Rocca, la subida de una hora hasta lo alto"
+        ],
+        "tip": "En agosto la playa se llena y los aparcamientos se agotan. Ve en tren desde Palermo y baja a primera hora."
+      },
+      "Taormina": {
+        "text": "Taormina está colgada sobre el mar y tiene el mejor teatro griego de Sicilia, con el Etna al fondo. Es cara y está llena, pero el atardecer desde la Villa Comunale no se olvida.",
+        "see": [
+          "El teatro griego, con el Etna detrás del escenario",
+          "La Villa Comunale y sus vistas",
+          "Isola Bella, la playa de abajo, en teleférico"
+        ],
+        "tip": "Duerme en Taormina o en Giardini Naxos, abajo. Si te alojas en Catania, el autobús de subida tarda más de una hora y las colas son largas."
+      },
+      "Catania": {
+        "text": "Catania es negra: la lava del Etna está en las calles, en las fachadas y en el suelo. Es ruidosa y vital, y tiene el mercado de pescado más animado de la isla.",
+        "see": [
+          "La Piazza del Duomo y el elefante de lava",
+          "La pescheria, el mercado de pescado, por la mañana",
+          "La Via Etnea, la calle que sube hacia el volcán"
+        ],
+        "tip": "La pasta alla Norma es de aquí, con berenjena, tomate y ricotta salata. Y la granita con brioche es el desayuno, no el postre."
+      },
+      "Syracuse": {
+        "text": "Siracusa fue una de las ciudades más importantes del mundo griego, y Ortigia, su isla, conserva el aire: calles de piedra blanca, un templo dórico dentro de una catedral y el mar por todas partes.",
+        "see": [
+          "El Duomo, construido sobre un templo de Atenea",
+          "La fuente de Arethusa, junto al mar",
+          "El parque arqueológico de Neápolis, con el teatro griego"
+        ],
+        "tip": "Ortigia es pequeña y se recorre en una tarde. Duerme en la isla, no en la ciudad nueva: al atardecer, cuando se van las excursiones, es otra cosa."
+      },
+      "Ragusa": {
+        "text": "Ragusa tiene dos ciudades: la nueva, arriba, y Ragusa Ibla, la vieja, abajo, con callejones que suben y bajan entre iglesias barrocas. Es la Sicilia del barroco sin los grupos de Taormina.",
+        "see": [
+          "Ragusa Ibla y la catedral de San Giorgio",
+          "El jardín ibleo y sus vistas",
+          "Modica, a 20 minutos, por el chocolate"
+        ],
+        "tip": "Aquí se come el mejor chocolate de Sicilia, el de Modica, que se hace en frío y tiene textura de arena. Compra una tableta en la Antica Dolceria Bonajuto."
+      },
+      "Agrigento": {
+        "text": "El Valle de los Templos es lo que queda de Akragas, una de las ciudades griegas más ricas: ocho templos en fila sobre una colina, con el mar al fondo. Se ve en medio día, y al atardecer se encienden.",
+        "see": [
+          "El templo de la Concordia, el mejor conservado",
+          "El templo de Juno, en lo alto",
+          "La Scala dei Turchi, a 20 minutos en coche"
+        ],
+        "tip": "Ve a última hora: la luz es mejor, no hay calor y los templos se iluminan. Y lleva agua, que en el valle no hay sombra."
+      },
+      "Trapani": {
+        "text": "Trapani es la punta occidental de la isla, con salinas, molinos de viento y un centro barroco pequeño. Desde aquí salen los barcos a las islas Egadi.",
+        "see": [
+          "Las salinas de Trapani y el museo del sal",
+          "El centro histórico y la iglesia del Purgatorio",
+          "Favignana, en barco, si tienes un día"
+        ],
+        "tip": "El cuscús de pescado es de aquí, herencia árabe, y se come los viernes. Y el atún, en mayo, cuando pasa por el estrecho."
+      }
+    },
+    "gettingAround": "Tren y autobús. Palermo, Cefalù, Catania, Siracusa y Taormina están en la red de trenes, pero los trayectos son lentos: Palermo–Catania son casi tres horas. Los autobuses de larga distancia (SAIS, Interbus) suelen ser más rápidos y llegan a Ragusa y Agrigento, que el tren no cubre bien. Para el Valle de los Templos y las salinas de Trapani, el coche ahorra mucho tiempo. En Palermo y Catania, el centro se recorre a pie.",
+    "bestTime": "Abril, mayo, junio, septiembre y octubre: buen tiempo, mar templado y menos gente. Julio y agosto son muy calurosos, sobre todo en el interior, y las playas se llenan. En invierno la isla está tranquila y barata, pero muchos hoteles de la costa cierran y el Etna puede tener nieve.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Sicilia?",
+        "answer": "Con 5 o 6 días ves Catania, Taormina y Siracusa. Con 8 a 10 añades Palermo y Cefalù; con 12 a 14 entran Ragusa, Agrigento y Trapani."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Ayuda, pero no es imprescindible. El tren y los autobuses cubren las ciudades principales; el coche compensa para el Valle de los Templos, las salinas y el interior."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Palermo, acabas en Catania, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuerto se vuela?",
+        "answer": "A Palermo (PMO) o a Catania (CTA). Catania tiene más vuelos y está mejor situada para el este de la isla; Palermo, para el oeste."
+      }
+    ]
+  },
+  "en": {
+    "title": "Sicily itinerary",
+    "metaTitle": "Sicily itinerary: Palermo, Cefalù, Taormina and Syracuse in 5 to 13 days · Lowfly",
+    "summary": "You fly into Palermo or Catania and cross the island by train and bus, with Etna always in the background. You fly home from the other end, so you never double back.",
+    "why": [
+      "Sicily is an island within an island: Normans, Arabs and Greeks left temples, domes and mosaics a few kilometres apart. And all of it with Etna watching.",
+      "The order matters. Palermo first, the loudest and most baroque, then the east, with Taormina and Syracuse, to end quietly by the sea.",
+      "What usually goes wrong is time. The island is big and the trains are slow: Palermo to Catania is almost three hours. Pick one half or give it two weeks."
+    ],
+    "towns": {
+      "Palermo": {
+        "text": "Palermo is a mosaic of cultures: a Norman cathedral, an Arab market and a whole neighbourhood built by the mafia in the sixties. Two nights, and you will still be short of time.",
+        "see": [
+          "The cathedral and the Norman Palace, with the Palatine Chapel",
+          "The Ballarò market, in the morning",
+          "Monreale, 20 minutes by bus, with the largest golden mosaics in Italy",
+          "The Vucciria at night, when it fills with people"
+        ],
+        "tip": "The Ballarò market is loud and chaotic, and that is the point. Try panelle, chickpea fritters in a roll with lemon, and don't sit down in a restaurant: eat standing."
+      },
+      "Cefalù": {
+        "text": "Cefalù is Palermo's beach: a village of narrow streets with a Norman cathedral and a huge rock behind it. A day covers it, and it is worth staying the night.",
+        "see": [
+          "The cathedral and its Christ Pantocrator mosaic",
+          "The beach, with the village behind it",
+          "La Rocca, an hour's climb to the top"
+        ],
+        "tip": "In August the beach fills and parking runs out. Take the train from Palermo and go down early."
+      },
+      "Taormina": {
+        "text": "Taormina hangs above the sea and has the finest Greek theatre in Sicily, with Etna behind it. It is expensive and crowded, but the sunset from the Villa Comunale is unforgettable.",
+        "see": [
+          "The Greek theatre, with Etna behind the stage",
+          "The Villa Comunale and its views",
+          "Isola Bella, the beach below, by cable car"
+        ],
+        "tip": "Sleep in Taormina or in Giardini Naxos, down below. If you stay in Catania, the bus up takes over an hour and the queues are long."
+      },
+      "Catania": {
+        "text": "Catania is black: Etna's lava is in the streets, the facades and the paving. It is loud and alive, and it has the liveliest fish market on the island.",
+        "see": [
+          "The Piazza del Duomo and the lava elephant",
+          "The pescheria, the fish market, in the morning",
+          "Via Etnea, the street climbing towards the volcano"
+        ],
+        "tip": "Pasta alla Norma comes from here, with aubergine, tomato and ricotta salata. And granita with brioche is breakfast, not dessert."
+      },
+      "Syracuse": {
+        "text": "Syracuse was one of the great cities of the Greek world, and Ortigia, its island, keeps the air of it: white stone streets, a Doric temple inside a cathedral and the sea everywhere.",
+        "see": [
+          "The Duomo, built on a temple of Athena",
+          "The Arethusa fountain, by the sea",
+          "The Neapolis archaeological park, with the Greek theatre"
+        ],
+        "tip": "Ortigia is small and walked in an afternoon. Sleep on the island, not in the new town: at sunset, once the day trips leave, it is another place."
+      },
+      "Ragusa": {
+        "text": "Ragusa has two towns: the new one, up top, and Ragusa Ibla, the old one, below, with lanes climbing and dipping between baroque churches. This is baroque Sicily without the Taormina crowds.",
+        "see": [
+          "Ragusa Ibla and the cathedral of San Giorgio",
+          "The Ibleo garden and its views",
+          "Modica, 20 minutes away, for chocolate"
+        ],
+        "tip": "The best chocolate in Sicily is made here, in Modica, cold-worked and grainy. Buy a bar at the Antica Dolceria Bonajuto."
+      },
+      "Agrigento": {
+        "text": "The Valley of the Temples is what is left of Akragas, one of the richest Greek cities: eight temples in a row on a ridge, with the sea beyond. Half a day covers it, and at dusk they light up.",
+        "see": [
+          "The temple of Concordia, the best preserved",
+          "The temple of Juno, up high",
+          "The Scala dei Turchi, 20 minutes by car"
+        ],
+        "tip": "Go late: the light is better, there is no heat and the temples are lit. And take water, because there is no shade in the valley."
+      },
+      "Trapani": {
+        "text": "Trapani is the western tip of the island, with salt pans, windmills and a small baroque centre. Boats to the Egadi islands leave from here.",
+        "see": [
+          "The Trapani salt pans and the salt museum",
+          "The old centre and the church of the Purgatory",
+          "Favignana, by boat, if you have a day"
+        ],
+        "tip": "Fish couscous comes from here, an Arab legacy, and it is eaten on Fridays. And tuna in May, when it passes through the strait."
+      }
+    },
+    "gettingAround": "Train and bus. Palermo, Cefalù, Catania, Syracuse and Taormina are on the rail network, but the journeys are slow: Palermo to Catania is almost three hours. Long-distance buses (SAIS, Interbus) are often faster and reach Ragusa and Agrigento, which the train does not cover well. For the Valley of the Temples and the Trapani salt pans, a car saves a lot of time. In Palermo and Catania, the centre is walked.",
+    "bestTime": "April, May, June, September and October: good weather, warm sea and fewer people. July and August are very hot, especially inland, and the beaches fill. In winter the island is quiet and cheap, but many coastal hotels close and Etna can have snow.",
+    "faq": [
+      {
+        "question": "How many days do you need for Sicily?",
+        "answer": "With 5 or 6 days you see Catania, Taormina and Syracuse. With 8 to 10 you add Palermo and Cefalù; with 12 to 14 Ragusa, Agrigento and Trapani fit in."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "It helps, but it is not essential. Train and bus cover the main cities; a car pays off for the Valley of the Temples, the salt pans and the interior."
+      },
+      {
+        "question": "Can the route be done the other way round?",
+        "answer": "Yes: it works both ways. If you start in Palermo, you finish in Catania, with the airport a step away."
+      },
+      {
+        "question": "Which airport do you fly to?",
+        "answer": "Palermo (PMO) or Catania (CTA). Catania has more flights and is better placed for the east; Palermo for the west."
+      }
+    ]
+  }
+}

@@ -42,7 +42,7 @@ export const savedStops = (stops) =>
     leave: { day: leaveDay, time: leaveTime || null },
   }));
 
-// A town of a multi-city route by its place in the route as written ("italia-clasica/full/2"): towns with no airport
+// A town of a multi-city route by its place in the route as written ("classic-italy/full/2"): towns with no airport
 // (Matera, Siena) go to the planner this way
 export const isRouteTown = (code) => /^[a-z0-9-]+\/(short|full|long)\/\d+$/.test(code ?? "");
 

@@ -1,0 +1,186 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "navidad-en-centroeuropa",
+    "en": "christmas-in-central-europe"
+  },
+  "photos": {
+    "Prague": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Christmas_Old_Town_Square_Prague_2007.jpg/960px-Christmas_Old_Town_Square_Prague_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_Old_Town_Square_Prague_2007.jpg",
+      "author": "Pazuzu",
+      "license": "CC BY 3.0"
+    },
+    "Vienna": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Rathaus_Christkindlmarkt_%285273197597%29.jpg/960px-Rathaus_Christkindlmarkt_%285273197597%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Rathaus_Christkindlmarkt_(5273197597).jpg",
+      "author": "Max Pfandl from Vienna, Austria",
+      "license": "CC BY 2.0"
+    },
+    "Bratislava": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Bratislava_Christmas_market.jpg/960px-Bratislava_Christmas_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 579,
+      "page": "https://commons.wikimedia.org/wiki/File:Bratislava_Christmas_market.jpg",
+      "author": "Nelliette",
+      "license": "CC BY-SA 2.0"
+    },
+    "Budapest": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Budapest_Christmas_Market_2012_%288227171699%29.jpg/960px-Budapest_Christmas_Market_2012_%288227171699%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Budapest_Christmas_Market_2012_(8227171699).jpg",
+      "author": "Top Budapest",
+      "license": "CC BY 2.0"
+    }
+  },
+  "es": {
+    "title": "Navidad en Centroeuropa: Praga, Viena, Bratislava y Budapest",
+    "metaTitle": "Navidad en Centroeuropa en tren: Praga, Viena, Bratislava y Budapest, de 5 a 8 días · Lowfly",
+    "summary": "Mercadillos imperiales, ponche caliente y pistas de hielo junto al Danubio. Cuatro ciudades en tren, con Viena y Bratislava a una hora.",
+    "why": [
+      "Praga, Viena, Bratislava y Budapest están en el Danubio, y el tren las une en tramos de una a cuatro horas. En una semana se ven las cuatro, y cada una tiene un mercadillo con carácter propio.",
+      "El orden importa. Praga primero, que es la más barata y la más bonita de noche; Viena después, con el mercadillo del ayuntamiento y el de Schönbrunn; Bratislava en medio, que es de un día; y Budapest al final, con los baños termales.",
+      "Lo que suele fallar es la distancia. Praga y Budapest están a siete horas en tren, y mucha gente no lo sabe. Si vas justo de días, quita Bratislava o haz el tramo largo de noche."
+    ],
+    "towns": {
+      "Prague": {
+        "text": "Praga tiene el mercadillo de la plaza de la Ciudad Vieja, con el reloj astronómico al lado, y otro en la plaza de Wenceslao. La ciudad es barata y en diciembre está preciosa con nieve.",
+        "see": [
+          "El mercadillo de la plaza de la Ciudad Vieja",
+          "El reloj astronómico, que se mueve cada hora",
+          "El puente de Carlos, a primera hora",
+          "El mercadillo de la plaza de Wenceslao"
+        ],
+        "tip": "El puente de Carlos está lleno a todas horas menos a primera de la mañana. Si quieres verlo vacío, ve antes de las ocho, con frío y todo."
+      },
+      "Vienna": {
+        "text": "Viena tiene el mercadillo del ayuntamiento, con el edificio iluminado detrás y una pista de hielo enorme delante, y otro en Schönbrunn, más tranquilo. La ciudad es elegante y cara.",
+        "see": [
+          "El Christkindlmarkt del ayuntamiento",
+          "El mercadillo de Schönbrunn, delante del palacio",
+          "El mercadillo de la plaza de la catedral",
+          "El café vienés, para entrar en calor"
+        ],
+        "tip": "El mercadillo del ayuntamiento es el más grande y el más lleno. El de Schönbrunn es más tranquilo y se ve el palacio iluminado: merece la pena el viaje en metro."
+      },
+      "Bratislava": {
+        "text": "Bratislava es pequeña y se ve en un día, con un casco antiguo de calles estrechas y un mercadillo en la plaza Mayor. Está a una hora de Viena y es la parada más barata de la ruta.",
+        "see": [
+          "El mercadillo de la plaza Mayor",
+          "El castillo de Bratislava, con la vista del Danubio",
+          "La catedral de San Martín",
+          "El puente UFO y el barrio de Petržalka"
+        ],
+        "tip": "Bratislava es la capital más barata de la ruta: la cerveza y la comida cuestan la mitad que en Viena. Aprovecha para comer bien sin gastar."
+      },
+      "Budapest": {
+        "text": "Budapest tiene el mercadillo de la plaza Vörösmarty y el de la basílica de San Esteban, con proyecciones en la fachada. La ciudad es grande y el Danubio la parte en dos.",
+        "see": [
+          "El mercadillo de la plaza Vörösmarty",
+          "El mercadillo de la basílica de San Esteban, con el espectáculo de luz",
+          "Los baños termales Széchenyi, en el parque",
+          "El parlamento, iluminado desde el otro lado del río"
+        ],
+        "tip": "Los baños Széchenyi están abiertos en invierno y el agua sale a 38 grados. Es lo mejor para después de un día de frío: lleva bañador y toalla."
+      }
+    },
+    "gettingAround": "Tren. Praga y Viena están a cuatro horas en tren; Viena y Bratislava, a una hora; Bratislava y Budapest, a dos horas y media. El aeropuerto de Viena está a una hora de Bratislava en autobús, así que se puede volar a uno y volver desde el otro. Compra los billetes con antelación: en diciembre los trenes van llenos.",
+    "bestTime": "Finales de noviembre y diciembre, hasta el 23 o el 31 según el mercadillo. La primera quincena de diciembre es la mejor: menos gente que en las vacaciones escolares. Hace mucho frío, entre -3 y 3 grados, y anochece a las 16:00. Los mercadillos cierran el 25 y el 26.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para la Navidad en Centroeuropa?",
+        "answer": "Con 5 o 6 días ves Praga y Viena. Con 7 u 8 añades Bratislava y Budapest."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren une las cuatro ciudades y los trayectos son de una a cuatro horas. El coche solo estorba en el centro."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Budapest, acabas en Praga."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Praga (PRG), Viena (VIE), Bratislava (BTS) o Budapest (BUD). Viena y Bratislava están a una hora en autobús, así que se puede entrar por una y salir por la otra."
+      }
+    ]
+  },
+  "en": {
+    "title": "Christmas in Central Europe: Prague, Vienna, Bratislava and Budapest",
+    "metaTitle": "Christmas in Central Europe by train: Prague, Vienna, Bratislava and Budapest in 5 to 8 days · Lowfly",
+    "summary": "Imperial markets, hot punch and ice rinks along the Danube. Four cities by train, with Vienna and Bratislava an hour apart.",
+    "why": [
+      "Prague, Vienna, Bratislava and Budapest all sit on the Danube, and the train joins them in legs of one to four hours. A week covers all four, and each has a market with its own character.",
+      "The order matters. Prague first, the cheapest and the prettiest at night; Vienna after, with the town-hall market and Schönbrunn; Bratislava in the middle, a day; and Budapest last, with the thermal baths.",
+      "What usually goes wrong is the distance. Prague and Budapest are seven hours apart by train, and plenty of people don't realise. If you're short on days, drop Bratislava or do the long leg overnight."
+    ],
+    "towns": {
+      "Prague": {
+        "text": "Prague has the market on Old Town Square, with the astronomical clock beside it, and another on Wenceslas Square. The city is cheap and in December it's beautiful in snow.",
+        "see": [
+          "The market on Old Town Square",
+          "The astronomical clock, which moves every hour",
+          "Charles Bridge, first thing",
+          "The market on Wenceslas Square"
+        ],
+        "tip": "Charles Bridge is packed at every hour except early morning. If you want it empty, go before eight, cold or not."
+      },
+      "Vienna": {
+        "text": "Vienna has the town-hall market, with the building lit up behind and a huge ice rink in front, and another at Schönbrunn, quieter. The city is elegant and expensive.",
+        "see": [
+          "The Christkindlmarkt at the town hall",
+          "The Schönbrunn market, in front of the palace",
+          "The market on the cathedral square",
+          "A Viennese coffee house, to warm up"
+        ],
+        "tip": "The town-hall market is the biggest and the busiest. Schönbrunn is quieter and you see the palace lit up: worth the metro ride."
+      },
+      "Bratislava": {
+        "text": "Bratislava is small and takes a day, with an old town of narrow streets and a market on the main square. It's an hour from Vienna and the cheapest stop on the route.",
+        "see": [
+          "The market on the main square",
+          "Bratislava castle, with the view over the Danube",
+          "St Martin's cathedral",
+          "The UFO bridge and the Petržalka district"
+        ],
+        "tip": "Bratislava is the cheapest capital on the route: beer and food cost half what they do in Vienna. Use it to eat well without spending."
+      },
+      "Budapest": {
+        "text": "Budapest has the market on Vörösmarty Square and another at St Stephen's basilica, with projections on the facade. The city is big and the Danube splits it in two.",
+        "see": [
+          "The market on Vörösmarty Square",
+          "The St Stephen's market, with the light show",
+          "The Széchenyi thermal baths, in the park",
+          "The parliament, lit up from across the river"
+        ],
+        "tip": "The Széchenyi baths are open in winter and the water comes out at 38°C. It's the best thing after a day in the cold: take a swimsuit and a towel."
+      }
+    },
+    "gettingAround": "Train. Prague and Vienna are four hours apart by train; Vienna and Bratislava, an hour; Bratislava and Budapest, two and a half hours. Vienna airport is an hour from Bratislava by bus, so you can fly into one and home from the other. Book ahead: in December the trains are full.",
+    "bestTime": "Late November and December, until the 23rd or the 31st depending on the market. The first half of December is best: fewer people than in the school holidays. It's very cold, between -3 and 3°C, and dark by 16:00. The markets close on 25 and 26 December.",
+    "faq": [
+      {
+        "question": "How many days do you need for Christmas in Central Europe?",
+        "answer": "5 or 6 days covers Prague and Vienna. With 7 or 8 you add Bratislava and Budapest."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train links the four cities and the legs run from one to four hours. A car is only a nuisance in the centre."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Budapest and you finish in Prague."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Prague (PRG), Vienna (VIE), Bratislava (BTS) or Budapest (BUD). Vienna and Bratislava are an hour apart by bus, so you can fly into one and out of the other."
+      }
+    ]
+  }
+}

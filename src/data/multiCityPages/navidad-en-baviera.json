@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "navidad-en-baviera",
+    "en": "christmas-in-bavaria"
+  },
+  "photos": {
+    "Nuremberg": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Christkindlesmarkt_nuernberg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 1076,
+      "page": "https://commons.wikimedia.org/wiki/File:Christkindlesmarkt_nuernberg.jpg",
+      "author": "Roland Berger",
+      "license": "CC BY-SA 3.0"
+    },
+    "Bamberg": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Bamberg_Weihnachtsmarkt_Lichter-20171215-RM-161315.jpg/960px-Bamberg_Weihnachtsmarkt_Lichter-20171215-RM-161315.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 702,
+      "page": "https://commons.wikimedia.org/wiki/File:Bamberg_Weihnachtsmarkt_Lichter-20171215-RM-161315.jpg",
+      "author": "Reinhold Möller Ermell",
+      "license": "CC BY-SA 4.0"
+    },
+    "Rothenburg ob der Tauber": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Illuminated_Marktplatz_%28Rothenburg_ob_der_Tauber%29_2021.jpg/960px-Illuminated_Marktplatz_%28Rothenburg_ob_der_Tauber%29_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Illuminated_Marktplatz_(Rothenburg_ob_der_Tauber)_2021.jpg",
+      "author": "Rosty",
+      "license": "CC BY-SA 4.0"
+    },
+    "Munich": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/M%C3%BCnchner_Christkindlmarkt_3.JPG/960px-M%C3%BCnchner_Christkindlmarkt_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchner_Christkindlmarkt_3.JPG",
+      "author": "X",
+      "license": "Public domain"
+    },
+    "Salzburg": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Salzburg_-_Altstadt_-_Domplatz_Christkindlmarkt_-_2023_12_12-6.jpg/960px-Salzburg_-_Altstadt_-_Domplatz_Christkindlmarkt_-_2023_12_12-6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Salzburg_-_Altstadt_-_Domplatz_Christkindlmarkt_-_2023_12_12-6.jpg",
+      "author": "Eweht",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Navidad en Baviera: Núremberg, Rothenburg y Múnich",
+    "metaTitle": "Navidad en Baviera en tren: Núremberg, Rothenburg, Múnich y Salzburgo, de 5 a 8 días · Lowfly",
+    "summary": "El Christkindlesmarkt de Núremberg, el pueblo medieval de Rothenburg, el mercadillo de Múnich y el de Salzburgo. Pan de especias, salchichas a la brasa y frío de verdad.",
+    "why": [
+      "Baviera tiene los mercadillos más famosos de Alemania y no es casualidad: aquí se inventó el Christkindlesmarkt moderno, con su ángel que abre el mercado desde el balcón de la iglesia. Núremberg es el centro y Rothenburg el pueblo que sale en las postales.",
+      "El orden importa. Núremberg primero, que es la más grande y la que tiene el mercadillo más famoso; luego Bamberg y Rothenburg, que son de un día; y Múnich y Salzburgo al final, que son las más grandes.",
+      "Lo que suele fallar es el frío. Aquí hace de verdad: entre -2 y 4 grados, y anochece a las 16:30. Lleva capas, guantes y calzado impermeable, y para cada dos horas a calentarte con un Glühwein."
+    ],
+    "towns": {
+      "Nuremberg": {
+        "text": "Núremberg tiene el mercadillo de Navidad más famoso de Alemania, con el ángel que lo abre desde el balcón de la Frauenkirche. El centro medieval está entero iluminado y se recorre andando.",
+        "see": [
+          "El Christkindlesmarkt de la plaza del mercado",
+          "El mercado de los oficios, junto a la iglesia de San Lorenzo",
+          "El castillo, con la vista de la ciudad iluminada",
+          "Las salchichas a la brasa, en cualquier puesto"
+        ],
+        "tip": "Las salchichas de Núremberg son pequeñas y se piden por docenas, en un panecillo. Cuestan tres o cuatro euros y son la cena de mucha gente en diciembre."
+      },
+      "Bamberg": {
+        "text": "Bamberg es una ciudad de ladrillo y canales con un ayuntamiento en medio de un puente. En Navidad tiene un mercadillo pequeño y una ruta de belenes por las iglesias que casi nadie hace.",
+        "see": [
+          "El mercadillo de la plaza de la catedral",
+          "El ayuntamiento viejo, en el puente",
+          "La ruta de belenes por las iglesias",
+          "La cerveza de humo, en cualquier taberna"
+        ],
+        "tip": "La ruta de belenes es gratis y se hace en una tarde: nueve iglesias con belenes distintos. La lista está en la oficina de turismo."
+      },
+      "Rothenburg ob der Tauber": {
+        "text": "Rothenburg es el pueblo medieval amurallado más famoso de Alemania, y en Navidad se convierte en un belén. Tiene un mercadillo pequeño y una tienda de adornos navideños que abre todo el año.",
+        "see": [
+          "El Reiterlesmarkt de la plaza del mercado",
+          "La muralla, que se recorre entera",
+          "La tienda de Navidad de Käthe Wohlfahrt",
+          "El reloj de la plaza, que se mueve a las horas en punto"
+        ],
+        "tip": "Rothenburg no tiene estación directa: se llega en tren hasta Steinach y luego en autobús, o en coche. El trayecto desde Núremberg dura unas dos horas."
+      },
+      "Munich": {
+        "text": "Múnich tiene el mercadillo de la Marienplatz, con el árbol más alto de la ciudad, y otros repartidos por los barrios. Es una ciudad grande y en diciembre está llena de bávaros con abrigo y cerveza.",
+        "see": [
+          "El Christkindlmarkt de la Marienplatz",
+          "El mercadillo medieval del Wittelsbacherplatz",
+          "El mercado del Tollwood, en el parque",
+          "La cervecería Hofbräuhaus, para entrar en calor"
+        ],
+        "tip": "El mercadillo medieval del Wittelsbacherplatz es el más original y el menos turístico. Tiene herreros, malabaristas y comida de la Edad Media."
+      },
+      "Salzburg": {
+        "text": "Salzburgo tiene el mercadillo de la plaza de la catedral, con la fortaleza iluminada detrás, y es uno de los más bonitos de Austria. Se ve en un día, con el centro y el castillo.",
+        "see": [
+          "El Christkindlmarkt de la Domplatz",
+          "La fortaleza de Hohensalzburg, iluminada",
+          "La calle Getreidegasse y las casas de hierro forjado",
+          "El mercadillo de la plaza de la catedral, de noche"
+        ],
+        "tip": "Salzburgo está a hora y media de Múnich en tren y se puede hacer como excursión de un día. Si te quedas a dormir, los precios son más altos que en Baviera."
+      }
+    },
+    "gettingAround": "Tren. Núremberg y Bamberg están a 45 minutos en tren regional; Núremberg y Rothenburg, a dos horas con transbordo en Steinach y autobús; Núremberg y Múnich, a hora y media en tren rápido; Múnich y Salzburgo, a hora y media. Compra los billetes con antelación: en diciembre los trenes van llenos.",
+    "bestTime": "Finales de noviembre y diciembre, hasta el 24 o el 31 según el mercadillo. La primera quincena de diciembre es la mejor: menos gente que en las vacaciones escolares. Hace frío, entre -2 y 4 grados, y anochece a las 16:30. Los mercadillos cierran el 25 y el 26.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para la Navidad en Baviera?",
+        "answer": "Con 5 o 6 días ves Núremberg y Múnich. Con 7 u 8 añades Bamberg, Rothenburg y Salzburgo."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para las ciudades: el tren une Núremberg, Bamberg, Múnich y Salzburgo. Para Rothenburg sí ayuda, porque el último tramo es en autobús y con pocas frecuencias."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Salzburgo, acabas en Núremberg."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Núremberg (NUE), Memmingen (FMM) o Salzburgo (SZG). Múnich (MUC) no tiene vuelos de Ryanair ni Wizz: el aeropuerto más cercano con ellas es Memmingen, a 110 kilómetros, con autobús directo."
+      }
+    ]
+  },
+  "en": {
+    "title": "Christmas in Bavaria: Nuremberg, Rothenburg and Munich",
+    "metaTitle": "Christmas in Bavaria by train: Nuremberg, Rothenburg, Munich and Salzburg in 5 to 8 days · Lowfly",
+    "summary": "Nuremberg's Christkindlesmarkt, the medieval village of Rothenburg, Munich's market and Salzburg's. Gingerbread, grilled sausages and proper cold.",
+    "why": [
+      "Bavaria has Germany's most famous Christmas markets, and it's no accident: the modern Christkindlesmarkt was invented here, with its angel opening the market from the church balcony. Nuremberg is the centre and Rothenburg the village from the postcards.",
+      "The order matters. Nuremberg first, the biggest and the one with the most famous market; then Bamberg and Rothenburg, a day each; and Munich and Salzburg last, the biggest cities.",
+      "What usually goes wrong is the cold. It's real here: between -2 and 4°C, dark by 16:30. Wear layers, gloves and waterproof shoes, and stop every couple of hours to warm up with a Glühwein."
+    ],
+    "towns": {
+      "Nuremberg": {
+        "text": "Nuremberg has Germany's most famous Christmas market, with the angel who opens it from the Frauenkirche balcony. The medieval centre is lit up entirely and you walk it.",
+        "see": [
+          "The Christkindlesmarkt on the main square",
+          "The crafts market, beside St Lawrence church",
+          "The castle, with the view of the lit-up city",
+          "The grilled sausages, at any stall"
+        ],
+        "tip": "Nuremberg sausages are small and ordered by the dozen, in a bread roll. They cost three or four euros and they're dinner for plenty of people in December."
+      },
+      "Bamberg": {
+        "text": "Bamberg is a town of brick and canals with a town hall in the middle of a bridge. At Christmas it has a small market and a nativity trail through the churches that almost nobody does.",
+        "see": [
+          "The market on the cathedral square",
+          "The old town hall, on the bridge",
+          "The nativity trail through the churches",
+          "Smoked beer, in any tavern"
+        ],
+        "tip": "The nativity trail is free and takes an afternoon: nine churches with different cribs. The list is at the tourist office."
+      },
+      "Rothenburg ob der Tauber": {
+        "text": "Rothenburg is Germany's most famous walled medieval village, and at Christmas it turns into a nativity scene. It has a small market and a Christmas decorations shop that opens all year.",
+        "see": [
+          "The Reiterlesmarkt on the market square",
+          "The walls, walked all the way round",
+          "Käthe Wohlfahrt's Christmas shop",
+          "The clock on the square, which moves on the hour"
+        ],
+        "tip": "Rothenburg has no direct station: you take the train to Steinach and then a bus, or drive. The trip from Nuremberg takes about two hours."
+      },
+      "Munich": {
+        "text": "Munich has the market on Marienplatz, with the city's tallest tree, and others spread through the districts. It's a big city and in December it's full of Bavarians in coats with beer.",
+        "see": [
+          "The Christkindlmarkt on Marienplatz",
+          "The medieval market on Wittelsbacherplatz",
+          "The Tollwood market, in the park",
+          "The Hofbräuhaus, to warm up"
+        ],
+        "tip": "The medieval market on Wittelsbacherplatz is the most original and the least touristy. It has blacksmiths, jugglers and medieval food."
+      },
+      "Salzburg": {
+        "text": "Salzburg has the market on the cathedral square, with the fortress lit up behind it, and it's one of the prettiest in Austria. A day covers the centre and the castle.",
+        "see": [
+          "The Christkindlmarkt on Domplatz",
+          "Hohensalzburg fortress, lit up",
+          "Getreidegasse and its wrought-iron signs",
+          "The cathedral-square market, at night"
+        ],
+        "tip": "Salzburg is an hour and a half from Munich by train and works as a day trip. If you stay the night, prices are higher than in Bavaria."
+      }
+    },
+    "gettingAround": "Train. Nuremberg and Bamberg are 45 minutes apart on a regional train; Nuremberg and Rothenburg, two hours with a change at Steinach and a bus; Nuremberg and Munich, an hour and a half on a fast train; Munich and Salzburg, an hour and a half. Book ahead: in December the trains are full.",
+    "bestTime": "Late November and December, until the 24th or the 31st depending on the market. The first half of December is best: fewer people than in the school holidays. It's cold, between -2 and 4°C, and dark by 16:30. The markets close on 25 and 26 December.",
+    "faq": [
+      {
+        "question": "How many days do you need for Christmas in Bavaria?",
+        "answer": "5 or 6 days covers Nuremberg and Munich. With 7 or 8 you add Bamberg, Rothenburg and Salzburg."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the cities: the train links Nuremberg, Bamberg, Munich and Salzburg. For Rothenburg it helps, because the last stretch is by bus and departures are few."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Salzburg and you finish in Nuremberg."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Nuremberg (NUE), Memmingen (FMM) or Salzburg (SZG). Munich (MUC) has no Ryanair or Wizz flights: the nearest airport with them is Memmingen, 110 kilometres away, with a direct bus."
+      }
+    ]
+  }
+}

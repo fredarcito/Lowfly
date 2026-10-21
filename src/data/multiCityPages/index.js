@@ -35,6 +35,13 @@ import valleDelDuero from "./valle-del-duero.json";
 import castillosDelLoire from "./castillos-del-loira.json";
 import occitania from "./occitania.json";
 import bretana from "./bretana.json";
+import navidadEnAlsacia from "./navidad-en-alsacia.json";
+import navidadEnBaviera from "./navidad-en-baviera.json";
+import navidadEnElRin from "./navidad-en-el-rin.json";
+import navidadBerlinDresdePraga from "./navidad-berlin-dresde-praga.json";
+import navidadEnCentroeuropa from "./navidad-en-centroeuropa.json";
+import navidadEnPolonia from "./navidad-en-polonia.json";
+import navidadEnElBaltico from "./navidad-en-el-baltico.json";
 
 const pages = {
   "italia-clasica": italiaClasica,
@@ -68,6 +75,13 @@ const pages = {
   "castillos-del-loira": castillosDelLoire,
   occitania,
   bretana,
+  "navidad-en-alsacia": navidadEnAlsacia,
+  "navidad-en-baviera": navidadEnBaviera,
+  "navidad-en-el-rin": navidadEnElRin,
+  "navidad-berlin-dresde-praga": navidadBerlinDresdePraga,
+  "navidad-en-centroeuropa": navidadEnCentroeuropa,
+  "navidad-en-polonia": navidadEnPolonia,
+  "navidad-en-el-baltico": navidadEnElBaltico,
 };
 
 export default pages;

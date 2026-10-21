@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "madeira",
+    "en": "madeira"
+  },
+  "photos": {
+    "Funchal": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Madeira_19_2014.jpg/960px-Madeira_19_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 400,
+      "page": "https://commons.wikimedia.org/wiki/File:Madeira_19_2014.jpg",
+      "author": "Bengt Nyman",
+      "license": "CC BY 2.0"
+    },
+    "Calheta": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Madeira_Beach_%28163610932%29.jpg/960px-Madeira_Beach_%28163610932%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Madeira_Beach_(163610932).jpg",
+      "author": "Don Amaro from Madeira Islands, Portugal",
+      "license": "CC BY 2.0"
+    },
+    "Porto Moniz": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Piscinas_volc%C3%A1nicas_naturales%2C_Porto_Moniz%2C_Madeira%2C_Portugal%2C_2019-05-30%2C_DD_70.jpg/960px-Piscinas_volc%C3%A1nicas_naturales%2C_Porto_Moniz%2C_Madeira%2C_Portugal%2C_2019-05-30%2C_DD_70.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 435,
+      "page": "https://commons.wikimedia.org/wiki/File:Piscinas_volc%C3%A1nicas_naturales,_Porto_Moniz,_Madeira,_Portugal,_2019-05-30,_DD_70.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    "Santana": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Levada_do_Caldeir%C3%A3o_Verde%2C_Madeira_-_Aug_2012_-_05.jpg/960px-Levada_do_Caldeir%C3%A3o_Verde%2C_Madeira_-_Aug_2012_-_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 531,
+      "page": "https://commons.wikimedia.org/wiki/File:Levada_do_Caldeir%C3%A3o_Verde,_Madeira_-_Aug_2012_-_05.jpg",
+      "author": "cudi",
+      "license": "CC BY 2.0"
+    },
+    "Machico": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Machico_%28Portugal%29.jpg/960px-Machico_%28Portugal%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Machico_(Portugal).jpg",
+      "author": "",
+      "license": "CC BY 2.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Madeira: Funchal, Porto Moniz y las levadas",
+    "metaTitle": "Madeira en coche: Funchal, Porto Moniz y Santana, de 5 a 13 días · Lowfly",
+    "summary": "Una isla de 57 kilómetros de largo con montañas de 1.800 metros, laurisilva y piscinas volcánicas. Se recorre en coche, en círculo, con Funchal como base.",
+    "why": [
+      "Madeira es una isla volcánica en medio del Atlántico con un clima que no se parece al resto de Portugal: en Funchal hay 20 grados en enero y en el Pico Ruivo puede haber cinco y niebla. En un mismo día se pasa de la playa a la montaña.",
+      "El orden importa. Funchal primero, que es donde está el aeropuerto y la mitad de los hoteles; luego la costa oeste, con Calheta y Porto Moniz; y la costa norte, con Santana, para acabar en Machico, al lado del aeropuerto.",
+      "Lo que suele fallar es el tiempo. Las nubes se pegan a la montaña por la tarde y tapan los miradores. Las levadas y el Pico Ruivo se hacen por la mañana, y si amanece despejado, se aprovecha."
+    ],
+    "towns": {
+      "Funchal": {
+        "text": "Funchal es una ciudad en anfiteatro sobre el mar, con jardines tropicales y un casco antiguo de calles empedradas. Se ve en dos días, con tiempo para una levada y para el mercado.",
+        "see": [
+          "El mercado dos Lavradores, por la mañana",
+          "El teleférico a Monte y el jardín tropical",
+          "La zona velha y la puerta pintada",
+          "La levada do Caldeirão Verde, a 40 minutos en coche"
+        ],
+        "tip": "El mercado dos Lavradores es bonito y caro: los vendedores de fruta cobran precios de turista. Compra en el mercado de la Ribeira Brava o en un supermercado."
+      },
+      "Calheta": {
+        "text": "Calheta es la playa de arena de Madeira, traída del Sáhara, y el pueblo donde se hace la caña de azúcar. Es tranquila y sirve de base para la costa oeste.",
+        "see": [
+          "La playa de arena y el paseo marítimo",
+          "La fábrica de caña de azúcar, con degustación",
+          "El mirador do Cristo Rei, en Garajau, de camino",
+          "Las piscinas naturales de Paul do Mar, al lado"
+        ],
+        "tip": "La arena de Calheta es importada y el agua está fría, pero es la única playa de arena de la isla. Para bañarse, mejor las piscinas naturales."
+      },
+      "Porto Moniz": {
+        "text": "Porto Moniz está en el extremo noroeste y es famoso por sus piscinas naturales, excavadas en la lava y llenas de agua del mar. El pueblo es pequeño y el paisaje alrededor, de acantilados, es lo mejor.",
+        "see": [
+          "Las piscinas naturales de lava",
+          "El acuario de Porto Moniz",
+          "El mirador da Ribeira da Janela",
+          "El camino por la costa hasta Seixal, con sus piscinas"
+        ],
+        "tip": "Las piscinas naturales son de pago y el agua está fría incluso en agosto. Ve por la mañana, cuando hay menos gente y el sol entra de lleno."
+      },
+      "Santana": {
+        "text": "Santana es conocida por sus casas de paja con forma de triángulo, que eran las viviendas tradicionales de los campesinos. El pueblo se ve en una mañana y la zona de alrededor es la más verde de la isla.",
+        "see": [
+          "Las casas tradicionales de Santana",
+          "El parque temático de Madeira, con las casas de paja",
+          "La levada do Rei, una de las más fáciles",
+          "El mirador do Guindaste, en Faial"
+        ],
+        "tip": "Las casas de paja del centro son un museo y están muy restauradas. Las de verdad, habitadas, están en los alrededores, en Sítio do Queimadas."
+      },
+      "Machico": {
+        "text": "Machico es donde desembarcaron los primeros colonos y tiene la otra playa de arena de la isla, además de un paseo marítimo agradable. Está a diez minutos del aeropuerto.",
+        "see": [
+          "La playa de arena y el paseo marítimo",
+          "La capela dos Milagres y el mirador",
+          "El fuerte de São João Baptista",
+          "La levada do Caniçal, hacia el este"
+        ],
+        "tip": "Machico es la mejor base para la última noche: está a diez minutos del aeropuerto y los hoteles cuestan la mitad que en Funchal."
+      }
+    },
+    "gettingAround": "Coche imprescindible. Madeira tiene autobuses entre Funchal y los pueblos, pero son lentos y escasos, y no llegan a los miradores ni a las levadas. Alquila el coche en el aeropuerto: las carreteras son buenas, aunque estrechas y con curvas. La isla se recorre en círculo en unas tres horas sin parar.",
+    "bestTime": "Marzo, abril, mayo, junio, septiembre y octubre: buen tiempo y menos gente. En primavera la isla está verde y florecida, y en octubre el agua del mar está más templada. Julio y agosto son los meses de más turismo, con precios altos y las levadas llenas. En invierno llueve en el norte y hace viento, pero en Funchal hay 20 grados.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Madeira?",
+        "answer": "Con 5 o 6 días ves Funchal, Porto Moniz y Santana. Con 8 a 10 añades Calheta y Machico, y con 11 a 13 se pueden hacer varias levadas y subir al Pico Ruivo."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, casi. Los autobuses unen Funchal con los pueblos, pero no llegan a los miradores ni al inicio de las levadas, y las frecuencias son escasas."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. La isla es un círculo y el aeropuerto está en el sureste, así que se puede empezar por Machico o por Funchal."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "Al aeropuerto de Madeira (FNC), en Santa Cruz, a 20 minutos de Funchal. La pista es corta y famosa por el viento: algunos vuelos se desvían a Porto Santo o a Canarias."
+      }
+    ]
+  },
+  "en": {
+    "title": "Madeira itinerary: Funchal, Porto Moniz and the levadas",
+    "metaTitle": "Madeira by car: Funchal, Porto Moniz and Santana in 5 to 13 days · Lowfly",
+    "summary": "An island 57 kilometres long with 1,800-metre mountains, laurel forest and volcanic pools. You drive it in a loop, with Funchal as a base.",
+    "why": [
+      "Madeira is a volcanic island in the middle of the Atlantic with a climate unlike the rest of Portugal: Funchal has 20°C in January and Pico Ruivo can have five and fog. In one day you go from the beach to the mountain.",
+      "The order matters. Funchal first, where the airport and half the hotels are; then the west coast, with Calheta and Porto Moniz; and the north coast, with Santana, finishing at Machico, next to the airport.",
+      "What usually goes wrong is the weather. The clouds stick to the mountain in the afternoon and hide the viewpoints. Do the levadas and Pico Ruivo in the morning, and if it's clear at dawn, use it."
+    ],
+    "towns": {
+      "Funchal": {
+        "text": "Funchal is a city in an amphitheatre above the sea, with tropical gardens and an old town of cobbled streets. Two days covers it, with time for a levada and the market.",
+        "see": [
+          "The Lavradores market, in the morning",
+          "The cable car to Monte and the tropical garden",
+          "The zona velha and the painted door",
+          "The Caldeirão Verde levada, 40 minutes away by car"
+        ],
+        "tip": "The Lavradores market is pretty and expensive: the fruit sellers charge tourist prices. Buy at the Ribeira Brava market or in a supermarket."
+      },
+      "Calheta": {
+        "text": "Calheta is Madeira's sand beach, brought in from the Sahara, and the town where sugar cane is worked. It's quiet and works as a base for the west coast.",
+        "see": [
+          "The sand beach and the seafront",
+          "The sugar-cane factory, with a tasting",
+          "The Cristo Rei viewpoint at Garajau, on the way",
+          "The natural pools at Paul do Mar, next door"
+        ],
+        "tip": "The sand at Calheta is imported and the water is cold, but it's the island's only sand beach. For swimming, the natural pools are better."
+      },
+      "Porto Moniz": {
+        "text": "Porto Moniz sits at the north-western tip and is famous for its natural pools, cut into the lava and filled with seawater. The town is small and the cliff landscape around it is the best part.",
+        "see": [
+          "The natural lava pools",
+          "The Porto Moniz aquarium",
+          "The Ribeira da Janela viewpoint",
+          "The coastal road to Seixal, with its own pools"
+        ],
+        "tip": "The natural pools charge an entrance and the water is cold even in August. Go in the morning, when there are fewer people and the sun comes straight in."
+      },
+      "Santana": {
+        "text": "Santana is known for its thatched triangular houses, the traditional homes of the farmers. The town takes a morning, and the area around it is the greenest part of the island.",
+        "see": [
+          "The traditional Santana houses",
+          "The Madeira theme park, with the thatched houses",
+          "The Rei levada, one of the easiest",
+          "The Guindaste viewpoint, in Faial"
+        ],
+        "tip": "The thatched houses in the centre are a museum and heavily restored. The real, lived-in ones are nearby, at Sítio do Queimadas."
+      },
+      "Machico": {
+        "text": "Machico is where the first settlers landed and has the island's other sand beach, plus a pleasant seafront. It's ten minutes from the airport.",
+        "see": [
+          "The sand beach and the seafront",
+          "The Capela dos Milagres and the viewpoint",
+          "São João Baptista fort",
+          "The Caniçal levada, heading east"
+        ],
+        "tip": "Machico is the best base for the last night: ten minutes from the airport and half the price of Funchal."
+      }
+    },
+    "gettingAround": "A car is essential. Madeira has buses between Funchal and the villages, but they're slow and infrequent, and they don't reach the viewpoints or the levadas. Hire at the airport: the roads are good, though narrow and winding. The island can be circled in about three hours without stopping.",
+    "bestTime": "March, April, May, June, September and October: good weather and fewer people. In spring the island is green and in flower, and in October the sea is warmest. July and August are the busiest months, with high prices and crowded levadas. Winter is wet in the north and windy, but Funchal stays at 20°C.",
+    "faq": [
+      {
+        "question": "How many days do you need for Madeira?",
+        "answer": "5 or 6 days covers Funchal, Porto Moniz and Santana. With 8 to 10 you add Calheta and Machico, and with 11 to 13 you can walk several levadas and climb Pico Ruivo."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, more or less. Buses link Funchal with the villages, but they don't reach the viewpoints or the start of the levadas, and departures are few."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. The island is a loop and the airport is in the south-east, so you can start in Machico or in Funchal."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Madeira airport (FNC), in Santa Cruz, 20 minutes from Funchal. The runway is short and famous for wind: some flights divert to Porto Santo or the Canaries."
+      }
+    ]
+  }
+}

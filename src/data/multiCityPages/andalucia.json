@@ -1,0 +1,244 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "andalucia",
+    "en": "andalusia"
+  },
+  "photos": {
+    "Seville": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Sevilla_Luft_120308.JPG/960px-Sevilla_Luft_120308.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Sevilla_Luft_120308.JPG",
+      "author": "El-mejor",
+      "license": "CC BY-SA 3.0"
+    },
+    "Córdoba": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Centro_Hist%C3%B3rico%2C_16.9_--_2023_--_C%C3%B3rdoba%2C_Espa%C3%B1a.jpg/960px-Centro_Hist%C3%B3rico%2C_16.9_--_2023_--_C%C3%B3rdoba%2C_Espa%C3%B1a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Centro_Hist%C3%B3rico,_16.9_--_2023_--_C%C3%B3rdoba,_Espa%C3%B1a.jpg",
+      "author": "Jose María Ligero Loarte",
+      "license": "CC BY-SA 4.0"
+    },
+    "Granada": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/%22Der_Blick_von_der_Alhambra_auf_Granada_ist_einfach_atemberaubend%22._01.jpg/960px-%22Der_Blick_von_der_Alhambra_auf_Granada_ist_einfach_atemberaubend%22._01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 515,
+      "page": "https://commons.wikimedia.org/wiki/File:%22Der_Blick_von_der_Alhambra_auf_Granada_ist_einfach_atemberaubend%22._01.jpg",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0"
+    },
+    "Málaga": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Malaga_2023.jpg/960px-Malaga_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Malaga_2023.jpg",
+      "author": "Viktar Palstsiuk",
+      "license": "CC BY-SA 4.0"
+    },
+    "Cádiz": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Cadiz_aerea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 546,
+      "page": "https://commons.wikimedia.org/wiki/File:Cadiz_aerea.jpg",
+      "author": "fuente: COVT",
+      "license": "CC BY 3.0"
+    },
+    "Ronda": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Ronda_aerial.jpg/960px-Ronda_aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 537,
+      "page": "https://commons.wikimedia.org/wiki/File:Ronda_aerial.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Andalucía: Sevilla, Córdoba, Granada y la costa",
+    "metaTitle": "Andalucía en tren y autobús: Sevilla, Córdoba, Granada y Málaga, de 5 a 13 días · Lowfly",
+    "summary": "Entras por Sevilla, sigues a Córdoba y Granada y sales por Málaga, con el mar al final. Sin coche: los AVE y los autobuses unen las cuatro ciudades en una o dos horas.",
+    "why": [
+      "Andalucía tiene tres ciudades de arte a una hora y media unas de otras y una costa a la que bajar cuando el calor aprieta. Es raro encontrar un viaje donde se pueda pasar de la Mezquita a la playa en el mismo día.",
+      "El orden importa. Sevilla y Córdoba primero, que son llanas y se andan; Granada después, que es cuesta arriba y se lleva mejor con las piernas frescas. Málaga al final, para acabar con el mar y con el aeropuerto al lado.",
+      "Lo que suele fallar es el calor. En julio y agosto a las tres de la tarde no se camina: se duerme la siesta. Si vas en verano, organiza el día como los andaluces, con las visitas de monumentos a primera hora y a última."
+    ],
+    "towns": {
+      "Seville": {
+        "text": "Sevilla se ve andando, y casi todo lo que hay que ver está en un radio de dos kilómetros. Duerme en el centro, entre la Catedral y la Alameda, y deja el coche fuera: el casco está lleno de calles cortadas y aparcar cuesta más que el hotel.",
+        "see": [
+          "La Catedral y la Giralda, con la subida por rampas en vez de escaleras",
+          "El Real Alcázar, con entrada reservada: sin ella, la cola da la vuelta a la manzana",
+          "El barrio de Santa Cruz, de día, cuando los patios están abiertos",
+          "Triana, al otro lado del río, para cenar y ver la calle Betis desde el puente"
+        ],
+        "tip": "Las tapas se piden de pie en la barra y se pagan al final. En Triana, la calle Betis está llena de terrazas para turistas; una calle hacia dentro, los precios bajan a la mitad."
+      },
+      "Córdoba": {
+        "text": "Córdoba se visita en un día si vas justo, pero la Mezquita merece la mañana entera. El resto es un laberinto de calles blancas alrededor de la Judería, con patios que en mayo se abren al público y compiten a ver cuál está mejor cuidado.",
+        "see": [
+          "La Mezquita-Catedral, a primera hora: la entrada gratuita de la mañana temprano tiene hora límite",
+          "La Judería y la calleja de las Flores",
+          "El Alcázar de los Reyes Cristianos y sus jardines",
+          "Los patios, si vas en mayo, cuando hay concurso"
+        ],
+        "tip": "El salmorejo y el rabo de toro son de aquí, no de Sevilla. Y el fino se pide bien frío, con una tapa de jamón al lado."
+      },
+      "Granada": {
+        "text": "Granada es la única de las cuatro que no se puede hacer en un día. La Alhambra ocupa media jornada y el Albaicín, la otra media, y entre las dos hay una cuesta que se sube despacio.",
+        "see": [
+          "La Alhambra, con entrada comprada con semanas de antelación: los Palacios Nazaríes tienen hora fija",
+          "El Albaicín y el mirador de San Nicolás, mejor al atardecer",
+          "El Sacromonte y sus cuevas, con un espectáculo de zambra si te apetece",
+          "La Capilla Real, donde están enterrados los Reyes Católicos",
+          "El barrio del Realejo, para comer sin turistas"
+        ],
+        "tip": "En Granada la tapa viene gratis con la bebida, y por eso se cena de ronda: una caña aquí, un vino allá. No pidas la carta en el primer sitio, que la cuenta sube rápido."
+      },
+      "Málaga": {
+        "text": "Málaga ha cambiado más que ninguna otra ciudad de la ruta en los últimos veinte años. El puerto es nuevo, el centro está lleno de museos y la playa de la Malagueta sigue a diez minutos andando de la Catedral.",
+        "see": [
+          "El Museo Picasso, en el Palacio de Buenavista",
+          "La Alcazaba y el castillo de Gibralfaro, con la vista del puerto",
+          "El mercado de Atarazanas, para el desayuno",
+          "La playa de la Malagueta, si el día acompaña"
+        ],
+        "tip": "El espeto de sardinas se come en los chiringuitos de la playa, ensartado en una caña y asado a la brasa. Pídelo en Pedregalejo, no en el paseo marítimo del centro."
+      },
+      "Cádiz": {
+        "text": "Cádiz es la ciudad más antigua de Europa occidental y se nota en la forma: calles estrechísimas, plazas escondidas y el mar por tres lados. Se recorre en una tarde larga, y luego se queda uno a comer pescado frito.",
+        "see": [
+          "La Catedral y su torre, con la subida al campanario",
+          "El barrio de La Viña, donde nació el carnaval",
+          "La Caleta y el castillo de Santa Catalina",
+          "El mercado central, para comprar pescado y que te lo frían allí"
+        ],
+        "tip": "El pescaíto frito se pide por peso y se come con las manos. En La Viña, el chiringuito de la playa sirve el mejor a media tarde, cuando ya no hay cola."
+      },
+      "Ronda": {
+        "text": "Ronda está partida en dos por un tajo de cien metros, y el puente que lo cruza es lo que todo el mundo viene a ver. La ciudad de abajo, el barrio de San Francisco, es la que casi nadie visita y la que tiene más vida.",
+        "see": [
+          "El Puente Nuevo y el mirador del Tajo",
+          "La plaza de toros, una de las más antiguas de España",
+          "La casa del Rey Moro y sus jardines",
+          "El barrio de San Francisco, al otro lado del puente"
+        ],
+        "tip": "El camino que baja hasta la base del puente sale de la casa del Rey Moro y es empinado. Lleva agua y calzado que agarre, que la piedra resbala."
+      }
+    },
+    "gettingAround": "Tren y autobús, sin coche. Sevilla, Córdoba y Málaga están en la línea del AVE, con trenes cada media hora y trayectos de 45 a 95 minutos. Granada se une a Córdoba en autobús (hora y media) o en tren por Antequera, más lento. Cádiz está a hora y media de Sevilla en tren regional, y Ronda se alcanza en autobús desde Málaga o desde Cádiz. Compra los billetes de AVE con antelación: el precio sube mucho en las últimas semanas.",
+    "bestTime": "Marzo, abril, mayo, octubre y noviembre: buen tiempo y menos gente. Abril es el mes de las fiestas, con la Semana Santa y la Feria de Sevilla, cuando los hoteles se llenan y suben de precio. Junio y septiembre son calurosos pero llevaderos. Julio y agosto son muy calurosos, sobre todo en Córdoba y Sevilla, donde se pasa de 40 grados; en la costa se lleva mejor.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Andalucía?",
+        "answer": "Con 5 o 6 días ves Sevilla y Granada. Con 8 a 10 añades Córdoba y Málaga; con 11 a 13 entran también Cádiz y Ronda."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No. Las cuatro ciudades grandes están unidas por AVE y autobús. El coche solo ayuda para Ronda y para los pueblos blancos, y se puede alquilar por un día."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Málaga, acabas en Sevilla, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Sevilla (SVQ), Málaga (AGP) o Granada (GRX). Málaga tiene muchas más conexiones y está a dos horas de Sevilla en tren; Granada es el aeropuerto más pequeño de los tres."
+      }
+    ]
+  },
+  "en": {
+    "title": "Andalusia itinerary: Seville, Córdoba, Granada and the coast",
+    "metaTitle": "Andalusia by train and bus: Seville, Córdoba, Granada and Málaga in 5 to 13 days · Lowfly",
+    "summary": "Fly into Seville, carry on to Córdoba and Granada, and leave from Málaga with the sea at the end. No car: high-speed trains and buses link the four cities in one or two hours.",
+    "why": [
+      "Andalusia has three cities of art an hour and a half apart and a coast to drop down to when the heat builds. It's rare to find a trip where you can go from the Mezquita to the beach on the same day.",
+      "The order matters. Seville and Córdoba first, flat and easy on foot; Granada after, because it's all uphill and better with fresh legs. Málaga last, to finish by the sea with the airport next door.",
+      "What usually goes wrong is the heat. In July and August nobody walks at three in the afternoon: they sleep through it. If you go in summer, run the day the Andalusian way, with the monuments first thing and last thing."
+    ],
+    "towns": {
+      "Seville": {
+        "text": "Seville is a walking city, and almost everything worth seeing sits within two kilometres. Stay in the centre, between the Cathedral and the Alameda, and leave the car outside: the old town is full of closed streets and parking costs more than the hotel.",
+        "see": [
+          "The Cathedral and the Giralda, climbed by ramps instead of stairs",
+          "The Real Alcázar, with a booked ticket: without one, the queue wraps around the block",
+          "Santa Cruz, by day, when the patios are open",
+          "Triana, across the river, for dinner and the view of calle Betis from the bridge"
+        ],
+        "tip": "Tapas are ordered standing at the bar and paid for at the end. On calle Betis in Triana the terraces are for visitors; one street back, prices halve."
+      },
+      "Córdoba": {
+        "text": "Córdoba can be done in a day if you're tight on time, but the Mezquita deserves the whole morning. The rest is a maze of white streets around the Judería, with patios that open to the public in May and compete over which is best kept.",
+        "see": [
+          "The Mezquita-Cathedral, early: the free early-morning entry has a cut-off time",
+          "The Judería and the calleja de las Flores",
+          "The Alcázar of the Christian Kings and its gardens",
+          "The patios, if you're there in May, when the contest runs"
+        ],
+        "tip": "Salmorejo and oxtail are from here, not from Seville. And fino is served properly cold, with a plate of ham alongside."
+      },
+      "Granada": {
+        "text": "Granada is the one you can't do in a day. The Alhambra takes half a day and the Albaicín the other half, and between the two there's a hill you climb slowly.",
+        "see": [
+          "The Alhambra, booked weeks ahead: the Nasrid Palaces have a fixed time slot",
+          "The Albaicín and the San Nicolás viewpoint, best at sunset",
+          "Sacromonte and its caves, with a zambra show if that appeals",
+          "The Royal Chapel, where the Catholic Monarchs are buried",
+          "The Realejo, for lunch away from the crowds"
+        ],
+        "tip": "In Granada the tapa comes free with the drink, which is why dinner is a crawl: a beer here, a wine there. Don't order from the menu at the first place, or the bill climbs fast."
+      },
+      "Málaga": {
+        "text": "Málaga has changed more than any other city on this route in the last twenty years. The port is new, the centre is full of museums, and La Malagueta beach is still ten minutes on foot from the Cathedral.",
+        "see": [
+          "The Picasso Museum, in the Palacio de Buenavista",
+          "The Alcazaba and Gibralfaro castle, with the view over the port",
+          "Atarazanas market, for breakfast",
+          "La Malagueta beach, if the weather plays along"
+        ],
+        "tip": "Espetos — sardines skewered on a cane and grilled over coals — are eaten at the beach bars. Order them in Pedregalejo, not on the seafront in the centre."
+      },
+      "Cádiz": {
+        "text": "Cádiz is the oldest city in western Europe, and you can tell from the shape of it: narrow streets, hidden squares and sea on three sides. It's a long afternoon's walk, and then you stay for fried fish.",
+        "see": [
+          "The Cathedral and its tower, with the climb to the bell chamber",
+          "La Viña, the neighbourhood where carnival was born",
+          "La Caleta and Santa Catalina castle",
+          "The central market, to buy fish and have it fried there"
+        ],
+        "tip": "Pescaito frito is sold by weight and eaten with your hands. In La Viña, the beach bar serves the best of it mid-afternoon, once the queue has gone."
+      },
+      "Ronda": {
+        "text": "Ronda is split in two by a hundred-metre gorge, and the bridge across it is what everyone comes to see. The town below, the San Francisco quarter, is the part almost nobody visits and the part with more life.",
+        "see": [
+          "The Puente Nuevo and the Tajo viewpoint",
+          "The bullring, one of the oldest in Spain",
+          "The Casa del Rey Moro and its gardens",
+          "The San Francisco quarter, on the far side of the bridge"
+        ],
+        "tip": "The path down to the foot of the bridge starts at the Casa del Rey Moro and is steep. Take water and shoes that grip: the stone is slippery."
+      }
+    },
+    "gettingAround": "Train and bus, no car. Seville, Córdoba and Málaga are on the high-speed line, with trains every half hour and journeys of 45 to 95 minutes. Granada is linked to Córdoba by bus (an hour and a half) or by train via Antequera, which is slower. Cádiz is an hour and a half from Seville on a regional train, and Ronda is reached by bus from Málaga or Cádiz. Book high-speed tickets well ahead: prices climb sharply in the last few weeks.",
+    "bestTime": "March, April, May, October and November: good weather and fewer people. April is the month of the festivals, Holy Week and the Seville Fair, when hotels fill up and prices rise. June and September are hot but bearable. July and August are very hot, especially in Córdoba and Seville, where it goes past 40°C; the coast copes better.",
+    "faq": [
+      {
+        "question": "How many days do you need for Andalusia?",
+        "answer": "5 or 6 days covers Seville and Granada. With 8 to 10 you add Córdoba and Málaga; with 11 to 13 Cádiz and Ronda come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No. The four big cities are linked by high-speed train and bus. A car only helps for Ronda and the white villages, and you can hire one for a single day."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Málaga and you finish in Seville, with the airport close by."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Seville (SVQ), Málaga (AGP) or Granada (GRX). Málaga has far more connections and is two hours from Seville by train; Granada is the smallest of the three."
+      }
+    ]
+  }
+}

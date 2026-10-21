@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "azores-sao-miguel",
+    "en": "azores-sao-miguel"
+  },
+  "photos": {
+    "Ponta Delgada": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Seafront_of_Ponta_Delgada.jpg/960px-Seafront_of_Ponta_Delgada.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Seafront_of_Ponta_Delgada.jpg",
+      "author": "This photo was taken by Anton Zelenov. Please credit this with : Photo : Anton Zelenov in the immediate vicinity of the image. If you use one of my photos, please email me (account needed) or leave me a short message on my discussion page. It would be greatly appreciated. Do not copy this image illegally by ignoring the terms of the license below, as it is not in the public domain. If you would like special permission to use, license, or purchase the image please contact me to negotiate terms.",
+      "license": "CC BY-SA 3.0"
+    },
+    "Sete Cidades": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Miradouro_da_Boca_do_Inferno%2C_povoado_das_Sete_Cidades%2C_ilha_de_S%C3%A3o_Miguel%2C_A%C3%A7ores.JPG/960px-Miradouro_da_Boca_do_Inferno%2C_povoado_das_Sete_Cidades%2C_ilha_de_S%C3%A3o_Miguel%2C_A%C3%A7ores.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:Miradouro_da_Boca_do_Inferno,_povoado_das_Sete_Cidades,_ilha_de_S%C3%A3o_Miguel,_A%C3%A7ores.JPG",
+      "author": "José Luís Ávila Silveira/Pedro Noronha e Costa",
+      "license": "Public domain"
+    },
+    "Ribeira Grande": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Miradouro_de_Santa_Iria%2C_Porto_Formoso%2C_ilha_de_S%C3%A3o_Miguel%2C_A%C3%A7ores.JPG/960px-Miradouro_de_Santa_Iria%2C_Porto_Formoso%2C_ilha_de_S%C3%A3o_Miguel%2C_A%C3%A7ores.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:Miradouro_de_Santa_Iria,_Porto_Formoso,_ilha_de_S%C3%A3o_Miguel,_A%C3%A7ores.JPG",
+      "author": "José Luís Ávila Silveira/Pedro Noronha e Costa",
+      "license": "Public domain"
+    },
+    "Nordeste": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Azores_-_Noordeste_%287684585600%29.jpg/960px-Azores_-_Noordeste_%287684585600%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Azores_-_Noordeste_(7684585600).jpg",
+      "author": "Abspires40 from Cape Town, South Africa",
+      "license": "CC BY 2.0"
+    },
+    "Furnas": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Lagoa_das_Furnas_2023-02-25.jpg/960px-Lagoa_das_Furnas_2023-02-25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 492,
+      "page": "https://commons.wikimedia.org/wiki/File:Lagoa_das_Furnas_2023-02-25.jpg",
+      "author": "The Cosmonaut",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por las Azores: São Miguel",
+    "metaTitle": "São Miguel en coche: Ponta Delgada, Sete Cidades y Furnas, de 5 a 13 días · Lowfly",
+    "summary": "Una isla volcánica de 65 kilómetros con lagos en cráteres, aguas termales y ballenas frente a la costa. Se recorre en coche, en círculo, desde Ponta Delgada.",
+    "why": [
+      "São Miguel es la isla más grande de las Azores y la única con aeropuerto internacional. Tiene dos volcanes dormidos con lagos en el cráter, un valle de aguas termales y una costa de acantilados verdes que no se parece a nada del continente.",
+      "El orden importa. Ponta Delgada primero, que es la base; luego el oeste, con Sete Cidades; la costa norte, con Ribeira Grande y Nordeste; y Furnas al final, que es lo más raro de la isla.",
+      "Lo que suele fallar es el tiempo. En las Azores cambia cada hora: hay niebla, luego sol, luego lluvia. Mira las webcams antes de subir a los miradores y no te fíes de la previsión."
+    ],
+    "towns": {
+      "Ponta Delgada": {
+        "text": "Ponta Delgada es la capital y el puerto de la isla, con una iglesia barroca, un paseo marítimo y un mercado de pescado. Se ve en un día, y es la mejor base para moverse.",
+        "see": [
+          "La iglesia de São Sebastião y las puertas de la ciudad",
+          "El mercado de Graça, por la mañana",
+          "El fuerte de São Brás y el paseo marítimo",
+          "El mirador da Mãe de Deus, sobre la ciudad"
+        ],
+        "tip": "El mercado de Graça abre de martes a sábado por la mañana. Los domingos está cerrado y la ciudad se queda sin el mejor desayuno de la isla."
+      },
+      "Sete Cidades": {
+        "text": "Sete Cidades es un cráter de cinco kilómetros con dos lagos dentro, uno verde y otro azul, y un pueblo pequeño en la orilla. Se ve desde los miradores de arriba y luego se baja a la orilla.",
+        "see": [
+          "El mirador da Boca do Inferno",
+          "El mirador do Rei, con los dos lagos",
+          "El pueblo y la iglesia de São Nicolau",
+          "La ruta de senderismo alrededor del cráter, de dos horas"
+        ],
+        "tip": "Los lagos solo se ven bien con sol: con niebla, el mirador no muestra nada. Comprueba las webcams de la isla antes de subir."
+      },
+      "Ribeira Grande": {
+        "text": "Ribeira Grande es la segunda ciudad de la isla, con un centro de piedra oscura y un río que la cruza. Al lado están las piscinas naturales de Caldeira Velha y las termas de Ferraria.",
+        "see": [
+          "El centro histórico y la iglesia do Espírito Santo",
+          "Las piscinas termales de Caldeira Velha",
+          "Las termas de Ferraria, en el mar",
+          "El mirador de Santa Iria, sobre la costa norte"
+        ],
+        "tip": "Las piscinas de Caldeira Velha son de pago y el agua sale a 40 grados. Ve a primera hora: a mediodía hay cola para entrar."
+      },
+      "Nordeste": {
+        "text": "Nordeste es la punta este de la isla, con acantilados altos, cascadas y pueblos pequeños. Es la zona menos visitada y la más salvaje, y se recorre en un día.",
+        "see": [
+          "El mirador da Ponta do Sossego, con jardines",
+          "El mirador da Ponta da Madrugada",
+          "El pueblo de Nordeste y su puente",
+          "La cascada do Prego, junto a la carretera"
+        ],
+        "tip": "Los miradores de Ponta do Sossego y Ponta da Madrugada son jardines con vistas al mar. Se llega en coche y hay que pagar un aparcamiento simbólico."
+      },
+      "Furnas": {
+        "text": "Furnas es un valle volcánico con fumarolas, aguas termales y un lago en el cráter. El cozido, el guiso que se cocina bajo tierra con el calor del volcán, es la comida más famosa de la isla.",
+        "see": [
+          "Las fumarolas de Caldeiras y el cozido",
+          "El lago das Furnas y la capilla",
+          "Las piscinas termales de Terra Nostra",
+          "El parque Terra Nostra y sus jardines"
+        ],
+        "tip": "El cozido se entierra a las cinco de la mañana y se saca a mediodía. Hay que reservarlo el día antes en los restaurantes del valle."
+      }
+    },
+    "gettingAround": "Coche imprescindible. La isla tiene autobuses entre Ponta Delgada y los pueblos, pero no llegan a los miradores ni a las termas, y las frecuencias son escasas. Alquila el coche en el aeropuerto: la isla se recorre en círculo en unas tres horas sin parar, y las carreteras son buenas.",
+    "bestTime": "Mayo, junio, julio, agosto y septiembre: los meses con menos lluvia y más horas de sol. Julio y agosto son los más llenos, con precios altos y coches de alquiler agotados. En invierno llueve mucho y hace viento, pero la isla está verde y tranquila. La temporada de ballenas es de abril a octubre.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para São Miguel?",
+        "answer": "Con 5 o 6 días ves Ponta Delgada y Furnas. Con 8 a 10 añades Sete Cidades, Ribeira Grande y Nordeste, y con 11 a 13 se pueden hacer varias rutas de senderismo y una salida a ver ballenas."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, casi. Los autobuses unen Ponta Delgada con los pueblos, pero no llegan a los miradores, a las termas ni al inicio de las rutas, y las frecuencias son escasas."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. La isla es un círculo y el aeropuerto está en Ponta Delgada, así que se puede empezar por Furnas o por Sete Cidades."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "Al aeropuerto João Paulo II (PDL), en Ponta Delgada, a diez minutos del centro. Hay vuelos directos desde Lisboa, Oporto y algunas ciudades europeas, y desde Estados Unidos en verano."
+      }
+    ]
+  },
+  "en": {
+    "title": "Azores itinerary: São Miguel",
+    "metaTitle": "São Miguel by car: Ponta Delgada, Sete Cidades and Furnas in 5 to 13 days · Lowfly",
+    "summary": "A volcanic island 65 kilometres long with crater lakes, hot springs and whales offshore. You drive it in a loop from Ponta Delgada.",
+    "why": [
+      "São Miguel is the largest of the Azores and the only one with an international airport. It has two dormant volcanoes with lakes in the crater, a valley of hot springs and a coast of green cliffs that looks like nothing on the mainland.",
+      "The order matters. Ponta Delgada first, the base; then the west, with Sete Cidades; the north coast, with Ribeira Grande and Nordeste; and Furnas last, which is the strangest part of the island.",
+      "What usually goes wrong is the weather. In the Azores it changes every hour: fog, then sun, then rain. Check the webcams before driving up to the viewpoints and don't trust the forecast."
+    ],
+    "towns": {
+      "Ponta Delgada": {
+        "text": "Ponta Delgada is the capital and port of the island, with a baroque church, a seafront and a fish market. A day covers it, and it's the best base for getting around.",
+        "see": [
+          "São Sebastião church and the city gates",
+          "Graça market, in the morning",
+          "São Brás fort and the seafront",
+          "The Mãe de Deus viewpoint, over the city"
+        ],
+        "tip": "Graça market opens Tuesday to Saturday mornings. On Sundays it's closed and the city loses the island's best breakfast."
+      },
+      "Sete Cidades": {
+        "text": "Sete Cidades is a five-kilometre crater with two lakes inside, one green and one blue, and a small village on the shore. You see it from the viewpoints above and then drive down to the water.",
+        "see": [
+          "The Boca do Inferno viewpoint",
+          "The Rei viewpoint, with both lakes",
+          "The village and São Nicolau church",
+          "The crater rim walk, about two hours"
+        ],
+        "tip": "The lakes only look right in sun: in fog the viewpoint shows nothing. Check the island webcams before driving up."
+      },
+      "Ribeira Grande": {
+        "text": "Ribeira Grande is the island's second city, with a dark-stone centre and a river running through it. Next to it are the Caldeira Velha pools and the Ferraria hot springs.",
+        "see": [
+          "The historic centre and Espírito Santo church",
+          "The Caldeira Velha thermal pools",
+          "The Ferraria springs, in the sea",
+          "The Santa Iria viewpoint, over the north coast"
+        ],
+        "tip": "The Caldeira Velha pools charge an entrance and the water comes out at 40°C. Go first thing: by midday there's a queue."
+      },
+      "Nordeste": {
+        "text": "Nordeste is the eastern tip of the island, with high cliffs, waterfalls and small villages. It's the least visited and wildest part, and a day covers it.",
+        "see": [
+          "The Ponta do Sossego viewpoint, with gardens",
+          "The Ponta da Madrugada viewpoint",
+          "The town of Nordeste and its bridge",
+          "The Prego waterfall, beside the road"
+        ],
+        "tip": "The Ponta do Sossego and Ponta da Madrugada viewpoints are gardens looking out to sea. You drive there and pay a token parking fee."
+      },
+      "Furnas": {
+        "text": "Furnas is a volcanic valley with fumaroles, hot springs and a crater lake. Cozido, the stew cooked underground with the volcano's heat, is the island's most famous dish.",
+        "see": [
+          "The Caldeiras fumaroles and the cozido",
+          "Furnas lake and the chapel",
+          "The Terra Nostra thermal pools",
+          "Terra Nostra park and its gardens"
+        ],
+        "tip": "The cozido is buried at five in the morning and dug up at midday. You have to order it the day before at the restaurants in the valley."
+      }
+    },
+    "gettingAround": "A car is essential. The island has buses between Ponta Delgada and the villages, but they don't reach the viewpoints or the springs, and departures are few. Hire at the airport: the island can be circled in about three hours without stopping, and the roads are good.",
+    "bestTime": "May, June, July, August and September: the driest months with the most sun. July and August are the busiest, with high prices and hire cars sold out. Winter is wet and windy, but the island is green and quiet. Whale season runs from April to October.",
+    "faq": [
+      {
+        "question": "How many days do you need for São Miguel?",
+        "answer": "5 or 6 days covers Ponta Delgada and Furnas. With 8 to 10 you add Sete Cidades, Ribeira Grande and Nordeste, and with 11 to 13 you can walk several trails and take a whale-watching trip."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, more or less. Buses link Ponta Delgada with the villages, but they don't reach the viewpoints, the springs or the start of the trails, and departures are few."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. The island is a loop and the airport is in Ponta Delgada, so you can start with Furnas or Sete Cidades."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "João Paulo II airport (PDL), in Ponta Delgada, ten minutes from the centre. There are direct flights from Lisbon, Porto and some European cities, and from the US in summer."
+      }
+    ]
+  }
+}

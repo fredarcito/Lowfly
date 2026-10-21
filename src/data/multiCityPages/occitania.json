@@ -1,0 +1,326 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "occitania",
+    "en": "occitanie"
+  },
+  "photos": {
+    "Rodez": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Rodez_view.jpg/960px-Rodez_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 506,
+      "page": "https://commons.wikimedia.org/wiki/File:Rodez_view.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0"
+    },
+    "Conques": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Conques%2C_Aveyron%2C_France_-_Flickr_-_pom%27..jpg/960px-Conques%2C_Aveyron%2C_France_-_Flickr_-_pom%27..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 800,
+      "page": "https://commons.wikimedia.org/wiki/File:Conques,_Aveyron,_France_-_Flickr_-_pom%27..jpg",
+      "author": "Pom' from France, European Union",
+      "license": "CC BY-SA 2.0"
+    },
+    "Cordes-sur-Ciel": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Aerial_image_of_Cordes-sur-Ciel_%28view_from_the_southwest%29.jpg/960px-Aerial_image_of_Cordes-sur-Ciel_%28view_from_the_southwest%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 415,
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Cordes-sur-Ciel_(view_from_the_southwest).jpg",
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0"
+    },
+    "Albi": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Albi_Panorama_Sunset_Panini_General.jpg/960px-Albi_Panorama_Sunset_Panini_General.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 292,
+      "page": "https://commons.wikimedia.org/wiki/File:Albi_Panorama_Sunset_Panini_General.jpg",
+      "author": "Benh LIEU SONG (Flickr)",
+      "license": "CC BY-SA 4.0"
+    },
+    "Toulouse": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Toulouse_-_View_on_Saint_Sernin.jpg/960px-Toulouse_-_View_on_Saint_Sernin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Toulouse_-_View_on_Saint_Sernin.jpg",
+      "author": "Tonio94 (talk · contribs)",
+      "license": "CC BY-SA 2.5"
+    },
+    "Carcassonne": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/1_carcassonne_aerial_2016.jpg/960px-1_carcassonne_aerial_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 472,
+      "page": "https://commons.wikimedia.org/wiki/File:1_carcassonne_aerial_2016.jpg",
+      "author": "Chensiyuan",
+      "license": "CC BY-SA 4.0"
+    },
+    "Narbonne": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Canal_de_la_Robine_%C3%A0_Narbonne.jpg/960px-Canal_de_la_Robine_%C3%A0_Narbonne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Canal_de_la_Robine_%C3%A0_Narbonne.jpg",
+      "author": "Daniel CULSAN",
+      "license": "CC BY-SA 4.0"
+    },
+    "Montpellier": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Montpellier_Place_de_la_Com%C3%A9die.jpg/960px-Montpellier_Place_de_la_Com%C3%A9die.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 531,
+      "page": "https://commons.wikimedia.org/wiki/File:Montpellier_Place_de_la_Com%C3%A9die.jpg",
+      "author": "Wolfgang Staudt",
+      "license": "CC BY 2.0"
+    },
+    "Nîmes": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/N%C3%AEmes%2C_Centre_ville.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 377,
+      "page": "https://commons.wikimedia.org/wiki/File:N%C3%AEmes,_Centre_ville.jpg",
+      "author": "",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Occitania: Toulouse, Carcasona y el sur de Francia",
+    "metaTitle": "Occitania en tren y coche: Toulouse, Carcasona y Montpellier, de 5 a 13 días · Lowfly",
+    "summary": "Empiezas en el interior, con Conques y Cordes-sur-Ciel, y sigues hacia el mar por Toulouse, la ciudad rosa, Carcasona y Montpellier hasta Nimes. El sur de Francia que casi nadie hace.",
+    "why": [
+      "Occitania es la región más grande de Francia y la que menos se conoce. Tiene ciudades de ladrillo rojo, pueblos medievales colgados de una colina y una costa que empieza en Narbona y acaba en el Ródano.",
+      "El orden importa. Entra por el norte, por Rodez, y baja: Conques, Cordes-sur-Ciel, Albi y Toulouse. Luego el canal del Midi hasta Carcasona, y la costa hasta Nimes.",
+      "Lo que suele fallar es el transporte. Toulouse, Carcasona, Narbona, Montpellier y Nimes tienen buenos trenes; Conques, Cordes-sur-Ciel y los castillos cátaros piden coche. Alquila uno en Rodez y devuélvelo en Toulouse."
+    ],
+    "towns": {
+      "Rodez": {
+        "text": "Rodez es una ciudad de ladrillo rojo con una catedral fortaleza y un museo con una colección de arte sorprendente para su tamaño. Se ve en un día, y es la puerta de entrada a la región.",
+        "see": [
+          "La catedral de Notre-Dame y su campanario",
+          "El museo Soulages, de RCR Arquitectos",
+          "El centro histórico y el barrio antiguo",
+          "El mirador sobre el Aveyron"
+        ],
+        "tip": "El museo Soulages es un edificio de acero y cristal con la mayor colección del pintor. Cuesta poco y casi nadie lo conoce: merece la pena."
+      },
+      "Conques": {
+        "text": "Conques es un pueblo medieval colgado de una ladera, con una abadía románica y un tesoro de orfebrería. Se ve en una mañana, y el camino de entrada, desde la carretera, es la mitad del viaje.",
+        "see": [
+          "La abadía de Sainte-Foy y su tímpano",
+          "El tesoro de la abadía, con el relicario de Sainte-Foy",
+          "Las calles del pueblo y las casas de piedra",
+          "El mirador de la entrada, sobre el valle"
+        ],
+        "tip": "El pueblo se ve desde el mirador de la carretera antes de bajar. Aparca allí y baja andando: el aparcamiento del pueblo es pequeño y se llena."
+      },
+      "Cordes-sur-Ciel": {
+        "text": "Cordes-sur-Ciel es un pueblo fortificado en lo alto de una colina, con casas góticas de piedra y calles empinadas. Se ve en una tarde, y la vista desde arriba es la mejor.",
+        "see": [
+          "La puerta de la Jane y las murallas",
+          "La iglesia de Saint-Michel",
+          "Las casas góticas del siglo XIII",
+          "El mirador sobre el valle del Cérou"
+        ],
+        "tip": "El pueblo está en cuesta y las calles son empinadas. Aparca abajo, en la carretera, y sube andando: son quince minutos."
+      },
+      "Albi": {
+        "text": "Albi es una ciudad de ladrillo rojo con una catedral que parece una fortaleza y el museo de Toulouse-Lautrec. Se ve en un día, y el paseo junto al Tarn es lo mejor.",
+        "see": [
+          "La catedral de Sainte-Cécile, con el juicio final pintado",
+          "El museo Toulouse-Lautrec, en el palacio de la Berbie",
+          "El puente viejo y el paseo del Tarn",
+          "El mercado cubierto, por la mañana"
+        ],
+        "tip": "La catedral es enorme por dentro y está pintada entera. La entrada es gratuita para la nave y de pago para el coro: merece la pena pagar."
+      },
+      "Toulouse": {
+        "text": "Toulouse es la ciudad rosa, de ladrillo y de estudiantes, con una plaza enorme y una basílica románica con la nave más ancha de Europa. Se ve en dos días.",
+        "see": [
+          "La basílica de Saint-Sernin",
+          "La plaza del Capitole y el Ayuntamiento",
+          "El mercado de Victor Hugo, por la mañana",
+          "El canal del Midi, para pasear o alquilar una bici"
+        ],
+        "tip": "El canal del Midi se recorre en bici hasta Carcasona en un día, por un camino de sirga llano. Hay alquiler en Toulouse y se puede devolver en Carcasona."
+      },
+      "Carcassonne": {
+        "text": "Carcasona tiene la ciudadela medieval más grande de Europa, con dos murallas y 52 torres, y se ve en un día. La ciudad baja, la bastida, es la que tiene vida.",
+        "see": [
+          "La ciudadela y el castillo condal",
+          "La basílica de Saint-Nazaire y sus vidrieras",
+          "Las murallas, que se recorren por dentro",
+          "La bastida de Saint-Louis, la ciudad baja"
+        ],
+        "tip": "La ciudadela se llena a media mañana y los restaurantes de dentro son caros. Duerme en la bastida y sube a primera hora o al atardecer."
+      },
+      "Narbonne": {
+        "text": "Narbona fue la primera colonia romana fuera de Italia y tiene una catedral sin terminar, un palacio arzobispal y un canal que la cruza. Se ve en un día.",
+        "see": [
+          "La catedral de Saint-Just y su claustro",
+          "El palacio de los arzobispos",
+          "El canal de la Robine y el puente de los Mercaderes",
+          "El mercado de Les Halles, por la mañana"
+        ],
+        "tip": "El canal de la Robine cruza la ciudad y se recorre andando. Los barcos turísticos salen del puente de los Mercaderes y van hasta el mar."
+      },
+      "Montpellier": {
+        "text": "Montpellier es una ciudad universitaria con un centro medieval peatonal y una arquitectura contemporánea que sorprende. Se ve en un día, y la playa está a 20 minutos en tranvía.",
+        "see": [
+          "La plaza de la Comédie y el barrio antiguo",
+          "El museo Fabre",
+          "El barrio de Antigone, de Ricardo Bofill",
+          "La playa de Palavas, en tranvía y autobús"
+        ],
+        "tip": "El tranvía de Montpellier es gratis para los residentes y de pago para los visitantes. Compra el billete en la máquina: los revisores multan sin avisar."
+      },
+      "Nîmes": {
+        "text": "Nimes tiene un anfiteatro romano en mejor estado que el de Roma y una fuente que brota en medio de un parque. Es una ciudad de provincias con un centro peatonal y una vida tranquila.",
+        "see": [
+          "Las arenas, el anfiteatro romano, con audioguía",
+          "La Maison Carrée, el templo romano mejor conservado del mundo",
+          "Los jardines de la Fontaine",
+          "El museo de la Romanidad, si te interesa la historia"
+        ],
+        "tip": "Las arenas acogen conciertos en verano. Si hay uno, el centro se llena y los hoteles suben: comprueba el calendario antes de reservar."
+      }
+    },
+    "gettingAround": "Tren y coche. Rodez y Toulouse están a dos horas en tren; Conques y Cordes-sur-Ciel no tienen estación y se llegan en coche desde Rodez. Albi y Toulouse, a una hora en tren. Toulouse y Carcasona, a 45 minutos; Carcasona y Narbona, a 30 minutos; Narbona y Montpellier, a 50 minutos; Montpellier y Nimes, a 30 minutos. Para los pueblos del interior, un coche de alquiler por dos días es la única opción cómoda.",
+    "bestTime": "Abril, mayo, junio, septiembre y octubre: buen tiempo y menos gente. Julio y agosto son muy calurosos en el interior y muy llenos en la costa, sobre todo en agosto. En invierno hace frío pero hay sol, y las ciudades están tranquilas. La vendimia en las bodegas de Corbières y Minervois es a finales de septiembre.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Occitania?",
+        "answer": "Con 5 o 6 días ves Toulouse, Carcasona y Albi. Con 8 a 10 añades Narbona y Montpellier; con 11 a 13 entran también Rodez, Conques, Cordes-sur-Ciel y Nimes."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Para las ciudades no: el tren une Toulouse, Carcasona, Narbona, Montpellier y Nimes. Para Conques, Cordes-sur-Ciel y los castillos cátaros sí, porque los autobuses pasan poco."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Nimes, acabas en Rodez, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Toulouse (TLS), Carcasona (CCF), Rodez (RDZ) o Nimes (FNI). Toulouse tiene muchas conexiones y está a 20 minutos del centro; Carcasona está a 15 minutos y Rodez a 20."
+      }
+    ]
+  },
+  "en": {
+    "title": "Occitanie itinerary: Toulouse, Carcassonne and southern France",
+    "metaTitle": "Occitanie by train and car: Toulouse, Carcassonne and Montpellier in 5 to 13 days · Lowfly",
+    "summary": "Start inland, with Conques and Cordes-sur-Ciel, and head for the sea through Toulouse, the pink city, Carcassonne and Montpellier to Nîmes. The south of France that almost nobody does.",
+    "why": [
+      "Occitanie is the largest region in France and the least known. It has cities of red brick, medieval villages hanging off a hill and a coast that starts at Narbonne and ends at the Rhône.",
+      "The order matters. Come in from the north, at Rodez, and work down: Conques, Cordes-sur-Ciel, Albi and Toulouse. Then the Canal du Midi to Carcassonne, and the coast to Nîmes.",
+      "What usually goes wrong is the transport. Toulouse, Carcassonne, Narbonne, Montpellier and Nîmes have good trains; Conques, Cordes-sur-Ciel and the Cathar castles need a car. Hire one in Rodez and drop it in Toulouse."
+    ],
+    "towns": {
+      "Rodez": {
+        "text": "Rodez is a red-brick city with a fortress cathedral and a museum with an art collection that surprises for its size. A day covers it, and it's the gateway to the region.",
+        "see": [
+          "Notre-Dame cathedral and its bell tower",
+          "The Soulages museum, by RCR Arquitectos",
+          "The old centre and the historic quarter",
+          "The viewpoint over the Aveyron"
+        ],
+        "tip": "The Soulages museum is a steel and glass building with the largest collection of his work. It costs little and almost nobody knows it: worth it."
+      },
+      "Conques": {
+        "text": "Conques is a medieval village hanging off a hillside, with a Romanesque abbey and a treasury of goldwork. A morning covers it, and the approach road is half the trip.",
+        "see": [
+          "Sainte-Foy abbey and its tympanum",
+          "The abbey treasury, with the reliquary of Sainte-Foy",
+          "The village streets and stone houses",
+          "The viewpoint on the way in, over the valley"
+        ],
+        "tip": "You see the village from the viewpoint on the road before driving down. Park there and walk: the village car park is small and fills up."
+      },
+      "Cordes-sur-Ciel": {
+        "text": "Cordes-sur-Ciel is a fortified village on top of a hill, with Gothic stone houses and steep streets. An afternoon covers it, and the view from the top is the best part.",
+        "see": [
+          "The Porte de la Jane and the walls",
+          "Saint-Michel church",
+          "The 13th-century Gothic houses",
+          "The viewpoint over the Cérou valley"
+        ],
+        "tip": "The village is on a slope and the streets are steep. Park below, on the road, and walk up: fifteen minutes."
+      },
+      "Albi": {
+        "text": "Albi is a red-brick city with a cathedral that looks like a fortress and the Toulouse-Lautrec museum. A day covers it, and the walk along the Tarn is the best part.",
+        "see": [
+          "Sainte-Cécile cathedral, with the painted Last Judgement",
+          "The Toulouse-Lautrec museum, in the Berbie palace",
+          "The old bridge and the Tarn walk",
+          "The covered market, in the morning"
+        ],
+        "tip": "The cathedral is enormous inside and painted throughout. The nave is free and the choir costs: it's worth paying."
+      },
+      "Toulouse": {
+        "text": "Toulouse is the pink city, of brick and students, with an enormous square and a Romanesque basilica with the widest nave in Europe. Two days covers it.",
+        "see": [
+          "Saint-Sernin basilica",
+          "Place du Capitole and the town hall",
+          "Victor Hugo market, in the morning",
+          "The Canal du Midi, for a walk or a bike"
+        ],
+        "tip": "The Canal du Midi can be cycled to Carcassonne in a day, on a flat towpath. You can hire in Toulouse and drop off in Carcassonne."
+      },
+      "Carcassonne": {
+        "text": "Carcassonne has the largest medieval citadel in Europe, with two walls and 52 towers, and a day covers it. The lower town, the bastide, is where the life is.",
+        "see": [
+          "The citadel and the count's castle",
+          "Saint-Nazaire basilica and its stained glass",
+          "The walls, walked inside",
+          "The Saint-Louis bastide, the lower town"
+        ],
+        "tip": "The citadel fills up by mid-morning and the restaurants inside are expensive. Sleep in the bastide and go up first thing or at sunset."
+      },
+      "Narbonne": {
+        "text": "Narbonne was the first Roman colony outside Italy and has an unfinished cathedral, an archbishop's palace and a canal running through it. A day covers it.",
+        "see": [
+          "Saint-Just cathedral and its cloister",
+          "The archbishops' palace",
+          "The Canal de la Robine and the Merchants' bridge",
+          "Les Halles market, in the morning"
+        ],
+        "tip": "The Canal de la Robine runs through the city and is walked along. Tourist boats leave from the Merchants' bridge and go out to the sea."
+      },
+      "Montpellier": {
+        "text": "Montpellier is a university city with a pedestrian medieval centre and contemporary architecture that surprises. A day covers it, and the beach is 20 minutes away by tram.",
+        "see": [
+          "Place de la Comédie and the old town",
+          "The Fabre museum",
+          "The Antigone quarter, by Ricardo Bofill",
+          "Palavas beach, by tram and bus"
+        ],
+        "tip": "Montpellier's trams are free for residents and paid for visitors. Buy the ticket from the machine: inspectors fine without warning."
+      },
+      "Nîmes": {
+        "text": "Nîmes has a Roman amphitheatre in better shape than the one in Rome and a spring that rises in the middle of a park. It's a provincial city with a pedestrian centre and a quiet life.",
+        "see": [
+          "The arena, the Roman amphitheatre, with an audio guide",
+          "The Maison Carrée, the best-preserved Roman temple anywhere",
+          "The gardens of the Fontaine",
+          "The Museum of Romanity, if history is your thing"
+        ],
+        "tip": "The arena hosts concerts in summer. When there's one, the centre fills and hotels raise prices: check the calendar before booking."
+      }
+    },
+    "gettingAround": "Train and car. Rodez and Toulouse are two hours apart by train; Conques and Cordes-sur-Ciel have no station and are reached by car from Rodez. Albi and Toulouse are an hour apart by train. Toulouse and Carcassonne, 45 minutes; Carcassonne and Narbonne, 30 minutes; Narbonne and Montpellier, 50 minutes; Montpellier and Nîmes, 30 minutes. For the inland villages, a hire car for two days is the only comfortable option.",
+    "bestTime": "April, May, June, September and October: good weather and fewer people. July and August are very hot inland and very busy on the coast, especially in August. Winter is cold but sunny, and the cities are quiet. The harvest at the Corbières and Minervois cellars is in late September.",
+    "faq": [
+      {
+        "question": "How many days do you need for Occitanie?",
+        "answer": "5 or 6 days covers Toulouse, Carcassonne and Albi. With 8 to 10 you add Narbonne and Montpellier; with 11 to 13 Rodez, Conques, Cordes-sur-Ciel and Nîmes come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the cities: the train links Toulouse, Carcassonne, Narbonne, Montpellier and Nîmes. For Conques, Cordes-sur-Ciel and the Cathar castles yes, because buses are infrequent."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Nîmes and you finish in Rodez, with the airport close by."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Toulouse (TLS), Carcassonne (CCF), Rodez (RDZ) or Nîmes (FNI). Toulouse has plenty of connections and is 20 minutes from the centre; Carcassonne is 15 minutes away and Rodez 20."
+      }
+    ]
+  }
+}

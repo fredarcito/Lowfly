@@ -1,0 +1,270 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "provenza-y-costa-azul",
+    "en": "provence-and-the-cote-dazur"
+  },
+  "photos": {
+    "Nîmes": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/N%C3%AEmes%2C_Centre_ville.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 377,
+      "page": "https://commons.wikimedia.org/wiki/File:N%C3%AEmes,_Centre_ville.jpg",
+      "author": "",
+      "license": "CC BY-SA 3.0"
+    },
+    "Arles": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/2360.Blick_vom_Ufer_der_Rhone_auf_Arles-Provence.JPG/960px-2360.Blick_vom_Ufer_der_Rhone_auf_Arles-Provence.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:2360.Blick_vom_Ufer_der_Rhone_auf_Arles-Provence.JPG",
+      "author": "Steffen Heilfort",
+      "license": "CC BY-SA 3.0"
+    },
+    "Avignon": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Avignon%2C_Palais_des_Papes_depuis_Tour_Philippe_le_Bel_by_JM_Rosier.jpg/960px-Avignon%2C_Palais_des_Papes_depuis_Tour_Philippe_le_Bel_by_JM_Rosier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 479,
+      "page": "https://commons.wikimedia.org/wiki/File:Avignon,_Palais_des_Papes_depuis_Tour_Philippe_le_Bel_by_JM_Rosier.jpg",
+      "author": "Jean-Marc Rosier (de/from http://www.cjrosier.com + http://www.gordes-immobilier.com)",
+      "license": "CC BY-SA 3.0"
+    },
+    "Aix-en-Provence": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Town_hall_of_Aix-en-Provence_with_the_flags_of_the_State_of_Israel%2C_Ukraine_and_Armenia_%281%29.jpg/960px-Town_hall_of_Aix-en-Provence_with_the_flags_of_the_State_of_Israel%2C_Ukraine_and_Armenia_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Town_hall_of_Aix-en-Provence_with_the_flags_of_the_State_of_Israel,_Ukraine_and_Armenia_(1).jpg",
+      "author": "Hanay",
+      "license": "CC BY-SA 4.0"
+    },
+    "Marseille": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/View_of_Marseille_from_Notre-Dame_de_la_Garde_4.jpg/960px-View_of_Marseille_from_Notre-Dame_de_la_Garde_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 244,
+      "page": "https://commons.wikimedia.org/wiki/File:View_of_Marseille_from_Notre-Dame_de_la_Garde_4.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0"
+    },
+    "Cannes": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Hamnen_Cannes_Mipim_20140312_%2813120667594%29.jpg/960px-Hamnen_Cannes_Mipim_20140312_%2813120667594%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 525,
+      "page": "https://commons.wikimedia.org/wiki/File:Hamnen_Cannes_Mipim_20140312_(13120667594).jpg",
+      "author": "Jenny Andersson / News Oresund",
+      "license": "CC BY 2.0"
+    },
+    "Nice": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Port_Of_Nice%2C_C%C3%B4te_d%27Azur.jpg/960px-Port_Of_Nice%2C_C%C3%B4te_d%27Azur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Port_Of_Nice,_C%C3%B4te_d%27Azur.jpg",
+      "author": "Moody Dreiza (Moody751 at English Wikipedia)",
+      "license": "CC BY 2.5"
+    }
+  },
+  "es": {
+    "title": "Ruta por Provenza y la Costa Azul",
+    "metaTitle": "Provenza y Costa Azul en tren: de Nimes a Niza, de 5 a 13 días · Lowfly",
+    "summary": "Empiezas en el interior, entre ruinas romanas y campos de lavanda, y bajas al mar hasta Niza. Todo en tren, con trayectos de 20 minutos a dos horas.",
+    "why": [
+      "Provenza y la Costa Azul son dos viajes pegados: el interior, de piedra clara y cipreses, y la costa, de playas y puertos. El tren los une, y en una semana se pasa de un anfiteatro romano a una terraza con vistas al Mediterráneo.",
+      "El orden importa. Empieza por el interior, con Nimes, Arlés y Aviñón, y acaba en la costa, con Niza como último punto. Así el viaje va de lo antiguo a lo luminoso, y sales desde un aeropuerto con muchas conexiones.",
+      "Lo que suele fallar es agosto. La Costa Azul se llena y los trenes van llenos, y en el interior hace un calor seco que no se espera. Junio y septiembre son mejores en todo."
+    ],
+    "towns": {
+      "Nîmes": {
+        "text": "Nimes tiene un anfiteatro romano en mejor estado que el de Roma y una fuente que brota en medio de un parque. Es una ciudad de provincias con un centro peatonal y una vida tranquila.",
+        "see": [
+          "Las arenas, el anfiteatro romano, con audioguía",
+          "La Maison Carrée, el templo romano mejor conservado del mundo",
+          "Los jardines de la Fontaine",
+          "El museo de la Romanidad, si te interesa la historia"
+        ],
+        "tip": "Las arenas acogen conciertos en verano. Si hay uno, el centro se llena y los hoteles suben: comprueba el calendario antes de reservar."
+      },
+      "Arles": {
+        "text": "Arlés es la ciudad de Van Gogh, aunque del pintor quedan más las referencias que los cuadros. Tiene un anfiteatro romano enorme y calles estrechas que se recorren en una tarde.",
+        "see": [
+          "El anfiteatro y el teatro romano",
+          "La plaza de la República y la catedral",
+          "El espacio Van Gogh, en el antiguo hospital",
+          "Los Alyscamps, la necrópolis romana"
+        ],
+        "tip": "En verano hay corridas en el anfiteatro. Si no te interesan, evita los días de feria: la ciudad se llena y las calles se cortan."
+      },
+      "Avignon": {
+        "text": "Aviñón fue sede del papado durante el siglo XIV y eso se nota: un palacio enorme, una muralla entera y una ciudad que vive del turismo y del festival de teatro. Se ve en un día largo.",
+        "see": [
+          "El Palacio de los Papas, con visita guiada",
+          "El puente de Aviñón, el que baila en la canción",
+          "La roca de los Doms, para ver el Ródano",
+          "El mercado de Les Halles, por la mañana"
+        ],
+        "tip": "El festival de teatro es en julio y dura casi un mes. Es una experiencia, pero la ciudad se llena y los precios suben: reserva con meses de antelación."
+      },
+      "Aix-en-Provence": {
+        "text": "Aix es la Provenza de postal: fuentes, plazas con plátanos y casas de piedra dorada. Es elegante y cara, con un mercado de productos que es de los mejores de la región.",
+        "see": [
+          "El curso Mirabeau y sus fuentes",
+          "El mercado de la plaza Richelme, los martes y jueves",
+          "El taller de Cézanne, en la colina de Lauves",
+          "La catedral de Saint-Sauveur"
+        ],
+        "tip": "El mercado de Aix es de los mejores de Provenza, pero llega pronto: a las once ya está lleno y a la una recogen."
+      },
+      "Marseille": {
+        "text": "Marsella es ruidosa, diversa y a veces áspera, y por eso gusta tanto o tan poco. El Vieux-Port es el centro, el Panier el barrio antiguo y las calas, al sur, lo mejor de la ciudad.",
+        "see": [
+          "El Vieux-Port y el mercado de pescado por la mañana",
+          "El barrio de Le Panier",
+          "Notre-Dame de la Garde, con la vista de la ciudad",
+          "Las calas, con senderismo o en barco"
+        ],
+        "tip": "La bouillabaisse es cara y se sirve en dos tiempos, sopa y pescado. Si quieres probarla, ve a un sitio de verdad y no a los del puerto viejo con fotos en la puerta."
+      },
+      "Cannes": {
+        "text": "Cannes es la Croisette, los hoteles de lujo y el festival de cine, y fuera de temporada es una ciudad de playa bastante tranquila. Se ve en una tarde y se disfruta caminando por el paseo.",
+        "see": [
+          "La Croisette y la playa pública",
+          "Le Suquet, el barrio antiguo, con la vista del puerto",
+          "El mercado Forville, por la mañana",
+          "Las islas de Lérins, en barco"
+        ],
+        "tip": "Las playas privadas ocupan casi toda la Croisette y cobran por tumbona. La playa pública del final del paseo es gratis y está igual de bien."
+      },
+      "Nice": {
+        "text": "Niza es la capital de la Costa Azul y la más habitable: un paseo marítimo largo, un casco antiguo con mercado y una playa de piedras que no impide bañarse. Se recorre andando.",
+        "see": [
+          "El paseo de los Ingleses y la colina del castillo",
+          "El casco antiguo y el mercado del Cours Saleya",
+          "El museo Matisse y el museo Chagall",
+          "Villefranche-sur-Mer, a 10 minutos en tren"
+        ],
+        "tip": "La playa de Niza es de piedras: lleva escarpines o una esterilla. Si quieres arena, hay que ir a Villefranche o a Antibes."
+      }
+    },
+    "gettingAround": "Tren, con autobús para los pueblos. Nimes, Arlés, Aviñón, Marsella y Niza están en la línea del Mediterráneo, con trenes regionales y TGV, y trayectos de 20 minutos a dos horas y media. Aix-en-Provence se alcanza en autobús desde Marsella en 35 minutos. Cannes está a 30 minutos de Niza en tren regional. Compra los billetes de TGV con antelación: el precio sube mucho en las últimas semanas.",
+    "bestTime": "Mayo, junio, septiembre y octubre: buen tiempo y menos gente. Julio y agosto son muy calurosos en el interior y muy llenos en la costa, sobre todo en agosto, cuando media Francia está de vacaciones. En invierno hace frío pero hay sol, y las ciudades están tranquilas. La lavanda florece entre mediados de junio y mediados de julio.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Provenza y la Costa Azul?",
+        "answer": "Con 5 o 6 días ves Marsella y Niza. Con 8 a 10 añades Arlés y Aviñón; con 11 a 13 entran también Nimes, Aix y Cannes."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para las ciudades: el tren une todas. El coche ayuda para los pueblos de la Provenza y para los campos de lavanda, donde los autobuses son escasos."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Niza, acabas en Nimes, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Niza (NCE), Marsella (MRS) o Nimes (FNI). Niza tiene más conexiones y está a 20 minutos del centro; Marsella está a 25 minutos en autobús; Nimes es pequeño y muchos vuelos llegan a Montpellier."
+      }
+    ]
+  },
+  "en": {
+    "title": "Provence and the Côte d'Azur itinerary",
+    "metaTitle": "Provence and the Côte d'Azur by train: Nîmes to Nice in 5 to 13 days · Lowfly",
+    "summary": "Start inland, among Roman ruins and lavender fields, and come down to the sea at Nice. All by train, with legs from 20 minutes to two hours.",
+    "why": [
+      "Provence and the Côte d'Azur are two trips stuck together: the interior, all pale stone and cypresses, and the coast, all beaches and harbours. The train joins them, and in a week you go from a Roman amphitheatre to a terrace over the Mediterranean.",
+      "The order matters. Start inland, with Nîmes, Arles and Avignon, and finish on the coast at Nice. That way the trip runs from the ancient to the bright, and you fly out of an airport with plenty of connections.",
+      "What usually goes wrong is August. The Côte d'Azur fills up and the trains are packed, and inland the dry heat catches people out. June and September are better on every count."
+    ],
+    "towns": {
+      "Nîmes": {
+        "text": "Nîmes has a Roman amphitheatre in better shape than the one in Rome and a spring that rises in the middle of a park. It's a provincial city with a pedestrian centre and a quiet life.",
+        "see": [
+          "The arena, the Roman amphitheatre, with an audio guide",
+          "The Maison Carrée, the best-preserved Roman temple anywhere",
+          "The gardens of the Fontaine",
+          "The Museum of Romanity, if history is your thing"
+        ],
+        "tip": "The arena hosts concerts in summer. When there's one, the centre fills and hotels raise prices: check the calendar before booking."
+      },
+      "Arles": {
+        "text": "Arles is Van Gogh's city, though more of the painter survives in references than in paintings. It has a huge Roman amphitheatre and narrow streets that take an afternoon.",
+        "see": [
+          "The amphitheatre and the Roman theatre",
+          "Place de la République and the cathedral",
+          "The Van Gogh space, in the old hospital",
+          "The Alyscamps, the Roman necropolis"
+        ],
+        "tip": "In summer there are bullfights in the amphitheatre. If they don't interest you, avoid the feria days: the city fills and streets close."
+      },
+      "Avignon": {
+        "text": "Avignon was the seat of the papacy in the 14th century and it shows: an enormous palace, a complete ring of walls and a city that lives off tourism and its theatre festival. A long day covers it.",
+        "see": [
+          "The Palace of the Popes, with a guided visit",
+          "The Pont d'Avignon, the one from the song",
+          "Rocher des Doms, for the view over the Rhône",
+          "Les Halles market, in the morning"
+        ],
+        "tip": "The theatre festival runs through most of July. It's an experience, but the city fills and prices rise: book months ahead."
+      },
+      "Aix-en-Provence": {
+        "text": "Aix is postcard Provence: fountains, plane-tree squares and golden stone houses. It's elegant and expensive, with a produce market among the best in the region.",
+        "see": [
+          "Cours Mirabeau and its fountains",
+          "The market on Place Richelme, Tuesdays and Thursdays",
+          "Cézanne's studio, on the Lauves hill",
+          "Saint-Sauveur cathedral"
+        ],
+        "tip": "The Aix market is one of the best in Provence, but get there early: by eleven it's full and by one they're packing up."
+      },
+      "Marseille": {
+        "text": "Marseille is loud, mixed and sometimes rough, which is why people love it or don't. The Vieux-Port is the centre, Le Panier the old quarter, and the calanques to the south the best of the city.",
+        "see": [
+          "The Vieux-Port and the fish market in the morning",
+          "The Le Panier quarter",
+          "Notre-Dame de la Garde, with the view over the city",
+          "The calanques, on foot or by boat"
+        ],
+        "tip": "Bouillabaisse is expensive and served in two stages, soup then fish. If you want to try it, go somewhere real, not to the Vieux-Port places with photos on the door."
+      },
+      "Cannes": {
+        "text": "Cannes is the Croisette, the luxury hotels and the film festival, and out of season it's a fairly quiet beach town. An afternoon covers it and the seafront walk is the pleasure.",
+        "see": [
+          "The Croisette and the public beach",
+          "Le Suquet, the old quarter, with the view over the harbour",
+          "Forville market, in the morning",
+          "The Lérins islands, by boat"
+        ],
+        "tip": "Private beaches take up almost all of the Croisette and charge for a lounger. The public beach at the end of the promenade is free and just as good."
+      },
+      "Nice": {
+        "text": "Nice is the capital of the Côte d'Azur and the most liveable: a long seafront, an old town with a market and a pebble beach that doesn't stop you swimming. You walk it.",
+        "see": [
+          "The Promenade des Anglais and the castle hill",
+          "The old town and the Cours Saleya market",
+          "The Matisse and Chagall museums",
+          "Villefranche-sur-Mer, 10 minutes by train"
+        ],
+        "tip": "Nice's beach is pebbles: bring water shoes or a mat. For sand you have to go to Villefranche or Antibes."
+      }
+    },
+    "gettingAround": "Train, with buses for the villages. Nîmes, Arles, Avignon, Marseille and Nice sit on the Mediterranean line, with regional trains and TGV, and journeys from 20 minutes to two and a half hours. Aix-en-Provence is 35 minutes from Marseille by bus. Cannes is 30 minutes from Nice on a regional train. Book TGV tickets ahead: prices climb sharply in the last few weeks.",
+    "bestTime": "May, June, September and October: good weather and fewer people. July and August are very hot inland and very busy on the coast, especially in August, when half of France is on holiday. Winter is cold but sunny, and the cities are quiet. Lavender blooms from mid-June to mid-July.",
+    "faq": [
+      {
+        "question": "How many days do you need for Provence and the Côte d'Azur?",
+        "answer": "5 or 6 days covers Marseille and Nice. With 8 to 10 you add Arles and Avignon; with 11 to 13 Nîmes, Aix and Cannes come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the cities: the train links them all. A car helps for the Provençal villages and the lavender fields, where buses are scarce."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Nice and you finish in Nîmes, with the airport close by."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Nice (NCE), Marseille (MRS) or Nîmes (FNI). Nice has more connections and is 20 minutes from the centre; Marseille is 25 minutes by bus; Nîmes is small and many flights land at Montpellier."
+      }
+    ]
+  }
+}

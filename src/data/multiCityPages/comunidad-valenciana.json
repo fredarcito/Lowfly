@@ -1,0 +1,270 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "comunidad-valenciana",
+    "en": "valencia-region"
+  },
+  "photos": {
+    "Valencia": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Vue_sur_la_ville_depuis_la_Tour_du_Miguelete_%288277318710%29.jpg/960px-Vue_sur_la_ville_depuis_la_Tour_du_Miguelete_%288277318710%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Vue_sur_la_ville_depuis_la_Tour_du_Miguelete_(8277318710).jpg",
+      "author": "Nicolas Vollmer from Munich [Allemagne]",
+      "license": "CC BY 2.0"
+    },
+    "Xàtiva": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Xativa_cityview-2_web.jpg/960px-Xativa_cityview-2_web.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Xativa_cityview-2_web.jpg",
+      "author": "Jan Harenburg",
+      "license": "CC BY 4.0"
+    },
+    "Dénia": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Vista_del_macizo_del_Montg%C3%B3_y_de_Denia_desde_el_castillo%2C_Espa%C3%B1a%2C_2022-07-13%2C_DD_35.jpg/960px-Vista_del_macizo_del_Montg%C3%B3_y_de_Denia_desde_el_castillo%2C_Espa%C3%B1a%2C_2022-07-13%2C_DD_35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 385,
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_del_macizo_del_Montg%C3%B3_y_de_Denia_desde_el_castillo,_Espa%C3%B1a,_2022-07-13,_DD_35.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    "Jávea": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/J%C3%A1vea_desde_el_Montg%C3%B3.jpg/960px-J%C3%A1vea_desde_el_Montg%C3%B3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 585,
+      "page": "https://commons.wikimedia.org/wiki/File:J%C3%A1vea_desde_el_Montg%C3%B3.jpg",
+      "author": "No machine-readable author provided. Rodriguillo assumed (based on copyright claims).",
+      "license": "Public domain"
+    },
+    "Altea": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Altea.jpg/960px-Altea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Altea.jpg",
+      "author": "Conrad Möller, Vielser Strasse 34, 33154 Salzkotten",
+      "license": "CC BY-SA 2.5"
+    },
+    "Alicante": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Vista_de_Alicante%2C_Espa%C3%B1a%2C_2014-07-04%2C_DD_49.JPG/960px-Vista_de_Alicante%2C_Espa%C3%B1a%2C_2014-07-04%2C_DD_49.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 445,
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_de_Alicante,_Espa%C3%B1a,_2014-07-04,_DD_49.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    "Elche": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Palmeral%2C_Elche%2C_Espa%C3%B1a%2C_2014-07-05%2C_DD_23.JPG/960px-Palmeral%2C_Elche%2C_Espa%C3%B1a%2C_2014-07-05%2C_DD_23.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 553,
+      "page": "https://commons.wikimedia.org/wiki/File:Palmeral,_Elche,_Espa%C3%B1a,_2014-07-05,_DD_23.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por la Comunidad Valenciana: Valencia, la Marina y Alicante",
+    "metaTitle": "Comunidad Valenciana en tren y TRAM: Valencia, Dénia y Alicante, de 5 a 13 días · Lowfly",
+    "summary": "Empiezas en Valencia, con su paella y su ciudad de las artes, y bajas por la costa hasta Alicante, con el castillo de Xàtiva y las casas blancas de Altea por el camino.",
+    "why": [
+      "La Comunidad Valenciana es una franja de 500 kilómetros de costa con dos ciudades grandes en los extremos y una costa de pueblos blancos en medio. El tren une Valencia y Alicante en hora y media, y el TRAM recorre la Marina.",
+      "El orden importa. Valencia primero, con dos o tres noches; luego Xàtiva, que es de un día; y la costa, con Dénia, Jávea y Altea, para acabar en Alicante y Elche.",
+      "Lo que suele fallar es el transporte entre Xàtiva y la costa. Los trenes van de Valencia a Dénia con transbordo, y los autobuses son lentos. Un coche de alquiler por dos días ahorra medio día."
+    ],
+    "towns": {
+      "Valencia": {
+        "text": "Valencia es una ciudad grande con un casco antiguo pequeño y una ciudad de las artes que no se parece a nada. Se ve en dos días, con tiempo para una paella de verdad.",
+        "see": [
+          "La ciudad de las artes y las ciencias, al atardecer",
+          "La catedral y el Miguelete, con la subida al campanario",
+          "El mercado central, por la mañana",
+          "El barrio del Carmen, para cenar"
+        ],
+        "tip": "La paella se come a mediodía, no de noche, y se sirve en la misma paella. En el centro hay muchos sitios para turistas: ve al Cabanyal o a El Palmar."
+      },
+      "Xàtiva": {
+        "text": "Xàtiva es una ciudad de interior con un castillo enorme en lo alto de un monte y un casco antiguo con palacios. Se ve en un día, y la subida al castillo es lo mejor.",
+        "see": [
+          "El castillo, con la subida por la muralla",
+          "La colegiata y el casco antiguo",
+          "El museo de la ciudad, con el retrato de Felipe V boca abajo",
+          "Las fuentes del Alameda"
+        ],
+        "tip": "El retrato de Felipe V está colgado boca abajo en el museo, y es la tradición de la ciudad. Se ve en la sala principal y nadie lo mueve."
+      },
+      "Dénia": {
+        "text": "Dénia es un puerto con castillo, playas largas y una cocina de arroz tan buena como la de Valencia. Es la puerta de la Marina Alta y se ve en un día.",
+        "see": [
+          "El castillo y el museo arqueológico",
+          "El puerto y el mercado del pescado",
+          "La playa de les Marines, al norte",
+          "El Montgó, con la subida al mirador"
+        ],
+        "tip": "El arroz a banda y el senyoret son los platos de aquí, y se comen en los restaurantes del puerto. Los del paseo marítimo son más caros y peores."
+      },
+      "Jávea": {
+        "text": "Jávea tiene un casco antiguo de piedra, un puerto pesquero y una costa de calas y acantilados. Es más tranquila que Dénia y más bonita por dentro.",
+        "see": [
+          "El casco antiguo y la iglesia de San Bartolomé",
+          "El puerto y el mercado",
+          "La cala de la Granadella",
+          "El mirador del cabo de la Nao"
+        ],
+        "tip": "La cala de la Granadella es pequeña y se llena en verano: hay que llegar antes de las diez o aparcar lejos y bajar andando."
+      },
+      "Altea": {
+        "text": "Altea es el pueblo blanco de la costa, con cúpulas azules y calles empedradas en cuesta. Es el más fotografiado de la Marina y se ve en una tarde.",
+        "see": [
+          "La iglesia de la Mare de Déu del Consol y su cúpula azul",
+          "Las calles del casco antiguo",
+          "El paseo marítimo y la playa",
+          "El mirador del Portal Vell"
+        ],
+        "tip": "El casco antiguo está en cuesta y las calles son estrechas. Aparca abajo, en el paseo marítimo, y sube andando: son diez minutos."
+      },
+      "Alicante": {
+        "text": "Alicante es una ciudad de playa con un castillo en lo alto y un paseo marítimo lleno de palmeras. Se ve en dos días, con tiempo para el castillo y para la isla de Tabarca.",
+        "see": [
+          "El castillo de Santa Bárbara, con el ascensor",
+          "El barrio de Santa Cruz y la Explanada",
+          "La playa del Postiguet",
+          "La isla de Tabarca, en barco"
+        ],
+        "tip": "El castillo se sube en ascensor desde la playa del Postiguet y es gratis. La vista de la ciudad y del puerto es la mejor de Alicante."
+      },
+      "Elche": {
+        "text": "Elche tiene el palmeral más grande de Europa, declarado Patrimonio de la Humanidad, y un misterio medieval en la basílica. Se ve en una mañana.",
+        "see": [
+          "El palmeral y el huerto del Cura",
+          "La basílica de Santa María y el Misteri d'Elx",
+          "El museo arqueológico y la dama de Elche",
+          "El palacio de Altamira"
+        ],
+        "tip": "El Misteri d'Elx se representa en agosto, en la basílica, y es Patrimonio de la Humanidad. Las entradas se sortean: apúntate con meses de antelación."
+      }
+    },
+    "gettingAround": "Tren y TRAM. Valencia y Alicante están a hora y media en tren regional o AVE; Valencia y Xàtiva, a 45 minutos. Dénia está a hora y media de Valencia en tren con transbordo, y el TRAM une Dénia, Jávea, Altea y Alicante por la costa, lento pero bonito. Elche está a 20 minutos de Alicante en tren o autobús. Para Xàtiva y la costa, un coche de alquiler por dos días ahorra tiempo.",
+    "bestTime": "Marzo, abril, mayo, junio, septiembre y octubre: buen tiempo y menos gente. En marzo las Fallas llenan Valencia durante una semana. Julio y agosto son los meses de playa, con la costa llena y precios altos. En invierno hace frío pero hay sol, y las ciudades están tranquilas.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para la Comunidad Valenciana?",
+        "answer": "Con 5 o 6 días ves Valencia y Alicante. Con 8 a 10 añades Xàtiva y Altea; con 11 a 13 entran también Dénia, Jávea y Elche."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para Valencia, Alicante y Elche: el tren y el TRAM llegan. El coche ayuda para Xàtiva y para las calas de Jávea, donde los autobuses pasan poco."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Alicante, acabas en Valencia, con el aeropuerto a un paso."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Valencia (VLC) o a Alicante-Elche (ALC). Valencia está a 20 minutos del centro en metro; Alicante está a 15 minutos en autobús o en el TRAM."
+      }
+    ]
+  },
+  "en": {
+    "title": "Valencia region itinerary: Valencia, the Marina and Alicante",
+    "metaTitle": "Valencia region by train and TRAM: Valencia, Dénia and Alicante in 5 to 13 days · Lowfly",
+    "summary": "Start in Valencia, with its paella and its city of arts, and head down the coast to Alicante, with Xàtiva castle and the white houses of Altea on the way.",
+    "why": [
+      "The Valencia region is a 500-kilometre strip of coast with two big cities at either end and a coast of white villages in between. The train links Valencia and Alicante in an hour and a half, and the TRAM runs along the Marina.",
+      "The order matters. Valencia first, with two or three nights; then Xàtiva, a day; and the coast, with Dénia, Jávea and Altea, finishing in Alicante and Elche.",
+      "What usually goes wrong is the transport between Xàtiva and the coast. Trains run from Valencia to Dénia with a change, and buses are slow. A hire car for two days saves half a day."
+    ],
+    "towns": {
+      "Valencia": {
+        "text": "Valencia is a big city with a small old town and a city of arts that looks like nothing else. Two days covers it, with time for a proper paella.",
+        "see": [
+          "The city of arts and sciences, at dusk",
+          "The cathedral and the Miguelete, with the climb up the tower",
+          "The central market, in the morning",
+          "The Carmen quarter, for dinner"
+        ],
+        "tip": "Paella is a lunch dish, not a dinner one, and it's served in the pan. The centre has plenty of places for visitors: go to Cabanyal or El Palmar."
+      },
+      "Xàtiva": {
+        "text": "Xàtiva is an inland town with an enormous castle on top of a hill and an old centre of palaces. A day covers it, and the climb to the castle is the best part.",
+        "see": [
+          "The castle, up through the walls",
+          "The collegiate church and the old centre",
+          "The city museum, with the upside-down portrait of Philip V",
+          "The Alameda fountains"
+        ],
+        "tip": "The portrait of Philip V hangs upside down in the museum, and that's the town's tradition. It's in the main room and nobody turns it back."
+      },
+      "Dénia": {
+        "text": "Dénia is a harbour with a castle, long beaches and rice cooking as good as Valencia's. It's the gateway to the Marina Alta, and a day covers it.",
+        "see": [
+          "The castle and the archaeological museum",
+          "The harbour and the fish market",
+          "Les Marines beach, to the north",
+          "Montgó, with the climb to the viewpoint"
+        ],
+        "tip": "Arroz a banda and senyoret are the local dishes, eaten at the harbour restaurants. The ones on the seafront are pricier and worse."
+      },
+      "Jávea": {
+        "text": "Jávea has a stone old town, a fishing harbour and a coast of coves and cliffs. It's quieter than Dénia and prettier inside.",
+        "see": [
+          "The old town and San Bartolomé church",
+          "The harbour and the market",
+          "La Granadella cove",
+          "The Cap de la Nau viewpoint"
+        ],
+        "tip": "La Granadella cove is small and fills up in summer: get there before ten or park far out and walk down."
+      },
+      "Altea": {
+        "text": "Altea is the white village of the coast, with blue domes and cobbled streets on a slope. It's the most photographed spot in the Marina, and an afternoon covers it.",
+        "see": [
+          "The Mare de Déu del Consol church and its blue dome",
+          "The streets of the old town",
+          "The seafront and the beach",
+          "The Portal Vell viewpoint"
+        ],
+        "tip": "The old town is on a slope and the streets are narrow. Park below, on the seafront, and walk up: it's ten minutes."
+      },
+      "Alicante": {
+        "text": "Alicante is a beach city with a castle above it and a seafront full of palms. Two days covers it, with time for the castle and Tabarca island.",
+        "see": [
+          "Santa Bárbara castle, by lift",
+          "The Santa Cruz quarter and the Explanada",
+          "Postiguet beach",
+          "Tabarca island, by boat"
+        ],
+        "tip": "The castle is reached by lift from Postiguet beach and it's free. The view over the city and the harbour is the best in Alicante."
+      },
+      "Elche": {
+        "text": "Elche has the largest palm grove in Europe, a World Heritage site, and a medieval mystery in its basilica. A morning covers it.",
+        "see": [
+          "The palm grove and the Huerto del Cura",
+          "Santa María basilica and the Misteri d'Elx",
+          "The archaeological museum and the Lady of Elche",
+          "Altamira palace"
+        ],
+        "tip": "The Misteri d'Elx is performed in August, in the basilica, and is World Heritage. Tickets are drawn by ballot: register months ahead."
+      }
+    },
+    "gettingAround": "Train and TRAM. Valencia and Alicante are an hour and a half apart by regional train or AVE; Valencia and Xàtiva, 45 minutes. Dénia is an hour and a half from Valencia by train with a change, and the TRAM links Dénia, Jávea, Altea and Alicante along the coast, slow but scenic. Elche is 20 minutes from Alicante by train or bus. For Xàtiva and the coast, a hire car for two days saves time.",
+    "bestTime": "March, April, May, June, September and October: good weather and fewer people. In March the Fallas fill Valencia for a week. July and August are the beach months, with the coast full and prices high. Winter is cold but sunny, and the cities are quiet.",
+    "faq": [
+      {
+        "question": "How many days do you need for the Valencia region?",
+        "answer": "5 or 6 days covers Valencia and Alicante. With 8 to 10 you add Xàtiva and Altea; with 11 to 13 Dénia, Jávea and Elche come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for Valencia, Alicante and Elche: train and TRAM get you there. A car helps for Xàtiva and the Jávea coves, where buses are infrequent."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Alicante and you finish in Valencia, with the airport close by."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Valencia (VLC) or Alicante-Elche (ALC). Valencia is 20 minutes from the centre by metro; Alicante is 15 minutes by bus or TRAM."
+      }
+    ]
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "castillos-del-loira",
+    "en": "loire-valley-castles"
+  },
+  "photos": {
+    "Paris": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/960px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 500,
+      "page": "https://commons.wikimedia.org/wiki/File:La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_ao%C3%BBt_2014_(2).jpg",
+      "author": "Yann Caradec from Paris, France",
+      "license": "CC BY-SA 2.0"
+    },
+    "Orléans": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Orl%C3%A9ans_Cathedral%2C_West_view_20170609_1.jpg/960px-Orl%C3%A9ans_Cathedral%2C_West_view_20170609_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1160,
+      "page": "https://commons.wikimedia.org/wiki/File:Orl%C3%A9ans_Cathedral,_West_view_20170609_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    "Blois (Chambord)": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Chambord_castle%2C_aerial_view.jpg/960px-Chambord_castle%2C_aerial_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 520,
+      "page": "https://commons.wikimedia.org/wiki/File:Chambord_castle,_aerial_view.jpg",
+      "author": "Lieven Smits",
+      "license": "CC BY-SA 3.0"
+    },
+    "Amboise (Chenonceau)": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Chateau_de_Chenonceau_2008E.jpg/960px-Chateau_de_Chenonceau_2008E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 430,
+      "page": "https://commons.wikimedia.org/wiki/File:Chateau_de_Chenonceau_2008E.jpg",
+      "author": "It is a derivative work of Ra-smit's photo.",
+      "license": "GFDL"
+    },
+    "Tours": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Tours_-_Place_Plumereau_-_1.jpg/960px-Tours_-_Place_Plumereau_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Tours_-_Place_Plumereau_-_1.jpg",
+      "author": "Benjamin Smith",
+      "license": "CC BY-SA 4.0"
+    },
+    "Chinon": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/00_30013_Chinon_-_Frankreich.jpg/960px-00_30013_Chinon_-_Frankreich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 531,
+      "page": "https://commons.wikimedia.org/wiki/File:00_30013_Chinon_-_Frankreich.jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0"
+    },
+    "Saumur": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Panorama_of_Saumur.JPG/960px-Panorama_of_Saumur.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Panorama_of_Saumur.JPG",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 3.0"
+    },
+    "Angers": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Ch%C3%A2teau_d%27Angers%2C_South_view_20170611_1.jpg/960px-Ch%C3%A2teau_d%27Angers%2C_South_view_20170611_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 564,
+      "page": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_d%27Angers,_South_view_20170611_1.jpg",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0"
+    },
+    "Nantes": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Marit%C3%A9.jpg/960px-Marit%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Marit%C3%A9.jpg",
+      "author": "Jibi44",
+      "license": "CC BY 2.5"
+    }
+  },
+  "es": {
+    "title": "Ruta por los castillos del Loira",
+    "metaTitle": "Castillos del Loira en tren y bici: Blois, Amboise y Tours, de 5 a 13 días · Lowfly",
+    "summary": "Empiezas en París y bajas por el río hasta Nantes, con Chambord, Chenonceau y los castillos de Angers y Saumur por el camino. El tren une las ciudades y la bici llega a los castillos.",
+    "why": [
+      "El Loira es un río largo y tranquilo con más de cien castillos en sus orillas, y los que hay que ver están entre Orléans y Angers. En una semana se ven los cuatro o cinco que importan sin correr.",
+      "El orden importa. París primero, con un día; luego Orléans, Blois y Amboise, que son las bases de los castillos; y Tours al final, con Angers y Nantes si tienes días.",
+      "Lo que suele fallar es el transporte a los castillos. Los trenes unen las ciudades, pero Chambord y Chenonceau están a varios kilómetros de la estación. La bici, con la Loire à Vélo, es la mejor solución."
+    ],
+    "towns": {
+      "Paris": {
+        "text": "París es la puerta de entrada y casi nadie le dedica más de un día en esta ruta. Si tienes la tarde libre, el Museo de Orsay y un paseo por el Sena bastan antes de coger el tren.",
+        "see": [
+          "El Museo de Orsay",
+          "El barrio del Marais, para pasear",
+          "El mercado de Aligre, por la mañana",
+          "Un paseo por el Sena al atardecer"
+        ],
+        "tip": "Los trenes a Orléans y Blois salen de Austerlitz. Compra el billete con antelación: en primavera y verano los trenes del fin de semana se llenan."
+      },
+      "Orléans": {
+        "text": "Orléans es la ciudad de Juana de Arco, con una catedral enorme y un centro reconstruido después de la guerra. Se ve en un día, y es la puerta este del Loira.",
+        "see": [
+          "La catedral de Sainte-Croix",
+          "La casa de Juana de Arco",
+          "El centro histórico y la plaza del Martroi",
+          "El río y el puente"
+        ],
+        "tip": "La catedral es más impresionante por fuera que por dentro. Sube a la torre si está abierta: las vistas del Loira son la mitad de la visita."
+      },
+      "Blois (Chambord)": {
+        "text": "Blois es una ciudad en cuesta con un castillo real en el centro y Chambord a 15 kilómetros. Se ve en un día, con el castillo de la ciudad y el de Chambord.",
+        "see": [
+          "El castillo de Blois y su escalera renacentista",
+          "El castillo de Chambord, con la escalera de doble hélice",
+          "La casa de la magia, si viajas con niños",
+          "El mirador sobre el Loira"
+        ],
+        "tip": "Chambord está a 15 kilómetros de Blois y no hay tren. Se llega en autobús de temporada, en bici por el bosque o en coche: el aparcamiento cuesta aparte."
+      },
+      "Amboise (Chenonceau)": {
+        "text": "Amboise es un pueblo con un castillo sobre el Loira y la casa de Leonardo da Vinci al lado, y Chenonceau está a diez kilómetros. Se ve en dos días, con los dos castillos.",
+        "see": [
+          "El castillo de Amboise y la tumba de Leonardo",
+          "El Clos Lucé, la casa de Leonardo da Vinci",
+          "El castillo de Chenonceau, sobre el río",
+          "El paseo por la orilla del Loira"
+        ],
+        "tip": "Chenonceau es el castillo más visitado del Loira y se llena a media mañana. Compra la entrada online y llega a primera hora."
+      },
+      "Tours": {
+        "text": "Tours es la capital del Loira y la mejor base para los castillos, con un centro medieval de casas de entramado y una catedral con vidrieras. Se ve en un día.",
+        "see": [
+          "La plaza Plumereau y el barrio antiguo",
+          "La catedral de Saint-Gatien",
+          "El museo de Bellas Artes",
+          "El mercado de Halles, por la mañana"
+        ],
+        "tip": "La plaza Plumereau está llena de terrazas y es agradable, pero cara. Una calle hacia dentro, en el barrio antiguo, se cena mejor y más barato."
+      },
+      "Chinon": {
+        "text": "Chinon tiene un castillo en ruinas sobre un acantilado y un centro medieval con casas de entramado. Es la ciudad de Juana de Arco y del escritor Rabelais, y se ve en un día.",
+        "see": [
+          "El castillo y la torre del reloj",
+          "El centro medieval y la casa de la cerveza",
+          "La fortaleza de Chinon, con la vista del valle",
+          "Las bodegas de la AOC Chinon, con cata"
+        ],
+        "tip": "El castillo está en lo alto y se sube andando desde el centro. Hay un ascensor de pago que ahorra la cuesta, pero la vista del camino merece la pena."
+      },
+      "Saumur": {
+        "text": "Saumur es una ciudad de caballos y de vino, con un castillo blanco sobre el Loira y una escuela de equitación famosa en todo el mundo. Se ve en un día.",
+        "see": [
+          "El castillo y el museo del caballo",
+          "La escuela nacional de equitación, con espectáculo",
+          "Las bodegas de Saumur-Champigny, con cata",
+          "El paseo por la orilla del Loira"
+        ],
+        "tip": "El Cadre Noir, la escuela de equitación, da espectáculos en verano y ensayos abiertos el resto del año. Reserva con antelación: las plazas son pocas."
+      },
+      "Angers": {
+        "text": "Angers tiene un castillo con diecisiete torres y el tapiz del Apocalipsis, el más grande de la Edad Media. Se ve en un día, y el centro es agradable.",
+        "see": [
+          "El castillo y el tapiz del Apocalipsis",
+          "La catedral de Saint-Maurice",
+          "El barrio de la Doutre, al otro lado del río",
+          "El museo de Bellas Artes"
+        ],
+        "tip": "El tapiz del Apocalipsis está en una sala oscura y climatizada, y dura unos 20 minutos. Es la pieza más importante del castillo y no se puede fotografiar."
+      },
+      "Nantes": {
+        "text": "Nantes es una ciudad de puerto con un castillo de los duques de Bretaña y las máquinas de la isla, que son lo más raro de Francia. Se ve en dos días.",
+        "see": [
+          "El castillo de los duques de Bretaña",
+          "Les Machines de l'île, con el elefante",
+          "El barrio de Bouffay, para cenar",
+          "El jardín de las plantas"
+        ],
+        "tip": "El elefante de las Machines de l'île se sube con entrada y hora reservada. Las entradas se agotan días antes en verano: compra la tuya al llegar."
+      }
+    },
+    "gettingAround": "Tren y bici. París y Orléans están a una hora en tren; Orléans y Blois, a 40 minutos; Blois y Amboise, a 20 minutos; Amboise y Tours, a 20 minutos. Tours y Chinon, a 50 minutos en tren regional; Tours y Saumur, a 40 minutos; Saumur y Angers, a 25 minutos; Angers y Nantes, a 45 minutos. Para los castillos, la Loire à Vélo tiene carril bici entre Blois y Tours, y hay alquiler de bicis en las estaciones.",
+    "bestTime": "Abril, mayo, junio, julio, agosto, septiembre y octubre: los castillos están abiertos y los jardines en flor. Julio y agosto son los meses de más gente, sobre todo en Chambord y Chenonceau. En invierno muchos castillos cierran o abren con horario reducido. La vendimia en las bodegas de Chinon y Saumur es a finales de septiembre.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para los castillos del Loira?",
+        "answer": "Con 5 o 6 días ves Blois, Amboise y Tours. Con 8 a 10 añades Orléans y Chinon; con 11 a 13 entran también Saumur, Angers y Nantes."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para las ciudades: el tren une todas. Para los castillos sí ayuda, aunque la bici por la Loire à Vélo es la mejor alternativa y hay alquiler en las estaciones."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Nantes, acabas en París, con los aeropuertos a un paso."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A París (ORY, CDG o BVA), Tours (TUF) o Nantes (NTE). París tiene muchas conexiones; Tours es pequeño y muchos vuelos llegan a París; Nantes está a 20 minutos del centro en autobús."
+      }
+    ]
+  },
+  "en": {
+    "title": "Loire Valley castles itinerary",
+    "metaTitle": "Loire Valley castles by train and bike: Blois, Amboise and Tours in 5 to 13 days · Lowfly",
+    "summary": "Start in Paris and follow the river down to Nantes, with Chambord, Chenonceau and the castles of Angers and Saumur on the way. The train links the towns and a bike reaches the castles.",
+    "why": [
+      "The Loire is a long, quiet river with more than a hundred castles on its banks, and the ones worth seeing sit between Orléans and Angers. A week covers the four or five that matter without rushing.",
+      "The order matters. Paris first, for a day; then Orléans, Blois and Amboise, the bases for the castles; and Tours at the end, with Angers and Nantes if you have the days.",
+      "What usually goes wrong is getting to the castles. Trains link the towns, but Chambord and Chenonceau are several kilometres from the station. A bike, on the Loire à Vélo, is the best answer."
+    ],
+    "towns": {
+      "Paris": {
+        "text": "Paris is the way in and almost nobody gives it more than a day on this route. If you have the afternoon free, the Musée d'Orsay and a walk along the Seine are enough before the train.",
+        "see": [
+          "The Musée d'Orsay",
+          "The Marais, for a wander",
+          "Aligre market, in the morning",
+          "A walk along the Seine at dusk"
+        ],
+        "tip": "Trains to Orléans and Blois leave from Austerlitz. Book ahead: in spring and summer the weekend trains fill up."
+      },
+      "Orléans": {
+        "text": "Orléans is Joan of Arc's city, with an enormous cathedral and a centre rebuilt after the war. A day covers it, and it's the eastern gateway to the Loire.",
+        "see": [
+          "Sainte-Croix cathedral",
+          "Joan of Arc's house",
+          "The old centre and Place du Martroi",
+          "The river and the bridge"
+        ],
+        "tip": "The cathedral is more impressive outside than in. Climb the tower if it's open: the views over the Loire are half the visit."
+      },
+      "Blois (Chambord)": {
+        "text": "Blois is a town on a slope with a royal castle in the middle and Chambord 15 kilometres away. A day covers it, with the town castle and Chambord.",
+        "see": [
+          "The castle of Blois and its Renaissance staircase",
+          "Chambord, with the double-helix staircase",
+          "The house of magic, if you're travelling with children",
+          "The viewpoint over the Loire"
+        ],
+        "tip": "Chambord is 15 kilometres from Blois and has no train. You get there by seasonal bus, by bike through the forest or by car: parking costs extra."
+      },
+      "Amboise (Chenonceau)": {
+        "text": "Amboise is a town with a castle above the Loire and Leonardo da Vinci's house next door, and Chenonceau is ten kilometres away. Two days covers both castles.",
+        "see": [
+          "The castle of Amboise and Leonardo's tomb",
+          "Clos Lucé, Leonardo da Vinci's house",
+          "Chenonceau, over the river",
+          "The walk along the Loire bank"
+        ],
+        "tip": "Chenonceau is the most visited castle on the Loire and fills up by mid-morning. Buy the ticket online and get there first thing."
+      },
+      "Tours": {
+        "text": "Tours is the capital of the Loire and the best base for the castles, with a medieval centre of half-timbered houses and a cathedral with stained glass. A day covers it.",
+        "see": [
+          "Place Plumereau and the old quarter",
+          "Saint-Gatien cathedral",
+          "The Museum of Fine Arts",
+          "Les Halles market, in the morning"
+        ],
+        "tip": "Place Plumereau is full of terraces and pleasant, but expensive. One street back, in the old quarter, dinner is better and cheaper."
+      },
+      "Chinon": {
+        "text": "Chinon has a ruined castle above a cliff and a medieval centre of half-timbered houses. It's the town of Joan of Arc and of the writer Rabelais, and a day covers it.",
+        "see": [
+          "The castle and the clock tower",
+          "The medieval centre and the beer house",
+          "The fortress, with the view over the valley",
+          "The Chinon AOC cellars, with tastings"
+        ],
+        "tip": "The castle is at the top and you walk up from the centre. There's a paid lift that saves the climb, but the view from the path is worth it."
+      },
+      "Saumur": {
+        "text": "Saumur is a town of horses and wine, with a white castle above the Loire and a riding school famous worldwide. A day covers it.",
+        "see": [
+          "The castle and the horse museum",
+          "The national riding school, with a show",
+          "The Saumur-Champigny cellars, with tastings",
+          "The walk along the Loire bank"
+        ],
+        "tip": "The Cadre Noir, the riding school, puts on shows in summer and open rehearsals the rest of the year. Book ahead: places are few."
+      },
+      "Angers": {
+        "text": "Angers has a castle with seventeen towers and the Apocalypse tapestry, the largest of the Middle Ages. A day covers it, and the centre is pleasant.",
+        "see": [
+          "The castle and the Apocalypse tapestry",
+          "Saint-Maurice cathedral",
+          "The Doutre quarter, across the river",
+          "The Museum of Fine Arts"
+        ],
+        "tip": "The Apocalypse tapestry is in a dark, climate-controlled room and takes about 20 minutes. It's the most important piece in the castle and you can't photograph it."
+      },
+      "Nantes": {
+        "text": "Nantes is a port city with a castle of the Dukes of Brittany and the Machines of the Island, which are the strangest thing in France. Two days covers it.",
+        "see": [
+          "The castle of the Dukes of Brittany",
+          "Les Machines de l'île, with the elephant",
+          "The Bouffay quarter, for dinner",
+          "The Jardin des Plantes"
+        ],
+        "tip": "The elephant at Les Machines de l'île is ridden by timed ticket. They sell out days ahead in summer: buy yours on arrival."
+      }
+    },
+    "gettingAround": "Train and bike. Paris and Orléans are an hour apart by train; Orléans and Blois, 40 minutes; Blois and Amboise, 20 minutes; Amboise and Tours, 20 minutes. Tours and Chinon are 50 minutes apart on a regional train; Tours and Saumur, 40 minutes; Saumur and Angers, 25 minutes; Angers and Nantes, 45 minutes. For the castles, the Loire à Vélo has a cycle path between Blois and Tours, and bikes can be hired at the stations.",
+    "bestTime": "April, May, June, July, August, September and October: the castles are open and the gardens in flower. July and August are the busiest months, especially at Chambord and Chenonceau. In winter many castles close or run reduced hours. The harvest at the Chinon and Saumur cellars is in late September.",
+    "faq": [
+      {
+        "question": "How many days do you need for the Loire castles?",
+        "answer": "5 or 6 days covers Blois, Amboise and Tours. With 8 to 10 you add Orléans and Chinon; with 11 to 13 Saumur, Angers and Nantes come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the towns: the train links them all. For the castles it helps, though a bike on the Loire à Vélo is the better alternative and bikes can be hired at the stations."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Nantes and you finish in Paris, with the airports close by."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Paris (ORY, CDG or BVA), Tours (TUF) or Nantes (NTE). Paris has plenty of connections; Tours is small and many flights land in Paris; Nantes is 20 minutes from the centre by bus."
+      }
+    ]
+  }
+}

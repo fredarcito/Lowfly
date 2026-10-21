@@ -1,0 +1,270 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "extremadura",
+    "en": "extremadura"
+  },
+  "photos": {
+    "Madrid": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Madrid_%2838624991251%29.jpg/960px-Madrid_%2838624991251%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Madrid_(38624991251).jpg",
+      "author": "Dmitry Dzhus from London",
+      "license": "CC BY 2.0"
+    },
+    "Hervás": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Vista_de_Herv%C3%A1s%2C_Extremadura_%28Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 800,
+      "height": 597,
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_de_Herv%C3%A1s,_Extremadura_(Espa%C3%B1a).jpg",
+      "author": "MaGrc",
+      "license": "CC BY-SA 4.0"
+    },
+    "Plasencia": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Plasencia-view-1.jpg/960px-Plasencia-view-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 400,
+      "page": "https://commons.wikimedia.org/wiki/File:Plasencia-view-1.jpg",
+      "author": "Jose Antonio Cotallo López from Plasencia, España",
+      "license": "CC BY 2.0"
+    },
+    "Cáceres": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Plaza_mayor_de_C%C3%A1ceres.jpg/960px-Plaza_mayor_de_C%C3%A1ceres.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Plaza_mayor_de_C%C3%A1ceres.jpg",
+      "author": "Elemaki",
+      "license": "CC BY-SA 3.0"
+    },
+    "Mérida": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Teatro_romano_de_M%C3%A9rida._Espa%C3%B1a-2.jpg/960px-Teatro_romano_de_M%C3%A9rida._Espa%C3%B1a-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 455,
+      "page": "https://commons.wikimedia.org/wiki/File:Teatro_romano_de_M%C3%A9rida._Espa%C3%B1a-2.jpg",
+      "author": "Lmbuga (Luis Miguel Bugallo Sánchez)",
+      "license": "CC BY-SA 4.0"
+    },
+    "Trujillo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Plaza_Mayor%2C_Trujillo%2C_C%C3%A1ceres%2C_Espa%C3%B1a%2C_2023-07-22%2C_DD_02.jpg/960px-Plaza_Mayor%2C_Trujillo%2C_C%C3%A1ceres%2C_Espa%C3%B1a%2C_2023-07-22%2C_DD_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 484,
+      "page": "https://commons.wikimedia.org/wiki/File:Plaza_Mayor,_Trujillo,_C%C3%A1ceres,_Espa%C3%B1a,_2023-07-22,_DD_02.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    "Guadalupe": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Guadalupe_-_Espagne_2014-04292.jpg/960px-Guadalupe_-_Espagne_2014-04292.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 500,
+      "page": "https://commons.wikimedia.org/wiki/File:Guadalupe_-_Espagne_2014-04292.jpg",
+      "author": "Gil Pivert from Paris, France",
+      "license": "CC BY 2.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Extremadura: Cáceres, Mérida y Trujillo",
+    "metaTitle": "Extremadura en coche desde Madrid: Cáceres, Mérida y Trujillo, de 5 a 13 días · Lowfly",
+    "summary": "Entras desde Madrid y recorres el norte de Extremadura: el valle del Jerte, Plasencia, la ciudad medieval de Cáceres, el teatro romano de Mérida y la plaza de Trujillo. Aquí el coche es casi obligatorio.",
+    "why": [
+      "Extremadura es la comunidad más grande de España y la que menos gente tiene. Eso se nota: hay ciudades monumentales sin colas, carreteras vacías y precios que no se ven en el resto del país.",
+      "El orden importa. Entra por el norte, por el valle del Jerte, y baja hacia el sur: Plasencia, Cáceres, Mérida y Trujillo. Guadalupe queda al este y se hace al final, de camino a Madrid.",
+      "Lo que suele fallar es el transporte. Los trenes son pocos y lentos, y muchas de estas ciudades no tienen estación. Alquila un coche en Madrid y devuélvelo allí: es la única manera de hacer la ruta sin perder días."
+    ],
+    "towns": {
+      "Madrid": {
+        "text": "Madrid es la puerta de entrada y de salida, y casi nadie le dedica más de una noche en esta ruta. Si tienes el día libre, el Prado y una vuelta por La Latina bastan para coger el coche al día siguiente.",
+        "see": [
+          "El Museo del Prado, con entrada reservada",
+          "El mercado de San Miguel, para picar de pie",
+          "La Latina, para el aperitivo",
+          "El parque del Retiro, si sobra tiempo"
+        ],
+        "tip": "Alquila el coche en el aeropuerto o en Atocha y sal temprano: la A-5 hacia Navalmoral se atasca los viernes por la tarde y los domingos de vuelta."
+      },
+      "Hervás": {
+        "text": "Hervás es un pueblo de montaña con un barrio judío que se conserva casi entero, con casas de entramado y calles en cuesta. Se ve en una mañana, y el valle del Ambroz alrededor es lo mejor.",
+        "see": [
+          "El barrio judío y sus calles estrechas",
+          "La iglesia de Santa María y el puente de la Fuente Chiquita",
+          "El museo de la moto y el automóvil, si te interesa",
+          "El valle del Ambroz, en otoño, cuando los castaños se ponen amarillos"
+        ],
+        "tip": "En otoño el valle del Ambroz se llena de gente que viene a ver los colores. Es la mejor época, pero los fines de semana los hoteles rurales se agotan."
+      },
+      "Plasencia": {
+        "text": "Plasencia es una ciudad amurallada con dos catedrales pegadas y un casco antiguo lleno de palacios. Es la puerta del valle del Jerte y se ve en un día.",
+        "see": [
+          "La catedral vieja y la nueva, una al lado de la otra",
+          "La muralla y el acueducto",
+          "El barrio judío y la plaza mayor",
+          "El valle del Jerte, a 20 minutos en coche"
+        ],
+        "tip": "En primavera el valle del Jerte se cubre de cerezos en flor, y hay dos semanas en que todo el mundo sube. Es bonito y está lleno: reserva con tiempo."
+      },
+      "Cáceres": {
+        "text": "Cáceres tiene una ciudad medieval dentro de otra, con palacios, torres y calles sin un solo coche. Se recorre en un día, y de noche, sin gente, es lo mejor de la ruta.",
+        "see": [
+          "La ciudad monumental, con la torre de Bujaco y los palacios",
+          "La concatedral de Santa María",
+          "El barrio de San Antonio y la judería",
+          "El mirador desde la torre de las Cigüeñas"
+        ],
+        "tip": "La ciudad monumental se ve de noche, iluminada y vacía. Es gratis y es lo que más recuerda la gente de Cáceres."
+      },
+      "Mérida": {
+        "text": "Mérida fue capital de la Lusitania romana y tiene más ruinas que cualquier otra ciudad de España: teatro, anfiteatro, circo, templos y un puente de sesenta arcos. Se ve en un día largo.",
+        "see": [
+          "El teatro romano y el anfiteatro, con entrada conjunta",
+          "El circo y la casa del Mitreo",
+          "El puente romano, el más largo que se conserva",
+          "El Museo Nacional de Arte Romano, de Rafael Moneo"
+        ],
+        "tip": "El festival de teatro clásico es en julio y agosto, y las funciones se hacen en el teatro romano. Si vas, compra la entrada con meses de antelación."
+      },
+      "Trujillo": {
+        "text": "Trujillo tiene una plaza mayor enorme, en cuesta, con una iglesia y un castillo en lo alto. Es la ciudad de los conquistadores, y se ve en una tarde.",
+        "see": [
+          "La plaza mayor y la estatua de Pizarro",
+          "El castillo y la iglesia de Santa María",
+          "La casa-museo de Pizarro",
+          "El mirador de la Coria, sobre la llanura"
+        ],
+        "tip": "La plaza mayor está en cuesta y en verano no tiene sombra. Ve a primera hora o al atardecer, cuando la piedra se pone dorada."
+      },
+      "Guadalupe": {
+        "text": "Guadalupe es un pueblo de una sola calle que gira alrededor de un monasterio enorme, con una virgen que fue la patrona de los conquistadores. Se ve en media jornada.",
+        "see": [
+          "El monasterio de Guadalupe, con visita guiada",
+          "El claustro mudéjar y la sacristía",
+          "El pueblo, con sus casas de entramado",
+          "La pimentonera, si quieres comprar pimentón de la Vera"
+        ],
+        "tip": "La visita al monasterio es solo con guía y en horarios fijos. Comprueba el horario antes de ir: entre semana hay menos turnos."
+      }
+    },
+    "gettingAround": "Coche casi imprescindible. Madrid y Cáceres están a tres horas por la A-5; Madrid y Mérida, a tres horas y media. Los trenes a Cáceres y Mérida salen de Atocha, pero son pocos y lentos, y Hervás, Guadalupe y Trujillo no tienen estación. Alquila el coche en Madrid y devuélvelo allí: la ruta es un circuito y no hay que volver por el mismo sitio. Las carreteras secundarias están vacías y en buen estado.",
+    "bestTime": "Marzo, abril, mayo, octubre y noviembre: buen tiempo y pocos turistas. En primavera el valle del Jerte está en flor y los embalses llenos. En otoño los castaños del Ambroz se ponen amarillos. Julio y agosto son insoportables: se pasa de 40 grados y no hay sombra. En invierno hiela de noche, pero las ciudades están tranquilas y los precios bajan.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Extremadura?",
+        "answer": "Con 5 o 6 días ves Mérida, Cáceres y Trujillo. Con 8 a 10 añades Plasencia; con 11 a 13 entran también Hervás y Guadalupe."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, casi. Los trenes a Cáceres y Mérida existen pero son escasos, y Hervás, Guadalupe y Trujillo solo se alcanzan en coche o en autobús con pocas frecuencias."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "No: el recorrido está pensado de norte a sur, entrando y saliendo por Madrid. Hacerlo al revés obliga a volver sobre los mismos kilómetros."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Madrid-Barajas (MAD), que es la puerta de entrada. Badajoz (BJZ) tiene pocos vuelos y no los opera Ryanair ni Wizz, así que no sirve para esta ruta."
+      }
+    ]
+  },
+  "en": {
+    "title": "Extremadura itinerary: Cáceres, Mérida and Trujillo",
+    "metaTitle": "Extremadura by car from Madrid: Cáceres, Mérida and Trujillo in 5 to 13 days · Lowfly",
+    "summary": "Fly into Madrid and drive through northern Extremadura: the Jerte valley, Plasencia, medieval Cáceres, Mérida's Roman theatre and Trujillo's main square. Here a car is close to essential.",
+    "why": [
+      "Extremadura is the largest region in Spain and the one with the fewest people. You notice it: monumental cities with no queues, empty roads and prices you don't see elsewhere in the country.",
+      "The order matters. Come in from the north, through the Jerte valley, and work south: Plasencia, Cáceres, Mérida and Trujillo. Guadalupe sits to the east and comes last, on the way back to Madrid.",
+      "What usually goes wrong is the transport. Trains are few and slow, and many of these towns have no station. Hire a car in Madrid and drop it back there: it's the only way to do the route without losing days."
+    ],
+    "towns": {
+      "Madrid": {
+        "text": "Madrid is the way in and the way out, and almost nobody gives it more than a night on this route. If you have the day free, the Prado and a wander round La Latina are enough before picking up the car next morning.",
+        "see": [
+          "The Prado, with a booked ticket",
+          "San Miguel market, for standing-up snacks",
+          "La Latina, for aperitivo",
+          "The Retiro park, if there's time"
+        ],
+        "tip": "Hire the car at the airport or at Atocha and leave early: the A-5 towards Navalmoral jams on Friday afternoons and on Sunday evenings coming back."
+      },
+      "Hervás": {
+        "text": "Hervás is a mountain town with a Jewish quarter that survives almost intact, full of half-timbered houses and steep streets. A morning covers it, and the Ambroz valley around it is the best part.",
+        "see": [
+          "The Jewish quarter and its narrow streets",
+          "Santa María church and the Fuente Chiquita bridge",
+          "The motorcycle and car museum, if that's your thing",
+          "The Ambroz valley in autumn, when the chestnuts turn yellow"
+        ],
+        "tip": "In autumn the Ambroz valley fills with people coming for the colours. It's the best season, but at weekends the rural hotels sell out."
+      },
+      "Plasencia": {
+        "text": "Plasencia is a walled city with two cathedrals stuck together and an old town full of palaces. It's the gateway to the Jerte valley and a day covers it.",
+        "see": [
+          "The old and new cathedrals, side by side",
+          "The walls and the aqueduct",
+          "The Jewish quarter and the main square",
+          "The Jerte valley, 20 minutes away by car"
+        ],
+        "tip": "In spring the Jerte valley turns white with cherry blossom, and for two weeks everyone drives up. It's beautiful and it's busy: book well ahead."
+      },
+      "Cáceres": {
+        "text": "Cáceres has a medieval city inside another one, with palaces, towers and streets without a single car. A day covers it, and at night, with nobody about, it's the best thing on the route.",
+        "see": [
+          "The monumental city, with the Bujaco tower and the palaces",
+          "The co-cathedral of Santa María",
+          "The San Antonio quarter and the Jewish quarter",
+          "The view from the Torre de las Cigüeñas"
+        ],
+        "tip": "The monumental city is best at night, lit up and empty. It's free, and it's what people remember most about Cáceres."
+      },
+      "Mérida": {
+        "text": "Mérida was the capital of Roman Lusitania and has more ruins than any other city in Spain: theatre, amphitheatre, circus, temples and a bridge of sixty arches. A long day covers it.",
+        "see": [
+          "The Roman theatre and amphitheatre, on a combined ticket",
+          "The circus and the House of the Mithraeum",
+          "The Roman bridge, the longest surviving one",
+          "The National Museum of Roman Art, by Rafael Moneo"
+        ],
+        "tip": "The classical theatre festival runs in July and August, with performances in the Roman theatre itself. If you go, book months ahead."
+      },
+      "Trujillo": {
+        "text": "Trujillo has an enormous main square on a slope, with a church and a castle at the top. It's the city of the conquistadors, and an afternoon covers it.",
+        "see": [
+          "The main square and the statue of Pizarro",
+          "The castle and Santa María church",
+          "Pizarro's house-museum",
+          "The Coria viewpoint, over the plain"
+        ],
+        "tip": "The main square slopes and has no shade in summer. Go first thing or at sunset, when the stone turns gold."
+      },
+      "Guadalupe": {
+        "text": "Guadalupe is a one-street town wrapped around an enormous monastery, with a virgin who was the patron of the conquistadors. Half a day covers it.",
+        "see": [
+          "The monastery of Guadalupe, on a guided visit",
+          "The Mudéjar cloister and the sacristy",
+          "The town, with its half-timbered houses",
+          "The paprika shop, if you want pimentón de la Vera"
+        ],
+        "tip": "The monastery is only visited with a guide, at fixed times. Check the schedule before you go: there are fewer slots on weekdays."
+      }
+    },
+    "gettingAround": "A car is close to essential. Madrid and Cáceres are three hours apart on the A-5; Madrid and Mérida, three and a half. Trains to Cáceres and Mérida leave from Atocha, but they're few and slow, and Hervás, Guadalupe and Trujillo have no station. Hire the car in Madrid and drop it back there: the route is a loop and you never retrace your steps. The secondary roads are empty and in good shape.",
+    "bestTime": "March, April, May, October and November: good weather and few tourists. In spring the Jerte valley is in blossom and the reservoirs are full. In autumn the Ambroz chestnuts turn yellow. July and August are unbearable: over 40°C and no shade. Winter freezes at night, but the cities are quiet and prices drop.",
+    "faq": [
+      {
+        "question": "How many days do you need for Extremadura?",
+        "answer": "5 or 6 days covers Mérida, Cáceres and Trujillo. With 8 to 10 you add Plasencia; with 11 to 13 Hervás and Guadalupe come in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, more or less. Trains to Cáceres and Mérida exist but are scarce, and Hervás, Guadalupe and Trujillo are only reached by car or by infrequent bus."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "No: the route is designed north to south, in and out of Madrid. Doing it backwards means retracing the same kilometres."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Madrid-Barajas (MAD), the way in. Badajoz (BJZ) has few flights and none with Ryanair or Wizz, so it doesn't work for this route."
+      }
+    ]
+  }
+}

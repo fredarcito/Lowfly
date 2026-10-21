@@ -1,0 +1,244 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-21",
+  "slugs": {
+    "es": "lisboa-y-algarve",
+    "en": "lisbon-and-the-algarve"
+  },
+  "photos": {
+    "Lisbon": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Lisboa837.png/960px-Lisboa837.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 491,
+      "page": "https://commons.wikimedia.org/wiki/File:Lisboa837.png",
+      "author": "Lacobrigo",
+      "license": "CC BY-SA 4.0"
+    },
+    "Sintra": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Pal%C3%A1cio_Nacional_de_Sintra_from_above_74.jpg/960px-Pal%C3%A1cio_Nacional_de_Sintra_from_above_74.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_Nacional_de_Sintra_from_above_74.jpg",
+      "author": "Kent Wang",
+      "license": "CC BY 4.0"
+    },
+    "Évora": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/%C3%89vora_-_Pra%C3%A7a_do_Giraldo.jpg/960px-%C3%89vora_-_Pra%C3%A7a_do_Giraldo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:%C3%89vora_-_Pra%C3%A7a_do_Giraldo.jpg",
+      "author": "Paolo Querci",
+      "license": "CC BY 3.0"
+    },
+    "Lagos": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Vista_aerea_da_Marina_de_Lagos%2C_Algarve_-_Portugal_-_10.03.2023.jpg/960px-Vista_aerea_da_Marina_de_Lagos%2C_Algarve_-_Portugal_-_10.03.2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_aerea_da_Marina_de_Lagos,_Algarve_-_Portugal_-_10.03.2023.jpg",
+      "author": "Bextrel",
+      "license": "CC BY-SA 4.0"
+    },
+    "Tavira": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Tavira_-_Pra%C3%A7a_da_Rep%C3%BAblica.jpg/960px-Tavira_-_Pra%C3%A7a_da_Rep%C3%BAblica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 534,
+      "page": "https://commons.wikimedia.org/wiki/File:Tavira_-_Pra%C3%A7a_da_Rep%C3%BAblica.jpg",
+      "author": "Digitalsignal",
+      "license": "CC BY-SA 3.0"
+    },
+    "Faro": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Vista_aerea_de_Faro%2C_Portugal_-_12.04.2023.jpg/960px-Vista_aerea_de_Faro%2C_Portugal_-_12.04.2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_aerea_de_Faro,_Portugal_-_12.04.2023.jpg",
+      "author": "Bextrel",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Ruta por Lisboa y el Algarve",
+    "metaTitle": "Lisboa y el Algarve en tren y autobús: de 5 a 13 días · Lowfly",
+    "summary": "Empiezas en Lisboa, subes a Sintra y bajas al Algarve por Évora o por la costa. Sales desde Faro, con el aeropuerto a diez minutos del centro.",
+    "why": [
+      "Lisboa y el Algarve son dos viajes en uno: una ciudad de colinas y miradores, y una costa de acantilados y playas que se recorre en tren. Entre las dos, el Alentejo, que casi nadie visita y es lo que más sorprende.",
+      "El orden importa. Lisboa primero, con Sintra como excursión o con una noche; luego el sur, y dentro del sur, Lagos antes que Tavira, porque la costa occidental es más salvaje y la oriental más tranquila.",
+      "Lo que suele fallar es agosto. La costa del Algarve se llena, los trenes van llenos y las playas pequeñas no tienen sitio. Si puedes, ve en junio o en septiembre: el agua está templada y hay sitio para todos."
+    ],
+    "towns": {
+      "Lisbon": {
+        "text": "Lisboa se recorre a pie si tienes piernas y en tranvía si no. Los miradores son gratis y están repartidos por toda la ciudad: el de Graça y el de Senhora do Monte son los que menos gente tienen y los que mejores vistas dan.",
+        "see": [
+          "El barrio de Alfama y el castillo de São Jorge",
+          "Belém, con el monasterio de los Jerónimos y la torre",
+          "El mercado de Campo de Ourique, más de barrio que el da Ribeira",
+          "El fado en una casa pequeña de Alfama o Mouraria",
+          "El elevador da Glória, si no te apetece subir la cuesta"
+        ],
+        "tip": "El bacalao se come de mil maneras y el pastel de nata a cualquier hora. En el Time Out Market los precios son de turista; dos calles más allá, la mitad."
+      },
+      "Sintra": {
+        "text": "Sintra es una excursión de un día desde Lisboa, pero si te quedas a dormir tienes los palacios casi para ti al atardecer. El pueblo está en cuesta y los autobuses que suben a Pena van llenos desde primera hora.",
+        "see": [
+          "El Palacio da Pena, con hora reservada",
+          "La Quinta da Regaleira y el pozo iniciático",
+          "El Palacio de Monserrate, el que menos gente visita y el más bonito por dentro",
+          "El centro histórico y el Palacio Nacional"
+        ],
+        "tip": "El autobús 434 sube a Pena y a los Mouros, pero en verano hay cola. Sube andando desde el centro: son 45 minutos por un camino de bosque."
+      },
+      "Évora": {
+        "text": "Évora es la capital del Alentejo y está entera dentro de murallas. Tiene un templo romano en medio de la plaza y una capilla hecha de huesos, y se ve en un día sin prisa.",
+        "see": [
+          "El templo romano, en el centro histórico",
+          "La capilla de los Huesos, junto a la iglesia de San Francisco",
+          "La Sé y su claustro",
+          "El acueducto, que entra en la ciudad y se puede recorrer por arriba"
+        ],
+        "tip": "La comida del Alentejo es de cuchara y de cerdo: migas, açorda y carne de porco à alentejana. Se come a mediodía y se cena tarde, como en todo Portugal."
+      },
+      "Lagos": {
+        "text": "Lagos es la base del Algarve occidental: playas pequeñas entre acantilados, un centro con muralla y bares hasta la madrugada. En verano es joven y ruidosa; fuera de temporada, es un pueblo tranquilo.",
+        "see": [
+          "La Ponta da Piedade, en barco o por las escaleras",
+          "La playa de Dona Ana y la de Camilo",
+          "El centro histórico y la iglesia de Santo António",
+          "La playa do Camilo, pequeña y con un bar en lo alto"
+        ],
+        "tip": "Las grutas de Ponta da Piedade se ven mejor en barco pequeño, que entra en las cuevas. Los barcos salen del puerto y el paseo dura una hora."
+      },
+      "Tavira": {
+        "text": "Tavira es la otra cara del Algarve: calles blancas, iglesias y una isla con playa a la que se llega en ferry. Hay pocos hoteles grandes y el ritmo es de pueblo.",
+        "see": [
+          "La isla de Tavira, en ferry desde el centro",
+          "El castillo y la iglesia de Santa Maria",
+          "El puente romano y las salinas",
+          "El mercado del pescado, por la mañana"
+        ],
+        "tip": "El ferry a la isla sale cada media hora en verano y tarda diez minutos. Lleva agua: en la isla hay un chiringuito y poco más."
+      },
+      "Faro": {
+        "text": "Faro es la puerta del Algarve y mucha gente la cruza sin bajarse del tren. Merece una tarde: el centro histórico está dentro de murallas y la ría, con sus flamencos, es lo que casi nadie ve.",
+        "see": [
+          "La ciudad vieja y la catedral, con la subida al campanario",
+          "La ría Formosa, en barco, para ver aves",
+          "La playa de Faro, en la isla de Faro, con ferry",
+          "El mercado municipal, por la mañana"
+        ],
+        "tip": "El aeropuerto está a diez minutos del centro en autobús. Si sales temprano, duerme en Faro y no en Lagos: el traslado cuesta más que la noche."
+      }
+    },
+    "gettingAround": "Tren y autobús. Lisboa y Sintra están unidas por tren de cercanías desde Rossio, en 40 minutos. Évora se alcanza en autobús desde Lisboa en una hora y media, o en tren con transbordo. Lagos está a tres horas y media de Lisboa en autobús y a cuatro en tren; Faro y Tavira están en la línea del Algarve, con trenes regionales lentos pero frecuentes. Para las playas del Algarve occidental, el autobús local es la única opción sin coche.",
+    "bestTime": "Mayo, junio, julio, septiembre y octubre: el agua está templada y hay sitio en las playas. Julio y agosto son los meses más llenos, con precios altos y trenes llenos. En invierno el Algarve es tranquilo y barato, pero muchos hoteles y restaurantes de playa cierran. La primavera es la mejor época para la ría Formosa y para caminar por la costa.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta para Lisboa y el Algarve?",
+        "answer": "Con 5 o 6 días ves Lisboa, Sintra y Lagos. Con 8 a 10 añades Faro y Tavira; con 11 a 13 entra también Évora."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para las ciudades y los pueblos: el tren y el autobús llegan. El coche ayuda para las playas pequeñas del Algarve occidental, donde los autobuses pasan poco."
+      },
+      {
+        "question": "¿Se puede hacer la ruta al revés?",
+        "answer": "Sí: el recorrido se hace en los dos sentidos. Si empiezas por Faro, acabas en Lisboa, con el aeropuerto dentro de la ciudad."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Lisboa (LIS) y a Faro (FAO). Faro está a diez minutos del centro en autobús; Lisboa está en la ciudad y se llega en metro."
+      }
+    ]
+  },
+  "en": {
+    "title": "Lisbon and the Algarve itinerary",
+    "metaTitle": "Lisbon and the Algarve by train and bus: 5 to 13 days · Lowfly",
+    "summary": "Start in Lisbon, go up to Sintra and come down to the Algarve via Évora or the coast. Fly home from Faro, with the airport ten minutes from the centre.",
+    "why": [
+      "Lisbon and the Algarve are two trips in one: a city of hills and viewpoints, and a coast of cliffs and beaches you can cover by train. Between them, the Alentejo, which almost nobody visits and which surprises most people.",
+      "The order matters. Lisbon first, with Sintra as a day trip or a night; then the south, and within the south, Lagos before Tavira, because the western coast is wilder and the eastern one calmer.",
+      "What usually goes wrong is August. The Algarve coast fills up, trains are packed and the small beaches have no room. If you can, go in June or September: the water is warm and there's space for everyone."
+    ],
+    "towns": {
+      "Lisbon": {
+        "text": "Lisbon is a walking city if you have the legs for it, and a tram city if you don't. The viewpoints are free and scattered all over: Graça and Senhora do Monte have the fewest people and the best views.",
+        "see": [
+          "Alfama and São Jorge castle",
+          "Belém, with the Jerónimos monastery and the tower",
+          "Campo de Ourique market, more local than the Ribeira one",
+          "Fado in a small house in Alfama or Mouraria",
+          "The Glória funicular, if you can't face the hill"
+        ],
+        "tip": "Bacalhau is cooked a thousand ways and pastel de nata is eaten at any hour. At the Time Out Market the prices are for visitors; two streets away they halve."
+      },
+      "Sintra": {
+        "text": "Sintra is a day trip from Lisbon, but if you stay the night you get the palaces almost to yourself at dusk. The town is on a slope and the buses up to Pena are full from first thing.",
+        "see": [
+          "Pena Palace, with a booked time",
+          "Quinta da Regaleira and the initiation well",
+          "Monserrate Palace, the one fewest people visit and the loveliest inside",
+          "The old centre and the National Palace"
+        ],
+        "tip": "Bus 434 goes up to Pena and the Moorish castle, but in summer there's a queue. Walk up from the centre instead: 45 minutes through the forest."
+      },
+      "Évora": {
+        "text": "Évora is the capital of the Alentejo and sits entirely inside its walls. It has a Roman temple in the middle of a square and a chapel built of bones, and a day is enough to see it without hurrying.",
+        "see": [
+          "The Roman temple, in the old town",
+          "The Chapel of Bones, next to São Francisco church",
+          "The cathedral and its cloister",
+          "The aqueduct, which enters the city and can be walked along the top"
+        ],
+        "tip": "Alentejo food is spoon food and pork: migas, açorda and carne de porco à alentejana. Lunch is the main meal and dinner is late, as everywhere in Portugal."
+      },
+      "Lagos": {
+        "text": "Lagos is the base for the western Algarve: small beaches between cliffs, a walled centre and bars until dawn. In summer it's young and loud; out of season it's a quiet town.",
+        "see": [
+          "Ponta da Piedade, by boat or down the steps",
+          "Dona Ana and Camilo beaches",
+          "The old centre and Santo António church",
+          "Praia do Camilo, small, with a bar up above"
+        ],
+        "tip": "The grottoes at Ponta da Piedade are best from a small boat, which fits into the caves. Boats leave from the harbour and the trip takes an hour."
+      },
+      "Tavira": {
+        "text": "Tavira is the other Algarve: white streets, churches and an island beach reached by ferry. There are few big hotels and the pace is that of a town.",
+        "see": [
+          "Tavira island, by ferry from the centre",
+          "The castle and Santa Maria church",
+          "The Roman bridge and the salt pans",
+          "The fish market, in the morning"
+        ],
+        "tip": "The ferry to the island runs every half hour in summer and takes ten minutes. Take water: there's one beach bar on the island and not much else."
+      },
+      "Faro": {
+        "text": "Faro is the gateway to the Algarve and plenty of people pass through without leaving the train. It deserves an afternoon: the old town sits inside its walls and the lagoon, with its flamingos, is what almost nobody sees.",
+        "see": [
+          "The old town and the cathedral, with the climb up the bell tower",
+          "The Ria Formosa, by boat, for the birds",
+          "Faro beach, on the island, by ferry",
+          "The municipal market, in the morning"
+        ],
+        "tip": "The airport is ten minutes from the centre by bus. If you have an early flight, stay in Faro rather than Lagos: the transfer costs more than the night."
+      }
+    },
+    "gettingAround": "Train and bus. Lisbon and Sintra are linked by a suburban train from Rossio in 40 minutes. Évora is an hour and a half from Lisbon by bus, or by train with a change. Lagos is three and a half hours from Lisbon by bus and four by train; Faro and Tavira are on the Algarve line, with slow but frequent regional trains. For the beaches of the western Algarve, the local bus is the only option without a car.",
+    "bestTime": "May, June, July, September and October: the water is warm and there's room on the beaches. July and August are the fullest months, with high prices and packed trains. In winter the Algarve is quiet and cheap, but many hotels and beach restaurants close. Spring is the best time for the Ria Formosa and for walking the coast.",
+    "faq": [
+      {
+        "question": "How many days do you need for Lisbon and the Algarve?",
+        "answer": "5 or 6 days covers Lisbon, Sintra and Lagos. With 8 to 10 you add Faro and Tavira; with 11 to 13 Évora comes in too."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the cities and towns: train and bus get you there. A car helps for the small beaches of the western Algarve, where buses are infrequent."
+      },
+      {
+        "question": "Can you do the route the other way round?",
+        "answer": "Yes: it works in both directions. Start in Faro and you finish in Lisbon, with the airport inside the city."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Lisbon (LIS) and Faro (FAO). Faro is ten minutes from the centre by bus; Lisbon airport is in the city and reached by metro."
+      }
+    ]
+  }
+}

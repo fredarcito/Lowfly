@@ -1,0 +1,186 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "estambul-y-capadocia",
+    "en": "istanbul-cappadocia"
+  },
+  "photos": {
+    "Istanbul": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Istanbul_panorama_%2816293921746%29.jpg/960px-Istanbul_panorama_%2816293921746%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 536,
+      "page": "https://commons.wikimedia.org/wiki/File:Istanbul_panorama_(16293921746).jpg",
+      "author": "Juraj Patekar",
+      "license": "CC BY 2.0"
+    },
+    "Cappadocia (Göreme)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cappadocia_Aerial_View_Landscape.jpg/960px-Cappadocia_Aerial_View_Landscape.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Cappadocia_Aerial_View_Landscape.jpg",
+      "author": "Benh LIEU SONG (Flickr)",
+      "license": "CC BY-SA 4.0"
+    },
+    "Pamukkale": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/TR_Pamukkale_White_Terraces_asv2020-02_img16.jpg/960px-TR_Pamukkale_White_Terraces_asv2020-02_img16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:TR_Pamukkale_White_Terraces_asv2020-02_img16.jpg",
+      "author": "A.Savin",
+      "license": "FAL"
+    },
+    "Antalya": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/J22_333_Antalya%2C_Hafenviertel.jpg/960px-J22_333_Antalya%2C_Hafenviertel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:J22_333_Antalya,_Hafenviertel.jpg",
+      "author": "Falk2",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Estambul y Capadocia",
+    "metaTitle": "Estambul y Capadocia, de 5 a 10 días · Lowfly",
+    "summary": "Santa Sofía y el Bósforo en Estambul, los globos al amanecer sobre Capadocia y, en la versión larga, las terrazas blancas de Pamukkale y la costa de Antalya.",
+    "why": [
+      "Estambul es la única ciudad del mundo en dos continentes: en un mismo día cruzas el Bósforo en ferry, visitas Santa Sofía y la Mezquita Azul y cenas en Asia. Dos o tres días no sobran.",
+      "Capadocia es un paisaje que no existe en otro sitio: valles de chimeneas de hadas excavadas por la erosión, ciudades subterráneas y pueblos trogloditas. El vuelo en globo al amanecer es la razón por la que casi todo el mundo viene.",
+      "La versión larga baja a Pamukkale, con sus terrazas de travertino blanco sobre la ciudad romana de Hierápolis, y termina en Antalya, en el Mediterráneo, para volver desde otro aeropuerto."
+    ],
+    "towns": {
+      "Istanbul": {
+        "text": "Estambul es una ciudad de 16 millones de personas repartida a los dos lados del Bósforo. El casco histórico, en la península, reúne Santa Sofía, la Mezquita Azul y el palacio de Topkapi en menos de un kilómetro, y al otro lado del Cuerno de Oro están Gálata y Beyoğlu.",
+        "see": [
+          "Santa Sofía y la Mezquita Azul, frente a frente",
+          "El palacio de Topkapi y el harén",
+          "La cisterna basílica, con sus 336 columnas",
+          "Un paseo en ferry por el Bósforo hasta Üsküdar"
+        ],
+        "tip": "Compra la Istanbulkart en cualquier máquina al llegar: sirve para tranvía, metro, ferry y autobús, y sin ella cada viaje cuesta el doble. El Gran Bazar cierra los domingos."
+      },
+      "Cappadocia (Göreme)": {
+        "text": "Göreme es el centro de Capadocia, un pueblo de casas excavadas en la roca volcánica. Alrededor están los valles de chimeneas de hadas, los pueblos subterráneos de Kaymakli y Derinkuyu y las iglesias rupestres del museo al aire libre.",
+        "see": [
+          "El museo al aire libre de Göreme, con sus iglesias pintadas",
+          "El valle de los Monjes y el castillo de Uçhisar",
+          "La ciudad subterránea de Derinkuyu",
+          "El valle de Devrent, con las rocas en forma de animales"
+        ],
+        "tip": "El globo sale al amanecer y se cancela con viento: reserva para el primer día y deja otro de margen. Cuesta entre 150 y 250 euros según la temporada, y los vuelos de 60 minutos son los estándar."
+      },
+      "Pamukkale": {
+        "text": "Pamukkale son terrazas de travertino blanco formadas por el agua caliente que baja de la montaña, con la ciudad romana de Hierápolis encima y la piscina de Cleopatra, donde nadan entre columnas sumergidas. Está a tres horas de Capadocia en bus nocturno.",
+        "see": [
+          "Las terrazas de travertino, descalzo",
+          "El teatro romano de Hierápolis",
+          "La piscina de Cleopatra, con las ruinas dentro",
+          "El museo arqueológico, en los baños romanos"
+        ],
+        "tip": "Se entra por la puerta sur y se baja por las terrazas hasta el pueblo, así no hay que subir la cuesta. Lleva una bolsa para los zapatos: en las terrazas hay que ir descalzo."
+      },
+      "Antalya": {
+        "text": "Antalya es la capital del Mediterráneo turco, con un casco antiguo, Kaleiçi, de calles estrechas y casas otomanas dentro de las murallas, un puerto romano y una cascada que cae al mar al oeste de la ciudad.",
+        "see": [
+          "Kaleiçi y el puerto viejo",
+          "La puerta de Adriano, del año 130",
+          "Las cascadas de Düden, al este",
+          "El museo arqueológico, con estatuas romanas"
+        ],
+        "tip": "Antalya tiene vuelos directos a muchas ciudades europeas, así que sirve para entrar o salir del viaje sin volver a Estambul. El aeropuerto está a 20 minutos del centro en tranvía."
+      }
+    },
+    "gettingAround": "Estambul se recorre en tranvía, metro y ferry con la Istanbulkart. A Capadocia hay bus nocturno desde Estambul (unas 11 horas, a Göreme) o vuelo nacional a Kayseri o Nevşehir más un traslado de una hora; con pocos días compensa el avión. De Capadocia a Pamukkale, bus nocturno de unas 10 horas. De Pamukkale a Antalya, bus de cuatro horas.",
+    "bestTime": "De abril a junio y de septiembre a octubre: Estambul está templada y Capadocia entre 15 y 25 grados, con los globos volando casi todos los días. En julio y agosto Capadocia pasa de 35 y hay mucha gente. En invierno Capadocia se cubre de nieve y es preciosa, pero muchos vuelos en globo se cancelan.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Estambul y Capadocia. Con 7 añades una noche más en cada una. Con 10 entran Pamukkale y Antalya."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: en Estambul el coche es un estorbo y en Capadocia se contrata el traslado o se alquila coche solo para los valles, si quieres ir por libre."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Kayseri o Nevşehir y saliendo por Estambul (IST), o al revés. Antalya (AYT) también sirve como entrada o salida."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Estambul (IST o SAW), a Kayseri (ASR) o Nevşehir (NAV) para Capadocia y a Antalya (AYT). Ryanair y Wizz vuelan a Estambul y Antalya; a Capadocia solo hay vuelos nacionales."
+      }
+    ]
+  },
+  "en": {
+    "title": "Istanbul and Cappadocia",
+    "metaTitle": "Istanbul and Cappadocia in 5 to 10 days · Lowfly",
+    "summary": "Hagia Sophia and the Bosphorus in Istanbul, balloons at dawn over Cappadocia and, on the long version, the white terraces of Pamukkale and the Antalya coast.",
+    "why": [
+      "Istanbul is the only city in the world on two continents: in one day you cross the Bosphorus by ferry, visit Hagia Sophia and the Blue Mosque and have dinner in Asia. Two or three days are not too many.",
+      "Cappadocia is a landscape that exists nowhere else: valleys of fairy chimneys carved by erosion, underground cities and cave villages. The balloon flight at dawn is why almost everyone comes.",
+      "The long version drops to Pamukkale, with its white travertine terraces above the Roman city of Hierapolis, and ends in Antalya on the Mediterranean, so you fly home from a different airport."
+    ],
+    "towns": {
+      "Istanbul": {
+        "text": "Istanbul is a city of 16 million people spread over both sides of the Bosphorus. The historic peninsula packs Hagia Sophia, the Blue Mosque and Topkapi Palace into less than a kilometre, and across the Golden Horn are Galata and Beyoğlu.",
+        "see": [
+          "Hagia Sophia and the Blue Mosque, facing each other",
+          "Topkapi Palace and the harem",
+          "The Basilica Cistern, with its 336 columns",
+          "A ferry up the Bosphorus to Üsküdar"
+        ],
+        "tip": "Buy an Istanbulkart from any machine on arrival: it covers tram, metro, ferry and bus, and without it every trip costs double. The Grand Bazaar closes on Sundays."
+      },
+      "Cappadocia (Göreme)": {
+        "text": "Göreme is the centre of Cappadocia, a village of houses carved into the volcanic rock. Around it are the fairy-chimney valleys, the underground towns of Kaymakli and Derinkuyu and the rock-cut churches of the open-air museum.",
+        "see": [
+          "The Göreme open-air museum, with its painted churches",
+          "The Monks valley and Uçhisar castle",
+          "The underground city of Derinkuyu",
+          "Devrent valley, with rocks shaped like animals"
+        ],
+        "tip": "The balloon goes up at dawn and is cancelled in wind: book for your first day and keep another as a spare. It costs 150 to 250 euros depending on the season, and the 60-minute flights are the standard ones."
+      },
+      "Pamukkale": {
+        "text": "Pamukkale is a set of white travertine terraces formed by hot water running down the mountain, with the Roman city of Hierapolis on top and Cleopatra's pool, where you swim among sunken columns. It is three hours from Cappadocia by night bus.",
+        "see": [
+          "The travertine terraces, barefoot",
+          "The Roman theatre of Hierapolis",
+          "Cleopatra's pool, with the ruins inside it",
+          "The archaeological museum, in the Roman baths"
+        ],
+        "tip": "Enter by the south gate and walk down the terraces to the village, so you never have to climb the hill. Bring a bag for your shoes: the terraces are barefoot only."
+      },
+      "Antalya": {
+        "text": "Antalya is the capital of the Turkish Mediterranean, with an old town, Kaleiçi, of narrow streets and Ottoman houses inside the walls, a Roman harbour and a waterfall dropping into the sea west of the city.",
+        "see": [
+          "Kaleiçi and the old harbour",
+          "Hadrian's Gate, from the year 130",
+          "The Düden waterfalls, to the east",
+          "The archaeological museum, with Roman statues"
+        ],
+        "tip": "Antalya has direct flights to many European cities, so it works as an entry or exit point without going back to Istanbul. The airport is twenty minutes from the centre by tram."
+      }
+    },
+    "gettingAround": "Istanbul runs on tram, metro and ferry with the Istanbulkart. To Cappadocia there is a night bus from Istanbul (about 11 hours, to Göreme) or a domestic flight to Kayseri or Nevşehir plus a one-hour transfer; with few days the flight is worth it. Cappadocia to Pamukkale is a night bus of about 10 hours. Pamukkale to Antalya is a four-hour bus.",
+    "bestTime": "April to June and September to October: Istanbul is mild and Cappadocia sits between 15 and 25 degrees, with balloons flying almost every day. In July and August Cappadocia goes above 35 and is crowded. In winter Cappadocia is covered in snow and beautiful, but many balloon flights are cancelled.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Istanbul and Cappadocia. 7 adds a night in each. 10 takes in Pamukkale and Antalya."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: in Istanbul a car is a nuisance, and in Cappadocia you book transfers or rent a car just for the valleys if you want to go independently."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Kayseri or Nevşehir and out of Istanbul (IST), or the reverse. Antalya (AYT) also works as an entry or exit."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Istanbul (IST or SAW), Kayseri (ASR) or Nevşehir (NAV) for Cappadocia, and Antalya (AYT). Ryanair and Wizz fly to Istanbul and Antalya; Cappadocia only has domestic flights."
+      }
+    ]
+  }
+}

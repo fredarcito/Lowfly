@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "macedonia-del-norte-y-ocrid",
+    "en": "north-macedonia-ohrid"
+  },
+  "photos": {
+    "Skopje": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Stone_Bridge_Skopje_4.jpg/960px-Stone_Bridge_Skopje_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 635,
+      "page": "https://commons.wikimedia.org/wiki/File:Stone_Bridge_Skopje_4.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0"
+    },
+    "Bitola": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Officer%27s_Hall_in_Bitola_%28%D0%9E%D1%84%D0%B8%D1%86%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%BE%D1%82_%D0%B4%D0%BE%D0%BC_%D0%B2%D0%BE_%D0%91%D0%B8%D1%82%D0%BE%D0%BB%D0%B0%29.jpg/960px-Officer%27s_Hall_in_Bitola_%28%D0%9E%D1%84%D0%B8%D1%86%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%BE%D1%82_%D0%B4%D0%BE%D0%BC_%D0%B2%D0%BE_%D0%91%D0%B8%D1%82%D0%BE%D0%BB%D0%B0%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 722,
+      "page": "https://commons.wikimedia.org/wiki/File:Officer%27s_Hall_in_Bitola_(%D0%9E%D1%84%D0%B8%D1%86%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%BE%D1%82_%D0%B4%D0%BE%D0%BC_%D0%B2%D0%BE_%D0%91%D0%B8%D1%82%D0%BE%D0%BB%D0%B0).jpg",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0"
+    },
+    "Ohrid": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ohrid_Lake_22.JPG/960px-Ohrid_Lake_22.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 497,
+      "page": "https://commons.wikimedia.org/wiki/File:Ohrid_Lake_22.JPG",
+      "author": "Makedonski biseri",
+      "license": "CC BY-SA 3.0"
+    },
+    "Berat": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Old_town_of_berat_albania_3.jpg/960px-Old_town_of_berat_albania_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Old_town_of_berat_albania_3.jpg",
+      "author": "Pero Kvrzica - @Flickr: https://www.flickr.com/photos/pero_kvrzica/",
+      "license": "CC BY 2.0"
+    },
+    "Tirana": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Tirana_-_Skanderbeg_Square_%28Sheshi_Sk%C3%ABnderbej%29_-_by_Pudelek.jpg/960px-Tirana_-_Skanderbeg_Square_%28Sheshi_Sk%C3%ABnderbej%29_-_by_Pudelek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 578,
+      "page": "https://commons.wikimedia.org/wiki/File:Tirana_-_Skanderbeg_Square_(Sheshi_Sk%C3%ABnderbej)_-_by_Pudelek.jpg",
+      "author": "Pudelek",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Macedonia del Norte y Ocrid: de Skopie a Tirana",
+    "metaTitle": "Macedonia del Norte y Ocrid: de Skopie a Tirana, de 5 a 9 días · Lowfly",
+    "summary": "El bazar de Skopie, el cañón de Matka, Bitola y el lago de Ocrid con sus iglesias bizantinas, y una bajada a Berat y Tirana.",
+    "why": [
+      "El lago de Ocrid tiene un millón de años, es el más antiguo de Europa y está protegido por la Unesco: en sus orillas hay iglesias bizantinas del siglo XIII, un pueblo de casas blancas y agua tan clara que se ven las piedras a diez metros.",
+      "Skopie es una de las capitales más raras de Europa: el bazar otomano más grande de los Balcanes al lado de una plaza llena de estatuas de bronce y edificios neoclásicos, y el cañón de Matka a 15 minutos del centro.",
+      "La ruta baja después a Albania: Berat, la ciudad de las mil ventanas, y Tirana, con el aeropuerto de salida. Son cuatro horas de bus desde Ocrid y un país más en el viaje."
+    ],
+    "towns": {
+      "Skopje": {
+        "text": "Skopie es la capital de Macedonia del Norte, con el bazar de Čaršija, el más grande de los Balcanes, la fortaleza de Kale sobre el Vardar y el puente de piedra del siglo XV. Al otro lado del río, la plaza Macedonia está llena de estatuas y edificios neoclásicos de 2014.",
+        "see": [
+          "El bazar de Čaršija y la mezquita Mustafá Bajá",
+          "La fortaleza de Kale",
+          "El puente de piedra y la plaza Macedonia",
+          "El cañón de Matka, a 15 minutos"
+        ],
+        "tip": "Skopie tiene el aeropuerto (SKP) a 20 minutos del centro. El cañón de Matka se visita en medio día, en bus urbano o taxi, y se recorre en barco hasta la cueva de Vrelo."
+      },
+      "Bitola": {
+        "text": "Bitola es la ciudad más europea del país: su calle Širok Sokak, peatonal y llena de cafés, conserva edificios neoclásicos de cuando fue consulado de media Europa. Al lado están las ruinas de Heraclea Lyncestis, una ciudad romana con mosaicos.",
+        "see": [
+          "La calle Širok Sokak",
+          "Heraclea Lyncestis y sus mosaicos",
+          "El bazar antiguo y la mezquita de Yeni",
+          "El monte Pelister, en el parque nacional"
+        ],
+        "tip": "Bitola está a una hora de Ocrid y se ve en un día. Heraclea está a 10 minutos a pie del centro y sus mosaicos del siglo IV son lo mejor de la ciudad."
+      },
+      "Ohrid": {
+        "text": "Ocrid es la perla del lago: un pueblo de casas blancas con ventanas de madera en una colina, la iglesia de San Juan Kaneo sobre un acantilado y la fortaleza de Samuel en lo alto. El lago es Patrimonio de la Humanidad y tiene playas de agua dulce.",
+        "see": [
+          "La iglesia de San Juan Kaneo",
+          "La fortaleza de Samuel",
+          "El anfiteatro antiguo y la iglesia de Santa Sofía",
+          "La playa de Kaneo y el paseo del lago"
+        ],
+        "tip": "Ocrid se ve en dos días: uno para el pueblo y otro para el lago y el monasterio de San Naum, en barco. En julio y agosto se llena de turistas de los Balcanes: reserva alojamiento."
+      },
+      "Berat": {
+        "text": "Berat es la parada albanesa de la ruta: casas otomanas blancas con ventanas de madera apiladas en dos colinas, una con la fortaleza y otra con el barrio de Gorica. Es Patrimonio de la Humanidad y está a tres horas de Ocrid.",
+        "see": [
+          "La fortaleza de Berat",
+          "El barrio de Mangalem, desde el puente",
+          "El barrio de Gorica y el puente de piedra",
+          "El museo Onufri"
+        ],
+        "tip": "Berat es la primera ciudad albanesa del viaje y el cambio de moneda se hace en Tirana o en un cajero. Desde Ocrid hay buses a Elbasan y transbordo a Berat: calcula cinco horas."
+      },
+      "Tirana": {
+        "text": "Tirana cierra la ruta con el aeropuerto de salida (TIA): la plaza Skanderbeg, el barrio de Blloku y Bunk'Art, el búnker de Enif Hoxha convertido en museo. Es una ciudad de cafés y terrazas, más relajada que Skopie.",
+        "see": [
+          "La plaza Skanderbeg y la mezquita de Et'hem Bey",
+          "Bunk'Art",
+          "El barrio de Blloku",
+          "El teleférico al monte Dajti"
+        ],
+        "tip": "Tirana está a dos horas de Berat en bus y a 20 minutos del aeropuerto. Si te sobra medio día, el teleférico al Dajti sube en 15 minutos y da la vista de toda la llanura."
+      }
+    },
+    "gettingAround": "Skopie-Bitola, tres horas y media en bus. Bitola-Ocrid, una hora y cuarto en bus. Ocrid-Berat, cinco horas en bus con transbordo en Elbasan. Berat-Tirana, dos horas en bus. Los buses entre Skopie y Ocrid salen cada hora y cuestan unos ocho euros.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con 20 a 26 grados y el lago en su mejor momento. Julio y agosto son los meses de playa en Ocrid y los más caros. En invierno Ocrid es tranquila y fría, y el lago se ve con niebla.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Skopie y Ocrid. Con 6 añades Bitola. Con 9 entran Berat y Tirana."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses unen todas las paradas. El coche solo ayuda para el cañón de Matka y el monte Pelister."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Tirana (TIA) y saliendo por Skopie (SKP) o Ocrid (OHD), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Skopie (SKP), Ocrid (OHD) o Tirana (TIA). Wizz Air vuela a Skopie y a Ocrid, y Ryanair y Wizz Air a Tirana."
+      }
+    ]
+  },
+  "en": {
+    "title": "North Macedonia and Ohrid: from Skopje to Tirana",
+    "metaTitle": "North Macedonia and Ohrid: from Skopje to Tirana in 5 to 9 days · Lowfly",
+    "summary": "Skopje's bazaar, Matka canyon, Bitola and Lake Ohrid with its Byzantine churches, then down to Berat and Tirana.",
+    "why": [
+      "Lake Ohrid is a million years old, the oldest in Europe and protected by Unesco: on its shores are thirteenth-century Byzantine churches, a town of white houses and water so clear you see the stones ten metres down.",
+      "Skopje is one of the strangest capitals in Europe: the largest Ottoman bazaar in the Balkans beside a square full of bronze statues and neoclassical buildings, with Matka canyon 15 minutes from the centre.",
+      "The route then drops into Albania: Berat, the city of a thousand windows, and Tirana, with the airport out. That is four hours by bus from Ohrid and one more country on the trip."
+    ],
+    "towns": {
+      "Skopje": {
+        "text": "Skopje is the capital of North Macedonia, with the Čaršija bazaar, the largest in the Balkans, the Kale fortress above the Vardar and the fifteenth-century stone bridge. Across the river, Macedonia Square is full of statues and neoclassical buildings from 2014.",
+        "see": [
+          "The Čaršija bazaar and the Mustafa Pasha mosque",
+          "The Kale fortress",
+          "The stone bridge and Macedonia Square",
+          "Matka canyon, 15 minutes away"
+        ],
+        "tip": "Skopje has the airport (SKP) 20 minutes from the centre. Matka canyon takes half a day, by city bus or taxi, and is seen by boat up to the Vrelo cave."
+      },
+      "Bitola": {
+        "text": "Bitola is the most European city in the country: its pedestrian Širok Sokak is full of cafés and keeps the neoclassical buildings of when it hosted half of Europe's consulates. Next door are the ruins of Heraclea Lyncestis, a Roman city with mosaics.",
+        "see": [
+          "Širok Sokak",
+          "Heraclea Lyncestis and its mosaics",
+          "The old bazaar and the Yeni mosque",
+          "Mount Pelister, in the national park"
+        ],
+        "tip": "Bitola is an hour from Ohrid and takes a day. Heraclea is 10 minutes on foot from the centre and its fourth-century mosaics are the best thing in town."
+      },
+      "Ohrid": {
+        "text": "Ohrid is the pearl of the lake: a town of white houses with wooden windows on a hill, the church of St John at Kaneo on a cliff and Samuel's fortress at the top. The lake is a World Heritage Site and has freshwater beaches.",
+        "see": [
+          "The church of St John at Kaneo",
+          "Samuel's fortress",
+          "The ancient theatre and St Sophia's church",
+          "Kaneo beach and the lake walk"
+        ],
+        "tip": "Ohrid takes two days: one for the town and one for the lake and St Naum monastery, by boat. In July and August it fills with Balkan tourists: book accommodation."
+      },
+      "Berat": {
+        "text": "Berat is the Albanian stop of the route: white Ottoman houses with wooden windows stacked on two hills, one with the fortress and the other with the Gorica quarter. It is a World Heritage Site and three hours from Ohrid.",
+        "see": [
+          "Berat fortress",
+          "The Mangalem quarter, from the bridge",
+          "Gorica and the stone bridge",
+          "The Onufri museum"
+        ],
+        "tip": "Berat is the first Albanian city of the trip and money is changed in Tirana or at a cash machine. From Ohrid there are buses to Elbasan and a change to Berat: allow five hours."
+      },
+      "Tirana": {
+        "text": "Tirana closes the route with the airport out (TIA): Skanderbeg Square, the Blloku quarter and Bunk'Art, Enver Hoxha's bunker turned into a museum. It is a city of cafés and terraces, more relaxed than Skopje.",
+        "see": [
+          "Skanderbeg Square and the Et'hem Bey mosque",
+          "Bunk'Art",
+          "The Blloku quarter",
+          "The cable car up Mount Dajti"
+        ],
+        "tip": "Tirana is two hours from Berat by bus and 20 minutes from the airport. With half a day to spare, the cable car to Dajti climbs in 15 minutes and gives the view over the whole plain."
+      }
+    },
+    "gettingAround": "Skopje-Bitola, three and a half hours by bus. Bitola-Ohrid, an hour and a quarter by bus. Ohrid-Berat, five hours by bus with a change at Elbasan. Berat-Tirana, two hours by bus. Buses between Skopje and Ohrid leave hourly and cost about eight euros.",
+    "bestTime": "May to June and September to October, at 20 to 26 degrees and with the lake at its best. July and August are the beach months in Ohrid and the most expensive. In winter Ohrid is quiet and cold, and the lake is seen in mist.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Skopje and Ohrid. 6 adds Bitola. 9 takes in Berat and Tirana."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses link every stop. A car only helps for Matka canyon and Mount Pelister."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Tirana (TIA) and out of Skopje (SKP) or Ohrid (OHD) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Skopje (SKP), Ohrid (OHD) or Tirana (TIA). Wizz Air flies to Skopje and Ohrid, and Ryanair and Wizz Air to Tirana."
+      }
+    ]
+  }
+}

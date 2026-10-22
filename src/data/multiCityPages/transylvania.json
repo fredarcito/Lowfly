@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "transilvania",
+    "en": "transylvania"
+  },
+  "photos": {
+    "Sibiu": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/2023_Piata_Mare_din_Sibiu.jpg/960px-2023_Piata_Mare_din_Sibiu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:2023_Piata_Mare_din_Sibiu.jpg",
+      "author": "Chainwit.",
+      "license": "CC BY 4.0"
+    },
+    "Brașov": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/RO_BV_Council_Square_from_Tampa.jpg/960px-RO_BV_Council_Square_from_Tampa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 639,
+      "page": "https://commons.wikimedia.org/wiki/File:RO_BV_Council_Square_from_Tampa.jpg",
+      "author": "Andrei Stroe",
+      "license": "CC BY-SA 4.0"
+    },
+    "Bucharest": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Palace_of_the_Parliament_in_Bucharest_%2851878975552%29.jpg/960px-Palace_of_the_Parliament_in_Bucharest_%2851878975552%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Palace_of_the_Parliament_in_Bucharest_(51878975552).jpg",
+      "author": "William John Gauthier from Denmark",
+      "license": "CC BY-SA 2.0"
+    },
+    "Cluj-Napoca": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Pia%C8%9Ba_unirii_Cluj_Napoca_2.jpg/960px-Pia%C8%9Ba_unirii_Cluj_Napoca_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Pia%C8%9Ba_unirii_Cluj_Napoca_2.jpg",
+      "author": "Marcmiquel",
+      "license": "CC BY-SA 4.0"
+    },
+    "Sighișoara": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sighisoara_Citadel%2C_Romania_%285681800100%29.jpg/960px-Sighisoara_Citadel%2C_Romania_%285681800100%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1440,
+      "page": "https://commons.wikimedia.org/wiki/File:Sighisoara_Citadel,_Romania_(5681800100).jpg",
+      "author": "yeowatzup",
+      "license": "CC BY 2.0"
+    },
+    "Sinaia": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Castelul_Peles%2C_Sinaia_-_Vedere_panoramica.jpg/960px-Castelul_Peles%2C_Sinaia_-_Vedere_panoramica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 684,
+      "page": "https://commons.wikimedia.org/wiki/File:Castelul_Peles,_Sinaia_-_Vedere_panoramica.jpg",
+      "author": "TiberiuSahlean",
+      "license": "CC BY-SA 3.0 ro"
+    }
+  },
+  "es": {
+    "title": "Transilvania: Sibiu, Sighișoara y Brașov",
+    "metaTitle": "Transilvania: Sibiu, Sighișoara y Brașov, de 5 a 10 días · Lowfly",
+    "summary": "Las ciudades sajonas de Sibiu y Brașov, la ciudadela medieval de Sighișoara y el castillo de Peleș, con Bucarest al final y Cluj al principio en la versión larga.",
+    "why": [
+      "Transilvania es la región de Europa donde los sajones dejaron ciudades amuralladas en el siglo XIII y siguen casi intactas: Sibiu con sus tejados con ojos, Sighișoara con su torre del reloj y Brașov con la iglesia Negra.",
+      "Es de los destinos más baratos del continente: una cena con vino cuesta menos que un café en Zúrich, y el tren entre ciudades sale por pocos euros.",
+      "El paisaje cambia en cada tramo: los Cárpatos entre Sibiu y Brașov, el castillo de Bran y la fortaleza de Râșnov en un día desde Brașov, y el valle de Prahova con el castillo de Peleș antes de llegar a Bucarest."
+    ],
+    "towns": {
+      "Sibiu": {
+        "text": "Sibiu fue Hermannstadt, la capital de los sajones de Transilvania, y su plaza Mayor es una de las más bonitas del país. Las casas tienen las buhardillas con forma de ojos que miran a la calle, y la ciudad fue capital cultural europea en 2007.",
+        "see": [
+          "La plaza Mayor y el puente de las Mentiras",
+          "La iglesia evangélica, con la torre a la que se sube",
+          "El barrio bajo, con las murallas y las torres de gremios",
+          "El museo Astra, al aire libre, a las afueras"
+        ],
+        "tip": "Sibiu se ve en un día, pero quédate a dormir: al anochecer las plazas se vacían y los cafés se llenan de gente del lugar. El mercado de la plaza pequeña, por la mañana, es lo mejor para comprar queso y embutido."
+      },
+      "Brașov": {
+        "text": "Brașov es Kronstadt, la ciudad sajona más grande de Transilvania, con la iglesia Negra gótica en el centro de la plaza del Consejo y el monte Tâmpa detrás, con un cartel de Hollywood y un teleférico para subir.",
+        "see": [
+          "La iglesia Negra y la plaza del Consejo",
+          "La calle del Cordón, la más estrecha del país",
+          "El teleférico al monte Tâmpa",
+          "Las murallas y la torre Blanca"
+        ],
+        "tip": "Desde Brașov se va en bus al castillo de Bran y a la fortaleza de Râșnov en el día, y hay buses cada hora. Compra los billetes de ida y vuelta en la misma taquilla para no quedarte sin volver."
+      },
+      "Bucharest": {
+        "text": "Bucarest es la capital y la única ciudad grande del viaje: el Palacio del Parlamento, el segundo edificio administrativo más grande del mundo, el casco antiguo con bares y la avenida de la Victoria con casas de entreguerras.",
+        "see": [
+          "El Palacio del Parlamento, con visita guiada",
+          "El casco antiguo y la iglesia Stavropoleos",
+          "El Ateneo Rumano, la sala de conciertos",
+          "El parque Herăstrău y el museo del campesino"
+        ],
+        "tip": "La visita al Parlamento se reserva por internet o en taquilla el mismo día y pide el pasaporte. El metro es barato y llega al aeropuerto con un bus lanzadera desde la estación de Pipera."
+      },
+      "Cluj-Napoca": {
+        "text": "Cluj es la capital de Transilvania hoy, una ciudad universitaria con la plaza de la Unión presidida por la iglesia de San Miguel y una vida nocturna que no tiene nada que envidiar a Bucarest. Es la puerta de entrada si vuelas al oeste.",
+        "see": [
+          "La plaza de la Unión y la iglesia de San Miguel",
+          "El barrio húngaro y el jardín botánico",
+          "El parque central y el río Someș",
+          "La fortaleza de Făgăraș, a dos horas"
+        ],
+        "tip": "Cluj tiene vuelos directos de bajo coste desde muchas ciudades europeas y es la mejor entrada a Transilvania si no quieres pasar por Bucarest. Desde aquí a Sibiu hay bus en tres horas y media."
+      },
+      "Sighișoara": {
+        "text": "Sighișoara es la única ciudadela medieval de Europa todavía habitada, en lo alto de una colina, con la torre del reloj de 64 metros y nueve torres de gremios. Vlad el Empalador nació aquí, y la casa donde nació es hoy un restaurante.",
+        "see": [
+          "La torre del reloj y el museo de historia",
+          "La casa de Vlad Dracul",
+          "La iglesia de la colina, con las 500 escaleras cubiertas",
+          "El cementerio alemán, con las lápidas sajonas"
+        ],
+        "tip": "La ciudadela se ve en medio día, pero dormir dentro es otra cosa: por la noche no queda nadie y las calles empedradas son solo tuyas. Las iglesias fortificadas de Biertan y Viscri se ven en coche desde aquí."
+      },
+      "Sinaia": {
+        "text": "Sinaia está en el valle de Prahova, en la carretera entre Brașov y Bucarest, y es famosa por el castillo de Peleș, la residencia de verano de la familia real rumana, con 160 habitaciones y un interior de madera tallada y vidrieras.",
+        "see": [
+          "El castillo de Peleș, con visita guiada",
+          "El castillo pequeño de Pelișor",
+          "El monasterio de Sinaia",
+          "El teleférico a la cota 1.400 y a la 2.000"
+        ],
+        "tip": "El castillo de Peleș cierra los lunes y la visita se hace por turnos: llega a primera hora o compra la entrada online. Desde la estación de Sinaia hay 20 minutos a pie en cuesta."
+      }
+    },
+    "gettingAround": "Cluj-Sibiu, tres horas y media en bus; Sibiu-Sighișoara, dos horas y media en tren; Sighișoara-Brașov, dos horas en tren; Brașov-Sinaia, una hora en tren; Sinaia-Bucarest, hora y media en tren. Los trenes rumanos (CFR) son baratos y lentos, y los buses de autocarrieras rápidos y frecuentes. Desde Brașov, bus al castillo de Bran y a Râșnov.",
+    "bestTime": "De mayo a septiembre, con días largos y temperaturas de 20 a 28 grados. Junio y septiembre son los mejores meses: en julio y agosto Brașov y Sighișoara se llenan de turismo interno. En invierno hay nieve y las ciudades son bonitas, pero algunos castillos cierran entre semana.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Sibiu, Brașov y Bucarest. Con 7 añades Sighișoara. Con 10 entran Cluj y Sinaia."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para las ciudades: el tren las une. Para las iglesias fortificadas de Biertan y Viscri sí conviene coche o excursión desde Sighișoara."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Bucarest (OTP) y saliendo por Cluj (CLJ), o al revés, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Bucarest (OTP), Cluj-Napoca (CLJ) o Sibiu (SBZ). Ryanair y Wizz Air vuelan a los tres desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Transylvania: Sibiu, Sighișoara and Brașov",
+    "metaTitle": "Transylvania: Sibiu, Sighișoara and Brașov in 5 to 10 days · Lowfly",
+    "summary": "The Saxon towns of Sibiu and Brașov, the medieval citadel of Sighișoara and Peleș castle, with Bucharest at the end and Cluj at the start on the long version.",
+    "why": [
+      "Transylvania is the part of Europe where Saxons built walled towns in the thirteenth century and they are still almost intact: Sibiu with its roof eyes, Sighișoara with its clock tower and Brașov with the Black Church.",
+      "It is one of the cheapest destinations on the continent: dinner with wine costs less than a coffee in Zurich, and the train between cities costs a few euros.",
+      "The landscape changes on every leg: the Carpathians between Sibiu and Brașov, Bran castle and Râșnov fortress as a day trip from Brașov, and the Prahova valley with Peleș castle before Bucharest."
+    ],
+    "towns": {
+      "Sibiu": {
+        "text": "Sibiu was Hermannstadt, the capital of the Transylvanian Saxons, and its Great Square is one of the finest in the country. The houses have dormer windows shaped like eyes looking onto the street, and the city was a European capital of culture in 2007.",
+        "see": [
+          "The Great Square and the Bridge of Lies",
+          "The Evangelical church, with its climbable tower",
+          "The lower town, with the walls and guild towers",
+          "The Astra open-air museum, on the edge of town"
+        ],
+        "tip": "Sibiu takes a day, but stay the night: at dusk the squares empty and the cafés fill with locals. The market on the Small Square, in the morning, is the best place for cheese and sausage."
+      },
+      "Brașov": {
+        "text": "Brașov is Kronstadt, the largest Saxon town in Transylvania, with the Gothic Black Church in the middle of Council Square and Mount Tâmpa behind it, with a Hollywood-style sign and a cable car up.",
+        "see": [
+          "The Black Church and Council Square",
+          "Strada Sforii, the narrowest street in the country",
+          "The cable car up Mount Tâmpa",
+          "The walls and the White Tower"
+        ],
+        "tip": "From Brașov you reach Bran castle and Râșnov fortress by bus as a day trip, and buses run hourly. Buy return tickets at the same desk so you are not stranded on the way back."
+      },
+      "Bucharest": {
+        "text": "Bucharest is the capital and the only big city on the trip: the Palace of the Parliament, the second-largest administrative building in the world, the old town with its bars and Calea Victoriei with its interwar houses.",
+        "see": [
+          "The Palace of the Parliament, with a guided tour",
+          "The old town and Stavropoleos church",
+          "The Romanian Athenaeum, the concert hall",
+          "Herăstrău park and the peasant museum"
+        ],
+        "tip": "The Parliament tour is booked online or at the desk on the day and asks for your passport. The metro is cheap and reaches the airport with a shuttle bus from Pipera station."
+      },
+      "Cluj-Napoca": {
+        "text": "Cluj is Transylvania's capital today, a university city with Union Square presided over by St Michael's church and a nightlife that rivals Bucharest. It is the entry point if you fly into the west.",
+        "see": [
+          "Union Square and St Michael's church",
+          "The Hungarian quarter and the botanical garden",
+          "The central park and the Someș river",
+          "Făgăraș fortress, two hours away"
+        ],
+        "tip": "Cluj has direct low-cost flights from many European cities and is the best way into Transylvania without going through Bucharest. From here to Sibiu is three and a half hours by bus."
+      },
+      "Sighișoara": {
+        "text": "Sighișoara is the only inhabited medieval citadel in Europe, on top of a hill, with a 64-metre clock tower and nine guild towers. Vlad the Impaler was born here, and the house where he was born is a restaurant today.",
+        "see": [
+          "The clock tower and the history museum",
+          "The house of Vlad Dracul",
+          "The church on the hill, with its 500 covered steps",
+          "The German cemetery, with the Saxon gravestones"
+        ],
+        "tip": "The citadel takes half a day, but sleeping inside is another thing: at night nobody is left and the cobbled streets are yours alone. The fortified churches of Biertan and Viscri are a drive from here."
+      },
+      "Sinaia": {
+        "text": "Sinaia sits in the Prahova valley, on the road between Brașov and Bucharest, and is famous for Peleș castle, the summer residence of the Romanian royal family, with 160 rooms and interiors of carved wood and stained glass.",
+        "see": [
+          "Peleș castle, with a guided tour",
+          "The smaller Pelișor castle",
+          "The Sinaia monastery",
+          "The cable car to 1,400 and 2,000 metres"
+        ],
+        "tip": "Peleș castle closes on Mondays and visits run in timed slots: arrive early or buy the ticket online. It is a twenty-minute uphill walk from Sinaia station."
+      }
+    },
+    "gettingAround": "Cluj-Sibiu, three and a half hours by bus; Sibiu-Sighișoara, two and a half hours by train; Sighișoara-Brașov, two hours by train; Brașov-Sinaia, an hour by train; Sinaia-Bucharest, ninety minutes by train. Romanian trains (CFR) are cheap and slow, and coach buses are fast and frequent. From Brașov, a bus to Bran castle and Râșnov.",
+    "bestTime": "May to September, with long days and temperatures of 20 to 28 degrees. June and September are the best months: in July and August Brașov and Sighișoara fill with domestic tourism. In winter there is snow and the towns are beautiful, but some castles close on weekdays.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Sibiu, Brașov and Bucharest. 7 adds Sighișoara. 10 takes in Cluj and Sinaia."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the towns: the train links them. For the fortified churches of Biertan and Viscri a car or a tour from Sighișoara is worth it."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Bucharest (OTP) and out of Cluj (CLJ), or the reverse, is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Bucharest (OTP), Cluj-Napoca (CLJ) or Sibiu (SBZ). Ryanair and Wizz Air fly to all three from several European cities."
+      }
+    ]
+  }
+}

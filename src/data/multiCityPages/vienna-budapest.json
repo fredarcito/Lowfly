@@ -1,0 +1,130 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "viena-y-budapest",
+    "en": "vienna-budapest"
+  },
+  "photos": {
+    "Vienna": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Rathaus_Christkindlmarkt_%285273197597%29.jpg/960px-Rathaus_Christkindlmarkt_%285273197597%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Rathaus_Christkindlmarkt_(5273197597).jpg",
+      "author": "Max Pfandl from Vienna, Austria",
+      "license": "CC BY 2.0"
+    },
+    "Budapest": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Budapest_Christmas_Market_2012_%288227171699%29.jpg/960px-Budapest_Christmas_Market_2012_%288227171699%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Budapest_Christmas_Market_2012_(8227171699).jpg",
+      "author": "Top Budapest",
+      "license": "CC BY 2.0"
+    }
+  },
+  "es": {
+    "title": "Viena y Budapest",
+    "metaTitle": "Viena y Budapest, de 5 a 7 días · Lowfly",
+    "summary": "Las dos capitales del imperio austrohúngaro a dos horas y media en tren, con baños termales en una y ópera en la otra.",
+    "why": [
+      "Viena y Budapest fueron una sola corte y se ve en la arquitectura: los mismos edificios neoclásicos, los mismos cafés y la misma obsesión por la música. El tren las une en dos horas y media.",
+      "Budapest tiene algo que Viena no: baños termales de verdad, con piscinas al aire libre a 38 grados incluso en enero. Es el plan de medio día que justifica el viaje.",
+      "La diferencia de precios es enorme: en Budapest cenas, bebes y duermes por la mitad que en Viena, así que se puede compensar una ciudad cara con una barata."
+    ],
+    "towns": {
+      "Vienna": {
+        "text": "Viena es la ciudad imperial por excelencia, con el Ringstrasse, el Hofburg y Schönbrunn. La música es parte del paisaje: hay conciertos todas las noches en iglesias, palacios y salas, y la Ópera funciona todo el año.",
+        "see": [
+          "El Ringstrasse y el Parlamento",
+          "Schönbrunn y el zoo, el más antiguo del mundo",
+          "El Belvedere y El beso de Klimt",
+          "Un concierto en el Musikverein"
+        ],
+        "tip": "Viena es cara en hoteles: si vas justo de presupuesto, duerme más noches en Budapest y haz Viena con una o dos. Los abonos de transporte de 24 horas cubren metro, tranvía y bus."
+      },
+      "Budapest": {
+        "text": "Budapest tiene el Parlamento más grande de Europa, el castillo de Buda sobre la colina y los baños Széchenyi en el parque de la Ciudad, con tres piscinas exteriores y agua a 38 grados. El barrio judío tiene los ruin bars, bares en edificios abandonados.",
+        "see": [
+          "El Parlamento y la corona de San Esteban",
+          "Los baños Széchenyi o los Gellért",
+          "El bastión de los Pescadores y la iglesia de Matías",
+          "Los ruin bars del barrio judío"
+        ],
+        "tip": "Los baños Széchenyi abren hasta la noche y son más tranquilos a última hora. El tranvía 2, en la orilla de Pest, es la mejor forma de ver el Danubio por 1 euro."
+      }
+    },
+    "gettingAround": "Viena-Budapest, dos horas y media en tren (Railjet) desde Wien Hauptbahnhof, con billetes desde 15 euros si se compran con antelación. Los aeropuertos de Viena y Budapest están a 20 o 30 minutos del centro en tren o bus.",
+    "bestTime": "De abril a junio y de septiembre a octubre. En invierno Budapest es famosa por los baños termales al aire libre con nieve, y Viena por los mercadillos y los conciertos. Julio y agosto son calurosos en las dos.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves lo esencial de las dos. Con 7 añades un día más en cada una para baños, museos y excursiones."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren entre las dos capitales es rápido y barato, y en ambas se va en metro y tranvía."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Budapest (BUD) y saliendo por Viena (VIE), o al revés, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Viena (VIE) o Budapest (BUD). Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Vienna and Budapest",
+    "metaTitle": "Vienna and Budapest in 5 to 7 days · Lowfly",
+    "summary": "The two capitals of Austria-Hungary two and a half hours apart by train, with thermal baths in one and opera in the other.",
+    "why": [
+      "Vienna and Budapest were one court and you see it in the architecture: the same neoclassical buildings, the same cafés and the same obsession with music. The train links them in two and a half hours.",
+      "Budapest has something Vienna does not: real thermal baths, with outdoor pools at 38 degrees even in January. It is the half-day plan that justifies the trip.",
+      "The price gap is huge: in Budapest you dine, drink and sleep for half of Vienna, so a costly city is offset by a cheap one."
+    ],
+    "towns": {
+      "Vienna": {
+        "text": "Vienna is the imperial city par excellence, with the Ringstrasse, the Hofburg and Schönbrunn. Music is part of the landscape: there are concerts every night in churches, palaces and halls, and the Opera runs all year.",
+        "see": [
+          "The Ringstrasse and the Parliament",
+          "Schönbrunn and the zoo, the oldest in the world",
+          "The Belvedere and Klimt's The Kiss",
+          "A concert at the Musikverein"
+        ],
+        "tip": "Vienna is expensive for hotels: on a budget, stay more nights in Budapest and do Vienna in one or two. 24-hour transport passes cover metro, tram and bus."
+      },
+      "Budapest": {
+        "text": "Budapest has the largest Parliament in Europe, Buda castle on its hill and the Széchenyi baths in City Park, with three outdoor pools at 38 degrees. The Jewish quarter has the ruin bars, drinking places in abandoned buildings.",
+        "see": [
+          "The Parliament and the crown of St Stephen",
+          "The Széchenyi or Gellért baths",
+          "Fisherman's Bastion and Matthias church",
+          "The ruin bars of the Jewish quarter"
+        ],
+        "tip": "The Széchenyi baths stay open late and are quieter at the end of the day. Tram 2, on the Pest bank, is the best way to see the Danube for a euro."
+      }
+    },
+    "gettingAround": "Vienna-Budapest, two and a half hours by Railjet from Wien Hauptbahnhof, with tickets from 15 euros if booked ahead. Vienna and Budapest airports are 20 to 30 minutes from the centre by train or bus.",
+    "bestTime": "April to June and September to October. In winter Budapest is famous for outdoor thermal baths in the snow, and Vienna for its markets and concerts. July and August are hot in both.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days covers the essentials of both. 7 adds a day in each for baths, museums and day trips."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train between the two capitals is fast and cheap, and both cities run on metro and trams."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Budapest (BUD) and out of Vienna (VIE), or the reverse, is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Vienna (VIE) or Budapest (BUD). Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

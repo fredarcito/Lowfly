@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "grecia-continental",
+    "en": "mainland-greece"
+  },
+  "photos": {
+    "Athens": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg/960px-Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0"
+    },
+    "Nafplio": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Nafplio%2C_Greece_2022.jpg/960px-Nafplio%2C_Greece_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Nafplio,_Greece_2022.jpg",
+      "author": "Nikoletta.petropoulou",
+      "license": "CC BY-SA 4.0"
+    },
+    "Delphi": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Delphi_BW_2017-10-08_11-38-38.jpg/960px-Delphi_BW_2017-10-08_11-38-38.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 627,
+      "page": "https://commons.wikimedia.org/wiki/File:Delphi_BW_2017-10-08_11-38-38.jpg",
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0"
+    },
+    "Meteora (Kalambaka)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Roussanou_Monastery%2C_Meteora.jpg/960px-Roussanou_Monastery%2C_Meteora.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Roussanou_Monastery,_Meteora.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0"
+    },
+    "Thessaloniki": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Thessaloniki_waterfront_by_night.jpg/960px-Thessaloniki_waterfront_by_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Thessaloniki_waterfront_by_night.jpg",
+      "author": "Salonica84 at English Wikipedia",
+      "license": "Public domain"
+    }
+  },
+  "es": {
+    "title": "Grecia continental: Atenas, Delfos, Meteora y Tesalónica",
+    "metaTitle": "Grecia continental: Atenas, Delfos, Meteora y Tesalónica, de 5 a 10 días · Lowfly",
+    "summary": "La Acrópolis, el oráculo de Delfos, los monasterios colgados de Meteora y la ciudad de Tesalónica, en tren y bus por el continente.",
+    "why": [
+      "Es la Grecia de los clásicos sin islas ni ferris: Atenas, Delfos, Meteora y Tesalónica se unen en tren y bus, y el país tiene una red de trenes cómoda y barata.",
+      "Meteora es un paisaje único en Europa: seis monasterios ortodoxos en la cima de pilares de roca de 300 metros, declarados Patrimonio de la Humanidad, con vistas al valle desde cada uno.",
+      "Delfos fue el centro del mundo antiguo: el oráculo de Apolo en la ladera del Parnaso, con el templo, el teatro y el estadio, y el museo con el auriga de bronce, una de las mejores esculturas griegas."
+    ],
+    "towns": {
+      "Athens": {
+        "text": "Atenas es la puerta del viaje: la Acrópolis con el Partenón, el museo de la Acrópolis, el ágora antigua y el barrio de Plaka, con la colina de Licabeto para ver la ciudad hasta el mar. Es la única capital europea con un yacimiento de este tamaño en el centro.",
+        "see": [
+          "La Acrópolis y el Partenón",
+          "El museo de la Acrópolis",
+          "El ágora antigua y el templo de Hefesto",
+          "La colina de Licabeto, al atardecer"
+        ],
+        "tip": "Atenas es la base de la ruta: desde aquí salen los trenes a Delfos (con bus desde Livadeia) y a Tesalónica. Sube a la Acrópolis a las ocho y reserva la entrada online."
+      },
+      "Nafplio": {
+        "text": "Nauplia fue la primera capital de Grecia y es una de las ciudades más bonitas del país: calles de mármol, casas con balcones de madera y buganvillas, y dos fortalezas sobre el golfo Argólico. Delante está la isla de Bourtzi, con su torre en el agua.",
+        "see": [
+          "La fortaleza de Palamidi, con sus 999 escalones",
+          "La isla de Bourtzi, en barco",
+          "La plaza de Syntagma y el casco antiguo",
+          "La playa de Karathona, a 3 kilómetros"
+        ],
+        "tip": "Nauplia está a dos horas de Atenas en bus y es la excursión más fácil desde la capital. Sube a Palamidi a primera hora y baja a comer al puerto."
+      },
+      "Delphi": {
+        "text": "Delfos era el centro del mundo antiguo: aquí estaba el oráculo de Apolo, al que consultaban reyes y ciudades. El yacimiento está en la ladera del Parnaso, con el templo de Apolo, el teatro y el estadio, y el museo guarda el auriga de bronce.",
+        "see": [
+          "El templo de Apolo y la vía sagrada",
+          "El teatro y el estadio",
+          "El museo arqueológico y el auriga",
+          "El santuario de Atenea Pronaia, en la curva"
+        ],
+        "tip": "Delfos se visita en medio día y se llega en bus desde Atenas con transbordo en Livadeia, o en excursión de un día. Lleva agua y sombrero: el yacimiento no tiene sombra."
+      },
+      "Meteora (Kalambaka)": {
+        "text": "Meteora son seis monasterios ortodoxos en la cima de pilares de roca de hasta 400 metros, construidos entre los siglos XIV y XVI por monjes que subían en cestas. El pueblo de Kalambaka está a sus pies y es la base para subir.",
+        "see": [
+          "El Gran Meteoron, el mayor de los monasterios",
+          "El monasterio de Varlaam",
+          "El mirador de Agios Nikolaos, al atardecer",
+          "La iglesia bizantina de la Dormición, en Kalambaka"
+        ],
+        "tip": "Los monasterios abren de nueve a cinco y cierran un día distinto cada uno: consulta el horario. Se sube en bus, en taxi o a pie por la carretera, y cada monasterio pide falda o pantalón largo."
+      },
+      "Thessaloniki": {
+        "text": "Tesalónica es la segunda ciudad de Grecia y la más animada: el paseo marítimo con la Torre Blanca, la Rotonda romana, la basílica de San Demetrio y el barrio de Ano Poli, en la colina. Es una ciudad de tapeo y de música, con influencia turca y sefardí.",
+        "see": [
+          "La Torre Blanca y el paseo marítimo",
+          "La Rotonda y el arco de Galerio",
+          "La basílica de San Demetrio",
+          "El barrio de Ano Poli, con vistas al golfo"
+        ],
+        "tip": "Tesalónica tiene aeropuerto (SKG) a 20 minutos del centro. Prueba el bougatsa, el hojaldre de crema, y los mezedes del mercado Modiano."
+      }
+    },
+    "gettingAround": "Atenas-Nauplia, dos horas en bus. Atenas-Delfos, tres horas en bus con transbordo en Livadeia. Delfos-Meteora, cuatro horas en bus con transbordo en Trikala. Meteora-Tesalónica, tres horas en tren desde Kalambaka. Tesalónica-Atenas, cuatro horas en tren de alta velocidad.",
+    "bestTime": "De abril a junio y de septiembre a octubre, con 20 a 28 grados y sin el calor de julio. En agosto Atenas y Delfos pasan de 35 grados y Meteora se llena. En invierno Meteora y Delfos son frías y tranquilas.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Atenas, Delfos y Meteora. Con 7 añades Nauplia. Con 10 entran Tesalónica y una noche más en cada parada."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses y el tren unen todas las paradas. El coche solo ayuda para los alrededores de Nauplia y Meteora."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Tesalónica (SKG) y saliendo por Atenas (ATH), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Atenas (ATH) o a Tesalónica (SKG). Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Mainland Greece: Athens, Delphi, Meteora and Thessaloniki",
+    "metaTitle": "Mainland Greece: Athens, Delphi, Meteora and Thessaloniki in 5 to 10 days · Lowfly",
+    "summary": "The Acropolis, the oracle at Delphi, the monasteries hanging off Meteora and the city of Thessaloniki, by train and bus across the mainland.",
+    "why": [
+      "It is the Greece of the classics without islands or ferries: Athens, Delphi, Meteora and Thessaloniki are linked by train and bus, and the country has a comfortable, cheap rail network.",
+      "Meteora is a landscape found nowhere else in Europe: six Orthodox monasteries on top of rock pillars up to 300 metres high, World Heritage Sites, with views over the valley from each one.",
+      "Delphi was the centre of the ancient world: the oracle of Apollo on the slopes of Parnassus, with the temple, the theatre and the stadium, and a museum holding the bronze charioteer, one of the finest Greek sculptures."
+    ],
+    "towns": {
+      "Athens": {
+        "text": "Athens is the gateway of the trip: the Acropolis with the Parthenon, the Acropolis Museum, the ancient agora and the Plaka quarter, with Lycabettus hill to see the city down to the sea. It is the only European capital with a site this size in its centre.",
+        "see": [
+          "The Acropolis and the Parthenon",
+          "The Acropolis Museum",
+          "The ancient agora and the temple of Hephaestus",
+          "Lycabettus hill, at sunset"
+        ],
+        "tip": "Athens is the base of the route: trains to Delphi (with a bus from Livadeia) and to Thessaloniki leave from here. Climb to the Acropolis at eight and book the ticket online."
+      },
+      "Nafplio": {
+        "text": "Nafplio was the first capital of Greece and is one of the prettiest towns in the country: marble streets, houses with wooden balconies and bougainvillea, and two fortresses above the Argolic gulf. In front is the island of Bourtzi, with its tower in the water.",
+        "see": [
+          "Palamidi fortress, with its 999 steps",
+          "The island of Bourtzi, by boat",
+          "Syntagma square and the old town",
+          "Karathona beach, 3 kilometres away"
+        ],
+        "tip": "Nafplio is two hours from Athens by bus and is the easiest day trip from the capital. Climb to Palamidi first thing and come down to eat at the harbour."
+      },
+      "Delphi": {
+        "text": "Delphi was the centre of the ancient world: here stood the oracle of Apollo, consulted by kings and cities. The site is on the slopes of Parnassus, with the temple of Apollo, the theatre and the stadium, and the museum holds the bronze charioteer.",
+        "see": [
+          "The temple of Apollo and the sacred way",
+          "The theatre and the stadium",
+          "The archaeological museum and the charioteer",
+          "The sanctuary of Athena Pronaia, at the bend"
+        ],
+        "tip": "Delphi takes half a day and is reached by bus from Athens with a change at Livadeia, or on a day tour. Bring water and a hat: the site has no shade."
+      },
+      "Meteora (Kalambaka)": {
+        "text": "Meteora is six Orthodox monasteries on top of rock pillars up to 400 metres, built between the fourteenth and sixteenth centuries by monks who went up in baskets. The village of Kalambaka sits at their feet and is the base for the climb.",
+        "see": [
+          "The Great Meteoron, the largest monastery",
+          "Varlaam monastery",
+          "The Agios Nikolaos viewpoint, at sunset",
+          "The Byzantine church of the Dormition, in Kalambaka"
+        ],
+        "tip": "The monasteries open from nine to five and each closes on a different day: check the timetable. You go up by bus, taxi or on foot along the road, and each monastery asks for a skirt or long trousers."
+      },
+      "Thessaloniki": {
+        "text": "Thessaloniki is the second city of Greece and the liveliest: the seafront with the White Tower, the Roman Rotunda, the basilica of St Demetrius and the Ano Poli quarter on the hill. It is a city of meze and music, with Turkish and Sephardic influence.",
+        "see": [
+          "The White Tower and the seafront",
+          "The Rotunda and the arch of Galerius",
+          "The basilica of St Demetrius",
+          "The Ano Poli quarter, with views over the gulf"
+        ],
+        "tip": "Thessaloniki has an airport (SKG) 20 minutes from the centre. Try bougatsa, the custard pastry, and the meze in the Modiano market."
+      }
+    },
+    "gettingAround": "Athens-Nafplio, two hours by bus. Athens-Delphi, three hours by bus with a change at Livadeia. Delphi-Meteora, four hours by bus with a change at Trikala. Meteora-Thessaloniki, three hours by train from Kalambaka. Thessaloniki-Athens, four hours by high-speed train.",
+    "bestTime": "April to June and September to October, at 20 to 28 degrees and without the July heat. In August Athens and Delphi go over 35 degrees and Meteora fills up. In winter Meteora and Delphi are cold and quiet.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Athens, Delphi and Meteora. 7 adds Nafplio. 10 takes in Thessaloniki and an extra night at each stop."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses and trains link every stop. A car only helps around Nafplio and Meteora."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Thessaloniki (SKG) and out of Athens (ATH) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Athens (ATH) or Thessaloniki (SKG). Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

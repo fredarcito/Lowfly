@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "peloponeso",
+    "en": "peloponnese"
+  },
+  "photos": {
+    "Athens": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg/960px-Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0"
+    },
+    "Nafplio": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Nafplio%2C_Greece_2022.jpg/960px-Nafplio%2C_Greece_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Nafplio,_Greece_2022.jpg",
+      "author": "Nikoletta.petropoulou",
+      "license": "CC BY-SA 4.0"
+    },
+    "Monemvasia": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Monemvasia_Greece_Peloponnese.jpg/960px-Monemvasia_Greece_Peloponnese.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 638,
+      "page": "https://commons.wikimedia.org/wiki/File:Monemvasia_Greece_Peloponnese.jpg",
+      "author": "JustinW",
+      "license": "CC0"
+    },
+    "Areopoli (Mani)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Areopolis%2C_Mani%2C_Greece.jpg/960px-Areopolis%2C_Mani%2C_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Areopolis,_Mani,_Greece.jpg",
+      "author": "Pavlos1988",
+      "license": "CC BY-SA 4.0"
+    },
+    "Kardamyli": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kardamyli_02.jpg/960px-Kardamyli_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1440,
+      "page": "https://commons.wikimedia.org/wiki/File:Kardamyli_02.jpg",
+      "author": "Harald Rossa",
+      "license": "CC BY-SA 3.0"
+    },
+    "Olympia": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Archaeological_Site_of_Ancient_Olympia_-_9.jpg/960px-Archaeological_Site_of_Ancient_Olympia_-_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 641,
+      "page": "https://commons.wikimedia.org/wiki/File:Archaeological_Site_of_Ancient_Olympia_-_9.jpg",
+      "author": "Annatsach",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Peloponeso: Nauplia, Monemvasía, Mani y Olimpia",
+    "metaTitle": "Peloponeso: Nauplia, Monemvasía, Mani y Olimpia, de 5 a 10 días · Lowfly",
+    "summary": "La península del Peloponeso en coche: Nauplia, la roca de Monemvasía, los pueblos de torre de Mani, las playas del golfo de Mesenia y Olimpia.",
+    "why": [
+      "El Peloponeso es la Grecia de las carreteras vacías: en 400 kilómetros hay una ciudad veneciana, una roca con un pueblo medieval encima, pueblos de torres de piedra y el santuario de Olimpia, sin islas ni ferris.",
+      "Monemvasía es una roca de 300 metros unida a tierra por un puente: dentro está un pueblo bizantino amurallado, sin coches, con iglesias, casas de piedra y una vista al Egeo desde la fortaleza superior.",
+      "Mani es la región más salvaje del sur: pueblos de torres de piedra en una península de olivos y acantilados, con calas de agua turquesa como Kardamili y Stoupa, y la garganta de Viros."
+    ],
+    "towns": {
+      "Athens": {
+        "text": "Atenas es la entrada y la salida del Peloponeso: la Acrópolis, el museo de la Acrópolis y Plaka antes de coger el coche o el bus hacia el sur por el canal de Corinto. Es la parada de los clásicos del viaje.",
+        "see": [
+          "La Acrópolis y el Partenón",
+          "El museo de la Acrópolis",
+          "El canal de Corinto, en el camino",
+          "La colina de Licabeto, al atardecer"
+        ],
+        "tip": "Atenas es la base: el coche de alquiler se recoge en el aeropuerto (ATH) y la autopista a Nauplia tarda dos horas. Si vas en bus, salen cada hora desde la estación de Kifissos."
+      },
+      "Nafplio": {
+        "text": "Nauplia fue la primera capital de Grecia y es la ciudad más elegante del Peloponeso: calles de mármol, casas con balcones de madera, la fortaleza de Palamidi sobre el pueblo y la isla de Bourtzi en el golfo Argólico.",
+        "see": [
+          "La fortaleza de Palamidi",
+          "La isla de Bourtzi, en barco",
+          "La plaza de Syntagma",
+          "El yacimiento de Micenas, a 25 kilómetros"
+        ],
+        "tip": "Nauplia es la primera parada del Peloponeso y la mejor base para Micenas y Epidauro. Sube a Palamidi por la mañana y come en el puerto."
+      },
+      "Monemvasia": {
+        "text": "Monemvasía es una roca unida a tierra por un puente estrecho, con un pueblo bizantino amurallado dentro: calles de piedra, iglesias, casas con vistas al mar y la fortaleza superior, a 20 minutos de subida. No hay coches dentro.",
+        "see": [
+          "El pueblo bajo y la iglesia de Elkomenos",
+          "La fortaleza superior y la iglesia de Agia Sofia",
+          "La muralla y el mirador sobre el Egeo",
+          "La playa de Pori, al otro lado de la roca"
+        ],
+        "tip": "Monemvasía se ve en un día y medio y está a cuatro horas de Atenas en coche. Duerme dentro de la roca si puedes: las casas son hoteles pequeños y la noche es muy tranquila."
+      },
+      "Areopoli (Mani)": {
+        "text": "Areópoli es la capital de Mani, la región de las torres de piedra: casas-fortaleza de tres plantas construidas por clanes rivales, calles empedradas y la iglesia de los Taxiarques con su campanario. Es la puerta de la península de Mani.",
+        "see": [
+          "Las torres de piedra del pueblo",
+          "La iglesia de los Taxiarques",
+          "Las cuevas de Diros, en barco",
+          "El pueblo de Vathia, con sus torres"
+        ],
+        "tip": "Areópoli es la base para las cuevas de Diros, a 10 minutos, y para Vathia, el pueblo de torres más fotografiado de Mani. La carretera de la costa hasta Gerolimenas es de las más bonitas de Grecia."
+      },
+      "Kardamyli": {
+        "text": "Kardamili es un pueblo de Mani a la orilla del golfo de Mesenia, con casas de piedra entre olivos, una playa de guijarro y el sendero que lleva a la garganta de Viros. Fue el pueblo de los escritores Patrick Leigh Fermor y Bruce Chatwin.",
+        "see": [
+          "La playa de Kardamili",
+          "La garganta de Viros, a pie",
+          "La iglesia de Agios Spyridon",
+          "El pueblo de Stoupa y su playa"
+        ],
+        "tip": "Kardamili es la parada de playa del Peloponeso: el agua es tranquila y la costa está llena de calas. El sendero de la garganta de Viros sale del pueblo y dura unas tres horas."
+      },
+      "Olympia": {
+        "text": "Olimpia es el santuario donde nacieron los Juegos Olímpicos en el 776 a.C.: el templo de Zeus, el estadio con la línea de salida de piedra y el taller de Fidias, donde se hizo la estatua de Zeus, una de las siete maravillas. El museo guarda el Hermes de Praxíteles.",
+        "see": [
+          "El yacimiento y el estadio antiguo",
+          "El museo arqueológico y el Hermes de Praxíteles",
+          "El taller de Fidias",
+          "El museo de los Juegos Olímpicos"
+        ],
+        "tip": "Olimpia se visita en medio día y está a dos horas de Kardamili por la costa. Corre una vuelta al estadio antiguo: la línea de salida es la original."
+      }
+    },
+    "gettingAround": "Atenas-Nauplia, dos horas en coche o bus. Nauplia-Monemvasía, tres horas en coche. Monemvasía-Areópoli, una hora y media en coche. Areópoli-Kardamili, 40 minutos en coche. Kardamili-Olimpia, dos horas en coche. Olimpia-Atenas, tres horas en coche. En el Peloponeso el coche es casi imprescindible: los buses existen pero son lentos y escasos.",
+    "bestTime": "De abril a junio y de septiembre a octubre, con 20 a 28 grados y el mar a 23. En agosto el Peloponeso es caluroso y las playas de Mani se llenan. En invierno Monemvasía y Mani son tranquilas y frías, y Olimpia se visita sin colas.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Atenas, Nauplia, Monemvasía y Olimpia. Con 7 añades Mani. Con 10 entran Kardamili, Micenas y Epidauro con calma."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí, es la ruta donde más ayuda: los buses unen las ciudades pero no los pueblos de Mani ni las playas."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: el recorrido es circular y se puede hacer en cualquier sentido desde Atenas (ATH)."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Atenas (ATH), la única entrada de la ruta. Ryanair y Wizz Air vuelan a Atenas desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "The Peloponnese: Nafplio, Monemvasia, Mani and Olympia",
+    "metaTitle": "The Peloponnese: Nafplio, Monemvasia, Mani and Olympia in 5 to 10 days · Lowfly",
+    "summary": "The Peloponnese peninsula by car: Nafplio, the rock of Monemvasia, the tower villages of Mani, the beaches of the Messenian gulf and Olympia.",
+    "why": [
+      "The Peloponnese is the Greece of empty roads: in 400 kilometres there is a Venetian city, a rock with a medieval town on top, villages of stone towers and the sanctuary of Olympia, without islands or ferries.",
+      "Monemvasia is a 300-metre rock joined to the mainland by a bridge: inside is a walled Byzantine town, car-free, with churches, stone houses and a view over the Aegean from the upper fortress.",
+      "Mani is the wildest region in the south: villages of stone towers on a peninsula of olives and cliffs, with turquoise coves like Kardamili and Stoupa, and the Viros gorge."
+    ],
+    "towns": {
+      "Athens": {
+        "text": "Athens is the way in and out of the Peloponnese: the Acropolis, the Acropolis Museum and Plaka before taking the car or bus south past the Corinth canal. It is the classics stop of the trip.",
+        "see": [
+          "The Acropolis and the Parthenon",
+          "The Acropolis Museum",
+          "The Corinth canal, on the way",
+          "Lycabettus hill, at sunset"
+        ],
+        "tip": "Athens is the base: the hire car is picked up at the airport (ATH) and the motorway to Nafplio takes two hours. By bus, they leave hourly from Kifissos station."
+      },
+      "Nafplio": {
+        "text": "Nafplio was the first capital of Greece and is the most elegant town in the Peloponnese: marble streets, houses with wooden balconies, Palamidi fortress above the town and the island of Bourtzi in the Argolic gulf.",
+        "see": [
+          "Palamidi fortress",
+          "The island of Bourtzi, by boat",
+          "Syntagma square",
+          "The site of Mycenae, 25 kilometres away"
+        ],
+        "tip": "Nafplio is the first stop in the Peloponnese and the best base for Mycenae and Epidaurus. Climb to Palamidi in the morning and eat at the harbour."
+      },
+      "Monemvasia": {
+        "text": "Monemvasia is a rock joined to the mainland by a narrow bridge, with a walled Byzantine town inside: stone streets, churches, houses with sea views and the upper fortress, 20 minutes up. There are no cars inside.",
+        "see": [
+          "The lower town and the Elkomenos church",
+          "The upper fortress and Agia Sofia",
+          "The wall and the view over the Aegean",
+          "Pori beach, on the far side of the rock"
+        ],
+        "tip": "Monemvasia takes a day and a half and is four hours from Athens by car. Sleep inside the rock if you can: the houses are small hotels and the night is very quiet."
+      },
+      "Areopoli (Mani)": {
+        "text": "Areopoli is the capital of Mani, the region of stone towers: three-storey fortress houses built by rival clans, cobbled streets and the church of the Taxiarches with its bell tower. It is the gateway to the Mani peninsula.",
+        "see": [
+          "The stone towers of the village",
+          "The church of the Taxiarches",
+          "The Diros caves, by boat",
+          "The village of Vathia, with its towers"
+        ],
+        "tip": "Areopoli is the base for the Diros caves, 10 minutes away, and for Vathia, the most photographed tower village in Mani. The coastal road to Gerolimenas is one of the finest in Greece."
+      },
+      "Kardamyli": {
+        "text": "Kardamili is a Mani village on the shore of the Messenian gulf, with stone houses among olives, a pebble beach and the path into the Viros gorge. It was the village of the writers Patrick Leigh Fermor and Bruce Chatwin.",
+        "see": [
+          "Kardamili beach",
+          "The Viros gorge, on foot",
+          "The church of Agios Spyridon",
+          "The village of Stoupa and its beach"
+        ],
+        "tip": "Kardamili is the beach stop of the Peloponnese: the water is calm and the coast is full of coves. The Viros gorge path leaves the village and takes about three hours."
+      },
+      "Olympia": {
+        "text": "Olympia is the sanctuary where the Olympic Games began in 776 BC: the temple of Zeus, the stadium with its stone starting line and the workshop of Phidias, where the statue of Zeus, one of the seven wonders, was made. The museum holds the Hermes of Praxiteles.",
+        "see": [
+          "The site and the ancient stadium",
+          "The archaeological museum and the Hermes of Praxiteles",
+          "The workshop of Phidias",
+          "The museum of the Olympic Games"
+        ],
+        "tip": "Olympia takes half a day and is two hours from Kardamili along the coast. Run a lap of the ancient stadium: the starting line is the original."
+      }
+    },
+    "gettingAround": "Athens-Nafplio, two hours by car or bus. Nafplio-Monemvasia, three hours by car. Monemvasia-Areopoli, ninety minutes by car. Areopoli-Kardamili, 40 minutes by car. Kardamili-Olympia, two hours by car. Olympia-Athens, three hours by car. In the Peloponnese a car is almost essential: buses exist but are slow and scarce.",
+    "bestTime": "April to June and September to October, at 20 to 28 degrees and with the sea at 23. In August the Peloponnese is hot and the Mani beaches fill up. In winter Monemvasia and Mani are quiet and cold, and Olympia is visited without queues.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Athens, Nafplio, Monemvasia and Olympia. 7 adds Mani. 10 takes in Kardamili, Mycenae and Epidaurus without rushing."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes, this is the route where it helps most: buses link the towns but not the Mani villages or the beaches."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: the route is a loop and can be done in either direction from Athens (ATH)."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Athens (ATH), the only way into the route. Ryanair and Wizz Air fly to Athens from several European cities."
+      }
+    ]
+  }
+}

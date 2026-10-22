@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "atenas-y-las-cicladas",
+    "en": "athens-cyclades"
+  },
+  "photos": {
+    "Athens": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg/960px-Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0"
+    },
+    "Mykonos": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Windmills_in_the_old_town_in_Mykonos%2C_Greece.jpg/960px-Windmills_in_the_old_town_in_Mykonos%2C_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Windmills_in_the_old_town_in_Mykonos,_Greece.jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0"
+    },
+    "Paros": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Parikia%2C_Paros%2C_085266.jpg/960px-Parikia%2C_Paros%2C_085266.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 639,
+      "page": "https://commons.wikimedia.org/wiki/File:Parikia,_Paros,_085266.jpg",
+      "author": "Zde",
+      "license": "CC BY-SA 4.0"
+    },
+    "Naxos": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Naxos_Town_and_Mt_Zas_from_port_before_sunset%2C_130499.jpg/960px-Naxos_Town_and_Mt_Zas_from_port_before_sunset%2C_130499.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Naxos_Town_and_Mt_Zas_from_port_before_sunset,_130499.jpg",
+      "author": "Zde",
+      "license": "CC BY-SA 4.0"
+    },
+    "Santorini": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/1000_Three_domes_of_Oia_in_Santorini_Photo_by_Giles_Laurent.jpg/960px-1000_Three_domes_of_Oia_in_Santorini_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:1000_Three_domes_of_Oia_in_Santorini_Photo_by_Giles_Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Atenas y las Cícladas: Míkonos, Paros, Naxos y Santorini",
+    "metaTitle": "Atenas y las Cícladas: Míkonos, Paros, Naxos y Santorini, de 5 a 10 días · Lowfly",
+    "summary": "La Acrópolis y el museo de la Acrópolis, y después cuatro islas en ferry: Míkonos, Paros, Naxos y el atardecer de Santorini.",
+    "why": [
+      "Las Cícladas se recorren sin coche: los ferris rápidos unen Atenas con Míkonos, Paros, Naxos y Santorini en trayectos de 45 minutos a dos horas, y cada isla se ve en un día o dos.",
+      "Cada isla tiene su carácter: Míkonos, la de las casas blancas y las playas de fiesta; Paros, la de los pueblos de pescadores y el viento; Naxos, la más verde y con el templo de Apolo en el puerto; y Santorini, la del cráter y los atardeceres.",
+      "Atenas merece dos días: la Acrópolis con el Partenón, el museo de la Acrópolis, el barrio de Plaka y la colina de Licabeto, con la ciudad hasta el mar desde arriba."
+    ],
+    "towns": {
+      "Athens": {
+        "text": "Atenas es la ciudad de la Acrópolis: el Partenón sobre la roca, el teatro de Dionisio y el ágora antigua a sus pies, y el museo de la Acrópolis, uno de los mejores del mundo. Alrededor, Plaka, Monastiraki y el mercado central.",
+        "see": [
+          "La Acrópolis y el Partenón, a primera hora",
+          "El museo de la Acrópolis",
+          "El barrio de Plaka y Anafiotika",
+          "La colina de Licabeto, al atardecer"
+        ],
+        "tip": "Sube a la Acrópolis a las ocho, cuando abre: a las diez hay cola y calor. Los ferris a las islas salen del Pireo, a 30 minutos en metro del centro."
+      },
+      "Mykonos": {
+        "text": "Míkonos es la isla de las casas blancas encaladas, los molinos de viento y las callejuelas del casco antiguo, con la Pequeña Venecia y las playas de Paradise y Super Paradise. Es la más cara y la más animada de las Cícladas.",
+        "see": [
+          "La Pequeña Venecia y los molinos de viento",
+          "El barrio de Matoyianni",
+          "La playa de Elia o de Agios Sostis",
+          "La isla de Delos, en excursión de un día"
+        ],
+        "tip": "Míkonos es la isla más cara de Grecia en agosto: reserva con meses de antelación o ven en junio o septiembre. Delos, la isla sagrada de Apolo, se visita en medio día desde el puerto."
+      },
+      "Paros": {
+        "text": "Paros es la isla del viento y del mármol: el pueblo de Naoussa, con su puerto de pescadores y su fortaleza veneciana, y Parikia, con la iglesia de la Panagia Ekatontapyliani, de las más antiguas de Grecia. Las playas de Kolymbithres y Golden Beach están al norte.",
+        "see": [
+          "El puerto de Naoussa",
+          "La iglesia de Ekatontapyliani, en Parikia",
+          "La playa de Kolymbithres",
+          "El pueblo de Lefkes, en el interior"
+        ],
+        "tip": "Paros es la isla más barata de la ruta y la mejor base para moverse: está a 45 minutos de Míkonos, una hora de Naxos y dos de Santorini. Naoussa es más bonita que Parikia para dormir."
+      },
+      "Naxos": {
+        "text": "Naxos es la isla más grande y más verde de las Cícladas: el puerto con la puerta del templo de Apolo, el casco antiguo con el castillo veneciano y los pueblos de montaña de Halki y Apiranthos. Al este están las playas de Agios Prokopios y Plaka.",
+        "see": [
+          "La puerta del templo de Apolo, en el puerto",
+          "El castillo veneciano y el barrio de Bourgos",
+          "El pueblo de Apiranthos, en la montaña",
+          "La playa de Agios Prokopios"
+        ],
+        "tip": "Naxos es la isla de las excursiones: el monte Zas, el valle de Tragea y los pueblos de mármol. Los ferris a Santorini tardan dos horas y salen por la mañana."
+      },
+      "Santorini": {
+        "text": "Santorini es el cráter de un volcán hundido: los pueblos de Oia y Fira cuelgan del borde del acantilado, con casas blancas y cúpulas azules sobre el Egeo. Las playas de arena negra de Kamari y Perissa están al otro lado de la isla.",
+        "see": [
+          "El atardecer en Oia",
+          "El pueblo de Fira y el camino hasta Oia",
+          "Las playas de arena negra de Kamari y Perissa",
+          "El yacimiento de Akrotiri y las ruinas de Thera"
+        ],
+        "tip": "El atardecer de Oia se llena: llega una hora antes o míralo desde Imerovigli, más tranquilo. El aeropuerto (JTR) está a 20 minutos de Fira y tiene vuelos de Ryanair y Wizz Air."
+      }
+    },
+    "gettingAround": "Atenas-Míkonos, dos horas y media en ferry rápido. Míkonos-Paros, 45 minutos en ferry. Paros-Naxos, una hora en ferry. Naxos-Santorini, dos horas en ferry. Los ferris de Blue Star y Seajets se reservan online en ferryhopper: en julio y agosto, con semanas de antelación.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con el mar a 23 grados, menos viento y precios más bajos. Julio y agosto son los meses del meltemi, el viento del norte, y de las islas llenas. En invierno muchos ferris reducen frecuencias y los hoteles de Santorini cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Atenas y Santorini. Con 7 añades Paros y Naxos. Con 10 entran Míkonos y un día más en cada isla."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: en las islas hay buses y los pueblos se recorren a pie. Alquilar un quad o un coche ayuda en Naxos y Paros."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Santorini (JTR) y saliendo por Atenas (ATH), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Atenas (ATH), Míkonos (JMK), Santorini (JTR) o Naxos (JNX). Ryanair y Wizz Air vuelan a Atenas y a Santorini."
+      }
+    ]
+  },
+  "en": {
+    "title": "Athens and the Cyclades: Mykonos, Paros, Naxos and Santorini",
+    "metaTitle": "Athens and the Cyclades: Mykonos, Paros, Naxos and Santorini in 5 to 10 days · Lowfly",
+    "summary": "The Acropolis and the Acropolis Museum, then four islands by ferry: Mykonos, Paros, Naxos and the sunset in Santorini.",
+    "why": [
+      "The Cyclades are done without a car: fast ferries link Athens with Mykonos, Paros, Naxos and Santorini in trips of 45 minutes to two hours, and each island takes a day or two.",
+      "Each island has its own character: Mykonos, with white houses and party beaches; Paros, with fishing villages and wind; Naxos, the greenest, with the temple of Apollo in the harbour; and Santorini, with its crater and sunsets.",
+      "Athens deserves two days: the Acropolis with the Parthenon, the Acropolis Museum, the Plaka quarter and Lycabettus hill, with the city down to the sea from the top."
+    ],
+    "towns": {
+      "Athens": {
+        "text": "Athens is the city of the Acropolis: the Parthenon on the rock, the theatre of Dionysus and the ancient agora at its feet, and the Acropolis Museum, one of the best in the world. Around it, Plaka, Monastiraki and the central market.",
+        "see": [
+          "The Acropolis and the Parthenon, first thing",
+          "The Acropolis Museum",
+          "Plaka and Anafiotika",
+          "Lycabettus hill, at sunset"
+        ],
+        "tip": "Climb to the Acropolis at eight, when it opens: by ten there are queues and heat. Ferries to the islands leave from Piraeus, 30 minutes by metro from the centre."
+      },
+      "Mykonos": {
+        "text": "Mykonos is the island of whitewashed houses, windmills and narrow old-town lanes, with Little Venice and the beaches of Paradise and Super Paradise. It is the most expensive and liveliest of the Cyclades.",
+        "see": [
+          "Little Venice and the windmills",
+          "The Matoyianni quarter",
+          "Elia or Agios Sostis beach",
+          "The island of Delos, on a day trip"
+        ],
+        "tip": "Mykonos is the most expensive island in Greece in August: book months ahead or come in June or September. Delos, the sacred island of Apollo, is visited in half a day from the port."
+      },
+      "Paros": {
+        "text": "Paros is the island of wind and marble: the village of Naoussa, with its fishing harbour and Venetian fort, and Parikia, with the church of Panagia Ekatontapyliani, among the oldest in Greece. The beaches of Kolymbithres and Golden Beach are to the north.",
+        "see": [
+          "Naoussa harbour",
+          "Ekatontapyliani church, in Parikia",
+          "Kolymbithres beach",
+          "The village of Lefkes, inland"
+        ],
+        "tip": "Paros is the cheapest island on the route and the best base: it is 45 minutes from Mykonos, an hour from Naxos and two from Santorini. Naoussa is prettier than Parikia for sleeping."
+      },
+      "Naxos": {
+        "text": "Naxos is the largest and greenest of the Cyclades: the harbour with the gate of the temple of Apollo, the old town with its Venetian castle and the mountain villages of Halki and Apiranthos. To the east are the beaches of Agios Prokopios and Plaka.",
+        "see": [
+          "The gate of the temple of Apollo, in the harbour",
+          "The Venetian castle and the Bourgos quarter",
+          "The village of Apiranthos, in the mountains",
+          "Agios Prokopios beach"
+        ],
+        "tip": "Naxos is the island of day trips: Mount Zas, the Tragea valley and the marble villages. Ferries to Santorini take two hours and leave in the morning."
+      },
+      "Santorini": {
+        "text": "Santorini is the crater of a sunken volcano: the villages of Oia and Fira hang off the cliff edge, with white houses and blue domes above the Aegean. The black-sand beaches of Kamari and Perissa are on the other side of the island.",
+        "see": [
+          "The sunset in Oia",
+          "Fira and the walk to Oia",
+          "The black-sand beaches of Kamari and Perissa",
+          "The site of Akrotiri and the ruins of Thera"
+        ],
+        "tip": "The Oia sunset fills up: arrive an hour early or watch it from Imerovigli, which is quieter. The airport (JTR) is 20 minutes from Fira and has Ryanair and Wizz Air flights."
+      }
+    },
+    "gettingAround": "Athens-Mykonos, two and a half hours by fast ferry. Mykonos-Paros, 45 minutes by ferry. Paros-Naxos, an hour by ferry. Naxos-Santorini, two hours by ferry. Blue Star and Seajets ferries are booked online on ferryhopper: in July and August, weeks ahead.",
+    "bestTime": "May to June and September to October, with the sea at 23 degrees, less wind and lower prices. July and August are the months of the meltemi, the north wind, and of full islands. In winter many ferries run less often and Santorini hotels close.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Athens and Santorini. 7 adds Paros and Naxos. 10 takes in Mykonos and an extra day on each island."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the islands have buses and the villages are walked. A quad or car helps on Naxos and Paros."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Santorini (JTR) and out of Athens (ATH) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Athens (ATH), Mykonos (JMK), Santorini (JTR) or Naxos (JNX). Ryanair and Wizz Air fly to Athens and Santorini."
+      }
+    ]
+  }
+}

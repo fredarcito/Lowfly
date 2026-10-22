@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "eslovaquia",
+    "en": "slovakia"
+  },
+  "photos": {
+    "Bratislava": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Bratislava_Christmas_market.jpg/960px-Bratislava_Christmas_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 579,
+      "page": "https://commons.wikimedia.org/wiki/File:Bratislava_Christmas_market.jpg",
+      "author": "Nelliette",
+      "license": "CC BY-SA 2.0"
+    },
+    "Banská Štiavnica": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Bansk%C3%A1_%C5%A0tiavnica_from_Nov%C3%BD_z%C3%A1mok_2007.jpg/960px-Bansk%C3%A1_%C5%A0tiavnica_from_Nov%C3%BD_z%C3%A1mok_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 705,
+      "page": "https://commons.wikimedia.org/wiki/File:Bansk%C3%A1_%C5%A0tiavnica_from_Nov%C3%BD_z%C3%A1mok_2007.jpg",
+      "author": "Adrian Tync",
+      "license": "CC BY-SA 4.0"
+    },
+    "Liptovský Mikuláš": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Liptovsk%C3%BD_Mikul%C3%A1%C5%A1_-_center.JPG/960px-Liptovsk%C3%BD_Mikul%C3%A1%C5%A1_-_center.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 750,
+      "page": "https://commons.wikimedia.org/wiki/File:Liptovsk%C3%BD_Mikul%C3%A1%C5%A1_-_center.JPG",
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0"
+    },
+    "Poprad (High Tatras)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/High_Tatra_Mountains_from_Poprad.jpg/960px-High_Tatra_Mountains_from_Poprad.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 534,
+      "page": "https://commons.wikimedia.org/wiki/File:High_Tatra_Mountains_from_Poprad.jpg",
+      "author": "Justraveling.com",
+      "license": "CC BY-SA 4.0"
+    },
+    "Levoča": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Levo%C4%8Da_Old_town_hall_2015_2.jpg/960px-Levo%C4%8Da_Old_town_hall_2015_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 677,
+      "page": "https://commons.wikimedia.org/wiki/File:Levo%C4%8Da_Old_town_hall_2015_2.jpg",
+      "author": "Karelj",
+      "license": "CC BY-SA 3.0"
+    },
+    "Košice": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Ko%C5%A1ice_-_Hlavn%C3%A1_%28Main_Street%29_-_Hlavn%C3%A9_n%C3%A1mestie_%28Main_Square%29_-_View_of_St_Urban_Tower_and_the_Cathedral_of_Saint_Elisabeth_from_the_city_park_%28December_2025%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Ko%C5%A1ice_-_Hlavn%C3%A1_(Main_Street)_-_Hlavn%C3%A9_n%C3%A1mestie_(Main_Square)_-_View_of_St_Urban_Tower_and_the_Cathedral_of_Saint_Elisabeth_from_the_city_park_(December_2025).jpg",
+      "author": "ZemplinTemplar",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Eslovaquia: Bratislava, los Tatras y Košice",
+    "metaTitle": "Eslovaquia: Bratislava, los Tatras y Košice, de 6 a 10 días · Lowfly",
+    "summary": "De la capital a las montañas más altas de los Cárpatos y a la ciudad gótica de Košice, con la ciudad minera de Banská Štiavnica en medio.",
+    "why": [
+      "Los Altos Tatras son la cordillera más alta de los Cárpatos y están cruzados por trenes eléctricos que suben a los lagos de Štrbské Pleso y Starý Smokovec: se hace montaña sin coche y sin esfuerzo.",
+      "Banská Štiavnica fue la ciudad minera de plata más rica del imperio y hoy es un pueblo de callejones en cuesta con 360 edificios protegidos. Es Patrimonio de la Humanidad y casi nadie la conoce.",
+      "Košice cierra el viaje con la catedral gótica más grande de Eslovaquia, en una calle peatonal de un kilómetro, y con vuelos directos de bajo coste para volver sin pasar por Bratislava."
+    ],
+    "towns": {
+      "Bratislava": {
+        "text": "Bratislava abre el viaje con su casco antiguo compacto, el castillo blanco sobre el Danubio y la catedral de San Martín, donde se coronaba a los reyes húngaros. Es la capital más pequeña de las cuatro del viaje.",
+        "see": [
+          "El casco antiguo y la plaza principal",
+          "El castillo de Bratislava",
+          "La catedral de San Martín",
+          "El barrio de Staré Mesto, con bares"
+        ],
+        "tip": "Bratislava se ve en un día y es la entrada más fácil al país, con vuelos de bajo coste y una hora desde Viena. El tren a Banská Štiavnica sale de la estación principal con cambio en Zvolen."
+      },
+      "Banská Štiavnica": {
+        "text": "Banská Štiavnica es una ciudad minera de plata del siglo XIII, metida entre colinas, con 360 edificios protegidos, el castillo viejo y el nuevo enfrentados y una academia de minería del siglo XVIII. Es Patrimonio de la Humanidad.",
+        "see": [
+          "El castillo viejo y el castillo nuevo",
+          "La plaza de la Trinidad y la columna",
+          "La iglesia de Santa Catalina",
+          "El lago de los Tajch, para bañarse en verano"
+        ],
+        "tip": "Banská Štiavnica se ve en un día y medio y los callejones son empinados: calzado cómodo. Los lagos artificiales (tajchy) que construyeron los mineros sirven para bañarse en verano."
+      },
+      "Liptovský Mikuláš": {
+        "text": "Liptovský Mikuláš es la base de la región de Liptov, con una plaza peatonal larga, casas de colores y el embalse de Liptovská Mara al lado. Desde aquí se va a las cuevas de Demänovská y al parque acuático termal de Tatralandia.",
+        "see": [
+          "La plaza peatonal y la iglesia de San Nicolás",
+          "Las cuevas de Demänovská, a 15 minutos",
+          "El embalse de Liptovská Mara",
+          "El museo del pueblo de Liptov"
+        ],
+        "tip": "Liptovský Mikuláš es más barato que Poprad y está a 40 minutos de los Tatras. Las cuevas de Demänovská de la Libertad son las más visitadas del país y se ven en una hora."
+      },
+      "Poprad (High Tatras)": {
+        "text": "Poprad es la puerta de los Altos Tatras, con el pico Gerlachovský a 2.655 metros y los lagos de montaña a los que se sube en tren eléctrico. El pueblo de Štrbské Pleso y el de Starý Smokovec son las bases de los senderos.",
+        "see": [
+          "El lago de Štrbské Pleso",
+          "El tren eléctrico de los Tatras, hasta Starý Smokovec",
+          "El refugio de Rysy, si te atreves con la subida",
+          "La cueva de hielo de Dobšiná, a una hora"
+        ],
+        "tip": "El tren eléctrico de los Tatras (TEŽ) une Poprad con Štrbské Pleso y Starý Smokovec en una hora y es la forma más cómoda de moverse. Los senderos altos cierran de noviembre a junio."
+      },
+      "Levoča": {
+        "text": "Levoča es una ciudad amurallada con la plaza medieval más larga de Eslovaquia, el ayuntamiento renacentista y la iglesia de Santiago, con el retablo de madera más alto del mundo, de 18,6 metros, tallado por Maestro Pavol.",
+        "see": [
+          "La iglesia de Santiago y el retablo de Maestro Pavol",
+          "La plaza y el ayuntamiento renacentista",
+          "La muralla y las puertas",
+          "El castillo de Spiš, a 15 minutos"
+        ],
+        "tip": "El retablo de la iglesia de Santiago se ve con entrada y merece una visita guiada. El castillo de Spiš, el más grande de Europa central, está a 15 minutos en bus o taxi."
+      },
+      "Košice": {
+        "text": "Košice es la segunda ciudad del país y la capital del este, con la catedral de Santa Isabel, la más grande de Eslovaquia, en una calle peatonal de un kilómetro llena de palacios y cafés. Tiene un centro histórico muy bien restaurado.",
+        "see": [
+          "La catedral de Santa Isabel y la capilla de San Miguel",
+          "La calle Hlavná, peatonal",
+          "El teatro nacional y la fuente musical",
+          "El museo de la técnica, en la antigua fundición"
+        ],
+        "tip": "Košice tiene vuelos directos de bajo coste a varias ciudades europeas y es la salida natural del viaje. El centro se ve en un día y la catedral se sube a la torre por pocos euros."
+      }
+    },
+    "gettingAround": "Bratislava-Banská Štiavnica, tres horas y media en tren con cambio en Zvolen. Banská Štiavnica-Liptovský Mikuláš, tres horas en bus o tren con cambio. Liptovský Mikuláš-Poprad, 40 minutos en tren. Poprad-Levoča, 40 minutos en bus. Levoča-Košice, una hora en bus o tren. Desde Poprad, el tren eléctrico de los Tatras a Štrbské Pleso.",
+    "bestTime": "De junio a septiembre para los Tatras, con días largos y temperaturas de 15 a 25 grados. En invierno Poprad y Štrbské Pleso son destino de esquí. Mayo y octubre son tranquilos, pero algunos senderos altos están cerrados.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 6 días ves Bratislava, Banská Štiavnica y los Tatras. Con 8 añades Levoča. Con 10 entran Košice y el castillo de Spiš."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren y los buses unen las ciudades y el tren eléctrico sube a los Tatras. El coche solo compensa para los pueblos del este."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Košice (KSC) y saliendo por Bratislava (BTS) o Viena (VIE), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Bratislava (BTS) o Košice (KSC). Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Slovakia: Bratislava, the Tatras and Košice",
+    "metaTitle": "Slovakia: Bratislava, the Tatras and Košice in 6 to 10 days · Lowfly",
+    "summary": "From the capital to the highest mountains in the Carpathians and the Gothic city of Košice, with the mining town of Banská Štiavnica in between.",
+    "why": [
+      "The High Tatras are the highest range in the Carpathians and are crossed by electric trains that climb to the lakes of Štrbské Pleso and Starý Smokovec: mountains without a car and without effort.",
+      "Banská Štiavnica was the richest silver mining town in the empire and is now a town of steep alleys with 360 protected buildings. It is a World Heritage Site and hardly anyone knows it.",
+      "Košice closes the trip with the largest Gothic cathedral in Slovakia, on a one-kilometre pedestrian street, and with direct low-cost flights home without going back through Bratislava."
+    ],
+    "towns": {
+      "Bratislava": {
+        "text": "Bratislava opens the trip with its compact old town, the white castle above the Danube and St Martin's cathedral, where Hungarian kings were crowned. It is the smallest of the four capitals on the trip.",
+        "see": [
+          "The old town and the main square",
+          "Bratislava castle",
+          "St Martin's cathedral",
+          "The Staré Mesto quarter, with its bars"
+        ],
+        "tip": "Bratislava takes a day and is the easiest way into the country, with low-cost flights and an hour from Vienna. The train to Banská Štiavnica leaves the main station with a change at Zvolen."
+      },
+      "Banská Štiavnica": {
+        "text": "Banská Štiavnica is a thirteenth-century silver mining town tucked between hills, with 360 protected buildings, the old and new castles facing each other and an eighteenth-century mining academy. It is a World Heritage Site.",
+        "see": [
+          "The old castle and the new castle",
+          "Trinity square and its column",
+          "St Catherine's church",
+          "The Tajch lake, for swimming in summer"
+        ],
+        "tip": "Banská Štiavnica takes a day and a half and the alleys are steep: comfortable shoes. The artificial lakes (tajchy) the miners built are for swimming in summer."
+      },
+      "Liptovský Mikuláš": {
+        "text": "Liptovský Mikuláš is the base for the Liptov region, with a long pedestrian square, colourful houses and the Liptovská Mara reservoir next door. From here you reach the Demänovská caves and the Tatralandia thermal water park.",
+        "see": [
+          "The pedestrian square and St Nicholas church",
+          "The Demänovská caves, 15 minutes away",
+          "The Liptovská Mara reservoir",
+          "The Liptov village museum"
+        ],
+        "tip": "Liptovský Mikuláš is cheaper than Poprad and 40 minutes from the Tatras. The Demänovská Cave of Liberty is the most visited in the country and takes an hour."
+      },
+      "Poprad (High Tatras)": {
+        "text": "Poprad is the gateway to the High Tatras, with Gerlachovský peak at 2,655 metres and mountain lakes reached by electric train. The villages of Štrbské Pleso and Starý Smokovec are the bases for the trails.",
+        "see": [
+          "Štrbské Pleso lake",
+          "The Tatras electric train, to Starý Smokovec",
+          "The Rysy hut, if you dare the climb",
+          "The Dobšiná ice cave, an hour away"
+        ],
+        "tip": "The Tatras electric railway (TEŽ) links Poprad with Štrbské Pleso and Starý Smokovec in an hour and is the easiest way around. The high trails close from November to June."
+      },
+      "Levoča": {
+        "text": "Levoča is a walled town with the longest medieval square in Slovakia, the Renaissance town hall and St James's church, with the tallest wooden altarpiece in the world, 18.6 metres, carved by Master Pavol.",
+        "see": [
+          "St James's church and Master Pavol's altarpiece",
+          "The square and the Renaissance town hall",
+          "The wall and its gates",
+          "Spiš castle, 15 minutes away"
+        ],
+        "tip": "The altarpiece in St James's is seen on a ticket and deserves a guided visit. Spiš castle, the largest in central Europe, is 15 minutes away by bus or taxi."
+      },
+      "Košice": {
+        "text": "Košice is the country's second city and the capital of the east, with St Elisabeth's cathedral, the largest in Slovakia, on a one-kilometre pedestrian street full of palaces and cafés. Its historic centre is beautifully restored.",
+        "see": [
+          "St Elisabeth's cathedral and St Michael's chapel",
+          "Hlavná street, pedestrian",
+          "The national theatre and the singing fountain",
+          "The technical museum, in the old foundry"
+        ],
+        "tip": "Košice has direct low-cost flights to several European cities and is the natural way out. The centre takes a day and the cathedral tower can be climbed for a few euros."
+      }
+    },
+    "gettingAround": "Bratislava-Banská Štiavnica, three and a half hours by train with a change at Zvolen. Banská Štiavnica-Liptovský Mikuláš, three hours by bus or train with a change. Liptovský Mikuláš-Poprad, 40 minutes by train. Poprad-Levoča, 40 minutes by bus. Levoča-Košice, an hour by bus or train. From Poprad, the Tatras electric train to Štrbské Pleso.",
+    "bestTime": "June to September for the Tatras, with long days and temperatures of 15 to 25 degrees. In winter Poprad and Štrbské Pleso are ski destinations. May and October are quiet, but some high trails are closed.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "6 days gets you Bratislava, Banská Štiavnica and the Tatras. 8 adds Levoča. 10 takes in Košice and Spiš castle."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: train and buses link the cities and the electric train climbs to the Tatras. A car only pays off for villages in the east."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Košice (KSC) and out of Bratislava (BTS) or Vienna (VIE) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Bratislava (BTS) or Košice (KSC). Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

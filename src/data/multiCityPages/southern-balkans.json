@@ -1,0 +1,270 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "balcanes-del-sur",
+    "en": "southern-balkans"
+  },
+  "photos": {
+    "Pristina": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Biblioteca_Nacional%2C_Pristina%2C_Kosovo%2C_2014-04-15%2C_DD_03.JPG/960px-Biblioteca_Nacional%2C_Pristina%2C_Kosovo%2C_2014-04-15%2C_DD_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 541,
+      "page": "https://commons.wikimedia.org/wiki/File:Biblioteca_Nacional,_Pristina,_Kosovo,_2014-04-15,_DD_03.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    "Prizren": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Vista_de_Prizren%2C_Kosovo%2C_2014-04-16%2C_DD_15.JPG/960px-Vista_de_Prizren%2C_Kosovo%2C_2014-04-16%2C_DD_15.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 577,
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_de_Prizren,_Kosovo,_2014-04-16,_DD_15.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    "Skopje": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Stone_Bridge_Skopje_4.jpg/960px-Stone_Bridge_Skopje_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 635,
+      "page": "https://commons.wikimedia.org/wiki/File:Stone_Bridge_Skopje_4.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0"
+    },
+    "Ohrid": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ohrid_Lake_22.JPG/960px-Ohrid_Lake_22.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 497,
+      "page": "https://commons.wikimedia.org/wiki/File:Ohrid_Lake_22.JPG",
+      "author": "Makedonski biseri",
+      "license": "CC BY-SA 3.0"
+    },
+    "Tirana": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Tirana_-_Skanderbeg_Square_%28Sheshi_Sk%C3%ABnderbej%29_-_by_Pudelek.jpg/960px-Tirana_-_Skanderbeg_Square_%28Sheshi_Sk%C3%ABnderbej%29_-_by_Pudelek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 578,
+      "page": "https://commons.wikimedia.org/wiki/File:Tirana_-_Skanderbeg_Square_(Sheshi_Sk%C3%ABnderbej)_-_by_Pudelek.jpg",
+      "author": "Pudelek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Shkodër": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Shkoder_Albania.jpg/960px-Shkoder_Albania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1280,
+      "page": "https://commons.wikimedia.org/wiki/File:Shkoder_Albania.jpg",
+      "author": "Artemiss.B",
+      "license": "CC BY-SA 4.0"
+    },
+    "Kotor": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg/960px-Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 347,
+      "page": "https://commons.wikimedia.org/wiki/File:Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg",
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Balcanes del sur: Kosovo, Macedonia, Albania y Kotor",
+    "metaTitle": "Balcanes del sur: Kosovo, Macedonia, Albania y Kotor, de 5 a 10 días · Lowfly",
+    "summary": "Cuatro países en un viaje: Pristina y Prizren en Kosovo, el bazar de Skopie y el lago de Ocrid, Tirana y Shkodër en Albania y la bahía de Kotor.",
+    "why": [
+      "Es la ruta de los Balcanes que casi nadie hace: Kosovo, Macedonia del Norte, Albania y Montenegro en diez días, con buses que cruzan las fronteras en dos horas y precios de Europa del Este.",
+      "Prizren es la ciudad otomana mejor conservada de Kosovo: un puente de piedra sobre el Bistrica, la mezquita de Sinan Bajá, la iglesia de San Salvador y una fortaleza en la colina con vistas a todo el valle.",
+      "El lago de Ocrid y la bahía de Kotor cierran el viaje con los dos paisajes más bonitos de los Balcanes: agua dulce con iglesias bizantinas y un fiordo con un pueblo medieval al fondo."
+    ],
+    "towns": {
+      "Pristina": {
+        "text": "Pristina es la capital de Kosovo, una ciudad joven con la plaza de la Madre Teresa, la biblioteca nacional, de formas raras, y el monumento Newborn, que se repinta cada año. Es la puerta de entrada al país y la parada de los cafés.",
+        "see": [
+          "El monumento Newborn",
+          "La biblioteca nacional",
+          "La mezquita del Sultán Mehmet Fatih",
+          "El mercado y la calle de los cafés"
+        ],
+        "tip": "Pristina tiene aeropuerto (PRN) a 20 minutos del centro. Los buses a Prizren salen cada media hora y tardan una hora y media."
+      },
+      "Prizren": {
+        "text": "Prizren es la ciudad más bonita de Kosovo: un puente de piedra otomano sobre el río Bistrica, la mezquita de Sinan Bajá con su minarete alto, la iglesia ortodoxa de San Salvador y una fortaleza en la colina con vistas a los tejados y a las montañas.",
+        "see": [
+          "La fortaleza de Prizren",
+          "El puente de piedra y la mezquita de Sinan Bajá",
+          "La iglesia de San Salvador",
+          "La liga de Prizren, en la casa antigua"
+        ],
+        "tip": "Prizren se ve en un día y es la parada más agradable de Kosovo. Sube a la fortaleza al atardecer: se ve el valle entero y los minaretes."
+      },
+      "Skopje": {
+        "text": "Skopie es la capital de Macedonia del Norte, con el bazar de Čaršija, el más grande de los Balcanes, la fortaleza de Kale sobre el Vardar y el puente de piedra. Es la parada de transición entre Kosovo y el lago de Ocrid.",
+        "see": [
+          "El bazar de Čaršija",
+          "La fortaleza de Kale",
+          "El puente de piedra y la plaza Macedonia",
+          "El cañón de Matka, a 15 minutos"
+        ],
+        "tip": "Skopie está a dos horas de Pristina en bus y a tres y media de Ocrid. El bazar es lo mejor de la ciudad: come ćevapi en una de sus terrazas."
+      },
+      "Ohrid": {
+        "text": "Ocrid es el pueblo del lago: casas blancas con ventanas de madera en una colina, la iglesia de San Juan Kaneo sobre un acantilado y la fortaleza de Samuel en lo alto. El lago es Patrimonio de la Humanidad y tiene playas de agua dulce.",
+        "see": [
+          "La iglesia de San Juan Kaneo",
+          "La fortaleza de Samuel",
+          "El anfiteatro antiguo",
+          "La playa de Kaneo y el paseo del lago"
+        ],
+        "tip": "Ocrid se ve en dos días y es la parada de descanso de la ruta. En julio y agosto se llena de turistas de los Balcanes: reserva alojamiento con antelación."
+      },
+      "Tirana": {
+        "text": "Tirana es la capital de Albania y la parada más animada del viaje: la plaza Skanderbeg con la mezquita de Et'hem Bey, el barrio de Blloku de cafés y tiendas y Bunk'Art, el búnker de Enver Hoxha convertido en museo.",
+        "see": [
+          "La plaza Skanderbeg",
+          "Bunk'Art",
+          "El barrio de Blloku",
+          "El teleférico al monte Dajti"
+        ],
+        "tip": "Tirana está a tres horas de Ocrid en bus y a dos de Shkodër. El aeropuerto (TIA) está a 20 minutos del centro."
+      },
+      "Shkodër": {
+        "text": "Shkodër es la ciudad del norte de Albania, a la orilla del lago Skadar: una calle peatonal larga con cafés, la mezquita de Ebu Bekr, la catedral de San Esteban y la fortaleza de Rozafa en la colina, con vistas al lago y a los ríos.",
+        "see": [
+          "La fortaleza de Rozafa",
+          "La calle peatonal y la mezquita de Ebu Bekr",
+          "El lago Skadar, en barco",
+          "El puente de Mesi, sobre el Kir"
+        ],
+        "tip": "Shkodër está a dos horas de Tirana y a una hora y media de Kotor. La fortaleza de Rozafa se visita en una hora y desde arriba se ven el lago y los Alpes Albaneses."
+      },
+      "Kotor": {
+        "text": "Kotor cierra la ruta en Montenegro: el pueblo medieval del fondo de la bahía, con plazas de piedra, palacios venecianos y la muralla que sube hasta la fortaleza de San Juan. Es el final más bonito posible después de cuatro países.",
+        "see": [
+          "La muralla hasta la fortaleza de San Juan",
+          "La plaza de las Armas y la catedral de San Trifón",
+          "La iglesia de Nuestra Señora de la Salud",
+          "La excursión en barco a Perast"
+        ],
+        "tip": "Kotor está a una hora y media de Shkodër en bus y a 25 minutos del aeropuerto de Tivat (TGD). Sube a la muralla a primera hora: son 1.350 escalones y no hay sombra."
+      }
+    },
+    "gettingAround": "Pristina-Prizren, una hora y media en bus. Prizren-Skopie, dos horas y media en bus. Skopie-Ocrid, tres horas y media en bus. Ocrid-Tirana, tres horas en bus. Tirana-Shkodër, dos horas en bus. Shkodër-Kotor, una hora y media en bus. Los buses cruzan las fronteras con paradas cortas: lleva el pasaporte a mano.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con 20 a 26 grados y sin el calor de agosto en el valle. En agosto Ocrid se llena y Tirana pasa de 35 grados. En invierno Pristina y Prizren son frías y con nieve, y Kotor es tranquila.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Pristina, Prizren y Ocrid. Con 7 añades Skopie y Tirana. Con 10 entran Shkodër y Kotor."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses unen todas las paradas. El coche solo ayuda para el lago Skadar y los alrededores de Kotor."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Tivat (TGD) o Tirana (TIA) y saliendo por Pristina (PRN), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Pristina (PRN), Tirana (TIA) o Tivat (TGD). Ryanair y Wizz Air vuelan a los tres desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Southern Balkans: Kosovo, Macedonia, Albania and Kotor",
+    "metaTitle": "Southern Balkans: Kosovo, Macedonia, Albania and Kotor in 5 to 10 days · Lowfly",
+    "summary": "Four countries in one trip: Pristina and Prizren in Kosovo, Skopje's bazaar and Lake Ohrid, Tirana and Shkodër in Albania and the Bay of Kotor.",
+    "why": [
+      "It is the Balkan route almost nobody takes: Kosovo, North Macedonia, Albania and Montenegro in ten days, with buses crossing borders in two hours and eastern European prices.",
+      "Prizren is the best-preserved Ottoman town in Kosovo: a stone bridge over the Bistrica, the Sinan Pasha mosque, the church of the Holy Saviour and a fortress on the hill with views over the whole valley.",
+      "Lake Ohrid and the Bay of Kotor close the trip with the two finest landscapes in the Balkans: freshwater with Byzantine churches and a fjord with a medieval town at its head."
+    ],
+    "towns": {
+      "Pristina": {
+        "text": "Pristina is the capital of Kosovo, a young city with Mother Teresa square, the oddly shaped national library and the Newborn monument, repainted every year. It is the gateway to the country and the café stop.",
+        "see": [
+          "The Newborn monument",
+          "The national library",
+          "The Sultan Mehmet Fatih mosque",
+          "The market and the café street"
+        ],
+        "tip": "Pristina has an airport (PRN) 20 minutes from the centre. Buses to Prizren leave every half hour and take ninety minutes."
+      },
+      "Prizren": {
+        "text": "Prizren is the prettiest city in Kosovo: an Ottoman stone bridge over the Bistrica, the Sinan Pasha mosque with its tall minaret, the Orthodox church of the Holy Saviour and a fortress on the hill with views over the roofs and the mountains.",
+        "see": [
+          "Prizren fortress",
+          "The stone bridge and the Sinan Pasha mosque",
+          "The church of the Holy Saviour",
+          "The League of Prizren, in the old house"
+        ],
+        "tip": "Prizren takes a day and is the most pleasant stop in Kosovo. Climb to the fortress at sunset: you see the whole valley and the minarets."
+      },
+      "Skopje": {
+        "text": "Skopje is the capital of North Macedonia, with the Čaršija bazaar, the largest in the Balkans, the Kale fortress above the Vardar and the stone bridge. It is the stop between Kosovo and Lake Ohrid.",
+        "see": [
+          "The Čaršija bazaar",
+          "The Kale fortress",
+          "The stone bridge and Macedonia Square",
+          "Matka canyon, 15 minutes away"
+        ],
+        "tip": "Skopje is two hours from Pristina by bus and three and a half from Ohrid. The bazaar is the best of the city: eat ćevapi on one of its terraces."
+      },
+      "Ohrid": {
+        "text": "Ohrid is the town of the lake: white houses with wooden windows on a hill, the church of St John at Kaneo on a cliff and Samuel's fortress at the top. The lake is a World Heritage Site and has freshwater beaches.",
+        "see": [
+          "The church of St John at Kaneo",
+          "Samuel's fortress",
+          "The ancient theatre",
+          "Kaneo beach and the lake walk"
+        ],
+        "tip": "Ohrid takes two days and is the rest stop of the route. In July and August it fills with Balkan tourists: book accommodation ahead."
+      },
+      "Tirana": {
+        "text": "Tirana is the capital of Albania and the liveliest stop of the trip: Skanderbeg Square with the Et'hem Bey mosque, the Blloku quarter of cafés and shops and Bunk'Art, Enver Hoxha's bunker turned into a museum.",
+        "see": [
+          "Skanderbeg Square",
+          "Bunk'Art",
+          "The Blloku quarter",
+          "The cable car up Mount Dajti"
+        ],
+        "tip": "Tirana is three hours from Ohrid by bus and two from Shkodër. The airport (TIA) is 20 minutes from the centre."
+      },
+      "Shkodër": {
+        "text": "Shkodër is the northern city of Albania, on the shore of Lake Skadar: a long pedestrian street with cafés, the Ebu Bekr mosque, St Stephen's cathedral and the Rozafa fortress on the hill, with views over the lake and the rivers.",
+        "see": [
+          "Rozafa fortress",
+          "The pedestrian street and the Ebu Bekr mosque",
+          "Lake Skadar, by boat",
+          "The Mesi bridge, over the Kir"
+        ],
+        "tip": "Shkodër is two hours from Tirana and ninety minutes from Kotor. Rozafa fortress takes an hour and from the top you see the lake and the Albanian Alps."
+      },
+      "Kotor": {
+        "text": "Kotor closes the route in Montenegro: the medieval town at the head of the bay, with stone squares, Venetian palaces and the wall climbing to the fortress of San Giovanni. It is the finest possible ending after four countries.",
+        "see": [
+          "The wall up to the fortress of San Giovanni",
+          "The Square of the Arms and St Tryphon's cathedral",
+          "Our Lady of Health",
+          "The boat trip to Perast"
+        ],
+        "tip": "Kotor is ninety minutes from Shkodër by bus and 25 minutes from Tivat airport (TGD). Climb to the wall first thing: it is 1,350 steps and there is no shade."
+      }
+    },
+    "gettingAround": "Pristina-Prizren, ninety minutes by bus. Prizren-Skopje, two and a half hours by bus. Skopje-Ohrid, three and a half hours by bus. Ohrid-Tirana, three hours by bus. Tirana-Shkodër, two hours by bus. Shkodër-Kotor, ninety minutes by bus. Buses cross borders with short stops: keep your passport at hand.",
+    "bestTime": "May to June and September to October, at 20 to 26 degrees and without the August heat in the valleys. In August Ohrid fills up and Tirana goes over 35 degrees. In winter Pristina and Prizren are cold and snowy, and Kotor is quiet.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Pristina, Prizren and Ohrid. 7 adds Skopje and Tirana. 10 takes in Shkodër and Kotor."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses link every stop. A car only helps for Lake Skadar and around Kotor."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Tivat (TGD) or Tirana (TIA) and out of Pristina (PRN) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Pristina (PRN), Tirana (TIA) or Tivat (TGD). Ryanair and Wizz Air fly to all three from several European cities."
+      }
+    ]
+  }
+}

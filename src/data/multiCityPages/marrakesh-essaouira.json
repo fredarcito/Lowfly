@@ -1,0 +1,217 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "marrakech-el-atlas-y-la-costa",
+    "en": "marrakesh-essaouira"
+  },
+  "photos": {
+    "Marrakesh": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kutubiyya_Mosque%2C_Marrakesh%2C_Morocco%2C_20250125_0859_7061.jpg/960px-Kutubiyya_Mosque%2C_Marrakesh%2C_Morocco%2C_20250125_0859_7061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1042,
+      "page": "https://commons.wikimedia.org/wiki/File:Kutubiyya_Mosque,_Marrakesh,_Morocco,_20250125_0859_7061.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0"
+    },
+    "Imlil (High Atlas)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/The_Atlas_Mountains_shot_from_the_village_of_Imlil%2C_Morocco.jpg/960px-The_Atlas_Mountains_shot_from_the_village_of_Imlil%2C_Morocco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:The_Atlas_Mountains_shot_from_the_village_of_Imlil,_Morocco.jpg",
+      "author": "Imad.kastalani",
+      "license": "CC BY-SA 4.0"
+    },
+    "Essaouira": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Maroc_Essaouira_Luc_Viatour_4.JPG/960px-Maroc_Essaouira_Luc_Viatour_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1351,
+      "page": "https://commons.wikimedia.org/wiki/File:Maroc_Essaouira_Luc_Viatour_4.JPG",
+      "author": "Luc Viatour0",
+      "license": "CC BY-SA 3.0"
+    },
+    "Aït Benhaddou": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Ksar_A%C3%AFt_Benhaddou%2C_Marocco_%28%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%2C_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93%29.jpg/960px-Ksar_A%C3%AFt_Benhaddou%2C_Marocco_%28%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%2C_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 594,
+      "page": "https://commons.wikimedia.org/wiki/File:Ksar_A%C3%AFt_Benhaddou,_Marocco_(%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8,_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93).jpg",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0"
+    },
+    "Taghazout": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Taghazout.jpg/960px-Taghazout.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Taghazout.jpg",
+      "author": "AJSPARK4444",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Marrakech, el Atlas y Esauira",
+    "metaTitle": [
+      "Marrakech, el Atlas y Esauira, de 5 a 9 días · Lowfly",
+      "Marrakech, el Atlas y Esauira in 5 a 9 días · Lowfly"
+    ],
+    "summary": "Marrakech como base, una noche en una aldea del Alto Atlas y la costa atlántica de Esauira y Taghazout, con el ksar de Aït Ben Haddou en la versión larga.",
+    "why": [
+      "Marrakech se ve en dos días y el resto es paisaje: en hora y media de coche pasas de la plaza Jemaa el-Fna a 1.740 metros en Imlil, con el Toubkal al fondo, y en tres horas estás en el Atlántico.",
+      "Esauira es lo contrario de Marrakech: una medina amurallada de casas blancas y puertas azules, viento constante y una flota de barcos azules que descarga sardinas cada mañana. Los surfistas llevan años viniendo por eso.",
+      "La versión larga añade Aït Ben Haddou, el ksar de barro que sale en Juego de Tronos y Gladiator, y Taghazout, un pueblo de surf a 20 minutos de Agadir. Es el viaje que enseña el país entero sin cruzar al desierto."
+    ],
+    "towns": {
+      "Marrakesh": {
+        "text": "Marrakech es la puerta del sur: una medina roja de callejones, la plaza Jemaa el-Fna llena de puestos de comida al anochecer y la mezquita de la Koutoubia con su minarete de 77 metros. Los jardines de la Menara y el Majorelle dan la sombra que el resto no tiene.",
+        "see": [
+          "La plaza Jemaa el-Fna al atardecer, cuando se montan los puestos de comida",
+          "La Koutoubia y los jardines de la Menara",
+          "El palacio de la Bahía y las tumbas saadíes",
+          "El jardín Majorelle y el museo Yves Saint Laurent"
+        ],
+        "tip": "En los zocos, el primer precio suele ser el triple de lo que se paga. Regatea con calma y sin enfadarte: forma parte del trato. Para comer barato y bien, busca las parrillas de la plaza, no los restaurantes con terraza."
+      },
+      "Imlil (High Atlas)": {
+        "text": "Imlil es el último pueblo de la carretera antes de las montañas, a 1.740 metros, y el punto de partida de las rutas al Toubkal, el pico más alto del norte de África con 4.167 metros. Las casas son de piedra y barro y el valle está lleno de nogales.",
+        "see": [
+          "El valle de Imlil y las terrazas de cultivo",
+          "Una caminata hasta Aroumd, a una hora y media del pueblo",
+          "El refugio del Toubkal, si te quedas dos noches",
+          "El mercado de Asni, los sábados"
+        ],
+        "tip": "No hace falta material de alta montaña para Aroumd, pero sí calzado cerrado: el camino es pedregoso. Contrata el guía en el pueblo, no en Marrakech, y paga en efectivo."
+      },
+      "Essaouira": {
+        "text": "Esauira es una ciudad amurallada del siglo XVIII que los portugueses llamaron Mogador. El viento sopla casi todos los días, por eso es un destino de windsurf, y el puerto huele a sardina y a madera de barco. La medina es Patrimonio de la Humanidad.",
+        "see": [
+          "Las murallas de la Skala y los cañones sobre el mar",
+          "El puerto pesquero, con los barcos azules",
+          "La playa, con las cometas de los kitesurfistas",
+          "El mercado de especias de la plaza principal"
+        ],
+        "tip": "El pescado se elige en el puerto y te lo asan allí mismo: es lo más barato y lo más fresco de la ciudad. Lleva una chaqueta incluso en verano, que el viento de la tarde enfría de golpe."
+      },
+      "Aït Benhaddou": {
+        "text": "Aït Ben Haddou es un ksar fortificado de adobe en la ladera de una colina, en la ruta de las caravanas entre el Sahara y Marrakech. Está habitado desde el siglo XVII y ha salido en Gladiator, La momia y Juego de Tronos.",
+        "see": [
+          "El ksar desde el río, al atardecer",
+          "La agadir, el granero colectivo en lo alto",
+          "Las kasbahs de Ouarzazate, a media hora",
+          "El valle del Draa, si sigues hacia el sur"
+        ],
+        "tip": "Se sube a pie en 20 minutos y no hay sombra: ve temprano o al final del día. Dormir en el pueblo, y no en Ouarzazate, te deja ver el ksar iluminado y casi vacío."
+      },
+      "Taghazout": {
+        "text": "Taghazout era un pueblo de pescadores de casas blancas y azules hasta que los surfistas descubrieron sus olas. Hoy tiene escuelas de surf, cafés y una playa larga de piedras y arena, con las montañas del Atlas cayendo al mar detrás.",
+        "see": [
+          "La playa del pueblo y el paseo hasta Taghazout Bay",
+          "Una clase de surf en Anchor Point o Hash Point",
+          "El mercado de pescado por la mañana",
+          "Agadir, a 20 minutos, si quieres ciudad"
+        ],
+        "tip": "Las olas son mejores de octubre a marzo, y el agua no pasa de 20 grados: con un neopreno de 3 mm vas bien. El pueblo es pequeño, así que reserva con tiempo en temporada de surf."
+      }
+    },
+    "gettingAround": "Marrakech es la base y todo sale de allí. A Imlil se sube en taxi compartido o con chófer (una hora y media, cambiando en Asni). A Esauira hay bus directo de CTM o Supratours en unas tres horas, y de allí a Taghazout se sigue en bus hasta Agadir y luego en taxi. Aït Ben Haddou queda a tres horas y media por carretera y no tiene transporte público cómodo: coche o chófer. Para moverse por Marrakech, taxi o a pie; el centro es plano.",
+    "bestTime": "De marzo a mayo y de octubre a noviembre: días de 20 a 25 grados, sin el calor de julio y agosto, que en Marrakech pasa de 40. En invierno hace frío en el Atlas y puede nevar en Imlil, pero la costa está templada. Evita el Ramadán si quieres ver los zocos a pleno rendimiento.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Marrakech y Esauira. Con 7 añades Imlil. Con 9 entran también Aït Ben Haddou y Taghazout."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para la versión corta: hay buses entre Marrakech y Esauira. Para Imlil y Aït Ben Haddou sí conviene coche o chófer, porque los enlaces son lentos."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Agadir (AGA) o Esauira (ESU) y saliendo por Marrakech (RAK), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Marrakech (RAK), que es el principal, y a Esauira (ESU) o Agadir (AGA) para empezar en la costa. Ryanair y easyJet vuelan a los tres desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Marrakesh, the Atlas and Essaouira",
+    "metaTitle": "Marrakesh, the Atlas and Essaouira in 5 to 9 days · Lowfly",
+    "summary": "Marrakesh as your base, a night in a High Atlas village and the Atlantic coast at Essaouira and Taghazout, with the ksar of Aït Benhaddou on the long version.",
+    "why": [
+      "Marrakesh takes two days and the rest is landscape: ninety minutes by car from Jemaa el-Fnaa and you are at 1,740 metres in Imlil with Toubkal behind you, and three hours later you are on the Atlantic.",
+      "Essaouira is the opposite of Marrakesh: a walled medina of white houses and blue doors, constant wind and a fleet of blue boats landing sardines every morning. Surfers have been coming for that for years.",
+      "The long version adds Aït Benhaddou, the mud-brick ksar that appears in Game of Thrones and Gladiator, and Taghazout, a surf village twenty minutes from Agadir. It shows you the whole country without crossing into the desert."
+    ],
+    "towns": {
+      "Marrakesh": {
+        "text": "Marrakesh is the gateway to the south: a red medina of alleys, Jemaa el-Fnaa square filling with food stalls at dusk and the Koutoubia mosque with its 77-metre minaret. The Menara and Majorelle gardens give the shade the rest of the city lacks.",
+        "see": [
+          "Jemaa el-Fnaa at sunset, when the food stalls go up",
+          "The Koutoubia and the Menara gardens",
+          "The Bahia Palace and the Saadian tombs",
+          "The Majorelle garden and the Yves Saint Laurent museum"
+        ],
+        "tip": "In the souks the first price is usually three times what you pay. Haggle calmly and without getting cross: it is part of the deal. For cheap, good food, look for the grills on the square, not the restaurants with terraces."
+      },
+      "Imlil (High Atlas)": {
+        "text": "Imlil is the last village on the road before the mountains, at 1,740 metres, and the start of the routes up Toubkal, the highest peak in North Africa at 4,167 metres. The houses are stone and mud and the valley is full of walnut trees.",
+        "see": [
+          "The Imlil valley and its terraced fields",
+          "A walk up to Aroumd, ninety minutes from the village",
+          "The Toubkal refuge, if you stay two nights",
+          "The Saturday market at Asni"
+        ],
+        "tip": "You do not need high-mountain gear for Aroumd, but you do need closed shoes: the path is stony. Hire the guide in the village, not in Marrakesh, and pay in cash."
+      },
+      "Essaouira": {
+        "text": "Essaouira is an eighteenth-century walled city that the Portuguese called Mogador. The wind blows almost every day, which is why it is a windsurfing destination, and the harbour smells of sardines and boat timber. The medina is a World Heritage Site.",
+        "see": [
+          "The Skala ramparts and the cannons over the sea",
+          "The fishing harbour, with its blue boats",
+          "The beach, with the kitesurfers' kites",
+          "The spice market on the main square"
+        ],
+        "tip": "You pick the fish in the harbour and they grill it right there: it is the cheapest and freshest food in town. Bring a jacket even in summer, as the afternoon wind turns cold fast."
+      },
+      "Aït Benhaddou": {
+        "text": "Aït Benhaddou is a fortified ksar of adobe on a hillside, on the caravan route between the Sahara and Marrakesh. It has been lived in since the seventeenth century and has appeared in Gladiator, The Mummy and Game of Thrones.",
+        "see": [
+          "The ksar from the river, at sunset",
+          "The agadir, the collective granary at the top",
+          "The kasbahs of Ouarzazate, half an hour away",
+          "The Draa valley, if you carry on south"
+        ],
+        "tip": "The climb on foot takes twenty minutes and there is no shade: go early or late in the day. Sleeping in the village rather than Ouarzazate lets you see the ksar lit up and almost empty."
+      },
+      "Taghazout": {
+        "text": "Taghazout was a fishing village of white and blue houses until surfers found its waves. Today it has surf schools, cafés and a long beach of stones and sand, with the Atlas mountains dropping into the sea behind it.",
+        "see": [
+          "The village beach and the walk to Taghazout Bay",
+          "A surf lesson at Anchor Point or Hash Point",
+          "The fish market in the morning",
+          "Agadir, twenty minutes away, if you want a city"
+        ],
+        "tip": "The waves are best from October to March, and the water never gets above 20 degrees: a 3 mm wetsuit is fine. The village is small, so book well ahead in surf season."
+      }
+    },
+    "gettingAround": "Marrakesh is the base and everything leaves from there. Imlil is reached by shared taxi or with a driver (ninety minutes, changing at Asni). To Essaouira there is a direct CTM or Supratours bus in about three hours, and from there to Taghazout you take a bus to Agadir and then a taxi. Aït Benhaddou is three and a half hours by road with no comfortable public transport: car or driver. Inside Marrakesh, taxi or on foot; the centre is flat.",
+    "bestTime": "March to May and October to November: days of 20 to 25 degrees, without the July and August heat, which tops 40 in Marrakesh. In winter it is cold in the Atlas and it can snow in Imlil, but the coast stays mild. Avoid Ramadan if you want the souks at full tilt.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Marrakesh and Essaouira. 7 adds Imlil. 9 also takes in Aït Benhaddou and Taghazout."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the short version: there are buses between Marrakesh and Essaouira. For Imlil and Aït Benhaddou a car or driver is worth it, as the connections are slow."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Agadir (AGA) or Essaouira (ESU) and out of Marrakesh (RAK) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Marrakesh (RAK), the main one, and Essaouira (ESU) or Agadir (AGA) to start on the coast. Ryanair and easyJet fly to all three from several European cities."
+      }
+    ]
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "albania",
+    "en": "albania"
+  },
+  "photos": {
+    "Tirana": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Tirana_-_Skanderbeg_Square_%28Sheshi_Sk%C3%ABnderbej%29_-_by_Pudelek.jpg/960px-Tirana_-_Skanderbeg_Square_%28Sheshi_Sk%C3%ABnderbej%29_-_by_Pudelek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 578,
+      "page": "https://commons.wikimedia.org/wiki/File:Tirana_-_Skanderbeg_Square_(Sheshi_Sk%C3%ABnderbej)_-_by_Pudelek.jpg",
+      "author": "Pudelek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Berat": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Old_town_of_berat_albania_3.jpg/960px-Old_town_of_berat_albania_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Old_town_of_berat_albania_3.jpg",
+      "author": "Pero Kvrzica - @Flickr: https://www.flickr.com/photos/pero_kvrzica/",
+      "license": "CC BY 2.0"
+    },
+    "Durrës": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Durres_%28Albania%29.jpg/960px-Durres_%28Albania%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Durres_(Albania).jpg",
+      "author": "Vlorari",
+      "license": "CC BY-SA 4.0"
+    },
+    "Gjirokastër": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Gjirokast%D1%91r_-_roofs.JPG/960px-Gjirokast%D1%91r_-_roofs.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Gjirokast%D1%91r_-_roofs.JPG",
+      "author": "Pudelek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Sarandë": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/CIty_of_Saranda_Albania_2016.jpg/960px-CIty_of_Saranda_Albania_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 582,
+      "page": "https://commons.wikimedia.org/wiki/File:CIty_of_Saranda_Albania_2016.jpg",
+      "author": "Photo: Gary Bembridge",
+      "license": "CC BY 2.0"
+    },
+    "Himarë": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Himara_2021.jpg/960px-Himara_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 580,
+      "page": "https://commons.wikimedia.org/wiki/File:Himara_2021.jpg",
+      "author": "Albinfo",
+      "license": "CC BY-SA 4.0"
+    },
+    "Ksamil": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Ksamil%2C_Albania_%28by_Pudelek%29.JPG/960px-Ksamil%2C_Albania_%28by_Pudelek%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Ksamil,_Albania_(by_Pudelek).JPG",
+      "author": "Pudelek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Corfu": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg/960px-The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 505,
+      "page": "https://commons.wikimedia.org/wiki/File:The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Albania: Tirana, Berat y la Riviera",
+    "metaTitle": "Albania: Tirana, Berat y la Riviera, de 5 a 10 días · Lowfly",
+    "summary": "De la capital a la Riviera albanesa: las casas otomanas de Berat y Gjirokastër, las playas de Himarë y Ksamil y un ferry a Corfú.",
+    "why": [
+      "Albania es el país más barato del Mediterráneo: una cena con vino cuesta diez euros y el alojamiento en la costa, la mitad que en Grecia o Croacia.",
+      "Berat y Gjirokastër son dos ciudades otomanas de casas blancas con ventanas de madera, Patrimonio de la Humanidad, y se ven en un día cada una sin turistas de crucero.",
+      "La Riviera albanesa, de Himarë a Ksamil, tiene agua turquesa y playas de guijarro y arena blanca que se comparan con las Jónicas griegas, y desde Sarandë o Ksamil hay ferry a Corfú en 45 minutos."
+    ],
+    "towns": {
+      "Tirana": {
+        "text": "Tirana es una capital de contrastes: la plaza Skanderbeg con la mezquita de Et'hem Bey, los edificios italianos de los años treinta, el búnker nuclear de Bunk'Art y una vida de cafés que no para. Es la puerta de entrada al país.",
+        "see": [
+          "La plaza Skanderbeg y la mezquita de Et'hem Bey",
+          "Bunk'Art, el búnker de Enver Hoxha",
+          "El barrio de Blloku, de cafés y tiendas",
+          "El teleférico al monte Dajti"
+        ],
+        "tip": "Tirana tiene el aeropuerto (TIA) a 20 minutos del centro. Los furgones a Berat y a la costa salen de la estación de buses del sur, en el barrio de Kavaja."
+      },
+      "Berat": {
+        "text": "Berat es la ciudad de las mil ventanas: casas otomanas blancas con ventanas de madera apiladas en dos colinas, una con la fortaleza y otra con el barrio de Gorica. Es Patrimonio de la Humanidad y una de las ciudades más antiguas de Albania.",
+        "see": [
+          "La fortaleza de Berat, con sus iglesias",
+          "El barrio de Mangalem, desde el puente",
+          "El barrio de Gorica y el puente de piedra",
+          "El museo Onufri, en la catedral"
+        ],
+        "tip": "Berat se ve en un día y medio. Sube a la fortaleza por la mañana y cruza el puente a Gorica al atardecer, cuando las casas se encienden y se ven desde el mirador de la otra orilla."
+      },
+      "Durrës": {
+        "text": "Durrës es el puerto de Albania y su ciudad más antigua, con un anfiteatro romano del siglo II dentro del casco urbano, las murallas bizantinas y una playa de arena a 10 minutos del centro. Es la salida rápida al aeropuerto.",
+        "see": [
+          "El anfiteatro romano",
+          "Las murallas bizantinas y la torre veneciana",
+          "La plaza de la Torre del Reloj",
+          "La playa de la ciudad, al atardecer"
+        ],
+        "tip": "Durrës está a 40 minutos de Tirana y a 30 del aeropuerto (TIA), así que es buena última parada. El anfiteatro se visita con guía y está medio enterrado bajo las casas."
+      },
+      "Gjirokastër": {
+        "text": "Gjirokastër es la ciudad de piedra: casas con tejados de laja gris subiendo por una ladera bajo un castillo enorme, y la casa-museo de Enver Hoxha y la de Ismail Kadare. Es Patrimonio de la Humanidad y la ciudad más atmosférica del sur.",
+        "see": [
+          "El castillo y su museo de armas",
+          "La casa de Skenduli, con su interior otomano",
+          "El bazar antiguo, en la calle principal",
+          "El barrio de Palorto, con sus callejones"
+        ],
+        "tip": "Gjirokastër es fresca incluso en agosto por la altura. El castillo se visita en una hora y desde sus murallas se ve el valle hasta el Jónico. Los furgones a Sarandë salen del bazar."
+      },
+      "Sarandë": {
+        "text": "Sarandë es la base de la Riviera: un paseo marítimo con playas de guijarro, el yacimiento de Butrinto a 20 minutos y el ferry a Corfú desde el puerto. Es la ciudad más animada del sur en verano.",
+        "see": [
+          "El paseo marítimo y la playa de Sarandë",
+          "El parque arqueológico de Butrinto",
+          "El monasterio de los Cuarenta Santos, en la colina",
+          "La playa de Ksamil, en bus o en barco"
+        ],
+        "tip": "El ferry a Corfú sale del puerto de Sarandë varias veces al día en verano y tarda 45 minutos. Butrinto se visita en medio día y hay buses desde la estación."
+      },
+      "Himarë": {
+        "text": "Himarë es un pueblo de la Riviera con una playa larga de guijarro, una iglesia ortodoxa en lo alto y calas como Livadhi y Jaliskari al lado. Al norte está el pueblo de Vuno y la carretera de la costa, con curvas sobre el mar.",
+        "see": [
+          "La playa de Himarë y el paseo",
+          "La cala de Livadhi, al norte",
+          "El castillo de Himarë, en la colina",
+          "La playa de Jaliskari, en barco"
+        ],
+        "tip": "Himarë es la parada de playa de la ruta y la más tranquila: en agosto se llena, pero hay sitio en las calas del norte. La carretera desde Vlorë es lenta: calcula dos horas para 60 kilómetros."
+      },
+      "Ksamil": {
+        "text": "Ksamil es el pueblo de las islas: cuatro islotes verdes a pocos metros de la playa, agua turquesa y arena blanca. Está dentro del parque nacional de Butrinto y es la playa más famosa de Albania.",
+        "see": [
+          "Las islas de Ksamil, en barco o a nado",
+          "La playa de la isla de Corfú, enfrente",
+          "El parque de Butrinto, a 10 minutos",
+          "El mirador de la laguna de Butrinto"
+        ],
+        "tip": "Ksamil se llena en julio y agosto: llega temprano a la playa o reserva tumbona. Las islas se alcanzan nadando en 10 minutos y hay barcos que dan la vuelta."
+      },
+      "Corfu": {
+        "text": "Corfú es la salida griega de la ruta: una ciudad veneciana con la Liston, la plaza de Spianada y dos fortalezas, a 45 minutos de ferry desde Sarandë. Es el contraste perfecto para cerrar el viaje.",
+        "see": [
+          "La plaza de Spianada y la Liston",
+          "La fortaleza vieja y la nueva",
+          "La iglesia de San Spyridon",
+          "El palacio de Achilleion, en Gastouri"
+        ],
+        "tip": "El ferry de Sarandë a Corfú tarda 45 minutos y hay varias salidas al día en verano. El aeropuerto (CFU) está a 10 minutos del centro y tiene vuelos de Ryanair y Wizz Air."
+      }
+    },
+    "gettingAround": "Tirana-Berat, dos horas y media en bus. Berat-Durrës, dos horas en bus. Berat-Gjirokastër, cuatro horas en bus. Gjirokastër-Sarandë, una hora y cuarto en furgón. Sarandë-Himarë, una hora y media en bus. Himarë-Ksamil, dos horas y media en bus. Ksamil-Corfú, una hora y cuarto con ferry. Los furgones no tienen horario fijo: salen cuando se llenan, así que madruga.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con el mar a 23 grados y sin el calor de agosto. Julio y agosto son los meses de playa y de precios altos en Ksamil y Sarandë. En invierno la Riviera se vacía y muchos hoteles cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Tirana, Berat y Durrës. Con 7 añades Gjirokastër, Sarandë y Corfú. Con 10 entran Himarë y Ksamil."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los furgones y buses unen todas las paradas. El coche ayuda en la Riviera, donde los buses son lentos y poco frecuentes."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Corfú (CFU) y saliendo por Tirana (TIA), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Tirana (TIA) o a Corfú (CFU). Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Albania: Tirana, Berat and the Riviera",
+    "metaTitle": "Albania: Tirana, Berat and the Riviera in 5 to 10 days · Lowfly",
+    "summary": "From the capital to the Albanian Riviera: the Ottoman houses of Berat and Gjirokastër, the beaches of Himarë and Ksamil and a ferry to Corfu.",
+    "why": [
+      "Albania is the cheapest country in the Mediterranean: dinner with wine costs ten euros and accommodation on the coast is half what it costs in Greece or Croatia.",
+      "Berat and Gjirokastër are two Ottoman towns of white houses with wooden windows, World Heritage Sites, each seen in a day and without cruise crowds.",
+      "The Albanian Riviera, from Himarë to Ksamil, has turquoise water and pebble and white-sand beaches that compare with the Greek Ionian, and from Sarandë or Ksamil there is a ferry to Corfu in 45 minutes."
+    ],
+    "towns": {
+      "Tirana": {
+        "text": "Tirana is a capital of contrasts: Skanderbeg Square with the Et'hem Bey mosque, the Italian buildings of the 1930s, Enver Hoxha's nuclear bunker at Bunk'Art and a café culture that never stops. It is the gateway to the country.",
+        "see": [
+          "Skanderbeg Square and the Et'hem Bey mosque",
+          "Bunk'Art, Enver Hoxha's bunker",
+          "The Blloku quarter, of cafés and shops",
+          "The cable car up Mount Dajti"
+        ],
+        "tip": "Tirana has the airport (TIA) 20 minutes from the centre. Minibuses to Berat and the coast leave from the southern bus station, in the Kavaja quarter."
+      },
+      "Berat": {
+        "text": "Berat is the city of a thousand windows: white Ottoman houses with wooden windows stacked on two hills, one with the fortress and the other with the Gorica quarter. It is a World Heritage Site and one of the oldest cities in Albania.",
+        "see": [
+          "Berat fortress, with its churches",
+          "The Mangalem quarter, from the bridge",
+          "Gorica and the stone bridge",
+          "The Onufri museum, in the cathedral"
+        ],
+        "tip": "Berat takes a day and a half. Climb to the fortress in the morning and cross the bridge to Gorica at sunset, when the houses light up and are seen from the viewpoint on the other bank."
+      },
+      "Durrës": {
+        "text": "Durrës is the port of Albania and its oldest city, with a second-century Roman amphitheatre inside the town, Byzantine walls and a sandy beach 10 minutes from the centre. It is the quick way out to the airport.",
+        "see": [
+          "The Roman amphitheatre",
+          "The Byzantine walls and the Venetian tower",
+          "The Clock Tower square",
+          "The town beach, at sunset"
+        ],
+        "tip": "Durrës is 40 minutes from Tirana and 30 from the airport (TIA), so it works as a last stop. The amphitheatre is visited with a guide and is half buried under the houses."
+      },
+      "Gjirokastër": {
+        "text": "Gjirokastër is the stone city: houses with grey slate roofs climbing a hillside below an enormous castle, with the house-museums of Enver Hoxha and Ismail Kadare. It is a World Heritage Site and the most atmospheric city in the south.",
+        "see": [
+          "The castle and its weapons museum",
+          "The Skenduli house, with its Ottoman interior",
+          "The old bazaar, on the main street",
+          "The Palorto quarter, with its alleys"
+        ],
+        "tip": "Gjirokastër is cool even in August because of the altitude. The castle takes an hour and from its walls you see the valley down to the Ionian. Minibuses to Sarandë leave from the bazaar."
+      },
+      "Sarandë": {
+        "text": "Sarandë is the base of the Riviera: a seafront with pebble beaches, the site of Butrint 20 minutes away and the ferry to Corfu from the port. It is the liveliest town in the south in summer.",
+        "see": [
+          "The seafront and Sarandë beach",
+          "The archaeological park of Butrint",
+          "The Forty Saints monastery, on the hill",
+          "Ksamil beach, by bus or boat"
+        ],
+        "tip": "The Corfu ferry leaves Sarandë port several times a day in summer and takes 45 minutes. Butrint takes half a day and there are buses from the station."
+      },
+      "Himarë": {
+        "text": "Himarë is a Riviera village with a long pebble beach, an Orthodox church on the hill and coves like Livadhi and Jaliskari next door. To the north are the village of Vuno and the coastal road, with bends above the sea.",
+        "see": [
+          "Himarë beach and the promenade",
+          "Livadhi cove, to the north",
+          "Himarë castle, on the hill",
+          "Jaliskari beach, by boat"
+        ],
+        "tip": "Himarë is the beach stop of the route and the quietest: it fills up in August, but the northern coves still have room. The road from Vlorë is slow: allow two hours for 60 kilometres."
+      },
+      "Ksamil": {
+        "text": "Ksamil is the village of islands: four green islets a few metres off the beach, turquoise water and white sand. It sits inside Butrint national park and is the most famous beach in Albania.",
+        "see": [
+          "The Ksamil islands, by boat or swimming",
+          "The beach facing Corfu",
+          "Butrint park, 10 minutes away",
+          "The view over the Butrint lagoon"
+        ],
+        "tip": "Ksamil fills up in July and August: get to the beach early or book a sunbed. The islands are a 10-minute swim and there are boats that go round them."
+      },
+      "Corfu": {
+        "text": "Corfu is the Greek exit of the route: a Venetian city with the Liston, Spianada square and two fortresses, 45 minutes by ferry from Sarandë. It is the perfect contrast to close the trip.",
+        "see": [
+          "Spianada square and the Liston",
+          "The old and the new fortress",
+          "St Spyridon's church",
+          "The Achilleion palace, in Gastouri"
+        ],
+        "tip": "The ferry from Sarandë to Corfu takes 45 minutes and there are several sailings a day in summer. The airport (CFU) is 10 minutes from the centre and has Ryanair and Wizz Air flights."
+      }
+    },
+    "gettingAround": "Tirana-Berat, two and a half hours by bus. Berat-Durrës, two hours by bus. Berat-Gjirokastër, four hours by bus. Gjirokastër-Sarandë, an hour and a quarter by minibus. Sarandë-Himarë, ninety minutes by bus. Himarë-Ksamil, two and a half hours by bus. Ksamil-Corfu, an hour and a quarter by ferry. Minibuses have no fixed timetable: they leave when full, so start early.",
+    "bestTime": "May to June and September to October, with the sea at 23 degrees and without the August heat. July and August are the beach months and the expensive ones in Ksamil and Sarandë. In winter the Riviera empties and many hotels close.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Tirana, Berat and Durrës. 7 adds Gjirokastër, Sarandë and Corfu. 10 takes in Himarë and Ksamil."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: minibuses and buses link every stop. A car helps on the Riviera, where buses are slow and infrequent."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Corfu (CFU) and out of Tirana (TIA) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Tirana (TIA) or Corfu (CFU). Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

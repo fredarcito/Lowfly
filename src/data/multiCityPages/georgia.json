@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "georgia",
+    "en": "georgia"
+  },
+  "photos": {
+    "Tbilisi": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Fortress_and_Old_Town_of_Tbilisi_at_dusk%2C_Tbilisi%2C_Georgia.jpg/960px-Fortress_and_Old_Town_of_Tbilisi_at_dusk%2C_Tbilisi%2C_Georgia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 963,
+      "page": "https://commons.wikimedia.org/wiki/File:Fortress_and_Old_Town_of_Tbilisi_at_dusk,_Tbilisi,_Georgia.jpg",
+      "author": "LeontinaVarlamonva",
+      "license": "CC0"
+    },
+    "Kutaisi": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/2014_Kutaisi%2C_Katedra_Bagrati_%2825%29.jpg/960px-2014_Kutaisi%2C_Katedra_Bagrati_%2825%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 671,
+      "page": "https://commons.wikimedia.org/wiki/File:2014_Kutaisi,_Katedra_Bagrati_(25).jpg",
+      "author": "Marcin Konsek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Sighnaghi": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/View_of_Sighnaghi_02.jpg/960px-View_of_Sighnaghi_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:View_of_Sighnaghi_02.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY 4.0"
+    },
+    "Kazbegi (Stepantsminda)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Gergeti_Trinity_Church._Kazbegi%2C_Georgia_%2836130111370%29.jpg/960px-Gergeti_Trinity_Church._Kazbegi%2C_Georgia_%2836130111370%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Gergeti_Trinity_Church._Kazbegi,_Georgia_(36130111370).jpg",
+      "author": "Stefan Wisselink",
+      "license": "CC BY 2.0"
+    },
+    "Mestia": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Mestia%2C_Georgia_%E2%80%94_View_of_Mestia%2C_Svaneti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 960,
+      "height": 543,
+      "page": "https://commons.wikimedia.org/wiki/File:Mestia,_Georgia_%E2%80%94_View_of_Mestia,_Svaneti.jpg",
+      "author": "Levan Gokadze (uploader Giorgi Balakhadze)",
+      "license": "CC BY-SA 2.0"
+    },
+    "Batumi": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Batumi_Boulevard_Panorama.jpg/960px-Batumi_Boulevard_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1200,
+      "page": "https://commons.wikimedia.org/wiki/File:Batumi_Boulevard_Panorama.jpg",
+      "author": "Sosotedrd",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Georgia: Tiflis, Kazbegi y Batumi",
+    "metaTitle": "Georgia: Tiflis, Kazbegi y Batumi, de 5 a 12 días · Lowfly",
+    "summary": "Tiflis y sus baños de azufre, iglesias colgadas en el Cáucaso, vino de ánfora en Kajetia y una hospitalidad que no se olvida.",
+    "why": [
+      "Tiflis es una de las ciudades más bonitas del Cáucaso: casas de balcones de madera en el casco antiguo, baños de azufre bajo tierra y una fortaleza que domina el río. Se ve en dos días y no aburre.",
+      "Kazbegi tiene la iglesia de Gergeti Trinity en lo alto de una colina, con el Kazbek nevado detrás: es la imagen de Georgia y se llega en tres horas por la carretera militar georgiana, una de las más espectaculares de Europa.",
+      "El vino se hace aquí desde hace 8.000 años en ánforas de barro enterradas, y en Kajetia se cata en bodegas familiares. La comida y el vino son la mitad del viaje."
+    ],
+    "towns": {
+      "Tbilisi": {
+        "text": "Tiflis está en un valle del río Kura, con el casco antiguo de balcones de madera, las iglesias de piedra y los baños de azufre de Abanotubani, donde la ciudad nació por sus aguas termales. La fortaleza de Narikala se sube en teleférico.",
+        "see": [
+          "El casco antiguo y la iglesia de Sioni",
+          "Los baños de azufre de Abanotubani",
+          "La fortaleza de Narikala y el teleférico",
+          "El puente de la Paz y el barrio de Metekhi"
+        ],
+        "tip": "En los baños de azufre se alquila una sala privada por horas y conviene reservar. La comida georgiana se pide para compartir: el jinkali y el khachapuri llenan mucho más de lo que parece."
+      },
+      "Kutaisi": {
+        "text": "Kutaisi es la segunda ciudad del país y la puerta de entrada de los vuelos de bajo coste, con la catedral de Bagrati en lo alto de la colina, el monasterio de Gelati a las afueras y las cuevas de Prometeo a media hora.",
+        "see": [
+          "La catedral de Bagrati",
+          "El monasterio de Gelati, Patrimonio de la Humanidad",
+          "Las cuevas de Prometeo, en Tsqaltubo",
+          "El mercado central, con especias y churchkhela"
+        ],
+        "tip": "Kutaisi es la base más barata para empezar: los vuelos de Wizz Air llegan aquí y el tren a Tiflis tarda cuatro horas. Las cuevas de Prometeo se ven en dos horas y hay bus desde el centro."
+      },
+      "Sighnaghi": {
+        "text": "Sighnaghi es un pueblo de casas con balcones de madera sobre una colina, con murallas y torres, en plena región vinícola de Kajetia. Desde la terraza se ve el valle del Alazani y, al fondo, los picos del Cáucaso.",
+        "see": [
+          "La muralla y las torres, con el valle detrás",
+          "El monasterio de Bodbe, a 2 kilómetros",
+          "Una bodega familiar en Kajetia",
+          "El museo de historia del pueblo"
+        ],
+        "tip": "Sighnaghi es turístico y caro para el país, pero las bodegas de los pueblos de alrededor son auténticas y baratas. Cata el vino de ánfora (qvevri) en una casa particular."
+      },
+      "Kazbegi (Stepantsminda)": {
+        "text": "Stepantsminda, conocida como Kazbegi, es un pueblo a 1.740 metros al pie del monte Kazbek, de 5.047. La iglesia de Gergeti Trinity está en una colina encima, con la montaña nevada detrás, y se sube a pie en una hora o en todoterreno.",
+        "see": [
+          "La iglesia de Gergeti Trinity",
+          "La garganta de Dariali, en la frontera rusa",
+          "Las cascadas de Gveleti",
+          "El mirador de Rooms Hotel, para el desayuno"
+        ],
+        "tip": "La carretera militar georgiana puede cerrarse por nieve de noviembre a marzo. Sube a Gergeti a primera hora: a media mañana llegan los autocares y la colina se llena."
+      },
+      "Mestia": {
+        "text": "Mestia es la capital de Svaneti, la región de las torres de piedra medievales, con más de 200 repartidas por el valle. Está a 1.500 metros, rodeada de picos de 5.000, y es la base para las rutas de trekking del Cáucaso.",
+        "see": [
+          "Las torres svanas del pueblo",
+          "El museo de historia y etnografía",
+          "El glaciar de Chalaadi, a una hora a pie",
+          "Ushguli, el pueblo más alto de Europa, en 4x4"
+        ],
+        "tip": "Mestia es mejor de junio a septiembre: en invierno la carretera desde Zugdidi se corta. El 4x4 a Ushguli cuesta unas 150 laris por coche y tarda dos horas por pista."
+      },
+      "Batumi": {
+        "text": "Batumi es la ciudad de vacaciones del mar Negro, con un bulevar de siete kilómetros junto al agua, rascacielos de formas imposibles y la estatua de Ali y Nino, que se mueve cada noche. Al sur está la frontera turca.",
+        "see": [
+          "El bulevar y la playa de guijarros",
+          "La estatua de Ali y Nino",
+          "La plaza Piazza y el casco antiguo",
+          "El jardín botánico, a 9 kilómetros"
+        ],
+        "tip": "Batumi es la parte más moderna y más cara del país, y en verano se llena de turistas georgianos y turcos. El tren a Tiflis tarda cinco horas y sale de noche."
+      }
+    },
+    "gettingAround": "Kutaisi-Tiflis, cuatro horas en tren. Tiflis-Sighnaghi, dos horas en marshrutka. Tiflis-Kazbegi, tres horas en marshrutka desde la estación de Didube. Kutaisi-Mestia, cinco horas y media en bus o marshrutka. Mestia-Batumi, dos horas y media en tren desde Zugdidi. Las marshrutkas salen cuando se llenan, por la mañana.",
+    "bestTime": "De mayo a junio y de septiembre a octubre: Tiflis está entre 20 y 28 grados, Kazbegi es fresco y Mestia está abierta. Julio y agosto son calurosos en Tiflis y Batumi, y en invierno la carretera a Kazbegi y la de Mestia pueden cerrarse por nieve.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Kutaisi y Tiflis. Con 7 añades Sighnaghi y Kazbegi. Con 12 entran Mestia y Batumi."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: las marshrutkas llegan a todos los pueblos. Para Mestia y Ushguli conviene contratar un 4x4 con conductor."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Batumi (BUS) y saliendo por Kutaisi (KUT) o Tiflis (TBS), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Tiflis (TBS), Kutaisi (KUT) o Batumi (BUS). Wizz Air vuela a Kutaisi desde varias ciudades europeas y es la opción más barata."
+      }
+    ]
+  },
+  "en": {
+    "title": "Georgia: Tbilisi, Kazbegi and Batumi",
+    "metaTitle": "Georgia: Tbilisi, Kazbegi and Batumi in 5 to 12 days · Lowfly",
+    "summary": "Tbilisi and its sulphur baths, churches hanging in the Caucasus, amphora wine in Kakheti and hospitality you will not forget.",
+    "why": [
+      "Tbilisi is one of the most beautiful cities in the Caucasus: old-town houses with wooden balconies, sulphur baths underground and a fortress above the river. Two days covers it and it never gets dull.",
+      "Kazbegi has Gergeti Trinity church on top of a hill with snowy Kazbek behind it: it is the image of Georgia, three hours away along the Georgian Military Highway, one of the most spectacular roads in Europe.",
+      "Wine has been made here for 8,000 years in clay amphorae buried in the ground, and in Kakheti you taste it in family cellars. Food and wine are half the trip."
+    ],
+    "towns": {
+      "Tbilisi": {
+        "text": "Tbilisi sits in a valley of the Kura river, with an old town of wooden balconies, stone churches and the sulphur baths of Abanotubani, where the city was born from its hot springs. Narikala fortress is reached by cable car.",
+        "see": [
+          "The old town and Sioni church",
+          "The sulphur baths of Abanotubani",
+          "Narikala fortress and the cable car",
+          "The Bridge of Peace and the Metekhi quarter"
+        ],
+        "tip": "At the sulphur baths you rent a private room by the hour and should book ahead. Georgian food is ordered to share: khinkali and khachapuri fill you up far more than they look."
+      },
+      "Kutaisi": {
+        "text": "Kutaisi is the country's second city and the gateway for low-cost flights, with Bagrati cathedral on top of the hill, Gelati monastery on the edge of town and the Prometheus caves half an hour away.",
+        "see": [
+          "Bagrati cathedral",
+          "Gelati monastery, a World Heritage Site",
+          "The Prometheus caves, at Tsqaltubo",
+          "The central market, with spices and churchkhela"
+        ],
+        "tip": "Kutaisi is the cheapest place to start: Wizz Air flights land here and the train to Tbilisi takes four hours. The Prometheus caves take two hours and there is a bus from the centre."
+      },
+      "Sighnaghi": {
+        "text": "Sighnaghi is a town of houses with wooden balconies on a hill, with walls and towers, in the heart of the Kakheti wine region. From the terrace you see the Alazani valley and, beyond, the peaks of the Caucasus.",
+        "see": [
+          "The wall and towers, with the valley behind",
+          "Bodbe monastery, two kilometres away",
+          "A family winery in Kakheti",
+          "The town history museum"
+        ],
+        "tip": "Sighnaghi is touristy and expensive for the country, but the wineries in the villages around it are authentic and cheap. Taste qvevri amphora wine in a private house."
+      },
+      "Kazbegi (Stepantsminda)": {
+        "text": "Stepantsminda, known as Kazbegi, is a village at 1,740 metres below Mount Kazbek, at 5,047. Gergeti Trinity church sits on a hill above it with the snowy mountain behind, reached on foot in an hour or by 4x4.",
+        "see": [
+          "Gergeti Trinity church",
+          "The Dariali gorge, on the Russian border",
+          "The Gveleti waterfalls",
+          "The Rooms Hotel terrace, for breakfast"
+        ],
+        "tip": "The Georgian Military Highway can close for snow from November to March. Climb to Gergeti early: by mid-morning the coaches arrive and the hill fills up."
+      },
+      "Mestia": {
+        "text": "Mestia is the capital of Svaneti, the region of medieval stone towers, with more than 200 spread through the valley. It sits at 1,500 metres, surrounded by 5,000-metre peaks, and is the base for Caucasus trekking.",
+        "see": [
+          "The Svan towers of the village",
+          "The history and ethnography museum",
+          "The Chalaadi glacier, an hour on foot",
+          "Ushguli, the highest village in Europe, by 4x4"
+        ],
+        "tip": "Mestia is best from June to September: in winter the road from Zugdidi closes. The 4x4 to Ushguli costs around 150 lari per car and takes two hours on a dirt road."
+      },
+      "Batumi": {
+        "text": "Batumi is the Black Sea holiday city, with a seven-kilometre boulevard along the water, skyscrapers of impossible shapes and the statue of Ali and Nino, which moves every night. The Turkish border is to the south.",
+        "see": [
+          "The boulevard and the pebble beach",
+          "The statue of Ali and Nino",
+          "Piazza square and the old town",
+          "The botanical garden, nine kilometres away"
+        ],
+        "tip": "Batumi is the most modern and most expensive part of the country, and in summer it fills with Georgian and Turkish tourists. The train to Tbilisi takes five hours and leaves at night."
+      }
+    },
+    "gettingAround": "Kutaisi-Tbilisi, four hours by train. Tbilisi-Sighnaghi, two hours by marshrutka. Tbilisi-Kazbegi, three hours by marshrutka from Didube station. Kutaisi-Mestia, five and a half hours by bus or marshrutka. Mestia-Batumi, two and a half hours by train from Zugdidi. Marshrutkas leave when full, in the morning.",
+    "bestTime": "May to June and September to October: Tbilisi is between 20 and 28 degrees, Kazbegi is cool and Mestia is open. July and August are hot in Tbilisi and Batumi, and in winter the roads to Kazbegi and Mestia can close for snow.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Kutaisi and Tbilisi. 7 adds Sighnaghi and Kazbegi. 12 takes in Mestia and Batumi."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: marshrutkas reach every village. For Mestia and Ushguli it is worth hiring a 4x4 with a driver."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Batumi (BUS) and out of Kutaisi (KUT) or Tbilisi (TBS) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Tbilisi (TBS), Kutaisi (KUT) or Batumi (BUS). Wizz Air flies to Kutaisi from several European cities and is the cheapest option."
+      }
+    ]
+  }
+}

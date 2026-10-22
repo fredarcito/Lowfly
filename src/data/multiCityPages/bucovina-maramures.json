@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "bucovina-y-maramures",
+    "en": "bucovina-maramures"
+  },
+  "photos": {
+    "Iași": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/RO_IS_Iasi%2C_Palace_of_Culture_2.jpg/960px-RO_IS_Iasi%2C_Palace_of_Culture_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 710,
+      "page": "https://commons.wikimedia.org/wiki/File:RO_IS_Iasi,_Palace_of_Culture_2.jpg",
+      "author": "Argenna",
+      "license": "CC BY 3.0"
+    },
+    "Suceava": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Suceava_fortress_7.jpg/960px-Suceava_fortress_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 540,
+      "page": "https://commons.wikimedia.org/wiki/File:Suceava_fortress_7.jpg",
+      "author": "Cristian Bortes from Cluj-Napoca, Romania",
+      "license": "CC BY 2.0"
+    },
+    "Gura Humorului": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Voronet_Monastery_-_2016-3.jpg/960px-Voronet_Monastery_-_2016-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Voronet_Monastery_-_2016-3.jpg",
+      "author": "Gary Todd",
+      "license": "CC0"
+    },
+    "Sighetu Marmației": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Wooden_church_of_B%C3%A2rsana_in_its_grassy_orchard%2C_B%C3%A2rsana%2C_2017.jpg/960px-Wooden_church_of_B%C3%A2rsana_in_its_grassy_orchard%2C_B%C3%A2rsana%2C_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1444,
+      "page": "https://commons.wikimedia.org/wiki/File:Wooden_church_of_B%C3%A2rsana_in_its_grassy_orchard,_B%C3%A2rsana,_2017.jpg",
+      "author": "DimiTalen",
+      "license": "CC0"
+    },
+    "Cluj-Napoca": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Pia%C8%9Ba_unirii_Cluj_Napoca_2.jpg/960px-Pia%C8%9Ba_unirii_Cluj_Napoca_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Pia%C8%9Ba_unirii_Cluj_Napoca_2.jpg",
+      "author": "Marcmiquel",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Bucovina y Maramureș",
+    "metaTitle": "Bucovina y Maramureș, de 5 a 10 días · Lowfly",
+    "summary": "Los monasterios pintados por fuera de Bucovina, las iglesias de madera de Maramureș y las aldeas donde el tiempo va más despacio: la Rumanía más rural.",
+    "why": [
+      "Los monasterios de Voroneț, Humor, Moldovița y Sucevița tienen frescos del siglo XVI pintados en el exterior, y el azul de Voroneț no se ha podido reproducir. Se ven en dos o tres días desde Gura Humorului.",
+      "Maramureș es otra cosa: pueblos con iglesias de madera de 30 metros, puertas talladas y carros de caballos en la carretera. Es la región más tradicional de Rumanía y la menos preparada para el turismo, en el buen sentido.",
+      "Es la ruta rumana con menos turistas de todas: fuera de julio y agosto, en los monasterios puedes estar solo en un fresco de 500 años y en los pueblos no hay ni un autocar."
+    ],
+    "towns": {
+      "Iași": {
+        "text": "Iași fue la capital de Moldavia y es la segunda ciudad del país, con el Palacio de la Cultura neogótico, la iglesia de los Tres Jerarcas y una vida universitaria que llena los cafés. Es la puerta de entrada a Bucovina.",
+        "see": [
+          "El Palacio de la Cultura y sus cuatro museos",
+          "La iglesia de los Tres Jerarcas, con frescos exteriores",
+          "El teatro nacional y la plaza de la Unión",
+          "El jardín botánico, uno de los más grandes de Europa"
+        ],
+        "tip": "El Palacio de la Cultura cierra los lunes y el museo de historia es el que más merece la pena. Desde Iași salen trenes y buses a Suceava en dos horas."
+      },
+      "Suceava": {
+        "text": "Suceava fue la capital de los príncipes de Moldavia y conserva la fortaleza de Ștefan cel Mare en lo alto de una colina, con las murallas y las torres restauradas. La ciudad es la base para los monasterios pintados.",
+        "see": [
+          "La fortaleza de Suceava, subiendo a pie",
+          "El monasterio de Dragomirna, a 15 kilómetros",
+          "El monasterio de Putna, donde está enterrado Ștefan cel Mare",
+          "El museo de etnografía de Bucovina"
+        ],
+        "tip": "La fortaleza se sube en 20 minutos y hay una pasarela de madera sobre el foso. Desde Suceava hay buses a Gura Humorului cada hora y trenes en hora y media."
+      },
+      "Gura Humorului": {
+        "text": "Gura Humorului es el pueblo desde el que se visitan los monasterios pintados: Voroneț, a 5 kilómetros, con el azul famoso, y Humor y Moldovița, a media hora. El paisaje son colinas verdes y bosques de hayas.",
+        "see": [
+          "El monasterio de Voroneț y su Juicio Final",
+          "El monasterio de Humor, con el exterior pintado",
+          "El monasterio de Moldovița, entre bosques",
+          "El monasterio de Sucevița, el más grande"
+        ],
+        "tip": "Los frescos exteriores se ven mejor por la mañana, cuando el sol da de frente en la fachada sur. Alquila coche o contrata un taxi por horas: los monasterios están dispersos y los buses escasean."
+      },
+      "Sighetu Marmației": {
+        "text": "Sighetu Marmației es la puerta de Maramureș, en la frontera con Ucrania, y desde aquí se recorren los pueblos del valle del Iza y del Mara: Bârsana, con su iglesia de madera entre manzanos, Ieud, Rozavlea y Bogdan Vodă.",
+        "see": [
+          "El monasterio de Bârsana, de madera",
+          "Las iglesias de madera del valle del Iza",
+          "El cementerio alegre de Săpânța",
+          "La prisión de Sighet, hoy museo"
+        ],
+        "tip": "El cementerio de Săpânța, con sus cruces pintadas y versos, está a 20 minutos y es lo más raro del viaje. Los pueblos del valle del Iza se ven en coche en un día."
+      },
+      "Cluj-Napoca": {
+        "text": "Cluj cierra la ruta como capital de Transilvania: la plaza de la Unión, la iglesia de San Miguel y una ciudad universitaria con más vida nocturna que cualquier otra del país. Es el aeropuerto de salida más cómodo.",
+        "see": [
+          "La plaza de la Unión y la iglesia de San Miguel",
+          "El jardín botánico",
+          "El barrio de los museos y la casa Matthias Corvinus",
+          "El parque central, al atardecer"
+        ],
+        "tip": "De Sighetu Marmației a Cluj hay bus en cinco horas y media por el paso de Prislop, o tren cambiando en Beclean. Si vas justo de tiempo, el bus nocturno ahorra una noche de hotel."
+      }
+    },
+    "gettingAround": "Iași-Suceava, dos horas en tren. Suceava-Gura Humorului, una hora y media en tren o 45 minutos en bus. Para los monasterios, coche de alquiler o taxi por horas desde Gura Humorului. De Gura Humorului a Sighetu Marmației hay bus en cuatro horas y media por el paso de Prislop, con poco transporte público. De Sighetu a Cluj, cinco horas y media en bus.",
+    "bestTime": "De mayo a septiembre. Junio y septiembre son los mejores: los frescos se ven con luz y no hace el calor de julio y agosto. En invierno los pueblos de Maramureș son bonitos con nieve, pero la carretera del paso de Prislop puede cerrarse.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Iași y los monasterios desde Suceava. Con 7 añades Gura Humorului. Con 10 entran Maramureș y Cluj."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Sí para los monasterios y para Maramureș: están dispersos y el transporte público es escaso. Se puede alquilar en Suceava o contratar taxi por horas."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Cluj (CLJ) y saliendo por Iași (IAS), o al revés, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Iași (IAS), Suceava (SCV) o Cluj-Napoca (CLJ). Wizz Air y Ryanair vuelan a Iași y Cluj desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Bucovina and Maramureș",
+    "metaTitle": "Bucovina and Maramureș in 5 to 10 days · Lowfly",
+    "summary": "The monasteries painted on the outside in Bucovina, the wooden churches of Maramureș and villages where time slows down: rural Romania at its most.",
+    "why": [
+      "The monasteries of Voroneț, Humor, Moldovița and Sucevița have sixteenth-century frescoes painted on the outside, and the blue of Voroneț has never been reproduced. Two or three days from Gura Humorului covers them.",
+      "Maramureș is something else: villages with 30-metre wooden churches, carved gates and horse carts on the road. It is the most traditional region in Romania and the least prepared for tourism, in the good sense.",
+      "It is the Romanian route with the fewest tourists of all: outside July and August you can be alone in front of a 500-year-old fresco, and in the villages there is not a single coach."
+    ],
+    "towns": {
+      "Iași": {
+        "text": "Iași was the capital of Moldavia and is the country's second city, with the neo-Gothic Palace of Culture, the Three Hierarchs church and a university life that fills the cafés. It is the gateway to Bucovina.",
+        "see": [
+          "The Palace of Culture and its four museums",
+          "The Three Hierarchs church, with exterior frescoes",
+          "The national theatre and Union Square",
+          "The botanical garden, one of the largest in Europe"
+        ],
+        "tip": "The Palace of Culture closes on Mondays and the history museum is the one most worth it. Trains and buses leave Iași for Suceava in two hours."
+      },
+      "Suceava": {
+        "text": "Suceava was the capital of the princes of Moldavia and keeps Ștefan cel Mare's fortress on top of a hill, with restored walls and towers. The city is the base for the painted monasteries.",
+        "see": [
+          "Suceava fortress, on foot up the hill",
+          "Dragomirna monastery, 15 kilometres away",
+          "Putna monastery, where Ștefan cel Mare is buried",
+          "The Bucovina ethnography museum"
+        ],
+        "tip": "The fortress is a twenty-minute climb and there is a wooden walkway over the moat. Buses leave Suceava for Gura Humorului hourly, and trains take ninety minutes."
+      },
+      "Gura Humorului": {
+        "text": "Gura Humorului is the village from which you visit the painted monasteries: Voroneț, five kilometres away, with its famous blue, and Humor and Moldovița, half an hour off. The landscape is green hills and beech woods.",
+        "see": [
+          "Voroneț monastery and its Last Judgement",
+          "Humor monastery, with its painted exterior",
+          "Moldovița monastery, among the woods",
+          "Sucevița monastery, the largest of them"
+        ],
+        "tip": "The exterior frescoes are best in the morning, when the sun hits the south facade. Rent a car or hire a taxi by the hour: the monasteries are spread out and buses are scarce."
+      },
+      "Sighetu Marmației": {
+        "text": "Sighetu Marmației is the gateway to Maramureș, on the Ukrainian border, and from here you tour the villages of the Iza and Mara valleys: Bârsana, with its wooden church among apple trees, Ieud, Rozavlea and Bogdan Vodă.",
+        "see": [
+          "Bârsana monastery, built of wood",
+          "The wooden churches of the Iza valley",
+          "The Merry Cemetery at Săpânța",
+          "The Sighet prison, now a museum"
+        ],
+        "tip": "The Merry Cemetery, with its painted crosses and verses, is twenty minutes away and the strangest thing on the trip. The Iza valley villages are a day by car."
+      },
+      "Cluj-Napoca": {
+        "text": "Cluj closes the route as the capital of Transylvania: Union Square, St Michael's church and a university city with more nightlife than any other in the country. It is the most convenient airport to fly out of.",
+        "see": [
+          "Union Square and St Michael's church",
+          "The botanical garden",
+          "The museum quarter and the Matthias Corvinus house",
+          "The central park, at sunset"
+        ],
+        "tip": "From Sighetu Marmației to Cluj is five and a half hours by bus over the Prislop pass, or by train with a change at Beclean. If you are short on time, the night bus saves a hotel night."
+      }
+    },
+    "gettingAround": "Iași-Suceava, two hours by train. Suceava-Gura Humorului, ninety minutes by train or 45 by bus. For the monasteries, a rental car or a taxi by the hour from Gura Humorului. Gura Humorului to Sighetu Marmației is four and a half hours by bus over the Prislop pass, with little public transport. Sighetu to Cluj, five and a half hours by bus.",
+    "bestTime": "May to September. June and September are best: the frescoes are lit and it is not as hot as July and August. In winter the Maramureș villages are beautiful under snow, but the Prislop pass road can close.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Iași and the monasteries from Suceava. 7 adds Gura Humorului. 10 takes in Maramureș and Cluj."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Yes for the monasteries and Maramureș: they are spread out and public transport is scarce. You can rent in Suceava or hire a taxi by the hour."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Cluj (CLJ) and out of Iași (IAS), or the reverse, is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Iași (IAS), Suceava (SCV) or Cluj-Napoca (CLJ). Wizz Air and Ryanair fly to Iași and Cluj from several European cities."
+      }
+    ]
+  }
+}

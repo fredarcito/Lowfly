@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "silesia-y-breslavia",
+    "en": "silesia-wroclaw"
+  },
+  "photos": {
+    "Wrocław": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Mercado_de_Navidad%2C_Plaza_del_Mercado%2C_Breslavia%2C_Polonia%2C_2017-12-20%2C_DD_38-40_PAN.jpg/960px-Mercado_de_Navidad%2C_Plaza_del_Mercado%2C_Breslavia%2C_Polonia%2C_2017-12-20%2C_DD_38-40_PAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 557,
+      "page": "https://commons.wikimedia.org/wiki/File:Mercado_de_Navidad,_Plaza_del_Mercado,_Breslavia,_Polonia,_2017-12-20,_DD_38-40_PAN.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    "Świdnica": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Ko%C5%9Bci%C3%B3%C5%82_Pokoju%2C_%C5%9Awidnica%2C_8_lipca_2024_KsP.jpg/960px-Ko%C5%9Bci%C3%B3%C5%82_Pokoju%2C_%C5%9Awidnica%2C_8_lipca_2024_KsP.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Ko%C5%9Bci%C3%B3%C5%82_Pokoju,_%C5%9Awidnica,_8_lipca_2024_KsP.jpg",
+      "author": "Krzysztof Popławski",
+      "license": "CC BY 4.0"
+    },
+    "Jelenia Góra": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/2024-04-18_Jelenia_G%C3%B3ra_Town_Hall.jpg/960px-2024-04-18_Jelenia_G%C3%B3ra_Town_Hall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:2024-04-18_Jelenia_G%C3%B3ra_Town_Hall.jpg",
+      "author": "Maxim75",
+      "license": "CC BY 4.0"
+    },
+    "Katowice": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Katowice_Spodek_E_aerial_2026.jpg/960px-Katowice_Spodek_E_aerial_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Katowice_Spodek_E_aerial_2026.jpg",
+      "author": "Adrian Tync",
+      "license": "CC BY-SA 4.0"
+    },
+    "Kraków": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Krakow_Rynek_Glowny_noc_1.jpg/960px-Krakow_Rynek_Glowny_noc_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Krakow_Rynek_Glowny_noc_1.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Silesia y Breslavia",
+    "metaTitle": "Silesia y Breslavia, de 5 a 9 días · Lowfly",
+    "summary": "La Silesia de los castillos, las iglesias de la Paz y las montañas de Karkonosze, con Breslavia y Cracovia como ciudades de entrada y salida.",
+    "why": [
+      "La iglesia de la Paz de Świdnica es una de las dos que quedan en el mundo, construida en madera y barro en 1657 sin un solo clavo de metal, y es Patrimonio de la Humanidad. Cabe en un día desde Breslavia.",
+      "Los Karkonosze, en la frontera checa, tienen los pueblos de montaña de Karpacz y Szklarska Poręba, cascadas y refugios de piedra. Es la montaña polaca menos conocida y la más cercana a Alemania.",
+      "Breslavia es la ciudad de los enanos y de los cien puentes, y Katowice es la Silesia industrial reconvertida, con el Spodek y el barrio de Nikiszowiec. Dos caras de una región que casi nadie visita."
+    ],
+    "towns": {
+      "Wrocław": {
+        "text": "Breslavia es la capital de Silesia, con la plaza del mercado más grande de Polonia, el ayuntamiento gótico y la isla de la Catedral entre dos brazos del Oder. Los 600 enanos de bronce repartidos por las calles son su seña de identidad.",
+        "see": [
+          "La plaza del mercado y el ayuntamiento",
+          "La isla de la Catedral y el puente Tumski",
+          "El panorama de Racławice",
+          "Los enanos de bronce, buscándolos por el centro"
+        ],
+        "tip": "Breslavia tiene el aeropuerto mejor conectado del oeste y es la entrada natural a la región. El tren a Świdnica tarda una hora y veinte, con cambio en Jaworzyna Śląska."
+      },
+      "Świdnica": {
+        "text": "Świdnica es un pueblo de la Baja Silesia con una plaza del mercado tranquila y, sobre todo, la iglesia de la Paz, construida en madera, barro y paja en 1657 por los protestantes, con capacidad para 7.500 personas y sin un clavo de metal.",
+        "see": [
+          "La iglesia de la Paz, por dentro y por fuera",
+          "La torre del ayuntamiento",
+          "La iglesia de los Santos Stanisław y Wenceslao",
+          "El museo del comercio antiguo"
+        ],
+        "tip": "La iglesia de la Paz se visita con entrada y horario limitado: comprueba los horarios antes de ir. El pueblo se ve en medio día y se combina con el castillo de Książ, a 20 minutos."
+      },
+      "Jelenia Góra": {
+        "text": "Jelenia Góra es la puerta de los Karkonosze, con una plaza del mercado de casas de colores y el ayuntamiento barroco. Desde aquí se sube a Karpacz y a Szklarska Poręba, y al castillo de Chojnik, en lo alto de una roca.",
+        "see": [
+          "La plaza del mercado y el ayuntamiento",
+          "El castillo de Chojnik, subiendo a pie",
+          "Karpacz y la capilla de Wang, de madera noruega",
+          "Las cascadas de Szklarska Poręba"
+        ],
+        "tip": "La capilla de Wang, en Karpacz, es una iglesia noruega del siglo XII trasladada piedra a piedra en 1842: es lo más raro de la región. Los Karkonosze tienen nieve de diciembre a marzo."
+      },
+      "Katowice": {
+        "text": "Katowice es la capital de la Silesia industrial, reconvertida en ciudad cultural: el Spodek, la sala de conciertos en forma de platillo volante, el barrio obrero de Nikiszowiec de ladrillo rojo y el museo de Silesia, en una antigua mina.",
+        "see": [
+          "El Spodek y la plaza del mercado",
+          "El barrio de Nikiszowiec",
+          "El museo de Silesia, en la mina",
+          "El parque cultural de Silesia, en una mina cerrada"
+        ],
+        "tip": "Katowice es la parada entre Breslavia y Cracovia y el tren tarda dos horas desde cada una. El barrio de Nikiszowiec está a 20 minutos en bus y es lo que más sorprende."
+      },
+      "Kraków": {
+        "text": "Cracovia cierra el viaje con la plaza medieval más grande de Europa, el castillo de Wawel y el barrio judío de Kazimierz. Es la ciudad más monumental de Polonia y la mejor para terminar con calma.",
+        "see": [
+          "La plaza del mercado y Santa María",
+          "El castillo de Wawel",
+          "Kazimierz y sus sinagogas",
+          "La mina de sal de Wieliczka"
+        ],
+        "tip": "Desde Katowice hay trenes a Cracovia cada hora en dos horas, y desde Breslavia en dos horas y media. Si vuelas desde Cracovia, el aeropuerto está a 20 minutos en tren."
+      }
+    },
+    "gettingAround": "Breslavia-Świdnica, una hora y veinte en tren con cambio en Jaworzyna Śląska. Świdnica-Jelenia Góra, dos horas en tren. Jelenia Góra-Katowice, cuatro horas en tren con cambio en Breslavia. Breslavia-Katowice, dos horas en tren. Katowice-Cracovia, dos horas en tren. Desde Jelenia Góra, buses a Karpacz y Szklarska Poręba en 30 minutos.",
+    "bestTime": "De mayo a septiembre para las montañas y las ciudades, con 18 a 26 grados. En invierno los Karkonosze son destino de esquí y Jelenia Góra tiene un mercado de Navidad tranquilo. Octubre es buen mes para el follaje.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Breslavia, Świdnica y Jelenia Góra. Con 7 añades Katowice. Con 9 entran Cracovia y los Karkonosze."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Para los Karkonosze y los pueblos de montaña sí conviene, porque los buses son escasos. Para las ciudades el tren funciona."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Cracovia (KRK) y saliendo por Breslavia (WRO), o al revés, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Breslavia (WRO) o Cracovia (KRK). Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Silesia and Wrocław",
+    "metaTitle": "Silesia and Wrocław in 5 to 9 days · Lowfly",
+    "summary": "Silesia of castles, Churches of Peace and the Karkonosze mountains, with Wrocław and Kraków as the entry and exit cities.",
+    "why": [
+      "The Church of Peace in Świdnica is one of only two left in the world, built of wood and clay in 1657 without a single metal nail, and it is a World Heritage Site. It is a day trip from Wrocław.",
+      "The Karkonosze, on the Czech border, have the mountain towns of Karpacz and Szklarska Poręba, waterfalls and stone huts. It is the least known Polish mountain range and the closest to Germany.",
+      "Wrocław is the city of dwarfs and a hundred bridges, and Katowice is industrial Silesia reinvented, with the Spodek and the Nikiszowiec quarter. Two faces of a region hardly anyone visits."
+    ],
+    "towns": {
+      "Wrocław": {
+        "text": "Wrocław is the capital of Silesia, with the largest market square in Poland, the Gothic town hall and Cathedral island between two arms of the Oder. The 600 bronze dwarfs around the streets are its signature.",
+        "see": [
+          "The market square and the town hall",
+          "Cathedral island and Tumski bridge",
+          "The Racławice panorama",
+          "The bronze dwarfs, hunting them through the centre"
+        ],
+        "tip": "Wrocław has the best-connected airport in the west and is the natural entry to the region. The train to Świdnica takes an hour twenty, with a change at Jaworzyna Śląska."
+      },
+      "Świdnica": {
+        "text": "Świdnica is a Lower Silesian town with a quiet market square and, above all, the Church of Peace, built of wood, clay and straw in 1657 by Protestants, seating 7,500 and with not one metal nail.",
+        "see": [
+          "The Church of Peace, inside and out",
+          "The town hall tower",
+          "The church of Saints Stanislaus and Wenceslaus",
+          "The old trade museum"
+        ],
+        "tip": "The Church of Peace is visited on a ticket with limited hours: check before going. The town takes half a day and pairs with Książ castle, 20 minutes away."
+      },
+      "Jelenia Góra": {
+        "text": "Jelenia Góra is the gateway to the Karkonosze, with a market square of colourful houses and a baroque town hall. From here you climb to Karpacz and Szklarska Poręba, and to Chojnik castle on top of a rock.",
+        "see": [
+          "The market square and the town hall",
+          "Chojnik castle, on foot",
+          "Karpacz and the Wang chapel, of Norwegian wood",
+          "The Szklarska Poręba waterfalls"
+        ],
+        "tip": "The Wang chapel in Karpacz is a twelfth-century Norwegian church moved stone by stone in 1842: it is the strangest thing in the region. The Karkonosze have snow from December to March."
+      },
+      "Katowice": {
+        "text": "Katowice is the capital of industrial Silesia, reinvented as a cultural city: the Spodek, the flying-saucer concert hall, the red-brick workers' quarter of Nikiszowiec and the Silesian museum, in a former mine.",
+        "see": [
+          "The Spodek and the market square",
+          "The Nikiszowiec quarter",
+          "The Silesian museum, in the mine",
+          "The Silesian cultural park, in a closed mine"
+        ],
+        "tip": "Katowice is the stop between Wrocław and Kraków and the train takes two hours from each. The Nikiszowiec quarter is 20 minutes by bus and is what surprises people most."
+      },
+      "Kraków": {
+        "text": "Kraków closes the trip with the largest medieval square in Europe, Wawel castle and the Jewish quarter of Kazimierz. It is the most monumental city in Poland and the best place to end slowly.",
+        "see": [
+          "The market square and St Mary's",
+          "Wawel castle",
+          "Kazimierz and its synagogues",
+          "The Wieliczka salt mine"
+        ],
+        "tip": "From Katowice trains run to Kraków hourly in two hours, and from Wrocław in two and a half. If you fly from Kraków, the airport is 20 minutes away by train."
+      }
+    },
+    "gettingAround": "Wrocław-Świdnica, an hour twenty by train with a change at Jaworzyna Śląska. Świdnica-Jelenia Góra, two hours by train. Jelenia Góra-Katowice, four hours by train with a change at Wrocław. Wrocław-Katowice, two hours by train. Katowice-Kraków, two hours by train. From Jelenia Góra, buses to Karpacz and Szklarska Poręba in 30 minutes.",
+    "bestTime": "May to September for the mountains and the cities, at 18 to 26 degrees. In winter the Karkonosze are a ski destination and Jelenia Góra has a quiet Christmas market. October is a good month for the foliage.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Wrocław, Świdnica and Jelenia Góra. 7 adds Katowice. 9 takes in Kraków and the Karkonosze."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "For the Karkonosze and the mountain villages yes, as buses are scarce. For the cities the train works."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Kraków (KRK) and out of Wrocław (WRO), or the reverse, is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Wrocław (WRO) or Kraków (KRK). Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

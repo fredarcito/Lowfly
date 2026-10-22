@@ -1,0 +1,270 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "dalmatia",
+    "en": "dalmatia"
+  },
+  "photos": {
+    "Zadar": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Sea_organ_Zadar_1.jpg/960px-Sea_organ_Zadar_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Sea_organ_Zadar_1.jpg",
+      "author": "Andrej Šalov",
+      "license": "CC BY-SA 3.0"
+    },
+    "Šibenik (Krka)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Cathedral_of_St._James%2C_%C5%A0ibenik_01.jpg/960px-Cathedral_of_St._James%2C_%C5%A0ibenik_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Cathedral_of_St._James,_%C5%A0ibenik_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0"
+    },
+    "Trogir": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Trogir_Old_Town_%28Croatia%29.jpg/960px-Trogir_Old_Town_%28Croatia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Trogir_Old_Town_(Croatia).jpg",
+      "author": "Marija19th11",
+      "license": "CC BY-SA 4.0"
+    },
+    "Split": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Split-Diokletianpalast-1.jpg/960px-Split-Diokletianpalast-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Split-Diokletianpalast-1.jpg",
+      "author": "SchiDD",
+      "license": "CC BY-SA 4.0"
+    },
+    "Hvar": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Hvar_Town_-_Franciscan_Monastery.jpg/960px-Hvar_Town_-_Franciscan_Monastery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 540,
+      "page": "https://commons.wikimedia.org/wiki/File:Hvar_Town_-_Franciscan_Monastery.jpg",
+      "author": "Shawabunga",
+      "license": "CC BY-SA 4.0"
+    },
+    "Korčula": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kor%C4%8Dula_Old_Town%2C_Croatia_%282024%29.jpg/960px-Kor%C4%8Dula_Old_Town%2C_Croatia_%282024%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 740,
+      "page": "https://commons.wikimedia.org/wiki/File:Kor%C4%8Dula_Old_Town,_Croatia_(2024).jpg",
+      "author": "Quintin Soloviev",
+      "license": "CC BY 4.0"
+    },
+    "Dubrovnik": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Old_Town_of_Dubrovnik_and_city_walls%2C_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 960,
+      "height": 540,
+      "page": "https://commons.wikimedia.org/wiki/File:Old_Town_of_Dubrovnik_and_city_walls,_2017.jpg",
+      "author": "Veselov350",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Dalmacia: de Zadar a Dubrovnik",
+    "metaTitle": "Dalmacia: de Zadar a Dubrovnik, de 8 a 12 días · Lowfly",
+    "summary": "La costa dálmata en ferry y bus, de Zadar a Dubrovnik, con los lagos de Krka, las islas de Hvar y Korčula y el palacio de Diocleciano.",
+    "why": [
+      "La costa dálmata tiene seis ciudades históricas en 300 kilómetros y todas están unidas por bus y ferry: Split con el palacio de Diocleciano, Trogir con su catedral, Šibenik con la de San Jacobo y Dubrovnik con sus murallas.",
+      "Las islas son la otra mitad del viaje: Hvar con sus campos de lavanda y Korčula con su pueblo amurallado se recorren en ferry y se ven en un día cada una, sin coche.",
+      "El parque nacional de Krka está a 15 minutos de Šibenik y se recorre por pasarelas de madera sobre cascadas, con baño permitido en la parte baja. Es la excursión de agua dulce del viaje."
+    ],
+    "towns": {
+      "Zadar": {
+        "text": "Zadar es la ciudad más antigua de Dalmacia, con un casco antiguo en una península, el órgano del mar que suena con las olas y la instalación Saludo al Sol, que se ilumina al atardecer. Alfred Hitchcock dijo que tenía el mejor atardecer del mundo.",
+        "see": [
+          "El órgano del mar y el Saludo al Sol",
+          "La iglesia de San Donato, del siglo IX",
+          "El foro romano",
+          "El mercado de la mañana, en el centro"
+        ],
+        "tip": "El órgano del mar se escucha mejor al atardecer, cuando hay oleaje. Zadar tiene el aeropuerto más céntrico de la costa y es buena entrada desde el norte."
+      },
+      "Šibenik (Krka)": {
+        "text": "Šibenik es la ciudad de la catedral de San Jacobo, enteramente de piedra caliza y sin argamasa, Patrimonio de la Humanidad, con 72 cabezas esculpidas en el ábside. Al lado está el parque nacional de Krka, con cascadas y pasarelas.",
+        "see": [
+          "La catedral de San Jacobo",
+          "El parque nacional de Krka y sus cascadas",
+          "La fortaleza de San Miguel",
+          "El barrio de Dolac, con escaleras"
+        ],
+        "tip": "Krka se visita desde Skradin en barco o en bus desde Šibenik, y el baño solo está permitido en la cascada de Skradinski buk. Ve temprano en verano, que se llena."
+      },
+      "Trogir": {
+        "text": "Trogir es una isla pequeña unida a tierra por un puente, con un casco antiguo veneciano de calles estrechas y la catedral de San Lorenzo, con el portal románico de Radovan, tallado en 1240. Es Patrimonio de la Humanidad.",
+        "see": [
+          "El portal de Radovan, en la catedral",
+          "La fortaleza de Kamerlengo",
+          "El paseo marítimo y la torre del reloj",
+          "La playa de Okrug, al otro lado"
+        ],
+        "tip": "Trogir se ve en medio día y está a 30 minutos de Split en bus. El aeropuerto de Split está a 5 kilómetros, así que es buena primera o última parada."
+      },
+      "Split": {
+        "text": "Split es el palacio del emperador Diocleciano convertido en ciudad: dentro de sus muros romanos del año 305 hay calles, tiendas y apartamentos, y el peristilo es la plaza central. El paseo marítimo, la Riva, es el salón de la ciudad.",
+        "see": [
+          "El palacio de Diocleciano y el peristilo",
+          "La catedral de San Duje, en el mausoleo",
+          "La colina de Marjan, con sus miradores",
+          "La Riva, al atardecer"
+        ],
+        "tip": "Split es el nudo de ferris a las islas: desde aquí salen los barcos a Hvar, Korčula y Vis. Compra los billetes de Jadrolinija con antelación en julio y agosto."
+      },
+      "Hvar": {
+        "text": "Hvar es la isla más soleada de Croacia, con el pueblo de Hvar al pie de una fortaleza veneciana, campos de lavanda en el interior y las islas Pakleni delante. Es la isla de las calas de agua turquesa y los barcos de vela.",
+        "see": [
+          "La fortaleza Španjola, sobre el pueblo",
+          "La plaza de San Esteban",
+          "Las islas Pakleni, en taxi boat",
+          "El pueblo de Stari Grad y su llanura"
+        ],
+        "tip": "El ferry rápido de Split a Hvar tarda una hora y el lento, dos. En agosto la isla se llena: reserva alojamiento con meses de antelación."
+      },
+      "Korčula": {
+        "text": "Korčula es una isla con un pueblo amurallado en forma de pez, con calles que se cruzan en ángulo recto para dejar pasar el viento y la luz. Se dice que aquí nació Marco Polo, y hay una casa que lo recuerda.",
+        "see": [
+          "El casco antiguo y la catedral de San Marcos",
+          "La casa de Marco Polo",
+          "La playa de Pupnatska Luka",
+          "La cata de vino grk, exclusivo de la isla"
+        ],
+        "tip": "Korčula está a dos horas y media de Hvar en ferry rápido y a dos de Dubrovnik en catamarán de temporada. El vino grk solo se cultiva aquí y en Lumbarda."
+      },
+      "Dubrovnik": {
+        "text": "Dubrovnik es la ciudad amurallada de la costa, con dos kilómetros de murallas sobre el Adriático, la calle Stradun de piedra pulida y los tejados naranjas. Fue una república independiente durante siglos y hoy es el destino más visitado del país.",
+        "see": [
+          "Las murallas, a primera hora",
+          "La calle Stradun y la fuente de Onofrio",
+          "El fuerte de San Lorenzo y el de Lovrijenac",
+          "El teleférico al monte Srđ"
+        ],
+        "tip": "Las murallas se suben a las ocho de la mañana: a las diez hay cola y calor. Los cruceros llegan a media mañana y se van a las cinco, así que la ciudad está más tranquila al atardecer."
+      }
+    },
+    "gettingAround": "Zadar-Šibenik, una hora y media en bus. Šibenik-Trogir, una hora en bus. Trogir-Split, 30 minutos en bus. Split-Hvar, una hora en ferry rápido. Hvar-Korčula, dos horas y media en ferry. Korčula-Dubrovnik, dos horas en catamarán de temporada o cuatro en bus por la península de Pelješac. Los ferris de Jadrolinija y los catamaranes de Krilo se reservan online.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con el mar a 22 o 24 grados y menos gente. Julio y agosto son los meses de los cruceros y de los precios altos. En invierno muchos ferris reducen frecuencias y algunos hoteles cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 8 días ves Zadar, Split, Hvar y Dubrovnik. Con 10 añades Šibenik, Krka y Trogir. Con 12 entran Korčula y una isla más."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses recorren la costa y los ferris unen las islas. En las islas el coche es útil, pero se puede alquilar allí."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Dubrovnik (DBV) y saliendo por Zadar (ZAD) o Split (SPU), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Zadar (ZAD), Split (SPU) o Dubrovnik (DBV). Ryanair y Wizz Air vuelan a los tres desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Dalmatia: from Zadar to Dubrovnik",
+    "metaTitle": "Dalmatia: from Zadar to Dubrovnik in 8 to 12 days · Lowfly",
+    "summary": "The Dalmatian coast by ferry and bus, from Zadar to Dubrovnik, with the Krka lakes, the islands of Hvar and Korčula and Diocletian's palace.",
+    "why": [
+      "The Dalmatian coast has six historic cities in 300 kilometres and all are linked by bus and ferry: Split with Diocletian's palace, Trogir with its cathedral, Šibenik with St James's and Dubrovnik with its walls.",
+      "The islands are the other half of the trip: Hvar with its lavender fields and Korčula with its walled town are reached by ferry and seen in a day each, without a car.",
+      "Krka national park is 15 minutes from Šibenik and is walked on wooden boardwalks over waterfalls, with swimming allowed in the lower part. It is the freshwater outing of the trip."
+    ],
+    "towns": {
+      "Zadar": {
+        "text": "Zadar is the oldest city in Dalmatia, with an old town on a peninsula, the sea organ that plays with the waves and the Greeting to the Sun, which lights up at sunset. Alfred Hitchcock said it had the best sunset in the world.",
+        "see": [
+          "The sea organ and the Greeting to the Sun",
+          "St Donatus's church, from the ninth century",
+          "The Roman forum",
+          "The morning market, in the centre"
+        ],
+        "tip": "The sea organ sounds best at sunset, when there is a swell. Zadar has the most central airport on the coast and is a good entry from the north."
+      },
+      "Šibenik (Krka)": {
+        "text": "Šibenik is the city of St James's cathedral, entirely of limestone and without mortar, a World Heritage Site, with 72 heads carved on the apse. Next door is Krka national park, with waterfalls and boardwalks.",
+        "see": [
+          "St James's cathedral",
+          "Krka national park and its waterfalls",
+          "St Michael's fortress",
+          "The Dolac quarter, with its stairs"
+        ],
+        "tip": "Krka is visited from Skradin by boat or by bus from Šibenik, and swimming is only allowed at the Skradinski buk waterfall. Go early in summer, it fills up."
+      },
+      "Trogir": {
+        "text": "Trogir is a small island joined to the mainland by a bridge, with a Venetian old town of narrow streets and St Lawrence's cathedral, with Radovan's Romanesque portal, carved in 1240. It is a World Heritage Site.",
+        "see": [
+          "Radovan's portal, in the cathedral",
+          "Kamerlengo fortress",
+          "The waterfront and the clock tower",
+          "Okrug beach, on the other side"
+        ],
+        "tip": "Trogir takes half a day and is 30 minutes from Split by bus. Split airport is 5 kilometres away, so it works as a first or last stop."
+      },
+      "Split": {
+        "text": "Split is Emperor Diocletian's palace turned into a city: inside its Roman walls of 305 there are streets, shops and flats, and the peristyle is the central square. The waterfront, the Riva, is the city's living room.",
+        "see": [
+          "Diocletian's palace and the peristyle",
+          "St Duje's cathedral, in the mausoleum",
+          "Marjan hill, with its viewpoints",
+          "The Riva, at sunset"
+        ],
+        "tip": "Split is the ferry hub for the islands: boats leave here for Hvar, Korčula and Vis. Book Jadrolinija tickets ahead in July and August."
+      },
+      "Hvar": {
+        "text": "Hvar is the sunniest island in Croatia, with the town of Hvar below a Venetian fortress, lavender fields inland and the Pakleni islands in front. It is the island of turquoise coves and sailing boats.",
+        "see": [
+          "Španjola fortress, above the town",
+          "St Stephen's square",
+          "The Pakleni islands, by water taxi",
+          "Stari Grad and its plain"
+        ],
+        "tip": "The fast ferry from Split to Hvar takes an hour and the slow one two. In August the island fills up: book accommodation months ahead."
+      },
+      "Korčula": {
+        "text": "Korčula is an island with a fish-shaped walled town, whose streets cross at right angles to let wind and light through. Marco Polo is said to have been born here, and a house commemorates it.",
+        "see": [
+          "The old town and St Mark's cathedral",
+          "Marco Polo's house",
+          "Pupnatska Luka beach",
+          "A tasting of grk wine, unique to the island"
+        ],
+        "tip": "Korčula is two and a half hours from Hvar by fast ferry and two from Dubrovnik by seasonal catamaran. Grk wine is grown only here and in Lumbarda."
+      },
+      "Dubrovnik": {
+        "text": "Dubrovnik is the walled city of the coast, with two kilometres of walls above the Adriatic, the polished stone Stradun and orange roofs. It was an independent republic for centuries and is now the most visited destination in the country.",
+        "see": [
+          "The walls, first thing",
+          "Stradun and Onofrio's fountain",
+          "St Lawrence's fort and Lovrijenac",
+          "The cable car to Mount Srđ"
+        ],
+        "tip": "The walls are climbed at eight in the morning: by ten there are queues and heat. Cruise ships arrive mid-morning and leave at five, so the city is calmer at sunset."
+      }
+    },
+    "gettingAround": "Zadar-Šibenik, ninety minutes by bus. Šibenik-Trogir, an hour by bus. Trogir-Split, 30 minutes by bus. Split-Hvar, an hour by fast ferry. Hvar-Korčula, two and a half hours by ferry. Korčula-Dubrovnik, two hours by seasonal catamaran or four by bus along the Pelješac peninsula. Jadrolinija ferries and Krilo catamarans are booked online.",
+    "bestTime": "May to June and September to October, with the sea at 22 to 24 degrees and fewer people. July and August are the months of cruise ships and high prices. In winter many ferries run less often and some hotels close.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "8 days gets you Zadar, Split, Hvar and Dubrovnik. 10 adds Šibenik, Krka and Trogir. 12 takes in Korčula and another island."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses run along the coast and ferries link the islands. On the islands a car helps, but you can hire one there."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Dubrovnik (DBV) and out of Zadar (ZAD) or Split (SPU) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Zadar (ZAD), Split (SPU) or Dubrovnik (DBV). Ryanair and Wizz Air fly to all three from several European cities."
+      }
+    ]
+  }
+}

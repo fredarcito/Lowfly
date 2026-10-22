@@ -1,0 +1,298 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "bohemia-y-moravia",
+    "en": "bohemia-moravia"
+  },
+  "photos": {
+    "Prague": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Christmas_Old_Town_Square_Prague_2007.jpg/960px-Christmas_Old_Town_Square_Prague_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_Old_Town_Square_Prague_2007.jpg",
+      "author": "Pazuzu",
+      "license": "CC BY 3.0"
+    },
+    "Kutná Hora": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Saint_Barbara_Kutna_Hora_2010_3.jpg/960px-Saint_Barbara_Kutna_Hora_2010_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Saint_Barbara_Kutna_Hora_2010_3.jpg",
+      "author": "Perituss",
+      "license": "CC0"
+    },
+    "Český Krumlov": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%C4%8Cesk%C3%BD_Krumlov_%28Krummau%29_-_panorama_-_old_city.JPG/960px-%C4%8Cesk%C3%BD_Krumlov_%28Krummau%29_-_panorama_-_old_city.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 466,
+      "page": "https://commons.wikimedia.org/wiki/File:%C4%8Cesk%C3%BD_Krumlov_(Krummau)_-_panorama_-_old_city.JPG",
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0"
+    },
+    "Telč": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Telc_03.JPG/960px-Telc_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 638,
+      "page": "https://commons.wikimedia.org/wiki/File:Telc_03.JPG",
+      "author": "Scotch Mist",
+      "license": "CC BY-SA 4.0"
+    },
+    "Brno": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%C5%A0pilberk_Brno_05012017_%28Foto_Hilarmont%29.jpg/960px-%C5%A0pilberk_Brno_05012017_%28Foto_Hilarmont%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 667,
+      "page": "https://commons.wikimedia.org/wiki/File:%C5%A0pilberk_Brno_05012017_(Foto_Hilarmont).jpg",
+      "author": "Hilarmont",
+      "license": "CC BY-SA 3.0 de"
+    },
+    "Olomouc": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Olomouc%2C_Horn%C3%AD_n%C3%A1m%C4%9Bst%C3%AD_%282017%29.jpg/960px-Olomouc%2C_Horn%C3%AD_n%C3%A1m%C4%9Bst%C3%AD_%282017%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 644,
+      "page": "https://commons.wikimedia.org/wiki/File:Olomouc,_Horn%C3%AD_n%C3%A1m%C4%9Bst%C3%AD_(2017).jpg",
+      "author": "Pudelek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Mikulov": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Overview_of_Mikulov_from_Svat%C3%BD_Kope%C4%8Dek_2020_02.jpg/960px-Overview_of_Mikulov_from_Svat%C3%BD_Kope%C4%8Dek_2020_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Overview_of_Mikulov_from_Svat%C3%BD_Kope%C4%8Dek_2020_02.jpg",
+      "author": "Tadeáš Bednarz",
+      "license": "CC BY-SA 4.0"
+    },
+    "Vienna": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Rathaus_Christkindlmarkt_%285273197597%29.jpg/960px-Rathaus_Christkindlmarkt_%285273197597%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Rathaus_Christkindlmarkt_(5273197597).jpg",
+      "author": "Max Pfandl from Vienna, Austria",
+      "license": "CC BY 2.0"
+    }
+  },
+  "es": {
+    "title": "Bohemia y Moravia",
+    "metaTitle": "Bohemia y Moravia, de 7 a 12 días · Lowfly",
+    "summary": "Praga, los pueblos patrimonio de Bohemia y Moravia y las bodegas de Mikulov, terminando en Viena a menos de dos horas.",
+    "why": [
+      "La República Checa tiene doce sitios Patrimonio de la Humanidad y en esta ruta se ven cinco: Praga, Kutná Hora, Český Krumlov, Telč y la columna de Olomouc. Todos están a dos o tres horas en tren o bus.",
+      "Mikulov es la capital del vino checo, con bodegas en cuevas bajo la ciudad y un castillo sobre una colina de caliza. Es la parada más relajada del viaje y la puerta a Viena.",
+      "Moravia es la mitad del país que casi nadie visita: Olomouc con su columna barroca y Brno con la villa Tugendhat de Mies van der Rohe, una obra maestra del movimiento moderno."
+    ],
+    "towns": {
+      "Prague": {
+        "text": "Praga abre el viaje con el castillo más grande del mundo, el puente de Carlos y la plaza de la Ciudad Vieja. Es la ciudad más visitada del país y la que más tiempo pide, aunque dos días bien usados dan para lo esencial.",
+        "see": [
+          "El puente de Carlos, antes de las ocho",
+          "El castillo y la catedral de San Vito",
+          "La plaza de la Ciudad Vieja y el reloj",
+          "El barrio judío de Josefov"
+        ],
+        "tip": "Praga se llena a partir de las diez: madruga para el puente y el castillo. Los trenes a Kutná Hora y a České Budějovice salen de la estación principal cada hora."
+      },
+      "Kutná Hora": {
+        "text": "Kutná Hora fue la ciudad de la plata del reino y su catedral de Santa Bárbara es la más original del gótico checo, con tejados con forma de tienda de campaña. Al lado está el osario de Sedlec, decorado con huesos de 40.000 personas.",
+        "see": [
+          "La catedral de Santa Bárbara",
+          "El osario de Sedlec",
+          "La casa de la moneda italiana",
+          "La iglesia de Santiago"
+        ],
+        "tip": "Kutná Hora se ve en un día desde Praga en tren (una hora). El osario de Sedlec está a 10 minutos a pie de la estación y se visita con entrada aparte."
+      },
+      "Český Krumlov": {
+        "text": "Český Krumlov es el pueblo renacentista de la Bohemia del Sur, metido en una curva del Moldava, con el castillo sobre la roca y el teatro barroco más antiguo de Europa. Es Patrimonio de la Humanidad y no tiene coches en el centro.",
+        "see": [
+          "El castillo y la torre",
+          "El teatro barroco del castillo",
+          "El puente de madera y el río",
+          "La cervecería Eggenberg"
+        ],
+        "tip": "De Praga a Český Krumlov hay tres horas en bus y se puede seguir a Telč en bus con cambio en Jindřichův Hradec. Llega por la tarde y duerme dentro del casco antiguo."
+      },
+      "Telč": {
+        "text": "Telč es una plaza renacentista rodeada de casas con arcadas y frontones de colores, tan pequeña que se ve en dos horas. Fue una de las primeras ciudades checas en ser Patrimonio de la Humanidad y tiene dos estanques alrededor.",
+        "see": [
+          "La plaza de Zachariáš y sus casas",
+          "El castillo de Telč",
+          "La iglesia del Espíritu Santo",
+          "Los estanques, rodeando la ciudad"
+        ],
+        "tip": "Telč está entre Praga y Viena y es la parada perfecta para romper el trayecto: el bus de Praga tarda dos horas y media. La plaza se ve mejor al atardecer, cuando se vacía."
+      },
+      "Brno": {
+        "text": "Brno es la segunda ciudad del país y la capital de Moravia, con la villa Tugendhat de Mies van der Rohe, la fortaleza de Špilberk y una vida universitaria animada. Es la base para Mikulov y Olomouc.",
+        "see": [
+          "La villa Tugendhat, con visita guiada",
+          "La fortaleza de Špilberk",
+          "La catedral de San Pedro y San Pablo",
+          "El barrio de la calle Veveří, con bares"
+        ],
+        "tip": "La villa Tugendhat se reserva con semanas de antelación y solo se entra con guía. Brno tiene pocos vuelos, pero el tren a Viena tarda dos horas y a Praga, dos y media."
+      },
+      "Olomouc": {
+        "text": "Olomouc es la ciudad barroca de Moravia, con la columna de la Santísima Trinidad de 35 metros en la plaza, la segunda más grande del país, y un reloj astronómico que en vez de santos tiene obreros. Es Patrimonio de la Humanidad.",
+        "see": [
+          "La columna de la Santísima Trinidad",
+          "El reloj astronómico",
+          "La catedral de San Wenceslao",
+          "Las fuentes barrocas de la plaza"
+        ],
+        "tip": "Olomouc se ve en un día desde Brno en tren (una hora). El reloj astronómico da el espectáculo cada hora y se ve desde la plaza, sin entrada."
+      },
+      "Mikulov": {
+        "text": "Mikulov es la capital del vino de Moravia, con un castillo barroco sobre una colina de caliza, una plaza en cuesta y bodegas en cuevas bajo la ciudad. Desde la colina de Svatý Kopeček se ve todo el paisaje de viñedos.",
+        "see": [
+          "El castillo de Mikulov y el barril de vino gigante",
+          "La colina de Svatý Kopeček, con su calvario",
+          "Una cata en las bodegas de la ciudad",
+          "El palacio de Lednice, a 20 minutos"
+        ],
+        "tip": "Mikulov está a 40 minutos de Brno en bus y a menos de dos horas de Viena. Las catas se reservan en las bodegas del centro y el vino blanco de la región es el mejor del país."
+      },
+      "Vienna": {
+        "text": "Viena cierra el viaje al otro lado de la frontera, con Schönbrunn, el Hofburg y los cafés históricos. Desde Mikulov hay menos de dos horas y el cambio de país no se nota: no hay frontera ni moneda distinta.",
+        "see": [
+          "Schönbrunn y sus jardines",
+          "El Hofburg y la catedral de San Esteban",
+          "El Belvedere y El beso de Klimt",
+          "Un concierto en el Musikverein"
+        ],
+        "tip": "Viena es la salida más cómoda del viaje, con más vuelos que Brno. Si vas en tren desde Mikulov, cambia en Břeclav, en la frontera."
+      }
+    },
+    "gettingAround": "Praga-Kutná Hora, una hora en tren. Praga-Český Krumlov, tres horas en bus. Český Krumlov-Telč, dos horas y media en bus con cambio. Telč-Brno, dos horas en bus. Brno-Olomouc, una hora en tren. Brno-Mikulov, 40 minutos en bus. Mikulov-Viena, menos de dos horas en tren con cambio en Břeclav.",
+    "bestTime": "De mayo a septiembre, con días largos y temperaturas de 18 a 26 grados. Junio y septiembre son los mejores: en julio y agosto Praga y Český Krumlov se llenan. En diciembre los mercadillos de Praga y Brno son de los mejores de Europa.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 7 días ves Praga, Kutná Hora, Český Krumlov y Brno. Con 9 añades Telč y Olomouc. Con 12 entran Mikulov y Viena."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses y trenes unen todos los pueblos y ciudades. El coche solo compensa para las bodegas de los alrededores de Mikulov."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Viena (VIE) y saliendo por Praga (PRG), o al revés, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Praga (PRG), Brno (BRQ) o Viena (VIE). Ryanair y Wizz Air vuelan a Praga y Viena desde varias ciudades europeas; Brno tiene pocos vuelos."
+      }
+    ]
+  },
+  "en": {
+    "title": "Bohemia and Moravia",
+    "metaTitle": "Bohemia and Moravia in 7 to 12 days · Lowfly",
+    "summary": "Prague, the heritage towns of Bohemia and Moravia and the wine cellars of Mikulov, ending in Vienna less than two hours away.",
+    "why": [
+      "The Czech Republic has twelve World Heritage Sites and this route covers five: Prague, Kutná Hora, Český Krumlov, Telč and the Olomouc column. All are two or three hours apart by train or bus.",
+      "Mikulov is the capital of Czech wine, with cellars in caves under the town and a castle on a limestone hill. It is the most relaxed stop on the trip and the gateway to Vienna.",
+      "Moravia is the half of the country hardly anyone visits: Olomouc with its baroque column and Brno with Mies van der Rohe's Villa Tugendhat, a masterpiece of modernism."
+    ],
+    "towns": {
+      "Prague": {
+        "text": "Prague opens the trip with the largest castle in the world, Charles Bridge and Old Town Square. It is the most visited city in the country and the one that asks for the most time, though two well-used days cover the essentials.",
+        "see": [
+          "Charles Bridge, before eight",
+          "The castle and St Vitus cathedral",
+          "Old Town Square and the clock",
+          "The Josefov Jewish quarter"
+        ],
+        "tip": "Prague fills up from ten: get up early for the bridge and the castle. Trains to Kutná Hora and České Budějovice leave the main station hourly."
+      },
+      "Kutná Hora": {
+        "text": "Kutná Hora was the silver town of the kingdom and its St Barbara's cathedral is the most original in Czech Gothic, with tent-shaped roofs. Next door is the Sedlec ossuary, decorated with the bones of 40,000 people.",
+        "see": [
+          "St Barbara's cathedral",
+          "The Sedlec ossuary",
+          "The Italian Court, the mint",
+          "St James's church"
+        ],
+        "tip": "Kutná Hora is a day trip from Prague by train (an hour). The Sedlec ossuary is ten minutes on foot from the station and has a separate ticket."
+      },
+      "Český Krumlov": {
+        "text": "Český Krumlov is the Renaissance town of South Bohemia, tucked into a bend of the Vltava, with the castle on the rock and the oldest baroque theatre in Europe. It is a World Heritage Site and the centre is car-free.",
+        "see": [
+          "The castle and tower",
+          "The castle's baroque theatre",
+          "The wooden bridge and the river",
+          "The Eggenberg brewery"
+        ],
+        "tip": "Prague to Český Krumlov is three hours by bus, and you can carry on to Telč by bus with a change at Jindřichův Hradec. Arrive in the afternoon and sleep inside the old town."
+      },
+      "Telč": {
+        "text": "Telč is a Renaissance square ringed by arcaded houses with colourful gables, so small it takes two hours. It was one of the first Czech towns to become a World Heritage Site and has two ponds around it.",
+        "see": [
+          "Zachariáš square and its houses",
+          "Telč castle",
+          "The Holy Spirit church",
+          "The ponds, around the town"
+        ],
+        "tip": "Telč sits between Prague and Vienna and is the perfect stop to break the journey: the bus from Prague takes two and a half hours. The square is best at dusk, when it empties."
+      },
+      "Brno": {
+        "text": "Brno is the country's second city and the capital of Moravia, with Mies van der Rohe's Villa Tugendhat, Špilberk fortress and a lively university life. It is the base for Mikulov and Olomouc.",
+        "see": [
+          "Villa Tugendhat, with a guided tour",
+          "Špilberk fortress",
+          "The cathedral of St Peter and St Paul",
+          "The Veveří street quarter, with its bars"
+        ],
+        "tip": "Villa Tugendhat is booked weeks ahead and only entered with a guide. Brno has few flights, but the train to Vienna takes two hours and to Prague two and a half."
+      },
+      "Olomouc": {
+        "text": "Olomouc is the baroque city of Moravia, with the 35-metre Holy Trinity column on its square, the second largest in the country, and an astronomical clock that shows workers instead of saints. It is a World Heritage Site.",
+        "see": [
+          "The Holy Trinity column",
+          "The astronomical clock",
+          "St Wenceslas cathedral",
+          "The baroque fountains on the square"
+        ],
+        "tip": "Olomouc is a day trip from Brno by train (an hour). The astronomical clock performs every hour and is seen from the square, free."
+      },
+      "Mikulov": {
+        "text": "Mikulov is the capital of Moravian wine, with a baroque castle on a limestone hill, a square on a slope and cellars in caves under the town. From Svatý Kopeček hill you see the whole vineyard landscape.",
+        "see": [
+          "Mikulov castle and the giant wine barrel",
+          "Svatý Kopeček hill, with its calvary",
+          "A tasting in the town cellars",
+          "Lednice palace, 20 minutes away"
+        ],
+        "tip": "Mikulov is 40 minutes from Brno by bus and under two hours from Vienna. Tastings are booked at the cellars in the centre and the region's white wine is the best in the country."
+      },
+      "Vienna": {
+        "text": "Vienna closes the trip across the border, with Schönbrunn, the Hofburg and the historic cafés. From Mikulov it is under two hours and the change of country is invisible: no border, no different currency.",
+        "see": [
+          "Schönbrunn and its gardens",
+          "The Hofburg and St Stephen's cathedral",
+          "The Belvedere and Klimt's The Kiss",
+          "A concert at the Musikverein"
+        ],
+        "tip": "Vienna is the easiest way out of the trip, with more flights than Brno. By train from Mikulov, change at Břeclav, on the border."
+      }
+    },
+    "gettingAround": "Prague-Kutná Hora, an hour by train. Prague-Český Krumlov, three hours by bus. Český Krumlov-Telč, two and a half hours by bus with a change. Telč-Brno, two hours by bus. Brno-Olomouc, an hour by train. Brno-Mikulov, 40 minutes by bus. Mikulov-Vienna, under two hours by train with a change at Břeclav.",
+    "bestTime": "May to September, with long days and temperatures of 18 to 26 degrees. June and September are best: in July and August Prague and Český Krumlov fill up. In December the markets in Prague and Brno are among the best in Europe.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "7 days gets you Prague, Kutná Hora, Český Krumlov and Brno. 9 adds Telč and Olomouc. 12 takes in Mikulov and Vienna."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses and trains link every town and city. A car only pays off for the wineries around Mikulov."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Vienna (VIE) and out of Prague (PRG), or the reverse, is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Prague (PRG), Brno (BRQ) or Vienna (VIE). Ryanair and Wizz Air fly to Prague and Vienna from several European cities; Brno has few flights."
+      }
+    ]
+  }
+}

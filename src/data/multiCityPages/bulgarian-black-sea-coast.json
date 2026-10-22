@@ -1,0 +1,186 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "costa-bulgara-del-mar-negro",
+    "en": "bulgarian-black-sea-coast"
+  },
+  "photos": {
+    "Varna": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Varna_Cathedral_-_2.jpg/960px-Varna_Cathedral_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 839,
+      "page": "https://commons.wikimedia.org/wiki/File:Varna_Cathedral_-_2.jpg",
+      "author": "MrPanyGoff",
+      "license": "CC BY-SA 3.0"
+    },
+    "Nesebar": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Nessebar-old_town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Nessebar-old_town.jpg",
+      "author": "Hristina Bumbarova",
+      "license": "CC BY-SA 4.0"
+    },
+    "Burgas": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Burgas%2C_Bulgaria_Dez_2011_%2814%29.jpg/960px-Burgas%2C_Bulgaria_Dez_2011_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Burgas,_Bulgaria_Dez_2011_(14).jpg",
+      "author": "Vammpi",
+      "license": "Public domain"
+    },
+    "Sozopol": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Old_town_Sozopol.jpg/960px-Old_town_Sozopol.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 644,
+      "page": "https://commons.wikimedia.org/wiki/File:Old_town_Sozopol.jpg",
+      "author": "MrPanyGoff",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Costa búlgara del mar Negro",
+    "metaTitle": "Costa búlgara del mar Negro, de 5 a 7 días · Lowfly",
+    "summary": "Playas largas, pueblos de piedra y madera como Nesebar y Sozopol y un verano barato junto al mar Negro, de Varna a Burgas.",
+    "why": [
+      "La costa búlgara tiene 378 kilómetros de playa y precios de hace diez años: un día de tumbona y sombrilla cuesta menos que una entrada de cine en España, y comer pescado en Sozopol sigue siendo barato.",
+      "Nesebar y Sozopol son dos penínsulas medievales con casas de piedra y madera y ruinas de iglesias bizantinas, y las dos son Patrimonio de la Humanidad o candidatas a serlo. No se parecen a ningún otro pueblo de playa de Europa.",
+      "Es la ruta de verano más sencilla del este: los buses de la costa unen todos los pueblos cada media hora y los aeropuertos de Varna y Burgas tienen vuelos directos de bajo coste desde media Europa."
+    ],
+    "towns": {
+      "Varna": {
+        "text": "Varna es la ciudad grande de la costa norte, con el jardín marino más largo del país, la catedral de la Dormición y las termas romanas. Al norte, el palacio de Balchik, con su jardín botánico sobre el acantilado, es la excursión clásica.",
+        "see": [
+          "El jardín marino y la playa de la ciudad",
+          "La catedral de la Dormición",
+          "El palacio y el jardín botánico de Balchik",
+          "El yacimiento calcolítico, con el oro más antiguo del mundo"
+        ],
+        "tip": "El museo arqueológico guarda el tesoro de oro de Varna, de hace 6.500 años: es el oro trabajado más antiguo que se conoce y casi nadie lo visita."
+      },
+      "Nesebar": {
+        "text": "Nesebar es la península de las iglesias: once templos medievales en un espacio de 400 metros, con casas de piedra y madera del siglo XIX que se asoman al mar. El istmo lo une a tierra y al otro lado está Sunny Beach, la playa más grande del país.",
+        "see": [
+          "La iglesia de San Esteban, con frescos del siglo XVI",
+          "La iglesia de Cristo Pantocrátor",
+          "El paseo del istmo, al atardecer",
+          "Sunny Beach, si quieres arena y chiringuitos"
+        ],
+        "tip": "Duerme en Nesebar y no en Sunny Beach: por la noche la península se queda tranquila y en diez minutos estás en la playa. Los autocares llegan a media mañana y se van a media tarde."
+      },
+      "Burgas": {
+        "text": "Burgas es la capital del sur de la costa, con un paseo marítimo de varios kilómetros, el parque del mar y un centro peatonal animado. Es la base para Nesebar y Sozopol y el aeropuerto más usado en verano.",
+        "see": [
+          "El paseo marítimo y el parque del mar",
+          "El centro peatonal y la plaza Troikata",
+          "El lago de Burgas, con flamencos",
+          "El museo arqueológico, con piezas tracias"
+        ],
+        "tip": "El festival de música de Burgas es en agosto y llena la ciudad: si no vas por él, reserva con tiempo o elige otra semana. El bus a Sozopol sale cada 40 minutos."
+      },
+      "Sozopol": {
+        "text": "Sozopol es la península del sur, más pequeña y más tranquila que Nesebar, con casas de madera oscura sobre el agua y playas de arena fina a los dos lados. Fue colonia griega con el nombre de Apolonia y conserva restos de muralla en el mar.",
+        "see": [
+          "El casco antiguo y la iglesia de los Santos Cirilo y Metodio",
+          "La playa de Harmani, al norte",
+          "La isla de San Iván, en barco",
+          "El festival de arte Apolonia, en septiembre"
+        ],
+        "tip": "Sozopol es más barato y más tranquilo que Nesebar, y la playa de Harmani es la mejor para familias. El pescado del puerto se asa en los restaurantes del paseo."
+      }
+    },
+    "gettingAround": "Varna-Nesebar, dos horas en bus; Nesebar-Burgas, 45 minutos; Burgas-Sozopol, 40 minutos. Los buses de la costa salen cada media hora o cada hora según el tramo, y en verano hay más frecuencias. Desde Varna, bus al palacio de Balchik en 40 minutos. Los aeropuertos de Varna y Burgas están a 10 minutos de sus centros.",
+    "bestTime": "De junio a septiembre. Julio y agosto son los meses de playa, con agua a 24 grados y mucha gente en Sunny Beach. Junio y septiembre son más tranquilos y baratos, y el agua sigue estando bien.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Varna, Nesebar y Burgas. Con 7 añades Sozopol y Balchik."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses de la costa unen todos los pueblos y son baratos. El coche solo compensa para playas apartadas."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Burgas (BOJ) y saliendo por Varna (VAR), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Varna (VAR) o Burgas (BOJ). Ryanair y Wizz Air vuelan a los dos en temporada, con más frecuencias en verano."
+      }
+    ]
+  },
+  "en": {
+    "title": "The Bulgarian Black Sea coast",
+    "metaTitle": "The Bulgarian Black Sea coast in 5 to 7 days · Lowfly",
+    "summary": "Long beaches, stone-and-timber towns like Nesebar and Sozopol and a cheap summer by the Black Sea, from Varna to Burgas.",
+    "why": [
+      "The Bulgarian coast has 378 kilometres of beach at prices from ten years ago: a day of sunbed and umbrella costs less than a cinema ticket in Spain, and fish in Sozopol is still cheap.",
+      "Nesebar and Sozopol are two medieval peninsulas with stone and timber houses and the ruins of Byzantine churches, and both are World Heritage Sites or candidates. They look like no other beach town in Europe.",
+      "It is the easiest summer route in the east: coastal buses link every town every half hour and the airports at Varna and Burgas have direct low-cost flights from much of Europe."
+    ],
+    "towns": {
+      "Varna": {
+        "text": "Varna is the big city of the northern coast, with the longest sea garden in the country, the Dormition cathedral and the Roman baths. To the north, Balchik palace, with its botanical garden on the cliff, is the classic day trip.",
+        "see": [
+          "The sea garden and the city beach",
+          "The Dormition cathedral",
+          "Balchik palace and botanical garden",
+          "The Chalcolithic site, with the oldest gold in the world"
+        ],
+        "tip": "The archaeological museum holds the Varna gold treasure, 6,500 years old: it is the oldest worked gold known and almost nobody visits it."
+      },
+      "Nesebar": {
+        "text": "Nesebar is the peninsula of churches: eleven medieval temples in 400 metres, with nineteenth-century stone and timber houses looking out to sea. The isthmus joins it to the mainland and on the other side is Sunny Beach, the country's biggest beach.",
+        "see": [
+          "St Stephen's church, with sixteenth-century frescoes",
+          "Christ Pantocrator church",
+          "The walk along the isthmus, at sunset",
+          "Sunny Beach, if you want sand and beach bars"
+        ],
+        "tip": "Sleep in Nesebar, not Sunny Beach: at night the peninsula goes quiet and the beach is ten minutes away. Coaches arrive mid-morning and leave mid-afternoon."
+      },
+      "Burgas": {
+        "text": "Burgas is the capital of the southern coast, with a seafront promenade several kilometres long, the sea park and a lively pedestrian centre. It is the base for Nesebar and Sozopol and the most used airport in summer.",
+        "see": [
+          "The seafront promenade and the sea park",
+          "The pedestrian centre and Troikata square",
+          "Lake Burgas, with flamingos",
+          "The archaeological museum, with Thracian pieces"
+        ],
+        "tip": "The Burgas music festival is in August and fills the city: if you are not going for it, book early or pick another week. The bus to Sozopol leaves every 40 minutes."
+      },
+      "Sozopol": {
+        "text": "Sozopol is the southern peninsula, smaller and calmer than Nesebar, with dark timber houses over the water and fine-sand beaches on both sides. It was a Greek colony called Apollonia and keeps wall remains in the sea.",
+        "see": [
+          "The old town and the church of Saints Cyril and Methodius",
+          "Harmani beach, to the north",
+          "St Ivan island, by boat",
+          "The Apollonia art festival, in September"
+        ],
+        "tip": "Sozopol is cheaper and calmer than Nesebar, and Harmani beach is the best for families. Fish from the harbour is grilled in the restaurants along the promenade."
+      }
+    },
+    "gettingAround": "Varna-Nesebar, two hours by bus; Nesebar-Burgas, 45 minutes; Burgas-Sozopol, 40 minutes. Coastal buses run every half hour or hourly depending on the leg, with more in summer. From Varna, a bus to Balchik palace in 40 minutes. Varna and Burgas airports are ten minutes from their centres.",
+    "bestTime": "June to September. July and August are the beach months, with water at 24 degrees and plenty of people at Sunny Beach. June and September are calmer and cheaper, and the water is still fine.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Varna, Nesebar and Burgas. 7 adds Sozopol and Balchik."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: coastal buses link every town and are cheap. A car only pays off for out-of-the-way beaches."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Burgas (BOJ) and out of Varna (VAR) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Varna (VAR) or Burgas (BOJ). Ryanair and Wizz Air fly to both in season, with more flights in summer."
+      }
+    ]
+  }
+}

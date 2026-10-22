@@ -1,0 +1,158 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "moldavia",
+    "en": "moldova"
+  },
+  "photos": {
+    "Iași": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/RO_IS_Iasi%2C_Palace_of_Culture_2.jpg/960px-RO_IS_Iasi%2C_Palace_of_Culture_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 710,
+      "page": "https://commons.wikimedia.org/wiki/File:RO_IS_Iasi,_Palace_of_Culture_2.jpg",
+      "author": "Argenna",
+      "license": "CC BY 3.0"
+    },
+    "Chișinău": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ayuntamiento%2C_Chisin%C3%A1u%2C_Moldavia%2C_2023-11-03%2C_DD_21.jpg/960px-Ayuntamiento%2C_Chisin%C3%A1u%2C_Moldavia%2C_2023-11-03%2C_DD_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Ayuntamiento,_Chisin%C3%A1u,_Moldavia,_2023-11-03,_DD_21.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    "Suceava": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Suceava_fortress_7.jpg/960px-Suceava_fortress_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 540,
+      "page": "https://commons.wikimedia.org/wiki/File:Suceava_fortress_7.jpg",
+      "author": "Cristian Bortes from Cluj-Napoca, Romania",
+      "license": "CC BY 2.0"
+    }
+  },
+  "es": {
+    "title": "Moldavia: bodegas y monasterios",
+    "metaTitle": "Moldavia: bodegas y monasterios, de 5 a 7 días · Lowfly",
+    "summary": "Bodegas con kilómetros de galerías subterráneas, el monasterio rupestre de Orheiul Vechi y uno de los países menos visitados de Europa.",
+    "why": [
+      "Mileștii Mici tiene 200 kilómetros de galerías subterráneas llenas de botellas y figura en el libro Guinness como la mayor bodega del mundo. Se recorre en coche por dentro, entre barricas y estanterías.",
+      "Moldavia recibe menos turistas al año que un solo pueblo de la Toscana. Eso significa precios bajísimos, restaurantes sin carta en inglés y una hospitalidad que no está acostumbrada a los visitantes.",
+      "Orheiul Vechi es un monasterio excavado en un acantilado de caliza sobre el río Răut, con vistas al valle y a un pueblo que apenas ha cambiado. Se ve en medio día desde Chișinău."
+    ],
+    "towns": {
+      "Iași": {
+        "text": "Iași es la última ciudad grande de Rumanía antes de la frontera y la entrada natural a Moldavia: el Palacio de la Cultura, la iglesia de los Tres Jerarcas y una vida universitaria que llena las terrazas. Desde aquí sale el bus a Chișinău.",
+        "see": [
+          "El Palacio de la Cultura",
+          "La iglesia de los Tres Jerarcas",
+          "El teatro nacional y la plaza de la Unión",
+          "El jardín botánico"
+        ],
+        "tip": "El bus a Chișinău sale varias veces al día y tarda unas cuatro horas y media, con control de frontera en el camino. Lleva el pasaporte a mano y no lo dejes en la maleta."
+      },
+      "Chișinău": {
+        "text": "Chișinău es una capital tranquila de parques y bulevares, con la catedral de la Natividad, el arco del Triunfo y un centro que mezcla edificios soviéticos y casas del siglo XIX. Es la base para las bodegas y Orheiul Vechi.",
+        "see": [
+          "El parque de la Catedral y el arco del Triunfo",
+          "El mercado central, con productos de las aldeas",
+          "La bodega de Cricova, con sus túneles",
+          "Orheiul Vechi, a 45 minutos"
+        ],
+        "tip": "Las visitas a Cricova y Mileștii Mici se reservan con antelación y se hacen con guía; Cricova está a 20 minutos del centro. Lleva chaqueta: dentro de las galerías hace 12 grados todo el año."
+      },
+      "Suceava": {
+        "text": "Suceava es la vuelta a Rumanía por el norte, con la fortaleza de Ștefan cel Mare en lo alto y los monasterios pintados de Bucovina a media hora. Cierra el viaje con la parte más monumental de la región.",
+        "see": [
+          "La fortaleza de Suceava",
+          "El monasterio de Dragomirna",
+          "El monasterio de Voroneț, a 40 minutos",
+          "El museo de etnografía"
+        ],
+        "tip": "De Chișinău a Suceava hay bus con cambio en Iași o directo según la compañía, en unas cinco horas. Si vuelas desde Suceava (SCV), el aeropuerto está a 15 minutos del centro."
+      }
+    },
+    "gettingAround": "Iași-Chișinău, cuatro horas y media en bus, con control de frontera. Chișinău-Orheiul Vechi, 45 minutos en bus o taxi. Chișinău-Cricova, 20 minutos. Chișinău-Mileștii Mici, 30 minutos. Chișinău-Suceava, unas cinco horas en bus con cambio en Iași. Hay que llevar pasaporte o DNI para cruzar entre Rumanía y Moldavia.",
+    "bestTime": "De mayo a septiembre, con días largos y temperaturas de 20 a 28 grados. Septiembre es el mes de la vendimia y las bodegas están en plena actividad. En invierno hace frío y las carreteras del norte pueden estar mal.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Iași y Chișinău con las bodegas. Con 7 añades Orheiul Vechi y Suceava."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: desde Chișinău se llega a las bodegas y a Orheiul Vechi en taxi o excursión. El coche solo compensa si quieres recorrer aldeas."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Chișinău (KIV) y saliendo por Iași (IAS) o Suceava (SCV), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Chișinău (KIV), Iași (IAS) o Suceava (SCV). Wizz Air y Ryanair vuelan a Chișinău e Iași desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Moldova: wineries and monasteries",
+    "metaTitle": "Moldova: wineries and monasteries in 5 to 7 days · Lowfly",
+    "summary": "Wineries with miles of underground galleries, the cave monastery of Orheiul Vechi and one of the least visited countries in Europe.",
+    "why": [
+      "Mileștii Mici has 200 kilometres of underground galleries full of bottles and is in the Guinness Book as the largest wine cellar in the world. You drive through it, between barrels and racks.",
+      "Moldova gets fewer tourists a year than a single Tuscan village. That means very low prices, restaurants with no English menu and a hospitality unused to visitors.",
+      "Orheiul Vechi is a monastery cut into a limestone cliff above the Răut river, with views over the valley and a village that has barely changed. It takes half a day from Chișinău."
+    ],
+    "towns": {
+      "Iași": {
+        "text": "Iași is the last big city in Romania before the border and the natural way into Moldova: the Palace of Culture, the Three Hierarchs church and a university life that fills the terraces. The bus to Chișinău leaves from here.",
+        "see": [
+          "The Palace of Culture",
+          "The Three Hierarchs church",
+          "The national theatre and Union Square",
+          "The botanical garden"
+        ],
+        "tip": "The bus to Chișinău runs several times a day and takes about four and a half hours, with a border check on the way. Keep your passport to hand and not in your luggage."
+      },
+      "Chișinău": {
+        "text": "Chișinău is a quiet capital of parks and boulevards, with the Nativity cathedral, the Triumphal Arch and a centre mixing Soviet blocks and nineteenth-century houses. It is the base for the wineries and Orheiul Vechi.",
+        "see": [
+          "The Cathedral park and the Triumphal Arch",
+          "The central market, with produce from the villages",
+          "The Cricova winery, with its tunnels",
+          "Orheiul Vechi, 45 minutes away"
+        ],
+        "tip": "Visits to Cricova and Mileștii Mici are booked ahead and guided; Cricova is 20 minutes from the centre. Bring a jacket: inside the galleries it is 12 degrees all year."
+      },
+      "Suceava": {
+        "text": "Suceava is the way back into Romania by the north, with Ștefan cel Mare's fortress on the hill and the painted monasteries of Bucovina half an hour away. It closes the trip with the most monumental part of the region.",
+        "see": [
+          "Suceava fortress",
+          "Dragomirna monastery",
+          "Voroneț monastery, 40 minutes away",
+          "The ethnography museum"
+        ],
+        "tip": "From Chișinău to Suceava there are buses with a change at Iași, or direct depending on the company, in about five hours. If you fly from Suceava (SCV), the airport is 15 minutes from the centre."
+      }
+    },
+    "gettingAround": "Iași-Chișinău, four and a half hours by bus, with a border check. Chișinău-Orheiul Vechi, 45 minutes by bus or taxi. Chișinău-Cricova, 20 minutes. Chișinău-Mileștii Mici, 30 minutes. Chișinău-Suceava, about five hours by bus with a change at Iași. Bring a passport or ID card to cross between Romania and Moldova.",
+    "bestTime": "May to September, with long days and temperatures of 20 to 28 degrees. September is harvest month and the wineries are in full swing. In winter it is cold and the northern roads can be poor.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Iași and Chișinău with the wineries. 7 adds Orheiul Vechi and Suceava."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: from Chișinău the wineries and Orheiul Vechi are reached by taxi or tour. A car only pays off if you want to tour villages."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Chișinău (KIV) and out of Iași (IAS) or Suceava (SCV) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Chișinău (KIV), Iași (IAS) or Suceava (SCV). Wizz Air and Ryanair fly to Chișinău and Iași from several European cities."
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "centroeuropa",
+    "en": "central-europe"
+  },
+  "photos": {
+    "Vienna": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Rathaus_Christkindlmarkt_%285273197597%29.jpg/960px-Rathaus_Christkindlmarkt_%285273197597%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Rathaus_Christkindlmarkt_(5273197597).jpg",
+      "author": "Max Pfandl from Vienna, Austria",
+      "license": "CC BY 2.0"
+    },
+    "Prague": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Christmas_Old_Town_Square_Prague_2007.jpg/960px-Christmas_Old_Town_Square_Prague_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_Old_Town_Square_Prague_2007.jpg",
+      "author": "Pazuzu",
+      "license": "CC BY 3.0"
+    },
+    "Budapest": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Budapest_Christmas_Market_2012_%288227171699%29.jpg/960px-Budapest_Christmas_Market_2012_%288227171699%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Budapest_Christmas_Market_2012_(8227171699).jpg",
+      "author": "Top Budapest",
+      "license": "CC BY 2.0"
+    },
+    "Bratislava": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Bratislava_Christmas_market.jpg/960px-Bratislava_Christmas_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 579,
+      "page": "https://commons.wikimedia.org/wiki/File:Bratislava_Christmas_market.jpg",
+      "author": "Nelliette",
+      "license": "CC BY-SA 2.0"
+    },
+    "Český Krumlov": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%C4%8Cesk%C3%BD_Krumlov_%28Krummau%29_-_panorama_-_old_city.JPG/960px-%C4%8Cesk%C3%BD_Krumlov_%28Krummau%29_-_panorama_-_old_city.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 466,
+      "page": "https://commons.wikimedia.org/wiki/File:%C4%8Cesk%C3%BD_Krumlov_(Krummau)_-_panorama_-_old_city.JPG",
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Centroeuropa: Viena, Praga, Budapest y Bratislava",
+    "metaTitle": "Centroeuropa: Viena, Praga, Budapest y Bratislava, de 7 a 12 días · Lowfly",
+    "summary": "Cuatro capitales imperiales a dos horas en tren entre sí, con el pueblo medieval de Český Krumlov como parada de descanso.",
+    "why": [
+      "Viena, Bratislava, Budapest y Praga caben en un mismo viaje porque el tren las une en dos o tres horas por tramo, y los billetes de la ÖBB y la RegioJet se compran con meses de antelación por menos de 20 euros.",
+      "Son cuatro ciudades construidas por el mismo imperio y se nota: Viena es la corte, Budapest la mitad rebelde, Praga la capital de los Habsburgo en Bohemia y Bratislava la ciudad de la coronación, donde se coronaba a los reyes húngaros.",
+      "Český Krumlov rompe el ritmo de capitales: un pueblo de casas del siglo XVI metido en una curva del río Moldava, con un castillo sobre la roca y sin coches en el centro. Se ve en un día y descansa de las ciudades."
+    ],
+    "towns": {
+      "Vienna": {
+        "text": "Viena es la capital de los Habsburgo y se recorre por capas: el palacio de Schönbrunn con sus 1.441 habitaciones, el Hofburg en el centro, la catedral de San Esteban y los cafés con periódicos y tarta Sacher. Es la ciudad más ordenada del viaje.",
+        "see": [
+          "El palacio de Schönbrunn y sus jardines",
+          "La catedral de San Esteban y el centro histórico",
+          "El palacio de Belvedere, con Klimt",
+          "Un concierto en la Musikverein o en la Ópera"
+        ],
+        "tip": "La Vienna Pass solo compensa si vas a muchos museos; si no, con el abono de transporte de 24 o 72 horas basta. Los cafés históricos cobran más por la terraza que por la mesa de dentro."
+      },
+      "Prague": {
+        "text": "Praga es la ciudad del Moldava y del castillo más grande del mundo, con el puente de Carlos al amanecer y el barrio judío de Josefov. El centro es tan bonito como está de gente, y la clave es madrugar o salir de las rutas principales.",
+        "see": [
+          "El puente de Carlos, antes de las ocho",
+          "El castillo y la catedral de San Vito",
+          "La plaza de la Ciudad Vieja y el reloj astronómico",
+          "El barrio de Malá Strana y el muro de Lennon"
+        ],
+        "tip": "El reloj astronómico da la hora con figuritas cada hora en punto y se llena de gente diez minutos antes: se ve igual de bien desde un lado. Para comer barato, sal del centro hacia Vinohrady o Žižkov."
+      },
+      "Budapest": {
+        "text": "Budapest son dos ciudades separadas por el Danubio: Buda, con el castillo y el barrio del castillo, y Pest, con el Parlamento, la basílica de San Esteban y los baños Széchenyi. Los puentes las unen y el tranvía 2 recorre la orilla de Pest.",
+        "see": [
+          "El Parlamento, con visita guiada",
+          "Los baños termales Széchenyi o Gellért",
+          "El bastión de los Pescadores, al atardecer",
+          "El tranvía 2 por la orilla del Danubio"
+        ],
+        "tip": "Los baños son la razón para quedarse dos noches: lleva bañador y chanclas y calcula medio día. El Parlamento se reserva online y las visitas en español se agotan."
+      },
+      "Bratislava": {
+        "text": "Bratislava es la capital de Eslovaquia y la más pequeña de las cuatro, con un casco antiguo compacto, el castillo blanco sobre el Danubio y la catedral de San Martín, donde se coronaba a los reyes de Hungría. Se ve en un día.",
+        "see": [
+          "El casco antiguo y la plaza Hlavné námestie",
+          "El castillo de Bratislava",
+          "La catedral de San Martín",
+          "El puente UFO y el barrio de Petržalka"
+        ],
+        "tip": "Bratislava está a una hora de Viena en bus o tren y sirve como parada de un día, pero dormir aquí es más barato que en Viena. El casco antiguo es pequeño: en tres horas lo has visto."
+      },
+      "Český Krumlov": {
+        "text": "Český Krumlov es un pueblo de la Bohemia del Sur metido en una curva del Moldava, con el castillo en lo alto, un puente de madera y casas renacentistas pintadas con esgrafiados. Es Patrimonio de la Humanidad y no tiene coches en el centro.",
+        "see": [
+          "El castillo y la torre, con la vista del pueblo",
+          "El teatro barroco del castillo",
+          "El puente de madera sobre el río",
+          "La cervecería Eggenberg, en el pueblo"
+        ],
+        "tip": "De Český Krumlov a Viena hay lanzaderas directas de unas tres horas; en transporte público se cambia en České Budějovice o en Linz. Llega por la tarde y quédate a dormir: los autocares se van a las seis."
+      }
+    },
+    "gettingAround": "Viena-Bratislava, una hora en tren o bus. Bratislava-Budapest, dos horas y media en tren. Budapest-Praga, seis horas y media en tren o una hora en avión. Praga-Český Krumlov, tres horas en bus. Český Krumlov-Viena, tres horas en lanzadera directa. Los trenes se reservan con antelación en la ÖBB, la MÁV o la RegioJet.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con 20 a 25 grados y las ciudades sin la saturación de agosto. En diciembre los mercadillos de Navidad son el motivo del viaje, aunque hace frío y anochece a las cuatro. En julio y agosto Praga y Budapest se llenan.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 7 días ves Viena, Bratislava y Budapest. Con 9 añades Praga. Con 12 entran Český Krumlov y un día más en cada capital."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No, y es mejor no tenerlo: el tren une las cuatro capitales y en los centros históricos el coche es un problema."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Praga (PRG) y saliendo por Budapest (BUD) o Viena (VIE), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Viena (VIE), Praga (PRG), Budapest (BUD) o Bratislava (BTS). Ryanair y Wizz Air vuelan a los cuatro desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Central Europe: Vienna, Prague, Budapest and Bratislava",
+    "metaTitle": "Central Europe: Vienna, Prague, Budapest and Bratislava in 7 to 12 days · Lowfly",
+    "summary": "Four imperial capitals two hours apart by train, with the medieval town of Český Krumlov as a rest stop.",
+    "why": [
+      "Vienna, Bratislava, Budapest and Prague fit in one trip because the train links them in two or three hours a leg, and ÖBB and RegioJet tickets booked months ahead cost under 20 euros.",
+      "They are four cities built by the same empire and it shows: Vienna is the court, Budapest the rebellious half, Prague the Habsburg capital of Bohemia and Bratislava the coronation city, where Hungarian kings were crowned.",
+      "Český Krumlov breaks the rhythm of capitals: a sixteenth-century town tucked into a bend of the Vltava, with a castle on the rock and no cars in the centre. A day covers it and it rests you from the cities."
+    ],
+    "towns": {
+      "Vienna": {
+        "text": "Vienna is the Habsburg capital and you read it in layers: Schönbrunn palace with its 1,441 rooms, the Hofburg in the centre, St Stephen's cathedral and the cafés with newspapers and Sacher torte. It is the most orderly city on the trip.",
+        "see": [
+          "Schönbrunn palace and its gardens",
+          "St Stephen's cathedral and the historic centre",
+          "The Belvedere, with Klimt",
+          "A concert at the Musikverein or the Opera"
+        ],
+        "tip": "The Vienna Pass only pays off if you visit many museums; otherwise a 24 or 72-hour transport ticket is enough. The historic cafés charge more for the terrace than for a table inside."
+      },
+      "Prague": {
+        "text": "Prague is the city of the Vltava and the largest castle in the world, with Charles Bridge at dawn and the Josefov Jewish quarter. The centre is as beautiful as it is crowded, and the trick is to get up early or leave the main routes.",
+        "see": [
+          "Charles Bridge, before eight",
+          "The castle and St Vitus cathedral",
+          "Old Town Square and the astronomical clock",
+          "The Malá Strana quarter and the Lennon wall"
+        ],
+        "tip": "The astronomical clock performs every hour on the hour and fills up ten minutes before: it is just as good from the side. For cheap food, leave the centre for Vinohrady or Žižkov."
+      },
+      "Budapest": {
+        "text": "Budapest is two cities separated by the Danube: Buda, with the castle and the castle district, and Pest, with the Parliament, St Stephen's basilica and the Széchenyi baths. Bridges join them and tram 2 runs along the Pest bank.",
+        "see": [
+          "The Parliament, with a guided tour",
+          "The Széchenyi or Gellért thermal baths",
+          "Fisherman's Bastion, at sunset",
+          "Tram 2 along the Danube"
+        ],
+        "tip": "The baths are the reason to stay two nights: bring swimwear and flip-flops and allow half a day. The Parliament is booked online and Spanish tours sell out."
+      },
+      "Bratislava": {
+        "text": "Bratislava is the Slovak capital and the smallest of the four, with a compact old town, the white castle above the Danube and St Martin's cathedral, where the kings of Hungary were crowned. A day covers it.",
+        "see": [
+          "The old town and Hlavné námestie square",
+          "Bratislava castle",
+          "St Martin's cathedral",
+          "The UFO bridge and the Petržalka quarter"
+        ],
+        "tip": "Bratislava is an hour from Vienna by bus or train and works as a day trip, but sleeping here is cheaper than Vienna. The old town is small: three hours covers it."
+      },
+      "Český Krumlov": {
+        "text": "Český Krumlov is a South Bohemian town tucked into a bend of the Vltava, with the castle above, a wooden bridge and Renaissance houses painted with sgraffito. It is a World Heritage Site and the centre is car-free.",
+        "see": [
+          "The castle and tower, with a view of the town",
+          "The castle's baroque theatre",
+          "The wooden bridge over the river",
+          "The Eggenberg brewery, in town"
+        ],
+        "tip": "From Český Krumlov to Vienna there are direct shuttles of about three hours; on public transport you change at České Budějovice or Linz. Arrive in the afternoon and stay the night: the coaches leave at six."
+      }
+    },
+    "gettingAround": "Vienna-Bratislava, an hour by train or bus. Bratislava-Budapest, two and a half hours by train. Budapest-Prague, six and a half hours by train or an hour by plane. Prague-Český Krumlov, three hours by bus. Český Krumlov-Vienna, three hours by direct shuttle. Trains are booked ahead with ÖBB, MÁV or RegioJet.",
+    "bestTime": "May to June and September to October, at 20 to 25 degrees and without August's crush. In December the Christmas markets are the reason for the trip, though it is cold and dark by four. In July and August Prague and Budapest fill up.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "7 days gets you Vienna, Bratislava and Budapest. 9 adds Prague. 12 takes in Český Krumlov and an extra day in each capital."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No, and better not to have one: the train links all four capitals and cars are a problem in the historic centres."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Prague (PRG) and out of Budapest (BUD) or Vienna (VIE) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Vienna (VIE), Prague (PRG), Budapest (BUD) or Bratislava (BTS). Ryanair and Wizz Air fly to all four from several European cities."
+      }
+    ]
+  }
+}

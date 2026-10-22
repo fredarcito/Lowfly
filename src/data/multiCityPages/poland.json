@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "polonia",
+    "en": "poland"
+  },
+  "photos": {
+    "Gdańsk": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gdansk_jarmark_swiateczny_2.jpg/960px-Gdansk_jarmark_swiateczny_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Gdansk_jarmark_swiateczny_2.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    "Toruń": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Torun_panorama_zza_Wisly_2.jpg/960px-Torun_panorama_zza_Wisly_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Torun_panorama_zza_Wisly_2.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    "Poznań": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Poznan_10-2013_img15_Old_Market.jpg/960px-Poznan_10-2013_img15_Old_Market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Poznan_10-2013_img15_Old_Market.jpg",
+      "author": "A.Savin",
+      "license": "CC BY-SA 3.0"
+    },
+    "Warsaw": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Christmas_tree_in_Old_Town_Market_Square_in_Warsaw.jpg/960px-Christmas_tree_in_Old_Town_Market_Square_in_Warsaw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 1170,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_tree_in_Old_Town_Market_Square_in_Warsaw.jpg",
+      "author": "Guillaume Speurt from Vilnius, Lithuania",
+      "license": "CC BY-SA 2.0"
+    },
+    "Wrocław": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Mercado_de_Navidad%2C_Plaza_del_Mercado%2C_Breslavia%2C_Polonia%2C_2017-12-20%2C_DD_38-40_PAN.jpg/960px-Mercado_de_Navidad%2C_Plaza_del_Mercado%2C_Breslavia%2C_Polonia%2C_2017-12-20%2C_DD_38-40_PAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 557,
+      "page": "https://commons.wikimedia.org/wiki/File:Mercado_de_Navidad,_Plaza_del_Mercado,_Breslavia,_Polonia,_2017-12-20,_DD_38-40_PAN.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    "Kraków": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Krakow_Rynek_Glowny_noc_1.jpg/960px-Krakow_Rynek_Glowny_noc_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Krakow_Rynek_Glowny_noc_1.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Polonia: de Gdansk a Cracovia",
+    "metaTitle": "Polonia: de Gdansk a Cracovia, de 7 a 12 días · Lowfly",
+    "summary": "Las ciudades históricas del país de norte a sur en tren: Gdansk y el Báltico, Toruń y su casco medieval, Varsovia reconstruida y Cracovia al pie de los Cárpatos.",
+    "why": [
+      "Polonia tiene seis centros históricos reconstruidos con un rigor que asombra, y el tren los une con billetes de 10 a 25 euros. Es el viaje de ciudades antiguas más barato de Europa.",
+      "Gdansk es la puerta del Báltico, con casas de ladrillo de colores y el sindicato Solidaridad, y desde allí el castillo de Malbork, el más grande del mundo en ladrillo, está a media hora.",
+      "Cracovia cierra el viaje con la plaza medieval más grande de Europa, el barrio judío de Kazimierz y Auschwitz-Birkenau a una hora. Es la ciudad que más tiempo pide de todas."
+    ],
+    "towns": {
+      "Gdańsk": {
+        "text": "Gdansk es la ciudad hanseática del Báltico, con la calle Długi Targ llena de casas de ladrillo de colores y la grúa medieval sobre el río Motława. Aquí nació Solidaridad y aquí empezó la caída del comunismo en Europa.",
+        "see": [
+          "La calle Długi Targ y el ayuntamiento",
+          "La grúa medieval y el paseo del Motława",
+          "El Centro Europeo de Solidaridad",
+          "El castillo de Malbork, a 40 minutos"
+        ],
+        "tip": "El castillo de Malbork se ve en medio día y hay tren directo desde Gdansk en 40 minutos. Sopot, la playa de la región, está a 20 minutos en tren de cercanías."
+      },
+      "Toruń": {
+        "text": "Toruń es la ciudad natal de Copérnico y una de las pocas de Polonia que no fue destruida en la guerra: el casco antiguo es de ladrillo gótico, con la casa de Copérnico y la torre del ayuntamiento. También es la capital del pan de jengibre.",
+        "see": [
+          "La plaza del mercado y el ayuntamiento gótico",
+          "La casa de Copérnico",
+          "La catedral de San Juan, con la campana Tuba Dei",
+          "Las murallas y la puerta de la ciudad"
+        ],
+        "tip": "Toruń se ve en un día y el pan de jengibre se compra en el museo de la fábrica, que lo hace a mano. Desde aquí a Gdansk hay dos horas de tren y a Poznań, hora y media."
+      },
+      "Poznań": {
+        "text": "Poznań es la ciudad donde nació el Estado polaco en el siglo X, con la catedral en la isla de Ostrów Tumski y una plaza del mercado con cabritos de bronce que chocan la cabeza cada mediodía. Es una ciudad universitaria y animada.",
+        "see": [
+          "La plaza del mercado y los cabritos del ayuntamiento",
+          "La catedral de Ostrów Tumski",
+          "El barrio de Śródka, con sus murales",
+          "El lago Malta, con pista de esquí artificial"
+        ],
+        "tip": "Los cabritos salen del reloj del ayuntamiento a las doce y se puede ver desde la plaza. Poznań es la parada perfecta entre Varsovia y Berlín, y tiene trenes a las dos."
+      },
+      "Warsaw": {
+        "text": "Varsovia fue destruida al 85 % en 1944 y reconstruida ladrillo a ladrillo con las fotos y los cuadros que se conservaban: el casco antiguo es una copia exacta y es Patrimonio de la Humanidad. El barrio judío y el museo del Alzamiento cuentan el resto.",
+        "see": [
+          "El casco antiguo reconstruido y la plaza del Castillo",
+          "El museo del Alzamiento de Varsovia",
+          "El barrio de Praga, al otro lado del río",
+          "El parque Łazienki y el palacio sobre el agua"
+        ],
+        "tip": "El museo del Alzamiento es el mejor del país y se reserva con días de antelación. El tranvía y el metro son baratos y llegan a todo el centro."
+      },
+      "Wrocław": {
+        "text": "Wrocław es la ciudad de los cien puentes y de los enanos de bronce: hay más de 600 repartidos por las calles, y buscarlos es la mejor forma de recorrer el centro. La plaza del mercado es una de las más grandes de Polonia.",
+        "see": [
+          "La plaza del mercado y el ayuntamiento gótico",
+          "Los enanos de bronce, por todo el centro",
+          "La isla de la Catedral y el jardín botánico",
+          "El panorama de Racławice, un cuadro circular de 15 metros"
+        ],
+        "tip": "Wrocław tiene el aeropuerto mejor conectado del oeste y es la mejor entrada si vuelas con bajo coste. Desde aquí a Cracovia hay dos horas y media de tren."
+      },
+      "Kraków": {
+        "text": "Cracovia fue la capital de Polonia hasta 1596 y conserva la plaza medieval más grande de Europa, la basílica de Santa María con su retablo de madera y el castillo de Wawel sobre el Vístula. El barrio judío de Kazimierz está al lado.",
+        "see": [
+          "La plaza del mercado y la basílica de Santa María",
+          "El castillo de Wawel y la catedral",
+          "El barrio de Kazimierz y sus sinagogas",
+          "Auschwitz-Birkenau, a una hora"
+        ],
+        "tip": "Auschwitz-Birkenau se visita con reserva previa y guía, y la visita dura tres horas y media: ve por la mañana. La mina de sal de Wieliczka está a 20 minutos en tren de cercanías."
+      }
+    },
+    "gettingAround": "Gdansk-Toruń, dos horas en tren; Toruń-Poznań, hora y media; Poznań-Varsovia, dos horas y media; Varsovia-Wrocław, cuatro horas; Wrocław-Cracovia, dos horas y media. Los trenes de PKP Intercity son rápidos y baratos, y se reservan online. Desde Gdansk, tren a Malbork en 40 minutos.",
+    "bestTime": "De mayo a septiembre, con días largos y temperaturas de 18 a 26 grados. Junio y septiembre son los mejores: en julio y agosto Cracovia y Gdansk se llenan. En diciembre los mercadillos de Navidad de Cracovia y Wrocław son de los mejores de Europa.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 7 días ves Gdansk, Toruń, Varsovia y Cracovia. Con 9 añades Poznań. Con 12 entran Wrocław y Malbork."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren une todas las ciudades y es rápido y barato. El coche solo compensa para pueblos del norte."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Cracovia (KRK) y saliendo por Gdansk (GDN) o Varsovia (WAW), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Gdansk (GDN), Varsovia (WAW o WMI), Wrocław (WRO) o Cracovia (KRK). Ryanair y Wizz Air vuelan a todos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Poland: from Gdańsk to Kraków",
+    "metaTitle": "Poland: from Gdańsk to Kraków in 7 to 12 days · Lowfly",
+    "summary": "The country's historic cities from north to south by train: Gdańsk and the Baltic, Toruń and its medieval centre, rebuilt Warsaw and Kraków below the Carpathians.",
+    "why": [
+      "Poland has six historic centres rebuilt with astonishing rigour, and the train links them for 10 to 25 euros. It is the cheapest old-cities trip in Europe.",
+      "Gdańsk is the Baltic gateway, with colourful brick houses and the Solidarity union, and from there Malbork castle, the largest brick castle in the world, is half an hour away.",
+      "Kraków closes the trip with the largest medieval square in Europe, the Jewish quarter of Kazimierz and Auschwitz-Birkenau an hour away. It is the city that asks for the most time."
+    ],
+    "towns": {
+      "Gdańsk": {
+        "text": "Gdańsk is the Hanseatic city of the Baltic, with Długi Targ street full of colourful brick houses and the medieval crane over the Motława river. Solidarity was born here, and so did the fall of communism in Europe.",
+        "see": [
+          "Długi Targ street and the town hall",
+          "The medieval crane and the Motława waterfront",
+          "The European Solidarity Centre",
+          "Malbork castle, 40 minutes away"
+        ],
+        "tip": "Malbork castle takes half a day and there is a direct train from Gdańsk in 40 minutes. Sopot, the region's beach, is 20 minutes away on the suburban train."
+      },
+      "Toruń": {
+        "text": "Toruń is Copernicus's birthplace and one of the few Polish cities not destroyed in the war: the old town is Gothic brick, with Copernicus's house and the town hall tower. It is also the gingerbread capital.",
+        "see": [
+          "The market square and the Gothic town hall",
+          "Copernicus's house",
+          "St John's cathedral, with the Tuba Dei bell",
+          "The walls and the city gate"
+        ],
+        "tip": "Toruń takes a day and gingerbread is bought at the factory museum, which makes it by hand. From here to Gdańsk is two hours by train and to Poznań an hour and a half."
+      },
+      "Poznań": {
+        "text": "Poznań is where the Polish state was born in the tenth century, with the cathedral on Ostrów Tumski island and a market square with bronze goats that butt heads at noon. It is a lively university city.",
+        "see": [
+          "The market square and the town hall goats",
+          "The cathedral on Ostrów Tumski",
+          "The Śródka quarter, with its murals",
+          "Lake Malta, with its artificial ski slope"
+        ],
+        "tip": "The goats come out of the town hall clock at twelve and can be seen from the square. Poznań is the perfect stop between Warsaw and Berlin, with trains to both."
+      },
+      "Warsaw": {
+        "text": "Warsaw was 85% destroyed in 1944 and rebuilt brick by brick from the photos and paintings that survived: the old town is an exact copy and a World Heritage Site. The Jewish quarter and the Uprising museum tell the rest.",
+        "see": [
+          "The rebuilt old town and Castle Square",
+          "The Warsaw Uprising museum",
+          "The Praga quarter, across the river",
+          "Łazienki park and its palace on the water"
+        ],
+        "tip": "The Uprising museum is the best in the country and is booked days ahead. Trams and the metro are cheap and reach the whole centre."
+      },
+      "Wrocław": {
+        "text": "Wrocław is the city of a hundred bridges and the bronze dwarfs: there are more than 600 around the streets, and hunting for them is the best way to tour the centre. The market square is one of the largest in Poland.",
+        "see": [
+          "The market square and the Gothic town hall",
+          "The bronze dwarfs, all over the centre",
+          "Cathedral island and the botanical garden",
+          "The Racławice panorama, a circular painting 15 metres high"
+        ],
+        "tip": "Wrocław has the best-connected airport in the west and is the best entry point if you fly low-cost. From here to Kraków is two and a half hours by train."
+      },
+      "Kraków": {
+        "text": "Kraków was the capital of Poland until 1596 and keeps the largest medieval square in Europe, St Mary's basilica with its wooden altarpiece and Wawel castle above the Vistula. The Jewish quarter of Kazimierz is next door.",
+        "see": [
+          "The market square and St Mary's basilica",
+          "Wawel castle and cathedral",
+          "The Kazimierz quarter and its synagogues",
+          "Auschwitz-Birkenau, an hour away"
+        ],
+        "tip": "Auschwitz-Birkenau is visited with a prior booking and a guide, and the visit takes three and a half hours: go in the morning. The Wieliczka salt mine is 20 minutes away on the suburban train."
+      }
+    },
+    "gettingAround": "Gdańsk-Toruń, two hours by train; Toruń-Poznań, ninety minutes; Poznań-Warsaw, two and a half hours; Warsaw-Wrocław, four hours; Wrocław-Kraków, two and a half hours. PKP Intercity trains are fast and cheap and booked online. From Gdańsk, a train to Malbork in 40 minutes.",
+    "bestTime": "May to September, with long days and temperatures of 18 to 26 degrees. June and September are best: in July and August Kraków and Gdańsk fill up. In December the Christmas markets of Kraków and Wrocław are among the best in Europe.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "7 days gets you Gdańsk, Toruń, Warsaw and Kraków. 9 adds Poznań. 12 takes in Wrocław and Malbork."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train links every city and is fast and cheap. A car only pays off for villages in the north."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Kraków (KRK) and out of Gdańsk (GDN) or Warsaw (WAW) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Gdańsk (GDN), Warsaw (WAW or WMI), Wrocław (WRO) or Kraków (KRK). Ryanair and Wizz Air fly to all of them from several European cities."
+      }
+    ]
+  }
+}

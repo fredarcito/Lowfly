@@ -1,0 +1,270 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "paises-balticos",
+    "en": "baltics"
+  },
+  "photos": {
+    "Vilnius": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Vilnius_old_town_by_Augustas_Didzgalvis.jpg/960px-Vilnius_old_town_by_Augustas_Didzgalvis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Vilnius_old_town_by_Augustas_Didzgalvis.jpg",
+      "author": "BigHead",
+      "license": "CC BY-SA 4.0"
+    },
+    "Kaunas": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Kaunas_Old_Town_2012.jpg/960px-Kaunas_Old_Town_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Kaunas_Old_Town_2012.jpg",
+      "author": "Christine und Hagen Graf",
+      "license": "CC BY 2.0"
+    },
+    "Sigulda": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Sigulda%2C_2015_%2833%29.jpg/960px-Sigulda%2C_2015_%2833%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Sigulda,_2015_(33).jpg",
+      "author": "Draceane",
+      "license": "CC BY-SA 4.0"
+    },
+    "Riga": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Christmas_market%2C_Riga_20241209_-_06.jpg/960px-Christmas_market%2C_Riga_20241209_-_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 602,
+      "page": "https://commons.wikimedia.org/wiki/File:Christmas_market,_Riga_20241209_-_06.jpg",
+      "author": "AleWi",
+      "license": "CC BY-SA 4.0"
+    },
+    "Tartu": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg/960px-Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Tartu_asv2022-04_img31_View_from_Emaj%C3%B5e_Tower.jpg",
+      "author": "A.Savin",
+      "license": "FAL"
+    },
+    "Tallinn": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Tallinn_Christmas_market_2017.jpg/960px-Tallinn_Christmas_market_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Tallinn_Christmas_market_2017.jpg",
+      "author": "Araldica81",
+      "license": "CC BY-SA 4.0"
+    },
+    "Helsinki": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Helsinki_Senate_Square_and_Helsinki_Cathedral_in_May_2026.jpg/960px-Helsinki_Senate_Square_and_Helsinki_Cathedral_in_May_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Helsinki_Senate_Square_and_Helsinki_Cathedral_in_May_2026.jpg",
+      "author": "JIP",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Los Bálticos: Vilna, Riga y Tallin",
+    "metaTitle": "Los Bálticos: Vilna, Riga y Tallin, de 7 a 12 días · Lowfly",
+    "summary": "Las tres capitales bálticas en bus y tren, con las colinas de Sigulda, la universitaria Tartu y el ferry a Helsinki al final.",
+    "why": [
+      "Las tres capitales están a cuatro horas en bus entre sí y cada una tiene un casco antiguo distinto: Vilna barroco y de ladrillo, Riga con los edificios art nouveau más importantes de Europa y Tallin medieval con torres y murallas.",
+      "Es la ruta más barata del norte de Europa: cena con cerveza por 15 euros, hostales por 25 y buses de 10 a 20 euros entre capitales.",
+      "Al final, el ferry de Tallin a Helsinki cruza el golfo de Finlandia en dos horas y media, así que se puede añadir una capital nórdica al viaje sin volver a coger un avión."
+    ],
+    "towns": {
+      "Vilnius": {
+        "text": "Vilna es la capital de Lituania y la ciudad barroca del este: la plaza de la Catedral, la puerta de la Aurora con su virgen negra y el barrio de Užupis, que se declaró república independiente en 1997 y tiene su propia constitución en la pared.",
+        "see": [
+          "La plaza de la Catedral y el campanario",
+          "La puerta de la Aurora",
+          "El barrio de Užupis y su constitución",
+          "La torre de Gediminas, con la vista de la ciudad"
+        ],
+        "tip": "Vilna se ve en dos días y el casco antiguo es grande: calzado cómodo. El castillo de Trakai, en una isla del lago, está a 30 minutos en bus y es la excursión clásica."
+      },
+      "Kaunas": {
+        "text": "Kaunas fue la capital de Lituania entre las dos guerras y conserva el barrio modernista de la avenida Laisvės, con edificios de los años treinta que son Patrimonio de la Humanidad. El castillo gótico está en la confluencia de los ríos.",
+        "see": [
+          "La avenida Laisvės y la arquitectura modernista",
+          "El castillo de Kaunas",
+          "La basílica de la Asunción",
+          "El museo del IX Fuerte, en la antigua prisión soviética"
+        ],
+        "tip": "Kaunas está entre Vilna y Riga y es la parada natural: el bus Vilna-Kaunas tarda una hora y veinte. El museo del IX Fuerte es duro, pero es el mejor de los países bálticos sobre la ocupación."
+      },
+      "Sigulda": {
+        "text": "Sigulda es el pueblo de las colinas y los castillos a una hora de Riga, en el valle del río Gauja, con las ruinas del castillo medieval, el castillo nuevo y un teleférico que cruza el valle. En otoño los bosques se ponen rojos.",
+        "see": [
+          "Las ruinas del castillo de Sigulda",
+          "El teleférico sobre el valle del Gauja",
+          "La cueva de Gutmanis, la más grande del Báltico",
+          "El castillo de Turaida, a 20 minutos"
+        ],
+        "tip": "Sigulda se visita en el día desde Riga en tren (una hora) y es la mejor excursión de naturaleza del viaje. En octubre el follaje es espectacular y hay menos gente que en verano."
+      },
+      "Riga": {
+        "text": "Riga es la capital de Letonia y la ciudad art nouveau de Europa: hay más de 800 edificios modernistas en el barrio de Alberta iela, además del casco antiguo medieval con la iglesia de San Pedro y el mercado central en cinco naves de zeppelines.",
+        "see": [
+          "El barrio art nouveau de Alberta iela",
+          "La iglesia de San Pedro, con la torre",
+          "El mercado central, en los hangares de zeppelines",
+          "La casa de los Cabezas Negras"
+        ],
+        "tip": "El barrio art nouveau se ve mejor con un mapa de las fachadas principales: hay un museo dedicado en la calle Alberta 9. El mercado central es barato y se come de pie."
+      },
+      "Tartu": {
+        "text": "Tartu es la ciudad universitaria de Estonia, con la universidad fundada en 1632, el edificio principal con columnas y el barrio de madera de Supilinn. Es más tranquila que Tallin y tiene la mejor vida de cafés del país.",
+        "see": [
+          "El edificio principal de la universidad",
+          "La colina de Toome y las ruinas de la catedral",
+          "El barrio de Supilinn, de casas de madera",
+          "El museo nacional estonio"
+        ],
+        "tip": "Tartu está entre Riga y Tallin y el bus para en las dos: es la parada perfecta para romper el trayecto. El museo nacional está a las afueras y merece dos horas."
+      },
+      "Tallinn": {
+        "text": "Tallin es la capital de Estonia y la ciudad medieval mejor conservada del Báltico, con la plaza del Ayuntamiento, la torre de la iglesia de San Olaf y una muralla con 20 torres. El barrio de Kalamaja, de casas de madera, es la parte moderna.",
+        "see": [
+          "La plaza del Ayuntamiento y el ayuntamiento gótico",
+          "La iglesia de San Olaf, subiendo a la torre",
+          "La colina de Toompea y el parlamento",
+          "El barrio de Kalamaja y Telliskivi"
+        ],
+        "tip": "Tallin se ve en dos días y el casco antiguo es pequeño. El ferry a Helsinki sale varias veces al día y tarda dos horas y media: compra el billete con antelación en temporada."
+      },
+      "Helsinki": {
+        "text": "Helsinki cierra el viaje al otro lado del golfo, con la plaza del Senado y la catedral blanca, la iglesia de la Roca excavada en granito y el barrio de diseño de Punavuori. Es la ciudad más cara del viaje, pero se ve en un día.",
+        "see": [
+          "La plaza del Senado y la catedral",
+          "La iglesia de la Roca, en granito",
+          "La fortaleza de Suomenlinna, en ferry",
+          "El barrio de diseño de Punavuori"
+        ],
+        "tip": "Suomenlinna se visita en ferry público con el mismo abono de transporte de la ciudad y merece medio día. Helsinki es caro: el alojamiento conviene reservarlo con tiempo."
+      }
+    },
+    "gettingAround": "Vilna-Kaunas, hora y veinte en bus o tren. Kaunas-Riga, cuatro horas en bus. Riga-Sigulda, una hora en tren. Riga-Tartu, cuatro horas en bus. Tartu-Tallin, dos horas y media en bus. Tallin-Helsinki, dos horas y media en ferry. Los buses de Lux Express y Ecolines son cómodos y baratos, y se reservan online.",
+    "bestTime": "De mayo a septiembre, con días largos y temperaturas de 15 a 25 grados. Junio y septiembre son los mejores: en julio hay más gente y en invierno anochece a las tres y media. En diciembre Tallin y Riga tienen mercadillos de Navidad.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 7 días ves Vilna, Riga y Tallin. Con 9 añades Kaunas y Sigulda. Con 12 entran Tartu y Helsinki."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses unen las capitales y el tren llega a Sigulda. El coche solo compensa para recorrer la costa y los parques nacionales."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Helsinki y cruzando en ferry a Tallin, o entrando por Vilna (VNO) y saliendo por Tallin (TLL)."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Vilna (VNO), Riga (RIX) o Tallin (TLL). Ryanair y Wizz Air vuelan a los tres desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "The Baltics: Vilnius, Riga and Tallinn",
+    "metaTitle": "The Baltics: Vilnius, Riga and Tallinn in 7 to 12 days · Lowfly",
+    "summary": "The three Baltic capitals by bus and train, with the hills of Sigulda, university Tartu and the ferry to Helsinki at the end.",
+    "why": [
+      "The three capitals are four hours apart by bus and each has a different old town: Vilnius baroque and brick, Riga with the most important art nouveau buildings in Europe and Tallinn medieval with towers and walls.",
+      "It is the cheapest route in northern Europe: dinner with beer for 15 euros, hostels for 25 and buses of 10 to 20 euros between capitals.",
+      "At the end, the Tallinn-Helsinki ferry crosses the Gulf of Finland in two and a half hours, so you can add a Nordic capital to the trip without getting on another plane."
+    ],
+    "towns": {
+      "Vilnius": {
+        "text": "Vilnius is the capital of Lithuania and the baroque city of the east: Cathedral Square, the Gate of Dawn with its black madonna and the Užupis quarter, which declared itself an independent republic in 1997 and has its own constitution on a wall.",
+        "see": [
+          "Cathedral Square and the bell tower",
+          "The Gate of Dawn",
+          "The Užupis quarter and its constitution",
+          "Gediminas tower, with a view of the city"
+        ],
+        "tip": "Vilnius takes two days and the old town is large: wear comfortable shoes. Trakai castle, on a lake island, is 30 minutes away by bus and is the classic day trip."
+      },
+      "Kaunas": {
+        "text": "Kaunas was the capital of Lithuania between the wars and keeps the modernist quarter of Laisvės avenue, with 1930s buildings that are a World Heritage Site. The Gothic castle stands where the rivers meet.",
+        "see": [
+          "Laisvės avenue and the modernist architecture",
+          "Kaunas castle",
+          "The basilica of the Assumption",
+          "The Ninth Fort museum, in the former Soviet prison"
+        ],
+        "tip": "Kaunas sits between Vilnius and Riga and is the natural stop: the Vilnius-Kaunas bus takes an hour twenty. The Ninth Fort museum is hard, but it is the best in the Baltics on the occupation."
+      },
+      "Sigulda": {
+        "text": "Sigulda is the town of hills and castles an hour from Riga, in the Gauja river valley, with the medieval castle ruins, the new castle and a cable car across the valley. In autumn the woods turn red.",
+        "see": [
+          "The ruins of Sigulda castle",
+          "The cable car over the Gauja valley",
+          "Gutmanis cave, the largest in the Baltics",
+          "Turaida castle, 20 minutes away"
+        ],
+        "tip": "Sigulda is a day trip from Riga by train (an hour) and is the best nature outing on the trip. In October the foliage is spectacular and there are fewer people than in summer."
+      },
+      "Riga": {
+        "text": "Riga is the capital of Latvia and the art nouveau city of Europe: more than 800 modernist buildings in the Alberta iela quarter, plus the medieval old town with St Peter's church and the central market in five zeppelin hangars.",
+        "see": [
+          "The art nouveau quarter of Alberta iela",
+          "St Peter's church, with its tower",
+          "The central market, in the zeppelin hangars",
+          "The House of the Blackheads"
+        ],
+        "tip": "The art nouveau quarter is best with a map of the main facades: there is a museum for it at Alberta 9. The central market is cheap and you eat standing up."
+      },
+      "Tartu": {
+        "text": "Tartu is Estonia's university city, with the university founded in 1632, the columned main building and the wooden quarter of Supilinn. It is quieter than Tallinn and has the best café life in the country.",
+        "see": [
+          "The university main building",
+          "Toome hill and the cathedral ruins",
+          "The Supilinn quarter, of wooden houses",
+          "The Estonian National Museum"
+        ],
+        "tip": "Tartu sits between Riga and Tallinn and the bus stops at both: it is the perfect stop to break the journey. The national museum is on the edge of town and worth two hours."
+      },
+      "Tallinn": {
+        "text": "Tallinn is the capital of Estonia and the best-preserved medieval city in the Baltics, with the Town Hall square, St Olaf's church tower and a wall with 20 towers. The Kalamaja quarter, of wooden houses, is the modern side.",
+        "see": [
+          "The Town Hall square and the Gothic town hall",
+          "St Olaf's church, climbing the tower",
+          "Toompea hill and the parliament",
+          "The Kalamaja quarter and Telliskivi"
+        ],
+        "tip": "Tallinn takes two days and the old town is small. The Helsinki ferry runs several times a day and takes two and a half hours: book ahead in season."
+      },
+      "Helsinki": {
+        "text": "Helsinki closes the trip across the gulf, with Senate Square and the white cathedral, the Rock church cut into granite and the design quarter of Punavuori. It is the most expensive city on the trip, but a day covers it.",
+        "see": [
+          "Senate Square and the cathedral",
+          "The Rock church, in granite",
+          "Suomenlinna fortress, by ferry",
+          "The Punavuori design quarter"
+        ],
+        "tip": "Suomenlinna is reached by public ferry with the city transport pass and is worth half a day. Helsinki is expensive: book accommodation well ahead."
+      }
+    },
+    "gettingAround": "Vilnius-Kaunas, an hour twenty by bus or train. Kaunas-Riga, four hours by bus. Riga-Sigulda, an hour by train. Riga-Tartu, four hours by bus. Tartu-Tallinn, two and a half hours by bus. Tallinn-Helsinki, two and a half hours by ferry. Lux Express and Ecolines buses are comfortable and cheap, and booked online.",
+    "bestTime": "May to September, with long days and temperatures of 15 to 25 degrees. June and September are best: July is busier and in winter it is dark by half past three. In December Tallinn and Riga have Christmas markets.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "7 days gets you Vilnius, Riga and Tallinn. 9 adds Kaunas and Sigulda. 12 takes in Tartu and Helsinki."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses link the capitals and the train reaches Sigulda. A car only pays off for the coast and the national parks."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Helsinki and crossing by ferry to Tallinn, or into Vilnius (VNO) and out of Tallinn (TLL)."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Vilnius (VNO), Riga (RIX) or Tallinn (TLL). Ryanair and Wizz Air fly to all three from several European cities."
+      }
+    ]
+  }
+}

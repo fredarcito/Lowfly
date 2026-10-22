@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "hungria-y-el-lago-balaton",
+    "en": "hungary-balaton"
+  },
+  "photos": {
+    "Budapest": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Budapest_Christmas_Market_2012_%288227171699%29.jpg/960px-Budapest_Christmas_Market_2012_%288227171699%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Budapest_Christmas_Market_2012_(8227171699).jpg",
+      "author": "Top Budapest",
+      "license": "CC BY 2.0"
+    },
+    "Eger": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Eger_castle_%28by_Pudelek%29_01.JPG/960px-Eger_castle_%28by_Pudelek%29_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1280,
+      "page": "https://commons.wikimedia.org/wiki/File:Eger_castle_(by_Pudelek)_01.JPG",
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0"
+    },
+    "Balatonfüred and Tihany": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Tihanycivertanlegi1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 960,
+      "height": 694,
+      "page": "https://commons.wikimedia.org/wiki/File:Tihanycivertanlegi1.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 3.0"
+    },
+    "Keszthely and Hévíz": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Keszthely_-_Festetics_Castle.jpg/960px-Keszthely_-_Festetics_Castle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 666,
+      "page": "https://commons.wikimedia.org/wiki/File:Keszthely_-_Festetics_Castle.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "CC BY-SA 2.5"
+    },
+    "Pécs": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/P%C3%A9cs_Cathedral_Roman_art_era_-_Hungary.jpg/960px-P%C3%A9cs_Cathedral_Roman_art_era_-_Hungary.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:P%C3%A9cs_Cathedral_Roman_art_era_-_Hungary.jpg",
+      "author": "Takkk",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Hungría y el lago Balaton",
+    "metaTitle": "Hungría y el lago Balaton, de 6 a 10 días · Lowfly",
+    "summary": "Budapest, los baños termales de Hévíz, el lago Balaton en bici y los vinos de Eger, con Pécs y su arte romano al sur.",
+    "why": [
+      "Hévíz tiene el lago termal natural más grande del mundo, con agua a 33 grados todo el año entre nenúfares: se puede nadar en enero con nieve fuera. Es la razón por la que mucha gente vuelve a Hungría.",
+      "El Balaton es el lago interior más grande de Europa central y se recorre en bici por una vía verde de 200 kilómetros, con pueblos de vino, playas de agua dulce y la península de Tihany en medio.",
+      "Eger y Pécs son las dos ciudades de provincia con más carácter del país: Eger con su castillo y su valle de las mujeres hermosas, y Pécs con la necrópolis romana y la mezquita convertida en iglesia."
+    ],
+    "towns": {
+      "Budapest": {
+        "text": "Budapest abre el viaje con el Parlamento sobre el Danubio, el castillo de Buda y los baños Széchenyi. Es la ciudad más grande del país y la base para todo el resto del recorrido.",
+        "see": [
+          "El Parlamento y la corona de San Esteban",
+          "El castillo de Buda y el bastión de los Pescadores",
+          "Los baños Széchenyi",
+          "El barrio judío y los ruin bars"
+        ],
+        "tip": "Budapest es la base de transporte: desde aquí salen trenes a Eger, al Balaton y a Pécs en dos o tres horas. Compra la Budapest Card solo si vas a usar mucho el transporte."
+      },
+      "Eger": {
+        "text": "Eger es la ciudad del castillo que resistió a los otomanos en 1552 y del valle de las mujeres hermosas, una calle de bodegas en cuevas donde se cata el vino Egri Bikavér. La basílica es la segunda más grande del país.",
+        "see": [
+          "El castillo de Eger y el museo",
+          "El valle de las mujeres hermosas, con sus bodegas",
+          "La basílica y el liceo",
+          "El minarete otomano, el más al norte de Europa"
+        ],
+        "tip": "El valle de las mujeres hermosas se recorre a pie en 20 minutos desde el centro y las bodegas cobran poco por la cata. El minarete se sube por una escalera estrecha de 97 peldaños."
+      },
+      "Balatonfüred and Tihany": {
+        "text": "Balatonfüred es el pueblo de los sanatorios del siglo XIX y del paseo de los plátanos, en la orilla norte del Balaton. Al lado, la península de Tihany tiene una abadía benedictina de 1055 con vistas al lago entero.",
+        "see": [
+          "La abadía de Tihany y el mirador",
+          "El paseo de los plátanos de Balatonfüred",
+          "La playa de agua dulce de Esterházy",
+          "El lago interior de Belső-tó, en Tihany"
+        ],
+        "tip": "Tihany se ve en medio día y la abadía tiene vistas al lago en las dos direcciones. En verano el Balaton se llena de húngaros: reserva con tiempo."
+      },
+      "Keszthely and Hévíz": {
+        "text": "Keszthely tiene el palacio Festetics, el más grande del Balaton, con una biblioteca de 80.000 volúmenes. A cinco kilómetros está Hévíz, con el lago termal natural más grande del mundo, a 33 grados todo el año.",
+        "see": [
+          "El palacio Festetics y sus jardines",
+          "El lago termal de Hévíz, nadando entre nenúfares",
+          "La playa de Keszthely, en el Balaton",
+          "El museo del Balaton, en el palacio"
+        ],
+        "tip": "En Hévíz se entra con entrada por horas y conviene reservar en temporada alta. El agua sale a 33 grados y no se recomienda más de dos horas seguidas."
+      },
+      "Pécs": {
+        "text": "Pécs fue capital cultural europea en 2010 y tiene la necrópolis paleocristiana más importante fuera de Roma, Patrimonio de la Humanidad, además de una mezquita del siglo XVI convertida en iglesia y la calle Király, de bares.",
+        "see": [
+          "La necrópolis paleocristiana",
+          "La mezquita de Gazi Kasim y la plaza Széchenyi",
+          "La catedral de San Pedro y San Pablo",
+          "La calle Király y el barrio de Zsolnay"
+        ],
+        "tip": "La necrópolis se visita con entrada y es lo más importante de la ciudad. Pécs está a dos horas y media de Budapest en tren y a tres del Balaton en bus."
+      }
+    },
+    "gettingAround": "Budapest-Eger, dos horas en tren. Eger-Budapest-Balatonfüred, tres horas y media en tren con cambio en Budapest. Balatonfüred-Keszthely, una hora en tren por la orilla norte. Keszthely-Hévíz, 15 minutos en bus. Keszthely-Pécs, tres horas en bus. Pécs-Budapest, dos horas y media en tren.",
+    "bestTime": "De mayo a septiembre para el Balaton, con agua a 22 o 25 grados en julio y agosto. Hévíz funciona todo el año y en invierno es más tranquilo. Budapest es mejor en mayo, junio y septiembre, sin el calor de agosto.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 6 días ves Budapest, Eger y el Balaton. Con 8 añades Hévíz y Keszthely. Con 10 entran Pécs y dos días de bici por el lago."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren rodea el Balaton y une las ciudades. Para los pueblos pequeños de la orilla sur el coche da más libertad."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Budapest (BUD) y saliendo por Pécs (PEV) o al revés, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Budapest (BUD), que es el principal, o a Hévíz-Balaton (SOB) en temporada. Ryanair y Wizz Air vuelan a Budapest desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Hungary and Lake Balaton",
+    "metaTitle": "Hungary and Lake Balaton in 6 to 10 days · Lowfly",
+    "summary": "Budapest, the thermal baths of Hévíz, Lake Balaton by bike and the wines of Eger, with Pécs and its Roman art to the south.",
+    "why": [
+      "Hévíz has the largest natural thermal lake in the world, at 33 degrees all year among water lilies: you can swim in January with snow outside. It is why many people come back to Hungary.",
+      "Balaton is the largest inland lake in central Europe and is cycled on a 200-kilometre greenway, with wine villages, freshwater beaches and the Tihany peninsula in the middle.",
+      "Eger and Pécs are the two provincial cities with the most character: Eger with its castle and the Valley of the Beautiful Women, and Pécs with its Roman necropolis and a mosque turned into a church."
+    ],
+    "towns": {
+      "Budapest": {
+        "text": "Budapest opens the trip with the Parliament on the Danube, Buda castle and the Széchenyi baths. It is the largest city in the country and the base for the rest of the route.",
+        "see": [
+          "The Parliament and the crown of St Stephen",
+          "Buda castle and Fisherman's Bastion",
+          "The Széchenyi baths",
+          "The Jewish quarter and the ruin bars"
+        ],
+        "tip": "Budapest is the transport hub: trains leave here for Eger, Balaton and Pécs in two or three hours. Buy the Budapest Card only if you will use a lot of transport."
+      },
+      "Eger": {
+        "text": "Eger is the city of the castle that held off the Ottomans in 1552 and of the Valley of the Beautiful Women, a street of cellar wineries where you taste Egri Bikavér. Its basilica is the second largest in the country.",
+        "see": [
+          "Eger castle and its museum",
+          "The Valley of the Beautiful Women, with its cellars",
+          "The basilica and the lyceum",
+          "The Ottoman minaret, the northernmost in Europe"
+        ],
+        "tip": "The Valley of the Beautiful Women is a twenty-minute walk from the centre and the cellars charge little for a tasting. The minaret is climbed by a narrow staircase of 97 steps."
+      },
+      "Balatonfüred and Tihany": {
+        "text": "Balatonfüred is the town of nineteenth-century sanatoria and the plane-tree promenade, on the north shore of Balaton. Next to it, the Tihany peninsula has a Benedictine abbey from 1055 with views over the whole lake.",
+        "see": [
+          "Tihany abbey and the viewpoint",
+          "The plane-tree promenade in Balatonfüred",
+          "The Esterházy freshwater beach",
+          "The inner lake of Belső-tó, at Tihany"
+        ],
+        "tip": "Tihany takes half a day and the abbey looks over the lake in both directions. In summer Balaton fills with Hungarians: book ahead."
+      },
+      "Keszthely and Hévíz": {
+        "text": "Keszthely has the Festetics palace, the largest on Balaton, with a library of 80,000 volumes. Five kilometres away is Hévíz, with the largest natural thermal lake in the world, at 33 degrees all year.",
+        "see": [
+          "The Festetics palace and its gardens",
+          "The Hévíz thermal lake, swimming among water lilies",
+          "Keszthely beach, on Balaton",
+          "The Balaton museum, in the palace"
+        ],
+        "tip": "Hévíz is entered on a timed ticket and should be booked in high season. The water comes out at 33 degrees and more than two hours at a stretch is not advised."
+      },
+      "Pécs": {
+        "text": "Pécs was a European capital of culture in 2010 and has the most important early Christian necropolis outside Rome, a World Heritage Site, plus a sixteenth-century mosque turned into a church and Király street, full of bars.",
+        "see": [
+          "The early Christian necropolis",
+          "The Gazi Kasim mosque and Széchenyi square",
+          "The cathedral of St Peter and St Paul",
+          "Király street and the Zsolnay quarter"
+        ],
+        "tip": "The necropolis is visited on a ticket and is the most important thing in the city. Pécs is two and a half hours from Budapest by train and three from Balaton by bus."
+      }
+    },
+    "gettingAround": "Budapest-Eger, two hours by train. Eger-Budapest-Balatonfüred, three and a half hours by train with a change at Budapest. Balatonfüred-Keszthely, an hour by train along the north shore. Keszthely-Hévíz, 15 minutes by bus. Keszthely-Pécs, three hours by bus. Pécs-Budapest, two and a half hours by train.",
+    "bestTime": "May to September for Balaton, with water at 22 to 25 degrees in July and August. Hévíz runs all year and is quieter in winter. Budapest is best in May, June and September, without August's heat.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "6 days gets you Budapest, Eger and Balaton. 8 adds Hévíz and Keszthely. 10 takes in Pécs and two days cycling round the lake."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train circles Balaton and links the cities. For small villages on the south shore a car gives more freedom."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Budapest (BUD) and out of Pécs (PEV), or the reverse, is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Budapest (BUD), the main one, or Hévíz-Balaton (SOB) in season. Ryanair and Wizz Air fly to Budapest from several European cities."
+      }
+    ]
+  }
+}

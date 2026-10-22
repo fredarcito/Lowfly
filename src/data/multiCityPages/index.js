@@ -64,6 +64,46 @@ import westernCanaries from "./western-canaries.json";
 import easternCanaries from "./eastern-canaries.json";
 import mallorcaMenorca from "./mallorca-menorca.json";
 import ibizaFormentera from "./ibiza-formentera.json";
+import dalmatia from "./dalmatia.json";
+import zagrebPlitviceCoast from "./inland-croatia.json";
+import sloveniaIstria from "./slovenia-istria.json";
+import balkans from "./balkans.json";
+import montenegro from "./montenegro.json";
+import bosniaInDepth from "./bosnia-in-depth.json";
+import albania from "./albania.json";
+import northMacedoniaOhrid from "./north-macedonia-ohrid.json";
+import athensCyclades from "./athens-cyclades.json";
+import mainlandGreece from "./mainland-greece.json";
+import crete from "./crete.json";
+import peloponnese from "./peloponnese.json";
+import corfuEpirus from "./corfu-epirus.json";
+import dodecanese from "./dodecanese.json";
+import southernBalkans from "./southern-balkans.json";
+import eslovaquia from "./slovakia.json";
+import hungriaYBalaton from "./hungary-balaton.json";
+import bohemiaYMoravia from "./bohemia-moravia.json";
+import silesiaYBreslavia from "./silesia-wroclaw.json";
+import surDePolonia from "./southern-poland.json";
+import balticos from "./baltics.json";
+import tallinYHelsinki from "./tallinn-helsinki.json";
+import polonia from "./poland.json";
+import cracoviaYTatras from "./krakow-tatras.json";
+import centroeuropa from "./central-europe.json";
+import vienaYBratislava from "./vienna-bratislava.json";
+import vienaYBudapest from "./vienna-budapest.json";
+import chipre from "./cyprus.json";
+import georgia from "./georgia.json";
+import serbia from "./serbia.json";
+import moldavia from "./moldova.json";
+import bulgaria from "./bulgaria.json";
+import costaMarNegro from "./bulgarian-black-sea-coast.json";
+import transilvania from "./transylvania.json";
+import bucovina from "./bucovina-maramures.json";
+import marrakechYEssaouira from "./marrakesh-essaouira.json";
+import norteDeMarruecos from "./northern-morocco.json";
+import ciudadesImperiales from "./imperial-cities.json";
+import estambulYCapadocia from "./istanbul-cappadocia.json";
+import costaTurquesa from "./turquoise-coast.json";
 
 const pages = {
   "classic-italy": classicItaly,
@@ -126,6 +166,46 @@ const pages = {
   "eastern-canaries": easternCanaries,
   "mallorca-menorca": mallorcaMenorca,
   "ibiza-formentera": ibizaFormentera,
+  "marrakesh-essaouira": marrakechYEssaouira,
+  "northern-morocco": norteDeMarruecos,
+  "imperial-cities": ciudadesImperiales,
+  "istanbul-cappadocia": estambulYCapadocia,
+  "turquoise-coast": costaTurquesa,
+  "transylvania": transilvania,
+  "bucovina-maramures": bucovina,
+  "bulgaria": bulgaria,
+  "bulgarian-black-sea-coast": costaMarNegro,
+  "serbia": serbia,
+  "moldova": moldavia,
+  "cyprus": chipre,
+  "georgia": georgia,
+  "central-europe": centroeuropa,
+  "vienna-bratislava": vienaYBratislava,
+  "vienna-budapest": vienaYBudapest,
+  "poland": polonia,
+  "krakow-tatras": cracoviaYTatras,
+  "baltics": balticos,
+  "tallinn-helsinki": tallinYHelsinki,
+  "silesia-wroclaw": silesiaYBreslavia,
+  "southern-poland": surDePolonia,
+  "slovakia": eslovaquia,
+  "hungary-balaton": hungriaYBalaton,
+  "bohemia-moravia": bohemiaYMoravia,
+  "dalmatia": dalmatia,
+  "inland-croatia": zagrebPlitviceCoast,
+  "slovenia-istria": sloveniaIstria,
+  "balkans": balkans,
+  "montenegro": montenegro,
+  "bosnia-in-depth": bosniaInDepth,
+  "albania": albania,
+  "north-macedonia-ohrid": northMacedoniaOhrid,
+  "athens-cyclades": athensCyclades,
+  "mainland-greece": mainlandGreece,
+  "crete": crete,
+  "peloponnese": peloponnese,
+  "corfu-epirus": corfuEpirus,
+  "dodecanese": dodecanese,
+  "southern-balkans": southernBalkans,
 };
 
 export default pages;

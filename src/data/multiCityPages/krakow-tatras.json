@@ -1,0 +1,130 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "cracovia-y-los-tatras",
+    "en": "krakow-tatras"
+  },
+  "photos": {
+    "Kraków": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Krakow_Rynek_Glowny_noc_1.jpg/960px-Krakow_Rynek_Glowny_noc_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Krakow_Rynek_Glowny_noc_1.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    "Zakopane": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Zakopane_Giewont_1.jpg/960px-Zakopane_Giewont_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Zakopane_Giewont_1.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Cracovia y los Tatras",
+    "metaTitle": "Cracovia y los Tatras, de 5 a 7 días · Lowfly",
+    "summary": "La ciudad histórica de Cracovia y dos horas de tren después, las montañas más altas de los Cárpatos, con senderos y refugios.",
+    "why": [
+      "Cracovia y Zakopane están unidas por dos horas de tren y son dos viajes distintos: una ciudad medieval intacta y un pueblo de montaña a 800 metros, con el Giewont de 1.894 al fondo.",
+      "Los Tatras son el parque nacional más visitado de Polonia y uno de los pocos de Europa con refugios de montaña abiertos todo el año, donde se duerme en literas y se come sopa de col.",
+      "Desde Cracovia se añaden en el día Auschwitz-Birkenau y la mina de sal de Wieliczka, así que la ruta combina historia, ciudad y montaña en una semana."
+    ],
+    "towns": {
+      "Kraków": {
+        "text": "Cracovia es la ciudad histórica de Polonia, con la plaza del mercado más grande de Europa medieval, la basílica de Santa María y el castillo de Wawel. El barrio judío de Kazimierz, con sus sinagogas y cafés, es la otra mitad de la ciudad.",
+        "see": [
+          "La plaza del mercado y el retablo de Veit Stoss",
+          "El castillo de Wawel y la catedral",
+          "Kazimierz y la plaza Nowy",
+          "La mina de sal de Wieliczka"
+        ],
+        "tip": "El tren a Zakopane sale de la estación de Kraków Główny y tarda dos horas; en temporada de esquí se llena, así que compra el billete con antelación. Auschwitz se reserva con guía y se va en bus o tren."
+      },
+      "Zakopane": {
+        "text": "Zakopane es el pueblo de montaña de Polonia, con casas de madera de estilo góral, la calle Krupówki llena de puestos de queso ahumado y el teleférico a Gubałówka. Desde aquí salen los senderos a los Tatras y al valle de Kościeliska.",
+        "see": [
+          "El teleférico a Gubałówka",
+          "El valle de Kościeliska y las cuevas",
+          "El lago Morskie Oko, subiendo desde Palenica Białczańska",
+          "El cementerio de Peksowy Brzyzek, con tumbas de madera"
+        ],
+        "tip": "Morskie Oko se sube en dos horas desde el aparcamiento y hay carros de caballos hasta el lago. En invierno los senderos altos cierran por aludes: pregunta en el parque antes de salir."
+      }
+    },
+    "gettingAround": "Cracovia-Zakopane, dos horas en tren o bus, con salidas cada hora. Desde Zakopane, minibuses a los aparcamientos de los Tatras (Palenica Białczańska, Kiry) en 30 minutos. Desde Cracovia, tren a Wieliczka en 20 minutos y bus a Auschwitz en hora y media.",
+    "bestTime": "De junio a septiembre para senderismo, con días largos y temperaturas de 15 a 25 grados en el valle. De diciembre a marzo Zakopane es destino de esquí. Mayo y octubre son tranquilos, pero algunos refugios cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Cracovia y Zakopane. Con 7 añades Auschwitz, Wieliczka y una ruta larga en los Tatras."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren une Cracovia y Zakopane, y desde Zakopane salen minibuses a los senderos."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Cracovia (KRK) y volviendo desde allí, o entrando por Poprad (Eslovaquia) si vienes del sur."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Cracovia (KRK), que está a dos horas de Zakopane. Ryanair y Wizz Air vuelan a Cracovia desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Kraków and the Tatras",
+    "metaTitle": "Kraków and the Tatras in 5 to 7 days · Lowfly",
+    "summary": "The historic city of Kraków and, two hours by train later, the highest mountains in the Carpathians, with trails and mountain huts.",
+    "why": [
+      "Kraków and Zakopane are two hours apart by train and are two different trips: an intact medieval city and a mountain village at 800 metres, with the 1,894-metre Giewont behind it.",
+      "The Tatras are the most visited national park in Poland and one of the few in Europe with mountain huts open all year, where you sleep in bunks and eat cabbage soup.",
+      "From Kraków you add Auschwitz-Birkenau and the Wieliczka salt mine as day trips, so the route combines history, city and mountains in a week."
+    ],
+    "towns": {
+      "Kraków": {
+        "text": "Kraków is Poland's historic city, with the largest medieval market square in Europe, St Mary's basilica and Wawel castle. The Jewish quarter of Kazimierz, with its synagogues and cafés, is the other half of the city.",
+        "see": [
+          "The market square and the Veit Stoss altarpiece",
+          "Wawel castle and cathedral",
+          "Kazimierz and Nowy square",
+          "The Wieliczka salt mine"
+        ],
+        "tip": "The train to Zakopane leaves from Kraków Główny and takes two hours; in ski season it fills up, so book ahead. Auschwitz is visited with a guide, by bus or train."
+      },
+      "Zakopane": {
+        "text": "Zakopane is Poland's mountain town, with góral-style wooden houses, Krupówki street full of smoked cheese stalls and the cable car to Gubałówka. The trails into the Tatras and the Kościeliska valley start here.",
+        "see": [
+          "The cable car to Gubałówka",
+          "The Kościeliska valley and its caves",
+          "Morskie Oko lake, climbing from Palenica Białczańska",
+          "The Peksowy Brzyzek cemetery, with its wooden graves"
+        ],
+        "tip": "Morskie Oko is a two-hour climb from the car park and horse carts run up to the lake. In winter the high trails close for avalanches: ask at the park before setting out."
+      }
+    },
+    "gettingAround": "Kraków-Zakopane, two hours by train or bus, leaving hourly. From Zakopane, minibuses to the Tatras car parks (Palenica Białczańska, Kiry) in 30 minutes. From Kraków, a train to Wieliczka in 20 minutes and a bus to Auschwitz in ninety minutes.",
+    "bestTime": "June to September for hiking, with long days and 15 to 25 degrees in the valley. December to March Zakopane is a ski destination. May and October are quiet, but some huts close.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Kraków and Zakopane. 7 adds Auschwitz, Wieliczka and a long day in the Tatras."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train links Kraków and Zakopane, and minibuses run from Zakopane to the trailheads."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Kraków (KRK) and back from there, or into Poprad in Slovakia if you come from the south."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Kraków (KRK), two hours from Zakopane. Ryanair and Wizz Air fly to Kraków from several European cities."
+      }
+    ]
+  }
+}

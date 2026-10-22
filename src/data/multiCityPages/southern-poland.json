@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "sur-de-polonia-y-bieszczady",
+    "en": "southern-poland"
+  },
+  "photos": {
+    "Kraków": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Krakow_Rynek_Glowny_noc_1.jpg/960px-Krakow_Rynek_Glowny_noc_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Krakow_Rynek_Glowny_noc_1.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0"
+    },
+    "Tarnów": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Plac_Katedralny_w_Tarnowie_-_1.jpg/960px-Plac_Katedralny_w_Tarnowie_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 863,
+      "page": "https://commons.wikimedia.org/wiki/File:Plac_Katedralny_w_Tarnowie_-_1.jpg",
+      "author": "Kacper Szymański",
+      "license": "CC BY-SA 4.0"
+    },
+    "Rzeszów": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/02024_0170_Old_Town_in_Rzeszow.jpg/960px-02024_0170_Old_Town_in_Rzeszow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 627,
+      "page": "https://commons.wikimedia.org/wiki/File:02024_0170_Old_Town_in_Rzeszow.jpg",
+      "author": "Silar",
+      "license": "CC BY-SA 4.0"
+    },
+    "Przemyśl": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Przemysl_Old_Town_-_panoramio.jpg/960px-Przemysl_Old_Town_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Przemysl_Old_Town_-_panoramio.jpg",
+      "author": "piotrgreat",
+      "license": "CC BY-SA 3.0"
+    },
+    "Sanok": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Town_hall_in_Sanok_Rynek_Grodka_2012.jpg/960px-Town_hall_in_Sanok_Rynek_Grodka_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 643,
+      "page": "https://commons.wikimedia.org/wiki/File:Town_hall_in_Sanok_Rynek_Grodka_2012.jpg",
+      "author": "Lowdown",
+      "license": "CC BY-SA 3.0"
+    },
+    "Wetlina (Bieszczady)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/The_Bieszczady_Mountain%2C_peak_Halicz_%281333_m%29.JPG/960px-The_Bieszczady_Mountain%2C_peak_Halicz_%281333_m%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:The_Bieszczady_Mountain,_peak_Halicz_(1333_m).JPG",
+      "author": "Stokrotka_78",
+      "license": "CC BY-SA 3.0 pl"
+    }
+  },
+  "es": {
+    "title": "Sur de Polonia: Bieszczady y Rzeszów",
+    "metaTitle": "Sur de Polonia: Bieszczady y Rzeszów, de 6 a 10 días · Lowfly",
+    "summary": "El sureste de Polonia en tren y bus: Tarnów y sus casas renacentistas, Rzeszów, la frontera de Przemyśl y las montañas vacías de Bieszczady.",
+    "why": [
+      "Bieszczady es la montaña más vacía de Polonia: bosques de hayas, praderas de montaña y pueblos que quedaron despoblados después de 1947. En verano se camina sin cruzarse con nadie.",
+      "El sureste es la parte del país con menos turistas y más mezcla: en Przemyśl se ve la frontera con Ucrania, en Sanok el museo de iconos más grande de Europa y en Tarnów la primera ciudad polaca que se liberó en 1918.",
+      "Es una ruta de tren y bus barata y lenta, con trayectos de una o dos horas entre pueblos, y con la posibilidad de acabar en Cracovia o de seguir a Eslovaquia por la frontera."
+    ],
+    "towns": {
+      "Kraków": {
+        "text": "Cracovia es el punto de partida del sureste, con la plaza del mercado, el castillo de Wawel y el barrio de Kazimierz. Desde aquí salen los trenes a Tarnów y Rzeszów cada hora.",
+        "see": [
+          "La plaza del mercado y Santa María",
+          "El castillo de Wawel",
+          "Kazimierz",
+          "La mina de sal de Wieliczka"
+        ],
+        "tip": "Los trenes a Rzeszów salen de Kraków Główny y tardan dos horas. Si vas a hacer senderismo en Bieszczady, compra bastones y calzado aquí, que en los pueblos hay poco."
+      },
+      "Tarnów": {
+        "text": "Tarnów es una ciudad renacentista con una plaza del mercado rodeada de casas de los siglos XVI y XVII y una catedral gótica con capillas laterales. Fue la primera ciudad polaca liberada en 1918 y tiene un monumento a los judíos asesinados en el gueto.",
+        "see": [
+          "La plaza del mercado y las casas renacentistas",
+          "La catedral de la Natividad",
+          "El ayuntamiento y su torre",
+          "El monumento del gueto, en el bosque de Buczyna"
+        ],
+        "tip": "Tarnów es la parada de una mañana entre Cracovia y Rzeszów: el tren tarda una hora desde Cracovia y 45 minutos a Rzeszów. La plaza se ve en dos horas."
+      },
+      "Rzeszów": {
+        "text": "Rzeszów es la capital del sureste y una ciudad animada por la universidad, con una plaza del mercado grande, el castillo de los Lubomirski y la calle peatonal de 3 Maja. Es la base para Sanok y Bieszczady.",
+        "see": [
+          "La plaza del mercado y el ayuntamiento",
+          "El castillo de los Lubomirski",
+          "La calle 3 Maja, peatonal",
+          "El museo de la región, en el convento"
+        ],
+        "tip": "Desde Rzeszów salen buses a Sanok en una hora y media y a Wetlina en tres. El aeropuerto de Rzeszów-Jasionka está a 10 kilómetros y tiene vuelos a Varsovia y a algunas ciudades europeas."
+      },
+      "Przemyśl": {
+        "text": "Przemyśl es la ciudad de la frontera con Ucrania, con una catedral católica y una ortodoxa a 200 metros, colinas con fuertes del siglo XIX y un tren que sale hacia Kiev. Es una ciudad de paso que merece una noche.",
+        "see": [
+          "La catedral católica y la ortodoxa",
+          "El fuerte de la colina Zniesienie",
+          "La torre del reloj y el centro histórico",
+          "El mercado de la frontera"
+        ],
+        "tip": "Przemyśl está a 45 minutos de Rzeszów en tren y es el final de la ruta si sigues a Ucrania. Comprueba la situación de la frontera antes de plantear el cruce."
+      },
+      "Sanok": {
+        "text": "Sanok es la puerta de Bieszczady, con un casco antiguo en cuesta, el castillo sobre el río San y el museo de arte popular con la mayor colección de iconos ortodoxos de Europa. Es la parada para comprar y organizar la montaña.",
+        "see": [
+          "El castillo y el museo de iconos",
+          "El ayuntamiento y la plaza del mercado",
+          "El museo al aire libre de arquitectura rural",
+          "El embalse de Solina, a 30 minutos"
+        ],
+        "tip": "El museo de iconos del castillo es la razón para parar en Sanok y merece dos horas. Desde aquí salen buses a Wetlina y a Cisna por la carretera de montaña."
+      },
+      "Wetlina (Bieszczady)": {
+        "text": "Wetlina es un pueblo de montaña en el valle del río Wetlinka, con casas de madera, un camping y senderos que suben a las praderas de Połonina Wetlińska. Alrededor hay pueblos casi vacíos y bosques de hayas.",
+        "see": [
+          "La pradera de Połonina Wetlińska, subiendo a pie",
+          "El refugio de Chatka Puchatka, en la pradera",
+          "El mirador de Sine Wiry, sobre el río",
+          "El pueblo de Cisna y su estrecha vía férrea"
+        ],
+        "tip": "La subida a Połonina Wetlińska es de tres horas y no tiene sombra: lleva agua y protección solar. En invierno la carretera de Wetlina a Cisna puede cerrarse por nieve."
+      }
+    },
+    "gettingAround": "Cracovia-Tarnów, una hora en tren. Tarnów-Rzeszów, 45 minutos en tren. Rzeszów-Przemyśl, 45 minutos en tren. Rzeszów-Sanok, hora y media en bus. Sanok-Wetlina, hora y media en bus. Los buses de Bieszczady salen de la estación de Sanok y son pocos: comprueba los horarios el día antes.",
+    "bestTime": "De junio a septiembre para caminar por Bieszczady, con días largos y temperaturas de 15 a 25 grados. Octubre es el mes del follaje y hay menos gente. En invierno la montaña es dura y muchos refugios cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 6 días ves Cracovia, Tarnów, Rzeszów y Sanok. Con 8 añades Przemyśl y dos días en Bieszczady. Con 10 entran rutas largas de montaña."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Para Bieszczady sí conviene: los buses son escasos y los pueblos están separados. Para las ciudades el tren funciona."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Rzeszów (RZE) y saliendo por Cracovia (KRK), o al revés, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Cracovia (KRK) o Rzeszów (RZE). Ryanair y Wizz Air vuelan a Cracovia desde varias ciudades europeas; Rzeszów tiene menos vuelos."
+      }
+    ]
+  },
+  "en": {
+    "title": "Southern Poland: Bieszczady and Rzeszów",
+    "metaTitle": "Southern Poland: Bieszczady and Rzeszów in 6 to 10 days · Lowfly",
+    "summary": "South-eastern Poland by train and bus: Tarnów and its Renaissance houses, Rzeszów, the Przemyśl border and the empty Bieszczady mountains.",
+    "why": [
+      "Bieszczady is the emptiest mountain range in Poland: beech woods, mountain meadows and villages left deserted after 1947. In summer you walk without meeting anyone.",
+      "The south-east is the part of the country with the fewest tourists and the most mixture: in Przemyśl you see the Ukrainian border, in Sanok the largest icon museum in Europe and in Tarnów the first Polish city liberated in 1918.",
+      "It is a cheap, slow train-and-bus route, with legs of an hour or two between towns, and with the option of ending in Kraków or carrying on into Slovakia across the border."
+    ],
+    "towns": {
+      "Kraków": {
+        "text": "Kraków is the starting point for the south-east, with the market square, Wawel castle and the Kazimierz quarter. Trains to Tarnów and Rzeszów leave hourly.",
+        "see": [
+          "The market square and St Mary's",
+          "Wawel castle",
+          "Kazimierz",
+          "The Wieliczka salt mine"
+        ],
+        "tip": "Trains to Rzeszów leave Kraków Główny and take two hours. If you plan to hike in Bieszczady, buy poles and boots here, as the villages have little."
+      },
+      "Tarnów": {
+        "text": "Tarnów is a Renaissance city with a market square ringed by sixteenth- and seventeenth-century houses and a Gothic cathedral with side chapels. It was the first Polish city liberated in 1918 and has a monument to the Jews murdered in the ghetto.",
+        "see": [
+          "The market square and the Renaissance houses",
+          "The Nativity cathedral",
+          "The town hall and its tower",
+          "The ghetto monument, in the Buczyna woods"
+        ],
+        "tip": "Tarnów is a morning stop between Kraków and Rzeszów: the train takes an hour from Kraków and 45 minutes to Rzeszów. The square takes two hours."
+      },
+      "Rzeszów": {
+        "text": "Rzeszów is the capital of the south-east and a city livened up by its university, with a large market square, the Lubomirski castle and the pedestrian 3 Maja street. It is the base for Sanok and Bieszczady.",
+        "see": [
+          "The market square and the town hall",
+          "The Lubomirski castle",
+          "3 Maja street, pedestrian",
+          "The regional museum, in the convent"
+        ],
+        "tip": "Buses leave Rzeszów for Sanok in ninety minutes and for Wetlina in three hours. Rzeszów-Jasionka airport is ten kilometres away and flies to Warsaw and a few European cities."
+      },
+      "Przemyśl": {
+        "text": "Przemyśl is the border city with Ukraine, with a Catholic and an Orthodox cathedral 200 metres apart, hills with nineteenth-century forts and a train that runs on to Kyiv. It is a stopover town that deserves a night.",
+        "see": [
+          "The Catholic and Orthodox cathedrals",
+          "The fort on Zniesienie hill",
+          "The clock tower and the historic centre",
+          "The border market"
+        ],
+        "tip": "Przemyśl is 45 minutes from Rzeszów by train and is the end of the route if you carry on to Ukraine. Check the border situation before planning a crossing."
+      },
+      "Sanok": {
+        "text": "Sanok is the gateway to Bieszczady, with an old town on a slope, the castle above the San river and the folk art museum with the largest collection of Orthodox icons in Europe. It is the stop to stock up and plan the mountains.",
+        "see": [
+          "The castle and the icon museum",
+          "The town hall and the market square",
+          "The open-air museum of rural architecture",
+          "The Solina reservoir, 30 minutes away"
+        ],
+        "tip": "The icon museum in the castle is the reason to stop in Sanok and is worth two hours. Buses leave here for Wetlina and Cisna along the mountain road."
+      },
+      "Wetlina (Bieszczady)": {
+        "text": "Wetlina is a mountain village in the Wetlinka valley, with wooden houses, a campsite and trails climbing to the meadows of Połonina Wetlińska. Around it are almost empty villages and beech woods.",
+        "see": [
+          "The Połonina Wetlińska meadow, on foot",
+          "The Chatka Puchatka hut, on the meadow",
+          "The Sine Wiry viewpoint, over the river",
+          "Cisna village and its narrow-gauge railway"
+        ],
+        "tip": "The climb to Połonina Wetlińska takes three hours and has no shade: bring water and sun cream. In winter the road from Wetlina to Cisna can close for snow."
+      }
+    },
+    "gettingAround": "Kraków-Tarnów, an hour by train. Tarnów-Rzeszów, 45 minutes by train. Rzeszów-Przemyśl, 45 minutes by train. Rzeszów-Sanok, ninety minutes by bus. Sanok-Wetlina, ninety minutes by bus. Bieszczady buses leave from Sanok station and are few: check the timetable the day before.",
+    "bestTime": "June to September for walking in Bieszczady, with long days and temperatures of 15 to 25 degrees. October is the month for foliage and there are fewer people. In winter the mountains are hard and many huts close.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "6 days gets you Kraków, Tarnów, Rzeszów and Sanok. 8 adds Przemyśl and two days in Bieszczady. 10 takes in long mountain routes."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "For Bieszczady yes, as buses are scarce and the villages are spread out. For the cities the train works."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Rzeszów (RZE) and out of Kraków (KRK), or the reverse, is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Kraków (KRK) or Rzeszów (RZE). Ryanair and Wizz Air fly to Kraków from several European cities; Rzeszów has fewer flights."
+      }
+    ]
+  }
+}

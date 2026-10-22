@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "chipre",
+    "en": "cyprus"
+  },
+  "photos": {
+    "Paphos": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Paphos_Castle_and_Paphos_Marina%2C_Paphos%2C_Cyprus.jpg/960px-Paphos_Castle_and_Paphos_Marina%2C_Paphos%2C_Cyprus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 721,
+      "page": "https://commons.wikimedia.org/wiki/File:Paphos_Castle_and_Paphos_Marina,_Paphos,_Cyprus.jpg",
+      "author": "Fry72, Karel Frydrýšek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Limassol": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Limassol_promenade_Cyprus_%282%29.jpg/960px-Limassol_promenade_Cyprus_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Limassol_promenade_Cyprus_(2).jpg",
+      "author": "Radosław Botev",
+      "license": "CC BY 3.0 pl"
+    },
+    "Larnaca": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Larnaca_01-2017_img27_Finikoudes.jpg/960px-Larnaca_01-2017_img27_Finikoudes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Larnaca_01-2017_img27_Finikoudes.jpg",
+      "author": "A.Savin",
+      "license": "FAL"
+    },
+    "Troodos (Platres)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/04_Cyprus_landscape_-_Pedoulas_or_Pedhoulas_village_in_Cyprus_-_countryside_landscape_-_Zypern_Landschaft.jpg/960px-04_Cyprus_landscape_-_Pedoulas_or_Pedhoulas_village_in_Cyprus_-_countryside_landscape_-_Zypern_Landschaft.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:04_Cyprus_landscape_-_Pedoulas_or_Pedhoulas_village_in_Cyprus_-_countryside_landscape_-_Zypern_Landschaft.jpg",
+      "author": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+      "license": "CC BY 3.0"
+    },
+    "Nicosia": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/46/Nicosia_old_town_walled_historic_city_Nicosia_Republic_of_Cyprus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 960,
+      "height": 1280,
+      "page": "https://commons.wikimedia.org/wiki/File:Nicosia_old_town_walled_historic_city_Nicosia_Republic_of_Cyprus.jpg",
+      "author": "London2012Cyprus",
+      "license": "CC BY-SA 3.0"
+    },
+    "Ayia Napa": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Nissi_Beach%2C_Ayia_Napa%2C_Cyprus_-_panoramio.jpg/960px-Nissi_Beach%2C_Ayia_Napa%2C_Cyprus_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Nissi_Beach,_Ayia_Napa,_Cyprus_-_panoramio.jpg",
+      "author": "Dmitry Panov",
+      "license": "CC BY 3.0"
+    }
+  },
+  "es": {
+    "title": "Chipre: Pafos, Troodos y Nicosia",
+    "metaTitle": "Chipre: Pafos, Troodos y Nicosia, de 5 a 10 días · Lowfly",
+    "summary": "Mosaicos romanos en Pafos, pueblos de montaña en Troodos y la última capital dividida de Europa, con sol casi todo el año.",
+    "why": [
+      "Pafos tiene los mosaicos romanos mejor conservados del Mediterráneo oriental, en el parque arqueológico de Kato Pafos, y al lado las Tumbas de los Reyes y el castillo del puerto. Se ve en un día y es Patrimonio de la Humanidad.",
+      "Troodos es la montaña de Chipre: pueblos de piedra entre pinares, diez iglesias bizantinas pintadas por dentro y senderos que llevan a monasterios del siglo XI. En verano es el único sitio fresco de la isla.",
+      "Nicosia es la última capital dividida de Europa: se cruza a pie la línea verde con el pasaporte y se pasa del euro a la lira turca en cien metros. Es una experiencia que no se repite en ningún otro sitio."
+    ],
+    "towns": {
+      "Paphos": {
+        "text": "Pafos es la ciudad del oeste, con el parque arqueológico de Kato Pafos lleno de mosaicos romanos del siglo III, las Tumbas de los Reyes excavadas en la roca y un castillo veneciano en el puerto. Al norte está la playa de Coral Bay.",
+        "see": [
+          "Los mosaicos de la Casa de Dionisos",
+          "Las Tumbas de los Reyes",
+          "El castillo de Pafos, en el puerto",
+          "La Roca de Afrodita, a 25 kilómetros"
+        ],
+        "tip": "El parque arqueológico no tiene casi sombra: ve a primera hora y lleva agua. El bus 615 une el puerto con Coral Bay cada 15 minutos en verano."
+      },
+      "Limassol": {
+        "text": "Limassol es la ciudad grande del sur, con un paseo marítimo largo, la marina nueva y el castillo donde se casó Ricardo Corazón de León. Al oeste está Kourion, el teatro romano sobre el acantilado, y al este las playas de arena.",
+        "see": [
+          "El castillo de Limassol y el casco antiguo",
+          "El teatro romano de Kourion",
+          "La marina y el paseo marítimo",
+          "El yacimiento neolítico de Choirokoitia"
+        ],
+        "tip": "Kourion se ve al atardecer, cuando el teatro romano se ilumina y hay menos gente. El bus 16 llega desde Limassol en 30 minutos."
+      },
+      "Larnaca": {
+        "text": "Larnaca es la ciudad del aeropuerto y del paseo de las palmeras, Finikoudes, con la iglesia de San Lázaro en el centro y el lago salado al norte, donde los flamencos paran en invierno. Es la base más práctica para empezar o terminar.",
+        "see": [
+          "El paseo de Finikoudes y la playa",
+          "La iglesia de San Lázaro",
+          "El lago salado y el acueducto de Kamares",
+          "El barrio de Skala, con tabernas"
+        ],
+        "tip": "El aeropuerto está a 10 minutos del centro y el bus 425 llega a Finikoudes. Si tienes un vuelo temprano, dormir en Larnaca ahorra el madrugón desde Pafos."
+      },
+      "Troodos (Platres)": {
+        "text": "Troodos es la cordillera del centro de la isla, con el monte Olimpo a 1.952 metros y pueblos como Platres, Pedoulas y Kakopetria, de calles estrechas y tejados inclinados. Las iglesias pintadas de la región son Patrimonio de la Humanidad.",
+        "see": [
+          "La iglesia de Panagia tou Arakou, en Lagoudera",
+          "El monasterio de Kykkos",
+          "El pueblo de Kakopetria y su casco antiguo",
+          "Los senderos de Artemis y Atalanti"
+        ],
+        "tip": "En Troodos apenas hay buses: alquila coche (se conduce por la izquierda) o contrata un taxi por horas. Las carreteras de montaña son estrechas y con curvas."
+      },
+      "Nicosia": {
+        "text": "Nicosia es la última capital dividida de Europa, con la calle Ledra cortada por la línea verde y un puesto de control para cruzar a pie al norte. En el sur está la catedral gótica de San Juan y el barrio de Laiki Geitonia.",
+        "see": [
+          "La calle Ledra y el cruce a la parte norte",
+          "La catedral de San Juan, con frescos",
+          "El mercado municipal y Laiki Geitonia",
+          "El museo bizantino"
+        ],
+        "tip": "Para cruzar al norte basta el pasaporte o el DNI, y se hace a pie en la calle Ledra. El norte se paga en liras turcas y el sur en euros: lleva algo de efectivo de las dos."
+      },
+      "Ayia Napa": {
+        "text": "Ayia Napa es la playa de arena blanca y agua turquesa del sureste, con Nissi Beach y sus bares, el monasterio del siglo XVI en el centro y el cabo Greco al este, con acantilados y cuevas marinas.",
+        "see": [
+          "Nissi Beach y el islote que se alcanza andando",
+          "El monasterio de Ayia Napa",
+          "El cabo Greco y sus acantilados",
+          "La playa de Konnos, más tranquila"
+        ],
+        "tip": "En julio y agosto Ayia Napa es fiesta hasta el amanecer: si buscas tranquilidad, elige mayo, junio o septiembre. El bus 102 une Larnaca y Ayia Napa en 50 minutos."
+      }
+    },
+    "gettingAround": "Pafos-Limassol, una hora en bus; Limassol-Troodos, una hora y veinte en coche; Troodos-Nicosia, una hora y cuarto en coche; Nicosia-Larnaca, 45 minutos en bus; Larnaca-Ayia Napa, 50 minutos en bus. Los buses interurbanos son baratos y frecuentes en la costa, pero en Troodos casi no hay: allí hace falta coche.",
+    "bestTime": "De marzo a mayo y de octubre a noviembre: la costa está entre 22 y 28 grados y la montaña es fresca. En julio y agosto el calor es fuerte en la costa y las playas se llenan. En invierno se puede esquiar en Troodos y bañarse en el sur el mismo día.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Pafos, Limassol y Larnaca. Con 7 añades Troodos y Nicosia. Con 10 entran Ayia Napa y el cabo Greco."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Para Troodos sí, porque casi no hay buses. Para la costa no: los buses interurbanos unen las ciudades y son baratos."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Larnaca (LCA) o Pafos (PFO) y saliendo por el otro, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Larnaca (LCA), el principal, o Pafos (PFO). Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Cyprus: Paphos, Troodos and Nicosia",
+    "metaTitle": "Cyprus: Paphos, Troodos and Nicosia in 5 to 10 days · Lowfly",
+    "summary": "Roman mosaics in Paphos, mountain villages in Troodos and Europe's last divided capital, with sun almost all year.",
+    "why": [
+      "Paphos has the best-preserved Roman mosaics in the eastern Mediterranean, in the Kato Paphos archaeological park, with the Tombs of the Kings and the harbour castle next door. A day covers it and it is a World Heritage Site.",
+      "Troodos is the mountain of Cyprus: stone villages among pine woods, ten Byzantine churches painted inside and trails leading to eleventh-century monasteries. In summer it is the only cool place on the island.",
+      "Nicosia is Europe's last divided capital: you cross the green line on foot with your passport and go from euros to Turkish lira in a hundred metres. It is an experience you do not repeat anywhere else."
+    ],
+    "towns": {
+      "Paphos": {
+        "text": "Paphos is the western city, with the Kato Paphos archaeological park full of third-century Roman mosaics, the Tombs of the Kings cut into the rock and a Venetian castle in the harbour. Coral Bay beach is to the north.",
+        "see": [
+          "The mosaics of the House of Dionysus",
+          "The Tombs of the Kings",
+          "Paphos castle, in the harbour",
+          "Aphrodite's Rock, 25 kilometres away"
+        ],
+        "tip": "The archaeological park has almost no shade: go early and bring water. Bus 615 links the harbour with Coral Bay every 15 minutes in summer."
+      },
+      "Limassol": {
+        "text": "Limassol is the big southern city, with a long seafront promenade, the new marina and the castle where Richard the Lionheart married. To the west is Kourion, the Roman theatre on the cliff, and to the east the sandy beaches.",
+        "see": [
+          "Limassol castle and the old town",
+          "The Roman theatre of Kourion",
+          "The marina and the promenade",
+          "The Neolithic site of Choirokoitia"
+        ],
+        "tip": "Kourion is best at sunset, when the Roman theatre is lit and there are fewer people. Bus 16 reaches it from Limassol in 30 minutes."
+      },
+      "Larnaca": {
+        "text": "Larnaca is the airport city and the palm-lined Finikoudes promenade, with the church of St Lazarus in the centre and the salt lake to the north, where flamingos stop in winter. It is the most practical base to start or finish.",
+        "see": [
+          "The Finikoudes promenade and the beach",
+          "The church of St Lazarus",
+          "The salt lake and the Kamares aqueduct",
+          "The Skala quarter, with its tavernas"
+        ],
+        "tip": "The airport is ten minutes from the centre and bus 425 reaches Finikoudes. If you have an early flight, sleeping in Larnaca saves the early start from Paphos."
+      },
+      "Troodos (Platres)": {
+        "text": "Troodos is the mountain range in the centre of the island, with Mount Olympus at 1,952 metres and villages like Platres, Pedoulas and Kakopetria, with narrow streets and steep roofs. The painted churches of the region are a World Heritage Site.",
+        "see": [
+          "The church of Panagia tou Arakou, at Lagoudera",
+          "Kykkos monastery",
+          "Kakopetria village and its old quarter",
+          "The Artemis and Atalanti trails"
+        ],
+        "tip": "There are hardly any buses in Troodos: rent a car (you drive on the left) or hire a taxi by the hour. The mountain roads are narrow and winding."
+      },
+      "Nicosia": {
+        "text": "Nicosia is Europe's last divided capital, with Ledra street cut by the green line and a crossing point to walk north. In the south are the Gothic cathedral of St John and the Laiki Geitonia quarter.",
+        "see": [
+          "Ledra street and the crossing to the north",
+          "St John's cathedral, with its frescoes",
+          "The municipal market and Laiki Geitonia",
+          "The Byzantine museum"
+        ],
+        "tip": "To cross north you only need your passport or ID card, and you do it on foot on Ledra street. The north takes Turkish lira and the south euros: carry some cash in both."
+      },
+      "Ayia Napa": {
+        "text": "Ayia Napa is the white-sand, turquoise-water beach of the south-east, with Nissi Beach and its bars, the sixteenth-century monastery in the centre and Cape Greco to the east, with cliffs and sea caves.",
+        "see": [
+          "Nissi Beach and the islet you can wade to",
+          "The Ayia Napa monastery",
+          "Cape Greco and its cliffs",
+          "Konnos beach, quieter"
+        ],
+        "tip": "In July and August Ayia Napa is a party until dawn: if you want calm, pick May, June or September. Bus 102 links Larnaca and Ayia Napa in 50 minutes."
+      }
+    },
+    "gettingAround": "Paphos-Limassol, an hour by bus; Limassol-Troodos, an hour twenty by car; Troodos-Nicosia, an hour and a quarter by car; Nicosia-Larnaca, 45 minutes by bus; Larnaca-Ayia Napa, 50 minutes by bus. Intercity buses are cheap and frequent on the coast, but in Troodos there are almost none: there you need a car.",
+    "bestTime": "March to May and October to November: the coast is between 22 and 28 degrees and the mountains are cool. In July and August the heat on the coast is strong and the beaches fill. In winter you can ski in Troodos and swim in the south on the same day.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Paphos, Limassol and Larnaca. 7 adds Troodos and Nicosia. 10 takes in Ayia Napa and Cape Greco."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "For Troodos yes, as there are almost no buses. For the coast no: intercity buses link the cities and are cheap."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Larnaca (LCA) or Paphos (PFO) and out of the other is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Larnaca (LCA), the main one, or Paphos (PFO). Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

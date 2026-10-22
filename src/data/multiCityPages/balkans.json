@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "balcanes",
+    "en": "balkans"
+  },
+  "photos": {
+    "Split": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Split-Diokletianpalast-1.jpg/960px-Split-Diokletianpalast-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Split-Diokletianpalast-1.jpg",
+      "author": "SchiDD",
+      "license": "CC BY-SA 4.0"
+    },
+    "Mostar": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mostar_Old_Town_Panorama.jpg/960px-Mostar_Old_Town_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 643,
+      "page": "https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama.jpg",
+      "author": "Ramirez HUN",
+      "license": "CC BY-SA 3.0"
+    },
+    "Sarajevo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Old_town_Bascarsija%2C_Sarajevo.jpg/960px-Old_town_Bascarsija%2C_Sarajevo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Old_town_Bascarsija,_Sarajevo.jpg",
+      "author": "Natalino7",
+      "license": "CC BY-SA 3.0"
+    },
+    "Dubrovnik": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Old_Town_of_Dubrovnik_and_city_walls%2C_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 960,
+      "height": 540,
+      "page": "https://commons.wikimedia.org/wiki/File:Old_Town_of_Dubrovnik_and_city_walls,_2017.jpg",
+      "author": "Veselov350",
+      "license": "CC BY-SA 4.0"
+    },
+    "Kotor": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg/960px-Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 347,
+      "page": "https://commons.wikimedia.org/wiki/File:Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg",
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Balcanes: Split, Mostar, Sarajevo y Kotor",
+    "metaTitle": "Balcanes: Split, Mostar, Sarajevo y Kotor, de 5 a 10 días · Lowfly",
+    "summary": "Croacia, Bosnia y Montenegro en un solo viaje: el palacio de Diocleciano, el puente de Mostar, el barrio turco de Sarajevo, las murallas de Dubrovnik y la bahía de Kotor.",
+    "why": [
+      "Es la ruta de los tres países que más se repiten en los Balcanes: Split, Mostar, Sarajevo, Dubrovnik y Kotor caben en diez días y cada etapa se ve en un día o dos, sin coche.",
+      "El tren de Sarajevo a Mostar cruza el valle del Neretva entre montañas y es uno de los trayectos más bonitos de Europa: dos horas por unos ocho euros.",
+      "La bahía de Kotor es un fiordo en el Adriático con un pueblo medieval en el fondo y una muralla que sube por la montaña. Se ve desde el agua, en barco, o desde arriba, subiendo a la fortaleza."
+    ],
+    "towns": {
+      "Split": {
+        "text": "Split es la puerta de entrada al Adriático croata: el palacio de Diocleciano, del año 305, se convirtió en ciudad y hoy tiene dentro calles, apartamentos y bares. El peristilo es la plaza donde todos se citan y la Riva, el paseo del puerto, el salón de la ciudad.",
+        "see": [
+          "El palacio de Diocleciano y el peristilo",
+          "La catedral de San Duje, en el mausoleo del emperador",
+          "La colina de Marjan, con sus miradores sobre el puerto",
+          "La Riva, al atardecer"
+        ],
+        "tip": "Split es la primera parada porque tiene el aeropuerto más barato de la ruta y buses a Mostar varias veces al día. Compra el billete en la estación de autobuses el día antes en temporada alta."
+      },
+      "Mostar": {
+        "text": "Mostar es el puente: el Stari Most, reconstruido tras la guerra, cruza el Neretva entre dos orillas de piedra y casas con tejados de laja. Los jóvenes del pueblo se tiran desde el puente al río, y el barrio viejo, la Kujundžiluk, es un bazar de cobre y café turco.",
+        "see": [
+          "El puente Stari Most y su mirador",
+          "El bazar de la calle Kujundžiluk",
+          "La mezquita de Koski Mehmed Bajá y su minarete",
+          "El barrio de Donja Mahala, con la sinagoga antigua"
+        ],
+        "tip": "Llega temprano o quédate a dormir: los autocares de excursión desde Dubrovnik y Split llegan a media mañana y se van a las cuatro. El puente se ve mejor desde el minarete de la mezquita de Koski Mehmed Bajá."
+      },
+      "Sarajevo": {
+        "text": "Sarajevo es la ciudad donde empieza el siglo XX: en la esquina del puente Latino se disparó el tiro que desencadenó la Primera Guerra Mundial. Su casco antiguo, Baščaršija, es un bazar otomano de calles de piedra, y a dos calles empieza la ciudad austrohúngara, con fachadas vienesas.",
+        "see": [
+          "Baščaršija, el bazar otomano",
+          "El puente Latino y el museo del atentado de 1914",
+          "El túnel de la guerra, en el aeropuerto",
+          "El mirador de la fortaleza amarilla, al atardecer"
+        ],
+        "tip": "Sarajevo es barata: un café con un pastel de baklava cuesta dos euros. El túnel de la guerra se visita en tranvía y bus hasta Butmir, y merece la pena reservar una hora."
+      },
+      "Dubrovnik": {
+        "text": "Dubrovnik es la ciudad amurallada de la costa, con dos kilómetros de murallas sobre el Adriático y tejados naranjas. En esta ruta es el descanso de mar entre Bosnia y Montenegro: la playa de Banje está a diez minutos del casco antiguo.",
+        "see": [
+          "Las murallas, a primera hora",
+          "La calle Stradun y el fuerte de Lovrijenac",
+          "La playa de Banje, con la ciudad detrás",
+          "El teleférico al monte Srđ"
+        ],
+        "tip": "Dubrovnik es la parada más cara de la ruta: duerme en Lapad o en Gruž, a 20 minutos en bus, y entra al casco antiguo a última hora, cuando se han ido los cruceros."
+      },
+      "Kotor": {
+        "text": "Kotor está al fondo de una bahía que parece un fiordo, con un casco medieval de plazas y palacios venecianos y una muralla de cuatro kilómetros que sube por la montaña hasta la fortaleza de San Juan. Es la última parada de la ruta y la más tranquila.",
+        "see": [
+          "La muralla hasta la fortaleza de San Juan",
+          "La plaza de las Armas y la catedral de San Trifón",
+          "La iglesia de Nuestra Señora de la Salud, a media subida",
+          "La excursión en barco a Perast y las islas"
+        ],
+        "tip": "La subida a la muralla son 1.350 escalones y una hora y media: ve a primera hora, con agua y calzado bueno. Desde Kotor hay buses al aeropuerto de Tivat en 25 minutos."
+      }
+    },
+    "gettingAround": "Split-Mostar, cuatro horas en bus (Flixbus y Globtour). Mostar-Sarajevo, dos horas en tren por el valle del Neretva. Sarajevo-Dubrovnik, cinco horas en bus. Dubrovnik-Kotor, dos horas y media en bus. Los buses cruzan las fronteras con paradas cortas: lleva el pasaporte a mano.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con 20 a 26 grados y sin las colas de los cruceros. Julio y agosto son los meses más calurosos y los más caros en Dubrovnik y Kotor. En invierno Sarajevo es fría y con nieve, y algunos buses reducen frecuencias.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Split, Mostar y Dubrovnik. Con 7 añades Kotor. Con 10 entran Sarajevo y una noche más en cada ciudad."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses unen todas las paradas y el tren cubre Mostar-Sarajevo. El coche solo ayuda para las excursiones alrededor de Sarajevo."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Dubrovnik (DBV) o Tivat (TGD) y saliendo por Split (SPU), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Split (SPU), Dubrovnik (DBV) o Tivat (TGD). Ryanair y Wizz Air vuelan a los tres desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "The Balkans: Split, Mostar, Sarajevo and Kotor",
+    "metaTitle": "The Balkans: Split, Mostar, Sarajevo and Kotor in 5 to 10 days · Lowfly",
+    "summary": "Croatia, Bosnia and Montenegro in one trip: Diocletian's palace, the Mostar bridge, Sarajevo's Ottoman quarter, the walls of Dubrovnik and the Bay of Kotor.",
+    "why": [
+      "It is the route of the three countries people most often combine in the Balkans: Split, Mostar, Sarajevo, Dubrovnik and Kotor fit into ten days and each stop is seen in a day or two, without a car.",
+      "The train from Sarajevo to Mostar runs along the Neretva valley between mountains and is one of the finest journeys in Europe: two hours for about eight euros.",
+      "The Bay of Kotor is a fjord in the Adriatic with a medieval town at its foot and a wall climbing the mountain. You see it from the water, by boat, or from above, walking up to the fortress."
+    ],
+    "towns": {
+      "Split": {
+        "text": "Split is the gateway to the Croatian Adriatic: Diocletian's palace of 305 became a city and today has streets, flats and bars inside. The peristyle is the square where everyone meets and the Riva, the harbour walk, is the city's living room.",
+        "see": [
+          "Diocletian's palace and the peristyle",
+          "St Duje's cathedral, in the emperor's mausoleum",
+          "Marjan hill, with its views over the harbour",
+          "The Riva, at sunset"
+        ],
+        "tip": "Split is the first stop because it has the cheapest airport on the route and buses to Mostar several times a day. Buy the ticket at the bus station the day before in high season."
+      },
+      "Mostar": {
+        "text": "Mostar is the bridge: the Stari Most, rebuilt after the war, crosses the Neretva between two banks of stone and slate roofs. Local young men dive from the bridge into the river, and the old quarter, Kujundžiluk, is a bazaar of copper and Turkish coffee.",
+        "see": [
+          "The Stari Most bridge and its viewpoint",
+          "The Kujundžiluk bazaar",
+          "The Koski Mehmed Pasha mosque and its minaret",
+          "Donja Mahala, with the old synagogue"
+        ],
+        "tip": "Arrive early or stay the night: coach tours from Dubrovnik and Split arrive mid-morning and leave at four. The bridge is seen best from the minaret of the Koski Mehmed Pasha mosque."
+      },
+      "Sarajevo": {
+        "text": "Sarajevo is where the twentieth century began: at the corner of the Latin Bridge the shot was fired that set off the First World War. Its old town, Baščaršija, is an Ottoman bazaar of stone streets, and two streets away the Austro-Hungarian city begins, with Viennese facades.",
+        "see": [
+          "Baščaršija, the Ottoman bazaar",
+          "The Latin Bridge and the museum of the 1914 assassination",
+          "The war tunnel, by the airport",
+          "The view from the yellow fortress, at sunset"
+        ],
+        "tip": "Sarajevo is cheap: a coffee with a piece of baklava costs two euros. The war tunnel is reached by tram and bus to Butmir and deserves an hour."
+      },
+      "Dubrovnik": {
+        "text": "Dubrovnik is the walled city of the coast, with two kilometres of walls above the Adriatic and orange roofs. On this route it is the sea break between Bosnia and Montenegro: Banje beach is ten minutes from the old town.",
+        "see": [
+          "The walls, first thing",
+          "Stradun and the Lovrijenac fort",
+          "Banje beach, with the city behind",
+          "The cable car to Mount Srđ"
+        ],
+        "tip": "Dubrovnik is the most expensive stop on the route: sleep in Lapad or Gruž, 20 minutes away by bus, and go into the old town late, once the cruise ships have left."
+      },
+      "Kotor": {
+        "text": "Kotor sits at the head of a bay that looks like a fjord, with a medieval old town of squares and Venetian palaces and a four-kilometre wall climbing the mountain to the fortress of San Giovanni. It is the last stop on the route and the quietest.",
+        "see": [
+          "The wall up to the fortress of San Giovanni",
+          "The Square of the Arms and St Tryphon's cathedral",
+          "Our Lady of Health, halfway up",
+          "The boat trip to Perast and the islands"
+        ],
+        "tip": "The climb to the wall is 1,350 steps and ninety minutes: go first thing, with water and good shoes. Buses from Kotor reach Tivat airport in 25 minutes."
+      }
+    },
+    "gettingAround": "Split-Mostar, four hours by bus (Flixbus and Globtour). Mostar-Sarajevo, two hours by train along the Neretva valley. Sarajevo-Dubrovnik, five hours by bus. Dubrovnik-Kotor, two and a half hours by bus. Buses cross the borders with short stops: keep your passport at hand.",
+    "bestTime": "May to June and September to October, at 20 to 26 degrees and without the cruise queues. July and August are the hottest and most expensive months in Dubrovnik and Kotor. In winter Sarajevo is cold and snowy and some buses run less often.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Split, Mostar and Dubrovnik. 7 adds Kotor. 10 takes in Sarajevo and an extra night in each city."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses link every stop and the train covers Mostar-Sarajevo. A car only helps for the trips around Sarajevo."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Dubrovnik (DBV) or Tivat (TGD) and out of Split (SPU) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Split (SPU), Dubrovnik (DBV) or Tivat (TGD). Ryanair and Wizz Air fly to all three from several European cities."
+      }
+    ]
+  }
+}

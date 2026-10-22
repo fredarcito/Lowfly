@@ -1,0 +1,130 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "tallin-y-helsinki",
+    "en": "tallinn-helsinki"
+  },
+  "photos": {
+    "Tallinn": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Tallinn_Christmas_market_2017.jpg/960px-Tallinn_Christmas_market_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 450,
+      "page": "https://commons.wikimedia.org/wiki/File:Tallinn_Christmas_market_2017.jpg",
+      "author": "Araldica81",
+      "license": "CC BY-SA 4.0"
+    },
+    "Helsinki": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Helsinki_Senate_Square_and_Helsinki_Cathedral_in_May_2026.jpg/960px-Helsinki_Senate_Square_and_Helsinki_Cathedral_in_May_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Helsinki_Senate_Square_and_Helsinki_Cathedral_in_May_2026.jpg",
+      "author": "JIP",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Tallin y Helsinki",
+    "metaTitle": "Tallin y Helsinki, de 4 a 6 días · Lowfly",
+    "summary": "Dos capitales separadas por 80 kilómetros de mar, unidas por un ferry de dos horas y media que sale varias veces al día.",
+    "why": [
+      "Tallin y Helsinki son las dos capitales más cercanas que no comparten frontera: el ferry cruza el golfo de Finlandia en dos horas y media y sale cada dos o tres horas, con billetes desde 20 euros.",
+      "La diferencia entre las dos es enorme y por eso funciona el viaje: Tallin es medieval, barata y de piedra; Helsinki es moderna, cara y de diseño. En un día pasas de una muralla del siglo XIII a una iglesia excavada en granito.",
+      "Es un viaje corto perfecto: dos días en cada ciudad, sin coche, sin traslados largos y con la opción de hacer el trayecto de ida en ferry y el de vuelta en hidroavión o avión."
+    ],
+    "towns": {
+      "Tallinn": {
+        "text": "Tallin es la ciudad medieval mejor conservada del Báltico, con la plaza del Ayuntamiento, la iglesia de San Olaf de 124 metros y una muralla con 20 torres. El barrio de Kalamaja, con casas de madera y el mercado de Balti Jaam, es la parte nueva.",
+        "see": [
+          "La plaza del Ayuntamiento y el ayuntamiento gótico",
+          "La torre de San Olaf, con la escalera de caracol",
+          "La colina de Toompea y la catedral de Alejandro Nevski",
+          "Telliskivi y el mercado de Balti Jaam"
+        ],
+        "tip": "El casco antiguo se ve en un día y medio. El ferry a Helsinki sale del puerto de D-Terminal, a 15 minutos a pie del centro: llega con media hora de margen."
+      },
+      "Helsinki": {
+        "text": "Helsinki es una capital de diseño y de piedra clara, con la catedral blanca sobre la plaza del Senado, la iglesia de la Roca excavada en granito y el mercado de Kauppatori junto al puerto. La fortaleza de Suomenlinna está a 15 minutos en ferry.",
+        "see": [
+          "La plaza del Senado y la catedral blanca",
+          "La iglesia de la Roca",
+          "Suomenlinna, en ferry",
+          "El mercado de Kauppatori y el barrio de Punavuori"
+        ],
+        "tip": "El abono de transporte de Helsinki cubre también el ferry a Suomenlinna. En invierno hay menos luz, pero los precios de hotel bajan mucho."
+      }
+    },
+    "gettingAround": "Tallin-Helsinki, dos horas y media en ferry (Tallink, Eckerö o Viking) desde el puerto de D-Terminal, con salidas cada dos o tres horas y billetes desde 20 euros. Los dos centros se recorren a pie, y Helsinki tiene tranvía y metro.",
+    "bestTime": "De mayo a septiembre, con días largos y temperaturas de 15 a 22 grados. En junio hay luz casi toda la noche. En diciembre las dos ciudades tienen mercadillos y Tallin es especialmente bonita con nieve.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 días ves lo esencial de las dos. Con 6 añades Suomenlinna, Kalamaja y una excursión a Porvoo o a Sigulda."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el ferry une las dos capitales y los centros se recorren a pie o en tranvía."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Helsinki (HEL) y cruzando a Tallin, o al revés, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Tallin (TLL) o Helsinki (HEL). Ryanair y Wizz Air vuelan a Tallin desde varias ciudades europeas, y a Helsinki vuelan más compañías."
+      }
+    ]
+  },
+  "en": {
+    "title": "Tallinn and Helsinki",
+    "metaTitle": "Tallinn and Helsinki in 4 to 6 days · Lowfly",
+    "summary": "Two capitals separated by 80 kilometres of sea, joined by a two-and-a-half-hour ferry that runs several times a day.",
+    "why": [
+      "Tallinn and Helsinki are the closest capitals that do not share a border: the ferry crosses the Gulf of Finland in two and a half hours and leaves every two or three hours, with tickets from 20 euros.",
+      "The gap between the two is huge, which is why the trip works: Tallinn is medieval, cheap and stone; Helsinki is modern, expensive and design. In one day you go from a thirteenth-century wall to a church cut into granite.",
+      "It is the perfect short break: two days in each city, no car, no long transfers, and the option of crossing one way by ferry and back by hydroplane or plane."
+    ],
+    "towns": {
+      "Tallinn": {
+        "text": "Tallinn is the best-preserved medieval city in the Baltics, with the Town Hall square, the 124-metre St Olaf's church and a wall with 20 towers. The Kalamaja quarter, with wooden houses and the Balti Jaam market, is the new side.",
+        "see": [
+          "The Town Hall square and the Gothic town hall",
+          "St Olaf's tower, with its spiral staircase",
+          "Toompea hill and Alexander Nevsky cathedral",
+          "Telliskivi and the Balti Jaam market"
+        ],
+        "tip": "The old town takes a day and a half. The Helsinki ferry leaves from D-Terminal, fifteen minutes on foot from the centre: arrive half an hour early."
+      },
+      "Helsinki": {
+        "text": "Helsinki is a capital of design and pale stone, with the white cathedral above Senate Square, the Rock church cut into granite and the Kauppatori market by the harbour. Suomenlinna fortress is fifteen minutes away by ferry.",
+        "see": [
+          "Senate Square and the white cathedral",
+          "The Rock church",
+          "Suomenlinna, by ferry",
+          "The Kauppatori market and the Punavuori quarter"
+        ],
+        "tip": "The Helsinki transport pass also covers the Suomenlinna ferry. In winter there is less light, but hotel prices drop a lot."
+      }
+    },
+    "gettingAround": "Tallinn-Helsinki, two and a half hours by ferry (Tallink, Eckerö or Viking) from D-Terminal, leaving every two or three hours with tickets from 20 euros. Both centres are walkable, and Helsinki has trams and a metro.",
+    "bestTime": "May to September, with long days and temperatures of 15 to 22 degrees. In June it is light almost all night. In December both cities have markets and Tallinn is especially beautiful under snow.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 days covers the essentials of both. 6 adds Suomenlinna, Kalamaja and a day trip to Porvoo or Sigulda."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the ferry links the two capitals and both centres are walkable or served by trams."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Helsinki (HEL) and crossing to Tallinn, or the reverse, is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Tallinn (TLL) or Helsinki (HEL). Ryanair and Wizz Air fly to Tallinn from several European cities, and more airlines fly to Helsinki."
+      }
+    ]
+  }
+}

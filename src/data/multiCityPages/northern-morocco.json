@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "norte-de-marruecos",
+    "en": "northern-morocco"
+  },
+  "photos": {
+    "Tangier": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tangier_%2823171358122%29.jpg/960px-Tangier_%2823171358122%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 634,
+      "page": "https://commons.wikimedia.org/wiki/File:Tangier_(23171358122).jpg",
+      "author": "cat_collector",
+      "license": "CC BY 2.0"
+    },
+    "Tetouan": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Tetouan_Old_Medina_streets.jpg/960px-Tetouan_Old_Medina_streets.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1280,
+      "page": "https://commons.wikimedia.org/wiki/File:Tetouan_Old_Medina_streets.jpg",
+      "author": "Ideophagous",
+      "license": "CC BY-SA 4.0"
+    },
+    "Chefchaouen": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Chefchaouen-the-blue-city-of-morocco-with-the-mountain-view-in-the-backrgound.jpg/960px-Chefchaouen-the-blue-city-of-morocco-with-the-mountain-view-in-the-backrgound.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 639,
+      "page": "https://commons.wikimedia.org/wiki/File:Chefchaouen-the-blue-city-of-morocco-with-the-mountain-view-in-the-backrgound.jpg",
+      "author": "Badr Rachadi",
+      "license": "CC BY-SA 4.0"
+    },
+    "Fez": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Medina_of_Fes%2C_Marocco.jpg/960px-Medina_of_Fes%2C_Marocco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 563,
+      "page": "https://commons.wikimedia.org/wiki/File:Medina_of_Fes,_Marocco.jpg",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0"
+    },
+    "Meknes": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Bab_Mansour_Meknes_2018_1.jpg/960px-Bab_Mansour_Meknes_2018_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 636,
+      "page": "https://commons.wikimedia.org/wiki/File:Bab_Mansour_Meknes_2018_1.jpg",
+      "author": "Steven Lek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Rabat": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Hassan_Tower_01.jpg/960px-Hassan_Tower_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 718,
+      "page": "https://commons.wikimedia.org/wiki/File:Hassan_Tower_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Norte de Marruecos: Tánger, Chauen y Fez",
+    "metaTitle": "Norte de Marruecos: Tánger, Chauen y Fez, de 5 a 10 días · Lowfly",
+    "summary": "El estrecho de Gibraltar, la medina azul de Chauen en el Rif, la medina de Fez y, en la versión larga, Mequinez con Volubilis y Rabat.",
+    "why": [
+      "Tánger es la puerta de África: desde el puerto se ve la costa de España a 14 kilómetros y el ferry tarda una hora desde Tarifa. La ciudad que pintó Matisse tiene una medina en cuesta y un café centenario, el Hafa.",
+      "Chauen es la única ciudad azul del país, colgada en la ladera del Rif. Se ve en un día, pero la gracia es quedarse a dormir y ver las calles vacías a primera hora, antes de que lleguen los autocares.",
+      "Fez es la medina medieval más grande del mundo, con 9.000 callejones donde no entran coches y burros que llevan la carga. Es la ciudad más intensa del viaje y la que más tiempo pide."
+    ],
+    "towns": {
+      "Tangier": {
+        "text": "Tánger mira a España desde el estrecho. Fue ciudad internacional hasta 1956 y por eso tiene cafés, librerías y hoteles de otra época. La medina sube hacia la kasbah y desde la terraza se ven las dos orillas del estrecho a la vez.",
+        "see": [
+          "La kasbah y el museo de la Kasbah, en el palacio del sultán",
+          "El café Hafa, con las mesas escalonadas sobre el mar",
+          "El paseo marítimo y la playa de la ciudad",
+          "Las cuevas de Hércules, a 14 kilómetros"
+        ],
+        "tip": "El ferry desde Tarifa tarda una hora y desde Algeciras, dos y media. Si vienes de España, cruza por la mañana: los controles de la tarde son más lentos."
+      },
+      "Tetouan": {
+        "text": "Tetuán es la capital del Protectorado español y se nota: muchos carteles siguen en castellano y el pan es igual que el de Andalucía. Su medina es más pequeña y tranquila que la de Fez, y está declarada Patrimonio de la Humanidad.",
+        "see": [
+          "La medina y el zoco de las especias",
+          "El barrio judío y la sinagoga",
+          "El museo arqueológico, en el palacio del rey",
+          "La playa de Martil, a 10 minutos"
+        ],
+        "tip": "Tetuán es la mejor parada para comprar artesanía sin agobios: los precios son más bajos que en Fez y hay menos vendedores insistentes."
+      },
+      "Chefchaouen": {
+        "text": "Chauen está en la ladera del Rif, a 600 metros, y sus casas están pintadas de azul desde los años treinta. La medina es pequeña, en cuesta, con la mezquita española en lo alto y el río atravesándola.",
+        "see": [
+          "La plaza Uta el-Hammam, con la kasbah",
+          "La mezquita española, con la vista del pueblo entero",
+          "La cascada de Ras El Maa, a las afueras",
+          "El puente de Akchour, si te gusta caminar"
+        ],
+        "tip": "El azul se repinta cada primavera y las calles más fotografiadas están en la parte alta de la medina. Sube a la mezquita española al atardecer: es la mejor vista y no cuesta nada."
+      },
+      "Fez": {
+        "text": "Fez el Bali es la medina medieval más grande del mundo y está intacta: 9.000 callejones, 300 mezquitas y una universidad del año 859. Las curtidurías de cuero, con sus cubas de colores, son la imagen de la ciudad.",
+        "see": [
+          "Las curtidurías de Chouara, desde las terrazas de las tiendas",
+          "La madrasa Bou Inania y la de Al-Attarine",
+          "La plaza de Bab Boujloud, la puerta azul",
+          "Los talleres de cerámica y de latón"
+        ],
+        "tip": "En la medina no entra el coche y el GPS falla: contrata un guía oficial por medio día o deja que el riad te ponga uno. Las terrazas de las curtidurías dan una ramita de menta para el olor, y se espera una propina."
+      },
+      "Meknes": {
+        "text": "Mequinez fue capital con Moulay Ismail, que construyó un palacio de 40 kilómetros de murallas y establos para 12.000 caballos. La puerta Bab Mansour es la más bonita del país, y a media hora están las ruinas romanas de Volubilis.",
+        "see": [
+          "La puerta Bab Mansour y la plaza El Hedim",
+          "Los establos de Heri es-Souani",
+          "La prisión de Kara, bajo tierra",
+          "Volubilis, la ciudad romana, a 30 minutos"
+        ],
+        "tip": "Volubilis se ve en dos horas y no tiene sombra: lleva agua y sombrero. Desde Mequinez hay taxis de ida y vuelta por unas 300 dirhams, con espera incluida."
+      },
+      "Rabat": {
+        "text": "Rabat es la capital administrativa y la más tranquila de las ciudades imperiales. La torre Hassan, inacabada, y la kasbah de los Udayas, blanca y azul sobre el río, son lo mejor de la ciudad, y la medina no tiene el agobio de Fez.",
+        "see": [
+          "La torre Hassan y las columnas de la mezquita",
+          "La kasbah de los Udayas y su jardín andaluz",
+          "El mausoleo de Mohammed V",
+          "La medina y el mercado central"
+        ],
+        "tip": "Rabat es la única ciudad del viaje donde se puede caminar sin que te ofrezcan nada cada dos pasos. Aprovecha para descansar antes de volver a Fez o a Marrakech."
+      }
+    },
+    "gettingAround": "Tánger, Tetuán y Fez están unidos por tren (ONCF) en tres o cuatro horas por tramo. Chauen no tiene tren: se llega en bus CTM desde Tánger, Tetuán o Fez, y conviene comprar el billete con un día de antelación. Mequinez está a 45 minutos de Fez en tren, y Rabat a dos horas y media de Mequinez. Para Volubilis, taxi desde Mequinez.",
+    "bestTime": "De marzo a junio y de septiembre a noviembre. En verano el Rif es agradable por la altura, pero Fez pasa de 38 grados. En invierno Chauen y el Rif pueden tener nieve y frío húmedo; Tánger y Rabat se quedan templadas.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Tánger, Chauen y Fez. Con 7 añades Tetuán. Con 10 entran Mequinez, Volubilis y Rabat."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren cubre Tánger, Tetuán, Fez, Mequinez y Rabat, y los buses llegan a Chauen. El coche solo compensa si quieres parar en pueblos del Rif."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Fez (FEZ) y saliendo por Tánger (TNG) o al revés, según el vuelo que encuentres."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Tánger (TNG), Fez (FEZ) o Rabat (RBA). Ryanair y Air Arabia vuelan a los tres desde varias ciudades europeas, y hay ferry desde Tarifa y Algeciras."
+      }
+    ]
+  },
+  "en": {
+    "title": "Northern Morocco: Tangier, Chefchaouen and Fez",
+    "metaTitle": "Northern Morocco: Tangier, Chefchaouen and Fez in 5 to 10 days · Lowfly",
+    "summary": "The Strait of Gibraltar, the blue medina of Chefchaouen in the Rif, the medina of Fez and, on the long version, Meknes with Volubilis and Rabat.",
+    "why": [
+      "Tangier is the gateway to Africa: from the port you can see the Spanish coast 14 kilometres away and the ferry takes an hour from Tarifa. The city Matisse painted has a medina on a slope and a century-old café, the Hafa.",
+      "Chefchaouen is the country's only blue town, clinging to the Rif hillside. A day covers it, but the point is to stay the night and see the streets empty at first light, before the coaches arrive.",
+      "Fez has the largest medieval medina in the world, 9,000 alleys where cars cannot go and donkeys carry the loads. It is the most intense city on the trip and the one that asks for the most time."
+    ],
+    "towns": {
+      "Tangier": {
+        "text": "Tangier looks at Spain across the strait. It was an international city until 1956, which is why it has cafés, bookshops and hotels from another era. The medina climbs to the kasbah, and from the terrace you see both shores of the strait at once.",
+        "see": [
+          "The kasbah and its museum, in the sultan's palace",
+          "The Café Hafa, with tables stepping down towards the sea",
+          "The seafront promenade and the city beach",
+          "The Caves of Hercules, 14 kilometres away"
+        ],
+        "tip": "The ferry takes an hour from Tarifa and two and a half from Algeciras. If you come from Spain, cross in the morning: the afternoon border checks are slower."
+      },
+      "Tetouan": {
+        "text": "Tetouan was the capital of the Spanish Protectorate and it shows: many signs are still in Spanish and the bread is the same as in Andalusia. Its medina is smaller and calmer than Fez's, and it is a World Heritage Site.",
+        "see": [
+          "The medina and the spice souk",
+          "The Jewish quarter and the synagogue",
+          "The archaeological museum, in the king's palace",
+          "Martil beach, ten minutes away"
+        ],
+        "tip": "Tetouan is the best stop for buying crafts without hassle: prices are lower than in Fez and there are fewer pushy sellers."
+      },
+      "Chefchaouen": {
+        "text": "Chefchaouen sits on the Rif hillside at 600 metres, and its houses have been painted blue since the 1930s. The medina is small and steep, with the Spanish mosque at the top and the river running through it.",
+        "see": [
+          "Uta el-Hammam square, with the kasbah",
+          "The Spanish mosque, with a view of the whole town",
+          "The Ras El Maa waterfall, on the edge of town",
+          "Akchour bridge, if you like walking"
+        ],
+        "tip": "The blue is repainted every spring and the most photographed streets are in the upper medina. Climb to the Spanish mosque at sunset: it is the best view and it costs nothing."
+      },
+      "Fez": {
+        "text": "Fez el Bali is the largest medieval medina in the world and it is intact: 9,000 alleys, 300 mosques and a university founded in 859. The leather tanneries, with their coloured vats, are the image of the city.",
+        "see": [
+          "The Chouara tanneries, from the shop terraces",
+          "The Bou Inania and Al-Attarine madrasas",
+          "Bab Boujloud square, the blue gate",
+          "The pottery and brass workshops"
+        ],
+        "tip": "Cars cannot enter the medina and GPS fails: hire an official guide for half a day or let your riad arrange one. The tannery terraces hand you a sprig of mint for the smell, and a tip is expected."
+      },
+      "Meknes": {
+        "text": "Meknes was the capital under Moulay Ismail, who built a palace with 40 kilometres of walls and stables for 12,000 horses. The Bab Mansour gate is the finest in the country, and half an hour away are the Roman ruins of Volubilis.",
+        "see": [
+          "The Bab Mansour gate and El Hedim square",
+          "The Heri es-Souani stables",
+          "The Kara prison, underground",
+          "Volubilis, the Roman city, thirty minutes away"
+        ],
+        "tip": "Volubilis takes two hours and has no shade: bring water and a hat. Taxis from Meknes do the round trip with waiting included for around 300 dirhams."
+      },
+      "Rabat": {
+        "text": "Rabat is the administrative capital and the calmest of the imperial cities. The unfinished Hassan Tower and the Kasbah of the Udayas, white and blue above the river, are the best of the city, and the medina lacks Fez's pressure.",
+        "see": [
+          "The Hassan Tower and the mosque columns",
+          "The Kasbah of the Udayas and its Andalusian garden",
+          "The mausoleum of Mohammed V",
+          "The medina and the central market"
+        ],
+        "tip": "Rabat is the only city on the trip where you can walk without being offered something every few steps. Use it to rest before heading back to Fez or Marrakesh."
+      }
+    },
+    "gettingAround": "Tangier, Tetouan and Fez are linked by train (ONCF) in three to four hours a leg. Chefchaouen has no train: you get there by CTM bus from Tangier, Tetouan or Fez, and it is worth buying the ticket a day ahead. Meknes is 45 minutes from Fez by train, and Rabat two and a half hours from Meknes. For Volubilis, take a taxi from Meknes.",
+    "bestTime": "March to June and September to November. In summer the Rif is pleasant thanks to the altitude, but Fez goes above 38 degrees. In winter Chefchaouen and the Rif can get snow and damp cold; Tangier and Rabat stay mild.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Tangier, Chefchaouen and Fez. 7 adds Tetouan. 10 takes in Meknes, Volubilis and Rabat."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train covers Tangier, Tetouan, Fez, Meknes and Rabat, and buses reach Chefchaouen. A car only pays off if you want to stop in Rif villages."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Fez (FEZ) and out of Tangier (TNG), or the reverse, depending on the flight you find."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Tangier (TNG), Fez (FEZ) or Rabat (RBA). Ryanair and Air Arabia fly to all three from several European cities, and there are ferries from Tarifa and Algeciras."
+      }
+    ]
+  }
+}

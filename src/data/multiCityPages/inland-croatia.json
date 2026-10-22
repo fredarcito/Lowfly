@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "zagreb-plitvice-y-la-costa",
+    "en": "inland-croatia"
+  },
+  "photos": {
+    "Zagreb": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Estatua_de_Ban_Jelacic%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_03.JPG/960px-Estatua_de_Ban_Jelacic%2C_Zagreb%2C_Croacia%2C_2014-04-20%2C_DD_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 719,
+      "page": "https://commons.wikimedia.org/wiki/File:Estatua_de_Ban_Jelacic,_Zagreb,_Croacia,_2014-04-20,_DD_03.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0"
+    },
+    "Plitvice Lakes": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Plitvice_Lakes_Croatia.jpg/960px-Plitvice_Lakes_Croatia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1280,
+      "page": "https://commons.wikimedia.org/wiki/File:Plitvice_Lakes_Croatia.jpg",
+      "author": "Sheeba Samuel",
+      "license": "CC BY-SA 4.0"
+    },
+    "Zadar": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Sea_organ_Zadar_1.jpg/960px-Sea_organ_Zadar_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Sea_organ_Zadar_1.jpg",
+      "author": "Andrej Šalov",
+      "license": "CC BY-SA 3.0"
+    },
+    "Šibenik (Krka)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Cathedral_of_St._James%2C_%C5%A0ibenik_01.jpg/960px-Cathedral_of_St._James%2C_%C5%A0ibenik_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Cathedral_of_St._James,_%C5%A0ibenik_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0"
+    },
+    "Split": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Split-Diokletianpalast-1.jpg/960px-Split-Diokletianpalast-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Split-Diokletianpalast-1.jpg",
+      "author": "SchiDD",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Croacia interior: Zagreb, Plitvice y Zadar",
+    "metaTitle": "Croacia interior: Zagreb, Plitvice y Zadar, de 5 a 8 días · Lowfly",
+    "summary": "La Croacia continental en bus: Zagreb, los lagos de Plitvice, Zadar y la costa de Šibenik y Split.",
+    "why": [
+      "Los lagos de Plitvice son 16 lagos en terrazas unidos por cascadas, en un hayedo declarado Patrimonio de la Humanidad, y se recorren por pasarelas de madera en un día completo. Es el parque nacional más famoso del país.",
+      "Zagreb es la capital de la Croacia continental, con la ciudad alta, el mercado de Dolac y la catedral, y casi nadie la incluye en el viaje a la costa: es un error, porque está a dos horas de Plitvice.",
+      "El viaje se hace entero en bus, con trayectos de dos o tres horas y billetes de 10 a 20 euros, y termina en Split, desde donde se puede seguir a las islas o volver en avión."
+    ],
+    "towns": {
+      "Zagreb": {
+        "text": "Zagreb tiene dos ciudades: la alta, con la iglesia de San Marcos y el parlamento, y la baja, con la plaza Ban Jelačić, el mercado de Dolac y la catedral neogótica. Es una capital de cafés, museos y vida de calle.",
+        "see": [
+          "La iglesia de San Marcos y el parlamento",
+          "El mercado de Dolac",
+          "La catedral de la Asunción",
+          "El museo de las relaciones rotas"
+        ],
+        "tip": "Zagreb se ve en un día y medio y el mercado de Dolac cierra a mediodía. Los buses a Plitvice salen de la estación de autobuses cada dos horas y tardan dos horas y media."
+      },
+      "Plitvice Lakes": {
+        "text": "Plitvice son 16 lagos en terrazas de travertino, unidos por cascadas y rodeados de hayedos, con el agua cambiando de color según la luz y los minerales. Se recorre por pasarelas de madera y barcos eléctricos.",
+        "see": [
+          "La cascada Veliki Slap, de 78 metros",
+          "El barco eléctrico entre los lagos",
+          "El mirador de Veliki Slap",
+          "El sendero de los lagos superiores"
+        ],
+        "tip": "El parque se visita con entrada por franjas horarias y se reserva online: en verano se agota. Entra a primera hora y haz los lagos superiores antes de las once."
+      },
+      "Zadar": {
+        "text": "Zadar es la ciudad más antigua de Dalmacia y la primera parada de la costa, con el órgano del mar, el foro romano y la iglesia de San Donato. Desde aquí se sigue a Šibenik y Split.",
+        "see": [
+          "El órgano del mar y el Saludo al Sol",
+          "La iglesia de San Donato",
+          "El foro romano",
+          "El mercado de la mañana"
+        ],
+        "tip": "El bus de Plitvice a Zadar tarda dos horas y sale por la tarde. El órgano del mar se escucha mejor con oleaje."
+      },
+      "Šibenik (Krka)": {
+        "text": "Šibenik tiene la catedral de San Jacobo, de piedra caliza y sin argamasa, y el parque nacional de Krka a 15 minutos, con cascadas y pasarelas. Es la parada de agua dulce entre Zadar y Split.",
+        "see": [
+          "La catedral de San Jacobo",
+          "Las cascadas de Krka",
+          "La fortaleza de San Miguel",
+          "El barrio de Dolac"
+        ],
+        "tip": "Krka se visita desde Skradin en barco y el baño solo está permitido en Skradinski buk. Compra la entrada del parque con el barco incluido."
+      },
+      "Split": {
+        "text": "Split es el palacio de Diocleciano convertido en ciudad, con el peristilo como plaza central y la Riva como paseo marítimo. Es el final del viaje y la puerta a las islas.",
+        "see": [
+          "El palacio de Diocleciano",
+          "La catedral de San Duje",
+          "La colina de Marjan",
+          "La Riva, al atardecer"
+        ],
+        "tip": "Desde Split salen ferris a Hvar, Korčula y Vis, y el aeropuerto está a 30 minutos en bus. El bus de Šibenik a Split tarda una hora y media."
+      }
+    },
+    "gettingAround": "Zagreb-Plitvice, dos horas y media en bus. Plitvice-Zadar, dos horas en bus. Zadar-Šibenik, una hora y media en bus. Šibenik-Split, una hora y media en bus. Los buses de Arriva y Flixbus unen todos los puntos y se reservan online.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con menos gente en Plitvice y temperaturas de 18 a 25 grados. En julio y agosto Plitvice se llena y hay que reservar con días de antelación. En invierno el parque abre con menos senderos.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Zagreb, Plitvice y Zadar. Con 6 añades Šibenik y Krka. Con 8 entran Split y una isla."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses unen todos los puntos y en Plitvice hay buses entre las entradas. El coche da más libertad en el parque."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Split (SPU) y saliendo por Zagreb (ZAG), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Zagreb (ZAG), Zadar (ZAD) o Split (SPU). Ryanair y Wizz Air vuelan a los tres desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Inland Croatia: Zagreb, Plitvice and Zadar",
+    "metaTitle": "Inland Croatia: Zagreb, Plitvice and Zadar in 5 to 8 days · Lowfly",
+    "summary": "Continental Croatia by bus: Zagreb, the Plitvice lakes, Zadar and the coast at Šibenik and Split.",
+    "why": [
+      "The Plitvice lakes are 16 terraced lakes joined by waterfalls, in a beech forest declared a World Heritage Site, and are walked on wooden boardwalks in a full day. It is the most famous national park in the country.",
+      "Zagreb is the capital of continental Croatia, with the upper town, the Dolac market and the cathedral, and hardly anyone includes it in a coastal trip: a mistake, since it is two hours from Plitvice.",
+      "The whole trip is by bus, with legs of two or three hours and tickets of 10 to 20 euros, and it ends in Split, from where you can carry on to the islands or fly home."
+    ],
+    "towns": {
+      "Zagreb": {
+        "text": "Zagreb has two cities: the upper one, with St Mark's church and the parliament, and the lower one, with Ban Jelačić square, the Dolac market and the neo-Gothic cathedral. It is a capital of cafés, museums and street life.",
+        "see": [
+          "St Mark's church and the parliament",
+          "The Dolac market",
+          "The cathedral of the Assumption",
+          "The Museum of Broken Relationships"
+        ],
+        "tip": "Zagreb takes a day and a half and the Dolac market closes at noon. Buses to Plitvice leave the bus station every two hours and take two and a half hours."
+      },
+      "Plitvice Lakes": {
+        "text": "Plitvice is 16 terraced travertine lakes joined by waterfalls and ringed by beech woods, the water changing colour with the light and the minerals. You walk it on wooden boardwalks and electric boats.",
+        "see": [
+          "Veliki Slap waterfall, 78 metres",
+          "The electric boat between the lakes",
+          "The Veliki Slap viewpoint",
+          "The upper lakes trail"
+        ],
+        "tip": "The park is entered on timed tickets booked online: in summer they sell out. Go in first thing and do the upper lakes before eleven."
+      },
+      "Zadar": {
+        "text": "Zadar is the oldest city in Dalmatia and the first stop on the coast, with the sea organ, the Roman forum and St Donatus's church. From here you carry on to Šibenik and Split.",
+        "see": [
+          "The sea organ and the Greeting to the Sun",
+          "St Donatus's church",
+          "The Roman forum",
+          "The morning market"
+        ],
+        "tip": "The bus from Plitvice to Zadar takes two hours and leaves in the afternoon. The sea organ sounds best with a swell."
+      },
+      "Šibenik (Krka)": {
+        "text": "Šibenik has St James's cathedral, of limestone and without mortar, and Krka national park 15 minutes away, with waterfalls and boardwalks. It is the freshwater stop between Zadar and Split.",
+        "see": [
+          "St James's cathedral",
+          "The Krka waterfalls",
+          "St Michael's fortress",
+          "The Dolac quarter"
+        ],
+        "tip": "Krka is visited from Skradin by boat and swimming is only allowed at Skradinski buk. Buy the park ticket with the boat included."
+      },
+      "Split": {
+        "text": "Split is Diocletian's palace turned into a city, with the peristyle as its central square and the Riva as its waterfront. It is the end of the trip and the gateway to the islands.",
+        "see": [
+          "Diocletian's palace",
+          "St Duje's cathedral",
+          "Marjan hill",
+          "The Riva, at sunset"
+        ],
+        "tip": "Ferries leave Split for Hvar, Korčula and Vis, and the airport is 30 minutes away by bus. The bus from Šibenik to Split takes ninety minutes."
+      }
+    },
+    "gettingAround": "Zagreb-Plitvice, two and a half hours by bus. Plitvice-Zadar, two hours by bus. Zadar-Šibenik, ninety minutes by bus. Šibenik-Split, ninety minutes by bus. Arriva and Flixbus cover every point and are booked online.",
+    "bestTime": "May to June and September to October, with fewer people at Plitvice and temperatures of 18 to 25 degrees. In July and August Plitvice fills up and must be booked days ahead. In winter the park opens with fewer trails.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Zagreb, Plitvice and Zadar. 6 adds Šibenik and Krka. 8 takes in Split and an island."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses link every point and there are buses between the Plitvice entrances. A car gives more freedom in the park."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Split (SPU) and out of Zagreb (ZAG) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Zagreb (ZAG), Zadar (ZAD) or Split (SPU). Ryanair and Wizz Air fly to all three from several European cities."
+      }
+    ]
+  }
+}

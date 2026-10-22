@@ -1,0 +1,298 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "bosnia-a-fondo",
+    "en": "bosnia-in-depth"
+  },
+  "photos": {
+    "Tuzla": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Tuzla_View_of_Tuzla.jpg/960px-Tuzla_View_of_Tuzla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 440,
+      "page": "https://commons.wikimedia.org/wiki/File:Tuzla_View_of_Tuzla.jpg",
+      "author": "Boabo",
+      "license": "CC BY-SA 3.0"
+    },
+    "Jajce": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Jajce_%E2%80%93_Pliva_waterfall.jpg/960px-Jajce_%E2%80%93_Pliva_waterfall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Jajce_%E2%80%93_Pliva_waterfall.jpg",
+      "author": "Julian Nyča",
+      "license": "CC BY-SA 3.0"
+    },
+    "Sarajevo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Old_town_Bascarsija%2C_Sarajevo.jpg/960px-Old_town_Bascarsija%2C_Sarajevo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Old_town_Bascarsija,_Sarajevo.jpg",
+      "author": "Natalino7",
+      "license": "CC BY-SA 3.0"
+    },
+    "Mostar": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mostar_Old_Town_Panorama.jpg/960px-Mostar_Old_Town_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 643,
+      "page": "https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama.jpg",
+      "author": "Ramirez HUN",
+      "license": "CC BY-SA 3.0"
+    },
+    "Blagaj": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Blagaj_tekke_2020.jpg/960px-Blagaj_tekke_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1280,
+      "page": "https://commons.wikimedia.org/wiki/File:Blagaj_tekke_2020.jpg",
+      "author": "Niegodzisie",
+      "license": "CC BY-SA 4.0"
+    },
+    "Počitelj": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Po%C4%8Ditelj_-_pano.jpg/960px-Po%C4%8Ditelj_-_pano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 554,
+      "page": "https://commons.wikimedia.org/wiki/File:Po%C4%8Ditelj_-_pano.jpg",
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0"
+    },
+    "Trebinje": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Trebinje%2C_panorama_m%C4%9Bsta.jpg/960px-Trebinje%2C_panorama_m%C4%9Bsta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 331,
+      "page": "https://commons.wikimedia.org/wiki/File:Trebinje,_panorama_m%C4%9Bsta.jpg",
+      "author": "I would appreciate being notified if you use my work outside Wikimedia. More of my work can be found in my personal gallery.",
+      "license": "CC BY 3.0"
+    },
+    "Dubrovnik": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/24/Old_Town_of_Dubrovnik_and_city_walls%2C_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 960,
+      "height": 540,
+      "page": "https://commons.wikimedia.org/wiki/File:Old_Town_of_Dubrovnik_and_city_walls,_2017.jpg",
+      "author": "Veselov350",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Bosnia a fondo: de Tuzla a Dubrovnik",
+    "metaTitle": "Bosnia a fondo: de Tuzla a Dubrovnik, de 4 a 10 días · Lowfly",
+    "summary": "La Bosnia que no sale en las guías: el lago salado de Tuzla, la cascada de Jajce, Sarajevo, Mostar, el manantial de Blagaj, el pueblo otomano de Počitelj y Trebinje.",
+    "why": [
+      "Bosnia es el país más barato de Europa occidental: un café cuesta un euro, una cena diez y el alojamiento la mitad que en Croacia. Con 10 días se recorre entera sin apretar.",
+      "La ruta suma a Sarajevo y Mostar tres paradas que casi nadie hace: Jajce, con su cascada en el centro del pueblo, Blagaj, con un manantial que sale de una cueva bajo un monasterio derviche, y Počitelj, un pueblo otomano de piedra colgado de una ladera.",
+      "El tren de Sarajevo a Mostar, por el valle del Neretva, es la mejor forma de cruzar el país: dos horas entre montañas por unos ocho euros."
+    ],
+    "towns": {
+      "Tuzla": {
+        "text": "Tuzla es la ciudad de la sal: sus lagos salados, el Panonsko y el Slano, son antiguas minas inundadas donde la gente se baña flotando como en el mar Muerto. Es una ciudad universitaria, animada y sin turistas, con un casco austrohúngaro de calles anchas.",
+        "see": [
+          "Los lagos salados de Pannonica",
+          "La plaza de la Libertad y la calle Korzo",
+          "La mezquita de Šarena y el barrio antiguo",
+          "El mercado de la mañana"
+        ],
+        "tip": "Tuzla tiene aeropuerto propio (TZL) con vuelos de Wizz Air. Los lagos salados son gratuitos y están en el centro: lleva bañador si viajas en verano."
+      },
+      "Jajce": {
+        "text": "Jajce es el único pueblo de Europa con una cascada de 20 metros en el centro: el río Pliva se tira al Vrbas dentro del casco antiguo. Encima están la fortaleza medieval, donde se coronó al último rey de Bosnia, y las cataratas de Pliva, a media hora a pie.",
+        "see": [
+          "La cascada del Pliva, en el centro",
+          "La fortaleza y la iglesia de San Lucas",
+          "Los molinos de agua de Mlinčići",
+          "El lago de Pliva, en barco"
+        ],
+        "tip": "Jajce se ve en un día y está a tres horas de Sarajevo en bus. Los molinos de agua de Mlinčići están a media hora a pie río arriba y son la foto más bonita del pueblo."
+      },
+      "Sarajevo": {
+        "text": "Sarajevo es la capital de Bosnia y una de las ciudades más mezcladas de Europa: en una misma calle hay una mezquita del siglo XVI, una catedral católica, una iglesia ortodoxa y una sinagoga sefardí. El barrio de Baščaršija es el bazar otomano y el centro de la vida.",
+        "see": [
+          "Baščaršija y la mezquita de Gazi Husrev-beg",
+          "El puente Latino y el museo del atentado de 1914",
+          "El túnel de la guerra y el Museo de la Infancia de la Guerra",
+          "El mirador de la fortaleza amarilla, al atardecer"
+        ],
+        "tip": "Sarajevo es la base de la ruta: desde aquí salen el tren a Mostar y los buses a Jajce y Tuzla. Prueba el ćevapi en Baščaršija, el plato nacional, y el café bosnio, servido en una taza pequeña con azúcar."
+      },
+      "Mostar": {
+        "text": "Mostar es el puente Stari Most, reconstruido piedra a piedra tras la guerra y Patrimonio de la Humanidad. A los lados, el barrio viejo tiene calles de piedra pulida, talleres de cobre y cafés en las terrazas sobre el Neretva.",
+        "see": [
+          "El puente Stari Most y el mirador de la orilla izquierda",
+          "El bazar de Kujundžiluk",
+          "La mezquita de Koski Mehmed Bajá",
+          "El barrio de Donja Mahala, con la sinagoga"
+        ],
+        "tip": "Mostar se ve en un día, pero duerme una noche: los autocares de excursión llegan a las once y se van a las cuatro, y el pueblo es otro por la mañana temprano."
+      },
+      "Blagaj": {
+        "text": "Blagaj es un pueblo a 12 kilómetros de Mostar donde el río Buna sale de una cueva al pie de un acantilado de 200 metros. Delante está el tekke, el monasterio derviche del siglo XVI, con terrazas sobre el agua y una fuente que se dice milagrosa.",
+        "see": [
+          "El tekke derviche y su terraza sobre el río",
+          "La cueva del Buna, en barco",
+          "La fortaleza de Stjepan Grad, en lo alto",
+          "El restaurante de trucha junto al río"
+        ],
+        "tip": "Blagaj se visita en medio día desde Mostar, en bus o en taxi. La cueva se recorre en barco en 20 minutos y el agua sale a 10 grados todo el año."
+      },
+      "Počitelj": {
+        "text": "Počitelj es un pueblo otomano de piedra colgado de una ladera sobre el Neretva, con una torre del reloj, una mezquita y una fortaleza en lo alto. Está abandonado en gran parte y es Patrimonio de la Humanidad desde 2005.",
+        "see": [
+          "La torre del reloj y la mezquita de Šišman Ibrahim",
+          "La fortaleza, con vistas al valle",
+          "El hammam y el han, en ruinas",
+          "Los granados y las higueras del camino"
+        ],
+        "tip": "Počitelj está en la carretera de Mostar a Trebinje y se ve en una hora. Hay pocos buses: lo más fácil es parar con un coche de alquiler o en taxi desde Mostar."
+      },
+      "Trebinje": {
+        "text": "Trebinje es la ciudad del sur de Bosnia, a 30 kilómetros del Adriático, con un casco antiguo austrohúngaro de plátanos y una iglesia ortodoxa en una colina. Alrededor hay viñedos y el monasterio de Tvrdoš, que produce vino desde el siglo XV.",
+        "see": [
+          "La plaza de la Libertad y el mercado",
+          "La iglesia de Hercegovačka Gračanica, en la colina",
+          "El monasterio de Tvrdoš y su bodega",
+          "El puente de Arslanagić, sobre el Trebišnjica"
+        ],
+        "tip": "Trebinje es la última parada en Bosnia antes de Croacia y está a una hora de Dubrovnik en bus. La cata de vino de Tvrdoš cuesta unos cinco euros y se reserva en el monasterio."
+      },
+      "Dubrovnik": {
+        "text": "Dubrovnik cierra la ruta como salida aérea y como contraste: de un país de pueblos de piedra y montañas a una ciudad amurallada sobre el mar. Es la parada más cara del viaje, así que aquí se aprovecha para ver el casco antiguo y volar.",
+        "see": [
+          "Las murallas, a primera hora",
+          "La calle Stradun y la fuente de Onofrio",
+          "El fuerte de Lovrijenac, sobre el mar",
+          "La playa de Banje, con la ciudad detrás"
+        ],
+        "tip": "Desde Trebinje hay buses a Dubrovnik en una hora y el aeropuerto (DBV) está a 20 minutos del centro. Si solo tienes un día, sube a las murallas a las ocho y baja a la playa por la tarde."
+      }
+    },
+    "gettingAround": "Tuzla-Jajce, cuatro horas en bus. Jajce-Sarajevo, tres horas en bus. Sarajevo-Mostar, dos horas en tren. Mostar-Blagaj, 20 minutos en bus. Blagaj-Počitelj, 25 minutos en coche. Počitelj-Trebinje, dos horas en coche. Trebinje-Dubrovnik, una hora en bus. El tren de Sarajevo a Mostar se reserva en la estación y conviene comprarlo el día antes.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con 20 a 26 grados y sin el calor de agosto en Mostar. En invierno Sarajevo es fría y con nieve, y Jajce y Tuzla quedan más tranquilas. Julio y agosto son los meses de los autocares de excursión en Mostar y Počitelj.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 días ves Sarajevo, Mostar y Dubrovnik. Con 6 añades Trebinje y Blagaj. Con 10 entran Tuzla, Jajce y Počitelj."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Para Sarajevo, Mostar y Trebinje no. Para Jajce, Blagaj y Počitelj el coche ahorra mucho tiempo: los buses son pocos."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Dubrovnik (DBV) y saliendo por Tuzla (TZL) o Sarajevo (SJJ), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Tuzla (TZL), Sarajevo (SJJ) o Dubrovnik (DBV). Wizz Air vuela a Tuzla y Ryanair y Wizz Air a Sarajevo."
+      }
+    ]
+  },
+  "en": {
+    "title": "Bosnia in depth: from Tuzla to Dubrovnik",
+    "metaTitle": "Bosnia in depth: from Tuzla to Dubrovnik in 4 to 10 days · Lowfly",
+    "summary": "The Bosnia that guidebooks skip: the salt lakes of Tuzla, the waterfall in Jajce, Sarajevo, Mostar, the Blagaj spring, the Ottoman village of Počitelj and Trebinje.",
+    "why": [
+      "Bosnia is the cheapest country in western Europe: a coffee costs a euro, dinner ten and accommodation half what it costs in Croatia. Ten days covers the whole country without rushing.",
+      "The route adds three stops to Sarajevo and Mostar that almost nobody makes: Jajce, with its waterfall in the middle of town, Blagaj, with a spring coming out of a cave below a dervish monastery, and Počitelj, an Ottoman stone village hanging off a hillside.",
+      "The train from Sarajevo to Mostar, along the Neretva valley, is the best way to cross the country: two hours between mountains for about eight euros."
+    ],
+    "towns": {
+      "Tuzla": {
+        "text": "Tuzla is the salt city: its salt lakes, Panonsko and Slano, are flooded old mines where people float like in the Dead Sea. It is a lively university city with no tourists, with an Austro-Hungarian centre of wide streets.",
+        "see": [
+          "The salt lakes at Pannonica",
+          "Freedom Square and the Korzo",
+          "The Šarena mosque and the old quarter",
+          "The morning market"
+        ],
+        "tip": "Tuzla has its own airport (TZL) with Wizz Air flights. The salt lakes are free and in the centre: bring a swimsuit if you travel in summer."
+      },
+      "Jajce": {
+        "text": "Jajce is the only town in Europe with a 20-metre waterfall in the centre: the Pliva river drops into the Vrbas inside the old town. Above are the medieval fortress, where the last king of Bosnia was crowned, and the Pliva lakes, half an hour on foot.",
+        "see": [
+          "The Pliva waterfall, in the centre",
+          "The fortress and St Luke's church",
+          "The watermills at Mlinčići",
+          "The Pliva lake, by boat"
+        ],
+        "tip": "Jajce takes a day and is three hours from Sarajevo by bus. The watermills at Mlinčići are half an hour upstream on foot and are the prettiest photo in town."
+      },
+      "Sarajevo": {
+        "text": "Sarajevo is the capital of Bosnia and one of the most mixed cities in Europe: on one street there is a sixteenth-century mosque, a Catholic cathedral, an Orthodox church and a Sephardic synagogue. Baščaršija, the Ottoman bazaar, is the heart of it.",
+        "see": [
+          "Baščaršija and the Gazi Husrev-beg mosque",
+          "The Latin Bridge and the museum of the 1914 assassination",
+          "The war tunnel and the War Childhood Museum",
+          "The view from the yellow fortress, at sunset"
+        ],
+        "tip": "Sarajevo is the base of the route: the train to Mostar and the buses to Jajce and Tuzla leave from here. Try ćevapi in Baščaršija, the national dish, and Bosnian coffee, served in a small cup with sugar."
+      },
+      "Mostar": {
+        "text": "Mostar is the Stari Most bridge, rebuilt stone by stone after the war and a World Heritage Site. On either side the old quarter has polished stone streets, copper workshops and cafés on terraces above the Neretva.",
+        "see": [
+          "The Stari Most and the viewpoint on the left bank",
+          "The Kujundžiluk bazaar",
+          "The Koski Mehmed Pasha mosque",
+          "Donja Mahala, with the synagogue"
+        ],
+        "tip": "Mostar takes a day, but sleep a night: coach tours arrive at eleven and leave at four, and the town is different early in the morning."
+      },
+      "Blagaj": {
+        "text": "Blagaj is a village 12 kilometres from Mostar where the Buna river comes out of a cave at the foot of a 200-metre cliff. In front is the tekke, a sixteenth-century dervish monastery with terraces over the water and a spring said to be miraculous.",
+        "see": [
+          "The dervish tekke and its terrace over the river",
+          "The Buna cave, by boat",
+          "Stjepan Grad fortress, above",
+          "The trout restaurant by the river"
+        ],
+        "tip": "Blagaj is a half-day trip from Mostar, by bus or taxi. The cave is visited by boat in 20 minutes and the water comes out at 10 degrees all year."
+      },
+      "Počitelj": {
+        "text": "Počitelj is an Ottoman stone village hanging off a hillside above the Neretva, with a clock tower, a mosque and a fortress at the top. It is largely abandoned and has been a World Heritage Site since 2005.",
+        "see": [
+          "The clock tower and the Šišman Ibrahim mosque",
+          "The fortress, with views over the valley",
+          "The ruined hammam and han",
+          "The pomegranates and figs along the road"
+        ],
+        "tip": "Počitelj is on the road from Mostar to Trebinje and takes an hour. Buses are few: the easiest way is to stop with a hire car or by taxi from Mostar."
+      },
+      "Trebinje": {
+        "text": "Trebinje is the southern city of Bosnia, 30 kilometres from the Adriatic, with an Austro-Hungarian old town of plane trees and an Orthodox church on a hill. Around it are vineyards and the Tvrdoš monastery, making wine since the fifteenth century.",
+        "see": [
+          "Freedom Square and the market",
+          "The Hercegovačka Gračanica church, on the hill",
+          "Tvrdoš monastery and its cellar",
+          "The Arslanagić bridge, over the Trebišnjica"
+        ],
+        "tip": "Trebinje is the last stop in Bosnia before Croatia and is an hour from Dubrovnik by bus. The wine tasting at Tvrdoš costs about five euros and is booked at the monastery."
+      },
+      "Dubrovnik": {
+        "text": "Dubrovnik closes the route as the flight out and as a contrast: from a country of stone villages and mountains to a walled city on the sea. It is the most expensive stop of the trip, so here you see the old town and fly home.",
+        "see": [
+          "The walls, first thing",
+          "Stradun and Onofrio's fountain",
+          "The Lovrijenac fort, above the sea",
+          "Banje beach, with the city behind"
+        ],
+        "tip": "Buses from Trebinje reach Dubrovnik in an hour and the airport (DBV) is 20 minutes from the centre. If you only have a day, climb the walls at eight and go down to the beach in the afternoon."
+      }
+    },
+    "gettingAround": "Tuzla-Jajce, four hours by bus. Jajce-Sarajevo, three hours by bus. Sarajevo-Mostar, two hours by train. Mostar-Blagaj, 20 minutes by bus. Blagaj-Počitelj, 25 minutes by car. Počitelj-Trebinje, two hours by car. Trebinje-Dubrovnik, an hour by bus. The Sarajevo-Mostar train is booked at the station and is best bought the day before.",
+    "bestTime": "May to June and September to October, at 20 to 26 degrees and without the August heat in Mostar. In winter Sarajevo is cold and snowy and Jajce and Tuzla are quieter. July and August are the months of the coach tours in Mostar and Počitelj.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 days gets you Sarajevo, Mostar and Dubrovnik. 6 adds Trebinje and Blagaj. 10 takes in Tuzla, Jajce and Počitelj."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for Sarajevo, Mostar and Trebinje. For Jajce, Blagaj and Počitelj a car saves a lot of time: buses are few."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Dubrovnik (DBV) and out of Tuzla (TZL) or Sarajevo (SJJ) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Tuzla (TZL), Sarajevo (SJJ) or Dubrovnik (DBV). Wizz Air flies to Tuzla and Ryanair and Wizz Air to Sarajevo."
+      }
+    ]
+  }
+}

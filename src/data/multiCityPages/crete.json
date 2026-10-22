@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "creta",
+    "en": "crete"
+  },
+  "photos": {
+    "Chania": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Chania_Old_Harbour_in_Crete%2C_Greece_004.jpg/960px-Chania_Old_Harbour_in_Crete%2C_Greece_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 664,
+      "page": "https://commons.wikimedia.org/wiki/File:Chania_Old_Harbour_in_Crete,_Greece_004.jpg",
+      "author": "Moonik",
+      "license": "CC BY-SA 3.0"
+    },
+    "Loutro": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Loutro_Crete.jpg/960px-Loutro_Crete.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Loutro_Crete.jpg",
+      "author": "wiccahwang",
+      "license": "CC BY 2.0"
+    },
+    "Rethymno": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Harbour_snowy_mountains_Rethymno_Crete_Greece.jpg/960px-Harbour_snowy_mountains_Rethymno_Crete_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 647,
+      "page": "https://commons.wikimedia.org/wiki/File:Harbour_snowy_mountains_Rethymno_Crete_Greece.jpg",
+      "author": "Jebulon",
+      "license": "CC0"
+    },
+    "Agios Nikolaos": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Agios_Nikolaos%2C_Crete_%E2%80%93_Harbour_2019a.jpg/960px-Agios_Nikolaos%2C_Crete_%E2%80%93_Harbour_2019a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 543,
+      "page": "https://commons.wikimedia.org/wiki/File:Agios_Nikolaos,_Crete_%E2%80%93_Harbour_2019a.jpg",
+      "author": "Cayambe",
+      "license": "CC BY-SA 4.0"
+    },
+    "Heraklion": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Venetian_Fortress_in_Heraklion_Crete_NE_side.jpg/960px-Venetian_Fortress_in_Heraklion_Crete_NE_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 519,
+      "page": "https://commons.wikimedia.org/wiki/File:Venetian_Fortress_in_Heraklion_Crete_NE_side.jpg",
+      "author": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention me as the author and send me a message. This image is not in the public domain. Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media, if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Creta: Chania, Loutro, Rétino y Heraclión",
+    "metaTitle": "Creta: Chania, Loutro, Rétino y Heraclión, de 4 a 9 días · Lowfly",
+    "summary": "La isla entera de oeste a este: el puerto veneciano de Chania, el pueblo sin carreteras de Loutro, Rétino, Agios Nikolaos y el palacio de Cnosos en Heraclión.",
+    "why": [
+      "Creta es una isla para recorrer en coche o en bus: 260 kilómetros de costa con un puerto veneciano, un pueblo al que solo se llega en barco o a pie, playas de arena rosa y el palacio minoico de Cnosos.",
+      "Loutro es uno de los pocos pueblos de Grecia sin carretera: se llega en barco desde Sfakiá o a pie por el sendero de la costa, y tiene una cala de agua transparente y casas blancas al borde del mar.",
+      "La comida cretense es la mejor de Grecia: aceite de oliva, tomate, queso graviera, caracoles y raki. Creta es la región con la dieta mediterránea más intacta del país."
+    ],
+    "towns": {
+      "Chania": {
+        "text": "Chania es la ciudad más bonita de Creta: un puerto veneciano con un faro egipcio, un casco antiguo de callejones con casas de madera y la sinagoga de Etz Hayyim, en el barrio judío. Alrededor están las playas de Nea Chora y Stavros.",
+        "see": [
+          "El puerto veneciano y el faro",
+          "El mercado municipal",
+          "La sinagoga de Etz Hayyim",
+          "La península de Akrotiri y el monasterio de Agia Triada"
+        ],
+        "tip": "Chania tiene el aeropuerto (CHQ) a 15 minutos del centro. La garganta de Samaria, la más larga de Europa, se recorre en un día desde aquí con bus hasta Omalos y barco de vuelta."
+      },
+      "Loutro": {
+        "text": "Loutro es un pueblo de casas blancas en una cala del mar de Libia, al que solo se llega en barco o a pie por el sendero de la costa. No hay carreteras, no hay coches y el agua es tan clara que se ven los peces desde el muelle.",
+        "see": [
+          "La cala y el muelle de Loutro",
+          "El sendero a Sfakiá, por la costa",
+          "La playa de Glyka Nera, en barco",
+          "La fortaleza de Frangokastello, al este"
+        ],
+        "tip": "Loutro se alcanza en barco desde Sfakiá o desde Chora Sfakion, y el barco sale varias veces al día en verano. No hay cajeros: lleva efectivo."
+      },
+      "Rethymno": {
+        "text": "Rétino es una ciudad veneciana con un puerto de pescadores, una fortaleza del siglo XVI y un casco antiguo de calles estrechas con casas de piedra y balcones de madera. Al este está la playa de arena larga de la ciudad.",
+        "see": [
+          "La fortaleza de Fortezza",
+          "El puerto veneciano y el faro",
+          "La fuente Rimondi y la calle Arkadiou",
+          "El monasterio de Arkadi, a 25 kilómetros"
+        ],
+        "tip": "Rétino está a una hora de Chania y a una de Heraclión en bus, así que es la parada intermedia natural. La playa de la ciudad tiene 12 kilómetros de arena y está a 5 minutos del centro."
+      },
+      "Agios Nikolaos": {
+        "text": "Agios Nikolaos es un pueblo de casas blancas alrededor de un lago de agua salada, el Voulismeni, unido al mar por un canal. Es la puerta de la península de Sitia y de la isla de Spinalonga, la antigua leprosería.",
+        "see": [
+          "El lago Voulismeni y su mirador",
+          "La isla de Spinalonga, en barco",
+          "La playa de Almyros, al norte",
+          "El pueblo de Kritsa, en la montaña"
+        ],
+        "tip": "Spinalonga se visita en barco desde Elounda o Plaka en medio día y es la excursión más interesante del este de Creta. El lago Voulismeni se ve mejor desde el mirador de la iglesia."
+      },
+      "Heraklion": {
+        "text": "Heraclión es la capital de Creta y la ciudad de Cnosos: el palacio minoico más importante del mundo está a 5 kilómetros, y el museo arqueológico de la ciudad tiene los frescos y la cerámica de la civilización minoica. El centro tiene murallas venecianas y la fuente Morosini.",
+        "see": [
+          "El palacio de Cnosos",
+          "El museo arqueológico de Heraclión",
+          "Las murallas venecianas y la puerta de Pantocrátor",
+          "La fortaleza de Koules, en el puerto"
+        ],
+        "tip": "Heraclión tiene el aeropuerto (HER) a 5 minutos del centro y es la salida de la ruta. Cnosos se visita en bus urbano en medio día y el museo arqueológico merece dos horas."
+      }
+    },
+    "gettingAround": "Chania-Loutro, dos horas en bus hasta Chora Sfakion y 15 minutos en barco. Loutro-Rétino, dos horas y media en bus. Rétino-Agios Nikolaos, dos horas en bus. Agios Nikolaos-Heraclión, una hora en bus. Los buses de KTEL unen toda la costa norte cada hora y son baratos.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con el mar a 24 grados y sin el calor de agosto. Julio y agosto son los meses de playa y de precios altos, con 35 grados en el interior. En invierno la costa norte sigue abierta y las gargantas se recorren mejor.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 días ves Chania y Rétino. Con 6 añades Loutro y Heraclión. Con 9 entran Agios Nikolaos, Spinalonga y Cnosos con calma."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses de KTEL unen la costa norte. El coche ayuda para las gargantas, las playas del sur y Loutro, al que se llega en barco."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Heraclión (HER) y saliendo por Chania (CHQ), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Chania (CHQ) o a Heraclión (HER). Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Crete: Chania, Loutro, Rethymno and Heraklion",
+    "metaTitle": "Crete: Chania, Loutro, Rethymno and Heraklion in 4 to 9 days · Lowfly",
+    "summary": "The whole island from west to east: the Venetian harbour of Chania, the roadless village of Loutro, Rethymno, Agios Nikolaos and the palace of Knossos in Heraklion.",
+    "why": [
+      "Crete is an island to cross by car or bus: 260 kilometres of coast with a Venetian harbour, a village reached only by boat or on foot, pink-sand beaches and the Minoan palace of Knossos.",
+      "Loutro is one of the few villages in Greece without a road: you arrive by boat from Sfakia or on foot along the coastal path, and it has a cove of clear water and white houses at the water's edge.",
+      "Cretan food is the best in Greece: olive oil, tomatoes, graviera cheese, snails and raki. Crete is the region with the most intact Mediterranean diet in the country."
+    ],
+    "towns": {
+      "Chania": {
+        "text": "Chania is the prettiest city in Crete: a Venetian harbour with an Egyptian lighthouse, an old town of alleys with wooden houses and the Etz Hayyim synagogue, in the Jewish quarter. Around it are the beaches of Nea Chora and Stavros.",
+        "see": [
+          "The Venetian harbour and the lighthouse",
+          "The municipal market",
+          "The Etz Hayyim synagogue",
+          "The Akrotiri peninsula and Agia Triada monastery"
+        ],
+        "tip": "Chania has the airport (CHQ) 15 minutes from the centre. The Samaria gorge, the longest in Europe, is walked in a day from here by bus to Omalos and boat back."
+      },
+      "Loutro": {
+        "text": "Loutro is a village of white houses in a cove on the Libyan Sea, reached only by boat or on foot along the coastal path. There are no roads, no cars, and the water is so clear you see the fish from the pier.",
+        "see": [
+          "The cove and the pier of Loutro",
+          "The path to Sfakia, along the coast",
+          "Glyka Nera beach, by boat",
+          "Frangokastello fortress, to the east"
+        ],
+        "tip": "Loutro is reached by boat from Sfakia or from Chora Sfakion, and the boat runs several times a day in summer. There are no cash machines: bring cash."
+      },
+      "Rethymno": {
+        "text": "Rethymno is a Venetian city with a fishing harbour, a sixteenth-century fortress and an old town of narrow streets with stone houses and wooden balconies. To the east is the town's long sandy beach.",
+        "see": [
+          "Fortezza fortress",
+          "The Venetian harbour and the lighthouse",
+          "The Rimondi fountain and Arkadiou street",
+          "Arkadi monastery, 25 kilometres away"
+        ],
+        "tip": "Rethymno is an hour from Chania and an hour from Heraklion by bus, so it is the natural middle stop. The town beach has 12 kilometres of sand and is 5 minutes from the centre."
+      },
+      "Agios Nikolaos": {
+        "text": "Agios Nikolaos is a town of white houses around a saltwater lake, Voulismeni, joined to the sea by a channel. It is the gateway to the Sitia peninsula and to the island of Spinalonga, the former leper colony.",
+        "see": [
+          "Lake Voulismeni and its viewpoint",
+          "The island of Spinalonga, by boat",
+          "Almyros beach, to the north",
+          "The village of Kritsa, in the mountains"
+        ],
+        "tip": "Spinalonga is visited by boat from Elounda or Plaka in half a day and is the most interesting outing in eastern Crete. Lake Voulismeni is seen best from the viewpoint by the church."
+      },
+      "Heraklion": {
+        "text": "Heraklion is the capital of Crete and the city of Knossos: the most important Minoan palace in the world is 5 kilometres away, and the city's archaeological museum holds the frescoes and pottery of the Minoan civilisation. The centre has Venetian walls and the Morosini fountain.",
+        "see": [
+          "The palace of Knossos",
+          "The Heraklion archaeological museum",
+          "The Venetian walls and the Pantocrator gate",
+          "The Koules fortress, in the port"
+        ],
+        "tip": "Heraklion has the airport (HER) 5 minutes from the centre and is the exit of the route. Knossos is visited by city bus in half a day and the archaeological museum deserves two hours."
+      }
+    },
+    "gettingAround": "Chania-Loutro, two hours by bus to Chora Sfakion and 15 minutes by boat. Loutro-Rethymno, two and a half hours by bus. Rethymno-Agios Nikolaos, two hours by bus. Agios Nikolaos-Heraklion, an hour by bus. KTEL buses run along the north coast every hour and are cheap.",
+    "bestTime": "May to June and September to October, with the sea at 24 degrees and without the August heat. July and August are the beach months and the expensive ones, with 35 degrees inland. In winter the north coast stays open and the gorges are best walked.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 days gets you Chania and Rethymno. 6 adds Loutro and Heraklion. 9 takes in Agios Nikolaos, Spinalonga and Knossos without rushing."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: KTEL buses run along the north coast. A car helps for the gorges, the southern beaches and Loutro, which is reached by boat."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Heraklion (HER) and out of Chania (CHQ) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Chania (CHQ) or Heraklion (HER). Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

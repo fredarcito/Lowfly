@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "costa-turquesa",
+    "en": "turquoise-coast"
+  },
+  "photos": {
+    "Antalya": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/J22_333_Antalya%2C_Hafenviertel.jpg/960px-J22_333_Antalya%2C_Hafenviertel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:J22_333_Antalya,_Hafenviertel.jpg",
+      "author": "Falk2",
+      "license": "CC BY-SA 4.0"
+    },
+    "Olympos and Çıralı": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/%C3%87%C4%B1ral%C4%B1_Plaj%C4%B1.jpg/960px-%C3%87%C4%B1ral%C4%B1_Plaj%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:%C3%87%C4%B1ral%C4%B1_Plaj%C4%B1.jpg",
+      "author": "Josh.artofwayfaring",
+      "license": "CC BY-SA 4.0"
+    },
+    "Kaş": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ka%C5%9F%2C_A%C4%9Fustos_2015_Liman%27dan_bir_g%C3%B6r%C3%BCn%C3%BCm.jpg/960px-Ka%C5%9F%2C_A%C4%9Fustos_2015_Liman%27dan_bir_g%C3%B6r%C3%BCn%C3%BCm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 540,
+      "page": "https://commons.wikimedia.org/wiki/File:Ka%C5%9F,_A%C4%9Fustos_2015_Liman%27dan_bir_g%C3%B6r%C3%BCn%C3%BCm.jpg",
+      "author": "Esginmurat",
+      "license": "CC BY-SA 4.0"
+    },
+    "Fethiye and Ölüdeniz": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Oludeniz_beach_-_panoramio.jpg/960px-Oludeniz_beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Oludeniz_beach_-_panoramio.jpg",
+      "author": "angelius1979",
+      "license": "CC BY-SA 3.0"
+    },
+    "Dalyan": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/River_Dalyan_Tombs_RB3.jpg/960px-River_Dalyan_Tombs_RB3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:River_Dalyan_Tombs_RB3.jpg",
+      "author": "",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "es": {
+    "title": "Costa Turquesa: Antalya, Kaş y Fethiye",
+    "metaTitle": "Costa Turquesa: Antalya, Kaş y Fethiye, de 5 a 9 días · Lowfly",
+    "summary": "La costa licia de Antalya a Dalaman en dolmuş: calas de agua turquesa, ruinas romanas junto al mar, la laguna de Ölüdeniz y las tumbas de Dalyan.",
+    "why": [
+      "Es la costa más bonita del Mediterráneo turco y se recorre sin coche: los dolmuş, los minibuses locales, unen todos los pueblos cada media hora y cuestan unos pocos euros.",
+      "La ruta licia, un sendero de 540 kilómetros entre Fethiye y Antalya, pasa por aquí. No hace falta hacerla entera: con un tramo de un día, de Faralya a Kabak o de Çıralı a Adrasan, ya se entiende por qué la gente la camina entera.",
+      "Cada parada tiene algo distinto: Antalya su casco antiguo, Çıralı su playa de tortugas y el fuego eterno de la Quimera, Kaş el buceo y Kekova, Fethiye la laguna de Ölüdeniz y Dalyan las tumbas excavadas en el acantilado."
+    ],
+    "towns": {
+      "Antalya": {
+        "text": "Antalya abre la ruta por el este: una ciudad grande con un casco antiguo, Kaleiçi, metido dentro de las murallas, un puerto romano reconvertido en marina y una muralla que cae al mar. Es la base para ir a las cascadas y a Perge.",
+        "see": [
+          "Kaleiçi, con la puerta de Adriano y el reloj",
+          "El puerto viejo, al atardecer",
+          "Las ruinas de Perge, a 18 kilómetros",
+          "Las cascadas de Düden y de Kursunlu"
+        ],
+        "tip": "Desde la estación de autobuses salen dolmuş a la costa cada media hora. Compra el billete en la taquilla de la compañía, no a los que te abordan en la puerta."
+      },
+      "Olympos and Çıralı": {
+        "text": "Çıralı es una playa larga de arena y guijarros, protegida porque las tortugas caretta caretta desovan en ella, con el pueblo escondido entre naranjos. Al sur están las ruinas de Olympos, en un desfiladero, y en la montaña, el fuego eterno de la Quimera.",
+        "see": [
+          "La playa de Çıralı y el desove de tortugas, de mayo a septiembre",
+          "Las ruinas de Olympos, junto al río",
+          "El fuego eterno de Yanartaş, subiendo de noche",
+          "La cala de Adrasan, a 20 minutos"
+        ],
+        "tip": "El fuego de la Quimera se ve mejor de noche: sube una hora antes del atardecer con una linterna y vuelve con la luna. No hay cajeros en Çıralı, lleva efectivo."
+      },
+      "Kaş": {
+        "text": "Kaş es un pueblo de pescadores con casas blancas y buganvillas, pegado a la costa y frente a la isla griega de Meis, a la que se puede ir en ferry. Es el mejor sitio de Turquía para bucear y la base para la excursión a Kekova.",
+        "see": [
+          "El puerto y la plaza del pueblo",
+          "La excursión en barco a Kekova y la ciudad hundida",
+          "El teatro helenístico, con vistas al mar",
+          "El cañón de Saklıkent, a una hora"
+        ],
+        "tip": "El barco a Kekova sale por la mañana y vuelve a media tarde; no se puede nadar sobre la ciudad hundida, pero sí en las calas del camino. Lleva protección solar: no hay sombra en cubierta."
+      },
+      "Fethiye and Ölüdeniz": {
+        "text": "Fethiye es una ciudad de mercado con un puerto natural y tumbas licias en el acantilado, y Ölüdeniz, a 15 minutos, es la laguna azul más fotografiada del país, con la montaña de Babadağ detrás, desde donde despegan los parapentes.",
+        "see": [
+          "La laguna de Ölüdeniz y la playa de Belcekız",
+          "Las tumbas de Amintas, en el acantilado de Fethiye",
+          "El valle de las Mariposas, en barco",
+          "Un salto en parapente desde Babadağ"
+        ],
+        "tip": "El parapente desde Babadağ sale a 1.960 metros y aterriza en la playa: cuesta entre 100 y 150 euros con vídeo. Reserva con una agencia seria y comprueba que el piloto tenga licencia."
+      },
+      "Dalyan": {
+        "text": "Dalyan es un pueblo de casas bajas junto a un río de aguas lentas, con las tumbas licias excavadas en el acantilado de Kaunos al otro lado. En barco se llega a la playa de İztuzu, donde desovan las tortugas, y a los baños de lodo.",
+        "see": [
+          "Las tumbas reales de Kaunos, en barco",
+          "La playa de İztuzu, en el delta",
+          "Los baños de lodo y las aguas termales",
+          "El mercado del pueblo, los sábados"
+        ],
+        "tip": "El barco a İztuzu se comparte y sale cada media hora desde el muelle. La playa está cerrada de noche en temporada de desove, y hay que respetarlo."
+      }
+    },
+    "gettingAround": "Los dolmuş (minibuses) unen todos los pueblos de la costa con frecuencia: Antalya-Çıralı, una hora y media; Çıralı-Kaş, dos horas y media; Kaş-Fethiye, dos horas; Fethiye-Dalyan, hora y media. Desde Kaş, excursión en barco a Kekova; desde Fethiye, al valle de las Mariposas; desde Dalyan, a İztuzu. Pamukkale queda a unas 3 horas de Fethiye en bus.",
+    "bestTime": "De mayo a junio y de septiembre a octubre: el mar está a 22 o 24 grados, hace calor sin agobiar y hay menos gente. Julio y agosto son muy calurosos y caros, y en invierno muchos pueblos de la costa cierran.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Antalya, Kaş y Fethiye. Con 7 añades Dalyan. Con 9 entran Çıralı y Olympos."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los dolmuş cubren toda la costa y son baratos. El coche solo compensa si quieres parar en calas sin transporte."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Dalaman (DLM) y saliendo por Antalya (AYT), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Antalya (AYT) y a Dalaman (DLM), que sirve para Fethiye y Dalyan. Ryanair y easyJet vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "The Turquoise Coast: Antalya, Kaş and Fethiye",
+    "metaTitle": "The Turquoise Coast: Antalya, Kaş and Fethiye in 5 to 9 days · Lowfly",
+    "summary": "The Lycian coast from Antalya to Dalaman by dolmuş: turquoise coves, Roman ruins by the sea, the Ölüdeniz lagoon and the tombs of Dalyan.",
+    "why": [
+      "It is the most beautiful stretch of the Turkish Mediterranean and you can do it without a car: dolmuş minibuses link every village every half hour and cost a few euros.",
+      "The Lycian Way, a 540-kilometre trail between Fethiye and Antalya, runs through here. You do not have to walk it all: one day's section, from Faralya to Kabak or from Çıralı to Adrasan, explains why people walk the whole thing.",
+      "Each stop has something different: Antalya its old town, Çıralı its turtle beach and the eternal fire of the Chimera, Kaş diving and Kekova, Fethiye the Ölüdeniz lagoon and Dalyan its tombs cut into the cliff."
+    ],
+    "towns": {
+      "Antalya": {
+        "text": "Antalya opens the route from the east: a big city with an old town, Kaleiçi, tucked inside the walls, a Roman harbour turned marina and a wall dropping to the sea. It is the base for the waterfalls and for Perge.",
+        "see": [
+          "Kaleiçi, with Hadrian's Gate and the clock tower",
+          "The old harbour, at sunset",
+          "The ruins of Perge, 18 kilometres away",
+          "The Düden and Kursunlu waterfalls"
+        ],
+        "tip": "Dolmuş leave the bus station for the coast every half hour. Buy the ticket at the company desk, not from the touts at the gate."
+      },
+      "Olympos and Çıralı": {
+        "text": "Çıralı is a long beach of sand and pebbles, protected because loggerhead turtles nest on it, with the village hidden among orange groves. South are the ruins of Olympos, in a gorge, and up the mountain the eternal fire of the Chimera.",
+        "see": [
+          "Çıralı beach and the turtle nesting, May to September",
+          "The ruins of Olympos, beside the river",
+          "The eternal fire at Yanartaş, climbing after dark",
+          "Adrasan cove, twenty minutes away"
+        ],
+        "tip": "The Chimera fire is best at night: climb an hour before sunset with a torch and come back by moonlight. There are no cash machines in Çıralı, so bring cash."
+      },
+      "Kaş": {
+        "text": "Kaş is a fishing town of white houses and bougainvillea on the coast, facing the Greek island of Meis, which you can reach by ferry. It is the best place in Turkey for diving and the base for the Kekova boat trip.",
+        "see": [
+          "The harbour and the town square",
+          "The boat trip to Kekova and the sunken city",
+          "The Hellenistic theatre, with sea views",
+          "The Saklıkent gorge, an hour away"
+        ],
+        "tip": "The Kekova boat leaves in the morning and is back by mid-afternoon; you cannot swim over the sunken city, but you can in the coves on the way. Bring sun cream: there is no shade on deck."
+      },
+      "Fethiye and Ölüdeniz": {
+        "text": "Fethiye is a market town with a natural harbour and Lycian tombs in the cliff, and Ölüdeniz, fifteen minutes away, is the most photographed blue lagoon in the country, with Mount Babadağ behind it, where the paragliders launch.",
+        "see": [
+          "The Ölüdeniz lagoon and Belcekız beach",
+          "The Tomb of Amyntas, in the Fethiye cliff",
+          "Butterfly Valley, by boat",
+          "A paragliding jump from Babadağ"
+        ],
+        "tip": "The paraglider from Babadağ launches at 1,960 metres and lands on the beach: it costs 100 to 150 euros with video. Book with a proper agency and check the pilot is licensed."
+      },
+      "Dalyan": {
+        "text": "Dalyan is a village of low houses beside a slow river, with the Lycian tombs cut into the Kaunos cliff on the far bank. Boats reach İztuzu beach, where the turtles nest, and the mud baths.",
+        "see": [
+          "The royal tombs of Kaunos, by boat",
+          "İztuzu beach, in the delta",
+          "The mud baths and hot springs",
+          "The village market, on Saturdays"
+        ],
+        "tip": "The boat to İztuzu is shared and leaves every half hour from the jetty. The beach closes at night during nesting season, and that has to be respected."
+      }
+    },
+    "gettingAround": "Dolmuş minibuses link every town on the coast often: Antalya-Çıralı, ninety minutes; Çıralı-Kaş, two and a half hours; Kaş-Fethiye, two hours; Fethiye-Dalyan, ninety minutes. From Kaş, a boat trip to Kekova; from Fethiye, to Butterfly Valley; from Dalyan, to İztuzu. Pamukkale is about three hours by bus from Fethiye.",
+    "bestTime": "May to June and September to October: the sea is 22 to 24 degrees, it is hot without being oppressive and there are fewer people. July and August are very hot and expensive, and in winter many coastal villages close.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Antalya, Kaş and Fethiye. 7 adds Dalyan. 9 takes in Çıralı and Olympos."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: dolmuş cover the whole coast and are cheap. A car only pays off if you want to stop at coves with no transport."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Dalaman (DLM) and out of Antalya (AYT) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Antalya (AYT) and Dalaman (DLM), which serves Fethiye and Dalyan. Ryanair and easyJet fly to both from several European cities."
+      }
+    ]
+  }
+}

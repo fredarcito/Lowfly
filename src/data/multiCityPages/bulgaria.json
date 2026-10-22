@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "bulgaria",
+    "en": "bulgaria"
+  },
+  "photos": {
+    "Sofia": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/AlexanderNevskyCathedral-Sofia-6.jpg/960px-AlexanderNevskyCathedral-Sofia-6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 610,
+      "page": "https://commons.wikimedia.org/wiki/File:AlexanderNevskyCathedral-Sofia-6.jpg",
+      "author": "Plamen Agov (user:MrPanyGoff)",
+      "license": "CC BY-SA 4.0"
+    },
+    "Plovdiv": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Plovdiv_old_town_July_2023.jpg/960px-Plovdiv_old_town_July_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 540,
+      "page": "https://commons.wikimedia.org/wiki/File:Plovdiv_old_town_July_2023.jpg",
+      "author": "Νικόλαος Κυριακάκης",
+      "license": "CC BY-SA 4.0"
+    },
+    "Veliko Tarnovo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tsarevets_Veliko_Tarnovo.jpg/960px-Tsarevets_Veliko_Tarnovo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 706,
+      "page": "https://commons.wikimedia.org/wiki/File:Tsarevets_Veliko_Tarnovo.jpg",
+      "author": "MrPanyGoff",
+      "license": "CC BY-SA 3.0"
+    },
+    "Varna": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Varna_Cathedral_-_2.jpg/960px-Varna_Cathedral_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 839,
+      "page": "https://commons.wikimedia.org/wiki/File:Varna_Cathedral_-_2.jpg",
+      "author": "MrPanyGoff",
+      "license": "CC BY-SA 3.0"
+    },
+    "Nesebar": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Nessebar-old_town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Nessebar-old_town.jpg",
+      "author": "Hristina Bumbarova",
+      "license": "CC BY-SA 4.0"
+    },
+    "Burgas": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Burgas%2C_Bulgaria_Dez_2011_%2814%29.jpg/960px-Burgas%2C_Bulgaria_Dez_2011_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Burgas,_Bulgaria_Dez_2011_(14).jpg",
+      "author": "Vammpi",
+      "license": "Public domain"
+    }
+  },
+  "es": {
+    "title": "Bulgaria: Sofía, Plovdiv y el mar Negro",
+    "metaTitle": "Bulgaria: Sofía, Plovdiv y el mar Negro, de 5 a 10 días · Lowfly",
+    "summary": "Del monasterio de Rila a las playas del mar Negro, pasando por el casco antiguo de Plovdiv y la fortaleza medieval de Veliko Tarnovo.",
+    "why": [
+      "Bulgaria tiene tres cosas que no se ven juntas en ningún otro país del tamaño de Andalucía: un monasterio ortodoxo en la montaña con frescos del siglo XIV, una ciudad romana viva como Plovdiv y playas largas y baratas en el mar Negro.",
+      "Plovdiv es la ciudad habitada más antigua de Europa, con el teatro romano todavía en uso y un casco antiguo de casas de madera en cuesta. Es la parada que más sorprende a quien no ha estado.",
+      "El viaje se hace entero en bus y tren, con trayectos de dos a cuatro horas y billetes de pocos euros. Es de los países más baratos de la Unión Europea."
+    ],
+    "towns": {
+      "Sofia": {
+        "text": "Sofía es una capital de bloques socialistas y ruinas romanas a la vez: la catedral de Alejandro Nevski, con sus cúpulas verdes, la iglesia de Boyana con frescos de 1259 y las termas romanas en el centro. Desde aquí se va al monasterio de Rila.",
+        "see": [
+          "La catedral de Alejandro Nevski",
+          "La iglesia de Boyana, con sus frescos medievales",
+          "Las ruinas romanas de Serdica, en el metro",
+          "El monasterio de Rila, en el día"
+        ],
+        "tip": "La iglesia de Boyana tiene un cupo de visitantes por hora y se reserva: ve a primera hora. El monasterio de Rila está a dos horas en bus o excursión, y merece el día entero."
+      },
+      "Plovdiv": {
+        "text": "Plovdiv es la ciudad habitada más antigua de Europa, con siete colinas y capas de tracios, romanos, otomanos y búlgaros. El teatro romano del siglo II sigue en uso, y el casco antiguo está lleno de casas de madera voladas sobre la calle.",
+        "see": [
+          "El teatro romano, con vistas a la ciudad",
+          "El casco antiguo y la calle Saborna",
+          "El barrio de Kapana, de bares y talleres",
+          "El estadio romano de Filipópolis, bajo la calle principal"
+        ],
+        "tip": "El teatro romano se puede visitar por la mañana sin entrada si no hay concierto. Kapana es donde se cena: es la zona de moda y sigue siendo barata."
+      },
+      "Veliko Tarnovo": {
+        "text": "Veliko Tarnovo fue la capital del Segundo Imperio Búlgaro y su fortaleza, Tsarevets, ocupa una colina entera sobre el río Yantra. Las casas cuelgan del barranco y por la noche hay un espectáculo de luz y sonido en la fortaleza.",
+        "see": [
+          "La fortaleza de Tsarevets, con el palacio patriarcal",
+          "El barrio de Varosha, en la ladera",
+          "La iglesia de los Cuarenta Mártires",
+          "El monasterio de Arbanasi, a 5 kilómetros"
+        ],
+        "tip": "Sube a Tsarevets a última hora de la tarde: el sol bajo sobre el Yantra es la mejor foto del viaje. El espectáculo de luz y sonido es en verano y hay que comprobar el calendario."
+      },
+      "Varna": {
+        "text": "Varna es la capital de verano de Bulgaria: una ciudad grande con la catedral de la Dormición, un jardín marino de ocho kilómetros junto al mar y las termas romanas más grandes de los Balcanes. Al norte está el palacio de Balchik.",
+        "see": [
+          "La catedral de la Dormición",
+          "El jardín marino y la playa de la ciudad",
+          "Las termas romanas, del siglo II",
+          "El palacio y el jardín botánico de Balchik"
+        ],
+        "tip": "El palacio de Balchik y su jardín botánico se ven en el día desde Varna, en bus o coche. En julio y agosto la playa de la ciudad se llena: ve temprano."
+      },
+      "Nesebar": {
+        "text": "Nesebar es una península unida a tierra por un istmo estrecho, con casas de piedra y madera del siglo XIX y once iglesias medievales, algunas en ruinas. Es Patrimonio de la Humanidad y está a 30 minutos de Burgas.",
+        "see": [
+          "La iglesia de San Esteban y la de Cristo Pantocrátor",
+          "Las calles del casco antiguo",
+          "La muralla y el istmo",
+          "Sunny Beach, al norte, si buscas playa"
+        ],
+        "tip": "Nesebar se ve en medio día y por la tarde llegan los autocares: ve por la mañana. Las iglesias cobran entrada individual y hay un bono conjunto."
+      },
+      "Burgas": {
+        "text": "Burgas es la ciudad grande del sur del mar Negro, con un paseo marítimo largo, el parque del mar y un centro de calles peatonales. Es el aeropuerto de salida y la base para Nesebar y Sozopol.",
+        "see": [
+          "El paseo marítimo y el parque del mar",
+          "El centro peatonal y la plaza Troikata",
+          "El lago de Burgas, con flamencos en migración",
+          "Sozopol, a 40 minutos"
+        ],
+        "tip": "El aeropuerto de Burgas está a 10 minutos del centro y en verano tiene vuelos directos de bajo coste desde media Europa. El lago de Atanasovsko, al norte, es bueno para ver aves."
+      }
+    },
+    "gettingAround": "Sofía-Plovdiv, dos horas y cuarto en bus. Plovdiv-Veliko Tarnovo, cuatro horas en bus. Veliko Tarnovo-Varna, tres horas y cuarenta y cinco en bus. Varna-Nesebar, dos horas en bus. Nesebar-Burgas, 45 minutos. El monasterio de Rila se visita en el día desde Sofía, en bus o excursión. Los buses interurbanos salen de las estaciones centrales y se compran en taquilla.",
+    "bestTime": "De mayo a junio y de septiembre a octubre: Sofía y Plovdiv están templadas y la costa sigue con buen tiempo sin las aglomeraciones de agosto. Julio y agosto son para la playa, con 30 grados y precios altos en el mar Negro.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Sofía, Plovdiv y Veliko Tarnovo. Con 7 añades Varna y Nesebar. Con 10 entran también Burgas y Sozopol."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses unen todas las ciudades y son baratos. El coche solo compensa para el monasterio de Rila o para parar en pueblos."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Burgas (BOJ) o Varna (VAR) y saliendo por Sofía (SOF), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Sofía (SOF), Varna (VAR) o Burgas (BOJ). Ryanair y Wizz Air vuelan a los tres desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Bulgaria: Sofia, Plovdiv and the Black Sea",
+    "metaTitle": "Bulgaria: Sofia, Plovdiv and the Black Sea in 5 to 10 days · Lowfly",
+    "summary": "From Rila monastery to the Black Sea beaches, by way of Plovdiv's old town and the medieval fortress of Veliko Tarnovo.",
+    "why": [
+      "Bulgaria has three things you do not find together anywhere else in a country the size of Andalusia: an Orthodox monastery in the mountains with fourteenth-century frescoes, a living Roman city like Plovdiv and long, cheap beaches on the Black Sea.",
+      "Plovdiv is the oldest inhabited city in Europe, with its Roman theatre still in use and an old town of wooden houses on a slope. It is the stop that surprises people most.",
+      "The trip is done entirely by bus and train, with legs of two to four hours and tickets of a few euros. It is one of the cheapest countries in the European Union."
+    ],
+    "towns": {
+      "Sofia": {
+        "text": "Sofia is a capital of socialist blocks and Roman ruins at once: Alexander Nevsky cathedral with its green domes, the Boyana church with frescoes from 1259 and the Roman baths in the centre. Rila monastery is a day trip from here.",
+        "see": [
+          "Alexander Nevsky cathedral",
+          "The Boyana church, with its medieval frescoes",
+          "The Roman ruins of Serdica, in the metro",
+          "Rila monastery, as a day trip"
+        ],
+        "tip": "The Boyana church admits a set number of visitors per hour and needs booking: go early. Rila monastery is two hours by bus or tour, and is worth the whole day."
+      },
+      "Plovdiv": {
+        "text": "Plovdiv is the oldest inhabited city in Europe, with seven hills and layers of Thracian, Roman, Ottoman and Bulgarian history. The second-century Roman theatre is still in use, and the old town is full of wooden houses jutting over the street.",
+        "see": [
+          "The Roman theatre, with views over the city",
+          "The old town and Saborna street",
+          "The Kapana quarter, of bars and workshops",
+          "The Roman stadium of Philippopolis, under the main street"
+        ],
+        "tip": "You can visit the Roman theatre free in the morning if no concert is on. Kapana is where you have dinner: it is the trendy area and still cheap."
+      },
+      "Veliko Tarnovo": {
+        "text": "Veliko Tarnovo was the capital of the Second Bulgarian Empire and its fortress, Tsarevets, takes up a whole hill above the Yantra river. The houses hang off the gorge and at night there is a sound-and-light show at the fortress.",
+        "see": [
+          "Tsarevets fortress, with the patriarchal palace",
+          "The Varosha quarter, on the slope",
+          "The church of the Forty Martyrs",
+          "Arbanasi monastery, five kilometres away"
+        ],
+        "tip": "Climb to Tsarevets late in the afternoon: the low sun over the Yantra is the best photo of the trip. The sound-and-light show runs in summer and the calendar is worth checking."
+      },
+      "Varna": {
+        "text": "Varna is Bulgaria's summer capital: a big city with the Dormition cathedral, an eight-kilometre sea garden along the coast and the largest Roman baths in the Balkans. Balchik palace is to the north.",
+        "see": [
+          "The Dormition cathedral",
+          "The sea garden and the city beach",
+          "The Roman baths, from the second century",
+          "Balchik palace and botanical garden"
+        ],
+        "tip": "Balchik palace and its botanical garden are a day trip from Varna, by bus or car. In July and August the city beach fills up: go early."
+      },
+      "Nesebar": {
+        "text": "Nesebar is a peninsula joined to the mainland by a narrow isthmus, with nineteenth-century stone and timber houses and eleven medieval churches, some in ruins. It is a World Heritage Site, thirty minutes from Burgas.",
+        "see": [
+          "St Stephen's church and Christ Pantocrator",
+          "The streets of the old town",
+          "The wall and the isthmus",
+          "Sunny Beach, to the north, if you want a beach"
+        ],
+        "tip": "Nesebar takes half a day and the coaches arrive in the afternoon: go in the morning. The churches charge individually and there is a combined ticket."
+      },
+      "Burgas": {
+        "text": "Burgas is the big city of the southern Black Sea, with a long seafront promenade, the sea park and a centre of pedestrian streets. It is the airport you fly out of and the base for Nesebar and Sozopol.",
+        "see": [
+          "The seafront promenade and the sea park",
+          "The pedestrian centre and Troikata square",
+          "Lake Burgas, with flamingos on migration",
+          "Sozopol, forty minutes away"
+        ],
+        "tip": "Burgas airport is ten minutes from the centre and in summer has direct low-cost flights from much of Europe. Lake Atanasovsko, to the north, is good for birdwatching."
+      }
+    },
+    "gettingAround": "Sofia-Plovdiv, two and a quarter hours by bus. Plovdiv-Veliko Tarnovo, four hours by bus. Veliko Tarnovo-Varna, three hours forty-five by bus. Varna-Nesebar, two hours by bus. Nesebar-Burgas, 45 minutes. Rila monastery is a day trip from Sofia, by bus or tour. Intercity buses leave from the central stations and tickets are bought at the desk.",
+    "bestTime": "May to June and September to October: Sofia and Plovdiv are mild and the coast still has good weather without the August crowds. July and August are for the beach, at 30 degrees and high prices on the Black Sea.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Sofia, Plovdiv and Veliko Tarnovo. 7 adds Varna and Nesebar. 10 also takes in Burgas and Sozopol."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses link every city and are cheap. A car only pays off for Rila monastery or for stopping in villages."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Burgas (BOJ) or Varna (VAR) and out of Sofia (SOF) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Sofia (SOF), Varna (VAR) or Burgas (BOJ). Ryanair and Wizz Air fly to all three from several European cities."
+      }
+    ]
+  }
+}

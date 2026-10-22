@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "ciudades-imperiales-de-marruecos",
+    "en": "imperial-cities"
+  },
+  "photos": {
+    "Fez": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Medina_of_Fes%2C_Marocco.jpg/960px-Medina_of_Fes%2C_Marocco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 563,
+      "page": "https://commons.wikimedia.org/wiki/File:Medina_of_Fes,_Marocco.jpg",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0"
+    },
+    "Meknes": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Bab_Mansour_Meknes_2018_1.jpg/960px-Bab_Mansour_Meknes_2018_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 636,
+      "page": "https://commons.wikimedia.org/wiki/File:Bab_Mansour_Meknes_2018_1.jpg",
+      "author": "Steven Lek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Rabat": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Hassan_Tower_01.jpg/960px-Hassan_Tower_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 718,
+      "page": "https://commons.wikimedia.org/wiki/File:Hassan_Tower_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0"
+    },
+    "Casablanca": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Sunshine_on_mosque_Hassan_II_in_Casablanca%2C_Morocco_-_Flickr_-_Milamber%27s_portfolio.jpg/960px-Sunshine_on_mosque_Hassan_II_in_Casablanca%2C_Morocco_-_Flickr_-_Milamber%27s_portfolio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 638,
+      "page": "https://commons.wikimedia.org/wiki/File:Sunshine_on_mosque_Hassan_II_in_Casablanca,_Morocco_-_Flickr_-_Milamber%27s_portfolio.jpg",
+      "author": "Milamber's portfolio",
+      "license": "CC BY 2.0"
+    },
+    "Marrakesh": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kutubiyya_Mosque%2C_Marrakesh%2C_Morocco%2C_20250125_0859_7061.jpg/960px-Kutubiyya_Mosque%2C_Marrakesh%2C_Morocco%2C_20250125_0859_7061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1042,
+      "page": "https://commons.wikimedia.org/wiki/File:Kutubiyya_Mosque,_Marrakesh,_Morocco,_20250125_0859_7061.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0"
+    }
+  },
+  "es": {
+    "title": "Ciudades imperiales de Marruecos",
+    "metaTitle": "Ciudades imperiales de Marruecos en tren, de 5 a 9 días · Lowfly",
+    "summary": "Las cuatro capitales históricas enlazadas en tren: Fez, Mequinez, Rabat y Marrakech, con Casablanca y su mezquita sobre el Atlántico en la versión larga.",
+    "why": [
+      "Es la única ruta de Marruecos que se hace entera en tren: la ONCF une Fez, Mequinez, Rabat, Casablanca y Marrakech con horarios fiables y billetes baratos. No hace falta coche ni chófer en ningún tramo.",
+      "Cada ciudad fue capital en un momento distinto y se nota: Fez es medieval, Mequinez es monumental, Rabat es administrativa y Marrakech es comercial. En una semana se entiende cómo se construyó el país.",
+      "Casablanca añade la mezquita de Hassan II, la única de Marruecos que pueden visitar los no musulmanes por dentro, con el minarete más alto del mundo: 210 metros sobre el océano."
+    ],
+    "towns": {
+      "Fez": {
+        "text": "En esta ruta Fez es la primera parada y la que más pesa: la medina medieval más grande del mundo, con las curtidurías, las madrasas y los zocos de artesanos que siguen trabajando como hace siglos. Es la ciudad donde más se camina.",
+        "see": [
+          "Las curtidurías de Chouara desde una terraza",
+          "La madrasa Bou Inania, la más decorada del país",
+          "El barrio de los artesanos, con los telares y el latón",
+          "El jardín Jnan Sbil, para descansar"
+        ],
+        "tip": "Duerme dentro de la medina, en un riad, y sal a primera hora: antes de las nueve las calles están vacías y se puede caminar sin perderte entre la gente."
+      },
+      "Meknes": {
+        "text": "Mequinez es la capital olvidada: Moulay Ismail la convirtió en su Versalles marroquí en el siglo XVII y hoy se visita en medio día. La puerta Bab Mansour, los establos y la prisión de Kara se ven seguidos, y Volubilis queda a media hora.",
+        "see": [
+          "Bab Mansour, la puerta más fotografiada del país",
+          "Los establos de Heri es-Souani y el estanque Agdal",
+          "La plaza El Hedim al atardecer",
+          "Volubilis, en taxi, con los mosaicos romanos"
+        ],
+        "tip": "Mequinez es la parada más barata del viaje y la que menos turistas tiene. Si vas justo de días, se ve en una mañana y se sigue a Rabat por la tarde."
+      },
+      "Rabat": {
+        "text": "Rabat es la capital y la más ordenada de las cuatro. La torre Hassan, con sus columnas de mezquita sin terminar, y la kasbah de los Udayas sobre el río Bu Regreg son lo que hay que ver, y el tranvía conecta el centro con la estación.",
+        "see": [
+          "La torre Hassan y el mausoleo de Mohammed V",
+          "La kasbah de los Udayas y el jardín andaluz",
+          "El museo Mohammed VI de arte moderno",
+          "La playa de Salé, cruzando el río"
+        ],
+        "tip": "La estación de Rabat Ville está en el centro y el tranvía llega a la torre Hassan en diez minutos. Es la ciudad más fácil para moverse sin taxi de todo el viaje."
+      },
+      "Casablanca": {
+        "text": "Casablanca es la capital económica y la ciudad más europea del país, con bulevares, tranvía y rascacielos. Se visita por una sola cosa: la mezquita de Hassan II, construida en parte sobre el mar, con 25.000 personas de capacidad en la sala de oración.",
+        "see": [
+          "La mezquita de Hassan II, con visita guiada por dentro",
+          "El barrio art déco del centro",
+          "La corniche de Ain Diab, al atardecer",
+          "El mercado central, para comer pescado"
+        ],
+        "tip": "Las visitas a la mezquita son en horarios fijos y se compran en taquilla el mismo día; llega con margen. El tren Al Boraq une Casablanca y Rabat en 50 minutos."
+      },
+      "Marrakesh": {
+        "text": "Marrakech cierra el viaje con lo contrario de Fez: una medina más abierta, la plaza Jemaa el-Fna llena de vida por la noche y los jardines de la Menara y el Majorelle. Es la ciudad donde apetece más quedarse un día de más.",
+        "see": [
+          "Jemaa el-Fna y los puestos de comida nocturnos",
+          "El palacio de la Bahía y las tumbas saadíes",
+          "El jardín Majorelle",
+          "Una excursión al valle del Ourika, a una hora"
+        ],
+        "tip": "El tren de Casablanca a Marrakech tarda unas dos horas y media y sale cada hora. Compra el billete en la app de la ONCF el día antes y evita la cola de taquilla."
+      }
+    },
+    "gettingAround": "Todo en tren. Fez-Mequinez, 45 minutos; Mequinez-Rabat, dos horas y media; Rabat-Casablanca, 50 minutos en Al Boraq; Casablanca-Marrakech, dos horas y media. Los billetes se compran en la app de la ONCF o en taquilla, y en segunda clase son muy baratos. Dentro de las medinas, a pie; en Casablanca y Rabat hay tranvía.",
+    "bestTime": "De marzo a mayo y de octubre a noviembre, cuando las cuatro ciudades están entre 20 y 28 grados. En julio y agosto Marrakech y Fez son muy calurosas, y en enero las noches son frías, aunque los días son soleados.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Fez, Mequinez y Rabat. Con 7 añades Marrakech. Con 9 entran también Casablanca y Volubilis."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No, y es mejor no tenerlo: el tren une las cinco ciudades y en las medinas el coche no entra."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Marrakech (RAK) y saliendo por Fez (FEZ) o Rabat (RBA), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Fez (FEZ), Rabat (RBA), Casablanca (CMN) o Marrakech (RAK). Ryanair y easyJet vuelan a Fez, Marrakech y Rabat desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Morocco's imperial cities",
+    "metaTitle": "Morocco's imperial cities by train in 5 to 9 days · Lowfly",
+    "summary": "The four historic capitals linked by train: Fez, Meknes, Rabat and Marrakesh, with Casablanca and its mosque over the Atlantic on the long version.",
+    "why": [
+      "It is the only Moroccan route done entirely by train: ONCF links Fez, Meknes, Rabat, Casablanca and Marrakesh with reliable timetables and cheap tickets. No car or driver is needed on any leg.",
+      "Each city was the capital at a different moment and it shows: Fez is medieval, Meknes monumental, Rabat administrative and Marrakesh commercial. A week explains how the country was built.",
+      "Casablanca adds the Hassan II Mosque, the only one in Morocco non-Muslims can visit inside, with the tallest minaret in the world: 210 metres above the ocean."
+    ],
+    "towns": {
+      "Fez": {
+        "text": "On this route Fez is the first stop and the heaviest: the largest medieval medina in the world, with the tanneries, the madrasas and the artisan souks still working as they have for centuries. It is the city where you walk the most.",
+        "see": [
+          "The Chouara tanneries from a terrace",
+          "The Bou Inania madrasa, the most decorated in the country",
+          "The artisan quarter, with its looms and brass",
+          "The Jnan Sbil garden, to rest"
+        ],
+        "tip": "Sleep inside the medina, in a riad, and go out early: before nine the streets are empty and you can walk without losing yourself in the crowd."
+      },
+      "Meknes": {
+        "text": "Meknes is the forgotten capital: Moulay Ismail turned it into his Moroccan Versailles in the seventeenth century and today it takes half a day. The Bab Mansour gate, the stables and the Kara prison follow one another, and Volubilis is half an hour away.",
+        "see": [
+          "Bab Mansour, the most photographed gate in the country",
+          "The Heri es-Souani stables and the Agdal reservoir",
+          "El Hedim square at sunset",
+          "Volubilis, by taxi, with its Roman mosaics"
+        ],
+        "tip": "Meknes is the cheapest stop on the trip and the one with the fewest tourists. If you are short on days, a morning covers it and you move on to Rabat in the afternoon."
+      },
+      "Rabat": {
+        "text": "Rabat is the capital and the tidiest of the four. The Hassan Tower, with its unfinished mosque columns, and the Kasbah of the Udayas above the Bou Regreg river are the must-sees, and the tram links the centre with the station.",
+        "see": [
+          "The Hassan Tower and the mausoleum of Mohammed V",
+          "The Kasbah of the Udayas and the Andalusian garden",
+          "The Mohammed VI museum of modern art",
+          "The beach at Salé, across the river"
+        ],
+        "tip": "Rabat Ville station is in the centre and the tram reaches the Hassan Tower in ten minutes. It is the easiest city to get around without a taxi on the whole trip."
+      },
+      "Casablanca": {
+        "text": "Casablanca is the economic capital and the most European city in the country, with boulevards, a tram and skyscrapers. You visit it for one thing: the Hassan II Mosque, built partly over the sea, with room for 25,000 people in the prayer hall.",
+        "see": [
+          "The Hassan II Mosque, with a guided tour inside",
+          "The art deco quarter in the centre",
+          "The Ain Diab corniche, at sunset",
+          "The central market, for fish"
+        ],
+        "tip": "Mosque visits run at fixed times and tickets are bought at the desk on the day; arrive with margin. The Al Boraq train links Casablanca and Rabat in 50 minutes."
+      },
+      "Marrakesh": {
+        "text": "Marrakesh closes the trip with the opposite of Fez: a more open medina, Jemaa el-Fnaa square full of life at night and the Menara and Majorelle gardens. It is the city where you most want one more day.",
+        "see": [
+          "Jemaa el-Fnaa and the night food stalls",
+          "The Bahia Palace and the Saadian tombs",
+          "The Majorelle garden",
+          "A day trip to the Ourika valley, an hour away"
+        ],
+        "tip": "The train from Casablanca to Marrakesh takes about two and a half hours and leaves hourly. Buy the ticket in the ONCF app the day before and skip the ticket queue."
+      }
+    },
+    "gettingAround": "All by train. Fez-Meknes, 45 minutes; Meknes-Rabat, two and a half hours; Rabat-Casablanca, 50 minutes on Al Boraq; Casablanca-Marrakesh, two and a half hours. Tickets are bought in the ONCF app or at the desk, and second class is very cheap. Inside the medinas, on foot; Casablanca and Rabat have trams.",
+    "bestTime": "March to May and October to November, when all four cities sit between 20 and 28 degrees. In July and August Marrakesh and Fez are very hot, and in January the nights are cold, though the days are sunny.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Fez, Meknes and Rabat. 7 adds Marrakesh. 9 also takes in Casablanca and Volubilis."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No, and better not to have one: the train links all five cities and cars cannot enter the medinas."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Marrakesh (RAK) and out of Fez (FEZ) or Rabat (RBA) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Fez (FEZ), Rabat (RBA), Casablanca (CMN) or Marrakesh (RAK). Ryanair and easyJet fly to Fez, Marrakesh and Rabat from several European cities."
+      }
+    ]
+  }
+}

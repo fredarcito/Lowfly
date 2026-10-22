@@ -1,0 +1,186 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "serbia",
+    "en": "serbia"
+  },
+  "photos": {
+    "Belgrade": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Belgrade_%E2%80%93_Kalemegdan_%282021%29_02.jpg/960px-Belgrade_%E2%80%93_Kalemegdan_%282021%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Belgrade_%E2%80%93_Kalemegdan_(2021)_02.jpg",
+      "author": "Imeao",
+      "license": "CC0"
+    },
+    "Novi Sad": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/City_Centre%2C_Novi_Sad%2C_Serbia_-_panoramio.jpg/960px-City_Centre%2C_Novi_Sad%2C_Serbia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:City_Centre,_Novi_Sad,_Serbia_-_panoramio.jpg",
+      "author": "Mister No",
+      "license": "CC BY 3.0"
+    },
+    "Niš": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ni%C5%A1_Fortress%2C_Ni%C5%A1%2C_Serbia.jpg/960px-Ni%C5%A1_Fortress%2C_Ni%C5%A1%2C_Serbia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 678,
+      "page": "https://commons.wikimedia.org/wiki/File:Ni%C5%A1_Fortress,_Ni%C5%A1,_Serbia.jpg",
+      "author": "MrPanyGoff",
+      "license": "CC BY-SA 3.0"
+    },
+    "Zlatibor": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Zlatibor_landscape_horses.jpg/960px-Zlatibor_landscape_horses.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 800,
+      "page": "https://commons.wikimedia.org/wiki/File:Zlatibor_landscape_horses.jpg",
+      "author": "Dani. zuni",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Serbia: Belgrado, Novi Sad y Zlatibor",
+    "metaTitle": "Serbia: Belgrado, Novi Sad y Zlatibor, de 5 a 9 días · Lowfly",
+    "summary": "La vida nocturna de Belgrado, el Danubio en Novi Sad, las montañas verdes de Zlatibor y el sur de Niš: los Balcanes que casi nadie visita.",
+    "why": [
+      "Belgrado es la ciudad con la vida nocturna más intensa de Europa: bares en barcazas sobre el Danubio, música en directo hasta el amanecer y precios que permiten salir todas las noches sin pensar.",
+      "Novi Sad está a 40 minutos en tren rápido y tiene la fortaleza de Petrovaradin sobre el Danubio, con el festival EXIT en julio dentro de sus fosos. Es la capital cultural del país.",
+      "Al sur, Zlatibor es montaña de verdad: pinares, el tren histórico Šargan Eight y el pueblo de madera de Drvengrad, que construyó Kusturica. Es la parte de Serbia que no espera nadie."
+    ],
+    "towns": {
+      "Belgrade": {
+        "text": "Belgrado está en la confluencia del Sava y el Danubio, con la fortaleza de Kalemegdan sobre el agua y el barrio de Skadarlija, de tabernas con música en vivo. La ciudad ha sido destruida 44 veces y siempre se ha levantado.",
+        "see": [
+          "La fortaleza de Kalemegdan y la vista de la confluencia",
+          "Skadarlija, la calle de las tabernas",
+          "La iglesia de San Sava, con su cúpula blanca",
+          "Las barcazas de splavovi, sobre el Sava"
+        ],
+        "tip": "En Belgrado se cena tarde y se sale después: las barcazas se llenan a partir de medianoche. El tranvía 2 da una vuelta circular por el centro y sirve de paseo barato."
+      },
+      "Novi Sad": {
+        "text": "Novi Sad es la capital de Vojvodina, con una plaza de la Libertad peatonal, casas austrohúngaras de colores y la fortaleza de Petrovaradin al otro lado del Danubio, con su reloj al revés para que los barqueros lo lean desde el río.",
+        "see": [
+          "La fortaleza de Petrovaradin y sus túneles",
+          "La plaza de la Libertad y la calle Dunavska",
+          "El festival EXIT, en julio",
+          "Fruška Gora, con sus monasterios ortodoxos"
+        ],
+        "tip": "El tren rápido desde Belgrado tarda unos 40 minutos y sale cada hora: se puede ir y volver en el día, pero la ciudad merece una noche. En julio, durante el EXIT, los hoteles se agotan meses antes."
+      },
+      "Niš": {
+        "text": "Niš es la tercera ciudad del país y la puerta del sur, con una fortaleza otomana en el centro, el barrio de la torre de los cráneos y el lugar donde nació Constantino el Grande. Es parada del tren que va a Sofía.",
+        "see": [
+          "La fortaleza de Niš y el parque",
+          "La torre de los cráneos, de la batalla de 1809",
+          "El sitio arqueológico de Mediana",
+          "La calle Obrenovićeva, peatonal"
+        ],
+        "tip": "Niš es la parada natural si sigues a Sofía: el bus tarda tres horas y el tren, cuatro. La torre de los cráneos es un monumento incómodo, pero es lo que más recuerda la gente del viaje."
+      },
+      "Zlatibor": {
+        "text": "Zlatibor es una meseta de pinares a 1.000 metros, con aire fresco y pueblos de madera. Desde aquí se va al tren histórico Šargan Eight, que sube en ocho curvas por la montaña, y a Drvengrad, el pueblo que construyó el director Emir Kusturica.",
+        "see": [
+          "El tren Šargan Eight, desde Mokra Gora",
+          "Drvengrad, el pueblo de Kusturica",
+          "El mirador de Tornik, en teleférico",
+          "El lago de Zlatibor y el paseo del centro"
+        ],
+        "tip": "El tren Šargan Eight sale dos veces al día y se agota en verano: compra el billete con días de antelación. Desde Zlatibor hay bus a Mokra Gora en 40 minutos."
+      }
+    },
+    "gettingAround": "Belgrado-Novi Sad, 40 minutos en tren rápido (Soko). Belgrado-Niš, tres horas en bus o cuatro en tren. Belgrado-Zlatibor, cuatro horas en bus. Desde Zlatibor, bus a Mokra Gora en 40 minutos. El aeropuerto de Belgrado está a 30 minutos del centro en bus A1 o en taxi con tarifa fija.",
+    "bestTime": "De abril a junio y de septiembre a octubre: Belgrado y Novi Sad están templadas y Zlatibor es fresco sin frío. En julio y agosto Belgrado pasa de 35 grados, aunque la vida nocturna está en su mejor momento. En invierno Zlatibor es destino de esquí.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Novi Sad y Belgrado. Con 7 añades Niš. Con 9 entran Zlatibor y el tren de Šargan."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No para las ciudades: el tren y los buses las unen. Para Zlatibor y Mokra Gora el bus funciona, aunque el coche da más libertad."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Niš (INI) o Belgrado (BEG) y saliendo por el otro, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Belgrado (BEG) o Niš (INI). Wizz Air y Ryanair vuelan a los dos desde varias ciudades europeas, y Novi Sad no tiene aeropuerto."
+      }
+    ]
+  },
+  "en": {
+    "title": "Serbia: Belgrade, Novi Sad and Zlatibor",
+    "metaTitle": "Serbia: Belgrade, Novi Sad and Zlatibor in 5 to 9 days · Lowfly",
+    "summary": "Belgrade's nightlife, the Danube at Novi Sad, the green mountains of Zlatibor and the south around Niš: the Balkans hardly anyone visits.",
+    "why": [
+      "Belgrade has the most intense nightlife in Europe: bars on barges on the Danube, live music until dawn and prices that let you go out every night without thinking.",
+      "Novi Sad is 40 minutes away on the fast train and has Petrovaradin fortress above the Danube, with the EXIT festival inside its moats in July. It is the country's cultural capital.",
+      "To the south, Zlatibor is real mountain: pine woods, the Šargan Eight heritage railway and the wooden village of Drvengrad, built by Kusturica. It is the Serbia nobody expects."
+    ],
+    "towns": {
+      "Belgrade": {
+        "text": "Belgrade sits where the Sava meets the Danube, with Kalemegdan fortress above the water and the Skadarlija quarter of taverns with live music. The city has been destroyed 44 times and has always got back up.",
+        "see": [
+          "Kalemegdan fortress and the view of the confluence",
+          "Skadarlija, the tavern street",
+          "St Sava's church, with its white dome",
+          "The splavovi barges, on the Sava"
+        ],
+        "tip": "Belgrade dines late and goes out later: the barges fill from midnight on. Tram 2 runs a loop through the centre and works as a cheap tour."
+      },
+      "Novi Sad": {
+        "text": "Novi Sad is the capital of Vojvodina, with a pedestrian Freedom Square, colourful Austro-Hungarian houses and Petrovaradin fortress across the Danube, with its clock running backwards so boatmen can read it from the river.",
+        "see": [
+          "Petrovaradin fortress and its tunnels",
+          "Freedom Square and Dunavska street",
+          "The EXIT festival, in July",
+          "Fruška Gora, with its Orthodox monasteries"
+        ],
+        "tip": "The fast train from Belgrade takes about 40 minutes and leaves hourly: it works as a day trip, but the city deserves a night. In July, during EXIT, hotels sell out months ahead."
+      },
+      "Niš": {
+        "text": "Niš is the country's third city and the gateway to the south, with an Ottoman fortress in the centre, the Skull Tower quarter and the birthplace of Constantine the Great. It is a stop on the train to Sofia.",
+        "see": [
+          "Niš fortress and the park",
+          "The Skull Tower, from the 1809 battle",
+          "The Mediana archaeological site",
+          "Obrenovićeva street, pedestrian"
+        ],
+        "tip": "Niš is the natural stop if you carry on to Sofia: the bus takes three hours and the train four. The Skull Tower is an uncomfortable monument, but it is what people remember most from the trip."
+      },
+      "Zlatibor": {
+        "text": "Zlatibor is a pine plateau at 1,000 metres, with cool air and wooden villages. From here you reach the Šargan Eight heritage train, which climbs the mountain in eight curves, and Drvengrad, the village built by the director Emir Kusturica.",
+        "see": [
+          "The Šargan Eight train, from Mokra Gora",
+          "Drvengrad, Kusturica's village",
+          "The Tornik viewpoint, by cable car",
+          "Lake Zlatibor and the walk through the centre"
+        ],
+        "tip": "The Šargan Eight train runs twice a day and sells out in summer: buy the ticket days ahead. From Zlatibor there is a bus to Mokra Gora in 40 minutes."
+      }
+    },
+    "gettingAround": "Belgrade-Novi Sad, 40 minutes on the Soko fast train. Belgrade-Niš, three hours by bus or four by train. Belgrade-Zlatibor, four hours by bus. From Zlatibor, a bus to Mokra Gora in 40 minutes. Belgrade airport is 30 minutes from the centre on bus A1 or by fixed-fare taxi.",
+    "bestTime": "April to June and September to October: Belgrade and Novi Sad are mild and Zlatibor is cool without being cold. In July and August Belgrade goes above 35 degrees, though the nightlife is at its best. In winter Zlatibor is a ski destination.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Novi Sad and Belgrade. 7 adds Niš. 9 takes in Zlatibor and the Šargan train."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the cities: train and buses link them. For Zlatibor and Mokra Gora the bus works, though a car gives more freedom."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Niš (INI) or Belgrade (BEG) and out of the other is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Belgrade (BEG) or Niš (INI). Wizz Air and Ryanair fly to both from several European cities, and Novi Sad has no airport."
+      }
+    ]
+  }
+}

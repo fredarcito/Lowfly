@@ -1,0 +1,130 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "viena-y-bratislava",
+    "en": "vienna-bratislava"
+  },
+  "photos": {
+    "Vienna": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Rathaus_Christkindlmarkt_%285273197597%29.jpg/960px-Rathaus_Christkindlmarkt_%285273197597%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 533,
+      "page": "https://commons.wikimedia.org/wiki/File:Rathaus_Christkindlmarkt_(5273197597).jpg",
+      "author": "Max Pfandl from Vienna, Austria",
+      "license": "CC BY 2.0"
+    },
+    "Bratislava": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Bratislava_Christmas_market.jpg/960px-Bratislava_Christmas_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 579,
+      "page": "https://commons.wikimedia.org/wiki/File:Bratislava_Christmas_market.jpg",
+      "author": "Nelliette",
+      "license": "CC BY-SA 2.0"
+    }
+  },
+  "es": {
+    "title": "Viena y Bratislava",
+    "metaTitle": "Viena y Bratislava, de 4 a 6 días · Lowfly",
+    "summary": "Dos capitales a una hora de distancia, con un solo aeropuerto de entrada y la posibilidad de dormir en la más barata.",
+    "why": [
+      "Viena y Bratislava son las dos capitales más cercanas de Europa: una hora en tren o bus y unos 10 euros de billete. Se puede dormir en Bratislava y desayunar en Viena.",
+      "Viena necesita dos días para lo esencial y Bratislava uno, así que es el viaje corto perfecto para un puente: palacios, ópera y tarta Sacher por un lado, casco antiguo barato y cerveza eslovaca por el otro.",
+      "Es de los pocos viajes en los que cambiar de país no cuesta nada: no hay frontera, ni control, ni moneda distinta. Eslovaquia usa el euro desde 2009."
+    ],
+    "towns": {
+      "Vienna": {
+        "text": "Viena es la ciudad de los palacios y de la música: el Hofburg, Schönbrunn, la Ópera y la Musikverein, con los cafés históricos como el Central y el Sperl. El Ringstrasse, el bulevar que rodea el centro, se recorre en tranvía.",
+        "see": [
+          "Schönbrunn y sus jardines",
+          "El Hofburg y la Escuela Española de Equitación",
+          "La Ópera, con entrada de pie por pocos euros",
+          "El Naschmarkt, el mercado del sábado"
+        ],
+        "tip": "La Ópera vende entradas de pie el mismo día por unos 4 euros y se hace cola una hora antes: es la forma más barata de ver una función de nivel. El tranvía 1 y el 2 dan la vuelta al Ring."
+      },
+      "Bratislava": {
+        "text": "Bratislava tiene un casco antiguo pequeño y agradable, con la plaza principal, el ayuntamiento viejo y las estatuas de bronce que se han convertido en su imagen. El castillo blanco se ve desde casi toda la ciudad y la catedral de San Martín tiene un remate dorado.",
+        "see": [
+          "La plaza principal y el ayuntamiento viejo",
+          "El castillo y sus jardines",
+          "La catedral de San Martín",
+          "El barrio de Staré Mesto, con bares"
+        ],
+        "tip": "Bratislava es más barata que Viena en todo: hotel, cena y cerveza cuestan la mitad. Si vas por un puente, duerme aquí y ve a Viena en tren por el día."
+      }
+    },
+    "gettingAround": "Viena-Bratislava, una hora en tren desde la estación de Wien Hauptbahnhof o en bus desde el aeropuerto, con billetes de unos 10 euros. El aeropuerto de Viena está a 15 minutos del centro en el tren CAT o en el S-Bahn, y el de Bratislava a 20 minutos en bus.",
+    "bestTime": "De abril a junio y de septiembre a octubre. En diciembre Viena tiene mercadillos y conciertos, pero hace frío. Julio y agosto son los meses de más calor y más gente en el centro.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 4 días ves lo esencial de Viena y Bratislava. Con 6 añades un día en cada una para museos y excursiones."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: el tren entre las dos ciudades tarda una hora y en los centros se va andando o en tranvía."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Bratislava (BTS) y saliendo por Viena (VIE), o al revés, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Viena (VIE) o Bratislava (BTS). Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Vienna and Bratislava",
+    "metaTitle": "Vienna and Bratislava in 4 to 6 days · Lowfly",
+    "summary": "Two capitals an hour apart, with one airport to fly into and the option of sleeping in the cheaper one.",
+    "why": [
+      "Vienna and Bratislava are the closest capitals in Europe: an hour by train or bus and about 10 euros a ticket. You can sleep in Bratislava and have breakfast in Vienna.",
+      "Vienna needs two days for the essentials and Bratislava one, which makes it the perfect short trip: palaces, opera and Sacher torte on one side, a cheap old town and Slovak beer on the other.",
+      "It is one of the few trips where changing country costs nothing: no border, no check, no different currency. Slovakia has used the euro since 2009."
+    ],
+    "towns": {
+      "Vienna": {
+        "text": "Vienna is the city of palaces and music: the Hofburg, Schönbrunn, the Opera and the Musikverein, with historic cafés like the Central and the Sperl. The Ringstrasse, the boulevard around the centre, is best seen from a tram.",
+        "see": [
+          "Schönbrunn and its gardens",
+          "The Hofburg and the Spanish Riding School",
+          "The Opera, with standing tickets for a few euros",
+          "The Naschmarkt, on Saturdays"
+        ],
+        "tip": "The Opera sells standing tickets on the day for about 4 euros and you queue an hour before: it is the cheapest way to see a top-level performance. Trams 1 and 2 loop around the Ring."
+      },
+      "Bratislava": {
+        "text": "Bratislava has a small, pleasant old town with the main square, the old town hall and the bronze statues that have become its image. The white castle is visible from almost everywhere and St Martin's cathedral has a golden top.",
+        "see": [
+          "The main square and the old town hall",
+          "The castle and its gardens",
+          "St Martin's cathedral",
+          "The Staré Mesto quarter, with its bars"
+        ],
+        "tip": "Bratislava is cheaper than Vienna in everything: hotel, dinner and beer cost half. On a short break, sleep here and go to Vienna by train for the day."
+      }
+    },
+    "gettingAround": "Vienna-Bratislava, an hour by train from Wien Hauptbahnhof or by bus from the airport, with tickets around 10 euros. Vienna airport is 15 minutes from the centre on the CAT train or the S-Bahn, and Bratislava airport 20 minutes by bus.",
+    "bestTime": "April to June and September to October. In December Vienna has markets and concerts, but it is cold. July and August are the hottest and busiest months in the centre.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "4 days covers the essentials of Vienna and Bratislava. 6 adds a day in each for museums and day trips."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the train between the two cities takes an hour and you walk or take trams in both centres."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Bratislava (BTS) and out of Vienna (VIE), or the reverse, is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Vienna (VIE) or Bratislava (BTS). Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

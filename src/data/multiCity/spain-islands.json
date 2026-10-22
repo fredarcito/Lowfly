@@ -246,7 +246,7 @@
       "en": "The ferries (Fred. Olsen and Naviera Armas) leave from Los Cristianos, in the south of Tenerife, 1 h 30 by bus from Puerto de la Cruz; La Palma is also linked with Santa Cruz de Tenerife. On La Gomera and La Palma buses are few: rent a car for Garajonay, the Caldera de Taburiente or the Fuencaliente volcanoes. El Hierro also has a ferry from Los Cristianos."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Santa_Cruz_de_La_Palma%2C_en_Santa_Cruz_de_Tenerife_%28Espa%C3%B1a%29.jpg/960px-Santa_Cruz_de_La_Palma%2C_en_Santa_Cruz_de_Tenerife_%28Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Santa_Cruz_de_La_Palma%2C_en_Santa_Cruz_de_Tenerife_%28Espa%C3%B1a%29.jpg/960px-Santa_Cruz_de_La_Palma%2C_en_Santa_Cruz_de_Tenerife_%28Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 450,
       "page": "https://commons.wikimedia.org/wiki/File:Santa_Cruz_de_La_Palma,_en_Santa_Cruz_de_Tenerife_(Espa%C3%B1a).jpg",
@@ -509,7 +509,7 @@
       "en": "Ferries from Las Palmas to Morro Jable (about 2 h) and from Corralejo to Playa Blanca on Lanzarote (about 30 min, hourly). On Lanzarote and in inland Gran Canaria (Roque Nublo, Tejeda) a car helps a lot: Timanfaya has no bus. From Órzola, in the north of Lanzarote, a boat to La Graciosa makes a day trip."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Arrecife%2C_en_Lanzarote_%28Las_Palmas%2C_Espa%C3%B1a%29.jpg/960px-Arrecife%2C_en_Lanzarote_%28Las_Palmas%2C_Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Arrecife%2C_en_Lanzarote_%28Las_Palmas%2C_Espa%C3%B1a%29.jpg/960px-Arrecife%2C_en_Lanzarote_%28Las_Palmas%2C_Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 450,
       "page": "https://commons.wikimedia.org/wiki/File:Arrecife,_en_Lanzarote_(Las_Palmas,_Espa%C3%B1a).jpg",
@@ -801,7 +801,7 @@
       "en": "The ferry between Mallorca and Menorca runs from Alcúdia to Ciutadella (1–2 h, several a day in season); Alcúdia is reached by bus from Palma. For Menorca's coves (Macarella, Turqueta) and the Tramuntana villages, a car or scooter is best; in July and August some coves need their parking booked."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/S%C3%B3ller%2C_en_Mallorca_%28Baleares%2C_Espa%C3%B1a%29.jpg/960px-S%C3%B3ller%2C_en_Mallorca_%28Baleares%2C_Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/S%C3%B3ller%2C_en_Mallorca_%28Baleares%2C_Espa%C3%B1a%29.jpg/960px-S%C3%B3ller%2C_en_Mallorca_%28Baleares%2C_Espa%C3%B1a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 444,
       "page": "https://commons.wikimedia.org/wiki/File:S%C3%B3ller,_en_Mallorca_(Baleares,_Espa%C3%B1a).jpg",
@@ -1089,6 +1089,15 @@
     "note": {
       "es": "Formentera no tiene aeropuerto: barcos desde el puerto de Ibiza cada media hora (30–35 min); en verano también desde Santa Eulària y Sant Antoni. En Formentera se va en bici, moto o coche de alquiler. La versión larga empieza en Mallorca y cruza a Ibiza en ferri desde Palma (2–4 h). En julio y agosto todo se llena y sube mucho: mejor junio o septiembre.",
       "en": "Formentera has no airport: boats from Ibiza harbour every half hour (30–35 min); in summer also from Santa Eulària and Sant Antoni. On Formentera you get around by rented bike, scooter or car. The long version starts in Mallorca and crosses to Ibiza by ferry from Palma (2–4 h). In July and August everything is full and expensive: June or September are better."
+    },
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Eivissa%2C_harbour_from_castell.jpg/960px-Eivissa%2C_harbour_from_castell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 800,
+      "height": 600,
+      "page": "https://commons.wikimedia.org/wiki/File:Eivissa,_harbour_from_castell.jpg",
+      "author": "Gerda Arendt",
+      "license": "CC0",
+      "town": "Eivissa"
     }
   }
 }

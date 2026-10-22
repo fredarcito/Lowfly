@@ -1,0 +1,242 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "corfu-y-epiro",
+    "en": "corfu-epirus"
+  },
+  "photos": {
+    "Corfu": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg/960px-The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 505,
+      "page": "https://commons.wikimedia.org/wiki/File:The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0"
+    },
+    "Parga": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Greece%2C_Parga_with_Parga_Castle_-_Rock_Town.jpg/960px-Greece%2C_Parga_with_Parga_Castle_-_Rock_Town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Greece,_Parga_with_Parga_Castle_-_Rock_Town.jpg",
+      "author": "MariaZervalaki20",
+      "license": "CC BY-SA 4.0"
+    },
+    "Ioannina": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ioannina_Castle_%28by_Pudelek%29.JPG/960px-Ioannina_Castle_%28by_Pudelek%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 648,
+      "page": "https://commons.wikimedia.org/wiki/File:Ioannina_Castle_(by_Pudelek).JPG",
+      "author": "Pudelek",
+      "license": "CC BY-SA 4.0"
+    },
+    "Zagori (Papingo)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Papingo%2C_Zagorohoria.jpg/960px-Papingo%2C_Zagorohoria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 1444,
+      "page": "https://commons.wikimedia.org/wiki/File:Papingo,_Zagorohoria.jpg",
+      "author": "EAMorton",
+      "license": "CC BY-SA 4.0"
+    },
+    "Meteora (Kalambaka)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Roussanou_Monastery%2C_Meteora.jpg/960px-Roussanou_Monastery%2C_Meteora.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Roussanou_Monastery,_Meteora.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0"
+    },
+    "Thessaloniki": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Thessaloniki_waterfront_by_night.jpg/960px-Thessaloniki_waterfront_by_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Thessaloniki_waterfront_by_night.jpg",
+      "author": "Salonica84 at English Wikipedia",
+      "license": "Public domain"
+    }
+  },
+  "es": {
+    "title": "Corfú y Epiro: de la isla a Meteora",
+    "metaTitle": "Corfú y Epiro: de la isla a Meteora, de 5 a 10 días · Lowfly",
+    "summary": "La ciudad veneciana de Corfú, las playas de Parga, el lago y la isla de Ioánina, los pueblos de piedra de Zagori y los monasterios de Meteora.",
+    "why": [
+      "Epiro es la Grecia de la montaña y del agua: el lago de Ioánina con su isla, el río Aqueronte, los puentes de piedra de Zagori y las gargantas de Vikos, la más profunda del mundo en proporción a su anchura.",
+      "Corfú es la isla más veneciana de Grecia: la Liston, la plaza de Spianada y dos fortalezas, con playas de agua turquesa como Paleokastritsa y Glyfada a media hora del centro.",
+      "Meteora y Tesalónica cierran la ruta por el norte: los monasterios en la roca y la segunda ciudad de Grecia, con aeropuerto de salida y una cocina de tapeo que merece un día."
+    ],
+    "towns": {
+      "Corfu": {
+        "text": "Corfú es la ciudad veneciana de Grecia: la plaza de Spianada, la Liston con sus cafés, la fortaleza vieja y la nueva, y callejones con ropa tendida entre casas de color ocre. Alrededor, las playas de Paleokastritsa y Glyfada.",
+        "see": [
+          "La plaza de Spianada y la Liston",
+          "La fortaleza vieja",
+          "La iglesia de San Spyridon",
+          "La bahía de Paleokastritsa, a 25 kilómetros"
+        ],
+        "tip": "Corfú tiene aeropuerto (CFU) a 10 minutos del centro y ferry a Igumenitsa en dos horas. La playa de Glyfada y el mirador de Kaiser's Throne son las excursiones de un día más fáciles."
+      },
+      "Parga": {
+        "text": "Parga es un pueblo de casas de colores en una bahía del Epiro, con un castillo veneciano en lo alto y una isla con una iglesia delante. Es la playa más bonita del continente griego y la parada entre Corfú y Ioánina.",
+        "see": [
+          "El castillo veneciano",
+          "La isla de Panagia, a nado o en barco",
+          "La playa de Valtos, al otro lado del pueblo",
+          "El pueblo de Anthousa, en la colina"
+        ],
+        "tip": "Parga se alcanza en ferry desde Corfú hasta Igumenitsa y 40 minutos en bus. La playa de Valtos está a 10 minutos a pie y es la más larga."
+      },
+      "Ioannina": {
+        "text": "Ioánina es la capital del Epiro, a la orilla de un lago con una isla en medio donde vivió Alí Pachá. El casco antiguo está dentro de la fortaleza, con la mezquita de Aslan Pachá y el museo bizantino, y el barrio de Splantza, de casas de piedra.",
+        "see": [
+          "La fortaleza y la mezquita de Aslan Pachá",
+          "La isla del lago, en barco",
+          "El museo bizantino",
+          "La cueva de Perama, a 4 kilómetros"
+        ],
+        "tip": "Ioánina es la base para Zagori y Meteora. La isla del lago se visita en barco en 20 minutos y tiene el monasterio de San Pantaleón y el museo de Alí Pachá."
+      },
+      "Zagori (Papingo)": {
+        "text": "Zagori es una región de 46 pueblos de piedra entre montañas, unidos por puentes de arco y senderos. Pápingo, con sus dos pueblos, Megalo y Mikro, está al pie de las gargantas de Vikos y de las piscinas naturales de Rogovo.",
+        "see": [
+          "Las piscinas de Rogovo, bajo el pueblo",
+          "El mirador de Oxia, sobre las gargantas de Vikos",
+          "El puente de Kokkori, en el sendero",
+          "El monasterio de Panagia, en el acantilado"
+        ],
+        "tip": "Pápingo está a una hora de Ioánina en coche y es la base para el senderismo. Las gargantas de Vikos se recorren en cinco horas de bajada: lleva agua y calzado bueno."
+      },
+      "Meteora (Kalambaka)": {
+        "text": "Meteora son seis monasterios ortodoxos en la cima de pilares de roca de hasta 400 metros, construidos por monjes que subían en cestas. Kalambaka, a sus pies, es la base para subir y el final de la carretera de montaña desde Epiro.",
+        "see": [
+          "El Gran Meteoron",
+          "El monasterio de Varlaam",
+          "El mirador de Agios Nikolaos, al atardecer",
+          "La iglesia de la Dormición, en Kalambaka"
+        ],
+        "tip": "Los monasterios abren de nueve a cinco y cierran un día distinto cada uno. Cada uno pide falda o pantalón largo: lleva algo para cubrirte."
+      },
+      "Thessaloniki": {
+        "text": "Tesalónica cierra la ruta con el aeropuerto de salida (SKG): la Torre Blanca, el paseo marítimo, la Rotonda romana y el barrio de Ano Poli en la colina. Es la ciudad más animada de Grecia y la mejor para comer al final del viaje.",
+        "see": [
+          "La Torre Blanca y el paseo marítimo",
+          "La Rotonda y el arco de Galerio",
+          "El barrio de Ano Poli",
+          "El mercado Modiano, para tapear"
+        ],
+        "tip": "Tesalónica está a tres horas de Meteora en tren desde Kalambaka. El aeropuerto está a 20 minutos del centro y los vuelos a Europa salen todo el día."
+      }
+    },
+    "gettingAround": "Corfú-Parga, dos horas en ferry a Igumenitsa y 40 minutos en bus. Parga-Ioánina, una hora y media en bus. Ioánina-Zagori, una hora en coche. Zagori-Meteora, tres horas en coche. Meteora-Tesalónica, tres horas en tren desde Kalambaka. En Epiro el coche es casi imprescindible para Zagori y las gargantas.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con el mar a 23 grados y las montañas verdes. En agosto Corfú y Parga se llenan y hace calor en el llano. En invierno Zagori y Meteora son fríos y con nieve, y Corfú sigue abierta con lluvia.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Corfú, Parga y Ioánina. Con 7 añades Zagori. Con 10 entran Meteora y Tesalónica."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Para Corfú, Parga e Ioánina no. Para Zagori y Meteora sí ayuda: los buses son escasos y lentos."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Tesalónica (SKG) y saliendo por Corfú (CFU), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Corfú (CFU) o a Tesalónica (SKG). Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Corfu and Epirus: from the island to Meteora",
+    "metaTitle": "Corfu and Epirus: from the island to Meteora in 5 to 10 days · Lowfly",
+    "summary": "The Venetian city of Corfu, the beaches of Parga, the lake and island of Ioannina, the stone villages of Zagori and the monasteries of Meteora.",
+    "why": [
+      "Epirus is the Greece of mountains and water: Lake Ioannina with its island, the Acheron river, the stone bridges of Zagori and the Vikos gorge, the deepest in the world for its width.",
+      "Corfu is the most Venetian island in Greece: the Liston, Spianada square and two fortresses, with turquoise beaches like Paleokastritsa and Glyfada half an hour from the centre.",
+      "Meteora and Thessaloniki close the route in the north: the monasteries on the rock and the second city of Greece, with the airport out and a meze cuisine that deserves a day."
+    ],
+    "towns": {
+      "Corfu": {
+        "text": "Corfu is the Venetian city of Greece: Spianada square, the Liston with its cafés, the old and the new fortress, and alleys with washing lines between ochre houses. Around it, the beaches of Paleokastritsa and Glyfada.",
+        "see": [
+          "Spianada square and the Liston",
+          "The old fortress",
+          "St Spyridon's church",
+          "Paleokastritsa bay, 25 kilometres away"
+        ],
+        "tip": "Corfu has the airport (CFU) 10 minutes from the centre and a ferry to Igoumenitsa in two hours. Glyfada beach and the Kaiser's Throne viewpoint are the easiest day trips."
+      },
+      "Parga": {
+        "text": "Parga is a town of coloured houses in an Epirus bay, with a Venetian castle above and an island with a church in front. It is the prettiest beach on the Greek mainland and the stop between Corfu and Ioannina.",
+        "see": [
+          "The Venetian castle",
+          "The island of Panagia, swimming or by boat",
+          "Valtos beach, on the other side of town",
+          "The village of Anthousa, on the hill"
+        ],
+        "tip": "Parga is reached by ferry from Corfu to Igoumenitsa and 40 minutes by bus. Valtos beach is 10 minutes on foot and is the longest."
+      },
+      "Ioannina": {
+        "text": "Ioannina is the capital of Epirus, on the shore of a lake with an island where Ali Pasha lived. The old town is inside the fortress, with the Aslan Pasha mosque and the Byzantine museum, and the Splantza quarter of stone houses.",
+        "see": [
+          "The fortress and the Aslan Pasha mosque",
+          "The island in the lake, by boat",
+          "The Byzantine museum",
+          "The Perama cave, 4 kilometres away"
+        ],
+        "tip": "Ioannina is the base for Zagori and Meteora. The lake island is visited by boat in 20 minutes and has the monastery of St Panteleimon and the Ali Pasha museum."
+      },
+      "Zagori (Papingo)": {
+        "text": "Zagori is a region of 46 stone villages between mountains, linked by arched bridges and footpaths. Papingo, with its two villages, Megalo and Mikro, sits at the foot of the Vikos gorge and the Rogovo natural pools.",
+        "see": [
+          "The Rogovo pools, below the village",
+          "The Oxia viewpoint, over the Vikos gorge",
+          "The Kokkori bridge, on the path",
+          "The Panagia monastery, on the cliff"
+        ],
+        "tip": "Papingo is an hour from Ioannina by car and is the base for hiking. The Vikos gorge is walked downhill in five hours: bring water and good shoes."
+      },
+      "Meteora (Kalambaka)": {
+        "text": "Meteora is six Orthodox monasteries on top of rock pillars up to 400 metres, built by monks who went up in baskets. Kalambaka, at their feet, is the base for the climb and the end of the mountain road from Epirus.",
+        "see": [
+          "The Great Meteoron",
+          "Varlaam monastery",
+          "The Agios Nikolaos viewpoint, at sunset",
+          "The church of the Dormition, in Kalambaka"
+        ],
+        "tip": "The monasteries open from nine to five and each closes on a different day. Each asks for a skirt or long trousers: bring something to cover up."
+      },
+      "Thessaloniki": {
+        "text": "Thessaloniki closes the route with the airport out (SKG): the White Tower, the seafront, the Roman Rotunda and the Ano Poli quarter on the hill. It is the liveliest city in Greece and the best place to eat at the end of the trip.",
+        "see": [
+          "The White Tower and the seafront",
+          "The Rotunda and the arch of Galerius",
+          "The Ano Poli quarter",
+          "The Modiano market, for meze"
+        ],
+        "tip": "Thessaloniki is three hours from Meteora by train from Kalambaka. The airport is 20 minutes from the centre and flights to Europe leave all day."
+      }
+    },
+    "gettingAround": "Corfu-Parga, two hours by ferry to Igoumenitsa and 40 minutes by bus. Parga-Ioannina, ninety minutes by bus. Ioannina-Zagori, an hour by car. Zagori-Meteora, three hours by car. Meteora-Thessaloniki, three hours by train from Kalambaka. In Epirus a car is almost essential for Zagori and the gorges.",
+    "bestTime": "May to June and September to October, with the sea at 23 degrees and the mountains green. In August Corfu and Parga fill up and the lowlands are hot. In winter Zagori and Meteora are cold and snowy, and Corfu stays open but wet.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Corfu, Parga and Ioannina. 7 adds Zagori. 10 takes in Meteora and Thessaloniki."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for Corfu, Parga and Ioannina. For Zagori and Meteora it helps: buses are scarce and slow."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Thessaloniki (SKG) and out of Corfu (CFU) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Corfu (CFU) or Thessaloniki (SKG). Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

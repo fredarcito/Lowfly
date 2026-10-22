@@ -1,0 +1,270 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "montenegro",
+    "en": "montenegro"
+  },
+  "photos": {
+    "Kotor": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg/960px-Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 347,
+      "page": "https://commons.wikimedia.org/wiki/File:Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg",
+      "author": "Pudelek (Marcin Szala)",
+      "license": "CC BY-SA 3.0"
+    },
+    "Perast": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Bay_of_Kotor_-_Perast_-_1.jpg/960px-Bay_of_Kotor_-_Perast_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 538,
+      "page": "https://commons.wikimedia.org/wiki/File:Bay_of_Kotor_-_Perast_-_1.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 4.0"
+    },
+    "Budva": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Old_Town%2C_Budva%2C_Montenegro_-_panoramio_%2837%29.jpg/960px-Old_Town%2C_Budva%2C_Montenegro_-_panoramio_%2837%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Old_Town,_Budva,_Montenegro_-_panoramio_(37).jpg",
+      "author": "Сергей Наруков",
+      "license": "CC BY 3.0"
+    },
+    "Ulcinj": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Panorama_of_Ulcinj_in_Montenegro_%281%29.jpg/960px-Panorama_of_Ulcinj_in_Montenegro_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 521,
+      "page": "https://commons.wikimedia.org/wiki/File:Panorama_of_Ulcinj_in_Montenegro_(1).jpg",
+      "author": "Dudva",
+      "license": "CC BY-SA 3.0"
+    },
+    "Virpazar (Lake Skadar)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Skadar_Lake%2C_Montenegro_04.jpg/960px-Skadar_Lake%2C_Montenegro_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 641,
+      "page": "https://commons.wikimedia.org/wiki/File:Skadar_Lake,_Montenegro_04.jpg",
+      "author": "Miomir Magdevski",
+      "license": "CC BY-SA 4.0"
+    },
+    "Žabljak (Durmitor)": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/%C5%BDabljak.jpg/960px-%C5%BDabljak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:%C5%BDabljak.jpg",
+      "author": "Julian Nyča",
+      "license": "CC BY-SA 3.0"
+    },
+    "Podgorica": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Podgorica%2C_Montenegro.jpg/960px-Podgorica%2C_Montenegro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 692,
+      "page": "https://commons.wikimedia.org/wiki/File:Podgorica,_Montenegro.jpg",
+      "author": "European Union , Copernicus Sentinel-2 imagery",
+      "license": "Attribution"
+    }
+  },
+  "es": {
+    "title": "Montenegro: Kotor, Budva y Durmitor",
+    "metaTitle": "Montenegro: Kotor, Budva y Durmitor, de 5 a 9 días · Lowfly",
+    "summary": "La bahía de Kotor, las islas de Perast, las playas de Budva, el lago Skadar y las montañas de Durmitor, todo en un país que se cruza en coche en medio día.",
+    "why": [
+      "Montenegro cabe en un viaje corto: la costa, el lago y la montaña están a menos de cuatro horas en bus, y el país tiene un aeropuerto en la costa (Tivat) y otro en el centro (Podgorica).",
+      "La bahía de Kotor es el paisaje que más se recuerda: un fiordo con dos islotes, el de San Jorge y el de Nuestra Señora de las Rocas, y un pueblo medieval en el fondo. Se recorre en barco desde Kotor o desde Perast.",
+      "Durmitor es lo contrario: un parque nacional de montaña con el cañón del Tara, el segundo más profundo del mundo, el lago Negro y el pueblo de Žabljak como base para senderismo, rafting y rutas en 4x4."
+    ],
+    "towns": {
+      "Kotor": {
+        "text": "Kotor es el pueblo medieval del fondo de la bahía, con plazas de piedra, palacios venecianos y la catedral de San Trifón. Encima, la muralla sube 260 metros hasta la fortaleza de San Juan, con vistas de toda la bahía desde arriba.",
+        "see": [
+          "La muralla hasta la fortaleza de San Juan",
+          "La plaza de las Armas y la catedral de San Trifón",
+          "La iglesia de Nuestra Señora de la Salud",
+          "El mercado de la puerta del mar, por la mañana"
+        ],
+        "tip": "La subida a la muralla cuesta 15 euros y son 1.350 escalones: ve a las siete u ocho de la mañana en verano, que no hay sombra. Los cruceros llegan a media mañana y el pueblo se llena."
+      },
+      "Perast": {
+        "text": "Perast es un pueblo de una sola calle a la orilla de la bahía, con 16 palacios venecianos y campanarios que miran a los dos islotes. Es el sitio más fotografiado de Montenegro y el punto de salida de los barcos a Nuestra Señora de las Rocas.",
+        "see": [
+          "Las dos islas, en barco desde el pueblo",
+          "La iglesia de Nuestra Señora de las Rocas",
+          "El campanario de San Nicolás",
+          "El paseo de una calle junto al agua"
+        ],
+        "tip": "El barco a las islas sale del muelle del pueblo y cuesta unos cinco euros. Perast está a 20 minutos de Kotor en bus y se ve en medio día: es la excursión más fácil de la bahía."
+      },
+      "Budva": {
+        "text": "Budva es la capital del turismo de playa de Montenegro: un casco antiguo amurallado en una península, playas de arena en la bahía de Slovenska y una vida nocturna que no para en verano. Al lado están Sveti Stefan y las playas de Miločer.",
+        "see": [
+          "El casco antiguo y sus murallas",
+          "La playa de Mogren, bajo el acantilado",
+          "Sveti Stefan, la isla-hotel",
+          "La playa de Jaz, al norte"
+        ],
+        "tip": "Budva se llena en julio y agosto: reserva alojamiento con meses de antelación y ten en cuenta que las playas se pagan por tumbona. En mayo y septiembre está mucho más tranquila."
+      },
+      "Ulcinj": {
+        "text": "Ulcinj es la ciudad más al sur, con mayoría albanesa, un casco antiguo sobre un acantilado y la playa de Velika Plaža, de 13 kilómetros de arena. Delante está la isla de Ada Bojana, en la desembocadura del río Bojana.",
+        "see": [
+          "El casco antiguo y la torre del reloj",
+          "La playa de Velika Plaža",
+          "La isla de Ada Bojana",
+          "El mirador sobre el Adriático"
+        ],
+        "tip": "Ulcinj es la parada de playa más larga y la más barata de la costa. La Velika Plaža tiene buses desde el centro en verano, pero el coche da más libertad para moverse entre calas."
+      },
+      "Virpazar (Lake Skadar)": {
+        "text": "Virpazar es un pueblo de 300 habitantes a la orilla del lago Skadar, el mayor de los Balcanes, compartido con Albania. Es la base para los barcos de observación de aves y para las rutas en kayak entre nenúfares y montañas.",
+        "see": [
+          "El paseo en barco por el lago",
+          "La fortaleza de Besac, sobre el pueblo",
+          "El monasterio de Moračnik, en una isla",
+          "La cata de vino de la región de Crmnica"
+        ],
+        "tip": "Los barcos salen del muelle de Virpazar y duran dos horas. El lago es una reserva de aves: lleva prismáticos. Desde Virpazar hay trenes a Podgorica y a Bar, y buses a Budva."
+      },
+      "Žabljak (Durmitor)": {
+        "text": "Žabljak es el pueblo más alto de los Balcanes, a 1.450 metros, y la puerta del parque nacional de Durmitor. Alrededor están el lago Negro, el cañón del Tara y las cumbres de más de 2.500 metros, con nieve hasta junio.",
+        "see": [
+          "El lago Negro, a 20 minutos a pie",
+          "El cañón del Tara y el puente de Đurđevića",
+          "El mirador de Ćurevac, sobre el cañón",
+          "El rafting en el Tara, de abril a octubre"
+        ],
+        "tip": "Durmitor es fresco incluso en agosto: lleva una chaqueta para las noches. El puente de Đurđevića está a 30 minutos en coche y el rafting se reserva en Žabljak el día antes."
+      },
+      "Podgorica": {
+        "text": "Podgorica es la capital, una ciudad llana de plazas nuevas, cafés y el río Morača, reconstruida casi entera tras la Segunda Guerra Mundial. No es un destino en sí, pero tiene el aeropuerto y los buses que unen la costa con la montaña.",
+        "see": [
+          "La plaza de la Independencia",
+          "El puente del Milenio, sobre el Morača",
+          "El barrio de Stara Varoš, con la torre del reloj",
+          "El monasterio de Dajbabe, en la colina"
+        ],
+        "tip": "Podgorica es la última parada por el aeropuerto (TGD), a 15 minutos del centro. Si vas a Durmitor, el bus sale de la estación de autobuses y tarda unas dos horas y media."
+      }
+    },
+    "gettingAround": "Kotor-Perast, 20 minutos en bus. Perast-Budva, una hora en bus. Budva-Ulcinj, una hora y media en bus. Ulcinj-Virpazar, una hora y cuarto en coche. Virpazar-Žabljak, tres horas y media en bus. Žabljak-Podgorica, dos horas y media en bus. Fuera de la costa los buses son escasos: un coche de alquiler ahorra mucho tiempo.",
+    "bestTime": "De mayo a junio y de septiembre a octubre para la costa, con el mar a 22 grados y sin aglomeraciones. Durmitor se visita mejor de junio a septiembre. Julio y agosto son los meses de playa y de precios altos en Budva. En invierno Žabljak es destino de esquí.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Kotor, Perast y Budva. Con 7 añades Durmitor y Podgorica. Con 9 entran Ulcinj y el lago Skadar."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "Para la costa no, pero para Durmitor y el lago Skadar sí ayuda mucho: los buses son pocos y lentos."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Podgorica (TGD) y saliendo por Tivat (TGD) o al contrario, el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Tivat (TGD), en la costa, o a Podgorica (TGD), en el centro. Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Montenegro: Kotor, Budva and Durmitor",
+    "metaTitle": "Montenegro: Kotor, Budva and Durmitor in 5 to 9 days · Lowfly",
+    "summary": "The Bay of Kotor, the islands of Perast, the beaches of Budva, Lake Skadar and the Durmitor mountains, all in a country you can cross by car in half a day.",
+    "why": [
+      "Montenegro fits into a short trip: coast, lake and mountains are less than four hours apart by bus, and the country has one airport on the coast (Tivat) and another in the centre (Podgorica).",
+      "The Bay of Kotor is the landscape people remember most: a fjord with two islets, St George's and Our Lady of the Rocks, and a medieval town at its foot. You see it by boat from Kotor or from Perast.",
+      "Durmitor is the opposite: a mountain national park with the Tara canyon, the second deepest in the world, the Black Lake and the village of Žabljak as a base for hiking, rafting and 4x4 routes."
+    ],
+    "towns": {
+      "Kotor": {
+        "text": "Kotor is the medieval town at the head of the bay, with stone squares, Venetian palaces and St Tryphon's cathedral. Above it the wall climbs 260 metres to the fortress of San Giovanni, with views of the whole bay from the top.",
+        "see": [
+          "The wall up to the fortress of San Giovanni",
+          "The Square of the Arms and St Tryphon's cathedral",
+          "Our Lady of Health",
+          "The market by the sea gate, in the morning"
+        ],
+        "tip": "The climb to the wall costs 15 euros and is 1,350 steps: go at seven or eight in summer, there is no shade. Cruise ships arrive mid-morning and the town fills up."
+      },
+      "Perast": {
+        "text": "Perast is a one-street village on the edge of the bay, with 16 Venetian palaces and bell towers facing the two islets. It is the most photographed spot in Montenegro and the departure point for boats to Our Lady of the Rocks.",
+        "see": [
+          "The two islands, by boat from the village",
+          "The church of Our Lady of the Rocks",
+          "St Nicholas's bell tower",
+          "The one-street walk by the water"
+        ],
+        "tip": "The boat to the islands leaves from the village pier and costs about five euros. Perast is 20 minutes from Kotor by bus and takes half a day: it is the easiest outing on the bay."
+      },
+      "Budva": {
+        "text": "Budva is the beach capital of Montenegro: a walled old town on a peninsula, sandy beaches in Slovenska bay and nightlife that does not stop in summer. Next door are Sveti Stefan and the Miločer beaches.",
+        "see": [
+          "The old town and its walls",
+          "Mogren beach, below the cliff",
+          "Sveti Stefan, the island hotel",
+          "Jaz beach, to the north"
+        ],
+        "tip": "Budva fills up in July and August: book accommodation months ahead and note that beaches charge for sunbeds. In May and September it is far quieter."
+      },
+      "Ulcinj": {
+        "text": "Ulcinj is the southernmost town, mostly Albanian-speaking, with an old town on a cliff and Velika Plaža, a 13-kilometre sandy beach. In front is Ada Bojana, an island at the mouth of the Bojana river.",
+        "see": [
+          "The old town and the clock tower",
+          "Velika Plaža beach",
+          "Ada Bojana island",
+          "The view over the Adriatic"
+        ],
+        "tip": "Ulcinj is the longest and cheapest beach stop on the coast. Velika Plaža has buses from the centre in summer, but a car gives more freedom between coves."
+      },
+      "Virpazar (Lake Skadar)": {
+        "text": "Virpazar is a village of 300 people on the shore of Lake Skadar, the largest in the Balkans, shared with Albania. It is the base for birdwatching boats and for kayak routes between water lilies and mountains.",
+        "see": [
+          "The boat trip on the lake",
+          "Besac fortress, above the village",
+          "Moračnik monastery, on an island",
+          "A tasting of Crmnica wine"
+        ],
+        "tip": "Boats leave from the Virpazar pier and last two hours. The lake is a bird reserve: bring binoculars. Trains from Virpazar run to Podgorica and Bar, and buses to Budva."
+      },
+      "Žabljak (Durmitor)": {
+        "text": "Žabljak is the highest town in the Balkans, at 1,450 metres, and the gateway to Durmitor national park. Around it are the Black Lake, the Tara canyon and peaks over 2,500 metres, with snow until June.",
+        "see": [
+          "The Black Lake, 20 minutes on foot",
+          "The Tara canyon and the Đurđevića bridge",
+          "The Ćurevac viewpoint, over the canyon",
+          "Rafting on the Tara, April to October"
+        ],
+        "tip": "Durmitor is cool even in August: bring a jacket for the evenings. The Đurđevića bridge is 30 minutes away by car and rafting is booked in Žabljak the day before."
+      },
+      "Podgorica": {
+        "text": "Podgorica is the capital, a flat city of new squares, cafés and the Morača river, almost entirely rebuilt after the Second World War. It is not a destination in itself, but it has the airport and the buses linking coast and mountains.",
+        "see": [
+          "Independence Square",
+          "The Millennium Bridge, over the Morača",
+          "Stara Varoš, with the clock tower",
+          "Dajbabe monastery, on the hill"
+        ],
+        "tip": "Podgorica is the last stop for the airport (TGD), 15 minutes from the centre. If you are heading to Durmitor, the bus leaves from the bus station and takes about two and a half hours."
+      }
+    },
+    "gettingAround": "Kotor-Perast, 20 minutes by bus. Perast-Budva, an hour by bus. Budva-Ulcinj, ninety minutes by bus. Ulcinj-Virpazar, an hour and a quarter by car. Virpazar-Žabljak, three and a half hours by bus. Žabljak-Podgorica, two and a half hours by bus. Away from the coast buses are scarce: a hire car saves a lot of time.",
+    "bestTime": "May to June and September to October for the coast, with the sea at 22 degrees and no crowds. Durmitor is best from June to September. July and August are the beach months and the expensive ones in Budva. In winter Žabljak is a ski destination.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Kotor, Perast and Budva. 7 adds Durmitor and Podgorica. 9 takes in Ulcinj and Lake Skadar."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "Not for the coast, but for Durmitor and Lake Skadar it helps a lot: buses are few and slow."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Podgorica (TGD) and out of Tivat (TGD), or the reverse, is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Tivat (TGD), on the coast, or Podgorica (TGD), in the centre. Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

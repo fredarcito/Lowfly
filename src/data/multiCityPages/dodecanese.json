@@ -1,0 +1,214 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "dodecaneso",
+    "en": "dodecanese"
+  },
+  "photos": {
+    "Kos": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Mastichari_Kos_2.jpg/960px-Mastichari_Kos_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 509,
+      "page": "https://commons.wikimedia.org/wiki/File:Mastichari_Kos_2.jpg",
+      "author": "Karelj",
+      "license": "Public domain"
+    },
+    "Kalymnos": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kalymnos_port.JPG/960px-Kalymnos_port.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Kalymnos_port.JPG",
+      "author": "Tryfon Kar",
+      "license": "CC BY-SA 3.0"
+    },
+    "Patmos": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Patmos%2C_chora%2C_piazzetta_1.jpg/960px-Patmos%2C_chora%2C_piazzetta_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 654,
+      "page": "https://commons.wikimedia.org/wiki/File:Patmos,_chora,_piazzetta_1.jpg",
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0"
+    },
+    "Symi": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/View_of_Symi_settlement_from_its_harbour-2.jpg/960px-View_of_Symi_settlement_from_its_harbour-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 612,
+      "page": "https://commons.wikimedia.org/wiki/File:View_of_Symi_settlement_from_its_harbour-2.jpg",
+      "author": "Szilas",
+      "license": "Public domain"
+    },
+    "Rhodes": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Aerial_view_of_Rhodes_Old_Town%2C_Greece_%2851698566526%29.jpg/960px-Aerial_view_of_Rhodes_Old_Town%2C_Greece_%2851698566526%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Rhodes_Old_Town,_Greece_(51698566526).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0"
+    }
+  },
+  "es": {
+    "title": "Dodecaneso: Kos, Kalymnos, Patmos, Symi y Rodas",
+    "metaTitle": "Dodecaneso: Kos, Kalymnos, Patmos, Symi y Rodas, de 5 a 10 días · Lowfly",
+    "summary": "Cinco islas del Egeo en ferry: las ruinas griegas y romanas de Kos, la isla de los escaladores de Kalymnos, el monasterio de Patmos, el puerto de Symi y la ciudad medieval de Rodas.",
+    "why": [
+      "El Dodecaneso es la cadena de islas más cercana a Turquía: los ferris unen Kos, Kalymnos, Patmos, Symi y Rodas en trayectos de una a cuatro horas, con el mar siempre a la vista.",
+      "Rodas es la ciudad medieval mejor conservada de Europa: una ciudad amurallada de los caballeros de San Juan, con el palacio del Gran Maestre y la calle de los Caballeros, y playas a 10 minutos.",
+      "Cada isla tiene su carácter: Kos, con el Asclepeion y el plátano de Hipócrates; Kalymnos, con acantilados de escalada y pescadores de esponjas; Patmos, con el monasterio de San Juan y la cueva del Apocalipsis; y Symi, con un puerto de casas neoclásicas de colores."
+    ],
+    "towns": {
+      "Kos": {
+        "text": "Kos es la isla de Hipócrates: el Asclepeion, el santuario de curación donde enseñó el médico, está a 4 kilómetros de la ciudad, y en el centro hay ruinas romanas, un ágora griega y el plátano bajo el que, dicen, enseñaba.",
+        "see": [
+          "El Asclepeion",
+          "El plátano de Hipócrates y la fortaleza de Neratzia",
+          "La playa de Tigaki, de arena",
+          "El pueblo de Zia, en la montaña"
+        ],
+        "tip": "Kos tiene aeropuerto (KGS) y ferry a Bodrum en Turquía en 45 minutos. El Asclepeion se visita en bus urbano en medio día y la playa de Tigaki está a 20 minutos."
+      },
+      "Kalymnos": {
+        "text": "Kalymnos es la isla de los escaladores y de los pescadores de esponjas: acantilados de roca caliza con más de 4.000 vías de escalada, el pueblo de Pothia con casas de colores en el puerto y la cala de Vlychadia.",
+        "see": [
+          "Las vías de escalada de Arginonta y Masouri",
+          "El puerto de Pothia",
+          "La cueva de Kefalas, con estalactitas",
+          "La playa de Vlychadia, en barco"
+        ],
+        "tip": "Kalymnos se alcanza en ferry desde Kos en una hora. Es el destino de escalada más famoso de Grecia: si no escalas, el puerto de Pothia y las calas del oeste merecen un día."
+      },
+      "Patmos": {
+        "text": "Patmos es la isla del Apocalipsis: en la cueva de San Juan, según la tradición, escribió el libro, y encima está el monasterio de San Juan el Teólogo, del siglo XI, con una biblioteca de manuscritos. Es Patrimonio de la Humanidad.",
+        "see": [
+          "El monasterio de San Juan el Teólogo",
+          "La cueva del Apocalipsis",
+          "El puerto de Skala",
+          "La playa de Psili Ammos"
+        ],
+        "tip": "Patmos se alcanza en ferry desde Kos en tres horas y desde Kalymnos en dos. El monasterio y la cueva se visitan en medio día y se pide ropa que cubra hombros y piernas."
+      },
+      "Symi": {
+        "text": "Symi es el puerto más fotogénico del Dodecaneso: casas neoclásicas de colores en anfiteatro sobre el agua, con el monasterio de Panormitis en la otra punta de la isla. No hay aeropuerto y casi no hay coches.",
+        "see": [
+          "El puerto de Symi y la escalinata de Kali Strata",
+          "El monasterio de Panormitis",
+          "La playa de Agios Nikolaos, en barco",
+          "El pueblo de Chorio, en la colina"
+        ],
+        "tip": "Symi se alcanza en ferry desde Rodas en una hora y desde Kos en cuatro. Las excursiones de un día desde Rodas llegan a media mañana: quédate a dormir y el puerto es otro."
+      },
+      "Rhodes": {
+        "text": "Rodas es la ciudad medieval mejor conservada de Europa: la ciudad amurallada de los caballeros de San Juan, con el palacio del Gran Maestre, la calle de los Caballeros y la sinagoga Kahal Shalom. Alrededor, playas como Faliraki y Lindos.",
+        "see": [
+          "La ciudad medieval y la calle de los Caballeros",
+          "El palacio del Gran Maestre",
+          "Lindos y su acrópolis",
+          "La playa de Anthony Quinn"
+        ],
+        "tip": "Rodas tiene aeropuerto (RHO) y es la salida de la ruta. La ciudad medieval se recorre a pie en un día y Lindos está a una hora en bus por la costa este."
+      }
+    },
+    "gettingAround": "Kos-Kalymnos, una hora en ferry. Kalymnos-Patmos, dos horas en ferry. Patmos-Symi, tres horas en ferry. Symi-Rodas, una hora en ferry. Los ferris de Blue Star y Dodekanisos Seaways unen las islas y se reservan online: en julio y agosto, con semanas de antelación.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con el mar a 24 grados y sin el viento fuerte de agosto. Julio y agosto son los meses de playa y de precios altos en Rodas y Kos. En invierno muchos ferris reducen frecuencias y algunas islas se vacían.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 5 días ves Kos y Rodas. Con 7 añades Symi y Kalymnos. Con 10 entran Patmos y un día más en Rodas."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: las islas tienen buses y los puertos se recorren a pie. Alquilar un coche ayuda en Kos y Rodas para las playas."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Rodas (RHO) y saliendo por Kos (KGS), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Kos (KGS) o a Rodas (RHO). Ryanair y Wizz Air vuelan a los dos desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Dodecanese: Kos, Kalymnos, Patmos, Symi and Rhodes",
+    "metaTitle": "Dodecanese: Kos, Kalymnos, Patmos, Symi and Rhodes in 5 to 10 days · Lowfly",
+    "summary": "Five Aegean islands by ferry: the Greek and Roman ruins of Kos, the climbers' island of Kalymnos, the monastery of Patmos, the harbour of Symi and the medieval city of Rhodes.",
+    "why": [
+      "The Dodecanese is the island chain closest to Turkey: ferries link Kos, Kalymnos, Patmos, Symi and Rhodes in trips of one to four hours, with the sea always in sight.",
+      "Rhodes is the best-preserved medieval city in Europe: a walled city of the Knights of St John, with the Palace of the Grand Master and the Street of the Knights, and beaches 10 minutes away.",
+      "Each island has its own character: Kos, with the Asclepeion and the plane tree of Hippocrates; Kalymnos, with climbing cliffs and sponge divers; Patmos, with the monastery of St John and the Cave of the Apocalypse; and Symi, with a harbour of coloured neoclassical houses."
+    ],
+    "towns": {
+      "Kos": {
+        "text": "Kos is the island of Hippocrates: the Asclepeion, the healing sanctuary where the physician taught, is 4 kilometres from town, and the centre has Roman ruins, a Greek agora and the plane tree under which, they say, he taught.",
+        "see": [
+          "The Asclepeion",
+          "The plane tree of Hippocrates and the Neratzia fortress",
+          "Tigaki beach, of sand",
+          "The village of Zia, in the mountains"
+        ],
+        "tip": "Kos has an airport (KGS) and a ferry to Bodrum in Turkey in 45 minutes. The Asclepeion is reached by city bus in half a day and Tigaki beach is 20 minutes away."
+      },
+      "Kalymnos": {
+        "text": "Kalymnos is the island of climbers and sponge divers: limestone cliffs with more than 4,000 climbing routes, the town of Pothia with coloured houses on the harbour and the cove of Vlychadia.",
+        "see": [
+          "The climbing routes at Arginonta and Masouri",
+          "Pothia harbour",
+          "The Kefalas cave, with stalactites",
+          "Vlychadia beach, by boat"
+        ],
+        "tip": "Kalymnos is an hour by ferry from Kos. It is the most famous climbing destination in Greece: if you do not climb, Pothia harbour and the western coves are worth a day."
+      },
+      "Patmos": {
+        "text": "Patmos is the island of the Apocalypse: in the Cave of St John, by tradition, he wrote the book, and above it stands the eleventh-century monastery of St John the Theologian, with a library of manuscripts. It is a World Heritage Site.",
+        "see": [
+          "The monastery of St John the Theologian",
+          "The Cave of the Apocalypse",
+          "Skala harbour",
+          "Psili Ammos beach"
+        ],
+        "tip": "Patmos is three hours by ferry from Kos and two from Kalymnos. The monastery and the cave take half a day and ask for clothes covering shoulders and legs."
+      },
+      "Symi": {
+        "text": "Symi is the most photogenic harbour in the Dodecanese: coloured neoclassical houses in an amphitheatre above the water, with the Panormitis monastery at the other end of the island. There is no airport and almost no cars.",
+        "see": [
+          "Symi harbour and the Kali Strata steps",
+          "The Panormitis monastery",
+          "Agios Nikolaos beach, by boat",
+          "The village of Chorio, on the hill"
+        ],
+        "tip": "Symi is an hour by ferry from Rhodes and four from Kos. Day trips from Rhodes arrive mid-morning: stay the night and the harbour is another place."
+      },
+      "Rhodes": {
+        "text": "Rhodes is the best-preserved medieval city in Europe: the walled city of the Knights of St John, with the Palace of the Grand Master, the Street of the Knights and the Kahal Shalom synagogue. Around it, beaches like Faliraki and Lindos.",
+        "see": [
+          "The medieval city and the Street of the Knights",
+          "The Palace of the Grand Master",
+          "Lindos and its acropolis",
+          "Anthony Quinn beach"
+        ],
+        "tip": "Rhodes has an airport (RHO) and is the exit of the route. The medieval city is walked in a day and Lindos is an hour by bus along the east coast."
+      }
+    },
+    "gettingAround": "Kos-Kalymnos, an hour by ferry. Kalymnos-Patmos, two hours by ferry. Patmos-Symi, three hours by ferry. Symi-Rhodes, an hour by ferry. Blue Star and Dodekanisos Seaways ferries link the islands and are booked online: in July and August, weeks ahead.",
+    "bestTime": "May to June and September to October, with the sea at 24 degrees and without the strong August wind. July and August are the beach months and the expensive ones in Rhodes and Kos. In winter many ferries run less often and some islands empty.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "5 days gets you Kos and Rhodes. 7 adds Symi and Kalymnos. 10 takes in Patmos and an extra day in Rhodes."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: the islands have buses and the harbours are walked. A hire car helps on Kos and Rhodes for the beaches."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Rhodes (RHO) and out of Kos (KGS) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Kos (KGS) or Rhodes (RHO). Ryanair and Wizz Air fly to both from several European cities."
+      }
+    ]
+  }
+}

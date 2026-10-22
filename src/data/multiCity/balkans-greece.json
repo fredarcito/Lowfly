@@ -1,5 +1,5 @@
 {
-  "dalmacia": {
+  "dalmatia": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -300,7 +300,7 @@
       "en": "Catamarans between the islands run daily from June to September; off season there are far fewer."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Aerial_image_of_Hvar_%28view_from_the_south%29.jpg/960px-Aerial_image_of_Hvar_%28view_from_the_south%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Aerial_image_of_Hvar_%28view_from_the_south%29.jpg/960px-Aerial_image_of_Hvar_%28view_from_the_south%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 489,
       "page": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Hvar_(view_from_the_south).jpg",
@@ -309,7 +309,7 @@
       "town": "Hvar"
     }
   },
-  "croacia-interior": {
+  "inland-croatia": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -590,7 +590,7 @@
       "en": "In Plitvice sleep next to the park and go in early: by mid-morning it fills with groups."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Roman_Forum_in_Zadar%2C_Croatia_%2848607823862%29.jpg/960px-Roman_Forum_in_Zadar%2C_Croatia_%2848607823862%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Roman_Forum_in_Zadar%2C_Croatia_%2848607823862%29.jpg/960px-Roman_Forum_in_Zadar%2C_Croatia_%2848607823862%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 533,
       "page": "https://commons.wikimedia.org/wiki/File:Roman_Forum_in_Zadar,_Croatia_(48607823862).jpg",
@@ -599,7 +599,7 @@
       "town": "Zadar"
     }
   },
-  "eslovenia-e-istria": {
+  "slovenia-istria": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -884,7 +884,7 @@
       "en": "In Istria buses are scarce outside summer; a car makes moving between towns much easier."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Blejsko_jezero.jpg/960px-Blejsko_jezero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Blejsko_jezero.jpg/960px-Blejsko_jezero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 600,
       "page": "https://commons.wikimedia.org/wiki/File:Blejsko_jezero.jpg",
@@ -893,7 +893,7 @@
       "town": "Bled"
     }
   },
-  "balcanes": {
+  "balkans": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -1162,7 +1162,7 @@
       "en": "Keep your passport or ID card at hand: you cross several borders by road and in summer there are queues."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/960px-Mostar_Old_Town_Panorama_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/960px-Mostar_Old_Town_Panorama_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 536,
       "page": "https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama_2007.jpg",
@@ -1486,7 +1486,7 @@
       "en": "Durmitor and Lake Skadar have few buses: a hire car saves a lot of time."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Budva%2C_view_from_Gospostina.jpg/960px-Budva%2C_view_from_Gospostina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Budva%2C_view_from_Gospostina.jpg/960px-Budva%2C_view_from_Gospostina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 451,
       "page": "https://commons.wikimedia.org/wiki/File:Budva,_view_from_Gospostina.jpg",
@@ -1495,7 +1495,7 @@
       "town": "Budva"
     }
   },
-  "bosnia-a-fondo": {
+  "bosnia-in-depth": {
     "kind": "surprise",
     "reviewed": false,
     "name": {
@@ -1834,7 +1834,7 @@
       "en": "The Sarajevo–Mostar train is one of the most scenic in the Balkans. Blagaj and Počitelj are easier by car."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Sarajevo_City_Panorama.JPG/960px-Sarajevo_City_Panorama.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sarajevo_City_Panorama.JPG/960px-Sarajevo_City_Panorama.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 478,
       "page": "https://commons.wikimedia.org/wiki/File:Sarajevo_City_Panorama.JPG",
@@ -2138,7 +2138,7 @@
       "en": "Minibuses (furgons) have no fixed timetable: leave early. The Sarandë–Corfu ferry runs all year, with more boats in summer."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Gjipe_beach%2C_Albania.JPG/960px-Gjipe_beach%2C_Albania.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Gjipe_beach%2C_Albania.JPG/960px-Gjipe_beach%2C_Albania.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 960,
       "height": 640,
       "page": "https://commons.wikimedia.org/wiki/File:Gjipe_beach,_Albania.JPG",
@@ -2147,7 +2147,7 @@
       "town": "Riviera albanesa"
     }
   },
-  "macedonia-del-norte-y-ocrid": {
+  "north-macedonia-ohrid": {
     "kind": "surprise",
     "reviewed": false,
     "name": {
@@ -2391,16 +2391,16 @@
       "en": "Matka Canyon is a half-day trip from Skopje, by city bus or taxi."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/BitolskiKorzo.JPG/960px-BitolskiKorzo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/BitolskiKorzo.JPG/960px-BitolskiKorzo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 1067,
       "page": "https://commons.wikimedia.org/wiki/File:BitolskiKorzo.JPG",
       "author": "Petar Milošević",
       "license": "CC BY-SA 3.0",
-      "town": "Bitola"
+      "town": "Ohrid"
     }
   },
-  "atenas-y-cicladas": {
+  "athens-cyclades": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2645,7 +2645,7 @@
       "en": "Ferries between the islands run daily from May to October; in July and August book your ticket ahead."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Paros_Alyki2_tango7174.jpg/960px-Paros_Alyki2_tango7174.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Paros_Alyki2_tango7174.jpg/960px-Paros_Alyki2_tango7174.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 457,
       "page": "https://commons.wikimedia.org/wiki/File:Paros_Alyki2_tango7174.jpg",
@@ -2654,7 +2654,7 @@
       "town": "Paros"
     }
   },
-  "grecia-continental": {
+  "mainland-greece": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -2925,7 +2925,7 @@
       "town": "Tesalónica"
     }
   },
-  "creta": {
+  "crete": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -3084,7 +3084,7 @@
               "ideal": 3
             },
             "land": {
-              "minutes": 180,
+              "minutes": 150,
               "by": "bus"
             }
           },
@@ -3102,7 +3102,7 @@
               "ideal": 2
             },
             "land": {
-              "minutes": 180,
+              "minutes": 120,
               "by": "bus"
             }
           },
@@ -3166,7 +3166,7 @@
       "en": "KTEL buses link the towns, but a car helps a lot for the western beaches (Balos, Elafonisi)."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rethymno_-_Venetian_fortress.jpg/960px-Rethymno_-_Venetian_fortress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Rethymno_-_Venetian_fortress.jpg/960px-Rethymno_-_Venetian_fortress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 533,
       "page": "https://commons.wikimedia.org/wiki/File:Rethymno_-_Venetian_fortress.jpg",
@@ -3175,7 +3175,7 @@
       "town": "Rétino"
     }
   },
-  "peloponeso": {
+  "peloponnese": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -3450,7 +3450,7 @@
       "en": "This is a road trip: hire a car in Nafplio or Athens; by bus, Monemvasia and the Mani are very slow."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/NafplionViewFromAkronauplia.jpg/960px-NafplionViewFromAkronauplia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/NafplionViewFromAkronauplia.jpg/960px-NafplionViewFromAkronauplia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 600,
       "page": "https://commons.wikimedia.org/wiki/File:NafplionViewFromAkronauplia.jpg",
@@ -3459,7 +3459,7 @@
       "town": "Nauplia"
     }
   },
-  "corfu-y-epiro": {
+  "corfu-epirus": {
     "kind": "surprise",
     "reviewed": false,
     "name": {
@@ -3693,7 +3693,7 @@
       "en": "Zagori and Meteora are poorly served by bus: hire a car in Ioannina or Igoumenitsa."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/%CE%9A%CE%AC%CF%83%CF%84%CF%81%CE%BF_%CE%99%CF%89%CE%B1%CE%BD%CE%BD%CE%AF%CE%BD%CF%89%CE%BD%2C_%CE%AC%CF%80%CE%BF%CF%88%CE%B7_%CF%84%CE%BF%CF%85_%CF%84%CE%B6%CE%B1%CE%BC%CE%B9%CE%BF%CF%8D_%CE%BC%CE%B5_%CF%86%CF%8C%CE%BD%CF%84%CE%BF_%CF%84%CE%B7%CE%BD_%CE%BB%CE%AF%CE%BC%CE%BD%CE%B7_%CF%84%CE%BF%CE%BD_%CE%BF%CF%85%CF%81%CE%B1%CE%BD%CF%8C_%CE%BA%CE%B1%CE%B9_%CF%84%CE%BF%CF%85%CF%82_%CE%B3%CE%BB%CE%AC%CF%81%CE%BF%CF%85%CF%82%21%21%21%28photosiotas%29_%285%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/%CE%9A%CE%AC%CF%83%CF%84%CF%81%CE%BF_%CE%99%CF%89%CE%B1%CE%BD%CE%BD%CE%AF%CE%BD%CF%89%CE%BD%2C_%CE%AC%CF%80%CE%BF%CF%88%CE%B7_%CF%84%CE%BF%CF%85_%CF%84%CE%B6%CE%B1%CE%BC%CE%B9%CE%BF%CF%8D_%CE%BC%CE%B5_%CF%86%CF%8C%CE%BD%CF%84%CE%BF_%CF%84%CE%B7%CE%BD_%CE%BB%CE%AF%CE%BC%CE%BD%CE%B7_%CF%84%CE%BF%CE%BD_%CE%BF%CF%85%CF%81%CE%B1%CE%BD%CF%8C_%CE%BA%CE%B1%CE%B9_%CF%84%CE%BF%CF%85%CF%82_%CE%B3%CE%BB%CE%AC%CF%81%CE%BF%CF%85%CF%82%21%21%21%28photosiotas%29_%285%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 443,
       "page": "https://commons.wikimedia.org/wiki/File:%CE%9A%CE%AC%CF%83%CF%84%CF%81%CE%BF_%CE%99%CF%89%CE%B1%CE%BD%CE%BD%CE%AF%CE%BD%CF%89%CE%BD,_%CE%AC%CF%80%CE%BF%CF%88%CE%B7_%CF%84%CE%BF%CF%85_%CF%84%CE%B6%CE%B1%CE%BC%CE%B9%CE%BF%CF%8D_%CE%BC%CE%B5_%CF%86%CF%8C%CE%BD%CF%84%CE%BF_%CF%84%CE%B7%CE%BD_%CE%BB%CE%AF%CE%BC%CE%BD%CE%B7_%CF%84%CE%BF%CE%BD_%CE%BF%CF%85%CF%81%CE%B1%CE%BD%CF%8C_%CE%BA%CE%B1%CE%B9_%CF%84%CE%BF%CF%85%CF%82_%CE%B3%CE%BB%CE%AC%CF%81%CE%BF%CF%85%CF%82!!!(photosiotas)_(5).jpg",
@@ -3702,7 +3702,7 @@
       "town": "Ioánina"
     }
   },
-  "dodecaneso": {
+  "dodecanese": {
     "kind": "classic",
     "reviewed": false,
     "name": {
@@ -3960,16 +3960,16 @@
       "en": "In summer fast ferries run almost daily between Rhodes, Symi, Kos, Kalymnos and Patmos; off-season there are fewer: check the timetables before fixing the nights."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Kos_seaport.jpg/960px-Kos_seaport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Kos_seaport.jpg/960px-Kos_seaport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 800,
       "height": 598,
       "page": "https://commons.wikimedia.org/wiki/File:Kos_seaport.jpg",
       "author": "Steven Fruitsmaak",
       "license": "CC BY-SA 3.0",
-      "town": "Kos"
+      "town": "Rhodes"
     }
   },
-  "balcanes-del-sur": {
+  "southern-balkans": {
     "kind": "surprise",
     "reviewed": false,
     "name": {
@@ -4334,7 +4334,7 @@
       "en": "You cross several borders by road: keep your passport or ID card at hand. Buses are paid in cash, often to the driver, with no fixed timetables: ask at the station the day before. This route skips Serbia on purpose: if you enter Kosovo from another country, do not leave it towards Serbia, as it can cause trouble at the border. Shkodër is the base for the Theth and Valbona hikes."
     },
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Beautiful_St._John_Kaneo_Church_and_Ohrid_lake_view.jpg/960px-Beautiful_St._John_Kaneo_Church_and_Ohrid_lake_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Beautiful_St._John_Kaneo_Church_and_Ohrid_lake_view.jpg/960px-Beautiful_St._John_Kaneo_Church_and_Ohrid_lake_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "width": 960,
       "height": 640,
       "page": "https://commons.wikimedia.org/wiki/File:Beautiful_St._John_Kaneo_Church_and_Ohrid_lake_view.jpg",

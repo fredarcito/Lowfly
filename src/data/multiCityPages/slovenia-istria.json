@@ -1,0 +1,270 @@
+{
+  "reviewed": false,
+  "writtenAt": "2026-10-22",
+  "slugs": {
+    "es": "slovenia-istria",
+    "en": "slovenia-istria"
+  },
+  "photos": {
+    "Trieste": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Plaza_de_la_Unidad_de_Italia%2C_Trieste%2C_Italia%2C_2017-04-15%2C_DD_11-15_HDR.jpg/960px-Plaza_de_la_Unidad_de_Italia%2C_Trieste%2C_Italia%2C_2017-04-15%2C_DD_11-15_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 249,
+      "page": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Unidad_de_Italia,_Trieste,_Italia,_2017-04-15,_DD_11-15_HDR.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0"
+    },
+    "Ljubljana": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Ljubljana_old_town_and_river_Ljubljanica.jpg/960px-Ljubljana_old_town_and_river_Ljubljanica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 721,
+      "page": "https://commons.wikimedia.org/wiki/File:Ljubljana_old_town_and_river_Ljubljanica.jpg",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0"
+    },
+    "Bled": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bled_Island_%26_Bled_Castle_%281%29.jpg/960px-Bled_Island_%26_Bled_Castle_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 305,
+      "page": "https://commons.wikimedia.org/wiki/File:Bled_Island_%26_Bled_Castle_(1).jpg",
+      "author": "Krzysztof Golik",
+      "license": "CC BY-SA 4.0"
+    },
+    "Postojna": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Postojna_Cave_4772-4773_mod.jpg/960px-Postojna_Cave_4772-4773_mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 727,
+      "page": "https://commons.wikimedia.org/wiki/File:Postojna_Cave_4772-4773_mod.jpg",
+      "author": "JYB Devot",
+      "license": "CC BY-SA 4.0"
+    },
+    "Piran": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Piran_old_town.jpg/960px-Piran_old_town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 640,
+      "page": "https://commons.wikimedia.org/wiki/File:Piran_old_town.jpg",
+      "author": "Isiwal",
+      "license": "CC BY-SA 4.0"
+    },
+    "Pula": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Pula_Aerial_View.jpg/960px-Pula_Aerial_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 586,
+      "page": "https://commons.wikimedia.org/wiki/File:Pula_Aerial_View.jpg",
+      "author": "Orlovic",
+      "license": "CC BY-SA 3.0"
+    },
+    "Rovinj": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Rovinj_Old_Town.jpg/960px-Rovinj_Old_Town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 960,
+      "height": 720,
+      "page": "https://commons.wikimedia.org/wiki/File:Rovinj_Old_Town.jpg",
+      "author": "Einaz80",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "es": {
+    "title": "Eslovenia e Istria",
+    "metaTitle": "Eslovenia e Istria, de 6 a 9 días · Lowfly",
+    "summary": "De Trieste a Rovinj por Liubliana, el lago de Bled y las cuevas de Postojna, con el Adriático veneciano al final.",
+    "why": [
+      "En 200 kilómetros se pasa de una ciudad italiana con alma austriaca a una capital eslovena de dragones, a un lago con una isla en medio y a un pueblo veneciano de piedra: es la ruta más variada por kilómetro de Europa.",
+      "El lago de Bled tiene una isla con una iglesia del siglo XV a la que se llega en barca de remos, y está a 45 minutos de Liubliana en bus. Se ve en un día y es la postal del país.",
+      "Las cuevas de Postojna son las más visitadas de Europa, con un tren que entra dos kilómetros bajo tierra, y el castillo de Predjama está a 10 minutos, encajado en una pared de roca."
+    ],
+    "towns": {
+      "Trieste": {
+        "text": "Trieste es la ciudad italiana de la frontera eslovena, con la plaza de la Unidad de Italia abierta al mar, los cafés literarios donde escribió Svevo y el castillo de San Giusto sobre la colina. Es la entrada más barata a la región.",
+        "see": [
+          "La plaza de la Unidad de Italia",
+          "El castillo de San Giusto",
+          "El café San Marco y el Caffè degli Specchi",
+          "El canal Grande y la iglesia serbia"
+        ],
+        "tip": "Trieste está a dos horas de Liubliana en bus y a una de Piran. El café San Marco es el más antiguo de la ciudad y sirve el café en taza de porcelana."
+      },
+      "Ljubljana": {
+        "text": "Liubliana es la capital de Eslovenia y una ciudad pequeña y peatonal, con el puente de los Dragones, el castillo sobre la colina y el río Ljubljanica lleno de cafés. El mercado central lo diseñó Jože Plečnik.",
+        "see": [
+          "El puente de los Dragones",
+          "El castillo de Liubliana",
+          "El mercado central de Plečnik",
+          "El barrio de Metelkova, con grafitis"
+        ],
+        "tip": "Liubliana se ve en un día y todo está a menos de 20 minutos a pie. Los buses a Bled salen cada hora y tardan una hora y cuarto."
+      },
+      "Bled": {
+        "text": "Bled es el lago con una isla en medio, con la iglesia de la Asunción y una torre del siglo XV, y un castillo en un acantilado sobre el agua. Alrededor hay senderos, miradores y la playa de Grajska.",
+        "see": [
+          "La isla y la iglesia de la Asunción, en barca de remos",
+          "El castillo de Bled",
+          "El mirador de Ojstrica, subiendo a pie",
+          "La garganta de Vintgar, a 10 minutos"
+        ],
+        "tip": "Las barcas de remos (pletna) se cogen en la orilla y cuestan unos 20 euros por persona con 30 minutos en la isla. El mirador de Ojstrica es una subida de 20 minutos y la mejor foto del lago."
+      },
+      "Postojna": {
+        "text": "Postojna es el sistema de cuevas más visitado de Europa, con 24 kilómetros de galerías y un tren que entra dos kilómetros bajo tierra. Al lado está Predjama, un castillo encajado en una pared de roca de 123 metros.",
+        "see": [
+          "Las cuevas de Postojna, con el tren subterráneo",
+          "El castillo de Predjama",
+          "El acuario de proteos, en las cuevas",
+          "El pueblo de Postojna y su castillo"
+        ],
+        "tip": "Las cuevas se visitan con guía y hace 8 grados dentro: lleva chaqueta. La entrada combinada con Predjama sale más barata y el castillo está a 10 minutos en coche o bus."
+      },
+      "Piran": {
+        "text": "Piran es el pueblo veneciano de Eslovenia, con la plaza Tartini en forma de concha, la iglesia de San Jorge sobre el mar y calles tan estrechas que no caben dos personas. Fue parte de la República de Venecia durante 500 años.",
+        "see": [
+          "La plaza Tartini",
+          "La iglesia de San Jorge y su campanario",
+          "Las murallas de la ciudad",
+          "El paseo marítimo hacia Portorož"
+        ],
+        "tip": "Piran se ve en medio día y el campanario de San Jorge se sube por pocos euros, con vistas a toda la bahía. Desde aquí a Pula hay dos horas en bus con cambio en Trieste o Koper."
+      },
+      "Pula": {
+        "text": "Pula tiene el anfiteatro romano mejor conservado fuera de Italia, del siglo I, con capacidad para 20.000 personas, además del templo de Augusto y la puerta de los Hércules. Es la capital histórica de Istria.",
+        "see": [
+          "El anfiteatro romano",
+          "El templo de Augusto",
+          "La catedral de la Asunción",
+          "El fuerte veneciano, sobre la colina"
+        ],
+        "tip": "El anfiteatro se visita con entrada y en verano acoge conciertos y cine. Pula está a una hora de Rovinj en bus y a dos de Trieste."
+      },
+      "Rovinj": {
+        "text": "Rovinj es el pueblo más fotografiado de Istria, con casas venecianas apiladas en una península y la iglesia de Santa Eufemia en lo alto, con el campanario más alto de Istria. Alrededor hay calas y el archipiélago de las islas Rovinj.",
+        "see": [
+          "La iglesia de Santa Eufemia y el campanario",
+          "El casco antiguo y la calle Grisia",
+          "El parque forestal de Zlatni Rt",
+          "Una excursión en barco a las islas"
+        ],
+        "tip": "El campanario de Santa Eufemia se sube por una escalera de madera y da la mejor vista del pueblo. En agosto Rovinj se llena: llega temprano o quédate a dormir."
+      }
+    },
+    "gettingAround": "Trieste-Liubliana, dos horas en bus. Liubliana-Bled, una hora y cuarto en bus o tren. Liubliana-Postojna, una hora en tren. Liubliana-Piran, dos horas y media en bus. Piran-Pula, dos horas en bus con cambio. Pula-Rovinj, una hora en bus. Los buses de Flixbus y Arriva unen todos los puntos.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con temperaturas de 18 a 25 grados y menos gente en Bled y Rovinj. Julio y agosto son los meses de playa y de precios altos. En invierno Bled es un destino de nieve y las cuevas mantienen 8 grados.",
+    "faq": [
+      {
+        "question": "¿Cuántos días hacen falta?",
+        "answer": "Con 6 días ves Trieste, Liubliana, Bled y Piran. Con 7 añades Postojna. Con 9 entran Pula y Rovinj."
+      },
+      {
+        "question": "¿Hace falta coche?",
+        "answer": "No: los buses unen las ciudades y Bled y Postojna tienen tren. El coche da más libertad para las calas de Istria."
+      },
+      {
+        "question": "¿Se puede hacer al revés?",
+        "answer": "Sí: entrando por Trieste (TRS) o Liubliana (LJU) y saliendo por Pula (PUY), el recorrido es el mismo."
+      },
+      {
+        "question": "¿A qué aeropuertos se vuela?",
+        "answer": "A Trieste (TRS), Liubliana (LJU) o Pula (PUY). Ryanair y Wizz Air vuelan a los tres desde varias ciudades europeas."
+      }
+    ]
+  },
+  "en": {
+    "title": "Slovenia and Istria",
+    "metaTitle": "Slovenia and Istria in 6 to 9 days · Lowfly",
+    "summary": "From Trieste to Rovinj via Ljubljana, Lake Bled and the Postojna caves, ending on the Venetian Adriatic.",
+    "why": [
+      "In 200 kilometres you go from an Italian city with an Austrian soul to a Slovenian capital of dragons, to a lake with an island in the middle and to a Venetian stone town: it is the most varied route per kilometre in Europe.",
+      "Lake Bled has an island with a fifteenth-century church reached by rowing boat, and it is 45 minutes from Ljubljana by bus. A day covers it and it is the country's postcard.",
+      "The Postojna caves are the most visited in Europe, with a train that goes two kilometres underground, and Predjama castle is 10 minutes away, wedged into a rock face."
+    ],
+    "towns": {
+      "Trieste": {
+        "text": "Trieste is the Italian city on the Slovenian border, with Piazza Unità d'Italia open to the sea, the literary cafés where Svevo wrote and San Giusto castle on the hill. It is the cheapest way into the region.",
+        "see": [
+          "Piazza Unità d'Italia",
+          "San Giusto castle",
+          "Caffè San Marco and Caffè degli Specchi",
+          "The Grand Canal and the Serbian church"
+        ],
+        "tip": "Trieste is two hours from Ljubljana by bus and one from Piran. Caffè San Marco is the oldest in the city and serves coffee in porcelain cups."
+      },
+      "Ljubljana": {
+        "text": "Ljubljana is the capital of Slovenia and a small, pedestrian city, with the Dragon Bridge, the castle on the hill and the Ljubljanica river lined with cafés. The central market was designed by Jože Plečnik.",
+        "see": [
+          "The Dragon Bridge",
+          "Ljubljana castle",
+          "Plečnik's central market",
+          "The Metelkova quarter, with its graffiti"
+        ],
+        "tip": "Ljubljana takes a day and everything is within 20 minutes on foot. Buses to Bled leave hourly and take an hour and a quarter."
+      },
+      "Bled": {
+        "text": "Bled is the lake with an island in the middle, with the church of the Assumption and a fifteenth-century tower, and a castle on a cliff above the water. Around it are trails, viewpoints and Grajska beach.",
+        "see": [
+          "The island and the church of the Assumption, by rowing boat",
+          "Bled castle",
+          "The Ojstrica viewpoint, on foot",
+          "The Vintgar gorge, 10 minutes away"
+        ],
+        "tip": "The rowing boats (pletna) are taken from the shore and cost about 20 euros per person with 30 minutes on the island. The Ojstrica viewpoint is a 20-minute climb and the best photo of the lake."
+      },
+      "Postojna": {
+        "text": "Postojna is the most visited cave system in Europe, with 24 kilometres of galleries and a train that goes two kilometres underground. Next door is Predjama, a castle wedged into a 123-metre rock face.",
+        "see": [
+          "The Postojna caves, with the underground train",
+          "Predjama castle",
+          "The olm aquarium, in the caves",
+          "Postojna village and its castle"
+        ],
+        "tip": "The caves are visited with a guide and it is 8 degrees inside: bring a jacket. The combined ticket with Predjama is cheaper and the castle is 10 minutes away by car or bus."
+      },
+      "Piran": {
+        "text": "Piran is Slovenia's Venetian town, with the shell-shaped Tartini square, St George's church above the sea and streets too narrow for two people. It was part of the Republic of Venice for 500 years.",
+        "see": [
+          "Tartini square",
+          "St George's church and its bell tower",
+          "The town walls",
+          "The seafront walk to Portorož"
+        ],
+        "tip": "Piran takes half a day and St George's bell tower is climbed for a few euros, with views over the whole bay. From here to Pula is two hours by bus with a change at Trieste or Koper."
+      },
+      "Pula": {
+        "text": "Pula has the best-preserved Roman amphitheatre outside Italy, from the first century, seating 20,000, plus the temple of Augustus and the gate of Hercules. It is the historic capital of Istria.",
+        "see": [
+          "The Roman amphitheatre",
+          "The temple of Augustus",
+          "The cathedral of the Assumption",
+          "The Venetian fort, on the hill"
+        ],
+        "tip": "The amphitheatre is entered on a ticket and in summer hosts concerts and films. Pula is an hour from Rovinj by bus and two from Trieste."
+      },
+      "Rovinj": {
+        "text": "Rovinj is the most photographed town in Istria, with Venetian houses stacked on a peninsula and St Euphemia's church on top, with the tallest bell tower in Istria. Around it are coves and the Rovinj islands.",
+        "see": [
+          "St Euphemia's church and the bell tower",
+          "The old town and Grisia street",
+          "The Zlatni Rt forest park",
+          "A boat trip to the islands"
+        ],
+        "tip": "St Euphemia's bell tower is climbed by a wooden staircase and gives the best view of the town. In August Rovinj fills up: arrive early or stay the night."
+      }
+    },
+    "gettingAround": "Trieste-Ljubljana, two hours by bus. Ljubljana-Bled, an hour and a quarter by bus or train. Ljubljana-Postojna, an hour by train. Ljubljana-Piran, two and a half hours by bus. Piran-Pula, two hours by bus with a change. Pula-Rovinj, an hour by bus. Flixbus and Arriva cover every point.",
+    "bestTime": "May to June and September to October, at 18 to 25 degrees and with fewer people in Bled and Rovinj. July and August are the beach months and the expensive ones. In winter Bled is a snow destination and the caves stay at 8 degrees.",
+    "faq": [
+      {
+        "question": "How many days do you need?",
+        "answer": "6 days gets you Trieste, Ljubljana, Bled and Piran. 7 adds Postojna. 9 takes in Pula and Rovinj."
+      },
+      {
+        "question": "Do you need a car?",
+        "answer": "No: buses link the cities and Bled and Postojna have trains. A car gives more freedom for the Istrian coves."
+      },
+      {
+        "question": "Can you do it the other way round?",
+        "answer": "Yes: flying into Trieste (TRS) or Ljubljana (LJU) and out of Pula (PUY) is the same route."
+      },
+      {
+        "question": "Which airports do you fly to?",
+        "answer": "Trieste (TRS), Ljubljana (LJU) or Pula (PUY). Ryanair and Wizz Air fly to all three from several European cities."
+      }
+    ]
+  }
+}

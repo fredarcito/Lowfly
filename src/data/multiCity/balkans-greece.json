@@ -2151,11 +2151,11 @@
     "kind": "surprise",
     "reviewed": false,
     "name": {
-      "es": "Macedonia del Norte y Ocrid",
+      "es": "Macedonia del Norte y Ohrid",
       "en": "North Macedonia and Ohrid"
     },
     "summary": {
-      "es": "Skopie, el cañón de Matka y el lago de Ocrid, con sus iglesias bizantinas junto al agua.",
+      "es": "Skopie, el cañón de Matka y el lago de Ohrid, con sus iglesias bizantinas junto al agua.",
       "en": "Skopje, Matka Canyon and Lake Ohrid, with its Byzantine churches by the water."
     },
     "countries": [
@@ -2195,7 +2195,7 @@
           },
           {
             "city": {
-              "es": "Ocrid",
+              "es": "Ohrid",
               "en": "Ohrid"
             },
             "countryCode": "MK",
@@ -2253,7 +2253,7 @@
           },
           {
             "city": {
-              "es": "Ocrid",
+              "es": "Ohrid",
               "en": "Ohrid"
             },
             "countryCode": "MK",
@@ -2331,7 +2331,7 @@
           },
           {
             "city": {
-              "es": "Ocrid",
+              "es": "Ohrid",
               "en": "Ohrid"
             },
             "countryCode": "MK",
@@ -3966,7 +3966,7 @@
       "page": "https://commons.wikimedia.org/wiki/File:Kos_seaport.jpg",
       "author": "Steven Fruitsmaak",
       "license": "CC BY-SA 3.0",
-      "town": "Rhodes"
+      "town": "Kos"
     }
   },
   "southern-balkans": {
@@ -3977,7 +3977,7 @@
       "en": "Southern Balkans"
     },
     "summary": {
-      "es": "El casco otomano de Prizren, la Pristina más joven, el bazar de Skopie y el lago de Ocrid: cuatro países en una vuelta en autobús.",
+      "es": "El casco otomano de Prizren, la Pristina más joven, el bazar de Skopie y el lago de Ohrid: cuatro países en una vuelta en autobús.",
       "en": "Prizren's Ottoman old town, youthful Pristina, Skopje's bazaar and Lake Ohrid: four countries in one loop by bus."
     },
     "countries": [
@@ -4136,7 +4136,7 @@
           },
           {
             "city": {
-              "es": "Ocrid",
+              "es": "Ohrid",
               "en": "Ohrid"
             },
             "countryCode": "MK",
@@ -4292,7 +4292,7 @@
           },
           {
             "city": {
-              "es": "Ocrid",
+              "es": "Ohrid",
               "en": "Ohrid"
             },
             "countryCode": "MK",
@@ -4340,7 +4340,7 @@
       "page": "https://commons.wikimedia.org/wiki/File:Beautiful_St._John_Kaneo_Church_and_Ohrid_lake_view.jpg",
       "author": "Cacar60",
       "license": "CC BY-SA 4.0",
-      "town": "Ocrid"
+      "town": "Ohrid"
     }
   }
 }

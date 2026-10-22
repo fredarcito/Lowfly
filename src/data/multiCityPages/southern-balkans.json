@@ -66,11 +66,11 @@
   "es": {
     "title": "Balcanes del sur: Kosovo, Macedonia, Albania y Kotor",
     "metaTitle": "Balcanes del sur: Kosovo, Macedonia, Albania y Kotor, de 5 a 10 días · Lowfly",
-    "summary": "Cuatro países en un viaje: Pristina y Prizren en Kosovo, el bazar de Skopie y el lago de Ocrid, Tirana y Shkodër en Albania y la bahía de Kotor.",
+    "summary": "Cuatro países en un viaje: Pristina y Prizren en Kosovo, el bazar de Skopie y el lago de Ohrid, Tirana y Shkodër en Albania y la bahía de Kotor.",
     "why": [
       "Es la ruta de los Balcanes que casi nadie hace: Kosovo, Macedonia del Norte, Albania y Montenegro en diez días, con buses que cruzan las fronteras en dos horas y precios de Europa del Este.",
       "Prizren es la ciudad otomana mejor conservada de Kosovo: un puente de piedra sobre el Bistrica, la mezquita de Sinan Bajá, la iglesia de San Salvador y una fortaleza en la colina con vistas a todo el valle.",
-      "El lago de Ocrid y la bahía de Kotor cierran el viaje con los dos paisajes más bonitos de los Balcanes: agua dulce con iglesias bizantinas y un fiordo con un pueblo medieval al fondo."
+      "El lago de Ohrid y la bahía de Kotor cierran el viaje con los dos paisajes más bonitos de los Balcanes: agua dulce con iglesias bizantinas y un fiordo con un pueblo medieval al fondo."
     ],
     "towns": {
       "Pristina": {
@@ -94,24 +94,24 @@
         "tip": "Prizren se ve en un día y es la parada más agradable de Kosovo. Sube a la fortaleza al atardecer: se ve el valle entero y los minaretes."
       },
       "Skopje": {
-        "text": "Skopie es la capital de Macedonia del Norte, con el bazar de Čaršija, el más grande de los Balcanes, la fortaleza de Kale sobre el Vardar y el puente de piedra. Es la parada de transición entre Kosovo y el lago de Ocrid.",
+        "text": "Skopie es la capital de Macedonia del Norte, con el bazar de Čaršija, el más grande de los Balcanes, la fortaleza de Kale sobre el Vardar y el puente de piedra. Es la parada de transición entre Kosovo y el lago de Ohrid.",
         "see": [
           "El bazar de Čaršija",
           "La fortaleza de Kale",
           "El puente de piedra y la plaza Macedonia",
           "El cañón de Matka, a 15 minutos"
         ],
-        "tip": "Skopie está a dos horas de Pristina en bus y a tres y media de Ocrid. El bazar es lo mejor de la ciudad: come ćevapi en una de sus terrazas."
+        "tip": "Skopie está a dos horas de Pristina en bus y a tres y media de Ohrid. El bazar es lo mejor de la ciudad: come ćevapi en una de sus terrazas."
       },
       "Ohrid": {
-        "text": "Ocrid es el pueblo del lago: casas blancas con ventanas de madera en una colina, la iglesia de San Juan Kaneo sobre un acantilado y la fortaleza de Samuel en lo alto. El lago es Patrimonio de la Humanidad y tiene playas de agua dulce.",
+        "text": "Ohrid es el pueblo del lago: casas blancas con ventanas de madera en una colina, la iglesia de San Juan Kaneo sobre un acantilado y la fortaleza de Samuel en lo alto. El lago es Patrimonio de la Humanidad y tiene playas de agua dulce.",
         "see": [
           "La iglesia de San Juan Kaneo",
           "La fortaleza de Samuel",
           "El anfiteatro antiguo",
           "La playa de Kaneo y el paseo del lago"
         ],
-        "tip": "Ocrid se ve en dos días y es la parada de descanso de la ruta. En julio y agosto se llena de turistas de los Balcanes: reserva alojamiento con antelación."
+        "tip": "Ohrid se ve en dos días y es la parada de descanso de la ruta. En julio y agosto se llena de turistas de los Balcanes: reserva alojamiento con antelación."
       },
       "Tirana": {
         "text": "Tirana es la capital de Albania y la parada más animada del viaje: la plaza Skanderbeg con la mezquita de Et'hem Bey, el barrio de Blloku de cafés y tiendas y Bunk'Art, el búnker de Enver Hoxha convertido en museo.",
@@ -121,7 +121,7 @@
           "El barrio de Blloku",
           "El teleférico al monte Dajti"
         ],
-        "tip": "Tirana está a tres horas de Ocrid en bus y a dos de Shkodër. El aeropuerto (TIA) está a 20 minutos del centro."
+        "tip": "Tirana está a tres horas de Ohrid en bus y a dos de Shkodër. El aeropuerto (TIA) está a 20 minutos del centro."
       },
       "Shkodër": {
         "text": "Shkodër es la ciudad del norte de Albania, a la orilla del lago Skadar: una calle peatonal larga con cafés, la mezquita de Ebu Bekr, la catedral de San Esteban y la fortaleza de Rozafa en la colina, con vistas al lago y a los ríos.",
@@ -144,12 +144,12 @@
         "tip": "Kotor está a una hora y media de Shkodër en bus y a 25 minutos del aeropuerto de Tivat (TGD). Sube a la muralla a primera hora: son 1.350 escalones y no hay sombra."
       }
     },
-    "gettingAround": "Pristina-Prizren, una hora y media en bus. Prizren-Skopie, dos horas y media en bus. Skopie-Ocrid, tres horas y media en bus. Ocrid-Tirana, tres horas en bus. Tirana-Shkodër, dos horas en bus. Shkodër-Kotor, una hora y media en bus. Los buses cruzan las fronteras con paradas cortas: lleva el pasaporte a mano.",
-    "bestTime": "De mayo a junio y de septiembre a octubre, con 20 a 26 grados y sin el calor de agosto en el valle. En agosto Ocrid se llena y Tirana pasa de 35 grados. En invierno Pristina y Prizren son frías y con nieve, y Kotor es tranquila.",
+    "gettingAround": "Pristina-Prizren, una hora y media en bus. Prizren-Skopie, dos horas y media en bus. Skopie-Ohrid, tres horas y media en bus. Ohrid-Tirana, tres horas en bus. Tirana-Shkodër, dos horas en bus. Shkodër-Kotor, una hora y media en bus. Los buses cruzan las fronteras con paradas cortas: lleva el pasaporte a mano.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con 20 a 26 grados y sin el calor de agosto en el valle. En agosto Ohrid se llena y Tirana pasa de 35 grados. En invierno Pristina y Prizren son frías y con nieve, y Kotor es tranquila.",
     "faq": [
       {
         "question": "¿Cuántos días hacen falta?",
-        "answer": "Con 5 días ves Pristina, Prizren y Ocrid. Con 7 añades Skopie y Tirana. Con 10 entran Shkodër y Kotor."
+        "answer": "Con 5 días ves Pristina, Prizren y Ohrid. Con 7 añades Skopie y Tirana. Con 10 entran Shkodër y Kotor."
       },
       {
         "question": "¿Hace falta coche?",

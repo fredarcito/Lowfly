@@ -48,13 +48,13 @@
     }
   },
   "es": {
-    "title": "Macedonia del Norte y Ocrid: de Skopie a Tirana",
-    "metaTitle": "Macedonia del Norte y Ocrid: de Skopie a Tirana, de 5 a 9 días · Lowfly",
-    "summary": "El bazar de Skopie, el cañón de Matka, Bitola y el lago de Ocrid con sus iglesias bizantinas, y una bajada a Berat y Tirana.",
+    "title": "Macedonia del Norte y Ohrid: de Skopie a Tirana",
+    "metaTitle": "Macedonia del Norte y Ohrid: de Skopie a Tirana, de 5 a 9 días · Lowfly",
+    "summary": "El bazar de Skopie, el cañón de Matka, Bitola y el lago de Ohrid con sus iglesias bizantinas, y una bajada a Berat y Tirana.",
     "why": [
-      "El lago de Ocrid tiene un millón de años, es el más antiguo de Europa y está protegido por la Unesco: en sus orillas hay iglesias bizantinas del siglo XIII, un pueblo de casas blancas y agua tan clara que se ven las piedras a diez metros.",
+      "El lago de Ohrid tiene un millón de años, es el más antiguo de Europa y está protegido por la Unesco: en sus orillas hay iglesias bizantinas del siglo XIII, un pueblo de casas blancas y agua tan clara que se ven las piedras a diez metros.",
       "Skopie es una de las capitales más raras de Europa: el bazar otomano más grande de los Balcanes al lado de una plaza llena de estatuas de bronce y edificios neoclásicos, y el cañón de Matka a 15 minutos del centro.",
-      "La ruta baja después a Albania: Berat, la ciudad de las mil ventanas, y Tirana, con el aeropuerto de salida. Son cuatro horas de bus desde Ocrid y un país más en el viaje."
+      "La ruta baja después a Albania: Berat, la ciudad de las mil ventanas, y Tirana, con el aeropuerto de salida. Son cuatro horas de bus desde Ohrid y un país más en el viaje."
     ],
     "towns": {
       "Skopje": {
@@ -75,27 +75,27 @@
           "El bazar antiguo y la mezquita de Yeni",
           "El monte Pelister, en el parque nacional"
         ],
-        "tip": "Bitola está a una hora de Ocrid y se ve en un día. Heraclea está a 10 minutos a pie del centro y sus mosaicos del siglo IV son lo mejor de la ciudad."
+        "tip": "Bitola está a una hora de Ohrid y se ve en un día. Heraclea está a 10 minutos a pie del centro y sus mosaicos del siglo IV son lo mejor de la ciudad."
       },
       "Ohrid": {
-        "text": "Ocrid es la perla del lago: un pueblo de casas blancas con ventanas de madera en una colina, la iglesia de San Juan Kaneo sobre un acantilado y la fortaleza de Samuel en lo alto. El lago es Patrimonio de la Humanidad y tiene playas de agua dulce.",
+        "text": "Ohrid es la perla del lago: un pueblo de casas blancas con ventanas de madera en una colina, la iglesia de San Juan Kaneo sobre un acantilado y la fortaleza de Samuel en lo alto. El lago es Patrimonio de la Humanidad y tiene playas de agua dulce.",
         "see": [
           "La iglesia de San Juan Kaneo",
           "La fortaleza de Samuel",
           "El anfiteatro antiguo y la iglesia de Santa Sofía",
           "La playa de Kaneo y el paseo del lago"
         ],
-        "tip": "Ocrid se ve en dos días: uno para el pueblo y otro para el lago y el monasterio de San Naum, en barco. En julio y agosto se llena de turistas de los Balcanes: reserva alojamiento."
+        "tip": "Ohrid se ve en dos días: uno para el pueblo y otro para el lago y el monasterio de San Naum, en barco. En julio y agosto se llena de turistas de los Balcanes: reserva alojamiento."
       },
       "Berat": {
-        "text": "Berat es la parada albanesa de la ruta: casas otomanas blancas con ventanas de madera apiladas en dos colinas, una con la fortaleza y otra con el barrio de Gorica. Es Patrimonio de la Humanidad y está a tres horas de Ocrid.",
+        "text": "Berat es la parada albanesa de la ruta: casas otomanas blancas con ventanas de madera apiladas en dos colinas, una con la fortaleza y otra con el barrio de Gorica. Es Patrimonio de la Humanidad y está a tres horas de Ohrid.",
         "see": [
           "La fortaleza de Berat",
           "El barrio de Mangalem, desde el puente",
           "El barrio de Gorica y el puente de piedra",
           "El museo Onufri"
         ],
-        "tip": "Berat es la primera ciudad albanesa del viaje y el cambio de moneda se hace en Tirana o en un cajero. Desde Ocrid hay buses a Elbasan y transbordo a Berat: calcula cinco horas."
+        "tip": "Berat es la primera ciudad albanesa del viaje y el cambio de moneda se hace en Tirana o en un cajero. Desde Ohrid hay buses a Elbasan y transbordo a Berat: calcula cinco horas."
       },
       "Tirana": {
         "text": "Tirana cierra la ruta con el aeropuerto de salida (TIA): la plaza Skanderbeg, el barrio de Blloku y Bunk'Art, el búnker de Enif Hoxha convertido en museo. Es una ciudad de cafés y terrazas, más relajada que Skopie.",
@@ -108,12 +108,12 @@
         "tip": "Tirana está a dos horas de Berat en bus y a 20 minutos del aeropuerto. Si te sobra medio día, el teleférico al Dajti sube en 15 minutos y da la vista de toda la llanura."
       }
     },
-    "gettingAround": "Skopie-Bitola, tres horas y media en bus. Bitola-Ocrid, una hora y cuarto en bus. Ocrid-Berat, cinco horas en bus con transbordo en Elbasan. Berat-Tirana, dos horas en bus. Los buses entre Skopie y Ocrid salen cada hora y cuestan unos ocho euros.",
-    "bestTime": "De mayo a junio y de septiembre a octubre, con 20 a 26 grados y el lago en su mejor momento. Julio y agosto son los meses de playa en Ocrid y los más caros. En invierno Ocrid es tranquila y fría, y el lago se ve con niebla.",
+    "gettingAround": "Skopie-Bitola, tres horas y media en bus. Bitola-Ohrid, una hora y cuarto en bus. Ohrid-Berat, cinco horas en bus con transbordo en Elbasan. Berat-Tirana, dos horas en bus. Los buses entre Skopie y Ohrid salen cada hora y cuestan unos ocho euros.",
+    "bestTime": "De mayo a junio y de septiembre a octubre, con 20 a 26 grados y el lago en su mejor momento. Julio y agosto son los meses de playa en Ohrid y los más caros. En invierno Ohrid es tranquila y fría, y el lago se ve con niebla.",
     "faq": [
       {
         "question": "¿Cuántos días hacen falta?",
-        "answer": "Con 5 días ves Skopie y Ocrid. Con 6 añades Bitola. Con 9 entran Berat y Tirana."
+        "answer": "Con 5 días ves Skopie y Ohrid. Con 6 añades Bitola. Con 9 entran Berat y Tirana."
       },
       {
         "question": "¿Hace falta coche?",
@@ -121,11 +121,11 @@
       },
       {
         "question": "¿Se puede hacer al revés?",
-        "answer": "Sí: entrando por Tirana (TIA) y saliendo por Skopie (SKP) o Ocrid (OHD), el recorrido es el mismo."
+        "answer": "Sí: entrando por Tirana (TIA) y saliendo por Skopie (SKP) o Ohrid (OHD), el recorrido es el mismo."
       },
       {
         "question": "¿A qué aeropuertos se vuela?",
-        "answer": "A Skopie (SKP), Ocrid (OHD) o Tirana (TIA). Wizz Air vuela a Skopie y a Ocrid, y Ryanair y Wizz Air a Tirana."
+        "answer": "A Skopie (SKP), Ohrid (OHD) o Tirana (TIA). Wizz Air vuela a Skopie y a Ohrid, y Ryanair y Wizz Air a Tirana."
       }
     ]
   },

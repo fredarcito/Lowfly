@@ -28,6 +28,8 @@ const SITE_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
 
 export const generateMetadata = async ({ params }) => {
   const { lang } = await params;
+  // Not a language (Chrome's /.well-known/… probe lands here): the layout below answers 404, no metadata to build
+  if (!hasLocale(lang)) return {};
   const { meta } = getDictionary(lang);
   return {
     metadataBase: new URL(SITE_URL),

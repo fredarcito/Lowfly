@@ -9,12 +9,12 @@ const Leg = ({ icon: Icon, label, day, flight, href }) => {
   return (
     <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-sm">
       <Icon className="size-4 text-muted-foreground" />
-      <span className="min-w-0 flex-1">
+      <span className="min-w-0 basis-[calc(100%-1.75rem)] sm:flex-1 sm:basis-0">
         <span className="font-semibold">{label}</span> {format.fmtDay(day)}
         {format.at(flight.time)}
       </span>
-      <AirlineBadge airline={flight.airline} />
-      <span className="grid justify-items-end tabular-nums text-muted-foreground">
+      <AirlineBadge airline={flight.airline} className="ml-7 sm:ml-0" />
+      <span className="ml-auto grid justify-items-end tabular-nums text-muted-foreground sm:ml-0">
         {format.money(format.forGroup(flight.price))}
         <PerPersonPrice price={flight.price} className="text-xs" />
       </span>

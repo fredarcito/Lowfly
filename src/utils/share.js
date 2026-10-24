@@ -1,14 +1,16 @@
 // A search in the URL, so it can be shared: its kind is the page (/es/a-cualquier-sitio, constants/searchPages), the
 // rest the query: ?o=MLA&from=2026-11-01&to=2026-11-30&trip=return&wk=1 (to a country: c=Italia, and to one of its
-// cities as well: ci=Roma; routes: o=MLA&from=…&to=…). Links from before the pages (/es?m=everywhere&…) are sent to
-// them (src/proxy.js).
+// cities as well: ci=Roma; routes: o=MLA&from=…&to=…; for several adults: pax=2, left out for one). Links from before
+// the pages (/es?m=everywhere&…) are sent to them (src/proxy.js).
 import { isDay, tomorrow } from "@/utils/dates";
 import { WEEKEND_MODES } from "@/constants/weekend";
+import { MAX_PASSENGERS } from "@/constants/searchForm";
 
 const MODES = ["everywhere", "country", "trip", "multiCity"];
 
 export const searchToParams = (form, mode) => {
   const params = new URLSearchParams({ o: form.origin });
+  if (Number(form.passengers) > 1) params.set("pax", form.passengers);
   if (mode !== "everywhere" && form.country) params.set("c", form.country);
   if (mode !== "everywhere" && form.country && form.city) params.set("ci", form.city);
   if (mode === "trip") {
@@ -46,6 +48,8 @@ export const searchFromParams = (params, mode) => {
 
   const first = tomorrow();
   const fields = { origin };
+  const adults = params.get("pax");
+  if (/^\d$/.test(adults) && adults >= 1 && adults <= MAX_PASSENGERS) fields.passengers = adults;
   if (mode !== "everywhere" && params.get("c")) {
     fields.country = params.get("c");
     fields.city = params.get("ci") || "";

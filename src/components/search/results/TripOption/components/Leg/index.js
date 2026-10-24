@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AirlineBadge from "@/components/shared/AirlineBadge";
+import PerPersonPrice from "@/components/shared/PerPersonPrice";
 import { useI18n } from "@/context/i18n";
 
 const Leg = ({ icon: Icon, label, day, flight, href }) => {
@@ -13,7 +14,10 @@ const Leg = ({ icon: Icon, label, day, flight, href }) => {
         {format.at(flight.time)}
       </span>
       <AirlineBadge airline={flight.airline} />
-      <span className="tabular-nums text-muted-foreground">{format.money(flight.price)}</span>
+      <span className="grid justify-items-end tabular-nums text-muted-foreground">
+        {format.money(format.forGroup(flight.price))}
+        <PerPersonPrice price={flight.price} className="text-xs" />
+      </span>
       <Button asChild variant="outline" size="sm">
         <a href={href} target="_blank" rel="noopener noreferrer">
           {texts.results.book}

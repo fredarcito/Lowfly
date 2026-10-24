@@ -17,6 +17,7 @@ import EverywhereResults from "@/components/search/results/EverywhereResults";
 import FlexibleResults from "@/components/search/results/FlexibleResults";
 import MultiCityResults from "@/components/search/results/MultiCityResults";
 import MultiCityPromo from "@/components/search/MultiCityPromo";
+import PassengersProvider from "@/components/shared/PassengersProvider";
 import { useI18n } from "@/context/i18n";
 import { findAirport, useAirports } from "@/hooks/useAirports";
 import { useFlightSearch } from "@/components/search/FlightSearch/hooks/useFlightSearch";
@@ -128,11 +129,13 @@ const FlightSearch = () => {
         {result.status === "loading" && <SearchLoading text={texts.loading[result.mode]} origin={query?.origin} />}
         {result.status === "error" && <SearchError code={result.code} params={result.params} />}
         {Results && (
-          <div className="grid gap-8 duration-500 animate-in fade-in slide-in-from-bottom-4 motion-reduce:animate-none">
-            {/* A new search starts its results afresh (a kind of trip picked before does not stay) */}
-            <Results key={result.searchId} data={result.data} stopovers={result.stopovers} />
-            {fitsRoute(query) && <MultiCityPromo onSearch={searchRoutes} />}
-          </div>
+          <PassengersProvider count={Number(query?.passengers) || 1}>
+            <div className="grid gap-8 duration-500 animate-in fade-in slide-in-from-bottom-4 motion-reduce:animate-none">
+              {/* A new search starts its results afresh (a kind of trip picked before does not stay) */}
+              <Results key={result.searchId} data={result.data} stopovers={result.stopovers} />
+              {fitsRoute(query) && <MultiCityPromo onSearch={searchRoutes} />}
+            </div>
+          </PassengersProvider>
         )}
       </main>
       {/* The same foot as every page: the airports, the guides and the legal pages */}

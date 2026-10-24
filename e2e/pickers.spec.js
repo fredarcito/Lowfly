@@ -11,7 +11,7 @@ test.describe("pickers", () => {
       await page.locator("#origin").click();
       // Phones: a sheet with its own title
       if (viewport === PHONE) await expect(page.getByRole("dialog").locator("h2")).toBeVisible();
-      await page.getByRole("combobox").fill("roma");
+      await page.locator('input[role="combobox"]').fill("roma");
       await page.keyboard.press("Enter");
       await expect(page.locator("#origin")).toContainText("Roma");
       await page.locator("#dates").click();
@@ -27,7 +27,7 @@ test.describe("pickers", () => {
     await page.locator("#origin").click();
     const sheet = page.getByRole("dialog");
     await expect(sheet.locator("h2")).toBeInViewport();
-    const search = sheet.getByRole("combobox");
+    const search = sheet.locator('input[role="combobox"]');
     await expect(search).not.toBeFocused();
     await expect(sheet.getByRole("button", { name: /ubicación/ })).toBeVisible();
     await search.click();
@@ -40,14 +40,14 @@ test.describe("pickers", () => {
     await page.setViewportSize(DESKTOP);
     await openWith(page, "/es");
     await page.locator("#origin").click();
-    await expect(page.getByRole("combobox")).toBeFocused();
+    await expect(page.locator('input[role="combobox"]')).toBeFocused();
   });
 
   test("airport and destination with the keyboard", async ({ page }) => {
     await page.setViewportSize(DESKTOP);
     await openWith(page, "/es");
     await page.locator("#origin").click();
-    await page.getByRole("combobox").fill("buda");
+    await page.locator('input[role="combobox"]').fill("buda");
     await page.keyboard.press("ArrowDown");
     await page.keyboard.press("ArrowUp");
     await page.keyboard.press("Enter");
@@ -56,7 +56,7 @@ test.describe("pickers", () => {
     await page.getByRole("tab", { name: /destino/i }).click();
     await expect(page.locator("#country")).toBeEnabled({ timeout: 60_000 });
     await page.locator("#country").click();
-    await page.getByRole("combobox").fill("roma");
+    await page.locator('input[role="combobox"]').fill("roma");
     await page.keyboard.press("ArrowDown");
     await page.keyboard.press("Enter");
     await expect(page.locator("#country")).toContainText("Roma");

@@ -34,9 +34,9 @@ test.describe("easyJet and Vueling", () => {
     await page.setViewportSize(DESKTOP);
     await openWith(page, "/es", { origin: "MLA" });
     await page.locator("#origin").click();
-    await page.getByRole("combobox").fill("Ginebra");
+    await page.locator('input[role="combobox"]').fill("Ginebra");
     await expect(page.getByRole("option", { name: /Ginebra/ })).toHaveCount(0);
-    await page.getByRole("combobox").fill("Basilea");
+    await page.locator('input[role="combobox"]').fill("Basilea");
     await expect(page.getByRole("option", { name: /Basilea/ }).first()).toBeVisible();
   });
 });

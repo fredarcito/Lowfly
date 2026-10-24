@@ -17,13 +17,13 @@ import SaveHint from "@/components/search/SaveTripButton/components/SaveHint";
 // is saved with its towns (`stops`, useStopoverStops): until they are known, the button waits. `hint` false: without
 // the line under it (where the itinerary is already offered next to it).
 const SaveTripButton = ({ origin, fare, stops = null, compact = false, hint = true, className }) => {
-  const { lang, texts } = useI18n();
+  const { lang, texts, format } = useI18n();
   const id = tripId(origin, fare);
   const savedTrip = useTrips().find((trip) => trip.id === id);
   const saved = Boolean(savedTrip);
   const Icon = saved ? BookmarkCheck : Bookmark;
   const waiting = Boolean(fare.legs) && !stops;
-  const toggle = () => (saved ? removeTrip(id) : saveTrip(origin, fare, stops));
+  const toggle = () => (saved ? removeTrip(id) : saveTrip(origin, fare, stops, format.passengers));
 
   if (compact) {
     return (

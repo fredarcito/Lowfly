@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import Collapse from "@/components/shared/Collapse";
 import DestinationGuide from "@/components/shared/DestinationGuide";
 import EscapadaBox from "@/components/shared/EscapadaBox";
+import PerPersonPrice from "@/components/shared/PerPersonPrice";
 import FlightsToggle from "@/components/search/results/StopoverBest/components/FlightsToggle";
 import SeparateTickets from "@/components/shared/SeparateTickets";
 import StopoverFlights from "@/components/shared/StopoverFlights";
@@ -26,7 +27,8 @@ import { airlineNames, isCachedFare } from "@/utils/format";
 const StopoverBest = ({ trip, origin }) => {
   const { texts, format } = useI18n();
   const stops = useStopoverStops(trip);
-  const shownPrice = useCountUp(trip.price);
+  const groupPrice = format.forGroup(trip.price);
+  const shownPrice = useCountUp(groupPrice);
   const flights = useDisclosure(true);
   const results = texts.results;
   const roundTrip = trip.nights != null;
@@ -53,11 +55,12 @@ const StopoverBest = ({ trip, origin }) => {
         <div className="grid content-start gap-1.5 [grid-area:price] lg:border-l lg:pl-6">
           <p className="font-heading text-5xl leading-none font-extrabold tracking-tight text-primary tabular-nums">
             <span aria-hidden="true">{format.money(shownPrice, trip.cur)}</span>
-            <span className="sr-only">{format.money(trip.price, trip.cur)}</span>
+            <span className="sr-only">{format.money(groupPrice, trip.cur)}</span>
           </p>
           <p className="text-muted-foreground">
-            {roundTrip ? results.flightsRoundTrip : results.flightsOneWay} · {results.oneAdult}
+            {roundTrip ? results.flightsRoundTrip : results.flightsOneWay} · {format.adultsLabel}
           </p>
+          <PerPersonPrice price={trip.price} cur={trip.cur} className="text-sm" />
           <p className="text-sm text-muted-foreground">
             {results.flightCount(count)} · {airlineNames(trip)}
           </p>

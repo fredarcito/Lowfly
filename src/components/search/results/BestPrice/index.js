@@ -8,6 +8,7 @@ import BagEstimate from "@/components/shared/BagEstimate";
 import BestPriceCompact from "@/components/search/results/BestPriceCompact";
 import DestinationGuide from "@/components/shared/DestinationGuide";
 import FareLegs from "@/components/shared/FareLegs";
+import PerPersonPrice from "@/components/shared/PerPersonPrice";
 import SaveTripButton from "@/components/search/SaveTripButton";
 import { useI18n } from "@/context/i18n";
 import { useCountUp } from "@/hooks/useCountUp";
@@ -21,7 +22,8 @@ import { cn } from "@/utils/cn";
 // Phone: destination, then price and actions, then the flights.
 const BestPrice = ({ price, cur, title, detail, links = [], priceNote, fare, origin, label }) => {
   const { lang, texts, format } = useI18n();
-  const shownPrice = useCountUp(price);
+  const groupPrice = format.forGroup(price);
+  const shownPrice = useCountUp(groupPrice);
   const airports = useAirports(lang);
   const withFlights = Boolean(fare && origin);
   const RouteIcon = fare?.ret ? ArrowLeftRight : ArrowRight;
@@ -61,15 +63,18 @@ const BestPrice = ({ price, cur, title, detail, links = [], priceNote, fare, ori
           </Badge>
           <p className="font-heading text-5xl leading-none font-extrabold tracking-tight text-primary tabular-nums">
             <span aria-hidden="true">{format.money(shownPrice, cur)}</span>
-            <span className="sr-only">{format.money(price, cur)}</span>
+            <span className="sr-only">{format.money(groupPrice, cur)}</span>
           </p>
-          {withFlights && (
+          {withFlights ? (
             <div className="grid gap-1.5">
               <p className="text-muted-foreground first-letter:uppercase">
-                {priceNote ?? texts.form.oneway} · {texts.results.oneAdult}
+                {priceNote ?? texts.form.oneway} · {format.adultsLabel}
               </p>
+              <PerPersonPrice price={price} cur={cur} />
               <BagEstimate fare={fare} large className="mt-4" />
             </div>
+          ) : (
+            <PerPersonPrice price={price} cur={cur} />
           )}
           {links.length > 0 && (
             <div className="mt-3 grid grid-cols-1 gap-2.5">

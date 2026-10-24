@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SaveTripButton from "@/components/search/SaveTripButton";
 import CompactFareBody from "@/components/shared/CompactFareBody";
+import PerPersonPrice from "@/components/shared/PerPersonPrice";
 import { useI18n } from "@/context/i18n";
 import { useCountUp } from "@/hooks/useCountUp";
 import { findAirport, useAirports } from "@/hooks/useAirports";
@@ -15,7 +16,8 @@ import { cn } from "@/utils/cn";
 // folded into a row and the description in three lines (CompactFareBody), and the booking buttons in reach.
 const BestPriceCompact = ({ price, cur, title, links, priceNote, fare, origin, label, className }) => {
   const { lang, texts, format } = useI18n();
-  const shownPrice = useCountUp(price);
+  const groupPrice = format.forGroup(price);
+  const shownPrice = useCountUp(groupPrice);
   const airports = useAirports(lang);
   const RouteIcon = fare.ret ? ArrowLeftRight : ArrowRight;
   const originName = findAirport(airports, origin)?.city;
@@ -39,11 +41,12 @@ const BestPriceCompact = ({ price, cur, title, links, priceNote, fare, origin, l
         <div className="grid shrink-0 justify-items-end gap-1.5 text-right">
           <p className="font-heading text-3xl leading-none font-extrabold tracking-tight text-primary tabular-nums">
             <span aria-hidden="true">{format.money(shownPrice, cur)}</span>
-            <span className="sr-only">{format.money(price, cur)}</span>
+            <span className="sr-only">{format.money(groupPrice, cur)}</span>
           </p>
           <p className="text-xs text-muted-foreground first-letter:uppercase">
-            {priceNote ?? texts.form.oneway} · {texts.results.oneAdult}
+            {priceNote ?? texts.form.oneway} · {format.adultsLabel}
           </p>
+          <PerPersonPrice price={price} cur={cur} className="text-xs" />
           <Badge className="gap-1">
             <Sparkles />
             {label ?? texts.results.cheapest}

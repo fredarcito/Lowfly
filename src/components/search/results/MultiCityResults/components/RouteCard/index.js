@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import { ChevronDown, Info } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Collapse from "@/components/shared/Collapse";
+import PerPersonPrice from "@/components/shared/PerPersonPrice";
 import StopoverFlights from "@/components/shared/StopoverFlights";
 import SaveTripButton from "@/components/search/SaveTripButton";
 import FlightPair from "@/components/search/results/MultiCityResults/components/RouteCard/components/FlightPair";
@@ -59,10 +60,11 @@ const RouteCard = ({ route, origin, preferred }) => {
         <div className="grid gap-3 border-t pt-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end sm:gap-6">
           <FlightPair trip={trip} />
           <div className="grid sm:justify-items-end">
-            <p className="font-heading text-3xl leading-none font-extrabold tracking-tight text-primary tabular-nums">{format.money(trip.price, trip.cur)}</p>
+            <p className="font-heading text-3xl leading-none font-extrabold tracking-tight text-primary tabular-nums">{format.money(format.forGroup(trip.price), trip.cur)}</p>
             <p className="mt-1 text-xs text-muted-foreground">
-              {labels.flightsFrom} · {labels.oneAdult}
+              {labels.flightsFrom} · {format.adultsLabel}
             </p>
+            <PerPersonPrice price={trip.price} cur={trip.cur} className="mt-0.5 text-xs" />
           </div>
         </div>
 

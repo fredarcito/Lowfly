@@ -25,6 +25,9 @@ const EMPTY_FORM = {
   minN: "2",
   maxN: "4",
   weekend: false,
+  // Adults (1 to MAX_PASSENGERS), a string like the other fields: the fares stay per person, it only changes the
+  // totals shown and what the booking links ask for
+  passengers: "1",
   // The days someone is free, for a multi-city route (5 to 15 days)
   freeFrom: "",
   freeTo: "",

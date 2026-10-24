@@ -7,6 +7,7 @@ import DateRangeField from "@/components/search/DateRangeField";
 import DestinationField from "@/components/search/DestinationField";
 import FlexDaysField from "@/components/search/FlexDaysField";
 import MaxPriceField from "@/components/search/MaxPriceField";
+import PassengersField from "@/components/search/PassengersField";
 import TripTypeField from "@/components/search/TripTypeField";
 import FormField from "@/components/shared/FormField";
 import { useI18n } from "@/context/i18n";
@@ -31,7 +32,25 @@ const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }
 
   return (
     <form onSubmit={onSubmit} className="grid gap-4 sm:gap-5">
-      {shows("everywhere", "country") && <TripTypeField mode={mode} form={form} onField={onField} />}
+      {/* The adults: in the row of options (anywhere and to a destination: the trip's; flexible dates: how many days it
+          may move); the routes' form has room for it as one more field (below) */}
+      {shows("everywhere", "country") && (
+        <TripTypeField mode={mode} form={form} onField={onField}>
+          <PassengersField id="passengers" value={form.passengers} onChange={(count) => onField("passengers", count)} />
+        </TripTypeField>
+      )}
+      {shows("trip") && (
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            {texts.form.flexBefore}
+            <FlexDaysField id="flex" compact value={form.flex} onChange={(days) => onField("flex", days)} />
+            {texts.form.flexAfter}
+          </div>
+          <div className="w-36">
+            <PassengersField id="passengers" value={form.passengers} onChange={(count) => onField("passengers", count)} />
+          </div>
+        </div>
+      )}
       <div className="grid gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-12">
         {/* Phones: no hints under the airport and the dates (their pickers only take what fits), so the form stays
             short */}
@@ -114,25 +133,26 @@ const SearchForm = ({ mode, form, airports, countries, busy, onField, onSubmit }
           </FormField>
         )}
 
+        {shows("multiCity") && (
+          <FormField id="passengers" label={texts.form.passengers} className="lg:col-span-3">
+            <PassengersField id="passengers" value={form.passengers} onChange={(count) => onField("passengers", count)} tall />
+          </FormField>
+        )}
+
         {shows("trip") && (
-          <>
-            <FormField id="trip-dates" label={texts.form.tripDates} className="lg:col-span-4">
-              <DateRangeField
-                id="trip-dates"
-                unit="nights"
-                minNights={1}
-                from={form.ida}
-                to={form.vuelta}
-                onChange={(ida, vuelta) => {
-                  onField("ida", ida);
-                  onField("vuelta", vuelta);
-                }}
-              />
-            </FormField>
-            <FormField id="flex" label={texts.form.flex} className="lg:col-span-2">
-              <FlexDaysField id="flex" value={form.flex} onChange={(days) => onField("flex", days)} />
-            </FormField>
-          </>
+          <FormField id="trip-dates" label={texts.form.tripDates} className="lg:col-span-6">
+            <DateRangeField
+              id="trip-dates"
+              unit="nights"
+              minNights={1}
+              from={form.ida}
+              to={form.vuelta}
+              onChange={(ida, vuelta) => {
+                onField("ida", ida);
+                onField("vuelta", vuelta);
+              }}
+            />
+          </FormField>
         )}
       </div>
 

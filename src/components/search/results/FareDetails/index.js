@@ -7,6 +7,7 @@ import BagEstimate from "@/components/shared/BagEstimate";
 import CompactFareBody from "@/components/shared/CompactFareBody";
 import DestinationGuide from "@/components/shared/DestinationGuide";
 import FareLegs from "@/components/shared/FareLegs";
+import PerPersonPrice from "@/components/shared/PerPersonPrice";
 import { useI18n } from "@/context/i18n";
 import { airlineNames, isCachedFare } from "@/utils/format";
 
@@ -39,10 +40,11 @@ const FareDetails = ({ fare, origin }) => {
   const footer = (
     <div className="grid gap-4 lg:grid-cols-[auto_minmax(0,1fr)_17rem] lg:items-center lg:gap-0 lg:divide-x">
       <div className="grid gap-1.5 lg:pr-8">
-        <p className="font-heading text-4xl leading-none font-extrabold tracking-tight text-primary tabular-nums lg:text-5xl">{format.money(fare.price, fare.cur)}</p>
+        <p className="font-heading text-4xl leading-none font-extrabold tracking-tight text-primary tabular-nums lg:text-5xl">{format.money(format.forGroup(fare.price), fare.cur)}</p>
         <p className="text-sm text-muted-foreground first-letter:uppercase">
-          {fare.ret ? texts.results.roundTrip : texts.form.oneway} · {texts.results.oneAdult}
+          {fare.ret ? texts.results.roundTrip : texts.form.oneway} · {format.adultsLabel}
         </p>
+        <PerPersonPrice price={fare.price} cur={fare.cur} className="text-sm" />
         {cachedNote}
       </div>
       <BagEstimate fare={fare} className="lg:px-8" />

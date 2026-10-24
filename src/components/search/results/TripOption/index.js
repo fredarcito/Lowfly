@@ -5,6 +5,7 @@ import { useI18n } from "@/context/i18n";
 import { capitalize } from "@/utils/format";
 import { cn } from "@/utils/cn";
 import Leg from "@/components/search/results/TripOption/components/Leg";
+import PerPersonPrice from "@/components/shared/PerPersonPrice";
 
 // An outbound + return combination, compared with the original plan
 const TripOption = ({ combo: combo, ida, vuelta, base, origin }) => {
@@ -23,7 +24,8 @@ const TripOption = ({ combo: combo, ida, vuelta, base, origin }) => {
           </p>
         </div>
         <div className="grid justify-items-end gap-1.5">
-          <span className="font-heading text-2xl font-extrabold tabular-nums">{format.money(combo.total)}</span>
+          <span className="font-heading text-2xl font-extrabold tabular-nums">{format.money(format.forGroup(combo.total))}</span>
+          <PerPersonPrice price={combo.total} className="text-xs" />
           {delta && (
             <Badge
               variant="secondary"

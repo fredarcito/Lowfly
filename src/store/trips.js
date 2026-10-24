@@ -74,7 +74,8 @@ export const tripId = (origin, fare) =>
 // fare: a result as the API returns it (one way, or with out/ret legs). origin: departure airport code.
 // A trip through a hub (`fare.legs`, server/stopovers) is kept like a trip planned by hand, through `stops` (its
 // towns, utils/stopovers savedStopsOf), so its itinerary covers every town; its flights stay in `flights`.
-export const saveTrip = (origin, fare, stops = null) => {
+// `passengers`: the adults it was searched for, kept only when there are several (the prices stay per person).
+export const saveTrip = (origin, fare, stops = null, passengers = 1) => {
   const id = tripId(origin, fare);
   const list = readTrips();
   if (list.some((saved) => saved.id === id)) return id;
@@ -82,7 +83,7 @@ export const saveTrip = (origin, fare, stops = null) => {
   const trip = fare.legs
     ? { id, manual: true, stopover: true, origin, stops, flights: fare, fare: { ...manualFare(stops), price: fare.price, cur: fare.cur }, savedAt, booked: false, itinerary: null }
     : { id, origin, fare, savedAt, booked: false, itinerary: null };
-  write(sortTrips([...list, trip]));
+  write(sortTrips([...list, passengers > 1 ? { ...trip, passengers } : trip]));
   return id;
 };
 

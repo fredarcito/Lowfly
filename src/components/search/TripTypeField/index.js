@@ -9,7 +9,8 @@ import NightsInput from "@/components/search/TripTypeField/components/NightsInpu
 
 // One way or return; for a return trip, how many nights to stay or (anywhere and to a destination) only
 // weekends away (constants/weekend)
-const TripTypeField = ({ mode, form, onField }) => {
+// `children`: what ends the row (the adults)
+const TripTypeField = ({ mode, form, onField, children }) => {
   const { texts } = useI18n();
   const roundTrip = form.trip === "return";
   const weekendOption = roundTrip && WEEKEND_MODES.includes(mode);
@@ -45,6 +46,7 @@ const TripTypeField = ({ mode, form, onField }) => {
           {texts.form.stayAfter}
         </div>
       )}
+      {children && <div className="w-36">{children}</div>}
     </div>
   );
 };

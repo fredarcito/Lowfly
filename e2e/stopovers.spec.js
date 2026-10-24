@@ -155,7 +155,7 @@ test.describe("stopovers in the search @live", () => {
     await page.getByRole("tab", { name: /destino/i }).click();
     await expect(page.locator("#country")).toBeEnabled({ timeout: 60_000 });
     await page.locator("#country").click();
-    await page.getByRole("combobox").fill("bosnia");
+    await page.locator('input[role="combobox"]').fill("bosnia");
     const bosnia = page.getByRole("option", { name: /Bosnia y Herzegovina/ });
     await expect(bosnia).toContainText("Con escala");
     await bosnia.click();

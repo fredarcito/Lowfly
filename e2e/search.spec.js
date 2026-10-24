@@ -19,7 +19,7 @@ test.describe("search @live", () => {
       const destination = page.locator("#country");
       await expect(destination).toBeEnabled({ timeout: 60_000 });
       await destination.click();
-      await page.getByRole("combobox").fill("rom");
+      await page.locator('input[role="combobox"]').fill("rom");
       await page.getByRole("option", { name: /^Roma/ }).click();
       await expect(destination).toContainText("Roma");
       await page.getByRole("button", { name: "Buscar" }).click();

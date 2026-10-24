@@ -9,6 +9,11 @@ Status (agreed 2026-10-19). Update this file as the pieces land.
 - Stopovers on flexible dates: **done** (`outTo` / `backFrom`).
 - Throttling protection: **done** by `src/server/airlineGuard.js` (shared Redis cache, one request for many visitors,
   a per-second limit per airline across instances, pause and stale answers after a block).
+- Adults (2026-10-25): the search form has an adults select (1 to 6, `?pax=`, left out for one). The airlines are asked
+  for **one** person as always (same caches); the fares stay per person and the UI multiplies (`format.forGroup`, the highlighted
+  price, "29,98 € por persona" under it) and the booking links ask for all of them (`format.bookUrl`, via `shared/PassengersProvider`,
+  which remakes `format` with the count). A saved trip keeps `passengers` only when there are several. Children and
+  infants: not yet. Real price for N seats (airlines charge more when few are left): not asked.
 - Pending: longer freshness for stopover legs if blocks show up (`docs/multi-city.md` 3b); stopovers in weekend
   searches.
 

@@ -21,6 +21,11 @@ const TripFlights = ({ trip, readOnly = false }) => {
   const { setBooked, bookingLinks } = useTripActions(trip);
   const details = useDisclosure();
   const { fare, origin } = trip;
+  const passengers = trip.passengers ?? 1;
+  const savedPrice =
+    passengers > 1
+      ? texts.trips.savedPriceFor(format.money(fare.price, fare.cur), passengers, format.money(fare.price * passengers, fare.cur))
+      : texts.trips.savedPrice(format.money(fare.price, fare.cur));
   const airlines = airlinesOf(fare)
     .map((airline) => AIRLINES[airline])
     .join(" + ");
@@ -83,7 +88,7 @@ const TripFlights = ({ trip, readOnly = false }) => {
           </div>
           <p className="flex items-start gap-2 border-t pt-4 text-sm text-muted-foreground">
             <Info className="mt-0.5 size-4 shrink-0" />
-            {readOnly ? `${texts.share.priceLabel}: ${format.money(fare.price, fare.cur)}` : texts.trips.savedPrice(format.money(fare.price, fare.cur))}.{!trip.booked && ` ${texts.trips.priceMayChange}`}
+            {readOnly ? `${texts.share.priceLabel}: ${format.money(fare.price, fare.cur)}` : savedPrice}.{!trip.booked && ` ${texts.trips.priceMayChange}`}
           </p>
         </div>
       </Collapse>

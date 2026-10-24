@@ -38,8 +38,10 @@ const SITE = {
   en: { ryanair: "gb/en", wizz: "en-gb" },
 };
 
-// Every formatting function that depends on the language. `t` is that language's dictionary.
-export const createFormat = (lang, texts) => {
+// Every formatting function that depends on the language. `texts` is that language's dictionary. `passengers`: the
+// adults the search is for (a saved trip's, its own): the booking links ask the airline for them and `total` /
+// `adultsLabel` say what a fare's price (always per person) comes to.
+export const createFormat = (lang, texts, passengers = 1) => {
   const tag = LOCALE_TAGS[lang];
   const site = SITE[lang] || SITE.es;
   const dayFmt = new Intl.DateTimeFormat(tag, { weekday: "short", day: "numeric", month: "short" });
@@ -61,17 +63,24 @@ export const createFormat = (lang, texts) => {
   const bookUrl = (airline, dep, arr, day, retDay) => {
     // More airlines: that flight's search on their site when we know how to ask, else their home page
     const other = MORE_AIRLINES[airline];
-    if (other) return other.deeplink ? other.deeplink({ lang, dep, arr, day, retDay }) : other.home;
+    if (other) return other.deeplink ? other.deeplink({ lang, dep, arr, day, retDay, passengers }) : other.home;
     if (airline === "wizz")
-      return `https://wizzair.com/${site.wizz}/booking/select-flight/${dep}/${arr}/${day}/${retDay || "null"}/1/0/0/null`;
+      return `https://wizzair.com/${site.wizz}/booking/select-flight/${dep}/${arr}/${day}/${retDay || "null"}/${passengers}/0/0/null`;
     return (
-      `https://www.ryanair.com/${site.ryanair}/trip/flights/select?adults=1&teens=0&children=0&infants=0&dateOut=${day}` +
+      `https://www.ryanair.com/${site.ryanair}/trip/flights/select?adults=${passengers}&teens=0&children=0&infants=0&dateOut=${day}` +
       (retDay ? `&dateIn=${retDay}&isReturn=true` : "&isReturn=false") +
       `&isConnectedFlight=false&discount=0&originIata=${dep}&destinationIata=${arr}`
     );
   };
 
   return {
+    passengers,
+    // Who a price is for: "1 adulto", "3 adultos"
+    adultsLabel: passengers > 1 ? texts.form.adultsCount(passengers) : texts.results.oneAdult,
+    // A fare's price (always per person) for every adult: the one the highlighted results show
+    forGroup: (price) => price * passengers,
+    // "29,98 € por persona", under the group's price (nothing for one adult)
+    perPerson: (price, cur = "EUR") => (passengers > 1 ? texts.results.perPersonPrice(money(price, cur)) : ""),
     fmtDay,
     fmtShort,
     // Flight length: "1 h 20 min" / "1h 20m"

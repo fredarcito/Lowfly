@@ -7,8 +7,8 @@ export const MORE_AIRLINES = {
     name: "easyJet",
     codes: ["U2", "EC", "DS"],
     home: "https://www.easyjet.com",
-    deeplink: ({ lang, dep, arr, day, retDay }) =>
-      `https://www.easyjet.com/deeplink?lang=${lang.toUpperCase()}&dep=${dep}&dest=${arr}&dd=${day}${retDay ? `&rd=${retDay}` : ""}&apax=1&cpax=0&ipax=0`,
+    deeplink: ({ lang, dep, arr, day, retDay, passengers }) =>
+      `https://www.easyjet.com/deeplink?lang=${lang.toUpperCase()}&dep=${dep}&dest=${arr}&dd=${day}${retDay ? `&rd=${retDay}` : ""}&apax=${passengers}&cpax=0&ipax=0`,
   },
   vueling: { name: "Vueling", codes: ["VY"], home: "https://www.vueling.com" },
   volotea: { name: "Volotea", codes: ["V7"], home: "https://www.volotea.com" },

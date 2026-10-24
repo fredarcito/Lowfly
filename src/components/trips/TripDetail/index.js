@@ -5,6 +5,7 @@ import Itinerary from "@/components/trips/itinerary/Itinerary";
 import TripFlights from "@/components/trips/TripFlights";
 import TripHeader from "@/components/trips/TripHeader";
 import TripStops from "@/components/trips/TripStops";
+import PassengersProvider from "@/components/shared/PassengersProvider";
 import SeparateTickets from "@/components/shared/SeparateTickets";
 import StopoverFlights from "@/components/shared/StopoverFlights";
 import TripsPage from "@/components/trips/TripsPage";
@@ -28,7 +29,9 @@ const TripDetail = ({ trip: savedTrip }) => {
         <Itinerary trip={trip} />
         {trip.flights && (
           <section className="rounded-xl bg-card p-5 ring-1 ring-foreground/10 sm:p-6">
-            <StopoverFlights trip={trip.flights} ticketsNote={<SeparateTickets count={trip.flights.legs.length} className="border-t pt-4" />} />
+            <PassengersProvider count={trip.passengers ?? 1}>
+              <StopoverFlights trip={trip.flights} ticketsNote={<SeparateTickets count={trip.flights.legs.length} className="border-t pt-4" />} />
+            </PassengersProvider>
           </section>
         )}
       </TripsPage>

@@ -1,11 +1,15 @@
 "use client";
 
+import { useMemo } from "react";
 import { useI18n } from "@/context/i18n";
 import { updateTrip } from "@/store/trips";
+import { createFormat } from "@/utils/format";
 
-// What can be done with a saved trip: mark it as booked and book it with the airline
+// What can be done with a saved trip: mark it as booked and book it with the airline (for all the adults it was
+// searched for, `trip.passengers`)
 export const useTripActions = (trip) => {
-  const { format } = useI18n();
+  const { lang, texts } = useI18n();
+  const format = useMemo(() => createFormat(lang, texts, trip.passengers ?? 1), [lang, texts, trip.passengers]);
   return {
     setBooked: (booked) => updateTrip(trip.id, { booked }),
     toggleBooked: () => updateTrip(trip.id, { booked: !trip.booked }),

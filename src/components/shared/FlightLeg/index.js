@@ -3,6 +3,7 @@
 import { Plane } from "lucide-react";
 import AirlineBadge from "@/components/shared/AirlineBadge";
 import End from "@/components/shared/FlightLeg/components/End";
+import PerPersonPrice from "@/components/shared/PerPersonPrice";
 import { useI18n } from "@/context/i18n";
 import { flightMinutes } from "@/utils/flightTime";
 
@@ -16,7 +17,9 @@ const FlightLeg = ({ icon: Icon, label, flight, from, to, showPrice = true, acti
   const { texts, format } = useI18n();
   const estimated = !flight.arrive && flight.arriveEstimate;
   const minutes = flightMinutes(estimated ? { ...flight, arrive: flight.arriveEstimate } : flight, from.tz, to.tz);
-  const price = showPrice && flight.price != null && format.money(flight.price, flight.cur);
+  const hasPrice = showPrice && flight.price != null;
+  // The group's price, and the person's under it when the search is for several
+  const perPerson = <PerPersonPrice price={flight.price} cur={flight.cur} className="text-xs font-normal" />;
   return (
     <div className="grid gap-3 sm:grid-cols-[6.5rem_minmax(0,1fr)_auto] sm:items-center sm:gap-5">
       <div className="flex items-center gap-2 sm:grid sm:gap-0.5">
@@ -49,13 +52,23 @@ const FlightLeg = ({ icon: Icon, label, flight, from, to, showPrice = true, acti
       {action ? (
         // The stub: what you pay there, and buying it (the airline is named on the button)
         <div className="flex items-center justify-between gap-4 sm:w-52 sm:flex-col sm:items-stretch sm:justify-center sm:gap-2 sm:self-stretch sm:border-l sm:pl-6">
-          {price && <span className="font-heading text-2xl font-extrabold tabular-nums sm:text-right">{price}</span>}
+          {hasPrice && (
+            <span className="grid justify-items-end sm:justify-items-end">
+              <span className="font-heading text-2xl font-extrabold tabular-nums sm:text-right">{format.money(format.forGroup(flight.price), flight.cur)}</span>
+              {perPerson}
+            </span>
+          )}
           {action}
         </div>
       ) : (
         <div className="flex items-center justify-between gap-3 sm:justify-end">
           <AirlineBadge airline={flight.airline} />
-          {price && <span className="min-w-20 text-right font-heading text-lg font-bold tabular-nums">{price}</span>}
+          {hasPrice && (
+            <span className="grid min-w-20 justify-items-end">
+              <span className="font-heading text-lg font-bold tabular-nums">{format.money(format.forGroup(flight.price), flight.cur)}</span>
+              {perPerson}
+            </span>
+          )}
         </div>
       )}
     </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { PlaneLanding, PlaneTakeoff } from "lucide-react";
+import PerPersonPrice from "@/components/shared/PerPersonPrice";
 import { useI18n } from "@/context/i18n";
 import { useLegEnds } from "@/hooks/useLegEnds";
 import { AIRLINES } from "@/utils/format";
@@ -32,7 +33,10 @@ const FlightPair = ({ trip }) => {
                 {leg.time && `, ${leg.time}`} · {AIRLINES[leg.airline]}
               </span>
             </span>
-            <span className="font-medium tabular-nums">{format.money(leg.price, leg.cur)}</span>
+            <span className="grid justify-items-end">
+              <span className="font-medium tabular-nums">{format.money(format.forGroup(leg.price), leg.cur)}</span>
+              <PerPersonPrice price={leg.price} cur={leg.cur} className="text-xs" />
+            </span>
           </li>
         );
       })}

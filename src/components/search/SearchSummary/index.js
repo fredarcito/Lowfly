@@ -14,7 +14,7 @@ const SearchSummary = ({ query, originName, onEdit }) => {
   const [copied, setCopied] = useState(false);
   if (!query) return null;
 
-  const { mode, origin, country, city, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend, freeFrom, freeTo } = query;
+  const { mode, origin, country, city, from, to, ida, vuelta, flex, max, trip, minN, maxN, weekend, freeFrom, freeTo, passengers } = query;
   const ModeIcon = MODES.find((candidate) => candidate.id === mode).icon;
   const destination = { everywhere: texts.summary.anywhere, multiCity: texts.summary.multiCity }[mode] ?? (city || country);
   const route = `${originName ?? origin} → ${destination}`;
@@ -30,7 +30,7 @@ const SearchSummary = ({ query, originName, onEdit }) => {
             : `${texts.form.roundTrip}, ${weekend ? texts.summary.weekends : texts.summary.stay(Number(minN), Number(maxN))}`,
           max && texts.summary.max(format.money(Number(max))),
         ];
-  const detail = parts.filter(Boolean).join(" · ");
+  const detail = [...parts, Number(passengers) > 1 && texts.form.adultsCount(Number(passengers))].filter(Boolean).join(" · ");
 
   // On phones and tablets, the share sheet (WhatsApp, Messages…); on computers, the link is copied
   const share = async () => {

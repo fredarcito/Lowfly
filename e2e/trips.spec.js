@@ -204,10 +204,10 @@ test.describe("my trips", () => {
     const manual = manualTrip({ id: "manual-test" });
     await openWith(page, `/es/trips?id=${flight.id}`, { trips: [flight, manual] });
     const createCard = () => page.locator("section").filter({ hasText: "Crear itinerario" }).last();
-    await expect(createCard().getByText("Check-in")).toBeVisible();
+    await expect(createCard().getByText("Hora de check-in")).toBeVisible();
     await page.goto(`/es/trips?id=${manual.id}`);
     await expect(createCard()).toBeVisible();
-    await expect(createCard().getByText("Check-in")).toHaveCount(0);
+    await expect(createCard().getByText("Hora de check-in")).toHaveCount(0);
   });
 
   // Interests as chips in view; one-choice fields open the system's picker on phones, a menu on desktop.

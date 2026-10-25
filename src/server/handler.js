@@ -49,11 +49,12 @@ export const stay = (params, from, to) => {
   return { min, max };
 };
 
-// Wraps a handler: returns JSON, 400 if the parameters are invalid, 502 if the airlines fail
+// Wraps a handler: returns JSON, 400 if the parameters are invalid, 502 if the airlines fail.
+// `fn` gets the query's parameters, and the request itself (its headers)
 export const handle = (fn) => {
   return async (req) => {
     try {
-      const data = await fn(req.nextUrl.searchParams);
+      const data = await fn(req.nextUrl.searchParams, req);
       return NextResponse.json(data, {
         headers: { "cache-control": "public, s-maxage=600, stale-while-revalidate=300" },
       });

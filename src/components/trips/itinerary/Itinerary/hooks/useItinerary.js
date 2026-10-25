@@ -23,9 +23,9 @@ const tripForAi = (trip) => {
   };
 };
 
-// A trip planned by hand: each town, where it is, and when they arrive and leave
+// A trip planned by hand: each town, where it is, when they arrive and leave, and the places to visit there for sure
 const stopsForAi = (trip) =>
-  trip.stops.map(({ city, country, lat, lng, arrive, leave }) => ({ city, country, lat, lng, arrive, leave }));
+  trip.stops.map(({ city, country, lat, lng, arrive, leave, mustVisit = [] }) => ({ city, country, lat, lng, arrive, leave, mustVisit }));
 
 // A trip's itinerary (in the language it was made in), the picked day,
 // and creating it with the AI: { status: "idle" | "creating" | "error", error }. `trip` may not exist yet

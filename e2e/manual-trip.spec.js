@@ -121,6 +121,65 @@ test.describe("trip planned by hand", () => {
     await expect(page.getByRole("button", { name: "Crear itinerario" })).toBeVisible();
   });
 
+  // Places to visit for sure, in each town's card (docs/must-visit.md): they wait for the town, belong to it, show in
+  // the summary, and go to the AI with their town
+  test("each town's places to visit for sure", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    const searches = [];
+    await page.route("**/api/spots?**", (route) => {
+      searches.push(Object.fromEntries(new URL(route.request().url()).searchParams));
+      route.fulfill({ json: { spots: [{ id: "W1", name: "Galleria degli Uffizi", street: "Piazzale degli Uffizi", town: "Firenze", category: "museum", lat: 43.7678, lng: 11.2553 }], tooFar: false } });
+    });
+    let sent;
+    await page.route("**/api/itinerary", (route) => {
+      sent = route.request().postDataJSON();
+    });
+    await openWith(page, "/es/trips/new");
+
+    const placesRow = (number) => stopItem(page, number).getByRole("button", { name: /Sitios que no te quieres perder/ });
+    // Without a town, nowhere to search yet
+    await expect(placesRow(1)).toBeDisabled();
+    await expect(placesRow(1)).toContainText("Elige primero la ciudad");
+
+    await fillRoute(page);
+    await placesRow(1).click();
+    await stopItem(page, 1).getByRole("button", { name: "Añadir sitio" }).click();
+    await stopItem(page, 1).getByRole("combobox", { name: "Sitios que no te quieres perder" }).fill("uffizi");
+    await page.getByRole("listbox").getByRole("option", { name: /Galleria degli Uffizi/ }).click();
+    // Searched around that town
+    expect(searches.at(-1)).toMatchObject({ q: "uffizi", town: "Florencia" });
+    await expect(placesRow(1)).toContainText("1 sitio");
+    await expect(page.getByText("1 sitio que quieres ver")).toBeVisible();
+
+    // Another town: its places go with the old one
+    await stopItem(page, 2).getByRole("button", { name: "Cambiar de ciudad" }).click();
+    await pickTown(page, 2, "venecia", "Venecia");
+    await expect(placesRow(2)).toContainText("Opcional");
+
+    await page.getByRole("button", { name: "Continuar" }).click();
+    const trips = await savedTrips(page);
+    expect(trips[0].stops[0].mustVisit).toMatchObject([{ name: "Galleria degli Uffizi", category: "museum" }]);
+    await page.getByRole("button", { name: "Crear itinerario" }).click();
+    await expect.poll(() => sent?.stops?.map((stop) => stop.mustVisit.map((place) => place.name))).toEqual([["Galleria degli Uffizi"], []]);
+  });
+
+  test("changing a town removes its places, and says so", async ({ page }) => {
+    await page.setViewportSize(DESKTOP);
+    await page.route("**/api/spots?**", (route) =>
+      route.fulfill({ json: { spots: [{ id: "W1", name: "Ponte Vecchio", street: null, town: "Firenze", category: "sight", lat: 43.768, lng: 11.2531 }], tooFar: false } })
+    );
+    await openWith(page, "/es/trips/new");
+    await pickTown(page, 1, "flor", "Florencia");
+    await stopItem(page, 1).getByRole("button", { name: /Sitios que no te quieres perder/ }).click();
+    await stopItem(page, 1).getByRole("button", { name: "Añadir sitio" }).click();
+    await stopItem(page, 1).getByRole("combobox", { name: "Sitios que no te quieres perder" }).fill("ponte");
+    await page.getByRole("listbox").getByRole("option", { name: /Ponte Vecchio/ }).click();
+
+    await stopItem(page, 1).getByRole("button", { name: "Cambiar de ciudad" }).click();
+    await expect(stopItem(page, 1).getByText("Quitamos los sitios de Florencia")).toBeVisible();
+    await expect(stopItem(page, 1).getByRole("button", { name: "Quitar Ponte Vecchio" })).toHaveCount(0);
+  });
+
   test("the itinerary is created in step 2, then the trip opens with it", async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 1000 });
     // The AI answers with a real itinerary after a moment

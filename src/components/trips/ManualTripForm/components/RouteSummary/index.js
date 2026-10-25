@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarDays, Map, MapPin, Moon } from "lucide-react";
+import { CalendarDays, Map, MapPin, Moon, Star } from "lucide-react";
 import FieldAlert from "@/components/shared/FieldAlert";
 import SummaryRow from "@/components/trips/ManualTripForm/components/RouteSummary/components/SummaryRow";
 import { useI18n } from "@/context/i18n";
@@ -17,6 +17,7 @@ const RouteSummary = ({ form, children }) => {
   const lastDay = form.stops.at(-1).leaveDay;
   const dates = firstDay && lastDay ? format.fmtRange(firstDay, lastDay) : null;
   const days = form.tripDays;
+  const placeCount = form.stops.reduce((count, stop) => count + stop.mustVisit.length, 0);
 
   return (
     <aside className="sticky top-6 grid gap-4 self-start duration-500 animate-in fade-in motion-reduce:animate-none max-lg:hidden">
@@ -38,6 +39,12 @@ const RouteSummary = ({ form, children }) => {
           <SummaryRow icon={Moon} valueKey={days ?? "none"} muted={!days}>
             {days ? labels.stayLength(days, days - 1) : "—"}
           </SummaryRow>
+          {/* Only once there are some: no empty row */}
+          {placeCount > 0 && (
+            <SummaryRow icon={Star} valueKey={`places-${placeCount}`}>
+              {labels.placesSummary(placeCount)}
+            </SummaryRow>
+          )}
         </ul>
         {form.tooLong && <FieldAlert>{labels.errors.tooLong(MAX_TRIP_DAYS)}</FieldAlert>}
       </section>

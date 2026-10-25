@@ -31,7 +31,7 @@ const CreateItinerary = ({ trip, onCreate, creation }) => {
         </div>
       </div>
 
-      <ItineraryPreferences trip={trip} preferences={preferences} disabled={creating} />
+      <ItineraryPreferences trip={trip} preferences={preferences} disabled={creating} townPlaces />
 
       {creation.status === "error" && !needsAccount && <ErrorNote error={creation.error} />}
 

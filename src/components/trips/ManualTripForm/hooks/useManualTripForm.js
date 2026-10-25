@@ -4,7 +4,8 @@ import { useRef, useState } from "react";
 import { problemsOf, savedStops, tripDaysOf } from "@/utils/manualTrips";
 import { changeManualTrip, saveManualTrip } from "@/store/trips";
 
-// The towns of a trip planned by hand, in order (each: place, arrival and departure day and time), what is wrong
+// The towns of a trip planned by hand, in order (each: place, arrival and departure day and time, the places to
+// visit there for sure), what is wrong
 // with them once the visitor tries to go on, and saving them: `save(id)` saves the trip (or, with the id of the one
 // saved before, changes it) and returns its id, or null when something has to be fixed first.
 // `initialPlace`: the first town already chosen (a route's page sends its destination), or null. `initialStops`:
@@ -12,7 +13,7 @@ import { changeManualTrip, saveManualTrip } from "@/store/trips";
 // from the search), or null.
 export const useManualTripForm = (initialPlace = null, initialStops = null) => {
   const nextKey = useRef(1);
-  const newStop = (arriveDay = "", place = null) => ({ key: nextKey.current++, place, arriveDay, arriveTime: "", leaveDay: "", leaveTime: "" });
+  const newStop = (arriveDay = "", place = null) => ({ key: nextKey.current++, place, arriveDay, arriveTime: "", leaveDay: "", leaveTime: "", mustVisit: [] });
   const [stops, setStops] = useState(() =>
     initialStops?.length
       ? initialStops.map(({ place, arriveDay, arriveTime, leaveDay, leaveTime }) => ({ ...newStop(arriveDay, place), arriveTime, leaveDay, leaveTime }))

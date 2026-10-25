@@ -9,6 +9,7 @@ import ItineraryLoader from "@/components/trips/itinerary/ItineraryLoader";
 import ItineraryStickyBar from "@/components/trips/itinerary/ItineraryStickyBar";
 import ItineraryWeather from "@/components/trips/itinerary/ItineraryWeather";
 import OtherLanguage from "@/components/trips/itinerary/OtherLanguage";
+import MissingPlaces from "@/components/trips/itinerary/Itinerary/components/MissingPlaces";
 import { useI18n } from "@/context/i18n";
 import { useItinerary } from "@/components/trips/itinerary/Itinerary/hooks/useItinerary";
 import { useScrolledPast } from "@/hooks/useScrolledPast";
@@ -43,6 +44,9 @@ const Itinerary = ({ trip, readOnly = false, tabsAside }) => {
       <ItineraryDayTabs days={days} picked={dayIndex} onPick={showDay} belowBar={scrolledPast} aside={tabsAside} />
       {itinerary.lang && itinerary.lang !== lang && (
         <OtherLanguage itinerary={itinerary} creating={creating} onCreate={readOnly ? null : () => create(itinerary.preferences)} />
+      )}
+      {itinerary.missing?.length > 0 && (
+        <MissingPlaces names={itinerary.missing} creating={creating} onCreate={readOnly ? null : () => create(itinerary.preferences)} />
       )}
       {creation.status === "error" && <ErrorNote error={creation.error} />}
       <ItineraryDay key={day.date} trip={trip} day={day} dayNumber={dayIndex + 1} readOnly={readOnly} />

@@ -7,7 +7,15 @@ import { allow, release } from "@/server/rateLimit";
 import { supabaseServer } from "@/supabase/server";
 import { isDay } from "@/utils/dates";
 import { hasLocale } from "@/i18n/config";
-import { CHECK_IN_TIMES, DEFAULT_PREFERENCES, INTERESTS, PACES, TRANSPORTS } from "@/constants/itineraryPreferences";
+import {
+  CHECK_IN_TIMES,
+  DEFAULT_PREFERENCES,
+  INTERESTS,
+  MUST_VISIT_CATEGORIES,
+  MUST_VISIT_MAX,
+  PACES,
+  TRANSPORTS,
+} from "@/constants/itineraryPreferences";
 import { MAX_STOPS } from "@/constants/manualTrips";
 import { ITINERARY_LIMITS } from "@/constants/itineraryLimits";
 
@@ -52,11 +60,34 @@ const readStops = (input) => {
       lng: stop.lng,
       arrive: { day: stop.arrive.day, time: stop.arrive.time ?? null },
       leave: { day: stop.leave.day, time: stop.leave.time ?? null },
+      mustVisit: readMustVisit(stop.mustVisit),
     };
   });
   if (stops.some((stop, index) => index > 0 && stop.arrive.day < stops[index - 1].leave.day)) throw badRequest("aiBadTrip");
   return stops;
 };
+
+const shortText = (value) => (typeof value === "string" && value.trim() ? value.trim().slice(0, 80) : null);
+const coordinateOrNull = (value) => (Number.isFinite(value) ? value : null);
+
+// The places the traveller wants for sure (docs/must-visit.md), as written by them: short texts, a known category,
+// and numbers for coordinates. How far they are is checked with the destination (server/itinerary).
+const readMustVisit = (input) =>
+  (Array.isArray(input) ? input : [])
+    .map((place) => ({
+      id: shortText(place?.id),
+      name: shortText(place?.name),
+      category: MUST_VISIT_CATEGORIES.includes(place?.category) ? place.category : "other",
+      kind: shortText(place?.kind),
+      town: shortText(place?.town),
+      lat: coordinateOrNull(place?.lat),
+      lng: coordinateOrNull(place?.lng),
+      area: shortText(place?.area),
+      areaLat: coordinateOrNull(place?.areaLat),
+      areaLng: coordinateOrNull(place?.areaLng),
+    }))
+    .filter((place) => place.name)
+    .slice(0, MUST_VISIT_MAX);
 
 const readPreferences = (input = {}) => {
   const interests = Array.isArray(input.interests) ? input.interests.filter((interest) => INTERESTS.includes(interest)) : [];
@@ -65,6 +96,7 @@ const readPreferences = (input = {}) => {
     interests: interests.length ? interests : DEFAULT_PREFERENCES.interests,
     transport: TRANSPORTS.includes(input.transport) ? input.transport : DEFAULT_PREFERENCES.transport,
     checkIn: CHECK_IN_TIMES.includes(input.checkIn) ? input.checkIn : DEFAULT_PREFERENCES.checkIn,
+    mustVisit: readMustVisit(input.mustVisit),
   };
 };
 

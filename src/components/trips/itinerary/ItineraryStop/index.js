@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, CircleCheck, Navigation } from "lucide-react";
+import { ChevronDown, CircleCheck, MapPinOff, Navigation } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Collapse from "@/components/shared/Collapse";
 import ItineraryTimeline from "@/components/trips/itinerary/ItineraryTimeline";
@@ -9,8 +9,12 @@ import { useI18n } from "@/context/i18n";
 import { directionsUrl } from "@/utils/itinerary";
 import { cn } from "@/utils/cn";
 import ExcursionMark from "@/components/trips/itinerary/ItineraryStop/components/ExcursionMark";
+import RequestedMark from "@/components/trips/itinerary/ItineraryStop/components/RequestedMark";
 import StopMarker from "@/components/trips/itinerary/ItineraryStop/components/StopMarker";
 import MealChip from "@/components/trips/itinerary/ItineraryStop/components/MealChip";
+
+// Getting to or from the town (the airport, a station): far from the day's walk by nature, nothing to explain
+const LEGS = new Set(["llegada", "transporte", "logistica"]);
 
 // One stop. Places fold open (one at a time, in step with the map) to show the details,
 // "Directions" and "Mark as visited" (with `onToggleVisited`). A meal without a set place (breakfast "around the
@@ -34,8 +38,15 @@ const ItineraryStop = ({ stop, mode, excursionTown, town, open, visited, onToggl
       <span className={cn("flex flex-wrap items-center gap-x-2 gap-y-1", placed ? "font-heading font-semibold" : "text-sm font-medium", visited && "text-muted-foreground")}>
         <span className="min-w-0">{stop.title}</span>
         {excursionTown && <ExcursionMark town={excursionTown} />}
+        {stop.requested != null && <RequestedMark />}
       </span>
       {foldable && !open && summary && <span className="line-clamp-1 text-sm text-muted-foreground">{summary}</span>}
+      {/* A place too far from the rest of a day on foot is left off its map: say why its marker has no number */}
+      {stop.outOfTown && !LEGS.has(stop.type) && (
+        <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
+          <MapPinOff className="size-3.5 shrink-0" aria-hidden /> {texts.trips.offMap}
+        </span>
+      )}
       {meal && stop.note && <span className="text-sm text-muted-foreground">{stop.note}</span>}
     </>
   );

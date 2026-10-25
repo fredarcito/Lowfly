@@ -6,6 +6,8 @@
 // in every Palma itinerary), so itineraries are faster, ask the services less and keep their places when they are down.
 import { supabaseAdmin } from "@/supabase/admin";
 import { USER_AGENT as UA } from "@/constants/site";
+import { MAX_KM_FROM_DESTINATION } from "@/constants/itineraryPreferences";
+import { km } from "@/utils/itinerary";
 
 const PHOTON = "https://photon.komoot.io/api/";
 const NOMINATIM = "https://nominatim.openstreetmap.org/search";
@@ -115,4 +117,52 @@ export const locate = async (query, near) => {
     console.error("Map search error", error.message);
     return null;
   }
+};
+
+// Places the traveller wants in their itinerary (docs/must-visit.md), as they type: several matches for them to
+// pick, never the first one for them (a chain has several branches: "Sotto Pinsa Romana" finds the one in Sliema,
+// the one in Valletta is "Sotto Pizzeria"). Photon only: Nominatim allows a request a second, too slow for typing.
+const SPOT_RESULTS = 6;
+// What OpenStreetMap's tag ("amenity:restaurant") says the place is; the first rule that matches wins
+const CATEGORY_RULES = [
+  ["food", /^(amenity:(restaurant|cafe|bar|pub|fast_food|ice_cream|food_court|biergarten)|shop:(bakery|pastry|deli|confectionery))$/],
+  ["museum", /^(tourism:(museum|gallery)|amenity:arts_centre)$/],
+  ["shopping", /^(shop:.+|amenity:marketplace)$/],
+  ["town", /^place:(city|town|village|hamlet|suburb|neighbourhood|quarter|borough)$/],
+  ["nature", /^(natural:.+|leisure:(park|garden|nature_reserve|beach_resort)|place:island(et)?|boundary:(national_park|protected_area))$/],
+  ["sight", /^(historic:.+|tourism:(attraction|viewpoint|artwork|theme_park|zoo|aquarium)|amenity:(place_of_worship|theatre)|building:(church|cathedral|chapel|castle)|man_made:(lighthouse|tower|bridge)|bridge:.+|leisure:stadium)$/],
+];
+export const categoryOf = (kind) => CATEGORY_RULES.find(([, rule]) => rule.test(kind))?.[0] ?? "other";
+
+// The matches Photon has for `query` around `near`: [{ id, name, street, town, kind, category, lat, lng }]
+const photonSpots = async (query, near, areasOnly) => {
+  const params = new URLSearchParams({ q: query, limit: String(SPOT_RESULTS), lat: String(near.lat), lon: String(near.lng) });
+  if (areasOnly) params.set("osm_tag", "place");
+  const { features = [] } = await get(`${PHOTON}?${params}`);
+  return features
+    .filter((feature) => feature.properties?.name)
+    .map((feature) => {
+      const [lng, lat] = feature.geometry.coordinates;
+      const { osm_type: type, osm_id: id, osm_key: key, osm_value: value, name, street, city, district, locality, county, country } = feature.properties;
+      const kind = `${key}:${value}`;
+      // A neighbourhood says its city, a town its county or country; anything else, its town
+      const town = key === "place" ? (city ?? county ?? country) : (city ?? locality ?? district ?? county ?? null);
+      return { id: `${type}${id}`, name, street: street ?? null, town: town === name ? null : town, kind, category: categoryOf(kind), lat, lng };
+    });
+};
+
+// { spots, tooFar }: up to 6 places near `near` ({ lat, lng }) for what was typed, searched as it is and with the
+// trip's `town` (which finds the branch in that town); `tooFar` when the only matches are too far for this trip.
+// `areasOnly`: only towns and neighbourhoods (where a place we could not find is). Throws when Photon does not answer.
+export const searchSpots = async (query, near, { town, areasOnly = false } = {}) => {
+  if (Date.now() < photonDownUntil) throw new Error("Photon is down");
+  // With the town first: its branch before the one in the next town
+  const queries = town && !query.toLowerCase().includes(town.toLowerCase()) ? [`${query} ${town}`, query] : [query];
+  const found = (await Promise.all(queries.map((each) => photonSpots(each, near, areasOnly)))).flat();
+  const unique = [...new Map(found.map((spot) => [spot.id, spot])).values()];
+  // Streets last: "Birgu Valletta" finds Triq La Vallette, a street in Birgu, before Birgu itself
+  const isStreet = (spot) => spot.kind.startsWith("highway:");
+  const ranked = [...unique.filter((spot) => !isStreet(spot)), ...unique.filter(isStreet)];
+  const spots = ranked.filter((spot) => km(spot, near) <= MAX_KM_FROM_DESTINATION).slice(0, SPOT_RESULTS);
+  return { spots, tooFar: !spots.length && unique.length > 0 };
 };

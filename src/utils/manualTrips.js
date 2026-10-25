@@ -30,7 +30,7 @@ export const problemsOf = (stops) => {
 
 // The form's towns as the trip keeps them (store/trips saveManualTrip)
 export const savedStops = (stops) =>
-  stops.map(({ place, arriveDay, arriveTime, leaveDay, leaveTime }) => ({
+  stops.map(({ place, arriveDay, arriveTime, leaveDay, leaveTime, mustVisit = [] }) => ({
     city: place.name,
     region: place.region,
     country: place.country,
@@ -40,6 +40,8 @@ export const savedStops = (stops) =>
     code: place.code,
     arrive: { day: arriveDay, time: arriveTime || null },
     leave: { day: leaveDay, time: leaveTime || null },
+    // The places to visit there for sure (docs/must-visit.md)
+    mustVisit,
   }));
 
 // A town of a multi-city route by its place in the route as written ("classic-italy/full/2"): towns with no airport

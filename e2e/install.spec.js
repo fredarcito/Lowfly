@@ -13,7 +13,7 @@ test.describe("install the app", () => {
   test.describe("iPhone", () => {
     test.use({ userAgent: IPHONE_AGENT });
 
-    test("the banner shows the steps and, once closed, does not come back", async ({ page }) => {
+    test("the banner shows the steps and, once used, does not come back", async ({ page }) => {
       await page.setViewportSize(PHONE);
       await page.clock.install();
       await openWith(page, "/es");
@@ -27,10 +27,11 @@ test.describe("install the app", () => {
       await banner.getByRole("button", { name: "Instalar app" }).click();
       const steps = page.getByRole("dialog");
       await expect(steps).toContainText("Añadir a pantalla de inicio");
-      await steps.getByRole("button", { name: "Cerrar" }).click();
-
-      await banner.getByRole("button", { name: "No, gracias" }).click();
+      // The steps take over: the banner leaves while they are open
       await expect(banner).toBeHidden();
+      await steps.getByRole("button", { name: "Cerrar" }).click();
+      await expect(banner).toBeHidden();
+
       await page.reload();
       await page.locator("#origin").waitFor();
       await page.clock.fastForward(BANNER_DELAY);
@@ -40,6 +41,21 @@ test.describe("install the app", () => {
       await page.getByRole("button", { name: "Ajustes" }).click();
       await page.getByRole("menuitem", { name: "Instalar la app" }).click();
       await expect(page.getByRole("dialog")).toContainText("Añadir a pantalla de inicio");
+    });
+
+    test("'No, thanks' closes the banner for good", async ({ page }) => {
+      await page.setViewportSize(PHONE);
+      await page.clock.install();
+      await openWith(page, "/es");
+      await page.locator("#origin").waitFor();
+      await page.clock.fastForward(BANNER_DELAY);
+      const banner = page.getByRole("complementary", { name: "Instalar Lowfly" });
+      await banner.getByRole("button", { name: "No, gracias" }).click();
+      await expect(banner).toBeHidden();
+      await page.reload();
+      await page.locator("#origin").waitFor();
+      await page.clock.fastForward(BANNER_DELAY);
+      await expect(banner).toBeHidden();
     });
 
     test("only on the home, and only on phones", async ({ page }) => {

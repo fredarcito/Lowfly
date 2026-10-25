@@ -15,7 +15,7 @@ import { useDelayPassed } from "./hooks/useDelayPassed";
 export const BANNER_DELAY = 20_000;
 
 // Phones, on the home only: a small card at the bottom that tells Lowfly can live on the home screen. "Install" opens
-// the browser's dialog (Android) or the steps (iPhone); "No, thanks" closes it for good in this browser. Not shown once
+// the browser's dialog (Android) or the steps (iPhone); either button closes it for good in this browser. Not shown once
 // installed, nor where the browser cannot install. The settings menu keeps the same action for later.
 const InstallBanner = () => {
   const { lang, texts } = useI18n();
@@ -27,6 +27,14 @@ const InstallBanner = () => {
   const words = texts.install;
 
   const shown = delayPassed && pathname === ROUTES.home(lang) && way && !dismissed;
+
+  // Acting on it closes the banner for good too: the steps (or the browser's dialog) take over, and the settings menu
+  // keeps the action for later
+  const startInstall = () => {
+    dismiss();
+    if (way === "prompt") install();
+    else steps.show();
+  };
 
   return (
     <>
@@ -49,11 +57,7 @@ const InstallBanner = () => {
             <Button variant="ghost" className="h-9 px-3 text-muted-foreground" onClick={dismiss}>
               {words.banner.dismiss}
             </Button>
-            <Button
-              variant="outline"
-              className="h-9 px-4 font-semibold"
-              onClick={way === "prompt" ? install : steps.show}
-            >
+            <Button variant="outline" className="h-9 px-4 font-semibold" onClick={startInstall}>
               {words.action}
             </Button>
           </div>

@@ -10,6 +10,8 @@ import NightsInput from "@/components/search/TripTypeField/components/NightsInpu
 // One way or return; for a return trip, how many nights to stay or (anywhere and to a destination) only
 // weekends away (constants/weekend)
 // `children`: what ends the row (the adults)
+// Phones: the trip type and "weekends only" always share a row (no arrows; on the narrowest no suitcase and a smaller
+// "weekends only"), so the weekend option does not drop to a line of its own
 const TripTypeField = ({ mode, form, onField, children }) => {
   const { texts } = useI18n();
   const roundTrip = form.trip === "return";
@@ -18,26 +20,35 @@ const TripTypeField = ({ mode, form, onField, children }) => {
 
   return (
     <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
-      <ToggleGroup
-        type="single"
-        variant="outline"
-        spacing={0}
-        value={form.trip}
-        onValueChange={(trip) => trip && onField("trip", trip)}
-        aria-label={texts.form.tripType}
-      >
-        <ToggleGroupItem value="oneway" className="h-9 px-3">
-          <ArrowRight /> {texts.form.oneway}
-        </ToggleGroupItem>
-        <ToggleGroupItem value="return" className="h-9 px-3">
-          <ArrowLeftRight /> {texts.form.roundTrip}
-        </ToggleGroupItem>
-      </ToggleGroup>
-      {weekendOption && (
-        <Toggle variant="outline" size="lg" pressed={form.weekend} onPressedChange={(pressed) => onField("weekend", pressed)} className="h-9 px-3">
-          <Luggage /> {texts.form.weekendOnly}
-        </Toggle>
-      )}
+      <div className="flex items-center gap-2 sm:gap-x-5">
+        <ToggleGroup
+          type="single"
+          variant="outline"
+          spacing={0}
+          value={form.trip}
+          onValueChange={(trip) => trip && onField("trip", trip)}
+          aria-label={texts.form.tripType}
+        >
+          <ToggleGroupItem value="oneway" className="h-9 px-3">
+            <ArrowRight className="max-sm:hidden" /> {texts.form.oneway}
+          </ToggleGroupItem>
+          <ToggleGroupItem value="return" className="h-9 px-3">
+            <ArrowLeftRight className="max-sm:hidden" /> {texts.form.roundTrip}
+          </ToggleGroupItem>
+        </ToggleGroup>
+        {weekendOption && (
+          <Toggle
+            variant="outline"
+            size="lg"
+            pressed={form.weekend}
+            onPressedChange={(pressed) => onField("weekend", pressed)}
+            className="h-9 px-3"
+          >
+            <Luggage className="max-[359px]:hidden" />
+            <span className="max-[339px]:text-xs">{texts.form.weekendOnly}</span>
+          </Toggle>
+        )}
+      </div>
       {weekend && <p className="text-sm text-muted-foreground">{texts.form.weekendHint}</p>}
       {roundTrip && !weekend && (
         <div className="flex items-center gap-2 text-sm text-muted-foreground">

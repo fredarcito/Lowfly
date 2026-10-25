@@ -34,7 +34,7 @@ test.describe("search @live", () => {
     await page.getByRole("tab", { name: /destino/i }).click();
     await expect(page.locator("#country")).toBeEnabled({ timeout: 60_000 });
     await page.getByRole("radio", { name: /Ida y vuelta/ }).click();
-    await page.getByRole("button", { name: /Solo fines de semana/ }).click();
+    await page.getByRole("button", { name: /Solo findes/ }).click();
     await page.getByRole("button", { name: "Buscar" }).click();
     await expect(page.getByText("Calendario de precios")).toBeVisible({ timeout: 150_000 });
     expect(new URL(page.url()).searchParams.get("wk")).toBe("1");

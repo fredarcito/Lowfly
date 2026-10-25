@@ -1,4 +1,5 @@
 import FlightSearch from "@/components/search/FlightSearch";
+import InstallBanner from "@/components/search/InstallBanner";
 import { I18nProvider } from "@/providers/I18nProvider";
 
 // Every search page (the home and each kind of search's own page, constants/searchPages) shares the search: moving
@@ -10,6 +11,7 @@ const SearchLayout = async ({ children, params }) => {
     <I18nProvider lang={lang}>
       {children}
       <FlightSearch />
+      <InstallBanner />
     </I18nProvider>
   );
 };

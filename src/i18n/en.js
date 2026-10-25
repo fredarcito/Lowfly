@@ -39,6 +39,25 @@ const en = {
     // Each language in its own name
     languageNames: { es: "Español", en: "English" },
   },
+  // Installing Lowfly on the home screen: the home's banner on phones, the settings menu and the iPhone steps
+  install: {
+    action: "Install app",
+    menu: "Install the app",
+    banner: {
+      label: "Install Lowfly",
+      title: "Get Lowfly on your phone",
+      text: "Your flights and itineraries one tap away.",
+      dismiss: "No, thanks",
+    },
+    steps: {
+      title: "Install Lowfly on your iPhone",
+      description: "From Safari, in three taps.",
+      share: "Tap Share",
+      shareHint: "On iOS 26 it sits inside the ··· button",
+      add: "Scroll down and pick “Add to Home Screen”.",
+      done: "Tap “Add” and that’s it: Lowfly sits next to your apps.",
+    },
+  },
   modes: {
     aria: "Search type",
     everywhere: {

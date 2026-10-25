@@ -39,6 +39,25 @@ const es = {
     // Each language in its own name
     languageNames: { es: "Español", en: "English" },
   },
+  // Installing Lowfly on the home screen: the home's banner on phones, the settings menu and the iPhone steps
+  install: {
+    action: "Instalar app",
+    menu: "Instalar la app",
+    banner: {
+      label: "Instalar Lowfly",
+      title: "Instala Lowfly en tu móvil",
+      text: "Tus vuelos e itinerarios a un toque.",
+      dismiss: "No, gracias",
+    },
+    steps: {
+      title: "Instala Lowfly en tu iPhone",
+      description: "Desde Safari, en tres toques.",
+      share: "Toca Compartir",
+      shareHint: "En iOS 26 está dentro del botón ···",
+      add: "Baja y elige «Añadir a pantalla de inicio».",
+      done: "Pulsa «Añadir» y listo: Lowfly queda junto a tus apps.",
+    },
+  },
   modes: {
     aria: "Tipo de búsqueda",
     everywhere: {
@@ -119,7 +138,7 @@ const es = {
     stayBefore: "Estancia de",
     stayBetween: "a",
     stayAfter: "noches",
-    weekendOnly: "Solo fines de semana",
+    weekendOnly: "Solo findes",
     weekendHint: "Sales vie o sáb mañana · vuelves dom tarde o lun temprano",
     minNights: "Mínimo de noches",
     maxNights: "Máximo de noches",

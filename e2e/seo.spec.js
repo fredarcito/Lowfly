@@ -22,9 +22,8 @@ test.describe("seo", () => {
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", new RegExp(`${canonical.replace(/\//g, "\\/")}$`));
       await expect(page.locator('link[rel="alternate"][hreflang="en"]')).toHaveAttribute("href", new RegExp(`${english.replace(/\//g, "\\/")}$`));
       await expect(page.locator('meta[name="robots"]')).toHaveCount(0);
-      // Any other language: the address without one, which sends the visitor to theirs
-      const anyLanguage = canonical.replace(/^\/(es|en)/, "") || "";
-      await expect(page.locator('link[rel="alternate"][hreflang="x-default"]')).toHaveAttribute("href", new RegExp(`:\\d+${anyLanguage.replace(/\//g, "\\/")}\\/?$`));
+      // Any other language: the English page (a page, not an address that redirects)
+      await expect(page.locator('link[rel="alternate"][hreflang="x-default"]')).toHaveAttribute("href", new RegExp(`${english.replace(/\//g, "\\/")}$`));
     });
   }
 
@@ -80,7 +79,7 @@ test.describe("seo", () => {
   test("the sitemap lists every page in each language, with x-default and when its prices were written", async ({ request }) => {
     const sitemap = await (await request.get("/sitemap.xml")).text();
     expect(sitemap).toContain("<loc>https://lowfly.travel/en/flights/malta-barcelona</loc>");
-    expect(sitemap).toContain('hreflang="x-default" href="https://lowfly.travel/flights/malta-barcelona"');
+    expect(sitemap).toContain('hreflang="x-default" href="https://lowfly.travel/en/flights/malta-barcelona"');
     const route = sitemap.split("<url>").find((entry) => entry.includes("<loc>https://lowfly.travel/es/flights/malta-barcelona</loc>"));
     expect(route).toMatch(/<lastmod>\d{4}-\d{2}-\d{2}T/);
   });

@@ -1,6 +1,6 @@
 // What every shared link of Lowfly says about the site (Open Graph and X cards). A page that sets its own
 // openGraph or twitter replaces the layout's whole block (Next does not merge them), so it starts from these.
-import { APP_NAME, DEFAULT_LOCALE, LOCALES, LOCALE_TAGS } from "@/i18n/config";
+import { APP_NAME, LOCALES, LOCALE_TAGS } from "@/i18n/config";
 import { SITE_DOMAIN } from "@/constants/site";
 
 // og: site name, type and language, plus the page's own title, description, address (`url`, a path) and picture
@@ -19,11 +19,15 @@ export const openGraphOf = (lang, { title, description, url, image }) => ({
 // The site's address, for what search engines need absolute (structured data)
 export const SITE_URL = `https://${SITE_DOMAIN}`;
 
+// The language of x-default, for visitors of a language Lowfly does not have
+const FALLBACK_LOCALE = "en";
+
 // The same page in each language ({ es, en, x-default }): `path` gives the page's path in a language. x-default,
-// for a visitor of any other language, is the address without one (/flights/malta): it sends them to theirs.
+// for a visitor of any other language, is the English one. Not the address without a language (/flights/malta): that
+// one only redirects, and Google took it as the canonical of every page and indexed none of them.
 export const languagesOf = (path) => {
   const languages = Object.fromEntries(LOCALES.map((locale) => [locale, path(locale)]));
-  return { ...languages, "x-default": languages[DEFAULT_LOCALE].replace(new RegExp(`^/${DEFAULT_LOCALE}(?=/|$)`), "") || "/" };
+  return { ...languages, "x-default": languages[FALLBACK_LOCALE] };
 };
 
 // A page's own address and the same page in each language, for search engines ({ canonical, languages }): `path`

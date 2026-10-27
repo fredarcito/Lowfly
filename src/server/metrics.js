@@ -6,7 +6,8 @@
 import { after } from "next/server";
 import { redis, redisKey } from "@/server/redis";
 
-const KEEP_DAYS = 120;
+// A year and a bit: the admin's trend zooms out to the last year
+export const KEEP_DAYS = 400;
 
 const pending = new Map(); // field → count not sent yet
 let scheduled = false;

@@ -262,7 +262,7 @@ What the routes search adds on top:
    paused, the routes Ryanair alone can fly are still offered.
 6. **Watch it: done.** Every airline answer is counted by the guard (`server/metrics`: from the cache, asked,
    blocked, error, paused, queue full, old price served) and every search by the browser when it ends (its kind,
-   results / none / error code, dates changed from the form's), one Redis hash a day, kept 120 days. The admin's
+   results / none / error code, dates changed from the form's), one Redis hash a day, kept 400 days. The admin's
    "Uso" page (`/admin/usage`, `server/admin/usage`) shows them. If blocks grow, lower `perSecond` before it gets
    worse.
 

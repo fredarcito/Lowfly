@@ -45,7 +45,7 @@ test.describe("admin", () => {
     await page.goto("/en/admin");
     await expect(page.getByRole("heading", { name: "Overview" })).toBeVisible();
     await expect(page.locator("dt").getByText("Estimated AI cost", { exact: true })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Daily trend" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Trend" })).toBeVisible();
     await expect(page.getByRole("button", { name: "Period" })).toContainText("Last 30 days");
     await expect(page.getByRole("link", { name: "Back to Lowfly" })).toBeVisible();
     await page.getByRole("link", { name: "Users" }).click();
@@ -71,7 +71,7 @@ test.describe("admin", () => {
       await expect(page.getByRole("heading", { name: "Resumen" })).toBeVisible();
       for (const figure of ["Cuentas", "Viajes guardados", "Itinerarios creados", "Coste estimado de IA", "Generados con Claude"])
         await expect(page.locator("dt").getByText(figure, { exact: true })).toBeVisible();
-      for (const section of ["Evolución diaria", "Destinos más planeados", "Uso de IA"]) await expect(page.getByRole("heading", { name: section })).toBeVisible();
+      for (const section of ["Evolución", "Destinos más planeados", "Uso de IA"]) await expect(page.getByRole("heading", { name: section })).toBeVisible();
       // Itineraries with and without an account
       await expect(page.getByText(/^Sin cuenta: \d+ \(\d+\s?%\)$/)).toBeVisible();
       await expect(page.locator("dd").getByText(/^Con cuenta .+ · Sin cuenta .+$/)).toBeVisible();
@@ -80,6 +80,19 @@ test.describe("admin", () => {
       await page.getByRole("tab", { name: "Coste IA" }).click();
       await expect(page.getByRole("tab", { name: "Coste IA" })).toHaveAttribute("aria-selected", "true");
       await expect(page.locator("p").getByText("Coste de IA", { exact: true })).toBeVisible();
+      // The searches, a line per kind with its total
+      await page.getByRole("tab", { name: "Búsquedas" }).click();
+      await expect(page.locator("li").filter({ hasText: "Recorridos" })).toContainText(/\d+/);
+      await expect(page.locator("li").filter({ hasText: "A un destino" })).toBeVisible();
+      // Zoomed by week, month (the default) or year, apart from the page's period
+      await expect(page.getByRole("button", { name: "Mes" })).toHaveAttribute("aria-pressed", "true");
+      await expect(page.locator("p").getByText("Últimos 30 días", { exact: true })).toBeVisible();
+      await page.getByRole("button", { name: "Año" }).click();
+      await expect(page.getByRole("button", { name: "Año" })).toHaveAttribute("aria-pressed", "true");
+      await expect(page.locator("p").getByText("Últimos 12 meses, por semanas", { exact: true })).toBeVisible();
+      await expect(page.getByText(/a la semana$/)).toBeVisible();
+      await page.getByRole("button", { name: "Semana" }).click();
+      await expect(page.locator("p").getByText("Últimos 7 días", { exact: true })).toBeVisible();
       // The period, for every figure, kept in the address
       await page.getByRole("button", { name: "Período" }).click();
       await page.getByRole("menuitemradio", { name: "Últimos 7 días" }).click();

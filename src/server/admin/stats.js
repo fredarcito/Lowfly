@@ -1,13 +1,19 @@
 // The admin's figures for a period: accounts (and sign-ups in it), saved and shared trips, the AI itineraries made
-// in it (against the period before; with and without an account), what they cost, each day of it, and the
-// destinations most planned (all time).
+// in it (against the period before; with and without an account), what they cost, and the destinations most planned
+// (all time). Apart from the period, the trend: each day of the last two years, for the chart that zooms by week,
+// month or year (and compares each with the one before), with the searches by kind (server/metrics, kept KEEP_DAYS).
 // Read with the secret key (only the admin page calls it, after checking the visitor is an admin).
 import { supabaseAdmin } from "@/supabase/admin";
 import { aiCallCost } from "@/server/admin/aiPrices";
 import { USAGE_COLUMNS, allRows, allUsers, countRows } from "@/server/admin/queries";
+import { firstCounted, readMetricDays, searchesOfDay } from "@/server/admin/metricDays";
+import { KEEP_DAYS } from "@/server/metrics";
+import { SEARCH_MODES } from "@/constants/metrics";
 
 const DAY = 86_400_000;
 const TOP_DESTINATIONS = 10;
+// The trend's days: a year of weeks (52) and the year before it, to compare
+const TREND_DAYS = 2 * 52 * 7;
 // The periods the admin can pick, in days ("all": since the first account)
 export const PERIODS = ["7", "30", "90", "all"];
 export const DEFAULT_PERIOD = "30";
@@ -32,11 +38,13 @@ const firstCallsOf = (rows) => [...new Map(rows.map((row) => [row.request_id, ro
 
 export const getAdminStats = async (period = DEFAULT_PERIOD) => {
   const supabase = supabaseAdmin();
-  const [users, usage, savedTrips, sharedTrips] = await Promise.all([
+  const trendDays = daysOf(TREND_DAYS);
+  const [users, usage, savedTrips, sharedTrips, metricDays] = await Promise.all([
     allUsers(supabase),
     allRows(supabase, "itinerary_usage", USAGE_COLUMNS),
     countRows(supabase, "trips"),
     countRows(supabase, "trip_shares"),
+    readMetricDays(trendDays.slice(-KEEP_DAYS)),
   ]);
   const at = (row) => new Date(row.created_at).getTime();
   // "all": from the first account's day (at least one day)
@@ -53,7 +61,9 @@ export const getAdminStats = async (period = DEFAULT_PERIOD) => {
   const guest = (row) => !row.user_id;
   const guestCost = calls.filter(guest).reduce((total, row) => total + aiCallCost(row), 0);
 
-  const guestsPerDay = perDay(days, itineraries.filter(guest), (row) => row.created_at);
+  const trendCalls = usage.filter((row) => at(row) >= new Date(`${trendDays[0]}T00:00:00Z`).getTime());
+  const trendItineraries = firstCallsOf(trendCalls);
+  const guestsPerDay = perDay(trendDays, trendItineraries.filter(guest), (row) => row.created_at);
 
   const destinations = new Map();
   for (const row of firstCallsOf(usage)) {
@@ -82,14 +92,26 @@ export const getAdminStats = async (period = DEFAULT_PERIOD) => {
       // Claude stepping in when Gemini was busy, as a share of the AI calls
       claudeShare: calls.length ? calls.filter((row) => row.provider === "claude").length / calls.length : 0,
     },
-    daily: {
-      users: perDay(days, users, (user) => user.created_at),
+    trend: {
+      // Each figure's first day: nothing to compare before it (the first account's; the searches', the first counted)
+      since: {
+        users: dayKey(firstDay),
+        itineraries: dayKey(firstDay),
+        cost: dayKey(firstDay),
+        searches: metricDays && firstCounted(metricDays),
+      },
+      users: perDay(trendDays, users, (user) => user.created_at),
       // Each day's itineraries, and how many of them without an account
-      itineraries: perDay(days, itineraries, (row) => row.created_at).map((entry, index) => ({
+      itineraries: perDay(trendDays, trendItineraries, (row) => row.created_at).map((entry, index) => ({
         ...entry,
         guests: guestsPerDay[index].value,
       })),
-      cost: perDay(days, calls, (row) => row.created_at, aiCallCost),
+      cost: perDay(trendDays, trendCalls, (row) => row.created_at, aiCallCost),
+      // In all and by kind; the days no longer kept, none. Without Redis, missing
+      searches: metricDays && [
+        ...trendDays.slice(0, -KEEP_DAYS).map((day) => ({ day, value: 0, ...Object.fromEntries(SEARCH_MODES.map((mode) => [mode, 0])) })),
+        ...metricDays.map(searchesOfDay),
+      ],
     },
     destinations: [...destinations.values()].sort((first, second) => second.count - first.count).slice(0, TOP_DESTINATIONS),
   };

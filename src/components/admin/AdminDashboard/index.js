@@ -1,6 +1,6 @@
 import StatTile from "@/components/admin/StatTile";
 import AiUsage from "@/components/admin/AdminDashboard/components/AiUsage";
-import DailyChart from "@/components/admin/AdminDashboard/components/DailyChart";
+import TrendChart from "@/components/admin/AdminDashboard/components/TrendChart";
 import PeriodSelect from "@/components/admin/PeriodSelect";
 import TopDestinations from "@/components/admin/AdminDashboard/components/TopDestinations";
 import { adminTexts } from "@/components/admin/data/texts";
@@ -13,10 +13,10 @@ const itinerariesHint = ({ count, previous }, days, texts, formats) => {
   return texts.versusBefore(`${change > 0 ? "+" : ""}${change}`, days);
 };
 
-// The admin's overview for a period (server/admin/stats; picked on the top right, for every figure on it): the
-// headline numbers, the period day by day next to the destinations most planned, and the AI's use
+// The admin's overview for a period (server/admin/stats; picked on the top right): the headline numbers, the trend
+// (with its own zoom: week, month or year) next to the destinations most planned, and the AI's use
 const AdminDashboard = ({ stats, periods, lang }) => {
-  const { users, trips, itineraries, daily, destinations } = stats;
+  const { users, trips, itineraries, trend, destinations } = stats;
   const texts = adminTexts(lang).dashboard;
   const formats = adminFormat(lang);
   return (
@@ -52,7 +52,7 @@ const AdminDashboard = ({ stats, periods, lang }) => {
       </dl>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)]">
-        <DailyChart daily={daily} />
+        <TrendChart trend={trend} />
         <TopDestinations destinations={destinations} lang={lang} />
       </div>
 

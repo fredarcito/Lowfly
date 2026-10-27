@@ -16,6 +16,7 @@ const makeFormat = (lang) => {
   const longDay = new Intl.DateTimeFormat(tag, { day: "numeric", month: "short", year: "numeric", timeZone: ZONE });
   const dayTime = new Intl.DateTimeFormat(tag, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: ZONE });
   const shortDay = new Intl.DateTimeFormat(tag, { day: "numeric", month: "short", timeZone: "UTC" });
+  const monthYear = new Intl.DateTimeFormat(tag, { month: "short", year: "numeric", timeZone: "UTC" });
   return {
     // Under a dollar, four decimals (an itinerary costs fractions of a cent); nothing spent, plainly 0.00
     money: (amount) => (amount > 0 && amount < 1 ? cents : dollars).format(amount),
@@ -27,6 +28,8 @@ const makeFormat = (lang) => {
     percent: (share) => percent.format(share),
     // A day ("2026-10-16"): "16 oct"
     day: (day) => shortDay.format(new Date(`${day}T00:00:00Z`)),
+    // A day's month: "oct 2026"
+    month: (day) => monthYear.format(new Date(`${day}T00:00:00Z`)),
     // A moment (an ISO date and time): "16 oct 2026", or "16 oct, 14:05" with `time`
     date: (moment, time = false) => (moment ? (time ? dayTime : longDay).format(new Date(moment)) : "—"),
   };

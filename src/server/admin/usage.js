@@ -1,13 +1,13 @@
 // The admin's "Uso" page: which kinds of search people use and how they end, and how the airlines answer, for the last
 // days (server/metrics counts them, one Redis hash a day). Read with the admin's rights (only the admin page calls it,
 // after checking the visitor is an admin).
-import { redis } from "@/server/redis";
-import { metricsKey } from "@/server/metrics";
+import { KEEP_DAYS } from "@/server/metrics";
 import { OUTCOMES } from "@/server/airlineGuard";
 import { daysOf } from "@/server/admin/stats";
+import { firstCounted, readMetricDays } from "@/server/admin/metricDays";
 import { SEARCH_MODES } from "@/constants/metrics";
 
-// The periods the page offers, in days (the counts are kept 120 days)
+// The periods the page offers, in days
 export const USAGE_PERIODS = ["7", "30", "90"];
 export const DEFAULT_USAGE_PERIOD = "7";
 // Travelpayouts: easyJet, Vueling and the other more airlines' recent prices (only asked, blocked or failed: Next keeps
@@ -15,9 +15,6 @@ export const DEFAULT_USAGE_PERIOD = "7";
 const AIRLINES = ["ryanair", "wizz", "travelpayouts"];
 
 const sum = (values) => values.reduce((total, value) => total + value, 0);
-
-// One day's counts, by field (0 when missing)
-const reader = (counts) => (field) => Number(counts?.[field] ?? 0);
 
 // A kind of search over the days: how many, how they ended, the errors by code, and searches with dates of their own
 const searchesOf = (mode, days) => {
@@ -49,29 +46,39 @@ const airlineOf = (airline, days) => {
   };
 };
 
-// { available, period, days, searches: [per kind, most used first], airlines: [...], daily: { searches, sent,
-//   problems } of [{ day, value }] } — `available` false without Redis (nothing is counted then)
+// { available, period, days, searches: [per kind, most used first], airlines: [...], trend } — `available` false
+// without Redis (nothing is counted then). The trend, apart from the period: every day kept (KEEP_DAYS), for the
+// chart that zooms by week, month or year: { since (the first day with counts), sent, problems, unanswered } of
+// [{ day, value }]; `unanswered`: the day's searches (`value`), how many found nothing (`empty`) and how many ended in
+// an error (`failed`).
+// The searches' trend is the overview's (server/admin/stats).
 export const getUsageStats = async (period = DEFAULT_USAGE_PERIOD) => {
-  const store = redis();
-  const dayList = daysOf(Number(period));
-  if (!store) return { available: false, period, days: dayList.length };
-  const batch = store.pipeline();
-  for (const day of dayList) batch.hgetall(metricsKey(day));
-  const answers = await batch.exec();
-  const days = dayList.map((day, index) => ({ day, counts: answers[index], read: reader(answers[index]) }));
+  const count = Number(period);
+  const allDays = await readMetricDays(daysOf(KEEP_DAYS));
+  if (!allDays) return { available: false, period, days: count };
+  const days = allDays.slice(-count);
 
   const searches = SEARCH_MODES.map((mode) => searchesOf(mode, days)).sort((first, second) => second.total - first.total);
   const airlines = AIRLINES.map((airline) => airlineOf(airline, days));
-  const each = (valueOf) => days.map((day) => ({ day: day.day, value: valueOf(day) }));
+  const each = (valueOf) => allDays.map((day) => ({ day: day.day, value: valueOf(day) }));
   return {
     available: true,
     period,
-    days: dayList.length,
+    days: count,
     searches,
     airlines,
-    daily: {
-      searches: each((day) => sum(SEARCH_MODES.map((mode) => day.read(`search:${mode}`)))),
+    trend: {
+      since: firstCounted(allDays),
       sent: each((day) => sum(AIRLINES.flatMap((airline) => ["asked", "blocked", "error"].map((outcome) => day.read(`airline:${airline}:${outcome}`))))),
+      unanswered: allDays.map((day) => {
+        const fields = Object.keys(day.counts ?? {});
+        return {
+          day: day.day,
+          value: sum(SEARCH_MODES.map((mode) => day.read(`search:${mode}`))),
+          empty: sum(SEARCH_MODES.map((mode) => day.read(`search:${mode}:empty`))),
+          failed: sum(fields.filter((field) => /^search:[^:]+:fail:/.test(field)).map(day.read)),
+        };
+      }),
       problems: each((day) => sum(AIRLINES.flatMap((airline) => ["blocked", "error", "paused", "busy"].map((outcome) => day.read(`airline:${airline}:${outcome}`))))),
     },
   };

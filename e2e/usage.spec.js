@@ -47,7 +47,16 @@ test.describe("usage", () => {
         await expect(page.getByText("Sin vuelos a ese destino")).toBeVisible();
         await expect(page.getByRole("rowheader", { name: /Ryanair/ })).toBeVisible();
         await expect(page.getByRole("rowheader", { name: /Wizz Air/ })).toBeVisible();
-        await expect(page.getByRole("heading", { name: "Día a día" })).toBeVisible();
+        // The trend: the requests to the airlines and the problems (the searches' is on the overview)
+        const trend = page.locator("section").filter({ has: page.getByRole("heading", { name: "Evolución" }) });
+        await expect(trend.getByRole("tab")).toHaveText(["Peticiones", "Problemas", "Fallidas"]);
+        // The searches that ended badly, as shares: one counted today found no flights
+        await trend.getByRole("tab", { name: "Fallidas" }).click();
+        await expect(trend.getByText(/^de \d+ búsquedas$/)).toBeVisible();
+        await expect(trend.locator("li").filter({ hasText: "Sin resultados" })).toContainText("%");
+        await expect(trend.locator("li").filter({ hasText: "Con error" })).toContainText("%");
+        await trend.getByRole("button", { name: "Año" }).click();
+        await expect(trend.getByText("Últimos 12 meses, por semanas", { exact: true })).toBeVisible();
         await expectNoSidewaysScroll(page);
 
         // Another period, kept in the address

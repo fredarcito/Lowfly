@@ -3,13 +3,13 @@ import PeriodSelect from "@/components/admin/PeriodSelect";
 import AirlineHealth from "@/components/admin/AdminUsage/components/AirlineHealth";
 import SearchModes from "@/components/admin/AdminUsage/components/SearchModes";
 import TopFails from "@/components/admin/AdminUsage/components/TopFails";
-import UsageDaily from "@/components/admin/AdminUsage/components/UsageDaily";
+import UsageTrend from "@/components/admin/AdminUsage/components/UsageTrend";
 import { adminTexts } from "@/components/admin/data/texts";
 import { adminFormat } from "@/components/admin/data/format";
 
 // The admin's "Uso" page for a period (server/admin/usage): which kinds of search people use and how they end, and
 // how the airlines answer. The headline numbers, the searches by kind next to the errors they end with, the airlines
-// and the period day by day.
+// and the trend (with its own zoom: week, month or year).
 const AdminUsage = ({ stats, periods, lang }) => {
   const texts = adminTexts(lang).usage;
   const formats = adminFormat(lang);
@@ -32,7 +32,7 @@ const AdminUsage = ({ stats, periods, lang }) => {
     );
   }
 
-  const { searches, airlines, daily } = stats;
+  const { searches, airlines, trend } = stats;
   const total = searches.reduce((sum, search) => sum + search.total, 0);
   const empty = searches.reduce((sum, search) => sum + search.empty, 0);
   const failed = searches.reduce((sum, search) => sum + search.failed, 0);
@@ -62,7 +62,7 @@ const AdminUsage = ({ stats, periods, lang }) => {
       </div>
 
       <AirlineHealth airlines={airlines} lang={lang} />
-      <UsageDaily daily={daily} />
+      <UsageTrend trend={trend} />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import { NOT_FOUND_ERRORS, expect, test } from "./helpers/test.js";
+import { INDEX_NOW_KEY } from "../src/constants/site.js";
 
 // What search engines read: every page says its own address and its other language (none claims to be the home),
 // the visitor's own pages stay out of the results, and robots.txt lets them read a shared trip's noindex
@@ -105,5 +106,13 @@ test.describe("seo", () => {
       await page.goto("/es/shared/not-a-share");
       await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "noindex, nofollow");
     });
+  });
+
+  // IndexNow (server/indexNow) reads this file to check that the pages we announce are ours
+  test("IndexNow's key is served at its address, as plain text", async ({ request }) => {
+    const response = await request.get(`/${INDEX_NOW_KEY}.txt`);
+    expect(response.status()).toBe(200);
+    expect(response.headers()["content-type"]).toContain("text/plain");
+    expect((await response.text()).trim()).toBe(INDEX_NOW_KEY);
   });
 });

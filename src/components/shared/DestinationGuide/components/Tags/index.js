@@ -18,7 +18,7 @@ const Tags = ({ tags, plain = false, className }) => {
     );
   }
   return (
-    <ul className={cn("flex flex-wrap gap-1.5", className)}>
+    <ul className={cn("flex flex-wrap items-start gap-1.5", className)}>
       {tags.map((tag) => (
         <li key={tag} className="rounded-full bg-selected px-2.5 py-0.5 text-xs font-medium text-primary-ink">
           {tag}

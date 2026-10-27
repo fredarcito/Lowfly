@@ -25,7 +25,7 @@ const DestinationGuide = ({ code, tagsOnly = false, collapsible = false, foldOnP
   const foldedOnPhones = foldOnPhones && !expanded;
   const toggle = () => setExpanded((current) => !current);
   return (
-    <div className={cn("grid gap-3 pb-3 duration-300 animate-in fade-in motion-reduce:animate-none", className)}>
+    <div className={cn("grid content-start gap-3 pb-3 duration-300 animate-in fade-in motion-reduce:animate-none", className)}>
       <div className="flex items-end gap-3">
         <p
           ref={foldOnPhones ? foldedText.textRef : undefined}

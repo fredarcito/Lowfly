@@ -43,7 +43,7 @@ const StopoverBest = ({ trip, origin }) => {
       <div className="grid gap-5 [grid-template-areas:'head''price''way'] lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-x-6 lg:[grid-template-areas:'head_price''way_price']">
         <div className="flex gap-3 [grid-area:head]">
           <MapPin className="mt-1 size-6 shrink-0 fill-foreground stroke-card sm:size-7" />
-          <div className="grid min-w-0 gap-1">
+          <div className="grid min-w-0 content-start gap-1">
             <h2 className="font-heading text-2xl leading-tight font-bold tracking-tight text-balance sm:text-3xl">{title}</h2>
             <p className="text-muted-foreground sm:text-lg">
               {trip.country} · {dates}

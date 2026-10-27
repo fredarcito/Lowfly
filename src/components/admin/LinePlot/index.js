@@ -12,9 +12,11 @@ const anchorOf = (index, count) => (index < count * 0.2 ? "left-0" : index > cou
 // A trend's points as lines over one scale with guide lines, the first on top (with `area`, a soft fill under it).
 // Hovering a point marks it on every line and shows its date and each line's value. `points`: [{ from, …keys }];
 // `lines`: [{ key, label, color, dash?, area?, noteOf? }] (`noteOf(point)`: beside its value in the tooltip, as a
-// share's count); `write`/`writeTick`: a value in the tooltip / on the scale (`whole` false for dollars or shares);
+// share's count); `total`: { key, label, noteOf? }, when the lines add up, closes the tooltip with their sum (a line
+// with its key moves there);
+// `write`/`writeTick`: a value in the tooltip / on the scale (`whole` false for dollars or shares);
 // `labelOf(point)`: its date for the tooltip; `axisOf(point, last)`: for the dates under the lines.
-const LinePlot = ({ points, lines, whole = true, write, writeTick, labelOf, axisOf }) => {
+const LinePlot = ({ points, lines, total, whole = true, write, writeTick, labelOf, axisOf }) => {
   const top = scaleTop(Math.max(...lines.flatMap((line) => points.map((point) => point[line.key]))), whole);
   const half = top / 2;
   const ticks = !whole || Number.isInteger(half) ? [top, half, 0] : [top, 0];
@@ -24,6 +26,9 @@ const LinePlot = ({ points, lines, whole = true, write, writeTick, labelOf, axis
   const pathOf = (key) => points.map((point, index) => `${index ? "L" : "M"}${xOf(index)},${yOf(point[key])}`).join(" ");
   const dots = count <= ALWAYS_DOTS;
   const single = lines.length === 1;
+  // A line that is the total itself (the itineraries') closes the tooltip as the sum, with its colour
+  const totalLine = total && lines.find((line) => line.key === total.key);
+  const rows = totalLine ? lines.filter((line) => line !== totalLine) : lines;
 
   return (
     <div aria-hidden className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-3">
@@ -93,7 +98,7 @@ const LinePlot = ({ points, lines, whole = true, write, writeTick, labelOf, axis
                   )}
                 </span>
                 {!single &&
-                  lines.map((line) => (
+                  rows.map((line) => (
                     <span key={line.key} className="flex items-center gap-1.5 text-muted-foreground">
                       <span className={cn("w-2.5 border-t-2", line.dash && "border-dashed")} style={{ borderColor: line.color }} />
                       {line.label}
@@ -103,6 +108,16 @@ const LinePlot = ({ points, lines, whole = true, write, writeTick, labelOf, axis
                       </span>
                     </span>
                   ))}
+                {total && (
+                  <span className="mt-0.5 flex items-center gap-1.5 border-t border-foreground/10 pt-0.5 text-muted-foreground">
+                    <span className={cn("w-2.5", totalLine && "border-t-2")} style={totalLine && { borderColor: totalLine.color }} />
+                    {total.label}
+                    <span className="ml-auto pl-3 font-semibold text-popover-foreground tabular-nums">
+                      {write(point[total.key])}
+                      {total.noteOf && <span className="font-normal text-muted-foreground"> · {total.noteOf(point)}</span>}
+                    </span>
+                  </span>
+                )}
               </span>
             </div>
           );

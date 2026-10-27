@@ -42,6 +42,9 @@ const TrendChart = ({ trend }) => {
     : byMode
       ? SEARCH_MODES.map((mode) => ({ key: mode, label: all.usage.modes[mode], value: format.count(totals[mode]), ...SEARCH_MODE_LINES[mode] }))
       : [{ key: "value", label: texts.seriesTitle[series], color: "var(--primary)", area: true }];
+  // The kinds add up to all the searches; the itineraries' total is already a line, which closes the tooltip
+  const total = byMode ? { key: "value", label: texts.legend.total } : null;
+  const tooltipTotal = split ? { key: "value", label: texts.legend.total } : total;
 
   return (
     <section className="grid min-w-0 content-start gap-5 rounded-xl bg-card p-5 ring-1 ring-foreground/10 sm:p-6">
@@ -85,6 +88,7 @@ const TrendChart = ({ trend }) => {
       <LinePlot
         points={points}
         lines={lines}
+        total={tooltipTotal}
         whole={!money}
         write={write}
         writeTick={money ? format.moneyScale : format.count}
@@ -106,6 +110,7 @@ const TrendChart = ({ trend }) => {
                   {line.label}
                 </th>
               ))}
+              {total && <th scope="col">{total.label}</th>}
             </tr>
           </thead>
           <tbody>
@@ -115,6 +120,7 @@ const TrendChart = ({ trend }) => {
                 {lines.map((line) => (
                   <td key={line.key}>{write(point[line.key])}</td>
                 ))}
+                {total && <td>{write(point[total.key])}</td>}
               </tr>
             ))}
           </tbody>

@@ -11,7 +11,8 @@ const shareOf = (part, whole) => (whole ? part / whole : 0);
 
 // One of the usage trend's figures at a zoom, ready to draw: its points, lines, headline and how to write its values.
 // Requests and problems are counts; the searches that ended badly, shares of that day's (or week's) searches, one
-// line with no results and one with an error, their counts in the tooltip and the searches beside the date.
+// line with no results and one with an error, their counts and their sum in the tooltip and the searches beside the
+// date.
 export const useUsageSeries = (trend, series, zoom) => {
   const { texts: all, format } = useAdmin();
   const texts = all.usage;
@@ -32,6 +33,7 @@ export const useUsageSeries = (trend, series, zoom) => {
     ...point,
     emptyShare: shareOf(point.empty, point.value),
     failedShare: shareOf(point.failed, point.value),
+    badShare: shareOf(point.empty + point.failed, point.value),
   }));
   const badShare = (sums) => shareOf(sums.empty + sums.failed, sums.value);
   return {
@@ -43,6 +45,8 @@ export const useUsageSeries = (trend, series, zoom) => {
       noteOf: (point) => format.count(point[outcome]),
       ...OUTCOME_LINES[outcome],
     })),
+    // Both ways of ending badly, together
+    total: { key: "badShare", label: all.dashboard.legend.total, noteOf: (point) => format.count(point.empty + point.failed) },
     headline: {
       total: badShare(totals),
       // Against the range before, only when it had searches

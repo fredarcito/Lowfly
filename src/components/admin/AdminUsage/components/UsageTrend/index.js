@@ -22,7 +22,7 @@ const UsageTrend = ({ trend }) => {
   const texts = all.usage;
   const [series, setSeries] = useState("sent");
   const [zoom, setZoom] = useState("month");
-  const { points, lines, headline, write, writeTick, whole, labelOf, axisOf } = useUsageSeries(trend, series, zoom);
+  const { points, lines, total, headline, write, writeTick, whole, labelOf, axisOf } = useUsageSeries(trend, series, zoom);
 
   return (
     <section className="grid min-w-0 content-start gap-5 rounded-xl bg-card p-5 ring-1 ring-foreground/10 sm:p-6">
@@ -50,7 +50,7 @@ const UsageTrend = ({ trend }) => {
       <TrendHeadline title={texts.seriesTitle[series]} points={points.length} zoom={zoom} {...headline} />
       {lines.length > 1 && <ChartLegend lines={lines} />}
 
-      <LinePlot points={points} lines={lines} whole={whole} write={write} writeTick={writeTick} labelOf={labelOf} axisOf={axisOf} />
+      <LinePlot points={points} lines={lines} total={total} whole={whole} write={write} writeTick={writeTick} labelOf={labelOf} axisOf={axisOf} />
 
       {/* A table ignores the 1px box of sr-only: its wrapper hides it */}
       <div className="sr-only">
@@ -66,6 +66,7 @@ const UsageTrend = ({ trend }) => {
                   {line.label}
                 </th>
               ))}
+              {total && <th scope="col">{total.label}</th>}
             </tr>
           </thead>
           <tbody>
@@ -78,6 +79,11 @@ const UsageTrend = ({ trend }) => {
                     {line.noteOf && ` (${line.noteOf(point)})`}
                   </td>
                 ))}
+                {total && (
+                  <td>
+                    {write(point[total.key])} ({total.noteOf(point)})
+                  </td>
+                )}
               </tr>
             ))}
           </tbody>

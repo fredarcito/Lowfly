@@ -55,6 +55,8 @@ test.describe("usage", () => {
         await expect(trend.getByText(/^de \d+ búsquedas$/)).toBeVisible();
         await expect(trend.locator("li").filter({ hasText: "Sin resultados" })).toContainText("%");
         await expect(trend.locator("li").filter({ hasText: "Con error" })).toContainText("%");
+        // …and both together, each day
+        await expect(trend.locator("th").getByText("Total", { exact: true })).toHaveCount(1);
         await trend.getByRole("button", { name: "Año" }).click();
         await expect(trend.getByText("Últimos 12 meses, por semanas", { exact: true })).toBeVisible();
         await expectNoSidewaysScroll(page);

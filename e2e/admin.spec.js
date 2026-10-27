@@ -84,6 +84,8 @@ test.describe("admin", () => {
       await page.getByRole("tab", { name: "Búsquedas" }).click();
       await expect(page.locator("li").filter({ hasText: "Recorridos" })).toContainText(/\d+/);
       await expect(page.locator("li").filter({ hasText: "A un destino" })).toBeVisible();
+      // …and their sum beside each day's (in the tooltip and the screen readers' table)
+      await expect(page.locator("th").getByText("Total", { exact: true })).toHaveCount(1);
       // Zoomed by week, month (the default) or year, apart from the page's period
       await expect(page.getByRole("button", { name: "Mes" })).toHaveAttribute("aria-pressed", "true");
       await expect(page.locator("p").getByText("Últimos 30 días", { exact: true })).toBeVisible();

@@ -5,6 +5,7 @@ import { refreshOrigin } from "@/server/flightRoutes/refresh";
 import { snapshotTimes } from "@/server/flightRoutes/snapshots";
 import { isCronRequest } from "@/server/cron";
 import { announcePages } from "@/server/indexNow";
+import { changedContent } from "@/server/contentChanges";
 import { ROUTES } from "@/constants/routes";
 import { LOCALES } from "@/i18n/config";
 
@@ -15,7 +16,8 @@ import { LOCALES } from "@/i18n/config";
 // answer, or one left when a run's time was up).
 // The airports written are told to IndexNow (server/indexNow): their page (its prices changed) and their new routes,
 // in every language. The other route pages wait for the sitemap's lastmod: announcing all of them every night would
-// teach the search engines to ignore us.
+// teach the search engines to ignore us. With them, the city guides and multi-city routes new or changed since the
+// last deploy (server/contentChanges), remembered once IndexNow has them.
 // ?origin=MLA: only that airport, however fresh (by hand, and the tests).
 export const maxDuration = 300;
 
@@ -60,7 +62,9 @@ export const GET = async (request) => {
     .filter((result) => !result.kept)
     .flatMap((result) => [result.slug, ...result.added])
     .flatMap((slug) => LOCALES.map((lang) => ROUTES.flightRoute(lang, slug)));
-  const indexNow = await announcePages(changed);
+  const content = await changedContent();
+  const indexNow = await announcePages([...changed, ...content.paths]);
+  if (indexNow.sent) await content.save();
 
   const handled = new Set([...done.map((result) => result.origin), ...errors.map((result) => result.origin)]);
   return NextResponse.json(

@@ -24,8 +24,10 @@ test.describe("route pages' cron", () => {
     expect(done).toHaveLength(1);
     expect(done[0]).toMatchObject({ origin: "MLA", slug: "malta", failed: [] });
     expect(done[0].routes).toBeGreaterThan(30);
-    // IndexNow: the airport's page and its new routes, in each language; only production sends them
-    expect(indexNow).toEqual({ urls: 2 * (1 + done[0].added.length), sent: false });
+    // IndexNow: the airport's page and its new routes in each language, plus the guides and multi-city routes it has
+    // not been told about (all of them here: only production sends, and remembers them once sent)
+    expect(indexNow.sent).toBe(false);
+    expect(indexNow.urls).toBeGreaterThan(2 * (1 + done[0].added.length));
     // The page: its cheapest month and flight time, from what was just saved (the weekday is no longer shown)
     await page.goto("/es/flights/malta-barcelona");
     const facts = page.getByRole("heading", { name: "Ficha de la ruta" }).locator("..");

@@ -5,7 +5,7 @@ import { getDestinations } from "@/server/flights";
 import { getAirports } from "@/server/airports";
 import { regionOf } from "@/server/flightRoutes/regions";
 import { originMonths, routeMonths } from "@/server/flightRoutes/prices";
-import { readOrigin, saveSnapshot } from "@/server/flightRoutes/snapshots";
+import { saveSnapshot } from "@/server/flightRoutes/snapshots";
 import { LOCALES } from "@/i18n/config";
 import { normalize } from "@/utils/format";
 
@@ -82,22 +82,18 @@ const infoOf = async (origin) => {
   return info;
 };
 
-// Builds and saves `origin`'s snapshot: { origin, slug (its page's), routes (how many), added (the slugs of the
-// routes it did not have before), failed }. When a live airline did not answer, a snapshot already saved (`saved`
-// true) is kept rather than replaced by a worse one: { …, kept: true }.
+// Builds and saves `origin`'s snapshot: { origin, slug (its page's), routes (how many), failed }. When a live airline
+// did not answer, a snapshot already saved (`saved` true) is kept rather than replaced by a worse one: { …, kept: true }.
 export const refreshOrigin = async (origin, { saved = false } = {}) => {
-  const [info, { routes, failed: routesFailed }, { months, failed: pricesFailed }, before] = await Promise.all([
+  const [info, { routes, failed: routesFailed }, { months, failed: pricesFailed }] = await Promise.all([
     infoOf(origin),
     routesOf(origin),
     originMonths(origin),
-    saved ? readOrigin(origin, "en") : null,
   ]);
   const failed = [...new Set([...routesFailed, ...pricesFailed])];
   if (!info || !routes.en.length) throw new Error(`No routes found from ${origin}`);
-  const known = new Set((before?.routes ?? []).map((route) => route.slug));
-  const added = routes.en.map((route) => route.slug).filter((slug) => !known.has(slug));
-  const summary = { origin, slug: info.en.slug, routes: routes.en.length, added, failed };
-  if (failed.length && saved) return { ...summary, added: [], kept: true };
+  const summary = { origin, slug: info.en.slug, routes: routes.en.length, failed };
+  if (failed.length && saved) return { ...summary, kept: true };
   const prices = Object.fromEntries(
     routes.en.map((route) => [route.slug, routeMonths(route, months)]).filter(([, routePrices]) => routePrices)
   );

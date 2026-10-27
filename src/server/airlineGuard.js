@@ -9,6 +9,7 @@
 // Without Redis, only this instance's memory and the requests already on their way in it are shared. Only called
 // from the server.
 // Every answer is counted for the admin's "Uso" page (server/metrics): `airline:<airline>:<outcome>`, see OUTCOMES.
+import { AsyncLocalStorage } from "node:async_hooks";
 import { countMetric } from "@/server/metrics";
 import { redis, redisKey } from "@/server/redis";
 
@@ -52,8 +53,20 @@ export class AirlineBlocked extends Error {
   }
 }
 
+// The guard's Redis: a deploy's (production, previews), and the dev server's only with AIRLINE_GUARD_REDIS=1 (the
+// guard's own tests). Every environment shares the database's free commands, and a local run's searches share
+// nothing with anyone: without it, the dev server keeps its answers in Next's cache and paces itself alone.
+const deployed = () => Boolean(process.env.VERCEL_ENV) && process.env.VERCEL_ENV !== "development";
+const guardStore = () => (deployed() || process.env.AIRLINE_GUARD_REDIS === "1" ? redis() : null);
+
 // The fetch options for an airline request: with Redis the answer is kept there, so not in Next's cache too
-export const fetchCacheOptions = (revalidate) => (redis() ? { cache: "no-store" } : { next: { revalidate } });
+export const fetchCacheOptions = (revalidate) => (guardStore() ? { cache: "no-store" } : { next: { revalidate } });
+
+// Requests made alone (`askAlone`: the route pages' cron, one airport at a time): no other instance is waiting for
+// the same answers, so no lock is taken. The answers are still kept for the visitors (Wizz's month of an airport is
+// the same request as a search's, and serves them while Wizz blocks us), and the pace is still shared.
+const alone = new AsyncLocalStorage();
+export const askAlone = (run) => alone.run(true, run);
 
 // The error for a failed answer, with its status and how long the airline asks us to wait (Retry-After)
 export const responseError = (airline, response) =>
@@ -71,6 +84,21 @@ const block = async (store, airline, status, retryAfter) => {
   const seconds = retryAfter || Math.min(BLOCK_SECONDS * 2 ** (strikes - 1), MAX_BLOCK_SECONDS);
   await safely(() => store.set(redisKey(airline, "blocked"), strikes, { ex: seconds }));
   console.warn(`${airline} blocked us (${status}, strike ${strikes}): pausing its requests for ${seconds}s`);
+};
+
+// Without Redis, this instance's own count of this second's requests: airline → { second, count }
+const localTurns = new Map();
+
+// Waits for a free slot in this instance's quota of this second (without Redis)
+const takeLocalTurn = async (airline, perSecond) => {
+  for (;;) {
+    const second = Math.floor(Date.now() / 1000);
+    const turn = localTurns.get(airline);
+    const count = turn?.second === second ? turn.count + 1 : 1;
+    localTurns.set(airline, { second, count });
+    if (count <= perSecond) return;
+    await sleep((second + 1) * 1000 - Date.now());
+  }
 };
 
 // Waits for a free slot in this second's quota; gives up (an error) after MAX_TURN_WAIT_MS
@@ -102,8 +130,13 @@ const awaitAnswer = async (store, cacheKey, lockKey, after) => {
 // The answer for `key`: { at, data, stale }. at: when the airline gave it; stale: an old one, served because the
 // airline failed or blocks us
 const load = async (airline, key, request, { fresh, keep, perSecond }) => {
-  const store = redis();
-  if (!store) return { at: Date.now(), data: await request() };
+  const store = guardStore();
+  if (!store) {
+    await takeLocalTurn(airline, perSecond);
+    const data = await request();
+    count(airline, "asked");
+    return { at: Date.now(), data };
+  }
 
   const cacheKey = redisKey(airline, "cache", key);
   const lockKey = redisKey(airline, "lock", key);
@@ -116,8 +149,8 @@ const load = async (airline, key, request, { fresh, keep, perSecond }) => {
   let locked = false;
   try {
     if (await isBlocked(store, airline)) throw new AirlineBlocked(airline);
-    locked = Boolean(await safely(() => store.set(lockKey, 1, { nx: true, px: LOCK_MS }), true));
-    if (!locked) {
+    locked = !alone.getStore() && Boolean(await safely(() => store.set(lockKey, 1, { nx: true, px: LOCK_MS }), true));
+    if (!locked && !alone.getStore()) {
       const answer = await awaitAnswer(store, cacheKey, lockKey, cached?.at ?? 0);
       if (answer) {
         count(airline, "cached");

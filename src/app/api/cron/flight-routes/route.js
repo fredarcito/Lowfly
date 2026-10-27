@@ -4,8 +4,9 @@ import { ROUTE_ORIGINS } from "@/server/flightRoutes/routes";
 import { refreshOrigin } from "@/server/flightRoutes/refresh";
 import { snapshotTimes } from "@/server/flightRoutes/snapshots";
 import { isCronRequest } from "@/server/cron";
+import { askAlone } from "@/server/airlineGuard";
 import { announcePages } from "@/server/indexNow";
-import { changedContent } from "@/server/contentChanges";
+import { changedPages } from "@/server/pageChanges";
 import { ROUTES } from "@/constants/routes";
 import { LOCALES } from "@/i18n/config";
 
@@ -14,10 +15,10 @@ import { LOCALES } from "@/i18n/config";
 // Cron calls it (vercel.json) with CRON_SECRET as a bearer token. On the Hobby plan a cron runs once a day, so there
 // are three an hour apart: the later ones only write what is still old (an airport kept because an airline did not
 // answer, or one left when a run's time was up).
-// The airports written are told to IndexNow (server/indexNow): their page (its prices changed) and their new routes,
-// in every language. The other route pages wait for the sitemap's lastmod: announcing all of them every night would
-// teach the search engines to ignore us. With them, the city guides and multi-city routes new or changed since the
-// last deploy (server/contentChanges), remembered once IndexNow has them.
+// IndexNow (server/indexNow) is told about the airports written (their page: its prices changed) and every page new,
+// edited or gone since it was last told (server/pageChanges: from the sitemap, so a new kind of page needs nothing
+// here), remembered once IndexNow has them. The other route pages wait for the sitemap's lastmod: announcing all of
+// them every night would teach the search engines to ignore us.
 // ?origin=MLA: only that airport, however fresh (by hand, and the tests).
 export const maxDuration = 300;
 
@@ -44,7 +45,8 @@ export const GET = async (request) => {
   for (const origin of queue) {
     if (Date.now() - started > BUDGET_MS) break;
     try {
-      done.push(await refreshOrigin(origin, { saved: writtenAt.has(origin) }));
+      // One airport at a time: no lock needed for its requests (server/airlineGuard)
+      done.push(await askAlone(() => refreshOrigin(origin, { saved: writtenAt.has(origin) })));
     } catch (error) {
       console.error("Route pages of", origin, error.message);
       errors.push({ origin, error: error.message });
@@ -57,14 +59,12 @@ export const GET = async (request) => {
     revalidatePath("/[lang]/flights/[route]", "page");
     revalidatePath("/sitemap.xml");
   }
-  // The pages that changed: every airport written, with its new routes, in every language
-  const changed = done
-    .filter((result) => !result.kept)
-    .flatMap((result) => [result.slug, ...result.added])
-    .flatMap((slug) => LOCALES.map((lang) => ROUTES.flightRoute(lang, slug)));
-  const content = await changedContent();
-  const indexNow = await announcePages([...changed, ...content.paths]);
-  if (indexNow.sent) await content.save();
+  // The pages that changed: every airport written (its prices), in every language, and the site's new, edited or
+  // gone pages
+  const airports = done.filter((result) => !result.kept).flatMap((result) => LOCALES.map((lang) => ROUTES.flightRoute(lang, result.slug)));
+  const pages = await changedPages();
+  const indexNow = await announcePages([...airports, ...pages.paths]);
+  if (indexNow.sent) await pages.save();
 
   const handled = new Set([...done.map((result) => result.origin), ...errors.map((result) => result.origin)]);
   return NextResponse.json(

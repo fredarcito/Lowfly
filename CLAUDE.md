@@ -37,6 +37,8 @@ These apply to every file of the project (except shadcn's `src/components/ui/`).
 - Browser tests live in `e2e/` (Playwright): `pnpm test:e2e` runs them all, `pnpm test:e2e:quick` leaves out the
   ones tagged `@live` (real searches at Ryanair and Wizz: slow, and they depend on the airlines answering).
   `pnpm test:e2e:report` opens the last report. They use the dev server on port 3001 (started if it is not running).
+- The dev server's airline guard does not use Redis (every environment shares its free commands): it keeps answers in
+  Next's cache. The guard's own tests (`e2e/airline-guard.spec.js`) need `AIRLINE_GUARD_REDIS=1` on the dev server.
 - Every page in a test fails on an uncaught error or a console error (`e2e/helpers/test.js`).
 - Dates are counted from today (`dayFromNow`), never fixed. Tests that need an account create a temporary one
   and delete it (`e2e/helpers/accounts.js`; needs the Supabase secret key in `.env.local`).

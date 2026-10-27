@@ -5,11 +5,15 @@ import { dayFromNow } from "./helpers/trips.js";
 test.describe("search @live", () => {
   test.describe.configure({ timeout: 240_000 });
 
-  // Anywhere from Malta, in the coming weeks: return (2 to 4 nights) and one way
+  // Anywhere from Malta, in the coming weeks: return (2 to 4 nights) and one way. Each kind of search has its page
+  // (constants/searchPages)
+  const ANYWHERE = "/es/a-cualquier-sitio";
   const everywhere = {
-    return: `/es?m=everywhere&o=MLA&from=${dayFromNow(5)}&to=${dayFromNow(15)}&trip=return&min=2&maxn=4`,
-    oneWay: `/es?m=everywhere&o=MLA&from=${dayFromNow(30)}&to=${dayFromNow(40)}`,
+    return: `${ANYWHERE}?o=MLA&from=${dayFromNow(5)}&to=${dayFromNow(15)}&trip=return&min=2&maxn=4`,
+    oneWay: `${ANYWHERE}?o=MLA&from=${dayFromNow(30)}&to=${dayFromNow(40)}`,
   };
+  // The results' price calendar (the search modes' descriptions mention one too)
+  const priceCalendar = (page) => page.getByText("Calendario de precios", { exact: true });
 
   for (const viewport of [DESKTOP, PHONE]) {
     test(`to a city, picked in the destination picker (${viewport.width}px)`, async ({ page }) => {
@@ -23,8 +27,9 @@ test.describe("search @live", () => {
       await page.getByRole("option", { name: /^Roma/ }).click();
       await expect(destination).toContainText("Roma");
       await page.getByRole("button", { name: "Buscar" }).click();
-      await expect(page.getByText("Calendario de precios")).toBeVisible({ timeout: 150_000 });
-      expect(new URL(page.url()).searchParams.get("ci")).toBe("Roma");
+      await expect(priceCalendar(page)).toBeVisible({ timeout: 150_000 });
+      // The address keeps the search (written as the results come, so waited for)
+      await expect(page).toHaveURL(/[?&]ci=Roma(&|$)/);
     });
   }
 
@@ -32,12 +37,17 @@ test.describe("search @live", () => {
     await page.setViewportSize(DESKTOP);
     await openWith(page, "/es", { origin: "BUD" });
     await page.getByRole("tab", { name: /destino/i }).click();
-    await expect(page.locator("#country")).toBeEnabled({ timeout: 60_000 });
+    const destination = page.locator("#country");
+    await expect(destination).toBeEnabled({ timeout: 60_000 });
+    // Rome, which has weekend flights from Budapest (the first country listed may have none)
+    await destination.click();
+    await page.locator('input[role="combobox"]').fill("rom");
+    await page.getByRole("option", { name: /^Roma/ }).click();
     await page.getByRole("radio", { name: /Ida y vuelta/ }).click();
     await page.getByRole("button", { name: /Solo findes/ }).click();
     await page.getByRole("button", { name: "Buscar" }).click();
-    await expect(page.getByText("Calendario de precios")).toBeVisible({ timeout: 150_000 });
-    expect(new URL(page.url()).searchParams.get("wk")).toBe("1");
+    await expect(priceCalendar(page)).toBeVisible({ timeout: 150_000 });
+    await expect(page).toHaveURL(/[?&]wk=1(&|$)/);
   });
 
   for (const [name, url] of Object.entries(everywhere)) {
@@ -51,7 +61,7 @@ test.describe("search @live", () => {
         await expect(page.getByText("Y te preparamos el itinerario día a día").filter({ visible: true }).first()).toBeVisible();
         await page.getByRole("button", { name: "Guardar viaje" }).filter({ visible: true }).first().click();
         await expect(page.getByRole("link", { name: "Prepárame el itinerario" }).filter({ visible: true }).first()).toBeVisible();
-        expect(new URL(page.url()).searchParams.get("m")).toBe("everywhere");
+        expect(new URL(page.url()).pathname).toBe(ANYWHERE);
       });
     }
   }
@@ -92,9 +102,8 @@ test.describe("search @live", () => {
     expect(new Set(photoRequests).size).toBe(photoRequests.length);
     await page.getByRole("button", { name: /Ver todos los destinos/ }).click();
     await expect(page.getByRole("heading", { name: /^\d+ destinos?$/ })).toBeVisible({ timeout: 150_000 });
-    const params = new URL(page.url()).searchParams;
-    expect(params.get("m")).toBe("everywhere");
-    expect(params.get("wk")).toBe("1");
+    // From the home, to the search's own page, with the weekends in the address (written as the search starts)
+    await expect(page).toHaveURL(/\/es\/a-cualquier-sitio\?(.*&)?wk=1(&|$)/);
   });
 });
 

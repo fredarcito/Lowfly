@@ -24,10 +24,11 @@ test.describe("route pages' cron", () => {
     expect(done).toHaveLength(1);
     expect(done[0]).toMatchObject({ origin: "MLA", slug: "malta", failed: [] });
     expect(done[0].routes).toBeGreaterThan(30);
-    // IndexNow: the airport's page and its new routes in each language, plus the guides and multi-city routes it has
-    // not been told about (all of them here: only production sends, and remembers them once sent)
+    // IndexNow: the airport's page in each language, plus every page of the sitemap it has not been told about (all of
+    // them here: only production sends, and remembers them once sent)
     expect(indexNow.sent).toBe(false);
-    expect(indexNow.urls).toBeGreaterThan(2 * (1 + done[0].added.length));
+    const sitemapPages = ((await (await request.get("/sitemap.xml")).text()).match(/<loc>/g) ?? []).length;
+    expect(indexNow.urls).toBeGreaterThanOrEqual(sitemapPages);
     // The page: its cheapest month and flight time, from what was just saved (the weekday is no longer shown)
     await page.goto("/es/flights/malta-barcelona");
     const facts = page.getByRole("heading", { name: "Ficha de la ruta" }).locator("..");
@@ -81,7 +82,8 @@ test.describe("route pages", () => {
     await expect(faq.getByText(/^El vuelo más barato de los próximos seis meses cuesta [\d,]+\s€ solo ida por persona/)).toBeVisible();
     // Several airports: each by its name
     await expect(faq.getByText(/Londres Stansted \(STN\)/)).toBeVisible();
-    await expect(faq.getByRole("link", { name: /Crear itinerario/ })).toHaveAttribute("href", "/es/trips/new?to=STN");
+    // The planner starts in London, at whichever of its airports the airlines list first
+    await expect(faq.getByRole("link", { name: /Crear itinerario/ })).toHaveAttribute("href", /^\/es\/trips\/new\?to=(STN|LGW|LTN|SEN|LHR|LCY)$/);
     // FAQPage: the very questions and answers on the page
     const blocks = (await page.locator('script[type="application/ld+json"]').allTextContents()).map((block) => JSON.parse(block));
     const faqPage = blocks.find((block) => block["@type"] === "FAQPage");

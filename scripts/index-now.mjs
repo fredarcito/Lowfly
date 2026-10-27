@@ -1,8 +1,7 @@
 // Tells IndexNow (Bing, Yandex, Seznam, Naver, Yep) about pages, by hand. Not needed day to day: the route pages'
-// cron tells it every night about the airports, their new routes and the guides and multi-city routes changed since
-// the last deploy (server/indexNow, server/contentChanges). For a page to be told now, or --sitemap: every page in
-// the live sitemap (once, the first time; not every day: the search engines would start ignoring us). Only live
-// pages: run it once the deploy is done.
+// cron tells it every night about the airports and every page new, edited or gone (server/indexNow,
+// server/pageChanges). For a page to be told now, or --sitemap: every page in the live sitemap (not every day: the
+// search engines would start ignoring us). Only live pages: run it once the deploy is done.
 //
 //   node scripts/index-now.mjs /es/guias/roma-3-dias /en/guides/rome-3-days
 //   node scripts/index-now.mjs --sitemap

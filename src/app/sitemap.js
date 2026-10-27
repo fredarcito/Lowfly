@@ -1,43 +1,9 @@
-import { LOCALES } from "@/i18n/config";
-import { ROUTES } from "@/constants/routes";
-import { allRoutes, origins } from "@/server/flightRoutes/routes";
-import { SITE_URL, languagesOf } from "@/utils/metadata";
-import { listCityGuides } from "@/server/cityGuides";
-import { listRoutePages } from "@/server/multiCity/pages";
-import { SEARCH_PAGES } from "@/constants/searchPages";
+import { publishedRoutes, sitemapEntries } from "@/server/sitemap";
 
-// /sitemap.xml: the pages search engines should know, each in every language with its other languages (and
-// x-default): the home, each kind of search's page, the airports' page, every airport's page, every route page, the city guides and the multi-city routes' pages, with when the cron last wrote
-// their prices (lastmod) so the changed ones are read first. Made again once a day, as the routes change.
+// /sitemap.xml: every page search engines should know (server/sitemap). Made again once a day, as the routes change.
+// When the routes cannot be read, the other pages are still listed.
 export const revalidate = 86400;
 
-const absolute = (languages) => Object.fromEntries(Object.entries(languages).map(([lang, path]) => [lang, `${SITE_URL}${path}`]));
-
-// One entry per language of the page `path` (lang → path)
-const entries = (path, priority, lastModified) => {
-  const languages = absolute(languagesOf(path));
-  return LOCALES.map((lang) => ({
-    url: `${SITE_URL}${path(lang)}`,
-    ...(lastModified && { lastModified }),
-    changeFrequency: "daily",
-    priority,
-    alternates: { languages },
-  }));
-};
-
-const sitemap = async () => {
-  const [airports, routes] = await Promise.all([origins("en").catch(() => []), allRoutes("en").catch(() => [])]);
-  const newest = airports.map((origin) => origin.updatedAt).sort().at(-1);
-  return [
-    ...entries(ROUTES.home, 1),
-    ...Object.keys(SEARCH_PAGES).flatMap((mode) => entries((lang) => ROUTES.search(lang, mode), 0.9)),
-    ...entries(ROUTES.flights, 0.8, newest),
-    ...airports.flatMap((origin) => entries((lang) => ROUTES.flightRoute(lang, origin.slug), 0.8, origin.updatedAt)),
-    ...routes.flatMap((route) => entries((lang) => ROUTES.flightRoute(lang, route.slug), 0.7, route.updatedAt)),
-    ...entries(ROUTES.guides, 0.6),
-    ...listCityGuides("en").flatMap((guide) => entries((lang) => ROUTES.guide(lang, guide.slugs[lang] ?? guide.id), 0.7)),
-    ...listRoutePages("en").flatMap((page) => entries((lang) => ROUTES.multiCityRoute(lang, page.slugs[lang] ?? page.id), 0.7)),
-  ];
-};
+const sitemap = async () => sitemapEntries(await publishedRoutes().catch(() => ({ airports: [], routes: [] })));
 
 export default sitemap;

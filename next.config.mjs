@@ -1,2 +1,6 @@
+import { withBotId } from "botid/next/config";
+
 const nextConfig = {};
-export default nextConfig;
+
+// BotID (server/handler: the flight searches): the rewrites its browser check goes through
+export default withBotId(nextConfig);

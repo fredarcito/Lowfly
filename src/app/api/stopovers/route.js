@@ -1,11 +1,11 @@
-import { handle, iata, day, range, stay, country as countryParam, city, lang } from "@/server/handler";
+import { handleSearch, iata, day, range, stay, country as countryParam, city, lang } from "@/server/handler";
 import { stopoversTo } from "@/server/stopovers";
 
 export const maxDuration = 30;
 
 // GET /api/stopovers → trips through a hub to a country or city (server/stopovers), with the country search's
 // parameters; from flexible dates also `outTo` (leave no later) and `backFrom` (fly home no earlier)
-export const GET = handle((params) => {
+export const GET = handleSearch((params) => {
   const from = day(params.get("from"));
   const to = day(params.get("to"));
   range(from, to, 120);

@@ -1,9 +1,9 @@
-import { handle, iata, day, range, stay, maxPrice, lang } from "@/server/handler";
+import { handleSearch, iata, day, range, stay, maxPrice, lang } from "@/server/handler";
 import { everywhere } from "@/server/flights";
 
 export const maxDuration = 30;
 
-export const GET = handle((params) => {
+export const GET = handleSearch((params) => {
   const from = day(params.get("from"));
   const to = day(params.get("to"));
   range(from, to, 180);

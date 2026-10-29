@@ -1,10 +1,10 @@
-import { handle, iata, day, country, city, lang } from "@/server/handler";
+import { handleSearch, iata, day, country, city, lang } from "@/server/handler";
 import { badRequest } from "@/server/errors";
 import { flexible } from "@/server/flights";
 
 export const maxDuration = 30;
 
-export const GET = handle((params) => {
+export const GET = handleSearch((params) => {
   const ida = day(params.get("ida"));
   const vuelta = day(params.get("vuelta"));
   if (vuelta <= ida) throw badRequest("returnBeforeOut");

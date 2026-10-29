@@ -17,3 +17,7 @@ export const redis = () => {
 // Every environment (production, preview, development) shares the database: its keys go under its name, so a test
 // run never touches production's
 export const redisKey = (...parts) => [process.env.VERCEL_ENV ?? "development", ...parts].join(":");
+
+// A deploy (production, previews), not the dev server: what spends the database's free commands on every request
+// (the airline guard, the search limit) uses Redis only there
+export const deployed = () => Boolean(process.env.VERCEL_ENV) && process.env.VERCEL_ENV !== "development";

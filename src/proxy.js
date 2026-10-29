@@ -45,6 +45,7 @@ export const proxy = async (request) => {
 };
 
 export const config = {
-  // Skip the API, Next internals and files (favicon.ico, etc.)
-  matcher: ["/((?!api|_next|.*\\..*).*)"],
+  // Skip the API, Next internals, files (favicon.ico, etc.) and BotID's own paths (botid/next/config's rewrites to
+  // Vercel: never sent to a language)
+  matcher: ["/((?!api|_next|149e9513-01fa-4fb0-aad4-566afd725d1b|.*\\..*).*)"],
 };

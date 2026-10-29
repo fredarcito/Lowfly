@@ -1,7 +1,9 @@
 // Parameter validation and shared response handling for the route handlers
 import { NextResponse } from "next/server";
+import { checkBotId } from "botid/server";
 import { isDay, nightsBetween } from "@/utils/dates";
 import { AppError, badRequest } from "@/server/errors";
+import { limitSearches } from "@/server/searchLimit";
 import { DEFAULT_LOCALE, hasLocale } from "@/i18n/config";
 import { WEEKEND } from "@/constants/weekend";
 
@@ -65,3 +67,14 @@ export const handle = (fn) => {
     }
   };
 };
+
+// `handle` for a flight search (it may ask the airlines, constants/searchRoutes): first, BotID (Vercel's check that a
+// browser asks, set up in instrumentation-client; search engines' verified bots pass), then the visitor's limit
+// (server/searchLimit). A bot gets 403 before it costs anything.
+export const handleSearch = (fn) =>
+  handle(async (params, req) => {
+    const verification = await checkBotId();
+    if (verification.isBot && !verification.isVerifiedBot) throw new AppError("notHuman", {}, 403);
+    await limitSearches(req);
+    return fn(params, req);
+  });

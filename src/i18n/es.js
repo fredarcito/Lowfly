@@ -756,6 +756,9 @@ const es = {
     aiTooLong: ({ max }) => `Por ahora creamos itinerarios de hasta ${max} días.`,
     aiBadTrip: "Faltan datos del viaje para crear el itinerario.",
     multiCityTooShort: ({ min }) => `Para un recorrido necesitas al menos ${min} días libres. Con menos, prueba «A cualquier sitio».`,
+    tooManySearches: "Demasiadas búsquedas seguidas. Espera un minuto y vuelve a probar.",
+    searchesToday: "Has hecho muchas búsquedas hoy. Vuelve a probar mañana.",
+    notHuman: "No pudimos comprobar tu navegador. Recarga la página y vuelve a buscar.",
     unknown: "Algo ha fallado.",
   },
 };

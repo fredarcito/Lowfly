@@ -11,7 +11,7 @@
 // Every answer is counted for the admin's "Uso" page (server/metrics): `airline:<airline>:<outcome>`, see OUTCOMES.
 import { AsyncLocalStorage } from "node:async_hooks";
 import { countMetric } from "@/server/metrics";
-import { redis, redisKey } from "@/server/redis";
+import { deployed, redis, redisKey } from "@/server/redis";
 
 // The answers that mean "too many requests"
 const BLOCKING = [403, 429, 503];
@@ -56,7 +56,6 @@ export class AirlineBlocked extends Error {
 // The guard's Redis: a deploy's (production, previews), and the dev server's only with AIRLINE_GUARD_REDIS=1 (the
 // guard's own tests). Every environment shares the database's free commands, and a local run's searches share
 // nothing with anyone: without it, the dev server keeps its answers in Next's cache and paces itself alone.
-const deployed = () => Boolean(process.env.VERCEL_ENV) && process.env.VERCEL_ENV !== "development";
 const guardStore = () => (deployed() || process.env.AIRLINE_GUARD_REDIS === "1" ? redis() : null);
 
 // The fetch options for an airline request: with Redis the answer is kept there, so not in Next's cache too

@@ -16,5 +16,8 @@ export const SEARCH_ERRORS = [
   "noPrices",
   "outPast",
   "multiCityTooShort",
+  "tooManySearches",
+  "searchesToday",
+  "notHuman",
   "unknown",
 ];

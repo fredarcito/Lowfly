@@ -754,6 +754,9 @@ const en = {
     aiTooLong: ({ max }) => `For now we create itineraries of up to ${max} days.`,
     aiBadTrip: "Some trip details are missing to create the itinerary.",
     multiCityTooShort: ({ min }) => `A route needs at least ${min} free days. Fewer? Try “Anywhere”.`,
+    tooManySearches: "Too many searches in a row. Wait a minute and try again.",
+    searchesToday: "You've made a lot of searches today. Try again tomorrow.",
+    notHuman: "We couldn't verify your browser. Reload the page and search again.",
     unknown: "Something went wrong.",
   },
 };

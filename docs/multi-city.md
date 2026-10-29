@@ -265,6 +265,15 @@ What the routes search adds on top:
    results / none / error code, dates changed from the form's), one Redis hash a day, kept 400 days. The admin's
    "Uso" page (`/admin/usage`, `server/admin/usage`) shows them. If blocks grow, lower `perSecond` before it gets
    worse.
+7. **One visitor cannot take everyone's turns.** `perSecond` is shared by every visitor, so a bot sweeping routes would
+   leave the people searching meanwhile waiting, then "busy". Every search route (`constants/searchRoutes`, through
+   `handleSearch` in `server/handler`) first asks Vercel's BotID (Basic; the browser's side in
+   `src/instrumentation-client.js`) whether a browser is asking: a bot gets 403 `notHuman`, search engines' verified
+   bots pass. Then it counts its visitor (IP) in Redis (`server/searchLimit`): 30 calls a minute and 150 a UTC day,
+   past that 429 `tooManySearches` / `searchesToday`. All three are counted on the "Uso" page as errors. A bot that
+   drives a real browser from many IPs can still get past both (2026-10-29: ~2,700 searches through rotating proxies
+   with one JA4 fingerprint): that one is for Vercel's Firewall (a rule on its JA4, Bot Protection) or BotID's Deep
+   Analysis.
 
 ### 4. Sharing the days out (no prices)
 

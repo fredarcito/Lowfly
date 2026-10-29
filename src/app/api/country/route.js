@@ -1,9 +1,9 @@
-import { handle, iata, day, range, stay, country as countryParam, city, maxPrice, lang } from "@/server/handler";
+import { handleSearch, iata, day, range, stay, country as countryParam, city, maxPrice, lang } from "@/server/handler";
 import { country } from "@/server/flights";
 
 export const maxDuration = 30;
 
-export const GET = handle((params) => {
+export const GET = handleSearch((params) => {
   const from = day(params.get("from"));
   const to = day(params.get("to"));
   range(from, to, 120); // a country with many airports means many requests

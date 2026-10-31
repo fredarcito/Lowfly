@@ -18,7 +18,7 @@ const CREDIT_PLACE = "right-4 bottom-[6.25rem] bg-black/30 sm:right-6";
 // credits it.
 const HeroPhoto = () => {
   const { texts } = useI18n();
-  const photo = useBackgroundLoaded();
+  const { ref: photoRef, loaded } = useBackgroundLoaded();
   return (
     <>
       {/* Two nested masks (fade to the bottom, then to the left) instead of one with two layers */}
@@ -27,10 +27,10 @@ const HeroPhoto = () => {
         className="absolute inset-0 -z-10 opacity-35 mask-[linear-gradient(to_bottom,black_40%,transparent)] md:left-auto md:w-[72%] md:opacity-95 md:mask-[linear-gradient(to_bottom,black_55%,transparent)]"
       >
         <div
-          ref={photo.ref}
+          ref={photoRef}
           className={cn(
             "hero-photo size-full transition-opacity duration-700 ease-out motion-reduce:transition-none md:mask-[linear-gradient(to_right,transparent,rgb(0_0_0/0.04)_15%,rgb(0_0_0/0.18)_30%,rgb(0_0_0/0.5)_45%,rgb(0_0_0/0.85)_58%,black_68%)]",
-            photo.loaded ? "opacity-100" : "opacity-0"
+            loaded ? "opacity-100" : "opacity-0"
           )}
         />
       </div>

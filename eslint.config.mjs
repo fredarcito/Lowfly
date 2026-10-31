@@ -11,11 +11,9 @@ const eslintConfig = defineConfig([
       "prefer-arrow-callback": "error",
       "id-length": ["error", { min: 2, exceptions: ["_"], properties: "never" }],
       "no-unused-vars": ["error", { args: "after-used", ignoreRestSiblings: true, caughtErrors: "none" }],
-      // React Compiler's rules: the code was written before them and does not use the compiler, so for now they
-      // only warn. Fix them as each file is touched, then turn them into errors.
-      "react-hooks/refs": "warn",
+      // React Compiler's setState in an effect: the hooks were written before it, so for now it only warns. Fix
+      // each hook as it is touched, then make it an error like the compiler's other rules.
       "react-hooks/set-state-in-effect": "warn",
-      "react-hooks/static-components": "warn",
     },
   },
   // shadcn's components keep their own style

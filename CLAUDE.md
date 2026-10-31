@@ -3,7 +3,7 @@
 These apply to every file of the project (except shadcn's `src/components/ui/`).
 
 `pnpm lint` (ESLint, `eslint.config.mjs`) checks Next's rules and the ones below it can: arrow functions and names.
-It must end with no errors; React Compiler's rules only warn for now.
+It must end with no errors; React Compiler's `set-state-in-effect` only warns for now.
 
 ## Functions
 - Always named arrow functions: components, helpers, handlers and route handlers

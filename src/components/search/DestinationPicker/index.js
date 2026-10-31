@@ -15,7 +15,7 @@ const DestinationPicker = ({ countries, value, onPick }) => {
   const selectedKey = destinationKey(value);
   const search = useCallback((query) => destinationOptions(countries.list, query), [countries.list]);
   const pick = (option) => onPick({ country: option.country.name, city: option.city?.name ?? "" });
-  const list = useSearchableList({
+  const { listRef, listId, shown, active, setActive, query, changeQuery, onKeyDown } = useSearchableList({
     search,
     startAt: (options) => options.findIndex((option) => destinationKey(option) === selectedKey),
     onPick: pick,
@@ -28,26 +28,26 @@ const DestinationPicker = ({ countries, value, onPick }) => {
       <div className="p-3">
         <SearchBox
           label={texts.destination.search}
-          listId={list.listId}
-          activeId={list.shown[list.active] ? `${list.listId}-${list.active}` : undefined}
-          value={list.query}
-          onChange={list.changeQuery}
-          onKeyDown={list.onKeyDown}
+          listId={listId}
+          activeId={shown[active] ? `${listId}-${active}` : undefined}
+          value={query}
+          onChange={changeQuery}
+          onKeyDown={onKeyDown}
         />
       </div>
 
-      <div ref={list.listRef} id={list.listId} role="listbox" aria-label={texts.form.country} className="min-h-0 flex-1 overflow-y-auto px-1.5 pb-1.5">
-        {list.shown.length === 0 && <p className="p-4 text-center text-sm text-muted-foreground">{texts.destination.none(list.query)}</p>}
-        {list.shown.map((option, index) => (
+      <div ref={listRef} id={listId} role="listbox" aria-label={texts.form.country} className="min-h-0 flex-1 overflow-y-auto px-1.5 pb-1.5">
+        {shown.length === 0 && <p className="p-4 text-center text-sm text-muted-foreground">{texts.destination.none(query)}</p>}
+        {shown.map((option, index) => (
           <DestinationOption
             key={destinationKey(option)}
-            id={`${list.listId}-${index}`}
+            id={`${listId}-${index}`}
             option={option}
             index={index}
-            active={index === list.active}
+            active={index === active}
             selected={destinationKey(option) === selectedKey}
             onPick={() => pick(option)}
-            onHover={() => list.setActive(index)}
+            onHover={() => setActive(index)}
           />
         ))}
       </div>

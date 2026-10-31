@@ -3,7 +3,7 @@
 import { useI18n } from "@/context/i18n";
 import { LOCALE_TAGS } from "@/i18n/config";
 import { degrees } from "@/components/trips/itinerary/ItineraryWeather/data/degrees";
-import { weatherIcon } from "@/components/trips/itinerary/ItineraryWeather/data/icons";
+import { WEATHER_ICONS, weatherKey } from "@/components/trips/itinerary/ItineraryWeather/data/icons";
 
 // The trip's weather in one line: { Icon, parts (["12 to 20 °C", "Some rain"], or each town's temperatures on a
 // route; shown joined by " · ", each never split),
@@ -18,5 +18,5 @@ export const useWeatherSummary = (weather, days) => {
   const range = (town) => words.range(degrees(town.low), degrees(town.high));
   const [first] = weather;
   const parts = weather.length === 1 ? [range(first), words.rain[first.rain]] : weather.map((town) => `${town.city} ${range(town)}`);
-  return { Icon: weatherIcon(first), parts, months };
+  return { Icon: WEATHER_ICONS[weatherKey(first)], parts, months };
 };

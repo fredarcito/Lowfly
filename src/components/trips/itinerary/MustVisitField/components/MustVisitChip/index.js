@@ -2,13 +2,13 @@
 
 import { XIcon } from "lucide-react";
 import { useI18n } from "@/context/i18n";
-import { iconOf } from "@/components/trips/itinerary/MustVisitField/data/categoryIcons";
+import { CATEGORY_ICONS } from "@/components/trips/itinerary/MustVisitField/data/categoryIcons";
 
 // A place chosen: its kind's icon, its name and a button to remove it. Neutral, not coral: the chosen interests
 // and the "Create" button already use it.
 const MustVisitChip = ({ place, onRemove }) => {
   const { texts } = useI18n();
-  const Icon = iconOf(place.category);
+  const Icon = CATEGORY_ICONS[place.category] ?? CATEGORY_ICONS.other;
   return (
     <li className="inline-flex h-10 max-w-full items-center gap-2 rounded-full border border-input bg-card pr-1 pl-3.5 text-sm font-medium duration-200 animate-in fade-in zoom-in-95 motion-reduce:animate-none">
       <Icon className="size-4 shrink-0 text-muted-foreground" />

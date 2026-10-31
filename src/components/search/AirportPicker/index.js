@@ -20,14 +20,14 @@ const AirportPicker = ({ airports, value, onPick }) => {
   const nearest = useNearestAirport();
   const departures = useMemo(() => airports.list.filter((airport) => !airport.destinationOnly), [airports.list]);
   const search = useCallback((query) => searchAirports(departures, query, lang), [departures, lang]);
-  const list = useSearchableList({
+  const { listRef, listId, shown, active, setActive, query, changeQuery, onKeyDown } = useSearchableList({
     search,
     startAt: (options) => options.findIndex((airport) => airport.code === value),
     onPick: (airport) => onPick(airport.code),
   });
-  const browsing = !list.query.trim();
+  const browsing = !query.trim();
   // Browsing: grouped by country; searching: one group without heading
-  const groups = browsing ? groupByCountry(list.shown) : [{ country: "", items: list.shown.map((airport, index) => ({ airport, index })) }];
+  const groups = browsing ? groupByCountry(shown) : [{ country: "", items: shown.map((airport, index) => ({ airport, index })) }];
 
   if (airports.status !== "ok") return <PickerStatus status={airports.status} loading={texts.airport.loading} error={texts.airport.error} />;
 
@@ -36,11 +36,11 @@ const AirportPicker = ({ airports, value, onPick }) => {
       <div className="grid gap-2 p-3">
         <SearchBox
           label={texts.airport.search}
-          listId={list.listId}
-          activeId={list.shown[list.active] ? `${list.listId}-${list.shown[list.active].code}` : undefined}
-          value={list.query}
-          onChange={list.changeQuery}
-          onKeyDown={list.onKeyDown}
+          listId={listId}
+          activeId={shown[active] ? `${listId}-${shown[active].code}` : undefined}
+          value={query}
+          onChange={changeQuery}
+          onKeyDown={onKeyDown}
         />
         {browsing && (
           <Button
@@ -57,22 +57,22 @@ const AirportPicker = ({ airports, value, onPick }) => {
         {nearest.status === "error" && <p className="px-2 text-xs text-destructive">{texts.airport.locateError}</p>}
       </div>
 
-      <div ref={list.listRef} id={list.listId} role="listbox" aria-label={texts.form.origin} className="min-h-0 flex-1 overflow-y-auto px-1.5 pb-1.5">
-        {list.shown.length === 0 && <p className="p-4 text-center text-sm text-muted-foreground">{texts.airport.none(list.query)}</p>}
+      <div ref={listRef} id={listId} role="listbox" aria-label={texts.form.origin} className="min-h-0 flex-1 overflow-y-auto px-1.5 pb-1.5">
+        {shown.length === 0 && <p className="p-4 text-center text-sm text-muted-foreground">{texts.airport.none(query)}</p>}
         {groups.map((group) => (
           <div key={group.country || "results"} role="group" aria-label={group.country || undefined}>
             {browsing && <CountryHeading country={group.country} countryCode={group.countryCode} count={group.items.length} />}
             {group.items.map(({ airport, index }) => (
               <AirportOption
                 key={airport.code}
-                id={`${list.listId}-${airport.code}`}
+                id={`${listId}-${airport.code}`}
                 airport={airport}
                 index={index}
-                active={index === list.active}
+                active={index === active}
                 selected={airport.code === value}
                 withCountry={!browsing}
                 onPick={() => onPick(airport.code)}
-                onHover={() => list.setActive(index)}
+                onHover={() => setActive(index)}
               />
             ))}
           </div>

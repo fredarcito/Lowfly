@@ -27,7 +27,7 @@ const CountryFilter = ({ countries, value, onChange, texts }) => {
     onChange(option.name);
     setOpen(false);
   };
-  const list = useSearchableList({ search, startAt: (options) => options.findIndex((option) => option.name === value), onPick: pick });
+  const { listRef, listId, shown, active, setActive, query, changeQuery, onKeyDown } = useSearchableList({ search, startAt: (options) => options.findIndex((option) => option.name === value), onPick: pick });
 
   const trigger = (
     <Button variant="outline" className="h-12 w-full justify-start gap-3 rounded-xl bg-card px-4 text-left text-sm font-normal">
@@ -43,27 +43,27 @@ const CountryFilter = ({ countries, value, onChange, texts }) => {
         <div className="p-3">
           <SearchBox
             label={texts.countrySearch}
-            listId={list.listId}
-            activeId={list.shown[list.active] ? `${list.listId}-${list.active}` : undefined}
-            value={list.query}
-            onChange={list.changeQuery}
-            onKeyDown={list.onKeyDown}
+            listId={listId}
+            activeId={shown[active] ? `${listId}-${active}` : undefined}
+            value={query}
+            onChange={changeQuery}
+            onKeyDown={onKeyDown}
           />
         </div>
-        <div ref={list.listRef} id={list.listId} role="listbox" aria-label={texts.country} className="min-h-0 flex-1 overflow-y-auto px-1.5 pb-1.5">
-          {list.shown.length === 0 && <p className="p-4 text-center text-sm text-muted-foreground">{texts.noCountry}</p>}
-          {list.shown.map((option, index) => (
+        <div ref={listRef} id={listId} role="listbox" aria-label={texts.country} className="min-h-0 flex-1 overflow-y-auto px-1.5 pb-1.5">
+          {shown.length === 0 && <p className="p-4 text-center text-sm text-muted-foreground">{texts.noCountry}</p>}
+          {shown.map((option, index) => (
             <div
               key={option.name || "all"}
-              id={`${list.listId}-${index}`}
+              id={`${listId}-${index}`}
               role="option"
               aria-selected={option.name === value}
               data-index={index}
               onClick={() => pick(option)}
-              onPointerMove={() => list.setActive(index)}
+              onPointerMove={() => setActive(index)}
               className={cn(
                 "my-0.5 flex cursor-pointer items-center justify-between gap-3 rounded-md px-2.5 py-2 text-sm",
-                index === list.active && "bg-accent",
+                index === active && "bg-accent",
                 option.name === value && "font-semibold text-primary-ink"
               )}
             >

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { problemsOf, savedStops, tripDaysOf } from "@/utils/manualTrips";
 import { changeManualTrip, saveManualTrip } from "@/store/trips";
 
@@ -11,9 +11,11 @@ import { changeManualTrip, saveManualTrip } from "@/store/trips";
 // `initialPlace`: the first town already chosen (a route's page sends its destination), or null. `initialStops`:
 // every town with its days and times ([{ place, arriveDay, arriveTime, leaveDay, leaveTime }], a trip through a hub
 // from the search), or null.
+// Each town's key, only for React and the focus: unique across every form on the page
+let lastKey = 0;
+const newStop = (arriveDay = "", place = null) => ({ key: ++lastKey, place, arriveDay, arriveTime: "", leaveDay: "", leaveTime: "", mustVisit: [] });
+
 export const useManualTripForm = (initialPlace = null, initialStops = null) => {
-  const nextKey = useRef(1);
-  const newStop = (arriveDay = "", place = null) => ({ key: nextKey.current++, place, arriveDay, arriveTime: "", leaveDay: "", leaveTime: "", mustVisit: [] });
   const [stops, setStops] = useState(() =>
     initialStops?.length
       ? initialStops.map(({ place, arriveDay, arriveTime, leaveDay, leaveTime }) => ({ ...newStop(arriveDay, place), arriveTime, leaveDay, leaveTime }))

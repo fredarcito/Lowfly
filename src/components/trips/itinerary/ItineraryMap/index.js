@@ -59,7 +59,9 @@ const ItineraryMap = ({ stops, focus = stops, active, visited = [], onSelect, cl
   const markersRef = useRef(new Map()); // number → marker
   const leafletRef = useRef(null);
   const onSelectRef = useRef(onSelect);
-  onSelectRef.current = onSelect;
+  useEffect(() => {
+    onSelectRef.current = onSelect;
+  }, [onSelect]);
   const key = stops.map((stop) => `${stop.lat},${stop.lng}`).join(";");
 
   useEffect(() => {

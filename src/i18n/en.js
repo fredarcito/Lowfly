@@ -614,7 +614,7 @@ const en = {
     byAirportNoteReturn: "The cheapest return trip to each airport at your destination.",
     bestDayMeta: (day) => `Best day: ${day}`,
     incomplete: "Incomplete results",
-    failed: (names, many) =>
+    failed: (names) =>
       `${names.join(" and ")} didn't respond to this search, so there may be cheaper flights that aren't shown.`,
     out: "Out",
     ret: "Back",

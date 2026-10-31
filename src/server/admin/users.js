@@ -44,16 +44,16 @@ const sortUsers = (users, sort, dir) => {
     return value;
   };
   return users.toSorted((first, second) => {
-    const [a, b] = [valueOf(first), valueOf(second)];
-    if (a === null || b === null) return a === b ? 0 : a === null ? 1 : -1;
-    const compared = typeof a === "string" ? a.localeCompare(b) : a - b;
+    const [firstValue, secondValue] = [valueOf(first), valueOf(second)];
+    if (firstValue === null || secondValue === null) return firstValue === secondValue ? 0 : firstValue === null ? 1 : -1;
+    const compared = typeof firstValue === "string" ? firstValue.localeCompare(secondValue) : firstValue - secondValue;
     return compared * order || new Date(second.createdAt) - new Date(first.createdAt);
   });
 };
 
 // One page of the accounts for the admin's list, as `view` asks (constants/adminUserList: search, filter, sort,
 // page): { users, total (found), page, pages, globalLimit }
-export const listAdminUsers = async ({ q = "", filter = "all", sort = "joined", dir = "desc", page = 1 } = {}) => {
+export const listAdminUsers = async ({ q: search = "", filter = "all", sort = "joined", dir = "desc", page = 1 } = {}) => {
   const supabase = supabaseAdmin();
   const [users, usage, trips, saved, limits, globalLimit] = await Promise.all([
     allUsers(supabase),
@@ -69,7 +69,7 @@ export const listAdminUsers = async ({ q = "", filter = "all", sort = "joined", 
   const savedCounts = countBy(saved, "user_id");
   const withItineraryCounts = countBy(trips.filter((trip) => trip.itinerary), "user_id");
   const ownLimits = Object.fromEntries(limits.map((row) => [row.user_id, row.itineraries_per_day]));
-  const wanted = q.trim().toLowerCase();
+  const wanted = search.trim().toLowerCase();
   const found = users
     .map((user) => {
       const itinerariesActive = withItineraryCounts[user.id] ?? 0;

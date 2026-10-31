@@ -25,7 +25,7 @@ const guides = fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, "utf8")) :
 const save = () => fs.writeFileSync(FILE, JSON.stringify(Object.fromEntries(Object.entries(guides).sort()), null, 1) + "\n");
 
 // Fetches JSON, waiting and retrying when the service is busy (429 rate limit, 503 overloaded)
-async function json(url, options = {}) {
+const json = async (url, options = {}) => {
   for (let attempt = 0; ; attempt++) {
     const response = await fetch(url, { ...options, headers: { "user-agent": UA, ...options.headers } });
     if (response.ok) return response.json();
@@ -35,9 +35,9 @@ async function json(url, options = {}) {
     }
     throw new Error(`${response.status} ${url.slice(0, 120)}`);
   }
-}
+};
 
-function cityNameCandidates(city) {
+const cityNameCandidates = (city) => {
   if (!city) return [];
   const candidates = [];
   const seen = new Set();
@@ -52,10 +52,10 @@ function cityNameCandidates(city) {
   add(city.split(/\s*[-/]/)[0]);
   add(city.replace(/\s*\([^)]*\)\s*$/, ""));
   return candidates;
-}
+};
 
 // Airport → the city it serves (the most populated one) → its English and Spanish Wikipedia titles
-async function cityArticles(codes) {
+const cityArticles = async (codes) => {
   const query = `SELECT ?iata ?en ?es ?pop WHERE {
     VALUES ?iata { ${codes.map((code) => `"${code}"`).join(" ")} }
     ?airport wdt:P238 ?iata; wdt:P931 ?city.
@@ -74,10 +74,10 @@ async function cityArticles(codes) {
     if (!current || candidate.pop > current.pop) best[row.iata.value] = candidate;
   }
   return best;
-}
+};
 
 // Intro of each article: { title: { extract, url } }. `site`: wikipedia or wikivoyage; `full` reads past the intro.
-async function extracts(titles, lang, { site = "wikipedia", full = false } = {}) {
+const extracts = async (titles, lang, { site = "wikipedia", full = false } = {}) => {
   // The API gives 20 intros per request but only one full text
   if (full) {
     const found = {};
@@ -112,7 +112,7 @@ async function extracts(titles, lang, { site = "wikipedia", full = false } = {})
     }
   }
   return found;
-}
+};
 
 const GUIDE = {
   type: "object",
@@ -124,7 +124,7 @@ const GUIDE = {
 };
 const SCHEMA = { type: "object", properties: { es: GUIDE, en: GUIDE }, required: ["es", "en"] };
 
-async function write({ code, city, country, english, spanish, guide }) {
+const write = async ({ code, city, country, english, spanish, guide }) => {
   const input = `You write for Lowfly, a cheap-flights site, to help a traveller decide whether to visit a destination they may not know.
 Destination: ${city}, ${country} (airport ${code}).
 
@@ -152,9 +152,9 @@ ${guide ? `Wikivoyage travel guide (English):\n${guide}` : ""}`;
   });
   const text = data.steps.filter((step) => step.type === "model_output").flatMap((step) => step.content).map((part) => part.text).join("");
   return { result: JSON.parse(text), usage: data.usage };
-}
+};
 
-async function main() {
+const main = async () => {
   if (!process.env.GEMINI_API_KEY) throw new Error("GEMINI_API_KEY is missing (run with --env-file=.env.local)");
   const [{ airports: english }, { airports: spanish }] = await Promise.all([
     json(`${BASE}/api/airports?lang=en`),
@@ -226,7 +226,7 @@ async function main() {
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
   save();
   console.log(`Done: ${done} written, ${Object.keys(guides).length} in total, ${outputTokens} output tokens (~$${((outputTokens / 1e6) * 1.5).toFixed(3)})`);
-}
+};
 
 main().catch((error) => {
   console.error(error);

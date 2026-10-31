@@ -8,7 +8,8 @@ import { AuthProvider } from "@/providers/AuthProvider";
 import ThemeScript from "@/components/layout/ThemeScript";
 import InlineScript from "@/components/shared/InlineScript";
 import Analytics from "@/components/layout/Analytics";
-import { GA_ID } from "@/constants/analytics";
+import VercelAnalytics from "@/components/layout/VercelAnalytics";
+import { GA_ID, VERCEL_ANALYTICS } from "@/constants/analytics";
 import { TWITTER_CARD, openGraphOf } from "@/utils/metadata";
 import "@/styles/globals.css";
 
@@ -73,6 +74,7 @@ const RootLayout = async ({ children, params }) => {
         <ThemeScript />
         <AuthProvider lang={lang}>{children}</AuthProvider>
         {GA_ID && <Analytics />}
+        {VERCEL_ANALYTICS && <VercelAnalytics />}
       </body>
     </html>
   );

@@ -1,9 +1,14 @@
+import { track as trackOnVercel } from "@vercel/analytics";
 import { MORE_AIRLINES } from "@/constants/airlines";
+import { VERCEL_ANALYTICS } from "@/constants/analytics";
 
-// Sends the event `name` to Google Analytics (components/layout/Analytics), when it is loaded: never on this
-// machine or in the tests
+// Sends the event `name` to Google Analytics (components/layout/Analytics), when it is loaded, and to Vercel's
+// (components/layout/VercelAnalytics): never on this machine or in the tests. Vercel only takes plain values, so
+// the empty ones are left out.
 export const track = (name, params = {}) => {
-  if (typeof window !== "undefined") window.gtag?.("event", name, params);
+  if (typeof window === "undefined") return;
+  window.gtag?.("event", name, params);
+  if (VERCEL_ANALYTICS) trackOnVercel(name, Object.fromEntries(Object.entries(params).filter(([, value]) => value != null)));
 };
 
 const hostOf = (url) => new URL(url).hostname.replace(/^www\./, "");

@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
+import { useId, useRef, useState } from "react";
 import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import PlaceChip from "@/components/trips/PlaceChip";
 import PlaceResults from "@/components/trips/PlaceResults";
 import { useI18n } from "@/context/i18n";
 import { MIN_LETTERS, usePlaceSearch } from "@/components/trips/CityField/hooks/usePlaceSearch";
+import { useHighlighted } from "@/hooks/useHighlighted";
 import { listKeyDown } from "@/utils/listKeys";
 
 // How long the list stays after leaving the box, so a click on a result lands first
@@ -20,12 +21,11 @@ const CityField = ({ id, value, onChange, invalid = false }) => {
   const listId = useId();
   const inputRef = useRef(null);
   const [query, setQuery] = useState("");
-  const [active, setActive] = useState(0);
   const [open, setOpen] = useState(false);
   const results = usePlaceSearch(query, lang);
 
   // New results: the first one highlighted
-  useEffect(() => setActive(0), [results.list]);
+  const [active, setActive] = useHighlighted(results.list);
 
   const pick = (place) => {
     onChange(place);

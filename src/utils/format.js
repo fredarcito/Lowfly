@@ -85,8 +85,9 @@ export const createFormat = (lang, texts, passengers = 1) => {
     fmtShort,
     // Flight length: "1 h 20 min" / "1h 20m"
     duration: (minutes) => texts.units.duration(Math.floor(minutes / 60), minutes % 60),
-    // "16–19 Oct", "30 Oct – 2 Nov"
-    fmtRange: (first, last) => rangeFmt.formatRange(parseDay(first), parseDay(last)),
+    // "16–19 Oct", "30 Oct – 2 Nov". Plain spaces: Node puts thin ones (U+2009) around the dash and Chrome does not,
+    // so a range across two months rendered on the server did not match the browser's.
+    fmtRange: (first, last) => rangeFmt.formatRange(parseDay(first), parseDay(last)).replace(/[  ]/g, " "),
     fmtMonth: (day) => monthFmt.format(parseDay(day)),
     money,
     at,

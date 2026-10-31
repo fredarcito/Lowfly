@@ -24,18 +24,19 @@ const load = (lang) => {
 
 const LOADING = { status: "loading", list: [] };
 
-// { status: "loading" | "ok" | "error", list }
+// { status: "loading" | "ok" | "error", list }. Read from the cache while rendering: the state only renders again
+// once it has loaded.
 export const useAirports = (lang) => {
-  const [airports, setAirports] = useState(() => cache.get(lang) ?? LOADING);
+  const [, setLoadedLang] = useState(null);
   useEffect(() => {
+    if (cache.has(lang)) return;
     let live = true;
-    if (cache.has(lang)) setAirports(cache.get(lang));
-    else load(lang).then(() => live && setAirports(cache.get(lang) ?? LOADING));
+    load(lang).then(() => live && setLoadedLang(lang));
     return () => {
       live = false;
     };
   }, [lang]);
-  return airports;
+  return cache.get(lang) ?? LOADING;
 };
 
 // The airport with that code, if we know it

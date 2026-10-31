@@ -30,16 +30,17 @@ const load = (code) => {
 };
 
 // undefined while loading, null when there is no photo
+// (read from the cache while rendering; the state only keeps the last answer, as a failed one is not cached)
 export const usePhoto = (code) => {
-  const [photo, setPhoto] = useState(() => cache.get(code));
+  const [loaded, setLoaded] = useState(null); // { code, photo }
   useEffect(() => {
-    if (!code) return;
-    if (cache.has(code)) return setPhoto(cache.get(code));
+    if (!code || cache.has(code)) return;
     let live = true;
-    load(code).then((found) => live && setPhoto(found));
+    load(code).then((photo) => live && setLoaded({ code, photo }));
     return () => {
       live = false;
     };
   }, [code]);
-  return photo;
+  if (cache.has(code)) return cache.get(code);
+  return loaded?.code === code ? loaded.photo : undefined;
 };

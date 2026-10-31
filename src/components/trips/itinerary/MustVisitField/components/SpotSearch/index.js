@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
+import { useId, useRef, useState } from "react";
 import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import SpotResults from "@/components/trips/itinerary/MustVisitField/components/SpotResults";
 import { MIN_LETTERS, useSpotSearch } from "@/components/trips/itinerary/MustVisitField/hooks/useSpotSearch";
+import { useHighlighted } from "@/hooks/useHighlighted";
 import { listKeyDown } from "@/utils/listKeys";
 import { cn } from "@/utils/cn";
 
@@ -18,7 +19,6 @@ const CLOSE_DELAY_MS = 150;
 const SpotSearch = ({ id, label, placeholder, near, town, areas = false, onPick, onNotInList, onType, onDismiss, autoFocus = false, compact = false }) => {
   const listId = useId();
   const [query, setQuery] = useState("");
-  const [active, setActive] = useState(0);
   const [open, setOpen] = useState(false);
   const closeTimer = useRef(null);
   const results = useSpotSearch(query, { near, town, areas });
@@ -28,7 +28,7 @@ const SpotSearch = ({ id, label, placeholder, near, town, areas = false, onPick,
   const count = results.list.length + (withNotInList ? 1 : 0);
 
   // New results: the first one highlighted
-  useEffect(() => setActive(0), [results.list]);
+  const [active, setActive] = useHighlighted(results.list);
 
   const pick = (spot) => {
     onPick(spot);

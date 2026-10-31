@@ -30,21 +30,22 @@ const load = (place, lang) => {
   return pending.get(key);
 };
 
-// undefined while loading, null when there is no photo
+// undefined while loading, null when there is no photo (read from the cache while rendering; the state only keeps
+// the last answer, as a failed one is not cached)
 export const usePlacePhoto = (place) => {
   const { lang } = useI18n();
   const key = keyOf(place);
-  const [photo, setPhoto] = useState(() => cache.get(key));
+  const [loaded, setLoaded] = useState(null); // { key, photo }
   useEffect(() => {
-    if (!place) return;
-    if (cache.has(key)) return setPhoto(cache.get(key));
+    if (!place || cache.has(key)) return;
     let live = true;
-    load(place, lang).then((found) => live && setPhoto(found));
+    load(place, lang).then((photo) => live && setLoaded({ key, photo }));
     return () => {
       live = false;
     };
     // The place is known by its key
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key, lang]);
-  return photo;
+  if (cache.has(key)) return cache.get(key);
+  return loaded?.key === key ? loaded.photo : undefined;
 };

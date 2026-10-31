@@ -283,10 +283,10 @@ test.describe("multi-city: the search", () => {
   test("the planner opens with every town of the route, those with no airport too", async ({ page }) => {
     await page.setViewportSize(DESKTOP);
     const stops = [
-      `puglia-y-matera/short/0,${dayFromNow(30)},10:30,${dayFromNow(31)},`,
-      `puglia-y-matera/short/1,${dayFromNow(31)},,${dayFromNow(33)},`,
-      `puglia-y-matera/short/2,${dayFromNow(33)},,${dayFromNow(34)},`,
-      `puglia-y-matera/short/3,${dayFromNow(34)},,${dayFromNow(35)},18:40`,
+      `puglia-matera/short/0,${dayFromNow(30)},10:30,${dayFromNow(31)},`,
+      `puglia-matera/short/1,${dayFromNow(31)},,${dayFromNow(33)},`,
+      `puglia-matera/short/2,${dayFromNow(33)},,${dayFromNow(34)},`,
+      `puglia-matera/short/3,${dayFromNow(34)},,${dayFromNow(35)},18:40`,
     ].join(";");
     await openWith(page, `/es/trips/new?stops=${encodeURIComponent(stops)}`);
     const cards = page.locator("form section ol > li");

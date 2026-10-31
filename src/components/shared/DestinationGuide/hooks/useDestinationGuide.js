@@ -20,19 +20,19 @@ const load = (code, lang) => {
   return pending.get(key);
 };
 
-// undefined while loading, null when there is none
+// undefined while loading, null when there is none. Read from the cache while rendering: the state only renders
+// again once it has loaded.
 export const useDestinationGuide = (code) => {
   const { lang } = useI18n();
   const key = `${code} ${lang}`;
-  const [guide, setGuide] = useState(() => cache.get(key));
+  const [, setLoadedKey] = useState(null);
   useEffect(() => {
-    if (!code) return;
-    if (cache.has(key)) return setGuide(cache.get(key));
+    if (!code || cache.has(key)) return;
     let live = true;
-    load(code, lang).then(() => live && setGuide(cache.get(key)));
+    load(code, lang).then(() => live && setLoadedKey(key));
     return () => {
       live = false;
     };
   }, [code, lang, key]);
-  return guide;
+  return code ? cache.get(key) : undefined;
 };

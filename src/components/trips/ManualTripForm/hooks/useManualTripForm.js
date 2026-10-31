@@ -1,8 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { problemsOf, savedStops, tripDaysOf } from "@/utils/manualTrips";
 import { changeManualTrip, saveManualTrip } from "@/store/trips";
+
+// A town not filled in yet. `key`: only for React, the focus and the card's id, counted from 1 in each form (the
+// same on the server and in the browser)
+const newStop = (key, arriveDay = "", place = null) => ({ key, place, arriveDay, arriveTime: "", leaveDay: "", leaveTime: "", mustVisit: [] });
 
 // The towns of a trip planned by hand, in order (each: place, arrival and departure day and time, the places to
 // visit there for sure), what is wrong
@@ -11,16 +15,14 @@ import { changeManualTrip, saveManualTrip } from "@/store/trips";
 // `initialPlace`: the first town already chosen (a route's page sends its destination), or null. `initialStops`:
 // every town with its days and times ([{ place, arriveDay, arriveTime, leaveDay, leaveTime }], a trip through a hub
 // from the search), or null.
-// Each town's key, only for React and the focus: unique across every form on the page
-let lastKey = 0;
-const newStop = (arriveDay = "", place = null) => ({ key: ++lastKey, place, arriveDay, arriveTime: "", leaveDay: "", leaveTime: "", mustVisit: [] });
-
 export const useManualTripForm = (initialPlace = null, initialStops = null) => {
   const [stops, setStops] = useState(() =>
     initialStops?.length
-      ? initialStops.map(({ place, arriveDay, arriveTime, leaveDay, leaveTime }) => ({ ...newStop(arriveDay, place), arriveTime, leaveDay, leaveTime }))
-      : [newStop("", initialPlace)]
+      ? initialStops.map(({ place, arriveDay, arriveTime, leaveDay, leaveTime }, index) => ({ ...newStop(index + 1, arriveDay, place), arriveTime, leaveDay, leaveTime }))
+      : [newStop(1, "", initialPlace)]
   );
+  // The key of the next town added (only read when one is added)
+  const nextKey = useRef(stops.length + 1);
   const [submitted, setSubmitted] = useState(false);
   // The town just added with "Add another town" (it takes the focus), by key
   const [addedKey, setAddedKey] = useState(null);
@@ -30,7 +32,7 @@ export const useManualTripForm = (initialPlace = null, initialStops = null) => {
   const remove = (key) => setStops((current) => current.filter((stop) => stop.key !== key));
   // The next town starts the day you leave the last one
   const add = () => {
-    const added = newStop(stops.at(-1).leaveDay);
+    const added = newStop(nextKey.current++, stops.at(-1).leaveDay);
     setAddedKey(added.key);
     setStops((current) => [...current, added]);
   };

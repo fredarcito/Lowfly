@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "violations": [
+    {
+      "rule": "next-server-client",
+      "key": "next-server-client|src/components/admin/AdminSettings/components/GlobalLimitForm/index.js|src/supabase/server.js",
+      "from": "src/components/admin/AdminSettings/components/GlobalLimitForm/index.js",
+      "to": "src/supabase/server.js"
+    },
+    {
+      "rule": "next-server-client",
+      "key": "next-server-client|src/components/admin/UserDetail/components/AccountForm/index.js|src/supabase/server.js",
+      "from": "src/components/admin/UserDetail/components/AccountForm/index.js",
+      "to": "src/supabase/server.js"
+    },
+    {
+      "rule": "next-server-client",
+      "key": "next-server-client|src/components/admin/UserDetail/components/DeleteAccount/index.js|src/supabase/server.js",
+      "from": "src/components/admin/UserDetail/components/DeleteAccount/index.js",
+      "to": "src/supabase/server.js"
+    },
+    {
+      "rule": "next-server-client",
+      "key": "next-server-client|src/components/admin/UserDetail/components/LimitForm/index.js|src/supabase/server.js",
+      "from": "src/components/admin/UserDetail/components/LimitForm/index.js",
+      "to": "src/supabase/server.js"
+    },
+    {
+      "rule": "next-server-client",
+      "key": "next-server-client|src/components/admin/UserDetail/components/TripItem/index.js|src/supabase/server.js",
+      "from": "src/components/admin/UserDetail/components/TripItem/index.js",
+      "to": "src/supabase/server.js"
+    },
+    {
+      "rule": "no-cycles",
+      "key": "no-cycles|e2e/report/trace/assets/codeMirrorModule-BEB2e8M3.js|e2e/report/trace/assets/defaultSettingsView-D-g2vrvf.js",
+      "from": "e2e/report/trace/assets/codeMirrorModule-BEB2e8M3.js",
+      "to": "e2e/report/trace/assets/defaultSettingsView-D-g2vrvf.js"
+    }
+  ]
+}

@@ -10,3 +10,8 @@ node_modules
 
 # CodeGraph: the local index of the code (for Claude Code), rebuilt on each machine
 .codegraph/
+
+# reins: local state (not shared)
+.reins/backlog/
+.reins/progress/
+.reins/init-report.md

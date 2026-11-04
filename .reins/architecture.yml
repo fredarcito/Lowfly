@@ -12,7 +12,18 @@ layers:
   - { name: shared, paths: ["src/{lib,hooks,utils,services,actions,types}/**"] }
 
 # Code outside a domain may only import its public_api.
-domains: {}
+domains:
+  search: { paths: ["src/app/[lang]/(search)/**"], public_api: ["src/app/[lang]/(search)/anywhere/page.js", "src/app/[lang]/(search)/destination/page.js", "src/app/[lang]/(search)/flexible-dates/page.js", "src/app/[lang]/(search)/layout.js", "src/app/[lang]/(search)/multi-city/page.js", "src/app/[lang]/(search)/opengraph-image.js", "src/app/[lang]/(search)/page.js"] }
+  admin: { paths: ["src/app/[lang]/admin/**"], public_api: ["src/app/[lang]/admin/layout.js", "src/app/[lang]/admin/page.js", "src/app/[lang]/admin/settings/page.js", "src/app/[lang]/admin/usage/page.js", "src/app/[lang]/admin/users/[id]/page.js", "src/app/[lang]/admin/users/page.js"] }
+  flights: { paths: ["src/app/[lang]/flights/**"], public_api: ["src/app/[lang]/flights/[route]/opengraph-image.js", "src/app/[lang]/flights/[route]/page.js", "src/app/[lang]/flights/page.js"] }
+  guides: { paths: ["src/app/[lang]/guides/**"], public_api: ["src/app/[lang]/guides/[guide]/page.js", "src/app/[lang]/guides/page.js"] }
+  login: { paths: ["src/app/[lang]/login/**"], public_api: ["src/app/[lang]/login/page.js"] }
+  multi-city: { paths: ["src/app/[lang]/multi-city/**"], public_api: ["src/app/[lang]/multi-city/[route]/page.js"] }
+  privacy: { paths: ["src/app/[lang]/privacy/**"], public_api: ["src/app/[lang]/privacy/page.js"] }
+  shared: { paths: ["src/app/[lang]/shared/**"], public_api: ["src/app/[lang]/shared/[id]/opengraph-image.js", "src/app/[lang]/shared/[id]/page.js"] }
+  terms: { paths: ["src/app/[lang]/terms/**"], public_api: ["src/app/[lang]/terms/page.js"] }
+  trips: { paths: ["src/app/[lang]/trips/**"], public_api: ["src/app/[lang]/trips/new/page.js", "src/app/[lang]/trips/page.js"] }
+  api: { paths: ["src/app/api/**"], public_api: ["src/app/api/airports/route.js", "src/app/api/auth/callback/route.js", "src/app/api/city-guides/route.js", "src/app/api/country/route.js", "src/app/api/cron/flight-routes/route.js", "src/app/api/cron/route-graph/route.js", "src/app/api/destinations/route.js", "src/app/api/everywhere/route.js", "src/app/api/flexible/route.js", "src/app/api/guides/route.js", "src/app/api/itinerary/route.js", "src/app/api/metrics/search/route.js", "src/app/api/multi-city/route.js", "src/app/api/origin/route.js", "src/app/api/photos/place/route.js", "src/app/api/photos/route.js", "src/app/api/places/route.js", "src/app/api/spots/route.js", "src/app/api/stopovers/route.js"] }
 
 rules:
   - { id: layer-direction, severity: error }

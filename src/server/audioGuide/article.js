@@ -105,6 +105,20 @@ export const companionArticle = async ({ lang, title }) => {
   }
 };
 
+// A place with no article (a small church, a viewpoint): its guide is told from the AI's own knowledge, kept under a
+// key made of its name, town and spot (~100 m) instead of an article link. `knowledgeOnly` tells the guide so.
+const PLACE_KEY = "lowfly:place/";
+// It keeps the place's names so the guide can search the web for it first (`server/audioGuide/research.js`).
+export const placeWithoutArticle = ({ name, mapName, town, lat, lng }) => {
+  const slug = (value) => (value ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  return {
+    url: `${PLACE_KEY}${slug(name)}|${slug(town)}|${lat.toFixed(3)},${lng.toFixed(3)}`,
+    knowledgeOnly: true,
+    place: { name, mapName, town },
+  };
+};
+export const isArticleUrl = (url) => typeof url === "string" && !url.startsWith(PLACE_KEY);
+
 // The article's plain text (intro and sections, without references), or null
 export const articleText = async ({ lang, title }) => {
   const params = new URLSearchParams({

@@ -3,14 +3,25 @@
 import { createHash } from "node:crypto";
 import { supabaseAdmin } from "@/supabase/admin";
 import { AUDIO_GUIDE } from "@/constants/audioGuide";
+import { isArticleUrl } from "@/server/audioGuide/article";
 
 const DAY = 86_400_000;
 
 // One guide per article and language: the same Acropolis for every trip that visits it
 export const guideId = (articleUrl, lang) => createHash("sha256").update(`${lang}:${articleUrl}`).digest("hex").slice(0, 24);
 
-// What the browser gets: the place, the steps with their audio, and whether a person has checked it
-const toGuide = (row) => ({ id: row.id, lang: row.lang, title: row.title, source: row.article_url, reviewed: row.reviewed, steps: row.steps });
+// What the browser gets: the place, the steps with their audio, and whether a person has checked it.
+// `source`: the Wikipedia article, or null for a place without one (its key is not a link); `fromWeb`: a web search
+// went into it too (its usage keeps the search's cost). Neither: told from the AI's own knowledge.
+const toGuide = (row) => ({
+  id: row.id,
+  lang: row.lang,
+  title: row.title,
+  source: isArticleUrl(row.article_url) ? row.article_url : null,
+  fromWeb: Boolean(row.usage?.research),
+  reviewed: row.reviewed,
+  steps: row.steps,
+});
 
 export const findGuide = async (id) => {
   const { data, error } = await supabaseAdmin().from("audio_guides").select("*").eq("id", id).maybeSingle();

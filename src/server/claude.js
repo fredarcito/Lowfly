@@ -29,6 +29,39 @@ const closed = (schema) => {
 
 export const hasClaude = () => Boolean(process.env.ANTHROPIC_API_KEY);
 
+// Notes written after searching the web (Anthropic's web search, US$10 per 1,000 searches plus the pages read as input
+// tokens). The basic `web_search_20250305` on purpose: with Haiku the newer `_20260209` (dynamic filtering) failed every
+// search in a test on 2026-11-16. → { text, usage, model, searches }
+export const researchWithSearch = async ({ instructions, prompt, maxSearches = 3 }) => {
+  if (!hasClaude()) throw new AppError("aiUnavailable");
+  const model = process.env.CLAUDE_MODEL || DEFAULT_MODEL;
+  let message;
+  try {
+    message = await getClient()
+      .messages.stream({
+        model,
+        max_tokens: 16_000,
+        system: instructions,
+        messages: [{ role: "user", content: prompt }],
+        tools: [{ type: "web_search_20250305", name: "web_search", max_uses: maxSearches }],
+        output_config: { effort: "low" },
+      })
+      .finalMessage();
+  } catch (error) {
+    if (error instanceof Anthropic.RateLimitError || error?.status === 529) throw new AppError("aiBusy");
+    if (error instanceof Anthropic.APIError) {
+      console.error("Claude search error", error.status, error.message?.slice(0, 500));
+      throw new AppError("aiUnavailable");
+    }
+    throw error;
+  }
+  const text = message.content
+    .filter((block) => block.type === "text")
+    .map((block) => block.text)
+    .join("");
+  return { text, usage: message.usage, model, searches: message.usage?.server_tool_use?.web_search_requests ?? 0 };
+};
+
 // Same contract as server/gemini: JSON that follows `schema`, parsed, with the token usage and the model.
 // `effort`: low | medium | high (more thinking, better plans, more output tokens to pay).
 export const generateJson = async ({ instructions, prompt, schema, effort = "low" }) => {

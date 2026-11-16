@@ -62,13 +62,17 @@ const AudioGuideSheet = () => {
             <GuideNextAction />
             <GuideTranscript key={`${guide.id}-${player.stepIndex}`} text={step.text} />
             <GuideSteps />
-            <p className="text-xs text-muted-foreground">
-              {words.madeFrom}{" "}
-              <a href={guide.source} target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">
-                Wikipedia
-              </a>
-              .
-            </p>
+            {guide.source ? (
+              <p className="text-xs text-muted-foreground">
+                {words.madeFrom}{" "}
+                <a href={guide.source} target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">
+                  Wikipedia
+                </a>
+                {guide.fromWeb ? ` ${words.andWeb}` : ""}.
+              </p>
+            ) : (
+              <p className="text-xs text-muted-foreground">{guide.fromWeb ? words.madeFromWeb : words.madeWithAi}</p>
+            )}
           </>
         )}
 

@@ -1,7 +1,9 @@
 // Audio guides of historic places (docs/audio-guide.md): found if someone already asked for this place, else
-// made now — the article from Wikipedia, the steps from the AI, each step read aloud by Google — and kept.
+// made now — the article from Wikipedia (or, for a place without one, notes from a web search), the steps from the AI,
+// each step read aloud by Google — and kept.
 import { AppError } from "@/server/errors";
 import { articleText, companionArticle } from "@/server/audioGuide/article";
+import { researchPlace } from "@/server/audioGuide/research";
 import { writeScript } from "@/server/audioGuide/script";
 import { hasSpeech, speak, voiceFor } from "@/server/audioGuide/speech";
 import { findGuide, guideId, saveAudio, saveGuide } from "@/server/audioGuide/store";
@@ -20,11 +22,24 @@ const sourcesFor = async (article) => {
   return { title: main.title, texts: [main.text, second?.text].filter(Boolean) };
 };
 
+// The web search runs beside the articles: with an article it brings curiosities, legends and the visit; for a place
+// without one (`placeWithoutArticle`) it brings everything, and when it finds nothing the AI tells what it knows
 const makeGuide = async ({ id, lang, article, place, userId, town }) => {
-  const source = await sourcesFor(article);
-  if (!source) throw new AppError("audioBadPlace", {}, 404);
-  const title = place || source.title;
-  const { steps, usage, model, provider } = await writeScript({ lang, place: title, town, articles: source.texts });
+  const withoutArticle = Boolean(article.knowledgeOnly);
+  const searched = article.place ?? { name: place || article.title, town };
+  const [wiki, research] = await Promise.all([
+    withoutArticle ? null : sourcesFor(article),
+    researchPlace({ ...searched, hasArticle: !withoutArticle }),
+  ]);
+  const title = place || wiki?.title;
+  if ((!withoutArticle && !wiki) || !title) throw new AppError("audioBadPlace", {}, 404);
+  const { steps, usage, model, provider } = await writeScript({
+    lang,
+    place: title,
+    town,
+    articles: wiki?.texts ?? [],
+    notes: research?.notes ?? null,
+  });
   // The steps are read aloud side by side (a few seconds each)
   const audio = await Promise.all(steps.map(async (step, index) => saveAudio(id, index, await speak(step.text, lang))));
   return saveGuide({
@@ -36,7 +51,8 @@ const makeGuide = async ({ id, lang, article, place, userId, town }) => {
     provider,
     model,
     voice: voiceFor(lang),
-    usage: usage ?? null,
+    // The web search's cost is kept beside the script's (`research`): a guide that used the web says so to the listener
+    usage: research ? { ...usage, research: research.usage } : (usage ?? null),
     characters: steps.reduce((total, step) => total + step.text.length, 0),
     created_by: userId,
   });

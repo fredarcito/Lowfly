@@ -12,8 +12,15 @@ comes from a Wikipedia article, or any "imprescindible" / "recomendado" stop wit
 (often places the traveller asked for, whose article was not found when the itinerary was made) the server searches
 the article by the stop's name and then the map's name, plus the town, in Spanish and English, and keeps it only if
 its coordinates are within 500 m and its title shares a telltale word with the stop's name (`findArticle` in
-`server/audioGuide/article.js`; Thessaloniki's St Paul once got Hagia Sophia, 1.3 km away); none found → "Este sitio no
-tiene audio guía". It opens a player sheet with the guide in 2 to 5 parts (1–2 minutes for a small place, 4–6 for a monument with a long history), each heard in one
+`server/audioGuide/article.js`; Thessaloniki's St Paul once got Hagia Sophia, 1.3 km away). None found (2026-11-16, the
+owner's call: no place left without a guide, the way ChatGPT and Gemini answer about it):
+   - the web search's notes play the article's part (see "Web search" below). Footer: "Escrita con IA a partir de
+     búsquedas en la web. Sin revisar…" (`fromWeb`, from `usage.research` on the row).
+   - The search found nothing (or Claude is down): a shorter guide (2–3 parts) from the AI's own knowledge
+     (`knowledgeInstructionsFor` in `script.js`): the place's name and saint, its neighbourhood, the city's story and
+     legends, never what is inside or "a tu izquierda". Footer: "Escrita con IA. Este sitio no tiene artículo…".
+   Both are kept under a `lowfly:place/<name>|<town>|<lat,lng to ~100 m>` key instead of an article link
+   (`placeWithoutArticle`). Making one can take up to two minutes (route `maxDuration` 300 s). It opens a player sheet with the guide in 2 to 5 parts (1–2 minutes for a small place, 4–6 for a monument with a long history), each heard in one
 spot ("La fachada · Fuera, por el lado norte"). Each part ends by saying where to go next; the audio never mentions the
 app. Once the part is over its button ("Ya estoy dentro →") turns coral and the visitor taps it when they get there.
 When the next part is heard from the same spot (`autoNext`), it starts by itself after 3 seconds ("Esperar" holds it).
@@ -47,11 +54,25 @@ Acropolis is made once, for the first person who asks, and is free for everyone 
 
 Making one takes some 20–40 seconds; the sheet shows "Preparando la audio guía…" meanwhile.
 
+## Web search
+
+Every new guide also searches the web (2026-11-16, the owner's call: curiosities and emotion over an encyclopedia),
+beside the Wikipedia articles: `research.js`, through `researchWithSearch` in `server/claude.js` (Claude Haiku, up to 3
+searches with the basic `web_search_20250305`; the newer `_20260209` failed every search with Haiku in a test).
+- With an article: the search looks only for what it lacks — curiosities, legends, anecdotes, and how the visit goes
+  (entrance, route inside, what is in each part). The script trusts the articles for dates, names and numbers, and the
+  notes for stories and the visit. Footer: "… a partir de Wikipedia y búsquedas en la web".
+- Without an article: the search brings everything (above).
+- Opening hours, prices and tickets are left out of notes and audio: a guide is recorded once and kept for years.
+- Notes under 120 words or no search made → the guide is made without them.
+- Measured: St Paul (no article) 2 searches, ~US$0.024; the Rotunda (complement) 3 searches, ~US$0.035.
+
 ## Cost
 
 - Voice: Google bills per character; Chirp 3 HD is about US$30 per million after the first million free each month
   (to check on Google's pricing page). A guide is some 2,500–4,500 characters, so some 250–400 guides a month are free.
-- AI: one short call per guide (Gemini's free tier, or Claude Haiku).
+- AI: one short call per guide (Gemini's free tier, or Claude Haiku), plus the web search: US$0.01 a search, up to 3,
+  and the pages it reads (~US$0.003 on Haiku). Some 2–4 US cents a new guide in all, besides the voice.
 - Storage: a guide's mp3s are under 1 MB.
 
 ## Limits and known gaps

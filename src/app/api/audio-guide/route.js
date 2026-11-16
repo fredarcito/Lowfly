@@ -1,36 +1,35 @@
 import { NextResponse } from "next/server";
 import { AppError, badRequest } from "@/server/errors";
-import { findArticle, readArticleUrl } from "@/server/audioGuide/article";
+import { findArticle, placeWithoutArticle, readArticleUrl } from "@/server/audioGuide/article";
 import { getAudioGuide } from "@/server/audioGuide";
 import { guidesMadeToday } from "@/server/audioGuide/store";
 import { supabaseServer } from "@/supabase/server";
 import { hasLocale } from "@/i18n/config";
 import { AUDIO_GUIDE } from "@/constants/audioGuide";
 
-// Making a guide: the article, the AI and reading 2 to 5 steps aloud, usually well under a minute
-export const maxDuration = 120;
+// Making a guide: the article (or a web search for a place without one), the AI and reading 2 to 5 steps aloud,
+// usually under a minute; a web search can add half a minute
+export const maxDuration = 300;
 
 const shortText = (value) => (typeof value === "string" && value.trim() ? value.trim().slice(0, 100) : null);
 
 // POST /api/audio-guide { source: Wikipedia link of the stop's history, lang, place: the stop's name, town }, or for a
 // stop without history { lang, place, mapName, town, lat, lng } (its article is searched by name and checked by where it is)
-// → { id, lang, title, source, reviewed, steps: [{ title, where, action, autoNext, text, audio, seconds }] }
+// → { id, lang, title, source, fromWeb, reviewed, steps: [{ title, where, action, autoNext, text, audio, seconds }] }
 // A guide someone already made is for anyone; making a new one needs an account (it costs money), a few a day.
 export const POST = async (request) => {
   try {
     const body = await request.json().catch(() => null);
     if (!body) throw badRequest("audioBadPlace");
     const lang = hasLocale(body.lang) ? body.lang : "es";
-    const article = body.source
-      ? readArticleUrl(body.source)
-      : await findArticle({
-          name: shortText(body.place),
-          mapName: shortText(body.mapName),
-          town: shortText(body.town),
-          lat: body.lat,
-          lng: body.lng,
-          lang,
-        });
+    const place = { name: shortText(body.place), mapName: shortText(body.mapName), town: shortText(body.town), lat: body.lat, lng: body.lng };
+    // A place with no article of its own still gets a guide, told from what the AI knows (docs/audio-guide.md)
+    const findOrTellFromKnowledge = () =>
+      findArticle({ ...place, lang }).catch((error) => {
+        if (error instanceof AppError && error.status === 404) return placeWithoutArticle(place);
+        throw error;
+      });
+    const article = body.source ? readArticleUrl(body.source) : await findOrTellFromKnowledge();
 
     const supabase = await supabaseServer();
     const { data } = await supabase.auth.getClaims();

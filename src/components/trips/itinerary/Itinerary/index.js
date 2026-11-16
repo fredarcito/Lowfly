@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import ErrorNote from "@/components/shared/ErrorNote";
+import AudioGuide from "@/components/trips/itinerary/AudioGuide";
 import CreateItinerary from "@/components/trips/itinerary/CreateItinerary";
 import ItineraryDay from "@/components/trips/itinerary/ItineraryDay";
 import ItineraryDayTabs from "@/components/trips/itinerary/ItineraryDayTabs";
@@ -36,21 +37,23 @@ const Itinerary = ({ trip, readOnly = false, tabsAside }) => {
   };
 
   return (
-    <section ref={sectionRef} className="relative grid grid-cols-1 gap-4">
-      {/* Out of the flow (absolute): as a grid row, even empty, it added a gap above the weather */}
-      <div ref={markerRef} aria-hidden className="absolute inset-x-0 top-0 h-0" />
-      <ItineraryStickyBar trip={trip} day={day} dayNumber={dayIndex + 1} visible={scrolledPast} readOnly={readOnly} />
-      {itinerary.weather?.length > 0 && <ItineraryWeather weather={itinerary.weather} days={days} />}
-      <ItineraryDayTabs days={days} picked={dayIndex} onPick={showDay} belowBar={scrolledPast} aside={tabsAside} />
-      {itinerary.lang && itinerary.lang !== lang && (
-        <OtherLanguage itinerary={itinerary} creating={creating} onCreate={readOnly ? null : () => create(itinerary.preferences)} />
-      )}
-      {itinerary.missing?.length > 0 && (
-        <MissingPlaces names={itinerary.missing} creating={creating} onCreate={readOnly ? null : () => create(itinerary.preferences)} />
-      )}
-      {creation.status === "error" && <ErrorNote error={creation.error} />}
-      <ItineraryDay key={day.date} trip={trip} day={day} dayNumber={dayIndex + 1} readOnly={readOnly} />
-    </section>
+    <AudioGuide>
+      <section ref={sectionRef} className="relative grid grid-cols-1 gap-4">
+        {/* Out of the flow (absolute): as a grid row, even empty, it added a gap above the weather */}
+        <div ref={markerRef} aria-hidden className="absolute inset-x-0 top-0 h-0" />
+        <ItineraryStickyBar trip={trip} day={day} dayNumber={dayIndex + 1} visible={scrolledPast} readOnly={readOnly} />
+        {itinerary.weather?.length > 0 && <ItineraryWeather weather={itinerary.weather} days={days} />}
+        <ItineraryDayTabs days={days} picked={dayIndex} onPick={showDay} belowBar={scrolledPast} aside={tabsAside} />
+        {itinerary.lang && itinerary.lang !== lang && (
+          <OtherLanguage itinerary={itinerary} creating={creating} onCreate={readOnly ? null : () => create(itinerary.preferences)} />
+        )}
+        {itinerary.missing?.length > 0 && (
+          <MissingPlaces names={itinerary.missing} creating={creating} onCreate={readOnly ? null : () => create(itinerary.preferences)} />
+        )}
+        {creation.status === "error" && <ErrorNote error={creation.error} />}
+        <ItineraryDay key={day.date} trip={trip} day={day} dayNumber={dayIndex + 1} readOnly={readOnly} />
+      </section>
+    </AudioGuide>
   );
 };
 

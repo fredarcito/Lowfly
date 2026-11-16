@@ -4,8 +4,7 @@
 // Only called from the server. The shape is described in utils/itinerary.
 import { getAirports } from "@/server/airports";
 import { AppError } from "@/server/errors";
-import * as gemini from "@/server/gemini";
-import * as claude from "@/server/claude";
+import { generateJsonWithFallback } from "@/server/ai";
 import { locate } from "@/server/geocode";
 import { placeFacts, searchPlace } from "@/server/wikipedia";
 import { normalize } from "@/utils/format";
@@ -375,15 +374,7 @@ const verifyStop = async (stop, { city, lang, destination, facts, airport }) => 
 };
 
 // Gemini plans the itinerary; when it is busy or fails, Claude does, with the same instructions and schema
-const planWithAi = async (request) => {
-  try {
-    return { ...(await gemini.generateJson(request)), provider: "gemini" };
-  } catch (error) {
-    if (!(error instanceof AppError) || !claude.hasClaude()) throw error;
-    console.warn(`Gemini failed (${error.code}), trying Claude`);
-    return { ...(await claude.generateJson(request)), provider: "claude" };
-  }
-};
+const planWithAi = generateJsonWithFallback;
 
 // Plans `dates` in one town with the AI, then checks every place: where it is (Photon) and its history
 // (Wikipedia). destination: { lat, lng } of the town (only places near it are kept); label: for the logs.

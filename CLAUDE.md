@@ -79,6 +79,8 @@ read like a person wrote it, not like a model. The reference is the copy already
 - `docs/multi-city.md`: the "Recorridos" search (routes through several cities, their data, photos and the search
   pages /es/recorridos…), plus the airline-request budget and the admin's "Uso" page. Its "Map of the code" says
   which file does what: read it before touching any of these.
+- `docs/audio-guide.md`: audio guides of historic places in the itinerary (how a guide is made, its cost, the map of
+  the code). Read it before touching the audio guide.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

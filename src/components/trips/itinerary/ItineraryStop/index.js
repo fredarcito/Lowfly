@@ -12,12 +12,13 @@ import ExcursionMark from "@/components/trips/itinerary/ItineraryStop/components
 import RequestedMark from "@/components/trips/itinerary/ItineraryStop/components/RequestedMark";
 import StopMarker from "@/components/trips/itinerary/ItineraryStop/components/StopMarker";
 import MealChip from "@/components/trips/itinerary/ItineraryStop/components/MealChip";
+import AudioGuideButton from "@/components/trips/itinerary/ItineraryStop/components/AudioGuideButton";
 
 // Getting to or from the town (the airport, a station): far from the day's walk by nature, nothing to explain
 const LEGS = new Set(["llegada", "transporte", "logistica"]);
 
 // One stop. Places fold open (one at a time, in step with the map) to show the details,
-// "Directions" and "Mark as visited" (with `onToggleVisited`). A meal without a set place (breakfast "around the
+// "Directions", "Audio guide" (historic places, docs/audio-guide.md) and "Mark as visited" (with `onToggleVisited`). A meal without a set place (breakfast "around the
 // Plaza Mayor") folds open too, for its dishes, with nowhere to go or tick. Other stops (getting around…) just show
 // their note. A meal that folds keeps its note under its title, open or closed (it does not jump into the details), and
 // "What to try and where" under it opens and closes it, instead of the arrow (its title still does too).
@@ -95,6 +96,7 @@ const ItineraryStop = ({ stop, mode, excursionTown, town, open, visited, onToggl
                       <Navigation /> {texts.trips.directions}
                     </a>
                   </Button>
+                  <AudioGuideButton stop={stop} town={excursionTown ?? town} />
                   {onToggleVisited && (
                     <Button
                       variant={visited ? "secondary" : "outline"}

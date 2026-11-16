@@ -64,6 +64,7 @@ searches with the basic `web_search_20250305`; the newer `_20260209` failed ever
   notes for stories and the visit. Footer: "… a partir de Wikipedia y búsquedas en la web".
 - Without an article: the search brings everything (above).
 - Opening hours, prices and tickets are left out of notes and audio: a guide is recorded once and kept for years.
+- Every guide opens with a short introduction (where you are, what it is, a hook) before the first "mira…".
 - Notes under 120 words or no search made → the guide is made without them.
 - Measured: St Paul (no article) 2 searches, ~US$0.024; the Rotunda (complement) 3 searches, ~US$0.035.
 

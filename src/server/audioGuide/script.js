@@ -65,7 +65,11 @@ Shape:
 - Each step: ${AUDIO_GUIDE.minWords} to ${AUDIO_GUIDE.maxWords} words, said aloud by a voice. Short sentences. Talk to the listener ("mira", "fíjate", "look up").
 - A monument with a long history (most places with articles this size): 4 to ${AUDIO_GUIDE.maxSteps} steps of 130 to ${AUDIO_GUIDE.maxWords} words,
   4 to 6 minutes in all. Only a small place with little to tell gets ${AUDIO_GUIDE.minSteps} or 3 shorter steps.
-- Each step starts by telling the listener what to look at, then the story behind it.
+- The first step opens with a short introduction (30 to 50 words) before anything else: where the listener is, what
+  this place is in one or two strokes, and a hook for what is coming ("aquí rezaron cristianos, musulmanes y otra vez
+  cristianos; y un emperador que nunca llegó a usarla"). No "Bienvenido a", no "En esta guía", no list of what is coming.
+  Only then the first thing to look at.
+- After that, each step starts by telling the listener what to look at, then the story behind it.
 - Every step has at least one curious fact or anecdote: something surprising, human or strange ("¿Sabías que…?" once at
   most in the whole guide; vary how you bring them in). Build to it; don't open with it.
 - When the sources give one, include a moment the listener acts or looks for something: a ritual ("frota el dedo
@@ -102,6 +106,10 @@ listener should feel curiosity, surprise, sometimes a smile. People, faith, lege
 
 Shape:
 - ${AUDIO_GUIDE.minSteps} or 3 steps of 90 to 140 words, said aloud by a voice. Short sentences. Talk to the listener ("mira", "fíjate").
+- The first step opens with a short introduction (30 to 50 words) before anything else: where the listener is, what
+  this place is in one or two strokes, and a hook for what is coming ("aquí rezaron cristianos, musulmanes y otra vez
+  cristianos; y un emperador que nunca llegó a usarla"). No "Bienvenido a", no "En esta guía", no list of what is coming.
+  Only then the first thing to look at.
 - Every step has a curious fact, an anecdote or a legend. Give it rhythm: a question, a pause before the twist, a contrast.
 - Every step but the last ends with a general direction ("Rodea la iglesia", "Acércate a la entrada", "Date la vuelta y mira la ciudad").
 - The last step ends on its strongest story or one practical tip. No farewell, no summary.

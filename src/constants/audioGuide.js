@@ -13,6 +13,7 @@ export const AUDIO_GUIDE = {
   // Speaking speed used to estimate a step's length before its audio loads (words a second)
   wordsPerSecond: 2.5,
   // Google Text-to-Speech voices (Chirp 3 HD); GOOGLE_TTS_VOICE_ES / GOOGLE_TTS_VOICE_EN override them
-  voices: { es: "es-ES-Chirp3-HD-Charon", en: "en-US-Chirp3-HD-Charon" },
+  // Sadachbia ("lively"): chosen by ear on 2026-11-16 over Charon, Sulafat, Achird, Puck and Aoede for telling stories
+  voices: { es: "es-ES-Chirp3-HD-Sadachbia", en: "en-US-Chirp3-HD-Sadachbia" },
   bucket: "audio-guides",
 };

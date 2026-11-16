@@ -8,7 +8,7 @@ const ENDPOINT = "https://texttospeech.googleapis.com/v1/text:synthesize";
 
 export const hasSpeech = () => Boolean(process.env.GOOGLE_TTS_API_KEY);
 
-// The voice for `lang`: "es-ES-Chirp3-HD-Charon" (its language code is the first two parts)
+// The voice for `lang`: "es-ES-Chirp3-HD-Sadachbia" (its language code is the first two parts)
 export const voiceFor = (lang) => process.env[`GOOGLE_TTS_VOICE_${lang.toUpperCase()}`] || AUDIO_GUIDE.voices[lang];
 
 // → a Buffer with the mp3

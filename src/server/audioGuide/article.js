@@ -75,6 +75,36 @@ export const findArticle = async ({ name, mapName, town, lat, lng, lang }) => {
   throw new AppError("audioBadPlace", {}, 404);
 };
 
+// The same place's article in the other language we read ("Rotonda de Galerio" → en "Rotunda (Thessaloniki)"), or
+// null. A second article gives the guide more to tell: English ones on monuments are often several times longer.
+export const companionArticle = async ({ lang, title }) => {
+  const other = WIKI_LANGS.find((wikiLang) => wikiLang !== lang);
+  if (!other) return null;
+  const params = new URLSearchParams({
+    action: "query",
+    format: "json",
+    formatversion: "2",
+    redirects: "1",
+    prop: "langlinks",
+    lllang: other,
+    titles: title,
+  });
+  try {
+    const response = await fetch(`https://${lang}.wikipedia.org/w/api.php?${params}`, {
+      headers: { "user-agent": UA },
+      next: { revalidate: MONTH },
+    });
+    if (!response.ok) return null;
+    // A link may point to a section of a wider article ("Arch of Galerius and Rotunda#Rotunda of Galerius"): the whole
+    // article is read, and the prompt keeps the guide to this place
+    const linked = (await response.json()).query?.pages?.[0]?.langlinks?.[0]?.title?.split("#")[0];
+    return linked ? readArticleUrl(`https://${other}.wikipedia.org/wiki/${encodeURIComponent(linked.replace(/ /g, "_"))}`) : null;
+  } catch (error) {
+    console.error("Wikipedia langlinks error", error);
+    return null;
+  }
+};
+
 // The article's plain text (intro and sections, without references), or null
 export const articleText = async ({ lang, title }) => {
   const params = new URLSearchParams({

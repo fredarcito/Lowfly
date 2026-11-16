@@ -11,8 +11,9 @@ On a trip's itinerary, every historic place has an "Audio guía" button next to 
 comes from a Wikipedia article, or any "imprescindible" / "recomendado" stop with a place on the map. For the latter
 (often places the traveller asked for, whose article was not found when the itinerary was made) the server searches
 the article by the stop's name and then the map's name, plus the town, in Spanish and English, and keeps it only if
-its coordinates are within 2 km (`findArticle` in `server/audioGuide/article.js`); none found → "Este sitio no tiene
-audio guía". It opens a player sheet with the guide in 2 to 5 parts (1–2 minutes for a small place, 3–5 for a monument with a long history: as much as its article supports), each heard in one
+its coordinates are within 500 m and its title shares a telltale word with the stop's name (`findArticle` in
+`server/audioGuide/article.js`; Thessaloniki's St Paul once got Hagia Sophia, 1.3 km away); none found → "Este sitio no
+tiene audio guía". It opens a player sheet with the guide in 2 to 5 parts (1–2 minutes for a small place, 4–6 for a monument with a long history), each heard in one
 spot ("La fachada · Fuera, por el lado norte"). Each part ends by saying where to go next; the audio never mentions the
 app. Once the part is over its button ("Ya estoy dentro →") turns coral and the visitor taps it when they get there.
 When the next part is heard from the same spot (`autoNext`), it starts by itself after 3 seconds ("Esperar" holds it).
@@ -30,11 +31,15 @@ Acropolis is made once, for the first person who asks, and is free for everyone 
 2. Already made → returned (anyone, signed in or not).
 3. Otherwise it needs an account (`audioSignIn`, 401) and fewer than `AUDIO_GUIDE.newPerDay` (20) new guides by that
    person in 24 hours (`audioLimit`, 429).
-4. The article's plain text (up to 14,000 characters, references left out) from Wikipedia.
-5. The AI (Gemini, Claude when Gemini fails: `server/ai.js`) writes the steps from that text only, with the copy rules
-   of CLAUDE.md in its instructions (no invented facts, no brochure phrases, concrete over general, every fact about
-   this place). Steps are checked (`cleanSteps`): 2 to 5, the last never waits for a tap.
-6. Each step is read aloud by Google Text-to-Speech (Chirp 3 HD: `es-ES-Chirp3-HD-Charon`, `en-US-Chirp3-HD-Charon`;
+4. The article's plain text (up to 14,000 characters, references left out) from Wikipedia, plus the same place's
+   article in the other language when there is one (`companionArticle`: English ones are often much longer).
+5. The AI (Gemini, Claude when Gemini fails: `server/ai.js`; kept on the cheap models on purpose) writes the steps.
+   The experience comes first (2026-11-16, the owner's call): a story with emotion told by a local guide, not an
+   encyclopedia. Every step carries a curiosity or anecdote; the AI adds context, gossip of the time and legends guides
+   tell even when unprovable, always told as such ("se cuenta que…"). Only what the listener checks with their eyes
+   (directions, what a wall or mosaic shows) and exact figures come strictly from the articles. Plus the copy rules of CLAUDE.md (no
+   brochure phrases, concrete over general, every fact about this place). Steps are checked (`cleanSteps`): 2 to 5, the last never waits for a tap.
+6. Each step is read aloud by Google Text-to-Speech (Chirp 3 HD: `es-ES-Chirp3-HD-Sadachbia`, `en-US-Chirp3-HD-Sadachbia`, chosen by ear;
    `GOOGLE_TTS_VOICE_ES` / `_EN` override them) and kept as mp3 in the public bucket `audio-guides`
    (`<id>/<step>.mp3`).
 7. The row in `audio_guides` keeps the steps with their audio URLs, the model, the voice, the AI's token usage and the
@@ -45,7 +50,7 @@ Making one takes some 20–40 seconds; the sheet shows "Preparando la audio guí
 ## Cost
 
 - Voice: Google bills per character; Chirp 3 HD is about US$30 per million after the first million free each month
-  (to check on Google's pricing page). A guide is some 1,500–3,000 characters, so a few hundred guides a month are free.
+  (to check on Google's pricing page). A guide is some 2,500–4,500 characters, so some 250–400 guides a month are free.
 - AI: one short call per guide (Gemini's free tier, or Claude Haiku).
 - Storage: a guide's mp3s are under 1 MB.
 

@@ -1,7 +1,7 @@
 // Audio guides of historic places (docs/audio-guide.md): found if someone already asked for this place, else
 // made now — the article from Wikipedia, the steps from the AI, each step read aloud by Google — and kept.
 import { AppError } from "@/server/errors";
-import { articleText } from "@/server/audioGuide/article";
+import { articleText, companionArticle } from "@/server/audioGuide/article";
 import { writeScript } from "@/server/audioGuide/script";
 import { hasSpeech, speak, voiceFor } from "@/server/audioGuide/speech";
 import { findGuide, guideId, saveAudio, saveGuide } from "@/server/audioGuide/store";
@@ -12,11 +12,19 @@ const making = new Map();
 
 const estimatedSeconds = (text) => Math.round(text.split(/\s+/).length / AUDIO_GUIDE.wordsPerSecond);
 
+// The article and, when there is one, the same place's article in the other language: more to tell, same model
+const sourcesFor = async (article) => {
+  const [main, companion] = await Promise.all([articleText(article), companionArticle(article)]);
+  if (!main) return null;
+  const second = companion ? await articleText(companion) : null;
+  return { title: main.title, texts: [main.text, second?.text].filter(Boolean) };
+};
+
 const makeGuide = async ({ id, lang, article, place, userId, town }) => {
-  const source = await articleText(article);
+  const source = await sourcesFor(article);
   if (!source) throw new AppError("audioBadPlace", {}, 404);
   const title = place || source.title;
-  const { steps, usage, model, provider } = await writeScript({ lang, place: title, town, article: source.text });
+  const { steps, usage, model, provider } = await writeScript({ lang, place: title, town, articles: source.texts });
   // The steps are read aloud side by side (a few seconds each)
   const audio = await Promise.all(steps.map(async (step, index) => saveAudio(id, index, await speak(step.text, lang))));
   return saveGuide({

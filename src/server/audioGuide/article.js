@@ -5,8 +5,18 @@ import { searchPlace } from "@/server/wikipedia";
 import { km } from "@/utils/itinerary";
 
 const MONTH = 30 * 86400;
-// An article found by name is about the stop only if its coordinates are this close (as for the itinerary's history)
-const SAME_PLACE_KM = 2;
+// An article found by name is about the stop only if its coordinates are this close. Tighter than the itinerary's
+// 2 km: in an old town 2 km holds a dozen churches (Thessaloniki's St Paul found Hagia Sophia, 1.3 km away).
+const SAME_PLACE_KM = 0.5;
+// Words that say what a place is, not which one: two churches share them
+const GENERIC_WORDS = new Set([
+  "iglesia", "church", "catedral", "cathedral", "basilica", "capilla", "chapel", "monasterio", "monastery",
+  "convento", "convent", "mezquita", "mosque", "sinagoga", "synagogue", "templo", "temple", "museo", "museum",
+  "palacio", "palace", "castillo", "castle", "fortaleza", "fortress", "torre", "tower", "puerta", "gate",
+  "plaza", "square", "parque", "park", "puente", "bridge", "mercado", "market", "barrio", "district",
+  "san", "santa", "santo", "saint", "agios", "agia", "hagia", "nuestra", "senora", "our", "lady",
+  "del", "los", "las", "the", "and",
+]);
 const WIKI_LANGS = ["es", "en"];
 // Enough of the article for 2 to 5 steps, without paying for the whole of a very long one
 const MAX_CHARS = 14_000;
@@ -30,17 +40,34 @@ export const readArticleUrl = (value) => {
 
 const isCoordinate = (lat, lng) => Number.isFinite(lat) && Number.isFinite(lng) && Math.abs(lat) <= 90 && Math.abs(lng) <= 180;
 
+// The words that tell a place apart: "Iglesia de San Pablo" → ["pablo"]; without accents, kind or town
+const telltaleWords = (text, town) => {
+  const words = (value) => (value ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().split(/[^a-z0-9]+/);
+  const townWords = new Set(words(town));
+  return words(text).filter((word) => word.length > 2 && !GENERIC_WORDS.has(word) && !townWords.has(word));
+};
+
+// The article's title names the stop: they share a telltale word ("Santa Sofía (Salónica)" does not name San Pablo).
+// A stop named only by its kind ("Catedral") has nothing to compare, and the distance alone decides.
+const namesTheStop = (title, names, town) => {
+  const titleWords = new Set(telltaleWords(title, town));
+  const nameWords = names.flatMap((name) => telltaleWords(name, town));
+  return nameWords.length === 0 || nameWords.some((word) => titleWords.has(word));
+};
+
 // A stop without history (no article was found when the itinerary was made, as with places the traveller asked
 // for): its article searched by name and town, in the page's language and then the other one, kept only when it
 // is about that same spot. `mapName`: the place's name on the map (often local or English), tried after the stop's
-// own name. → { lang, title, url }, or a 404 when the place has none.
+// own name. The article must be close (SAME_PLACE_KM) and its title must name the stop: Wikipedia's first result
+// is often a famous neighbour. → { lang, title, url }, or a 404 when the place has none.
 export const findArticle = async ({ name, mapName, town, lat, lng, lang }) => {
   if (!name || !isCoordinate(lat, lng)) throw badRequest("audioBadPlace");
   const names = [...new Set([name, mapName].filter(Boolean))];
   for (const wikiLang of [lang, ...WIKI_LANGS.filter((other) => other !== lang)]) {
     for (const searched of names) {
       const fact = await searchPlace(town ? `${searched} ${town}` : searched, wikiLang);
-      if (fact?.url && isCoordinate(fact.lat, fact.lng) && km({ lat, lng }, { lat: fact.lat, lng: fact.lng }) <= SAME_PLACE_KM) {
+      const close = fact?.url && isCoordinate(fact.lat, fact.lng) && km({ lat, lng }, { lat: fact.lat, lng: fact.lng }) <= SAME_PLACE_KM;
+      if (close && namesTheStop(fact.title, names, town)) {
         return readArticleUrl(fact.url);
       }
     }

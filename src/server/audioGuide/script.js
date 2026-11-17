@@ -34,6 +34,8 @@ const STYLE = `
 Style (it must sound like a person, not a brochure):
 - Kind and warm, like a guide who enjoys sharing the place. Never mock, judge or scold the listener or other visitors:
   no "la gente no mira", "todos entran con la cabeza agachada", "casi nadie se da cuenta", no jokes at anyone's expense.
+- Speak of the people who live there with respect: "los locales", "los vecinos", never "los de aquí" (it sounds
+  dismissive).
 - Invite rather than order: "si te detienes a observar…", "vale la pena alzar la vista", "con calma, fíjate en…"
   sound better than a string of bare commands ("Mira arriba. Ahora mira a la izquierda.").
 - Concrete over general: "tardaron diez años" beats "su construcción fue larga".
@@ -103,7 +105,8 @@ Facts:
   like then, who ordered it built and why, the gossip of the time, and the curiosities, legends and anecdotes guides tell
   about this place even when nobody can prove them.
 - Tell what is uncertain as what it is, and make that part of the charm: "se cuenta que…", "la leyenda dice…",
-  "los de aquí juran que…". Never present a legend as a certain fact.
+  "según los locales…". Never present a legend as a certain fact, and never with gullible words ("juran que",
+  "aseguran que"): tell it with a light distance.
 - What the listener will check with their own eyes comes only from the articles: directions and positions ("a tu
   izquierda", "al fondo", "en la tercera columna") and what a wall, mosaic or room shows. Getting these wrong breaks the
   spell. Exact dates and figures also come from the articles; elsewhere say "hace unos mil años", "cientos de".

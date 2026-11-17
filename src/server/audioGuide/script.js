@@ -1,5 +1,5 @@
 // The words of an audio guide: the AI turns the place's Wikipedia articles (its language and, when there is one, the
-// other) and notes from a web search (curiosities, legends, the visit) into 2 to 5 steps, each said where the visitor stands, ending with where to go next. A story with emotion,
+// other) and notes from a web search (curiosities, legends, the visit) into 3 to 12 steps, each said where the visitor stands, ending with where to go next. A story with emotion,
 // not an encyclopedia: the AI adds context, curiosities and legends (told as legends); directions, what a wall shows
 // and exact figures come only from the articles.
 import { AppError } from "@/server/errors";
@@ -61,10 +61,20 @@ newspaper: the listener should feel curiosity, surprise, sometimes a smile or a 
 disasters, scandals, love, death and the odd detail nobody expects are what they will remember and tell at dinner.
 
 Shape:
-- ${AUDIO_GUIDE.minSteps} to ${AUDIO_GUIDE.maxSteps} steps, in the order a visitor goes round: outside first, then inside, then the details.
-- Each step: ${AUDIO_GUIDE.minWords} to ${AUDIO_GUIDE.maxWords} words, said aloud by a voice. Short sentences. Talk to the listener ("mira", "fíjate", "look up").
-- A monument with a long history (most places with articles this size): 4 to ${AUDIO_GUIDE.maxSteps} steps of 130 to ${AUDIO_GUIDE.maxWords} words,
-  4 to 6 minutes in all. Only a small place with little to tell gets ${AUDIO_GUIDE.minSteps} or 3 shorter steps.
+- In the order a visitor goes round: outside first, then inside, then the details. Short sentences, said aloud by a
+  voice. Talk to the listener ("mira", "fíjate", "look up").
+- Length: a real audio guide, not a teaser. Use everything the sources give; take your time with each story.
+  - A monument, ruin, square or church with a long history: 7 to ${AUDIO_GUIDE.maxSteps} steps of 180 to ${AUDIO_GUIDE.maxWords} words,
+    10 to 15 minutes in all.
+  - A museum: 6 to 9 steps of 180 to ${AUDIO_GUIDE.maxWords} words, 8 to 12 minutes (see "Museums" below).
+  - Only a small place with little in the sources: 4 or 5 steps of 150 to 200 words, some 5 minutes; fill it with the
+    city and the times around it, never with invented details of the place.
+- Museums: their pieces move between rooms and they have their own audio guide, so tell the museum as a story, not a
+  room-by-room walk. The first steps: how the museum and its collection came to be, and the civilisation or era it
+  shows. Then one step per star piece (the ones the sources single out), with the story of how it was made, found or
+  saved. Never say room or case numbers, floors or "a tu izquierda": name the piece so the listener can find it
+  ("busca el papiro de Derveni"); "where" names the piece, not the room ("Ante el papiro de Derveni"). The last step may
+  suggest the museum's own audio guide to see the rest piece by piece.
 - The first step opens with a short introduction (30 to 50 words) before anything else: where the listener is, what
   this place is in one or two strokes, and a hook for what is coming ("aquí rezaron cristianos, musulmanes y otra vez
   cristianos; y un emperador que nunca llegó a usarla"). No "Bienvenido a", no "En esta guía", no list of what is coming.
@@ -95,7 +105,7 @@ Facts:
 - Pick the most striking stories (one or two per step); leave out lists of dates and architects' full names unless they matter.
 ${STYLE}`;
 
-// A place with no Wikipedia article (a small church, a viewpoint): a short guide told from the AI's own knowledge,
+// A place with no Wikipedia article (a small church, a viewpoint) that the web search found nothing about: a guide told from the AI's own knowledge,
 // about what surrounds the building (its saint or name, the neighbourhood, the city's story), never what is inside it
 const knowledgeInstructionsFor = ({ lang, place, town }) => `You write audio guides for travellers standing in front of a place.
 Write the audio guide of "${place}"${town ? ` in ${town}` : ""} in ${LANGUAGES[lang]}. There is no article about this place:
@@ -105,7 +115,7 @@ What matters most is the experience. You are the best local guide in town tellin
 listener should feel curiosity, surprise, sometimes a smile. People, faith, legends and the odd detail are what they remember.
 
 Shape:
-- ${AUDIO_GUIDE.minSteps} or 3 steps of 90 to 140 words, said aloud by a voice. Short sentences. Talk to the listener ("mira", "fíjate").
+- 3 or 4 steps of 150 to 200 words (some 5 minutes in all), said aloud by a voice. Short sentences. Talk to the listener ("mira", "fíjate").
 - The first step opens with a short introduction (30 to 50 words) before anything else: where the listener is, what
   this place is in one or two strokes, and a hook for what is coming ("aquí rezaron cristianos, musulmanes y otra vez
   cristianos; y un emperador que nunca llegó a usarla"). No "Bienvenido a", no "En esta guía", no list of what is coming.
@@ -142,7 +152,7 @@ const cleanSteps = (steps) => {
       where: clean(step?.where, 80),
       action: clean(step?.action, 40) || null,
       autoNext: step?.autoNext === true,
-      text: clean(step?.text, 1500),
+      text: clean(step?.text, 2500),
     }))
     .filter((step) => step.title && words(step.text) >= AUDIO_GUIDE.minWords / 2)
     .slice(0, AUDIO_GUIDE.maxSteps);

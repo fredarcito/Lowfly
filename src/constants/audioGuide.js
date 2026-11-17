@@ -2,12 +2,12 @@
 export const AUDIO_GUIDE = {
   // New guides a signed-in person may have made in 24 hours (listening to one already made is free and unlimited)
   newPerDay: 20,
-  // Steps of a guide, and words in each one: a small place gets the fewest and shortest (1–2 minutes), a monument
-  // with a long history the most (3–5 minutes); never more than its article supports
-  minSteps: 2,
-  maxSteps: 5,
-  minWords: 60,
-  maxWords: 170,
+  // Steps of a guide, and words in each one (2026-11-17, the owner's call: 3–5 minutes felt too short): a small place
+  // some 5 minutes, a museum 8–12, a monument with a long history 10–15
+  minSteps: 3,
+  maxSteps: 12,
+  minWords: 80,
+  maxWords: 260,
   // Seconds the next step waits before starting by itself, when it is heard from the same spot
   autoNextSeconds: 3,
   // Speaking speed used to estimate a step's length before its audio loads (words a second)

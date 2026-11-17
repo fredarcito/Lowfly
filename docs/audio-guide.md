@@ -16,11 +16,12 @@ its coordinates are within 500 m and its title shares a telltale word with the s
 owner's call: no place left without a guide, the way ChatGPT and Gemini answer about it):
    - the web search's notes play the article's part (see "Web search" below). Footer: "Escrita con IA a partir de
      búsquedas en la web. Sin revisar…" (`fromWeb`, from `usage.research` on the row).
-   - The search found nothing (or Claude is down): a shorter guide (2–3 parts) from the AI's own knowledge
+   - The search found nothing (or Claude is down): a guide of 3–4 parts (some 5 minutes) from the AI's own knowledge
      (`knowledgeInstructionsFor` in `script.js`): the place's name and saint, its neighbourhood, the city's story and
      legends, never what is inside or "a tu izquierda". Footer: "Escrita con IA. Este sitio no tiene artículo…".
    Both are kept under a `lowfly:place/<name>|<town>|<lat,lng to ~100 m>` key instead of an article link
-   (`placeWithoutArticle`). Making one can take up to two minutes (route `maxDuration` 300 s). It opens a player sheet with the guide in 2 to 5 parts (1–2 minutes for a small place, 4–6 for a monument with a long history), each heard in one
+   (`placeWithoutArticle`). Making one can take up to two minutes (route `maxDuration` 300 s). It opens a player sheet with the guide in 3 to 12 parts (2026-11-17, the owner's call: 3–5 minutes felt too short — some 5 minutes for a small
+place, 8–12 for a museum, 10–15 for a monument with a long history), each heard in one
 spot ("La fachada · Fuera, por el lado norte"). Each part ends by saying where to go next; the audio never mentions the
 app. Once the part is over its button ("Ya estoy dentro →") turns coral and the visitor taps it when they get there.
 When the next part is heard from the same spot (`autoNext`), it starts by itself after 3 seconds ("Esperar" holds it).
@@ -45,7 +46,10 @@ Acropolis is made once, for the first person who asks, and is free for everyone 
    encyclopedia. Every step carries a curiosity or anecdote; the AI adds context, gossip of the time and legends guides
    tell even when unprovable, always told as such ("se cuenta que…"). Only what the listener checks with their eyes
    (directions, what a wall or mosaic shows) and exact figures come strictly from the articles. Plus the copy rules of CLAUDE.md (no
-   brochure phrases, concrete over general, every fact about this place). Steps are checked (`cleanSteps`): 2 to 5, the last never waits for a tap.
+   brochure phrases, concrete over general, every fact about this place). Steps are checked (`cleanSteps`): 3 to 12, the last never waits for a tap.
+   Museums are told as a story, not a room-by-room walk: their pieces move and they have their own audio guide. The
+   museum's story, then one part per star piece, named so the listener finds it ("busca el papiro de Derveni"), never a
+   room, floor or case number; the last part may suggest the museum's own audio guide.
 6. Each step is read aloud by Google Text-to-Speech (Chirp 3 HD: `es-ES-Chirp3-HD-Sadachbia`, `en-US-Chirp3-HD-Sadachbia`, chosen by ear;
    `GOOGLE_TTS_VOICE_ES` / `_EN` override them) and kept as mp3 in the public bucket `audio-guides`
    (`<id>/<step>.mp3`).
@@ -57,7 +61,7 @@ Making one takes some 20–40 seconds; the sheet shows "Preparando la audio guí
 ## Web search
 
 Every new guide also searches the web (2026-11-16, the owner's call: curiosities and emotion over an encyclopedia),
-beside the Wikipedia articles: `research.js`, through `researchWithSearch` in `server/claude.js` (Claude Haiku, up to 3
+beside the Wikipedia articles: `research.js`, through `researchWithSearch` in `server/claude.js` (Claude Haiku, up to 5
 searches with the basic `web_search_20250305`; the newer `_20260209` failed every search with Haiku in a test).
 - With an article: the search looks only for what it lacks — curiosities, legends, anecdotes, and how the visit goes
   (entrance, route inside, what is in each part). The script trusts the articles for dates, names and numbers, and the
@@ -71,9 +75,10 @@ searches with the basic `web_search_20250305`; the newer `_20260209` failed ever
 ## Cost
 
 - Voice: Google bills per character; Chirp 3 HD is about US$30 per million after the first million free each month
-  (to check on Google's pricing page). A guide is some 2,500–4,500 characters, so some 250–400 guides a month are free.
-- AI: one short call per guide (Gemini's free tier, or Claude Haiku), plus the web search: US$0.01 a search, up to 3,
-  and the pages it reads (~US$0.003 on Haiku). Some 2–4 US cents a new guide in all, besides the voice.
+  (to check on Google's pricing page). A guide is some 5,000–18,000 characters (5–15 minutes), so some US$0.15–0.55 each once past the free million
+  (some 60–200 guides a month are free).
+- AI: one short call per guide (Gemini's free tier, or Claude Haiku), plus the web search: US$0.01 a search, up to 5,
+  and the pages it reads (~US$0.003 on Haiku). Some 3–7 US cents a new guide in all, besides the voice.
 - Storage: a guide's mp3s are under 1 MB.
 
 ## Limits and known gaps

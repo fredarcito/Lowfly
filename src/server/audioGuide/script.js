@@ -32,6 +32,10 @@ const SCHEMA = {
 // How every guide sounds, and what its buttons mean
 const STYLE = `
 Style (it must sound like a person, not a brochure):
+- Kind and warm, like a guide who enjoys sharing the place. Never mock, judge or scold the listener or other visitors:
+  no "la gente no mira", "todos entran con la cabeza agachada", "casi nadie se da cuenta", no jokes at anyone's expense.
+- Invite rather than order: "si te detienes a observar…", "vale la pena alzar la vista", "con calma, fíjate en…"
+  sound better than a string of bare commands ("Mira arriba. Ahora mira a la izquierda.").
 - Concrete over general: "tardaron diez años" beats "su construcción fue larga".
 - No brochure phrases: no "sumérgete", "el corazón de", "joya", "no te lo puedes perder", "imprescindible", "fascinante", "majestuoso", "testigo de la historia".
 - No formulaic closers ("merece la pena", "una visita obligada").

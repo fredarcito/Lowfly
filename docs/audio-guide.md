@@ -47,7 +47,7 @@ Acropolis is made once, for the first person who asks, and is free for everyone 
    encyclopedia. Every step carries a curiosity or anecdote; the AI adds context, gossip of the time and legends guides
    tell even when unprovable, always told as such ("se cuenta que…"). Only what the listener checks with their eyes
    (directions, what a wall or mosaic shows) and exact figures come strictly from the articles. Plus the copy rules of CLAUDE.md (no
-   brochure phrases, concrete over general, every fact about this place). Steps are checked (`cleanSteps`): 3 to 12, the last never waits for a tap.
+   brochure phrases; a kind, inviting tone that never mocks or judges the listener or other visitors (2026-11-17); concrete over general, every fact about this place). Steps are checked (`cleanSteps`): 3 to 12, the last never waits for a tap.
    Museums are told as a story, not a room-by-room walk: their pieces move and they have their own audio guide. The
    museum's story, then one part per star piece, named so the listener finds it ("busca el papiro de Derveni"), never a
    room, floor or case number; the last part may suggest the museum's own audio guide.

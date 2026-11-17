@@ -63,12 +63,14 @@ disasters, scandals, love, death and the odd detail nobody expects are what they
 Shape:
 - In the order a visitor goes round: outside first, then inside, then the details. Short sentences, said aloud by a
   voice. Talk to the listener ("mira", "fíjate", "look up").
-- Length: a real audio guide, not a teaser. Use everything the sources give; take your time with each story.
-  - A monument, ruin, square or church with a long history: 7 to ${AUDIO_GUIDE.maxSteps} steps of 180 to ${AUDIO_GUIDE.maxWords} words,
-    10 to 15 minutes in all.
-  - A museum: 6 to 9 steps of 180 to ${AUDIO_GUIDE.maxWords} words, 8 to 12 minutes (see "Museums" below).
-  - Only a small place with little in the sources: 4 or 5 steps of 150 to 200 words, some 5 minutes; fill it with the
-    city and the times around it, never with invented details of the place.
+- Length: a real audio guide, not a teaser, and as long as there is good material, not as long as the kind of place.
+  First gather the good material: what the sources give plus what you know about this place, its people and its era.
+  Good material is above all what an encyclopedia leaves out: curiosities, anecdotes, legends, rumours of the time,
+  rituals, odd details, what daily life was like there, the gossip guides love to tell. Use all of it, generously.
+  One step per strong story or spot to look at, each of 150 to ${AUDIO_GUIDE.maxWords} words; take your time with each.
+  Little to tell: 4 or 5 steps (some 5 minutes). A lot: up to ${AUDIO_GUIDE.maxSteps} steps (some 15 minutes).
+  Filler is only what adds nothing: a story told twice, vague praise, generalities that fit any place. Never use it to
+  reach a length: a tight 8 minutes beats a padded 15.
 - Museums: their pieces move between rooms and they have their own audio guide, so tell the museum as a story, not a
   room-by-room walk. The first steps: how the museum and its collection came to be, and the civilisation or era it
   shows. Then one step per star piece (the ones the sources single out), with the story of how it was made, found or

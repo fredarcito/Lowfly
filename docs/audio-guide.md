@@ -20,8 +20,9 @@ owner's call: no place left without a guide, the way ChatGPT and Gemini answer a
      (`knowledgeInstructionsFor` in `script.js`): the place's name and saint, its neighbourhood, the city's story and
      legends, never what is inside or "a tu izquierda". Footer: "Escrita con IA. Este sitio no tiene artículo…".
    Both are kept under a `lowfly:place/<name>|<town>|<lat,lng to ~100 m>` key instead of an article link
-   (`placeWithoutArticle`). Making one can take up to two minutes (route `maxDuration` 300 s). It opens a player sheet with the guide in 3 to 12 parts (2026-11-17, the owner's call: 3–5 minutes felt too short — some 5 minutes for a small
-place, 8–12 for a museum, 10–15 for a monument with a long history), each heard in one
+   (`placeWithoutArticle`). Making one can take up to two minutes (route `maxDuration` 300 s). It opens a player sheet with the guide in 3 to 12 parts (2026-11-17, the owner's call: 3–5 minutes felt too short; the length follows how much good material
+there is, from the sources and what the AI knows, not the kind of place — some 5 minutes with little, up to 15 with a lot,
+never padded), each heard in one
 spot ("La fachada · Fuera, por el lado norte"). Each part ends by saying where to go next; the audio never mentions the
 app. Once the part is over its button ("Ya estoy dentro →") turns coral and the visitor taps it when they get there.
 When the next part is heard from the same spot (`autoNext`), it starts by itself after 3 seconds ("Esperar" holds it).
